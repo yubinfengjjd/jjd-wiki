@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T13:34:06.673563+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json": "0494a90cc98e9c252fa63d820d8641a6d8b68ade1638a12e3da7bd45e7001fad",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/render.R": "a6c29170dbfbe1976fbd994491f0c58190686c2c087831cd28a790fc05ec081e",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/core.R": "22abdf13286dbc47b1063ecc3911508c6710eac35c6d890357fb112fc1d92c03",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-umap-feature-long#columns": "76407c805469fb3fa852267a40fc9d289bc599ceaf33d23655f7e10ba65aeb8c",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/estimated_coordinates.csv": "f0360b2bb0adea66c56fed28e765030cec273ba811bbe146b984a62d7db07fbc",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/estimated_data.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/estimated_expression.csv": "821f9a692c6990e264f4ca49932c4067419b2772c0fbc3e8c52e6b0981b23b40",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/render-umap-feature-long.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/style.json": "2db558e2959b06b62418d123b31c49f8d3eacf2760bbcbd740dde4d524dee829"
+  },
+  "outputs": {
+    "png": "50f2f56d2a2539beeda507734863b227939f2bd6d98e0ce568b58487414397b6",
+    "pdf": "54a7255940f6735fb54b2bacfaee1f257e59e2e01b1409eff69a2a913db496fd",
+    "svg": "f8e716af02a5a838cefe7ded6db8f5425e3c085f42d0c85a78b5dd875c639984"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

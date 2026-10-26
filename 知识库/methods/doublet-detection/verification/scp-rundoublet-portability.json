@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-rundoublet",
+  "state": "not_run",
+  "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+  "closure_hash": "fc957d60a9db2c22bdd6f492ee0a3e4f1504746f6d81b30807115e6634cc340d",
+  "files": {
+    "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
+    "code/doublet_native.R": "b06499321a51b750667df68fe4874496bcb49ae6641a769b6f794c0a1967c71e"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/doublet_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
+    "code/doublet_native.R": "b06499321a51b750667df68fe4874496bcb49ae6641a769b6f794c0a1967c71e"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" doublet-detection \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\doublet-detection\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/doublet-detection/result.rds\"",
+  "case": {
+    "label": "doublet scDblFinder",
+    "parameters": {
+      "parameters": {
+        "assay": "RNA",
+        "db_method": "scDblFinder",
+        "db_rate": 0.01,
+        "seed": 11
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\doublet-detection\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+  "output_sha256": "6f702a81fbbfb2880c38f3b8661eb3e8640169c974edca1f41678968ad2bec14",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:00:41 UTC",
+  "not_run_reason": "Missing R dependency: scDblFinder; automatic installation is disabled"
+}

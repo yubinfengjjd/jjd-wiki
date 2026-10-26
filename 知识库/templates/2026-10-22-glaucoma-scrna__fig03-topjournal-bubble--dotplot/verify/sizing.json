@@ -1,0 +1,10 @@
+{
+  "mode": "fixed",
+  "profile": "dotplot_bubble",
+  "n_x": 9,
+  "n_y": 52,
+  "max_label_chars": 24,
+  "width_in": 6,
+  "height_in": 12,
+  "dpi": 192
+}

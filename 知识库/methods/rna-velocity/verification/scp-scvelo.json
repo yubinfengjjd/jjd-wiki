@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-scvelo",
+  "state": "not_run",
+  "scope": "SCP RunSCVELO 分支需要 reticulate 与 scvelo；本机未设置 RETICULATE_PYTHON，且未安装 scvelo/scanpy。",
+  "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_R.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "checks": [
+    "Observed: Set RETICULATE_PYTHON to an existing project interpreter; installation disabled"
+  ],
+  "environment": {
+    "language": "R",
+    "R": "4.5.0",
+    "Seurat": "5.6.0",
+    "SeuratObject": "5.4.0",
+    "slingshot": "2.16.0",
+    "clusterProfiler": "4.16.0",
+    "DOSE": "4.2.0",
+    "mgcv": "1.9.1",
+    "BiocParallel": "1.42.0",
+    "OS": "Windows 11"
+  },
+  "files": {
+    "code/analysis.R": "0e0c3e08e111cc9d5a9f529c17843dd2a7cc52967bbfe769bae22a997188df53"
+  },
+  "observed_error": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T08:47:36.746851+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig02-ring--ring/spec.json": "d2c8e2d26433e3533ec83a0ffb6545fdcc082ecc289fff6b01bbb816a69cc8af",
+    "templates/2026-10-22-scp-example__fig02-ring--ring/code/render.R": "b61d75f8aed651a312b6b7f1dabfd4a935e6b0ef6fd6be1ddac760f3710fe01a",
+    "templates/2026-10-22-scp-example__fig02-ring--ring/code/core.R": "98fa0ea3629e79df42cfcf804544cdc2bccf16b672d50795a68e204782b39008",
+    "templates/2026-10-22-scp-example__fig02-ring--ring/code/panel.R": "a6839a60e04f7a375014bd4f7ec9555d29be3771c4e834bbd0fd25598c6f29b8",
+    "interfaces/render-cell-proportions#columns": "0b4224dc426796ee7350f028c6efcaad60b78c3c629714b3366d08d3a6ca51f1",
+    "templates/2026-10-22-scp-example__fig02-ring--ring/example/render-cell-proportions.csv": "2ecebe5a8db5b60d82ad79803aec6f7d021d0670c8a3d64beb40a31fa652d0c6"
+  },
+  "outputs": {
+    "png": "0dac041e2e90fb3e81586cd8844444004385a598f9111671bac853b96463e212",
+    "pdf": "0096df51f86f6e421e85d7c4a10955aca44160b07661a7b592ed099731647ac7",
+    "svg": "e253f16026660f418e629961204e38f2286757ce8b70234209a5285212d1b8ed"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

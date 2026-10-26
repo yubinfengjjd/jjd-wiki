@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-monocle3",
+  "state": "not_run",
+  "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" monocle3 \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3/result.rds\"",
+  "case": {
+    "label": "Monocle3 core+adapter with explicit partition and root",
+    "parameters": {
+      "parameters": {
+        "seed": 11,
+        "use_partition": true,
+        "root_cells": "CAGCCGAAGCGATATA"
+      }
+    }
+  },
+  "checks": [
+    "Observed: Missing R dependency: monocle3; automatic installation is disabled"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "files": {
+    "code/analysis.R": "8846786778b63768610ce037776e6fe7e3256f97229c6cf8b595aeac051e991c",
+    "code/monocle2.R": "62e437932fe9b89cd3aef89d60a8a410eba565a12be935e2c1f354f479e5b673",
+    "code/monocle2_core.R": "9feba32a87e10280348214906e87909be3a2b13be617afb4a0c1d78fe7e178a9",
+    "code/monocle2_core_helpers.R": "831b519ea7044eee7cc9b75b1bbfbf952b14f25298d9b12f4d0e8d72df11bafe",
+    "code/monocle3.R": "ecbc495fe291cd070c16e5bf765caf810b09121d323b948fee867ef0ad0b6f52",
+    "code/monocle3_core.R": "fcf3b21d6ecc9e87a3ff48553c2b2fdf600ab84de974ddbabb265cd12748455e",
+    "code/slingshot_native.R": "ca9b68c5493fbeedfcaf805340e7c91c8cbe7a9a5b4f4f4a61ff32fe788545d9",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "executed_files": {
+    "code/monocle3.R": "ecbc495fe291cd070c16e5bf765caf810b09121d323b948fee867ef0ad0b6f52",
+    "code/monocle3_core.R": "fcf3b21d6ecc9e87a3ff48553c2b2fdf600ab84de974ddbabb265cd12748455e"
+  },
+  "not_run_reason": "Missing R dependency: monocle3; automatic installation is disabled"
+}

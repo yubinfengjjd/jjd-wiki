@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-runcellqc",
+  "state": "passed",
+  "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+  "closure_hash": "d62795a6124b9dbe16fb98c42dc8b22f76f1b75d14a14e163b59dfce3ac0b7ad",
+  "files": {
+    "code/analysis.R": "7c362e7f499881c770c87f37d75b3da1751cfd1c73c0b4d27e9ea899cacbbb0d",
+    "code/cellqc_native.R": "212cb03dc15114bd24ecbe8074993e810d02645f858030b3670e6aa8cf6035dd"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/cellqc_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "7c362e7f499881c770c87f37d75b3da1751cfd1c73c0b4d27e9ea899cacbbb0d",
+    "code/cellqc_native.R": "212cb03dc15114bd24ecbe8074993e810d02645f858030b3670e6aa8cf6035dd"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" cell-quality-control \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-quality-control\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-quality-control/result.rds\"",
+  "case": {
+    "label": "QC non-doublet",
+    "parameters": {
+      "parameters": {
+        "qc_metrics": [
+          "umi",
+          "gene",
+          "mito"
+        ],
+        "UMI_threshold": 0,
+        "gene_threshold": 0,
+        "mito_threshold": 100,
+        "return_filtered": false,
+        "assay": "RNA",
+        "seed": 11
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-quality-control\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+  "output_sha256": "59aea452b8b7f669dce321bbae529e36a614d0f5753a45319b18ee3aac5c52a0",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)",
+    "Actual call returned a result"
+  ],
+  "executed_at": "2026-10-23 16:00:32 UTC"
+}

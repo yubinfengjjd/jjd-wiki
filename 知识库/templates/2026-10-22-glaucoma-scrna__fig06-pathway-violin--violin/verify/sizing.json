@@ -1,0 +1,10 @@
+{
+  "mode": "fixed",
+  "profile": "grouped_violin",
+  "n_x": 9,
+  "n_y": 1,
+  "max_label_chars": 24,
+  "width_in": 12,
+  "height_in": 6.5,
+  "dpi": 192
+}

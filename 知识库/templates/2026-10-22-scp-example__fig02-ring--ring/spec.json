@@ -1,0 +1,51 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "proportions": {
+      "interface": "render-cell-proportions",
+      "description": "每个 group 内 celltype 的比例；每组 proportion 之和必须为 1；行顺序即默认类别顺序"
+    }
+  },
+  "style": {
+    "group_col": "group",
+    "celltype_col": "celltype",
+    "proportion_col": "proportion",
+    "group_levels": null,
+    "celltype_levels": null,
+    "stat_type": "percent",
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "flip": false,
+    "label": true,
+    "label_size": 3.5,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "position": "stack",
+    "xlab": null,
+    "ylab": null,
+    "legend_title": null,
+    "legend_position": "right",
+    "legend_direction": "vertical",
+    "merge_polar_endpoints": true,
+    "seed": 11,
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "sizing": {
+      "mode": "adaptive",
+      "base_in": 5.0,
+      "per_group_in": 0.6,
+      "per_celltype_in": 0.12,
+      "min_size_in": 6.0,
+      "min_height_in": 6.0,
+      "base_label_chars": 14,
+      "per_label_char_in": 0.1,
+      "aspect": 0.75,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

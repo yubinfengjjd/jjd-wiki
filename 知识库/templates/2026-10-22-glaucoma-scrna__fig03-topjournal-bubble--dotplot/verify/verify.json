@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-23T03:48:12.053328+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json": "f7669255683478ae13cc23173fff49b6b9cd2be74d2917a4707b249444ce4478",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/render.R": "216772e4ee99a9503285ff2fbb3113edd051205fc352f3a64e32b42178a868be",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/core.R": "5485e5f19aec4f2b3fb406f188feb8bacf06eb9047e7db1c82d4b36e96427020",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/panel.R": "0b2c659261967ec41e22cb05ce4e97737dd7e52476618940c34a74b1af2cd3e2",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-dotplot-long#columns": "bbe7a445c70ebcb40832df902f2b836877227c39d7e337dfbc6e360ba1d33c0d",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/example/estimated_data.csv": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/example/render-dotplot-long.csv": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/example/style.json": "a3f98060f51ab78bd9f3d6c18a52250290013116532899d7b57d451623acf9b9"
+  },
+  "outputs": {
+    "png": "41b77814283c47b87902cf9bec4bb3861c5bd923eb2a5ddf582d93aa566ac76b",
+    "pdf": "788030123a6c1c266200ec9684538722cda653bd9ef2cdf1883cc7ce9f12c7c8",
+    "svg": "1404c9f51449cfeee710cfa6756e64b0a613f894c45e93c1d39359f004c1e5db"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

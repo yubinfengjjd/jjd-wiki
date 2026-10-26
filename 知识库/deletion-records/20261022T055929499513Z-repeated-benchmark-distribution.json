@@ -1,0 +1,25 @@
+{
+  "title": "重复基准测试的分布比较（迁移笔记）",
+  "path": "methods/repeated-benchmark-distribution.md",
+  "revision": "d0cac3190af771cde30bc2a6584a6a1934db3e3cd44b4cf9c565a59203c960c6",
+  "asset_files": 0,
+  "affected": [
+    {
+      "path": "methods/regression-resampling-evaluation.md",
+      "title": "回归模型的重采样评估与折外预测",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "gallery_preserved": true,
+  "deleted_at": "20261022T055929499513Z",
+  "changed_pages": [
+    {
+      "path": "methods/regression-resampling-evaluation.md",
+      "before_sha256": "49bced1997df2741e714e71086391422763e67daf71b541057964d1c6569ec35",
+      "after_sha256": "2316260f3a2e6f9a17fcf5bdb1c48fda47363786e8850715032da9d0b3d9672f"
+    }
+  ],
+  "changed_layout_files": []
+}

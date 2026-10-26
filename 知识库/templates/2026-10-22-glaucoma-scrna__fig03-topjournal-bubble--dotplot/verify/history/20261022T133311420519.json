@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T06:10:51.686454+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json": "4fcf403c4fa50e7c524291bceb3e5abf3a3e2b0304fb70c83df1c69b6fd9174a",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/render.R": "8c5332de03b837fb84f47a60455d4434526609142703e64dff26afccef291732",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/core.R": "5485e5f19aec4f2b3fb406f188feb8bacf06eb9047e7db1c82d4b36e96427020",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/panel.R": "0b2c659261967ec41e22cb05ce4e97737dd7e52476618940c34a74b1af2cd3e2",
+    "interfaces/render-dotplot-long#columns": "d0299272c35dee94f79161b98b04faa4e5f7fc946a4d23f6d6ccabc5e7006f11",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/example/estimated_data.csv": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/example/render-dotplot-long.csv": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a"
+  },
+  "outputs": {
+    "png": "41b77814283c47b87902cf9bec4bb3861c5bd923eb2a5ddf582d93aa566ac76b",
+    "pdf": "50747708442e4cac3d2e97d5e02655fed58de2545155e45b14db4be5dd749e15",
+    "svg": "1210bc9552fb25306f3e194c3f43d7f4baa2734b5209042b436213a7c918e8df"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\x64\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

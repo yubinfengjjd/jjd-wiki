@@ -1,0 +1,16 @@
+feature,shap,percent
+Complexity_per_MW,0.1534,13.8
+Chi3v,0.1178,10.6
+SMR_VSA10,0.1171,10.5
+MR_per_MW,0.0835,7.5
+AromaticRing_Ratio,0.0811,7.3
+Ketone,0.0767,6.9
+Kappa3,0.0735,6.6
+MinPartialCharge,0.0729,6.6
+Charge_Span,0.0589,5.3
+MolLogP,0.0507,4.6
+SlogP_VSA2,0.0501,4.5
+BalabanJ,0.0492,4.4
+TPSA_x_LogP,0.0471,4.2
+MinAbsPartialCharge,0.0403,3.6
+FractionCSP3,0.0402,3.6

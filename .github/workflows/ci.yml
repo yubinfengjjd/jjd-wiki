@@ -1,0 +1,40 @@
+# research-wiki-vault CI：wiki.py 取自 dev 的 main（只读 deploy key）；GitHub 上没有 GPL 源码、画廊与维护记录。
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: bash
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository_owner }}/research-wiki-dev
+          ssh-key: ${{ secrets.DEV_DEPLOY_KEY }}
+          ref: main
+          path: 开发
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 安装依赖
+        run: pip install -r 开发/staged/research-wiki/requirements.lock.txt
+      - name: lint --ci
+        run: python -X utf8 开发/staged/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root 知识库 lint --ci
+      - name: 推送防泄漏检查
+        if: github.event_name == 'pull_request'
+        run: python -X utf8 开发/staged/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root 知识库 gh guard --range origin/${{ github.base_ref }}..HEAD
+      - name: 受保护字节核验
+        run: python -X utf8 开发/staged/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root 知识库 gh protect-baseline --check
+      - name: 部署门禁测试
+        run: python -X utf8 -m pytest -m "not local" tools/tests

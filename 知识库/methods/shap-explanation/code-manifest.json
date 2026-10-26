@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "variant": "original",
+      "path": "source/code_block_01.py",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/code_block_02.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/code_block_03.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/code_block_04.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "reusable",
+      "path": "code/shap_explain.py",
+      "source": "重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮未执行，不将存在代码当成验证通过。",
+        "evidence": []
+      }
+    }
+  ]
+}

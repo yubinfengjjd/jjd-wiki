@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T14:56:12.969114+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig12-venn--venn/spec.json": "3af634844b387498d7fceb33dfd52f43c7455082b3d8c9b36b8111a90a24f464",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/code/render.R": "3216273c5228e0c5b6a4b10fb168144e65a7e84cf170345a51a897491ab081e5",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/code/core.R": "5e3bdcd1a12d0441374b2335cddbbccf1140051f8dacd7fbca242f9ab955e9dd",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/code/panel.R": "ee6b4c5be744b002c870d5c79a0e2c78b3ccefec97fd5ebcf94b4fd09d09d2f7",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/code/scp_helpers.R": "3e210b55d1a3e5243bcc614fbc0a269bc49ad4fbead0d490ca19c11fb15495b3",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/code/scp_venn_native.R": "3c83298e77b72521d5fa6fcadbc9c784b0cc96dd51efe0755307dd40c0c0e760",
+    "interfaces/render-cell-membership#columns": "22f36309fd557d5a39453c667a0dec4e1fb4df61a690e110dbf29dfac60bdf85",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/example/render-cell-membership.csv": "746e99513269e7cdfc4ebb7adda6dda730562c23d92f57bcd1d1eda599847cdb",
+    "templates/2026-10-22-scp-example__fig12-venn--venn/example/style.json": "e67d612774a4092905bb7b9f23378ee6052d26f5325b95c1b325dd774a20d037"
+  },
+  "outputs": {
+    "png": "a5bf19955f2efc74b28c1133945c886cf8f8370ce179fb2582f530c6d96b6119",
+    "pdf": "eac5e3c30c4119c3955e836163c6861197ff8b169fa1a02ac0518ea7b6d500dc",
+    "svg": "c0b29fd1df3dd1474d6c76dd0a2c80294fb501d8d6cf60d6b1fb1180e3ddac5c"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

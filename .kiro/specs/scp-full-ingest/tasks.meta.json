@@ -1,0 +1,668 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 编写并运行接续核对器": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016774427
+      },
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016805707
+      }
+    ],
+    "1.3 未闭合项清单与可复用证据登记": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016774550
+      }
+    ],
+    "2.1 受控解析链（C2.1）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016774641
+      }
+    ],
+    "2.2 search 恢复（C2.2）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016774774
+      }
+    ],
+    "2.3 options 分类恢复（C2.3）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016774871
+      }
+    ],
+    "2.9 五入口新进程回归（C2.4，S1 退出判据）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775021
+      }
+    ],
+    "2.10 Runtime_Manifest 生成规则": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775121
+      }
+    ],
+    "3.1 收据判定纯函数（C3.1）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775214
+      }
+    ],
+    "3.3 哈希、命令与环境字段（C3.2）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775309
+      }
+    ],
+    "3.4 收据选择器（C3.3）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775420
+      }
+    ],
+    "3.6 Portability_Receipt 分离（C3.4）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775503
+      }
+    ],
+    "3.8 case 文件补比较声明": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775594
+      }
+    ],
+    "4.1 修正 CALLS 与页面正文（C4）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775709
+      }
+    ],
+    "4.2 示例审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775802
+      }
+    ],
+    "5. Checkpoint - 加载层与收据判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016775907
+      }
+    ],
+    "6.1 冻结记录器与漂移检查器（C5）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016776013
+      }
+    ],
+    "6.2 宣布 Code_Freeze": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016776517
+      }
+    ],
+    "7.1 重建 79 模块并整合 Wiki（只执行一次）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016776714
+      }
+    ],
+    "8.1 批次运行器": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016776917
+      }
+    ],
+    "8.2 全量算法收据重跑【后台】": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777297
+      }
+    ],
+    "8.3 独立迁移收据【后台】": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777415
+      }
+    ],
+    "8.4 Legacy_Replay 重跑【后台】": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777552
+      }
+    ],
+    "8.5 79 模块加载审计【后台】": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777653
+      }
+    ],
+    "8.6 收据指针与官方状态快照": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777763
+      }
+    ],
+    "9. Checkpoint - 收据重跑": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777864
+      }
+    ],
+    "10.1 去向表 v2 生成（C6）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016777959
+      }
+    ],
+    "10.2 去向表校验器": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778047
+      }
+    ],
+    "10.5 家族归属与对照表": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778133
+      }
+    ],
+    "11.1 生成并逐项判定结构清单（C7）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778273
+      }
+    ],
+    "11.2 结构清单校验器": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778375
+      }
+    ],
+    "12.1 原生材料生成框架（C8）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778497
+      }
+    ],
+    "12.2 画廊条目构建器（C9）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778594
+      }
+    ],
+    "12.3 原生对照工具": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778679
+      }
+    ],
+    "12.4 代签核与模板化执行器（C10）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778768
+      }
+    ],
+    "12.5 浏览器检查工具": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016778885
+      }
+    ],
+    "12.6 隔离彩排环境": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779009
+      }
+    ],
+    "13.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779151
+      }
+    ],
+    "13.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779250
+      }
+    ],
+    "13.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779374
+      }
+    ],
+    "13.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779482
+      }
+    ],
+    "13.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779641
+      }
+    ],
+    "14.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779768
+      }
+    ],
+    "14.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016779993
+      }
+    ],
+    "14.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016780141
+      }
+    ],
+    "14.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016780257
+      }
+    ],
+    "14.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016780377
+      }
+    ],
+    "15.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016780496
+      }
+    ],
+    "15.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016780649
+      }
+    ],
+    "15.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016787969
+      }
+    ],
+    "15.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788045
+      }
+    ],
+    "15.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788118
+      }
+    ],
+    "16.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788233
+      }
+    ],
+    "16.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788315
+      }
+    ],
+    "16.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788386
+      }
+    ],
+    "16.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788491
+      }
+    ],
+    "16.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788569
+      }
+    ],
+    "17.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788644
+      }
+    ],
+    "17.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788717
+      }
+    ],
+    "17.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788790
+      }
+    ],
+    "17.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788856
+      }
+    ],
+    "17.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788916
+      }
+    ],
+    "18.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016788984
+      }
+    ],
+    "18.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789042
+      }
+    ],
+    "18.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789100
+      }
+    ],
+    "18.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789189
+      }
+    ],
+    "18.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789245
+      }
+    ],
+    "19.1 原生材料": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789301
+      }
+    ],
+    "19.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789391
+      }
+    ],
+    "19.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789451
+      }
+    ],
+    "19.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789509
+      }
+    ],
+    "19.5 回放、原生对照与 ready 判定": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789561
+      }
+    ],
+    "20.1 原生材料与来源截图": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789617
+      }
+    ],
+    "20.2 画廊条目与 ingest": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789666
+      }
+    ],
+    "20.3 代签核与审计": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789715
+      }
+    ],
+    "20.4 scaffold-template 与模板代码": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789778
+      }
+    ],
+    "20.5 回放、对照与交互检查（不 mark-ready）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789839
+      }
+    ],
+    "21.1 合并批次状态": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789887
+      }
+    ],
+    "21.2 更新计数与彩排报告": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016789948
+      }
+    ],
+    "22. Checkpoint - 彩排结果": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790048
+      }
+    ],
+    "23.1 Baseline 快照与对比工具（C12）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790105
+      }
+    ],
+    "23.3 合入器与合入计划（C11、D5）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790153
+      }
+    ],
+    "23.5 合入前备份与 Baseline 快照（只写 A）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790216
+      }
+    ],
+    "23.6 【写正式库】增量 1–3：内容页与方法页": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790272
+      }
+    ],
+    "23.7 【写正式库】增量 4–5：V1–V4 可视化结构": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790324
+      }
+    ],
+    "23.8 【写正式库】增量 4–5：V5–V7 可视化结构": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790373
+      }
+    ],
+    "23.9 【写正式库】增量 4–5：V8 3D 结构（停在 draft）": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790422
+      }
+    ],
+    "23.10 【写正式库】合入后核对与必要回退": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790472
+      }
+    ],
+    "23.11 【条件】五处全局安装同步": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790532
+      }
+    ],
+    "24.1 【写正式库】check-entry、lint、pending、save": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790580
+      }
+    ],
+    "25.1 API 与 CLI 一致性核对": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790629
+      }
+    ],
+    "25.3 浏览器核验": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790684
+      }
+    ],
+    "26. Final checkpoint": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790742
+      }
+    ],
+    "27.1 交付报告": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790836
+      }
+    ],
+    "27.2 清理与收尾": [
+      {
+        "executionId": "c113eeb7-987c-4699-8d05-b2757c984e9e",
+        "chatSessionId": "sess_95e4ebdf-1497-49bc-ab3b-70215cc4ce26",
+        "timestamp": 1793016790905
+      }
+    ]
+  }
+}

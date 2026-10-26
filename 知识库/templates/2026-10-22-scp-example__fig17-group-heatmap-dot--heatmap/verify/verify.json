@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-25T13:37:17.973700+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/spec.json": "5f54594c5c393c27e62c09b03958564a5533ef72fb58fb6a191d6ee14fd375d6",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/render.R": "7b4da19161e6d2c93316131c46f5ef2c4abf869019ebc96c6ec637039f0bcff8",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/core.R": "12ced853a5c6ee4f053b47f743bc3507de2ebdbc9b6d96b7ee8bb8fb570f4b49",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/panel.R": "21c1de7db8afea2add157cb7d3734f28213a46cc6e88a718f8267b6b410d7a04",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/scp_group_heatmap_dot_native.R": "53de1e26534fded1590c30413c790f6ef9882c45825f636e63c82ea79a4495a8",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/scp_helpers.R": "8e941e41530ab8b6aa8351d952917af26a04becac8195d071165ffc02df751b6",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-group-heatmap#columns": "fb0dccc6d77454f55d1f29cda83aa005fae4063b2cc88a4055994f4e90259ffe",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/example/render-group-heatmap.csv": "6348aa04f6b5bf8eb6cda38a7e7ed9a8a7f5c0cc7c54a6e2e7cf1ed22e82fc5d",
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/example/style.json": "4b19a5c686061561c7c6232014566ca8f7c20bd7f8ce79fe836a29c5a09522cc"
+  },
+  "outputs": {
+    "png": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+    "pdf": "24d784db1380b43b94cd52c7ec14eea2a54aa3f4cc75c4fa2d0a4e236f24d734",
+    "svg": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

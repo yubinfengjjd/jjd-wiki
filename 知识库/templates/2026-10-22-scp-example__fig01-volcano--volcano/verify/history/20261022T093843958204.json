@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T08:55:41.061613+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/spec.json": "29d00f7af4ae763b80a9d6ddc5fae010f7dc9ca2ef2977205a6cf73d18023bd3",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/render.R": "4e5012ad67b178b1b58d345e1f18fcfcfc18a8f11ba2ebc9354608f3a95a8ebf",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/core.R": "52dce73129d82aed564e21433cb10b09fb83a318bb909e150a9bd78ebc41c3af",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/panel.R": "fecda34dd522c69a049f5b2ba2598311f0ba5adc469532a9f67a9a57f081783b",
+    "interfaces/render-de-results#columns": "434494bc418309e4fbda1ccea8123b7d88eeb29fa3a1593d0a6bf9dce3f01f5f",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/example/render-de-results.csv": "fbeeee47b654e9bc7b039b4360840c109e8f09d4e45e3efa7f7a12acde613c90"
+  },
+  "outputs": {
+    "png": "962bf668dbfedfb501bad075acc1eca5527cf979d00c2a9654c0074c2448259a",
+    "pdf": "ce6760286f3c11baad6e99731e2f2dc02e7437170d8b5665c35d7ff54e25e0b7",
+    "svg": "b832fef6f0410870c76f8fd8ecea8e765dbc7027515ab6a1723f892e92ae1a1f"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

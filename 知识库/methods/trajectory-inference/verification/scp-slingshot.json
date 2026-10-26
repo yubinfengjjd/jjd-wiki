@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-slingshot",
+  "state": "passed",
+  "scope": "实际调用 SCP RunSlingshot：pancreas_sub 80 细胞，CellType 分组，UMAP 1:2；比较 pseudotime 与 BranchID。",
+  "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_R.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "checks": [
+    "Slingshot returns lineage pseudotime and branch labels",
+    "Slingshot wrapper matches the preserved upstream call",
+    "Portability: Slingshot runs from copied code and copied bundle"
+  ],
+  "environment": {
+    "language": "R",
+    "R": "4.5.0",
+    "Seurat": "5.6.0",
+    "SeuratObject": "5.4.0",
+    "slingshot": "2.16.0",
+    "clusterProfiler": "4.16.0",
+    "DOSE": "4.2.0",
+    "mgcv": "1.9.1",
+    "BiocParallel": "1.42.0",
+    "OS": "Windows 11"
+  },
+  "files": {
+    "code/analysis.R": "4d7986bad6cbc5158df306abb49759bbca1b69562a7bb0c17f31ff563bcbeef3"
+  },
+  "portability": {
+    "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_portability.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda E:/research-wiki-env/tmp/rw-portability-20261023",
+    "scope": "复制 code/ 与 SCP-local 到 E:/research-wiki-env/tmp 下的异目录，用绝对 bundle/数据路径重跑代表调用；不使用知识库工作目录。",
+    "checks": [
+      "Slingshot runs from copied code and copied bundle"
+    ]
+  }
+}

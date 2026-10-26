@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T14:08:37.639974+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/spec.json": "0005a64c35f6e40053dbb25bbca9dfc46baa8a1b251fd07e7a606580d65ab504",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/render.R": "c39eceb2dd863642a1a5e6099acf60f096d348b4ee958c1165bcbeac74c66467",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/core.R": "8481c5ed54f5da9dfea568a18839815f8d2fb0f23446bf782d64d6c115094fcc",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/panel.R": "baab431b34919f28d4cbff05570879d3208f6bbdb48cc7a86782a43c750b501e",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/scp_group_heatmap_native.R": "eaefd5d94a4be994aaf347ccd973d40bebe586e3d398b5ce9074485fb5314fe4",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-group-heatmap#columns": "d61f004067f088567295c94526508dca88caf684d50a611faf2440814fc96d57",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/example/render-group-heatmap.csv": "8a180c4b83937a5d6d94f5590a5dfb3bee567caf630974f8344af46709c466e8",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/example/style.json": "11a18a568eaaaefe933eda9a2394d53dcb0f8d74b54a0dc3c9abee747eed047b"
+  },
+  "outputs": {
+    "png": "00b0698d08ebdd6b8840b500febaf9652d9881ccb857ed69eb0b5fdf1ec314b4",
+    "pdf": "e0d0e3104fa3cb432f79ff98e6076e7c6fd7872ed26507ff5984792fc2e06858",
+    "svg": "14ed588ab02e981629a532909cb1e4ef5a71c1e59ff330904fc42f1e2baf5d8c"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

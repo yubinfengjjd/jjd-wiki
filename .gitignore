@@ -1,0 +1,24 @@
+# 独立工具仓库：自行持有 .git，外层不跟踪
+/开发/
+# 不推送：受版权的论文图与本地维护证据（Issue 只记相对路径与哈希）
+/画廊/
+/维护记录/
+# 内嵌本机绝对路径或本机生成的产物
+*.lnk
+Rplots.pdf
+# 课题数据留在课题目录
+**/wiki-use/_project/
+# 运行噪音
+.codegraph/
+.omo/
+.launcher.log
+.pytest_cache/
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store
+# 维护记录里的回放夹具：体积大、可再生，只留审计结论
+维护记录/*/fixtures/
+维护记录/**/migration-fixture/
+# Obsidian 工作区状态（随窗口布局频繁变动）
+research wiki/.obsidian/workspace*

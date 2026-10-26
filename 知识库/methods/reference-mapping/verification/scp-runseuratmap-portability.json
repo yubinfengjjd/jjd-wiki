@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-runseuratmap",
+  "state": "not_run",
+  "scope": "Argument 'dim.' must be an integer vector of length two",
+  "closure_hash": "6dc64d1569f60e9ca4a8914f2d756c8d4bbe47a41ca99b5186200d847f1c3028",
+  "files": {
+    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/reference_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" reference-mapping \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-mapping\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/reference-mapping/result.rds\"",
+  "case": {
+    "label": "RunSeuratMap projection",
+    "parameters": {
+      "parameters": {
+        "ref_pca": "PCA",
+        "ref_umap": "UMAP",
+        "ref_group": "CellType",
+        "ref_dims": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "projection_method": "knn",
+        "k": 10,
+        "distance_metric": "cosine",
+        "vote_fun": "mean"
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-mapping\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "26fb9ee03f290cd8d19008af511f7f51c4b424ad3def35631d460ac22fac2e22",
+  "output_sha256": "fa7fb8150c635e0cf6d20f1a9a965170304e3b14879d43df00ec553e1dddcd03",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:01:52 UTC",
+  "not_run_reason": "Argument 'dim.' must be an integer vector of length two"
+}

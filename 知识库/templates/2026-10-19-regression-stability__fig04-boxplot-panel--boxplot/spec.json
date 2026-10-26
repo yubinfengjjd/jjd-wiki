@@ -1,0 +1,69 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "tables": {
+    "points": {
+      "interface": "render-category-points",
+      "description": "每条数值和显式抖动，不在绘图内生成"
+    },
+    "summaries": {
+      "interface": "render-box-summaries",
+      "description": "独立提供的预计算摘要；真实数据必须与点同源"
+    }
+  },
+  "style": {
+    "font_family": "Arial",
+    "dpi": 300,
+    "sizing": {
+      "mode": "adaptive",
+      "profile": "categorical_x",
+      "table": "points",
+      "x": "category",
+      "y": null,
+      "item_width_in": 0.8,
+      "item_height_in": 0.32,
+      "plot_width_in": 5.4,
+      "plot_height_in": 4.4,
+      "margins_in": [
+        0.9,
+        0.25,
+        0.85,
+        0.55
+      ],
+      "min_width_in": 3.2,
+      "min_height_in": 2.8,
+      "max_width_in": null,
+      "max_height_in": null,
+      "width_in": null,
+      "height_in": null,
+      "label_fontsize": 11,
+      "label_rotation": 45,
+      "label_gap_in": 0.12
+    },
+    "columns": {},
+    "limits": null,
+    "order": null,
+    "palette": null,
+    "ticks": null,
+    "tick_format": null,
+    "title": "",
+    "ylabel": "Value",
+    "title_size": 16,
+    "label_size": 13,
+    "highlight_first": false,
+    "point_size": 45,
+    "mean_size": 150,
+    "box_width": 0.52,
+    "canvas_px": [
+      872,
+      777
+    ],
+    "bbox": [
+      134,
+      63,
+      856,
+      638
+    ]
+  },
+  "panel": "code/panel.py"
+}

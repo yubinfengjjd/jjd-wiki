@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-singler",
+  "state": "not_run",
+  "scope": "SCP RunSingleR 分支；本机 R 库无 SingleR。",
+  "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_R.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "checks": [
+    "Observed: Missing R dependency: SingleR; automatic installation is disabled"
+  ],
+  "environment": {
+    "language": "R",
+    "R": "4.5.0",
+    "Seurat": "5.6.0",
+    "SeuratObject": "5.4.0",
+    "slingshot": "2.16.0",
+    "clusterProfiler": "4.16.0",
+    "DOSE": "4.2.0",
+    "mgcv": "1.9.1",
+    "BiocParallel": "1.42.0",
+    "OS": "Windows 11"
+  },
+  "files": {
+    "code/analysis.R": "160c2e0ba76e9a3b3069d5324bad3ea99bf27ac9a65bbabc5b8f375cb4232d79"
+  },
+  "observed_error": "Missing R dependency: SingleR; automatic installation is disabled"
+}

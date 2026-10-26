@@ -1,0 +1,86 @@
+{
+  "files": [
+    {
+      "variant": "original",
+      "path": "source/block-01.python.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/block-02.python.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/block-03.python.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/block-04.makefile.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/block-05.javascript.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/block-06.javascript.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "original",
+      "path": "source/block-07.javascript.txt",
+      "source": "只读归档的来源示例/片段；不是目标图完整原实现。",
+      "verification": {
+        "state": "not_run",
+        "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+        "evidence": []
+      }
+    },
+    {
+      "variant": "reusable",
+      "path": "code/summarize_predictions.py",
+      "source": "重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+      "verification": {
+        "state": "example",
+        "scope": "历史合成预测表指标/校验检查记录；不含模型训练或真实课题分析→出图联调。",
+        "evidence": [
+          "methods/regression-resampling-evaluation/verification.md"
+        ]
+      }
+    }
+  ]
+}

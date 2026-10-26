@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T09:38:45.927732+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/spec.json": "d741c1b1259d10c29230d57e30e10174eb56c1c8b24ea81a33b364cc20cdd636",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/render.R": "caea3253a82c1269f2a88cce3d0f64369b3f5bc56b649f401ac71e7ac1b0983c",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/core.R": "7350448637b768e1c8d0d6a09eb275818f654339c4f34900eaa8dc817e7d1f1f",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/panel.R": "fa57fabc8b2437109e86360fa86ac7e175858d1e736989b2bb40e640855ac0bd",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/code/scp_volcano_native.R": "9002eee52453ea7eedb5586a91f0721521283aca62a3b1ef3e2a733c339df064",
+    "interfaces/render-de-results#columns": "434494bc418309e4fbda1ccea8123b7d88eeb29fa3a1593d0a6bf9dce3f01f5f",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/example/render-de-results.csv": "fbeeee47b654e9bc7b039b4360840c109e8f09d4e45e3efa7f7a12acde613c90",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano/example/style.json": "d4af08420c628622b6bf8f04ea1e49f3fc1774c178e10e7a2808050c4c2ee7be"
+  },
+  "outputs": {
+    "png": "2b22c692995f014537c364282d5e3dcb7be2030780a8612b625abcb0f12308dd",
+    "pdf": "655e216e5f318afa313340fed7a594be72016d8f4449443c445f0c143537327c",
+    "svg": "3abbc513a886d5aa15cf083b8b6f5c2c091a27640b60b43994b5aaccc3d63452"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

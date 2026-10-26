@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-22T13:45:32.227906+00:00",
+  "page": "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md",
+  "snapshot": "5d44bcddf32fe49846fd7dfcb09c1c6d44fc11e0943d552a622827c3736d6b18",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

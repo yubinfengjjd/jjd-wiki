@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "gene-set-enrichment",
+  "implementations": [
+    {
+      "id": "scp-enrichment",
+      "entry": "code/analysis.R",
+      "entry_function": "run_gene_set_enrichment",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/enrichment_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "clusterProfiler",
+          "BiocParallel",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "org.Hs.eg.db": "built-in human database",
+          "org.Mm.eg.db": "built-in mouse database",
+          "GO.db": "GO database",
+          "msigdbr": "MSigDB database",
+          "gson": "gson database",
+          "AnnotationDbi": "database/ID conversion branch",
+          "biomaRt": "database/ID conversion branch",
+          "R.cache": "database cache",
+          "reshape2": "database branch",
+          "data.table": "database branch",
+          "idconvert": "IDtype -> result_IDtype conversion branch"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunEnrichment",
+          "R/SCP-analysis.R:PrepareDB",
+          "R/SCP-analysis.R:GeneConvert"
+        ],
+        "modifications": [
+          "check_R replaced with a fail-only guard",
+          "network/database branches require the corresponding local packages; no installation"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-enrichment-portability.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "differential-expression",
+  "implementations": [
+    {
+      "id": "scp-detest",
+      "entry": "code/analysis.R",
+      "entry_function": "run_differential_expression",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/de_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "BiocParallel",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "limma": "limma test branches",
+          "edgeR": "edgeR test branches",
+          "DESeq2": "DESeq2 test branches"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunDEtest"
+        ],
+        "modifications": [
+          "SeuratObject >= 5 Assays/GetAssayData compatibility shims"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-detest-portability.json"
+      }
+    }
+  ]
+}

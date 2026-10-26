@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-runseuratmap",
+  "state": "not_run",
+  "scope": "Argument 'dim.' must be an integer vector of length two",
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" reference-mapping \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-mapping\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/reference-mapping/result.rds\"",
+  "case": {
+    "label": "RunSeuratMap projection",
+    "parameters": {
+      "parameters": {
+        "ref_pca": "PCA",
+        "ref_umap": "UMAP",
+        "ref_group": "CellType",
+        "ref_dims": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "projection_method": "knn",
+        "k": 10,
+        "distance_metric": "cosine",
+        "vote_fun": "mean"
+      }
+    }
+  },
+  "checks": [
+    "Observed: Argument 'dim.' must be an integer vector of length two"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "files": {
+    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066",
+    "code/transfer.R": "e08b3f8db1b24719c486a26f026df417689c3f0235f80812f42029c650e21786"
+  },
+  "executed_files": {
+    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066"
+  },
+  "not_run_reason": "Argument 'dim.' must be an integer vector of length two"
+}

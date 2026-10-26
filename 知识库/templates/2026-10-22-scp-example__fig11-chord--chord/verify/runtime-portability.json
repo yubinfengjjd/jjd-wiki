@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig11-chord--chord",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "4a24fc53b14f5a3240ca5cb180d0b25ea8786fcf274cc42aecb9b3d240eb1d45",
+  "files": {
+    "code/core.R": "f5386c52a3f80cba303c99a80d364f0917e5b09df29a0ba812a9bca5ce5853e6",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "98a111988068d1d2e9a65057f2cbe6217d48e66dfbb463ba92a2e24428fdf99b",
+    "code/render.R": "4098ea066d6854b7da0dcd77caa4c0ba0677d559932392cf4c97d4d109937d3b",
+    "code/scp_chord_native.R": "743a9442832a83de33eadf23aa57cc8a91966dc013fba7c4f3d09113b41dbbe3",
+    "code/scp_helpers.R": "f4a9e47280d2a1bd8704a619bc26434784bdda0d67365c3c3c4790e13b28bca7"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_chord_native.R",
+    "code/scp_helpers.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\code",
+  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example",
+  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
+    "working_directory": "E:/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+    "figure.pdf": "101fac5cf6e26e1fecd5f3a5e8d1c4bba6a9a76b147984342efb4bd009ca8505",
+    "figure.svg": "291f21f08bccc58c09ac8f51b1aba026e4b99c2effa97c37c3052c0f46e2d899",
+    "sizing.json": "95e34e41b6db83981dcdf44e2378fce0dc97b45a5f9b37a59cf55152de85c457"
+  },
+  "previous_outputs": {
+    "png": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+    "pdf": "234ea5686293788837b7aec396e19a2fdfc0296d02fdbad89d1bacf1260382d7",
+    "svg": "291f21f08bccc58c09ac8f51b1aba026e4b99c2effa97c37c3052c0f46e2d899"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "started_at": "2026-10-23T15:57:33.328422+00:00",
+  "executed_at": "2026-10-23T15:57:34.494685+00:00"
+}

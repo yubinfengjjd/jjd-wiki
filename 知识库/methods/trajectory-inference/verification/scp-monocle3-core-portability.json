@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-monocle3-core",
+  "state": "not_run",
+  "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+  "closure_hash": "e003ceb2fcf135191e4ae8b3d611db21f9e49e0d49d31d39d271ca5439bbd80f",
+  "files": {
+    "code/monocle3_core.R": "fcf3b21d6ecc9e87a3ff48553c2b2fdf600ab84de974ddbabb265cd12748455e"
+  },
+  "copied_files": [
+    "code/monocle3_core.R"
+  ],
+  "executed_files": {
+    "code/monocle3_core.R": "fcf3b21d6ecc9e87a3ff48553c2b2fdf600ab84de974ddbabb265cd12748455e"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" monocle3-core \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3-core\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3-core/result.rds\"",
+  "case": {
+    "label": "Monocle3 core",
+    "parameters": {
+      "reduced_dim": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "use_partition": true,
+      "root_cells": "c1",
+      "seed": 11
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3-core\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "5c3629f9db753f28a23e71cbc5a5ad67fecb3d31543873b794e8c0668f0fc2b2",
+  "output_sha256": "c876025ea79be4b6dde497763fde134d5451ec5bd3eef9e1c557b5c183c51875",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:02:12 UTC",
+  "not_run_reason": "Missing R dependency: monocle3; automatic installation is disabled"
+}

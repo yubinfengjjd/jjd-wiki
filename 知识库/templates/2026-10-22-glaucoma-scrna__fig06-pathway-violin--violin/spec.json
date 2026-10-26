@@ -1,0 +1,47 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "values": {
+      "interface": "render-grouped-values",
+      "description": "细胞级或样本级分组数值"
+    },
+    "summaries": {
+      "interface": "render-group-summaries",
+      "description": "预计算 mean/SD/p 标签和标注位置；模板不重算检验"
+    }
+  },
+  "style": {
+    "font_family": "sans",
+    "dpi": 192,
+    "width_in": 12,
+    "height_in": 6.5,
+    "seed": 11,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 5.0,
+      "per_x_in": 0.75,
+      "base_height_in": 6.5,
+      "per_y_in": 0,
+      "min_width_in": 6,
+      "min_height_in": 5,
+      "base_label_chars": 10,
+      "per_label_char_in": 0.08,
+      "aspect": 0.55,
+      "max_width_in": null,
+      "max_height_in": null
+    },
+    "celltype_levels": [
+      "Muller_Glia", "Rod_Photoreceptor", "Bipolar", "Cone_Photoreceptor",
+      "RGC_like", "RPE", "Vascular_Pericyte", "Amacrine", "Amacrine_Horizontal_like"
+    ],
+    "group_levels": ["Control", "Glaucoma"],
+    "color_scheme": ["#FF7F0E", "#1F77B4"],
+    "title": "Complement Pathway Score Comparison",
+    "ylab": "Pathway Score",
+    "dodge_width": 0.8,
+    "violin_width": 0.7,
+    "box_width": 0.18,
+    "jitter_width": 0.18
+  }
+}

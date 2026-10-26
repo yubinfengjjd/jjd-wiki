@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig01-volcano--volcano",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "56ece24eb9e026bac369ebbb4e539488619818ec0145f46bc4b15231afcf85c6",
+  "files": {
+    "code/core.R": "7350448637b768e1c8d0d6a09eb275818f654339c4f34900eaa8dc817e7d1f1f",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "0f60402fa7ddee2be166527be99de0988800ed8a948f5ae7c946d3f0692121de",
+    "code/render.R": "20828ca4ed49389ac61dffa8d472e7665b8e74f6024b61e93ba9db4ceb52f40b",
+    "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+    "code/scp_volcano_native.R": "9002eee52453ea7eedb5586a91f0721521283aca62a3b1ef3e2a733c339df064"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_helpers.R",
+    "code/scp_volcano_native.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\code",
+  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example",
+  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
+    "working_directory": "E:/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "2b22c692995f014537c364282d5e3dcb7be2030780a8612b625abcb0f12308dd",
+    "figure.pdf": "ff9e6e0d35ad7f04ebb25a7e691f23b5ecc54b27f2e86887c01f62d1e720c883",
+    "figure.svg": "d8abdbaf1d3035c116843eb33aeb969958f3c002f27d13206403f0ad9864f670",
+    "sizing.json": "0e1b2daf20d4e7bd9f237b3aad63b10240f3bb00e16e2464bc58ce08a9be8dda"
+  },
+  "previous_outputs": {
+    "png": "2b22c692995f014537c364282d5e3dcb7be2030780a8612b625abcb0f12308dd",
+    "pdf": "a62a0a7874185658b066efed5e5f72fbba5e60e75235b199780153880ce41b9a",
+    "svg": "3abbc513a886d5aa15cf083b8b6f5c2c091a27640b60b43994b5aaccc3d63452"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": false
+  },
+  "started_at": "2026-10-23T15:57:04.721527+00:00",
+  "executed_at": "2026-10-23T15:57:12.242787+00:00"
+}

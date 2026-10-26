@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "rna-velocity",
+  "implementations": [
+    {
+      "id": "scp-scvelo",
+      "entry": "code/analysis.R",
+      "entry_function": "run_rna_velocity",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/velocity_native.R",
+        "code/data/palette_list.rda"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by optional plot helpers"
+        }
+      ],
+      "required_packages": {
+        "R": [
+          "reticulate",
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang"
+        ],
+        "Python": [
+          "scanpy",
+          "numpy",
+          "scvelo"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "ggplot2": "plot branch",
+          "patchwork": "plot branch",
+          "ggrepel": "plot branch",
+          "ggnewscale": "plot branch",
+          "circlize": "plot branch",
+          "gtable": "plot branch",
+          "plotly": "plot branch",
+          "dplyr": "plot branch",
+          "reshape2": "plot branch",
+          "scales": "plot branch",
+          "BiocParallel": "plot branch",
+          "grid": "plot branch"
+        },
+        "Python": {
+          "magic-impute": "magic imputation"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunSCVELO"
+        ],
+        "modifications": [
+          "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+          "check_R/check_Python replaced with fail-only guards"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-scvelo-portability.json"
+      }
+    }
+  ]
+}

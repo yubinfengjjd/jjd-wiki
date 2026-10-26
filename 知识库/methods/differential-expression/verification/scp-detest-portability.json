@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-detest",
+  "state": "passed",
+  "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+  "closure_hash": "e6f951350c01e9e28f86e7021254cb66154ae82664f2ba4d44b37d9f3b61cb67",
+  "files": {
+    "code/analysis.R": "d551f051a41c74c3f74d57df4c631c75f39d4f9be218912eb9d709d0218f4bf4",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/de_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "d551f051a41c74c3f74d57df4c631c75f39d4f9be218912eb9d709d0218f4bf4",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" differential-expression \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\differential-expression\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result.rds\"",
+  "case": {
+    "label": "Wilcoxon DE",
+    "parameters": {
+      "parameters": {
+        "group_by": "CellType",
+        "group1": "Ductal",
+        "group2": "Endocrine",
+        "test.use": "wilcox",
+        "only.pos": false,
+        "fc.threshold": 1,
+        "min.pct": 0.1,
+        "p.adjust.method": "bonferroni",
+        "slot": "data",
+        "assay": "RNA",
+        "verbose": false,
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\differential-expression\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "ee431d0e6ca14bf317da0ba2a1da7463fe35ae8e2e4323ffb4122a6121212c0f",
+  "output_sha256": "aac46a9f0df9fb57859865bf4252dc22cc057ec3af6e22b0bed1e8d4cac18153",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)",
+    "Actual call returned a result"
+  ],
+  "executed_at": "2026-10-23 16:01:23 UTC"
+}

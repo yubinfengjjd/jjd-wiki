@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "dynamic-feature-analysis",
+  "implementations": [
+    {
+      "id": "scp-dynamicfeatures",
+      "entry": "code/analysis.R",
+      "entry_function": "run_dynamic_feature_analysis",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/dynamic_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "BiocParallel",
+          "mgcv",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunDynamicFeatures"
+        ],
+        "modifications": [
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData compatibility shim"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-dynamicfeatures-portability.json"
+      }
+    }
+  ]
+}

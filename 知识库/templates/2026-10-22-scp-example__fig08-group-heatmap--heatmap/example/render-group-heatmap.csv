@@ -1,0 +1,170 @@
+"matrix","feature","group","value","percent","matrix_order","group_order","feature_order"
+"CellType","Sox9","Ductal",1.33621443913809,0.9414226,1,1,1
+"CellType","Sox9","Ngn3 low EP",0.807197463534249,0.8518519,1,2,1
+"CellType","Sox9","Ngn3 high EP",-0.599263708807144,0.327381,1,3,1
+"CellType","Sox9","Pre-endocrine",-0.695754333761884,0.2866667,1,4,1
+"CellType","Sox9","Endocrine",-0.848393860103317,0.1546961,1,5,1
+"CellType","Anxa2","Ductal",1.00838664926556,0.9748954,1,1,2
+"CellType","Anxa2","Ngn3 low EP",1.17422061207228,0.96296296,1,2,2
+"CellType","Anxa2","Ngn3 high EP",-0.623326025195092,0.21428571,1,3,2
+"CellType","Anxa2","Pre-endocrine",-0.788242925571057,0.03333333,1,4,2
+"CellType","Anxa2","Endocrine",-0.77103831057169,0.04143646,1,5,2
+"CellType","Bicc1","Ductal",1.1064008499303,0.9748954,1,1,3
+"CellType","Bicc1","Ngn3 low EP",1.0843641548794,0.962963,1,2,3
+"CellType","Bicc1","Ngn3 high EP",-0.725939463642953,0.1547619,1,3,3
+"CellType","Bicc1","Pre-endocrine",-0.722756141131063,0.1666667,1,4,3
+"CellType","Bicc1","Endocrine",-0.742069400035682,0.1574586,1,5,3
+"CellType","Neurog3","Ductal",-0.702762721820197,0.0460251,1,1,4
+"CellType","Neurog3","Ngn3 low EP",-0.391609095412916,0.962963,1,2,4
+"CellType","Neurog3","Ngn3 high EP",1.71754805183944,0.9880952,1,3,4
+"CellType","Neurog3","Pre-endocrine",0.0113834396049035,0.6333333,1,4,4
+"CellType","Neurog3","Endocrine",-0.634559674211229,0.2154696,1,5,4
+"CellType","Hes6","Ductal",-0.754434834740577,0.5355649,1,1,5
+"CellType","Hes6","Ngn3 low EP",-0.544471021724192,0.617284,1,2,5
+"CellType","Hes6","Ngn3 high EP",1.69055358411015,0.9464286,1,3,5
+"CellType","Hes6","Pre-endocrine",0.120177714179698,0.7466667,1,4,5
+"CellType","Hes6","Endocrine",-0.511825441825079,0.640884,1,5,5
+"CellType","Fev","Ductal",-0.575261906902671,0.0292887,1,1,6
+"CellType","Fev","Ngn3 low EP",-0.57501881884414,0.03703704,1,2,6
+"CellType","Fev","Ngn3 high EP",-0.479813218468577,0.0952381,1,3,6
+"CellType","Fev","Pre-endocrine",1.75833993782428,0.90666667,1,4,6
+"CellType","Fev","Endocrine",-0.128245993608891,0.66574586,1,5,6
+"CellType","Neurod1","Ductal",-0.863264621933811,0,1,1,7
+"CellType","Neurod1","Ngn3 low EP",-0.863264621933811,0,1,2,7
+"CellType","Neurod1","Ngn3 high EP",-0.080292250082675,0.1130952,1,3,7
+"CellType","Neurod1","Pre-endocrine",1.56325905685827,0.28,1,4,7
+"CellType","Neurod1","Endocrine",0.243562437092028,0.1491713,1,5,7
+"CellType","Rbp4","Ductal",-0.574707518825675,0.4937238,1,1,8
+"CellType","Rbp4","Ngn3 low EP",-0.584586012145152,0.382716,1,2,8
+"CellType","Rbp4","Ngn3 high EP",-0.598014229260914,0.2261905,1,3,8
+"CellType","Rbp4","Pre-endocrine",0.0341764790785218,0.72,1,4,8
+"CellType","Rbp4","Endocrine",1.72313128115322,0.9834254,1,5,8
+"CellType","Pyy","Ductal",-0.556017593495323,0.460251,1,1,9
+"CellType","Pyy","Ngn3 low EP",-0.551584935787684,0.4197531,1,2,9
+"CellType","Pyy","Ngn3 high EP",-0.555435442185085,0.4166667,1,3,9
+"CellType","Pyy","Pre-endocrine",-0.0891444480538048,0.5933333,1,4,9
+"CellType","Pyy","Endocrine",1.7521824195219,0.9585635,1,5,9
+"CellType","Ins1","Ductal",-0.450838774175261,0.1464435,1,1,10
+"CellType","Ins1","Ngn3 low EP",-0.449427187050419,0.1604938,1,2,10
+"CellType","Ins1","Ngn3 high EP",-0.446043823009657,0.1785714,1,3,10
+"CellType","Ins1","Pre-endocrine",-0.442535363650286,0.1333333,1,4,10
+"CellType","Ins1","Endocrine",1.78884514788562,0.3895028,1,5,10
+"CellType","Gcg","Ductal",-0.448126227821633,0.1589958,1,1,11
+"CellType","Gcg","Ngn3 low EP",-0.446628620967219,0.1975309,1,2,11
+"CellType","Gcg","Ngn3 high EP",-0.447207544202006,0.1190476,1,3,11
+"CellType","Gcg","Pre-endocrine",-0.446891703073035,0.12,1,4,11
+"CellType","Gcg","Endocrine",1.78885409606389,0.3729282,1,5,11
+"CellType","Sst","Ductal",-0.473455706185366,0.07112971,1,1,12
+"CellType","Sst","Ngn3 low EP",-0.475075579949075,0.04938272,1,2,12
+"CellType","Sst","Ngn3 high EP",-0.47670990206612,0.0297619,1,3,12
+"CellType","Sst","Pre-endocrine",-0.361445124237522,0.02666667,1,4,12
+"CellType","Sst","Endocrine",1.78668631243808,0.09668508,1,5,12
+"CellType","Ghrl","Ductal",-0.450693732319891,0.1799163,1,1,13
+"CellType","Ghrl","Ngn3 low EP",-0.452223401888543,0.1481481,1,2,13
+"CellType","Ghrl","Ngn3 high EP",-0.455573784415598,0.1011905,1,3,13
+"CellType","Ghrl","Pre-endocrine",-0.430275359193249,0.1266667,1,4,13
+"CellType","Ghrl","Endocrine",1.78876627781728,0.2596685,1,5,13
+"SubCellType","Sox9","Ductal",1.88291680462682,0.9414226,2,1,1
+"SubCellType","Sox9","Ngn3 low EP",1.26550180373533,0.8518519,2,2,1
+"SubCellType","Sox9","Ngn3 high EP",-0.375977139324697,0.327381,2,3,1
+"SubCellType","Sox9","Pre-endocrine",-0.488591217964517,0.2866667,2,4,1
+"SubCellType","Sox9","Beta",-0.662956685379617,0.1581921,2,5,1
+"SubCellType","Sox9","Alpha",-0.730036467832826,0.1037037,2,6,1
+"SubCellType","Sox9","Delta",-0.217644321458119,0.4444444,2,7,1
+"SubCellType","Sox9","Epsilon",-0.673212776402375,0.1875,2,8,1
+"SubCellType","Anxa2","Ductal",1.5137432112069,0.9748954,2,1,2
+"SubCellType","Anxa2","Ngn3 low EP",1.70899509524633,0.96296296,2,2,2
+"SubCellType","Anxa2","Ngn3 high EP",-0.4074252183916,0.21428571,2,3,2
+"SubCellType","Anxa2","Pre-endocrine",-0.60159735878652,0.03333333,2,4,2
+"SubCellType","Anxa2","Beta",-0.618186121733472,0.01694915,2,5,2
+"SubCellType","Anxa2","Alpha",-0.570595914361376,0.05925926,2,6,2
+"SubCellType","Anxa2","Delta",-0.628708508593966,0,2,7,2
+"SubCellType","Anxa2","Epsilon",-0.396225184586293,0.125,2,8,2
+"SubCellType","Bicc1","Ductal",1.63130973726106,0.9748954,2,1,3
+"SubCellType","Bicc1","Ngn3 low EP",1.60552333638982,0.962963,2,2,3
+"SubCellType","Bicc1","Ngn3 high EP",-0.512818919945708,0.1547619,2,3,3
+"SubCellType","Bicc1","Pre-endocrine",-0.509093960786863,0.1666667,2,4,3
+"SubCellType","Bicc1","Beta",-0.570772625658077,0.1242938,2,5,3
+"SubCellType","Bicc1","Alpha",-0.458774030750372,0.2148148,2,6,3
+"SubCellType","Bicc1","Delta",-0.601440048798416,0.1111111,2,7,3
+"SubCellType","Bicc1","Epsilon",-0.583933487711437,0.125,2,8,3
+"SubCellType","Neurog3","Ductal",-0.59963726701222,0.0460251,2,1,4
+"SubCellType","Neurog3","Ngn3 low EP",-0.219387613007825,0.962963,2,2,4
+"SubCellType","Neurog3","Ngn3 high EP",2.35813746598266,0.9880952,2,3,4
+"SubCellType","Neurog3","Pre-endocrine",0.273095067577427,0.6333333,2,4,4
+"SubCellType","Neurog3","Beta",-0.535046256663962,0.2259887,2,5,4
+"SubCellType","Neurog3","Alpha",-0.575352184732623,0.1481481,2,6,4
+"SubCellType","Neurog3","Delta",-0.566935021165477,0.2222222,2,7,4
+"SubCellType","Neurog3","Epsilon",-0.134874190977985,0.4375,2,8,4
+"SubCellType","Hes6","Ductal",-0.709331130076466,0.5355649,2,1,5
+"SubCellType","Hes6","Ngn3 low EP",-0.447174387488964,0.617284,2,2,5
+"SubCellType","Hes6","Ngn3 high EP",2.34343390370208,0.9464286,2,3,5
+"SubCellType","Hes6","Pre-endocrine",0.382693370795666,0.7466667,2,4,5
+"SubCellType","Hes6","Beta",-0.377972548749737,0.6610169,2,5,5
+"SubCellType","Hes6","Alpha",-0.47491693775127,0.6148148,2,6,5
+"SubCellType","Hes6","Delta",-0.487760530180745,0.6666667,2,7,5
+"SubCellType","Hes6","Epsilon",-0.228971740250565,0.625,2,8,5
+"SubCellType","Fev","Ductal",-0.617862631912645,0.0292887,2,1,6
+"SubCellType","Fev","Ngn3 low EP",-0.617548359689852,0.03703704,2,2,6
+"SubCellType","Fev","Ngn3 high EP",-0.494463433868458,0.0952381,2,3,6
+"SubCellType","Fev","Pre-endocrine",2.39909444647168,0.90666667,2,4,6
+"SubCellType","Fev","Beta",0.00209849823304363,0.72881356,2,5,6
+"SubCellType","Fev","Alpha",0.015551020874024,0.68148148,2,6,6
+"SubCellType","Fev","Delta",-0.360616453573252,0.55555556,2,7,6
+"SubCellType","Fev","Epsilon",-0.326253086534538,0.3125,2,8,6
+"SubCellType","Neurod1","Ductal",-1.16421176386804,0,2,1,7
+"SubCellType","Neurod1","Ngn3 low EP",-1.16421176386804,0,2,2,7
+"SubCellType","Neurod1","Ngn3 high EP",-0.218715511601,0.1130952,2,3,7
+"SubCellType","Neurod1","Pre-endocrine",1.76599257898884,0.28,2,4,7
+"SubCellType","Neurod1","Beta",-0.190629827190666,0.1186441,2,5,7
+"SubCellType","Neurod1","Alpha",0.579242850818156,0.1777778,2,6,7
+"SubCellType","Neurod1","Delta",-0.384143659292096,0.1111111,2,7,7
+"SubCellType","Neurod1","Epsilon",0.776677096012857,0.21875,2,8,7
+"SubCellType","Rbp4","Ductal",-0.713887514318039,0.4937238,2,1,8
+"SubCellType","Rbp4","Ngn3 low EP",-0.717478175707099,0.382716,2,2,8
+"SubCellType","Rbp4","Ngn3 high EP",-0.72235910027344,0.2261905,2,3,8
+"SubCellType","Rbp4","Pre-endocrine",-0.492568716907896,0.72,2,4,8
+"SubCellType","Rbp4","Beta",0.0602336389391121,0.9943503,2,5,8
+"SubCellType","Rbp4","Alpha",-0.180914234345333,0.962963,2,6,8
+"SubCellType","Rbp4","Delta",2.20407591911635,1,2,7,8
+"SubCellType","Rbp4","Epsilon",0.562898183496342,1,2,8,8
+"SubCellType","Pyy","Ductal",-0.747373521652376,0.460251,2,1,9
+"SubCellType","Pyy","Ngn3 low EP",-0.74519683744005,0.4197531,2,2,9
+"SubCellType","Pyy","Ngn3 high EP",-0.747087652620802,0.4166667,2,3,9
+"SubCellType","Pyy","Pre-endocrine",-0.51811255185317,0.5933333,2,4,9
+"SubCellType","Pyy","Beta",0.182456826538808,0.9661017,2,5,9
+"SubCellType","Pyy","Alpha",0.538506375507155,0.9703704,2,6,9
+"SubCellType","Pyy","Delta",2.1720852207728,1,2,7,9
+"SubCellType","Pyy","Epsilon",-0.135277859252369,0.84375,2,8,9
+"SubCellType","Ins1","Ductal",-0.359196733987214,0.14644351,2,1,10
+"SubCellType","Ins1","Ngn3 low EP",-0.358316273770916,0.16049383,2,2,10
+"SubCellType","Ins1","Ngn3 high EP",-0.356205941478429,0.17857143,2,3,10
+"SubCellType","Ins1","Pre-endocrine",-0.354017582834415,0.13333333,2,4,10
+"SubCellType","Ins1","Beta",2.4747458743755,0.59887006,2,5,10
+"SubCellType","Ins1","Alpha",-0.329085177284825,0.21481481,2,6,10
+"SubCellType","Ins1","Delta",-0.360425389827254,0.05555556,2,7,10
+"SubCellType","Ins1","Epsilon",-0.35749877519245,0.15625,2,8,10
+"SubCellType","Gcg","Ductal",-0.411349404917646,0.1589958,2,1,11
+"SubCellType","Gcg","Ngn3 low EP",-0.41060583057031,0.1975309,2,2,11
+"SubCellType","Gcg","Ngn3 high EP",-0.410893270805506,0.1190476,2,3,11
+"SubCellType","Gcg","Pre-endocrine",-0.410736453039453,0.12,2,4,11
+"SubCellType","Gcg","Beta",-0.396336551502687,0.1751412,2,5,11
+"SubCellType","Gcg","Alpha",2.44965380099302,0.6740741,2,6,11
+"SubCellType","Gcg","Delta",-0.40837305350136,0.2222222,2,7,11
+"SubCellType","Gcg","Epsilon",-0.00135923665605449,0.28125,2,8,11
+"SubCellType","Sst","Ductal",-0.354722535151793,0.07112971,2,1,12
+"SubCellType","Sst","Ngn3 low EP",-0.354824034781882,0.04938272,2,2,12
+"SubCellType","Sst","Ngn3 high EP",-0.354926439730985,0.0297619,2,3,12
+"SubCellType","Sst","Pre-endocrine",-0.347704066868369,0.02666667,2,4,12
+"SubCellType","Sst","Beta",-0.35270367566596,0.08474576,2,5,12
+"SubCellType","Sst","Alpha",-0.354789181698122,0.03703704,2,6,12
+"SubCellType","Sst","Delta",2.47486595089337,0.83333333,2,7,12
+"SubCellType","Sst","Epsilon",-0.355196016996263,0,2,8,12
+"SubCellType","Ghrl","Ductal",-0.356293348882393,0.1799163,2,1,13
+"SubCellType","Ghrl","Ngn3 low EP",-0.356465887973255,0.1481481,2,2,13
+"SubCellType","Ghrl","Ngn3 high EP",-0.356843794396383,0.1011905,2,3,13
+"SubCellType","Ghrl","Pre-endocrine",-0.353990258327189,0.1266667,2,4,13
+"SubCellType","Ghrl","Beta",-0.355308433975281,0.1751412,2,5,13
+"SubCellType","Ghrl","Alpha",-0.35312423821198,0.1851852,2,6,13
+"SubCellType","Ghrl","Delta",-0.342822063040275,0.3333333,2,7,13
+"SubCellType","Ghrl","Epsilon",2.47484802480676,1,2,8,13

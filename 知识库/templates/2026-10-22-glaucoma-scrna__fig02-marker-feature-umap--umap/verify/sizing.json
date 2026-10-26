@@ -1,0 +1,10 @@
+{
+  "mode": "fixed",
+  "profile": "feature_umap_grid",
+  "n_x": 3,
+  "n_y": 3,
+  "max_label_chars": 7,
+  "width_in": 11,
+  "height_in": 10,
+  "dpi": 192
+}

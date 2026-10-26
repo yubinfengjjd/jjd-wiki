@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "reference-mapping",
+  "implementations": [
+    {
+      "id": "seurat-label-transfer",
+      "entry": "code/transfer.R",
+      "entry_function": "run_reference_label_transfer",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/transfer.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "Signac": "TFIDF branch",
+          "reticulate": "Leiden clustering branch"
+        },
+        "Python": {
+          "leidenalg": "leiden clustering"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-projection.R:FindTransferAnchors",
+          "R/SCP-projection.R:TransferData"
+        ],
+        "modifications": [
+          "check_R/check_Python replaced with fail-only guards",
+          "SeuratObject >= 5 compatibility shims",
+          "compiled asMatrix helper excluded; unreachable upstream call"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-label-transfer-portability.json"
+      }
+    },
+    {
+      "id": "scp-runseuratmap",
+      "entry": "code/analysis.R",
+      "entry_function": "run_reference_mapping",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/reference_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang",
+          "data.table",
+          "uwot",
+          "intrinsicDimension",
+          "dplyr",
+          "proxyC"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "Signac": "TFIDF branch",
+          "reticulate": "Leiden clustering branch"
+        },
+        "Python": {
+          "leidenalg": "leiden clustering"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-projection.R:RunSeuratMap",
+          "R/SCP-projection.R:RunKNNMap"
+        ],
+        "modifications": [
+          "check_R/check_Python replaced with fail-only guards",
+          "SeuratObject >= 5 compatibility shims",
+          "compiled asMatrix helper excluded; unreachable upstream call"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-runseuratmap-portability.json"
+      }
+    }
+  ]
+}

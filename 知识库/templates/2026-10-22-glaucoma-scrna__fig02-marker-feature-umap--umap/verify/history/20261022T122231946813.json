@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T06:09:26.085195+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json": "e027b41438a5960ea0d665b9a3bc6db8d28dd8afb1e2b8a7e2c556118fc2ea82",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/render.R": "7216070a2f8d03df9e29078e02ceefa78fff0446758d127461de17ba2ee64981",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/core.R": "22abdf13286dbc47b1063ecc3911508c6710eac35c6d890357fb112fc1d92c03",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
+    "interfaces/render-umap-feature-long#columns": "45a144ec9b79c5837ff44e487bdf8b59bfe21d45b7d975e51604a0e6b968b783",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/estimated_coordinates.csv": "f0360b2bb0adea66c56fed28e765030cec273ba811bbe146b984a62d7db07fbc",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/estimated_data.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/estimated_expression.csv": "821f9a692c6990e264f4ca49932c4067419b2772c0fbc3e8c52e6b0981b23b40",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/render-umap-feature-long.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390"
+  },
+  "outputs": {
+    "png": "50f2f56d2a2539beeda507734863b227939f2bd6d98e0ce568b58487414397b6",
+    "pdf": "a481a9698a36b29158923150d0bfd6f29fb8358642e86d3dc90347cd6b057b3c",
+    "svg": "f8e716af02a5a838cefe7ded6db8f5425e3c085f42d0c85a78b5dd875c639984"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\x64\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

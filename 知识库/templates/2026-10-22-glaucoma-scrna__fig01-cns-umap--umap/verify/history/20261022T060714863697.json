@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T06:06:37.139870+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json": "e874b5694bd6c1afe01857d5ef4db8d766697bd8e9d60d2a528c757132743073",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/render.R": "7216070a2f8d03df9e29078e02ceefa78fff0446758d127461de17ba2ee64981",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/core.R": "af484db9c46cbfbe285c8c0e65f52e3e6747c968b544b8d55eac1eaaa04784e2",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/panel.R": "ac6a6de3dd47964454ad8000536935039807f48b924f302055402ace1af0d067",
+    "interfaces/render-umap-groups#columns": "cf1987a23260380478ab2ab2c122bbe1723a19182d057af1a701a70ca3a34a7f",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/example/estimated_data.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/example/render-umap-groups.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a"
+  },
+  "outputs": {
+    "png": "f81c6f377c10b8c954898aea1e199567145694c84eefe01ef31715a56e2c57e2",
+    "pdf": "be9405b43d919b2a157fc0f2fc0bcc8bfb2f7396919391092cc45868e4fae01a",
+    "svg": "6bec362f0cb7679c33ab70aeec947b5f7a695f12d055ec92659060420c67bf56"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\x64\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-harmony",
+  "state": "not_run",
+  "scope": "Missing R dependency: harmony; automatic installation is disabled",
+  "closure_hash": "afd4c264791d5b00f1ba1006bfee402e4f10643e07dbe700186bfec410786d89",
+  "files": {
+    "code/analysis.R": "4748d53b33ccdbc6b7edb50b0c6ee720c9d203fcc5e3e8225484119ac3036b77",
+    "code/integration_native.R": "326d164fdb00dc28dfbb11867ca28203bd52d3fb0997c307b671092beb7c2f2f"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/integration_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "4748d53b33ccdbc6b7edb50b0c6ee720c9d203fcc5e3e8225484119ac3036b77",
+    "code/integration_native.R": "326d164fdb00dc28dfbb11867ca28203bd52d3fb0997c307b671092beb7c2f2f"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" batch-integration-harmony \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\batch-integration-harmony\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration-harmony/result.rds\"",
+  "case": {
+    "label": "Harmony integration",
+    "parameters": {
+      "parameters": {
+        "batch": "batch",
+        "nHVF": 300,
+        "linear_reduction_dims": 20,
+        "nonlinear_reduction_dims": 2,
+        "cluster_resolution": 0.5,
+        "seed": 11
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\batch-integration-harmony\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "3aa01fe29b8c17ace13f732c111d9ddce540e269acd4b66e1a1d4cca5c85e7e1",
+  "output_sha256": "144543e667a9f7438aef8bdcb677911ad30be099b25b466fd8c4388d27254b65",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:00:58 UTC",
+  "not_run_reason": "Missing R dependency: harmony; automatic installation is disabled"
+}

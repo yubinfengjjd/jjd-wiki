@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-21T16:05:12.281143+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/spec.json": "e0c694e5b8621847a9491f837104fa462d5df2b2087ee8e6140827cd747175b5",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/panel.py": "79fbbe88bee3d3d58cc95170ecb9c0abdfb0506dee3a375c06e685415b681ac2",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/core.py": "a744437473d4e663f2b85cca104c5afcd21ad953b2ae84d446ce1d79a3c2eb97",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/defaults.py": "4303cf125465fabb4fb9c397d8f9d768d3d6443719eec9fc34042832afeac752",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/sizing.py": "904f67cdc5b4b7ebe5d0d561c25e39880006a47459eabe48d7cf8cedfab90e69",
+    "interfaces/render-scatter-rgb#columns": "9861a0836b1cda7ac18f788ac7e10dab8294f2b16501ea6ded2b9b3f028f3496",
+    "interfaces/render-marginal-bars#columns": "8e9c06581a6524cf3fed35f8a52a9938b147399c11d9abecebbacbcc55971b3e",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/example/render-marginal-bars.csv": "2d1212e9b3a10a0471e90b634f53a1d99fa6ed3184754803be55158f1ad7ab52",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/example/render-scatter-rgb.csv": "af6dcd1f83f7df39de0bb07c84768856ab4deb2cf0a1fa8ad7e569b58faa34e5",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/example/style.json": "d921697666137432b1cf963376251cc3a63e15a2753e5e48427aca47867020be"
+  },
+  "outputs": {
+    "png": "9042122a80aced146bc5678f1394491e09d840dd7d8bd32fd88a57be3b02995a",
+    "pdf": "b7e010dccaa1ff0381132e4b427a7e023005e93e4687f2851e708e820d6cbbb9",
+    "svg": "e3e414979220e6bbc4bf1d3261a4c99de9492b236d126a35d44eae785e3398f6"
+  },
+  "environment": {
+    "executable": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

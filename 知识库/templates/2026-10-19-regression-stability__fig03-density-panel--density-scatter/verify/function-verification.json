@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "checks": [
+    "density: replica dimensions/artists/data equal to preserved renderer (1e-12), source inputs unmodified",
+    "density: copy to unrelated directory, no spec/Wiki path needed; default reuse rendered",
+    "boxplot: replica dimensions/artists/data equal to preserved renderer (1e-12), source inputs unmodified",
+    "boxplot: copy to unrelated directory, no spec/Wiki path needed; default reuse rendered",
+    "arbitrary-n implementation sampled at positive boundary/small/above source palette/larger sizes; one panel, unique colors, readable physical spacing",
+    "group count drives width, not total point rows",
+    "numeric RGB palette tuples remain single category colors with three samples; specified font honored",
+    "long labels increase width/bottom margin with no adjacent label overlap",
+    "explicit order and semantic column mapping preserve category values",
+    "short explicit palette, insufficient manual width, user width cap reject; sufficient manual width accepted",
+    "empty/missing categories, invalid jitter and inverted summaries rejected without fabricating data",
+    "composed draw refuses a cramped outer region without resizing owner",
+    "scatter sample rows do not expand canvas; reuse has no stale fit/metrics/model or invented colorbar meaning",
+    "invalid RGB or unknown marginal orientation rejected",
+    "standalone default snapshot equals render spec"
+  ],
+  "scale_samples": [
+    {
+      "n": 1,
+      "width_in": 3.2,
+      "height_in": 5.920008769401058,
+      "group_pitch_in": 2.0500000000000003
+    },
+    {
+      "n": 3,
+      "width_in": 3.5500000000000003,
+      "height_in": 5.920008769401058,
+      "group_pitch_in": 0.8000000000000002
+    },
+    {
+      "n": 7,
+      "width_in": 6.75,
+      "height_in": 5.920008769401058,
+      "group_pitch_in": 0.7999999999999999
+    },
+    {
+      "n": 13,
+      "width_in": 11.55,
+      "height_in": 5.980083689923349,
+      "group_pitch_in": 0.8
+    },
+    {
+      "n": 29,
+      "width_in": 24.35,
+      "height_in": 5.980083689923349,
+      "group_pitch_in": 0.8
+    }
+  ],
+  "scope": "rendering and synthetic portability; no new scientific analysis or real-data claims"
+}

@@ -1,0 +1,42 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "SHAP汇总": {
+      "description": "每特征一条 SHAP 贡献及百分比；示例为不确定转录",
+      "interface": "shap-summary"
+    }
+  },
+  "style": {
+    "font_family": "Arial",
+    "dpi": 600,
+    "font_weight": "bold",
+    "axes_linewidth": 0.8,
+    "tick_direction": "out",
+    "width_in": 3.7,
+    "height_in": 4,
+    "rect": [
+      0,
+      0.025,
+      0.94,
+      0.9
+    ],
+    "clim": null,
+    "ticks": null,
+    "feature_order": null,
+    "cmap": "RdBu_r",
+    "colorbar_height": 0.24,
+    "radial_outer_padding": 1.6,
+    "absolute_shap_label": "|SHAP Value|",
+    "colorbar_tick_width": 0.5,
+    "colorbar_tick_size": 4.5,
+    "colorbar_title_size": 4.3,
+    "feature_label_max_size": 5.7,
+    "feature_label_scale": 85.5,
+    "bar_value_max_size": 3.8,
+    "bar_value_scale": 57,
+    "bar_edge_width": 0.8,
+    "ring_edge_width": 0.9
+  }
+}

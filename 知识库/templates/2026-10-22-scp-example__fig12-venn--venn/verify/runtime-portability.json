@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig12-venn--venn",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "52917daff16dc0e2af2a694f3f312822de1a96a7ca224958f0ed7afaf8ad2edc",
+  "files": {
+    "code/core.R": "5e3bdcd1a12d0441374b2335cddbbccf1140051f8dacd7fbca242f9ab955e9dd",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "ee6b4c5be744b002c870d5c79a0e2c78b3ccefec97fd5ebcf94b4fd09d09d2f7",
+    "code/render.R": "3216273c5228e0c5b6a4b10fb168144e65a7e84cf170345a51a897491ab081e5",
+    "code/scp_helpers.R": "3e210b55d1a3e5243bcc614fbc0a269bc49ad4fbead0d490ca19c11fb15495b3",
+    "code/scp_venn_native.R": "3c83298e77b72521d5fa6fcadbc9c784b0cc96dd51efe0755307dd40c0c0e760"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_helpers.R",
+    "code/scp_venn_native.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\code",
+  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example",
+  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
+    "working_directory": "E:/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "a5bf19955f2efc74b28c1133945c886cf8f8370ce179fb2582f530c6d96b6119",
+    "figure.pdf": "6e34818fef3a0bc16122c363c87654d0073c9326e1f0408296d83089aa1f78e0",
+    "figure.svg": "c0b29fd1df3dd1474d6c76dd0a2c80294fb501d8d6cf60d6b1fb1180e3ddac5c",
+    "sizing.json": "4ceb449e247335250a968df5b159c4db8152a58c4d1b3b0d67cf4bd104c03acf"
+  },
+  "previous_outputs": {
+    "png": "a5bf19955f2efc74b28c1133945c886cf8f8370ce179fb2582f530c6d96b6119",
+    "pdf": "eac5e3c30c4119c3955e836163c6861197ff8b169fa1a02ac0518ea7b6d500dc",
+    "svg": "c0b29fd1df3dd1474d6c76dd0a2c80294fb501d8d6cf60d6b1fb1180e3ddac5c"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "started_at": "2026-10-23T15:57:34.518865+00:00",
+  "executed_at": "2026-10-23T15:57:39.080116+00:00"
+}

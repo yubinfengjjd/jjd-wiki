@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "gene-set-scoring",
+  "implementations": [
+    {
+      "id": "scp-cellscoring",
+      "entry": "code/analysis.R",
+      "entry_function": "run_gene_set_scoring",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/scoring_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "BiocParallel",
+          "rlang",
+          "ggplot2"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "AUCell": "method='AUCell'",
+          "UCell": "method='UCell'",
+          "clusterProfiler": "built-in database lookup",
+          "biomaRt": "built-in database lookup",
+          "R.cache": "built-in database cache",
+          "AnnotationDbi": "built-in database lookup",
+          "reshape2": "built-in database lookup"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:CellScoring",
+          "R/SCP-analysis.R:AddModuleScore2"
+        ],
+        "modifications": [
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData compatibility shim"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-cellscoring-portability.json"
+      }
+    }
+  ]
+}

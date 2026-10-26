@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-23T03:53:31.308670+00:00",
+  "page": "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md",
+  "snapshot": "6da1efff6ab9e535a1561ea9bf1d1ba87dc6ce462f5c7fda03814ac076b4bbd2",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

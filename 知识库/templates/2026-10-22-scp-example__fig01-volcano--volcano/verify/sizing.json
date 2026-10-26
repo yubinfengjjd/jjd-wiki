@@ -1,0 +1,12 @@
+{
+  "mode": "fixed",
+  "profile": "volcano",
+  "width_in": 7,
+  "height_in": 6,
+  "dpi": 200,
+  "n_genes": 7343,
+  "n_groups": 1,
+  "n_labels": 16,
+  "max_label_chars": 7,
+  "svg_device": "grDevices::svg (text may be outlined)"
+}

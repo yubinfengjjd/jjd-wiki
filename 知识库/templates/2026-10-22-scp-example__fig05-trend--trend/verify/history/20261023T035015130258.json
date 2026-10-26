@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T11:53:51.941949+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig05-trend--trend/spec.json": "2be796c920f2eef3e32c24b3e4e5da8b5f95d253e68cf9b6a88965f29eae40fb",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+    "interfaces/render-cell-metadata#columns": "00d0756e4721dfa14670f3d12f0d6ebcc930022dd2fcce928c514b8fab00f48e",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/example/style.json": "ebbd83ee2f9464d5f006230634f1e64a69129d0e8d380fa53aa8b1b6fabe45c4"
+  },
+  "outputs": {
+    "png": "06fe12eeb4f2049d38786d3415b7559fd18edeeff3e90dde33a9984cd2eff7dc",
+    "pdf": "cd96fd2184e72ad4e7e8c7816b0107435f8b0c7bb78f530d8be96dac5e3f0f97",
+    "svg": "199977ff88af83f325d3ee9a2cd329342810378bc9a9ed26bbeb23c5b6950ae5"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

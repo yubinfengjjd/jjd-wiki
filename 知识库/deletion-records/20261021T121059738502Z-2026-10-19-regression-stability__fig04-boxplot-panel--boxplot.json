@@ -1,0 +1,23 @@
+{
+  "title": "boxplot · 单panel：箱线散点与均值 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+  "path": "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+  "revision": "80c7ef236e11f366dd0d3b4f1eb11a14401887be33ab079e878e307360a3e29c",
+  "asset_files": 7,
+  "affected": [
+    {
+      "path": "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+      "title": "单panel：箱线散点与均值 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性"
+    }
+  ],
+  "layout_files_updated": [],
+  "gallery_preserved": true,
+  "deleted_at": "20261021T121059738502Z",
+  "changed_pages": [
+    {
+      "path": "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+      "before_sha256": "0ea5bb439f53f68c6618c2b72fd3f983958bd41f41ebad2087ec1163f54d4fae",
+      "after_sha256": "176a2046b5b922d4f3d739d518efb4d1c6a9956c9d8a470c1bca1beafd3a3ed4"
+    }
+  ],
+  "changed_layout_files": []
+}

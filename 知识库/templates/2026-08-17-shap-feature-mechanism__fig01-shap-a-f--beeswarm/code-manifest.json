@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "variant": "reusable",
+      "path": "code/__init__.py",
+      "source": "重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+      "verification": {
+        "state": "example",
+        "scope": "历史模板示例回放记录；本轮未重跑、不证明真实课题或任意 n 自适应。",
+        "evidence": [
+          "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/verify/verify.json"
+        ]
+      }
+    },
+    {
+      "variant": "reusable",
+      "path": "code/panel.py",
+      "source": "重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+      "verification": {
+        "state": "example",
+        "scope": "历史模板示例回放记录；本轮未重跑、不证明真实课题或任意 n 自适应。",
+        "evidence": [
+          "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/verify/verify.json"
+        ]
+      }
+    },
+    {
+      "variant": "reusable",
+      "path": "code/render.py",
+      "source": "重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+      "verification": {
+        "state": "example",
+        "scope": "历史模板示例回放记录；本轮未重跑、不证明真实课题或任意 n 自适应。",
+        "evidence": [
+          "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/verify/verify.json"
+        ]
+      }
+    }
+  ]
+}

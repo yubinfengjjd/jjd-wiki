@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "files": {
+    "AGENTS.md": [
+      "1394f399e7f09558c7bffdef60c37babbcca41fa48335c5486a3c0bc08c3a78f",
+      "1394f399e7f09558c7bffdef60c37babbcca41fa48335c5486a3c0bc08c3a78f"
+    ],
+    "interfaces/regression-fold-metrics.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/regression-predictions.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-box-summaries.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-category-points.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-cell-feature-values.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-cell-linkage.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-cell-membership.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-cell-metadata.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-cell-proportions.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-correlation-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-de-results.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-dotplot-long.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-feature-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-group-heatmap.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "interfaces/render-group-summaries.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-grouped-values.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-marginal-bars.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-scatter-rgb.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-umap-feature-long.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/render-umap-groups.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/shap-samples.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/shap-summary.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-19-regression-stability__fig01-density-grid.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-19-regression-stability__fig02-metric-boxplots.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-19-regression-stability__fig03-density-panel.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig01-volcano.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig02-ring.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig03-pie.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig04-rose.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig05-trend.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig06-area.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig07-dot.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "layouts/2026-10-22-scp-example__fig08-group-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig09-bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig10-sankey.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig11-chord.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig12-venn.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig13-upset.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig14-feature-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig16-cell-density.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "layouts/2026-10-22-scp-example__fig17-group-heatmap-dot.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/batch-integration.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/cell-clustering.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/cell-quality-control.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/cell-type-annotation.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/differential-expression.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/dimensionality-reduction.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/doublet-detection.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/dynamic-feature-analysis.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/gene-set-enrichment.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/gene-set-scoring.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/reference-mapping.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/regression-resampling-evaluation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/rna-velocity.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scp-annotation-projection.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-cellqc-doublet.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-de-enrichment-dynamic.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-integration.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-local-source.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-standard-workflow.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-trajectory-velocity.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scp-visualization-interface.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scrna-marker-annotation.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scrna-pathway-signature-ensemble.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/scrna-preprocess-doublet-qc-harmony.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "methods/shap-explanation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/trajectory-inference.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig02-ring--ring.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig03-pie--pie.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig04-rose--rose.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig05-trend--trend.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig06-area--area.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig07-dot--dot.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig09-bar--bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig11-chord--chord.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig12-venn--venn.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig13-upset--upset.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig16-cell-density--ridge.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ]
+  }
+}

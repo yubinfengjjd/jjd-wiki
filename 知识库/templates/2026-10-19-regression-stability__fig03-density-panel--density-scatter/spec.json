@@ -1,0 +1,100 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "tables": {
+    "points": {
+      "interface": "render-scatter-rgb",
+      "description": "配对坐标与预设RGB；不从颜色反推密度"
+    },
+    "histograms": {
+      "interface": "render-marginal-bars",
+      "description": "由上游提供的边缘条；不从估读散点重算"
+    }
+  },
+  "style": {
+    "font_family": "Arial",
+    "dpi": 300,
+    "sizing": {
+      "mode": "adaptive",
+      "profile": "fixed",
+      "table": null,
+      "x": null,
+      "y": null,
+      "item_width_in": 0.8,
+      "item_height_in": 0.32,
+      "plot_width_in": 5.4,
+      "plot_height_in": 4.4,
+      "margins_in": [
+        0,
+        0,
+        0.12,
+        0.12
+      ],
+      "min_width_in": 3.2,
+      "min_height_in": 2.8,
+      "max_width_in": null,
+      "max_height_in": null,
+      "width_in": 7,
+      "height_in": 6.221476510067114,
+      "label_fontsize": 11,
+      "label_rotation": 45,
+      "label_gap_in": 0.12
+    },
+    "columns": {},
+    "limits": null,
+    "canvas_px": [
+      1043,
+      927
+    ],
+    "boxes": {
+      "main": [
+        108,
+        170,
+        853,
+        846
+      ],
+      "top": [
+        108,
+        14,
+        853,
+        156
+      ],
+      "right": [
+        868,
+        170,
+        1026,
+        846
+      ],
+      "colorbar": [
+        707,
+        515,
+        743,
+        799
+      ]
+    },
+    "identity": true,
+    "fit": null,
+    "annotation": null,
+    "label": null,
+    "xlabel": "Observed",
+    "ylabel": "Predicted",
+    "xticks": null,
+    "yticks": null,
+    "show_colorbar": false,
+    "color_range": null,
+    "color_label": null,
+    "cmap": "RdYlGn_r",
+    "color_ticks": null,
+    "color_ticklabels": null,
+    "top_limits": null,
+    "right_limits": null,
+    "top_ticks": null,
+    "right_ticks": null,
+    "count_label": "Supplied marginal",
+    "hist_color": "#b2d3d5",
+    "background": "#f4f7f9",
+    "point_size": 12,
+    "fit_color": "#008798"
+  },
+  "panel": "code/panel.py"
+}

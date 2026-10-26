@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-enrichment",
+  "state": "passed",
+  "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+  "closure_hash": "c9d3b5ec28f5b0687d62c2d145cada7567de17a249c8fec595df50ab2ed16edb",
+  "files": {
+    "code/analysis.R": "a2f8d72eaa3cf43c2db958ce14f2296dc01ea8cc09fadf17a1fcfa03164c8f3f",
+    "code/enrichment_native.R": "49f0489f90936f43ca58b4d5135eda4694caa0fdc8892f9aa58da293bb24d4c7"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/enrichment_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "a2f8d72eaa3cf43c2db958ce14f2296dc01ea8cc09fadf17a1fcfa03164c8f3f",
+    "code/enrichment_native.R": "49f0489f90936f43ca58b4d5135eda4694caa0fdc8892f9aa58da293bb24d4c7"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" gene-set-enrichment \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-enrichment\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/result.rds\"",
+  "case": {
+    "label": "ORA custom TERM2GENE",
+    "parameters": {
+      "parameters": {
+        "geneID_groups": {},
+        "IDtype": "symbol",
+        "species": "Homo_sapiens",
+        "TERM2GENE": {
+          "term": [
+            "T1",
+            "T1",
+            "T1",
+            "T2",
+            "T2",
+            "T2"
+          ],
+          "gene": [
+            "Ins1",
+            "Gcg",
+            "Sst",
+            "Krt19",
+            "Krt8",
+            "Epcam"
+          ]
+        },
+        "TERM2NAME": {
+          "term": [
+            "T1",
+            "T2"
+          ],
+          "name": [
+            "Endocrine",
+            "Ductal"
+          ]
+        },
+        "minGSSize": 1,
+        "maxGSSize": 500,
+        "db_update": false,
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-enrichment\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "7f7e261c83c876742298f51fa54c30eddab025e5bbb85036eccd56763f896c8f",
+  "output_sha256": "8c50b1b959b82bc6dafbb952abea3c5ce8b8fa0d1d5dcb50d4a9a60ebb4f2500",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)",
+    "Actual call returned a result"
+  ],
+  "executed_at": "2026-10-23 16:01:28 UTC"
+}

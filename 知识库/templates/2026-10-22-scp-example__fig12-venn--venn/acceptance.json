@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-23T09:03:45.732662+00:00",
+  "page": "templates/2026-10-22-scp-example__fig12-venn--venn.md",
+  "snapshot": "389a9449d89518dd3f361f76114d0b801004335ae1d9596a3243950b1f2481c5",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-23T09:03:45.669547+00:00",
+  "page": "templates/2026-10-22-scp-example__fig10-sankey--sankey.md",
+  "snapshot": "045bfca7589056531a0a0e14b354163206c53b83c4576b2753367d887ff02559",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

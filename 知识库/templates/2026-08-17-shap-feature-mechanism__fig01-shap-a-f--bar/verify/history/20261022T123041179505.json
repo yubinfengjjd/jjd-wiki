@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-21T16:04:57.696717+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/spec.json": "e5814e984cd585171763e4cebf0d55925be7f43afce333966c17fbdb762b5e37",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/code/panel.py": "b8a89bbdf194ee8696a97dabb077da4034c1fad25dd4e2aa8a29bd451363d520",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-summary#columns": "2fbd81c9702afd8a3a353d5fb9f3e327bf569b436473bfb5747f382f1747471e",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/example/shap-summary.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3"
+  },
+  "outputs": {
+    "png": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc",
+    "pdf": "3e80837b06c9c6a211aa155ea33dbbbabee521cd8978a819c50a81668a23a0cc",
+    "svg": "ffc875d7ecdd81f16d89f99e2d73953b5d94deac3498cbafb0cd02ce415e4f44"
+  },
+  "environment": {
+    "executable": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T06:12:17.256908+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json": "8989252436c074634a29df739b9f5893d57501fb2a258b6d5269b9c6dd4c415b",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/render.R": "8c5332de03b837fb84f47a60455d4434526609142703e64dff26afccef291732",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/core.R": "3a2a20409d2406536ad49fc5eed0a8e6e8cf858588646a951e8c22c8a900b22d",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/panel.R": "290ef75332b103bb77bc92c8daa8805a0f7553c2e881b3363dfacbe9de220d23",
+    "interfaces/render-cell-proportions#columns": "0b4224dc426796ee7350f028c6efcaad60b78c3c629714b3366d08d3a6ca51f1",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/example/estimated_data.csv": "2a6b5d9ce8ec4eb6749f3985e737cd4be823cccf8f5a5daab32a4c40cb4f5f51",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/example/render-cell-proportions.csv": "2a6b5d9ce8ec4eb6749f3985e737cd4be823cccf8f5a5daab32a4c40cb4f5f51"
+  },
+  "outputs": {
+    "png": "922cd8de4a85faba62a24d2d9a59414fe6c5c94b186c0685170d774a16e106bb",
+    "pdf": "881fdae0c019ee97ee086976f3a4baaac7db2c06009de62cdb8b4d46dcef0513",
+    "svg": "62b2e365cbfa1899ed8f4f07f0535bf6f7f616701be1328e083195f220a5cea0"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\x64\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

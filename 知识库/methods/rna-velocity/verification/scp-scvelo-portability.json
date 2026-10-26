@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-scvelo",
+  "state": "not_run",
+  "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+  "closure_hash": "875550c702d09b117515a290e2fadff710db925be8298092446bebe4f97bbef0",
+  "files": {
+    "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "code/velocity_native.R": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/velocity_native.R",
+    "code/data/palette_list.rda"
+  ],
+  "executed_files": {
+    "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "code/velocity_native.R": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" rna-velocity \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\rna-velocity\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result.rds\"",
+  "case": {
+    "label": "scVelo",
+    "parameters": {
+      "parameters": {
+        "assay_X": "RNA",
+        "assay_layers": [
+          "spliced",
+          "unspliced"
+        ],
+        "group_by": "CellType",
+        "linear_reduction": "PCA"
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\rna-velocity\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+  "output_sha256": "4c22c5ef918a489f9fe8aa685a58258d4a37aae1e98cffc653ac7efc595b8432",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:02:02 UTC",
+  "not_run_reason": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled"
+}

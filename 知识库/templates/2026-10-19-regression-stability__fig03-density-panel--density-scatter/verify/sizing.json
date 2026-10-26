@@ -1,0 +1,47 @@
+{
+  "width_in": 7.0,
+  "height_in": 6.221476510067114,
+  "margins_in": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "counts": {
+    "x": 1,
+    "y": 1
+  },
+  "policy": {
+    "mode": "replica",
+    "profile": "fixed",
+    "table": null,
+    "x": null,
+    "y": null,
+    "item_width_in": 0.8,
+    "item_height_in": 0.32,
+    "plot_width_in": 5.4,
+    "plot_height_in": 4.4,
+    "margins_in": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "min_width_in": 3.2,
+    "min_height_in": 2.8,
+    "max_width_in": null,
+    "max_height_in": null,
+    "width_in": 7,
+    "height_in": 6.221476510067114,
+    "label_fontsize": 14,
+    "label_rotation": 45,
+    "label_gap_in": 0.12
+  },
+  "mode": "replica",
+  "rect": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-22T15:12:57.967095+00:00",
+  "page": "layouts/2026-10-22-scp-example__fig09-bar.md",
+  "snapshot": "9c8e681bdbe2dd8468bb7249aa9432e074c43efed63ce7442079e85d4a63226d",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "not_required",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

@@ -1,0 +1,10 @@
+{
+  "mode": "fixed",
+  "profile": "cell_proportion_flow",
+  "n_x": 2,
+  "n_y": 1,
+  "max_label_chars": 8,
+  "width_in": 5.5,
+  "height_in": 4.5,
+  "dpi": 192
+}

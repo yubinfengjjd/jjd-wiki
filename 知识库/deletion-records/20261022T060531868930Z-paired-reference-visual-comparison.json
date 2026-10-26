@@ -1,0 +1,25 @@
+{
+  "title": "配对数值与参考值的可视化比较（迁移笔记）",
+  "path": "methods/paired-reference-visual-comparison.md",
+  "revision": "e646f7ba26fdc3e158dc903f3df3d5dacc804242cc55fbd8263baa91b067804d",
+  "asset_files": 0,
+  "affected": [
+    {
+      "path": "methods/regression-resampling-evaluation.md",
+      "title": "回归模型的重采样评估与折外预测",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "gallery_preserved": true,
+  "deleted_at": "20261022T060531868930Z",
+  "changed_pages": [
+    {
+      "path": "methods/regression-resampling-evaluation.md",
+      "before_sha256": "2316260f3a2e6f9a17fcf5bdb1c48fda47363786e8850715032da9d0b3d9672f",
+      "after_sha256": "5c261544f657716145d853a72865a2edb3fe97cc8bf8b0adfb76b1487d655dad"
+    }
+  ],
+  "changed_layout_files": []
+}

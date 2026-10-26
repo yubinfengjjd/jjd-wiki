@@ -1,0 +1,10 @@
+{
+  "sizing": {
+    "mode": "fixed"
+  },
+  "width_in": 7,
+  "height_in": 6,
+  "dpi": 200,
+  "nlabel": 8,
+  "seed": 1
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T06:13:30.630645+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json": "12960cfa13a582010214ee717936b943ce9e69db228bbdd121640b9313b9c97b",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/render.R": "8c5332de03b837fb84f47a60455d4434526609142703e64dff26afccef291732",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/core.R": "8ae67f406c489e6882e1b64b36d4ed004d1f0dfd342a3ed22ea902fa5bcc9ef7",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/panel.R": "4f08a53989127053d4fa588675b043eb0e9c3d7fb7c0bfb5bcc1b6b9354c4132",
+    "interfaces/render-grouped-values#columns": "a6c4f9415f7187efd79577cc42833d9ec5302dce9a62cc09aa4a67a54d073fe3",
+    "interfaces/render-group-summaries#columns": "19fcd1ae1563ca2c73a76719210064984106ec405b49c220f533ebbe8d54cb85",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/estimated_data.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/estimated_summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/render-group-summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/render-grouped-values.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca"
+  },
+  "outputs": {
+    "png": "58144c7e1061d569147a51819b6cad743704b1e1103988a8e333725b0b0bc4ca",
+    "pdf": "7d1eba2cd1eb0bc23d999164a86421d64268affa3c0ce5fa74276ce90ed115b6",
+    "svg": "9c070bd868143140160f81948988db9e0bab371b7af86ae688b932775f429adb"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\x64\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-detest",
+  "state": "passed",
+  "scope": "Actual isolated run and comparison for scp-detest; case={\"label\": \"Wilcoxon DE\", \"parameters\": {\"parameters\": {\"group_by\": \"CellType\", \"group1\": \"Ductal\", \"group2\": \"Endocrine\", \"test.use\": \"wilcox\", \"only.pos\": false, \"fc.threshold\": 1, \"min.pct\": 0.1, \"p.adjust.method\": \"bonferroni\", \"slot\": \"data\", \"assay\": \"RNA\", \"verbose\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" differential-expression \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\differential-expression\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result.rds\"",
+  "case": {
+    "label": "Wilcoxon DE",
+    "parameters": {
+      "parameters": {
+        "group_by": "CellType",
+        "group1": "Ductal",
+        "group2": "Endocrine",
+        "test.use": "wilcox",
+        "only.pos": false,
+        "fc.threshold": 1,
+        "min.pct": 0.1,
+        "p.adjust.method": "bonferroni",
+        "slot": "data",
+        "assay": "RNA",
+        "verbose": false,
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "checks": [
+    "DE table identical: PASS",
+    "DE rows: PASS"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "files": {
+    "code/analysis.R": "d551f051a41c74c3f74d57df4c631c75f39d4f9be218912eb9d709d0218f4bf4",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "executed_files": {
+    "code/analysis.R": "d551f051a41c74c3f74d57df4c631c75f39d4f9be218912eb9d709d0218f4bf4",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  }
+}

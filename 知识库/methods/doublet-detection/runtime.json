@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "doublet-detection",
+  "implementations": [
+    {
+      "id": "scp-rundoublet",
+      "entry": "code/analysis.R",
+      "entry_function": "run_doublet_detection",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/doublet_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "scDblFinder": "scDblFinder branch",
+          "scds": "scds branch",
+          "reticulate": "Scrublet/DoubletDetection branches"
+        },
+        "Python": {
+          "scrublet": "Scrublet branch",
+          "doubletdetection": "DoubletDetection branch"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-cellqc.R:RunDoubletCalling",
+          "R/SCP-cellqc.R:db_scDblFinder",
+          "R/SCP-cellqc.R:db_scds",
+          "R/SCP-cellqc.R:db_Scrublet",
+          "R/SCP-cellqc.R:db_DoubletDetection"
+        ],
+        "modifications": [
+          "check_R/check_Python replaced with fail-only guards",
+          "SeuratObject >= 5 compatibility shim",
+          "compiled asMatrix helper excluded; unreachable upstream call"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-rundoublet-portability.json"
+      }
+    }
+  ]
+}

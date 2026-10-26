@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-runcellqc",
+  "state": "passed",
+  "scope": "Actual isolated run and comparison for scp-runcellqc; case={\"label\": \"QC non-doublet\", \"parameters\": {\"parameters\": {\"qc_metrics\": [\"umi\", \"gene\", \"mito\"], \"UMI_threshold\": 0, \"gene_threshold\": 0, \"mito_threshold\": 100, \"return_filtered\": false, \"assay\": \"RNA\", \"seed\": 11}}}",
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" cell-quality-control \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-quality-control\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-quality-control/result.rds\"",
+  "case": {
+    "label": "QC non-doublet",
+    "parameters": {
+      "parameters": {
+        "qc_metrics": [
+          "umi",
+          "gene",
+          "mito"
+        ],
+        "UMI_threshold": 0,
+        "gene_threshold": 0,
+        "mito_threshold": 100,
+        "return_filtered": false,
+        "assay": "RNA",
+        "seed": 11
+      }
+    }
+  },
+  "checks": [
+    "QC metadata identical: PASS",
+    "QC cells identical: PASS"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "files": {
+    "code/analysis.R": "7c362e7f499881c770c87f37d75b3da1751cfd1c73c0b4d27e9ea899cacbbb0d",
+    "code/cellqc_native.R": "212cb03dc15114bd24ecbe8074993e810d02645f858030b3670e6aa8cf6035dd"
+  },
+  "executed_files": {
+    "code/analysis.R": "7c362e7f499881c770c87f37d75b3da1751cfd1c73c0b4d27e9ea899cacbbb0d",
+    "code/cellqc_native.R": "212cb03dc15114bd24ecbe8074993e810d02645f858030b3670e6aa8cf6035dd"
+  }
+}

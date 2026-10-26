@@ -1,0 +1,56 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "feature_umap": {
+      "interface": "render-umap-feature-long",
+      "description": "UMAP 坐标 + 基因表达长表 + 细胞类型；同一图内来自同一嵌入"
+    }
+  },
+  "style": {
+    "font_family": "sans",
+    "dpi": 192,
+    "width_in": 11,
+    "height_in": 10,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 5,
+      "per_x_in": 2.0,
+      "base_height_in": 4,
+      "per_y_in": 2.0,
+      "min_width_in": 6,
+      "min_height_in": 5,
+      "base_label_chars": 8,
+      "per_label_char_in": 0.08,
+      "aspect": null,
+      "max_width_in": null,
+      "max_height_in": null
+    },
+    "ncol": 3,
+    "genes": ["Pou4f1", "Gad1", "Onecut1", "Vsx2", "Rho", "Opn1mw", "Glul", "Rpe65", "Pdgfrb"],
+    "gene_to_group": {
+      "Pou4f1": "RGC_like",
+      "Gad1": "Amacrine",
+      "Onecut1": "Amacrine_Horizontal_like",
+      "Vsx2": "Bipolar",
+      "Rho": "Rod_Photoreceptor",
+      "Opn1mw": "Cone_Photoreceptor",
+      "Glul": "Muller_Glia",
+      "Rpe65": "RPE",
+      "Pdgfrb": "Vascular_Pericyte"
+    },
+    "bg_color": "#CFCFCF",
+    "pt_size_bg": 0.24,
+    "pt_size_fg": 0.30,
+    "alpha_bg": 0.32,
+    "alpha_fg": 0.96,
+    "exp_palette": ["#74B8AF", "#CFE0C7", "#F1E8AE"],
+    "min_cutoff": "q05",
+    "max_cutoff": "q98",
+    "title_size": 13.5,
+    "legend_text_size": 7,
+    "xpad_ratio": 0.018,
+    "ypad_ratio": 0.018,
+    "panel_margin": 7
+  }
+}

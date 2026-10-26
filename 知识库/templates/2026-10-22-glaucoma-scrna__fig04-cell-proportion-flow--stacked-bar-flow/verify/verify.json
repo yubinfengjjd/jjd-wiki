@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T13:34:30.236548+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json": "e03057ce3395544afd3e71f64d7c5a18d0d0d721e0e9b7c1bcfb4fc88d8fece4",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/render.R": "afc4e61cdf0d6c42945560f2ebfe876ac8aebecfbedb7877fa7f1058bdbb8505",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/core.R": "3a2a20409d2406536ad49fc5eed0a8e6e8cf858588646a951e8c22c8a900b22d",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/panel.R": "290ef75332b103bb77bc92c8daa8805a0f7553c2e881b3363dfacbe9de220d23",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-cell-proportions#columns": "0b4224dc426796ee7350f028c6efcaad60b78c3c629714b3366d08d3a6ca51f1",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/example/estimated_data.csv": "2a6b5d9ce8ec4eb6749f3985e737cd4be823cccf8f5a5daab32a4c40cb4f5f51",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/example/render-cell-proportions.csv": "2a6b5d9ce8ec4eb6749f3985e737cd4be823cccf8f5a5daab32a4c40cb4f5f51",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/example/style.json": "57c5f3fea010149038eab0b2376176a1dfd2cd190414edb262854e93d9361c6b"
+  },
+  "outputs": {
+    "png": "922cd8de4a85faba62a24d2d9a59414fe6c5c94b186c0685170d774a16e106bb",
+    "pdf": "b86be53b75a03cd9f9da335695df589f80ac462e7a9310a6c42afbd77c855b9c",
+    "svg": "62b2e365cbfa1899ed8f4f07f0535bf6f7f616701be1328e083195f220a5cea0"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

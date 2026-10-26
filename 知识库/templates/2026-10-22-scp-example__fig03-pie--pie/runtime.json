@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "id": "2026-10-22-scp-example__fig03-pie--pie",
+  "entry": "code/render.R",
+  "language": "r",
+  "runtime_mode": "standalone",
+  "files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_helpers.R",
+    "code/scp_stat_native.R"
+  ],
+  "resources": [
+    {
+      "path": "code/data/palette_list.rda",
+      "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+      "role": "SCP palette data used by the native helpers"
+    }
+  ],
+  "required_packages": {
+    "R": [
+      "dplyr",
+      "ggplot2",
+      "ggrepel",
+      "rlang",
+      "scales",
+      "jsonlite"
+    ]
+  },
+  "optional_packages": {
+    "R": {
+      "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+    }
+  },
+  "source": {
+    "package": "SCP-local",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+      "R/SCP-plot.R native panel core"
+    ],
+    "modifications": [
+      "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+      "only the selected native panel core and its helpers are copied"
+    ]
+  },
+  "evidence": {
+    "portability": "verify/runtime-portability.json"
+  }
+}

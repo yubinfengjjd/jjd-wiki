@@ -1,0 +1,99 @@
+{
+  "files": [
+    {
+      "variant": "original",
+      "path": "source/panels.py",
+      "source": "保留的旧重建绘图源码，非原作者完整函数。",
+      "verification": {
+        "state": "not_run",
+        "scope": "只读保留的旧重建源码，非原作者完整代码。",
+        "evidence": []
+      },
+      "sha256": "4c6bcb49f8d612b961186e261ce016f69146355155224f6df74f860b7c996a4c"
+    },
+    {
+      "variant": "reusable",
+      "path": "code/__init__.py",
+      "source": "基于旧重建代码参数化的单 panel；不含分析算法。",
+      "verification": {
+        "state": "example",
+        "scope": "估读/合成展示示例回放及15项绘图复用检查；未进行真实课题分析流水线验证。",
+        "evidence": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/verify.json",
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json"
+        ]
+      },
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "variant": "reusable",
+      "path": "code/core.py",
+      "source": "基于旧重建代码参数化的单 panel；不含分析算法。",
+      "verification": {
+        "state": "example",
+        "scope": "估读/合成展示示例回放及15项绘图复用检查；未进行真实课题分析流水线验证。",
+        "evidence": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/verify.json",
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json"
+        ]
+      },
+      "sha256": "a744437473d4e663f2b85cca104c5afcd21ad953b2ae84d446ce1d79a3c2eb97"
+    },
+    {
+      "variant": "reusable",
+      "path": "code/defaults.py",
+      "source": "基于旧重建代码参数化的单 panel；不含分析算法。",
+      "verification": {
+        "state": "example",
+        "scope": "估读/合成展示示例回放及15项绘图复用检查；未进行真实课题分析流水线验证。",
+        "evidence": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/verify.json",
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json"
+        ]
+      },
+      "sha256": "4303cf125465fabb4fb9c397d8f9d768d3d6443719eec9fc34042832afeac752"
+    },
+    {
+      "variant": "reusable",
+      "path": "code/panel.py",
+      "source": "基于旧重建代码参数化的单 panel；不含分析算法。",
+      "verification": {
+        "state": "example",
+        "scope": "估读/合成展示示例回放及15项绘图复用检查；未进行真实课题分析流水线验证。",
+        "evidence": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/verify.json",
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json"
+        ]
+      },
+      "sha256": "79fbbe88bee3d3d58cc95170ecb9c0abdfb0506dee3a375c06e685415b681ac2"
+    },
+    {
+      "variant": "reusable",
+      "path": "code/render.py",
+      "source": "基于旧重建代码参数化的单 panel；不含分析算法。",
+      "verification": {
+        "state": "example",
+        "scope": "估读/合成展示示例回放及15项绘图复用检查；未进行真实课题分析流水线验证。",
+        "evidence": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/verify.json",
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json"
+        ]
+      },
+      "sha256": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b"
+    },
+    {
+      "variant": "reusable",
+      "path": "code/sizing.py",
+      "source": "基于旧重建代码参数化的单 panel；不含分析算法。",
+      "verification": {
+        "state": "example",
+        "scope": "估读/合成展示示例回放及15项绘图复用检查；未进行真实课题分析流水线验证。",
+        "evidence": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/verify.json",
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json"
+        ]
+      },
+      "sha256": "904f67cdc5b4b7ebe5d0d561c25e39880006a47459eabe48d7cf8cedfab90e69"
+    }
+  ]
+}

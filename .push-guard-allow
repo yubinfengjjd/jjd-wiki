@@ -1,0 +1,12 @@
+# 格式：<abs-path|size> <glob>  # 理由；画廊、GPL、课题数据不可豁免
+abs-path 知识库/**/verification/**  # 本地复核回执，路径即证据定位
+abs-path 知识库/templates/**/verify/**  # 模板复核回执与历史，记录本机运行环境
+abs-path 知识库/templates/**/provenance/**  # 模板出处记录，路径即来源定位
+abs-path 知识库/methods/scrna-*.md  # 方法页出处栏记录原始课题脚本位置（作者内容，不改写）
+abs-path 知识库/methods/scrna-marker-annotation/source/**  # 非 GPL 原始脚本，保留原始字节
+abs-path 知识库/AGENTS.md  # 规则文档：限定 vault 与工具位置
+abs-path 文档/**  # 设计、交接与验收记录：路径即证据定位
+abs-path .kiro/specs/**  # 本特性规格：描述本机目录布局
+abs-path README.md  # 根说明：本机目录布局
+abs-path tools/**  # 本机启动与部署脚本：路径即部署目标
+abs-path research?wiki/.obsidian/plugins/**  # 第三方插件构建产物中的示例与系统路径（? 代替目录名中的空格）

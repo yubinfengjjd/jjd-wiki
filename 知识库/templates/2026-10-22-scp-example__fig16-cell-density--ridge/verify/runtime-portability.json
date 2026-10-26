@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig16-cell-density--ridge",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "16f9085a9de780d6e84c1f8873ab6e02b6389056ca226dce3a1e5be228dfb731",
+  "files": {
+    "code/core.R": "287e17caf25c25e8179c70fe8cd32a70d2f52ff25327f702227214c92e0767ca",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "82cd2decee92015b0a788bf8882c8362c8aee688aa0e1e470def1427fc740702",
+    "code/render.R": "cc306e09d897bea9a5b2825e6907576a51cef7383e133374532d55bfb9c853f7",
+    "code/scp_cell-density_native.R": "cd99401b0165930d2f43d99431b6c62a80b8b02c04203340501fa73dd4b4e055",
+    "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_cell-density_native.R",
+    "code/scp_helpers.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\code",
+  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example",
+  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
+    "working_directory": "E:/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+    "figure.pdf": "200e6591bf382a76cdb8ff69037894c37ef4d987a511dfb18f23b611394a07ea",
+    "figure.svg": "be821e733029f39a3023714de4f9b9387ef33adb7a81c4b13867cd27f7870e59",
+    "sizing.json": "e20b84512c9567f2c1754e8f5ec08dde7e842fccd97d7a07685bf1472f253ddf"
+  },
+  "previous_outputs": {
+    "png": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+    "pdf": "4846ae6f433f77c45a6a962318827f199c25f04ca95754a2c3eb54bd4f870e25",
+    "svg": "be821e733029f39a3023714de4f9b9387ef33adb7a81c4b13867cd27f7870e59"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "started_at": "2026-10-23T15:57:48.481489+00:00",
+  "executed_at": "2026-10-23T15:57:50.121871+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "dimensionality-reduction",
+  "implementations": [
+    {
+      "id": "scp-dimreduction",
+      "entry": "code/analysis.R",
+      "entry_function": "run_dimensionality_reduction",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/dimreduction_native.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang",
+          "data.table",
+          "uwot",
+          "intrinsicDimension"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "NMF": "linear_reduction='nmf'",
+          "glmpca": "linear_reduction='glmpca'",
+          "destiny": "nonlinear_reduction='dm'",
+          "reticulate": "phate/pacmap/trimap/largevis branches"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-workflow.R:RunDimReduction",
+          "R/Seurat-function.R:RunUMAP2",
+          "R/Seurat-function.R:RunNMF",
+          "R/Seurat-function.R:RunGLMPCA",
+          "R/Seurat-function.R:RunMDS",
+          "R/Seurat-function.R:RunDM",
+          "R/Seurat-function.R:RunPHATE",
+          "R/Seurat-function.R:RunPaCMAP",
+          "R/Seurat-function.R:RunTriMap",
+          "R/Seurat-function.R:RunLargeVis",
+          "R/Seurat-function.R:RunFR"
+        ],
+        "modifications": [
+          "check_R/check_Python replaced with fail-only guards",
+          "SeuratObject >= 5 GetAssayData compatibility shim",
+          "compiled asMatrix helper excluded; unreachable upstream call"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-dimreduction-portability.json"
+      }
+    }
+  ]
+}

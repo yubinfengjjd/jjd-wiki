@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-singler",
+  "state": "not_run",
+  "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+  "closure_hash": "e154822fb451133f55efdc0cbdd53a7e720183e99b0c2238221170801a3b8ed5",
+  "files": {
+    "code/analysis.R": "4b22e86b85b6d0f9b31b023347bf86f930b78aebafecb77009aafc970de3f932",
+    "code/annotation_native.R": "b449540b1bd281b8f9d0a925a725a4cabbbcda332e29638e20e2acd24de35be4"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/annotation_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "4b22e86b85b6d0f9b31b023347bf86f930b78aebafecb77009aafc970de3f932",
+    "code/annotation_native.R": "b449540b1bd281b8f9d0a925a725a4cabbbcda332e29638e20e2acd24de35be4"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" cell-type-annotation \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-type-annotation\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-type-annotation/result.rds\"",
+  "case": {
+    "label": "SingleR annotation",
+    "parameters": {
+      "parameters": {
+        "ref_group": "CellType",
+        "query_assay": "RNA",
+        "ref_assay": "RNA"
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-type-annotation\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "a3d710ad88ac91513fdc5e6ac875e3a9cf646c0be2a84d04a5ce12935a2c3a9c",
+  "output_sha256": "4f1fdc58f56faddc5a6b2adadbc02143edff84e725e1b109f29f0f06cfc4f518",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:01:02 UTC",
+  "not_run_reason": "Missing R dependency: SingleR; automatic installation is disabled"
+}

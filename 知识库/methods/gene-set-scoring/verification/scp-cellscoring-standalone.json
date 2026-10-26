@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-cellscoring",
+  "state": "passed",
+  "scope": "Actual isolated run and comparison for scp-cellscoring; case={\"label\": \"Seurat module score\", \"parameters\": {\"parameters\": {\"features\": {\"Endocrine\": [\"Gcg\", \"Sst\"], \"Ductal\": [\"Krt19\", \"Krt8\", \"Epcam\"]}, \"method\": \"Seurat\", \"classification\": false, \"name\": \"X\", \"slot\": \"data\", \"assay\": \"RNA\", \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" gene-set-scoring \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-scoring\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-scoring/result.rds\"",
+  "case": {
+    "label": "Seurat module score",
+    "parameters": {
+      "parameters": {
+        "features": {
+          "Endocrine": [
+            "Gcg",
+            "Sst"
+          ],
+          "Ductal": [
+            "Krt19",
+            "Krt8",
+            "Epcam"
+          ]
+        },
+        "method": "Seurat",
+        "classification": false,
+        "name": "X",
+        "slot": "data",
+        "assay": "RNA",
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "checks": [
+    "score columns identical: PASS"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "files": {
+    "code/analysis.R": "7a2239615e2f3c3553b7499576fb2c656450d345e7c9cc1ad7c2da56fd04373e",
+    "code/scoring_native.R": "6ec1cd1c76f8a7fe6d34c039c40c668d0de8def68f0fd0bf7fdd705302b39046"
+  },
+  "executed_files": {
+    "code/analysis.R": "7a2239615e2f3c3553b7499576fb2c656450d345e7c9cc1ad7c2da56fd04373e",
+    "code/scoring_native.R": "6ec1cd1c76f8a7fe6d34c039c40c668d0de8def68f0fd0bf7fdd705302b39046"
+  }
+}

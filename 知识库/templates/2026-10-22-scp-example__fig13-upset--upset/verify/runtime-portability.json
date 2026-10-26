@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig13-upset--upset",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "7bb9ebade91e2db76358cadbf1075d7d8444ce78aaa3d89efc12a151de6dbaa7",
+  "files": {
+    "code/core.R": "b95be47d5b7e3c3a9ba0b1cf42c027b95a361aa115ac12e58151a8c8983ba41f",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "e915f513e83ba02428eca18fedec09156c543d5d0a6688eb2bd03632e3ca8159",
+    "code/render.R": "443420cb3c0f174739b8ebf3cd45abb603e473b9c313df2468ad6e83619d91cc",
+    "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "code/scp_upset_native.R": "0f62fbfac5372a1954e547e60777d92f5ef2be1b85eb9608565d9bfa85cd3a5d"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_helpers.R",
+    "code/scp_upset_native.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\code",
+  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example",
+  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
+    "working_directory": "E:/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+    "figure.pdf": "6430f80c7c3b5248fdab2523f0e59dd2d8639cc3fe0197fd23f88ab0915ac594",
+    "figure.svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7",
+    "sizing.json": "821d8983ee2d64f1b4a6a2bcffff2f78227fcf646f69e64929c7ffbdd0227884"
+  },
+  "previous_outputs": {
+    "png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+    "pdf": "f38a8cebf21d6f8f9cd1b2bf834dcbbd498b84940c8448b6e95f33666e54605a",
+    "svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "started_at": "2026-10-23T15:57:39.100447+00:00",
+  "executed_at": "2026-10-23T15:57:41.241560+00:00"
+}

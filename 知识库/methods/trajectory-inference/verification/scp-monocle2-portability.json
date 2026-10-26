@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-monocle2",
+  "state": "not_run",
+  "scope": "Missing R dependency: monocle; automatic installation is disabled",
+  "closure_hash": "1fbdb6ec6dcf73961a7a97204dc240d3924fa35f25277b917c423adafc533522",
+  "files": {
+    "code/monocle2.R": "62e437932fe9b89cd3aef89d60a8a410eba565a12be935e2c1f354f479e5b673",
+    "code/monocle2_core.R": "9feba32a87e10280348214906e87909be3a2b13be617afb4a0c1d78fe7e178a9",
+    "code/monocle2_core_helpers.R": "831b519ea7044eee7cc9b75b1bbfbf952b14f25298d9b12f4d0e8d72df11bafe"
+  },
+  "copied_files": [
+    "code/monocle2.R",
+    "code/monocle2_core.R",
+    "code/monocle2_core_helpers.R"
+  ],
+  "executed_files": {
+    "code/monocle2.R": "62e437932fe9b89cd3aef89d60a8a410eba565a12be935e2c1f354f479e5b673",
+    "code/monocle2_core.R": "9feba32a87e10280348214906e87909be3a2b13be617afb4a0c1d78fe7e178a9",
+    "code/monocle2_core_helpers.R": "831b519ea7044eee7cc9b75b1bbfbf952b14f25298d9b12f4d0e8d72df11bafe"
+  },
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" monocle2 \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle2\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle2/result.rds\"",
+  "case": {
+    "label": "Monocle2 core+adapter with explicit root_state",
+    "parameters": {
+      "parameters": {
+        "seed": 11,
+        "root_state": "1"
+      }
+    }
+  },
+  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle2\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "input_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+  "output_sha256": "73d1aa334cf83a061122ae396c1a668c748de8f7fec272a61715c03184c022b6",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential"
+  },
+  "checks": [
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "New R process, source() only from the copied closure",
+    "No SCP-local path passed; package installation disabled",
+    "Input object unchanged (serialization before/after)"
+  ],
+  "executed_at": "2026-10-23 16:02:05 UTC",
+  "not_run_reason": "Missing R dependency: monocle; automatic installation is disabled"
+}

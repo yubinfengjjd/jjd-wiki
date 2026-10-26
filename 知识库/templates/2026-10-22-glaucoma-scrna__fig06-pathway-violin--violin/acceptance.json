@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-22T13:45:43.771273+00:00",
+  "page": "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md",
+  "snapshot": "7022a997cf79ec4cdac3deb6235682a78b2fc4976a8152500b7a1f8d08b40e36",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

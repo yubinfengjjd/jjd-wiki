@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "7eb3c06e2f6178f053ae69d07d2ad8c1cafeff28c9656504cfd651be8273b4bb",
+  "files": {
+    "code/core.R": "b5763a8f02b2bd61d8b63bb43b3c1d845f7b70d4da25179a7f98142edfb1111c",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "7cc1f0e93173de05000b0654efa43f2fec513d969ec0a0bc0834efe53dacb4e1",
+    "code/render.R": "10c3253cd984e3e643c7dce6109c455c662be52a31154591e52ea0ad6874385a",
+    "code/scp_feature_heatmap_native.R": "6f331665a7e97d237c17e3c76fc38a6ad1e5cc4d900c93cdc66bc45cbbe06b45",
+    "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_feature_heatmap_native.R",
+    "code/scp_helpers.R",
+    "code/sizing.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\code",
+  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example",
+  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
+    "working_directory": "E:/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518",
+    "figure.pdf": "2d3d4eb98abea7be66c864807200c3c7d2f9f9b216d7d18d0c418572f0453f9e",
+    "figure.svg": "41c1932b7d5294b69595c511b371acf4644a520d9813645699de3758b87deb34",
+    "sizing.json": "2506209cc3d18134ea3f5d9ab2bb841ddb5ecc5f4c1a8741344a18c38f7552d3"
+  },
+  "previous_outputs": {
+    "png": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518",
+    "pdf": "1a821a9790821d5edb4a90fc8fb9016c5ce8c44ffb8d6a15f50900a32ecaff8b",
+    "svg": "41c1932b7d5294b69595c511b371acf4644a520d9813645699de3758b87deb34"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "started_at": "2026-10-23T15:57:41.265393+00:00",
+  "executed_at": "2026-10-23T15:57:45.124071+00:00"
+}

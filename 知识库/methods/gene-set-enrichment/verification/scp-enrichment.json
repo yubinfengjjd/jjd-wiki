@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-enrichment",
+  "state": "passed",
+  "scope": "实际调用 SCP RunEnrichment 的 ORA 分支，显式 TERM2GENE/TERM2NAME（两个合成基因集），与上游结果表比较。",
+  "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_R.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "checks": [
+    "ORA returns an enrichment result table",
+    "ORA wrapper matches the preserved upstream call",
+    "Portability: ORA runs from copied code and copied bundle"
+  ],
+  "environment": {
+    "language": "R",
+    "R": "4.5.0",
+    "Seurat": "5.6.0",
+    "SeuratObject": "5.4.0",
+    "slingshot": "2.16.0",
+    "clusterProfiler": "4.16.0",
+    "DOSE": "4.2.0",
+    "mgcv": "1.9.1",
+    "BiocParallel": "1.42.0",
+    "OS": "Windows 11"
+  },
+  "files": {
+    "code/analysis.R": "f29569c3de6617f852224e2a64fefbdd1be909ac58acf1852035bb4f1d542f5b"
+  },
+  "portability": {
+    "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_portability.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda E:/research-wiki-env/tmp/rw-portability-20261023",
+    "scope": "复制 code/ 与 SCP-local 到 E:/research-wiki-env/tmp 下的异目录，用绝对 bundle/数据路径重跑代表调用；不使用知识库工作目录。",
+    "checks": [
+      "ORA runs from copied code and copied bundle"
+    ]
+  }
+}

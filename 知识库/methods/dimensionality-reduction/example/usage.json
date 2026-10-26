@@ -1,0 +1,19 @@
+{
+  "entrypoint": "code/analysis.R:run_dimensionality_reduction",
+  "required_copy": [
+    "code/analysis.R",
+    "complete SCP-local directory from methods/scp-local-source/code/"
+  ],
+  "bundle_argument": "path to the copied SCP-local directory in the project; pinned hashes checked",
+  "input_contract": "Existing Seurat object and explicit named source-function parameters; reference/query for mapping or annotation; gene_ids for enrichment",
+  "output_contract": "list(result=<unchanged upstream return>, diagnostics=<function, versions, warnings, parameters>)",
+  "source_mapping": "methods/scp-local-source/code/SCP-local/R/SCP-workflow.R:RunDimReduction",
+  "license": "GPL-3 (SCP GPL >=3)",
+  "side_effects": [
+    "source attaches installed dependencies",
+    "upstream RNG may change",
+    "upstream plotting/saving remains controlled by explicit parameters",
+    "automatic package/environment installation blocked"
+  ],
+  "parameters": "Match original upstream arguments; no automatic threshold/data/split choice. Read source and family page before use."
+}

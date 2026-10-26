@@ -1,0 +1,49 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "umap": {
+      "interface": "render-umap-groups",
+      "description": "UMAP 坐标与分组；同一图内坐标和分组来自同一嵌入"
+    }
+  },
+  "style": {
+    "font_family": "sans",
+    "dpi": 192,
+    "width_in": 9,
+    "height_in": 7,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 6,
+      "per_x_in": 0.35,
+      "base_height_in": 5,
+      "per_y_in": 0,
+      "min_width_in": 6,
+      "min_height_in": 5,
+      "base_label_chars": 10,
+      "per_label_char_in": 0.08,
+      "aspect": 0.78,
+      "max_width_in": null,
+      "max_height_in": null
+    },
+    "point_size": 0.9,
+    "point_alpha": 0.85,
+    "hull_alpha": 0.22,
+    "hull_delta": 0.45,
+    "hull_size": 0.35,
+    "axis_len_ratio": 0.12,
+    "pad_ratio": 0.04,
+    "label_size": 4.5,
+    "legend_text_size": 9,
+    "group_levels": [
+      "Muller_Glia", "Rod_Photoreceptor", "Bipolar", "Cone_Photoreceptor",
+      "RGC_like", "RPE", "Vascular_Pericyte", "Amacrine", "Amacrine_Horizontal_like"
+    ],
+    "palette": [
+      "#E64B35", "#4DBBD5", "#00A087", "#3C5488", "#F39B7F", "#8491B4",
+      "#91D1C2", "#DC0000", "#7E6148", "#B09C85", "#E18727", "#20854E",
+      "#7876B1", "#6F99AD", "#FFDC91", "#EE4C97", "#A6CEE3", "#BC80BD",
+      "#FFED6F", "#8DD3C7"
+    ]
+  }
+}

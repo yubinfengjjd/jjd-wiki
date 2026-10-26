@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "trajectory-inference",
+  "implementations": [
+    {
+      "id": "scp-slingshot",
+      "entry": "code/analysis.R",
+      "entry_function": "run_trajectory_inference",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/analysis.R",
+        "code/slingshot_native.R",
+        "code/data/palette_list.rda"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by optional plot helpers"
+        }
+      ],
+      "required_packages": {
+        "R": [
+          "slingshot",
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "ggplot2": "Slingshot plot branch",
+          "patchwork": "Slingshot plot branch",
+          "ggrepel": "Slingshot plot branch",
+          "ggnewscale": "Slingshot plot branch",
+          "circlize": "Slingshot plot branch",
+          "gtable": "Slingshot plot branch",
+          "plotly": "Slingshot plot branch",
+          "dplyr": "Slingshot plot branch",
+          "reshape2": "Slingshot plot branch",
+          "scales": "Slingshot plot branch",
+          "BiocParallel": "Slingshot plot branch",
+          "grid": "Slingshot plot branch"
+        }
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunSlingshot"
+        ],
+        "modifications": [
+          "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+          "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-slingshot-portability.json"
+      }
+    },
+    {
+      "id": "scp-monocle2-core",
+      "entry": "code/monocle2_core.R",
+      "entry_function": "run_monocle2_core",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/monocle2_core.R",
+        "code/monocle2_core_helpers.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "monocle",
+          "DDRTree",
+          "VGAM",
+          "BiocGenerics",
+          "Biobase",
+          "igraph",
+          "Matrix",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunMonocle2",
+          "R/SCP-analysis.R:orderCells",
+          "R/SCP-analysis.R:project2MST"
+        ],
+        "modifications": [
+          "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+          "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-monocle2-core-portability.json"
+      }
+    },
+    {
+      "id": "scp-monocle2",
+      "entry": "code/monocle2.R",
+      "entry_function": "run_trajectory_monocle2",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/monocle2.R",
+        "code/monocle2_core.R",
+        "code/monocle2_core_helpers.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "monocle",
+          "DDRTree",
+          "VGAM",
+          "BiocGenerics",
+          "Biobase",
+          "igraph",
+          "Matrix",
+          "rlang",
+          "Seurat",
+          "SeuratObject"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunMonocle2"
+        ],
+        "modifications": [
+          "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+          "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-monocle2-portability.json"
+      }
+    },
+    {
+      "id": "scp-monocle3-core",
+      "entry": "code/monocle3_core.R",
+      "entry_function": "run_monocle3_core",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/monocle3_core.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "monocle3",
+          "SingleCellExperiment",
+          "SummarizedExperiment",
+          "igraph",
+          "Matrix"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunMonocle3"
+        ],
+        "modifications": [
+          "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+          "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-monocle3-core-portability.json"
+      }
+    },
+    {
+      "id": "scp-monocle3",
+      "entry": "code/monocle3.R",
+      "entry_function": "run_trajectory_monocle3",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/monocle3.R",
+        "code/monocle3_core.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "monocle3",
+          "SingleCellExperiment",
+          "SummarizedExperiment",
+          "igraph",
+          "Matrix",
+          "Seurat",
+          "SeuratObject"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "SCP-local",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "GPL (>= 3)",
+        "functions": [
+          "R/SCP-analysis.R:RunMonocle3"
+        ],
+        "modifications": [
+          "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+          "check_R replaced with a fail-only guard",
+          "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+          "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-monocle3-portability.json"
+      }
+    }
+  ]
+}

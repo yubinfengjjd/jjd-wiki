@@ -1,0 +1,49 @@
+{
+  "canvas_px": [
+    872,
+    777
+  ],
+  "order": [
+    "ET",
+    "RF",
+    "XGB",
+    "MLP",
+    "GB",
+    "AdaBoost"
+  ],
+  "limits": [
+    5.9,
+    15.3
+  ],
+  "ticks": [
+    6,
+    7.5,
+    9,
+    10.5,
+    12,
+    13.5,
+    15
+  ],
+  "title": "Prediction error",
+  "ylabel": "Test RMSE (SR)",
+  "columns": {},
+  "tick_format": "%.1f",
+  "dpi": 300,
+  "sizing": {
+    "mode": "replica",
+    "profile": "fixed",
+    "width_in": 7,
+    "height_in": 6.237385321100917,
+    "margins_in": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "label_fontsize": 14,
+    "label_rotation": 45
+  },
+  "title_size": 20,
+  "label_size": 17,
+  "highlight_first": true
+}

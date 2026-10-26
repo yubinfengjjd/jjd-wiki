@@ -1,0 +1,43 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "dotplot": {
+      "interface": "render-dotplot-long",
+      "description": "细胞类型 × 基因的平均表达和阳性比例；target_group 仅用于基因排序"
+    }
+  },
+  "style": {
+    "font_family": "sans",
+    "dpi": 192,
+    "width_in": 6,
+    "height_in": 12,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 3.0,
+      "per_x_in": 0.3,
+      "base_height_in": 2.0,
+      "per_y_in": 0.2,
+      "min_width_in": 6,
+      "min_height_in": 5,
+      "base_label_chars": 10,
+      "per_label_char_in": 0.1,
+      "aspect": null,
+      "max_width_in": null,
+      "max_height_in": null
+    },
+    "x_levels": [
+      "Muller_Glia", "Rod_Photoreceptor", "Bipolar", "Cone_Photoreceptor",
+      "RGC_like", "RPE", "Vascular_Pericyte", "Amacrine", "Amacrine_Horizontal_like"
+    ],
+    "expr_limits": [0, 1],
+    "expr_breaks": [0, 0.25, 0.5, 0.75, 1],
+    "size_limits": [0, 100],
+    "size_breaks": [25, 50, 75],
+    "size_range": [1.2, 7.0],
+    "panel_fill": "#F2F2F2",
+    "italic_y": true,
+    "expr_palette": ["#083B6F", "#3B8FC2", "#D9EEF4", "#F6F3EA", "#F07C56", "#8A001F"],
+    "x_colors": ["#F2A000", "#37B7AE", "#13A25B", "#F0DB35", "#1C9AD6", "#D65F00", "#AEB0B4", "#C98CB7", "#E64B35"]
+  }
+}

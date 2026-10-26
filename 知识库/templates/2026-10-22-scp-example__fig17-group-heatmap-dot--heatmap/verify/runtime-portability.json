@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+  "state": "passed",
+  "scope": "Isolated copy of the candidate (spec.json + declared code/ files + example data); new Rscript process in an unrelated directory; no SCP-local, SCP package source, or Wiki path provided; render.R script entry invoked.",
+  "closure_hash": "c474e19d0f9c45a8202e9b710fd0cd04f5566b0ddee2cdc18d595f5c5b15a5a4",
+  "files": {
+    "code/core.R": "12ced853a5c6ee4f053b47f743bc3507de2ebdbc9b6d96b7ee8bb8fb570f4b49",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "21c1de7db8afea2add157cb7d3734f28213a46cc6e88a718f8267b6b410d7a04",
+    "code/render.R": "7b4da19161e6d2c93316131c46f5ef2c4abf869019ebc96c6ec637039f0bcff8",
+    "code/scp_group_heatmap_dot_native.R": "53de1e26534fded1590c30413c790f6ef9882c45825f636e63c82ea79a4495a8",
+    "code/scp_helpers.R": "8e941e41530ab8b6aa8351d952917af26a04becac8195d071165ffc02df751b6",
+    "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "spec.json": "5f54594c5c393c27e62c09b03958564a5533ef72fb58fb6a191d6ee14fd375d6"
+  },
+  "command": "D:/R-4.5.0/bin/x64/Rscript.exe E:/research-wiki-env/work/scp-ingestion-20261025/evidence/groupheatmap-dot/portable-r4/pkg/code/render.R --data E:/research-wiki-env/work/scp-ingestion-20261025/evidence/groupheatmap-dot/portable-r4/pkg/example --out E:/research-wiki-env/work/scp-ingestion-20261025/evidence/groupheatmap-dot/portable-r4/out --style E:/research-wiki-env/work/scp-ingestion-20261025/evidence/groupheatmap-dot/portable-r4/pkg/example/style.json",
+  "isolated_dir": "E:/research-wiki-env/work/scp-ingestion-20261025/evidence/groupheatmap-dot/portable-r4/pkg",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/R-4.5.0/bin/x64/Rscript.exe",
+    "R_LIBS": "E:/research-wiki-env/R-lib-scp/4.5 (declared packages only; no SCP source path)",
+    "no_scp_source_path": true,
+    "no_wiki_path": true,
+    "no_seurat_loaded": true,
+    "note": "Packages loaded in a fresh process are the declared runtime environment; this receipt does not claim absence of side effects in a shared R session."
+  },
+  "checks": [
+    "Only runtime.json-declared files + example data copied to an unrelated directory",
+    "New Rscript process; render.R resolved spec.json and code/ relative to its own location",
+    "No SCP-local bundle path or Wiki path provided; Seurat not loaded",
+    "Output PNG sha256 == upstream native add_dot reference PNG sha256; output SVG identical as well",
+    "svglite is a required package (no fallback); missing-package pre-flight check in render.R gives a clear error",
+    "CSV identity columns matrix/feature/group read as character (colClasses); digit-like identities '001'/'01' preserved; literal 'NA' stays a string; empty cells still rejected"
+  ],
+  "outputs": {
+    "figure.png": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+    "figure.pdf": "not_hashed (cairo_pdf embeds timestamp; byte comparison not meaningful)",
+    "figure.svg": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b"
+  },
+  "reference_outputs": {
+    "native-dot.png": "7CC121E7E446D91F4FE07D07E3E7EEA1A754427F7E1020BF936E7B5FD7E5BC16",
+    "native-dot.svg": "1803D5FC8D1785E150983CE195FFD6D33AD0C464EAFB11CA02B11EB582AB280B"
+  },
+  "same_as_reference": {
+    "png": true,
+    "svg": true
+  },
+  "supersedes": "evidence/groupheatmap-dot/portable-r3 (officially invalid after reader fix: closure_hash 66c3c968 -> c474e19d); portable/ and portable-r2/ also retained as invalid history",
+  "executed_at": "2026-10-25T20:29:08+08:00"
+}

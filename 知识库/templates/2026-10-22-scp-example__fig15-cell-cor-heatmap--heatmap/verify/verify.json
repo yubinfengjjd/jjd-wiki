@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T15:35:34.101233+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/spec.json": "2ea2b39e8a0cf4854d875997606376b96c7aac59b017e35ebb02a4d92be42ebf",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/render.R": "5c84422c0f495e758f32c85568998eb0301333892f716330f2ece17f5505599d",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/core.R": "d10f72feb25ea7f8542ceff9eb6eada98979790570734eb8fba1098a327fc45a",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/panel.R": "99858de32de88b1489805a6752500528e88c532d842e41ad6ff41ae86a7f4b7b",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/scp_cell-cor-heatmap_native.R": "c0aea1e936644f9e9b54e56d54aef9915ec2add0c20a3eee2c2dae007a492b05",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-correlation-heatmap#columns": "228316fc60f708597b47329ca36a4e4507aa2340d882bb6fdce755d6dbe0626d",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/example/render-correlation-heatmap.csv": "79e02f938007e890101255a675f090deeedc32ff374592641b22684e72a63728",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/example/style.json": "11a18a568eaaaefe933eda9a2394d53dcb0f8d74b54a0dc3c9abee747eed047b"
+  },
+  "outputs": {
+    "png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
+    "pdf": "548877d7a797c352ce2cc3ba0eff1f79630977b06fcb302d32fb3e337caa099a",
+    "svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

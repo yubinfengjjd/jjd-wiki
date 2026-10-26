@@ -1,0 +1,23 @@
+{
+  "title": "density-scatter · 单panel：密度散点与边缘分布 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+  "path": "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+  "revision": "f81a21c79756415b9046393b772fe3c53f63bc0fb6dd8b4d1c82bbf53c137939",
+  "asset_files": 7,
+  "affected": [
+    {
+      "path": "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+      "title": "单panel：密度散点与边缘分布 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性"
+    }
+  ],
+  "layout_files_updated": [],
+  "gallery_preserved": true,
+  "deleted_at": "20261021T121056317553Z",
+  "changed_pages": [
+    {
+      "path": "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+      "before_sha256": "1adbdde6c6b52781e39b9df3d6576129bcc1fe8573c47fa984bea18fa54bcfb5",
+      "after_sha256": "24eb43e67af204c77713c566128eb6d7db062584cfa80a9349582e0186bddf22"
+    }
+  ],
+  "changed_layout_files": []
+}

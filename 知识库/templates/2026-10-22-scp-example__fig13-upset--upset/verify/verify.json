@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T14:53:16.987503+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig13-upset--upset/spec.json": "0aef4cf0a17affef6dd988e45b98b2a7bea20d5905cb5fa932ccc314b4408089",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/code/render.R": "443420cb3c0f174739b8ebf3cd45abb603e473b9c313df2468ad6e83619d91cc",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/code/core.R": "b95be47d5b7e3c3a9ba0b1cf42c027b95a361aa115ac12e58151a8c8983ba41f",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/code/panel.R": "e915f513e83ba02428eca18fedec09156c543d5d0a6688eb2bd03632e3ca8159",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/code/scp_upset_native.R": "0f62fbfac5372a1954e547e60777d92f5ef2be1b85eb9608565d9bfa85cd3a5d",
+    "interfaces/render-cell-membership#columns": "22f36309fd557d5a39453c667a0dec4e1fb4df61a690e110dbf29dfac60bdf85",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/example/render-cell-membership.csv": "746e99513269e7cdfc4ebb7adda6dda730562c23d92f57bcd1d1eda599847cdb",
+    "templates/2026-10-22-scp-example__fig13-upset--upset/example/style.json": "0151e491ad9152cee8fc500a39b1adf5b5bffeddbb036eccdbc65b19cf91c8bc"
+  },
+  "outputs": {
+    "png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+    "pdf": "f38a8cebf21d6f8f9cd1b2bf834dcbbd498b84940c8448b6e95f33666e54605a",
+    "svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
