@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-102multipanelroc",
+  "run_id": "20261027T121722Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa102multipanelROC.Rmd rwiki-knit.md",
+  "started_at": "2026-10-27T12:17:22+00:00",
+  "duration_s": 2.5,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<r_lib1>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.5",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.37",
+      "dplyr": "1.1.4",
+      "evaluate": "1.0.3",
+      "farver": "2.1.2",
+      "fastmap": "1.2.0",
+      "generics": "0.1.4",
+      "ggplot2": "3.5.2",
+      "glue": "1.8.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "gtable": "0.3.6",
+      "htmltools": "0.5.8.1",
+      "jsonlite": "2.0.0",
+      "knitr": "1.50",
+      "lifecycle": "1.0.4",
+      "magrittr": "2.0.3",
+      "methods": "4.5.0",
+      "pillar": "1.10.2",
+      "pkgconfig": "2.0.3",
+      "pROC": "1.19.0.1",
+      "R6": "2.6.1",
+      "RColorBrewer": "1.1.3",
+      "Rcpp": "1.1.2",
+      "rlang": "1.1.6",
+      "rmarkdown": "2.29",
+      "scales": "1.4.0",
+      "stats": "4.5.0",
+      "tibble": "3.2.1",
+      "tidyselect": "1.2.1",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "vctrs": "0.6.5",
+      "xfun": "0.62",
+      "yaml": "2.3.10"
+    }
+  },
+  "code": {
+    "easy_input_test.txt": "abcabce34ca3d46b5785d2317b8bc822c578d761ffb17c13916895f19e0007fa",
+    "easy_input_train.txt": "7575b22871351478716c9bf3cc4d8667f770d2efd00842eddf033a37b8d45f43",
+    "example.png": "ba1e424944c5d3f4eb2067f8a587875320379bb39b601aae6f38e37982b7a362",
+    "FigureYa102multipanelROC.Rmd": "70400d3a606942ddc857204cb5ee92967e6ba318027d2f565b49f935e89d6aa6",
+    "install.log": "15fd50a931a2505eee9949aa14d0fe2a34ba433c3b09e5d73bf0437a2baf965d",
+    "install_dependencies.R": "47fc1056a7ff6779f1f33165c773e8ccda6e9d23e2ebc4071ce62c0c59e05cce",
+    "multipanelROC.pdf": "fba817eeb3cb4f5ecaec64b59e08fdae585df8eb66ffae819803369a30195a54"
+  },
+  "outputs": {
+    "multipanelROC.pdf": "3692faba60cf8ab4e41d17191403c8339f211064ce7fec2c6fefea0001f09424",
+    "rwiki-figure/unnamed-chunk-3-1.png": "f93316170a5a81eedeb566fbf006faeb8c59bcec5c2fad764e7b9db99629e107",
+    "rwiki-figure/unnamed-chunk-4-1.png": "a5cd36d5376c710247378455ad84e4c0ac1f6ba3e8edcbfb5075c957a2767f07"
+  },
+  "expected_outputs": [
+    "multipanelROC.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-3-1.png",
+    "rwiki-figure/unnamed-chunk-4-1.png"
+  ],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "ceb8f190c50813d986531a23180d3a25a08d2d1fa029e924b83c423205f4cefb",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-102multipanelroc/20261027T121722696579Z"
+}

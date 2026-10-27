@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-76corrgram",
+  "run_id": "20261027T121726Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa76corrgram.Rmd rwiki-knit.md",
+  "started_at": "2026-10-27T12:17:26+00:00",
+  "duration_s": 0.7,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<r_lib1>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.5",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.37",
+      "evaluate": "1.0.3",
+      "fastmap": "1.2.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.8.1",
+      "jsonlite": "2.0.0",
+      "knitr": "1.50",
+      "methods": "4.5.0",
+      "rlang": "1.1.6",
+      "rmarkdown": "2.29",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.10"
+    }
+  },
+  "code": {
+    "corrgram.pdf": "ff8cc787f54226845b29a4cf780d42bda5b725fcb873f1d237a7d98a12a329c4",
+    "easy_input.csv": "ba7d90b6d91f5eb7ef96a623758eddbaa12041afeb95147f96f444213289dd84",
+    "example.png": "32acedfc8c5c8be327748b8074315c9159a95b5f1eab6d2fe1fdf51b86eb0c30",
+    "FigureYa76corrgram.Rmd": "a7ce5083f4e1cdfdcf86ae9928ab6b4785a841c83efac7955e25fcb76ebc563c"
+  },
+  "outputs": {
+    "corrgram.pdf": "ec85711ab70aa9fa2b5fd7f440f2eddd7162f0c1404645351850db06823ae290"
+  },
+  "expected_outputs": [
+    "corrgram.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "ceb8f190c50813d986531a23180d3a25a08d2d1fa029e924b83c423205f4cefb",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-76corrgram/20261027T121726229038Z"
+}

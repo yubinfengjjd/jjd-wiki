@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-31lasso-update",
+  "run_id": "20261027T121722Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa31lasso_update.Rmd rwiki-knit.md",
+  "started_at": "2026-10-27T12:17:22+00:00",
+  "duration_s": 1.8,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<r_lib1>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.5",
+      "codetools": "0.2.20",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.37",
+      "evaluate": "1.0.3",
+      "fastmap": "1.2.0",
+      "foreach": "1.5.2",
+      "glmnet": "4.1.8",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "htmltools": "0.5.8.1",
+      "iterators": "1.0.14",
+      "jsonlite": "2.0.0",
+      "knitr": "1.50",
+      "lattice": "0.22.6",
+      "Matrix": "1.7.3",
+      "methods": "4.5.0",
+      "Rcpp": "1.1.2",
+      "rlang": "1.1.6",
+      "rmarkdown": "2.29",
+      "shape": "1.4.6.1",
+      "splines": "4.5.0",
+      "stats": "4.5.0",
+      "survival": "3.8.3",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.10"
+    }
+  },
+  "code": {
+    "easy_input_exp.csv": "db5b20d97e74559707314055efe39b1518f0a86a578029809bc80ceb41b100da",
+    "easy_input_suv.csv": "76bb476b25b542bba9b336a037ed612627873bc58a96b2d582eafd10735b5b33",
+    "example.png": "9ffc5c1442d7a48f30c9e5d79c44b92518e332f3eb62ec78996193a0fc2a8df7",
+    "FigureYa31lasso_update.jpg": "f1f32ec17193d5a296db3a84afd8b57726f00a008dcd780de13cb06c3360c0f2",
+    "FigureYa31lasso_update.Rmd": "1e8424b61d1fc5cece365ba6f4675f3d5c24d37d9342c1e0432abfb5d8b86439",
+    "gene_index.csv": "b17536ab1133c17331b4a4ec16a5f37bee294a8b937ad35ff2f06960fc2b5c26",
+    "install.log": "6ec770d5136aa2c01d3fb7cb25aabd34f880ad5675208818de113fad98acfcf9",
+    "install_dependencies.R": "68a69a845ef85a078d7193d692ce36177c21429b1ca95ea2c72f94bf0fcc7d70",
+    "lasso_legend.pdf": "77507544a24a9c39a036a7eaa801185d0e58b056e6b1a1a398eb9a54136d87e6",
+    "lasso_name.pdf": "6fd7db870a693548c0728a84541c02f8dbdeed18c20518482c9da942fd0ec763",
+    "lasso_output.txt": "d1b1b3aa8324f7b7d36c94bacf6c6edacb04ce1965849d23ec75b5b723266a36",
+    "nonzeroCoef.R": "62eb57d11e97fc8c0a5cf3f60fba702bab0084b450e383f3ea64c87f581f8b64"
+  },
+  "outputs": {
+    "gene_index.csv": "0a4c75445644606b5a8ed03ce4748c2db905c6043f4fd5534106a4213bc56f6a",
+    "lasso_legend.pdf": "7c137cb08147280594c2571e87c3ea014f28c9ca1fd71efb373526c06d013591",
+    "lasso_name.pdf": "6819dd41347d7a8f83131e34caae4cd145e3bdd7822193b5344d08ff9ee89378",
+    "lasso_output.txt": "481deb07cfa8aecee3a62b8c37f3775013587bb35699b4e451627de380ed7a92",
+    "rwiki-figure/unnamed-chunk-3-1.png": "09dfc65bf3b0066a87b60e719669bba3886f504e817fe465194fff63ca0b8a6e",
+    "rwiki-figure/unnamed-chunk-3-2.png": "9d13acc01bad79392c4e8898b6d5277b99cac3ea209fd9e803a751ba7edb0b4c"
+  },
+  "expected_outputs": [
+    "lasso_name.pdf",
+    "lasso_legend.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-3-1.png",
+    "rwiki-figure/unnamed-chunk-3-2.png"
+  ],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 2/2"
+  ],
+  "runner_sha256": "ceb8f190c50813d986531a23180d3a25a08d2d1fa029e924b83c423205f4cefb",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-31lasso-update/20261027T121722690097Z"
+}
