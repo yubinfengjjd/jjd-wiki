@@ -60,6 +60,7 @@
 ### draft
 
 - [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]
+- [[templates/figureya-6rhrsv2--forest|亚组分析森林图]]
 
 ### ready
 
