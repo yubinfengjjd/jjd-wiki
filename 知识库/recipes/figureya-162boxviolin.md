@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-162boxviolin
 title: 半小提琴箱线散点组合图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa162boxViolin

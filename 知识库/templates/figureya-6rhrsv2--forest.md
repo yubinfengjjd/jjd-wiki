@@ -2,7 +2,7 @@
 type: template
 id: figureya-6rhrsv2--forest
 title: 亚组分析森林图
-status: draft
+status: ready
 layouts: []
 sources:
 - recipes/figureya-6rhrsv2
@@ -20,6 +20,8 @@ keywords:
 favorite: false
 ---
 # 亚组分析森林图
+
+![[templates/figureya-6rhrsv2--forest/preview.png]]
 
 > 许可：CC BY-NC-SA 4.0（FigureYa，Lu X, et al. iMetaMed 2025, doi:10.1002/imm3.70005）。仅限非商业使用，署名并引用；改编代码须相同方式共享；`code/` 与 `example/` 不进 Git、不推送。
 
@@ -50,7 +52,46 @@ favorite: false
 
 ## 数据要求
 
-模板化后生成。
+### forest（subgroup-effect-table.csv）：按显示顺序排列的亚组标题行与亚组行；效应量与 CI 由上游给定 [[interfaces/subgroup-effect-table|亚组效应量汇总表]]
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| label | str | 必需 | 行标签；亚组标题行与亚组行按显示顺序排列，前导空格保留为缩进 |
+| estimate | float | 必需 | 效应量点估计（HR/OR 等比值）；标题行留空 |
+| lower | float | 必需 | 95% CI 下限；标题行留空 |
+| upper | float | 必需 | 95% CI 上限；标题行留空 |
+| n | int | 可选 | 该行样本数，可选 |
+| percent | float | 可选 | 该行样本占比（0–100），可选；给出时用于方块大小 |
+| p | str | 可选 | P 值文本（如交互作用 P），可选，原样显示 |
+
+### 可覆盖的 style
+
+- `xlog`：`true`
+- `zero`：`1`
+- `xticks`：`[0.75, 1.5]`
+- `digits`：`2`
+- `label_header`：`"\nSubgroup"`
+- `n_header`：`"No. of\nPatients (%)"`
+- `estimate_header`：`"Hazard Ratio\n(95% CI)"`
+- `p_header`：`"P-value"`
+- `show_n`：`true`
+- `show_p`：`true`
+- `xlab`：`"     <-Favors A Arm      Favors B Arm->"`
+- `diamond`：`true`
+- `box_col`：`"steelblue"`
+- `line_col`：`"black"`
+- `box_scale`：`75`
+- `box_size`：`0.3`
+- `overall_line`：`true`
+- `graph_pos`：`3`
+- `graph_width_npc`：`0.4`
+- `line_height_cm`：`0.75`
+- `colgap_cm`：`0.4`
+- `cex`：`1.25`
+- `dpi`：`200`
+- `width_in`：`12`
+- `height_in`：`12`
+- `sizing`：`{"mode": "adaptive", "base_width_in": 6, "per_text_col_in": 1.8, "per_label_char_in": 0.1, "base_height_in": 2.2, "max_width_in": null, "max_height_in": null}`
 
 ## 使用记录
 

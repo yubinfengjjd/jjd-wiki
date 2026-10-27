@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-284pairwiselogrank
 title: 三组以上 KM 曲线与两两比较表
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa284pairwiseLogrank

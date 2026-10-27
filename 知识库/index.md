@@ -18,8 +18,13 @@
 
 ### draft
 
-- [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] — 把 Cox 或 Logistic 回归结果画成经典列线图和 regplot 交互式列线图，并画 5 年/8 年校准曲线与比较图。
 - [[recipes/figureya-61gsva|GSVA 通路评分与组间差异]] — 把“样本×基因”表达矩阵用 GSVA 转成“样本×通路”评分，用 limma 找组间差异通路，结果可接 FigureYa39bar 画图。
+- [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] — 用 10 种生存机器学习算法及其组合在训练集建模，在多个验证集计算 C 指数，画模型比较热图与条形图。
+- [[recipes/figureya-153ccgraph|层级关系同心环网络图]] — 用“圆环套圆环”的布局展示层级结构，例如基因—突变、调控因子—靶基因或物种分类丰度。
+
+### ready
+
+- [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] — 把 Cox 或 Logistic 回归结果画成经典列线图和 regplot 交互式列线图，并画 5 年/8 年校准曲线与比较图。
 - [[recipes/figureya-13gsea-java-update|Java GSEA 结果多通路美化图]] — 读取 Java 版 GSEA 的输出，把多个通路画进一张图：点图+条码、线图+条码、条码+热图三种样式。
 - [[recipes/figureya-31lasso-update|LASSO Cox 系数路径与交叉验证图]] — 用 LASSO Cox 从候选基因中筛选预后签名，画系数路径图（标注基因顺序）和交叉验证曲线，并合成一个签名变量。
 - [[recipes/figureya-138nicecalibration|Logistic 模型校准曲线与 HL 检验]] — 为二分类 Logistic 诊断模型画校准曲线，并给出 Hosmer-Lemeshow 拟合优度检验。
@@ -37,10 +42,8 @@
 - [[recipes/figureya-76corrgram|多变量相关矩阵散点热图]] — 一张图里同时展示多变量两两相关：下三角散点+拟合线，上三角相关系数热图，对角线为变量名。
 - [[recipes/figureya-25sankey-update|多层分类流向桑基图]] — 展示多层分类属性之间的交叉与流向，例如高频突变基因所属的分组，或 miRNA—靶基因关系。
 - [[recipes/figureya-85timeroc|多模型时间依赖 ROC 曲线]] — 对不同拟合模型（或评分）计算并画指定时间点的时间依赖 ROC 曲线与 AUC。
-- [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] — 用 10 种生存机器学习算法及其组合在训练集建模，在多个验证集计算 C 指数，画模型比较热图与条形图。
 - [[recipes/figureya-1survivalcurve-update|多组 KM 生存曲线与风险表]] — 用自己的生存数据画两组或多组 Kaplan-Meier 曲线，附 log-rank P 值与 number-at-risk 风险表。
 - [[recipes/figureya-11bubble|富集分析对角排列气泡图]] — 把多组的 GO/KEGG 富集结果画成按对角线排列的气泡图，点大小与颜色表示基因数与显著性。
-- [[recipes/figureya-153ccgraph|层级关系同心环网络图]] — 用“圆环套圆环”的布局展示层级结构，例如基因—突变、调控因子—靶基因或物种分类丰度。
 - [[recipes/figureya-59volcanov2|差异表达火山图（经典与进阶）]] — 用 limma 差异结果画经典火山图和标注选定基因的进阶火山图。
 - [[recipes/figureya-143survcor-update|相关性散点叠加最佳截断四象限]] — 在两基因表达散点图上同时展示相关系数、按 log-rank 统计找到的最佳截断、四象限分组占比和 MSI/MSS 状态。
 - [[recipes/figureya-228linkcor|相关热图与连线蝴蝶图]] — 用三角热图展示两组通路各自的自相关，再用连线展示一个基因与这些通路的相关（实线正、虚线负、颜色为 P 值），拼成蝴蝶图。
@@ -49,9 +52,6 @@
 - [[recipes/figureya-99smoothhrv2|限制性立方样条 HR 曲线]] — 用限制性立方样条（RCS）展示连续变量与风险比的非线性关系，以参考点为基线画 HR 及置信带。
 - [[recipes/figureya-141risk|风险评分分布与签名基因热图联图]] — 按风险评分排序样本，联合展示评分分布、生存状态和签名基因表达热图，用竖线分高低风险组。
 
-### ready
-
-
 ### archived
 
 
@@ -59,17 +59,17 @@
 
 ### draft
 
-- [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]
-- [[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]
-- [[templates/figureya-6rhrsv2--forest|亚组分析森林图]]
 
 ### ready
 
 - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]
+- [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]
 - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]
 - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar|SHAP 环形贡献图]]
 - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]]
+- [[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]
 - [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]
+- [[templates/figureya-6rhrsv2--forest|亚组分析森林图]]
 - [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]
 - [[templates/2026-10-22-scp-example__fig02-ring--ring|分组构成同心环图]]
 - [[templates/2026-10-22-scp-example__fig07-dot--dot|分组构成点图]]

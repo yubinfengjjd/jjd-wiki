@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-143survcor-update
 title: 相关性散点叠加最佳截断四象限
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa143survCor_update

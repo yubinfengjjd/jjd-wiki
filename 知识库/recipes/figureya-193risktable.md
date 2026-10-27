@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-193risktable
 title: 训练与验证集风险评分多因素森林表
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa193RiskTable

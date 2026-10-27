@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-85timeroc
 title: 多模型时间依赖 ROC 曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa85timeROC

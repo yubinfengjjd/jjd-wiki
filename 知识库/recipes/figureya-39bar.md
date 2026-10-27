@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-39bar
 title: 分组着色柱图与正负富集柱图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa39bar

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-102multipanelroc
 title: 多变量 Logistic 模型训练/测试 ROC
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa102multipanelROC

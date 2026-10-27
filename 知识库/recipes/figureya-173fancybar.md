@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-173fancybar
 title: 含亚组的多组均值柱图与比较
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa173fancybar

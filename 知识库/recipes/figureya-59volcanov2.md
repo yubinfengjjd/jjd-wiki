@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-59volcanov2
 title: 差异表达火山图（经典与进阶）
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa59volcanoV2
@@ -62,7 +62,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa59volcanoV2.Rmd`）
 - 依赖：CRAN ggplot2, ggrepel, ggthemes, gridExtra
 - 最近运行：pass（as-is，2026-10-27 12:37 UTC，7.6 秒）
-- 派生模板（L2）：[[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]（draft）
+- 派生模板（L2）：[[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-59volcanov2/preview.png]]

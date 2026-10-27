@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-196panpie
 title: 分组临床分期扇形矩阵图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa196PanPie

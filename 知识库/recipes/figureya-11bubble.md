@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-11bubble
 title: 富集分析对角排列气泡图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa11bubble

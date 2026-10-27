@@ -2,7 +2,7 @@
 type: template
 id: figureya-59volcanov2--volcano
 title: bulk 差异火山图（分级着色）
-status: draft
+status: ready
 layouts: []
 sources:
 - recipes/figureya-59volcanov2
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # bulk 差异火山图（分级着色）
+
+![[templates/figureya-59volcanov2--volcano/preview.png]]
 
 > 许可：CC BY-NC-SA 4.0（FigureYa，Lu X, et al. iMetaMed 2025, doi:10.1002/imm3.70005）。仅限非商业使用，署名并引用；改编代码须相同方式共享；`code/` 与 `example/` 不进 Git、不推送。
 
@@ -53,7 +55,41 @@ bulk 两组比较的全部基因（log2FC 与原始 P，上游给定）画火山
 
 ## 数据要求
 
-模板化后生成。
+### de（bulk-de-table.csv）：一次两组比较的全部基因：log2FC 与原始 P 值（上游给定，不重算） [[interfaces/bulk-de-table|bulk 差异表达结果表]]
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| gene | str | 基因/特征名，唯一 |
+| log2fc | float | log2 倍数变化（比较组相对参照组） |
+| pvalue | float | 原始 P 值，(0,1] |
+
+### highlight（highlight-gene-sets.csv）（可选表）：可选：要圈出并标注的基因及其基因集 [[interfaces/highlight-gene-sets|待标注基因与所属基因集]]
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| gene | str | 必需 | 要圈出并标注的基因，须在差异表中 |
+| set | str | 必需 | 所属基因集/通路，用于标注颜色与图例 |
+
+### 可覆盖的 style
+
+- `mode`：`"advanced"`
+- `logfc_cut`：`1.5`
+- `p_cut`：`0.05`
+- `logfc_cut2`：`2.5`
+- `p_cut2`：`0.0001`
+- `logfc_cut3`：`5`
+- `p_cut3`：`1e-05`
+- `x_limit`：`null`
+- `set_colors`：`null`
+- `missing_highlight`：`"error"`
+- `label_size`：`5`
+- `seed`：`1`
+- `base_size`：`12`
+- `title`：`""`
+- `dpi`：`200`
+- `width_in`：`6`
+- `height_in`：`5`
+- `sizing`：`{"mode": "adaptive", "base_width_in": 6, "base_height_in": 5, "per_set_in": 0.25, "max_width_in": null, "max_height_in": null}`
 
 ## 使用记录
 

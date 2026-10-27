@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-1survivalcurve-update
 title: 多组 KM 生存曲线与风险表
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa1survivalCurve_update
@@ -61,7 +61,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa1survivalCurve_update.Rmd`）
 - 依赖：CRAN survival, survminer
 - 最近运行：pass（as-is，2026-10-27 12:46 UTC，5.2 秒）
-- 派生模板（L2）：[[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]（draft）
+- 派生模板（L2）：[[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-1survivalcurve-update/preview.png]]

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-138nicecalibration
 title: Logistic 模型校准曲线与 HL 检验
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa138NiceCalibration

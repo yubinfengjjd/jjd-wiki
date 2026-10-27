@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-141risk
 title: 风险评分分布与签名基因热图联图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa141risk

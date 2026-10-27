@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-228linkcor
 title: 相关热图与连线蝴蝶图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa228linkCor
