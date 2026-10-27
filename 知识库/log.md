@@ -1091,3 +1091,5 @@
 ## [2026-10-27 12:17 UTC] promote figureya: figureya-1survivalcurve-update, figureya-284pairwiselogrank, figureya-6rhrsv2, figureya-193risktable, figureya-30nomogram-update, figureya-138nicecalibration, figureya-33dca-update, figureya-85timeroc, figureya-99smoothhrv2, figureya-141risk, figureya-31lasso-update, figureya-293ma
 
 ## [2026-10-27 12:18 UTC] run figureya-141risk=pass, figureya-31lasso-update=pass, figureya-102multipanelroc=pass, figureya-39bar=pass, figureya-13gsea-java-update=pass, figureya-11bubble=pass, figureya-76corrgram=pass, figureya-37correlationv2-update=pass, figureya-162boxviolin=pass, figureya-173fancybar=pass, figureya-227b
+
+## [2026-10-27 12:21 UTC] scenarios: 7 个场景导航页（v2 P6）

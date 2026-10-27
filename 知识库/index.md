@@ -6,6 +6,13 @@
 
 ## 场景
 
+- [[scenarios/clinical-prediction-survival|临床预测与生存分析]] — 队列随访或二分类结局：生存曲线、HR 森林图、预后模型构建与评价（区分度、校准、临床获益）。
+- [[scenarios/differential-enrichment|差异表达与富集分析]] — 两组或多组的差异基因展示（火山图）与通路层面的结果（GSEA、GSVA、富集气泡/柱图）。
+- [[scenarios/model-explanation|模型解释与特征重要性]] — 机器学习模型的特征重要性与 SHAP 解释图，以及特征筛选。
+- [[scenarios/correlation|相关性分析]] — 变量两两相关、基因与免疫浸润/通路的相关，以及相关结果的热图、连线、散点展示。
+- [[scenarios/composition-flow|组成与流向]] — 分类变量的构成比例、层级之间的流向与分型对应关系。
+- [[scenarios/group-comparison|组间比较]] — 两组或多组连续指标的分布与差异展示：箱线、小提琴、密度、均值柱。
+- [[scenarios/dimension-reduction-single-cell|降维与单细胞]] — 样本或细胞的降维展示、单细胞注释与 marker、细胞通讯和轨迹。
 
 ## 配方
 
