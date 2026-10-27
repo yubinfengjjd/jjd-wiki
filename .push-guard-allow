@@ -10,3 +10,4 @@ abs-path .kiro/specs/**  # 本特性规格：描述本机目录布局
 abs-path README.md  # 根说明：本机目录布局
 abs-path tools/**  # 本机启动与部署脚本：路径即部署目标
 abs-path research?wiki/.obsidian/plugins/**  # 第三方插件构建产物中的示例与系统路径（? 代替目录名中的空格）
+abs-path .agents/tasks/**  # 交付与部署报告：记录本机装包、运行与部署位置，路径即证据定位
