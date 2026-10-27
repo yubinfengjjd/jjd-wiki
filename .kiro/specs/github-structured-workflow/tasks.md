@@ -221,7 +221,7 @@
     - _Requirements: 2.1, 3.3, 5.1, 5.2_
   - [x] 10.12 bootstrap 编排
     - 无 `--confirm`：等同 preflight 并输出授权摘要（账号/组织、仓库名、private、待推送范围），不发任何网络写
-    - `--confirm`：preflight 无阻断 → 校验仓库文件（第 8 步产出）已存在并会进入新 `main`，缺失即中止 → `master` 改名 `legacy/master` → 构造 `main`（dev 重放、vault 快照）→ `symbolic-ref` + `read-tree` 切到 `main`（10.11），核对原跟踪的忽略目录文件数不变 → `install_hook` → `gh repo create --private` → `remote add` → `RWIKI_BOOTSTRAP=1` 下 `push main` → `gh label create --force` 全套 Label → ed25519 密钥写 `E:\research-wiki-env\tmp`，公钥 `deploy-key add --read-only` 到 dev，私钥 `secret set DEV_DEPLOY_KEY` 到 vault，删除临时密钥 → 探测/配置分支保护 → 元数据记 `protection: github|local`；每步先查后建；在 cli.py 注册子命令
+    - `--confirm`：preflight 无阻断 → 校验仓库文件（第 8 步产出）已存在并会进入新 `main`，缺失即中止 → `master` 改名 `legacy/master` → 构造 `main`（dev 重放、vault 快照）→ `symbolic-ref` + `read-tree` 切到 `main`（10.11），核对原跟踪的忽略目录文件数不变 → `install_hook` → `gh repo create --private` → `remote add` → `RWIKI_BOOTSTRAP=1` 下 `push main` → `gh label create --force` 全套 Label → ed25519 密钥写 `E:\research-wiki-env\tmp`，公钥 `deploy-key add` 到 dev（gh 2.103 默认只读，不传 `--read-only`），私钥 `secret set DEV_DEPLOY_KEY` 到 vault，删除临时密钥 → 探测/配置分支保护 → 元数据记 `protection: github|local`；每步先查后建；在 cli.py 注册子命令
     - _Requirements: 1.3, 1.4, 2.1, 8.2, 10.1, 10.5_
   - [x]* 10.13 历史构造单元测试
     - 文件 `tests/test_ghflow_history.py`：重放后每个提交都不含被忽略路径、作者与时间保留、trailer 指向原 sha；快照只有一个提交；切到 `main` 后原先被跟踪的忽略目录仍在磁盘；hook 拒绝推 `legacy/*`

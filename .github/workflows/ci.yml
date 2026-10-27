@@ -1,4 +1,4 @@
-# research-wiki-vault CI：wiki.py 取自 dev 的 main（只读 deploy key）；GitHub 上没有 GPL 源码、画廊与维护记录。
+# jjd-wiki CI：wiki.py 取自 dev 的 main（只读 deploy key）；GitHub 上没有 GPL 源码、画廊与维护记录。
 name: ci
 
 on:
@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/research-wiki-dev
+          repository: ${{ github.repository_owner }}/jjd-wiki-dev
           ssh-key: ${{ secrets.DEV_DEPLOY_KEY }}
           ref: main
           path: 开发

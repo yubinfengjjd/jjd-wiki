@@ -10,17 +10,17 @@
 
 | 仓库 | 本地位置 | 内容 | 远程地址 | 默认分支 |
 |---|---|---|---|---|
-| `research-wiki-vault` | `E:\research-wiki`（根仓库） | `知识库/`、`文档/`、`tools/`、`research wiki/`、本 README、`.github/` | `<待 bootstrap 后填写：github.com/<owner>/research-wiki-vault>` | `main` |
-| `research-wiki-dev` | `E:\research-wiki\开发`（独立仓库，自带 `.git`） | 代码、测试、技能源 `staged/research-wiki`、前端源码、`.github/` | `<待 bootstrap 后填写：github.com/<owner>/research-wiki-dev>` | `main` |
+| `jjd-wiki` | `E:\research-wiki`（根仓库） | `知识库/`、`文档/`、`tools/`、`research wiki/`、本 README、`.github/` | https://github.com/yubinfengjjd/jjd-wiki | `main` |
+| `jjd-wiki-dev` | `E:\research-wiki\开发`（独立仓库，自带 `.git`） | 代码、测试、技能源 `staged/research-wiki`、前端源码、`.github/` | https://github.com/yubinfengjjd/jjd-wiki-dev | `main` |
 
-两个仓库都是 GitHub 私有仓库。`知识库\` 不是单独的 git 仓库，而是根仓库的子目录；根仓库的 `.gitignore` 忽略 `/开发/`，两者互不跟踪。bootstrap 之前本地分支仍叫 `master`；bootstrap 把它改名为只留本地的 `legacy/master`，并构造新的 `main`（dev 过滤重放历史，vault 为一次快照）。不要在主检出上检出 `legacy/master`：旧历史跟踪了画廊与维护记录，切过去再切回会把这些文件从磁盘删除。
+两个仓库都是 GitHub 免费账号下的私有仓库，默认分支 `main`，没有远端分支保护，已处于本地门禁模式（`protection: local`），合并只能经 `wiki.py gh merge`（见下文“本地门禁”）。`知识库\` 不是单独的 git 仓库，而是根仓库的子目录；根仓库的 `.gitignore` 忽略 `/开发/`，两者互不跟踪。bootstrap 之前本地分支仍叫 `master`；bootstrap 把它改名为只留本地的 `legacy/master`，并构造新的 `main`（dev 过滤重放历史，vault 为一次快照）。不要在主检出上检出 `legacy/master`：旧历史跟踪了画廊与维护记录，切过去再切回会把这些文件从磁盘删除。
 
 任务、评审与验收在 GitHub 的 Milestone / Issue / PR 中进行，文件任务书已停用（旧任务书已迁为 Issue）。知识库写入只在 `task/*` 任务分支上由 `wiki.py save` 提交；`main` 与长期分支上 save 与网页写入都会被拒。流程由 `wiki.py gh` 子命令实现，项目自带，任何 agent（Codex、Claude、Devin、Kiro 等）都按同一方式使用。
 
 ## 目录
 
 ```text
-research-wiki\                  research-wiki-vault 仓库根
+research-wiki\                  jjd-wiki 仓库根
   知识库\            正式 LLM Wiki。页面、模板代码、方法笔记都在这里
      AGENTS.md       规则层：agent 的维护手册
      layouts\        单 panel 来源图样（历史整图仅保留归档记录）
@@ -35,7 +35,7 @@ research-wiki\                  research-wiki-vault 仓库根
   research wiki\     一个 Obsidian vault 的配置与插件（.obsidian\、.claudian\）
   画廊\              原始层，sci-figure-replica 的产物，知识库只读（不入库）
   维护记录\          本地验收与部署证据（不入库）
-  开发\                         research-wiki-dev 仓库根（独立仓库）
+  开发\                         jjd-wiki-dev 仓库根（独立仓库）
      staged\research-wiki\   代码、技能 SKILL.md 与 references\、前端构建产物
      frontend\               React 源码
      obsidian-neural-view\   Obsidian 神经图谱插件源码
