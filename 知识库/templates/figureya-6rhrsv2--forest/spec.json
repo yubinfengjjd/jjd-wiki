@@ -28,6 +28,7 @@
     "graph_pos": 3,
     "graph_width_npc": 0.4,
     "line_height_cm": 0.75,
+    "colgap_cm": 0.4,
     "cex": 1.25,
     "dpi": 200,
     "width_in": 12,

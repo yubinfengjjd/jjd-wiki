@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-27T12:59:32.504901+00:00",
+  "timestamp": "2026-10-27T13:02:32.270841+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/figureya-1survivalcurve-update--km-curve/spec.json": "b30d83a95f141f6b4beff17c8c329ef03695f0f947fd7f6d013ef78b2a3d0339",
-    "templates/figureya-1survivalcurve-update--km-curve/code/render.R": "a041d8f71a31f3ba2b72cfb7ed74db9c9feed2103f16c009d175de355a688167",
+    "templates/figureya-1survivalcurve-update--km-curve/code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
     "templates/figureya-1survivalcurve-update--km-curve/code/panel.R": "30cd7b5c39e67a4e0a876bfa03251d33172a6fafcf49c0d30273192bc3e7662e",
     "interfaces/survival-time-event-group#columns": "c7584fb69688c591a9ace36643212a341b9f84b711b337f7b287a020ca41db30",
     "templates/figureya-1survivalcurve-update--km-curve/example/survival-time-event-group.csv": "47c2cd9389ee5c7a3e30eee98a233620dcb1e3ee8a873ec6cbfbc1336d19a681"
   },
   "outputs": {
     "png": "71615ce631b8846a30c1a3c50d6ca2f415c86bca2fc03fb06a81eeaf8ce9c680",
-    "pdf": "98f59459835cf5aa5929a05d28cf57169042efd5937bfde8a6d7b772596c5abf",
+    "pdf": "e1295b40584657cd48dca5c51dbee618ed391186b60081ad6e74b6466ab896c9",
     "svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422"
   },
   "environment": {
