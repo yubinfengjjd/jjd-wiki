@@ -3,7 +3,7 @@ type: source
 id: figureya
 title: FigureYa 医学科研绘图模块库
 url: https://github.com/ying-ge/FigureYa
-commit: ''
+commit: 8d7a02c7d00467c45471139b63620571afebbeba
 license: CC-BY-NC-SA-4.0
 license_notice: ''
 cite:
@@ -19,7 +19,7 @@ summary: ''
 # FigureYa 医学科研绘图模块库
 
 <!-- facts:start -->
-- 上游：https://github.com/ying-ge/FigureYa · commit `未获取`
+- 上游：https://github.com/ying-ge/FigureYa · commit `8d7a02c7d004`
 - 许可证：CC-BY-NC-SA-4.0；白名单：是（按需获取不再询问）
 - 适配器：figureya；快照：`<sources_root>/figureya`（不进 Wiki）
 - L0 目录：0 项（`sources/figureya/items.jsonl`）；自动领域分布：
