@@ -1113,3 +1113,5 @@
 ## [2026-10-27 12:51 UTC] scaffold template figureya-6rhrsv2--forest from recipe
 
 ## [2026-10-27 12:52 UTC] scaffold template figureya-59volcanov2--volcano from recipe
+
+## [2026-10-27 12:59 UTC] verify figureya-1survivalcurve-update--km-curve

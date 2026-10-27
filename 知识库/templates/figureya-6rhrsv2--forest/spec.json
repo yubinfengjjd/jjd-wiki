@@ -1,6 +1,45 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "forest": {
+      "interface": "subgroup-effect-table",
+      "description": "按显示顺序排列的亚组标题行与亚组行；效应量与 CI 由上游给定"
+    }
+  },
+  "style": {
+    "xlog": true,
+    "zero": 1,
+    "xticks": [0.75, 1.5],
+    "digits": 2,
+    "label_header": "\nSubgroup",
+    "n_header": "No. of\nPatients (%)",
+    "estimate_header": "Hazard Ratio\n(95% CI)",
+    "p_header": "P-value",
+    "show_n": true,
+    "show_p": true,
+    "xlab": "     <-Favors A Arm      Favors B Arm->",
+    "diamond": true,
+    "box_col": "steelblue",
+    "line_col": "black",
+    "box_scale": 75,
+    "box_size": 0.3,
+    "overall_line": true,
+    "graph_pos": 3,
+    "graph_width_npc": 0.4,
+    "line_height_cm": 0.75,
+    "cex": 1.25,
+    "dpi": 200,
+    "width_in": 12,
+    "height_in": 12,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 6,
+      "per_text_col_in": 1.8,
+      "per_label_char_in": 0.1,
+      "base_height_in": 2.2,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
 }

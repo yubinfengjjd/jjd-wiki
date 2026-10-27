@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "id": "figureya-59volcanov2--volcano",
+  "entry": "code/render.R",
+  "language": "r",
+  "runtime_mode": "standalone",
+  "files": ["code/panel.R", "code/render.R"],
+  "resources": [],
+  "required_packages": {"R": ["ggplot2", "ggrepel", "gridExtra", "jsonlite"]},
+  "optional_packages": {"R": {"svglite": "vector SVG device when installed; otherwise grDevices::svg"}},
+  "source": {
+    "package": "FigureYa",
+    "version": "FigureYa59volcanoV2",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "functions": ["recipes/figureya-59volcanov2/source/FigureYa59volcanoV2.Rmd: plot_mode classic/advanced, p1/p2 + selected genes"],
+    "modifications": [
+      "columns renamed to bulk-de-table (gene, log2fc, pvalue) and highlight-gene-sets (gene, set)",
+      "x-axis limit is symmetric from the data (or style.x_limit) instead of fixed -11..11",
+      "the unused ggthemes import and the logFC > 9 exploratory label layer are dropped",
+      "set colours: one per set, error instead of recycling"
+    ]
+  }
+}
