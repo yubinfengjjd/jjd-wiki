@@ -1,17 +1,22 @@
-"""Deploy the research-wiki skill from 开发/staged to all five local installs.
+"""Deploy the research-wiki skill from 开发/staged to all six local installs.
 
 Single entry point replacing the per-record copies under 维护记录/. Usage:
 
-    python tools/deploy.py <maintenance-record-dir> "<one-line update note>"
+    python tools/deploy.py <maintenance-record-dir> "<one-line update note>" [--sync-config]
     python tools/deploy.py --verify-only
 
-部署前先过来源门禁：开发仓库工作区干净，且 HEAD 等于 fetch 后的 origin/main，或 HEAD 恰为
-一个已推送 tag；否则中止并报告当前分支与提交。manifest 记录 source_commit 与 source_tag。
---verify-only 只比较 staged 与 5 处副本的哈希并打印差异清单，不写入、不检查门禁。
+部署前先过来源门禁（治理 v2）：开发仓库工作区干净，且 HEAD 等于本地 main（refs/heads/main）、
+fetch 后的 origin/main，或恰为一个已推送 tag；fetch 失败（离线）时只认本地 main。否则中止并报告
+当前分支与提交。manifest 记录 source_commit、source_ref（main / origin/main / tag 名）与 source_tag。
+--verify-only 只比较 staged 与 6 处副本的哈希，按 missing / different / extra 打印差异清单，
+不写入、不检查门禁。
 
-Every overwritten or removed installed file is first copied to <record>/backup/<host>/;
-stale app bundles are removed; each install gets a fresh installation-manifest.json and is
-verified by SHA-256. The deployed config.json must already equal the staged one.
+Every overwritten or removed installed file is first copied to <record>/backup/<host>/.
+Installed files that staged no longer has are removed anywhere in the skill directory
+(config.json, the manifest, __pycache__, .pytest_cache and *.pyc are left alone) and the
+directories this empties are pruned; each install gets a fresh installation-manifest.json and
+is verified by SHA-256. The deployed config.json must already equal the staged one; with
+--sync-config the staged config.json is copied over instead (after the backup).
 sci-figure-replica is not handled here (its source lives outside this project).
 """
 import hashlib
@@ -26,54 +31,73 @@ HOME = Path.home()
 SOURCE = Path(__file__).resolve().parents[1] / "开发" / "staged" / "research-wiki"
 DEV = SOURCE.parents[1]
 SKIP = {".git", "__pycache__", ".pytest_cache", "node_modules"}
-HOSTS = (".agents", ".codex", ".claude", ".cc-switch", ".config/opencode")
+HOSTS = (".agents", ".codex", ".claude", ".cc-switch", ".config/opencode", ".kiro")
 MANIFEST = "installation-manifest.json"
+CONFIG = "config.json"
 
 
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def run_git(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", "-C", str(DEV), *args], capture_output=True, text=True, encoding="utf-8")
+
+
 def dev_git(*args: str, check: bool = True) -> str:
-    result = subprocess.run(["git", "-C", str(DEV), *args], capture_output=True, text=True, encoding="utf-8")
+    result = run_git(*args)
     if check and result.returncode:
         sys.exit(f"git {' '.join(args)} 失败：{result.stderr.strip()}")
     return result.stdout.strip() if result.returncode == 0 else ""
 
 
 def source_gate() -> dict:
-    """只允许从已推送的 origin/main 或已推送 tag 部署。"""
+    """只允许从本地 main、fetch 后的 origin/main 或已推送 tag 部署。"""
     head = dev_git("rev-parse", "HEAD")
     branch = dev_git("branch", "--show-current") or "（分离 HEAD）"
+    where = f"当前分支: {branch}\nHEAD: {head}"
     if dev_git("status", "--porcelain"):
-        sys.exit(f"部署来源门禁未通过：开发仓库有未提交改动\n当前分支: {branch}\nHEAD: {head}")
-    dev_git("fetch", "origin")
-    main = dev_git("rev-parse", "--verify", "-q", "refs/remotes/origin/main", check=False)
+        sys.exit(f"部署来源门禁未通过：开发仓库有未提交改动\n{where}")
+    main = dev_git("rev-parse", "--verify", "-q", "refs/heads/main", check=False)
     if head == main:
-        return {"commit": head, "tag": None}
+        return {"commit": head, "ref": "main", "tag": None}
+    fetched = run_git("fetch", "origin")
+    if fetched.returncode:
+        sys.exit(f"部署来源门禁未通过：fetch origin 失败（离线？），此时只允许 HEAD 等于本地 main\n"
+                 f"{where}\n本地 main: {main or '（不存在）'}\ngit: {fetched.stderr.strip()}")
+    origin = dev_git("rev-parse", "--verify", "-q", "refs/remotes/origin/main", check=False)
+    if head == origin:
+        return {"commit": head, "ref": "origin/main", "tag": None}
     tag = dev_git("describe", "--exact-match", "--tags", "HEAD", check=False)
     if tag and dev_git("ls-remote", "--tags", "origin", f"refs/tags/{tag}"):
-        return {"commit": head, "tag": tag}
-    sys.exit(f"部署来源门禁未通过：HEAD 既不是 origin/main 也不是已推送 tag\n"
-             f"当前分支: {branch}\nHEAD: {head}\norigin/main: {main or '（不存在）'}")
+        return {"commit": head, "ref": tag, "tag": tag}
+    sys.exit(f"部署来源门禁未通过：HEAD 既不是本地 main、origin/main，也不是已推送 tag\n{where}\n"
+             f"本地 main: {main or '（不存在）'}\norigin/main: {origin or '（不存在）'}")
+
+
+def deployable(path: Path, root: Path) -> bool:
+    """参与部署与比较的文件：跳过仓库/缓存目录、manifest 与 .pyc/.pyo。"""
+    return (path.is_file() and not (set(path.relative_to(root).parts) & SKIP)
+            and path.name != MANIFEST and path.suffix not in {".pyc", ".pyo"})
 
 
 def source_files() -> list[Path]:
-    return sorted(p for p in SOURCE.rglob("*")
-                  if p.is_file() and not (set(p.relative_to(SOURCE).parts) & SKIP)
-                  and p.name != MANIFEST and p.suffix not in {".pyc", ".pyo"})
+    return sorted(p for p in SOURCE.rglob("*") if deployable(p, SOURCE))
+
+
+def installed_files(target: Path) -> set[str]:
+    if not target.is_dir():
+        return set()
+    return {p.relative_to(target).as_posix() for p in target.rglob("*") if deployable(p, target)}
 
 
 def verify_only() -> int:
-    """打印 5 处副本与 staged 的差异清单；不一致返回 1。"""
-    files = source_files()
-    wanted = {p.relative_to(SOURCE).as_posix(): sha(p) for p in files}
+    """打印 6 处副本与 staged 的差异清单（missing / different / extra）；不一致返回 1。"""
+    wanted = {p.relative_to(SOURCE).as_posix(): sha(p) for p in source_files()}
     report, differs = [], False
     for host in HOSTS:
         target = HOME / host / "skills" / "research-wiki"
-        installed = {p.relative_to(target).as_posix() for p in target.rglob("*")
-                     if p.is_file() and not (set(p.relative_to(target).parts) & SKIP)
-                     and p.name != MANIFEST and p.suffix not in {".pyc", ".pyo"}} if target.is_dir() else set()
+        installed = installed_files(target)
         entry = {"host": host,
                  "missing": sorted(set(wanted) - installed),
                  "different": sorted(name for name in set(wanted) & installed
@@ -98,6 +122,18 @@ def deploy(host: str, files: list[Path], record: Path, note: str, gate: dict) ->
             shutil.copy2(installed, saved)
 
     records, changed, removed = [], [], []
+    # staged 已没有的旧文件（整个技能目录）：先备份再删除，再清掉因此变空的目录。
+    # 先清理后复制：Windows 上只改了大小写的文件会按 staged 的新名字重新写入。
+    wanted = {p.relative_to(SOURCE).as_posix() for p in files}
+    for name in sorted(installed_files(target) - wanted - {CONFIG}):
+        stale = target / name
+        backup(Path(name))
+        stale.unlink()
+        removed.append(name)
+        parent = stale.parent
+        while parent != target and not any(parent.iterdir()):
+            parent.rmdir()
+            parent = parent.parent
     for source in files:
         relative = source.relative_to(SOURCE)
         destination = target / relative
@@ -108,19 +144,11 @@ def deploy(host: str, files: list[Path], record: Path, note: str, gate: dict) ->
             changed.append(relative.as_posix())
         records.append({"path": relative.as_posix(), "source": str(source),
                         "target": str(destination), "sha256": sha(source)})
-    # Old hashed bundles would otherwise accumulate in app/.
-    wanted = {p.relative_to(SOURCE).as_posix() for p in files if p.is_relative_to(SOURCE / "app")}
-    for installed in sorted((target / "app").rglob("*")):
-        relative = installed.relative_to(target)
-        if installed.is_file() and relative.as_posix() not in wanted:
-            backup(relative)
-            installed.unlink()
-            removed.append(relative.as_posix())
     backup(Path(MANIFEST))
     (target / MANIFEST).write_text(json.dumps({
         "skill": "research-wiki", "source": str(SOURCE), "target": str(target),
         "installed_at": datetime.now(timezone.utc).isoformat(),
-        "source_commit": gate["commit"], "source_tag": gate["tag"],
+        "source_commit": gate["commit"], "source_ref": gate["ref"], "source_tag": gate["tag"],
         "maintenance_record": str(record), "update": note, "files": records,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     bad = [r["path"] for r in records if sha(Path(r["target"])) != r["sha256"]]
@@ -129,15 +157,22 @@ def deploy(host: str, files: list[Path], record: Path, note: str, gate: dict) ->
 
 
 def main() -> None:
-    if sys.argv[1:] == ["--verify-only"]:
+    args = sys.argv[1:]
+    if args == ["--verify-only"]:
         sys.exit(verify_only())
-    if len(sys.argv) != 3:
+    sync_config = "--sync-config" in args
+    args = [arg for arg in args if arg != "--sync-config"]
+    if len(args) != 2 or any(arg.startswith("--") for arg in args):
         sys.exit(__doc__)
     gate = source_gate()
-    record, note = Path(sys.argv[1]).resolve(), sys.argv[2]
-    for host in HOSTS:
-        config = HOME / host / "skills" / "research-wiki" / "config.json"
-        assert config.read_bytes() == (SOURCE / "config.json").read_bytes(), f"config differs: {config}"
+    record, note = Path(args[0]).resolve(), args[1]
+    staged_config = (SOURCE / CONFIG).read_bytes()
+    configs = [HOME / host / "skills" / "research-wiki" / CONFIG for host in HOSTS]
+    differ = [str(path) for path in configs if not path.is_file() or path.read_bytes() != staged_config]
+    if differ and not sync_config:
+        sys.exit("部署中止：以下 config.json 与 staged 不同（或缺失）\n  " + "\n  ".join(differ)
+                 + "\n核对 staged config.json 后加 --sync-config 重跑：各处原文件先备份到"
+                   " <record>/backup/<host>/ 再覆盖。")
     record.mkdir(parents=True, exist_ok=True)
     files = source_files()
     reports = [deploy(host, files, record, note, gate) for host in HOSTS]

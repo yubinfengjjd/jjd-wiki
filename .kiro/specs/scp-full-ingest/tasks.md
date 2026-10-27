@@ -1,5 +1,8 @@
 # Implementation Plan: scp-full-ingest
 
+> **状态：暂停（2026-10-27，作者决定 1=a）。** v2 精简规则已落地（见 文档/v2精简与FigureYa入库/计划.md）。剩余任务不再按本文件的旧门禁（八步逐条确认、Issue/PR/他人评审、写入锁、只经画廊）推进，待按 v2 规则（来源登记 → L0/L1 批次 → 用到再做 L2）重排后另行执行。已入库的 SCP 模板与方法保留 id 与证据。
+
+
 ## Overview
 
 按设计阶段 S0–S14 执行。代码语言：Python（隔离区脚本、测试驱动、合入与核验工具）与 R（模块加载层模板、原生材料用例、模板绘图代码）。顺序按风险递增：
@@ -173,7 +176,7 @@
     - 对冻结后代码运行 `replay-legacy.py`/`replay-portable.R`；代码未改且旧收据仍现行的分支（SHAP、回归评价）保留原收据不改
     - 完成判据：`<A>/kiro-s6-legacy-replay-<stamp>.json`
     - _Requirements: 9.4, 9.5, 7.10_
-  - [ ] 8.5 79 模块加载审计【后台】
+  - [x] 8.5 79 模块加载审计【后台】
     - 运行 `<A>/scripts/codex_module_load_audit.py`（source-only，确认 Fixed_Source 零副作用），输出新时间戳文件，可断点续跑
     - 完成判据：`<A>/codex-module-load-<stamp>.json` 79/79 有结果
     - _Requirements: 9.7_
@@ -197,7 +200,7 @@
   - [ ] 10.1 去向表 v2 生成（C6）
     - 重写 `<B>/scripts/wiki-map.py` 输出部分：按 D1 schema 生成 `<B>/coverage/wiki-map.json` 与 `<B>/coverage/wiki-map.md`；官方状态从 Wiki_CLI `implementation_status` 读取；具名形态覆盖 `branches.json` 全部行；GeneConvert、PrepareDB 记为函数；`state_fact` 取受控值；counts 中代签核/模板化/ready 暂为 0，待 21.2 更新
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 15.4, 15.5_
-  - [ ] 10.2 去向表校验器
+  - [x] 10.2 去向表校验器
     - 新建 `<B>/scripts/validate-wiki-map.py`，机检 D1 字段约束表全部规则；悬空引用、空去向、"稍后整理"/"TODO" 类占位一律报错
     - 完成判据：对 10.1 输出零错误，结果写 `<A>/kiro-s7-wiki-map-check-<stamp>.json`
     - _Requirements: 2.10_
@@ -218,12 +221,12 @@
     - 文件 `test_family_boundary.py`；穷举 `method_kind=analysis` 页面
     - **Validates: Requirements 3.3, 3.8**
 
-- [ ] 11. S8 可视化结构去重清单
-  - [ ] 11.1 生成并逐项判定结构清单（C7）
+- [x] 11. S8 可视化结构去重清单
+  - [x] 11.1 生成并逐项判定结构清单（C7）
     - 新建 `<B>/scripts/build-visual-structures.py`：从 `exports.json` 的 22 个 visualization 入口、`branches.json` 具名形态与源码结构性参数生成初稿；逐项读 `<SRC>` 源码，与 17 个 SCP 模板及正式库其他 ready 模板比较视觉编码与附属结构，填写 `dedupe`（new/reuse/param_of 及差异）、`batch`（v1-heatmap … v8-3d）、预分配 `fig18+` 条目 id、`chart_type`、`interface`；3D 两项填 `interactive`；CellDimPlot lineage 叠加标原生失败
     - 完成判据：`<B>/coverage/visual-structures.json` 与人读版 `<A>/kiro-visual-structures-<stamp>.md`（确数与每项判定依据）
     - _Requirements: 10.1, 10.9_
-  - [ ] 11.2 结构清单校验器
+  - [x] 11.2 结构清单校验器
     - 新建 `<B>/scripts/validate-visual-structures.py`：按 D2 状态取值与性质 13 的不变量机检；支持读取 `<B>/coverage/visual-batches/*.json` 批次状态
     - _Requirements: 10.1, 10.3, 10.5, 10.8_
 
@@ -231,27 +234,27 @@
   - [ ] 12.1 原生材料生成框架（C8）
     - 新建 `<B>/scripts/native-visual-oracles.R`（框架）与 `<B>/scripts/native-cases/`（每批一个 case 文件）：每 case 新进程调用原生函数，保存 PNG/SVG（或 HTML+依赖目录），同时导出模板接口 CSV（同输入同参数下原生函数内部使用的数据），写 `references.json`（参数、尺寸 8×6 in、150 dpi、种子 11、输入/输出 sha256、对象未改断言、错误原文）；原生失败写 `state=reference_failed`，不重画；输出到 `E:/research-wiki-env/work/kiro-scp-native/<batch>/`
     - _Requirements: 8.2, 8.4, 8.6, 10.5, 10.12_
-  - [ ] 12.2 画廊条目构建器（C9）
+  - [x] 12.2 画廊条目构建器（C9）
     - 新建 `<B>/scripts/build-gallery-entry.py`：依次调用 `<sfr>/scripts/dedupe.py --dry-run`、`init_entry.py`（来源必须为 PNG）、填 `meta.json`（`panel_map` 恰好一项、chart_types、scenarios、provenance、files）、`original_code/`（源函数片段原字节 + `provenance.json`）、`data/<interface>.csv`、`output/replica.*`、`make_compare.py`、`qa_check.py`、README/qa_report 写软件夹具声明；状态写 `review`；最后 `build_index.py`；`--gallery` 参数切换 B 画廊或正式画廊
     - _Requirements: 10.2, 10.10, 10.11_
-  - [ ] 12.3 原生对照工具
+  - [x] 12.3 原生对照工具
     - 新建 `<B>/scripts/compare-native.py`：栅格逐像素（同尺寸；确定原因时允许写明容差与依据，且须同时通过 SVG 结构比较）、SVG 元素类型计数/文本节点集合/路径数、plotly trace 的 x/y/z/type/mode/name/text/marker 全等 + 外部 `plotly_build` 与 HTML 保存；输出 `verify/native-comparison.json`
     - _Requirements: 8.2, 8.3, 10.7_
-  - [ ] 12.4 代签核与模板化执行器（C10）
+  - [x] 12.4 代签核与模板化执行器（C10）
     - 新建 `<B>/scripts/delegated-template-pipeline.py`，子命令 `ingest`、`signoff`、`scaffold`、`verify`、`ready`：签核前置检查（`native.state=generated` 且证据 sha256 与清单一致；只接受清单内 `2026-10-22-scp-example__fig18+` 条目，R10）；签核经 `POST /api/layouts/<id>/signoff`（端口参数化：彩排 8882、正式 8765）；审计写 `--audit <jsonl>`（D3 字段）、页面 `## 代签核记录` 节（agent 正文区）与 `save` 提交消息，不调用 `/note`；`ready` 先 `check-entry` 再 `mark-ready`；未过写 `action=not_ready`；`verify` 前设 `R_LIBS_USER`、清空 `LANG/LC_*`；批次状态写 `<B>/coverage/visual-batches/<batch>.json`
     - _Requirements: 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 12.4_
-  - [ ] 12.5 浏览器检查工具
+  - [x] 12.5 浏览器检查工具
     - 新建 `<B>/scripts/kiro_browser_check.py`：用本机 Edge/Chrome 无头模式 + 远程调试协议（D:/anaconda 的 websocket-client，不安装新包）打开本机 URL 或本地 HTML，固定窗口尺寸与默认相机截图；对 plotly 图执行图例项点击隐藏/再点击恢复并读取 trace `visible` 状态；输出 JSON 证据与截图路径
     - _Requirements: 8.7, 10.13, 14.3_
   - [ ] 12.6 隔离彩排环境
     - 用 psutil 核对是否已有 `<B>` 配置的 Wiki_Server（8882）实例，复用或按 B 配置启动；确认 B 画廊根与 `config.json` 指向 B；记录进程命令行；彩排结束（21 之后）停止
     - 完成判据：`<A>/kiro-s10-rehearsal-env-<stamp>.json`
     - _Requirements: 14.1, 14.8_
-  - [ ]* 12.7 流水线守卫单元测试
+  - [x]* 12.7 流水线守卫单元测试
     - 文件 `test_pipeline_guards.py`：`reference_failed` 结构被拒签；非 fig18+ 或清单外条目被拒；审计记录字段完整且 sha256 与文件一致；页面代签核节位于作者区块之外且作者区块字节不变；3D 结构 `ready` 子命令被拒
     - _Requirements: 10.3, 10.4, 10.5, 10.8_
 
-- [ ] 13. S10 彩排 V1：热图批次（GroupHeatmap 4 结构：add_violin、flip、split.by 分列、细胞注释条；FeatureHeatmap 按 S8 判定 0–1）
+- [ ] 13. S10 彩排 V1：热图批次（GroupHeatmap 4 结构：add_violin、flip、split.by 分列、细胞注释条；FeatureHeatmap 按 S8 判定 0–1） （2026-10-27 需求 17 修订：不再新做 CSV 模板；本批仅保留已完成成果，其余形态改由 28.x 逐形态验证）
   - [ ] 13.1 原生材料
     - 写 `<B>/scripts/native-cases/v1-heatmap.R`：GroupHeatmap 4 结构复用已有原生输出（核对 sha256，导出接口 CSV）；FeatureHeatmap 若判为 new 则生成；fig17 资产只读
     - 完成判据：`kiro-scp-native/v1-heatmap/references.json`、`<B>/coverage/visual-batches/v1-heatmap.json`
@@ -269,7 +272,7 @@
     - `pipeline verify` → `compare-native.py` → 换数据与规模（≥ 2 种组数、长标签、显式顺序）→ 异目录迁移（`verify/runtime-portability.json`）→ bindings 出图比较 → 全部通过则 `pipeline ready`，否则保持 draft 并写精确原因与 `not_ready` 审计
     - _Requirements: 8.2, 8.4, 10.7, 10.8, 12.4_
 
-- [ ] 14. S10 彩排 V2：FeatureStatPlot 5 结构（violin、box、bar、dot、col；按 S8 判定是否合并）
+- [ ] 14. S10 彩排 V2：FeatureStatPlot 5 结构（violin、box、bar、dot、col；按 S8 判定是否合并） （需求 17 修订：已完成的 6 个 CSV 模板走本批彩排流程）
   - [ ] 14.1 原生材料
     - 写 `native-cases/v2-featurestat.R`：复用 5 种已有原生输出，核对 sha256 并导出接口 CSV
     - _Requirements: 8.2, 8.5, 10.2_
@@ -286,7 +289,7 @@
     - 同 13.5
     - _Requirements: 8.2, 8.4, 10.7, 10.8, 12.4_
 
-- [ ] 15. S10 彩排 V3：CellDimPlot / FeatureDimPlot / FeatureCorPlot（基础分组散点、分组圈选、嵌入图分组统计小图、lineage 叠加；单特征连续色、多特征混色；FeatureCorPlot 1）
+- [ ] 15. S10 彩排 V3：CellDimPlot / FeatureDimPlot / FeatureCorPlot（基础分组散点、分组圈选、嵌入图分组统计小图、lineage 叠加；单特征连续色、多特征混色；FeatureCorPlot 1） （需求 17 修订：已完成的 5 个 CSV 模板走本批彩排流程；stat-inset 原生失败不入）
   - [ ] 15.1 原生材料
     - 写 `native-cases/v3-dim.R`：基础与 4 种圈选、单特征、FeatureCorPlot 复用已有；统计小图与混色生成；lineage 叠加重跑一次确认原生失败并记录精确错误（grobs list-matrix），标 `reference_failed`，不重画
     - _Requirements: 8.2, 8.5, 8.6, 10.2, 10.5_
@@ -303,7 +306,7 @@
     - 同 13.5
     - _Requirements: 8.2, 8.4, 10.7, 10.8, 12.4_
 
-- [ ] 16. S10 彩排 V4：DynamicPlot / DynamicHeatmap / LineagePlot / GraphPlot
+- [ ] 16. S10 彩排 V4：DynamicPlot / DynamicHeatmap / LineagePlot / GraphPlot （需求 17 修订：不再新做 CSV 模板，改由 28.x）
   - [ ] 16.1 原生材料
     - 写 `native-cases/v4-trajectory-graph.R`：DynamicPlot、DynamicHeatmap、GraphPlot（straight/curved）复用已有；LineagePlot 用已有 Slingshot 对象生成
     - _Requirements: 8.2, 8.5, 10.2_
@@ -320,7 +323,7 @@
     - 同 13.5
     - _Requirements: 8.2, 8.4, 10.7, 10.8, 12.4_
 
-- [ ] 17. S10 彩排 V5：EnrichmentPlot 7 结构（bar、dot、lollipop、network、enrichmap、wordcloud、comparison）
+- [ ] 17. S10 彩排 V5：EnrichmentPlot 7 结构（bar、dot、lollipop、network、enrichmap、wordcloud、comparison） （需求 17 修订：不再新做 CSV 模板，改由 28.x）
   - [ ] 17.1 原生材料
     - 写 `native-cases/v5-enrichment.R`：先在 R_Runtime 探测 clusterProfiler 与注释库可用性；可用则生成，缺包按精确包名与原始错误记 `missing_package`
     - _Requirements: 8.2, 10.2, 10.12, 15.1_
@@ -337,7 +340,7 @@
     - 同 13.5；未产出结构在对应技术页写真实实现、参数说明与精确 not_run 原因
     - _Requirements: 8.2, 8.4, 10.7, 10.8, 10.12, 12.4_
 
-- [ ] 18. S10 彩排 V6：GSEAPlot（line、bar、comparison；network/enrichmap/wordcloud 按 S8 判定复用 V5 或新增）
+- [ ] 18. S10 彩排 V6：GSEAPlot（line、bar、comparison；network/enrichmap/wordcloud 按 S8 判定复用 V5 或新增） （需求 17 修订：不再新做 CSV 模板，改由 28.x）
   - [ ] 18.1 原生材料
     - 写 `native-cases/v6-gsea.R`；缺包同 17.1 处理
     - _Requirements: 8.2, 10.2, 10.12, 15.1_
@@ -354,7 +357,7 @@
     - 同 17.5
     - _Requirements: 8.2, 8.4, 10.7, 10.8, 10.12, 12.4_
 
-- [ ] 19. S10 彩排 V7：ProjectionPlot / PAGAPlot / VelocityPlot（raw 箭头、grid 箭头、stream 流线）
+- [ ] 19. S10 彩排 V7：ProjectionPlot / PAGAPlot / VelocityPlot（raw 箭头、grid 箭头、stream 流线） （需求 17 修订：不再新做 CSV 模板，改由 28.x）
   - [ ] 19.1 原生材料
     - 写 `native-cases/v7-projection-paga-velocity.R`：先查 `<B>` 与 Native_Oracle 中是否已有参考映射、PAGA、速度上游真实对象；有则生成；没有记 `missing_material` 与缺少的具体对象，stream 记 `missing_package`（metR）；不合成上游结果
     - _Requirements: 8.2, 10.2, 10.12, 15.1, 15.2_
@@ -412,14 +415,29 @@
     - 在 `test_visual_structures.py` 中独立测试函数；穷举新条目来源图 sha256 与 Wiki 目录文件；模板 `preview.png` 只来自回放输出
     - **Validates: Requirements 10.10**
 
+- [ ] 28. 需求 17：Seurat 输入绘图模板逐形态验证（插在 22 之前执行）
+  - [ ] 28.1 上游对象生成
+    - 用原生 SCP 在 pancreas_sub 上生成并保存 RDS：RunDEtest(group_by=CellType)、RunEnrichment 与 RunGSEA（自定义 TERM2GENE，不联网）、RunSlingshot + RunDynamicFeatures（lineage 拟合）；记录参数、sha256 与原始错误；缺包/缺材料（scvelo、scanpy）写 missing_*
+    - 输出 `E:/research-wiki-env/work/kiro-scp-upstream/`，汇总写 <A>/kiro-upstream-objects-<stamp>.json
+    - _Requirements: 17.4, 17.5_
+  - [ ] 28.2 逐形态用例与原生对照
+    - 对 22 个入口在 branches.json 中的每个形态值建一个用例（其余参数默认），生成原生 PNG（交互图 traces），写入暂存用例目录后合并进 coverage/cases；原生失败记 expect_native_failure
+    - _Requirements: 17.2, 17.3_
+  - [ ] 28.3 重新冻结并运行可视化家族收据【后台】
+    - 新冻结记录（只改 cases），kiro_run_all_cases.py 只跑 scp-viz-* 家族；select-receipts
+    - _Requirements: 17.2, 7.1_
+  - [ ] 28.4 页面：形态表、上游链路、形态图样、应用场景、与 CSV 模板互链
+    - 改 fill-pages2.py（页面文字编译器，不在冻结清单内）或新编译脚本，形态图样取自收据输出
+    - _Requirements: 17.5, 17.6, 17.7, 17.8_
+  - [ ] 28.5 Checkpoint：逐形态统计（verified / native_failure / missing_* / not_probed），并入 22 的汇报
 - [ ] 22. Checkpoint - 彩排结果
   - 报告 S10 统计：新增结构数、代签核数、模板化数、ready 数、未 ready 数（按原因分列，含 2 个 3D draft）、原生失败与缺包/缺材料结构；运行全部已写测试；确保全部通过，有疑问时询问用户。
 
 - [ ] 23. S11 受控合入正式库
-  - [ ] 23.1 Baseline 快照与对比工具（C12）
+  - [x] 23.1 Baseline 快照与对比工具（C12）
     - 新建 `<B>/scripts/baseline-snapshot.py`（复用 `codex_method_state_audit.py formal` 的官方读取方式，记录家族 status/ready_for_use、实现状态与 portability、模板 status/replay_available/acceptance_stale、页面与实现 ID 全集）与 `baseline-diff.py`（状态序 ready/verified > draft/stale/not_run > invalid，任一下降即非零退出）
     - _Requirements: 12.1, 12.2, 12.5, 12.6_
-  - [ ]* 23.2 属性测试：Baseline 单调不降
+  - [x]* 23.2 属性测试：Baseline 单调不降
     - **Property 16: Baseline 单调不降**
     - 文件 `test_merge_protection.py`；按 seed 生成快照对与增量序列，断言 `baseline-diff.py` 判定与参考模型一致
     - **Validates: Requirements 12.1, 12.2**

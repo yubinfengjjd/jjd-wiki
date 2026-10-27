@@ -51,7 +51,7 @@
 - **已知限制**：无登录、单写者；只接受本机 Host、拒绝跨站写请求；文件服务只读两个根目录且不提供点目录（`.git` 等）；网页外壳 `no-store`，资源带哈希。
 - **审查**：`T4-review.md`、`M3-notes.md`、`R1-review.md`、`维护记录/2026-10-22-审查问题修复/`
 - **双击启动**：项目根 `启动知识库 - 快捷方式.lnk` → `tools/启动知识库.vbs` → `tools/launcher.ps1`：后台起服务、开独立浏览器应用窗口，窗口关闭即停服务；日志 `.launcher.log`。
-- **部署**：`python tools/deploy.py <维护记录目录> "<说明>"` 同步三处安装并按哈希核验（只管 research-wiki）。
+- **部署**：`python tools/deploy.py <维护记录目录> "<说明>" [--sync-config]` 同步 6 处安装（`.agents`、`.codex`、`.claude`、`.cc-switch`、`.config/opencode`、`.kiro`）并按哈希核验（只管 research-wiki）；开发仓库须干净且 HEAD 为本地 `main`、`origin/main` 或已推送 tag。
 
 ## 6. 规则与体检（init / lint / save）
 
