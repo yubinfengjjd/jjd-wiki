@@ -45,7 +45,7 @@ summary: 机器学习模型的特征重要性与 SHAP 解释图，以及特征�
 | [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]] | L2 | ready · 可用 | SHAP 条形图（L2） |
 | [[methods/shap-explanation|基于 SHAP 的模型解释]] | L2 | ready · 可用 | SHAP 模型解释方法页 |
 | `figureya:FigureYa316RF_XGBoost_Boruta` | L0 | catalog | RF / XGBoost / Boruta 特征筛选（L0） |
-| [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] | L1 | draft · 运行 not_run | 多算法组合预后模型比较（重） |
+| [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] | L1 | draft · 运行 fail | 多算法组合预后模型比较（重） |
 <!-- facts:end -->
 
 ## 注意
