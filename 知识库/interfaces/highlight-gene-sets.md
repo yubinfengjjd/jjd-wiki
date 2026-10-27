@@ -20,10 +20,12 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：无
+- 使用的模板：[[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]
 <!-- facts:end -->
 
 ## 含义
+
+一行是一个要在火山图上圈出并标注的基因及其所属基因集（通路）。`gene` 须与 bulk-de-table 的 gene 一致；`set` 决定标注颜色，一个基因集一种颜色。不在差异表里的基因默认报错，`missing_highlight: drop` 时丢弃并记录。
 
 <!-- user:start -->
 <!-- user:end -->

@@ -1,0 +1,10 @@
+{
+  "mode": "adaptive",
+  "profile": "km-curve",
+  "n_groups": 3,
+  "max_label_chars": 15,
+  "width_in": 7,
+  "height_in": 6.375,
+  "svg_device": "svglite",
+  "dpi": 200
+}

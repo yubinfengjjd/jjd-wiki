@@ -43,10 +43,12 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：无
+- 使用的模板：[[templates/figureya-6rhrsv2--forest|亚组分析森林图]]
 <!-- facts:end -->
 
 ## 含义
+
+一行是森林图的一行：亚组标题行（如 Age，效应量留空，可在 `p` 写交互 P）或亚组行（如 <=65）。行序就是显示顺序，`label` 的前导空格保留为缩进。`estimate/lower/upper` 是上游给定的比值及 95% CI，模板不重算；`percent` 为 0–100 的占比，用于方块大小。与 survival-time-event-group 的区别：这里不含个体数据。
 
 <!-- user:start -->
 <!-- user:end -->
