@@ -1,52 +1,50 @@
 # v2 精简与 FigureYa 入库：交付报告（2026-10-27）
 
-计划：`文档/v2精简与FigureYa入库/计划.md`；作者选择 1=a、2=a、3=a。
+计划：`文档/v2精简与FigureYa入库/计划.md`；作者选择 1=a、2=a、3=a；第一批装包已批准（“R-4.3.1 里有就用，没有的话批准安装”）。
 
-## 已完成
+## 结果
 
 | 阶段 | 结果 | 验证 |
 |---|---|---|
 | P1 规则 | `AGENTS.md` 120 行、`SKILL.md` 75 行，新增 `references/sources-and-recipes.md`；知识库 `AGENTS.md` 已经 `init` 同步 | `test_rule_docs` 通过 |
-| P2 工具 | 开发仓库 3 个提交（7cd88f0、913560c、066698e），本地 `main` 快进到 066698e，未推送 | 全量 pytest：761 passed / 3 skipped，唯一失败是知识库 AGENTS.md 未同步，`init` 后复跑通过；前端 `build` 与测试通过 |
-| P2 修正 | 依赖判定改为以代码里的 `library()/require()/pkg::` 为准，上游 `install_dependencies.R` 只作提示：FigureYa 的安装清单里有颜色名、数据列名（`blueviolet`、`phylum`、`order`），原逻辑会让这些模块永远 not_run | 新增 `test_required_packages_follow_code_not_install_list` |
-| P7 部署 | 6 处（含 `.kiro`）部署，manifest `source_commit=066698e`、`source_ref=main`；维护记录 `维护记录/2026-10-27-v2精简与FigureYa入库/` | `deploy --verify-only` 6 处 missing/different/extra 均为 0；新进程经 PATH 运行 `rwiki find 火山图`（cmd）和 `rwiki show`（Git Bash）正常 |
-| P3 L0 | 来源页 `sources/figureya.md`（commit 8d7a02c7，CC-BY-NC-SA-4.0，trusted），`items.jsonl` 313 行 | 行数 = 快照中 `FigureYa*` 目录数 313；`find 生存曲线` 命中 |
-| P4 L1（部分） | 30 个配方页已建（draft，含中文标题、图型、适用/不适用）；12 个原样运行 pass | 收据 `recipes/<id>/runs/`；目视看过 141risk、162boxViolin、39bar 预览图，与上游示例一致 |
-| P6 场景页 | 7 页：临床预测与生存、差异与富集、相关性、组间比较、组成与流向、降维与单细胞、模型解释 | `find 生存曲线` 前 4 条均为“场景首选”；`show` 列出首选表 |
-| P8 收尾 | SCP 规格（requirements/tasks）标“暂停，待 v2 重排” | 全量 `lint`：0 ERROR，36 WARN（18 个待运行配方 + 既有 SCP not_run 分支） |
-| 端到端 | `use figureya-162boxviolin --project <临时目录>` → `run --dir` | state pass、scope other-dir；临时目录已删 |
+| P2 工具 | 开发仓库本地 `main` = fd03bf1（4 个提交），未推送 | 全量 pytest 761 passed / 3 skipped（唯一失败为知识库 AGENTS.md 未同步，`init` 后通过）；v2 测试 16 个通过；前端 build 与测试通过 |
+| P2 修正 | ① 依赖以代码 `library()/require()/pkg::` 为准，上游安装清单只作提示（FigureYa 清单里有 `blueviolet`、`phylum` 等非包名）；② 运行器改在全局环境 knit（survminer、rms 的 datadist 在全局环境找数据，原先因此失败） | 各有回归测试 |
+| P7 部署 | 6 处（含 `.kiro`），manifest `source_commit=fd03bf1`、`source_ref=main` | `deploy --verify-only` 一致；新进程经 PATH 跑 `rwiki find`（cmd）与 `rwiki show`（Git Bash） |
+| P3 L0 | `sources/figureya.md`（commit 8d7a02c7，CC-BY-NC-SA-4.0，trusted），`items.jsonl` 313 行 | 行数 = 快照 `FigureYa*` 目录数 |
+| P4 L1 | 30 个配方页（draft）；27 pass、2 fail、1 not_run | 收据 `recipes/<id>/runs/`；预览图目视抽查 6 张 |
+| P5 L2 | 3 个模板（draft）：`figureya-1survivalcurve-update--km-curve`、`figureya-6rhrsv2--forest`、`figureya-59volcanov2--volcano`；新接口 4 个 | `verify-template` 全部成功；`check-entry` 无 ERROR；换数据见下 |
+| P6 场景页 | 7 页 | `find 生存曲线` 前 4 条均为场景首选 |
+| P8 收尾 | SCP 规格标“暂停，待 v2 重排” | 全量 `lint` 0 ERROR |
 
-12 个 pass：141risk、31lasso、102multipanelROC、39bar、13GSEA_Java、11bubble、76corrgram、37correlationV2、162boxViolin、173fancybar、227boxdensity、196PanPie。其中 173fancybar、196PanPie、76corrgram 用 base 图形直接写 PDF，knitr 没有捕获 PNG，所以没有 `preview.png`；预期 PDF 都已生成。11bubble 的 `dot.png/dot.tiff`、13GSEA 的 `ppoint2.pdf` 记为 missing_outputs（上游对应代码块未执行），收据如实记录。
+## 装包
 
-## 等作者批准：第一批装包清单
+- 装进 `E:\research-wiki-env\R-lib\figureya`（R 4.5）。没有直接用 `D:\R-4.3.1\library`：R 4.3 编译的包（rms、GSVA、gbm、BART、randomForestSRC、magick 等含 C/C++ 代码）在 R 4.5 里不能保证二进制兼容，混用库容易出现难查的崩溃；4.3.1 里也缺 forestplot、smoothHR、ggstatsplot 等 8 个包。4.3.1 本身未改动。
+- CRAN/Bioc 装上 25 个；CRAN 已下架的 survMisc、regplot、km.ci 从 CRAN Archive 源码装上；ggcor 用模块自带的 tar 包装上。
+- 仍缺：CoxBoost。GitHub 和 CRAN Archive 都只有源码，需要编译，本机没有 Rtools，所以 293machineLearning 记为 not_run。
 
-另外 18 个配方缺包，装包前须作者批准一次。批准后执行 `rwiki deps <下列配方> --install --github`，只装进 `E:\research-wiki-env\R-lib\figureya`。
+## L1 运行结果（30 个）
 
-| 配方 | 缺包 |
-|---|---|
-| 1survivalCurve | survminer |
-| 284pairwiseLogrank | survminer、ggpp |
-| 6rHRs、193RiskTable | forestplot |
-| 30nomogram | rms、regplot、nomogramEx |
-| 138NiceCalibration | rms、ResourceSelection |
-| 33DCA | magick |
-| 85timeROC | timeROC |
-| 99smoothHR | smoothHR（会带上 rms） |
-| 293machineLearning | randomForestSRC、plsRcox、superpc、gbm、survivalsvm、BART、miscTools、compareC、ggbreak；CoxBoost（GitHub binderh/CoxBoost） |
-| 59volcano | ggthemes |
-| 61GSVA | GSVA（Bioconductor）、msigdbr |
-| 153ccgraph | GOplot |
-| 228linkCor | GSVA、ggcor（模块自带 ggcor-master.tar.gz，本地安装） |
-| 92immune_gene | ggstatsplot（依赖较重） |
-| 143survCor | survMisc |
-| 25Sankey | ggalluvial |
-| 236circGroup | SimDesign |
+- pass 27 个。173fancybar、196PanPie、76corrgram、138NiceCalibration、143survCor、193RiskTable、85timeROC、99smoothHR 直接写 PDF，没有 PNG 预览，预期 PDF 均已生成。11bubble（dot.png/dot.tiff）、13GSEA（ppoint2.pdf）有声明输出未生成，收据如实记录。
+- fail 2 个，都是上游代码与当前包版本不兼容，没有改上游：
+  - 153ccgraph：`group_by(.dots=)` 在 dplyr 1.0 以后已经不能用。
+  - 61GSVA：GSVA 2.x 改用 `gsvaParam()`，旧的 `gsva(expr, gset)` 调用方式失效。第一次运行时 msigdbr 下载数据还遇到过 zenodo 504。
+- not_run 1 个：293machineLearning，缺 CoxBoost。
 
-共 29 个包。nomogramEx 已从 CRAN 归档，可能装不上；ggcor 需要从本地 tar 包安装（`deps --install` 目前不处理本地 tar，需要单独执行一条命令，也要批准）。
+## L2 模板换数据与异目录检查
 
-## 未完成
+`use` 复制到临时课题目录后，在新进程里用 `Rscript code/render.R` 运行：
+- KM：换成上游的两组数据（easy_input_2），P = 0.041，风险表 2 行，高度回到基准；给错 labels/palette 时直接报错，不会循环取色。
+- 森林图：只取前 7 行、去掉 P 列，图高 4.86 in（26 行时 9.88 in），P 列自动隐藏。
+- 火山图：取 3000 个基因、classic 模式、不给标注表，正常出图。
 
-- P4 剩余 18 个配方：装包后运行。
-- P5 L2 示范三个模板（KM+风险表、亚组森林图、火山图）：分别依赖 survminer、forestplot、ggthemes，需在装包后做。
-- 30 个配方仍为 draft，需作者看过后 `mark-ready`（可批量）。
-- 只做了本地提交，没有推送。
+这些检查没有按 `minimal-runtime.md` 的格式写独立性收据，所以 lint 和 check-entry 还提示“独立声明尚无独立性证据”（WARN）。临时目录已删除。
+
+与上游的差异写在各模板的 `runtime.json` 和“知识关联检查”里。统计量都没有改：survfit/log-rank 与上游相同，森林图只画上游给定的效应量，火山图仍按原始 P 分级。
+
+## 待作者确认
+
+- 30 个配方与 3 个模板都是 draft。看过后可以批量 `mark-ready`。
+- 61GSVA、153ccgraph 要不要改写成适配新版包的 L2（会改动上游代码）。
+- CoxBoost 要不要装 Rtools 后编译。
+
+只做了本地提交，未推送。
