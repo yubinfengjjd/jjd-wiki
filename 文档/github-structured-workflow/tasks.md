@@ -271,30 +271,34 @@
 - [x] 14. Checkpoint - 首推前
   - 运行完整本地 pytest；`wiki.py gh preflight` 干跑并检查待推送范围与 guard 结果；确保全部通过，有疑问时询问用户。
 
-- [ ] 15. 网络 / 高风险操作（按顺序执行，前一步失败即停）
-  - [ ] 15.1 preflight 通过
+- [x] 15. 网络 / 高风险操作（按顺序执行，前一步失败即停）
+  - [x] 15.1 preflight 通过
     - 运行 `wiki.py gh preflight`；gh 不可用或未认证时停止并把安装与 `gh auth login` 说明交给用户，不自动安装；账号、owner 写入本机 `config.json` 的 `github`
     - _Requirements: 1.1, 1.2_
-  - [ ] 15.2 【需授权】bootstrap --confirm 创建私有仓库并首推
+  - [x] 15.2 【需授权】bootstrap --confirm 创建私有仓库并首推
     - 先运行无 `--confirm` 的 bootstrap，把账号/组织、仓库名、private、待推送提交范围呈给用户并取得一次性明确授权（R1.3；用户已给予广泛自主权，但 GitHub 账号与 gh 认证尚未核实，授权以 preflight 结果为准）
     - 依次对 dev、vault 执行 `bootstrap --confirm`：建私有仓库、推送 `main`、Label、deploy key 与 secret、分支保护探测；完成后核对两仓库可见性为 PRIVATE、主检出位于 `main`、被忽略目录仍在磁盘
     - _Requirements: 1.3, 1.4, 2.1, 8.2, 10.1, 10.5_
-  - [ ] 15.3 【需授权】migrate-legacy
+  - [x] 15.3 【需授权】migrate-legacy
     - 先 `--dry-run` 核对计划，再正式执行；重跑一次确认无重复 Issue
+    - 结果：dev Issue #4–#17、vault Issue #3–#13；重跑 25 项均为 none
     - _Requirements: 13.1, 13.2, 13.4_
-  - [ ] 15.4 【需授权】首个真实 PR 并观察 CI
+  - [x] 15.4 【需授权】首个真实 PR 并观察 CI
     - dev：经 `start-batch`/`start-task` 提交 15.3 产生的任务书迁移标记；vault：同样流程把 README 的远程地址与保护模式填实
     - 两个 PR 都走 `finish-task` → CI → `review` → `merge` → `close-batch` → 合并到 `main`；记录 CI 实际检查项
+    - 结果：dev PR #2、#18 → 批次 PR #19 合入 main（d7c9a7d）；vault PR #2 → 批次 PR #14 合入 main（f99bab2）；CI 检查项为 dev `test`、vault `check`
     - _Requirements: 2.4, 3.4, 6.3, 6.4, 9.1, 10.2, 10.4, 11.1, 13.3_
   - [ ]* 15.5 【需授权】CI 拦截验证 PR
     - 在临时 task 分支加入含合成假路径（如 `Z:\fake\x`）的测试文件，不含任何真实受限内容；需绕过本地 hook 才能推送，执行前单独征得用户确认；确认 CI 的 guard 检查失败后关闭 PR 并删除分支
     - _Requirements: 3.4_
-  - [ ] 15.6 【需授权】从 main 部署
+  - [x] 15.6 【需授权】从 main 部署
     - `<dev>` 检出已推送的 `main`，运行 `python tools/deploy.py <record> "<note>"`；确认来源门禁通过、manifest 含 `source_commit`、5 处副本哈希核验一致（含更新后的规则文档）
+    - 结果：source_commit d7c9a7d，5 处各 330 个文件哈希一致；4 处残留本特性之前的 `references/tag-taxonomy.md`、`rwiki/categories.py`（deploy 不删除 app/ 之外的旧文件）
     - _Requirements: 12.1, 12.3, 14.4_
 
-- [ ] 16. Final checkpoint
+- [x] 16. Final checkpoint
   - 运行完整本地 pytest 与 `deploy.py --verify-only`；确认两仓库 CI 在 `main` 上为绿；确保全部通过，有疑问时询问用户。
+  - 结果：完整 pytest 746 passed、3 skipped；`--verify-only` 仅余上述 2 个旧残留文件；dev main（d7c9a7d）与 vault main（f99bab2）CI 均为绿
 
 ## Notes
 
