@@ -1101,3 +1101,5 @@
 ## [2026-10-27 12:48 UTC] run figureya-1survivalcurve-update=pass, figureya-30nomogram-update=pass, figureya-61gsva=fail
 
 ## [2026-10-27 12:49 UTC] add interface survival-time-event-group
+
+## [2026-10-27 12:49 UTC] add interface subgroup-effect-table
