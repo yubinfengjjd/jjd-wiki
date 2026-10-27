@@ -18,7 +18,7 @@
 
 | # | 决策 | 理由 |
 |---|------|------|
-| D1 | 两个私有仓库：`research-wiki-dev`（`E:\research-wiki\开发`）与 `research-wiki-vault`（`E:\research-wiki` 根，含 `知识库/`、`文档/`、`tools/`、`research wiki/`、README）。`画廊/`、`维护记录/`（整体）、GPL 源码目录、`*.lnk`、`Rplots.pdf`、Project_Dir 均忽略。 | 开发与知识库生命周期不同；`deploy.py` 位于根仓库 `tools/`，跟随 vault。维护记录整体忽略而不只忽略"大体量"部分，因为其中 607 个文件含绝对路径，逐一清理收益低；Issue 只记其相对路径与哈希（R8.4/R13.4）。 |
+| D1 | 两个私有仓库：`jjd-wiki-dev`（`E:\research-wiki\开发`）与 `jjd-wiki`（`E:\research-wiki` 根，含 `知识库/`、`文档/`、`tools/`、`research wiki/`、README）。`画廊/`、`维护记录/`（整体）、GPL 源码目录、`*.lnk`、`Rplots.pdf`、Project_Dir 均忽略。 | 开发与知识库生命周期不同；`deploy.py` 位于根仓库 `tools/`，跟随 vault。维护记录整体忽略而不只忽略"大体量"部分，因为其中 607 个文件含绝对路径，逐一清理收益低；Issue 只记其相对路径与哈希（R8.4/R13.4）。 |
 | D2 | vault 的 `main` 是**孤儿快照**（一次提交，内容为过滤后的当前工作区）；旧 `master` 改名 `legacy/master` 只留本地。dev 的 `main` 由**过滤重放**生成：逐个重放 `master` 的提交（含 V5 分批提交），去掉被忽略路径，保留作者、时间与说明，并加 `Legacy-Commit: <sha>` trailer。 | vault 历史是大量 save 自动提交且含画廊，重放无价值；dev 只有 6+N 个提交，R5 要求分批历史可追溯。两者都只用 git 管道命令（临时 `GIT_INDEX_FILE` + `commit-tree`），不引入 filter-repo。**切换到新 `main` 只移动 HEAD 与索引**：`git symbolic-ref HEAD refs/heads/main` + `git read-tree main`，不用 `git switch`/`checkout`。旧 `master` 跟踪而新 `main` 未跟踪的文件（vault 的 `画廊/`、`维护记录/`；dev 的 `config.json`、`codex/`）普通检出会被从磁盘删除，且它们不在远端、不可恢复。此后主检出也不得检出 `legacy/master`。dev 历史中 6 个测试/QA 文件的绝对路径不在忽略范围内，重放后仍在历史里：由 preflight 的 guard 干跑列出，逐条写入 `.push-guard-allow`（带理由）或在重放时改写，二选一后才能首推。 |
 | D3 | 根仓库切分支的影响：bootstrap 之后，`main`、长期分支与任务分支之间的 `git switch` 只改变已跟踪内容（`知识库/`、`文档/`、`tools/`、`research wiki/`），被忽略的 `开发/`、`画廊/`、`维护记录/`、GPL 目录不受影响；该前提只在两端分支都不跟踪这些目录时成立，因此从 `master` 过渡到 `main` 的那一次切换按 D2 用 `symbolic-ref` + `read-tree` 完成。主检出 `E:\research-wiki` 平时停在 `main` 作为阅读检出（Obsidian、launcher）。`start-task` 默认在主检出 `git switch`，仅允许 `知识库/` 内的未提交改动随行（作者在 Obsidian 的编辑由下一次 save 带入 PR），`知识库/` 之外有已跟踪改动时拒绝并列出。并行或用户正在使用 Obsidian 时用 `--worktree`。`文档/`、`tools/` 的改动不经 save，由 agent 在任务分支上用普通 git 提交；`finish-task` 在存在未提交的已跟踪改动时拒绝。 | save 只覆盖 wiki 子树，不能顺带提交其他目录；随行规则避免把文档草稿带到别的分支。 |
 | D4 | Push_Guard 规则：单文件大小阈值默认 5 MB（`config.json` 的 `push_guard.max_file_mb`），对所有路径生效；绝对路径正则；GPL 检测 = 路径规则（GPL 方法页对应的 `code/`、`source/` 目录 + 可配 glob）+ 代码/LICENSE 文件头部许可标记；画廊路径；Project_Dir 路径（`wiki-use/_project/`）。仓库根的 `.push-guard-allow` 只能豁免 `abs-path` 与 `size` 两类规则，每条须写理由。 | 规则可解释、可在 CI 重放；版权图、GPL、课题数据不允许豁免。 |
@@ -54,8 +54,8 @@ flowchart LR
         ST["rwiki/store.py save"]
         HK[".git/hooks/pre-push"]
         DP["tools/deploy.py<br/>来源门禁 + 哈希核验"]
-        DEV[("开发 repo<br/>research-wiki-dev")]
-        VAULT[("根 repo<br/>research-wiki-vault")]
+        DEV[("开发 repo<br/>jjd-wiki-dev")]
+        VAULT[("根 repo<br/>jjd-wiki")]
         WT[("worktrees<br/>E:\\research-wiki-env\\worktrees")]
         HOSTS[("5 处技能目录")]
     end
@@ -169,7 +169,7 @@ def install_hook(repo: Path) -> None                  # 写 pre-push：sys.execu
 - `merge`：`gh pr checks --json name,bucket` + `gh pr view --json headRefOid,reviews,comments,baseRefName` → `gate_decision`。不通过：回帖 `<!-- rwiki-gate: blocked -->`、原因列表与 `--plan`（缺省写"待补"），退出 1。通过：`gh pr merge <n> --merge --match-head-commit <head> --delete-branch`。task PR 合并后：`gh issue close <n> --comment "合并于 #pr（sha）"`、标签 `status:已验收`、释放锁、先删 GPL 目录联接再 `git worktree remove`（D13，不加 `--force`）、删本地分支；主检出模式切回 `main` 并 `pull --ff-only`。长期分支 PR 合并后：关闭 Milestone（`gh api -X PATCH …/milestones/<n> -f state=closed`），删除长期分支。
 - `close-batch`：`gh issue list --milestone <名> --state all --json number,title,state` → 有未关闭则拒绝并列出 → 否则 `gh pr create --base main --head <长期分支>`，正文列出 Milestone 内全部 Issue。
 - `preflight` 输出 JSON：gh 路径/版本、认证账号、目标 owner、两仓库是否存在及可见性、分支保护是否可用、两个本地仓库的当前分支与未提交数、待推送范围（dev 重放的提交数与列表、vault 快照的文件数与总大小）、对待推送内容的 guard 干跑结果、`DEV_DEPLOY_KEY` 是否已设置。有阻断项时退出 1。
-- `bootstrap`：无 `--confirm` 时等同 preflight 并提示需用户授权（R1.3），不做任何网络写操作。`--confirm` 依次：preflight 无阻断 → 校验 `.gitignore`/`.gitattributes`/`.push-guard-allow`/`.github/` 已存在（dev 已在 `chore(repo)` 提交中、vault 在工作区中），缺失即中止，保证它们进入新 `main` → 分支改名（`master`→`legacy/master`）→ 构造 `main`（D2）→ `symbolic-ref` + `read-tree` 切到 `main`，并核对原被跟踪的忽略目录仍在磁盘（文件数与切换前一致）→ `install_hook` → `gh repo create <owner>/<名> --private` → `git remote add origin` → `push main` → 创建 Label → 生成 ed25519 密钥（写 `E:\research-wiki-env\tmp`），公钥 `gh repo deploy-key add --read-only` 到 dev，私钥 `gh secret set DEV_DEPLOY_KEY` 到 vault，删除临时密钥 → 探测/配置分支保护 → 元数据记 `protection: github|local`。
+- `bootstrap`：无 `--confirm` 时等同 preflight 并提示需用户授权（R1.3），不做任何网络写操作。`--confirm` 依次：preflight 无阻断 → 校验 `.gitignore`/`.gitattributes`/`.push-guard-allow`/`.github/` 已存在（dev 已在 `chore(repo)` 提交中、vault 在工作区中），缺失即中止，保证它们进入新 `main` → 分支改名（`master`→`legacy/master`）→ 构造 `main`（D2）→ `symbolic-ref` + `read-tree` 切到 `main`，并核对原被跟踪的忽略目录仍在磁盘（文件数与切换前一致）→ `install_hook` → `gh repo create <owner>/<名> --private` → `git remote add origin` → `push main` → 创建 Label → 生成 ed25519 密钥（写 `E:\research-wiki-env\tmp`），公钥 `gh repo deploy-key add` 到 dev（gh 2.103 默认只读，不传 `--read-only`，该参数已不存在；`--allow-write` 才可写），私钥 `gh secret set DEV_DEPLOY_KEY` 到 vault，删除临时密钥 → 探测/配置分支保护 → 元数据记 `protection: github|local`。
 
 ### rwiki/push_guard.py
 
@@ -314,7 +314,7 @@ agent 在 PR 涉及上述范围时本地运行，把摘要写进报告文件，�
 ```json
 {
   "push_guard": {"max_file_mb": 5, "gpl_globs": ["**/SCP-local/**"]},
-  "github": {"owner": "<login>", "dev_repo": "research-wiki-dev", "vault_repo": "research-wiki-vault",
+  "github": {"owner": "<login>", "dev_repo": "jjd-wiki-dev", "vault_repo": "jjd-wiki",
              "dev_root": "E:\\research-wiki\\开发", "vault_root": "E:\\research-wiki",
              "worktree_root": "E:\\research-wiki-env\\worktrees"}
 }
@@ -383,8 +383,8 @@ Issue 正文模板：
 迁移标记（原文件顶部，置于原字节之前）：
 
 ```markdown
-<!-- rwiki-migrated: issue=https://github.com/<owner>/research-wiki-dev/issues/12 -->
-> 已迁移，停止维护：https://github.com/<owner>/research-wiki-dev/issues/12
+<!-- rwiki-migrated: issue=https://github.com/<owner>/jjd-wiki-dev/issues/12 -->
+> 已迁移，停止维护：https://github.com/<owner>/jjd-wiki-dev/issues/12
 
 ```
 
