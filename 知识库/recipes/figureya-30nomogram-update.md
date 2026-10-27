@@ -65,8 +65,11 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa30nomogram_update.Rmd`）
 - 依赖：CRAN nomogramEx, regplot, rms, survival
-- 最近运行：pass（as-is，2026-10-27 12:46 UTC，23.5 秒）
+- 最近运行：pass（as-is，2026-10-27 15:01 UTC，25.7 秒）
 - 派生模板（L2）：暂无
+- 运行预览（最近一次通过的原样运行，取自 `nomogram_classical.pdf` 第 1 页）：
+
+![[recipes/figureya-30nomogram-update/preview.png]]
 <!-- facts:end -->
 
 ## 用途

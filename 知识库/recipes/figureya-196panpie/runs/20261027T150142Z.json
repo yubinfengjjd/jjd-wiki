@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-196panpie",
+  "run_id": "20261027T150142Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa196PanPie.Rmd rwiki-knit.md",
+  "started_at": "2026-10-27T15:01:42+00:00",
+  "duration_s": 0.8,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<r_lib1>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.5",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.37",
+      "dplyr": "1.2.1",
+      "evaluate": "1.0.3",
+      "fastmap": "1.2.0",
+      "generics": "0.1.4",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.8.1",
+      "jsonlite": "2.0.0",
+      "knitr": "1.50",
+      "lifecycle": "1.0.5",
+      "magrittr": "2.0.3",
+      "methods": "4.5.0",
+      "pillar": "1.10.2",
+      "pkgconfig": "2.0.3",
+      "R6": "2.6.1",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.29",
+      "stats": "4.5.0",
+      "tibble": "3.2.1",
+      "tidyselect": "1.2.1",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "vctrs": "0.7.3",
+      "xfun": "0.62",
+      "yaml": "2.3.10"
+    }
+  },
+  "code": {
+    "easy_input.txt": "d0f0cfdb6b0365df6e4010b6510d323d63f8b7d49e9e89fecffc2f6b0b299986",
+    "example.png": "e1d941b1e4e7871ce543274693d70afd7d80e2634787f7e7171264d1c9e864ef",
+    "FigureYa196PanPie.Rmd": "ec5a221b863e93d4da18ef2e0bb90afccf475c6483a77edfbc2ed47cd9d8ad7f",
+    "install_dependencies.R": "fd77b717bec9fa69514788259d8443ca10da6c3262a4178b45f90b41eef0e904",
+    "pieTable.pdf": "1589f7a46aab4cfbaf8c90144b57aab6b6935afbe66340b7909e1b062e1086c9"
+  },
+  "outputs": {
+    "pieTable.pdf": "b98f611e23355a8e45d81ce978ebcd65b5de4453bf8ec9512f3c4d3fd0066d0b"
+  },
+  "expected_outputs": [
+    "pieTable.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "pieTable.pdf",
+    "page": 1,
+    "kind": "pdf"
+  },
+  "workdir": "<work_root>/runs/figureya-196panpie/20261027T150142802022Z"
+}
