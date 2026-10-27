@@ -24,7 +24,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig06-area--area/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig06-area|组成面积图：百分比（SCP 示例）]]
+- 来源：[[layouts/2026-10-22-scp-example__fig06-area|组成面积图：百分比（SCP 示例）]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

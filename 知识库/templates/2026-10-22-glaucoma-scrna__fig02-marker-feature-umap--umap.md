@@ -22,7 +22,7 @@ keywords:
 ![[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap|marker 特征 UMAP 小多图（GSE251716）]]
+- 来源：[[layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap|marker 特征 UMAP 小多图（GSE251716）]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

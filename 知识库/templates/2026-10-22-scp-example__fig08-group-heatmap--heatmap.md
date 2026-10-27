@@ -19,7 +19,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig08-group-heatmap|GroupHeatmap (CellType / SubCellType)]]
+- 来源：[[layouts/2026-10-22-scp-example__fig08-group-heatmap|GroupHeatmap (CellType / SubCellType)]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

@@ -29,7 +29,7 @@ keywords:
 ![[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f|双模型 SHAP 特征贡献组图]]
+- 来源：[[layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f|双模型 SHAP 特征贡献组图]]
 - 面板（来源版式）：C、F
 - 语言：python
 - 标签：机器学习、模型解释与特征重要性、化学信息与QSAR

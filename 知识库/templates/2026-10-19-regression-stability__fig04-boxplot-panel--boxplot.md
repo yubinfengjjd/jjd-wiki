@@ -26,7 +26,7 @@ keywords:
 ![[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-19-regression-stability__fig04-boxplot-panel|多模型逐折指标：箱线、散点与均值]]
+- 来源：[[layouts/2026-10-19-regression-stability__fig04-boxplot-panel|多模型逐折指标：箱线、散点与均值]]
 - 面板（来源版式）：A
 - 语言：python
 - 标签：机器学习、实验统计

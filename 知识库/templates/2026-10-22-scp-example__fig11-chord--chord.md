@@ -19,7 +19,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig11-chord--chord/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig11-chord|分组流向和弦图]]
+- 来源：[[layouts/2026-10-22-scp-example__fig11-chord|分组流向和弦图]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

@@ -19,7 +19,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig14-feature-heatmap|特征表达热图]]
+- 来源：[[layouts/2026-10-22-scp-example__fig14-feature-heatmap|特征表达热图]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

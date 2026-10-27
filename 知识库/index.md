@@ -2,46 +2,21 @@
 
 # 目录
 
-## 版式
+检索请用 `catalog.jsonl` 或 `wiki.py find`；本页按类型列出全部页面。
 
-### pending_signoff
+## 场景
 
 
-### pending_template
+## 配方
 
-- [[layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap|CNS 细胞类型 UMAP（GSE251716）]]
-- [[layouts/2026-10-22-scp-example__fig08-group-heatmap|GroupHeatmap (CellType / SubCellType)]]
-- [[layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap|marker 特征 UMAP 小多图（GSE251716）]]
-- [[layouts/2026-10-19-regression-stability__fig03-density-panel|六模型验证预测：密度散点与边缘分布]]
-- [[layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin|分组小提琴与统计标注（GSE251716）]]
-- [[layouts/2026-10-22-scp-example__fig11-chord|分组流向和弦图]]
-- [[layouts/2026-10-22-scp-example__fig10-sankey|分组流向桑基图]]
-- [[layouts/2026-10-22-scp-example__fig16-cell-density|分组表达密度图]]
-- [[layouts/2026-10-22-scp-example__fig17-group-heatmap-dot|分组表达点阵热图]]
-- [[layouts/2026-10-22-scp-example__fig09-bar|分组计数柱图]]
-- [[layouts/2026-10-19-regression-stability__fig04-boxplot-panel|多模型逐折指标：箱线、散点与均值]]
-- [[layouts/2026-10-22-scp-example__fig13-upset|多集合交集 UpSet 图]]
-- [[layouts/2026-10-22-scp-example__fig12-venn|多集合交集维恩图]]
-- [[layouts/2026-10-22-scp-example__fig01-volcano|火山图：Endocrine vs 其余细胞（SCP 示例）]]
-- [[layouts/2026-10-22-scp-example__fig14-feature-heatmap|特征表达热图]]
-- [[layouts/2026-10-22-scp-example__fig04-rose|玫瑰图组成：计数 dodge（SCP 示例）]]
-- [[layouts/2026-10-22-scp-example__fig02-ring|环形组成图（SCP 示例）]]
-- [[layouts/2026-10-22-scp-example__fig07-dot|组成点阵图（SCP 示例）]]
-- [[layouts/2026-10-22-scp-example__fig05-trend|组成趋势图：计数（SCP 示例）]]
-- [[layouts/2026-10-22-scp-example__fig06-area|组成面积图：百分比（SCP 示例）]]
-- [[layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow|细胞比例堆叠与流带（GSE251716）]]
-- [[layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap|细胞相似度热图]]
-- [[layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble|顶刊样式气泡点图（GSE251716）]]
-- [[layouts/2026-10-22-scp-example__fig03-pie|饼图组成（SCP 示例）]]
+### draft
+
 
 ### ready
 
 
 ### archived
 
-- [[layouts/2026-10-19-regression-stability__fig01-density-grid|六模型验证预测密度散点组图（整图存档）]]
-- [[layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f|双模型 SHAP 特征贡献组图]]
-- [[layouts/2026-10-19-regression-stability__fig02-metric-boxplots|多模型 RMSE、R² 与 MAE 箱线组图（整图存档）]]
 
 ## 模板
 
@@ -124,6 +99,10 @@
 
 ## 待分类方法
 
+## 来源
+
+- [[sources/figureya|FigureYa 医学科研绘图模块库]]
+
 ## 接口
 
 - [[interfaces/shap-summary|SHAP 特征贡献汇总表]]
@@ -176,3 +155,45 @@
 - [[chart-types/volcano|volcano]]
 
 ## 课题
+
+
+## 版式
+
+### pending_signoff
+
+
+### pending_template
+
+- [[layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap|CNS 细胞类型 UMAP（GSE251716）]]
+- [[layouts/2026-10-22-scp-example__fig08-group-heatmap|GroupHeatmap (CellType / SubCellType)]]
+- [[layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap|marker 特征 UMAP 小多图（GSE251716）]]
+- [[layouts/2026-10-19-regression-stability__fig03-density-panel|六模型验证预测：密度散点与边缘分布]]
+- [[layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin|分组小提琴与统计标注（GSE251716）]]
+- [[layouts/2026-10-22-scp-example__fig11-chord|分组流向和弦图]]
+- [[layouts/2026-10-22-scp-example__fig10-sankey|分组流向桑基图]]
+- [[layouts/2026-10-22-scp-example__fig16-cell-density|分组表达密度图]]
+- [[layouts/2026-10-22-scp-example__fig17-group-heatmap-dot|分组表达点阵热图]]
+- [[layouts/2026-10-22-scp-example__fig09-bar|分组计数柱图]]
+- [[layouts/2026-10-19-regression-stability__fig04-boxplot-panel|多模型逐折指标：箱线、散点与均值]]
+- [[layouts/2026-10-22-scp-example__fig13-upset|多集合交集 UpSet 图]]
+- [[layouts/2026-10-22-scp-example__fig12-venn|多集合交集维恩图]]
+- [[layouts/2026-10-22-scp-example__fig01-volcano|火山图：Endocrine vs 其余细胞（SCP 示例）]]
+- [[layouts/2026-10-22-scp-example__fig14-feature-heatmap|特征表达热图]]
+- [[layouts/2026-10-22-scp-example__fig04-rose|玫瑰图组成：计数 dodge（SCP 示例）]]
+- [[layouts/2026-10-22-scp-example__fig02-ring|环形组成图（SCP 示例）]]
+- [[layouts/2026-10-22-scp-example__fig07-dot|组成点阵图（SCP 示例）]]
+- [[layouts/2026-10-22-scp-example__fig05-trend|组成趋势图：计数（SCP 示例）]]
+- [[layouts/2026-10-22-scp-example__fig06-area|组成面积图：百分比（SCP 示例）]]
+- [[layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow|细胞比例堆叠与流带（GSE251716）]]
+- [[layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap|细胞相似度热图]]
+- [[layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble|顶刊样式气泡点图（GSE251716）]]
+- [[layouts/2026-10-22-scp-example__fig03-pie|饼图组成（SCP 示例）]]
+
+### ready
+
+
+### archived
+
+- [[layouts/2026-10-19-regression-stability__fig01-density-grid|六模型验证预测密度散点组图（整图存档）]]
+- [[layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f|双模型 SHAP 特征贡献组图]]
+- [[layouts/2026-10-19-regression-stability__fig02-metric-boxplots|多模型 RMSE、R² 与 MAE 箱线组图（整图存档）]]

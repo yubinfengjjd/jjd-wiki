@@ -24,7 +24,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig07-dot--dot/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig07-dot|组成点阵图（SCP 示例）]]
+- 来源：[[layouts/2026-10-22-scp-example__fig07-dot|组成点阵图（SCP 示例）]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

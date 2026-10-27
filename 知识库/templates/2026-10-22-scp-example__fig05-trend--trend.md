@@ -24,7 +24,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig05-trend--trend/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig05-trend|组成趋势图：计数（SCP 示例）]]
+- 来源：[[layouts/2026-10-22-scp-example__fig05-trend|组成趋势图：计数（SCP 示例）]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

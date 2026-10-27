@@ -26,7 +26,7 @@ keywords:
 ![[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-19-regression-stability__fig03-density-panel|六模型验证预测：密度散点与边缘分布]]
+- 来源：[[layouts/2026-10-19-regression-stability__fig03-density-panel|六模型验证预测：密度散点与边缘分布]]
 - 面板（来源版式）：A
 - 语言：python
 - 标签：机器学习、实验统计

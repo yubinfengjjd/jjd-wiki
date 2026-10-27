@@ -22,7 +22,7 @@ keywords:
 ![[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow|细胞比例堆叠与流带（GSE251716）]]
+- 来源：[[layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow|细胞比例堆叠与流带（GSE251716）]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

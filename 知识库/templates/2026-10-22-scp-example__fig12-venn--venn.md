@@ -19,7 +19,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig12-venn--venn/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig12-venn|多集合交集维恩图]]
+- 来源：[[layouts/2026-10-22-scp-example__fig12-venn|多集合交集维恩图]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

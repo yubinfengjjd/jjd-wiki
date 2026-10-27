@@ -19,7 +19,7 @@ favorite: false
 ![[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap|细胞相似度热图]]
+- 来源：[[layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap|细胞相似度热图]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析

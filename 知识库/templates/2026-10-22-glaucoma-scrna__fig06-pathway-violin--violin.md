@@ -23,7 +23,7 @@ keywords:
 ![[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/preview.png]]
 
 <!-- facts:start -->
-- 来源版式：[[layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin|分组小提琴与统计标注（GSE251716）]]
+- 来源：[[layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin|分组小提琴与统计标注（GSE251716）]]
 - 面板（来源版式）：A
 - 语言：r
 - 标签：单细胞分析、实验统计

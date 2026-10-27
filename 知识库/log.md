@@ -1079,3 +1079,5 @@
 ## [2026-10-25 16:09 UTC] acceptance check scp-visualization-interface
 
 ## [2026-10-27 07:14 UTC] 同步规则文档：仓库改名为 jjd-wiki / jjd-wiki-dev
+
+## [2026-10-27 12:06 UTC] source add figureya
