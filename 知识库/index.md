@@ -59,6 +59,7 @@
 
 ### draft
 
+- [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]
 
 ### ready
 
