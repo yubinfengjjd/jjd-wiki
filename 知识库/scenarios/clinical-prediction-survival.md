@@ -68,13 +68,13 @@ summary: 队列随访或二分类结局：生存曲线、HR 森林图、预后�
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[recipes/figureya-1survivalcurve-update|多组 KM 生存曲线与风险表]] | L1 | draft · 运行 fail | 两组/多组 KM 曲线 + 风险表，最常用起点 |
+| [[recipes/figureya-1survivalcurve-update|多组 KM 生存曲线与风险表]] | L1 | draft · 运行 pass | 两组/多组 KM 曲线 + 风险表，最常用起点 |
 | [[recipes/figureya-284pairwiselogrank|三组以上 KM 曲线与两两比较表]] | L1 | draft · 运行 pass | ≥3 组时加两两 log-rank 表 |
 | [[recipes/figureya-6rhrsv2|临床亚组分析森林图]] | L1 | draft · 运行 pass | 已算好 HR 的临床亚组森林图 |
 | [[recipes/figureya-193risktable|训练与验证集风险评分多因素森林表]] | L1 | draft · 运行 pass | 训练/验证集 riskscore 多因素森林表 |
 | [[recipes/figureya-31lasso-update|LASSO Cox 系数路径与交叉验证图]] | L1 | draft · 运行 pass | LASSO Cox 筛基因、建签名 |
 | [[recipes/figureya-141risk|风险评分分布与签名基因热图联图]] | L1 | draft · 运行 pass | 风险评分分布 + 生存状态 + 签名热图 |
-| [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] | L1 | draft · 运行 fail | 列线图与校准曲线 |
+| [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] | L1 | draft · 运行 pass | 列线图与校准曲线 |
 | [[recipes/figureya-85timeroc|多模型时间依赖 ROC 曲线]] | L1 | draft · 运行 pass | 时间依赖 ROC |
 | [[recipes/figureya-138nicecalibration|Logistic 模型校准曲线与 HL 检验]] | L1 | draft · 运行 pass | Logistic 诊断模型校准（不用于预后模型） |
 | [[recipes/figureya-33dca-update|决策曲线与净获益分析]] | L1 | draft · 运行 pass | 决策曲线 / 净获益 |
