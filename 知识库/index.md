@@ -146,6 +146,7 @@
 - [[interfaces/shap-samples|SHAP 逐样本值表]]
 - [[interfaces/render-umap-groups|UMAP 坐标与分组表]]
 - [[interfaces/render-umap-feature-long|UMAP 坐标与特征长表]]
+- [[interfaces/bulk-de-table|bulk 差异表达结果表]]
 - [[interfaces/survival-time-event-group|个体随访生存表]]
 - [[interfaces/subgroup-effect-table|亚组效应量汇总表]]
 - [[interfaces/render-category-points|分组数值与显式抖动表]]
