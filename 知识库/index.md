@@ -155,6 +155,7 @@
 - [[interfaces/regression-fold-metrics|回归模型逐折评估指标表]]
 - [[interfaces/regression-predictions|回归模型逐样本验证预测表]]
 - [[interfaces/render-de-results|差异表达结果表]]
+- [[interfaces/highlight-gene-sets|待标注基因与所属基因集]]
 - [[interfaces/render-feature-heatmap|特征×细胞表达矩阵长表]]
 - [[interfaces/render-correlation-heatmap|相似度矩阵长表]]
 - [[interfaces/render-dotplot-long|细胞类型 × 基因点图表]]
