@@ -1107,3 +1107,5 @@
 ## [2026-10-27 12:50 UTC] add interface bulk-de-table
 
 ## [2026-10-27 12:50 UTC] add interface highlight-gene-sets
+
+## [2026-10-27 12:51 UTC] scaffold template figureya-1survivalcurve-update--km-curve from recipe
