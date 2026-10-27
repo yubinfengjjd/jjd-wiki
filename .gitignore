@@ -22,3 +22,5 @@ Thumbs.db
 维护记录/**/migration-fixture/
 # Obsidian 工作区状态（随窗口布局频繁变动）
 research wiki/.obsidian/workspace*
+# agent 工作流报告（含本机路径与过程记录），只留本地
+/.agents/
