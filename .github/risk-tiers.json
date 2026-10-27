@@ -1,0 +1,20 @@
+{
+  "high_requires_owner": false,
+  "high": [
+    ".github/**",
+    ".gitignore",
+    "**/.gitignore",
+    ".gitattributes",
+    ".push-guard-allow",
+    "tools/deploy.py",
+    "tools/launcher.ps1",
+    "知识库/AGENTS.md",
+    "知识库/.protected-hashes.json"
+  ],
+  "low": [
+    "知识库/log.md",
+    "文档/**/*.md",
+    "*.md",
+    ".kiro/specs/**/*.md"
+  ]
+}
