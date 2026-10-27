@@ -1121,3 +1121,5 @@
 ## [2026-10-27 13:00 UTC] verify figureya-59volcanov2--volcano
 
 ## [2026-10-27 13:02 UTC] verify figureya-1survivalcurve-update--km-curve
+
+## [2026-10-27 13:03 UTC] verify figureya-6rhrsv2--forest
