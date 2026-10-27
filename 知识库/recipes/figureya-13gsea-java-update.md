@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-13gsea-java-update
 title: Java GSEA 结果多通路美化图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa13GSEA_Java_update

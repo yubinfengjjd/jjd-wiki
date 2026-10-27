@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-33dca-update
 title: 决策曲线与净获益分析
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa33DCA_update

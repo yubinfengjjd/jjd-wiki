@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-236circgroup
 title: 分型对应关系圈状热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa236circGroup

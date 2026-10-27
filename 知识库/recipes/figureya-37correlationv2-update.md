@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-37correlationv2-update
 title: 圆形布局基因相关连线图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa37correlationV2_update

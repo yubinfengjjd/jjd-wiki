@@ -2,7 +2,7 @@
 type: template
 id: figureya-1survivalcurve-update--km-curve
 title: KM 生存曲线与风险表
-status: draft
+status: ready
 layouts: []
 sources:
 - recipes/figureya-1survivalcurve-update
@@ -22,6 +22,8 @@ keywords:
 favorite: false
 ---
 # KM 生存曲线与风险表
+
+![[templates/figureya-1survivalcurve-update--km-curve/preview.png]]
 
 > 许可：CC BY-NC-SA 4.0（FigureYa，Lu X, et al. iMetaMed 2025, doi:10.1002/imm3.70005）。仅限非商业使用，署名并引用；改编代码须相同方式共享；`code/` 与 `example/` 不进 Git、不推送。
 
@@ -52,7 +54,33 @@ favorite: false
 
 ## 数据要求
 
-模板化后生成。
+### surv（survival-time-event-group.csv）：每行一个个体：随访时间、事件（0/1）与分组；组数任意（≥2） [[interfaces/survival-time-event-group|个体随访生存表]]
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| time | float | 随访时间（单位由作者给定，如月），≥0 |
+| event | int | 结局事件：1 = 发生（死亡/复发），0 = 删失 |
+| group | str | 分组标签；因子顺序由 style.levels 显式给出，否则按出现顺序 |
+
+### 可覆盖的 style
+
+- `levels`：`["high", "med", "low"]`
+- `labels`：`["High-expression", "Med-expression", "Low-expression"]`
+- `palette`：`["red", "navy", "darkgreen"]`
+- `pval`：`true`
+- `conf_int`：`true`
+- `conf_int_alpha`：`0.1`
+- `risk_table`：`true`
+- `tables_height`：`0.3`
+- `linetype`：`"solid"`
+- `legend_title`：`""`
+- `legend_pos`：`[0.8, 0.9]`
+- `xlab`：`"Months"`
+- `ylab`：`"Survival probability"`
+- `dpi`：`200`
+- `width_in`：`7`
+- `height_in`：`6`
+- `sizing`：`{"mode": "adaptive", "base_width_in": 7, "base_height_in": 6, "per_group_in": 0.25, "base_label_chars": 16, "per_label_char_in": 0.06, "max_width_in": null, "max_height_in": null}`
 
 ## 使用记录
 

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-76corrgram
 title: 多变量相关矩阵散点热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa76corrgram

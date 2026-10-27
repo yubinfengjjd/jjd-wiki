@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-31lasso-update
 title: LASSO Cox 系数路径与交叉验证图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa31lasso_update

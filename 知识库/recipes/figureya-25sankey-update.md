@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-25sankey-update
 title: 多层分类流向桑基图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa25Sankey_update

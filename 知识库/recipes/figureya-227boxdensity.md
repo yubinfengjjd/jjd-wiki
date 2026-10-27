@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-227boxdensity
 title: 箱线图叠加密度分布图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa227boxdensity

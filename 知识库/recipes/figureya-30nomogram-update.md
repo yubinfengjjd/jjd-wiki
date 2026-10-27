@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-30nomogram-update
 title: Cox/Logistic 列线图与校准曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa30nomogram_update

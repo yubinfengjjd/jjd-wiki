@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-99smoothhrv2
 title: 限制性立方样条 HR 曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa99smoothHRv2

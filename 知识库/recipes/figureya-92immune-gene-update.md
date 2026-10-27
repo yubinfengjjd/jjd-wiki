@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-92immune-gene-update
 title: 基因与免疫浸润相关性图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa92immune_gene_update
