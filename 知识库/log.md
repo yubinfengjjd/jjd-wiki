@@ -1083,3 +1083,5 @@
 ## [2026-10-27 12:06 UTC] source add figureya
 
 ## [2026-10-27 12:07 UTC] source fetch figureya 8d7a02c7d004
+
+## [2026-10-27 12:07 UTC] source scan figureya: 313 items
