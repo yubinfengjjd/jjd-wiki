@@ -1105,3 +1105,5 @@
 ## [2026-10-27 12:49 UTC] add interface subgroup-effect-table
 
 ## [2026-10-27 12:50 UTC] add interface bulk-de-table
+
+## [2026-10-27 12:50 UTC] add interface highlight-gene-sets
