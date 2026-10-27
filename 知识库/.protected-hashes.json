@@ -2,8 +2,13 @@
   "version": 1,
   "files": {
     "AGENTS.md": [
-      "1394f399e7f09558c7bffdef60c37babbcca41fa48335c5486a3c0bc08c3a78f",
       "1394f399e7f09558c7bffdef60c37babbcca41fa48335c5486a3c0bc08c3a78f"
+    ],
+    "interfaces/bulk-de-table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/highlight-gene-sets.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "interfaces/regression-fold-metrics.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
@@ -69,6 +74,12 @@
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "interfaces/shap-summary.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/subgroup-effect-table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/survival-time-event-group.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md": [
@@ -230,6 +241,120 @@
     "methods/trajectory-inference.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-102multipanelroc.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-11bubble.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-138nicecalibration.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-13gsea-java-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-141risk.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-143survcor-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-153ccgraph.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-162boxviolin.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-173fancybar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-193risktable.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-196panpie.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-1survivalcurve-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-227boxdensity.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-228linkcor.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-236circgroup.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-25sankey-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-284pairwiselogrank.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-293machinelearning.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-30nomogram-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-31lasso-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-33dca-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-37correlationv2-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-39bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-59volcanov2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-61gsva.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-6rhrsv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-76corrgram.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-85timeroc.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-92immune-gene-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-99smoothhrv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/clinical-prediction-survival.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/composition-flow.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/correlation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/differential-enrichment.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/dimension-reduction-single-cell.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/group-comparison.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/model-explanation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "sources/figureya.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
@@ -309,6 +434,15 @@
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/figureya-1survivalcurve-update--km-curve.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/figureya-59volcanov2--volcano.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/figureya-6rhrsv2--forest.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ]
   }
