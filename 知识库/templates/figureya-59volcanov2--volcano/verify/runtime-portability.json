@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "figureya-59volcanov2--volcano",
+  "state": "passed",
+  "scope": "Isolated copy of the declared closure (runtime files, spec, example); new R process; no recipe source or FigureYa snapshot on any path",
+  "closure_hash": "b84e002b27f9583d2949c1b18385bfbf4aeba6ad28e60b1ea8bce8ee9ea3723d",
+  "files": {
+    "code/panel.R": "d1cb3d89df0f8bad14c3b33a6820f76e5e8375f012a6a4fae740997dbb208701",
+    "code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a"
+  },
+  "copied_files": [
+    "code/panel.R",
+    "code/render.R",
+    "spec.json",
+    "example/"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\portability\\figureya-59volcanov2--volcano\\code\\render.R --data E:\\research-wiki-env\\work\\portability\\figureya-59volcanov2--volcano\\example --out E:\\research-wiki-env\\work\\portability\\figureya-59volcanov2--volcano\\out --style E:\\research-wiki-env\\work\\portability\\figureya-59volcanov2--volcano\\example\\style.json",
+  "isolated_dir": "E:\\research-wiki-env\\work\\portability\\figureya-59volcanov2--volcano",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "R_LIBS": [
+      "E:\\research-wiki-env\\R-lib\\figureya",
+      "E:\\research-wiki-env\\R-lib-scp\\4.5"
+    ],
+    "working_directory": "E:\\research-wiki-env\\tmp"
+  },
+  "checks": [
+    "Only runtime.json files + spec.json + example/ copied to an isolated directory",
+    "New R process (--vanilla) from an unrelated working directory; render.R resolved spec and code locally",
+    "R_LIBS limited to the Wiki R libraries; empty R_LIBS_USER; no recipe source/ or upstream snapshot path",
+    "render.R exit code 0; figure.png/pdf/svg all written",
+    "PNG differs to verify/figure.png (sha256 compare)"
+  ],
+  "outputs": {
+    "figure.pdf": "3999566bc294655716e61fe97f291f7543ecba79940c556b4544e5048a6aa371",
+    "figure.png": "27a69193bc600f363443d40b5a7d307dfd3b2ef921c431750790b0c498007c91",
+    "figure.svg": "debc1f3abc43e52e7942255499e32f1b883271143c75232f375d93deed55cfbe",
+    "sizing.json": "365aec1d1d10eb1cd04ed6ed7dd9f02e67db440204695e037846df473b3d9d5a"
+  },
+  "previous_outputs": {
+    "png": "341381b2dbe23e327aa30e667cce68539e5c50bc74bd7729db37b5591746c277",
+    "pdf": "4c856404a0fe2f496e445612129ce6fd241de328c2584cf4e8dc61c4f1425349",
+    "svg": "a6e03533a969dc3517511ba9aa8f5d041733c9c88f1468adafc25d0f19a7b9d5"
+  },
+  "same_as_previous": {
+    "png": false,
+    "pdf": false,
+    "svg": false
+  },
+  "stderr_tail": [
+    "Warning message:",
+    "Highlighted genes not in de table, dropped: KRT6A"
+  ],
+  "started_at": "2026-10-27T13:08:20.400410+00:00",
+  "executed_at": "2026-10-27T13:08:22.996858+00:00"
+}

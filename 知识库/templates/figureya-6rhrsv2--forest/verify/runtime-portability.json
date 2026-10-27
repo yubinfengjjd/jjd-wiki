@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "figureya-6rhrsv2--forest",
+  "state": "passed",
+  "scope": "Isolated copy of the declared closure (runtime files, spec, example); new R process; no recipe source or FigureYa snapshot on any path",
+  "closure_hash": "ae3a095968df5a81164d7f928411d0d48975ec721032b72c0debbf0caa41b576",
+  "files": {
+    "code/panel.R": "7759da11c9bf6aedf0c849360635524f44f9100a47a9fc8e6f7332958d38be3a",
+    "code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a"
+  },
+  "copied_files": [
+    "code/panel.R",
+    "code/render.R",
+    "spec.json",
+    "example/"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\portability\\figureya-6rhrsv2--forest\\code\\render.R --data E:\\research-wiki-env\\work\\portability\\figureya-6rhrsv2--forest\\example --out E:\\research-wiki-env\\work\\portability\\figureya-6rhrsv2--forest\\out",
+  "isolated_dir": "E:\\research-wiki-env\\work\\portability\\figureya-6rhrsv2--forest",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "R_LIBS": [
+      "E:\\research-wiki-env\\R-lib\\figureya",
+      "E:\\research-wiki-env\\R-lib-scp\\4.5"
+    ],
+    "working_directory": "E:\\research-wiki-env\\tmp"
+  },
+  "checks": [
+    "Only runtime.json files + spec.json + example/ copied to an isolated directory",
+    "New R process (--vanilla) from an unrelated working directory; render.R resolved spec and code locally",
+    "R_LIBS limited to the Wiki R libraries; empty R_LIBS_USER; no recipe source/ or upstream snapshot path",
+    "render.R exit code 0; figure.png/pdf/svg all written",
+    "PNG identical to verify/figure.png (sha256 compare)"
+  ],
+  "outputs": {
+    "figure.pdf": "df05e592d4874cf36d7f66711efd13d812022691cea419ffea7c3f44ad5d585d",
+    "figure.png": "0edf8ffff97732a636a28e854267300ecd751c43127cd47c1deca0ea0b3db6f5",
+    "figure.svg": "b1b75a320db036db9fae1d2149f887d91a28d976bfb3443623a63885d9f9a98c",
+    "sizing.json": "ce518371181d82c2d5afb33e257e575fac1df07897f1e5e9dd4844e83360f340"
+  },
+  "previous_outputs": {
+    "png": "0edf8ffff97732a636a28e854267300ecd751c43127cd47c1deca0ea0b3db6f5",
+    "pdf": "4473e58decffce1616f7fcddf7b223152a2c5d4f9d86c637e2ea8450516c9e75",
+    "svg": "b1b75a320db036db9fae1d2149f887d91a28d976bfb3443623a63885d9f9a98c"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "stderr_tail": [],
+  "started_at": "2026-10-27T13:08:19.487250+00:00",
+  "executed_at": "2026-10-27T13:08:20.383201+00:00"
+}

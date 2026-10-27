@@ -5,21 +5,38 @@
   "entry": "code/render.R",
   "language": "r",
   "runtime_mode": "standalone",
-  "files": ["code/panel.R", "code/render.R"],
+  "files": [
+    "code/panel.R",
+    "code/render.R"
+  ],
   "resources": [],
-  "required_packages": {"R": ["forestplot", "jsonlite"]},
-  "optional_packages": {"R": {"svglite": "vector SVG device when installed; otherwise grDevices::svg"}},
+  "required_packages": {
+    "R": [
+      "forestplot",
+      "jsonlite"
+    ]
+  },
+  "optional_packages": {
+    "R": {
+      "svglite": "vector SVG device when installed; otherwise grDevices::svg"
+    }
+  },
   "source": {
     "package": "FigureYa",
     "version": "FigureYa6rHRsV2",
     "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
     "license": "CC-BY-NC-SA-4.0",
-    "functions": ["recipes/figureya-6rhrsv2/source/FigureYa6rHRsV2.Rmd: forestplot(labeltext, mean, lower, upper, ...)"],
+    "functions": [
+      "recipes/figureya-6rhrsv2/source/FigureYa6rHRsV2.Rmd: forestplot(labeltext, mean, lower, upper, ...)"
+    ],
     "modifications": [
       "columns renamed to subgroup-effect-table (label, n, percent, estimate, lower, upper, p)",
       "the upstream blank spacer rows and the phantom point at 1 in row 3 are dropped; rules sit under the header and under the last row for any nrow",
       "N and P columns are shown only when present; box size uses percent/box_scale when percent is given, else a constant",
       "figure height = margins + fixed row height x rows"
     ]
+  },
+  "evidence": {
+    "portability": "verify/runtime-portability.json"
   }
 }
