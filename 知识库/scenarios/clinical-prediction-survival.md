@@ -80,7 +80,7 @@ summary: 队列随访或二分类结局：生存曲线、HR 森林图、预后�
 | [[recipes/figureya-33dca-update|决策曲线与净获益分析]] | L1 | ready · 运行 pass | 决策曲线 / 净获益 |
 | [[recipes/figureya-99smoothhrv2|限制性立方样条 HR 曲线]] | L1 | ready · 运行 pass | RCS 非线性 HR 曲线 |
 | [[recipes/figureya-102multipanelroc|多变量 Logistic 模型训练/测试 ROC]] | L1 | ready · 运行 pass | 多变量 Logistic 训练/测试 ROC |
-| [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] | L1 | draft · 运行 not_run | 多算法组合预后模型 C 指数比较（重） |
+| [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] | L1 | draft · 运行 fail | 多算法组合预后模型 C 指数比较（重） |
 | `figureya:FigureYa186swimmerplot` | L0 | catalog | 治疗时间线泳道图（L0，未在 Wiki 运行） |
 <!-- facts:end -->
 
