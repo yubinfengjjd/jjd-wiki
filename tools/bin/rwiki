@@ -1,0 +1,8 @@
+#!/bin/sh
+# rwiki: research-wiki command entry for Git Bash (Claude Code on Windows runs Git Bash).
+# Same as rwiki.cmd: private TEMP/TMP/MPLCONFIGDIR; RWIKI_HOME defaults to the .agents install.
+export TEMP='E:\research-wiki-env\tmp'
+export TMP='E:\research-wiki-env\tmp'
+export MPLCONFIGDIR='E:\research-wiki-env\tmp\mpl'
+export RWIKI_HOME="${RWIKI_HOME:-$USERPROFILE/.agents/skills/research-wiki}"
+exec '/c/Users/86186/.codex/venvs/research-wiki/Scripts/python.exe' -X utf8 "$RWIKI_HOME/wiki.py" "$@"

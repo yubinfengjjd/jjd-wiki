@@ -1,5 +1,8 @@
 # Requirements Document
 
+> **状态：暂停（2026-10-27，作者决定 1=a）。** v2 精简规则已落地（见 文档/v2精简与FigureYa入库/计划.md）。剩余任务不再按本文件的旧门禁（八步逐条确认、Issue/PR/他人评审、写入锁、只经画廊）推进，待按 v2 规则（来源登记 → L0/L1 批次 → 用到再做 L2）重排后另行执行。已入库的 SCP 模板与方法保留 id 与证据。
+
+
 ## Introduction
 
 本特性把 SCP 仓库（固定源码提交 `b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0`，SCP 0.5.6）的**全部分析方法与全部可视化**，按 research-wiki 现行入库规则（正式库 `AGENTS.md`、research-wiki `SKILL.md` 及 references）入库并模板化。范围是整库：142 个 NAMESPACE 导出、238 个 function/ggproto 原始 AST，其中 22 个主要可视化入口，富集/GSEA/统计/速度等图有多个具名形态。
@@ -292,3 +295,21 @@
 3. THE Kiro_Implementer SHALL 在运行 Wiki_CLI 前把 `TEMP`、`TMP`、`MPLCONFIGDIR` 设到 `E:/research-wiki-env/tmp` 下。
 4. THE Kiro_Implementer SHALL 以脚本捕获的真实错误判定成败，而不是以 R 进程退出码 0 代替。
 5. THE Kiro_Implementer SHALL 在验证结束后清理本轮在 `E:/research-wiki-env/tmp` 下创建的临时文件，并保留写入 Maintenance_Record 的证据文件。
+
+### Requirement 17: 模板定义（作者 2026-10-27 采访，修订需求 10）
+
+**User Story:** 作为作者，我希望绘图模板直接接收 Seurat 对象与上游分析结果、一个入口覆盖全部形态并逐形态验证，以便新课题中 agent 能先组织方法、再自主选择图样出图。
+
+记录：`template-definition-interview.md`（同目录）与 `维护记录/2026-10-25-SCP全库入库/kiro-template-definition-20261027.md`。本需求与需求 10 冲突处以本需求为准；需求 10 的画廊 → 代签核 → scaffold 流程只适用于已完成的 CSV 表驱动模板与 3D draft。
+
+#### Acceptance Criteria
+
+1. THE Kiro_Implementer SHALL 把 22 个可视化入口各作为一个绘图模板（方法页 `methods/scp-viz-*` 下的可视化实现），输入为 Seurat 对象及上游分析结果，直接调用独立模块中的原生绘图函数，不要求改写为读表驱动，不依赖 SCP 包本身。
+2. THE Kiro_Implementer SHALL 为每个入口的每个具名形态（branches.json 中该入口的每个参数取值）建立一个用例：该参数取该值、其余参数取默认值，并以同输入同参数的原生 SCP 输出逐像素比较（PNG）；交互图比较 plotly trace 字段。
+3. IF 某形态的原生调用本身失败，THEN THE Kiro_Implementer SHALL 记为 native_failure 并保存原始错误，不计入已验证。
+4. IF 某形态需要的上游结果在当前环境无法生成（缺包或缺材料），THEN THE Kiro_Implementer SHALL 记为 missing_package 或 missing_material，写明缺少的包或对象。
+5. THE Kiro_Implementer SHALL 在每个绘图模板页写明上游方法（方法家族与实现 id）和所需对象槽位，验证用的上游对象由原生上游方法生成并以 RDS 保存，收据记录其 sha256。
+6. THE Kiro_Implementer SHALL 在每个可视化技术页提供形态表：参数、取值、状态（verified/native_failure/missing_*/not_probed）、收据指针与形态图样（取自验证回放输出，不是来源原图）。
+7. THE Kiro_Implementer SHALL 保留已有 17 个与本轮 11 个 CSV 表驱动模板并与对应 Seurat 版页面互相链接，写明各自适用场景（非 Seurat 数据用表驱动版）。
+8. THE Kiro_Implementer SHALL 在技术页使用说明中写明应用场景：自然语言出图、已知函数取代码、非 Seurat 数据、agent 先组织方法再按链路自主选图样；出图后的使用记录由 agent 提议、作者确认后才写入。
+9. THE Kiro_Implementer SHALL 不修改 research-wiki 产品代码，不执行五处全局同步。
