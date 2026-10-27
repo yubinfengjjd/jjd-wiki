@@ -1097,3 +1097,5 @@
 ## [2026-10-27 12:22 UTC] update rules
 
 ## [2026-10-27 12:39 UTC] run figureya-1survivalcurve-update=fail, figureya-284pairwiselogrank=pass, figureya-6rhrsv2=pass, figureya-193risktable=pass, figureya-30nomogram-update=fail, figureya-138nicecalibration=pass, figureya-33dca-update=pass, figureya-85timeroc=pass, figureya-99smoothhrv2=pass, figureya-59volcanov2=pass,
+
+## [2026-10-27 12:48 UTC] run figureya-1survivalcurve-update=pass, figureya-30nomogram-update=pass, figureya-61gsva=fail
