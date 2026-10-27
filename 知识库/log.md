@@ -1095,3 +1095,5 @@
 ## [2026-10-27 12:21 UTC] scenarios: 7 个场景导航页（v2 P6）
 
 ## [2026-10-27 12:22 UTC] update rules
+
+## [2026-10-27 12:39 UTC] run figureya-1survivalcurve-update=fail, figureya-284pairwiselogrank=pass, figureya-6rhrsv2=pass, figureya-193risktable=pass, figureya-30nomogram-update=fail, figureya-138nicecalibration=pass, figureya-33dca-update=pass, figureya-85timeroc=pass, figureya-99smoothhrv2=pass, figureya-59volcanov2=pass,
