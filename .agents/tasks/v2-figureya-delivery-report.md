@@ -48,3 +48,11 @@
 - CoxBoost 要不要装 Rtools 后编译。
 
 只做了本地提交，未推送。
+
+## 追加（作者确认后）
+
+- 已确认：`mark-ready` 一次批量确认 30 条——27 个原样运行通过的配方和 3 个 L2 模板，现在都是 ready。153ccgraph、61GSVA、293machineLearning 运行没通过，仍是 draft。按作者要求，这两个旧模板（153ccgraph、61GSVA）不再改写。
+- L2 独立性收据：3 个模板都写了 `verify/runtime-portability.json`。做法是只复制运行清单里的文件、spec 和示例到隔离目录，用 `--vanilla` 新进程从无关目录运行，只提供 Wiki 专用 R 库。三者都 passed，PNG 与 `verify/figure.png` 的 SHA-256 相同。火山图原先没有固定 ggrepel 随机种子，两次出图不一致，已加 `style.seed`（缺省 1）并重新回放。
+- Rtools 4.5（winget RProject.Rtools 4.5.6768）已装到 `C:\rtools45`。CoxBoost 从 GitHub binderh/CoxBoost 编译安装进 Wiki 专用库。
+- 293machineLearning 不再缺包，但上游代码运行失败（241 秒）：`arguments imply differing number of rows: 269, 268`，出错位置是 Rmd 第 174–494 行（101 种算法组合那一大段）。收据记为 fail，没有改上游代码。
+- 最终：30 个配方中 27 个 pass、3 个 fail；全量 `lint` 0 ERROR。
