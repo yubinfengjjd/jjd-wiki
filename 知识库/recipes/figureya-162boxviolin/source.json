@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa162boxViolin",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "boxViolin.pdf": "dd66b88e92ac1bf9a717105855a4f4b58b28a0508fa216757eb1721eb12f6cb2",
+    "boxViolin_multipleGroups.pdf": "18e81ed3e316aeadaf877443ae16290efd701fc11d49707246f4c37414d65d23",
+    "easy_input.csv": "fe74ec3212a3bf4ae2e5793f18807faaf2c7b0faf99ea83fa6698006f6be67a2",
+    "easy_input_multi.csv": "d713b639d44fdd68e8c7eca39af80fb599d3578655e37230b9c88dade93de0d9",
+    "example.png": "c1e333e6d7e992bd0b9ed5d96c69b9b5edf4c3174e84cef26e59933921d9deab",
+    "FigureYa162boxViolin.Rmd": "8c22e2fd88539fb2f63a471af27529d5964825cb78b8722d31ab25ef97ff1e64",
+    "install.log": "25fad91d4b5dad6be8df6a123c0d8e3f3ae62e7dd71bf06647cda0bc24bcb10d",
+    "install_dependencies.R": "a133cd78124262bd163f443b525fd0fdf3a8bd120df32eadad71f20f925b934d",
+    "Readme.png": "4dcc700dbcc25b2f4c62b0439584a0655c66bb07ff3b3f4dfafd81bbda36f1d2"
+  },
+  "excluded": [
+    "FigureYa162boxViolin.html"
+  ],
+  "copied_at": "2026-10-27T12:16:36+00:00"
+}

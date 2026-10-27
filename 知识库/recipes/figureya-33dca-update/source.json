@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa33DCA_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "c3b1026987445747e633611e39d332ddbfc1e8b4079ae65fa345311f5ebb4586",
+    "example.png": "33626c04330289c49324c77deea6094c06e881b2ac096ec3b48733a2714625a4",
+    "FigureYa33DCA_update.jpg": "b5a6a8d0fb4ad4cafed31ecf7e59b4ef51ba795279b36bdfdbd3a80b173d09a7",
+    "FigureYa33DCA_update.Rmd": "ac1534453db6448e49f175ba88529af4363b97629d57a1823d676d374e8b5600",
+    "install.log": "95a0b663a9c936e63a3e2d22e5951fc7f458520ef6797d858be5bbf33f436e31",
+    "install_dependencies.R": "62967a470d60edba74c84d1ad22553d78ae1c095ad0fe6cf5c663d867b85bb36",
+    "net_benefit.pdf": "324e5cfd0f401cb28df2a9abdce3ffe01a7d57ba3d312e8dbe30cbdcaa3c14fb",
+    "net_reduction.pdf": "26d9c845c5c018a18a8ebcff29fac11393219a1d0cea24bd64c527fae67ba02e",
+    "R stdca Help File.pdf": "3ba8f2109e5a0b78aa62898a51b0dc84dff46d98df1dc7234ca156e844462af4",
+    "stdca.R": "426fb4f94b5e23b382b782afa372b65ccce162c55ba15c704d0e87639cb42b6b"
+  },
+  "excluded": [
+    "FigureYa33DCA_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:29+00:00"
+}

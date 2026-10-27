@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa138NiceCalibration",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "calibration_for full model.pdf": "d00faf45ce58778a7107a3212b296a4a93db27cb0055736f788d8c82e28ef51b",
+    "easy_input.txt": "91251fba422a012e3b40e37725b7112fcb6920c2c45a6dccdfa2077a197b74c5",
+    "example.png": "c8460610dac5076f11e23faa27e8a13432996b893533d17d55ed6449e4da53c4",
+    "FigureYa138NiceCalibration.Rmd": "504d679ea2c6028ba5e3a3f8a6beae2c0702814bb11c5ecb9ad30443c8219e01",
+    "install.log": "2aba206ebef80382ffb32b4b38b9af6b4b013faeb5453a91f5c783850ae95730",
+    "install_dependencies.R": "902439710d5f4463a56e757edf85c8a918a6747fb58eb09fa4efe338c158df59",
+    "Readme.png": "d4d42a6156d0553e03d90753f2eec3eda36e9637b203975820ff41eb1fd0ea65"
+  },
+  "excluded": [
+    "FigureYa138NiceCalibration.html"
+  ],
+  "copied_at": "2026-10-27T12:16:29+00:00"
+}

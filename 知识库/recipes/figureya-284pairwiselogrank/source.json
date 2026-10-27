@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa284pairwiseLogrank",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "33ada37a8f1a8ada13da2f3cc546955a27e192fe38726645903e38c68e76a423",
+    "example.png": "24df3e867eb6a2f376dc45b93fdf3e84cbef0dd5dd363e5be8c261c92bb1f531",
+    "explain_picture.png": "30f6e26366cca3f2c487c0935e6c2aa837993ddfeb0d1ddf92cd9b161c8efebe",
+    "FigureYa284pairwiseLogrank.Rmd": "4a52708b0bb45b251923709218cd2c20490e677c69c76aad7a5859f710c81583",
+    "install.log": "92d267da20498646ef7a8fe12fc1fa759a042441c664748daea8f74062eee59e",
+    "install_dependencies.R": "ce2cbc1b3de9c4c06e551470ccb36e9fc15838f1188819a1fdbb47528af3c56c",
+    "km curve with pairwise logrank test.pdf": "8cbf8aba36074f9ba18de376bef814a9f51b3a0156f99709b955f7d85092b52e"
+  },
+  "excluded": [
+    "FigureYa284pairwiseLogrank.html"
+  ],
+  "copied_at": "2026-10-27T12:16:27+00:00"
+}

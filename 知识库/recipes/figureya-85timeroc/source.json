@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa85timeROC",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "8b515cc45d22c65f8906fc375b6b94d95a364e74b6c61d22845b3f6aa3f123c7",
+    "example.png": "a7d6ca11ab3de0fe62344a8615e570c61b50b17a3c86f83122e27d66a209213a",
+    "FigureYa85timeROC.Rmd": "33a1bac2f0133c5d1bad388b176577c353c900a7c6656f209e48746d9c734614",
+    "install.log": "6c7035b6167136707933f9003cddb4f9b89333aa506f53e94a79b8b77eed84ac",
+    "install_dependencies.R": "930d8ec43a1ca65767d1e1960a33ae83fcc61a126436d08737124b56cdeb51ca",
+    "timeROC.pdf": "829fd2f2ed614d70e65f5e192b0bbc34c1e9a1f88f89f661d811fc0fd0ce4f03"
+  },
+  "excluded": [
+    "FigureYa85timeROC.html"
+  ],
+  "copied_at": "2026-10-27T12:16:29+00:00"
+}

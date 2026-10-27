@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa173fancybar",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "example.png": "aaee40fcdf59e8c90aaf60300b20f34bb2e8e6e3d2dc1463adf7d494c2052dea",
+    "fancybar.pdf": "fc47bc2c4ebb06c1aa32cf8cdcf3a97255b1155377aeef205b15460a17079b11",
+    "FigureYa173fancybar.Rmd": "9b08a9e6428b52776083f9de8a44d90d4f343a262c6b58d0c5cd2de42fe0c972",
+    "multicenter_validation_full_NJDTH_UI.txt": "ca9183b2b124725c43ad16d56e264a8a2eef8cd12877e3d33b50815bc3831326",
+    "multicenter_validation_manual_GCPH_Toshiba.txt": "b552e9e311f109e007319a23d85ad14ab568ea356ac68885f28c2b430de88389",
+    "multicenter_validation_manual_JSPPH_Siemens.txt": "8e0ed7142a3b6a8c7554dd3f91d937a5f5942ee71cc5a9d4eff7d5e021540489",
+    "multicenter_validation_manual_NJDTH_GE.txt": "427ac86d947b9a2af141bfae814569f872a7d8bc45153a386608233dc04518d5",
+    "multicenter_validation_manual_NJDTH_Philips.txt": "2d6656708f51cf4f9a803f4f857a8e817ad58cbe4f080f99daf1168948de9db0",
+    "multicenter_validation_manual_NJDTH_UI.txt": "af1b907c9a3e55de908bce61f51179af571dc9d07080318ac9f00c7833b15c9d",
+    "multicenter_validation_semi_NJDTH_UI.txt": "b4a0e19e110a59b185296ec6cdb09e92e21ae3df5f3c7434ac604e9fea73d58b",
+    "multicenter_validation_semi_PZTH_UI.txt": "dd4c2837490101f3cb1af818a2781e21146cd1be961c2ed32b8adb070c2d2cc4",
+    "multicenter_validation_semi_SYCCYHC_UI.txt": "202676f01c0a2ea800819118782188609ab5066c0e633edcba493e0495cc075e",
+    "Readme.png": "9dff5c7add0d7be23e6379d5b235fe392d7f16815fc0c208a88a0662993337fc"
+  },
+  "excluded": [
+    "FigureYa173fancybar.html"
+  ],
+  "copied_at": "2026-10-27T12:16:37+00:00"
+}

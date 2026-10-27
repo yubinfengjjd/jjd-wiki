@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa6rHRsV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "aa90f0fec32d8f0e63e16a1f543f8bcdb9918e8c2017aefb7df22e4ca9ddfae7",
+    "example.png": "3d71660e7b4822b905542a656afae81f6427a3dffb1cc2de3f7b1a93bea421f6",
+    "FigureYa6rHRsV2.Rmd": "5f276506c59ca6c670b73405ab9ee5b5a27697a8cd644f02b70c945af4594f34",
+    "forestplot.pdf": "33560648a6ec97c2dbae1eceb2a9ba89642b6b886df0d6a8cb06edeedaf2b534",
+    "install.log": "3cacf425b9de61d079862f56803a57afbaa2cbbb9affede1215e72bb8cd05446",
+    "install_dependencies.R": "0f3d5e561996bcd961f933cae462a579ae5696808422961fdf719b3cacebd0dc"
+  },
+  "excluded": [
+    "FigureYa6rHRsV2.html"
+  ],
+  "copied_at": "2026-10-27T12:16:27+00:00"
+}

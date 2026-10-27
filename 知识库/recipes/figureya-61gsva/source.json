@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa61GSVA",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input2_for39bar.csv": "e6a53d34ecc67875190641388577faaf2a8a98d9c96734da3c13cf2f2a4d0a48",
+    "easy_input_expr.csv": "f87be8ad7f9680fb4f175f3639411802e2625a2ad8499a5b08103c4bdc07053e",
+    "example.png": "26079c8f776349ee298e209b7e64b4a6073bfef0d2cee8a8c3d2be25410513c1",
+    "FigureYa61GSVA.Rmd": "43cf0bc597a87ed6cf8a4b5c8c7e3af9f978b78e4adb0f19010b20d80b589a6a",
+    "gsva.pdf": "ef079dcfdc741958b21b722145e8ca7e1428589d91b04417772c52bca77e0a0d",
+    "gsva_limma.csv": "0ca57e24b5278f6f74321f5b990349ba2e76d00e4c50a16d7353260e627b72fd",
+    "gsva_output.csv": "0f3379185bf2809fbc502604fbc98de6059586b0e64633d86bddaa9e7d5574ff",
+    "hallmark.gs.RData": "686b79535d996ee24e4e9a1acda6237b7c485fd7457504ef0bbd6fcfd1c6853b",
+    "install_dependencies.R": "b72a9e8638040a19211872a9e7123997ec770a871239cad9ab011b22227b78ac"
+  },
+  "excluded": [
+    "FigureYa61GSVA.html"
+  ],
+  "copied_at": "2026-10-27T12:16:33+00:00"
+}

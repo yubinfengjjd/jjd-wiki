@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa25Sankey_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "f53cd7b9a8a4fcbecc25e313b32d23fbb8291e55f421e5e60cd7229d25dcc488",
+    "example.png": "b53d434695954684c01235be42014bd0f24e530d2a4cddd981ac368415c267d2",
+    "FigureYa25Sankey_update.jpg": "19846c3fd1dfb06952bf2631be30ad101e589ace9dd482f2350162204bfa08ba",
+    "FigureYa25Sankey_update.Rmd": "18f73efbb4b68d782efa2efbcd1a88a17b7ba5e8cdfd68c0e1b116d49004e829",
+    "install.log": "0f2ef692adae848f9fb7834ff9e932942198a9dbd33dc1177e3e0045de13bd2b",
+    "install_dependencies.R": "814f74d4dfa8b083b880ee511f5135d621d780f6a3618a665741217ef9e60d81",
+    "sankey_alluvium.pdf": "13be6a2c45a25a9fb13dbba1f4c378a099bf45c5bb337d026c1efe69d63c067f",
+    "sankey_stratum_2.pdf": "b89db32f5683080b6b1f8cc550090b3a065540c6bfa62d89bd9bf35611067a8f",
+    "sankey_stratum_3.pdf": "790f46059773673eb8a026459686653627c358f68d76d51a4ab962271e4bad58"
+  },
+  "excluded": [
+    "FigureYa25Sankey_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:38+00:00"
+}

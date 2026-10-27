@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa39bar",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "CancerBar.pdf": "1f37aba65017d5e64c9bd463065a903c262763be67a71b6043474953dc481503",
+    "CancerBar_label.pdf": "744d1e8dd2ec43ee96137d0a25dd89076510efc09ab26944860ba13153a98547",
+    "easy_input1.csv": "37ea90d9302e08dee98e0fa8ff6abb270bf278744ff3ea3701155c0e739fddf3",
+    "easy_input2.csv": "64ead63c1a5a134ce2061790d8ae5cf471378a4f031577015462eaaf4d1a183a",
+    "easy_input3.csv": "b715b6eee61c99a34bef8c8bc5dd8c731eef2404d073a2960d44f0d27b4253c9",
+    "example1.png": "e3543a01d89e8bc01b9928559c49211c0f418cafad3dc67a3e268ad1e063bab4",
+    "example2.jpeg": "dfb8ef24458515be99f2bb519e14fd1465281d4c16584710731c8a887d4a9c58",
+    "FigureYa39bar.jpg": "6780ef1f0f7f34941a7c0e3e76a14f0e14cc6c2a23f509e4c00a5a0c47d27ac8",
+    "FigureYa39bar.Rmd": "347128324c46c0e11f65f13a28b695c4e2ba174e75e7ee7a7d3dddc7280b3cfe",
+    "GObar.pdf": "fee61f1472f6f77c9ab69d743acd492527a2d09287976834ba29fc80a8313601",
+    "GObar_pval.pdf": "2b8583c9909487f4c0530e9259fb745c2ba349fb58472cbbd7691af96cd8cf1f",
+    "install.log": "716dd73f4307aa2d958148828afb6f0e2691908f84913c41d9818bc80744d43d",
+    "install_dependencies.R": "d75ce5b3e476ca3ae98a2d47b0458207f0ab62acbae6f1618b6c3f0d8234c4b5"
+  },
+  "excluded": [
+    "FigureYa39bar.html"
+  ],
+  "copied_at": "2026-10-27T12:16:32+00:00"
+}

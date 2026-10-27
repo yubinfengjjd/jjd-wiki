@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa37correlationV2_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "correlation.pdf": "a7f8456e4efbae1bc1f452fa636b1e4cb9758080f679d164edabddcddaa42231",
+    "easy_input.txt": "43f000c0bfc49c79d2b21a2ff4133e6c9712aef9e915cc1a1cc419d919c51c1c",
+    "easy_input_V2.txt": "5cf9f078db3ef6ad452b619f6be396ecc5793422e5c91711c01d4dada8fbb0fa",
+    "example.png": "8d9cd794ed385850890789dce34a8d02b307a78bf12d3e6725dda36f2d32f453",
+    "FigureYa37correlationV2_update.jpg": "875da8acdc93d51a380e1604baf212bd471c9c6d7527a00d5572342d1644328a",
+    "FigureYa37correlationV2_update.Rmd": "a0595394af3d0cb7e1bc3fcab891444d2493f590495cd4d44ee89405cc05897a",
+    "install.log": "c18012e06c7a9e750340132a05f364d3027e09ac045e20e5a1adc8df95717fde",
+    "install_dependencies.R": "2ec95f236777afd4ea18ae397e46119b76ce08e70aa4f4067e768d4d84fb012e",
+    "not_easy_input.csv": "d026e7507f0464336672c78d8d12c93cd6cbcd806c37204049589b76e210f8bf"
+  },
+  "excluded": [
+    "FigureYa37correlationV2_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:36+00:00"
+}

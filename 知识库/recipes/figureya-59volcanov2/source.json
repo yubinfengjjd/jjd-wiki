@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa59volcanoV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_limma.csv": "555a6a49f22b662ec47f2c7dd67725d490f286c419311da675cf6b4938c9e9cf",
+    "easy_input_selected.csv": "6e9cdfe6f8ebcde6f32a0d29a0b77925f15e64fe9ba8455e30861314b9bc5b1c",
+    "example.png": "68550f9fa2c78c06b8a53af563f7b441fc053e737a1d3ff4cd5f4a27507fb6cf",
+    "FigureYa59volcanoV2.Rmd": "89d58a5aceca588a5d2db2a9946ebcce03ad77bc17f4d992e9da040c7ac1b4ee",
+    "install_dependencies.R": "568b09d76cb903d8f89a6bd1e5b262552d922c43560f217e7d1e8bb149f0043b",
+    "Volcano_advanced.pdf": "935638f201b90442f5a4569a780afdcfac38711d78da33725add176b5f98de6c",
+    "volcano_classic.pdf": "7ac7153308f7ff65d63651b04bdeabd50fe2a84e4201f067c1b5185e83a33ed6"
+  },
+  "excluded": [
+    "FigureYa59volcanoV2.html"
+  ],
+  "copied_at": "2026-10-27T12:16:32+00:00"
+}

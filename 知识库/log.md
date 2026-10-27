@@ -1087,3 +1087,5 @@
 ## [2026-10-27 12:07 UTC] source scan figureya: 313 items
 
 ## [2026-10-27 12:12 UTC] source scan figureya: 313 items
+
+## [2026-10-27 12:17 UTC] promote figureya: figureya-1survivalcurve-update, figureya-284pairwiselogrank, figureya-6rhrsv2, figureya-193risktable, figureya-30nomogram-update, figureya-138nicecalibration, figureya-33dca-update, figureya-85timeroc, figureya-99smoothhrv2, figureya-141risk, figureya-31lasso-update, figureya-293ma

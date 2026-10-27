@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa193RiskTable",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "example.png": "f2a6e36b378a79c7e1788580cfca03fd8a58ad870568f42f590277ea6e7f2a24",
+    "FigureYa193RiskTable.Rmd": "93ed8c74766e4d4ac2b99fa3c32560a685861ed804dd888669ddfc7fd0da095e",
+    "forestplot of risk table.pdf": "1f85bd2c5997aa053d0f801a28eb85747dfcd1b6bc2e01440e4baac81cc8a97d",
+    "gse39582.expr.txt": "224a5330e7441eaf2bb38b4b3b1d898ad1ae5e0a8f52eb45c2a1705cde5a3599",
+    "gse39582.surv.txt": "a9354310248fbf627a498359de01b57b4ff92fd5abe727fafdf17ee93bf0aec9",
+    "install.log": "0b57f3006d2664197a223c875fd8f57789fd1d071f6b82a288de47c65ddc183f",
+    "install_dependencies.R": "f61fa2b48876c1e6f3449d8365898183c6f288d2dc5e252fe10793cf88f6ff8f",
+    "Readme.png": "627b6fcbbe57a40779876440b66ede889391848f10e65abba08ad0731aa78a18",
+    "tcga.expr.txt": "ab3cb8feba9fc578c7aa0d895ed4de5a0eed9fce9d98d78a2923ace5f094d4df",
+    "tcga.surv.txt": "df9d0a6f56d6957fc42e206c6b364f3d6f6ccd2bba75f28ef241f304c9c6d0f5"
+  },
+  "excluded": [
+    "FigureYa193RiskTable.html"
+  ],
+  "copied_at": "2026-10-27T12:16:28+00:00"
+}

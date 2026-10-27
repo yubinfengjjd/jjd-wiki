@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa1survivalCurve_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_2.txt": "00061ee0d5e0adb4aa159eb77ac740d50be65678724463041964b5faf97575f6",
+    "easy_input_3.txt": "abc7efe90cae425218a0bb67f81e4a0caa189f9c3119d5ccdff69b32952f4b0e",
+    "example.png": "312635e41bb02959578f34f92d9d7e477cf7bddaa6e3472d181f3af25bee0372",
+    "FigureYa1survivalCurve_update.jpg": "b8e69ef9f3095a3a6d4299e3dd1cc76f1f580f6d90e98185f7065cd36ff73d4c",
+    "FigureYa1survivalCurve_update.Rmd": "7b32590811b8c756a3238dfdbd70dac61f3abbed5c2b81f5096e77acbabcf9e1",
+    "improvement_suggestions.md": "93f0caef34a642873d13faee9694983423ca2db170c39abf3208b4e2de727eda",
+    "install.log": "6161ffce34dca8019c520f33d6780e6f9f5b58465f7a38ebd3981b821cf12feb",
+    "install_dependencies.R": "3ffa24875d77fcfe6123d12a31bc078589597bd5d97ed112df12b0146cfde4c5",
+    "not_easy_input.txt": "a73d3df66b93213dd15c767274c3dd6ee8476b2863d9924bea1aced10c218777",
+    "survivalcurve_2.pdf": "de786635a9fee25a3d189730a48b231a0d8a4e0380b495d2c66f211e9387d3eb",
+    "survivalcurve_2_table.pdf": "718701079ef77575410dcf72907756086653975ccdf7f5c8d7733a6d26bc46d8",
+    "survivalcurve_3.pdf": "8d0b764a67feb92eaa6fe134b2964137e3397ab66717ddb60efdc1614558476c",
+    "survivalcurve_3_table.pdf": "462370a2f0405095ecba4b1f85d25e13f6b1d10bac0584069fb9d94e20bbaa39"
+  },
+  "excluded": [
+    "FigureYa1survivalCurve_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:27+00:00"
+}

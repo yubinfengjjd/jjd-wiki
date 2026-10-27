@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa228linkCor",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "bladder cancer signature.txt": "0fa44e2598abddcdc4b5b26d1a894ad8ea47487c7054d5c61a251fc774840e9e",
+    "easy_input_blcaPath.txt": "7c9cfb5d1df1fcb60ff328e22a275db3028f68699259e202481cfa32569e5929",
+    "easy_input_gene.csv": "62b6ed85e51e170ad4890ae8b8f986914acad5d4ad320b40f2350a74f7e9ea56",
+    "easy_input_immPath.txt": "23d7cc445bb7d112a252f4adc5c343bbe6fa40481e0f557b3661396b41821838",
+    "example.png": "8ed115c3fbe668d975ee210cb19cc35f27d3976e068e08a09529c0f237249768",
+    "FigureYa228linkCor.Rmd": "d1c4537b695920072f8d978d6e1eb2687d92683a9ad07662b556b9d10ad266a0",
+    "ggcor plot in bottom left.pdf": "66262c9235e7edfb7850ad0eece772d51abae1977f3e9f89525b4dfd0b68b25a",
+    "ggcor plot in top right.pdf": "a345e00c2b4662d0a33e74d8ab4d7570d40f69e23f8cc33ed328db254b5f0797",
+    "ggcor-master.tar.gz": "2aa28bfc8078ecb5118ce083bdd18976451c5d8447982d912ac14c1d415be780",
+    "immunotherapy predicted pathways.txt": "18bca59f6a28cd0e326252f57df8388251f770a27f194730d99fdc53ce6a22ba",
+    "install_dependencies.R": "5553bf2fa7a084cfc9026c1f45021bd7eee84dfbe911ca9b33016c7ca28c8080",
+    "Table S9.xlsx": "cf4287909e052ffba23d06554b7660d2761617eda64cfeaf9e9aef54e4744bed",
+    "tcga_blca_fpkm.txt": "53d4f8922ec06c3692d5e3e2c0de8a5d1f03ca8dc85d8b0b6a181fa41f763d6c"
+  },
+  "excluded": [
+    "FigureYa228linkCor.html"
+  ],
+  "copied_at": "2026-10-27T12:16:34+00:00"
+}

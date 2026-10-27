@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa31lasso_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_exp.csv": "db5b20d97e74559707314055efe39b1518f0a86a578029809bc80ceb41b100da",
+    "easy_input_suv.csv": "76bb476b25b542bba9b336a037ed612627873bc58a96b2d582eafd10735b5b33",
+    "example.png": "9ffc5c1442d7a48f30c9e5d79c44b92518e332f3eb62ec78996193a0fc2a8df7",
+    "FigureYa31lasso_update.jpg": "f1f32ec17193d5a296db3a84afd8b57726f00a008dcd780de13cb06c3360c0f2",
+    "FigureYa31lasso_update.Rmd": "1e8424b61d1fc5cece365ba6f4675f3d5c24d37d9342c1e0432abfb5d8b86439",
+    "gene_index.csv": "b17536ab1133c17331b4a4ec16a5f37bee294a8b937ad35ff2f06960fc2b5c26",
+    "install.log": "6ec770d5136aa2c01d3fb7cb25aabd34f880ad5675208818de113fad98acfcf9",
+    "install_dependencies.R": "68a69a845ef85a078d7193d692ce36177c21429b1ca95ea2c72f94bf0fcc7d70",
+    "lasso_legend.pdf": "77507544a24a9c39a036a7eaa801185d0e58b056e6b1a1a398eb9a54136d87e6",
+    "lasso_name.pdf": "6fd7db870a693548c0728a84541c02f8dbdeed18c20518482c9da942fd0ec763",
+    "lasso_output.txt": "d1b1b3aa8324f7b7d36c94bacf6c6edacb04ce1965849d23ec75b5b723266a36",
+    "nonzeroCoef.R": "62eb57d11e97fc8c0a5cf3f60fba702bab0084b450e383f3ea64c87f581f8b64"
+  },
+  "excluded": [
+    "FigureYa31lasso_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:31+00:00"
+}

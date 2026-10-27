@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa153ccgraph",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "ccgraph.pdf": "95e37ce6001e18e8ffae530546369f53aad118300fc66e43c2fc6f1f12853332",
+    "ccgraph_color.pdf": "1e65624a4dbf74945b9b1291c00c4e2d667940b6f3618d46ffa8e49e8e350391",
+    "ccgraph_microbiome.pdf": "e200ab30ecbb57dc3f36ec3bc94f84b5c1125978221ba3ff2e1efeb6668c9967",
+    "easy_input_rnk.txt": "82550b47c6ca81ef564b913e33eea0523d9edd55632c138d4d414d91dcbf74c9",
+    "example.png": "635fe76c81e4b9ab2657d45431ec9a9ba3b8c5b6cfc9f110bd1001c7f60a9b2e",
+    "FigureYa153ccgraph.Rmd": "ef77765346255297877a3595e4e3157f13b67cbc3c2f2ef24bc2514bea34ede2",
+    "gather_graph_edge.R": "a2f8f170da6638faab12dcb5894fcd160181774633b2ce488f1c2bf8ff743acb",
+    "gather_graph_node.R": "333b8d74f79d9bfe72e25db9c15a467cae79137af8b4bb55e01fff036c7e4789",
+    "gene_special.txt": "5e25af398171bdc8e4c1d94b2b714fa10f203438a03a15a7bd59065769c1d330",
+    "install.log": "7992c5817bd2f886a85d32141565e01fafc1c80fa83a1b7812521f85b1adf6f2",
+    "install_dependencies.R": "dc40cec03b484406c870d49600078db23600b2d783dccf6e9b55d71fa03e8853",
+    "microbiome.csv": "45c34933035157776041f6c167cebc486b8e154b49639b4fe5917739c85f7032",
+    "Readme.png": "eaa6c10bf0055115534c0bf613de8b49d18af9f7d453b141205c9d4b9c94b236",
+    "very_easy_input.csv": "037bdc48ab44be59e596a81c1fc44cce2ad370b8f45c1e3cb14654cdb5db2930"
+  },
+  "excluded": [
+    "FigureYa153ccgraph.html"
+  ],
+  "copied_at": "2026-10-27T12:16:34+00:00"
+}

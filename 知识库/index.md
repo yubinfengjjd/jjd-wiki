@@ -11,6 +11,36 @@
 
 ### draft
 
+- [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] — 把 Cox 或 Logistic 回归结果画成经典列线图和 regplot 交互式列线图，并画 5 年/8 年校准曲线与比较图。
+- [[recipes/figureya-61gsva|GSVA 通路评分与组间差异]] — 把“样本×基因”表达矩阵用 GSVA 转成“样本×通路”评分，用 limma 找组间差异通路，结果可接 FigureYa39bar 画图。
+- [[recipes/figureya-13gsea-java-update|Java GSEA 结果多通路美化图]] — 读取 Java 版 GSEA 的输出，把多个通路画进一张图：点图+条码、线图+条码、条码+热图三种样式。
+- [[recipes/figureya-31lasso-update|LASSO Cox 系数路径与交叉验证图]] — 用 LASSO Cox 从候选基因中筛选预后签名，画系数路径图（标注基因顺序）和交叉验证曲线，并合成一个签名变量。
+- [[recipes/figureya-138nicecalibration|Logistic 模型校准曲线与 HL 检验]] — 为二分类 Logistic 诊断模型画校准曲线，并给出 Hosmer-Lemeshow 拟合优度检验。
+- [[recipes/figureya-284pairwiselogrank|三组以上 KM 曲线与两两比较表]] — 对 3 个及以上亚组画 KM 曲线，并在图中嵌入两两 log-rank 比较的 P 值表。
+- [[recipes/figureya-6rhrsv2|临床亚组分析森林图]] — 把已经算好的各亚组 HR 与 95% CI（及例数、P 值）画成带表格列的临床亚组森林图。
+- [[recipes/figureya-33dca-update|决策曲线与净获益分析]] — 画二分类或生存结局的决策曲线（net benefit）和 net reduction 曲线，比较多个模型的临床获益。
+- [[recipes/figureya-236circgroup|分型对应关系圈状热图]] — 把多个分型（或分类变量）之间的对应关系画成圈状热图注释，直观看一致性。
+- [[recipes/figureya-196panpie|分组临床分期扇形矩阵图]] — 用扇形矩阵展示不同分组在临床分期等分类变量上的构成差异。
+- [[recipes/figureya-39bar|分组着色柱图与正负富集柱图]] — 场景一：各肿瘤（或样本）某指标的瀑布式排序柱图，按类别着色；场景二：GO/KEGG/GSVA 结果正负方向左右分开的发散柱图，不显著显示灰色。
+- [[recipes/figureya-162boxviolin|半小提琴箱线散点组合图]] — 比较两组或多组的一个连续变量，把原始数据点、箱线统计量和小提琴密度画在一起。
+- [[recipes/figureya-173fancybar|含亚组的多组均值柱图与比较]] — 画多组柱状图（mean ± se），部分大组含同色系亚组，同时做组间与亚组内比较标注。
+- [[recipes/figureya-37correlationv2-update|圆形布局基因相关连线图]] — 把基因放在圆周上，两两之间用连线表示相关，连线颜色和宽度代表相关系数。
+- [[recipes/figureya-92immune-gene-update|基因与免疫浸润相关性图]] — 计算一个基因与各免疫细胞浸润评分的相关，画汇总点图和单个细胞的散点图（带边缘分布）。
+- [[recipes/figureya-102multipanelroc|多变量 Logistic 模型训练/测试 ROC]] — 用训练集构建多变量二分类 Logistic 模型，应用到测试集，并把训练、测试的 ROC 画在一起。
+- [[recipes/figureya-76corrgram|多变量相关矩阵散点热图]] — 一张图里同时展示多变量两两相关：下三角散点+拟合线，上三角相关系数热图，对角线为变量名。
+- [[recipes/figureya-25sankey-update|多层分类流向桑基图]] — 展示多层分类属性之间的交叉与流向，例如高频突变基因所属的分组，或 miRNA—靶基因关系。
+- [[recipes/figureya-85timeroc|多模型时间依赖 ROC 曲线]] — 对不同拟合模型（或评分）计算并画指定时间点的时间依赖 ROC 曲线与 AUC。
+- [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] — 用 10 种生存机器学习算法及其组合在训练集建模，在多个验证集计算 C 指数，画模型比较热图与条形图。
+- [[recipes/figureya-1survivalcurve-update|多组 KM 生存曲线与风险表]] — 用自己的生存数据画两组或多组 Kaplan-Meier 曲线，附 log-rank P 值与 number-at-risk 风险表。
+- [[recipes/figureya-11bubble|富集分析对角排列气泡图]] — 把多组的 GO/KEGG 富集结果画成按对角线排列的气泡图，点大小与颜色表示基因数与显著性。
+- [[recipes/figureya-153ccgraph|层级关系同心环网络图]] — 用“圆环套圆环”的布局展示层级结构，例如基因—突变、调控因子—靶基因或物种分类丰度。
+- [[recipes/figureya-59volcanov2|差异表达火山图（经典与进阶）]] — 用 limma 差异结果画经典火山图和标注选定基因的进阶火山图。
+- [[recipes/figureya-143survcor-update|相关性散点叠加最佳截断四象限]] — 在两基因表达散点图上同时展示相关系数、按 log-rank 统计找到的最佳截断、四象限分组占比和 MSI/MSS 状态。
+- [[recipes/figureya-228linkcor|相关热图与连线蝴蝶图]] — 用三角热图展示两组通路各自的自相关，再用连线展示一个基因与这些通路的相关（实线正、虚线负、颜色为 P 值），拼成蝴蝶图。
+- [[recipes/figureya-227boxdensity|箱线图叠加密度分布图]] — 比较两组的连续指标（如药物敏感性 IC50），箱线图与密度分布叠加展示。
+- [[recipes/figureya-193risktable|训练与验证集风险评分多因素森林表]] — 在训练集（TCGA）构建 riskscore，并在 GEO 验证集验证，用多因素 Cox 检验预后独立性，画上下两段的森林表。
+- [[recipes/figureya-99smoothhrv2|限制性立方样条 HR 曲线]] — 用限制性立方样条（RCS）展示连续变量与风险比的非线性关系，以参考点为基线画 HR 及置信带。
+- [[recipes/figureya-141risk|风险评分分布与签名基因热图联图]] — 按风险评分排序样本，联合展示评分分布、生存状态和签名基因表达热图，用竖线分高低风险组。
 
 ### ready
 
@@ -134,18 +164,33 @@
 - [[chart-types/bar|bar]]
 - [[chart-types/beeswarm|beeswarm]]
 - [[chart-types/boxplot|boxplot]]
+- [[chart-types/bubble|bubble]]
+- [[chart-types/calibration|calibration]]
 - [[chart-types/chord|chord]]
+- [[chart-types/decision-curve|decision-curve]]
+- [[chart-types/density|density]]
 - [[chart-types/density-scatter|density-scatter]]
 - [[chart-types/dot|dot]]
 - [[chart-types/dotplot|dotplot]]
 - [[chart-types/errorbar|errorbar]]
+- [[chart-types/forest|forest]]
+- [[chart-types/gsea-curve|gsea-curve]]
 - [[chart-types/heatmap|heatmap]]
+- [[chart-types/km-curve|km-curve]]
+- [[chart-types/lasso-path|lasso-path]]
+- [[chart-types/network|network]]
+- [[chart-types/nomogram|nomogram]]
 - [[chart-types/pie|pie]]
+- [[chart-types/radial|radial]]
 - [[chart-types/radial-bar|radial-bar]]
 - [[chart-types/ridge|ridge]]
 - [[chart-types/ring|ring]]
+- [[chart-types/risk-plot|risk-plot]]
+- [[chart-types/roc|roc]]
 - [[chart-types/rose|rose]]
 - [[chart-types/sankey|sankey]]
+- [[chart-types/scatter|scatter]]
+- [[chart-types/spline-hr|spline-hr]]
 - [[chart-types/stacked-bar-flow|stacked-bar-flow]]
 - [[chart-types/trend|trend]]
 - [[chart-types/umap|umap]]
@@ -153,6 +198,7 @@
 - [[chart-types/venn|venn]]
 - [[chart-types/violin|violin]]
 - [[chart-types/volcano|volcano]]
+- [[chart-types/waterfall|waterfall]]
 
 ## 课题
 

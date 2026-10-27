@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa30nomogram_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "calibration_5y.pdf": "053e18c4fd86fca7afc4475b1fd5980a92159e0e5462b16ca0c2887310e12458",
+    "calibration_8y.pdf": "e2276ca4eb4f767727213de14513b58449db314f420086e9f0703d1b5e02201c",
+    "calibration_compare.pdf": "a899ed1b2e896f76ccb56bf3c5562edb51da6f748dab8a284087f8cf93d7078f",
+    "easy_input.txt": "8afacd7b7f21ae049ca8c08fbbe835668a6c77e70ce0d0ffff81e1aa0c6360f8",
+    "example.png": "03d9dd49c2190c0df7fabeef22277e96832925fcdc6432ff15517908ceb9c837",
+    "FigureYa30nomogram_update.jpg": "84e243930712dbcd4c49fbc5d93002a11bc6bb2c70f91b57388b3ab9fc1bad44",
+    "FigureYa30nomogram_update.Rmd": "915cb7a63ecf7e083915bcb6692b92417491a1379a3f659dd62d64d225ed1f0a",
+    "install.log": "1c2fbe570336d9709a7d404a2af2e3e4bf0243ea4fd9208cf15d5e2bd3a9d350",
+    "install_dependencies.R": "012ec38f0fb9224fcf0bd372076905cfa9ad3a1ded7a3dd312f6e6f82027ab56",
+    "nomogram_classical.pdf": "1f0841e58cff7cd224345addea8917c0100334ca0f24aff9989b113f8dcc23de",
+    "nomogram_regplot_cox.pdf": "c4e0025d7fdbb34ad38fe1da9abe8d5a233f88b7d79f568801403acd6bc6982b",
+    "nomogram_regplot_glm.pdf": "068257c5c2667d4dfeef70b18847b2e47ae6c8b01b2a09be32e8f12a10a03494",
+    "regplot_functions_modified.R": "ca0e8d7ec215c8b88db1d8da003ad21a89afcd3f28bff17ee1bde50f72c60d9c",
+    "regplot_modified.R": "de34fe92a3b6a756a3d4481cae292ba8bd3b3ceb9e835af82e9c787f60fb8a52"
+  },
+  "excluded": [
+    "FigureYa30nomogram_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:28+00:00"
+}

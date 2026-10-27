@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa196PanPie",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "d0f0cfdb6b0365df6e4010b6510d323d63f8b7d49e9e89fecffc2f6b0b299986",
+    "example.png": "e1d941b1e4e7871ce543274693d70afd7d80e2634787f7e7171264d1c9e864ef",
+    "FigureYa196PanPie.Rmd": "ec5a221b863e93d4da18ef2e0bb90afccf475c6483a77edfbc2ed47cd9d8ad7f",
+    "install_dependencies.R": "fd77b717bec9fa69514788259d8443ca10da6c3262a4178b45f90b41eef0e904",
+    "pieTable.pdf": "1589f7a46aab4cfbaf8c90144b57aab6b6935afbe66340b7909e1b062e1086c9"
+  },
+  "excluded": [
+    "FigureYa196PanPie.html"
+  ],
+  "copied_at": "2026-10-27T12:16:38+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa141risk",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "cox.pdf": "b0de2fe9841122d210104746b653f7845e251d3adb9b30ef9079e44a8c0d64d4",
+    "cox2.pdf": "47b101243081f90713628db1a0c4e217f6d75716cd548b7d30df5fc7819284cb",
+    "easy_input_risk.csv": "f86e93cb0e89002e7da8e5bc44ae625c6d64124221384c61e74881e4df11c92f",
+    "easy_input_sig.txt": "f505a54d0199c201ebae98618b7c626248c70a364dd3fe606c4aaa3adcd816cf",
+    "example1.png": "345b54fc3179e43e868dd6b1622a302f97bee9e252938aed5bda9e12353a5e85",
+    "example2.png": "d3c2492bb6a441d0171392eb593def2bf9a2de0e3d9557db3621f9c4ecff7532",
+    "example3.png": "de0ab4e1ea2afb3da45868ff121016d5e29edf088d3e9e7bc9645b2562990c4c",
+    "FigureYa141risk.Rmd": "22f511af8c1b9bd66903e55a01ae65e99f35e95ad2c4500e2db47e421b5f6bf7",
+    "install.log": "6cd2da606158a9af05fbeea77e668bb8c742f013f7383743977fec5a1dbbcbaa",
+    "install_dependencies.R": "077dcf3f0017acfb72fc1f9d5b13585b026f7031c710ad3313ee1248c4111e8f",
+    "Readme.png": "3991bb8d3d1779951c2b97c915d79977b658ddc676b2181da1b825a393dd9873"
+  },
+  "excluded": [
+    "FigureYa141risk.html"
+  ],
+  "copied_at": "2026-10-27T12:16:30+00:00"
+}

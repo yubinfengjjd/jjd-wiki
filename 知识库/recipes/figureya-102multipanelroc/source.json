@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa102multipanelROC",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_test.txt": "abcabce34ca3d46b5785d2317b8bc822c578d761ffb17c13916895f19e0007fa",
+    "easy_input_train.txt": "7575b22871351478716c9bf3cc4d8667f770d2efd00842eddf033a37b8d45f43",
+    "example.png": "ba1e424944c5d3f4eb2067f8a587875320379bb39b601aae6f38e37982b7a362",
+    "FigureYa102multipanelROC.Rmd": "70400d3a606942ddc857204cb5ee92967e6ba318027d2f565b49f935e89d6aa6",
+    "install.log": "15fd50a931a2505eee9949aa14d0fe2a34ba433c3b09e5d73bf0437a2baf965d",
+    "install_dependencies.R": "47fc1056a7ff6779f1f33165c773e8ccda6e9d23e2ebc4071ce62c0c59e05cce",
+    "multipanelROC.pdf": "fba817eeb3cb4f5ecaec64b59e08fdae585df8eb66ffae819803369a30195a54"
+  },
+  "excluded": [
+    "FigureYa102multipanelROC.html"
+  ],
+  "copied_at": "2026-10-27T12:16:32+00:00"
+}

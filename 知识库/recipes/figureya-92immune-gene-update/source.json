@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa92immune_gene_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.txt": "b8e9567dd1e1d7079210cd02b330bcfa011ab536ce99bf980f577967c7643c51",
+    "example1.png": "aea15533616c30071f6a7883cffa482492b4cb3a1e47bfe42083d8e7e6a57037",
+    "example2.png": "3d19c64ebe519736b471a4be8f2fa26ae1dfee256a5522aed3ee9e5884a1ec99",
+    "example3.png": "9dbc1df96ab3adc2af5f1413fbaff41fce2c55be6aef338c607eb4abe89dd505",
+    "FigureYa92immune_gene_update.Rmd": "b4f5628c21db7f4d5c732f830ddbc21076cb49ee504f6b9ad7d7249b0f6ef19b",
+    "gene_1cell_ggplot2.pdf": "64271c483147cdb88f06f3cb164b31599232ae5391959650564a7cd5da5245d9",
+    "gene_1cell_ggscatterstats.pdf": "01eea719411a39245d46b8755107852966f971db80277d177627bb57e30bd0ef",
+    "gene_Xcell.pdf": "d9d7e5e1c6a68e2ca5a4bd09272ccaa36c78a6a3a9864f6f5f66335b9aa9ae1f",
+    "ggscatterstats.R": "e5d5678acccb6f777ace7f9cfee3e98e3a8b38b488762e6c7c0134433514c82f",
+    "install_dependencies.R": "07e188b1029739fb90906c76380dd84cac105f665bac9922b72876df8f034f5d",
+    "output_cor.txt": "e8cfd9154c6e61a081e85d06c90155c2d5264d29055a7a477e931a443842c4a7",
+    "pick1gene.R": "0ebc43ee7727454e3e1b3395c8c1be95e7005a7a8c4df581c72880e6cde7ac2a",
+    "ssGSEA_output.csv": "2e4dd1d677cb196455242105d39a73ce1cecdc4aec80b98f24d7c9dec6a27f79"
+  },
+  "excluded": [
+    "FigureYa92immune_gene_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:35+00:00"
+}

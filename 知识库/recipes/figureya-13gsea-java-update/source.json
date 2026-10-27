@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa13GSEA_Java_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "example1.png": "171bbb7e825ef3bd6e3abfb359d7cea39fa7dcbbaa8af6d3f1f5fea2fe03283f",
+    "example2.png": "72cd2d8596fc6428712e937bbc37beeb1f27dd7fe8df4806cddf3770cb83d213",
+    "example3.png": "4243d9b41ae1e16a67d72938efbae31ab1e1d474bad7961486df062f817cbd18",
+    "FigureYa13GSEA_Java_update.jpg": "c8d050f4681b96d232ea00fa9d7f08ca090de9857832bfc556ed2bcfb173b587",
+    "FigureYa13GSEA_Java_update.Rmd": "126b23c9751931f9698de49b201e89ef3529c632abd156866811e688e1218404",
+    "HALLMARK_COAGULATION.xls": "fe1e85eafc913028c6cdff0f77f683e4490a374f6cb6a8b65f4fe2a09312fa96",
+    "HALLMARK_HYPOXIA.xls": "4810c1eea7c8db7d61f2cbd6079469b58aa7b721604db6e6dba52d928b7fa7f0",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING.xls": "2a787a7c677dc0803979398cf62d603e304e5c0ac958ba91e23e9b3177dacb76",
+    "install.log": "f800f356cf01145cb39508bb63f7e0b14bb105b309cdda7bd8932bb1fbf2c399",
+    "install_dependencies.R": "0524ae12e308dfa5c5ac5269f279c836ee77dc8a208826e588ed5dbf4178ea17",
+    "prettyGSEAbar.pdf": "829e2377802660a4499d613241d595e318e6a1b8cbdb4e914a9665de9add3754",
+    "prettyGSEAline.pdf": "d89b9d1405789a907db53db21eb38102de618b580b0e1c65565ae6df4871de8f",
+    "prettyGSEApoint.pdf": "c154a5a7d3dd64b3b1d9a520009154ba447dd540e93d6114746ff1e04aa2f1bf"
+  },
+  "excluded": [
+    "FigureYa13GSEA_Java_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:33+00:00"
+}

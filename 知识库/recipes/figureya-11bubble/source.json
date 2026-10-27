@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa11bubble",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "bubbles.pdf": "e732eb7333dea354f23d9ac0c4af8278393aecc5a6f515e090039160d453aae7",
+    "dot.pdf": "41ec152c6b732885ded636a69e651932a86237eee3b7cb117c2576f62923917d",
+    "easy_input.txt": "c632201ef6af2861bd0917755a434ea0e1d509f2e9c8bbb0f89fd54a4fb1971c",
+    "example.png": "0ca7380ed6cf321048f2b13340a0c84dd90707a7c1c2b27883206a7afb28bb64",
+    "FigureYa11bubble.jpg": "abeb2c314e07364c266dd3498a865e158af641e9e82fada232a0e9341a4408fa",
+    "FigureYa11bubbles.Rmd": "d3148cc3d236d6561ec3720ce24506ab21038e3f500bfe4d1fc6ef22f8ed84da",
+    "install.log": "163675aab6474086adbf35e9e0478c5e32ba09723d865be3de3a9112497bd1f5",
+    "install_dependencies.R": "fa775cefd0f54c4c35ce27406652b26c3f88b3b475411f4583aa2c5dd61d24ac"
+  },
+  "excluded": [
+    "FigureYa11bubbles.html"
+  ],
+  "copied_at": "2026-10-27T12:16:33+00:00"
+}

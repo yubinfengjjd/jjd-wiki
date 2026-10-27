@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa143survCor_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "complex correlation with logrank score_COADREAD.pdf": "92a36f6c6253029cd57088a5904e64d47070bdde6af69ea72a241e6cec3d6132",
+    "complex correlation with logrank score_SKCM.pdf": "bd59ffbeec1e8a74a800c71dd326f3c7fd8cd41284e92afe116632654c620dec",
+    "example.png": "8a736709d2787448712620af9ab0a3badde3bfe308ef3e73940d64a0d9bb8f9e",
+    "FigureYa143survCor_update.Rmd": "d8ae14f53feb70741b66fd3122fc9056910d358f76f95052b770156d1e5255fa",
+    "install_dependencies.R": "7be23bd003ffde716ea32ee1247ff7f6e11467cb8d81990426a2590f1a391c0b",
+    "MANIFEST.txt": "9b6dabcaafdb841632f5ca0e745bce5b8be895d3ebd9d359ace1849f19470ca3",
+    "msi_results_COADREAD.rda": "7acaa9b5589e7cd00a8a25d19cb6d764297b2916225583899f8ea9687c03b731",
+    "survival_COADREAD_survival.txt": "808124820455ab7697ca0943addb8692fb9841e1b89147490a2e06c92433e146",
+    "survival_SKCM_survival.txt": "3d5d0f3eff3f38b88985390a911ea052a4532c942dcc8d760a84e6b89851649d",
+    "TCGA.COADREAD.sampleMap_COADREAD_clinicalMatrix": "69715627cedc3d7a97c02b8f23d4528e824031e08d45133f497ba4764199d78f",
+    "TCGA.COADREAD.sampleMap_HiSeqV2_PANCAN.gz": "76cd223a2ca5b283235ae8659d2954e0df58fbe3a813418947ea4c1401616ef8",
+    "TCGA.SKCM.sampleMap_HiSeqV2_PANCAN.gz": "a2f9b9be6525bcb98e7c7f618b9439d845a66a5421d11dda90ceb6606d10c24b",
+    "TCGA.SKCM.sampleMap_SKCM_clinicalMatrix": "aaa56e62a696f769533becd9eec6fb1229fd609ad8b0969f5122f1ee6a176da5"
+  },
+  "excluded": [
+    "FigureYa143survCor_update.html"
+  ],
+  "copied_at": "2026-10-27T12:16:35+00:00"
+}
