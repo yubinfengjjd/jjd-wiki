@@ -1,0 +1,11 @@
+{
+  "mode": "adaptive",
+  "profile": "volcano",
+  "n_genes": 13346,
+  "n_sets": 4,
+  "dropped_highlight": ["KRT6A"],
+  "width_in": 6,
+  "height_in": 5,
+  "svg_device": "svglite",
+  "dpi": 200
+}
