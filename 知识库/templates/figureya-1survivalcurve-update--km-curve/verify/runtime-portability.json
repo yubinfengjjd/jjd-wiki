@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "figureya-1survivalcurve-update--km-curve",
+  "state": "passed",
+  "scope": "Isolated copy of the declared closure (runtime files, spec, example); new R process; no recipe source or FigureYa snapshot on any path",
+  "closure_hash": "c75fcc47c350609330853b14888de0d8ffd52869f737a8b759da265c761b36a4",
+  "files": {
+    "code/panel.R": "30cd7b5c39e67a4e0a876bfa03251d33172a6fafcf49c0d30273192bc3e7662e",
+    "code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a"
+  },
+  "copied_files": [
+    "code/panel.R",
+    "code/render.R",
+    "spec.json",
+    "example/"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\portability\\figureya-1survivalcurve-update--km-curve\\code\\render.R --data E:\\research-wiki-env\\work\\portability\\figureya-1survivalcurve-update--km-curve\\example --out E:\\research-wiki-env\\work\\portability\\figureya-1survivalcurve-update--km-curve\\out",
+  "isolated_dir": "E:\\research-wiki-env\\work\\portability\\figureya-1survivalcurve-update--km-curve",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "R_LIBS": [
+      "E:\\research-wiki-env\\R-lib\\figureya",
+      "E:\\research-wiki-env\\R-lib-scp\\4.5"
+    ],
+    "working_directory": "E:\\research-wiki-env\\tmp"
+  },
+  "checks": [
+    "Only runtime.json files + spec.json + example/ copied to an isolated directory",
+    "New R process (--vanilla) from an unrelated working directory; render.R resolved spec and code locally",
+    "R_LIBS limited to the Wiki R libraries; empty R_LIBS_USER; no recipe source/ or upstream snapshot path",
+    "render.R exit code 0; figure.png/pdf/svg all written",
+    "PNG identical to verify/figure.png (sha256 compare)"
+  ],
+  "outputs": {
+    "figure.pdf": "a50709d2a6ed5e03e723f32bbb8ea4204565f057c6a3e07b011812c5773d2e3f",
+    "figure.png": "71615ce631b8846a30c1a3c50d6ca2f415c86bca2fc03fb06a81eeaf8ce9c680",
+    "figure.svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422",
+    "sizing.json": "cf0afc37551d218e8b2e239cadda526c28c5ce3540567a030009746332afa8ca"
+  },
+  "previous_outputs": {
+    "png": "71615ce631b8846a30c1a3c50d6ca2f415c86bca2fc03fb06a81eeaf8ce9c680",
+    "pdf": "e1295b40584657cd48dca5c51dbee618ed391186b60081ad6e74b6466ab896c9",
+    "svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  },
+  "stderr_tail": [
+    "• colour : \"\"",
+    "Ignoring unknown labels:",
+    "• colour : \"\"",
+    "Ignoring unknown labels:",
+    "• colour : \"\""
+  ],
+  "started_at": "2026-10-27T13:08:16.221466+00:00",
+  "executed_at": "2026-10-27T13:08:19.459210+00:00"
+}

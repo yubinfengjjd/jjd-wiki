@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-27T13:03:25.423887+00:00",
+  "timestamp": "2026-10-27T13:08:47.922281+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/figureya-59volcanov2--volcano/spec.json": "f8c7b1432d70a6ac9083ae4a0dd2303c55f67b573fc4019ed604fb52ae245afb",
+    "templates/figureya-59volcanov2--volcano/spec.json": "50fb97613082be1ec97b7a72a4ded92537a6683ed4bf57ca93dbc365940cf98b",
     "templates/figureya-59volcanov2--volcano/code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
-    "templates/figureya-59volcanov2--volcano/code/panel.R": "d1cb3d89df0f8bad14c3b33a6820f76e5e8375f012a6a4fae740997dbb208701",
+    "templates/figureya-59volcanov2--volcano/code/panel.R": "398b878c79580fb72b076a5bcfd27aac83d8588ed7461155bc198563f6571a04",
     "interfaces/bulk-de-table#columns": "f0619331383bd3e3a95732ce22079eff4cf1ea7ed7c3780f61cf51eb50907810",
     "interfaces/highlight-gene-sets#columns": "e9d052e4acb483329ec6fcd604a4161c634047a1863283c8e60660ff53d9577b",
     "templates/figureya-59volcanov2--volcano/example/bulk-de-table.csv": "1bdcba38f4b493ee790112dea68b7eed6b680badfec15acf0ff6339e264291b9",
@@ -14,8 +14,8 @@
   },
   "outputs": {
     "png": "341381b2dbe23e327aa30e667cce68539e5c50bc74bd7729db37b5591746c277",
-    "pdf": "4c856404a0fe2f496e445612129ce6fd241de328c2584cf4e8dc61c4f1425349",
-    "svg": "a6e03533a969dc3517511ba9aa8f5d041733c9c88f1468adafc25d0f19a7b9d5"
+    "pdf": "5967a6b0327b30e2f26064cf2b7933978141abf175500357ae4c2bcf6de37346",
+    "svg": "26525330614b692662c3c839366b2fae0a74393661663e5715665f2dd756e7ac"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

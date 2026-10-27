@@ -24,6 +24,7 @@
     "set_colors": null,
     "missing_highlight": "error",
     "label_size": 5,
+    "seed": 1,
     "base_size": 12,
     "title": "",
     "dpi": 200,
