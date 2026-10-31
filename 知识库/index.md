@@ -142,6 +142,7 @@
 ## 来源
 
 - [[sources/figureya|FigureYa 医学科研绘图模块库]]
+- [[sources/figureya-archive-20251223|压缩包可视化模块增量来源]]
 
 ## 接口
 

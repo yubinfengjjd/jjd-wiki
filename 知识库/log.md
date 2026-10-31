@@ -1135,3 +1135,5 @@
 ## [2026-10-27 13:29 UTC] run figureya-293machinelearning=fail
 
 ## [2026-10-27 15:03 UTC] run figureya-138nicecalibration=pass, figureya-143survcor-update=pass, figureya-173fancybar=pass, figureya-193risktable=pass, figureya-196panpie=pass, figureya-30nomogram-update=pass, figureya-76corrgram=pass, figureya-85timeroc=pass, figureya-99smoothhrv2=pass
+
+## [2026-10-31 07:38 UTC] source add figureya-archive-20251223
