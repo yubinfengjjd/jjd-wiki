@@ -1147,3 +1147,5 @@
 ## [2026-10-31 07:47 UTC] acceptance check figureya-multilanguage-assets
 
 ## [2026-10-31 07:51 UTC] resolve existing promoted FigureYa entries in archive reuse manifest
+
+## [2026-10-31 07:53 UTC] document local archive link and recipe promotion limitations
