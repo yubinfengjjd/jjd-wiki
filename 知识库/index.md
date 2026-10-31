@@ -139,6 +139,10 @@
 
 ## 待分类方法
 
+### draft
+
+- [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]]
+
 ## 来源
 
 - [[sources/figureya|FigureYa 医学科研绘图模块库]]
