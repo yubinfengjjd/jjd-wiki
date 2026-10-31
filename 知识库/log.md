@@ -1135,3 +1135,17 @@
 ## [2026-10-27 13:29 UTC] run figureya-293machinelearning=fail
 
 ## [2026-10-27 15:03 UTC] run figureya-138nicecalibration=pass, figureya-143survcor-update=pass, figureya-173fancybar=pass, figureya-193risktable=pass, figureya-196panpie=pass, figureya-30nomogram-update=pass, figureya-76corrgram=pass, figureya-85timeroc=pass, figureya-99smoothhrv2=pass
+
+## [2026-10-31 07:38 UTC] source add figureya-archive-20251223
+
+## [2026-10-31 07:40 UTC] scaffold method figureya-multilanguage-assets
+
+## [2026-10-31 07:42 UTC] source fetch figureya-archive-20251223 3c99b485b37d
+
+## [2026-10-31 07:44 UTC] source scan figureya-archive-20251223: 33 items
+
+## [2026-10-31 07:47 UTC] acceptance check figureya-multilanguage-assets
+
+## [2026-10-31 07:51 UTC] resolve existing promoted FigureYa entries in archive reuse manifest
+
+## [2026-10-31 07:53 UTC] document local archive link and recipe promotion limitations

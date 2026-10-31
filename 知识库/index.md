@@ -125,6 +125,10 @@
 
 ## 技术资料
 
+### draft
+
+- [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
+
 ### ready
 
 - [[methods/scp-local-source|SCP 源码本地化]] — SCP v0.5.6 源码本地化与加载器资料；不是可执行分析，也不是独立方法家族。
@@ -142,6 +146,7 @@
 ## 来源
 
 - [[sources/figureya|FigureYa 医学科研绘图模块库]]
+- [[sources/figureya-archive-20251223|压缩包可视化模块增量来源]] — 本地压缩包330项盘点：286项复用旧入口，33项新增或差异Rmd，10项多语言工具，1项贡献模板。
 
 ## 接口
 
