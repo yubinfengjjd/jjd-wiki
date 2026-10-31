@@ -3,7 +3,7 @@ type: source
 id: figureya-archive-20251223
 title: 压缩包可视化模块增量来源
 url: https://github.com/ying-ge/FigureYa
-commit: ''
+commit: 3c99b485b37db10e66b21fbc26387f106f14c6ad
 license: CC-BY-NC-SA-4.0
 license_notice: 本机压缩包导入；commit 为本地导入快照，不是上游提交。完整原始包及各文件哈希见本页。CC BY-NC-SA 4.0：非商业、署名与相同方式共享；源码不进
   Wiki Git。
@@ -19,7 +19,7 @@ summary: ''
 # 压缩包可视化模块增量来源
 
 <!-- facts:start -->
-- 上游：https://github.com/ying-ge/FigureYa · commit `未获取`
+- 上游：https://github.com/ying-ge/FigureYa · commit `3c99b485b37d`
 - 许可证：CC-BY-NC-SA-4.0；白名单：是（按需获取不再询问）
 - 适配器：figureya；快照：`<sources_root>/figureya-archive-20251223`（不进 Wiki）
 - L0 目录：0 项（`sources/figureya-archive-20251223/items.jsonl`）；自动领域分布：
