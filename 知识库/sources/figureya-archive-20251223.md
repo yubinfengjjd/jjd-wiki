@@ -22,7 +22,7 @@ summary: ''
 - 上游：https://github.com/ying-ge/FigureYa · commit `3c99b485b37d`
 - 许可证：CC-BY-NC-SA-4.0；白名单：是（按需获取不再询问）
 - 适配器：figureya；快照：`<sources_root>/figureya-archive-20251223`（不进 Wiki）
-- L0 目录：0 项（`sources/figureya-archive-20251223/items.jsonl`）；自动领域分布：
+- L0 目录：33 项（`sources/figureya-archive-20251223/items.jsonl`）；自动领域分布：survival-analysis 24、transcriptomics 18、machine-learning 16、diagnostic-roc 11、multi-omics 5、single-cell 3、experimental-statistics 2
 - L1 配方：0 个
 <!-- facts:end -->
 
