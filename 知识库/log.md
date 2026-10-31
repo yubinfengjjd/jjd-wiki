@@ -1145,3 +1145,5 @@
 ## [2026-10-31 07:44 UTC] source scan figureya-archive-20251223: 33 items
 
 ## [2026-10-31 07:47 UTC] acceptance check figureya-multilanguage-assets
+
+## [2026-10-31 07:51 UTC] resolve existing promoted FigureYa entries in archive reuse manifest

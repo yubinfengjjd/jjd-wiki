@@ -41,7 +41,7 @@
     {
       "module": "FigureYa102multipanelROC",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa102multipanelROC",
+      "catalog_entry": "figureya-102multipanelroc",
       "existing_entry": "figureya:FigureYa102multipanelROC",
       "files": {
         "FigureYa102multipanelROC/easy_input_test.txt": "abcabce34ca3d46b5785d2317b8bc822c578d761ffb17c13916895f19e0007fa",
@@ -1335,7 +1335,7 @@
     {
       "module": "FigureYa11bubble",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa11bubble",
+      "catalog_entry": "figureya-11bubble",
       "existing_entry": "figureya:FigureYa11bubble",
       "files": {
         "FigureYa11bubble/install.log": "428eee9958bbf2693adabdaccc849f5d40b7471520743e15ba8bb5b969db5878",
@@ -1755,7 +1755,7 @@
     {
       "module": "FigureYa13GSEA_Java_update",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa13GSEA_Java_update",
+      "catalog_entry": "figureya-13gsea-java-update",
       "existing_entry": "figureya:FigureYa13GSEA_Java_update",
       "files": {
         "FigureYa13GSEA_Java_update/HALLMARK_COAGULATION.xls": "1c60687dc5fdc352444c43a817e4d7b0f7b8c810c0f613dfed264f19b330508e",
@@ -1883,7 +1883,7 @@
     {
       "module": "FigureYa143survCor_update",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa143survCor_update",
+      "catalog_entry": "figureya-143survcor-update",
       "existing_entry": "figureya:FigureYa143survCor_update",
       "files": {
         "FigureYa143survCor_update/complex correlation with logrank score_SKCM.pdf": "bd59ffbeec1e8a74a800c71dd326f3c7fd8cd41284e92afe116632654c620dec",
@@ -2131,7 +2131,7 @@
     {
       "module": "FigureYa153ccgraph",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa153ccgraph",
+      "catalog_entry": "figureya-153ccgraph",
       "existing_entry": "figureya:FigureYa153ccgraph",
       "files": {
         "FigureYa153ccgraph/microbiome.csv": "6dee0018f73884025d0a2648d304d232376d2b004c37fddc884ae86f15b9bc18",
@@ -2401,7 +2401,7 @@
     {
       "module": "FigureYa162boxViolin",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa162boxViolin",
+      "catalog_entry": "figureya-162boxviolin",
       "existing_entry": "figureya:FigureYa162boxViolin",
       "files": {
         "FigureYa162boxViolin/easy_input_multi.csv": "878284a8bffb13228463cdb119af5bb53c834008a7d745c27908f823dbf6621a",
@@ -2664,7 +2664,7 @@
     {
       "module": "FigureYa173fancybar",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa173fancybar",
+      "catalog_entry": "figureya-173fancybar",
       "existing_entry": "figureya:FigureYa173fancybar",
       "files": {
         "FigureYa173fancybar/multicenter_validation_semi_NJDTH_UI.txt": "b4a0e19e110a59b185296ec6cdb09e92e21ae3df5f3c7434ac604e9fea73d58b",
@@ -3605,7 +3605,7 @@
     {
       "module": "FigureYa196PanPie",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa196PanPie",
+      "catalog_entry": "figureya-196panpie",
       "existing_entry": "figureya:FigureYa196PanPie",
       "files": {
         "FigureYa196PanPie/install_dependencies.R": "09685e5c13efddd90f0f6c67d49f395aba2fe1e15be11c9870122601b7684dc7",
@@ -3739,7 +3739,7 @@
     {
       "module": "FigureYa1survivalCurve_update",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa1survivalCurve_update",
+      "catalog_entry": "figureya-1survivalcurve-update",
       "existing_entry": "figureya:FigureYa1survivalCurve_update",
       "files": {
         "FigureYa1survivalCurve_update/install.log": "b8f890bc02b30c72bc216d4291122fce76acd119dc884354ac44fd1a98743ea7",
@@ -4475,7 +4475,7 @@
     {
       "module": "FigureYa227boxdensity",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa227boxdensity",
+      "catalog_entry": "figureya-227boxdensity",
       "existing_entry": "figureya:FigureYa227boxdensity",
       "files": {
         "FigureYa227boxdensity/install.log": "14f816713ebf779e32b3d4dcb8735ad0bc0e422e6cfe039eda0cea74a59ae020",
@@ -4491,7 +4491,7 @@
     {
       "module": "FigureYa228linkCor",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa228linkCor",
+      "catalog_entry": "figureya-228linkcor",
       "existing_entry": "figureya:FigureYa228linkCor",
       "files": {
         "FigureYa228linkCor/Table S9.xlsx": "cf4287909e052ffba23d06554b7660d2761617eda64cfeaf9e9aef54e4744bed",
@@ -4711,7 +4711,7 @@
     {
       "module": "FigureYa236circGroup",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa236circGroup",
+      "catalog_entry": "figureya-236circgroup",
       "existing_entry": "figureya:FigureYa236circGroup",
       "files": {
         "FigureYa236circGroup/install.log": "67537b4705ad00358d716cf25531fbc3840a823efea2cd0769778ec3970b3fd4",
@@ -5290,7 +5290,7 @@
     {
       "module": "FigureYa25Sankey_update",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa25Sankey_update",
+      "catalog_entry": "figureya-25sankey-update",
       "existing_entry": "figureya:FigureYa25Sankey_update",
       "files": {
         "FigureYa25Sankey_update/install.log": "ed8fe86c558af8006a8390c3ed215efef6da7bb01fda9d01aa9416ec35e1f309",
@@ -6005,7 +6005,7 @@
     {
       "module": "FigureYa284pairwiseLogrank",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa284pairwiseLogrank",
+      "catalog_entry": "figureya-284pairwiselogrank",
       "existing_entry": "figureya:FigureYa284pairwiseLogrank",
       "files": {
         "FigureYa284pairwiseLogrank/install.log": "52e791eaa79b46d21a9e8e3bb6f3a3f9fd07f4290e7e502ca14e0fc150c78ec1",
@@ -7542,7 +7542,7 @@
     {
       "module": "FigureYa37correlationV2_update",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa37correlationV2_update",
+      "catalog_entry": "figureya-37correlationv2-update",
       "existing_entry": "figureya:FigureYa37correlationV2_update",
       "files": {
         "FigureYa37correlationV2_update/install.log": "d9b7aabce901efa906fef82cf5450d41da836c8dcbb115eac956197ae75b08be",
@@ -7584,7 +7584,7 @@
     {
       "module": "FigureYa39bar",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa39bar",
+      "catalog_entry": "figureya-39bar",
       "existing_entry": "figureya:FigureYa39bar",
       "files": {
         "FigureYa39bar/install.log": "e50651ef54fe659f62512a3eed648ccb2bbd1571bb51480e90d73739921d9edd",
@@ -7993,7 +7993,7 @@
     {
       "module": "FigureYa59volcanoV2",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa59volcanoV2",
+      "catalog_entry": "figureya-59volcanov2",
       "existing_entry": "figureya:FigureYa59volcanoV2",
       "files": {
         "FigureYa59volcanoV2/install.log": "49d265ba66136889dd7ea1b9dca0d9d2b5bd58ca415952b6329034c161c7ae26",
@@ -8066,7 +8066,7 @@
     {
       "module": "FigureYa61GSVA",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa61GSVA",
+      "catalog_entry": "figureya-61gsva",
       "existing_entry": "figureya:FigureYa61GSVA",
       "files": {
         "FigureYa61GSVA/gsva_limma.csv": "67548b747838a6f6b0c5f4e56ca4c1ad163c54e9c59837ab73670dd39ae7aff0",
@@ -8464,7 +8464,7 @@
     {
       "module": "FigureYa76corrgram",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa76corrgram",
+      "catalog_entry": "figureya-76corrgram",
       "existing_entry": "figureya:FigureYa76corrgram",
       "files": {
         "FigureYa76corrgram/easy_input.csv": "ba7d90b6d91f5eb7ef96a623758eddbaa12041afeb95147f96f444213289dd84",
@@ -8799,7 +8799,7 @@
     {
       "module": "FigureYa92immune_gene_update",
       "disposition": "existing-main-rmd-text",
-      "catalog_entry": "figureya:FigureYa92immune_gene_update",
+      "catalog_entry": "figureya-92immune-gene-update",
       "existing_entry": "figureya:FigureYa92immune_gene_update",
       "files": {
         "FigureYa92immune_gene_update/FigureYa92immune_gene_update.html": "f80308387946862a3da3b77360138cffc45aa8b1845e4298476cf167cf2c7c65",
@@ -9020,5 +9020,6 @@
         "FigureYa9heatmap/demo3.jpeg": "2a11aed5eb5cae19e8ca8b77f1e583724dfedf828649f6ad85112be26a6c75a0"
       }
     }
-  ]
+  ],
+  "catalog_resolution_note": "For reused Rmd modules, catalog_entry points to the existing recipe when that promoted recipe replaces the L0 item in catalog.jsonl. existing_entry retains the original L0 identity. This compiled resolution does not modify the immutable import snapshot."
 }
