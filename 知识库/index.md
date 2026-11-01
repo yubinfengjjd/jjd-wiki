@@ -128,6 +128,11 @@
 ### draft
 
 - [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
+- [[methods/scp-source-catalog|单细胞全库来源与入口索引]] — 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与 22 个 draft 原生绘图入口，区分归档、运行和确认。
+- [[methods/scp-viz-statplots|单细胞统计与相关绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
+- [[methods/scp-viz-heatmaps|单细胞表达与动态热图入口]] — 4 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
+- [[methods/scp-viz-dimplots|单细胞降维与表达绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
+- [[methods/scp-viz-model-overlays|轨迹富集与网络绘图入口]] — 8 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 
 ### ready
 

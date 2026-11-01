@@ -1,0 +1,292 @@
+{
+  "schema_version": 1,
+  "source_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "entries": [
+    {
+      "function": "CellDensityPlot",
+      "page": "scp-viz-dimplots",
+      "implementation": "scp-celldensityplot",
+      "entry": "code/celldensityplot/code/module.R:CellDensityPlot",
+      "input": "Seurat 各细胞表达或元数据数值，features 指定变量",
+      "upstream_page": null,
+      "output": "细胞表达分布密度图",
+      "boundary": "这是沿表达轴的密度/岭线分布，不是 UMAP 二维细胞密度。",
+      "algorithm_state": "verified",
+      "scope": "f_x_order_rank",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "x_order",
+          "value": "value",
+          "state": "passed",
+          "scope": "f_x_order_value",
+          "receipt": "verification/scp-celldensityplot-f_x_order_value-20261101T070332-17284-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "x_order",
+          "value": "rank",
+          "state": "passed",
+          "scope": "f_x_order_rank",
+          "receipt": "verification/scp-celldensityplot-f_x_order_rank-20261101T071920-15996-alg.json",
+          "reason": "compared"
+        }
+      ],
+      "current_receipt": "verification/scp-celldensityplot-f_x_order_rank-20261101T071920-15996-alg.json",
+      "replay_previews": [
+        {
+          "case": "f_x_order_rank",
+          "path": "verification/previews/CellDensityPlot-f_x_order_rank.png",
+          "sha256": "8896bc043ba2da36c21ad3839dc95ce99bf10b433ea7cd700d8ee8c2f12cf6da",
+          "receipt": "verification/scp-celldensityplot-f_x_order_rank-20261101T070343-19120-alg.json"
+        },
+        {
+          "case": "f_x_order_value",
+          "path": "verification/previews/CellDensityPlot-f_x_order_value.png",
+          "sha256": "19ab29c1a2c0581d5cfc06ce93b740c133327757779d279caff1d136e7c5560f",
+          "receipt": "verification/scp-celldensityplot-f_x_order_value-20261101T070332-17284-alg.json"
+        },
+        {
+          "case": "ins1_density",
+          "path": "verification/previews/CellDensityPlot-ins1_density.png",
+          "sha256": "19ab29c1a2c0581d5cfc06ce93b740c133327757779d279caff1d136e7c5560f",
+          "receipt": "verification/scp-celldensityplot-ins1_density-20261026T151827-19740-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "CellDimPlot",
+      "page": "scp-viz-dimplots",
+      "implementation": "scp-celldimplot",
+      "entry": "code/celldimplot/code/module.R:CellDimPlot",
+      "input": "Seurat 降维坐标、group.by 元数据及可选叠加对象",
+      "upstream_page": "dimensionality-reduction",
+      "output": "细胞分组散点、圈选与叠加图",
+      "boundary": "mark_type 需 add_mark=TRUE；轨迹、图、速度叠加还需对应上游结果。",
+      "algorithm_state": "verified",
+      "scope": "mark_circle",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "mark_type",
+          "value": "hull",
+          "state": "passed",
+          "scope": "mark_hull",
+          "receipt": "verification/scp-celldimplot-mark_hull-20261026T151852-11356-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "mark_type",
+          "value": "ellipse",
+          "state": "passed",
+          "scope": "mark_ellipse",
+          "receipt": "verification/scp-celldimplot-mark_ellipse-20261026T151904-19288-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "mark_type",
+          "value": "rect",
+          "state": "passed",
+          "scope": "mark_rect",
+          "receipt": "verification/scp-celldimplot-mark_rect-20261026T151939-5760-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "mark_type",
+          "value": "circle",
+          "state": "passed",
+          "scope": "mark_circle",
+          "receipt": "verification/scp-celldimplot-mark_circle-20261101T071929-14232-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "stat_plot_position",
+          "value": "stack",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "stat_plot_position",
+          "value": "dodge",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "stat_plot_type",
+          "value": "pie",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "stat_type",
+          "value": "percent",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-celldimplot-mark_circle-20261101T071929-14232-alg.json",
+      "replay_previews": [
+        {
+          "case": "celltype_umap",
+          "path": "verification/previews/CellDimPlot-celltype_umap.png",
+          "sha256": "c32d8dc7ff1032dffad5b43defaa241fbbd9805dbfde8d09c40b92a583d8e501",
+          "receipt": "verification/scp-celldimplot-celltype_umap-20261026T151840-34948-alg.json"
+        },
+        {
+          "case": "mark_circle",
+          "path": "verification/previews/CellDimPlot-mark_circle.png",
+          "sha256": "3e4fa6406281b91b169ca458cfc0f4a06f231bc24edf995ea014494b7eb26ceb",
+          "receipt": "verification/scp-celldimplot-mark_circle-20261026T151955-28940-alg.json"
+        },
+        {
+          "case": "mark_ellipse",
+          "path": "verification/previews/CellDimPlot-mark_ellipse.png",
+          "sha256": "23e066811c6f40b23d6c3c3410dd92100d257cb3811570490f69c8f3bb8dc769",
+          "receipt": "verification/scp-celldimplot-mark_ellipse-20261026T151904-19288-alg.json"
+        },
+        {
+          "case": "mark_hull",
+          "path": "verification/previews/CellDimPlot-mark_hull.png",
+          "sha256": "9f096ae687530071113083d595b4e25e639e9c24ff2fb3c943b9cbe27efb09db",
+          "receipt": "verification/scp-celldimplot-mark_hull-20261026T151852-11356-alg.json"
+        },
+        {
+          "case": "mark_rect",
+          "path": "verification/previews/CellDimPlot-mark_rect.png",
+          "sha256": "b6c2ec80d43e780c5e704950c0895f152abe26ab51fcbf59ec31e2c3886c5951",
+          "receipt": "verification/scp-celldimplot-mark_rect-20261026T151939-5760-alg.json"
+        },
+        {
+          "case": "subcelltype",
+          "path": "verification/previews/CellDimPlot-subcelltype.png",
+          "sha256": "55b49d6ff5c47f1957917fa5bd8761ff1527311164b1f16da23b2c06d9eced65",
+          "receipt": "verification/scp-celldimplot-subcelltype-20261026T151916-27644-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "CellDimPlot3D",
+      "page": "scp-viz-dimplots",
+      "implementation": "scp-celldimplot3d",
+      "entry": "code/celldimplot3d/code/module.R:CellDimPlot3D",
+      "input": "Seurat 三维 reduction 坐标与分组元数据",
+      "upstream_page": "dimensionality-reduction",
+      "output": "plotly 三维分组图",
+      "boundary": "必须有三个有效维度；trace 相等不等于浏览器全部交互已验收。",
+      "algorithm_state": "verified",
+      "scope": "cell_3d",
+      "portability_state": "verified",
+      "forms": [],
+      "current_receipt": "verification/scp-celldimplot3d-cell_3d-20261101T071945-3384-alg.json",
+      "replay_previews": []
+    },
+    {
+      "function": "FeatureDimPlot",
+      "page": "scp-viz-dimplots",
+      "implementation": "scp-featuredimplot",
+      "entry": "code/featuredimplot/code/module.R:FeatureDimPlot",
+      "input": "Seurat 坐标及 features 对应 assay/slot 表达或元数据",
+      "upstream_page": "dimensionality-reduction",
+      "output": "单特征/多特征表达投影",
+      "boundary": "混色、共表达与分面不是同一形态；显式指定 assay、slot、features 和 reduction。",
+      "algorithm_state": "verified",
+      "scope": "keep_all",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "color_blend_mode",
+          "value": "blend",
+          "state": "passed",
+          "scope": "two_blend",
+          "receipt": "verification/scp-featuredimplot-two_blend-20261026T152045-3188-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "color_blend_mode",
+          "value": "average",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "color_blend_mode",
+          "value": "screen",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "color_blend_mode",
+          "value": "multiply",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "keep_scale",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "keep_scale",
+          "value": "all",
+          "state": "passed",
+          "scope": "keep_all",
+          "receipt": "verification/scp-featuredimplot-keep_all-20261101T071958-19992-alg.json",
+          "reason": "compared"
+        }
+      ],
+      "current_receipt": "verification/scp-featuredimplot-keep_all-20261101T071958-19992-alg.json",
+      "replay_previews": [
+        {
+          "case": "keep_all",
+          "path": "verification/previews/FeatureDimPlot-keep_all.png",
+          "sha256": "ed8afeff3cb4b528fcda61873ec9ee36898f6060a6e9d75be0c1651a38c0b0ae",
+          "receipt": "verification/scp-featuredimplot-keep_all-20261026T152108-23548-alg.json"
+        },
+        {
+          "case": "neurog3",
+          "path": "verification/previews/FeatureDimPlot-neurog3.png",
+          "sha256": "d819ddf0014de428336097a8088c3d45eabd77d601fcfb44f741e2c7608041e0",
+          "receipt": "verification/scp-featuredimplot-neurog3-20261026T152031-18804-alg.json"
+        },
+        {
+          "case": "two_blend",
+          "path": "verification/previews/FeatureDimPlot-two_blend.png",
+          "sha256": "78f833e08543efc865be6d95e29138c6020c091c805dea9ac182729061642e3a",
+          "receipt": "verification/scp-featuredimplot-two_blend-20261026T152045-3188-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "FeatureDimPlot3D",
+      "page": "scp-viz-dimplots",
+      "implementation": "scp-featuredimplot3d",
+      "entry": "code/featuredimplot3d/code/module.R:FeatureDimPlot3D",
+      "input": "Seurat 三维坐标及 features 表达",
+      "upstream_page": "dimensionality-reduction",
+      "output": "plotly 三维表达图",
+      "boundary": "必须有三个有效维度；输出 HTML 与 trace，不能用 PNG 替代交互证据。",
+      "algorithm_state": "verified",
+      "scope": "feature_3d",
+      "portability_state": "verified",
+      "forms": [],
+      "current_receipt": "verification/scp-featuredimplot3d-feature_3d-20261101T072014-13780-alg.json",
+      "replay_previews": []
+    }
+  ]
+}

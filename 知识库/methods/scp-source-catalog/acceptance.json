@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-01T07:33:05.092036+00:00",
+  "page": "methods/scp-source-catalog.md",
+  "snapshot": "4e844883127f9d4568d100f15ecc5b0c7718ac233e26671370bbf1d3f5a9d5b7",
+  "checks": {
+    "用途": "present_nonplaceholder",
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "输入": "present_nonplaceholder",
+    "怎么做": "present_nonplaceholder",
+    "代码": "present_nonplaceholder",
+    "输出": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "not_required",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

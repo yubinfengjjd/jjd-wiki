@@ -1149,3 +1149,5 @@
 ## [2026-10-31 07:51 UTC] resolve existing promoted FigureYa entries in archive reuse manifest
 
 ## [2026-10-31 07:53 UTC] document local archive link and recipe promotion limitations
+
+## [2026-11-01 07:35 UTC] SCP v2: index all exports and curate native plotting closures

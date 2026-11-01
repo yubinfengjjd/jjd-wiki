@@ -1,0 +1,636 @@
+{
+  "schema_version": 1,
+  "source_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "entries": [
+    {
+      "function": "DynamicPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-dynamicplot",
+      "entry": "code/dynamicplot/code/module.R:DynamicPlot",
+      "input": "Seurat lineages 拟时序列、features；可复用 tools$DynamicFeatures_<lineage>",
+      "upstream_page": "dynamic-feature-analysis",
+      "output": "随拟时序的表达曲线、拟合与区间",
+      "boundary": "缺拟合结果时可能调用 RunDynamicFeatures 重新拟合；不是纯展示入口，运行前核对。",
+      "algorithm_state": "verified",
+      "scope": "native_curve",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "exp_method",
+          "value": "log1p",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "raw",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "zscore",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log2fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "x_order",
+          "value": "value",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "x_order",
+          "value": "rank",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-dynamicplot-native_curve-20261101T072613-14040-alg.json",
+      "replay_previews": [
+        {
+          "case": "native_curve",
+          "path": "verification/previews/DynamicPlot-native_curve.png",
+          "sha256": "ef68eb391d8e8fa243a3fe72897dd7fde8d9002b58a61b8cb3847fd6dc295a5f",
+          "receipt": "verification/scp-dynamicplot-native_curve-20261026T152747-19732-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "EnrichmentPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-enrichmentplot",
+      "entry": "code/enrichmentplot/code/module.R:EnrichmentPlot",
+      "input": "RunEnrichment 的 res，或 Seurat tools 的 Enrichment_<group_by>_<test.use> 结果",
+      "upstream_page": "gene-set-enrichment",
+      "output": "bar/dot/lollipop/network/enrichmap/wordcloud/comparison",
+      "boundary": "指定 res 时忽略 srt/group_by/test.use；数据库、Groups 与校正后 P 值阈值必须明确。",
+      "algorithm_state": "verified",
+      "scope": "positive_native_material",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "plot_type",
+          "value": "bar",
+          "state": "passed",
+          "scope": "positive_native_material",
+          "receipt": "verification/scp-enrichmentplot-positive_native_material-20261101T072627-4256-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "dot",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "lollipop",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "network",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "enrichmap",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "wordcloud",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "comparison",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "word_type",
+          "value": "term",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "word_type",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_mark",
+          "value": "ellipse",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_mark",
+          "value": "hull",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_label",
+          "value": "term",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_label",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_by",
+          "value": "Database",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_by",
+          "value": "Groups",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-enrichmentplot-positive_native_material-20261101T072627-4256-alg.json",
+      "replay_previews": [
+        {
+          "case": "positive_native_material",
+          "path": "verification/previews/EnrichmentPlot-positive_native_material.png",
+          "sha256": "1aa31a3b5b7a42a8b9e15f40f06c38017290c86454a82227086f45e686c615f2",
+          "receipt": "verification/scp-enrichmentplot-positive_native_material-20261101T072627-4256-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "GSEAPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-gseaplot",
+      "entry": "code/gseaplot/code/module.R:GSEAPlot",
+      "input": "RunGSEA 的 res，或 Seurat tools 的 GSEA_<group_by>_<test.use> 结果",
+      "upstream_page": "gene-set-enrichment",
+      "output": "富集曲线与其他 GSEA 形态",
+      "boundary": "line 需要真实排序与富集信息；不以普通 ORA 结果替代。",
+      "algorithm_state": "verified",
+      "scope": "positive_native_material",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "word_type",
+          "value": "term",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "word_type",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_mark",
+          "value": "ellipse",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_mark",
+          "value": "hull",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_label",
+          "value": "term",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "enrichmap_label",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "line",
+          "state": "passed",
+          "scope": "positive_native_material",
+          "receipt": "verification/scp-gseaplot-positive_native_material-20261101T072646-13900-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "bar",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "network",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "enrichmap",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "wordcloud",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "comparison",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "direction",
+          "value": "pos",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "direction",
+          "value": "neg",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "direction",
+          "value": "both",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-gseaplot-positive_native_material-20261101T072646-13900-alg.json",
+      "replay_previews": [
+        {
+          "case": "positive_native_material",
+          "path": "verification/previews/GSEAPlot-positive_native_material.png",
+          "sha256": "69fccea08b35f475b05d8a26f91080d227cd35cef60e679c4caa9db2651bce73",
+          "receipt": "verification/scp-gseaplot-positive_native_material-20261101T072646-13900-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "GraphPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-graphplot",
+      "entry": "code/graphplot/code/module.R:GraphPlot",
+      "input": "node：有行名的节点坐标表；edge：与节点标识对齐的边/邻接矩阵",
+      "upstream_page": null,
+      "output": "straight/curved 等网络边与节点图",
+      "boundary": "纯绘图入口；不估计网络，不需要额外加载 Seurat，方向与权重由上游给定。",
+      "algorithm_state": "verified",
+      "scope": "real_curved",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "use_triangular",
+          "value": "upper",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "use_triangular",
+          "value": "lower",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "use_triangular",
+          "value": "both",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "edge_line",
+          "value": "straight",
+          "state": "passed",
+          "scope": "real_straight",
+          "receipt": "verification/scp-graphplot-real_straight-20261101T070154-1564-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "transition_line",
+          "value": "straight",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "edge_line",
+          "value": "curved",
+          "state": "passed",
+          "scope": "real_curved",
+          "receipt": "verification/scp-graphplot-real_curved-20261101T072648-13072-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "transition_line",
+          "value": "curved",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-graphplot-real_curved-20261101T072648-13072-alg.json",
+      "replay_previews": [
+        {
+          "case": "adj_graph",
+          "path": "verification/previews/GraphPlot-adj_graph.png",
+          "sha256": "8bf10a53ffc5aff7975ef3d95d695adee5359b7f55d0cb229625f5ffea5003f6",
+          "receipt": "verification/scp-graphplot-adj_graph-20261026T152845-17280-alg.json"
+        },
+        {
+          "case": "real_curved",
+          "path": "verification/previews/GraphPlot-real_curved.png",
+          "sha256": "f849994d2942524a46ac5ce86023b0c8f2e5f5b0721d362b7b7bc8165061f0b2",
+          "receipt": "verification/scp-graphplot-real_curved-20261101T070748-15968-alg.json"
+        },
+        {
+          "case": "real_straight",
+          "path": "verification/previews/GraphPlot-real_straight.png",
+          "sha256": "3e79a084a350c668db66df24595e749c8d1cd7889ef6cbb5f31724f7ec0320c0",
+          "receipt": "verification/scp-graphplot-real_straight-20261101T070154-1564-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "LineagePlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-lineageplot",
+      "entry": "code/lineageplot/code/module.R:LineagePlot",
+      "input": "Seurat reduction 坐标和 lineages 元数据列",
+      "upstream_page": "trajectory-inference",
+      "output": "拟时序路径平滑叠加图",
+      "boundary": "读取已有拟时序再平滑；不是轨迹推断算法，也不证明谱系因果。",
+      "algorithm_state": "verified",
+      "scope": "positive_native_material",
+      "portability_state": "verified",
+      "forms": [],
+      "current_receipt": "verification/scp-lineageplot-positive_native_material-20261101T072702-8460-alg.json",
+      "replay_previews": [
+        {
+          "case": "positive_native_material",
+          "path": "verification/previews/LineagePlot-positive_native_material.png",
+          "sha256": "117cff97c30ba972c23a936026ee009dc2cee37581fca60c8aed63b8788ed1c4",
+          "receipt": "verification/scp-lineageplot-positive_native_material-20261101T072702-8460-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "PAGAPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-pagaplot",
+      "entry": "code/pagaplot/code/module.R:PAGAPlot",
+      "input": "Seurat 坐标和 paga（默认 srt@misc$paga）连通性/转移结果",
+      "upstream_page": "trajectory-inference",
+      "output": "PAGA 抽象图叠加",
+      "boundary": "必须有真实 PAGA 结果；无该结果时保持未验证。",
+      "algorithm_state": "not_run",
+      "scope": "",
+      "portability_state": "declared",
+      "forms": [
+        {
+          "parameter": "type",
+          "value": "connectivities",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "edge_line",
+          "value": "straight",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "transition_line",
+          "value": "straight",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "edge_line",
+          "value": "curved",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "transition_line",
+          "value": "curved",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": null,
+      "replay_previews": [],
+      "not_run_reason": "缺少 srt@misc$paga（RunPAGA/scanpy 的真实输出）；现有 pancreas 和 Slingshot 示例均无此对象。"
+    },
+    {
+      "function": "ProjectionPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-projectionplot",
+      "entry": "code/projectionplot/code/module.R:ProjectionPlot",
+      "input": "srt_query、srt_ref 及相容的 query/ref reduction 和分组",
+      "upstream_page": "reference-mapping",
+      "output": "查询细胞投影到参考坐标的叠加图",
+      "boundary": "自投影夹具只验证绘图，不验证跨队列参考映射准确性。",
+      "algorithm_state": "verified",
+      "scope": "self_projection",
+      "portability_state": "verified",
+      "forms": [],
+      "current_receipt": "verification/scp-projectionplot-self_projection-20261101T072710-1308-alg.json",
+      "replay_previews": [
+        {
+          "case": "self_projection",
+          "path": "verification/previews/ProjectionPlot-self_projection.png",
+          "sha256": "2f7f4c9c2cd836ff3b2d58a0324e44233d891d8ce2a7d2ac5b11f35d824feaf0",
+          "receipt": "verification/scp-projectionplot-self_projection-20261026T152927-25728-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "VelocityPlot",
+      "page": "scp-viz-model-overlays",
+      "implementation": "scp-velocityplot",
+      "entry": "code/velocityplot/code/module.R:VelocityPlot",
+      "input": "Seurat 对象中已有 RNA velocity 与对应 reduction",
+      "upstream_page": "rna-velocity",
+      "output": "raw/grid/stream 速度向量场",
+      "boundary": "缺真实 velocity 结果不能用任意坐标差代替；绘图与速度模型验证分开。",
+      "algorithm_state": "not_run",
+      "scope": "velocity_umap",
+      "portability_state": "declared",
+      "forms": [
+        {
+          "parameter": "plot_type",
+          "value": "raw",
+          "state": "not_run",
+          "scope": "velocity_umap",
+          "receipt": "verification/scp-velocityplot-velocity_umap-20261026T152936-26340-alg.json",
+          "reason": "Cannot find the velocity embedding stochastic_UMAP."
+        },
+        {
+          "parameter": "plot_type",
+          "value": "grid",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "stream",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "velocity",
+          "value": "stochastic",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "velocity",
+          "value": "deterministic",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "velocity",
+          "value": "steady_state",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-velocityplot-velocity_umap-20261026T152936-26340-alg.json",
+      "replay_previews": [],
+      "not_run_reason": "缺少 srt@reductions$stochastic_UMAP（RunSCVELO/scvelo 的真实速度嵌入）；现有对象只有 PCA、UMAP。"
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "schema_version": 1,
+  "source_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "entries": [
+    {
+      "function": "CellCorHeatmap",
+      "page": "scp-viz-heatmaps",
+      "implementation": "scp-cellcorheatmap",
+      "entry": "code/cellcorheatmap/code/module.R:CellCorHeatmap",
+      "input": "srt_query，可选 srt_ref/bulk_ref、分组、features 或降维表示",
+      "upstream_page": "cell-type-annotation",
+      "output": "查询/参考相似度矩阵热图",
+      "boundary": "原生 self_cor 调用失败：No cell overlap between new meta data and Seurat object；缺缓存或参数变化会自动调用 RunKNNPredict，可能含特征选择和 DE，不是纯绘图。",
+      "algorithm_state": "not_run",
+      "scope": "",
+      "portability_state": "declared",
+      "forms": [
+        {
+          "parameter": "features_type",
+          "value": "HVF",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "features_type",
+          "value": "DE",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": null,
+      "replay_previews": [],
+      "not_run_reason": "原生 self_cor 调用失败：No cell overlap between new meta data and Seurat object；缺缓存或参数变化会自动调用 RunKNNPredict，可能含特征选择和 DE，不是纯绘图。"
+    },
+    {
+      "function": "DynamicHeatmap",
+      "page": "scp-viz-heatmaps",
+      "implementation": "scp-dynamicheatmap",
+      "entry": "code/dynamicheatmap/code/module.R:DynamicHeatmap",
+      "input": "Seurat lineages 拟时序列、features；use_fitted 需要相应 DynamicFeatures 结果",
+      "upstream_page": "dynamic-feature-analysis",
+      "output": "沿拟时序排序的动态表达热图",
+      "boundary": "表达变换、基因筛选、细胞分箱会影响结果；不能把拟时序解释成真实时间。",
+      "algorithm_state": "verified",
+      "scope": "f_exp_method_raw",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "split_method",
+          "value": "mfuzz",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_method",
+          "value": "kmeans",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_method",
+          "value": "kmeans-peaktime",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_method",
+          "value": "hclust",
+          "state": "passed",
+          "scope": "f_exp_method_raw",
+          "receipt": "verification/scp-dynamicheatmap-f_exp_method_raw-20261101T072104-12072-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "split_method",
+          "value": "hclust-peaktime",
+          "state": "passed",
+          "scope": "f_split_method_hclust_peaktime",
+          "receipt": "verification/scp-dynamicheatmap-f_split_method_hclust_peaktime-20261101T070521-4548-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "order_by",
+          "value": "peaktime",
+          "state": "passed",
+          "scope": "f_order_by_peaktime",
+          "receipt": "verification/scp-dynamicheatmap-f_order_by_peaktime-20261101T070613-8160-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "order_by",
+          "value": "valleytime",
+          "state": "passed",
+          "scope": "f_order_by_valleytime",
+          "receipt": "verification/scp-dynamicheatmap-f_order_by_valleytime-20261101T070700-8024-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "zscore",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "raw",
+          "state": "passed",
+          "scope": "f_exp_method_raw",
+          "receipt": "verification/scp-dynamicheatmap-f_exp_method_raw-20261101T072104-12072-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log2fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log1p",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-dynamicheatmap-f_exp_method_raw-20261101T072104-12072-alg.json",
+      "replay_previews": [
+        {
+          "case": "f_exp_method_raw",
+          "path": "verification/previews/DynamicHeatmap-f_exp_method_raw.png",
+          "sha256": "84e5d32b4adc10221c6cea62e1aadd4987893aaccbb4cf5f7b4b8919fe1b3c51",
+          "receipt": "verification/scp-dynamicheatmap-f_exp_method_raw-20261101T070746-11884-alg.json"
+        },
+        {
+          "case": "f_order_by_peaktime",
+          "path": "verification/previews/DynamicHeatmap-f_order_by_peaktime.png",
+          "sha256": "f2100f4109e331f3bc5f76ccb23bea98405228492967136d01725b125b2ef0d6",
+          "receipt": "verification/scp-dynamicheatmap-f_order_by_peaktime-20261101T070613-8160-alg.json"
+        },
+        {
+          "case": "f_order_by_valleytime",
+          "path": "verification/previews/DynamicHeatmap-f_order_by_valleytime.png",
+          "sha256": "4739478c284295c0701e593a5b32e65f083b1cc4a68196f79db83b129120d704",
+          "receipt": "verification/scp-dynamicheatmap-f_order_by_valleytime-20261101T070700-8024-alg.json"
+        },
+        {
+          "case": "f_split_method_hclust_peaktime",
+          "path": "verification/previews/DynamicHeatmap-f_split_method_hclust_peaktime.png",
+          "sha256": "f2100f4109e331f3bc5f76ccb23bea98405228492967136d01725b125b2ef0d6",
+          "receipt": "verification/scp-dynamicheatmap-f_split_method_hclust_peaktime-20261101T070521-4548-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "FeatureHeatmap",
+      "page": "scp-viz-heatmaps",
+      "implementation": "scp-featureheatmap",
+      "entry": "code/featureheatmap/code/module.R:FeatureHeatmap",
+      "input": "Seurat features × cells 表达矩阵及细胞分组/注释",
+      "upstream_page": null,
+      "output": "细胞级表达热图",
+      "boundary": "与 GroupHeatmap 的按组汇总不同；split、注释与聚类是独立形态。",
+      "algorithm_state": "verified",
+      "scope": "default",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "split_method",
+          "value": "kmeans",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_method",
+          "value": "hclust",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_method",
+          "value": "mfuzz",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "zscore",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "raw",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log2fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log1p",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "features_type",
+          "value": "HVF",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "features_type",
+          "value": "DE",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-featureheatmap-default-20261101T072115-19668-alg.json",
+      "replay_previews": [
+        {
+          "case": "default",
+          "path": "verification/previews/FeatureHeatmap-default.png",
+          "sha256": "7d647efab230c4b5a17f3b9e075630ec7909c3d994faee1d258343a7e4eb5bb6",
+          "receipt": "verification/scp-featureheatmap-default-20261026T152344-8892-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "GroupHeatmap",
+      "page": "scp-viz-heatmaps",
+      "implementation": "scp-groupheatmap",
+      "entry": "code/groupheatmap/code/module.R:GroupHeatmap",
+      "input": "Seurat 表达矩阵、features、group.by；按组聚合并可选阳性比例",
+      "upstream_page": null,
+      "output": "分组表达热图、点阵及附加分布",
+      "boundary": "exp_method/点大小/阈值语义分别核对；组均值不能反推阳性细胞比例。",
+      "algorithm_state": "verified",
+      "scope": "annotation",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "split_method",
+          "value": "kmeans",
+          "state": "passed",
+          "scope": "kmeans_split",
+          "receipt": "verification/scp-groupheatmap-kmeans_split-20261026T152427-8448-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "split_method",
+          "value": "hclust",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "split_method",
+          "value": "mfuzz",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "zscore",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "raw",
+          "state": "passed",
+          "scope": "raw_exp",
+          "receipt": "verification/scp-groupheatmap-raw_exp-20261026T152446-17412-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log2fc",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "exp_method",
+          "value": "log1p",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "features_type",
+          "value": "HVF",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "features_type",
+          "value": "DE",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-groupheatmap-annotation-20261101T072128-6744-alg.json",
+      "replay_previews": [
+        {
+          "case": "annotation",
+          "path": "verification/previews/GroupHeatmap-annotation.png",
+          "sha256": "ce43442e7e870ec6bec6d38af67b336db3370443daf07dd561e08108f1be4418",
+          "receipt": "verification/scp-groupheatmap-annotation-20261026T152726-11680-alg.json"
+        },
+        {
+          "case": "default",
+          "path": "verification/previews/GroupHeatmap-default.png",
+          "sha256": "dd7447959a59dea5f6b87febf3f23c0e19d37fc5b9f34622dea2203794262e70",
+          "receipt": "verification/scp-groupheatmap-default-20261026T152359-20724-alg.json"
+        },
+        {
+          "case": "dot_flip",
+          "path": "verification/previews/GroupHeatmap-dot_flip.png",
+          "sha256": "232ecaaa6338f765a3959a32d9fbce1ab08f6685ad10bd44e3f90205ac9cfcc6",
+          "receipt": "verification/scp-groupheatmap-dot_flip-20261026T152653-24456-alg.json"
+        },
+        {
+          "case": "flip",
+          "path": "verification/previews/GroupHeatmap-flip.png",
+          "sha256": "27811d33d2fcb28e19c5bafd2fba8bd417204048440d6b69aedfeb91fea9adad",
+          "receipt": "verification/scp-groupheatmap-flip-20261026T152513-37732-alg.json"
+        },
+        {
+          "case": "kmeans_split",
+          "path": "verification/previews/GroupHeatmap-kmeans_split.png",
+          "sha256": "60bc9bbeae390c04e1326d0060ddd2ea700b0d92b56b08e2fd5238649ce1f054",
+          "receipt": "verification/scp-groupheatmap-kmeans_split-20261026T152427-8448-alg.json"
+        },
+        {
+          "case": "raw_exp",
+          "path": "verification/previews/GroupHeatmap-raw_exp.png",
+          "sha256": "26c15384bdbdbd804d2d84922e5360c6386f58a366605812dafb9cca8d750cce",
+          "receipt": "verification/scp-groupheatmap-raw_exp-20261026T152446-17412-alg.json"
+        },
+        {
+          "case": "split_dot_reticle",
+          "path": "verification/previews/GroupHeatmap-split_dot_reticle.png",
+          "sha256": "a2705d8523b8ee6438f15f9300e604cf63468562ab79df31b472e4111f609a40",
+          "receipt": "verification/scp-groupheatmap-split_dot_reticle-20261026T152708-16988-alg.json"
+        },
+        {
+          "case": "violin_expression",
+          "path": "verification/previews/GroupHeatmap-violin_expression.png",
+          "sha256": "db11e88638e4cd9c86f4e2959f3fd594fed206cd5139b6df4330bdaa4cd6a97e",
+          "receipt": "verification/scp-groupheatmap-violin_expression-20261026T152636-18584-alg.json"
+        },
+        {
+          "case": "violin_group",
+          "path": "verification/previews/GroupHeatmap-violin_group.png",
+          "sha256": "e020f2f2d192d95a328713e72a0bf97888915a01de7a2c884a4495056d2e9e82",
+          "receipt": "verification/scp-groupheatmap-violin_group-20261026T152600-34184-alg.json"
+        }
+      ]
+    }
+  ]
+}
