@@ -8,6 +8,10 @@
     "figureya:FigureYa22FPKM2TPM": {
       "decision": "removed",
       "updated_at": "2026-11-01T12:52:31+00:00"
+    },
+    "figureya:FigureYa76corrgram": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T12:53:25+00:00"
     }
   }
 }
