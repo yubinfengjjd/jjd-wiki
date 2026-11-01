@@ -43,7 +43,6 @@ summary: 两组或多组连续指标的分布与差异展示：箱线、小提�
 |---|---|---|---|
 | [[recipes/figureya-162boxviolin|半小提琴箱线散点组合图]] | L1 | ready · 运行 pass | 半小提琴 + 箱线 + 散点 |
 | [[recipes/figureya-227boxdensity|箱线图叠加密度分布图]] | L1 | ready · 运行 pass | 箱线叠加密度（两组） |
-| recipes/figureya-173fancybar | — | 不存在或已归档 | 含亚组的均值柱（mean ± se） |
 | [[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值]] | L2 | ready · 可用 | 箱线、散点与均值（L2） |
 | [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]] | L2 | ready · 可用 | 分组小提琴含统计标注（L2） |
 <!-- facts:end -->
@@ -52,6 +51,14 @@ summary: 两组或多组连续指标的分布与差异展示：箱线、小提�
 
 - 小样本优先展示原始点，不只画均值柱。
 - SE 与 SD 的选择按期刊要求，改误差棒定义先问作者。
+
+<!-- figureya-selection:start -->
+## 样式筛选记录
+
+2026-11-02 按作者的 FigureYa 样式筛选更新当前首选展示：原 5 项，当前展示 4 项。
+
+被移除项退出当前首选表；原 `picks` 关系保留用于恢复和溯源，不能据历史关系重新推荐已移除样式。
+<!-- figureya-selection:end -->
 
 ## 作者备注
 

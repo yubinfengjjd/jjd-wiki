@@ -1171,3 +1171,5 @@
 ## [2026-11-01 12:53 UTC] FigureYa visual selection: removed (1 modules)
 
 ## [2026-11-01 13:09 UTC] FigureYa visual selection: removed (181 modules)
+
+## [2026-11-01 16:44 UTC] 按作者 FigureYa 样式筛选整理来源、配方说明与场景导航
