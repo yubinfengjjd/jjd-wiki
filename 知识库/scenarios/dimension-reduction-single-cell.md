@@ -51,11 +51,11 @@ summary: 样本或细胞的降维展示、单细胞注释与 marker、细胞通�
 | [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 细胞类型 UMAP（L2） |
 | [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]] | L2 | ready · 可用 | 细胞类型 × 基因气泡点图（L2） |
 | [[methods/scp-standard-workflow|单细胞标准预处理、降维与聚类]] | note | ready | 单细胞标准预处理、降维与聚类 |
-| `figureya:FigureYa244PCAPlot` | L0 | catalog | bulk PCA 图（L0） |
+| figureya:FigureYa244PCAPlot | — | 不存在或已归档 | bulk PCA 图（L0） |
 | `figureya:FigureYa229PCOA` | L0 | catalog | PCoA 图（L0） |
-| `figureya:FigureYa254scViolin` | L0 | catalog | 单细胞小提琴（L0） |
-| `figureya:FigureYa267scCellChat` | L0 | catalog | CellChat 细胞通讯（L0） |
-| `figureya:FigureYa178receptorLigand` | L0 | catalog | 受体—配体图（L0） |
+| figureya:FigureYa254scViolin | — | 不存在或已归档 | 单细胞小提琴（L0） |
+| figureya:FigureYa267scCellChat | — | 不存在或已归档 | CellChat 细胞通讯（L0） |
+| figureya:FigureYa178receptorLigand | — | 不存在或已归档 | 受体—配体图（L0） |
 <!-- facts:end -->
 
 ## 注意

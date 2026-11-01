@@ -44,11 +44,11 @@ summary: 变量两两相关、基因与免疫浸润/通路的相关，以及相�
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[recipes/figureya-92immune-gene-update|基因与免疫浸润相关性图]] | L1 | ready · 运行 pass | 基因 × 免疫浸润相关点图与散点 |
-| [[recipes/figureya-228linkcor|相关热图与连线蝴蝶图]] | L1 | ready · 运行 pass | 相关热图 + 连线蝴蝶图 |
+| recipes/figureya-92immune-gene-update | — | 不存在或已归档 | 基因 × 免疫浸润相关点图与散点 |
+| recipes/figureya-228linkcor | — | 不存在或已归档 | 相关热图 + 连线蝴蝶图 |
 | recipes/figureya-76corrgram | — | 不存在或已归档 | 多变量相关矩阵散点热图 |
 | [[recipes/figureya-37correlationv2-update|圆形布局基因相关连线图]] | L1 | ready · 运行 pass | 圆形布局基因相关连线 |
-| [[recipes/figureya-143survcor-update|相关性散点叠加最佳截断四象限]] | L1 | ready · 运行 pass | 相关散点叠加最佳截断四象限（重） |
+| recipes/figureya-143survcor-update | — | 不存在或已归档 | 相关散点叠加最佳截断四象限（重） |
 | [[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter|密度散点与边缘分布]] | L2 | ready · 可用 | 密度散点与边缘分布（L2） |
 <!-- facts:end -->
 

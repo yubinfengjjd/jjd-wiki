@@ -47,8 +47,8 @@ summary: 分类变量的构成比例、层级之间的流向与分型对应关�
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[recipes/figureya-25sankey-update|多层分类流向桑基图]] | L1 | ready · 运行 pass | 多层分类流向桑基图 |
-| [[recipes/figureya-196panpie|分组临床分期扇形矩阵图]] | L1 | ready · 运行 pass | 分组 × 临床分期扇形矩阵 |
-| [[recipes/figureya-236circgroup|分型对应关系圈状热图]] | L1 | ready · 运行 pass | 分型对应关系圈状热图 |
+| recipes/figureya-196panpie | — | 不存在或已归档 | 分组 × 临床分期扇形矩阵 |
+| recipes/figureya-236circgroup | — | 不存在或已归档 | 分型对应关系圈状热图 |
 | [[templates/2026-10-22-scp-example__fig10-sankey--sankey|分组流向桑基图]] | L2 | ready · 可用 | 分组流向桑基图（L2） |
 | [[templates/2026-10-22-scp-example__fig02-ring--ring|分组构成同心环图]] | L2 | ready · 可用 | 分组构成同心环（L2） |
 | [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]] | L2 | ready · 可用 | 细胞比例堆叠流带（L2） |
