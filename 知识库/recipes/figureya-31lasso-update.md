@@ -99,13 +99,5 @@ favorite: false
 
 ## 使用记录
 
-<!-- figureya-selection:start -->
-## 样式筛选记录
-
-2026-11-02 整理时，此配方对应的 FigureYa 模块已被作者从样式候选中移除，不再作为默认推荐。
-
-本页、原始源码和既有运行收据保留；原确认状态不代表当前样式仍被选用。当前取舍以 `sources/figureya-curation.json` 为准，可在前端恢复。
-<!-- figureya-selection:end -->
-
 <!-- user:start -->
 <!-- user:end -->
