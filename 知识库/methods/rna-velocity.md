@@ -121,6 +121,11 @@ Seurat 对象的 `spliced`/`unspliced` assay/layers，或 AnnData；需显式 `a
 
 2026-10-23 检查了现有 UMAP/特征图模板。它们不能画 velocity 箭头、流线或 latent time 场，普通分组 UMAP 也不表达速度方向；本库暂无速度专用模板，因此不建立 figure_relations。无图原因：缺少语义匹配的速度图模板，不用“结构像”强行直连。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunSCVELO`、`RunCell2fate`。需要相应 spliced/unspliced 或动力学输入；命运概率不等于速度向量。Python 后端另验。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：核对 SCP RunSCVELO 与本机 reticulate/Python 依赖；后端缺失，保留 not_run，未安装。

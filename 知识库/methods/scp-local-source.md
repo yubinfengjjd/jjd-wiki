@@ -118,6 +118,11 @@ data_contract:
 
 2026-10-23 分类为技术/来源资料：旧 id、`source/` 原字节和作者备注保留，但不再作为默认分析家族推荐。语义配图关系已迁往 [[methods/cell-quality-control|单细胞质量控制]]、[[methods/doublet-detection|双细胞检测]]、[[methods/batch-integration|单细胞批次整合]]、[[methods/differential-expression|差异表达分析]]、[[methods/gene-set-enrichment|基因集富集分析]]、[[methods/gene-set-scoring|基因集与通路签名打分]]、[[methods/trajectory-inference|拟时序与轨迹推断]]、[[methods/rna-velocity|RNA 速度分析]]、[[methods/cell-type-annotation|细胞类型注释]]、[[methods/reference-mapping|参考图谱映射]]、[[methods/dimensionality-reduction|单细胞降维分析]]、[[methods/cell-clustering|单细胞聚类分析]]、[[methods/dynamic-feature-analysis|拟时序动态特征分析]]；本页只保留来源与实现证据链接，不再维护 `figure_relations` 主记录。原页面正文中的模板/证据链接仍可用于溯源；结构相似不等于科学直连。
 
+
+### scop 候选来源（未运行）
+
+后续衍生来源见 [[methods/scop-source-catalog|scop 0.9.2 来源]]。其 object/layer、thisplot/thisutils 与 C++ 依赖不能由本历史加载器或旧 SCP 收据替代；本页原字节和兼容代码不改。
+
 ## 使用记录
 
 2026-10-22 建页；从 commit `b9b0eb7` 归档 23 个原始文件，生成 12 个 R 文件的最小补丁副本；`verify_local.R` 全部通过（0 failure）。按作者代签授权标为 ready；验收记录见 `acceptance.json`。

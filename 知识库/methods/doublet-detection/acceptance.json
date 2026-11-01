@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T10:32:54.143247+00:00",
+  "checked_at": "2026-11-01T12:27:51.090068+00:00",
   "page": "methods/doublet-detection.md",
-  "snapshot": "335f31a24a550ab9fb06278864432b8c0fe61c7a459379b1c6f95f427ec6d5bd",
+  "snapshot": "8848d08ab0f98f5dcfc118d2e69dde5e52823cacbceb328ca6118780dd3b7cd3",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,0 +1,267 @@
+{
+  "scope": "package presence only; no package loaded, installed or backend executed",
+  "R": "R version 4.5.0 (2025-04-11 ucrt)",
+  "scop_installed": false,
+  "scop_version": null,
+  "required": [
+    {
+      "package": "cli",
+      "installed": true,
+      "version": "3.6.5"
+    },
+    {
+      "package": "graphics",
+      "installed": true,
+      "version": "4.5.0"
+    },
+    {
+      "package": "dplyr",
+      "installed": true,
+      "version": "1.2.1"
+    },
+    {
+      "package": "ggnewscale",
+      "installed": true,
+      "version": "0.5.2"
+    },
+    {
+      "package": "ggrepel",
+      "installed": true,
+      "version": "0.9.8"
+    },
+    {
+      "package": "igraph",
+      "installed": true,
+      "version": "2.1.4"
+    },
+    {
+      "package": "lifecycle",
+      "installed": true,
+      "version": "1.0.5"
+    },
+    {
+      "package": "reticulate",
+      "installed": true,
+      "version": "1.47.0"
+    },
+    {
+      "package": "rlang",
+      "installed": true,
+      "version": "1.3.0"
+    },
+    {
+      "package": "ggplot2",
+      "installed": true,
+      "version": "4.0.3"
+    },
+    {
+      "package": "methods",
+      "installed": true,
+      "version": "4.5.0"
+    },
+    {
+      "package": "Matrix",
+      "installed": true,
+      "version": "1.7-3"
+    },
+    {
+      "package": "Rcpp",
+      "installed": true,
+      "version": "1.1.2"
+    },
+    {
+      "package": "S4Vectors",
+      "installed": true,
+      "version": "0.46.0"
+    },
+    {
+      "package": "Seurat",
+      "installed": true,
+      "version": "5.6.0"
+    },
+    {
+      "package": "SeuratObject",
+      "installed": true,
+      "version": "5.4.0"
+    },
+    {
+      "package": "SummarizedExperiment",
+      "installed": true,
+      "version": "1.38.1"
+    },
+    {
+      "package": "stats",
+      "installed": true,
+      "version": "4.5.0"
+    },
+    {
+      "package": "thisplot",
+      "installed": false,
+      "version": null
+    },
+    {
+      "package": "tools",
+      "installed": true,
+      "version": "4.5.0"
+    },
+    {
+      "package": "thisutils",
+      "installed": false,
+      "version": null
+    },
+    {
+      "package": "utils",
+      "installed": true,
+      "version": "4.5.0"
+    },
+    {
+      "package": "uwot",
+      "installed": true,
+      "version": "0.2.5"
+    },
+    {
+      "package": "RcppArmadillo",
+      "installed": true,
+      "version": "15.6.2-1"
+    },
+    {
+      "package": "RcppEigen",
+      "installed": true,
+      "version": "0.3.4.0.2"
+    },
+    {
+      "package": "RSpectra",
+      "installed": true,
+      "version": "0.16-2"
+    }
+  ],
+  "suggests": [
+    "IRanges",
+    "Biostrings",
+    "BSgenome",
+    "motifmatchr",
+    "TFBSTools",
+    "chromVAR",
+    "ggforce",
+    "ComplexHeatmap",
+    "Signac",
+    "enrichit",
+    "fgsea",
+    "GenomeInfoDb",
+    "hdf5r",
+    "Rsamtools",
+    "fastmatch",
+    "AnnotationDbi",
+    "arrow",
+    "AUCell",
+    "BayesSpace",
+    "batchelor",
+    "Biobase",
+    "BiocNeighbors",
+    "BiocParallel",
+    "biomaRt",
+    "callr",
+    "cluster",
+    "Coralysis",
+    "circlize",
+    "clusterProfiler",
+    "cowplot",
+    "data.table",
+    "e1071",
+    "GenomicRanges",
+    "geomtextpath",
+    "ggpubr",
+    "ggrastr",
+    "ggupset",
+    "ggVennDiagram",
+    "ggridges",
+    "ggwordcloud",
+    "gtable",
+    "funkyheatmap",
+    "future",
+    "GENIE3",
+    "glmpca",
+    "GOSemSim",
+    "GSVA",
+    "grDevices",
+    "grid",
+    "harmony",
+    "HDF5Array",
+    "htmlwidgets",
+    "httr",
+    "intrinsicDimension",
+    "irlba",
+    "limma",
+    "MatrixGenerics",
+    "metR",
+    "miloR",
+    "monocle3",
+    "MASS",
+    "mgcv",
+    "matrixStats",
+    "NMF",
+    "openxlsx",
+    "pak",
+    "patchwork",
+    "keras",
+    "pkgload",
+    "purrr",
+    "plotly",
+    "ps",
+    "proxyC",
+    "RANN",
+    "RcppML",
+    "R.cache",
+    "readxl",
+    "R.utils",
+    "reshape2",
+    "RhpcBLASctl",
+    "randomForest",
+    "rliger",
+    "rhdf5",
+    "RSpectra",
+    "rsample",
+    "scales",
+    "scatterpie",
+    "simplifyEnrichment",
+    "slingshot",
+    "scattermore",
+    "scran",
+    "scuttle",
+    "scds",
+    "scDblFinder",
+    "scTenifoldKnk",
+    "scTenifoldNet",
+    "decontX",
+    "edgeR",
+    "statmod",
+    "scmap",
+    "SeuratData",
+    "stringr",
+    "sva",
+    "SingleR",
+    "SingleCellExperiment",
+    "SPOTlight",
+    "SpatialExperiment",
+    "spacexr",
+    "testthat",
+    "tibble",
+    "tricycle",
+    "umap",
+    "UCell",
+    "usethis",
+    "xgboost",
+    "yardstick",
+    "Banksy",
+    "CARDspa",
+    "infercnv",
+    "numbat",
+    "nnSVG",
+    "PRECAST",
+    "smoothclust",
+    "SpotSweeper",
+    "spicyR",
+    "SpaNorm",
+    "withr"
+  ]
+}

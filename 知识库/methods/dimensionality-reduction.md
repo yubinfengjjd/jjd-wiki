@@ -160,6 +160,11 @@ Seurat 对象增加 `PCA`/`UMAP` 等 reduction；每细胞一行坐标。可导�
 
 2026-10-23 检查了 UMAP 分组和特征 UMAP 模板。降维坐标可按 cluster/样本着色，或与 marker 长表拼成特征网格；均为 adaptable。没有 direct：模板不读 Seurat reduction，需先导出接口表。UMAP 图不证明聚类或生物学差异显著。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunDimsReduction`、`RunPCA`、`RunUMAP`、`RunLargeVis`、`RunFR`。RunFR 是图布局；低维图相邻不等于生物学相近或完成批次校正。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 200 细胞实际运行 PCA/UMAP 并与上游比较；未做真实课题参数选择。

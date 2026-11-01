@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T09:03:45.231828+00:00",
+  "checked_at": "2026-11-01T12:27:50.886227+00:00",
   "page": "methods/batch-integration.md",
-  "snapshot": "3ce61df72cf18faafc17afec82c7827dfd12e01b502033b6bc5f708ba6724323",
+  "snapshot": "994a960ab0bdacc54a18abfa2a68cf186a07f390f3604a23333cfc234fdf4ab7",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

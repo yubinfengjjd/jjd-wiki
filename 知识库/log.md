@@ -1151,3 +1151,5 @@
 ## [2026-10-31 07:53 UTC] document local archive link and recipe promotion limitations
 
 ## [2026-11-01 07:35 UTC] SCP v2: index all exports and curate native plotting closures
+
+## [2026-11-01 12:34 UTC] ingest pinned scop source and knowledge navigation

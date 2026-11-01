@@ -158,6 +158,11 @@ scDblFinder 通过模拟双细胞/表达距离并参考预期双细胞率判断�
 
 2026-10-23 检查了 UMAP 分组图与细胞比例图模板。双细胞标签可作为 UMAP 着色或样本比例，模板不执行检测，关系为 adaptable；没有 direct。双细胞 score 的分布图本库暂无专用模板。来源页 [[methods/scp-cellqc-doublet]] 与 [[methods/scrna-preprocess-doublet-qc-harmony]] 提供 SCP 与 DoubletFinder 原始实现，双向链接已建立。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunDoubletDetection`、`RunDoubletCalling`、`RunscDblFinder`、`RunScrublet`、`Runscds`。按所选后端核对真实 counts、样本批次和预期双细胞率；不是同一后端的不同名称。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：核对 SCP scDblFinder 分支与青光眼 DoubletFinder 脚本；scDblFinder/DoubletFinder 均缺失，保留 not_run/未函数化，不安装。

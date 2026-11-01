@@ -1,0 +1,540 @@
+{
+  "scope": "Core installation proposal only; no install authorized or executed; optional backends excluded",
+  "library_scope": "config.r_libs[0], Wiki-only R library",
+  "targets": [
+    {
+      "package": "scop",
+      "version": "0.9.2",
+      "source": "GitHub",
+      "repo": "mengxu98/scop",
+      "commit": "2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb"
+    },
+    {
+      "package": "thisplot",
+      "version": "0.4.6",
+      "source": "GitHub",
+      "repo": "mengxu98/thisplot",
+      "commit": "df334d3eafb1d92ca546604e9d38d0eb7a7a7d8c"
+    },
+    {
+      "package": "thisutils",
+      "version": "0.5.3",
+      "source": "GitHub",
+      "repo": "mengxu98/thisutils",
+      "commit": "a9fd2d6e36599856ca550f6c2b7bb293773fc6d5"
+    },
+    {
+      "package": "geomtextpath",
+      "version": "0.2.0",
+      "source": "CRAN Windows 4.5",
+      "repository": "https://cloud.r-project.org/bin/windows/contrib/4.5"
+    },
+    {
+      "package": "pak",
+      "version": "0.11.1",
+      "source": "CRAN Windows 4.5",
+      "repository": "https://cloud.r-project.org/bin/windows/contrib/4.5"
+    }
+  ],
+  "dependency_edges": [
+    {
+      "owner": "scop",
+      "package": "cli",
+      "requirement": null,
+      "installed_version": "3.6.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "graphics",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "dplyr",
+      "requirement": null,
+      "installed_version": "1.2.1",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "ggnewscale",
+      "requirement": ">= 0.5.2",
+      "installed_version": "0.5.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "ggrepel",
+      "requirement": null,
+      "installed_version": "0.9.8",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "igraph",
+      "requirement": null,
+      "installed_version": "2.1.4",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "lifecycle",
+      "requirement": null,
+      "installed_version": "1.0.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "reticulate",
+      "requirement": null,
+      "installed_version": "1.47.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "rlang",
+      "requirement": null,
+      "installed_version": "1.3.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "ggplot2",
+      "requirement": ">= 3.5.0",
+      "installed_version": "4.0.3",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "methods",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "Matrix",
+      "requirement": null,
+      "installed_version": "1.7-3",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "Rcpp",
+      "requirement": ">= 1.0.13",
+      "installed_version": "1.1.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "S4Vectors",
+      "requirement": null,
+      "installed_version": "0.46.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "Seurat",
+      "requirement": null,
+      "installed_version": "5.6.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "SeuratObject",
+      "requirement": null,
+      "installed_version": "5.4.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "SummarizedExperiment",
+      "requirement": null,
+      "installed_version": "1.38.1",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "stats",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "thisplot",
+      "requirement": ">= 0.4.3",
+      "installed_version": null,
+      "currently_meets": false
+    },
+    {
+      "owner": "scop",
+      "package": "tools",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "thisutils",
+      "requirement": ">= 0.5.3",
+      "installed_version": null,
+      "currently_meets": false
+    },
+    {
+      "owner": "scop",
+      "package": "utils",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "uwot",
+      "requirement": null,
+      "installed_version": "0.2.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "cli",
+      "requirement": null,
+      "installed_version": "3.6.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "Rcpp",
+      "requirement": ">= 1.0.13",
+      "installed_version": "1.1.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "RcppArmadillo",
+      "requirement": null,
+      "installed_version": "15.6.2-1",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "RcppEigen",
+      "requirement": null,
+      "installed_version": "0.3.4.0.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "RSpectra",
+      "requirement": null,
+      "installed_version": "0.16-2",
+      "currently_meets": true
+    },
+    {
+      "owner": "scop",
+      "package": "thisutils",
+      "requirement": null,
+      "installed_version": null,
+      "currently_meets": false
+    },
+    {
+      "owner": "thisplot",
+      "package": "cli",
+      "requirement": null,
+      "installed_version": "3.6.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "dendextend",
+      "requirement": null,
+      "installed_version": "1.19.1",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "ggforce",
+      "requirement": null,
+      "installed_version": "0.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "geomtextpath",
+      "requirement": null,
+      "installed_version": null,
+      "currently_meets": false
+    },
+    {
+      "owner": "thisplot",
+      "package": "ggrepel",
+      "requirement": null,
+      "installed_version": "0.9.8",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "ggnewscale",
+      "requirement": null,
+      "installed_version": "0.5.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "ggplot2",
+      "requirement": ">= 4.0.0",
+      "installed_version": "4.0.3",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "grDevices",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "grid",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "gtable",
+      "requirement": null,
+      "installed_version": "0.3.6",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "igraph",
+      "requirement": null,
+      "installed_version": "2.1.4",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "methods",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "patchwork",
+      "requirement": null,
+      "installed_version": "1.3.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "proxyC",
+      "requirement": null,
+      "installed_version": "0.5.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "reshape2",
+      "requirement": null,
+      "installed_version": "1.4.4",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "stats",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisplot",
+      "package": "thisutils",
+      "requirement": ">= 0.5.0",
+      "installed_version": null,
+      "currently_meets": false
+    },
+    {
+      "owner": "thisplot",
+      "package": "utils",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "callr",
+      "requirement": ">= 3.5.0",
+      "installed_version": "3.7.6",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "cli",
+      "requirement": null,
+      "installed_version": "3.6.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "methods",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "Matrix",
+      "requirement": null,
+      "installed_version": "1.7-3",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "mgcv",
+      "requirement": null,
+      "installed_version": "1.9-1",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "pak",
+      "requirement": null,
+      "installed_version": null,
+      "currently_meets": false
+    },
+    {
+      "owner": "thisutils",
+      "package": "parallel",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "ps",
+      "requirement": null,
+      "installed_version": "1.9.1",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "Rcpp",
+      "requirement": null,
+      "installed_version": "1.1.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "rlang",
+      "requirement": null,
+      "installed_version": "1.3.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "stats",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "splines",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "utils",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "cli",
+      "requirement": null,
+      "installed_version": "3.6.5",
+      "currently_meets": true
+    },
+    {
+      "owner": "thisutils",
+      "package": "Rcpp",
+      "requirement": null,
+      "installed_version": "1.1.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "ggplot2",
+      "requirement": ">= 3.5.2",
+      "installed_version": "4.0.3",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "grid",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "scales",
+      "requirement": null,
+      "installed_version": "1.4.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "systemfonts",
+      "requirement": null,
+      "installed_version": "1.3.2",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "rlang",
+      "requirement": null,
+      "installed_version": "1.3.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "textshaping",
+      "requirement": ">= 0.4.0",
+      "installed_version": "1.0.1",
+      "currently_meets": true
+    },
+    {
+      "owner": "geomtextpath",
+      "package": "vctrs",
+      "requirement": null,
+      "installed_version": "0.7.3",
+      "currently_meets": true
+    },
+    {
+      "owner": "pak",
+      "package": "tools",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    },
+    {
+      "owner": "pak",
+      "package": "utils",
+      "requirement": null,
+      "installed_version": "4.5.0",
+      "currently_meets": true
+    }
+  ],
+  "build_tools_observed": "Rtools45 make exists on current R process PATH",
+  "scop_core_execution": "not_run"
+}

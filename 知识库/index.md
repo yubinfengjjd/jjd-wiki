@@ -118,6 +118,10 @@
 
 ## 组合流程
 
+### draft
+
+- [[methods/scop-workflows|单细胞与空间组学工作流]] — 12 份固定版本上游 Rmd 流程的输入、执行边界和方法链；未 Knit，未作为 L1 配方运行。
+
 ### ready
 
 - [[methods/scp-standard-workflow|单细胞标准预处理、降维与聚类]] — SCP 标准预处理、降维与聚类的组合流程记录；单步方法见质量控制、降维、聚类和整合家族。
@@ -128,6 +132,9 @@
 ### draft
 
 - [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
+- [[methods/scop-analysis-guide|单细胞与空间分析方法导航]] — 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；本机未运行。
+- [[methods/scop-source-catalog|单细胞与空间组学来源索引]] — 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；完整来源导航，本机未运行。
+- [[methods/scop-visualization-guide|单细胞与空间绘图入口导航]] — 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；全部本机未运行，不继承 SCP 图样或回放。
 - [[methods/scp-source-catalog|单细胞全库来源与入口索引]] — 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与 22 个 draft 原生绘图入口，区分归档、运行和确认。
 - [[methods/scp-viz-statplots|单细胞统计与相关绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 - [[methods/scp-viz-heatmaps|单细胞表达与动态热图入口]] — 4 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。

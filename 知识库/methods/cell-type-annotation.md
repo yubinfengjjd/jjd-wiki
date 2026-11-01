@@ -202,6 +202,11 @@ figure_relations:
 
 2026-10-23 检查了 UMAP 分组、特征 UMAP、气泡点图和细胞比例模板。预测标签或手工标签都可着色 UMAP、检查 marker、展示组成；均为 adaptable，模板不执行注释。没有 direct：模板不读 Seurat 注释结果。来源页 [[methods/scrna-marker-annotation]] 提供 marker 手工注释原始脚本，[[methods/scp-annotation-projection]] 提供 SCP SingleR/投影来源；双向链接已建立。注释与参考映射的区别见 [[methods/reference-mapping]]。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunSingleR`、`RunCellTypist`、`RunScmap`、`RunKNNPredict`、`RunSciBet`。核对参考物种、基因 ID、标签与查询/参考独立性；相似度不是校准概率。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：核对 SCP RunSingleR、青光眼 marker 注释脚本与本机依赖；SingleR 缺失、marker 脚本未函数化，均未写成已验证实现。
