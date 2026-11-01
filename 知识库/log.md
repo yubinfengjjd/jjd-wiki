@@ -1153,3 +1153,7 @@
 ## [2026-11-01 07:35 UTC] SCP v2: index all exports and curate native plotting closures
 
 ## [2026-11-01 12:34 UTC] ingest pinned scop source and knowledge navigation
+
+## [2026-11-01 12:34 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:36 UTC] FigureYa visual selection: removed (1 modules)
