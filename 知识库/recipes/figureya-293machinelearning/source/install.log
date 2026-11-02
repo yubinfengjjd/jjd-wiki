@@ -1,0 +1,883 @@
+Starting package installation...
+
+Installing basic dependencies...
+Package already installed: remotes 
+Package already installed: devtools 
+Package already installed: survival 
+Package already installed: glmnet 
+
+Installing CRAN packages...
+Installing CRAN package: BART 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/BART_2.9.9.tar.gz'
+Content type 'application/x-gzip' length 3780743 bytes (3.6 MB)
+==================================================
+downloaded 3.6 MB
+
+* installing *source* package ‘BART’ ...
+** this is package ‘BART’ version ‘2.9.9’
+** package ‘BART’ successfully unpacked and MD5 sums checked
+** using staged installation
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ -std=gnu++17 accepts -g... yes
+checking for g++ -std=gnu++17 option to support OpenMP... -fopenmp
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c bart.cpp -o bart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c bartfuns.cpp -o bartfuns.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c bd.cpp -o bd.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c cabart.cpp -o cabart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c cgbart.cpp -o cgbart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c clbart.cpp -o clbart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c cpbart.cpp -o cpbart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c cpwbart.cpp -o cpwbart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c cwbart.cpp -o cwbart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c heterbart.cpp -o heterbart.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c heterbartfuns.cpp -o heterbartfuns.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c heterbd.cpp -o heterbd.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c lambda.cpp -o lambda.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c mc_cores_openmp.cpp -o mc_cores_openmp.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c rtgamma.cpp -o rtgamma.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c rtnorm.cpp -o rtnorm.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c tree.cpp -o tree.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include   -fopenmp -fpic  -g -O2   -c treefuns.cpp -o treefuns.o
+g++ -std=gnu++17 -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o BART.so bart.o bartfuns.o bd.o cabart.o cgbart.o clbart.o cpbart.o cpwbart.o cwbart.o heterbart.o heterbartfuns.o heterbd.o init.o lambda.o mc_cores_openmp.o rtgamma.o rtnorm.o tree.o treefuns.o -fopenmp -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-BART/00new/BART/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (BART)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: BART 
+Package already installed: RColorBrewer 
+Installing CRAN package: compareC 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/compareC_1.3.3.tar.gz'
+Content type 'application/x-gzip' length 4643 bytes
+==================================================
+downloaded 4643 bytes
+
+* installing *source* package ‘compareC’ ...
+** this is package ‘compareC’ version ‘1.3.3’
+** package ‘compareC’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survivalC.c -o survivalC.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o compareC.so survivalC.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-compareC/00new/compareC/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (compareC)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: compareC 
+Package already installed: dplyr 
+Installing CRAN package: gbm 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘yardstick’, ‘pdp’, ‘RUnit’, ‘tinytest’, ‘vip’
+
+trying URL 'https://cloud.r-project.org/src/contrib/yardstick_1.3.2.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/pdp_0.8.2.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/RUnit_0.4.33.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/tinytest_1.4.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/vip_0.4.2.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/gbm_2.2.2.tar.gz'
+* installing *source* package ‘yardstick’ ...
+** this is package ‘yardstick’ version ‘1.3.2’
+** package ‘yardstick’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c mcc-multiclass.c -o mcc-multiclass.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o yardstick.so init.o mcc-multiclass.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-yardstick/00new/yardstick/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (yardstick)
+* installing *source* package ‘pdp’ ...
+** this is package ‘pdp’ version ‘0.8.2’
+** package ‘pdp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c PartialGBM.cpp -o PartialGBM.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c in_out.c -o in_out.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c pdp-init.c -o pdp-init.o
+g++ -std=gnu++17 -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o pdp.so PartialGBM.o in_out.o pdp-init.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-pdp/00new/pdp/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pdp)
+* installing *source* package ‘RUnit’ ...
+** this is package ‘RUnit’ version ‘0.4.33.1’
+** package ‘RUnit’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (RUnit)
+* installing *source* package ‘tinytest’ ...
+** this is package ‘tinytest’ version ‘1.4.1’
+** package ‘tinytest’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tinytest)
+* installing *source* package ‘gbm’ ...
+** this is package ‘gbm’ version ‘2.2.2’
+** package ‘gbm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c adaboost.cpp -o adaboost.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c bernoulli.cpp -o bernoulli.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c coxph.cpp -o coxph.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c dataset.cpp -o dataset.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c distribution.cpp -o distribution.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c gaussian.cpp -o gaussian.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c gbm-init.c -o gbm-init.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c gbm.cpp -o gbm.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c gbm_engine.cpp -o gbm_engine.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c gbmentry.cpp -o gbmentry.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c huberized.cpp -o huberized.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c laplace.cpp -o laplace.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c locationm.cpp -o locationm.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c multinomial.cpp -o multinomial.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node.cpp -o node.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node_categorical.cpp -o node_categorical.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node_continuous.cpp -o node_continuous.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node_factory.cpp -o node_factory.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node_nonterminal.cpp -o node_nonterminal.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node_search.cpp -o node_search.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c node_terminal.cpp -o node_terminal.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c pairwise.cpp -o pairwise.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c poisson.cpp -o poisson.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c quantile.cpp -o quantile.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c tdist.cpp -o tdist.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c tree.cpp -o tree.o
+g++ -std=gnu++17 -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o gbm.so adaboost.o bernoulli.o coxph.o dataset.o distribution.o gaussian.o gbm-init.o gbm.o gbm_engine.o gbmentry.o huberized.o laplace.o locationm.o multinomial.o node.o node_categorical.o node_continuous.o node_factory.o node_nonterminal.o node_search.o node_terminal.o pairwise.o poisson.o quantile.o tdist.o tree.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-gbm/00new/gbm/libs
+** R
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gbm)
+* installing *source* package ‘vip’ ...
+** this is package ‘vip’ version ‘0.4.2’
+** package ‘vip’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (vip)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: gbm 
+Installing CRAN package: ggbreak 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+also installing the dependencies ‘ggimage’, ‘prettydoc’
+
+trying URL 'https://cloud.r-project.org/src/contrib/ggimage_0.3.4.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/prettydoc_0.4.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/ggbreak_0.1.6.tar.gz'
+* installing *source* package ‘ggimage’ ...
+** this is package ‘ggimage’ version ‘0.3.4’
+** package ‘ggimage’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggimage)
+* installing *source* package ‘prettydoc’ ...
+** this is package ‘prettydoc’ version ‘0.4.1’
+** package ‘prettydoc’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (prettydoc)
+* installing *source* package ‘ggbreak’ ...
+** this is package ‘ggbreak’ version ‘0.1.6’
+** package ‘ggbreak’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (ggbreak)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: ggbreak 
+Package already installed: ggplot2 
+Package already installed: ggsci 
+Installing CRAN package: miscTools 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+also installing the dependency ‘Ecdat’
+
+trying URL 'https://cloud.r-project.org/src/contrib/Ecdat_0.4.7.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/miscTools_0.6-28.tar.gz'
+* installing *source* package ‘Ecdat’ ...
+** this is package ‘Ecdat’ version ‘0.4.7’
+** package ‘Ecdat’ successfully unpacked and MD5 sums checked
+** using staged installation
+** data
+*** moving datasets to lazyload DB
+** inst
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (Ecdat)
+* installing *source* package ‘miscTools’ ...
+** this is package ‘miscTools’ version ‘0.6-28’
+** package ‘miscTools’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (miscTools)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: miscTools 
+Installing CRAN package: plsRcox 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+Warning: dependencies ‘mixOmics’, ‘survcomp’ are not available
+also installing the dependencies ‘sna’, ‘corpcor’, ‘fields’, ‘bipartite’, ‘plsRglm’, ‘lars’, ‘pls’, ‘risksetROC’, ‘survAUC’, ‘survivalROC’, ‘plsdof’
+
+trying URL 'https://cloud.r-project.org/src/contrib/sna_2.8.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/corpcor_1.6.10.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/fields_17.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/bipartite_2.23.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/plsRglm_1.6.0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/lars_1.3.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/pls_2.8-5.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/risksetROC_1.0.4.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/survAUC_1.4-0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/survivalROC_1.0.3.1.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/plsdof_0.4-0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/plsRcox_1.8.0.tar.gz'
+* installing *source* package ‘sna’ ...
+** this is package ‘sna’ version ‘2.8’
+** package ‘sna’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c Rinit.c -o Rinit.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c cohesion.c -o cohesion.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c components.c -o components.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c geodist.c -o geodist.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c gli.c -o gli.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c layout.c -o layout.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c likelihood.c -o likelihood.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c nli.c -o nli.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c paths.c -o paths.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c randomgraph.c -o randomgraph.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c triads.c -o triads.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c utils.c -o utils.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o sna.so Rinit.o cohesion.o components.o geodist.o gli.o layout.o likelihood.o nli.o paths.o randomgraph.o triads.o utils.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-sna/00new/sna/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (sna)
+* installing *source* package ‘corpcor’ ...
+** this is package ‘corpcor’ version ‘1.6.10’
+** package ‘corpcor’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (corpcor)
+* installing *source* package ‘fields’ ...
+** this is package ‘fields’ version ‘17.1’
+** package ‘fields’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c ExponentialUpperC.c -o ExponentialUpperC.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c RdistEarth.c -o RdistEarth.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c addToDiagC.c -o addToDiagC.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c compactToMatC.c -o compactToMatC.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c expfnC.c -o expfnC.o
+gfortran  -fpic  -g -O2  -c fieldsF77Code.f -o fieldsF77Code.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c multebC.c -o multebC.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c rdistC.c -o rdistC.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o fields.so ExponentialUpperC.o RdistEarth.o addToDiagC.o compactToMatC.o expfnC.o fieldsF77Code.o init.o multebC.o rdistC.o -llapack -lblas -lgfortran -lm -lquadmath -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-fields/00new/fields/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (fields)
+* installing *source* package ‘lars’ ...
+** this is package ‘lars’ version ‘1.3’
+** package ‘lars’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gfortran  -fpic  -g -O2  -c delcol.f -o delcol.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c lars_init.c -o lars_init.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o lars.so delcol.o lars_init.o -lgfortran -lm -lquadmath -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-lars/00new/lars/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (lars)
+* installing *source* package ‘pls’ ...
+** this is package ‘pls’ version ‘2.8-5’
+** package ‘pls’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (pls)
+* installing *source* package ‘risksetROC’ ...
+** this is package ‘risksetROC’ version ‘1.0.4.1’
+** package ‘risksetROC’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (risksetROC)
+* installing *source* package ‘survAUC’ ...
+** this is package ‘survAUC’ version ‘1.4-0’
+** package ‘survAUC’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c R_init_survAUC.c -o R_init_survAUC.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survAUC_Cham_Diao.c -o survAUC_Cham_Diao.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survAUC_HZ.c -o survAUC_HZ.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survAUC_Hung_Chiang.c -o survAUC_Hung_Chiang.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survAUC_SongZhou.c -o survAUC_SongZhou.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survAUC_UNO.c -o survAUC_UNO.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c surv_measures.c -o surv_measures.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c utils.c -o utils.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o survAUC.so R_init_survAUC.o survAUC_Cham_Diao.o survAUC_HZ.o survAUC_Hung_Chiang.o survAUC_SongZhou.o survAUC_UNO.o surv_measures.o utils.o -llapack -lblas -lgfortran -lm -lquadmath -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-survAUC/00new/survAUC/libs
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survAUC)
+* installing *source* package ‘survivalROC’ ...
+** this is package ‘survivalROC’ version ‘1.0.3.1’
+** package ‘survivalROC’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c survivalROC.c -o survivalROC.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o survivalROC.so survivalROC.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-survivalROC/00new/survivalROC/libs
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survivalROC)
+* installing *source* package ‘plsdof’ ...
+** this is package ‘plsdof’ version ‘0.4-0’
+** package ‘plsdof’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (plsdof)
+* installing *source* package ‘bipartite’ ...
+** this is package ‘bipartite’ version ‘2.23’
+** package ‘bipartite’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c identifyModules.cc -o identifyModules.o
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c init.c -o init.o
+g++ -std=gnu++17 -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o bipartite.so identifyModules.o init.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-bipartite/00new/bipartite/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bipartite)
+* installing *source* package ‘plsRglm’ ...
+** this is package ‘plsRglm’ version ‘1.6.0’
+** package ‘plsRglm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (plsRglm)
+ERROR: dependencies ‘mixOmics’, ‘survcomp’ are not available for package ‘plsRcox’
+Perhaps try a variation of:
+install.packages(c('mixOmics', 'survcomp'))
+* removing ‘/home/runner/work/_temp/Library/plsRcox’
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: plsRcox 
+Package already installed: randomForestSRC 
+Package already installed: rlang 
+Installing CRAN package: superpc 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/superpc_1.12.tar.gz'
+Content type 'application/x-gzip' length 166291 bytes (162 KB)
+==================================================
+downloaded 162 KB
+
+* installing *source* package ‘superpc’ ...
+** this is package ‘superpc’ version ‘1.12’
+** package ‘superpc’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (superpc)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: superpc 
+Installing CRAN package: survivalsvm 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/survivalsvm_0.0.6.tar.gz'
+Content type 'application/x-gzip' length 39948 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+* installing *source* package ‘survivalsvm’ ...
+** this is package ‘survivalsvm’ version ‘0.0.6’
+** package ‘survivalsvm’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survivalsvm)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: survivalsvm 
+Package already installed: tibble 
+Package already installed: tidyr 
+Warning message:
+In install.packages(package_name, dependencies = TRUE) :
+  installation of package ‘plsRcox’ had non-zero exit status
+
+Installing Bioconductor packages...
+Package already installed: ComplexHeatmap 
+Package already installed: circlize 
+Installing Bioconductor package: mixOmics 
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://cloud.r-project.org/
+Bioconductor version 3.22 (BiocManager 1.30.27), R 4.5.2 (2025-10-31)
+Installing package(s) 'mixOmics'
+also installing the dependencies ‘rARPACK’, ‘gsignal’
+
+trying URL 'https://cloud.r-project.org/src/contrib/rARPACK_0.11-0.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/gsignal_0.3-7.tar.gz'
+trying URL 'https://bioconductor.org//packages/3.22/bioc/src/contrib/mixOmics_6.34.0.tar.gz'
+* installing *source* package ‘rARPACK’ ...
+** this is package ‘rARPACK’ version ‘0.11-0’
+** package ‘rARPACK’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rARPACK)
+* installing *source* package ‘gsignal’ ...
+** this is package ‘gsignal’ version ‘0.3-7’
+** package ‘gsignal’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c conv2d.cpp -o conv2d.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c filter.cpp -o filter.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c fwht.cpp -o fwht.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c remez.cpp -o remez.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c sosfilt.cpp -o sosfilt.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG  -I'/home/runner/work/_temp/Library/Rcpp/include' -I/usr/local/include    -fpic  -g -O2   -c upfirdn.cpp -o upfirdn.o
+g++ -std=gnu++17 -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o gsignal.so RcppExports.o conv2d.o filter.o fwht.o remez.o sosfilt.o upfirdn.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-gsignal/00new/gsignal/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (gsignal)
+* installing *source* package ‘mixOmics’ ...
+** this is package ‘mixOmics’ version ‘6.34.0’
+** package ‘mixOmics’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (mixOmics)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: mixOmics 
+Installing Bioconductor package: survcomp 
+'getOption("repos")' replaces Bioconductor standard repositories, see
+'help("repositories", package = "BiocManager")' for details.
+Replacement repositories:
+    CRAN: https://cloud.r-project.org/
+Bioconductor version 3.22 (BiocManager 1.30.27), R 4.5.2 (2025-10-31)
+Installing package(s) 'survcomp'
+also installing the dependencies ‘bootstrap’, ‘rmeta’
+
+trying URL 'https://cloud.r-project.org/src/contrib/bootstrap_2019.6.tar.gz'
+trying URL 'https://cloud.r-project.org/src/contrib/rmeta_3.0.tar.gz'
+trying URL 'https://bioconductor.org//packages/3.22/bioc/src/contrib/survcomp_1.60.0.tar.gz'
+* installing *source* package ‘bootstrap’ ...
+** this is package ‘bootstrap’ version ‘2019.6’
+** package ‘bootstrap’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using Fortran compiler: ‘GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c bootstrap_init.c -o bootstrap_init.o
+gfortran  -fpic  -g -O2  -c boott.f -o boott.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o bootstrap.so bootstrap_init.o boott.o -lgfortran -lm -lquadmath -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-bootstrap/00new/bootstrap/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (bootstrap)
+* installing *source* package ‘rmeta’ ...
+** this is package ‘rmeta’ version ‘3.0’
+** package ‘rmeta’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (rmeta)
+* installing *source* package ‘survcomp’ ...
+** this is package ‘survcomp’ version ‘1.60.0’
+** package ‘survcomp’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+using C++ compiler: ‘g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c concordance.index.c -o concordance.index.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c foo_mrmr_ensemble_surv.cpp -o foo_mrmr_ensemble_surv.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c foo_mrmr_surv.cpp -o foo_mrmr_surv.o
+g++ -std=gnu++17 -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2   -c survcomp_init.cpp -o survcomp_init.o
+g++ -std=gnu++17 -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o survcomp.so concordance.index.o foo_mrmr_ensemble_surv.o foo_mrmr_surv.o survcomp_init.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-survcomp/00new/survcomp/libs
+** R
+** data
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (survcomp)
+
+The downloaded source packages are in
+	‘/tmp/RtmpYeYB1n/downloaded_packages’
+Successfully installed: survcomp 
+
+Installing CoxBoost...
+Using bundled GitHub PAT. Please add your own PAT using `gitcreds::gitcreds_set()`
+GitHub installation failed, trying CRAN archive...
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cran.r-project.org/src/contrib/Archive/CoxBoost/CoxBoost_1.4.tar.gz'
+Content type 'application/x-gzip' length 23706 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+* installing *source* package ‘CoxBoost’ ...
+** this is package ‘CoxBoost’ version ‘1.4’
+** package ‘CoxBoost’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0’
+gcc -std=gnu2x -I"/opt/R/4.5.2/lib/R/include" -DNDEBUG   -I/usr/local/include    -fpic  -g -O2  -c find_best.c -o find_best.o
+gcc -std=gnu2x -shared -L/opt/R/4.5.2/lib/R/lib -L/usr/local/lib -o CoxBoost.so find_best.o -L/opt/R/4.5.2/lib/R/lib -lR
+installing to /home/runner/work/_temp/Library/00LOCK-CoxBoost/00new/CoxBoost/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (CoxBoost)
+Successfully installed CoxBoost from archive
+
+Verifying installation...
+✓ CoxBoost is installed
+✓ survival is installed
+✓ glmnet is installed
+✓ randomForestSRC is installed
+✗ plsRcox is NOT installed
+
+Installation completed!

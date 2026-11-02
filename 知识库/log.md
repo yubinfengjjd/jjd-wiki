@@ -1189,3 +1189,5 @@
 ## [2026-11-02 10:29 UTC] 默认双层入库并同步前端：登记绘图代码与理论关联、固化展示验收规则
 
 ## [2026-11-02 11:20 UTC] ready 17: asthma-lactylation-source-catalog, asthma-lactylation-workflow, figureya-multilanguage-assets, local-omics-analysis-guide, local-omics-visualization-guide, scop-analysis-guide, scop-source-catalog, scop-visualization-guide, scop-workflows, scp-source-catalog, scp-viz-dimplots, scp-viz-heat
+
+## [2026-11-02 16:53 UTC] 按作者要求默认保存知识源码与公开资源，继续排除私有数据与凭据

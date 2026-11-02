@@ -1,0 +1,1 @@
+wf_manifest_add <- function(manifest, path, kind, paper_level = "reject", note = "") bind_rows(manifest, tibble(path = normalizePath(path, winslash = "/", mustWork = FALSE), kind = kind, paper_level = paper_level, note = note))

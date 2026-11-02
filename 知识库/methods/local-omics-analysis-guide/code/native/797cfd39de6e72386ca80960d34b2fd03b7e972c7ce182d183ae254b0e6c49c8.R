@@ -1,0 +1,18 @@
+save_base_plot <- function(dir_path, stem, width, height, expr) {
+  stem <- wf_sanitize_stem(stem)
+  expr_sub <- substitute(expr)
+  expr_env <- parent.frame()
+  pdf_path <- file.path(dir_path, paste0(stem, '.pdf'))
+  png_path <- file.path(dir_path, paste0(stem, '.png'))
+  grDevices::pdf(pdf_path, width = width, height = height, onefile = TRUE)
+  on.exit(try(grDevices::dev.off(), silent = TRUE), add = TRUE)
+  eval(expr_sub, envir = expr_env)
+  grDevices::dev.off()
+  on.exit(NULL, add = FALSE)
+  grDevices::png(png_path, width = width, height = height, units = 'in', res = 320, bg = 'white')
+  on.exit(try(grDevices::dev.off(), silent = TRUE), add = TRUE)
+  eval(expr_sub, envir = expr_env)
+  grDevices::dev.off()
+  on.exit(NULL, add = FALSE)
+  invisible(list(pdf = pdf_path, png = png_path))
+}
