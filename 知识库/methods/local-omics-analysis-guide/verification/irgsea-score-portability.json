@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "irgsea-score",
+  "state": "not_run",
+  "scope": "Not run: required irGSEA package absent in Wiki R libraries; no installation attempted.",
+  "closure_hash": "ee4d83bafb328eb0720467f2af73795be730f7a92738d41f79a1ca14417dbd98",
+  "files": {
+    "code/dependency_analysis.R": "8e246aa9ca41d4b1e29dfeb34c01957a65388d69e98e7300f5ad54f1b6067d50"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00",
+  "not_run_reason": "Not run: required irGSEA package absent in Wiki R libraries; no installation attempted."
+}

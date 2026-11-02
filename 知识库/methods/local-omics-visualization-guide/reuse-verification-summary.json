@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "verified_case_ids": [
+    "py-roc-render"
+  ],
+  "not_run_case_ids": [
+    "irgsea-heatmap",
+    "scp-cell-dim",
+    "scp-feature-dim",
+    "scp-feature-stat",
+    "scp-feature-heatmap",
+    "seurat-dim",
+    "seurat-feature",
+    "seurat-violin",
+    "seurat-dot",
+    "seurat-spatial-dim",
+    "seurat-spatial-feature",
+    "cellchat-circle",
+    "cellchat-bubble",
+    "cellchat-aggregate",
+    "cellchat-heatmap",
+    "cellchat-role-heatmap",
+    "cellchat-role-scatter"
+  ],
+  "scope": "Function code organization and bounded real-data software comparisons, not scientific acceptance or author approval.",
+  "rlang_probe_exit_code": 3221225477,
+  "python_missing_optional_or_workflow_packages": {
+    "skopt": true,
+    "torch": true,
+    "shap": true,
+    "xgboost": true,
+    "lightgbm": true,
+    "catboost": true
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "py-youden-threshold",
+  "state": "passed",
+  "scope": "Actual original/extracted equality and isolated copy, restricted to py-youden-threshold and the recorded real-data verification case. No full family, full model pipeline or scientific validity claim.",
+  "closure_hash": "f93814258ab938c41899ec948cb3bc2095cc576dfb53b2a264d291653cd7c598",
+  "files": {
+    "code/binary_evaluation.py": "0df12d832e15f5cf6d30ac1de9506ff6c4b4cfcb26a5f3ef1e3d312d863bd047"
+  },
+  "copied_files": [
+    "code/binary_evaluation.py"
+  ],
+  "command": "D:/anaconda/python.exe -X utf8 E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\validate_python_portable.py E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\isolated\\py-youden-threshold evaluation D:\\UC-20种修饰\\wiki-use\\_project\\reuse-verify-20261102\\portable\\py-youden-threshold",
+  "checks": [
+    "Original/extracted real-data comparison passed",
+    "Only declared closure files copied",
+    "New process without original source-code paths",
+    "Case outputs matched original reference",
+    "Input immutability checked where relevant"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00"
+}

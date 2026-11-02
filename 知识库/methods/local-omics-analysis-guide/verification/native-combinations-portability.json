@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-combinations",
+  "state": "passed",
+  "scope": "Actual original/extracted equality and isolated copy, restricted to native-combinations and the recorded real-data verification case. No full family, full model pipeline or scientific validity claim.",
+  "closure_hash": "7e8dc85ff8c401cab85cd3bdb670e9756df04937a8cf20bb7c87eed9c43be22a",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/b58e4cf990852463b55d3be33f0c389e0acf3365900a824863c9c69fce0e7e5b.R": "b58e4cf990852463b55d3be33f0c389e0acf3365900a824863c9c69fce0e7e5b",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [
+    "code/native.R",
+    "code/native/b58e4cf990852463b55d3be33f0c389e0acf3365900a824863c9c69fce0e7e5b.R",
+    "code/native_cases.R",
+    "code/registry.rds"
+  ],
+  "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\validate_r.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\native-combinations-portable-config.json",
+  "checks": [
+    "Original/extracted real-data comparison passed",
+    "Only declared closure files copied",
+    "New process without original source-code paths",
+    "Case outputs matched original reference",
+    "Input immutability checked where relevant"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00"
+}

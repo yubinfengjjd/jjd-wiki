@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-score-dot",
+  "state": "not_run",
+  "scope": "could not find function \"ggplot\"; graphics process additionally exited with access violation -1073741819, independently reproduced by loading rlang alone.",
+  "closure_hash": "7693b8d066bba1fd011daf95204e24ccde28911f9edfbef7dd4b6d91b96bb3e0",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087.R": "7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00",
+  "not_run_reason": "could not find function \"ggplot\"; graphics process additionally exited with access violation -1073741819, independently reproduced by loading rlang alone."
+}

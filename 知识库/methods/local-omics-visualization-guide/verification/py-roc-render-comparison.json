@@ -1,0 +1,21 @@
+{
+  "case_id": "py-roc-render",
+  "original_reference": {
+    "passed": true,
+    "checks": [
+      "Original/extracted curve data equal",
+      "Original/extracted rendered RGBA pixels exactly equal"
+    ],
+    "input_sha256": "df4324dd4891208b875efc42f468d1ade638f2859a602f119c74cbce911c1cc0",
+    "output_sha256": "540ea65123907162c7e6d2cee8cc84fd1da875468a43a67a53a6a324eddd5398",
+    "scope": "Precomputed ROC from the real fixed held-out source data verification predictions; no model fitting or orientation inversion in rendering."
+  },
+  "isolated_result": {
+    "passed": true,
+    "checks": [
+      "exact PNG hash equality with original source rendering"
+    ],
+    "scope": "New process, isolated declared plotting code, real precomputed ROC inputs, original source code never read."
+  },
+  "no_family_wide_approval": true
+}

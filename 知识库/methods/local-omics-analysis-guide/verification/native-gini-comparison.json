@@ -1,0 +1,53 @@
+{
+  "case_id": "native-gini",
+  "original_reference": {
+    "state": "passed",
+    "checks": [
+      "Actual real-data function call",
+      "Original/extracted equality in reference phase",
+      "Input unchanged",
+      "Search/options restored"
+    ],
+    "output_hash": "7fe50a13dbbf4f1f02fe9141b8789646520247bef8b415a994942f848927b4ba",
+    "diagnostics": {
+      "function_id": "r-ddf2ce7f0734-16",
+      "source_sha256": "ddf2ce7f073403ee160debb1e4b681c7270685f94561061a31a0ad8ab190e535",
+      "resolved_symbols": [],
+      "loaded_namespaces": [],
+      "search_restored": true,
+      "options_restored": true,
+      "library_paths_restored": true,
+      "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+    }
+  },
+  "isolated_result": {
+    "mode": "portable",
+    "cases": {
+      "native-gini": {
+        "state": "passed",
+        "checks": [
+          "Actual real-data function call",
+          "Original/extracted equality in reference phase",
+          "Input unchanged",
+          "Search/options restored"
+        ],
+        "output_hash": "7fe50a13dbbf4f1f02fe9141b8789646520247bef8b415a994942f848927b4ba",
+        "diagnostics": {
+          "function_id": "r-ddf2ce7f0734-16",
+          "source_sha256": "ddf2ce7f073403ee160debb1e4b681c7270685f94561061a31a0ad8ab190e535",
+          "resolved_symbols": [],
+          "loaded_namespaces": [],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true,
+          "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+        }
+      }
+    },
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32"
+    }
+  },
+  "no_family_wide_approval": true
+}

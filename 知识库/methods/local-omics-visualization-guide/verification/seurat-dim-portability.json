@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "seurat-dim",
+  "state": "not_run",
+  "scope": "Not run: Seurat object available, but the current dependency stack independently reproduces a rlang shutdown access violation; this native plot route is not validated.",
+  "closure_hash": "ce9d59cf6114cd851219e8022f64e019432d8634075e52ff7102080009e35ca9",
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00",
+  "not_run_reason": "Not run: Seurat object available, but the current dependency stack independently reproduces a rlang shutdown access violation; this native plot route is not validated."
+}

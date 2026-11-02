@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "source/ef96d9c63716cf5e54603d435c04ce5138a6556c4adae12c3e67338bd681f733.R",
+      "sha256": "ef96d9c63716cf5e54603d435c04ce5138a6556c4adae12c3e67338bd681f733",
+      "source_locations": [
+        "uc-ptm:1.数据预处理/数据预处理.R",
+        "uc-ptm:整理_1-20_code_pdf/1.数据预处理/code/数据预处理.R"
+      ]
+    },
+    {
+      "path": "source/ebd6631a7314f0636961f98c3c4fed58fd060ad4bb73ad438a582999e60b8c69.R",
+      "sha256": "ebd6631a7314f0636961f98c3c4fed58fd060ad4bb73ad438a582999e60b8c69",
+      "source_locations": [
+        "uc-ptm:11.表达差异图与基因ROC/diif_boxplot and ROC.R",
+        "uc-ptm:整理_1-20_code_pdf/11.表达差异图与基因ROC/code/diif_boxplot and ROC.R"
+      ]
+    },
+    {
+      "path": "source/97960590b2047c01a2771e03fff50187dbc64151435d0fadc66a075051a40685.R",
+      "sha256": "97960590b2047c01a2771e03fff50187dbc64151435d0fadc66a075051a40685",
+      "source_locations": [
+        "uc-ptm:12.免疫浸润/1.R"
+      ]
+    },
+    {
+      "path": "source/7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087.R",
+      "sha256": "7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087",
+      "source_locations": [
+        "uc-ptm:16.20种修饰量化/1.R",
+        "uc-ptm:整理_1-20_code_pdf/16.20种修饰量化/code/1.R",
+        "asthma-lactylation:4.乳酸化评分/dotplot.R"
+      ]
+    },
+    {
+      "path": "source/e61811aa608f150f52eb8997bb9def23e68ad759b0741362ffb7fcbff6b4d0cb.R",
+      "sha256": "e61811aa608f150f52eb8997bb9def23e68ad759b0741362ffb7fcbff6b4d0cb",
+      "source_locations": [
+        "uc-ptm:16.20种修饰量化/SCORE.R"
+      ]
+    },
+    {
+      "path": "source/647344df9ae20d03de42cd23490066f9b8d7f43533f8d3f4236fed686aeb8565.R",
+      "sha256": "647344df9ae20d03de42cd23490066f9b8d7f43533f8d3f4236fed686aeb8565",
+      "source_locations": [
+        "uc-ptm:17.基因功能探究/1.R",
+        "uc-ptm:整理_1-20_code_pdf/17.基因功能探究/code/1.R"
+      ]
+    },
+    {
+      "path": "source/6c6244b751aad686d272494cf3d4847dcd2458441d164f27a4a2915b10e5c5f2.R",
+      "sha256": "6c6244b751aad686d272494cf3d4847dcd2458441d164f27a4a2915b10e5c5f2",
+      "source_locations": [
+        "uc-ptm:18.拟时序分析/1.R"
+      ]
+    },
+    {
+      "path": "source/dd56ed170e8f105ac089c7a203a164c8117ec35a3235bad12e6a1f5db5459886.R",
+      "sha256": "dd56ed170e8f105ac089c7a203a164c8117ec35a3235bad12e6a1f5db5459886",
+      "source_locations": [
+        "uc-ptm:19.细胞通讯/1.R"
+      ]
+    },
+    {
+      "path": "source/3159ac3f7a9e2666428530e87966107e1a4a27810d4f210a4de495b0980c9020.R",
+      "sha256": "3159ac3f7a9e2666428530e87966107e1a4a27810d4f210a4de495b0980c9020",
+      "source_locations": [
+        "uc-ptm:2.20种修饰一致性聚类/Consensus.R",
+        "uc-ptm:整理_1-20_code_pdf/2.20种修饰一致性聚类/code/Consensus.R"
+      ]
+    },
+    {
+      "path": "source/fd19a47de12bfabe62ce07a7e59e214b418510ab2c075a474411cb5bd4d708dd.R",
+      "sha256": "fd19a47de12bfabe62ce07a7e59e214b418510ab2c075a474411cb5bd4d708dd",
+      "source_locations": [
+        "uc-ptm:20.空间转录组/spatial基本流程.R"
+      ]
+    },
+    {
+      "path": "source/9adf96e79f647b60212dc92c28ae648efa1e9ec637e1e30f45d55eefc95914fd.R",
+      "sha256": "9adf96e79f647b60212dc92c28ae648efa1e9ec637e1e30f45d55eefc95914fd",
+      "source_locations": [
+        "uc-ptm:20.空间转录组/空转评分.R"
+      ]
+    },
+    {
+      "path": "source/a16f046d5be9164a5a05e432bae4830d5deeaadfee085ec33403ab62b89b4d98.R",
+      "sha256": "a16f046d5be9164a5a05e432bae4830d5deeaadfee085ec33403ab62b89b4d98",
+      "source_locations": [
+        "uc-ptm:20.空间转录组/scripts/Phase2_1_neighborhood_analysis.R"
+      ]
+    },
+    {
+      "path": "source/cd280e644806d55991205f69736eea959faddb849c118ff860e3e069ad3b28e4.R",
+      "sha256": "cd280e644806d55991205f69736eea959faddb849c118ff860e3e069ad3b28e4",
+      "source_locations": [
+        "uc-ptm:20.空间转录组/scripts/Phase2_2_spatial_LR.R"
+      ]
+    },
+    {
+      "path": "source/c72fc5dc9f0235649abaa796d48c98b15fd8316604b840aed9d5707dd9e79ce7.R",
+      "sha256": "c72fc5dc9f0235649abaa796d48c98b15fd8316604b840aed9d5707dd9e79ce7",
+      "source_locations": [
+        "uc-ptm:20.空间转录组/scripts/Phase2_3_cell2location_validation.R"
+      ]
+    },
+    {
+      "path": "source/3efeda7bbe142bd6370000cb74d3db9a5b848306d2d0bb5b6d8fd6779732c8b4.R",
+      "sha256": "3efeda7bbe142bd6370000cb74d3db9a5b848306d2d0bb5b6d8fd6779732c8b4",
+      "source_locations": [
+        "uc-ptm:4.WGCNA/WGCNA.R",
+        "uc-ptm:整理_1-20_code_pdf/4.WGCNA/code/WGCNA.R"
+      ]
+    },
+    {
+      "path": "source/f7c52e80fef04fd08ef0ce6555c54434146ec14e4b1b8423e52111822bc6ff91.R",
+      "sha256": "f7c52e80fef04fd08ef0ce6555c54434146ec14e4b1b8423e52111822bc6ff91",
+      "source_locations": [
+        "uc-ptm:6.GMM-LR/GMM-LR.R",
+        "uc-ptm:整理_1-20_code_pdf/6.GMM-LR/code/GMM-LR.R"
+      ]
+    },
+    {
+      "path": "source/51aa046419492b5eb05a237ec50014619bc930e860049d48f9e50ba3c36fdeb3.R",
+      "sha256": "51aa046419492b5eb05a237ec50014619bc930e860049d48f9e50ba3c36fdeb3",
+      "source_locations": [
+        "uc-ptm:6.GMM-LR/GMM-LR_cv.R",
+        "uc-ptm:整理_1-20_code_pdf/6.GMM-LR/code/GMM-LR_cv.R"
+      ]
+    },
+    {
+      "path": "source/8aeb9c0e3a68df2c2e3042a7912b5fce0d4f7892bf3c76d5c8bd74a3d339d111.R",
+      "sha256": "8aeb9c0e3a68df2c2e3042a7912b5fce0d4f7892bf3c76d5c8bd74a3d339d111",
+      "source_locations": [
+        "uc-ptm:9.PTMD评分/PTMDs.R",
+        "uc-ptm:整理_1-20_code_pdf/9.PTMD评分/code/PTMDs.R"
+      ]
+    },
+    {
+      "path": "source/2bc90447917b4fa158c226d2581a90238d7c48277ed3c87238f05dd516d7a572.R",
+      "sha256": "2bc90447917b4fa158c226d2581a90238d7c48277ed3c87238f05dd516d7a572",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/16.20种修饰量化/code/SCORE.R"
+      ]
+    },
+    {
+      "path": "source/9673ef920ff925fc8e2575567738409e5b65183184063462fd3592cf8e72b38b.R",
+      "sha256": "9673ef920ff925fc8e2575567738409e5b65183184063462fd3592cf8e72b38b",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/17.基因功能探究/code/run_scTenifoldKnk_epithelial.R"
+      ]
+    },
+    {
+      "path": "source/492c14b913da307838eafbf3564c63bd205208871cffe4a61cf9afbd914ac330.R",
+      "sha256": "492c14b913da307838eafbf3564c63bd205208871cffe4a61cf9afbd914ac330",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/18.拟时序分析/code/1.R"
+      ]
+    },
+    {
+      "path": "source/e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee.R",
+      "sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/18.拟时序分析/code/DynamicPlot.R",
+        "asthma-lactylation:16.细胞轨迹/DynamicPlot.R"
+      ]
+    },
+    {
+      "path": "source/34d6457e48b8f2878a67703b97b367badd5052c777bef0df31cf51464c2738b3.R",
+      "sha256": "34d6457e48b8f2878a67703b97b367badd5052c777bef0df31cf51464c2738b3",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/19.细胞通讯/code/1.R"
+      ]
+    },
+    {
+      "path": "source/2de2b8273add8a80d6368bd122bb49708e0d2a43d002ebf10019d18d3b32aa17.R",
+      "sha256": "2de2b8273add8a80d6368bd122bb49708e0d2a43d002ebf10019d18d3b32aa17",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/10.paper_ready/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/11.audit_and_manifest/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/2.preprocess_and_reference/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/4.svg_spatial/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/5.bayesspace_domain/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/6.ube2l6_binary/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/7.neighborhood_celltype/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/8.ptm_isgylation/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.10.celltrek_storyline/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.11.cellchat_ube2l6_comparison/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.superres_lr_cellchat/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/helpers/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/plot_helpers.R"
+      ]
+    },
+    {
+      "path": "source/a9eb819f531a31591526b218dba22932d728b492b76f79cd25138e43eff3b49b.R",
+      "sha256": "a9eb819f531a31591526b218dba22932d728b492b76f79cd25138e43eff3b49b",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/10.paper_ready/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/11.audit_and_manifest/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/2.preprocess_and_reference/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/4.svg_spatial/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/5.bayesspace_domain/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/6.ube2l6_binary/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/7.neighborhood_celltype/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/8.ptm_isgylation/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.10.celltrek_storyline/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.11.cellchat_ube2l6_comparison/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.superres_lr_cellchat/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/helpers/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/workflow_helpers.R"
+      ]
+    },
+    {
+      "path": "source/664574f6537bd5ca23db7e64c6a6103eb5f31ae109871d7a7a0ff8f71eae40c9.R",
+      "sha256": "664574f6537bd5ca23db7e64c6a6103eb5f31ae109871d7a7a0ff8f71eae40c9",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/1.raw_qc/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/3.rctd_deconvolution/code/plot_helpers.R"
+      ]
+    },
+    {
+      "path": "source/3ab9b7bf547a1a306dbd984af629046a86781f751442c9f5379070e6fa493de1.R",
+      "sha256": "3ab9b7bf547a1a306dbd984af629046a86781f751442c9f5379070e6fa493de1",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/1.raw_qc/code/workflow_helpers.R"
+      ]
+    },
+    {
+      "path": "source/780eb1e9e0a8713f18865807e1261fb8f80e02647356ed3e3eefbdf94cab6c41.R",
+      "sha256": "780eb1e9e0a8713f18865807e1261fb8f80e02647356ed3e3eefbdf94cab6c41",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/3.rctd_deconvolution/code/workflow_helpers.R"
+      ]
+    },
+    {
+      "path": "source/ddf2ce7f073403ee160debb1e4b681c7270685f94561061a31a0ad8ab190e535.R",
+      "sha256": "ddf2ce7f073403ee160debb1e4b681c7270685f94561061a31a0ad8ab190e535",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/4.svg_spatial/code/4.00_svg_spatial.R"
+      ]
+    },
+    {
+      "path": "source/943a64ce5f95e4d159e954340330a96d08274abf34240c91e931e84800903594.R",
+      "sha256": "943a64ce5f95e4d159e954340330a96d08274abf34240c91e931e84800903594",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/5.bayesspace_domain/code/5.00_bayesspace_domain.R"
+      ]
+    },
+    {
+      "path": "source/330b11861653e8cfa96d3e9e3a489af5553b1ca131203dc0cc59a0be52a101f9.R",
+      "sha256": "330b11861653e8cfa96d3e9e3a489af5553b1ca131203dc0cc59a0be52a101f9",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/6.ube2l6_binary/code/6.00_ube2l6_binary.R"
+      ]
+    },
+    {
+      "path": "source/afcc9dd10f38e646a85bab40336d6acff7355bda4f9db87d6947a07d6c1813be.R",
+      "sha256": "afcc9dd10f38e646a85bab40336d6acff7355bda4f9db87d6947a07d6c1813be",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/7.neighborhood_celltype/code/7.00_neighborhood_celltype.R"
+      ]
+    },
+    {
+      "path": "source/9b695dea7a0a324b70d1086e3e99daebadf973500568e73fa28b21197c5ae317.R",
+      "sha256": "9b695dea7a0a324b70d1086e3e99daebadf973500568e73fa28b21197c5ae317",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/helpers/pipeline_core.R"
+      ]
+    },
+    {
+      "path": "source/02e8f690bdf62e9da448c7ed6d3a857d3c117dbd1a4f20b3d7f6c3c3caae80b3.R",
+      "sha256": "02e8f690bdf62e9da448c7ed6d3a857d3c117dbd1a4f20b3d7f6c3c3caae80b3",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.20_cellchat_rctd_spot.R"
+      ]
+    },
+    {
+      "path": "source/45c23b076bf9d0c7c6fd96170f1039b908d8126e24cbfab8b171a5e4f231934b.R",
+      "sha256": "45c23b076bf9d0c7c6fd96170f1039b908d8126e24cbfab8b171a5e4f231934b",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.21_spatial_comm_premium.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/9.21_spatial_comm_premium.R"
+      ]
+    },
+    {
+      "path": "source/6df3062c85ce8335e3a7f1e60594579fe19996ca6af568a771351a1ffeb4e76f.R",
+      "sha256": "6df3062c85ce8335e3a7f1e60594579fe19996ca6af568a771351a1ffeb4e76f",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.22_spatial_comm_enhanced.R"
+      ]
+    },
+    {
+      "path": "source/26d7ce3f5b332cef209faf489af2f056cfd19c9d542120d9c0546b0003eebc5d.R",
+      "sha256": "26d7ce3f5b332cef209faf489af2f056cfd19c9d542120d9c0546b0003eebc5d",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.23_uc_spatial_comm_polish.R"
+      ]
+    },
+    {
+      "path": "source/eacfd9a2bac5017dc15abd6cb25ca87ecd914cb5731466025403f5dae096c6b2.R",
+      "sha256": "eacfd9a2bac5017dc15abd6cb25ca87ecd914cb5731466025403f5dae096c6b2",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.24_uc_pathway_samplewise.R"
+      ]
+    },
+    {
+      "path": "source/31800c3b8768ea2d275d1bd500301bfa34fdb66556fb502ecf906f702e4c0b16.R",
+      "sha256": "31800c3b8768ea2d275d1bd500301bfa34fdb66556fb502ecf906f702e4c0b16",
+      "source_locations": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.25_uc_epithelial_polish.R"
+      ]
+    },
+    {
+      "path": "source/328c9d2945b7934fcf90f0ac7be6dd105cc9939557f000a9304d21ce56ecd17e.R",
+      "sha256": "328c9d2945b7934fcf90f0ac7be6dd105cc9939557f000a9304d21ce56ecd17e",
+      "source_locations": [
+        "asthma-lactylation:10.MBDs评分/1.R"
+      ]
+    },
+    {
+      "path": "source/f67d124b17dc072240d68c92bf8d30f96d383c45a7f20af159e5a586e7bfb057.R",
+      "sha256": "f67d124b17dc072240d68c92bf8d30f96d383c45a7f20af159e5a586e7bfb057",
+      "source_locations": [
+        "asthma-lactylation:10.MBDs评分/LMBDs.R"
+      ]
+    },
+    {
+      "path": "source/8aee05456a5f7eed7dddaa79c94736d1543895fce70526646a2cbb60bce4cdbe.R",
+      "sha256": "8aee05456a5f7eed7dddaa79c94736d1543895fce70526646a2cbb60bce4cdbe",
+      "source_locations": [
+        "asthma-lactylation:12.箱式图/1.R"
+      ]
+    },
+    {
+      "path": "source/02d99c900a62e2d384138bec102d564a312c7673613ef937a2dd5fc9554df3ab.R",
+      "sha256": "02d99c900a62e2d384138bec102d564a312c7673613ef937a2dd5fc9554df3ab",
+      "source_locations": [
+        "asthma-lactylation:13.114种代谢通路的量化/1.R"
+      ]
+    },
+    {
+      "path": "source/deb05815ff7024235c4f58d617875a399b01470ebf70e662d0044161d24568a2.R",
+      "sha256": "deb05815ff7024235c4f58d617875a399b01470ebf70e662d0044161d24568a2",
+      "source_locations": [
+        "asthma-lactylation:14.细胞通讯/1.R"
+      ]
+    },
+    {
+      "path": "source/59d6d74cb5de9434637d23ed09bfe1b013b1d35b204a194889b50af2c78d85a6.R",
+      "sha256": "59d6d74cb5de9434637d23ed09bfe1b013b1d35b204a194889b50af2c78d85a6",
+      "source_locations": [
+        "asthma-lactylation:16.细胞轨迹/1.R"
+      ]
+    },
+    {
+      "path": "source/7281422c5359c525e96d8e1163bffee5bb4be1a704bfc769dbe8623686ecc49d.R",
+      "sha256": "7281422c5359c525e96d8e1163bffee5bb4be1a704bfc769dbe8623686ecc49d",
+      "source_locations": [
+        "asthma-lactylation:17.RCC2基因功能探究/1.R"
+      ]
+    },
+    {
+      "path": "source/dab47ef3a8aefaec9270660cccf07ac8774f3a262dd50eba7d37a21381ac868b.R",
+      "sha256": "dab47ef3a8aefaec9270660cccf07ac8774f3a262dd50eba7d37a21381ac868b",
+      "source_locations": [
+        "asthma-lactylation:17.RCC2基因功能探究/2.R"
+      ]
+    },
+    {
+      "path": "source/31e381e45fa4341c79c242e4c8d181a33fbb5e560da54be402f157aabef6e3b0.R",
+      "sha256": "31e381e45fa4341c79c242e4c8d181a33fbb5e560da54be402f157aabef6e3b0",
+      "source_locations": [
+        "asthma-lactylation:3.单细胞注释/annotation.R"
+      ]
+    },
+    {
+      "path": "source/84e2b01073963921d6b96771aa27e104abba40b037b2273e8ba01d7b8b230678.R",
+      "sha256": "84e2b01073963921d6b96771aa27e104abba40b037b2273e8ba01d7b8b230678",
+      "source_locations": [
+        "asthma-lactylation:4.乳酸化评分/lactylation.R"
+      ]
+    },
+    {
+      "path": "source/a5d45cb40ee3ae2161c5281c1383327f433fb2ba14c9017c27d69362d76ccb5e.R",
+      "sha256": "a5d45cb40ee3ae2161c5281c1383327f433fb2ba14c9017c27d69362d76ccb5e",
+      "source_locations": [
+        "asthma-lactylation:5.hdWGCNA/hdwgcna.R"
+      ]
+    },
+    {
+      "path": "source/ad014c13d9eae269a954df043f5b256e30c032b92049f2b84f29e2169f190daf.R",
+      "sha256": "ad014c13d9eae269a954df043f5b256e30c032b92049f2b84f29e2169f190daf",
+      "source_locations": [
+        "asthma-lactylation:6.2.Degs与cor/cor.R"
+      ]
+    },
+    {
+      "path": "source/038860bb7e101a74f2e267b3b7f332474b5542e9ffa42f658d6e6e98524b2a8a.R",
+      "sha256": "038860bb7e101a74f2e267b3b7f332474b5542e9ffa42f658d6e6e98524b2a8a",
+      "source_locations": [
+        "asthma-lactylation:6.一致性聚类/consensus.R"
+      ]
+    },
+    {
+      "path": "source/d5b8d5949a0404a7afcc19985bf0b48ae063e4dff1dab03bbb09c1b20b7bb234.R",
+      "sha256": "d5b8d5949a0404a7afcc19985bf0b48ae063e4dff1dab03bbb09c1b20b7bb234",
+      "source_locations": [
+        "asthma-lactylation:8.百种机器学习/refer.ML.R",
+        "asthma-lactylation:8.百种机器学习/15.ML/refer.ML.R"
+      ]
+    },
+    {
+      "path": "source/685dc5d707e671c223d2bbd94b3ca6904ca420419e874f538ddf5a3197d36237.R",
+      "sha256": "685dc5d707e671c223d2bbd94b3ca6904ca420419e874f538ddf5a3197d36237",
+      "source_locations": [
+        "asthma-lactylation:8.百种机器学习/15.ML/1.R"
+      ]
+    },
+    {
+      "path": "source/777e6928349004405263ab2f3c3698b05f5531cd5d8ce25cee366fde285bc6d8.R",
+      "sha256": "777e6928349004405263ab2f3c3698b05f5531cd5d8ce25cee366fde285bc6d8",
+      "source_locations": [
+        "asthma-lactylation:8.百种机器学习/混淆矩阵/geoML17.CM.R"
+      ]
+    },
+    {
+      "path": "source/ef98fdb7ed62b59909e0e0540947468d9bed6fde0706fdc21113ad60b97620cc.R",
+      "sha256": "ef98fdb7ed62b59909e0e0540947468d9bed6fde0706fdc21113ad60b97620cc",
+      "source_locations": [
+        "asthma-lactylation:9.GMM与LR/GMM-LR.R"
+      ]
+    },
+    {
+      "path": "source/ef762e925cbeb32d268e446c7b4469552f6aba01e8c874b4a5c6ac3ab8c785a2.R",
+      "sha256": "ef762e925cbeb32d268e446c7b4469552f6aba01e8c874b4a5c6ac3ab8c785a2",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/02_single_cell/02_cell_annotation/singleR_annotation_and_markers.R"
+      ]
+    },
+    {
+      "path": "source/3e75bd4e73affb0807572178996b6c9f21735f8eb8f75151a1ae6500ab707a0f.R",
+      "sha256": "3e75bd4e73affb0807572178996b6c9f21735f8eb8f75151a1ae6500ab707a0f",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/03_lactylation/01_pathway_scoring/lactylation_pathway_scoring.R"
+      ]
+    },
+    {
+      "path": "source/357ed5380145c165521c5d051a226e69c38c6902dc59e3c459d305105f0dbbe7.R",
+      "sha256": "357ed5380145c165521c5d051a226e69c38c6902dc59e3c459d305105f0dbbe7",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/04_hdwgcna/hdwgcna_mono_mac_network.R"
+      ]
+    },
+    {
+      "path": "source/06a51f1b1b2efbead3f02d7ee580c27baf5b2bdc4f646be99bedc57129fd537f.R",
+      "sha256": "06a51f1b1b2efbead3f02d7ee580c27baf5b2bdc4f646be99bedc57129fd537f",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/05_consensus_clustering/consensus_clustering_metabolic_signatures.R"
+      ]
+    },
+    {
+      "path": "source/b3924fcc5523483601eddda4f9639403d991f5814890afd6c4783bf7d4bc3c66.R",
+      "sha256": "b3924fcc5523483601eddda4f9639403d991f5814890afd6c4783bf7d4bc3c66",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/06_degs_and_cor/degs_and_correlation_analysis.R"
+      ]
+    },
+    {
+      "path": "source/86a30d932eca35aae4a34b3e4853c327c0cec1b22d82122b70cce843555ed082.R",
+      "sha256": "86a30d932eca35aae4a34b3e4853c327c0cec1b22d82122b70cce843555ed082",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/07_machine_learning/02_benchmark/refer.ML.R"
+      ]
+    },
+    {
+      "path": "source/92d13dbd3d18606fe0df56d9a896f3a87f957418d2f2b2d637cdc1d8a55cb105.R",
+      "sha256": "92d13dbd3d18606fe0df56d9a896f3a87f957418d2f2b2d637cdc1d8a55cb105",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/07_machine_learning/02_benchmark/refer2.ML.R"
+      ]
+    },
+    {
+      "path": "source/701cd72eff7a8c54f9f15fdc70a03ef451aad4142d5ac86cee198a62a357a455.R",
+      "sha256": "701cd72eff7a8c54f9f15fdc70a03ef451aad4142d5ac86cee198a62a357a455",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/07_machine_learning/02_benchmark/run_ml_benchmark_113_combinations.R"
+      ]
+    },
+    {
+      "path": "source/cdd061086ddb5e417944773d0211ebd3b4fb7ff2b68c83003bde2937f9a5df42.R",
+      "sha256": "cdd061086ddb5e417944773d0211ebd3b4fb7ff2b68c83003bde2937f9a5df42",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/07_machine_learning/04_evaluation/geoML17.CM.R"
+      ]
+    },
+    {
+      "path": "source/f01b2d6e566462ef6b8f6efce5afb2a5ece38decb575626a845a0ccc2c5bafe6.R",
+      "sha256": "f01b2d6e566462ef6b8f6efce5afb2a5ece38decb575626a845a0ccc2c5bafe6",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/08_final_model_gmm_lr/GMM_LR_final_model.R"
+      ]
+    },
+    {
+      "path": "source/58d3e9391655e4227f376fba8583cae951ed6a7735923702a2f38709cdfd3941.R",
+      "sha256": "58d3e9391655e4227f376fba8583cae951ed6a7735923702a2f38709cdfd3941",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/09_mbds_scoring/LMBDs_scoring.R"
+      ]
+    },
+    {
+      "path": "source/53fa298a25c740a0d5054d1a683f83daa4bba9783b43a82190a12351272da123.R",
+      "sha256": "53fa298a25c740a0d5054d1a683f83daa4bba9783b43a82190a12351272da123",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/09_mbds_scoring/mbds_scoring_analysis.R"
+      ]
+    },
+    {
+      "path": "source/cca5c732b1ba23efbf8e0834a15407c72107fa5f019bf0b225927469d0d958d1.R",
+      "sha256": "cca5c732b1ba23efbf8e0834a15407c72107fa5f019bf0b225927469d0d958d1",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/10_pathway_quantification/quantify_metabolic_pathway_scores.R"
+      ]
+    },
+    {
+      "path": "source/6f75a37edaae8c515759efc3c97b031c6a823bb0a7da0c93514560237b674a2b.R",
+      "sha256": "6f75a37edaae8c515759efc3c97b031c6a823bb0a7da0c93514560237b674a2b",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/11_cellchat/cellchat_retinoic_acid_high_low_analysis.R"
+      ]
+    },
+    {
+      "path": "source/32a2e23964d168c5369b3c40ea98646dc1ff4322fdacb33d5ab8a3362c4f1a13.R",
+      "sha256": "32a2e23964d168c5369b3c40ea98646dc1ff4322fdacb33d5ab8a3362c4f1a13",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/12_trajectory/DynamicPlot.R"
+      ]
+    },
+    {
+      "path": "source/ad3d4622cddbe78d66f6dd41bfb4a3e657d11197900dd4b1ff25b6c9a0ffa004.R",
+      "sha256": "ad3d4622cddbe78d66f6dd41bfb4a3e657d11197900dd4b1ff25b6c9a0ffa004",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/12_trajectory/epithelial_pseudotime_monocle2_analysis.R"
+      ]
+    },
+    {
+      "path": "source/083551628eb65a4ed83b47c2acae305afd4ae99de0e657fc841291684f057087.R",
+      "sha256": "083551628eb65a4ed83b47c2acae305afd4ae99de0e657fc841291684f057087",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/12_trajectory/trajectory_aec_monocle2_analysis.R"
+      ]
+    },
+    {
+      "path": "source/2efb812ac3d44ca2282f73379003d3af73dceeacf045d36b481a12611461c637.R",
+      "sha256": "2efb812ac3d44ca2282f73379003d3af73dceeacf045d36b481a12611461c637",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/13_rcc2_function/rcc2_expression_group_comparison.R"
+      ]
+    },
+    {
+      "path": "source/2825928ceacf980545629af97176892e6df7c11a4eacbe7815e9cacaabeeb0bb.R",
+      "sha256": "2825928ceacf980545629af97176892e6df7c11a4eacbe7815e9cacaabeeb0bb",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/13_rcc2_function/rcc2_gsea_and_correlation.R"
+      ]
+    },
+    {
+      "path": "source/036a124155195a1de35ad9483e8324bd0bbc18e301dc94cb48c8474e984916b8.R",
+      "sha256": "036a124155195a1de35ad9483e8324bd0bbc18e301dc94cb48c8474e984916b8",
+      "source_locations": [
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/99_figures/plot_gene_expression_violin_boxplots.R"
+      ]
+    },
+    {
+      "path": "source/6314427baed837e596fe507901abc8d4f10ce82d10074df5002cf58c1e58b780.R",
+      "sha256": "6314427baed837e596fe507901abc8d4f10ce82d10074df5002cf58c1e58b780",
+      "source_locations": [
+        "asthma-lactylation:代谢组学/metabolism.R"
+      ]
+    }
+  ],
+  "license": "Unresolved project and transitive licenses; raw source and derivatives ignored by Git."
+}

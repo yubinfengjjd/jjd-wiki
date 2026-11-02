@@ -17,31 +17,160 @@ cite:
   账本，快照 local-omics-2026-11-02；编译说明不替代上游作者和各软件许可。
 favorite: false
 method_kind: technical
-summary: 将 irGSEA、SCP、Seurat、CellChat 等直接出图区分为依赖调用，并单列带汇总或 GAM 重拟合的本地改造。
+summary: 保留原算法的原生函数、显式依赖调用与逐用例运行清单；知识分类、科学验证和独立迁移分别记录。
 keywords:
-- UC-20种修饰
-- 哮喘乳酸化单细胞开篇
-- irGSEA
-- irGSEA.score
-- irGSEA.integrate
-- irGSEA.heatmap
-- SCP
-- DynamicPlotMonocle2
-- DynamicPlot
-- DotPlotScores
-- CellDimPlot
-- FeatureDimPlot
-- GroupHeatmap
-- DynamicHeatmap
-- FeatureStatPlot
 - CellChat
-- netVisual_circle
-- SpatialFeaturePlot
-- 依赖原生绘图
+- CellDimPlot
+- DotPlotScores
+- DynamicHeatmap
+- DynamicPlot
+- DynamicPlotMonocle2
+- FeatureDimPlot
+- FeatureStatPlot
 - GAM
+- GroupHeatmap
+- SCP
+- SpatialFeaturePlot
+- UC-20种修饰
+- irGSEA
+- irGSEA.heatmap
+- irGSEA.integrate
+- irGSEA.score
+- netVisual_circle
+- render_roc_curves
+- run_omics_dependency_plot
+- 依赖原生绘图
+- 哮喘乳酸化单细胞开篇
 data_contract:
-  input: 来源脚本、静态调用、对象/表结构与来源版本；数据和图片留在课题目录。
-  output: 来源去重、规范方法映射、依赖绘图/自定义实现与工作流导航；不提供已验证可执行实现。
+  input: 原函数显式 arguments/bindings、真实 Seurat/结果对象，或上游预计算曲线与 AUC；文件/输出目录由调用者给定。
+  output: 原生计算/绘图值和诊断，或明确阶段的原生工作流；各实现仅以自己的当前收据授予运行证据。
+implementations:
+- id: py-roc-render
+  title: 消费预计算结果的多队列曲线绘图
+  language: Python
+  entrypoint: code/roc_render.py:render_roc_curves
+  dependencies:
+  - matplotlib
+  verification: verification/py-roc-render-algorithm.json
+- id: irgsea-heatmap
+  title: 依赖原生绘图 irgsea_heatmap
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - irGSEA
+  verification: verification/irgsea-heatmap-algorithm.json
+- id: scp-cell-dim
+  title: 依赖原生绘图 scp_cell_dim
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - SCP
+  verification: verification/scp-cell-dim-algorithm.json
+- id: scp-feature-dim
+  title: 依赖原生绘图 scp_feature_dim
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - SCP
+  verification: verification/scp-feature-dim-algorithm.json
+- id: scp-feature-stat
+  title: 依赖原生绘图 scp_feature_stat
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - SCP
+  verification: verification/scp-feature-stat-algorithm.json
+- id: scp-feature-heatmap
+  title: 依赖原生绘图 scp_feature_heatmap
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - SCP
+  verification: verification/scp-feature-heatmap-algorithm.json
+- id: seurat-dim
+  title: 依赖原生绘图 seurat_dim
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - Seurat
+  verification: verification/seurat-dim-algorithm.json
+- id: seurat-feature
+  title: 依赖原生绘图 seurat_feature
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - Seurat
+  verification: verification/seurat-feature-algorithm.json
+- id: seurat-violin
+  title: 依赖原生绘图 seurat_violin
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - Seurat
+  verification: verification/seurat-violin-algorithm.json
+- id: seurat-dot
+  title: 依赖原生绘图 seurat_dot
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - Seurat
+  verification: verification/seurat-dot-algorithm.json
+- id: seurat-spatial-dim
+  title: 依赖原生绘图 seurat_spatial_dim
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - Seurat
+  verification: verification/seurat-spatial-dim-algorithm.json
+- id: seurat-spatial-feature
+  title: 依赖原生绘图 seurat_spatial_feature
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - Seurat
+  verification: verification/seurat-spatial-feature-algorithm.json
+- id: cellchat-circle
+  title: 依赖原生绘图 cellchat_circle
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - CellChat
+  verification: verification/cellchat-circle-algorithm.json
+- id: cellchat-bubble
+  title: 依赖原生绘图 cellchat_bubble
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - CellChat
+  verification: verification/cellchat-bubble-algorithm.json
+- id: cellchat-aggregate
+  title: 依赖原生绘图 cellchat_aggregate
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - CellChat
+  verification: verification/cellchat-aggregate-algorithm.json
+- id: cellchat-heatmap
+  title: 依赖原生绘图 cellchat_heatmap
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - CellChat
+  verification: verification/cellchat-heatmap-algorithm.json
+- id: cellchat-role-heatmap
+  title: 依赖原生绘图 cellchat_role_heatmap
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - CellChat
+  verification: verification/cellchat-role-heatmap-algorithm.json
+- id: cellchat-role-scatter
+  title: 依赖原生绘图 cellchat_role_scatter
+  language: R
+  entrypoint: code/dependency_plot.R:run_omics_dependency_plot
+  dependencies:
+  - CellChat
+  verification: verification/cellchat-role-scatter-algorithm.json
 ---
 # 课题绘图依赖与自定义改造
 
@@ -54,7 +183,7 @@ data_contract:
 - 输出接口：未声明
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：无
+- 代码模板：[methods/local-omics-visualization-guide/code/dependency_plot.R](/files/wiki/methods/local-omics-visualization-guide/code/dependency_plot.R) · [methods/local-omics-visualization-guide/code/roc_render.py](/files/wiki/methods/local-omics-visualization-guide/code/roc_render.py)
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -70,7 +199,7 @@ data_contract:
 
 ## 不适用
 
-本批仅完成来源归档与知识编译；执行状态为 not_run。未安装依赖、未重跑课题分析、未提炼可执行 L2、未新增 ready，原图不作回放证据。 本页不是已验收的图模板画廊；未将课题 PDF/PNG 复制成 Wiki preview，也没有把原生图与本地改造混作同一实现。
+代码存在、成功 use、source 或 --help 均不授予科学或完整流程验证。只有各实现当前收据覆盖的用例有运行证据；其余为 not_run，页面保持 draft。禁止将少数用例通过扩展为整库、整个函数所有参数或真实课题有效性已验证。
 
 ## 输入
 
@@ -78,7 +207,7 @@ data_contract:
 
 ## 怎么做
 
-对照下表与 [call-sites.json](/files/wiki/methods/local-omics-visualization-guide/call-sites.json)，其每条保存源路径、SHA-256、函数和行号、角色及对象边界。相同内容的路径保留别名，不当不同图法；history 不进入默认复用。已有方法 find→show；确定实际课题再 use 对应已验证闭包。
+`rwiki use local-omics-visualization-guide --project <已存在课题目录>`。依赖原生图调用 `code/dependency_plot.R:run_omics_dependency_plot(branch, arguments)`，输入必须是原函数需要的 Seurat、CellChat 或 irGSEA 整合对象；参数直接转交。SCP 缺包时优先检查既有 scp-viz-* 的已提炼闭包，不能把那些收据授予本页原生包适配器。
 
 ## 绘图来源判定
 
@@ -109,11 +238,24 @@ irGSEA.integrate 的统计/秩整合不能记作热图换皮；五算法 rowSums
 
 ## 代码
 
-原脚本留来源原字节；本页无新绘图核心/闭包，也未先为未来需求提炼 L2。技术导航页不维护主 figure_relations，不反向宣称接口直连。
+R 依赖原生图：
+
+```r
+mod <- new.env(parent = baseenv())
+source(file.path(copy_dir, "code", "dependency_plot.R"), local = mod)
+p <- mod$run_omics_dependency_plot(
+  branch = "irgsea_heatmap",
+  arguments = list(object = actual_integrated_result, method = "RRA")
+)
+```
+
+Python `code/roc_render.py:render_roc_curves(curves, aucs, cohort_colors, title)` 消费上游给定的 FPR/TPR 和 AUC，返回 figure/axes，不拟合模型、不推断标签、不选择 ROC 方向、不自动保存。保留原 style_axes/draw_auc_strip 和构图行为；原脚本 main 的自动标签/方向推断没有混入绘图层。
+
+自定义 DynamicPlotMonocle2、DotPlotScores 等函数通过 [[methods/local-omics-analysis-guide]] 的精确原生函数入口复用；它们包含拟合或汇总，不归为纯依赖图，更不重新收成同义模板。
 
 ## 输出
 
-依赖原生绘图导航、项目改造候选与计算边界；不生成新图或预览。所有新增来源调用均 not_run。
+返回原函数值及必要诊断，或依赖原生绘图结果；Python ROC 返回 figure/axes。实际数据与成图由调用者留在课题目录。本页为 technical，不新增同义 analysis 家族或 L2 单 panel 模板。
 
 ## 知识关联检查
 
@@ -122,6 +264,16 @@ irGSEA.integrate 的统计/秩整合不能记作热图换皮；五算法 rowSums
 ## 使用记录
 
 2026-11-02：按作者要求完成依赖输出与本地改造分流；字节去重保留来源别名，不改作者图和脚本。
+
+## 代码复用层验证（2026-11-02）
+
+本页 18 个入口分支中，py-roc-render 已在真实预计算 ROC 输入上与原样式/构图的曲线数据、RGBA 像素逐项比较，并完成只复制声明文件后的异目录新进程 PNG 哈希一致验证。已目视检查本次用例图，标签/数值没有裁切；两版都保留 inset_axes/tight_layout 提示，这个用例的通过不代表任意版式或投稿质量验收。
+
+其余 17 个原生包绘图路由全部 not_run：irGSEA/SCP/CellChat 缺包，Seurat 路由受已复现的 rlang 退出崩溃环境限制。完整契约见 runtime.json，逐分支收据见 verification/，文件清单见 code-manifest.json；没有新建模板、layout 或 figure_relations 直连。
+
+## 本次复用整理记录
+
+作者明确要求继续代码复用层整理。补入可复制函数/适配器、闭包清单、逐文件去向和受限真实数据用例证据；没有安装包、修改原统计逻辑、合成科研数据或改变作者状态。`rwiki use` 已在独立目录实际执行，成功复制不授予全部依赖齐备或全部分支可运行。
 
 <!-- user:start -->
 <!-- user:end -->

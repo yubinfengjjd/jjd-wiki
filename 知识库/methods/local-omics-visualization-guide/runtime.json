@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "local-omics-visualization-guide",
+  "implementations": [
+    {
+      "id": "py-roc-render",
+      "title": "消费预计算结果的多队列曲线绘图",
+      "entry": "code/roc_render.py",
+      "entry_function": "render_roc_curves",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/roc_render.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "matplotlib"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "original style_axes/draw_auc_strip and plotting body; no estimation or score-direction selection"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/py-roc-render-portability.json"
+      }
+    },
+    {
+      "id": "irgsea-heatmap",
+      "title": "依赖原生绘图 irgsea_heatmap",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "irGSEA"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "irGSEA native plot; branch=irgsea_heatmap"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/irgsea-heatmap-portability.json"
+      }
+    },
+    {
+      "id": "scp-cell-dim",
+      "title": "依赖原生绘图 scp_cell_dim",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "SCP"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "SCP native plot; branch=scp_cell_dim"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-cell-dim-portability.json"
+      }
+    },
+    {
+      "id": "scp-feature-dim",
+      "title": "依赖原生绘图 scp_feature_dim",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "SCP"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "SCP native plot; branch=scp_feature_dim"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-feature-dim-portability.json"
+      }
+    },
+    {
+      "id": "scp-feature-stat",
+      "title": "依赖原生绘图 scp_feature_stat",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "SCP"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "SCP native plot; branch=scp_feature_stat"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-feature-stat-portability.json"
+      }
+    },
+    {
+      "id": "scp-feature-heatmap",
+      "title": "依赖原生绘图 scp_feature_heatmap",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "SCP"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "SCP native plot; branch=scp_feature_heatmap"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/scp-feature-heatmap-portability.json"
+      }
+    },
+    {
+      "id": "seurat-dim",
+      "title": "依赖原生绘图 seurat_dim",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "Seurat native plot; branch=seurat_dim"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-dim-portability.json"
+      }
+    },
+    {
+      "id": "seurat-feature",
+      "title": "依赖原生绘图 seurat_feature",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "Seurat native plot; branch=seurat_feature"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-feature-portability.json"
+      }
+    },
+    {
+      "id": "seurat-violin",
+      "title": "依赖原生绘图 seurat_violin",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "Seurat native plot; branch=seurat_violin"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-violin-portability.json"
+      }
+    },
+    {
+      "id": "seurat-dot",
+      "title": "依赖原生绘图 seurat_dot",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "Seurat native plot; branch=seurat_dot"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-dot-portability.json"
+      }
+    },
+    {
+      "id": "seurat-spatial-dim",
+      "title": "依赖原生绘图 seurat_spatial_dim",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "Seurat native plot; branch=seurat_spatial_dim"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-spatial-dim-portability.json"
+      }
+    },
+    {
+      "id": "seurat-spatial-feature",
+      "title": "依赖原生绘图 seurat_spatial_feature",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "Seurat native plot; branch=seurat_spatial_feature"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/seurat-spatial-feature-portability.json"
+      }
+    },
+    {
+      "id": "cellchat-circle",
+      "title": "依赖原生绘图 cellchat_circle",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "CellChat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "CellChat native plot; branch=cellchat_circle"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/cellchat-circle-portability.json"
+      }
+    },
+    {
+      "id": "cellchat-bubble",
+      "title": "依赖原生绘图 cellchat_bubble",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "CellChat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "CellChat native plot; branch=cellchat_bubble"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/cellchat-bubble-portability.json"
+      }
+    },
+    {
+      "id": "cellchat-aggregate",
+      "title": "依赖原生绘图 cellchat_aggregate",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "CellChat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "CellChat native plot; branch=cellchat_aggregate"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/cellchat-aggregate-portability.json"
+      }
+    },
+    {
+      "id": "cellchat-heatmap",
+      "title": "依赖原生绘图 cellchat_heatmap",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "CellChat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "CellChat native plot; branch=cellchat_heatmap"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/cellchat-heatmap-portability.json"
+      }
+    },
+    {
+      "id": "cellchat-role-heatmap",
+      "title": "依赖原生绘图 cellchat_role_heatmap",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "CellChat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "CellChat native plot; branch=cellchat_role_heatmap"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/cellchat-role-heatmap-portability.json"
+      }
+    },
+    {
+      "id": "cellchat-role-scatter",
+      "title": "依赖原生绘图 cellchat_role_scatter",
+      "entry": "code/dependency_plot.R",
+      "entry_function": "run_omics_dependency_plot",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dependency_plot.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "CellChat"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved project and transitive licenses; local code only",
+        "functions": [
+          "CellChat native plot; branch=cellchat_role_scatter"
+        ],
+        "modifications": [
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/cellchat-role-scatter-portability.json"
+      }
+    }
+  ]
+}

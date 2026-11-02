@@ -1,0 +1,26 @@
+{
+  "case_id": "py-get-proba",
+  "original_reference": {
+    "checks": [
+      "eval_binary: exact original/extracted equality",
+      "youden_threshold: exact original/extracted equality",
+      "bootstrap_ci_auc: exact original/extracted equality",
+      "compute_specificity: exact original/extracted equality",
+      "get_proba: exact original/extracted equality",
+      "input DataFrame unchanged"
+    ],
+    "scope": "Only py-get-proba of original evaluation functions; LR verification inputs do not validate original stacking/selection protocol."
+  },
+  "isolated_result": {
+    "passed": true,
+    "checks": [
+      "eval_binary",
+      "youden_threshold",
+      "bootstrap_ci_auc",
+      "compute_specificity",
+      "get_proba"
+    ],
+    "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+  },
+  "no_family_wide_approval": true
+}

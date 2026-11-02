@@ -64,7 +64,7 @@ UC 空间来源的分支导航，避免将结果打包目录、旧 branch 与最
 
 ## 不适用
 
-本批仅完成来源归档与知识编译；执行状态为 not_run。未安装依赖、未重跑课题分析、未提炼可执行 L2、未新增 ready，原图不作回放证据。 来源 README 称“final/complete”只记录来源整理决定，不证明当前可运行或科学有效。README 所指外部工作树不在本次指定目录，未擅自读取或认定当前存在。
+来源归档阶段只编译知识，整份来源脚本执行状态仍为 not_run。未安装依赖、未重跑课题分析、未提炼可执行 L2、未新增 ready，原图不作回放证据。 来源 README 称“final/complete”只记录来源整理决定，不证明当前可运行或科学有效。README 所指外部工作树不在本次指定目录，未擅自读取或认定当前存在。
 
 ## 输入
 
@@ -108,6 +108,10 @@ Seurat SpatialFeaturePlot/SpatialDimPlot、CellChat netVisual/netAnalysis 属依
 ## 使用记录
 
 2026-11-02：读取指定目录内代码与整理说明，编译分支与替代分析边界；未改原始材料、未安装或运行。
+
+## 代码复用层增量（2026-11-02）
+
+已有函数的独立加载、显式 arguments/bindings、去重代码、源码哈希和逐文件去向集中在 [[methods/local-omics-analysis-guide]]；依赖原生绘图和消费预计算结果的 ROC 绘图在 [[methods/local-omics-visualization-guide]]。请 use 对应代码页，不对本来源/流程页承诺 run/render。532 处函数定义中 448 处可选取，84 处有安装、清理、路径/工作树或连带闭包缺口而隔离。10 个具体用例通过原版对照及异目录验证，其余保留 not_run；整份源码、整个课题流程与科学有效性不随之提升。此前“无 code/、未提炼”的说明描述来源归档阶段，本次代码资产集中在上述两页，未复制数据与原图进 Wiki。
 
 <!-- user:start -->
 <!-- user:end -->

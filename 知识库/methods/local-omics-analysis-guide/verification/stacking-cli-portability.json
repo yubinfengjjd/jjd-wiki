@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "stacking-cli",
+  "state": "not_run",
+  "scope": "Not run: scikit-optimize absent; --help loaded successfully only. Full training, model selection, split independence and explainability were not validated.",
+  "closure_hash": "dd0e256ddb22de6cfd35e4a76d12ba27f3eced61e1e94ae55d58581c71407c1e",
+  "files": {
+    "code/stacking_original.py": "897ad6da08a5d2f8446a3dafa75b785bd19b687d20882888618fa423a8b97659",
+    "code/stacking_runner.py": "2aa4b14ee56cb6ef2837b652cf12ded2c6c668f6396708ac22c3ac5c7fff3fa6"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00",
+  "not_run_reason": "Not run: scikit-optimize absent; --help loaded successfully only. Full training, model selection, split independence and explainability were not validated."
+}

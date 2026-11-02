@@ -98,3 +98,9 @@
 /templates/figureya-6rhrsv2--forest/code/
 /templates/figureya-6rhrsv2--forest/example/
 # <<< push-guard gpl
+
+# Local author-project code: unresolved transitive licenses, keep source and derivatives local.
+/methods/local-omics-analysis-guide/source/
+/methods/local-omics-analysis-guide/code/
+/methods/local-omics-visualization-guide/source/
+/methods/local-omics-visualization-guide/code/

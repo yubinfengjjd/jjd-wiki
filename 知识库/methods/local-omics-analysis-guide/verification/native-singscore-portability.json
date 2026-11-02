@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-singscore",
+  "state": "not_run",
+  "scope": "Not run: singscore is absent; source assay=null default and signature-direction handling were preserved, not repaired.",
+  "closure_hash": "47531dccc005546bf9c11cea80cca6a9e12276efbd695a7b2e0d8ae652d88541",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/4e5f105c8515f60f812546f2e50725a042a811b8f57b4f8cea0484ecceb2b2e8.R": "4e5f105c8515f60f812546f2e50725a042a811b8f57b4f8cea0484ecceb2b2e8",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00",
+  "not_run_reason": "Not run: singscore is absent; source assay=null default and signature-direction handling were preserved, not repaired."
+}

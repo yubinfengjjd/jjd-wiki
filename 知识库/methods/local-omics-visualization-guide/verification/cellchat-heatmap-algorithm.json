@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "implementation": "cellchat-heatmap",
+  "state": "not_run",
+  "scope": "Not run: required CellChat package absent in Wiki R libraries; no installation attempted.",
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398",
+    "code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00",
+  "not_run_reason": "Not run: required CellChat package absent in Wiki R libraries; no installation attempted."
+}

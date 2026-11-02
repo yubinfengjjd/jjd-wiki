@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "license": "Unresolved author-project and transitive licenses; source/ and code/ remain local and Git-ignored.",
+  "files": [
+    {
+      "path": "code/dependency_plot.R",
+      "sha256": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/roc_render.py",
+      "sha256": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "source/d421312f0c2a8f10c25837c95ecf085235d036db2d200dab5b4e8e32a8793fe0.py",
+      "sha256": "d421312f0c2a8f10c25837c95ecf085235d036db2d200dab5b4e8e32a8793fe0",
+      "role": "original-source",
+      "state": "see per-implementation receipts; file existence is not verification"
+    }
+  ]
+}

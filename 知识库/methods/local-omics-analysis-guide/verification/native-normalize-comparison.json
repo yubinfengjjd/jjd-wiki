@@ -1,0 +1,53 @@
+{
+  "case_id": "native-normalize",
+  "original_reference": {
+    "state": "passed",
+    "checks": [
+      "Actual real-data function call",
+      "Original/extracted equality in reference phase",
+      "Input unchanged",
+      "Search/options restored"
+    ],
+    "output_hash": "7a8ae3f28b26065c1a21405e4eb8d68127f960f63ef1e41e8844c246cdf31f27",
+    "diagnostics": {
+      "function_id": "r-3159ac3f7a9e-112",
+      "source_sha256": "3159ac3f7a9e2666428530e87966107e1a4a27810d4f210a4de495b0980c9020",
+      "resolved_symbols": [],
+      "loaded_namespaces": [],
+      "search_restored": true,
+      "options_restored": true,
+      "library_paths_restored": true,
+      "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+    }
+  },
+  "isolated_result": {
+    "mode": "portable",
+    "cases": {
+      "native-normalize": {
+        "state": "passed",
+        "checks": [
+          "Actual real-data function call",
+          "Original/extracted equality in reference phase",
+          "Input unchanged",
+          "Search/options restored"
+        ],
+        "output_hash": "7a8ae3f28b26065c1a21405e4eb8d68127f960f63ef1e41e8844c246cdf31f27",
+        "diagnostics": {
+          "function_id": "r-3159ac3f7a9e-112",
+          "source_sha256": "3159ac3f7a9e2666428530e87966107e1a4a27810d4f210a4de495b0980c9020",
+          "resolved_symbols": [],
+          "loaded_namespaces": [],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true,
+          "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+        }
+      }
+    },
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32"
+    }
+  },
+  "no_family_wide_approval": true
+}

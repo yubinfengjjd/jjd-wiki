@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "py-roc-render",
+  "state": "passed",
+  "scope": "Actual original/extracted equality and isolated copy, restricted to py-roc-render and the recorded real-data verification case. No full family, full model pipeline or scientific validity claim.",
+  "closure_hash": "c3b9b6c658b2b9a735a06b947885bd42082c419153b47a04477c861be66e9a58",
+  "files": {
+    "code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "copied_files": [
+    "code/roc_render.py"
+  ],
+  "command": "D:/anaconda/python.exe -X utf8 E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\validate_python_portable.py E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\isolated\\py-roc-render plot D:\\UC-20种修饰\\wiki-use\\_project\\reuse-verify-20261102\\portable\\py-roc-render",
+  "checks": [
+    "Original/extracted real-data comparison passed",
+    "Only declared closure files copied",
+    "New process without original source-code paths",
+    "Case outputs matched original reference",
+    "Input immutability checked where relevant"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": "Wiki dedicated libraries",
+    "note": "Rlang shutdown crash applies to unverified graphics stack; pure R cases exited cleanly."
+  },
+  "executed_at": "2026-11-02T08:16:35.263340+00:00"
+}
