@@ -415,7 +415,7 @@ runtime.json 列出逐入口闭包、必需/可选依赖、资源用途和原始
 
 ## 本机组学课题来源增量（2026-11-02）
 
-项目中的 FeatureStatPlot/CellStatPlot 记录为依赖调用，汇总/统计选项需逐形态核对，未运行。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+项目中的 FeatureStatPlot 记录为依赖调用；CellStatPlot 仅为相近既有入口，本批静态调用未发现它。汇总/统计选项需逐形态核对，未运行。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
 
 <!-- user:start -->
 <!-- user:end -->

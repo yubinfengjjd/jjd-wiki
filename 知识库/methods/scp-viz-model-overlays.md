@@ -420,7 +420,7 @@ runtime.json 列出逐入口闭包、必需/可选依赖、资源用途和原始
 
 ## 本机组学课题来源增量（2026-11-02）
 
-SCP 原生动态图与本地 DynamicPlotMonocle2 分开；后者含 GAM 重拟合且跨课题字节重复，未继承本页回放/独立性证据。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+SCP 原生动态图与本地 DynamicPlotMonocle2 分开；本批实见后者调用，未发现原生 DynamicPlot 直接调用。后者含 GAM 重拟合且跨课题字节重复，未继承本页回放/独立性证据。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
 
 <!-- user:start -->
 <!-- user:end -->

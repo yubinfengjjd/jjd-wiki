@@ -305,7 +305,7 @@ runtime.json 列出逐入口闭包、必需/可选依赖、资源用途和原始
 
 ## 本机组学课题来源增量（2026-11-02）
 
-项目中 SCP 表达/动态热图属于依赖输出；irGSEA.heatmap 消费 irGSEA 整合结果，不能当作本页同一实现。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+项目中 FeatureHeatmap 属于依赖输出；GroupHeatmap/DynamicHeatmap 仅为相近既有入口，本批静态调用未发现它们。irGSEA.heatmap 消费 irGSEA 整合结果，不能当作本页同一实现。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
 
 <!-- user:start -->
 <!-- user:end -->

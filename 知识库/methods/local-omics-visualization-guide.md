@@ -97,6 +97,8 @@ data_contract:
 | ggplot2、空间 plot_helpers、注释热图 helper、Python ROC | 项目自定义构图/适配候选 | 表结构、排序、检验和 helper 闭包逐实现审查；新布局不等于新分析方法。 |
 | 整理版空间 9.21–9.25 | RCTD+CellChat 后处理/分层展示 | 与 legacy CellTrek 分支分开；绘图中若计算差值/聚合/统计，仍标相应计算边界。 |
 
+本批静态调用实见 FeatureStatPlot、FeatureHeatmap 等；上表中的 CellStatPlot、GroupHeatmap、DynamicHeatmap 和原生 DynamicPlot 是既有库的相近入口对照，未在本批可解析调用中发现直接调用，不计作本批已收录实现。完整调用和来源角色以 call-sites.json 为准，计数包含字节别名及明确标记的历史来源，不是独立图样数。
+
 ## 关键位置
 
 irGSEA：UC `17.基因功能探究/1.R` 的 468/477/482 行分别 score/integrate/heatmap，494/502/506 行为另一签名配置；哮喘 `16.细胞轨迹/1.R` 的 374/396/404 行是按 Monocle2_State 组织的同类链。自定义 `16.细胞轨迹/DynamicPlot.R` 从第 10 行定义 DynamicPlotMonocle2，156 行 GAM 拟合、159 行预测，162–163 行区间；UC 整理版是相同字节副本。DotPlotScores 跨项目同字节，不能因文件名不同多收。
