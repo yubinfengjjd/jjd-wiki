@@ -1191,3 +1191,5 @@
 ## [2026-11-02 11:20 UTC] ready 17: asthma-lactylation-source-catalog, asthma-lactylation-workflow, figureya-multilanguage-assets, local-omics-analysis-guide, local-omics-visualization-guide, scop-analysis-guide, scop-source-catalog, scop-visualization-guide, scop-workflows, scp-source-catalog, scp-viz-dimplots, scp-viz-heat
 
 ## [2026-11-02 16:53 UTC] 按作者要求默认保存知识源码与公开资源，继续排除私有数据与凭据
+
+## [2026-11-02 17:09 UTC] 补全上游原字节清单要求的来源元数据，修复新检出校验

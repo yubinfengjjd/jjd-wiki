@@ -1,2 +1,5 @@
 **/__pycache__/
 .obsidian/
+
+# Preserve upstream bytes required by source.json, including recorded OS metadata.
+!/recipes/**/source/**/.DS_Store
