@@ -15,38 +15,14 @@
       "state": "see per-implementation receipts; file existence is not verification"
     },
     {
+      "path": "code/dynamic_monocle2_seurat5.R",
+      "sha256": "97ec62a6374ad28b9b9c84bec8aa7e984cfd31e2c8a634711347ab013283f477",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
       "path": "code/native.R",
       "sha256": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
-      "role": "extracted-or-adapter",
-      "state": "see per-implementation receipts; file existence is not verification"
-    },
-    {
-      "path": "code/native_cases.R",
-      "sha256": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
-      "role": "extracted-or-adapter",
-      "state": "see per-implementation receipts; file existence is not verification"
-    },
-    {
-      "path": "code/registry.json",
-      "sha256": "0efaefe11dc034e6604ecc0158a3abc0f7a67244c045f6ba5c327d56c09f0ab9",
-      "role": "extracted-or-adapter",
-      "state": "see per-implementation receipts; file existence is not verification"
-    },
-    {
-      "path": "code/registry.rds",
-      "sha256": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61",
-      "role": "extracted-or-adapter",
-      "state": "see per-implementation receipts; file existence is not verification"
-    },
-    {
-      "path": "code/stacking_original.py",
-      "sha256": "897ad6da08a5d2f8446a3dafa75b785bd19b687d20882888618fa423a8b97659",
-      "role": "extracted-or-adapter",
-      "state": "see per-implementation receipts; file existence is not verification"
-    },
-    {
-      "path": "code/stacking_runner.py",
-      "sha256": "2aa4b14ee56cb6ef2837b652cf12ded2c6c668f6396708ac22c3ac5c7fff3fa6",
       "role": "extracted-or-adapter",
       "state": "see per-implementation receipts; file existence is not verification"
     },
@@ -2177,6 +2153,42 @@
     {
       "path": "code/native/fffe578e5d5378d2780d45901bc5afbe50cb39a41471306588fc0bc535b4d5ed.R",
       "sha256": "fffe578e5d5378d2780d45901bc5afbe50cb39a41471306588fc0bc535b4d5ed",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/native_cases.R",
+      "sha256": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/registry.json",
+      "sha256": "0efaefe11dc034e6604ecc0158a3abc0f7a67244c045f6ba5c327d56c09f0ab9",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/registry.rds",
+      "sha256": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/run_r.py",
+      "sha256": "ef821525c98bec160fadd1cdec815a13ae23f2d3eb2487768465f8183487aa1d",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/stacking_original.py",
+      "sha256": "897ad6da08a5d2f8446a3dafa75b785bd19b687d20882888618fa423a8b97659",
+      "role": "extracted-or-adapter",
+      "state": "see per-implementation receipts; file existence is not verification"
+    },
+    {
+      "path": "code/stacking_runner.py",
+      "sha256": "2aa4b14ee56cb6ef2837b652cf12ded2c6c668f6396708ac22c3ac5c7fff3fa6",
       "role": "extracted-or-adapter",
       "state": "see per-implementation receipts; file existence is not verification"
     },

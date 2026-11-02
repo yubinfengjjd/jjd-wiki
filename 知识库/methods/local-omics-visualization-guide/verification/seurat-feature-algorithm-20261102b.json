@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "implementation": "seurat-feature",
+  "state": "passed",
+  "scope": "Native Seurat seurat-feature forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation.",
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\validate_seurat.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\seurat-portable-config.json",
+  "checks": [
+    "Only declared closure copied to a separate directory",
+    "New process actual invocation exited zero",
+    "Recorded source/reference comparison and isolated output match",
+    "No original source-code directory supplied to isolated production module"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398",
+    "code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "case": {
+    "state": "passed",
+    "output_hash": "3ceeb0029b8644e8c5595fc266a874b5c609b976371d4d4b493fafe2128e6429",
+    "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-feature-portable.png",
+    "checks": [
+      "Actual source Seurat object",
+      "Native function plot layer data equality",
+      "Input unchanged",
+      "Caller search/options restored"
+    ]
+  },
+  "comparison": "verification/seurat-feature-comparison-20261102b.json"
+}

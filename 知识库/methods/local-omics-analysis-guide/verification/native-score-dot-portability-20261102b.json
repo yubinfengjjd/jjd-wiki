@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-score-dot",
+  "state": "passed",
+  "scope": "Original DotPlotScores on 711-cell source object, Retinoic_Acid_Metabolism by Monocle2_State; original/extracted layer-data equality and isolated replay. Source global pct.exp semantics retained; not Seurat DotPlot equivalence.",
+  "closure_hash": "b209bd171927569d149ddded757700ddfa9d9c994f09b9fd5e5c01a10d1155d4",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087.R": "7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [
+    "code/native.R",
+    "code/native/7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087.R",
+    "code/native_cases.R",
+    "code/registry.rds"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\validate_graphics.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\score-dot-portable-config.json",
+  "checks": [
+    "Only declared closure copied to a separate directory",
+    "New process actual invocation exited zero",
+    "Recorded source/reference comparison and isolated output match",
+    "No original source-code directory supplied to isolated production module"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00"
+}

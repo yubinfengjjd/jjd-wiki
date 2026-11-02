@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-feature-heatmap",
+  "state": "not_run",
+  "scope": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted.",
+  "closure_hash": "999309e65297ca3c6f72dd2b5d486a52ea819e65f015a328d287bb93d4953039",
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "not_run_reason": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted."
+}

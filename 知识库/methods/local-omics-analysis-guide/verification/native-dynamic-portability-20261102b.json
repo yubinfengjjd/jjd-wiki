@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-dynamic",
+  "state": "not_run",
+  "scope": "Not run: Untouched source uses Seurat::GetAssayData(slot=...), defunct in installed SeuratObject 5. The separately named native-dynamic-seurat5 compatibility branch does not grant this original branch passed status.",
+  "closure_hash": "f22fb7bc39e34ac6bbc81713d1487bbdbae750357f58903c2f5b6622d99cd8f4",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R": "e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "not_run_reason": "Not run: Untouched source uses Seurat::GetAssayData(slot=...), defunct in installed SeuratObject 5. The separately named native-dynamic-seurat5 compatibility branch does not grant this original branch passed status."
+}

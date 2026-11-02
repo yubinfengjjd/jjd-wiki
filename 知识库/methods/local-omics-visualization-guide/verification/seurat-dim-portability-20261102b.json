@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "seurat-dim",
+  "state": "passed",
+  "scope": "Native Seurat seurat-dim forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation.",
+  "closure_hash": "999309e65297ca3c6f72dd2b5d486a52ea819e65f015a328d287bb93d4953039",
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398"
+  },
+  "copied_files": [
+    "code/dependency_plot.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\validate_seurat.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\seurat-portable-config.json",
+  "checks": [
+    "Only declared closure copied to a separate directory",
+    "New process actual invocation exited zero",
+    "Recorded source/reference comparison and isolated output match",
+    "No original source-code directory supplied to isolated production module"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00"
+}

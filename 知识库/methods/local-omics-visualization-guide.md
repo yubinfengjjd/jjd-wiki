@@ -51,126 +51,126 @@ implementations:
   entrypoint: code/roc_render.py:render_roc_curves
   dependencies:
   - matplotlib
-  verification: verification/py-roc-render-algorithm.json
+  verification: verification/py-roc-render-algorithm-20261102b.json
 - id: irgsea-heatmap
   title: 依赖原生绘图 irgsea_heatmap
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - irGSEA
-  verification: verification/irgsea-heatmap-algorithm.json
+  verification: verification/irgsea-heatmap-algorithm-20261102b.json
 - id: scp-cell-dim
   title: 依赖原生绘图 scp_cell_dim
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - SCP
-  verification: verification/scp-cell-dim-algorithm.json
+  verification: verification/scp-cell-dim-algorithm-20261102b.json
 - id: scp-feature-dim
   title: 依赖原生绘图 scp_feature_dim
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - SCP
-  verification: verification/scp-feature-dim-algorithm.json
+  verification: verification/scp-feature-dim-algorithm-20261102b.json
 - id: scp-feature-stat
   title: 依赖原生绘图 scp_feature_stat
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - SCP
-  verification: verification/scp-feature-stat-algorithm.json
+  verification: verification/scp-feature-stat-algorithm-20261102b.json
 - id: scp-feature-heatmap
   title: 依赖原生绘图 scp_feature_heatmap
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - SCP
-  verification: verification/scp-feature-heatmap-algorithm.json
+  verification: verification/scp-feature-heatmap-algorithm-20261102b.json
 - id: seurat-dim
   title: 依赖原生绘图 seurat_dim
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - Seurat
-  verification: verification/seurat-dim-algorithm.json
+  verification: verification/seurat-dim-algorithm-20261102b.json
 - id: seurat-feature
   title: 依赖原生绘图 seurat_feature
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - Seurat
-  verification: verification/seurat-feature-algorithm.json
+  verification: verification/seurat-feature-algorithm-20261102b.json
 - id: seurat-violin
   title: 依赖原生绘图 seurat_violin
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - Seurat
-  verification: verification/seurat-violin-algorithm.json
+  verification: verification/seurat-violin-algorithm-20261102b.json
 - id: seurat-dot
   title: 依赖原生绘图 seurat_dot
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - Seurat
-  verification: verification/seurat-dot-algorithm.json
+  verification: verification/seurat-dot-algorithm-20261102b.json
 - id: seurat-spatial-dim
   title: 依赖原生绘图 seurat_spatial_dim
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - Seurat
-  verification: verification/seurat-spatial-dim-algorithm.json
+  verification: verification/seurat-spatial-dim-algorithm-20261102b.json
 - id: seurat-spatial-feature
   title: 依赖原生绘图 seurat_spatial_feature
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - Seurat
-  verification: verification/seurat-spatial-feature-algorithm.json
+  verification: verification/seurat-spatial-feature-algorithm-20261102b.json
 - id: cellchat-circle
   title: 依赖原生绘图 cellchat_circle
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - CellChat
-  verification: verification/cellchat-circle-algorithm.json
+  verification: verification/cellchat-circle-algorithm-20261102b.json
 - id: cellchat-bubble
   title: 依赖原生绘图 cellchat_bubble
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - CellChat
-  verification: verification/cellchat-bubble-algorithm.json
+  verification: verification/cellchat-bubble-algorithm-20261102b.json
 - id: cellchat-aggregate
   title: 依赖原生绘图 cellchat_aggregate
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - CellChat
-  verification: verification/cellchat-aggregate-algorithm.json
+  verification: verification/cellchat-aggregate-algorithm-20261102b.json
 - id: cellchat-heatmap
   title: 依赖原生绘图 cellchat_heatmap
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - CellChat
-  verification: verification/cellchat-heatmap-algorithm.json
+  verification: verification/cellchat-heatmap-algorithm-20261102b.json
 - id: cellchat-role-heatmap
   title: 依赖原生绘图 cellchat_role_heatmap
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - CellChat
-  verification: verification/cellchat-role-heatmap-algorithm.json
+  verification: verification/cellchat-role-heatmap-algorithm-20261102b.json
 - id: cellchat-role-scatter
   title: 依赖原生绘图 cellchat_role_scatter
   language: R
   entrypoint: code/dependency_plot.R:run_omics_dependency_plot
   dependencies:
   - CellChat
-  verification: verification/cellchat-role-scatter-algorithm.json
+  verification: verification/cellchat-role-scatter-algorithm-20261102b.json
 ---
 # 课题绘图依赖与自定义改造
 
@@ -267,13 +267,21 @@ Python `code/roc_render.py:render_roc_curves(curves, aucs, cohort_colors, title)
 
 ## 代码复用层验证（2026-11-02）
 
-本页 18 个入口分支中，py-roc-render 已在真实预计算 ROC 输入上与原样式/构图的曲线数据、RGBA 像素逐项比较，并完成只复制声明文件后的异目录新进程 PNG 哈希一致验证。已目视检查本次用例图，标签/数值没有裁切；两版都保留 inset_axes/tight_layout 提示，这个用例的通过不代表任意版式或投稿质量验收。
+本页 18 个分支中，7 个有当前收据和异目录新进程回放：py-roc-render、seurat-dim、seurat-feature、seurat-violin、seurat-dot、seurat-spatial-dim、seurat-spatial-feature。前 4 个单细胞图使用原 711 细胞对象及其 umap、Monocle2_State、RCC2/BIRC3；2 个空间图使用 UC 原保存切片对象（2378 spots、slice_ 图像、Structure、UBE2L6）。逐分支与直接 Seurat 原生调用比较 ggplot 图层数据（1e-12）、输入不变、调用环境恢复和独立回放哈希一致。参数与对象来源明确，未重新做聚类或注释。
 
-其余 17 个原生包绘图路由全部 not_run：irGSEA/SCP/CellChat 缺包，Seurat 路由受已复现的 rlang 退出崩溃环境限制。完整契约见 runtime.json，逐分支收据见 verification/，文件清单见 code-manifest.json；没有新建模板、layout 或 figure_relations 直连。
+ROC 用例保留原真实预计算 FPR/TPR/AUC，原版对照的曲线数据、RGBA 像素一致，独立副本 PNG 哈希一致。原 inset_axes/tight_layout 提示保留；已目视检查所选用例，不等于任意版式或投稿质量验收。
+
+其余 11 个包路由保持 not_run：irGSEA 1、SCP 4、CellChat 6，均缺相应包本体。此前阻塞 Seurat 的退出崩溃经实际架构子进程环境桥接解决，见 [[methods/local-omics-analysis-guide]]；没有安装包。完整契约见 runtime.json，逐分支收据见 verification/，没有新增模板、layout 或 figure_relations 直连。
 
 ## 本次复用整理记录
 
 作者明确要求继续代码复用层整理。补入可复制函数/适配器、闭包清单、逐文件去向和受限真实数据用例证据；没有安装包、修改原统计逻辑、合成科研数据或改变作者状态。`rwiki use` 已在独立目录实际执行，成功复制不授予全部依赖齐备或全部分支可运行。
+
+## 复用既有 SCP 闭包的课题集成
+
+通过 find → show → use 复用 [[methods/scp-viz-dimplots]]、[[methods/scp-viz-statplots]]、[[methods/scp-viz-heatmaps]] 中的 CellDimPlot、FeatureDimPlot、FeatureStatPlot、FeatureHeatmap；未再建同名模板或复制一套 SCP 实现进本页。4 个既有闭包均在原 711 细胞对象上运行并完成仅复制各 runtime 声明文件后的新进程确定性回放。Heatmap 选择 raw data、不做库大小归一化，返回表达矩阵还与原 RNA data 对应行列核对；统计图未执行组间检验。
+
+这是既有闭包对当前项目对象的集成证据，不是 SCP 包本体的新版等价验证，不授予本页 4 个缺包路由 passed。FeatureHeatmap 会留下部分绘图 options（具体键见 scp-project-integration-20261102b.json），因此保持独立 R 子进程使用，不承诺在用户交互会话中无副作用。原 SCP 文件、旧收据与状态均未改。源码保留的手工 scale 无匹配 level 提示如实留在运行日志；所选成图已检查，未据此修改统计或绘图原算法。
 
 <!-- user:start -->
 <!-- user:end -->

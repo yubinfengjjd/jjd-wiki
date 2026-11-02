@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "stacking-cli",
+  "state": "not_run",
+  "scope": "Not run: scikit-optimize absent; --help only. Full training, model selection, split independence and explainability not validated.",
+  "closure_hash": "b0afbd0183d495c14549db58f8f71cacf145155c6ba5e4eb164d9875000759de",
+  "files": {
+    "code/stacking_original.py": "897ad6da08a5d2f8446a3dafa75b785bd19b687d20882888618fa423a8b97659",
+    "code/stacking_runner.py": "2aa4b14ee56cb6ef2837b652cf12ded2c6c668f6396708ac22c3ac5c7fff3fa6"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "not_run_reason": "Not run: scikit-optimize absent; --help only. Full training, model selection, split independence and explainability not validated."
+}

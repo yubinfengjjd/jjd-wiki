@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-dynamic-seurat5",
+  "state": "passed",
+  "scope": "Three 711-cell source-data cases: raw data, library-normalized log1p counts, and default theme bridge; exact legacy-slot/layer equality, original-body legacy-accessor reference layer data equality at 1e-12, isolated replay and error-path environment restoration. No new trajectory inference or changed GAM/fallback.",
+  "closure_hash": "0defa980217d60c992e9adb9d9fe5b7472a769ec12ff12bd0d7ff9e4b0040d7e",
+  "files": {
+    "code/dynamic_monocle2_seurat5.R": "97ec62a6374ad28b9b9c84bec8aa7e984cfd31e2c8a634711347ab013283f477",
+    "code/native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R": "e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef"
+  },
+  "copied_files": [
+    "code/dynamic_monocle2_seurat5.R",
+    "code/native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\validate_dynamic.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\dynamic-portable-config.json",
+  "checks": [
+    "Only declared closure copied to a separate directory",
+    "New process actual invocation exited zero",
+    "Recorded source/reference comparison and isolated output match",
+    "No original source-code directory supplied to isolated production module"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00"
+}

@@ -1,0 +1,300 @@
+{
+  "scope": "Integration and deterministic isolated replay of existing SCP closures on a project object, not original-package equivalence or full parameter validation. FeatureHeatmap option side effects remain recorded; use a separate child process.",
+  "reference": {
+    "cases": {
+      "CellDimPlot": {
+        "state": "integration_passed",
+        "output_hash": "3c6e543cbd65974b46ae995b3054e0b8879b2021467337e26d2ca4cd40f7cc46",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/CellDimPlot-compare.png",
+        "options_restored": true,
+        "changed_options": [],
+        "matrices_checked": {},
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      },
+      "FeatureDimPlot": {
+        "state": "integration_passed",
+        "output_hash": "be905b5ee65d97b8de69b7b2f47fa6825300ac371b4568655721b0f663a6dfd8",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/FeatureDimPlot-compare.png",
+        "options_restored": true,
+        "changed_options": [],
+        "matrices_checked": {},
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      },
+      "FeatureStatPlot": {
+        "state": "integration_passed",
+        "output_hash": "3401ecdc6a4991f38ddbb819049d5c88978341ba4cf8dfa846cd45048d692aee",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/FeatureStatPlot-compare.png",
+        "options_restored": true,
+        "changed_options": [],
+        "matrices_checked": {},
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      },
+      "FeatureHeatmap": {
+        "state": "integration_passed",
+        "output_hash": "c6e76571a0b00f92b1d02b0cc42a137f9668286dda2eb6c2d6ef709979861483",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/FeatureHeatmap-compare.png",
+        "options_restored": false,
+        "changed_options": "magick.viewer",
+        "matrices_checked": 1,
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      }
+    },
+    "environment": {
+      "R": "4.5.0",
+      "PROCESSOR_ARCHITECTURE": "AMD64"
+    },
+    "scope": "Existing SCP closures on an actual project object. No new duplicate templates; not a new package-native equivalence or scientific validation claim."
+  },
+  "isolated": {
+    "cases": {
+      "CellDimPlot": {
+        "state": "integration_passed",
+        "output_hash": "3c6e543cbd65974b46ae995b3054e0b8879b2021467337e26d2ca4cd40f7cc46",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/CellDimPlot-portable.png",
+        "options_restored": true,
+        "changed_options": [],
+        "matrices_checked": {},
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      },
+      "FeatureDimPlot": {
+        "state": "integration_passed",
+        "output_hash": "be905b5ee65d97b8de69b7b2f47fa6825300ac371b4568655721b0f663a6dfd8",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/FeatureDimPlot-portable.png",
+        "options_restored": true,
+        "changed_options": [],
+        "matrices_checked": {},
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      },
+      "FeatureStatPlot": {
+        "state": "integration_passed",
+        "output_hash": "3401ecdc6a4991f38ddbb819049d5c88978341ba4cf8dfa846cd45048d692aee",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/FeatureStatPlot-portable.png",
+        "options_restored": true,
+        "changed_options": [],
+        "matrices_checked": {},
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      },
+      "FeatureHeatmap": {
+        "state": "integration_passed",
+        "output_hash": "c6e76571a0b00f92b1d02b0cc42a137f9668286dda2eb6c2d6ef709979861483",
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/scp/FeatureHeatmap-portable.png",
+        "options_restored": false,
+        "changed_options": "magick.viewer",
+        "matrices_checked": 1,
+        "checks": [
+          "Existing SCP closure copied by rwiki use",
+          "Actual source Seurat data",
+          "Input unchanged",
+          "Caller search restored",
+          "Output structure nonempty"
+        ]
+      }
+    },
+    "environment": {
+      "R": "4.5.0",
+      "PROCESSOR_ARCHITECTURE": "AMD64"
+    },
+    "scope": "Existing SCP closures on an actual project object. No new duplicate templates; not a new package-native equivalence or scientific validation claim."
+  },
+  "copied_files": {
+    "scp-viz-dimplots": [
+      "code/celldimplot/LICENSE.md",
+      "code/celldimplot/code/fns/Blend2Color.R",
+      "code/celldimplot/code/fns/BlendRGBList.R",
+      "code/celldimplot/code/fns/CellDimPlot.R",
+      "code/celldimplot/code/fns/CellStatPlot.R",
+      "code/celldimplot/code/fns/DefaultReduction.R",
+      "code/celldimplot/code/fns/GraphPlot.R",
+      "code/celldimplot/code/fns/LineagePlot.R",
+      "code/celldimplot/code/fns/PAGAPlot.R",
+      "code/celldimplot/code/fns/RGBA2RGB.R",
+      "code/celldimplot/code/fns/StatPlot.R",
+      "code/celldimplot/code/fns/StatSankeyBumpFlow.R",
+      "code/celldimplot/code/fns/StatSankeyFlow.R",
+      "code/celldimplot/code/fns/StatSankeyNode.R",
+      "code/celldimplot/code/fns/StatSankeyText.R",
+      "code/celldimplot/code/fns/VelocityPlot.R",
+      "code/celldimplot/code/fns/add_grob.R",
+      "code/celldimplot/code/fns/asMatrix.R",
+      "code/celldimplot/code/fns/as_grob.R",
+      "code/celldimplot/code/fns/as_gtable.R",
+      "code/celldimplot/code/fns/as_matrix.R",
+      "code/celldimplot/code/fns/blendcolors.R",
+      "code/celldimplot/code/fns/build_patchwork.R",
+      "code/celldimplot/code/fns/capitalize.R",
+      "code/celldimplot/code/fns/compute_velocity_on_grid.R",
+      "code/celldimplot/code/fns/find_default_space.R",
+      "code/celldimplot/code/fns/geom_alluvial.R",
+      "code/celldimplot/code/fns/geom_alluvial_label.R",
+      "code/celldimplot/code/fns/geom_alluvial_text.R",
+      "code/celldimplot/code/fns/geom_sankey.R",
+      "code/celldimplot/code/fns/geom_sankey_bump.R",
+      "code/celldimplot/code/fns/geom_sankey_label.R",
+      "code/celldimplot/code/fns/geom_sankey_text.R",
+      "code/celldimplot/code/fns/get_legend.R",
+      "code/celldimplot/code/fns/make_long.R",
+      "code/celldimplot/code/fns/palette_scp.R",
+      "code/celldimplot/code/fns/patchworkGrob.R",
+      "code/celldimplot/code/fns/prepare_params.R",
+      "code/celldimplot/code/fns/segementsDf.R",
+      "code/celldimplot/code/fns/show_palettes.R",
+      "code/celldimplot/code/fns/sigmoid.R",
+      "code/celldimplot/code/fns/theme_alluvial.R",
+      "code/celldimplot/code/fns/theme_blank.R",
+      "code/celldimplot/code/fns/theme_sankey.R",
+      "code/celldimplot/code/fns/theme_sankey_bump.R",
+      "code/celldimplot/code/fns/theme_scp.R",
+      "code/celldimplot/code/module.R",
+      "code/celldimplot/resources/palette_list.rda",
+      "code/featuredimplot/LICENSE.md",
+      "code/featuredimplot/code/fns/Blend2Color.R",
+      "code/featuredimplot/code/fns/BlendRGBList.R",
+      "code/featuredimplot/code/fns/DefaultReduction.R",
+      "code/featuredimplot/code/fns/FeatureDimPlot.R",
+      "code/featuredimplot/code/fns/LineagePlot.R",
+      "code/featuredimplot/code/fns/RGBA2RGB.R",
+      "code/featuredimplot/code/fns/add_grob.R",
+      "code/featuredimplot/code/fns/adjcolors.R",
+      "code/featuredimplot/code/fns/asMatrix.R",
+      "code/featuredimplot/code/fns/as_grob.R",
+      "code/featuredimplot/code/fns/as_gtable.R",
+      "code/featuredimplot/code/fns/as_matrix.R",
+      "code/featuredimplot/code/fns/blendcolors.R",
+      "code/featuredimplot/code/fns/build_patchwork.R",
+      "code/featuredimplot/code/fns/check_DataType.R",
+      "code/featuredimplot/code/fns/get_legend.R",
+      "code/featuredimplot/code/fns/palette_scp.R",
+      "code/featuredimplot/code/fns/patchworkGrob.R",
+      "code/featuredimplot/code/fns/rescale.R",
+      "code/featuredimplot/code/fns/show_palettes.R",
+      "code/featuredimplot/code/fns/theme_blank.R",
+      "code/featuredimplot/code/fns/theme_scp.R",
+      "code/featuredimplot/code/fns/zero_range.R",
+      "code/featuredimplot/code/module.R",
+      "code/featuredimplot/resources/palette_list.rda"
+    ],
+    "scp-viz-statplots": [
+      "code/featurestatplot/LICENSE.md",
+      "code/featurestatplot/code/fns/ExpressionStatPlot.R",
+      "code/featurestatplot/code/fns/FeatureStatPlot.R",
+      "code/featurestatplot/code/fns/add_grob.R",
+      "code/featurestatplot/code/fns/asMatrix.R",
+      "code/featurestatplot/code/fns/as_grob.R",
+      "code/featurestatplot/code/fns/as_gtable.R",
+      "code/featurestatplot/code/fns/as_matrix.R",
+      "code/featurestatplot/code/fns/build_patchwork.R",
+      "code/featurestatplot/code/fns/check_DataType.R",
+      "code/featurestatplot/code/fns/get_legend.R",
+      "code/featurestatplot/code/fns/palette_scp.R",
+      "code/featurestatplot/code/fns/patchworkGrob.R",
+      "code/featurestatplot/code/fns/show_palettes.R",
+      "code/featurestatplot/code/fns/theme_blank.R",
+      "code/featurestatplot/code/fns/theme_scp.R",
+      "code/featurestatplot/code/module.R",
+      "code/featurestatplot/resources/palette_list.rda"
+    ],
+    "scp-viz-heatmaps": [
+      "code/featureheatmap/LICENSE.md",
+      "code/featureheatmap/code/fns/Blend2Color.R",
+      "code/featureheatmap/code/fns/BlendRGBList.R",
+      "code/featureheatmap/code/fns/FeatureHeatmap.R",
+      "code/featureheatmap/code/fns/GeneConvert.R",
+      "code/featureheatmap/code/fns/ListDB.R",
+      "code/featureheatmap/code/fns/PrepareDB.R",
+      "code/featureheatmap/code/fns/RGBA2RGB.R",
+      "code/featureheatmap/code/fns/RunEnrichment.R",
+      "code/featureheatmap/code/fns/asMatrix.R",
+      "code/featureheatmap/code/fns/as_grob.R",
+      "code/featureheatmap/code/fns/as_gtable.R",
+      "code/featureheatmap/code/fns/as_matrix.R",
+      "code/featureheatmap/code/fns/blendcolors.R",
+      "code/featureheatmap/code/fns/build_patchwork.R",
+      "code/featureheatmap/code/fns/capitalize.R",
+      "code/featureheatmap/code/fns/cluster_within_group2.R",
+      "code/featureheatmap/code/fns/fc_matrix.R",
+      "code/featureheatmap/code/fns/heatmap_enrichment.R",
+      "code/featureheatmap/code/fns/heatmap_fixsize.R",
+      "code/featureheatmap/code/fns/heatmap_rendersize.R",
+      "code/featureheatmap/code/fns/kegg_get.R",
+      "code/featureheatmap/code/fns/log1p_matrix.R",
+      "code/featureheatmap/code/fns/log2fc_matrix.R",
+      "code/featureheatmap/code/fns/matrix_process.R",
+      "code/featureheatmap/code/fns/mestimate.R",
+      "code/featureheatmap/code/fns/palette_scp.R",
+      "code/featureheatmap/code/fns/panel_fix_overall.R",
+      "code/featureheatmap/code/fns/patchworkGrob.R",
+      "code/featureheatmap/code/fns/rescale.R",
+      "code/featureheatmap/code/fns/searchDatasets.R",
+      "code/featureheatmap/code/fns/show_palettes.R",
+      "code/featureheatmap/code/fns/standardise.R",
+      "code/featureheatmap/code/fns/theme_scp.R",
+      "code/featureheatmap/code/fns/try_get.R",
+      "code/featureheatmap/code/fns/unnest.R",
+      "code/featureheatmap/code/fns/zero_range.R",
+      "code/featureheatmap/code/fns/zscore_matrix.R",
+      "code/featureheatmap/code/module.R",
+      "code/featureheatmap/resources/palette_list.rda",
+      "code/featureheatmap/resources/words_excluded.rda"
+    ]
+  },
+  "isolated_roots": {
+    "scp-viz-dimplots": "E:/research-wiki-env/work/rwiki/local-omics-reuse-20261102b/isolated/scp-celldimplot_scp-featuredimplot",
+    "scp-viz-statplots": "E:/research-wiki-env/work/rwiki/local-omics-reuse-20261102b/isolated/scp-featurestatplot",
+    "scp-viz-heatmaps": "E:/research-wiki-env/work/rwiki/local-omics-reuse-20261102b/isolated/scp-featureheatmap"
+  },
+  "exit_code": 0,
+  "command": [
+    "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "--vanilla",
+    "E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\validate_scp.R",
+    "E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\scp-portable-config.json"
+  ],
+  "input_sha256": {
+    "D:\\哮喘乳酸化单细胞开篇\\16.细胞轨迹\\monocle.Rdata": "5e6a988288a57c06b88deb070272845063fc69caf67a6c4bd90a15790af91ef0",
+    "D:\\UC-20种修饰\\20.空间转录组\\processed_samples_final.RData": "c2f825ebb072b3843c9e0a9bb31ad48c19e25e8bca4d51dffe9f16eb4d3462a8"
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "visual_inspection": "Selected dynamic, spatial feature, SCP FeatureStatPlot/FeatureHeatmap and score-dot outputs viewed; bounded rendering check only."
+}

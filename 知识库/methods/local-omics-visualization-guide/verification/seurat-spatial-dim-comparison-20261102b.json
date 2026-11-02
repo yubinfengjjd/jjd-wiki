@@ -1,0 +1,32 @@
+{
+  "case_id": "seurat-spatial-dim",
+  "original_reference": {
+    "state": "passed",
+    "output_hash": "60efe850d986fdee74648a2ef7900356ac12243e1740d47a6d97ed0c98fc1e41",
+    "path": "D:/UC-20种修饰/wiki-use/_project/reuse-verify-20261102b/spatial/seurat-spatial-dim-compare.png",
+    "cells": 2378,
+    "checks": [
+      "Actual UC spatial object with stored image",
+      "Native Spatial plot layer data equality",
+      "Input unchanged",
+      "Caller search/options restored"
+    ]
+  },
+  "isolated_result": {
+    "state": "passed",
+    "output_hash": "60efe850d986fdee74648a2ef7900356ac12243e1740d47a6d97ed0c98fc1e41",
+    "path": "D:/UC-20种修饰/wiki-use/_project/reuse-verify-20261102b/spatial/seurat-spatial-dim-portable.png",
+    "cells": 2378,
+    "checks": [
+      "Actual UC spatial object with stored image",
+      "Native Spatial plot layer data equality",
+      "Input unchanged",
+      "Caller search/options restored"
+    ]
+  },
+  "input_sha256": {
+    "D:\\哮喘乳酸化单细胞开篇\\16.细胞轨迹\\monocle.Rdata": "5e6a988288a57c06b88deb070272845063fc69caf67a6c4bd90a15790af91ef0",
+    "D:\\UC-20种修饰\\20.空间转录组\\processed_samples_final.RData": "c2f825ebb072b3843c9e0a9bb31ad48c19e25e8bca4d51dffe9f16eb4d3462a8"
+  },
+  "no_family_wide_approval": true
+}

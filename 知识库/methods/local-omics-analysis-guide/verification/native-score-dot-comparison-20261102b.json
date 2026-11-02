@@ -1,0 +1,18 @@
+{
+  "case_id": "native-score-dot",
+  "original_reference": {
+    "state": "comparison_passed_pending_process_exit",
+    "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/score-dot/native-score-dot-compare.png",
+    "output_hash": "1399964f1fee6d52c45996646b1a0e1065030ee4c843ad1ec320c124dc0200e9"
+  },
+  "isolated_result": {
+    "state": "comparison_passed_pending_process_exit",
+    "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/score-dot/native-score-dot-portable.png",
+    "output_hash": "1399964f1fee6d52c45996646b1a0e1065030ee4c843ad1ec320c124dc0200e9"
+  },
+  "input_sha256": {
+    "D:\\哮喘乳酸化单细胞开篇\\16.细胞轨迹\\monocle.Rdata": "5e6a988288a57c06b88deb070272845063fc69caf67a6c4bd90a15790af91ef0",
+    "D:\\UC-20种修饰\\20.空间转录组\\processed_samples_final.RData": "c2f825ebb072b3843c9e0a9bb31ad48c19e25e8bca4d51dffe9f16eb4d3462a8"
+  },
+  "no_family_wide_approval": true
+}

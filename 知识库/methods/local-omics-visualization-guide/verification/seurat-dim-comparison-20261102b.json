@@ -1,0 +1,30 @@
+{
+  "case_id": "seurat-dim",
+  "original_reference": {
+    "state": "passed",
+    "output_hash": "cea38579a255de02ec6f0208f3e0d4f4bd315b91b07aa7452907a5258aea3e35",
+    "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-dim-compare.png",
+    "checks": [
+      "Actual source Seurat object",
+      "Native function plot layer data equality",
+      "Input unchanged",
+      "Caller search/options restored"
+    ]
+  },
+  "isolated_result": {
+    "state": "passed",
+    "output_hash": "cea38579a255de02ec6f0208f3e0d4f4bd315b91b07aa7452907a5258aea3e35",
+    "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-dim-portable.png",
+    "checks": [
+      "Actual source Seurat object",
+      "Native function plot layer data equality",
+      "Input unchanged",
+      "Caller search/options restored"
+    ]
+  },
+  "input_sha256": {
+    "D:\\哮喘乳酸化单细胞开篇\\16.细胞轨迹\\monocle.Rdata": "5e6a988288a57c06b88deb070272845063fc69caf67a6c4bd90a15790af91ef0",
+    "D:\\UC-20种修饰\\20.空间转录组\\processed_samples_final.RData": "c2f825ebb072b3843c9e0a9bb31ad48c19e25e8bca4d51dffe9f16eb4d3462a8"
+  },
+  "no_family_wide_approval": true
+}

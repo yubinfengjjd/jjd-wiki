@@ -1,7 +1,13 @@
 {
   "schema_version": 1,
   "verified_case_ids": [
-    "py-roc-render"
+    "py-roc-render",
+    "seurat-dim",
+    "seurat-feature",
+    "seurat-violin",
+    "seurat-dot",
+    "seurat-spatial-dim",
+    "seurat-spatial-feature"
   ],
   "not_run_case_ids": [
     "irgsea-heatmap",
@@ -9,12 +15,6 @@
     "scp-feature-dim",
     "scp-feature-stat",
     "scp-feature-heatmap",
-    "seurat-dim",
-    "seurat-feature",
-    "seurat-violin",
-    "seurat-dot",
-    "seurat-spatial-dim",
-    "seurat-spatial-feature",
     "cellchat-circle",
     "cellchat-bubble",
     "cellchat-aggregate",
@@ -22,8 +22,8 @@
     "cellchat-role-heatmap",
     "cellchat-role-scatter"
   ],
-  "scope": "Function code organization and bounded real-data software comparisons, not scientific acceptance or author approval.",
-  "rlang_probe_exit_code": 3221225477,
+  "scope": "Bounded function/native-API/compatibility/runtime utility software verification. Source files, complete project workflows, all parameters and scientific acceptance are not validated.",
+  "rlang_probe_exit_code": 0,
   "python_missing_optional_or_workflow_packages": {
     "skopt": true,
     "torch": true,
@@ -31,5 +31,6 @@
     "xgboost": true,
     "lightgbm": true,
     "catboost": true
-  }
+  },
+  "environment_condition": "Parent omitted PROCESSOR_ARCHITECTURE; child-only real Windows architecture bridge repairs the cli shutdown crash without installing or replacing packages."
 }

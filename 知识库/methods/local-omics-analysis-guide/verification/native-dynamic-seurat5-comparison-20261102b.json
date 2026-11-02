@@ -1,0 +1,222 @@
+{
+  "case_id": "native-dynamic-seurat5",
+  "original_reference": {
+    "cases": {
+      "raw_data": {
+        "state": "passed",
+        "output_hash": "048e94a2d2ad7d49f9f9aabc0ca88a8b2e5aa4092077c46ece9e395c1cfa831f",
+        "diagnostics": {
+          "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+          "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+          "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+          "theme_argument_bridge": false,
+          "accessor_checks": [
+            {
+              "assay": "RNA",
+              "source_slot": "data",
+              "layer": "data",
+              "legacy_matrix_equal": true
+            }
+          ],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true
+        },
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/dynamic/raw_data-compare.png",
+        "checks": [
+          "Actual 711-cell source Seurat object",
+          "Exact layer/legacy-slot matrix equality",
+          "Original-body legacy-accessor reference ggplot layer data equality",
+          "Input object unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "counts_log1p": {
+        "state": "passed",
+        "output_hash": "306b5fac28fed1bf3b092c1cb37c73efe949402bb3f1f5eef75170205382213c",
+        "diagnostics": {
+          "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+          "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+          "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+          "theme_argument_bridge": false,
+          "accessor_checks": [
+            {
+              "assay": "RNA",
+              "source_slot": "counts",
+              "layer": "counts",
+              "legacy_matrix_equal": true
+            },
+            {
+              "assay": "RNA",
+              "source_slot": "counts",
+              "layer": "counts",
+              "legacy_matrix_equal": true
+            }
+          ],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true
+        },
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/dynamic/counts_log1p-compare.png",
+        "checks": [
+          "Actual 711-cell source Seurat object",
+          "Exact layer/legacy-slot matrix equality",
+          "Original-body legacy-accessor reference ggplot layer data equality",
+          "Input object unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "default_theme": {
+        "state": "passed",
+        "output_hash": "048e94a2d2ad7d49f9f9aabc0ca88a8b2e5aa4092077c46ece9e395c1cfa831f",
+        "diagnostics": {
+          "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+          "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+          "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+          "theme_argument_bridge": true,
+          "accessor_checks": [
+            {
+              "assay": "RNA",
+              "source_slot": "data",
+              "layer": "data",
+              "legacy_matrix_equal": true
+            }
+          ],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true
+        },
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/dynamic/default_theme-compare.png",
+        "checks": [
+          "Actual 711-cell source Seurat object",
+          "Exact layer/legacy-slot matrix equality",
+          "Original-body legacy-accessor reference ggplot layer data equality",
+          "Input object unchanged",
+          "Caller search/options restored"
+        ]
+      }
+    },
+    "error_path": {
+      "reason": "Requested source slot is not one exact existing layer; no joining or partial matching performed",
+      "caller_environment_restored": true
+    },
+    "environment": {
+      "R": "4.5.0",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "PROCESSOR_ARCHITECTURE": "AMD64"
+    }
+  },
+  "isolated_result": {
+    "cases": {
+      "raw_data": {
+        "state": "passed",
+        "output_hash": "048e94a2d2ad7d49f9f9aabc0ca88a8b2e5aa4092077c46ece9e395c1cfa831f",
+        "diagnostics": {
+          "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+          "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+          "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+          "theme_argument_bridge": false,
+          "accessor_checks": [
+            {
+              "assay": "RNA",
+              "source_slot": "data",
+              "layer": "data",
+              "legacy_matrix_equal": true
+            }
+          ],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true
+        },
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/dynamic/raw_data-portable.png",
+        "checks": [
+          "Actual 711-cell source Seurat object",
+          "Exact layer/legacy-slot matrix equality",
+          "Original-body legacy-accessor reference ggplot layer data equality",
+          "Input object unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "counts_log1p": {
+        "state": "passed",
+        "output_hash": "306b5fac28fed1bf3b092c1cb37c73efe949402bb3f1f5eef75170205382213c",
+        "diagnostics": {
+          "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+          "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+          "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+          "theme_argument_bridge": false,
+          "accessor_checks": [
+            {
+              "assay": "RNA",
+              "source_slot": "counts",
+              "layer": "counts",
+              "legacy_matrix_equal": true
+            },
+            {
+              "assay": "RNA",
+              "source_slot": "counts",
+              "layer": "counts",
+              "legacy_matrix_equal": true
+            }
+          ],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true
+        },
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/dynamic/counts_log1p-portable.png",
+        "checks": [
+          "Actual 711-cell source Seurat object",
+          "Exact layer/legacy-slot matrix equality",
+          "Original-body legacy-accessor reference ggplot layer data equality",
+          "Input object unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "default_theme": {
+        "state": "passed",
+        "output_hash": "048e94a2d2ad7d49f9f9aabc0ca88a8b2e5aa4092077c46ece9e395c1cfa831f",
+        "diagnostics": {
+          "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+          "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+          "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+          "theme_argument_bridge": true,
+          "accessor_checks": [
+            {
+              "assay": "RNA",
+              "source_slot": "data",
+              "layer": "data",
+              "legacy_matrix_equal": true
+            }
+          ],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true
+        },
+        "path": "D:/哮喘乳酸化单细胞开篇/wiki-use/_project/reuse-verify-20261102b/dynamic/default_theme-portable.png",
+        "checks": [
+          "Actual 711-cell source Seurat object",
+          "Exact layer/legacy-slot matrix equality",
+          "Original-body legacy-accessor reference ggplot layer data equality",
+          "Input object unchanged",
+          "Caller search/options restored"
+        ]
+      }
+    },
+    "error_path": {
+      "reason": "Requested source slot is not one exact existing layer; no joining or partial matching performed",
+      "caller_environment_restored": true
+    },
+    "environment": {
+      "R": "4.5.0",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "PROCESSOR_ARCHITECTURE": "AMD64"
+    }
+  },
+  "input_sha256": {
+    "D:\\哮喘乳酸化单细胞开篇\\16.细胞轨迹\\monocle.Rdata": "5e6a988288a57c06b88deb070272845063fc69caf67a6c4bd90a15790af91ef0",
+    "D:\\UC-20种修饰\\20.空间转录组\\processed_samples_final.RData": "c2f825ebb072b3843c9e0a9bb31ad48c19e25e8bca4d51dffe9f16eb4d3462a8"
+  },
+  "no_family_wide_approval": true
+}

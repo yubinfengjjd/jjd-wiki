@@ -1,0 +1,64 @@
+{
+  "case_id": "py-youden-threshold",
+  "original_reference": {
+    "passed": true,
+    "checks": [
+      "eval_binary: exact original/extracted equality",
+      "youden_threshold: exact original/extracted equality",
+      "bootstrap_ci_auc: exact original/extracted equality",
+      "compute_specificity: exact original/extracted equality",
+      "get_proba: exact original/extracted equality",
+      "input DataFrame unchanged"
+    ],
+    "scope": "Real fixed train/test source data; LR(max_iter=2000) generates verification probabilities only, not reproduction of complete stacking or proof of unbiased validation.",
+    "input_files": {
+      "D:\\UC-20种修饰\\6.GMM-LR\\data.train.txt": "92ae3dfc1213e69fc2dab87f673789bdc6dd2a61d4b996d1166ffc1e397072b8",
+      "D:\\UC-20种修饰\\6.GMM-LR\\data.test.txt": "ca238dbe7a20bf4addda158bfe3bed814f23dc6cbafd2b5e3c8c2f0901d6b1f6"
+    },
+    "results": {
+      "eval_binary": {
+        "roc_auc": 0.9889270714012982,
+        "pr_auc": 0.9964048921217911,
+        "accuracy": 0.9758064516129032,
+        "precision": 0.97,
+        "recall_sensitivity": 1.0,
+        "specificity": 0.888888888888856,
+        "f1": 0.9847715736040609,
+        "brier": 0.019472829706937932,
+        "confusion_matrix": [
+          [
+            24,
+            3
+          ],
+          [
+            0,
+            97
+          ]
+        ],
+        "threshold": 0.5
+      },
+      "youden_threshold": [
+        0.5590746268305551,
+        0.962962962962963
+      ],
+      "bootstrap_ci_auc": [
+        0.9612299465240641,
+        1.0
+      ],
+      "compute_specificity": 0.888888888888856
+    }
+  },
+  "isolated_result": {
+    "passed": true,
+    "checks": [
+      "eval_binary",
+      "youden_threshold",
+      "bootstrap_ci_auc",
+      "compute_specificity",
+      "get_proba"
+    ],
+    "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+  },
+  "input_sha256": {},
+  "no_family_wide_approval": true
+}

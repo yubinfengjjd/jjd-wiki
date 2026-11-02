@@ -5,16 +5,18 @@
     "native-gini",
     "native-combinations",
     "native-gmt",
+    "native-score-dot",
     "py-eval-binary",
     "py-compute-specificity",
     "py-youden-threshold",
     "py-bootstrap-ci-auc",
-    "py-get-proba"
+    "py-get-proba",
+    "native-dynamic-seurat5",
+    "r-child-runner"
   ],
   "not_run_case_ids": [
     "native-library",
     "native-dynamic",
-    "native-score-dot",
     "native-cellchat",
     "native-singscore",
     "irgsea-score",
@@ -24,8 +26,8 @@
     "gsva-call",
     "stacking-cli"
   ],
-  "scope": "Function code organization and bounded real-data software comparisons, not scientific acceptance or author approval.",
-  "rlang_probe_exit_code": 3221225477,
+  "scope": "Bounded function/native-API/compatibility/runtime utility software verification. Source files, complete project workflows, all parameters and scientific acceptance are not validated.",
+  "rlang_probe_exit_code": 0,
   "python_missing_optional_or_workflow_packages": {
     "skopt": true,
     "torch": true,
@@ -33,5 +35,6 @@
     "xgboost": true,
     "lightgbm": true,
     "catboost": true
-  }
+  },
+  "environment_condition": "Parent omitted PROCESSOR_ARCHITECTURE; child-only real Windows architecture bridge repairs the cli shutdown crash without installing or replacing packages."
 }

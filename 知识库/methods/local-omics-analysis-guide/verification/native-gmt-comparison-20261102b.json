@@ -1,0 +1,45 @@
+{
+  "case_id": "native-gmt",
+  "original_reference": {
+    "state": "passed",
+    "checks": [
+      "Actual real-data function call",
+      "Original/extracted equality in reference phase",
+      "Input unchanged",
+      "Search/options restored"
+    ],
+    "output_hash": "3e6f33e40d9b7770cd787d135d2c3a0787913dc225a4cffd4074c26b957fe2bb",
+    "diagnostics": {
+      "function_id": "r-a9eb819f531a-263",
+      "source_sha256": "a9eb819f531a31591526b218dba22932d728b492b76f79cd25138e43eff3b49b",
+      "resolved_symbols": [],
+      "loaded_namespaces": [],
+      "search_restored": true,
+      "options_restored": true,
+      "library_paths_restored": true,
+      "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+    }
+  },
+  "isolated_result": {
+    "state": "passed",
+    "checks": [
+      "Actual real-data function call",
+      "Original/extracted equality in reference phase",
+      "Input unchanged",
+      "Search/options restored"
+    ],
+    "output_hash": "3e6f33e40d9b7770cd787d135d2c3a0787913dc225a4cffd4074c26b957fe2bb",
+    "diagnostics": {
+      "function_id": "r-a9eb819f531a-263",
+      "source_sha256": "a9eb819f531a31591526b218dba22932d728b492b76f79cd25138e43eff3b49b",
+      "resolved_symbols": [],
+      "loaded_namespaces": [],
+      "search_restored": true,
+      "options_restored": true,
+      "library_paths_restored": true,
+      "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+    }
+  },
+  "input_sha256": {},
+  "no_family_wide_approval": true
+}

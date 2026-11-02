@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "cellchat-create",
+  "state": "not_run",
+  "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted.",
+  "closure_hash": "a34526b496d50bf054c5965644e781c36ca55187583318d386d7d6c0d64b2dbf",
+  "files": {
+    "code/dependency_analysis.R": "8e246aa9ca41d4b1e29dfeb34c01957a65388d69e98e7300f5ad54f1b6067d50"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "not_run_reason": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+}

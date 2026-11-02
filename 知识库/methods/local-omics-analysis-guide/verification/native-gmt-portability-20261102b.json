@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-gmt",
+  "state": "passed",
+  "scope": "Previously compared original/extracted real-data case native-gmt repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance.",
+  "closure_hash": "1d4570807c8238845ee280bdf158246eff2ac2a173caf2425f6d827f4fcbb171",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/8772f757f2e7e3bb3decd215b4977743ebf18c2cf3f685fe3b29b7b83a088d97.R": "8772f757f2e7e3bb3decd215b4977743ebf18c2cf3f685fe3b29b7b83a088d97",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [
+    "code/native.R",
+    "code/native/8772f757f2e7e3bb3decd215b4977743ebf18c2cf3f685fe3b29b7b83a088d97.R",
+    "code/native_cases.R",
+    "code/registry.rds"
+  ],
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102\\validate_r.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\native-gmt-portable-config.json",
+  "checks": [
+    "Only declared closure copied to a separate directory",
+    "New process actual invocation exited zero",
+    "Recorded source/reference comparison and isolated output match",
+    "No original source-code directory supplied to isolated production module"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00"
+}

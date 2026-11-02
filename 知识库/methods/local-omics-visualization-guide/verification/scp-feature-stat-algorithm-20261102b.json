@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-feature-stat",
+  "state": "not_run",
+  "scope": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted.",
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398",
+    "code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "not_run_reason": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted."
+}

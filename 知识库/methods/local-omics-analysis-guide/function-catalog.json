@@ -614,8 +614,8 @@
       "notes": "Function body preserved; original script not executed. Free variables include data-mask column names and require call-specific review.",
       "selected_case": {
         "implementation": "native-score-dot",
-        "state": "not_run",
-        "verification": "verification/native-score-dot-algorithm.json",
+        "state": "verified",
+        "verification": "verification/native-score-dot-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -695,7 +695,7 @@
       "selected_case": {
         "implementation": "native-singscore",
         "state": "not_run",
-        "verification": "verification/native-singscore-algorithm.json",
+        "verification": "verification/native-singscore-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -1128,7 +1128,7 @@
       "selected_case": {
         "implementation": "native-cellchat",
         "state": "not_run",
-        "verification": "verification/native-cellchat-algorithm.json",
+        "verification": "verification/native-cellchat-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -1190,7 +1190,7 @@
       "selected_case": {
         "implementation": "native-normalize",
         "state": "verified",
-        "verification": "verification/native-normalize-algorithm.json",
+        "verification": "verification/native-normalize-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -2235,7 +2235,7 @@
       "selected_case": {
         "implementation": "native-combinations",
         "state": "verified",
-        "verification": "verification/native-combinations-algorithm.json",
+        "verification": "verification/native-combinations-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -5144,7 +5144,7 @@
       "selected_case": {
         "implementation": "native-dynamic",
         "state": "not_run",
-        "verification": "verification/native-dynamic-algorithm.json",
+        "verification": "verification/native-dynamic-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -9851,7 +9851,7 @@
       "selected_case": {
         "implementation": "native-gmt",
         "state": "verified",
-        "verification": "verification/native-gmt-algorithm.json",
+        "verification": "verification/native-gmt-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true
@@ -18685,7 +18685,7 @@
       "selected_case": {
         "implementation": "native-gini",
         "state": "verified",
-        "verification": "verification/native-gini-algorithm.json",
+        "verification": "verification/native-gini-algorithm-20261102b.json",
         "scope": "Only the recorded case; does not validate other versions or calling contexts"
       },
       "extracted_callable": true

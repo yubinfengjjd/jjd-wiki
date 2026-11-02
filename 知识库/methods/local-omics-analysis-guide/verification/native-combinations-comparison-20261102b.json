@@ -1,0 +1,49 @@
+{
+  "case_id": "native-combinations",
+  "original_reference": {
+    "state": "passed",
+    "checks": [
+      "Actual real-data function call",
+      "Original/extracted equality in reference phase",
+      "Input unchanged",
+      "Search/options restored"
+    ],
+    "output_hash": "82420499429e5df039c606e9413d141b7a89353ecaab6934089d6d596c85b658",
+    "diagnostics": {
+      "function_id": "r-51aa04641949-147",
+      "source_sha256": "51aa046419492b5eb05a237ec50014619bc930e860049d48f9e50ba3c36fdeb3",
+      "resolved_symbols": {
+        "combn": "utils"
+      },
+      "loaded_namespaces": "utils",
+      "search_restored": true,
+      "options_restored": true,
+      "library_paths_restored": true,
+      "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+    }
+  },
+  "isolated_result": {
+    "state": "passed",
+    "checks": [
+      "Actual real-data function call",
+      "Original/extracted equality in reference phase",
+      "Input unchanged",
+      "Search/options restored"
+    ],
+    "output_hash": "82420499429e5df039c606e9413d141b7a89353ecaab6934089d6d596c85b658",
+    "diagnostics": {
+      "function_id": "r-51aa04641949-147",
+      "source_sha256": "51aa046419492b5eb05a237ec50014619bc930e860049d48f9e50ba3c36fdeb3",
+      "resolved_symbols": {
+        "combn": "utils"
+      },
+      "loaded_namespaces": "utils",
+      "search_restored": true,
+      "options_restored": true,
+      "library_paths_restored": true,
+      "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+    }
+  },
+  "input_sha256": {},
+  "no_family_wide_approval": true
+}

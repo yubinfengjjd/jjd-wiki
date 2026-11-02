@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "implementation": "seurat-spatial-feature",
+  "state": "passed",
+  "scope": "Native Seurat seurat-spatial-feature forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation.",
+  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\validate_spatial.R E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\spatial-portable-config.json",
+  "checks": [
+    "Only declared closure copied to a separate directory",
+    "New process actual invocation exited zero",
+    "Recorded source/reference comparison and isolated output match",
+    "No original source-code directory supplied to isolated production module"
+  ],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398",
+    "code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "case": {
+    "state": "passed",
+    "output_hash": "908165a0edc6f9501de97486a4a9c7e32443d0be8e2452fcc730e0d94294d86b",
+    "path": "D:/UC-20种修饰/wiki-use/_project/reuse-verify-20261102b/spatial/seurat-spatial-feature-portable.png",
+    "cells": 2378,
+    "checks": [
+      "Actual UC spatial object with stored image",
+      "Native Spatial plot layer data equality",
+      "Input unchanged",
+      "Caller search/options restored"
+    ]
+  },
+  "comparison": "verification/seurat-spatial-feature-comparison-20261102b.json"
+}

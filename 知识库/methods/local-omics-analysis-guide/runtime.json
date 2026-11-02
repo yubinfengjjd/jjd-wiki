@@ -529,11 +529,12 @@
           "532 source occurrences; 448 callable declarations, each untested occurrence remains not_run"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-library-portability.json"
+        "portability": "verification/native-library-portability-20261102b.json"
       }
     },
     {
@@ -567,11 +568,12 @@
           "uc-ptm:2.20种修饰一致性聚类/Consensus.R :: normalize"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-normalize-portability.json"
+        "portability": "verification/native-normalize-portability-20261102b.json"
       }
     },
     {
@@ -605,11 +607,12 @@
           "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/4.svg_spatial/code/4.00_svg_spatial.R :: gini_index"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-gini-portability.json"
+        "portability": "verification/native-gini-portability-20261102b.json"
       }
     },
     {
@@ -643,11 +646,12 @@
           "uc-ptm:6.GMM-LR/GMM-LR_cv.R :: generate_combinations"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-combinations-portability.json"
+        "portability": "verification/native-combinations-portability-20261102b.json"
       }
     },
     {
@@ -681,11 +685,12 @@
           "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/workflow_helpers.R :: wf_read_gmt"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-gmt-portability.json"
+        "portability": "verification/native-gmt-portability-20261102b.json"
       }
     },
     {
@@ -728,11 +733,12 @@
           "asthma-lactylation:16.细胞轨迹/DynamicPlot.R :: DynamicPlotMonocle2"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-dynamic-portability.json"
+        "portability": "verification/native-dynamic-portability-20261102b.json"
       }
     },
     {
@@ -772,11 +778,12 @@
           "uc-ptm:16.20种修饰量化/1.R :: DotPlotScores"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-score-dot-portability.json"
+        "portability": "verification/native-score-dot-portability-20261102b.json"
       }
     },
     {
@@ -812,11 +819,12 @@
           "uc-ptm:19.细胞通讯/1.R :: create_cellchat"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-cellchat-portability.json"
+        "portability": "verification/native-cellchat-portability-20261102b.json"
       }
     },
     {
@@ -857,11 +865,12 @@
           "uc-ptm:16.20种修饰量化/SCORE.R :: Addsingscore"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/native-singscore-portability.json"
+        "portability": "verification/native-singscore-portability-20261102b.json"
       }
     },
     {
@@ -888,11 +897,12 @@
           "irGSEA native call; branch=irgsea_score"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/irgsea-score-portability.json"
+        "portability": "verification/irgsea-score-portability-20261102b.json"
       }
     },
     {
@@ -919,11 +929,12 @@
           "irGSEA native call; branch=irgsea_integrate"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/irgsea-integrate-portability.json"
+        "portability": "verification/irgsea-integrate-portability-20261102b.json"
       }
     },
     {
@@ -950,11 +961,12 @@
           "ConsensusClusterPlus native call; branch=consensus_cluster"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/consensus-cluster-portability.json"
+        "portability": "verification/consensus-cluster-portability-20261102b.json"
       }
     },
     {
@@ -981,11 +993,12 @@
           "CellChat native call; branch=cellchat_create"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-create-portability.json"
+        "portability": "verification/cellchat-create-portability-20261102b.json"
       }
     },
     {
@@ -1012,11 +1025,12 @@
           "GSVA native call; branch=gsva"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/gsva-call-portability.json"
+        "portability": "verification/gsva-call-portability-20261102b.json"
       }
     },
     {
@@ -1048,7 +1062,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/py-eval-binary-portability.json"
+        "portability": "verification/py-eval-binary-portability-20261102b.json"
       }
     },
     {
@@ -1080,7 +1094,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/py-compute-specificity-portability.json"
+        "portability": "verification/py-compute-specificity-portability-20261102b.json"
       }
     },
     {
@@ -1112,7 +1126,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/py-youden-threshold-portability.json"
+        "portability": "verification/py-youden-threshold-portability-20261102b.json"
       }
     },
     {
@@ -1144,7 +1158,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/py-bootstrap-ci-auc-portability.json"
+        "portability": "verification/py-bootstrap-ci-auc-portability-20261102b.json"
       }
     },
     {
@@ -1176,7 +1190,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/py-get-proba-portability.json"
+        "portability": "verification/py-get-proba-portability-20261102b.json"
       }
     },
     {
@@ -1221,7 +1235,77 @@
         ]
       },
       "evidence": {
-        "portability": "verification/stacking-cli-portability.json"
+        "portability": "verification/stacking-cli-portability-20261102b.json"
+      }
+    },
+    {
+      "id": "native-dynamic-seurat5",
+      "title": "原 DynamicPlotMonocle2 的 Seurat 5 接口兼容分支",
+      "entry": "code/dynamic_monocle2_seurat5.R",
+      "entry_function": "run_dynamic_monocle2_seurat5",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/dynamic_monocle2_seurat5.R",
+        "code/native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang",
+          "mgcv",
+          "ggplot2",
+          "patchwork",
+          "ggnewscale",
+          "RColorBrewer"
+        ]
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "author-project-native-functions",
+        "license": "Unresolved author project and transitive licenses; local only",
+        "functions": [
+          "DynamicPlotMonocle2, source e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee"
+        ],
+        "modifications": [
+          "Exactly two Seurat::GetAssayData call heads use exact existing layers. Legacy Assay values checked at tolerance zero. Explicit Matrix/stats/rlang bindings and theme_minimal aspect.ratio bridge. Original model, transforms, group and fallback unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/native-dynamic-seurat5-portability-20261102b.json"
+      }
+    },
+    {
+      "id": "r-child-runner",
+      "title": "按实际 Windows 架构启动 R 子进程",
+      "entry": "code/run_r.py",
+      "entry_function": "run_r_script",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/run_r.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": []
+      },
+      "optional_packages": {},
+      "source": {
+        "package": "local-runtime-adapter",
+        "license": "Local adapter; project source restrictions unchanged",
+        "functions": [
+          "GetNativeSystemInfo and subprocess.run"
+        ],
+        "modifications": [
+          "Fill missing PROCESSOR_ARCHITECTURE in child environment only, using actual Windows API architecture. No global environment or package changes."
+        ]
+      },
+      "evidence": {
+        "portability": "verification/r-child-runner-portability-20261102b.json"
       }
     }
   ]

@@ -1,0 +1,43 @@
+{
+  "case_id": "r-child-runner",
+  "original_reference": {
+    "actual_architecture": "AMD64",
+    "architecture_source": "Windows GetNativeSystemInfo",
+    "minimal_rlang_cli_exit_zero": true
+  },
+  "isolated_result": {
+    "passed": true,
+    "runs": [
+      {
+        "returncode": 0,
+        "stdout": "AMD64 \n",
+        "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+        "command": [
+          "D:\\R-4.5.0\\bin\\Rscript.exe",
+          "--vanilla",
+          "E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\runner-probe.R"
+        ],
+        "environment_applied": {
+          "PROCESSOR_ARCHITECTURE": "AMD64"
+        },
+        "actual_architecture": "AMD64"
+      },
+      {
+        "returncode": 0,
+        "stdout": "AMD64 \n",
+        "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+        "command": [
+          "D:\\R-4.5.0\\bin\\Rscript.exe",
+          "--vanilla",
+          "E:\\research-wiki-env\\work\\rwiki\\local-omics-reuse-20261102b\\runner-probe.R"
+        ],
+        "environment_applied": {},
+        "actual_architecture": "AMD64"
+      }
+    ],
+    "parent_environment_unchanged": true,
+    "actual_architecture": "AMD64"
+  },
+  "input_sha256": {},
+  "no_family_wide_approval": true
+}

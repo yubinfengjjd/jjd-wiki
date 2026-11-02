@@ -31,7 +31,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/py-roc-render-portability.json"
+        "portability": "verification/py-roc-render-portability-20261102b.json"
       }
     },
     {
@@ -58,11 +58,12 @@
           "irGSEA native plot; branch=irgsea_heatmap"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/irgsea-heatmap-portability.json"
+        "portability": "verification/irgsea-heatmap-portability-20261102b.json"
       }
     },
     {
@@ -89,11 +90,12 @@
           "SCP native plot; branch=scp_cell_dim"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/scp-cell-dim-portability.json"
+        "portability": "verification/scp-cell-dim-portability-20261102b.json"
       }
     },
     {
@@ -120,11 +122,12 @@
           "SCP native plot; branch=scp_feature_dim"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/scp-feature-dim-portability.json"
+        "portability": "verification/scp-feature-dim-portability-20261102b.json"
       }
     },
     {
@@ -151,11 +154,12 @@
           "SCP native plot; branch=scp_feature_stat"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/scp-feature-stat-portability.json"
+        "portability": "verification/scp-feature-stat-portability-20261102b.json"
       }
     },
     {
@@ -182,11 +186,12 @@
           "SCP native plot; branch=scp_feature_heatmap"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/scp-feature-heatmap-portability.json"
+        "portability": "verification/scp-feature-heatmap-portability-20261102b.json"
       }
     },
     {
@@ -213,11 +218,12 @@
           "Seurat native plot; branch=seurat_dim"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/seurat-dim-portability.json"
+        "portability": "verification/seurat-dim-portability-20261102b.json"
       }
     },
     {
@@ -244,11 +250,12 @@
           "Seurat native plot; branch=seurat_feature"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/seurat-feature-portability.json"
+        "portability": "verification/seurat-feature-portability-20261102b.json"
       }
     },
     {
@@ -275,11 +282,12 @@
           "Seurat native plot; branch=seurat_violin"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/seurat-violin-portability.json"
+        "portability": "verification/seurat-violin-portability-20261102b.json"
       }
     },
     {
@@ -306,11 +314,12 @@
           "Seurat native plot; branch=seurat_dot"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/seurat-dot-portability.json"
+        "portability": "verification/seurat-dot-portability-20261102b.json"
       }
     },
     {
@@ -337,11 +346,12 @@
           "Seurat native plot; branch=seurat_spatial_dim"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/seurat-spatial-dim-portability.json"
+        "portability": "verification/seurat-spatial-dim-portability-20261102b.json"
       }
     },
     {
@@ -368,11 +378,12 @@
           "Seurat native plot; branch=seurat_spatial_feature"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/seurat-spatial-feature-portability.json"
+        "portability": "verification/seurat-spatial-feature-portability-20261102b.json"
       }
     },
     {
@@ -399,11 +410,12 @@
           "CellChat native plot; branch=cellchat_circle"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-circle-portability.json"
+        "portability": "verification/cellchat-circle-portability-20261102b.json"
       }
     },
     {
@@ -430,11 +442,12 @@
           "CellChat native plot; branch=cellchat_bubble"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-bubble-portability.json"
+        "portability": "verification/cellchat-bubble-portability-20261102b.json"
       }
     },
     {
@@ -461,11 +474,12 @@
           "CellChat native plot; branch=cellchat_aggregate"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-aggregate-portability.json"
+        "portability": "verification/cellchat-aggregate-portability-20261102b.json"
       }
     },
     {
@@ -492,11 +506,12 @@
           "CellChat native plot; branch=cellchat_heatmap"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-heatmap-portability.json"
+        "portability": "verification/cellchat-heatmap-portability-20261102b.json"
       }
     },
     {
@@ -523,11 +538,12 @@
           "CellChat native plot; branch=cellchat_role_heatmap"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-role-heatmap-portability.json"
+        "portability": "verification/cellchat-role-heatmap-portability-20261102b.json"
       }
     },
     {
@@ -554,11 +570,12 @@
           "CellChat native plot; branch=cellchat_role_scatter"
         ],
         "modifications": [
-          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged."
+          "Function-only extraction, private environment, explicit external bindings, dependency dispatch or explicit file/CLI arguments; source algorithms unchanged.",
+          "Windows invocation: if the caller omitted PROCESSOR_ARCHITECTURE, run through the analysis-guide run_r.py child runner using the actual Windows architecture. Never infer architecture from a desired result."
         ]
       },
       "evidence": {
-        "portability": "verification/cellchat-role-scatter-portability.json"
+        "portability": "verification/cellchat-role-scatter-portability-20261102b.json"
       }
     }
   ]

@@ -116,7 +116,7 @@ data_contract:
 
 ## 代码复用层增量（2026-11-02）
 
-已有函数的独立加载、显式 arguments/bindings、去重代码、源码哈希和逐文件去向集中在 [[methods/local-omics-analysis-guide]]；依赖原生绘图和消费预计算结果的 ROC 绘图在 [[methods/local-omics-visualization-guide]]。请 use 对应代码页，不对本来源/流程页承诺 run/render。532 处函数定义中 448 处可选取，84 处有安装、清理、路径/工作树或连带闭包缺口而隔离。10 个具体用例通过原版对照及异目录验证，其余保留 not_run；整份源码、整个课题流程与科学有效性不随之提升。此前“无 code/、未提炼”的说明描述来源归档阶段，本次代码资产集中在上述两页，未复制数据与原图进 Wiki。
+已有函数的独立加载、显式 arguments/bindings、去重代码、源码哈希和逐文件去向集中在 [[methods/local-omics-analysis-guide]]；依赖原生绘图和消费预计算结果的 ROC 绘图在 [[methods/local-omics-visualization-guide]]。请 use 对应代码页，不对本来源/流程页承诺 run/render。532 处函数定义中 448 处可选取，84 处有安装、清理、路径/工作树或连带闭包缺口而隔离。两个代码页的 40 个实现分支中，19 个具有限定用例的当前运行与异目录证据（含 1 个纯环境工具），21 个保留 not_run；另有 4 个既有 SCP 闭包完成课题集成/独立回放，不重复建实现；整份源码、整个课题流程与科学有效性不随之提升。此前“无 code/、未提炼”的说明描述来源归档阶段，本次代码资产集中在上述两页，未复制数据与原图进 Wiki。
 
 <!-- user:start -->
 <!-- user:end -->

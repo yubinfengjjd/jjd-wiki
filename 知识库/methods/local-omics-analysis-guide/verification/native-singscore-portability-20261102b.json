@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "native-singscore",
+  "state": "not_run",
+  "scope": "Not run: singscore absent; source assay=null spelling and signature-direction handling preserved.",
+  "closure_hash": "6b4b1d3369a63170ef9e9229f6943d064bfd8f861bce6cf4d5f4807c9fd3b21d",
+  "files": {
+    "code/native.R": "08244076e41658f8f9d13c5d3693a05d27bf9ae3c09f20524088cbd1df33bb09",
+    "code/native/4e5f105c8515f60f812546f2e50725a042a811b8f57b4f8cea0484ecceb2b2e8.R": "4e5f105c8515f60f812546f2e50725a042a811b8f57b4f8cea0484ecceb2b2e8",
+    "code/native_cases.R": "eb6d6cc8a302a08b3faa1597748c6e39f0246ad4a1d48cab8df3ea7dbdf3da53",
+    "code/registry.rds": "362270dd9d53f475c6ad0cf799ca61f065d039d076c158dcd8a2bb7ddf33be61"
+  },
+  "copied_files": [],
+  "command": "",
+  "checks": [],
+  "environment": {
+    "R": "4.5.0",
+    "Python": "3.12.7",
+    "R_libs": [
+      "Wiki dedicated figureya library",
+      "Wiki dedicated SCP 4.5 library"
+    ],
+    "PROCESSOR_ARCHITECTURE": "AMD64 verified with Windows GetNativeSystemInfo; filled only in the child if omitted",
+    "packages_installed": false
+  },
+  "executed_at": "2026-11-02T09:54:21.500026+00:00",
+  "not_run_reason": "Not run: singscore absent; source assay=null spelling and signature-direction handling preserved."
+}
