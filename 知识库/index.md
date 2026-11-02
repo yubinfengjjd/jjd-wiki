@@ -144,8 +144,8 @@
 - [[methods/scp-viz-statplots|单细胞统计与相关绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 - [[methods/scp-viz-heatmaps|单细胞表达与动态热图入口]] — 4 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 - [[methods/scp-viz-dimplots|单细胞降维与表达绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
-- [[methods/local-omics-analysis-guide|组学课题方法去重与选择]] — 保留原算法的原生函数、显式依赖调用与逐用例运行清单；知识分类、科学验证和独立迁移分别记录。
-- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造]] — 保留原算法的原生函数、显式依赖调用与逐用例运行清单；知识分类、科学验证和独立迁移分别记录。
+- [[methods/local-omics-analysis-guide|组学课题方法去重与选择]] — 按方法理论关联原语言复用代码：自定义 DotPlotScores/动态曲线、模型评价和依赖适配；验证限定到具体分支。
+- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造]] — 依赖原生图、自定义函数与预计算 ROC 分流；复用已有 SCP 闭包，逐分支保留依赖和验证边界。
 - [[methods/scp-viz-model-overlays|轨迹富集与网络绘图入口]] — 8 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 
 ### ready

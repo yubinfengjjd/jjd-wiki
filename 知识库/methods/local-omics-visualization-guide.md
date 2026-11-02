@@ -17,7 +17,7 @@ cite:
   账本，快照 local-omics-2026-11-02；编译说明不替代上游作者和各软件许可。
 favorite: false
 method_kind: technical
-summary: 保留原算法的原生函数、显式依赖调用与逐用例运行清单；知识分类、科学验证和独立迁移分别记录。
+summary: 依赖原生图、自定义函数与预计算 ROC 分流；复用已有 SCP 闭包，逐分支保留依赖和验证边界。
 keywords:
 - CellChat
 - CellDimPlot
@@ -171,6 +171,14 @@ implementations:
   dependencies:
   - CellChat
   verification: verification/cellchat-role-scatter-algorithm-20261102b.json
+code_roles:
+- visualization
+theory_methods:
+- gene-set-scoring
+- gene-set-enrichment
+- trajectory-inference
+- dynamic-feature-analysis
+- regression-resampling-evaluation
 ---
 # 课题绘图依赖与自定义改造
 

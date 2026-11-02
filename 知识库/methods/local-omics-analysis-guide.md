@@ -17,7 +17,7 @@ cite:
   账本，快照 local-omics-2026-11-02；编译说明不替代上游作者和各软件许可。
 favorite: false
 method_kind: technical
-summary: 保留原算法的原生函数、显式依赖调用与逐用例运行清单；知识分类、科学验证和独立迁移分别记录。
+summary: 按方法理论关联原语言复用代码：自定义 DotPlotScores/动态曲线、模型评价和依赖适配；验证限定到具体分支。
 keywords:
 - '%||%'
 - .element_line_compat
@@ -450,6 +450,23 @@ implementations:
   entrypoint: code/run_r.py:run_r_script
   dependencies: []
   verification: verification/r-child-runner-algorithm-20261102b.json
+code_roles:
+- analysis
+- visualization
+- runtime
+theory_methods:
+- cell-quality-control
+- batch-integration
+- dimensionality-reduction
+- cell-clustering
+- cell-type-annotation
+- differential-expression
+- gene-set-scoring
+- gene-set-enrichment
+- trajectory-inference
+- dynamic-feature-analysis
+- regression-resampling-evaluation
+- shap-explanation
 ---
 # 组学课题方法去重与选择
 
