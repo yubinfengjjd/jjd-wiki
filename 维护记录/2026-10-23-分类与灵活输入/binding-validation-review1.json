@@ -1,0 +1,373 @@
+{
+  "generated_at": "2026-10-23",
+  "work": "E:\\research-wiki-env\\tmp\\rw-bindings",
+  "results": [
+    {
+      "name": "r-dotplot",
+      "template": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+      "table_key": "dotplot",
+      "source": "render-dotplot-long.csv",
+      "source_sha256": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+      "source_sha256_after": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+      "input_file": "author/my_data.csv",
+      "input_sha256_before": "2e06706bc05b52575ea3265328cd24a2d65701166fcddb9ed5038919462932fa",
+      "input_sha256_after": "2e06706bc05b52575ea3265328cd24a2d65701166fcddb9ed5038919462932fa",
+      "inputs_unchanged": true,
+      "bindings": {
+        "tables": {
+          "dotplot": {
+            "file": "my_data.csv",
+            "columns": {
+              "group": "cell_type",
+              "feature": "gene_symbol",
+              "avg_expression": "mean_expr",
+              "pct_expressed": "positive_percent",
+              "target_group": "target_cell_type"
+            }
+          }
+        }
+      },
+      "standard": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "886c1332a7c288021b56ae0b709661094d9fbe9625507423073cbd52d7498557"
+      },
+      "bound": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "886c1332a7c288021b56ae0b709661094d9fbe9625507423073cbd52d7498557"
+      },
+      "renamed_without_bindings": {
+        "exit": 1,
+        "stderr": "tables.dotplot 数据文件不存在: E:\\research-wiki-env\\tmp\\rw-bindings\\r-dotplot\\author\\render-dotplot-long.csv\n"
+      },
+      "comparison": {
+        "same_size": true,
+        "size_a": [
+          1363,
+          2380
+        ],
+        "size_b": [
+          1363,
+          2380
+        ],
+        "mean_abs_difference": 0.0,
+        "same_bytes": true
+      },
+      "report": {
+        "mapping": {
+          "group": "cell_type",
+          "feature": "gene_symbol",
+          "avg_expression": "mean_expr",
+          "pct_expressed": "positive_percent",
+          "target_group": "target_cell_type"
+        },
+        "omitted_optional": [],
+        "extras_preserved": [],
+        "checks": [
+          "source_inside_data_root",
+          "header_unique",
+          "required_columns_present",
+          "numeric_values_parse"
+        ],
+        "warnings": [],
+        "semantics": "只核对字段存在、必填关系与数值可解析；不验证单位、粒度、配对关系或统计含义；不做 0–1 / 0–100 换算。",
+        "source_sha256": "2e06706bc05b52575ea3265328cd24a2d65701166fcddb9ed5038919462932fa",
+        "source_sha256_matches_input_before": true
+      }
+    },
+    {
+      "name": "r-dotplot-optional",
+      "template": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+      "table_key": "dotplot",
+      "source": "render-dotplot-long.csv",
+      "source_sha256": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+      "source_sha256_after": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+      "input_file": "author/my_data.csv",
+      "input_sha256_before": "c58d794327a490df8bc23a4c98a01c7e8645f3f1735e136dae63c40dd979d8aa",
+      "input_sha256_after": "c58d794327a490df8bc23a4c98a01c7e8645f3f1735e136dae63c40dd979d8aa",
+      "inputs_unchanged": true,
+      "bindings": {
+        "tables": {
+          "dotplot": {
+            "file": "my_data.csv",
+            "columns": {
+              "group": "cell_type",
+              "feature": "gene_symbol",
+              "avg_expression": "mean_expr",
+              "pct_expressed": "positive_percent"
+            }
+          }
+        }
+      },
+      "standard": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "886c1332a7c288021b56ae0b709661094d9fbe9625507423073cbd52d7498557"
+      },
+      "bound": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "024794b91aac246f5fe0e5ebffc68f2cdeea0ae1434c4ed902f26fc30c4a8d43"
+      },
+      "renamed_without_bindings": {
+        "exit": 1,
+        "stderr": "tables.dotplot 数据文件不存在: E:\\research-wiki-env\\tmp\\rw-bindings\\r-dotplot-optional\\author\\render-dotplot-long.csv\n"
+      },
+      "comparison": {
+        "same_size": true,
+        "size_a": [
+          1363,
+          2380
+        ],
+        "size_b": [
+          1363,
+          2380
+        ],
+        "mean_abs_difference": 8.005185978,
+        "same_bytes": false
+      },
+      "report": {
+        "mapping": {
+          "group": "cell_type",
+          "feature": "gene_symbol",
+          "avg_expression": "mean_expr",
+          "pct_expressed": "positive_percent"
+        },
+        "omitted_optional": [
+          "target_group"
+        ],
+        "extras_preserved": [],
+        "checks": [
+          "source_inside_data_root",
+          "header_unique",
+          "required_columns_present",
+          "numeric_values_parse"
+        ],
+        "warnings": [],
+        "semantics": "只核对字段存在、必填关系与数值可解析；不验证单位、粒度、配对关系或统计含义；不做 0–1 / 0–100 换算。",
+        "source_sha256": "c58d794327a490df8bc23a4c98a01c7e8645f3f1735e136dae63c40dd979d8aa",
+        "source_sha256_matches_input_before": true
+      }
+    },
+    {
+      "name": "r-bar",
+      "template": "2026-10-22-scp-example__fig09-bar--bar",
+      "table_key": "metadata",
+      "source": "render-cell-metadata.csv",
+      "source_sha256": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+      "source_sha256_after": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+      "input_file": "author/my_data.csv",
+      "input_sha256_before": "dd96e49118ec8fc9cd9da4f956221e5c321bf0049c47a352a8fb32fd047ae98b",
+      "input_sha256_after": "dd96e49118ec8fc9cd9da4f956221e5c321bf0049c47a352a8fb32fd047ae98b",
+      "inputs_unchanged": true,
+      "bindings": {
+        "tables": {
+          "metadata": {
+            "file": "my_data.csv",
+            "columns": {
+              "cell": "barcode",
+              "group": "cell_type",
+              "stat": "phase"
+            }
+          }
+        }
+      },
+      "standard": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "9fd7c89660883d7e0dec1848d741d4f32843be1b771777814949d659f70bbc3e"
+      },
+      "bound": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "9fd7c89660883d7e0dec1848d741d4f32843be1b771777814949d659f70bbc3e"
+      },
+      "renamed_without_bindings": {
+        "exit": 1,
+        "stderr": "tables.metadata 数据文件不存在: E:\\research-wiki-env\\tmp\\rw-bindings\\r-bar\\author\\render-cell-metadata.csv\n"
+      },
+      "comparison": {
+        "same_size": true,
+        "size_a": [
+          1275,
+          802
+        ],
+        "size_b": [
+          1275,
+          802
+        ],
+        "mean_abs_difference": 0.0,
+        "same_bytes": true
+      },
+      "report": {
+        "mapping": {
+          "cell": "barcode",
+          "group": "cell_type",
+          "stat": "phase"
+        },
+        "omitted_optional": [],
+        "extras_preserved": [],
+        "checks": [
+          "source_inside_data_root",
+          "header_unique",
+          "required_columns_present",
+          "numeric_values_parse"
+        ],
+        "warnings": [],
+        "semantics": "只核对字段存在、必填关系与数值可解析；不验证单位、粒度、配对关系或统计含义；不做 0–1 / 0–100 换算。",
+        "source_sha256": "dd96e49118ec8fc9cd9da4f956221e5c321bf0049c47a352a8fb32fd047ae98b",
+        "source_sha256_matches_input_before": true
+      }
+    },
+    {
+      "name": "r-bar-optional",
+      "template": "2026-10-22-scp-example__fig09-bar--bar",
+      "table_key": "metadata",
+      "source": "render-cell-metadata.csv",
+      "source_sha256": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+      "source_sha256_after": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+      "input_file": "author/my_data.csv",
+      "input_sha256_before": "e6b61440387ac295a3090d5539a3b19bc5167810ecb3a8f9c4fb0cc0286c0dc7",
+      "input_sha256_after": "e6b61440387ac295a3090d5539a3b19bc5167810ecb3a8f9c4fb0cc0286c0dc7",
+      "inputs_unchanged": true,
+      "bindings": {
+        "tables": {
+          "metadata": {
+            "file": "my_data.csv",
+            "columns": {
+              "group": "cell_type",
+              "stat": "phase"
+            }
+          }
+        }
+      },
+      "standard": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "9fd7c89660883d7e0dec1848d741d4f32843be1b771777814949d659f70bbc3e"
+      },
+      "bound": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "9fd7c89660883d7e0dec1848d741d4f32843be1b771777814949d659f70bbc3e"
+      },
+      "renamed_without_bindings": {
+        "exit": 1,
+        "stderr": "tables.metadata 数据文件不存在: E:\\research-wiki-env\\tmp\\rw-bindings\\r-bar-optional\\author\\render-cell-metadata.csv\n"
+      },
+      "comparison": {
+        "same_size": true,
+        "size_a": [
+          1275,
+          802
+        ],
+        "size_b": [
+          1275,
+          802
+        ],
+        "mean_abs_difference": 0.0,
+        "same_bytes": true
+      },
+      "report": {
+        "mapping": {
+          "group": "cell_type",
+          "stat": "phase"
+        },
+        "omitted_optional": [
+          "cell"
+        ],
+        "extras_preserved": [],
+        "checks": [
+          "source_inside_data_root",
+          "header_unique",
+          "required_columns_present",
+          "numeric_values_parse"
+        ],
+        "warnings": [],
+        "semantics": "只核对字段存在、必填关系与数值可解析；不验证单位、粒度、配对关系或统计含义；不做 0–1 / 0–100 换算。",
+        "source_sha256": "e6b61440387ac295a3090d5539a3b19bc5167810ecb3a8f9c4fb0cc0286c0dc7",
+        "source_sha256_matches_input_before": true
+      }
+    },
+    {
+      "name": "python-shap",
+      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "table_key": "SHAP汇总",
+      "source": "shap-summary.csv",
+      "source_sha256": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3",
+      "source_sha256_after": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3",
+      "input_file": "author/my_data.csv",
+      "input_sha256_before": "416c643b133b1af99a61db22cc18eb737204e467b185c165ae087e87653637b5",
+      "input_sha256_after": "416c643b133b1af99a61db22cc18eb737204e467b185c165ae087e87653637b5",
+      "inputs_unchanged": true,
+      "bindings": {
+        "tables": {
+          "SHAP汇总": {
+            "file": "my_data.csv",
+            "columns": {
+              "feature": "variable",
+              "shap": "mean_abs_shap",
+              "percent": "contribution_percent"
+            }
+          }
+        }
+      },
+      "standard": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc"
+      },
+      "bound": {
+        "exit": 0,
+        "stderr": "",
+        "figure_sha256": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc"
+      },
+      "renamed_without_bindings": {
+        "exit": 1,
+        "stderr": "tables.SHAP汇总 数据文件不存在: E:\\research-wiki-env\\tmp\\rw-bindings\\python-shap\\author\\shap-summary.csv\n"
+      },
+      "comparison": {
+        "same_size": true,
+        "size_a": [
+          2880,
+          2100
+        ],
+        "size_b": [
+          2880,
+          2100
+        ],
+        "mean_abs_difference": 0.0,
+        "same_bytes": true
+      },
+      "report": {
+        "mapping": {
+          "feature": "variable",
+          "shap": "mean_abs_shap",
+          "percent": "contribution_percent"
+        },
+        "omitted_optional": [],
+        "extras_preserved": [],
+        "checks": [
+          "source_inside_data_root",
+          "header_unique",
+          "required_columns_present",
+          "numeric_values_parse"
+        ],
+        "warnings": [],
+        "semantics": "只核对字段存在、必填关系与数值可解析；不验证单位、粒度、配对关系或统计含义；不做 0–1 / 0–100 换算。",
+        "source_sha256": "416c643b133b1af99a61db22cc18eb737204e467b185c165ae087e87653637b5",
+        "source_sha256_matches_input_before": true
+      }
+    },
+    {
+      "name": "negative-missing",
+      "exit": 1,
+      "stderr": "数据绑定失败: 缺少必需字段: avg_expression\n",
+      "out_exists": false,
+      "input_sha256_before": "e0baabd8a2de989abe81b1759a38c07ed3b511ac41c69ef98b8d8399530c8de9",
+      "input_sha256_after": "e0baabd8a2de989abe81b1759a38c07ed3b511ac41c69ef98b8d8399530c8de9",
+      "inputs_unchanged": true
+    }
+  ]
+}

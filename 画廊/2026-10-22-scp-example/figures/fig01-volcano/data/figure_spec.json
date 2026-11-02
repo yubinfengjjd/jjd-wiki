@@ -1,0 +1,37 @@
+{
+  "source": "SCP v0.5.6 VolcanoPlot (R/SCP-plot.R 7088-7194), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig01.png",
+  "logical_panel": "A",
+  "chart_type": "volcano",
+  "input": "data/de_endocrine_vs_rest.csv",
+  "input_columns": {
+    "gene": "gene symbol; label text",
+    "group1": "comparison group / facet; only Endocrine in this panel",
+    "group2": "reference group; Rest (traceability only)",
+    "avg_log2FC": "Seurat FindMarkers average log2 fold change; also color",
+    "pct.1": "fraction expressing in Endocrine",
+    "pct.2": "fraction expressing in Rest",
+    "p_val": "raw Wilcoxon p value (traceability only)",
+    "p_val_adj": "Bonferroni-adjusted p value; drives signed y"
+  },
+  "params": {
+    "test.use": "wilcox",
+    "DE_threshold": "avg_log2FC > 0 & p_val_adj < 0.05",
+    "x_metric": "diff_pct",
+    "nlabel": 8,
+    "label.size": 4,
+    "palette": "RdBu",
+    "pt.size": 1,
+    "pt.alpha": 1,
+    "highlight": {"color": "black", "size": 1, "alpha": 1, "stroke": 0.5},
+    "seed": 1,
+    "width_in": 7,
+    "height_in": 6,
+    "dpi": 200
+  },
+  "provenance": {
+    "data": "pancreas_sub (1000 cells); DE table computed once with Seurat 5.6.0 FindMarkers(ident.1='Endocrine', only.pos=FALSE, logfc.threshold=0, min.pct=0.1) against all other cells, labelled group2='Rest'; not SCP RunDEtest",
+    "code": "native SCP VolcanoPlot ggplot construction extracted; table prep (diff_pct, signed y, quantile cap, DE flag, ordering) separated; no geometry rewritten",
+    "license": "GPL (>= 3)"
+  }
+}

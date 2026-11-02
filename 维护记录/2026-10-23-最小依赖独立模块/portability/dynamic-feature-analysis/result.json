@@ -1,0 +1,33 @@
+{
+  "method": "dynamic-feature-analysis",
+  "state": "passed",
+  "error": {},
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" dynamic-feature-analysis \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\dynamic-feature-analysis\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/dynamic-feature-analysis/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\dynamic-feature-analysis\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/dynamic-feature-analysis/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/dynamic-feature-analysis/result-input.rds",
+  "case": {
+    "label": "GAM dynamic features",
+    "parameters": {
+      "parameters": {
+        "lineages": "fixture_time",
+        "features": ["Gcg", "Krt19"],
+        "slot": "data",
+        "n_candidates": {},
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "58e3c3e4a8ce44a1239dac6910b187ee4240c9972e56dfcb13f547618620e355",
+    "dynamic_native.R": "746dc97ae84babe45e32434ce99cc901e988dadf00ed044a1f3d3882015c2b86"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:01:44 UTC",
+  "executed_at": "2026-10-23 16:01:48 UTC"
+}

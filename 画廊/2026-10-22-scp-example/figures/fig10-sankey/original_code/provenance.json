@@ -1,0 +1,55 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "function": "CellStatPlot / StatPlot (sankey branch)",
+  "line_ranges": [
+    [
+      4463,
+      4563
+    ],
+    [
+      4564,
+      5678
+    ]
+  ],
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "dc872db11c962119dcfd5cefd0c4007847241ce6a90405818db707aaa7cfc8c6",
+  "vendored_ggsankey": {
+    "file": "R/ggsankey.R",
+    "sha256_full_file": "d15a2e5bcc980cdf73a2632dd3dabb08ed1a2c6748e7ed3416c6864067cfc69e",
+    "line_ranges": {
+      "prepare_params": [
+        8,
+        34
+      ],
+      "find_default_space": [
+        36,
+        46
+      ],
+      "sigmoid": [
+        48,
+        55
+      ],
+      "make_long": [
+        70,
+        108
+      ],
+      "StatSankeyFlow": [
+        214,
+        342
+      ],
+      "StatSankeyNode": [
+        583,
+        651
+      ],
+      "geom_sankey": [
+        691,
+        744
+      ]
+    },
+    "note": "Copied verbatim into code/scp_helpers.R with namespace qualification only."
+  },
+  "note": "Exact CellStatPlot and StatPlot excerpt (lines 4463-5678) with a short provenance header; not the full source file. The patched function is in code/scp_sankey_native.R, not here."
+}

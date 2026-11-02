@@ -1,0 +1,91 @@
+{
+ "schema_version": 1,
+ "implementation": "scp-runslingshot",
+ "state": "passed",
+ "scope": "subcelltype_umap",
+ "command": "cd E:\\research-wiki-env\\tmp\\iso\\runslingshot_subcelltype_umap_1792944937 && Rscript driver.R",
+ "checks": [
+  "slingshot lineages 存 srt@tools",
+  "search_unchanged=True",
+  "libpaths_unchanged=True",
+  "installed_pkgs_unchanged=True",
+  "binding_locked:check_R=True",
+  "binding_locked:check_Python=True",
+  "binding_locked:PrepareEnv=True",
+  "binding_locked:conda_install=True",
+  "binding_locked:download=True"
+ ],
+ "environment": {
+  "rscript": "D:/R-4.5.0/bin/x64/Rscript.exe",
+  "r_libs": "E:/research-wiki-env/R-lib-scp/4.5",
+  "r_version": "",
+  "copied_to": "E:/research-wiki-env/tmp/iso/runslingshot_subcelltype_umap_1792944937",
+  "files_copied": 49
+ },
+ "files": {
+  "code/module.R": "067b75429527d9c54ea1d1eb2a5ca1414fbf73b7c5f55c414f9a761d2227e4a4",
+  "code/fns/Blend2Color.R": "ca88fbea4eb801fa43ee9abfbd7534e7cf414e9eeba77a2b9b891897788a4c53",
+  "code/fns/BlendRGBList.R": "4b1c4d65131a6f954b74d3874a37c504c12c0a3fad7291857aa9a4b30033edce",
+  "code/fns/CellDimPlot.R": "2e4f5d604f047a50b0e98c0775908ea74163cb46516774c8bc291451dbb639a5",
+  "code/fns/CellDimPlot3D.R": "e46ca975bc8cf5aa43f81119cba82aec698ed9d1fe0c8a2e9f22db5f09e25eec",
+  "code/fns/CellStatPlot.R": "092b3c00a7047fba4a6243b59e53c5d6965de5db14ef461a15220f920c1826c9",
+  "code/fns/DefaultReduction.R": "68c5589a7785002692c76206d87786a147b136e69998c05b2e30f7c61bb54fcf",
+  "code/fns/GraphPlot.R": "c0d3a6d889cfb8ab5d3276be0b26ea7ba927192569995b55e1c8a5e752d07af4",
+  "code/fns/LineagePlot.R": "acd4a8d6f4b86cd92c17808de157e3a10d8304da57617677cd0fa5ffbb9a2d53",
+  "code/fns/PAGAPlot.R": "723b0f67a106c1e7e6ddb1e9ca74ea81af7301010d42041e2f4417146f948ab5",
+  "code/fns/RGBA2RGB.R": "2201584ab8ffe02cc1335e59ba4ab9ad267e7065bddaae413e55b93f3d724b74",
+  "code/fns/RunSlingshot.R": "cd7bc1786a1ea433e6165c1d1e841d5dfb3e714358b49585769a15581e2c3e1a",
+  "code/fns/StatPlot.R": "5ffa79ece51a32747f6f94f6ef9427a4acc372ed64853f1658f729669f3dcde2",
+  "code/fns/StatSankeyBumpFlow.R": "d209811cb48c07e7372f85f96284669bc08dab74d42d6108309a32b906adaa4d",
+  "code/fns/StatSankeyFlow.R": "8067b7dd791b0a2e7d5c2e19074f96492b4f06fd95faa692aa088759cd2ad1b1",
+  "code/fns/StatSankeyNode.R": "f3583e3de277baafc3886970a83a02c13109975d55b053d25a4e6d8e388c1002",
+  "code/fns/StatSankeyText.R": "f00ef4f8131146e0fcf818a26b5a475d78c1ee125a2120df81da05fe7d878c9b",
+  "code/fns/VelocityPlot.R": "7cf4a52717b4325ae95060a851a9e78f146e3522769f19ad28d345113288b15a",
+  "code/fns/add_grob.R": "d671a0ccd8181bb46910aaf4f30aaeed3f8c9e080fedcf6cb96e8bf7b499919a",
+  "code/fns/asMatrix.R": "aed236b7211abf8dedae5dda27ee8251d44409e17172860cc39c312ab6f1a54c",
+  "code/fns/as_grob.R": "575ebfa265067f579a88a27c843f8a5ace2298e499676e7cc2497e3e2bb02c15",
+  "code/fns/as_gtable.R": "2e01f0baa251640ab8ccc804ee086f95b3255d578a2308314a93646298868178",
+  "code/fns/as_matrix.R": "fe0687d6838891449d8c95c7a40db7c37ee711db2867e205a9552e36102d0195",
+  "code/fns/blendcolors.R": "66e3d6884e4625a24a64abce99051425d609e30bc9e67fba006e6bb996b3700a",
+  "code/fns/build_patchwork.R": "d8e812ecd44b322faa910af2200f8378a28ab3ffe3f111c806c70bd7f1adb1ef",
+  "code/fns/capitalize.R": "d2e277569ca140187de567d3dc8138f4f882f4df08132dfb43a9635f21c662ad",
+  "code/fns/col2hex.R": "e21dc002f00cf14e0794fef537f40e26261676fcad777774ee163208e8ac2559",
+  "code/fns/compute_velocity_on_grid.R": "018dff68371ef255337139409e3fe696ada0e66ea479b9b29abf8b4758c35eff",
+  "code/fns/find_default_space.R": "3dbd0364642e01f0a888d29a7cf27a138b5339dde7f19d1d23e5c00711375e61",
+  "code/fns/geom_alluvial.R": "22b2a3a5c9614d164ad2cdc00a4b02b931c914c8e00b74ad0e365cb9eb1f4aa7",
+  "code/fns/geom_alluvial_label.R": "ad61f7da1770f6766af28ef1bd9bab34adf11d8def2fcb3eca59f6272ecfbcff",
+  "code/fns/geom_alluvial_text.R": "ab5d5f3782cdb40a51a4f535dfd6b9c2de40019e413f6da4445b77317fb504c7",
+  "code/fns/geom_sankey.R": "169fc42d28cc83e6d994b534f60d8d8b9418bdddb13daeef6d8cfbc5575b5a93",
+  "code/fns/geom_sankey_bump.R": "696cb1d2f314ca5ae692633c97bd9e58405cad66507599b79f020f1483b16a90",
+  "code/fns/geom_sankey_label.R": "c011640cb1c1a983f6ccbc0ae18946fc2978b1b4c964b46d071867fb4017f375",
+  "code/fns/geom_sankey_text.R": "7b1feaec1312e814bb46161c53d7eade9d93088ce455006e47350487c0e33dc8",
+  "code/fns/get_legend.R": "5f6ac115a6cc780588da35d3f0fc27bbcde2a981904b3133b57d29424e747648",
+  "code/fns/make_long.R": "89d5bba302720199b1d817384ec6759c4d958dac9fd68046eec06f0b744a4cbf",
+  "code/fns/palette_scp.R": "0cbc4a29b3641e43a3887a2cc6567657c2f134c613af939bd559c7d66f1fa940",
+  "code/fns/patchworkGrob.R": "1166f27cfe0e8f5b8fde30ee2c404d72c8daec146d04dbe79c8da24c95b54ef5",
+  "code/fns/prepare_params.R": "7cb01cb8087ecb8fc39d448dd9aad7b952c89ad12af375935aed25cd7fa6f275",
+  "code/fns/segementsDf.R": "52a791714b1c2b304a22fa968c4c78b69bbd84681f2531a04b462521be3a606c",
+  "code/fns/show_palettes.R": "526ec6bf92ecd8ac0dc85e7db64cfe3e9601d90f4a2a0aa02497416ed0a8fb52",
+  "code/fns/sigmoid.R": "174a7103df86f00077eb36b92c042fb2b4395db334f1baae845a19265577c893",
+  "code/fns/theme_alluvial.R": "2020391b7c843e76974fe611a6164548a462f4b554f53d15bb1395673d7ee7f0",
+  "code/fns/theme_sankey.R": "b4a0568f91390bcea845ec33a78aebf8fccfa502c5ed41037ab85f2d07466e3d",
+  "code/fns/theme_sankey_bump.R": "6ed4258db7e3f07eff32fbda336c9f4801bb39dc64f2cea4d2bf4139d114891e",
+  "code/fns/theme_scp.R": "6bfe2ed49b8a05abda7397241ca2fd120eb3df50282a3ea4d1139d8598b7d153",
+  "resources/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+ },
+ "closure_hash": "036f668538aea9807487a2b781dccf03ddf58354546e1772f4378da7b1abfbd8",
+ "inputs": {
+  "pancreas_sub.rda": {
+   "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+   "path": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda"
+  }
+ },
+ "outputs": {
+  "output.rds": {
+   "sha256": "0ef911a86384cda82113de3a6107b8f1fbf3f59b27b07ac9e3316388da323979",
+   "path": "E:/research-wiki-env/tmp/iso/runslingshot_subcelltype_umap_1792944937/out/output.rds"
+  }
+ },
+ "elapsed_sec": 10.69,
+ "out_class": "Seurat"
+}

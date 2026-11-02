@@ -1,0 +1,180 @@
+{
+  "changes": [
+    {
+      "path": "frontend/src/api.ts",
+      "old": "43abcef88429386b6040a70dfbd0d39d0cad9026b773464f2735b14098c39bfc",
+      "new": "8c0fc1af37685a37bbe7bab431e4115816e071294f46445e2fa132a87ba9d299"
+    },
+    {
+      "path": "frontend/src/components.tsx",
+      "old": "85224c3830f4f155dcb41fdb92ec641e1276734d12164b6a697c83fa5bc95bc2",
+      "new": "f57610acc42758806899aa60e2d4045b1fdf5133014e4e137b555aeab942d60c"
+    },
+    {
+      "path": "frontend/src/figureModels.ts",
+      "old": "2d08d4de34efeb4fd0f87387b4aeb57b42d3a2ad1e54b3dde466e4ab4e1bcd4a",
+      "new": "171ee02f16cf3caaddb2f44562b1500ee09ca70d9bb0dcd090e2e66ff05aaa9a"
+    },
+    {
+      "path": "frontend/src/methods.ts",
+      "old": "e4e1e21fa9e0684caab45cce190e41829f85f80ed6a4d2d2e24fc27cc024b80a",
+      "new": "c1b41f4bad28cc0ea1813832893eeff0fff3c27c8924476f6dfb83457097d92b"
+    },
+    {
+      "path": "frontend/src/views/MethodOverview.tsx",
+      "old": "90b7e50a46f2d9d455114132c182b7ee106ec80ef13a67de639922cc7dde2b17",
+      "new": "b5e95a3088512206ae54429d6860c039ca63ca363f349ea65e817e194adf3d25"
+    },
+    {
+      "path": "frontend/src/views/PageView.tsx",
+      "old": "9f50f33e78529b1050855025f31216cc0b8b20444e2456590d270ef6f9dcba22",
+      "new": "cf809b2893910582a99690daaffadb318013eba83fdecaa9d6444a20cbcf99af"
+    },
+    {
+      "path": "frontend/tests/methods.test.tsx",
+      "old": "c38dcd5c16465428767086c81c06a91227a555ba673452fc26b79771f2e42810",
+      "new": "d1fecf4934846392be692a65e1b8e938b909e8b2f008e09c3021e11ab1cd5bbc"
+    },
+    {
+      "path": "staged/research-wiki/SKILL.md",
+      "old": "87eb186a901170f5d14cec0c504bf54cf41efdf9b793c5a2be04148761a720dc",
+      "new": "ec8f792695431b7014fd93d245cba021b0d74a08aef74ce6ffa01831be087cc1"
+    },
+    {
+      "path": "staged/research-wiki/app/assets/GraphView-Bh9hK9Zx.js",
+      "old": "e9a6bb964a0cdf2d59f398b9e4f1970b551389ebc53dd290a8671d8344e719d6",
+      "new": null
+    },
+    {
+      "path": "staged/research-wiki/app/assets/GraphView-CA7_821I.js",
+      "old": null,
+      "new": "701ffd866e7b53d8d072c628645424673e5aeafe76dfb4a71018b45579e3e27d"
+    },
+    {
+      "path": "staged/research-wiki/app/assets/index-BzlcxxQc.js",
+      "old": "bf4e616a790999416866cc15af1d55584daea2fa3f0790dd81487abba4fff814",
+      "new": null
+    },
+    {
+      "path": "staged/research-wiki/app/assets/index-DLauVPmm.js",
+      "old": null,
+      "new": "200a3afa19c5e713e4eeb1e9144787a9cdc4ebce1e6d52a394408b71623a74b3"
+    },
+    {
+      "path": "staged/research-wiki/app/index.html",
+      "old": "befd1d51640bb184d18065541cd5d7d143964f1679ec84bae9dc273e8bfecd11",
+      "new": "8dcd1f376382e3361c1862450fd8f34afc74bbc1ea66397d827a526627a5a6d8"
+    },
+    {
+      "path": "staged/research-wiki/assets/AGENTS.md",
+      "old": "5523d6991c05e2e495ed11d4d86d250f7c2323d853016d0bc777d54dabed4469",
+      "new": "3e3af02b40e4222d932ee4cdc4d06ded6f2aecbddc6d6022596935b6d9944479"
+    },
+    {
+      "path": "staged/research-wiki/references/llm-wiki-mode.md",
+      "old": "3be804c6499ad8224322150893e79f0e80cc51d564cab5160bef3c81113a5735",
+      "new": "d4b014b14cec6a2f2014873e45c7f555eee61b25367c7157afb2f35c080b6b39"
+    },
+    {
+      "path": "staged/research-wiki/references/minimal-runtime.md",
+      "old": "67a5cab68c7e846d431f8b366885504501f26b8a0e08a917e932a3aa368948f6",
+      "new": "fb97bcb9d79d4cdb63ddb1324699f5199cab3d21e1e48a9047a3121cd88b8f86"
+    },
+    {
+      "path": "staged/research-wiki/references/project-reuse.md",
+      "old": "7e0d8c980c001763afe22f23314317e1212cff63c7f7ff304c44978dbee4963d",
+      "new": "3c69957f93eef77e8d33c2f67f1a50c6f94f3b481d25bf70daf6f493c65c2b4b"
+    },
+    {
+      "path": "staged/research-wiki/references/project-state.md",
+      "old": null,
+      "new": "64a2c0994cf0461a5273fc0217c895864a3c76e3c3201df9c27abb9136d21a9a"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/cli.py",
+      "old": "3e5d63721f8f0fae833dd6ee612f8ce3544920adfa93d1bfc328ebdd28c5c89e",
+      "new": "c84c5e86fd6087479106b073f46fccd36b481445250540f934c24730392f7e45"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/discovery.py",
+      "old": null,
+      "new": "3e3c0654f4d39aa8ecf99dd41662e6af63d901f21787d3d4d1e1f7cd51a43622"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/domain_profiles.py",
+      "old": null,
+      "new": "696d136e0ab79fe4cec5eaf509f101f2d18b34370390ee0fda90ede365194b0f"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/domain_profiles.yaml",
+      "old": null,
+      "new": "79d7922e56ea39c2dcae0100e6591008c5d56a90922c38018eb104913b9f6e5a"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/method_implementations.py",
+      "old": "dd281ceaaf36db7692a0afe521995af6fd9f7e41a12938ec64d2e96480f1162a",
+      "new": "b0e91b49165f9fee118559f2e67ee36e9e23474dffa89fc44f78084808aed0c5"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/project_state.py",
+      "old": null,
+      "new": "a7a12aba055c61677c64c7d4d629b32b910b6d6727809b481fba72349e6cc0ff"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/runtime_contract.py",
+      "old": "f8a50894b98d2d929b7040ab1fcb3241ebbf9583134e7f7c4244ce1a02217270",
+      "new": "510afbc3c6da8bd7e77546e6a8f9c55fa6c91c3eb825097ecd469874ad8b43ae"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/server.py",
+      "old": "7ecb138ae3ee3f22588a7781a7c9da63e175753a5998a048b2eaadb1fcb25cbe",
+      "new": "0a41d654636a0e94b35ddce6c632120a3b2764c853b089233176547ccd2966d0"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/store.py",
+      "old": "9531fa3823c5035ed48c17b6548aa4f04524ee093376d2f399ca7113b2325d66",
+      "new": "78de40477a447e589e3dfdf7c9b0099531a10c7dbf7ed2cc5d643ef9d0da1830"
+    },
+    {
+      "path": "staged/research-wiki/rwiki/usage.py",
+      "old": "880817f722836dca9b3dddacf817dd207222b7703487f991607584d781f17680",
+      "new": "76c9a9e4065aa7ab51cca889e9858e14ecd8588548cbd4173c4e24f600d59b8e"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_batch2.py",
+      "old": null,
+      "new": "94250756b07b13eebb56a5f9000e8fe32a553f5858125750a63892bc229f95f4"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_cli_project.py",
+      "old": null,
+      "new": "80eb5d8c61a2d5954feba2e2778120cd6856d9ef511a3f0e9c0c285af32449ee"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_discovery.py",
+      "old": null,
+      "new": "b6656099cd6e4da059f0d315200d18c05865c27477d89a1487ad00da17a0b5e6"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_domain_profiles.py",
+      "old": null,
+      "new": "30c76d05c660acdb64d955197657b51fed47662e5b67a91c1d7c69a60bce0caf"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_project_state.py",
+      "old": null,
+      "new": "c4ba84fcef2f49d015e48953833f3b16ee2a7eb95e34f8e161a97900788e270a"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_runtime_v2.py",
+      "old": null,
+      "new": "2349249c518578a602b1d9a8005438f45f3300f06585293379fb52aa1eab6611"
+    },
+    {
+      "path": "staged/research-wiki/tests/test_server.py",
+      "old": "801b7569f69dcc2c09676a92be0c7d2d541cc19e2ea8c75566299f4eb041156b",
+      "new": "e9bdcf52a1413ae19c19fa2eef48f37f2e3f1a719d6eff3abf2c13ba828cfc54"
+    }
+  ],
+  "index_before": "608c155abb27c9e82c3ad035cd6dc00dd424681879bac33476e9ae6cc5de588f"
+}

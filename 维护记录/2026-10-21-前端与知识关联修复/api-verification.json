@@ -1,0 +1,45 @@
+{
+  "scope_counts": {
+    "single": 2,
+    "group": 3,
+    "template": 3
+  },
+  "methods_with_picture_relations": [
+    {
+      "method": "methods/paired-reference-visual-comparison.md",
+      "explicit_figure_refs": [
+        "layouts/2026-10-19-regression-stability__fig03-density-panel.md"
+      ]
+    },
+    {
+      "method": "methods/regression-resampling-evaluation.md",
+      "explicit_figure_refs": [
+        "layouts/2026-10-19-regression-stability__fig01-density-grid.md",
+        "layouts/2026-10-19-regression-stability__fig02-metric-boxplots.md",
+        "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+        "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md"
+      ]
+    },
+    {
+      "method": "methods/repeated-benchmark-distribution.md",
+      "explicit_figure_refs": [
+        "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md"
+      ]
+    },
+    {
+      "method": "methods/shap-explanation.md",
+      "explicit_figure_refs": [
+        "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md",
+        "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+        "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md",
+        "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md"
+      ]
+    }
+  ],
+  "components_before": 2,
+  "components_after": 1,
+  "cross_method_edge": "ordinary link, not feeds",
+  "image_routes": "all 8 thumbnails/previews return HTTP 200",
+  "metadata_status_interfaces_and_user_blocks": "unchanged",
+  "legacy_templates": "3 correctly report sizing undeclared"
+}

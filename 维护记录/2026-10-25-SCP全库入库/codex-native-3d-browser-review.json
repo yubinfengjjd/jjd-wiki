@@ -1,0 +1,19 @@
+{
+  "scope": "Original-source HTML reference only; does not approve extracted modules, Wiki templates, camera rotation, downloads, or scientific inference",
+  "time_utc": "2026-10-26T07:20:19Z",
+  "fixture": "Pinned pancreas_sub, existing PCA dimensions 1:3; no new reduction or synthetic coordinates",
+  "references": "E:/research-wiki-env/work/codex-scp-native-3d/references.json",
+  "browser": "IAB Chromium localhost temporary server, closed after review",
+  "cell_plot": {
+    "observed": "1000 observed cells, 5 CellType traces, visible 3D point cloud and PCA axes",
+    "legend_test": "Clicked Ductal legend; DOM g.traces opacity=0.5 and light-blue cloud disappeared after update; clicked again to restore",
+    "interaction_scope": "legend hide/restore only; camera rotation and hover not independently tested"
+  },
+  "feature_plot": {
+    "observed": "Neurog3 feature colorbar, existing PCA axes, split and feature selectors visible, 1000-cell cloud",
+    "image": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/3d-feature-browser.png",
+    "interaction_scope": "rendering only; selectors not tested because fixture includes only one selection"
+  },
+  "input_unchanged": true,
+  "author_signoff": "not_granted"
+}

@@ -1,0 +1,9 @@
+{
+  "page": "methods/scp-viz-heatmaps.md",
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "method scp-viz-heatmaps / scp-cellcorheatmap: 独立声明尚无独立性证据"
+  ],
+  "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+}

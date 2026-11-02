@@ -1,0 +1,101 @@
+{
+  "interpreter": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+  "scope": "presence-only; not module import, algorithm execution or scientific validation",
+  "modules": {
+    "numpy": {
+      "distribution": "numpy",
+      "spec_found": true,
+      "distribution_version": "2.5.4"
+    },
+    "pandas": {
+      "distribution": "pandas",
+      "spec_found": true,
+      "distribution_version": "3.0.6"
+    },
+    "anndata": {
+      "distribution": "anndata",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "scanpy": {
+      "distribution": "scanpy",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "scvelo": {
+      "distribution": "scvelo",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "scvi": {
+      "distribution": "scvi-tools",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "scanorama": {
+      "distribution": "scanorama",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "bbknn": {
+      "distribution": "bbknn",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "leidenalg": {
+      "distribution": "leidenalg",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "palantir": {
+      "distribution": "palantir",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "wot": {
+      "distribution": "wot",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "phate": {
+      "distribution": "phate",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "pacmap": {
+      "distribution": "pacmap",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "trimap": {
+      "distribution": "trimap",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "largevis": {
+      "distribution": "largevis",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "scrublet": {
+      "distribution": "scrublet",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "doubletdetection": {
+      "distribution": "doubletdetection",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "magic": {
+      "distribution": "magic-impute",
+      "spec_found": false,
+      "distribution_version": null
+    },
+    "cellrank": {
+      "distribution": "cellrank",
+      "spec_found": false,
+      "distribution_version": null
+    }
+  }
+}

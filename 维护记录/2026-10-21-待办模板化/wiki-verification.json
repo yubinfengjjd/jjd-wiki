@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "gallery_hashes_unchanged": 249,
+  "existing_assets_unchanged": 61,
+  "author_blocks_preserved": 16,
+  "templates": [
+    {
+      "template": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+      "status": "draft",
+      "preview": "replay",
+      "sizing": {
+        "sizing_declared": true,
+        "mode": "adaptive",
+        "profile": "fixed"
+      },
+      "code_files": 15,
+      "relationship": "adaptable, pipeline not_run",
+      "cli_render_matches_preview": true
+    },
+    {
+      "template": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+      "status": "draft",
+      "preview": "replay",
+      "sizing": {
+        "sizing_declared": true,
+        "mode": "adaptive",
+        "profile": "categorical_x"
+      },
+      "code_files": 15,
+      "relationship": "adaptable, pipeline not_run",
+      "cli_render_matches_preview": true
+    }
+  ],
+  "shared_install_roots": 3,
+  "scope": "no original gallery edits, no new analysis algorithms, no automatic ready/signoff"
+}

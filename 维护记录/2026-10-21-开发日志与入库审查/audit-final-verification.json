@@ -1,0 +1,38 @@
+{
+  "wiki_files_unchanged": 157,
+  "gallery_files_unchanged": 249,
+  "source_and_installs": [
+    {
+      "host": ".agents",
+      "skill": "research-wiki",
+      "source_matches": 266
+    },
+    {
+      "host": ".agents",
+      "skill": "sci-figure-replica",
+      "source_matches": 136
+    },
+    {
+      "host": ".codex",
+      "skill": "research-wiki",
+      "source_matches": 266
+    },
+    {
+      "host": ".codex",
+      "skill": "sci-figure-replica",
+      "source_matches": 136
+    },
+    {
+      "host": ".claude",
+      "skill": "research-wiki",
+      "source_matches": 266
+    },
+    {
+      "host": ".claude",
+      "skill": "sci-figure-replica",
+      "source_matches": 136
+    }
+  ],
+  "fresh_build_matches_current_release": true,
+  "formal_wiki_git_clean": true
+}

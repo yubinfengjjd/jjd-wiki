@@ -1,0 +1,72 @@
+{
+  "id": "2026-10-22-scp-example__fig16-cell-density",
+  "post": {
+    "title": "SCP v0.5.6 示例数据图型",
+    "account": "SCP",
+    "author": "Hao Zhang",
+    "publish_date": "2026-10-22",
+    "url": "https://github.com/zhanghao-njmu/scp"
+  },
+  "figure": {
+    "index": 16,
+    "label": "单panel：分组表达密度图",
+    "caption": "SCP CellDensityPlot(features='Sox9', group.by='SubCellType') on pancreas_sub: one ridge per SubCellType, densities computed from the data slot. Native source and replica are byte-identical at 8x6 in, 150 dpi.",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "ridge"
+    ],
+    "canvas_px": [
+      1200,
+      900
+    ],
+    "panel_map": {
+      "A": "ridge"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [],
+    "free": [
+      "SCP",
+      "pancreas_sub",
+      "ridge",
+      "density"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "original",
+  "code_provenance": "adapted",
+  "original_code_provenance": "original_runs",
+  "files": {
+    "source_image": "source/fig16.png",
+    "original_code": "original_code/celldensity.R",
+    "original_code_provenance": "original_code/provenance.json",
+    "code": "code/replica.R",
+    "core_code": "code/scp_cell-density_native.R",
+    "render_code": "code/render.R",
+    "data": "data/render-cell-feature-values.csv",
+    "aggregated_data": "data/density-summary.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log",
+    "patches": "PATCHES.md"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+  "created_at": "2026-10-22T15:25:00.000000Z",
+  "updated_at": "2026-10-22T15:25:00.000000Z",
+  "approved_version": 1,
+  "approval_basis": "作者 2026-10-22 在本会话明确选择“沿用代签”；agent 完成逐字节、回放与 QA 后签核。"
+}

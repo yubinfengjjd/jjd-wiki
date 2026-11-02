@@ -1,0 +1,266 @@
+{
+  "kind": "boxplots",
+  "canvas_px": [
+    1080,
+    315
+  ],
+  "panels": [
+    {
+      "id": "A",
+      "metric": "RMSE",
+      "bbox": [
+        54,
+        26,
+        351,
+        257
+      ],
+      "order": [
+        "ET",
+        "RF",
+        "XGB",
+        "MLP",
+        "GB",
+        "AdaBoost"
+      ],
+      "stats": {
+        "ET": {
+          "q1": 9.3,
+          "med": 10.2,
+          "q3": 10.75,
+          "lo": 8.45,
+          "hi": 12.65,
+          "mean": 9.89
+        },
+        "RF": {
+          "q1": 9.4,
+          "med": 10.25,
+          "q3": 10.75,
+          "lo": 7.85,
+          "hi": 12.5,
+          "mean": 10.11
+        },
+        "XGB": {
+          "q1": 9.4,
+          "med": 10.05,
+          "q3": 11.25,
+          "lo": 6.95,
+          "hi": 13.8,
+          "mean": 10.18
+        },
+        "MLP": {
+          "q1": 10.1,
+          "med": 10.22,
+          "q3": 10.6,
+          "lo": 9.7,
+          "hi": 11.1,
+          "mean": 10.21
+        },
+        "GB": {
+          "q1": 9.55,
+          "med": 10.35,
+          "q3": 11.35,
+          "lo": 7.8,
+          "hi": 12.1,
+          "mean": 10.24
+        },
+        "AdaBoost": {
+          "q1": 10.8,
+          "med": 11.43,
+          "q3": 12.2,
+          "lo": 9.4,
+          "hi": 12.8,
+          "mean": 11.57
+        }
+      },
+      "limits": [
+        5.9,
+        15.3
+      ],
+      "ticks": [
+        6,
+        7.5,
+        9,
+        10.5,
+        12,
+        13.5,
+        15
+      ],
+      "title": "Prediction error",
+      "ylabel": "Test RMSE (SR)"
+    },
+    {
+      "id": "B",
+      "metric": "R2",
+      "bbox": [
+        415,
+        26,
+        712,
+        257
+      ],
+      "order": [
+        "ET",
+        "RF",
+        "MLP",
+        "GB",
+        "XGB",
+        "AdaBoost"
+      ],
+      "stats": {
+        "ET": {
+          "q1": 0.846,
+          "med": 0.862,
+          "q3": 0.898,
+          "lo": 0.798,
+          "hi": 0.949,
+          "mean": 0.868
+        },
+        "RF": {
+          "q1": 0.849,
+          "med": 0.859,
+          "q3": 0.886,
+          "lo": 0.803,
+          "hi": 0.927,
+          "mean": 0.865
+        },
+        "MLP": {
+          "q1": 0.853,
+          "med": 0.865,
+          "q3": 0.874,
+          "lo": 0.848,
+          "hi": 0.878,
+          "mean": 0.864
+        },
+        "GB": {
+          "q1": 0.831,
+          "med": 0.866,
+          "q3": 0.879,
+          "lo": 0.788,
+          "hi": 0.929,
+          "mean": 0.859
+        },
+        "XGB": {
+          "q1": 0.841,
+          "med": 0.859,
+          "q3": 0.894,
+          "lo": 0.76,
+          "hi": 0.943,
+          "mean": 0.858
+        },
+        "AdaBoost": {
+          "q1": 0.788,
+          "med": 0.837,
+          "q3": 0.856,
+          "lo": 0.78,
+          "hi": 0.897,
+          "mean": 0.821
+        }
+      },
+      "limits": [
+        0.75,
+        1.0
+      ],
+      "ticks": [
+        0.76,
+        0.8,
+        0.84,
+        0.88,
+        0.92,
+        0.96,
+        1.0
+      ],
+      "title": "Explained variance",
+      "ylabel": "Test $R^2$"
+    },
+    {
+      "id": "C",
+      "metric": "MAE",
+      "bbox": [
+        776,
+        26,
+        1073,
+        257
+      ],
+      "order": [
+        "ET",
+        "XGB",
+        "RF",
+        "GB",
+        "MLP",
+        "AdaBoost"
+      ],
+      "stats": {
+        "ET": {
+          "q1": 6.21,
+          "med": 6.72,
+          "q3": 7.51,
+          "lo": 5.52,
+          "hi": 7.98,
+          "mean": 6.81
+        },
+        "XGB": {
+          "q1": 6.09,
+          "med": 6.82,
+          "q3": 7.72,
+          "lo": 5.46,
+          "hi": 8.8,
+          "mean": 6.9
+        },
+        "RF": {
+          "q1": 6.66,
+          "med": 7.05,
+          "q3": 7.42,
+          "lo": 6.03,
+          "hi": 8.25,
+          "mean": 7.05
+        },
+        "GB": {
+          "q1": 6.48,
+          "med": 7.15,
+          "q3": 7.58,
+          "lo": 6.03,
+          "hi": 8.47,
+          "mean": 7.16
+        },
+        "MLP": {
+          "q1": 7.34,
+          "med": 7.68,
+          "q3": 7.76,
+          "lo": 7.34,
+          "hi": 8.26,
+          "mean": 7.46
+        },
+        "AdaBoost": {
+          "q1": 8.18,
+          "med": 8.64,
+          "q3": 9.25,
+          "lo": 7.11,
+          "hi": 9.57,
+          "mean": 8.56
+        }
+      },
+      "limits": [
+        5.05,
+        10.0
+      ],
+      "ticks": [
+        5.6,
+        6.4,
+        7.2,
+        8.0,
+        8.8,
+        9.6
+      ],
+      "title": "Absolute error",
+      "ylabel": "Test MAE (SR)"
+    }
+  ],
+  "data_provenance": "mixed",
+  "jitter_seed": 20261021,
+  "caption_bbox": null,
+  "quality_flags": [
+    "estimated_values",
+    "independently_estimated_box_geometry",
+    "source_font_unknown"
+  ],
+  "note": "Box summaries, dot y values and diamonds are independent graphical readings; synthetic x jitter only. They are not a statistically consistent recovered dataset."
+}

@@ -1,0 +1,241 @@
+[
+  {
+    "family": "batch-integration",
+    "implementation": "scp-seurat",
+    "entrypoint": "code/analysis.R:run_seurat_integration",
+    "verification": "E:\\research-wiki\\知识库\\methods\\batch-integration\\verification\\scp-seurat-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" batch-integration \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\batch-integration\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-seurat; case={\"label\": \"Seurat anchor integration\", \"parameters\": {\"parameters\": {\"nHVF\": 300, \"linear_reduction_dims\": 20, \"nonlinear_reduction_dims\": 2, \"cluster_resolution\": 0.5, \"IntegrateData_params\": {\"k.weight\": 30}, \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "cell-clustering",
+    "implementation": "seurat-findclusters",
+    "entrypoint": "code/clustering.R:run_seurat_clustering",
+    "verification": "E:\\research-wiki\\知识库\\methods\\cell-clustering\\verification\\seurat-findclusters.json",
+    "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_R.R E:/research-wiki/知识库 E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+    "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "language": "R",
+      "R": "4.5.0",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "slingshot": "2.16.0",
+      "clusterProfiler": "4.16.0",
+      "DOSE": "4.2.0",
+      "mgcv": "1.9.1",
+      "BiocParallel": "1.42.0",
+      "OS": "Windows 11"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "cell-quality-control",
+    "implementation": "scp-runcellqc",
+    "entrypoint": "code/analysis.R:run_cell_quality_control",
+    "verification": "E:\\research-wiki\\知识库\\methods\\cell-quality-control\\verification\\scp-runcellqc-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" cell-quality-control \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-quality-control\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-quality-control/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-runcellqc; case={\"label\": \"QC non-doublet\", \"parameters\": {\"parameters\": {\"qc_metrics\": [\"umi\", \"gene\", \"mito\"], \"UMI_threshold\": 0, \"gene_threshold\": 0, \"mito_threshold\": 100, \"return_filtered\": false, \"assay\": \"RNA\", \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "differential-expression",
+    "implementation": "scp-detest",
+    "entrypoint": "code/analysis.R:run_differential_expression",
+    "verification": "E:\\research-wiki\\知识库\\methods\\differential-expression\\verification\\scp-detest-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" differential-expression \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\differential-expression\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-detest; case={\"label\": \"Wilcoxon DE\", \"parameters\": {\"parameters\": {\"group_by\": \"CellType\", \"group1\": \"Ductal\", \"group2\": \"Endocrine\", \"test.use\": \"wilcox\", \"only.pos\": false, \"fc.threshold\": 1, \"min.pct\": 0.1, \"p.adjust.method\": \"bonferroni\", \"slot\": \"data\", \"assay\": \"RNA\", \"verbose\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "dimensionality-reduction",
+    "implementation": "scp-dimreduction",
+    "entrypoint": "code/analysis.R:run_dimensionality_reduction",
+    "verification": "E:\\research-wiki\\知识库\\methods\\dimensionality-reduction\\verification\\scp-dimreduction-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" dimensionality-reduction \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\dimensionality-reduction\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/dimensionality-reduction/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-dimreduction; case={\"label\": \"PCA UMAP\", \"parameters\": {\"parameters\": {\"features\": [\"Iapp\", \"Gcg\", \"Nnat\", \"Ins2\", \"Ins1\", \"2810417H13Rik\", \"Ghrl\", \"Slc38a5\", \"Pyy\", \"Hmgb2\", \"Chgb\", \"Gadd45a\", \"Rbp4\", \"Neurog3\", \"Cdkn1a\", \"Ppp1r1a\", \"Lrpprc\", \"Cck\", \"Sst\", \"Spp1\", \"Gast\", \"Top2a\", \"Hhex\", \"Ccnb1\", \"Cdk1\", \"Ppy\", \"Cdc20\", \"Fev\", \"Npy\", \"Clu\", \"Sdf2l1\", \"Cks2\", \"Tmem27\", \"Chga\", \"Hes1\", \"8430408G22Rik\", \"Birc5\", \"Btbd17\", \"Dlk1\", \"Ldha\", \"Peg10\", \"Scg2\", \"Tuba1b\", \"Ccnd1\", \"Mt2\", \"Dll3\", \"Serpina1c\", \"Cdkn1c\", \"Ptn\", \"Isl1\", \"Krtap17-1\", \"Mt1\", \"Gmnn\", \"Gip\", \"Spc24\", \"Arg1\", \"Cdca8\", \"Wfdc2\", \"Cldn10\", \"Id1\", \"Creld2\", \"Cyr61\", \"Cenpf\", \"Pcsk2\", \"Cenpa\", \"Mafb\", \"Gng12\", \"Ccnb2\", \"Cdca3\", \"H2afx\", \"Pcsk1n\", \"Ppp1r14a\", \"Arx\", \"Mki67\", \"Vim\", \"Ttr\", \"Tk1\", \"Dbpht2\", \"Myl9\", \"Tmsb4x\", \"Sytl4\", \"Gpx3\", \"Tubb5\", \"Anxa2\", \"Id2\", \"Zcchc18\", \"Gadd45g\", \"1700086L19Rik\", \"Sox9\", \"Stmn1\", \"Tubb3\", \"Irx2\", \"Selm\", \"Cym\", \"Tuba1c\", \"Dbi\", \"C2cd4b\", \"1700011H14Rik\", \"Sparc\", \"Arl6ip1\"], \"linear_reduction\": \"pca\", \"nonlinear_reduction\": \"umap\", \"linear_reduction_dims\": 20, \"reduction_use\": \"pca\", \"reduction_dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"force_linear_reduction\": true, \"force_nonlinear_reduction\": true, \"verbose\": false}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "dynamic-feature-analysis",
+    "implementation": "scp-dynamicfeatures",
+    "entrypoint": "code/analysis.R:run_dynamic_feature_analysis",
+    "verification": "E:\\research-wiki\\知识库\\methods\\dynamic-feature-analysis\\verification\\scp-dynamicfeatures-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" dynamic-feature-analysis \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\dynamic-feature-analysis\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/dynamic-feature-analysis/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-dynamicfeatures; case={\"label\": \"GAM dynamic features\", \"parameters\": {\"parameters\": {\"lineages\": \"fixture_time\", \"features\": [\"Gcg\", \"Krt19\"], \"slot\": \"data\", \"n_candidates\": {}, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "gene-set-enrichment",
+    "implementation": "scp-enrichment",
+    "entrypoint": "code/analysis.R:run_gene_set_enrichment",
+    "verification": "E:\\research-wiki\\知识库\\methods\\gene-set-enrichment\\verification\\scp-enrichment-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" gene-set-enrichment \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-enrichment\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-enrichment; case={\"label\": \"ORA custom TERM2GENE\", \"parameters\": {\"parameters\": {\"geneID_groups\": {}, \"IDtype\": \"symbol\", \"species\": \"Homo_sapiens\", \"TERM2GENE\": {\"term\": [\"T1\", \"T1\", \"T1\", \"T2\", \"T2\", \"T2\"], \"gene\": [\"Ins1\", \"Gcg\", \"Sst\", \"Krt19\", \"Krt8\", \"Epcam\"]}, \"TERM2NAME\": {\"term\": [\"T1\", \"T2\"], \"name\": [\"Endocrine\", \"Ductal\"]}, \"minGSSize\": 1, \"maxGSSize\": 500, \"db_update\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "gene-set-scoring",
+    "implementation": "scp-cellscoring",
+    "entrypoint": "code/analysis.R:run_gene_set_scoring",
+    "verification": "E:\\research-wiki\\知识库\\methods\\gene-set-scoring\\verification\\scp-cellscoring-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" gene-set-scoring \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-scoring\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-scoring/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-cellscoring; case={\"label\": \"Seurat module score\", \"parameters\": {\"parameters\": {\"features\": {\"Endocrine\": [\"Gcg\", \"Sst\"], \"Ductal\": [\"Krt19\", \"Krt8\", \"Epcam\"]}, \"method\": \"Seurat\", \"classification\": false, \"name\": \"X\", \"slot\": \"data\", \"assay\": \"RNA\", \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "reference-mapping",
+    "implementation": "seurat-label-transfer",
+    "entrypoint": "code/transfer.R:run_reference_label_transfer",
+    "verification": "E:\\research-wiki\\知识库\\methods\\reference-mapping\\verification\\seurat-label-transfer-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" reference-transfer \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-transfer\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/reference-transfer/result.rds\"",
+    "scope": "Actual isolated run and comparison for seurat-label-transfer; case={\"label\": \"Seurat label transfer\", \"parameters\": {\"dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"k_weight\": 50}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "regression-resampling-evaluation",
+    "implementation": "summarize-predictions",
+    "entrypoint": "code/summarize_predictions.py:summarize",
+    "verification": "E:\\research-wiki\\知识库\\methods\\regression-resampling-evaluation\\verification\\summarize-predictions.json",
+    "command": "E:/research-wiki-env/bio-python/Scripts/python.exe -X utf8 E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_python.py E:/research-wiki/知识库/methods",
+    "scope": "手算折外指标、常数预测 r 未定义、不修改输入、完整 coverage 拒绝。不包含训练或重采样。",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "language": "Python",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "shap": "0.54.1",
+      "OS": "Windows 11"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "scp-visualization-interface",
+    "implementation": "scp-table-adapters",
+    "entrypoint": "code/scp_tables.R:scp_umap_groups",
+    "verification": "E:\\research-wiki\\知识库\\methods\\scp-visualization-interface\\verification\\scp-table-adapters.json",
+    "command": "D:/R-4.5.0/bin/Rscript.exe --vanilla E:/research-wiki/知识库/methods/scp-visualization-interface/code/test_scp_tables.R",
+    "scope": "SCP/Seurat 导出表到 Wiki 绘图接口的适配层；20 个合成表检查。未验证 SCP 绘图函数视觉等价。",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "language": "R",
+      "R": "4.5.0",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "slingshot": "2.16.0",
+      "clusterProfiler": "4.16.0",
+      "DOSE": "4.2.0",
+      "mgcv": "1.9.1",
+      "BiocParallel": "1.42.0",
+      "OS": "Windows 11"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "shap-explanation",
+    "implementation": "shap-explain-model",
+    "entrypoint": "code/explain_model.py:explain_model",
+    "verification": "E:\\research-wiki\\知识库\\methods\\shap-explanation\\verification\\shap-explain-model.json",
+    "command": "E:/research-wiki-env/bio-python/Scripts/python.exe -X utf8 E:/research-wiki/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_python.py E:/research-wiki/知识库/methods",
+    "scope": "解析线性模型 SHAP 精确解；检查 summary/samples 表、百分比、输入与模型未变、特征顺序保护。",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "language": "Python",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1",
+      "shap": "0.54.1",
+      "OS": "Windows 11"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  },
+  {
+    "family": "trajectory-inference",
+    "implementation": "scp-slingshot",
+    "entrypoint": "code/analysis.R:run_trajectory_inference",
+    "verification": "E:\\research-wiki\\知识库\\methods\\trajectory-inference\\verification\\scp-slingshot-standalone.json",
+    "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" trajectory-inference \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\trajectory-inference\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/trajectory-inference/result.rds\"",
+    "scope": "Actual isolated run and comparison for scp-slingshot; case={\"label\": \"Slingshot\", \"parameters\": {\"parameters\": {\"group.by\": \"CellType\", \"reduction\": \"UMAP\", \"dims\": [1, 2], \"show_plot\": false, \"seed\": 11}}}",
+    "inputs": null,
+    "outputs": null,
+    "environment": {
+      "R": "4.5.0",
+      "platform": "x86_64-w64-mingw32",
+      "BPPARAM": "BiocParallel::SerialParam()",
+      "future": "sequential"
+    },
+    "note": "Replay against ISOLATED family assets, never run formal code then relabel its output as isolated. Preserve old receipt. Required to restore pre-existing capability."
+  }
+]

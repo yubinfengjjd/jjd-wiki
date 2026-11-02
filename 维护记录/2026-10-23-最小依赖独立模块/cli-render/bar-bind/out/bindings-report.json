@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "tables": [
+    {
+      "table_key": "metadata",
+      "interface": "render-cell-metadata",
+      "source_file": "meta_author.csv",
+      "source_sha256": "3ee7a082e5d795be306b0f407872285ba29882ce67dd9ff2b5861fe553f4cf92",
+      "output_file": "render-cell-metadata.csv",
+      "output_sha256": "8b038fdf15941acb3914b5339d67bf51f7ac8a0cccd20396faa5eb5eaef67016",
+      "mapping": {
+        "group": "cell_type"
+      },
+      "included_columns": [
+        "cell",
+        "group",
+        "stat"
+      ],
+      "omitted_optional": [],
+      "extras_preserved": [],
+      "reshape": null,
+      "checks": [
+        "source_inside_data_root",
+        "header_unique",
+        "required_columns_present",
+        "numeric_values_parse"
+      ],
+      "semantics": "只核对字段存在、必填关系与数值可解析；不验证单位、粒度、配对关系或统计含义；不做 0–1 / 0–100 换算。",
+      "missing_values": {},
+      "observed_ranges": {},
+      "warnings": []
+    }
+  ],
+  "scope": "外部数据到内部标准表的显式适配；不改变原表、不补值、不换算、不做统计。"
+}

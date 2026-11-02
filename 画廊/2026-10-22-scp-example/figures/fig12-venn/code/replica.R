@@ -1,0 +1,4 @@
+# Standard gallery entry point; the native venn core and renderer are in
+# code/scp_venn_native.R and code/render.R.
+entry_dir <- dirname(normalizePath(sub("^--file=", "", grep("^--file=", commandArgs(FALSE), value = TRUE)[1])))
+source(file.path(entry_dir, "render.R"))

@@ -1,0 +1,87 @@
+{
+  "asthma-lactylation-source-catalog": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "asthma-lactylation-workflow": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "figureya-multilanguage-assets": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "local-omics-analysis-guide": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "local-omics-visualization-guide": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scop-analysis-guide": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scop-source-catalog": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scop-visualization-guide": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scop-workflows": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scp-source-catalog": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scp-viz-dimplots": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scp-viz-heatmaps": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scp-viz-model-overlays": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "scp-viz-statplots": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "uc-ptm-source-catalog": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "uc-ptm-workflow": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  },
+  "uc-spatial-workflows": {
+    "status": "ready",
+    "acceptance_current": true,
+    "algorithm_and_portability_unchanged": true
+  }
+}

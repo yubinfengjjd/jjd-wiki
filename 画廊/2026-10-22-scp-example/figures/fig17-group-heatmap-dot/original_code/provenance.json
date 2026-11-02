@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "function": "GroupHeatmap",
+  "line_ranges": [
+    [
+      7911,
+      9036
+    ]
+  ],
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "1497d20d565f3d675b21cb196b2feac6a44ab29e5ceb56e639bd1c6804301392",
+  "note": "Byte-exact excerpt of GroupHeatmap (lines 7911-9036 inclusive, original CRLF line endings preserved); call site and data preparation live in the gallery entry. The earlier annotated copy (header added, sha256 d8bed8539a3ea4b6ac927ebf21c334f35481cce12f18fa354d511b2f7f22b357) is preserved at E:/research-wiki-env/work/scp-ingestion-20261025/evidence/groupheatmap-dot/history/original_code-groupheatmap-annotated-20261025.R."
+}

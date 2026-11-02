@@ -1,0 +1,50 @@
+{
+  "status": "awaiting_author_signoff",
+  "phase": "groupheatmap_dot_draft_published_and_independently_reviewed",
+  "coding_owner": "Devin CLI",
+  "review_owner": "Codex",
+  "model": "swe-2-max",
+  "session_id": "valley-handsaw",
+  "active_label": "devin-dot-final-fixes",
+  "active_state": "devin-dot-final-fixes-state.json",
+  "workspace": "E:/research-wiki-env/work/scp-ingestion-20261025",
+  "plan": "E:/research-wiki/文档/SCP持续入库与新规则/implementation-plan.md",
+  "review_approved": true,
+  "deployed": true,
+  "source_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "constraints": [
+    "single_devin",
+    "no_codex_subagents",
+    "no_install",
+    "no_paper_harness",
+    "no_author_signoff",
+    "protect_originals"
+  ],
+  "initial_dispatch_failure": "Missing monitor logs directory, corrected; original session resumed; not a coding/algorithm failure",
+  "independent_findings": [
+    "142 public exports / 15 analysis families /16 SCP example templates",
+    "partial candidate export grouping not exact coverage",
+    "scDblFinder missing despite candidate claiming installed",
+    "legacy enrichment prototypes are redraws, not automatically native",
+    "Wiki tags key-label documentation mismatch and missing controlled validation"
+  ],
+  "queued_review": "codex-groupheatmap-review2.md",
+  "priority_preference": "answered: GroupHeatmap continuation; no project selection needed",
+  "updated_at": "2026-10-25T12:43:11.381281+00:00",
+  "user_priority": "No recent project; resume prior SCP work from GroupHeatmap gaps",
+  "previous_round": {
+    "label": "devin-scp-batch1-recovered",
+    "status": "bounded_timeout",
+    "process_and_owned_R_confirmed_ended": true,
+    "accepted": false,
+    "reason": "candidate option-cleanup had a real second-call regression; later hidden temp-registry/relaxed-restored semantics rejected; no formal publication"
+  },
+  "next_action": "Author source signoff required before scaffold-template; remaining GroupHeatmap and S4+ tracked separately",
+  "previous_session": "harvest-speedwell stopped and all task-owned R exited; candidate DE wrapper restored to baseline",
+  "independent_review": "Upstream rerun matrices identical; PNG x3 SVG x2 equal; PDF raster x2 equal; order and literal-label fixes under review; numeric-string CSV IDs still fail and queued",
+  "review_scope": "software and draft source publication; not author/scientific approval",
+  "author_approved": false,
+  "formal_template_created": false,
+  "closure_hash": "c474e19d0f9c45a8202e9b710fd0cd04f5566b0ddee2cdc18d595f5c5b15a5a4",
+  "final_acceptance": "final-acceptance.md"
+}

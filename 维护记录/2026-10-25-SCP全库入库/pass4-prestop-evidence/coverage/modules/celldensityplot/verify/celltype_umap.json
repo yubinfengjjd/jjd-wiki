@@ -1,0 +1,45 @@
+{
+ "schema_version": 1,
+ "implementation": "scp-celldensityplot",
+ "state": "not_run",
+ "scope": "celltype_umap",
+ "command": "cd E:\\research-wiki-env\\tmp\\iso\\celldensityplot_celltype_umap_1792945051 && Rscript driver.R",
+ "checks": [
+  "search_unchanged=True",
+  "libpaths_unchanged=True",
+  "installed_pkgs_unchanged=True",
+  "binding_locked:check_R=True",
+  "binding_locked:check_Python=True",
+  "binding_locked:PrepareEnv=True",
+  "binding_locked:conda_install=True",
+  "binding_locked:download=True"
+ ],
+ "environment": {
+  "rscript": "D:/R-4.5.0/bin/x64/Rscript.exe",
+  "r_libs": "E:/research-wiki-env/R-lib-scp/4.5",
+  "r_version": "",
+  "copied_to": "E:/research-wiki-env/tmp/iso/celldensityplot_celltype_umap_1792945051",
+  "files_copied": 8
+ },
+ "files": {
+  "code/module.R": "ef95f469ca698b126da4889fb22d004265480dfb0c35c8a0df58df983c4b89a5",
+  "code/fns/CellDensityPlot.R": "a8bc37d515ce13384c5e3d2a8fdd5d2967eef7f584b47c5e72ec1c17628c83aa",
+  "code/fns/asMatrix.R": "aed236b7211abf8dedae5dda27ee8251d44409e17172860cc39c312ab6f1a54c",
+  "code/fns/as_matrix.R": "fe0687d6838891449d8c95c7a40db7c37ee711db2867e205a9552e36102d0195",
+  "code/fns/palette_scp.R": "0cbc4a29b3641e43a3887a2cc6567657c2f134c613af939bd559c7d66f1fa940",
+  "code/fns/show_palettes.R": "526ec6bf92ecd8ac0dc85e7db64cfe3e9601d90f4a2a0aa02497416ed0a8fb52",
+  "code/fns/theme_scp.R": "6bfe2ed49b8a05abda7397241ca2fd120eb3df50282a3ea4d1139d8598b7d153",
+  "resources/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+ },
+ "closure_hash": "dcfda2f63a634c88a9e5f38d06d983ad1b2ed34350977cee42aa8a6166182a3d",
+ "inputs": {
+  "pancreas_sub.rda": {
+   "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+   "path": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda"
+  }
+ },
+ "outputs": {},
+ "elapsed_sec": 2.84,
+ "out_class": null,
+ "error": "unused argument (reduction = \"UMAP\")"
+}

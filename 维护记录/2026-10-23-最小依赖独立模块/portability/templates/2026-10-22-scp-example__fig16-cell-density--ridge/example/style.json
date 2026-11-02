@@ -1,0 +1,31 @@
+{
+  "group_by": "SubCellType",
+  "split_by": "All.groups",
+  "feature_levels": ["Sox9"],
+  "group_levels": ["Ductal", "Ngn3 low EP", "Ngn3 high EP", "Pre-endocrine", "Beta", "Alpha", "Delta", "Epsilon"],
+  "x_order": "value",
+  "flip": false,
+  "reverse": false,
+  "palette": "Paired",
+  "palcolor": null,
+  "keep_empty": false,
+  "y_nbreaks": 4,
+  "aspect_ratio": null,
+  "title": null,
+  "subtitle": null,
+  "legend_position": "right",
+  "legend_direction": "vertical",
+  "theme_use": "theme_scp",
+  "combine": true,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "seed": 11,
+  "sizing": {
+    "mode": "fixed",
+    "width_in": 8,
+    "height_in": 6,
+    "max_width_in": null,
+    "max_height_in": null
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {"wait": 1800},
+  {"waitFor":"document.querySelectorAll('.taxonomy-domains a').length>1"},
+  {"eval": "({url:location.hash, title:document.querySelector('h1')?.textContent, domains:[...document.querySelectorAll('.taxonomy-domains a')].map(a=>({text:a.textContent,href:a.getAttribute('href')})), census:[...document.querySelectorAll('.census dd')].map(e=>e.textContent)})"},
+  {"shot":"methods-all.png"},
+  {"eval":"[...document.querySelectorAll('.taxonomy-domains a')].find(a=>a.textContent.includes('单细胞分析'))?.click(); 'clicked domain'"},
+  {"wait":1200},
+  {"waitFor":"document.querySelector('.taxonomy-domains a[aria-current]')?.textContent.includes('单细胞分析')"},
+  {"eval":"({url:location.hash,title:document.querySelector('h1')?.textContent,selection:document.querySelector('.taxonomy-domains a[aria-current]')?.textContent,purposes:[...document.querySelectorAll('.taxonomy-purposes a')].map(a=>a.textContent),count:document.querySelector('.taxonomy-result')?.textContent})"},
+  {"eval":"[...document.querySelectorAll('.taxonomy-purposes a')].find(a=>a.textContent.includes('预处理与质量控制'))?.click(); 'clicked purpose'"},
+  {"wait":1200},
+  {"waitFor":"document.querySelector('.taxonomy-purposes a[aria-current]')?.textContent.includes('预处理与质量控制')"},
+  {"eval":"({url:location.hash,title:document.querySelector('h1')?.textContent,selection:document.querySelector('.taxonomy-purposes a[aria-current]')?.textContent,count:document.querySelector('.taxonomy-result')?.textContent,links:[...document.querySelectorAll('.methods .grid a')].map(a=>({text:a.textContent,href:a.getAttribute('href')}))})"},
+  {"shot":"methods-filtered.png"},
+  {"eval":"history.back(); 'browser back'"},
+  {"wait":1000},
+  {"eval":"({url:location.hash,title:document.querySelector('h1')?.textContent,count:document.querySelector('.taxonomy-result')?.textContent})"},
+  {"eval":"location.hash='#/page/methods/gene-set-scoring.md'; 'open actual method'"},
+  {"wait":1500},
+  {"waitFor":"!!document.querySelector('h1') && document.body.innerText.includes('基因集')"},
+  {"eval":"[...document.querySelectorAll('details')].forEach(d=>{if(d.textContent.includes('最小')||d.textContent.includes('实现')) d.open=true}); ({url:location.hash,title:document.querySelector('h1')?.textContent,sourceImageLabels:[...document.querySelectorAll('figcaption')].map(e=>e.textContent),runtimeText:document.body.innerText.includes('独立'),sourceOnly:document.body.innerText.includes('来源参考图')})"},
+  {"shot":"gene-set-scoring.png"}
+]

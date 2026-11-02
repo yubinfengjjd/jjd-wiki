@@ -1,0 +1,10 @@
+{
+  "namespace_only": {
+    "ok": true,
+    "class": "NMFfit"
+  },
+  "after_library": {
+    "ok": true,
+    "class": "NMFfit"
+  }
+}

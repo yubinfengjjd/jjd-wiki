@@ -1,0 +1,23 @@
+{
+  "source": "E:\\research-wiki\\维护记录\\2026-10-21-方法复用与课题推荐升级\\qa-project\\data\\observed-predicted.csv",
+  "source_sha256": "dabe5dc3da7edfe900954623ed9d5163efbe05c25e8e93d0d76bb9a6525b8299",
+  "target": "E:\\research-wiki\\维护记录\\2026-10-21-方法复用与课题推荐升级\\qa-project\\analysis\\regression-predictions.csv",
+  "columns": {
+    "subject": "sample_id",
+    "algorithm": "model",
+    "repetition": "repeat",
+    "validation_fold": "fold",
+    "observed": "y_true",
+    "predicted": "y_pred",
+    "design": "split_design"
+  },
+  "action": "rename only, no statistics/row changes",
+  "checks": {
+    "source_unchanged": true,
+    "values_roundtrip": true,
+    "long_wide_roundtrip": true,
+    "missing_values_preserved": true
+  },
+  "wiki_code_sha256": "03879225fa5ecb3670f44e89f70ba67209d23fa1ffded5ecbba3f36dcba8d1d8",
+  "project_code_sha256": "03879225fa5ecb3670f44e89f70ba67209d23fa1ffded5ecbba3f36dcba8d1d8"
+}

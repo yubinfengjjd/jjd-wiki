@@ -1,0 +1,116 @@
+{
+  "default": {
+    "command": [
+      "D:/R-4.5.0/bin/x64/Rscript.exe",
+      "--vanilla",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\pkg\\code\\render.R",
+      "--data",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\input-default",
+      "--out",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\output-default",
+      "--style",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\input-default\\style.json"
+    ],
+    "exit_code": 0,
+    "input_unchanged": true,
+    "outputs": {
+      "figure.pdf": "a2d26e60511739077bde31003dc7e587e16d6639b7e30e5c03aa2dd644fbddac",
+      "figure.png": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+      "figure.svg": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b",
+      "sizing.json": "235df386f3abd3a99d219cb31c3c1ee6bd0f64ac01cb2064824fd6dece83388f"
+    }
+  },
+  "numeric": {
+    "command": [
+      "D:/R-4.5.0/bin/x64/Rscript.exe",
+      "--vanilla",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\pkg\\code\\render.R",
+      "--data",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\input-numeric",
+      "--out",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\output-numeric",
+      "--style",
+      "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\codex-portable-final\\input-default\\style.json"
+    ],
+    "exit_code": 0,
+    "input_unchanged": true,
+    "outputs": {
+      "figure.pdf": "f3597c6cf4d3f620c80ad6845dbba71e9372f9723225f59b86d0c1e01f75c2e8",
+      "figure.png": "9dcd07c73de077f0f5d430759b7ec63689c43baf4ba9c946090e18e9cc3e391f",
+      "figure.svg": "3d98c841e643ac88f95bf712ba899044195e907dcb9fc8312204d7b7f4e78dde",
+      "sizing.json": "c74659f4a51f7f3be3a0a321dab394b787383f6cfa832b204a9cf66e123d9b00"
+    }
+  },
+  "runtime_facts": {
+    "id": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+    "declared": true,
+    "entry": "code/render.R",
+    "language": "r",
+    "issues": [],
+    "mode": "standalone",
+    "entry_kind": "script",
+    "required_packages": {
+      "R": [
+        "ComplexHeatmap",
+        "circlize",
+        "grid",
+        "gtable",
+        "patchwork",
+        "ggplot2",
+        "jsonlite",
+        "svglite"
+      ]
+    },
+    "optional_packages": {},
+    "files": [
+      "code/core.R",
+      "code/data/palette_list.rda",
+      "code/panel.R",
+      "code/render.R",
+      "code/scp_group_heatmap_dot_native.R",
+      "code/scp_helpers.R",
+      "code/sizing.R",
+      "spec.json"
+    ],
+    "resources": [
+      {
+        "path": "code/data/palette_list.rda",
+        "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "role": "SCP palette data used by the native helpers"
+      }
+    ],
+    "tools": [],
+    "external_resources": [],
+    "hardware": {},
+    "invocation": {
+      "command": "Rscript code/render.R --data <dir containing render-group-heatmap.csv> --out <output dir> [--style <style.json>]",
+      "notes": "Script entry; no entry_function. The library entries ghdot_build_matrices/ghdot_plot_panel/plot_scp_group_heatmap_dot are also loadable via source(code/core.R) into any env - core.R exposes only those names."
+    },
+    "fingerprint_mode": "v2",
+    "source": {
+      "package": "SCP-local",
+      "version": "0.5.6",
+      "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+      "license": "GPL (>= 3)",
+      "functions": [
+        "R/SCP-plot.R GroupHeatmap() lines 7911-9036, add_dot/add_reticle branch"
+      ],
+      "modifications": [
+        "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+        "matrices and percent matrices are read from the render-group-heatmap table instead of computed from a Seurat object",
+        "add_violin, flip, feature_split, split.by, cell/feature annotation branches are rejected explicitly, not implemented",
+        "exp legend title and column split annotation defaults pinned to the observed native defaults",
+        "no draw(fig, rect, ...) adapter: entry returns the native patchwork-wrapped gTree; composition is caller-side via patchwork/grid",
+        "upstream eval(parse()) string interpolation for panel_fun/layer_fun replaced by closures over the same values, so group/matrix names and style strings are treated as data, not code (source-faithful: same grid calls, same geometry; upstream identical output reproduced byte-for-byte)",
+        "order columns validated as finite positive integers (>=1, non-contiguous allowed); key columns must be non-empty character strings"
+      ]
+    },
+    "portability": {
+      "state": "verified",
+      "scope": "Isolated copy of the candidate (spec.json + declared code/ files + example data); new Rscript process in an unrelated directory; no SCP-local, SCP package source, or Wiki path provided; render.R script entry invoked.",
+      "evidence": "verify/runtime-portability.json",
+      "closure_hash": "c474e19d0f9c45a8202e9b710fd0cd04f5566b0ddee2cdc18d595f5c5b15a5a4",
+      "issues": []
+    }
+  }
+}

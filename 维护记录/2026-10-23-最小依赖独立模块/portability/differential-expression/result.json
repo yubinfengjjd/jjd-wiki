@@ -1,0 +1,40 @@
+{
+  "method": "differential-expression",
+  "state": "passed",
+  "error": {},
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" differential-expression \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\differential-expression\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\differential-expression\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result-input.rds",
+  "case": {
+    "label": "Wilcoxon DE",
+    "parameters": {
+      "parameters": {
+        "group_by": "CellType",
+        "group1": "Ductal",
+        "group2": "Endocrine",
+        "test.use": "wilcox",
+        "only.pos": false,
+        "fc.threshold": 1,
+        "min.pct": 0.1,
+        "p.adjust.method": "bonferroni",
+        "slot": "data",
+        "assay": "RNA",
+        "verbose": false,
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "d551f051a41c74c3f74d57df4c631c75f39d4f9be218912eb9d709d0218f4bf4",
+    "de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:01:02 UTC",
+  "executed_at": "2026-10-23 16:01:23 UTC"
+}

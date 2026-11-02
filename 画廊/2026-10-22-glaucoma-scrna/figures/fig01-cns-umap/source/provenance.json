@@ -1,0 +1,19 @@
+{
+  "source_image": "source/fig01.png",
+  "source_image_sha256": "c03746544bf0a2a491f7a674c0101dc609eccd1459929e810c812774ab36b39a",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "c03746544bf0a2a491f7a674c0101dc609eccd1459929e810c812774ab36b39a",
+  "bbox": [0, 0, 1728, 1344],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\umap_annotation.pdf",
+    "E:\\青光眼单细胞\\UMAP.pdf"
+  ],
+  "duplicate_sources": [
+    {
+      "path": "E:\\青光眼单细胞\\UMAP.pdf",
+      "note": "Same CNS UMAP style, cluster-colored version; not the representative. The representative is the celltype-colored version."
+    }
+  ],
+  "note": "Selected representative is the celltype-colored CNS UMAP. The full original is the same single-panel page; the cluster-colored version is a duplicate style, not a second panel."
+}

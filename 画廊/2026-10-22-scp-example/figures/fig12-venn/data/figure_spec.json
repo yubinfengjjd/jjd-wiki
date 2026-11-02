@@ -1,0 +1,53 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig12.png",
+  "reference_panel": "source/reference_panel.png",
+  "reference_panel_bbox": [
+    1454,
+    337,
+    1939,
+    675
+  ],
+  "full_original": "source/full_original.jpg",
+  "full_original_sha256": "a63a3a53beb2c052a4c0278bbeec477c4d741f889d8551808fdcdee9471e4814",
+  "logical_panel": "A",
+  "chart_type": "venn",
+  "input": "data/render-cell-membership.csv",
+  "aggregated_input": "data/venn_intersections.csv",
+  "input_columns": {
+    "cell": "cell identifier; unique within the figure",
+    "Ductal": "logical membership: CellType in Ductal / Ngn3 low EP / Ngn3 high EP",
+    "Endocrine": "logical membership: CellType in Pre-endocrine / Endocrine",
+    "G1S": "logical membership: Phase in G1 / S",
+    "G2M": "logical membership: Phase == G2M"
+  },
+  "params": {
+    "cell_col": "cell",
+    "plot_type": "venn",
+    "stat_type": "count (forced by upstream StatPlot for venn; percent requested in the call)",
+    "set_cols": [
+      "Ductal",
+      "Endocrine",
+      "G1S",
+      "G2M"
+    ],
+    "set_level": "TRUE",
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "label": true,
+    "label_size": 3.5,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; four logical membership columns derived from CellType and Phase; set sizes 488/512/923/77",
+    "code": "native SCP StatPlot venn ggplot construction extracted line-for-line; count/intersection table separated; ggVennDiagram >= 1.4 sf-geometry compatibility patch documented in PATCHES.md",
+    "license": "GPL (>= 3)"
+  }
+}

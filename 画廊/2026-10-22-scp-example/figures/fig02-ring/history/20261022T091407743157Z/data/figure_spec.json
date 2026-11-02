@@ -1,0 +1,32 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot(plot_type='ring') / StatPlot (R/SCP-plot.R)",
+  "group_col": "group",
+  "celltype_col": "celltype",
+  "proportion_col": "proportion",
+  "group_levels": null,
+  "celltype_levels": null,
+  "palette": [
+    "#A6CEE3",
+    "#1F78B4",
+    "#B2DF8A",
+    "#33A02C",
+    "#FB9A99",
+    "#E31A1C",
+    "#FDBF6F",
+    "#FF7F00",
+    "#CAB2D6",
+    "#6A3D9A"
+  ],
+  "ring_gap": 0.06,
+  "min_label_prop": 0.03,
+  "label_size": 3.2,
+  "group_label_size": 4,
+  "show_reference": true,
+  "show_axis_titles": true,
+  "legend_title": "Phase",
+  "base_size": 12,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 200,
+  "group_title": "CellType"
+}

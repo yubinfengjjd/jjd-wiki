@@ -1,0 +1,26 @@
+{
+  "pdf_pages": 1,
+  "pdf_extracted_text_chars": 224,
+  "pdf_fonts": [
+    {
+      "name": "/EKZHOF+DejaVuSans-Oblique",
+      "embedded": true
+    },
+    {
+      "name": "/CNJEON+DejaVuSans",
+      "embedded": true
+    },
+    {
+      "name": "/FAMSXO+ArialMT",
+      "embedded": true
+    },
+    {
+      "name": "/MJTJKP+Arial-BoldMT",
+      "embedded": true
+    }
+  ],
+  "all_pdf_fonts_embedded": true,
+  "svg_text_nodes": 34,
+  "svg_root": "{http://www.w3.org/2000/svg}svg",
+  "independent_pdf_svg_visual": "NOT TESTED; structure is not visual acceptance or guarantee in Illustrator"
+}

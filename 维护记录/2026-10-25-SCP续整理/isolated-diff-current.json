@@ -1,0 +1,52 @@
+{
+  "wiki": {
+    "changed": [
+      "index.md",
+      "log.md",
+      "interfaces/render-group-heatmap.md",
+      "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/Rplots.pdf",
+      "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/figure.pdf",
+      "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/verify.json"
+    ],
+    "new": [
+      "layouts/2026-10-22-scp-example__fig17-group-heatmap-dot.md",
+      "layouts/2026-10-22-scp-example__fig17-group-heatmap-dot/thumb.png",
+      "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/history/20261025T094532871533.json",
+      "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/history/20261025T094540690496.json"
+    ]
+  },
+  "gallery": {
+    "changed": [],
+    "new": [
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/meta.json",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/qa_report.md",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/README.md",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/run.log",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/spec.json",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/thumb.png",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/core.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/panel.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/render.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/replica.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/scp_group_heatmap_dot_native.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/scp_helpers.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/sizing.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/compare/overlay.png",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/compare/side_by_side.png",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/data/figure_spec.json",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/data/render-group-heatmap.csv",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/original_code/groupheatmap.R",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/original_code/provenance.json",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/replica.pdf",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/replica.png",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/replica.svg",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/sessionInfo.txt",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/source/fig17.png",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/code/data/palette_list.rda",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/render-check/figure.pdf",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/render-check/figure.png",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/render-check/figure.svg",
+      "2026-10-22-scp-example/figures/fig17-group-heatmap-dot/output/render-check/sizing.json"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "metadata": {
+      "interface": "render-cell-metadata",
+      "description": "每个细胞一行的 group/stat 元数据；模板按原 StatPlot 的计数步骤聚合"
+    }
+  },
+  "style": {
+    "group_col": "group",
+    "stat_col": "stat",
+    "group_levels": null,
+    "celltype_levels": null,
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "bg_col": null,
+    "bg_palette": "Paired",
+    "bg_palcolor": null,
+    "bg_alpha": 0.2,
+    "flip": false,
+    "label_size": 3.5,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "legend_title": "Phase:",
+    "merge_polar_endpoints": false,
+    "legend_position": "right",
+    "legend_direction": "vertical",
+    "seed": 11,
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "plot_type": "rose",
+    "stat_type": "count",
+    "position": "dodge",
+    "label": true,
+    "xlab": "CellType",
+    "ylab": "Count",
+    "sizing": {
+      "mode": "adaptive",
+      "base_in": 5.0,
+      "per_group_in": 0.6,
+      "per_stat_in": 0.0,
+      "base_height_in": 4.8,
+      "min_width_in": 6.0,
+      "min_height_in": 6.0,
+      "base_label_chars": 14,
+      "per_label_char_in": 0.1,
+      "aspect": 0.75,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

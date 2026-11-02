@@ -1,0 +1,410 @@
+{
+  "note": "本轮未部署；五处仍为旧版，Codex 审查通过后运行 tools/deploy.py。",
+  "staged": {
+    "SKILL.md": "8201229e2991441c5b7a22d66b0cdf079dda3c32f6519e5f05a78a4056dbdcc0",
+    "assets/AGENTS.md": "669f6ba6efe8879685e1701e35c25b4850ce6349da9b88d20c0a46f387a4ed68",
+    "rwiki/method_taxonomy.py": "3013a12283f0fb99f6a70ed6bdf6328c849d32f7306f1f484c02a1b7935c6b8a",
+    "rwiki/input_binding.py": "11fc4e9793ab24bdd46630135b4135447bd6dc5dd5c07f6d5dbc79686bf4db7c",
+    "references/input-binding.md": "f6e84e7d637e2becbc7752083139c8e0480ba88a41a1253884d6f0f45f98dd79",
+    "references/method-families.md": "26fcfb0aec495579cc11d3cfad208792dfe5dfa11c33d80b26ddbe3cdfbd53a8",
+    "rwiki/spec.py": "beaabc1ed4f05aba312ed7e342ca15fee4143c874b92ce8dddae259b5607c9e7",
+    "rwiki/server.py": "8a45ad0c1113d2d0cc0a0a94ab7489d5762df2e5d0edfd3a5f0e6574878cbd4d",
+    "rwiki/templates.py": "53cfee80f8bd6212b8160d7b380c6327eac4549b9dfcacae885ae00ac9395169",
+    "rwiki/cli.py": "8e569ebca872574eec76431b1c0411c42d35453d0af229374601b81303a46d49",
+    "rwiki/interfaces.py": "eaef9016647df07926100a49e70e724ce0633d828b1d21c5a5019758ab19d8a1",
+    "rwiki/facts.py": "44ab74424794dd44fb8c221657aac9172d2bee7b422c68507b6bb6d3a05b2dd3",
+    "rwiki/lint.py": "b3ed95186021ad7c69e63190873bf1018a06fc18415c96152b645940761cdcc2",
+    "assets/input_binding.R": "62ab5be9e7f66c89a43f15cf3ae029b0573937ad565bd67673b9531515828202",
+    "tests/test_method_taxonomy.py": "66a16ec7397353a9558d5a2293fe1580d9c9664937d84c9741574cc4aeb75c42",
+    "tests/test_input_binding.py": "ddf30d38fdca94802792ba7627b22a7f1499ae430f32f7de5f052e0971a98ade",
+    "tests/r_input_binding_driver.R": "3d21a64ce8f4c6d3e0d6b5c5ea162e5c2ce92070ec5e6de1c99dd36969b20457",
+    "tests/r_input_binding_probe.R": "66130c5ce4fca1270e1a2a97ae729307cecfbe27eb6895b90e3571f32c8b7693"
+  },
+  "hosts": {
+    ".agents": {
+      "path": "C:\\Users\\86186\\.agents\\skills\\research-wiki",
+      "exists": true,
+      "config_matches_staged": true,
+      "SKILL.md": {
+        "sha256": "76fda6d98ce125eecbee6da9e56e88cb62ce4fb3dcf27826407da6fcd9cf9612",
+        "same_as_staged": false
+      },
+      "assets/AGENTS.md": {
+        "sha256": "7381aeae84d664efd91251b1a4a7eb3ad237ec557656723d973011028c38a0dc",
+        "same_as_staged": false
+      },
+      "rwiki/method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "rwiki/input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/input-binding.md": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/method-families.md": {
+        "sha256": "ad7404f6cacddb8dc14492177f122ce626c0077289c3c88e76a70dc4c44d7abd",
+        "same_as_staged": false
+      },
+      "rwiki/spec.py": {
+        "sha256": "5da30ffb17ad97fbcb8df8f74d94c4b99d72a5769b2f494395747f24f7beeb56",
+        "same_as_staged": false
+      },
+      "rwiki/server.py": {
+        "sha256": "39b094e272f3c06b58dc59535baf1d8e9cad23f26e62b17ff395df837a210d5d",
+        "same_as_staged": false
+      },
+      "rwiki/templates.py": {
+        "sha256": "1610bd95259b3d662ce776fc4001fb0c410384d37c038179f440df8baecfa764",
+        "same_as_staged": false
+      },
+      "rwiki/cli.py": {
+        "sha256": "bc352db694946d8603ed528065c79f35ba00f6b40a9c7c3f486a953b039918e5",
+        "same_as_staged": false
+      },
+      "rwiki/interfaces.py": {
+        "sha256": "d380239d1235e96b8b8b0ace093c139fd1541df9ad85b802698096962460ffb8",
+        "same_as_staged": false
+      },
+      "rwiki/facts.py": {
+        "sha256": "49e912014f0ce3fe23965af17e2e0af6591e266f29c7dce859715ec1ad153c9c",
+        "same_as_staged": false
+      },
+      "rwiki/lint.py": {
+        "sha256": "940a6552a84220a8cc7aa303e9e296539b60d623e556d49a79e3bea7f2b3260a",
+        "same_as_staged": false
+      },
+      "assets/input_binding.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_driver.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_probe.R": {
+        "sha256": null,
+        "same_as_staged": false
+      }
+    },
+    ".claude": {
+      "path": "C:\\Users\\86186\\.claude\\skills\\research-wiki",
+      "exists": true,
+      "config_matches_staged": true,
+      "SKILL.md": {
+        "sha256": "76fda6d98ce125eecbee6da9e56e88cb62ce4fb3dcf27826407da6fcd9cf9612",
+        "same_as_staged": false
+      },
+      "assets/AGENTS.md": {
+        "sha256": "7381aeae84d664efd91251b1a4a7eb3ad237ec557656723d973011028c38a0dc",
+        "same_as_staged": false
+      },
+      "rwiki/method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "rwiki/input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/input-binding.md": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/method-families.md": {
+        "sha256": "ad7404f6cacddb8dc14492177f122ce626c0077289c3c88e76a70dc4c44d7abd",
+        "same_as_staged": false
+      },
+      "rwiki/spec.py": {
+        "sha256": "5da30ffb17ad97fbcb8df8f74d94c4b99d72a5769b2f494395747f24f7beeb56",
+        "same_as_staged": false
+      },
+      "rwiki/server.py": {
+        "sha256": "39b094e272f3c06b58dc59535baf1d8e9cad23f26e62b17ff395df837a210d5d",
+        "same_as_staged": false
+      },
+      "rwiki/templates.py": {
+        "sha256": "1610bd95259b3d662ce776fc4001fb0c410384d37c038179f440df8baecfa764",
+        "same_as_staged": false
+      },
+      "rwiki/cli.py": {
+        "sha256": "bc352db694946d8603ed528065c79f35ba00f6b40a9c7c3f486a953b039918e5",
+        "same_as_staged": false
+      },
+      "rwiki/interfaces.py": {
+        "sha256": "d380239d1235e96b8b8b0ace093c139fd1541df9ad85b802698096962460ffb8",
+        "same_as_staged": false
+      },
+      "rwiki/facts.py": {
+        "sha256": "49e912014f0ce3fe23965af17e2e0af6591e266f29c7dce859715ec1ad153c9c",
+        "same_as_staged": false
+      },
+      "rwiki/lint.py": {
+        "sha256": "940a6552a84220a8cc7aa303e9e296539b60d623e556d49a79e3bea7f2b3260a",
+        "same_as_staged": false
+      },
+      "assets/input_binding.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_driver.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_probe.R": {
+        "sha256": null,
+        "same_as_staged": false
+      }
+    },
+    ".codex": {
+      "path": "C:\\Users\\86186\\.codex\\skills\\research-wiki",
+      "exists": true,
+      "config_matches_staged": true,
+      "SKILL.md": {
+        "sha256": "76fda6d98ce125eecbee6da9e56e88cb62ce4fb3dcf27826407da6fcd9cf9612",
+        "same_as_staged": false
+      },
+      "assets/AGENTS.md": {
+        "sha256": "7381aeae84d664efd91251b1a4a7eb3ad237ec557656723d973011028c38a0dc",
+        "same_as_staged": false
+      },
+      "rwiki/method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "rwiki/input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/input-binding.md": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/method-families.md": {
+        "sha256": "ad7404f6cacddb8dc14492177f122ce626c0077289c3c88e76a70dc4c44d7abd",
+        "same_as_staged": false
+      },
+      "rwiki/spec.py": {
+        "sha256": "5da30ffb17ad97fbcb8df8f74d94c4b99d72a5769b2f494395747f24f7beeb56",
+        "same_as_staged": false
+      },
+      "rwiki/server.py": {
+        "sha256": "39b094e272f3c06b58dc59535baf1d8e9cad23f26e62b17ff395df837a210d5d",
+        "same_as_staged": false
+      },
+      "rwiki/templates.py": {
+        "sha256": "1610bd95259b3d662ce776fc4001fb0c410384d37c038179f440df8baecfa764",
+        "same_as_staged": false
+      },
+      "rwiki/cli.py": {
+        "sha256": "bc352db694946d8603ed528065c79f35ba00f6b40a9c7c3f486a953b039918e5",
+        "same_as_staged": false
+      },
+      "rwiki/interfaces.py": {
+        "sha256": "d380239d1235e96b8b8b0ace093c139fd1541df9ad85b802698096962460ffb8",
+        "same_as_staged": false
+      },
+      "rwiki/facts.py": {
+        "sha256": "49e912014f0ce3fe23965af17e2e0af6591e266f29c7dce859715ec1ad153c9c",
+        "same_as_staged": false
+      },
+      "rwiki/lint.py": {
+        "sha256": "940a6552a84220a8cc7aa303e9e296539b60d623e556d49a79e3bea7f2b3260a",
+        "same_as_staged": false
+      },
+      "assets/input_binding.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_driver.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_probe.R": {
+        "sha256": null,
+        "same_as_staged": false
+      }
+    },
+    ".cc-switch": {
+      "path": "C:\\Users\\86186\\.cc-switch\\skills\\research-wiki",
+      "exists": true,
+      "config_matches_staged": true,
+      "SKILL.md": {
+        "sha256": "76fda6d98ce125eecbee6da9e56e88cb62ce4fb3dcf27826407da6fcd9cf9612",
+        "same_as_staged": false
+      },
+      "assets/AGENTS.md": {
+        "sha256": "7381aeae84d664efd91251b1a4a7eb3ad237ec557656723d973011028c38a0dc",
+        "same_as_staged": false
+      },
+      "rwiki/method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "rwiki/input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/input-binding.md": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/method-families.md": {
+        "sha256": "ad7404f6cacddb8dc14492177f122ce626c0077289c3c88e76a70dc4c44d7abd",
+        "same_as_staged": false
+      },
+      "rwiki/spec.py": {
+        "sha256": "5da30ffb17ad97fbcb8df8f74d94c4b99d72a5769b2f494395747f24f7beeb56",
+        "same_as_staged": false
+      },
+      "rwiki/server.py": {
+        "sha256": "39b094e272f3c06b58dc59535baf1d8e9cad23f26e62b17ff395df837a210d5d",
+        "same_as_staged": false
+      },
+      "rwiki/templates.py": {
+        "sha256": "1610bd95259b3d662ce776fc4001fb0c410384d37c038179f440df8baecfa764",
+        "same_as_staged": false
+      },
+      "rwiki/cli.py": {
+        "sha256": "bc352db694946d8603ed528065c79f35ba00f6b40a9c7c3f486a953b039918e5",
+        "same_as_staged": false
+      },
+      "rwiki/interfaces.py": {
+        "sha256": "d380239d1235e96b8b8b0ace093c139fd1541df9ad85b802698096962460ffb8",
+        "same_as_staged": false
+      },
+      "rwiki/facts.py": {
+        "sha256": "49e912014f0ce3fe23965af17e2e0af6591e266f29c7dce859715ec1ad153c9c",
+        "same_as_staged": false
+      },
+      "rwiki/lint.py": {
+        "sha256": "940a6552a84220a8cc7aa303e9e296539b60d623e556d49a79e3bea7f2b3260a",
+        "same_as_staged": false
+      },
+      "assets/input_binding.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_driver.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_probe.R": {
+        "sha256": null,
+        "same_as_staged": false
+      }
+    },
+    ".config/opencode": {
+      "path": "C:\\Users\\86186\\.config\\opencode\\skills\\research-wiki",
+      "exists": true,
+      "config_matches_staged": true,
+      "SKILL.md": {
+        "sha256": "76fda6d98ce125eecbee6da9e56e88cb62ce4fb3dcf27826407da6fcd9cf9612",
+        "same_as_staged": false
+      },
+      "assets/AGENTS.md": {
+        "sha256": "7381aeae84d664efd91251b1a4a7eb3ad237ec557656723d973011028c38a0dc",
+        "same_as_staged": false
+      },
+      "rwiki/method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "rwiki/input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/input-binding.md": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "references/method-families.md": {
+        "sha256": "ad7404f6cacddb8dc14492177f122ce626c0077289c3c88e76a70dc4c44d7abd",
+        "same_as_staged": false
+      },
+      "rwiki/spec.py": {
+        "sha256": "5da30ffb17ad97fbcb8df8f74d94c4b99d72a5769b2f494395747f24f7beeb56",
+        "same_as_staged": false
+      },
+      "rwiki/server.py": {
+        "sha256": "39b094e272f3c06b58dc59535baf1d8e9cad23f26e62b17ff395df837a210d5d",
+        "same_as_staged": false
+      },
+      "rwiki/templates.py": {
+        "sha256": "1610bd95259b3d662ce776fc4001fb0c410384d37c038179f440df8baecfa764",
+        "same_as_staged": false
+      },
+      "rwiki/cli.py": {
+        "sha256": "bc352db694946d8603ed528065c79f35ba00f6b40a9c7c3f486a953b039918e5",
+        "same_as_staged": false
+      },
+      "rwiki/interfaces.py": {
+        "sha256": "d380239d1235e96b8b8b0ace093c139fd1541df9ad85b802698096962460ffb8",
+        "same_as_staged": false
+      },
+      "rwiki/facts.py": {
+        "sha256": "49e912014f0ce3fe23965af17e2e0af6591e266f29c7dce859715ec1ad153c9c",
+        "same_as_staged": false
+      },
+      "rwiki/lint.py": {
+        "sha256": "940a6552a84220a8cc7aa303e9e296539b60d623e556d49a79e3bea7f2b3260a",
+        "same_as_staged": false
+      },
+      "assets/input_binding.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_method_taxonomy.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/test_input_binding.py": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_driver.R": {
+        "sha256": null,
+        "same_as_staged": false
+      },
+      "tests/r_input_binding_probe.R": {
+        "sha256": null,
+        "same_as_staged": false
+      }
+    }
+  }
+}

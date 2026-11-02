@@ -1,0 +1,31 @@
+{
+  "kind": "umap-feature-grid",
+  "canvas_px": [2113, 1920],
+  "panels": [
+    {"id": "A", "kind": "umap-feature-grid"}
+  ],
+  "style": {
+    "canvas_px": [2113, 1920],
+    "ncol": 3,
+    "genes": ["Pou4f1", "Gad1", "Onecut1", "Vsx2", "Rho", "Opn1mw", "Glul", "Rpe65", "Pdgfrb"],
+    "bg_color": "#CFCFCF",
+    "pt_size_bg": 0.24,
+    "pt_size_fg": 0.30,
+    "alpha_bg": 0.32,
+    "alpha_fg": 0.96,
+    "exp_palette": ["#74B8AF", "#CFE0C7", "#F1E8AE"],
+    "min_cutoff": "q05",
+    "max_cutoff": "q98",
+    "title_size": 13.5,
+    "legend_text_size": 7,
+    "xpad_ratio": 0.018,
+    "ypad_ratio": 0.018,
+    "panel_margin": 7
+  },
+  "data_provenance": "synthetic",
+  "notes": [
+    "Synthetic UMAP coordinates and expression; not original observations.",
+    "Each gene's target cell type follows the source marker panel; other groups receive low background expression.",
+    "The nine small axes are one logical panel (small-multiples grid), not nine templates."
+  ]
+}

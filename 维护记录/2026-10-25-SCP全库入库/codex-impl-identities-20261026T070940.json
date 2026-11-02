@@ -1,0 +1,32 @@
+{
+  "scope": "in-progress snapshot; changed entry/receipt needs review, not automatic rejection",
+  "changes": [
+    {
+      "page": "cell-quality-control",
+      "implementation": "scp-runcellqc",
+      "old_entry": "code/analysis.R:run_cell_quality_control",
+      "new_entry": "code/runcellqc/code/module.R:RunCellQC",
+      "old_verification": "verification/scp-runcellqc-standalone.json",
+      "new_verification": null,
+      "old_code_still_present": true
+    },
+    {
+      "page": "gene-set-scoring",
+      "implementation": "scp-cellscoring",
+      "old_entry": "code/analysis.R:run_gene_set_scoring",
+      "new_entry": "code/cellscoring/code/module.R:CellScoring",
+      "old_verification": "verification/scp-cellscoring-standalone.json",
+      "new_verification": null,
+      "old_code_still_present": true
+    },
+    {
+      "page": "reference-mapping",
+      "implementation": "scp-runseuratmap",
+      "old_entry": "code/analysis.R:run_reference_mapping",
+      "new_entry": "code/runseuratmap/code/module.R:RunSeuratMap",
+      "old_verification": "verification/scp-runseuratmap-standalone.json",
+      "new_verification": null,
+      "old_code_still_present": true
+    }
+  ]
+}

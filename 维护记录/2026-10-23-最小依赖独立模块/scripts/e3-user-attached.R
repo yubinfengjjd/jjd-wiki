@@ -1,0 +1,13 @@
+.libPaths(c('E:/research-wiki-env/R-lib-scp/4.5', .libPaths()))
+suppressPackageStartupMessages(library(ggplot2))
+load('E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda')
+env <- new.env(parent=globalenv())
+source(commandArgs(trailingOnly=TRUE)[1], local=env)
+before <- search()
+srt <- pancreas_sub[,1:80]
+value <- env$run_cell_quality_control(srt, parameters=list(qc_metrics=c('umi','gene','mito'), UMI_threshold=0, gene_threshold=0, mito_threshold=100, return_filtered=FALSE, assay='RNA', seed=11))
+after <- search()
+cat('SEARCH_RESTORED_WITH_USER_PKG=', identical(before, after), '\n', sep='')
+cat('USER_PKG_STILL_ATTACHED=', 'package:ggplot2' %in% after, '\n', sep='')
+cat('DIAGNOSTICS_SEARCH_RESTORED=', value$diagnostics$search_restored, '\n', sep='')
+if (!identical(before, after) || !'package:ggplot2' %in% after) quit(status=1)

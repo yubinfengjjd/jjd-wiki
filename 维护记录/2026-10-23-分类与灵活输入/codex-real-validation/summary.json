@@ -1,0 +1,32 @@
+[
+  {
+    "case": "r-dotplot",
+    "input_unchanged": true,
+    "pixel_MAD": 0.0
+  },
+  {
+    "case": "r-dotplot-optional",
+    "input_unchanged": true,
+    "pixel_MAD": 8.005185978
+  },
+  {
+    "case": "r-bar",
+    "input_unchanged": true,
+    "pixel_MAD": 0.0
+  },
+  {
+    "case": "r-bar-optional",
+    "input_unchanged": true,
+    "pixel_MAD": 0.0
+  },
+  {
+    "case": "python-shap",
+    "input_unchanged": true,
+    "pixel_MAD": 0.0
+  },
+  {
+    "case": "negative-missing",
+    "rejected": true,
+    "input_unchanged": true
+  }
+]

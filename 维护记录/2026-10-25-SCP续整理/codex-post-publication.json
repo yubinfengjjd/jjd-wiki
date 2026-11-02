@@ -1,0 +1,38 @@
+{
+  "gallery": {
+    "checked": 900,
+    "changed": [
+      "index.html",
+      "index.json"
+    ]
+  },
+  "source": {
+    "checked": 231,
+    "changed": []
+  },
+  "development": {
+    "checked": 296,
+    "changed": []
+  },
+  "wiki_original_files_unchanged": 62,
+  "protected_existing_pages": 78,
+  "development_index_unchanged": true,
+  "new_source": {
+    "layout": "pending_signoff",
+    "gallery": "draft",
+    "exact_original_excerpt": true,
+    "author_approval": false,
+    "formal_template_created": false
+  },
+  "wiki_changed": [
+    "index.md",
+    "log.md",
+    "chart-types/heatmap.md",
+    "interfaces/render-group-heatmap.md",
+    "methods/scp-visualization-interface.md",
+    "methods/scp-visualization-interface/acceptance.json",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/Rplots.pdf",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/figure.pdf",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/verify.json"
+  ]
+}

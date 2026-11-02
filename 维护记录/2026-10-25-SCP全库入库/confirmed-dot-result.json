@@ -1,0 +1,9 @@
+{
+  "id": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+  "status": "ready",
+  "author_confirmation": true,
+  "source_signedoff_version": 1,
+  "candidate_closure": "c474e19d0f9c45a8202e9b710fd0cd04f5566b0ddee2cdc18d595f5c5b15a5a4",
+  "software_scope": "dot / reticle / multi-matrix only",
+  "full_library_task_continues": true
+}

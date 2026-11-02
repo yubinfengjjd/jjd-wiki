@@ -1,0 +1,17 @@
+{
+  "server": "http://127.0.0.1:8786",
+  "verified": [
+    "Initial15 families",
+    "Click single-cell13",
+    "Purpose trajectory3",
+    "Reload preserves selection3",
+    "Switch ML resets unavailable purpose and shows2",
+    "Search purpose name returnsSHAP1",
+    "Clear query empties text and returns2",
+    "Click method opens SHAP detail, semantic input before collapsed schema"
+  ],
+  "evidence": [
+    "browser-route-after.txt",
+    "codex-browser-classification.png"
+  ]
+}

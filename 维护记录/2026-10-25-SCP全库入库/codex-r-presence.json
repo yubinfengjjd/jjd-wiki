@@ -1,0 +1,392 @@
+{
+  "scope": "installed.packages presence and version only; not load or algorithm validation",
+  "R_version": "R version 4.5.0 (2025-04-11 ucrt)",
+  "libpaths": ["E:/research-wiki-env/R-lib-scp/4.5", "D:/R-4.5.0/library"],
+  "packages": {
+    "AHMeSHDbs": {
+      "present": false
+    },
+    "AnnotationHub": {
+      "present": false
+    },
+    "AUCell": {
+      "present": false
+    },
+    "batchelor": {
+      "present": false
+    },
+    "Biobase": {
+      "present": true,
+      "version": "2.68.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "BiocGenerics": {
+      "present": true,
+      "version": "0.54.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "BiocParallel": {
+      "present": true,
+      "version": "1.42.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "biomaRt": {
+      "present": true,
+      "version": "2.64.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "circlize": {
+      "present": true,
+      "version": "0.4.18",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "clusterProfiler": {
+      "present": true,
+      "version": "4.16.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ComplexHeatmap": {
+      "present": true,
+      "version": "2.24.1",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "concaveman": {
+      "present": false
+    },
+    "conos": {
+      "present": false
+    },
+    "DDRTree": {
+      "present": false
+    },
+    "dendextend": {
+      "present": true,
+      "version": "1.19.1",
+      "library": "D:/R-4.5.0/library"
+    },
+    "destiny": {
+      "present": false
+    },
+    "dplyr": {
+      "present": true,
+      "version": "1.1.4",
+      "library": "D:/R-4.5.0/library"
+    },
+    "e1071": {
+      "present": true,
+      "version": "1.7-16",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ggforce": {
+      "present": true,
+      "version": "0.5.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ggnewscale": {
+      "present": true,
+      "version": "0.5.2",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ggplot2": {
+      "present": true,
+      "version": "3.5.2",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ggpubr": {
+      "present": true,
+      "version": "0.6.1",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ggrepel": {
+      "present": true,
+      "version": "0.9.6",
+      "library": "D:/R-4.5.0/library"
+    },
+    "ggridges": {
+      "present": true,
+      "version": "0.5.7",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "ggupset": {
+      "present": true,
+      "version": "0.4.1",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "ggVennDiagram": {
+      "present": true,
+      "version": "1.5.7",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "ggwordcloud": {
+      "present": true,
+      "version": "0.6.2",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "glmGamPoi": {
+      "present": false
+    },
+    "glmpca": {
+      "present": true,
+      "version": "0.2.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "GO.db": {
+      "present": true,
+      "version": "3.21.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "GOSemSim": {
+      "present": true,
+      "version": "2.34.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "grDevices": {
+      "present": true,
+      "version": "4.5.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "grid": {
+      "present": true,
+      "version": "4.5.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "gtable": {
+      "present": true,
+      "version": "0.3.6",
+      "library": "D:/R-4.5.0/library"
+    },
+    "harmony": {
+      "present": false
+    },
+    "hexbin": {
+      "present": true,
+      "version": "1.28.6",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "htmlwidgets": {
+      "present": true,
+      "version": "1.6.4",
+      "library": "D:/R-4.5.0/library"
+    },
+    "httr": {
+      "present": true,
+      "version": "1.4.7",
+      "library": "D:/R-4.5.0/library"
+    },
+    "igraph": {
+      "present": true,
+      "version": "2.1.4",
+      "library": "D:/R-4.5.0/library"
+    },
+    "intrinsicDimension": {
+      "present": true,
+      "version": "1.2.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "limma": {
+      "present": true,
+      "version": "3.64.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "magick": {
+      "present": false
+    },
+    "MASS": {
+      "present": true,
+      "version": "7.3-65",
+      "library": "D:/R-4.5.0/library"
+    },
+    "Matrix": {
+      "present": true,
+      "version": "1.7-3",
+      "library": "D:/R-4.5.0/library"
+    },
+    "MatrixGenerics": {
+      "present": true,
+      "version": "1.20.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "MeSH.db": {
+      "present": false
+    },
+    "MeSHDbi": {
+      "present": false
+    },
+    "metR": {
+      "present": false
+    },
+    "mgcv": {
+      "present": true,
+      "version": "1.9-1",
+      "library": "D:/R-4.5.0/library"
+    },
+    "monocle": {
+      "present": false
+    },
+    "monocle3": {
+      "present": false
+    },
+    "NMF": {
+      "present": true,
+      "version": "0.28",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "openxlsx": {
+      "present": false
+    },
+    "patchwork": {
+      "present": true,
+      "version": "1.3.1",
+      "library": "D:/R-4.5.0/library"
+    },
+    "paxtoolsr": {
+      "present": false
+    },
+    "PFAM.db": {
+      "present": false
+    },
+    "plotly": {
+      "present": true,
+      "version": "4.10.4",
+      "library": "D:/R-4.5.0/library"
+    },
+    "png": {
+      "present": true,
+      "version": "0.1-8",
+      "library": "D:/R-4.5.0/library"
+    },
+    "proxyC": {
+      "present": true,
+      "version": "0.5.2",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "purrr": {
+      "present": true,
+      "version": "1.0.4",
+      "library": "D:/R-4.5.0/library"
+    },
+    "qlcMatrix": {
+      "present": false
+    },
+    "ragg": {
+      "present": true,
+      "version": "1.4.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "RcppML": {
+      "present": false
+    },
+    "reactome.db": {
+      "present": false
+    },
+    "reshape2": {
+      "present": true,
+      "version": "1.4.4",
+      "library": "D:/R-4.5.0/library"
+    },
+    "reticulate": {
+      "present": true,
+      "version": "1.47.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "rlang": {
+      "present": true,
+      "version": "1.1.6",
+      "library": "D:/R-4.5.0/library"
+    },
+    "rliger": {
+      "present": false
+    },
+    "scales": {
+      "present": true,
+      "version": "1.4.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "scattermore": {
+      "present": true,
+      "version": "1.2",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "scDblFinder": {
+      "present": false
+    },
+    "scds": {
+      "present": false
+    },
+    "scmap": {
+      "present": false
+    },
+    "Seurat": {
+      "present": true,
+      "version": "5.6.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "SeuratObject": {
+      "present": true,
+      "version": "5.4.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "sf": {
+      "present": true,
+      "version": "1.1-3",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "simplifyEnrichment": {
+      "present": true,
+      "version": "2.2.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "simspec": {
+      "present": false
+    },
+    "SingleCellExperiment": {
+      "present": true,
+      "version": "1.30.1",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "SingleR": {
+      "present": false
+    },
+    "slingshot": {
+      "present": true,
+      "version": "2.16.0",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "stats": {
+      "present": true,
+      "version": "4.5.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "stringr": {
+      "present": true,
+      "version": "1.5.1",
+      "library": "D:/R-4.5.0/library"
+    },
+    "sva": {
+      "present": true,
+      "version": "3.56.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "symphony": {
+      "present": false
+    },
+    "tidyr": {
+      "present": true,
+      "version": "1.3.1",
+      "library": "D:/R-4.5.0/library"
+    },
+    "UCell": {
+      "present": false
+    },
+    "uwot": {
+      "present": true,
+      "version": "0.2.5",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "VGAM": {
+      "present": true,
+      "version": "1.1-13",
+      "library": "D:/R-4.5.0/library"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "revision": 54,
+  "run": "run-de-reviewed-codex-001",
+  "old_receipts_retained": true,
+  "lessons_pending": [
+    "lesson-gsm-style-override",
+    "lesson-task-binding",
+    "lesson-options-restoration"
+  ]
+}

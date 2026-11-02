@@ -1,0 +1,23 @@
+{
+  "fixed_source_changes": [],
+  "formal_development_changes": [],
+  "formal_wiki_changes_since_post_p0": [
+    "log.md",
+    "chart-types/heatmap.md",
+    "methods/scp-visualization-interface.md",
+    "methods/scp-visualization-interface/acceptance.json"
+  ],
+  "formal_original_asset_changes": [],
+  "initial_fixture_commit": "db9e0062a555a3a6789e6e8dd80250a211b7d1f1",
+  "author_comparison_policy": "Formal unchanged files use original or independently checked post-P0 whole-file SHA256; changed pages require original raw backups. Git is used only for metadata because it normalized some CRLF. Isolated author bytes compare to protected formal bytes.",
+  "formal_author_state_delta_from_pre_p0": [
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig17-group-heatmap-dot.md",
+      "field": "status",
+      "baseline": "pending_signoff",
+      "current": "pending_template"
+    }
+  ],
+  "isolated_author_state_delta_from_pre_p0": [],
+  "scope": "The explicitly approved fig17 P0 state change is expected; inspect all others. No status reset or source overwrite authorized."
+}

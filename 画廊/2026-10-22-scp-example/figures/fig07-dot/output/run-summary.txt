@@ -1,0 +1,7 @@
+plot_type: dot
+stat_type: percent
+position: stack
+label: FALSE
+size_in: 8x6
+dpi: 150
+png_md5: a7613f388b511059226b1886ecbb5f1e

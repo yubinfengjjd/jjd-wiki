@@ -1,0 +1,6 @@
+{
+  "resource_before": "verified",
+  "resource_changed": "verified",
+  "malformed_resources": "TypeError: 'int' object is not iterable",
+  "different_registered_entry": "verified"
+}

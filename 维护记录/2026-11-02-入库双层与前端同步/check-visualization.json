@@ -1,0 +1,19 @@
+{
+  "page": "methods/local-omics-visualization-guide.md",
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "method local-omics-visualization-guide / irgsea-heatmap: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / scp-cell-dim: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / scp-feature-dim: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / scp-feature-stat: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / scp-feature-heatmap: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / cellchat-circle: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / cellchat-bubble: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / cellchat-aggregate: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / cellchat-heatmap: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / cellchat-role-heatmap: 独立声明未运行（not_run）",
+    "method local-omics-visualization-guide / cellchat-role-scatter: 独立声明未运行（not_run）"
+  ],
+  "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+}

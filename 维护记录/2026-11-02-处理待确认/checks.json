@@ -1,0 +1,87 @@
+[
+  {
+    "id": "asthma-lactylation-source-catalog",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "asthma-lactylation-workflow",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "figureya-multilanguage-assets",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "local-omics-analysis-guide",
+    "passed": true,
+    "warning_count": 10
+  },
+  {
+    "id": "local-omics-visualization-guide",
+    "passed": true,
+    "warning_count": 11
+  },
+  {
+    "id": "scop-analysis-guide",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "scop-source-catalog",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "scop-visualization-guide",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "scop-workflows",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "scp-source-catalog",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "scp-viz-dimplots",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "scp-viz-heatmaps",
+    "passed": true,
+    "warning_count": 1
+  },
+  {
+    "id": "scp-viz-model-overlays",
+    "passed": true,
+    "warning_count": 3
+  },
+  {
+    "id": "scp-viz-statplots",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "uc-ptm-source-catalog",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "uc-ptm-workflow",
+    "passed": true,
+    "warning_count": 0
+  },
+  {
+    "id": "uc-spatial-workflows",
+    "passed": true,
+    "warning_count": 0
+  }
+]

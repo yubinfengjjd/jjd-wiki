@@ -1,0 +1,11 @@
+{
+  "code\\analysis.R": "7a2239615e2f3c3553b7499576fb2c656450d345e7c9cc1ad7c2da56fd04373e",
+  "code\\scoring_native.R": "6ec1cd1c76f8a7fe6d34c039c40c668d0de8def68f0fd0bf7fdd705302b39046",
+  "out\\scores.csv": "74239974c7d0a32502656364e2af3a0d0d6166d8d1fbe6ab7dd33a32728db402",
+  "out\\verification.json": "a7936d608852ffe28df9c5686a0d7fff937d6c85090f62a89d57249be2a62799",
+  "figure\\figure.pdf": "5788a0cc6de70a272ee3c50004671963e35b7706c914848d9c1c50a16a23284d",
+  "figure\\figure.png": "41ae70a2ffd16bce68ff81903f1d2855225709f1a27472566a42938167db2606",
+  "figure\\figure.svg": "f6fe9a56f6bc912e743d40c7c4e688fc3b248c1fee9d9e6541d011f314c517a8",
+  "figure\\sizing.json": "6e38aea578251a367c44041240667071012a362539ed5073e66c165f414939b7",
+  "plot-mapping-verification.json": "2ba38deafca2f5f7a334549ea17db3ce2f033d92bf0ef8b6c4cea1931e2560de"
+}

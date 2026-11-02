@@ -1,0 +1,12 @@
+plot_type: bar
+stat_type: count
+position: stack
+label: TRUE
+size_in: 8x6
+dpi: 150
+source_sha256: d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71
+replica_sha256: d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71
+byte_identical: TRUE
+png_md5: cad284807057dc7b301ce6b9119dc30c
+pdf_sha256: 34ea4492f1da4fd748a2d6e83d81890aa71d48c41fb26c0e19518f37f4faf9fc
+svg_sha256: 908e8723f68ba34a9d13509ef07da3a49a97daa01ce5e32b842a793453a5d35e

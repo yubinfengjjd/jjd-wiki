@@ -1,0 +1,326 @@
+[
+  {
+    "path": "methods/batch-integration.md",
+    "id": "batch-integration",
+    "title": "单细胞批次整合",
+    "purposes": [
+      "整合与批次校正"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/batch-integration.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-seurat",
+        "title": "SCP Seurat_integrate 锚点分支",
+        "state": "verified",
+        "scope": "实际调用 SCP Seurat_integrate：pancreas_sub 120 细胞拆成两个显式批次，300 HVF、20 PC、k.weight=30；比较封装与上游 UMAP。"
+      },
+      {
+        "id": "scp-harmony",
+        "title": "SCP Harmony_integrate 分支",
+        "state": "not_run",
+        "scope": "SCP Harmony_integrate 分支；本机 R 库无 harmony。"
+      }
+    ]
+  },
+  {
+    "path": "methods/cell-clustering.md",
+    "id": "cell-clustering",
+    "title": "单细胞聚类分析",
+    "purposes": [
+      "降维与聚类"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/cell-clustering.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "seurat-findclusters",
+        "title": "SCP Standard_SCP 聚类分支",
+        "state": "verified",
+        "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。"
+      }
+    ]
+  },
+  {
+    "path": "methods/cell-quality-control.md",
+    "id": "cell-quality-control",
+    "title": "单细胞质量控制",
+    "purposes": [
+      "预处理与质量控制"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/cell-quality-control.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-runcellqc",
+        "title": "SCP RunCellQC 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunCellQC 于 pancreas_sub 的 80 个细胞；比较封装与上游 CellQC、检查输入未变。"
+      }
+    ]
+  },
+  {
+    "path": "methods/cell-type-annotation.md",
+    "id": "cell-type-annotation",
+    "title": "细胞类型注释",
+    "purposes": [
+      "注释与参考映射"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/cell-type-annotation.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-singler",
+        "title": "SCP RunSingleR 分支",
+        "state": "not_run",
+        "scope": "SCP RunSingleR 分支；本机 R 库无 SingleR。"
+      }
+    ]
+  },
+  {
+    "path": "methods/differential-expression.md",
+    "id": "differential-expression",
+    "title": "差异表达分析",
+    "purposes": [
+      "差异与功能分析"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/differential-expression.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-detest",
+        "title": "SCP RunDEtest 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunDEtest：pancreas_sub 全数据，Ductal vs Endocrine，wilcox；比较封装与上游 AllMarkers 表。"
+      }
+    ]
+  },
+  {
+    "path": "methods/dimensionality-reduction.md",
+    "id": "dimensionality-reduction",
+    "title": "单细胞降维分析",
+    "purposes": [
+      "降维与聚类"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/dimensionality-reduction.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-dimreduction",
+        "title": "SCP RunDimReduction 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunDimReduction：pancreas_sub 200 细胞，100 HVF、20 PC、UMAP；比较封装与上游 UMAP。"
+      }
+    ]
+  },
+  {
+    "path": "methods/doublet-detection.md",
+    "id": "doublet-detection",
+    "title": "双细胞检测",
+    "purposes": [
+      "预处理与质量控制"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/doublet-detection.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-rundoublet",
+        "title": "SCP RunDoubletCalling 的 scDblFinder 分支",
+        "state": "not_run",
+        "scope": "SCP RunDoubletCalling 的 scDblFinder 分支；本机 R 库无 scDblFinder。"
+      }
+    ]
+  },
+  {
+    "path": "methods/dynamic-feature-analysis.md",
+    "id": "dynamic-feature-analysis",
+    "title": "拟时序动态特征分析",
+    "purposes": [
+      "轨迹与动态分析"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/dynamic-feature-analysis.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-dynamicfeatures",
+        "title": "SCP RunDynamicFeatures 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunDynamicFeatures：pancreas_sub 80 细胞，显式 fixture pseudotime，Gcg/Krt19；比较 GAM 表。pseudotime 为软件夹具，不代表真实轨迹。"
+      }
+    ]
+  },
+  {
+    "path": "methods/gene-set-enrichment.md",
+    "id": "gene-set-enrichment",
+    "title": "基因集富集分析",
+    "purposes": [
+      "差异与功能分析"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/gene-set-enrichment.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-enrichment",
+        "title": "SCP RunEnrichment 的 ORA 分支",
+        "state": "verified",
+        "scope": "实际调用 SCP RunEnrichment 的 ORA 分支，显式 TERM2GENE/TERM2NAME（两个合成基因集），与上游结果表比较。"
+      }
+    ]
+  },
+  {
+    "path": "methods/gene-set-scoring.md",
+    "id": "gene-set-scoring",
+    "title": "基因集与通路签名打分",
+    "purposes": [
+      "差异与功能分析"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/gene-set-scoring.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-cellscoring",
+        "title": "SCP CellScoring 的 Seurat/AddModuleScore 分支",
+        "state": "verified",
+        "scope": "实际调用 SCP CellScoring 的 Seurat/AddModuleScore 分支，显式 name='X' 避开上游空 name 的列名缺陷；与上游分数比较。"
+      }
+    ]
+  },
+  {
+    "path": "methods/reference-mapping.md",
+    "id": "reference-mapping",
+    "title": "参考图谱映射",
+    "purposes": [
+      "注释与参考映射"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/reference-mapping.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "seurat-label-transfer",
+        "title": "Seurat 锚点标签转移分支",
+        "state": "verified",
+        "scope": "从 SCP RunSeuratMap 提取 FindTransferAnchors + TransferData 标签转移分支；pancreas_sub 300 参考/700 查询，检查每细胞预测、顺序与 anchor 数。不包含 UMAP 投影。"
+      },
+      {
+        "id": "scp-runseuratmap",
+        "title": "SCP RunSeuratMap UMAP 投影分支",
+        "state": "not_run",
+        "scope": "SCP RunSeuratMap 的 UMAP 投影分支在 Seurat 5.6 下失败；标签转移另由 seurat-label-transfer 分支验证。"
+      }
+    ]
+  },
+  {
+    "path": "methods/rna-velocity.md",
+    "id": "rna-velocity",
+    "title": "RNA 速度分析",
+    "purposes": [
+      "轨迹与动态分析"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/rna-velocity.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-scvelo",
+        "title": "SCP RunSCVELO 分支",
+        "state": "not_run",
+        "scope": "SCP RunSCVELO 分支需要 reticulate 与 scvelo；本机未设置 RETICULATE_PYTHON，且未安装 scvelo/scanpy。"
+      }
+    ]
+  },
+  {
+    "path": "methods/trajectory-inference.md",
+    "id": "trajectory-inference",
+    "title": "拟时序与轨迹推断",
+    "purposes": [
+      "轨迹与动态分析"
+    ],
+    "queue": "confirm",
+    "checks": {
+      "page": "methods/trajectory-inference.md",
+      "passed": true,
+      "errors": [],
+      "warnings": [],
+      "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+    },
+    "implementations": [
+      {
+        "id": "scp-slingshot",
+        "title": "SCP RunSlingshot 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunSlingshot：pancreas_sub 80 细胞，CellType 分组，UMAP 1:2；比较 pseudotime 与 BranchID。"
+      }
+    ]
+  }
+]

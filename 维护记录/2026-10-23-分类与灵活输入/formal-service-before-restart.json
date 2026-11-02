@@ -1,0 +1,6 @@
+{
+  "pid": 20264,
+  "command": "\"C:\\Users\\86186\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B -X utf8 C:\\Users\\86186\\.claude\\skills\\research-wiki\\wiki.py serve --no-browser",
+  "parent": 20564,
+  "parent_matches": true
+}

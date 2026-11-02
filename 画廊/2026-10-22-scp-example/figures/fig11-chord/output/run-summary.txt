@@ -1,0 +1,9 @@
+plot_type: chord
+stat_by: CellType + Phase
+stat_type: count (forced by upstream for chord)
+size_in: 8x6
+dpi: 150
+device_png: grDevices::png(width=1200, height=900, res=150, bg=white)
+device_pdf: grDevices::cairo_pdf(width=8, height=6, bg=white)
+device_svg: svglite::svglite(width=8, height=6, bg=white)
+replica_png_sha256: 6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6

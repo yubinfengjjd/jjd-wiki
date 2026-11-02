@@ -1,0 +1,44 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "heatmap": {
+      "interface": "render-group-heatmap",
+      "description": "一个 matrix × feature × group 的长表；模板按 matrix 重建多个热图矩阵，percent 驱动点大小"
+    }
+  },
+  "style": {
+    "add_dot": true,
+    "dot_size_mm": 8,
+    "add_reticle": false,
+    "reticle_color": "grey",
+    "exp_method": "zscore",
+    "exp_legend_title": "zscore(normalized counts)",
+    "heatmap_palette": "RdBu",
+    "heatmap_palcolor": null,
+    "group_palette": "Paired",
+    "group_palcolor": null,
+    "nlabel": 20,
+    "features_label": null,
+    "label_size": 10,
+    "label_color": "black",
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "seed": 11,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 3,
+      "per_x_in": 0.35,
+      "base_height_in": 2,
+      "per_y_in": 0.25,
+      "min_width_in": 6,
+      "min_height_in": 5,
+      "base_label_chars": 8,
+      "per_label_char_in": 0.08,
+      "aspect": null,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

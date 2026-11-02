@@ -1,0 +1,128 @@
+[
+  {
+    "path": "frontend/src/api.ts",
+    "change": "modified",
+    "bytes": 17378,
+    "sha256": "5fd8b07b3ebba9f1afa5c0731e9115bdd9cc03c9fdf8552aef22849221bcaae8"
+  },
+  {
+    "path": "frontend/src/methods.ts",
+    "change": "modified",
+    "bytes": 6875,
+    "sha256": "083c9e6409310afddb0c7784e1708d2c1867ae3d49c97641f1700c1069a8761c"
+  },
+  {
+    "path": "frontend/src/views/MethodOverview.tsx",
+    "change": "modified",
+    "bytes": 10126,
+    "sha256": "4e91550834711221127eb96e2485d3325404b1b3ffe5b2931f0a599037b70b49"
+  },
+  {
+    "path": "frontend/src/views/PageView.tsx",
+    "change": "modified",
+    "bytes": 16366,
+    "sha256": "cf809b2893910582a99690daaffadb318013eba83fdecaa9d6444a20cbcf99af"
+  },
+  {
+    "path": "staged/research-wiki/SKILL.md",
+    "change": "modified",
+    "bytes": 26109,
+    "sha256": "5f4df2872c5450fcb714e581bc5079256e77aa59555d68639ca1b1181b9c6f9d"
+  },
+  {
+    "path": "staged/research-wiki/references/minimal-runtime.md",
+    "change": "modified",
+    "bytes": 9409,
+    "sha256": "ae223a14e623e2c8bcda6b434d37b31a923c61fa186ae21912478b8fcf785a88"
+  },
+  {
+    "path": "staged/research-wiki/references/project-reuse.md",
+    "change": "modified",
+    "bytes": 7543,
+    "sha256": "dca924299050f482b3c904ebf0f5ec5ba6abfa41ceadc35df1ca3098b7834b4d"
+  },
+  {
+    "path": "staged/research-wiki/references/project-state.md",
+    "change": "added",
+    "bytes": 4494,
+    "sha256": "682bacae74f1db3f5b96607bd0726952f9e84ddcc0f773694eae38864d47bab5"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/cli.py",
+    "change": "modified",
+    "bytes": 24598,
+    "sha256": "51d0752a5354840396e866d87c7ee03cb244218f00603904611953a358e8e9c3"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/discovery.py",
+    "change": "added",
+    "bytes": 5218,
+    "sha256": "3e3c0654f4d39aa8ecf99dd41662e6af63d901f21787d3d4d1e1f7cd51a43622"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/domain_profiles.py",
+    "change": "added",
+    "bytes": 7584,
+    "sha256": "5bd5ba80a6876b3d6ccf4f05f5deb3aa7350c297e5f41a1d53391bfd6c830ea8"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/domain_profiles.yaml",
+    "change": "added",
+    "bytes": 11727,
+    "sha256": "25014b6ccf483e3ea29037b4ddce29f3b6f2e4045cac13071e90617d8d848821"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/method_implementations.py",
+    "change": "modified",
+    "bytes": 10976,
+    "sha256": "b0e91b49165f9fee118559f2e67ee36e9e23474dffa89fc44f78084808aed0c5"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/project_state.py",
+    "change": "added",
+    "bytes": 56762,
+    "sha256": "524f1683b0c08edf8eb3e902987cde351b36ff47b88087dac23144c6a024cf89"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/runtime_contract.py",
+    "change": "modified",
+    "bytes": 29380,
+    "sha256": "adc4ae9a79af19c1165758ba3edea21f10dfff46becca1b72600d6f117c92f8b"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/server.py",
+    "change": "modified",
+    "bytes": 23754,
+    "sha256": "d443df0d5660ce91540990e49ee147cfe1a84a9fdfd0c2347b4933fa49b23fbc"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_cli_project.py",
+    "change": "added",
+    "bytes": 5399,
+    "sha256": "22b2762ea4d916c6e234a4d675bedca21ef71376e9994a5828a09a3612ef500f"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_discovery.py",
+    "change": "added",
+    "bytes": 4902,
+    "sha256": "514f9c900e953535c15209a162e71e207ceef588b45f6fd0dcdf48b98110db5a"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_domain_profiles.py",
+    "change": "added",
+    "bytes": 8658,
+    "sha256": "3ee9969ef4554b4e2806b72026f5fe0fed00ce31a20e0237893f5362151883d4"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_project_state.py",
+    "change": "added",
+    "bytes": 13577,
+    "sha256": "a09a32280194a9d5ad7ded10fdb19dc4b13a009b959fb4acdaf8055c600efdc1"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_runtime_v2.py",
+    "change": "added",
+    "bytes": 12373,
+    "sha256": "745b5ee3a6ede57e145d35fe7cb1aaac9100a2eac8de0da3eda5a17f3d043bcc"
+  }
+]

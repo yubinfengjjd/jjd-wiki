@@ -1,0 +1,98 @@
+[
+  {
+    "host": ".agents",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-CI1NFvV5.js",
+      "app/index.html",
+      "rwiki/curation.py",
+      "rwiki/relations.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-BYIzsr10.js"
+    ]
+  },
+  {
+    "host": ".codex",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-CI1NFvV5.js",
+      "app/index.html",
+      "rwiki/curation.py",
+      "rwiki/relations.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-BYIzsr10.js"
+    ]
+  },
+  {
+    "host": ".claude",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-CI1NFvV5.js",
+      "app/index.html",
+      "rwiki/curation.py",
+      "rwiki/relations.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-BYIzsr10.js"
+    ]
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-CI1NFvV5.js",
+      "app/index.html",
+      "rwiki/curation.py",
+      "rwiki/relations.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-BYIzsr10.js"
+    ]
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-CI1NFvV5.js",
+      "app/index.html",
+      "rwiki/curation.py",
+      "rwiki/relations.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-BYIzsr10.js"
+    ]
+  },
+  {
+    "host": ".kiro",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-CI1NFvV5.js",
+      "app/index.html",
+      "rwiki/curation.py",
+      "rwiki/relations.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-BYIzsr10.js"
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "label": "devin-dot-final-fixes",
+  "pid": 35180,
+  "cwd": "E:\\research-wiki-env\\work\\scp-ingestion-20261025",
+  "status": "returned",
+  "tool_events": 139,
+  "message_chars": 1388,
+  "updated_at": "2026-10-25T12:31:46Z",
+  "load_session_supported": true,
+  "last_tool": "Ran python.exe",
+  "session_id": "valley-handsaw",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    34780,
+    39600,
+    38268,
+    40292,
+    26936,
+    41732,
+    30788,
+    34252,
+    41156,
+    41936,
+    39264,
+    41144,
+    33368,
+    39288,
+    40932,
+    29392,
+    38896
+  ],
+  "stop_reason": "end_turn"
+}

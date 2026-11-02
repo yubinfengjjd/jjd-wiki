@@ -1,0 +1,15 @@
+{
+  "title": "分组表达点阵热图",
+  "base": "http://127.0.0.1:8880",
+  "layout_status": "pending_signoff",
+  "gallery_status": "draft",
+  "preview": {
+    "url": "/files/gallery/2026-10-22-scp-example/figures/fig17-group-heatmap-dot/source/fig17.png",
+    "kind": "source",
+    "label": "来源 panel · 只读溯源"
+  },
+  "code_files": 10,
+  "real_click_reusable_preview": "1# Compatibility loader for the native SCP GroupHeatmap add_dot core.\r\n2#\r\n3# Loads every module file into a PRIVATE environment and exposes ONLY the\r",
+  "real_click_original": true,
+  "author_actions_performed": false
+}

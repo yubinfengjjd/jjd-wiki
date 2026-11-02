@@ -1,0 +1,6 @@
+{
+  "method": "trajectory-inference-plot",
+  "state": "not_run",
+  "error": "`grobs` must be a single grob or a list of grobs, not a list matrix.",
+  "input_unchanged": {}
+}

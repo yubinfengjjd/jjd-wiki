@@ -1,0 +1,10 @@
+{
+  "resource_before": "unknown",
+  "resource_changed": "unknown",
+  "valid_resource_before": "verified",
+  "valid_resource_changed": "unknown",
+  "wrong_declared_resource_hash": "unknown",
+  "malformed_resources": "unknown",
+  "different_registered_entry": "invalid",
+  "different_registered_function": "invalid"
+}

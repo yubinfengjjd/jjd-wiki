@@ -1,0 +1,53 @@
+{
+  "disposition": "archived_only",
+  "missing": [
+    "Excel data",
+    "plot_observed_predicted",
+    "plot_prediction_error",
+    "OOF/model evaluation generation"
+  ],
+  "blocks": [
+    {
+      "file": "block-01.python.txt",
+      "sha256": "4755da6094884423acf7c472cffeeaf34dae9e628a176c2224a28e6870477f8d",
+      "original_language": "python",
+      "executed": false
+    },
+    {
+      "file": "block-02.python.txt",
+      "sha256": "7baae44b872e9f566cf3f77d15f6409aef4b44b1c699a0693b624f779c93d416",
+      "original_language": "python",
+      "executed": false
+    },
+    {
+      "file": "block-03.python.txt",
+      "sha256": "94c6d63a564bc8297091664f2e9968faea446de4632d761c5670366458d09571",
+      "original_language": "python",
+      "executed": false
+    },
+    {
+      "file": "block-04.makefile.txt",
+      "sha256": "6a2377ab39cc30469f9f117cd690fe9d81d06e688dd4caf09c25ce5356dafbd6",
+      "original_language": "makefile",
+      "executed": false
+    },
+    {
+      "file": "block-05.javascript.txt",
+      "sha256": "abcd7bec52b0fc6438624f4004a6c202d0faea79ea26089ec1f832ee17756154",
+      "original_language": "javascript",
+      "executed": false
+    },
+    {
+      "file": "block-06.javascript.txt",
+      "sha256": "c73a3ea54372b1038a01ccafe75f553fc0e66802cf268d2e2ea675aeca90fb6d",
+      "original_language": "javascript",
+      "executed": false
+    },
+    {
+      "file": "block-07.javascript.txt",
+      "sha256": "38f0126b03c5ef4930aa9c7da26ff3f549ec19404e2522ce9daf274db8396a46",
+      "original_language": "javascript",
+      "executed": false
+    }
+  ]
+}

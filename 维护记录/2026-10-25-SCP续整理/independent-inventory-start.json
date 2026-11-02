@@ -1,0 +1,309 @@
+{
+  "source_exports": [
+    "\"%>%\"",
+    "\"%||%\"",
+    "AnnotateFeatures",
+    "BBKNN_integrate",
+    "CC_GenePrefetch",
+    "CSS_integrate",
+    "CellCorHeatmap",
+    "CellDensityPlot",
+    "CellDimPlot",
+    "CellDimPlot3D",
+    "CellScoring",
+    "CellStatPlot",
+    "ComBat_integrate",
+    "Conos_integrate",
+    "CreateDataFile",
+    "CreateMetaFile",
+    "DefaultReduction",
+    "DynamicHeatmap",
+    "DynamicPlot",
+    "EnrichmentPlot",
+    "Env_requirements",
+    "FeatureCorPlot",
+    "FeatureDimPlot",
+    "FeatureDimPlot3D",
+    "FeatureHeatmap",
+    "FeatureStatPlot",
+    "FetchH5",
+    "FindExpressedMarkers",
+    "GSEAPlot",
+    "GeneConvert",
+    "GraphPlot",
+    "GroupHeatmap",
+    "Harmony_integrate",
+    "Integration_SCP",
+    "LIGER_integrate",
+    "LineagePlot",
+    "ListDB",
+    "MNN_integrate",
+    "PAGAPlot",
+    "PrepareDB",
+    "PrepareEnv",
+    "PrepareSCExplorer",
+    "ProjectionPlot",
+    "RecoverCounts",
+    "RenameClusters",
+    "RenameFeatures",
+    "RunCSSMap",
+    "RunCellQC",
+    "RunDEtest",
+    "RunDM",
+    "RunDimReduction",
+    "RunDoubletCalling",
+    "RunDynamicEnrichment",
+    "RunDynamicFeatures",
+    "RunEnrichment",
+    "RunFR",
+    "RunGLMPCA",
+    "RunGSEA",
+    "RunHarmony2",
+    "RunKNNMap",
+    "RunKNNPredict",
+    "RunLargeVis",
+    "RunMDS",
+    "RunMonocle2",
+    "RunMonocle3",
+    "RunNMF",
+    "RunPAGA",
+    "RunPCAMap",
+    "RunPHATE",
+    "RunPaCMAP",
+    "RunPalantir",
+    "RunSCExplorer",
+    "RunSCVELO",
+    "RunScmap",
+    "RunSeuratMap",
+    "RunSingleR",
+    "RunSlingshot",
+    "RunSymphonyMap",
+    "RunTriMap",
+    "RunUMAP2",
+    "RunWOT",
+    "Scanorama_integrate",
+    "Seurat_integrate",
+    "SrtAppend",
+    "SrtReorder",
+    "Standard_SCP",
+    "StatPlot",
+    "Uncorrected_integrate",
+    "VelocityPlot",
+    "VolcanoPlot",
+    "adata_to_srt",
+    "adjcolors",
+    "arrow",
+    "as_matrix",
+    "blendcolors",
+    "capitalize",
+    "check_DataType",
+    "check_Python",
+    "check_R",
+    "check_srtList",
+    "check_srtMerge",
+    "compute_velocity_on_grid",
+    "db_DoubletDetection",
+    "db_Scrublet",
+    "db_scDblFinder",
+    "db_scds",
+    "download",
+    "drop_data",
+    "exist_Python_pkgs",
+    "fastMNN_integrate",
+    "find_conda",
+    "geom_alluvial",
+    "geom_alluvial_label",
+    "geom_alluvial_text",
+    "geom_sankey",
+    "geom_sankey_bump",
+    "geom_sankey_label",
+    "geom_sankey_text",
+    "get_vars",
+    "gpar",
+    "installed_Python_pkgs",
+    "invoke",
+    "isOutlier",
+    "iterchunks",
+    "make_long",
+    "palette_scp",
+    "panel_fix",
+    "panel_fix_overall",
+    "scVI_integrate",
+    "segementsDf",
+    "show_palettes",
+    "slim_data",
+    "srt_to_adata",
+    "theme_alluvial",
+    "theme_blank",
+    "theme_sankey",
+    "theme_sankey_bump",
+    "theme_scp",
+    "tochunks",
+    "try_get",
+    "unit",
+    "unnest"
+  ],
+  "export_count": 142,
+  "analysis_families": [
+    {
+      "id": "batch-integration",
+      "purposes": [
+        "整合与批次校正"
+      ],
+      "implementations": [
+        "scp-seurat",
+        "scp-harmony"
+      ]
+    },
+    {
+      "id": "cell-clustering",
+      "purposes": [
+        "降维与聚类"
+      ],
+      "implementations": [
+        "seurat-findclusters"
+      ]
+    },
+    {
+      "id": "cell-quality-control",
+      "purposes": [
+        "预处理与质量控制"
+      ],
+      "implementations": [
+        "scp-runcellqc"
+      ]
+    },
+    {
+      "id": "cell-type-annotation",
+      "purposes": [
+        "注释与参考映射"
+      ],
+      "implementations": [
+        "scp-singler"
+      ]
+    },
+    {
+      "id": "differential-expression",
+      "purposes": [
+        "差异与功能分析"
+      ],
+      "implementations": [
+        "scp-detest"
+      ]
+    },
+    {
+      "id": "dimensionality-reduction",
+      "purposes": [
+        "降维与聚类"
+      ],
+      "implementations": [
+        "scp-dimreduction"
+      ]
+    },
+    {
+      "id": "doublet-detection",
+      "purposes": [
+        "预处理与质量控制"
+      ],
+      "implementations": [
+        "scp-rundoublet"
+      ]
+    },
+    {
+      "id": "dynamic-feature-analysis",
+      "purposes": [
+        "轨迹与动态分析"
+      ],
+      "implementations": [
+        "scp-dynamicfeatures"
+      ]
+    },
+    {
+      "id": "gene-set-enrichment",
+      "purposes": [
+        "差异与功能分析"
+      ],
+      "implementations": [
+        "scp-enrichment"
+      ]
+    },
+    {
+      "id": "gene-set-scoring",
+      "purposes": [
+        "差异与功能分析"
+      ],
+      "implementations": [
+        "scp-cellscoring"
+      ]
+    },
+    {
+      "id": "reference-mapping",
+      "purposes": [
+        "注释与参考映射"
+      ],
+      "implementations": [
+        "seurat-label-transfer",
+        "scp-runseuratmap"
+      ]
+    },
+    {
+      "id": "regression-resampling-evaluation",
+      "purposes": [
+        "模型评价"
+      ],
+      "implementations": [
+        "summarize-predictions"
+      ]
+    },
+    {
+      "id": "rna-velocity",
+      "purposes": [
+        "轨迹与动态分析"
+      ],
+      "implementations": [
+        "scp-scvelo"
+      ]
+    },
+    {
+      "id": "shap-explanation",
+      "purposes": [
+        "模型解释"
+      ],
+      "implementations": [
+        "shap-explain-model"
+      ]
+    },
+    {
+      "id": "trajectory-inference",
+      "purposes": [
+        "轨迹与动态分析"
+      ],
+      "implementations": [
+        "scp-slingshot",
+        "scp-monocle2",
+        "scp-monocle3",
+        "scp-monocle2-core",
+        "scp-monocle3-core"
+      ]
+    }
+  ],
+  "family_count": 15,
+  "native_templates": [
+    "2026-10-22-scp-example__fig01-volcano--volcano",
+    "2026-10-22-scp-example__fig02-ring--ring",
+    "2026-10-22-scp-example__fig03-pie--pie",
+    "2026-10-22-scp-example__fig04-rose--rose",
+    "2026-10-22-scp-example__fig05-trend--trend",
+    "2026-10-22-scp-example__fig06-area--area",
+    "2026-10-22-scp-example__fig07-dot--dot",
+    "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+    "2026-10-22-scp-example__fig09-bar--bar",
+    "2026-10-22-scp-example__fig10-sankey--sankey",
+    "2026-10-22-scp-example__fig11-chord--chord",
+    "2026-10-22-scp-example__fig12-venn--venn",
+    "2026-10-22-scp-example__fig13-upset--upset",
+    "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+    "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+    "2026-10-22-scp-example__fig16-cell-density--ridge"
+  ]
+}

@@ -1,0 +1,945 @@
+{
+  "note": "Exact exports and literal enum defaults only; enum choice does not establish tested support.",
+  "export_count": 142,
+  "export_names": ["%>%", "%||%", "AnnotateFeatures", "BBKNN_integrate", "CC_GenePrefetch", "CSS_integrate", "CellCorHeatmap", "CellDensityPlot", "CellDimPlot", "CellDimPlot3D", "CellScoring", "CellStatPlot", "ComBat_integrate", "Conos_integrate", "CreateDataFile", "CreateMetaFile", "DefaultReduction", "DynamicHeatmap", "DynamicPlot", "EnrichmentPlot", "Env_requirements", "FeatureCorPlot", "FeatureDimPlot", "FeatureDimPlot3D", "FeatureHeatmap", "FeatureStatPlot", "FetchH5", "FindExpressedMarkers", "GSEAPlot", "GeneConvert", "GraphPlot", "GroupHeatmap", "Harmony_integrate", "Integration_SCP", "LIGER_integrate", "LineagePlot", "ListDB", "MNN_integrate", "PAGAPlot", "PrepareDB", "PrepareEnv", "PrepareSCExplorer", "ProjectionPlot", "RecoverCounts", "RenameClusters", "RenameFeatures", "RunCSSMap", "RunCellQC", "RunDEtest", "RunDM", "RunDimReduction", "RunDoubletCalling", "RunDynamicEnrichment", "RunDynamicFeatures", "RunEnrichment", "RunFR", "RunGLMPCA", "RunGSEA", "RunHarmony2", "RunKNNMap", "RunKNNPredict", "RunLargeVis", "RunMDS", "RunMonocle2", "RunMonocle3", "RunNMF", "RunPAGA", "RunPCAMap", "RunPHATE", "RunPaCMAP", "RunPalantir", "RunSCExplorer", "RunSCVELO", "RunScmap", "RunSeuratMap", "RunSingleR", "RunSlingshot", "RunSymphonyMap", "RunTriMap", "RunUMAP2", "RunWOT", "Scanorama_integrate", "Seurat_integrate", "SrtAppend", "SrtReorder", "Standard_SCP", "StatPlot", "Uncorrected_integrate", "VelocityPlot", "VolcanoPlot", "adata_to_srt", "adjcolors", "arrow", "as_matrix", "blendcolors", "capitalize", "check_DataType", "check_Python", "check_R", "check_srtList", "check_srtMerge", "compute_velocity_on_grid", "db_DoubletDetection", "db_Scrublet", "db_scDblFinder", "db_scds", "download", "drop_data", "exist_Python_pkgs", "fastMNN_integrate", "find_conda", "geom_alluvial", "geom_alluvial_label", "geom_alluvial_text", "geom_sankey", "geom_sankey_bump", "geom_sankey_label", "geom_sankey_text", "get_vars", "gpar", "installed_Python_pkgs", "invoke", "isOutlier", "iterchunks", "make_long", "palette_scp", "panel_fix", "panel_fix_overall", "scVI_integrate", "segementsDf", "show_palettes", "slim_data", "srt_to_adata", "theme_alluvial", "theme_blank", "theme_sankey", "theme_sankey_bump", "theme_scp", "tochunks", "try_get", "unit", "unnest"],
+  "native_visual_entries": ["CellCorHeatmap", "CellDensityPlot", "CellDimPlot", "CellDimPlot3D", "CellStatPlot", "DynamicHeatmap", "DynamicPlot", "EnrichmentPlot", "FeatureCorPlot", "FeatureDimPlot", "FeatureDimPlot3D", "FeatureHeatmap", "FeatureStatPlot", "GSEAPlot", "GraphPlot", "GroupHeatmap", "LineagePlot", "PAGAPlot", "ProjectionPlot", "StatPlot", "VelocityPlot", "VolcanoPlot"],
+  "definitions": {
+    "make_long": {
+      "file": "R/ggsankey.R",
+      "start": 70,
+      "end": 108,
+      "enum_defaults": []
+    },
+    "theme_sankey": {
+      "file": "R/ggsankey.R",
+      "start": 124,
+      "end": 151,
+      "enum_defaults": []
+    },
+    "theme_alluvial": {
+      "file": "R/ggsankey.R",
+      "start": 155,
+      "end": 180,
+      "enum_defaults": []
+    },
+    "theme_sankey_bump": {
+      "file": "R/ggsankey.R",
+      "start": 184,
+      "end": 210,
+      "enum_defaults": []
+    },
+    "geom_sankey": {
+      "file": "R/ggsankey.R",
+      "start": 691,
+      "end": 744,
+      "enum_defaults": []
+    },
+    "geom_sankey_label": {
+      "file": "R/ggsankey.R",
+      "start": 768,
+      "end": 801,
+      "enum_defaults": []
+    },
+    "geom_sankey_text": {
+      "file": "R/ggsankey.R",
+      "start": 805,
+      "end": 838,
+      "enum_defaults": []
+    },
+    "geom_alluvial": {
+      "file": "R/ggsankey.R",
+      "start": 860,
+      "end": 883,
+      "enum_defaults": []
+    },
+    "geom_alluvial_text": {
+      "file": "R/ggsankey.R",
+      "start": 907,
+      "end": 928,
+      "enum_defaults": []
+    },
+    "geom_alluvial_label": {
+      "file": "R/ggsankey.R",
+      "start": 932,
+      "end": 953,
+      "enum_defaults": []
+    },
+    "geom_sankey_bump": {
+      "file": "R/ggsankey.R",
+      "start": 976,
+      "end": 1004,
+      "enum_defaults": []
+    },
+    "GeneConvert": {
+      "file": "R/SCP-analysis.R",
+      "start": 70,
+      "end": 440,
+      "enum_defaults": []
+    },
+    "CC_GenePrefetch": {
+      "file": "R/SCP-analysis.R",
+      "start": 472,
+      "end": 504,
+      "enum_defaults": []
+    },
+    "CellScoring": {
+      "file": "R/SCP-analysis.R",
+      "start": 731,
+      "end": 914,
+      "enum_defaults": []
+    },
+    "FindExpressedMarkers": {
+      "file": "R/SCP-analysis.R",
+      "start": 1229,
+      "end": 1431,
+      "enum_defaults": []
+    },
+    "RunDEtest": {
+      "file": "R/SCP-analysis.R",
+      "start": 1671,
+      "end": 2106,
+      "enum_defaults": {
+        "markers_type": ["all", "paired", "conserved", "disturbed"],
+        "meta.method": ["maximump", "minimump", "wilkinsonp", "meanp", "sump", "votep"]
+      }
+    },
+    "ListDB": {
+      "file": "R/SCP-analysis.R",
+      "start": 2123,
+      "end": 2148,
+      "enum_defaults": []
+    },
+    "PrepareDB": {
+      "file": "R/SCP-analysis.R",
+      "start": 2243,
+      "end": 3679,
+      "enum_defaults": {
+        "species": ["Homo_sapiens", "Mus_musculus"],
+        "db": ["GO", "GO_BP", "GO_CC", "GO_MF", "KEGG", "WikiPathway", "Reactome", "CORUM", "MP", "DO", "HPO", "PFAM", "CSPA", "Surfaceome", "SPRomeDB", "VerSeDa", "TFLink", "hTFtarget", "TRRUST", "JASPAR", "ENCODE", "MSigDB", "CellTalk", "CellChat", "Chromosome", "GeneType", "Enzyme", "TF"],
+        "db_IDtypes": ["symbol", "entrez_id", "ensembl_id"]
+      }
+    },
+    "RunEnrichment": {
+      "file": "R/SCP-analysis.R",
+      "start": 3766,
+      "end": 3975,
+      "enum_defaults": {
+        "unlimited_db": ["Chromosome", "GeneType", "TF", "Enzyme", "CSPA"]
+      }
+    },
+    "RunGSEA": {
+      "file": "R/SCP-analysis.R",
+      "start": 4030,
+      "end": 4272,
+      "enum_defaults": {
+        "unlimited_db": ["Chromosome", "GeneType", "TF", "Enzyme", "CSPA"]
+      }
+    },
+    "RunSlingshot": {
+      "file": "R/SCP-analysis.R",
+      "start": 4307,
+      "end": 4361,
+      "enum_defaults": []
+    },
+    "RunMonocle2": {
+      "file": "R/SCP-analysis.R",
+      "start": 4410,
+      "end": 4495,
+      "enum_defaults": []
+    },
+    "RunMonocle3": {
+      "file": "R/SCP-analysis.R",
+      "start": 4745,
+      "end": 4898,
+      "enum_defaults": []
+    },
+    "RunDynamicFeatures": {
+      "file": "R/SCP-analysis.R",
+      "start": 4948,
+      "end": 5171,
+      "enum_defaults": []
+    },
+    "RunDynamicEnrichment": {
+      "file": "R/SCP-analysis.R",
+      "start": 5218,
+      "end": 5311,
+      "enum_defaults": []
+    },
+    "srt_to_adata": {
+      "file": "R/SCP-analysis.R",
+      "start": 5351,
+      "end": 5496,
+      "enum_defaults": {
+        "assay_layers": ["spliced", "unspliced"]
+      }
+    },
+    "adata_to_srt": {
+      "file": "R/SCP-analysis.R",
+      "start": 5521,
+      "end": 5681,
+      "enum_defaults": []
+    },
+    "RunPAGA": {
+      "file": "R/SCP-analysis.R",
+      "start": 5785,
+      "end": 5850,
+      "enum_defaults": {
+        "assay_layers": ["spliced", "unspliced"]
+      }
+    },
+    "RunSCVELO": {
+      "file": "R/SCP-analysis.R",
+      "start": 5895,
+      "end": 5967,
+      "enum_defaults": {
+        "assay_layers": ["spliced", "unspliced"]
+      }
+    },
+    "RunPalantir": {
+      "file": "R/SCP-analysis.R",
+      "start": 6001,
+      "end": 6071,
+      "enum_defaults": {
+        "assay_layers": ["spliced", "unspliced"]
+      }
+    },
+    "RunWOT": {
+      "file": "R/SCP-analysis.R",
+      "start": 6086,
+      "end": 6156,
+      "enum_defaults": {
+        "assay_layers": ["spliced", "unspliced"]
+      }
+    },
+    "CreateDataFile": {
+      "file": "R/SCP-app.R",
+      "start": 20,
+      "end": 83,
+      "enum_defaults": []
+    },
+    "CreateMetaFile": {
+      "file": "R/SCP-app.R",
+      "start": 104,
+      "end": 229,
+      "enum_defaults": []
+    },
+    "PrepareSCExplorer": {
+      "file": "R/SCP-app.R",
+      "start": 250,
+      "end": 306,
+      "enum_defaults": {
+        "slots": ["counts", "data"]
+      }
+    },
+    "FetchH5": {
+      "file": "R/SCP-app.R",
+      "start": 345,
+      "end": 455,
+      "enum_defaults": []
+    },
+    "RunSCExplorer": {
+      "file": "R/SCP-app.R",
+      "start": 581,
+      "end": 2299,
+      "enum_defaults": []
+    },
+    "RunKNNPredict": {
+      "file": "R/SCP-cell_annotation.R",
+      "start": 98,
+      "end": 493,
+      "enum_defaults": {
+        "features_type": ["HVF", "DE"]
+      }
+    },
+    "RunScmap": {
+      "file": "R/SCP-cell_annotation.R",
+      "start": 527,
+      "end": 621,
+      "enum_defaults": []
+    },
+    "RunSingleR": {
+      "file": "R/SCP-cell_annotation.R",
+      "start": 655,
+      "end": 787,
+      "enum_defaults": []
+    },
+    "db_scDblFinder": {
+      "file": "R/SCP-cellqc.R",
+      "start": 17,
+      "end": 31,
+      "enum_defaults": []
+    },
+    "db_scds": {
+      "file": "R/SCP-cellqc.R",
+      "start": 50,
+      "end": 70,
+      "enum_defaults": {
+        "method": ["hybrid", "cxds", "bcds"]
+      }
+    },
+    "db_Scrublet": {
+      "file": "R/SCP-cellqc.R",
+      "start": 89,
+      "end": 113,
+      "enum_defaults": []
+    },
+    "db_DoubletDetection": {
+      "file": "R/SCP-cellqc.R",
+      "start": 132,
+      "end": 159,
+      "enum_defaults": []
+    },
+    "RunDoubletCalling": {
+      "file": "R/SCP-cellqc.R",
+      "start": 180,
+      "end": 215,
+      "enum_defaults": []
+    },
+    "isOutlier": {
+      "file": "R/SCP-cellqc.R",
+      "start": 238,
+      "end": 254,
+      "enum_defaults": {
+        "type": ["both", "lower", "higher"]
+      }
+    },
+    "RunCellQC": {
+      "file": "R/SCP-cellqc.R",
+      "start": 314,
+      "end": 500,
+      "enum_defaults": {
+        "qc_metrics": ["doublets", "outlier", "umi", "gene", "mito", "ribo", "ribo_mito_ratio", "species"],
+        "outlier_threshold": ["log10_nCount:lower:2.5", "log10_nCount:higher:5", "log10_nFeature:lower:2.5", "log10_nFeature:higher:5", "featurecount_dist:lower:2.5"],
+        "mito_pattern": ["MT-", "Mt-", "mt-"],
+        "ribo_pattern": ["RP[SL]\\d+\\w{0,1}\\d*$", "Rp[sl]\\d+\\w{0,1}\\d*$", "rp[sl]\\d+\\w{0,1}\\d*$"]
+      }
+    },
+    "AnnotateFeatures": {
+      "file": "R/SCP-feature_annotation.R",
+      "start": 33,
+      "end": 121,
+      "enum_defaults": {
+        "IDtype": ["symbol", "ensembl_id", "entrez_id"],
+        "columns": ["seqname", "feature", "start", "end", "strand", "gene_id", "gene_name", "gene_type"]
+      }
+    },
+    "theme_scp": {
+      "file": "R/SCP-plot.R",
+      "start": 16,
+      "end": 60,
+      "enum_defaults": []
+    },
+    "theme_blank": {
+      "file": "R/SCP-plot.R",
+      "start": 84,
+      "end": 134,
+      "enum_defaults": []
+    },
+    "palette_scp": {
+      "file": "R/SCP-plot.R",
+      "start": 168,
+      "end": 271,
+      "enum_defaults": []
+    },
+    "show_palettes": {
+      "file": "R/SCP-plot.R",
+      "start": 298,
+      "end": 343,
+      "enum_defaults": {
+        "type": ["discrete", "continuous"]
+      }
+    },
+    "panel_fix": {
+      "file": "R/SCP-plot.R",
+      "start": 453,
+      "end": 579,
+      "enum_defaults": []
+    },
+    "panel_fix_overall": {
+      "file": "R/SCP-plot.R",
+      "start": 588,
+      "end": 813,
+      "enum_defaults": []
+    },
+    "drop_data": {
+      "file": "R/SCP-plot.R",
+      "start": 833,
+      "end": 835,
+      "enum_defaults": []
+    },
+    "slim_data": {
+      "file": "R/SCP-plot.R",
+      "start": 918,
+      "end": 920,
+      "enum_defaults": []
+    },
+    "get_vars": {
+      "file": "R/SCP-plot.R",
+      "start": 963,
+      "end": 979,
+      "enum_defaults": []
+    },
+    "adjcolors": {
+      "file": "R/SCP-plot.R",
+      "start": 1000,
+      "end": 1007,
+      "enum_defaults": []
+    },
+    "blendcolors": {
+      "file": "R/SCP-plot.R",
+      "start": 1026,
+      "end": 1042,
+      "enum_defaults": {
+        "mode": ["blend", "average", "screen", "multiply"]
+      }
+    },
+    "CellDimPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 1328,
+      "end": 1851,
+      "enum_defaults": {
+        "mark_type": ["hull", "ellipse", "rect", "circle"],
+        "stat_plot_position": ["stack", "dodge"]
+      }
+    },
+    "FeatureDimPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 2042,
+      "end": 2815,
+      "enum_defaults": {
+        "color_blend_mode": ["blend", "average", "screen", "multiply"]
+      }
+    },
+    "CellDimPlot3D": {
+      "file": "R/SCP-plot.R",
+      "start": 2843,
+      "end": 3044,
+      "enum_defaults": []
+    },
+    "FeatureDimPlot3D": {
+      "file": "R/SCP-plot.R",
+      "start": 3066,
+      "end": 3369,
+      "enum_defaults": []
+    },
+    "FeatureStatPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 3524,
+      "end": 3718,
+      "enum_defaults": {
+        "plot.by": ["group", "feature"],
+        "fill.by": ["group", "feature", "expression"],
+        "plot_type": ["violin", "box", "bar", "dot", "col"],
+        "add_stat": ["none", "mean", "median"],
+        "sig_label": ["p.signif", "p.format"]
+      }
+    },
+    "CellStatPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 4463,
+      "end": 4490,
+      "enum_defaults": {
+        "plot_type": ["bar", "rose", "ring", "pie", "trend", "area", "dot", "sankey", "chord", "venn", "upset"],
+        "stat_type": ["percent", "count"],
+        "position": ["stack", "dodge"]
+      }
+    },
+    "StatPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 4564,
+      "end": 5159,
+      "enum_defaults": {
+        "plot_type": ["bar", "rose", "ring", "pie", "trend", "area", "dot", "sankey", "chord", "venn", "upset"],
+        "stat_type": ["percent", "count"],
+        "position": ["stack", "dodge"]
+      }
+    },
+    "FeatureCorPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 5232,
+      "end": 5624,
+      "enum_defaults": []
+    },
+    "CellDensityPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 5679,
+      "end": 5872,
+      "enum_defaults": {
+        "x_order": ["value", "rank"]
+      }
+    },
+    "LineagePlot": {
+      "file": "R/SCP-plot.R",
+      "start": 5918,
+      "end": 6030,
+      "enum_defaults": []
+    },
+    "PAGAPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 6121,
+      "end": 6214,
+      "enum_defaults": {
+        "edge_line": ["straight", "curved"],
+        "transition_line": ["straight", "curved"]
+      }
+    },
+    "GraphPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 6287,
+      "end": 6631,
+      "enum_defaults": {
+        "node_coord": ["x", "y"],
+        "use_triangular": ["upper", "lower", "both"],
+        "edge_line": ["straight", "curved"],
+        "transition_line": ["straight", "curved"]
+      }
+    },
+    "segementsDf": {
+      "file": "R/SCP-plot.R",
+      "start": 6666,
+      "end": 6683,
+      "enum_defaults": []
+    },
+    "VelocityPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 6745,
+      "end": 6945,
+      "enum_defaults": {
+        "plot_type": ["raw", "grid", "stream"]
+      }
+    },
+    "compute_velocity_on_grid": {
+      "file": "R/SCP-plot.R",
+      "start": 6963,
+      "end": 7039,
+      "enum_defaults": []
+    },
+    "VolcanoPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 7088,
+      "end": 7194,
+      "enum_defaults": []
+    },
+    "GroupHeatmap": {
+      "file": "R/SCP-plot.R",
+      "start": 7911,
+      "end": 9036,
+      "enum_defaults": {
+        "exp_method": ["zscore", "raw", "fc", "log2fc", "log1p"],
+        "split_method": ["kmeans", "hclust", "mfuzz"]
+      }
+    },
+    "FeatureHeatmap": {
+      "file": "R/SCP-plot.R",
+      "start": 9114,
+      "end": 9978,
+      "enum_defaults": {
+        "exp_method": ["zscore", "raw", "fc", "log2fc", "log1p"],
+        "split_method": ["kmeans", "hclust", "mfuzz"]
+      }
+    },
+    "CellCorHeatmap": {
+      "file": "R/SCP-plot.R",
+      "start": 10113,
+      "end": 10888,
+      "enum_defaults": {
+        "features_type": ["HVF", "DE"]
+      }
+    },
+    "DynamicHeatmap": {
+      "file": "R/SCP-plot.R",
+      "start": 11020,
+      "end": 12022,
+      "enum_defaults": {
+        "order_by": ["peaktime", "valleytime"],
+        "exp_method": ["zscore", "raw", "fc", "log2fc", "log1p"],
+        "split_method": ["mfuzz", "kmeans", "kmeans-peaktime", "hclust", "hclust-peaktime"]
+      }
+    },
+    "DynamicPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 12102,
+      "end": 12470,
+      "enum_defaults": {
+        "exp_method": ["log1p", "raw", "zscore", "fc", "log2fc"],
+        "x_order": ["value", "rank"]
+      }
+    },
+    "ProjectionPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 12511,
+      "end": 12583,
+      "enum_defaults": []
+    },
+    "EnrichmentPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 12727,
+      "end": 13438,
+      "enum_defaults": {
+        "plot_type": ["bar", "dot", "lollipop", "network", "enrichmap", "wordcloud", "comparison"],
+        "split_by": ["Database", "Groups"],
+        "word_type": ["term", "feature"],
+        "enrichmap_label": ["term", "feature"],
+        "enrichmap_mark": ["ellipse", "hull"]
+      }
+    },
+    "GSEAPlot": {
+      "file": "R/SCP-plot.R",
+      "start": 13563,
+      "end": 14543,
+      "enum_defaults": {
+        "plot_type": ["line", "bar", "network", "enrichmap", "wordcloud", "comparison"],
+        "direction": ["pos", "neg", "both"],
+        "word_type": ["term", "feature"],
+        "enrichmap_label": ["term", "feature"],
+        "enrichmap_mark": ["ellipse", "hull"]
+      }
+    },
+    "RunKNNMap": {
+      "file": "R/SCP-projection.R",
+      "start": 43,
+      "end": 261,
+      "enum_defaults": {
+        "projection_method": ["model", "knn"]
+      }
+    },
+    "RunPCAMap": {
+      "file": "R/SCP-projection.R",
+      "start": 281,
+      "end": 356,
+      "enum_defaults": {
+        "projection_method": ["model", "knn"]
+      }
+    },
+    "RunSeuratMap": {
+      "file": "R/SCP-projection.R",
+      "start": 382,
+      "end": 452,
+      "enum_defaults": {
+        "projection_method": ["model", "knn"]
+      }
+    },
+    "RunCSSMap": {
+      "file": "R/SCP-projection.R",
+      "start": 471,
+      "end": 543,
+      "enum_defaults": {
+        "projection_method": ["model", "knn"]
+      }
+    },
+    "RunSymphonyMap": {
+      "file": "R/SCP-projection.R",
+      "start": 565,
+      "end": 674,
+      "enum_defaults": {
+        "projection_method": ["model", "knn"]
+      }
+    },
+    "check_DataType": {
+      "file": "R/SCP-workflow.R",
+      "start": 14,
+      "end": 47,
+      "enum_defaults": []
+    },
+    "check_srtList": {
+      "file": "R/SCP-workflow.R",
+      "start": 75,
+      "end": 321,
+      "enum_defaults": []
+    },
+    "check_srtMerge": {
+      "file": "R/SCP-workflow.R",
+      "start": 334,
+      "end": 390,
+      "enum_defaults": []
+    },
+    "RecoverCounts": {
+      "file": "R/SCP-workflow.R",
+      "start": 420,
+      "end": 481,
+      "enum_defaults": {
+        "trans": ["expm1", "exp", "none"]
+      }
+    },
+    "RenameFeatures": {
+      "file": "R/SCP-workflow.R",
+      "start": 500,
+      "end": 525,
+      "enum_defaults": []
+    },
+    "RenameClusters": {
+      "file": "R/SCP-workflow.R",
+      "start": 560,
+      "end": 605,
+      "enum_defaults": []
+    },
+    "SrtReorder": {
+      "file": "R/SCP-workflow.R",
+      "start": 623,
+      "end": 679,
+      "enum_defaults": []
+    },
+    "SrtAppend": {
+      "file": "R/SCP-workflow.R",
+      "start": 692,
+      "end": 754,
+      "enum_defaults": []
+    },
+    "RunDimReduction": {
+      "file": "R/SCP-workflow.R",
+      "start": 781,
+      "end": 1011,
+      "enum_defaults": []
+    },
+    "DefaultReduction": {
+      "file": "R/SCP-workflow.R",
+      "start": 1034,
+      "end": 1084,
+      "enum_defaults": []
+    },
+    "Uncorrected_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 1092,
+      "end": 1264,
+      "enum_defaults": []
+    },
+    "Seurat_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 1276,
+      "end": 1559,
+      "enum_defaults": []
+    },
+    "scVI_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 1573,
+      "end": 1753,
+      "enum_defaults": []
+    },
+    "MNN_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 1762,
+      "end": 1958,
+      "enum_defaults": []
+    },
+    "fastMNN_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 1968,
+      "end": 2130,
+      "enum_defaults": []
+    },
+    "Harmony_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 2140,
+      "end": 2334,
+      "enum_defaults": []
+    },
+    "Scanorama_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 2348,
+      "end": 2530,
+      "enum_defaults": []
+    },
+    "BBKNN_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 2541,
+      "end": 2755,
+      "enum_defaults": []
+    },
+    "CSS_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 2765,
+      "end": 2960,
+      "enum_defaults": []
+    },
+    "LIGER_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 2971,
+      "end": 3172,
+      "enum_defaults": []
+    },
+    "Conos_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 3183,
+      "end": 3386,
+      "enum_defaults": []
+    },
+    "ComBat_integrate": {
+      "file": "R/SCP-workflow.R",
+      "start": 3395,
+      "end": 3583,
+      "enum_defaults": []
+    },
+    "Standard_SCP": {
+      "file": "R/SCP-workflow.R",
+      "start": 3663,
+      "end": 3814,
+      "enum_defaults": []
+    },
+    "Integration_SCP": {
+      "file": "R/SCP-workflow.R",
+      "start": 3907,
+      "end": 3959,
+      "enum_defaults": []
+    },
+    "RunNMF": {
+      "file": "R/Seurat-function.R",
+      "start": 27,
+      "end": 29,
+      "enum_defaults": []
+    },
+    "RunMDS": {
+      "file": "R/Seurat-function.R",
+      "start": 187,
+      "end": 189,
+      "enum_defaults": []
+    },
+    "RunGLMPCA": {
+      "file": "R/Seurat-function.R",
+      "start": 323,
+      "end": 325,
+      "enum_defaults": []
+    },
+    "RunDM": {
+      "file": "R/Seurat-function.R",
+      "start": 458,
+      "end": 460,
+      "enum_defaults": []
+    },
+    "RunUMAP2": {
+      "file": "R/Seurat-function.R",
+      "start": 579,
+      "end": 581,
+      "enum_defaults": []
+    },
+    "RunPaCMAP": {
+      "file": "R/Seurat-function.R",
+      "start": 1151,
+      "end": 1153,
+      "enum_defaults": []
+    },
+    "RunPHATE": {
+      "file": "R/Seurat-function.R",
+      "start": 1280,
+      "end": 1282,
+      "enum_defaults": []
+    },
+    "RunTriMap": {
+      "file": "R/Seurat-function.R",
+      "start": 1431,
+      "end": 1433,
+      "enum_defaults": []
+    },
+    "RunLargeVis": {
+      "file": "R/Seurat-function.R",
+      "start": 1550,
+      "end": 1552,
+      "enum_defaults": []
+    },
+    "RunFR": {
+      "file": "R/Seurat-function.R",
+      "start": 1678,
+      "end": 1680,
+      "enum_defaults": []
+    },
+    "RunHarmony2": {
+      "file": "R/Seurat-function.R",
+      "start": 1787,
+      "end": 1789,
+      "enum_defaults": []
+    },
+    "PrepareEnv": {
+      "file": "R/utils.R",
+      "start": 13,
+      "end": 129,
+      "enum_defaults": []
+    },
+    "Env_requirements": {
+      "file": "R/utils.R",
+      "start": 144,
+      "end": 265,
+      "enum_defaults": []
+    },
+    "installed_Python_pkgs": {
+      "file": "R/utils.R",
+      "start": 271,
+      "end": 285,
+      "enum_defaults": []
+    },
+    "exist_Python_pkgs": {
+      "file": "R/utils.R",
+      "start": 291,
+      "end": 330,
+      "enum_defaults": []
+    },
+    "find_conda": {
+      "file": "R/utils.R",
+      "start": 367,
+      "end": 384,
+      "enum_defaults": []
+    },
+    "check_Python": {
+      "file": "R/utils.R",
+      "start": 510,
+      "end": 546,
+      "enum_defaults": []
+    },
+    "check_R": {
+      "file": "R/utils.R",
+      "start": 558,
+      "end": 617,
+      "enum_defaults": {
+        "install_methods": ["BiocManager::install", "install.packages", "devtools::install_github"]
+      }
+    },
+    "try_get": {
+      "file": "R/utils.R",
+      "start": 647,
+      "end": 674,
+      "enum_defaults": []
+    },
+    "download": {
+      "file": "R/utils.R",
+      "start": 685,
+      "end": 713,
+      "enum_defaults": {
+        "methods": ["auto", "wget", "libcurl", "curl", "wininet", "internal"]
+      }
+    },
+    "invoke": {
+      "file": "R/utils.R",
+      "start": 767,
+      "end": 793,
+      "enum_defaults": []
+    },
+    "unnest": {
+      "file": "R/utils.R",
+      "start": 800,
+      "end": 817,
+      "enum_defaults": []
+    },
+    "as_matrix": {
+      "file": "R/utils.R",
+      "start": 831,
+      "end": 841,
+      "enum_defaults": []
+    },
+    "capitalize": {
+      "file": "R/utils.R",
+      "start": 852,
+      "end": 870,
+      "enum_defaults": []
+    },
+    "tochunks": {
+      "file": "R/utils.R",
+      "start": 892,
+      "end": 894,
+      "enum_defaults": []
+    },
+    "iterchunks": {
+      "file": "R/utils.R",
+      "start": 932,
+      "end": 942,
+      "enum_defaults": []
+    }
+  }
+}

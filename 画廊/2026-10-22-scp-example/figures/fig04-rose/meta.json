@@ -1,0 +1,74 @@
+{
+  "id": "2026-10-22-scp-example__fig04-rose",
+  "post": {
+    "title": "SCP v0.5.6 示例数据图型",
+    "account": "SCP",
+    "author": "Hao Zhang",
+    "publish_date": "2026-10-22",
+    "url": "https://github.com/zhanghao-njmu/scp"
+  },
+  "figure": {
+    "index": 4,
+    "label": "单panel：Rose composition (dodge, count)",
+    "caption": "SCP CellStatPlot(plot_type='rose', stat_type='count', position='dodge', label=TRUE) on pancreas_sub. Matches the third panel of man/figures/Example-2.jpg.",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "rose"
+    ],
+    "canvas_px": [
+      1200,
+      900
+    ],
+    "panel_map": {
+      "A": "rose"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [],
+    "free": [
+      "SCP",
+      "pancreas_sub",
+      "rose",
+      "composition"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "original",
+  "code_provenance": "adapted",
+  "original_code_provenance": "original_runs",
+  "files": {
+    "source_image": "source/fig04.png",
+    "original_code": "original_code/cellstat.R",
+    "original_code_provenance": "original_code/provenance.json",
+    "code": "code/replica.R",
+    "core_code": "code/scp_stat_native.R",
+    "render_code": "code/render.R",
+    "data": "data/render-cell-metadata.csv",
+    "aggregated_data": "data/phase_by_celltype.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log",
+    "session_info": "output/sessionInfo.txt",
+    "run_summary": "output/run-summary.txt",
+    "reference_panel": "source/reference_panel.png",
+    "full_original": "source/full_original.jpg"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "e86cc13d39198f6a8cc6ec46b7c5682d5d7442fbd181b0d4454c3615e02e8a2f",
+  "created_at": "2026-10-22T11:23:52.732003Z",
+  "updated_at": "2026-10-22T11:45:00.000000Z",
+  "approved_version": 1
+}

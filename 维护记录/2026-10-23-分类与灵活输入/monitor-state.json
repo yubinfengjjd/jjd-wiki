@@ -1,0 +1,44 @@
+{
+  "automation_id": "automation",
+  "session_id": "d7153f8d-0836-4bc1-ae92-2ffdc7b77c76",
+  "checked_at": "2026-10-23T13:33:21.8228146+08:00",
+  "phase": "complete",
+  "status": "complete",
+  "stream_bytes": 9354547,
+  "stream_modified_at": "2026-10-23T13:04:57.8793654+08:00",
+  "claude_processes": [
+    {
+      "ProcessId": 15200,
+      "CreationDate": "2026-10-23T12:28:49.728004+08:00"
+    }
+  ],
+  "exit_marker_present": false,
+  "no_progress_rounds": 0,
+  "last_evidence": "Independent review and deployment accepted. Five installs282 hashes each. Formal API/assets/browser/lint/pending passed; author13 remains unconfirmed. Final acceptance saved; monitor to be deleted.",
+  "reported_events": [
+    "final_acceptance_deployed"
+  ],
+  "progress_evidence": {
+    "verification-matrix.md": {
+      "length": 12926,
+      "modified": "2026-10-23T13:02:38.9640672+08:00"
+    },
+    "claude-result.md": {
+      "length": 10810,
+      "modified": "2026-10-23T13:02:05.824981+08:00"
+    },
+    "browser-review1.json": {
+      "length": 1467,
+      "modified": "2026-10-23T12:47:04.7278489+08:00"
+    },
+    "logs/full-pytest-review1.log": {
+      "length": 1175,
+      "modified": "2026-10-23T12:54:27.3788397+08:00"
+    },
+    "logs/codex-pytest-review1.log": {
+      "length": 1168,
+      "modified": "2026-10-23T13:04:55.2326274+08:00"
+    }
+  },
+  "pending_review": "codex-review-round2.md; scripts/codex-review-nofs.R and logs/codex-r-nofs-red.log"
+}

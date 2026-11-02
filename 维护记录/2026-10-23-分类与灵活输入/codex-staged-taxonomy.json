@@ -1,0 +1,118 @@
+{
+  "total": 15,
+  "domains": [
+    {
+      "value": "单细胞分析",
+      "count": 13,
+      "purposes": [
+        {
+          "value": "预处理与质量控制",
+          "count": 2
+        },
+        {
+          "value": "降维与聚类",
+          "count": 2
+        },
+        {
+          "value": "整合与批次校正",
+          "count": 1
+        },
+        {
+          "value": "注释与参考映射",
+          "count": 2
+        },
+        {
+          "value": "差异与功能分析",
+          "count": 3
+        },
+        {
+          "value": "轨迹与动态分析",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "value": "转录组",
+      "count": 4,
+      "purposes": [
+        {
+          "value": "差异与功能分析",
+          "count": 3
+        },
+        {
+          "value": "轨迹与动态分析",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "value": "机器学习",
+      "count": 2,
+      "purposes": [
+        {
+          "value": "模型评价",
+          "count": 1
+        },
+        {
+          "value": "模型解释",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "value": "实验统计",
+      "count": 1,
+      "purposes": [
+        {
+          "value": "模型评价",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "value": "模型解释与特征重要性",
+      "count": 1,
+      "purposes": [
+        {
+          "value": "模型解释",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "purposes": [
+    {
+      "value": "预处理与质量控制",
+      "count": 2
+    },
+    {
+      "value": "降维与聚类",
+      "count": 2
+    },
+    {
+      "value": "整合与批次校正",
+      "count": 1
+    },
+    {
+      "value": "注释与参考映射",
+      "count": 2
+    },
+    {
+      "value": "差异与功能分析",
+      "count": 3
+    },
+    {
+      "value": "轨迹与动态分析",
+      "count": 3
+    },
+    {
+      "value": "模型评价",
+      "count": 1
+    },
+    {
+      "value": "模型解释",
+      "count": 1
+    }
+  ],
+  "unclassified": []
+}

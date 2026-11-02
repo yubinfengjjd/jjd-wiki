@@ -1,0 +1,134 @@
+[
+  {
+    "host": ".agents",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-BYIzsr10.js",
+      "app/index.html",
+      "references/llm-wiki-mode.md",
+      "rwiki/curation.py",
+      "rwiki/finder.py",
+      "rwiki/relations.py",
+      "rwiki/server.py",
+      "rwiki/suggest.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-tHzbbSRb.js",
+      "app/assets/index-D5LpPTng.css",
+      "app/assets/index-DpamveZa.js"
+    ]
+  },
+  {
+    "host": ".codex",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-BYIzsr10.js",
+      "app/index.html",
+      "references/llm-wiki-mode.md",
+      "rwiki/curation.py",
+      "rwiki/finder.py",
+      "rwiki/relations.py",
+      "rwiki/server.py",
+      "rwiki/suggest.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-tHzbbSRb.js",
+      "app/assets/index-D5LpPTng.css",
+      "app/assets/index-DpamveZa.js"
+    ]
+  },
+  {
+    "host": ".claude",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-BYIzsr10.js",
+      "app/index.html",
+      "references/llm-wiki-mode.md",
+      "rwiki/curation.py",
+      "rwiki/finder.py",
+      "rwiki/relations.py",
+      "rwiki/server.py",
+      "rwiki/suggest.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-tHzbbSRb.js",
+      "app/assets/index-D5LpPTng.css",
+      "app/assets/index-DpamveZa.js"
+    ]
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-BYIzsr10.js",
+      "app/index.html",
+      "references/llm-wiki-mode.md",
+      "rwiki/curation.py",
+      "rwiki/finder.py",
+      "rwiki/relations.py",
+      "rwiki/server.py",
+      "rwiki/suggest.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-tHzbbSRb.js",
+      "app/assets/index-D5LpPTng.css",
+      "app/assets/index-DpamveZa.js"
+    ]
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-BYIzsr10.js",
+      "app/index.html",
+      "references/llm-wiki-mode.md",
+      "rwiki/curation.py",
+      "rwiki/finder.py",
+      "rwiki/relations.py",
+      "rwiki/server.py",
+      "rwiki/suggest.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-tHzbbSRb.js",
+      "app/assets/index-D5LpPTng.css",
+      "app/assets/index-DpamveZa.js"
+    ]
+  },
+  {
+    "host": ".kiro",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DaMI4iec.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-BYIzsr10.js",
+      "app/index.html",
+      "references/llm-wiki-mode.md",
+      "rwiki/curation.py",
+      "rwiki/finder.py",
+      "rwiki/relations.py",
+      "rwiki/server.py",
+      "rwiki/suggest.py",
+      "tests/test_figureya_curation.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-tHzbbSRb.js",
+      "app/assets/index-D5LpPTng.css",
+      "app/assets/index-DpamveZa.js"
+    ]
+  }
+]

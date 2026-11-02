@@ -1,0 +1,290 @@
+{
+  "issues": [],
+  "new_source_image_copies": "",
+  "recommended_confirmed_families": [
+    "regression-resampling-evaluation",
+    "shap-explanation"
+  ],
+  "pages": [
+    {
+      "id": "batch-integration",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-seurat",
+          "title": "SCP Seurat_integrate 锚点分支",
+          "state": "verified",
+          "scope": "实际调用 SCP Seurat_integrate：pancreas_sub 120 细胞拆成两个显式批次，300 HVF、20 PC、k.weight=30；比较封装与上游 UMAP。"
+        },
+        {
+          "id": "scp-harmony",
+          "title": "SCP Harmony_integrate 分支",
+          "state": "not_run",
+          "scope": "SCP Harmony_integrate 分支；本机 R 库无 harmony。"
+        }
+      ]
+    },
+    {
+      "id": "cell-clustering",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "seurat-findclusters",
+          "title": "SCP Standard_SCP 聚类分支",
+          "state": "verified",
+          "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。"
+        }
+      ]
+    },
+    {
+      "id": "cell-quality-control",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-runcellqc",
+          "title": "SCP RunCellQC 封装",
+          "state": "verified",
+          "scope": "实际调用 SCP RunCellQC 于 pancreas_sub 的 80 个细胞；比较封装与上游 CellQC、检查输入未变。"
+        }
+      ]
+    },
+    {
+      "id": "cell-type-annotation",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-singler",
+          "title": "SCP RunSingleR 分支",
+          "state": "not_run",
+          "scope": "SCP RunSingleR 分支；本机 R 库无 SingleR。"
+        }
+      ]
+    },
+    {
+      "id": "differential-expression",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-detest",
+          "title": "SCP RunDEtest 封装",
+          "state": "verified",
+          "scope": "实际调用 SCP RunDEtest：pancreas_sub 全数据，Ductal vs Endocrine，wilcox；比较封装与上游 AllMarkers 表。"
+        }
+      ]
+    },
+    {
+      "id": "dimensionality-reduction",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-dimreduction",
+          "title": "SCP RunDimReduction 封装",
+          "state": "verified",
+          "scope": "实际调用 SCP RunDimReduction：pancreas_sub 200 细胞，100 HVF、20 PC、UMAP；比较封装与上游 UMAP。"
+        }
+      ]
+    },
+    {
+      "id": "doublet-detection",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-rundoublet",
+          "title": "SCP RunDoubletCalling 的 scDblFinder 分支",
+          "state": "not_run",
+          "scope": "SCP RunDoubletCalling 的 scDblFinder 分支；本机 R 库无 scDblFinder。"
+        }
+      ]
+    },
+    {
+      "id": "dynamic-feature-analysis",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-dynamicfeatures",
+          "title": "SCP RunDynamicFeatures 封装",
+          "state": "verified",
+          "scope": "实际调用 SCP RunDynamicFeatures：pancreas_sub 80 细胞，显式 fixture pseudotime，Gcg/Krt19；比较 GAM 表。pseudotime 为软件夹具，不代表真实轨迹。"
+        }
+      ]
+    },
+    {
+      "id": "gene-set-enrichment",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-enrichment",
+          "title": "SCP RunEnrichment 的 ORA 分支",
+          "state": "verified",
+          "scope": "实际调用 SCP RunEnrichment 的 ORA 分支，显式 TERM2GENE/TERM2NAME（两个合成基因集），与上游结果表比较。"
+        }
+      ]
+    },
+    {
+      "id": "gene-set-scoring",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-cellscoring",
+          "title": "SCP CellScoring 的 Seurat/AddModuleScore 分支",
+          "state": "verified",
+          "scope": "实际调用 SCP CellScoring 的 Seurat/AddModuleScore 分支，显式 name='X' 避开上游空 name 的列名缺陷；与上游分数比较。"
+        }
+      ]
+    },
+    {
+      "id": "reference-mapping",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "seurat-label-transfer",
+          "title": "Seurat 锚点标签转移分支",
+          "state": "verified",
+          "scope": "从 SCP RunSeuratMap 提取 FindTransferAnchors + TransferData 标签转移分支；pancreas_sub 300 参考/700 查询，检查每细胞预测、顺序与 anchor 数。不包含 UMAP 投影。"
+        },
+        {
+          "id": "scp-runseuratmap",
+          "title": "SCP RunSeuratMap UMAP 投影分支",
+          "state": "not_run",
+          "scope": "SCP RunSeuratMap 的 UMAP 投影分支在 Seurat 5.6 下失败；标签转移另由 seurat-label-transfer 分支验证。"
+        }
+      ]
+    },
+    {
+      "id": "regression-resampling-evaluation",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": [
+        {
+          "id": "summarize-predictions",
+          "title": "折外预测指标汇总",
+          "state": "verified",
+          "scope": "手算折外指标、常数预测 r 未定义、不修改输入、完整 coverage 拒绝。不包含训练或重采样。"
+        }
+      ]
+    },
+    {
+      "id": "rna-velocity",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-scvelo",
+          "title": "SCP RunSCVELO 分支",
+          "state": "not_run",
+          "scope": "SCP RunSCVELO 分支需要 reticulate 与 scvelo；本机未设置 RETICULATE_PYTHON，且未安装 scvelo/scanpy。"
+        }
+      ]
+    },
+    {
+      "id": "scp-annotation-projection",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-cellqc-doublet",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-de-enrichment-dynamic",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-integration",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-local-source",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-standard-workflow",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-trajectory-velocity",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scp-visualization-interface",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": [
+        {
+          "id": "scp-table-adapters",
+          "title": "SCP/Seurat 表到 Wiki 接口适配层",
+          "state": "verified",
+          "scope": "SCP/Seurat 导出表到 Wiki 绘图接口的适配层；20 个合成表检查。未验证 SCP 绘图函数视觉等价。"
+        }
+      ]
+    },
+    {
+      "id": "scrna-marker-annotation",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scrna-pathway-signature-ensemble",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "scrna-preprocess-doublet-qc-harmony",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": []
+    },
+    {
+      "id": "shap-explanation",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": [
+        {
+          "id": "shap-explain-model",
+          "title": "SHAP 纯函数封装",
+          "state": "verified",
+          "scope": "解析线性模型 SHAP 精确解；检查 summary/samples 表、百分比、输入与模型未变、特征顺序保护。"
+        }
+      ]
+    },
+    {
+      "id": "trajectory-inference",
+      "kind": "analysis",
+      "status": "draft",
+      "implementations": [
+        {
+          "id": "scp-slingshot",
+          "title": "SCP RunSlingshot 封装",
+          "state": "verified",
+          "scope": "实际调用 SCP RunSlingshot：pancreas_sub 80 细胞，CellType 分组，UMAP 1:2；比较 pseudotime 与 BranchID。"
+        }
+      ]
+    }
+  ]
+}

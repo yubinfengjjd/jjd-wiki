@@ -1,0 +1,18 @@
+{
+  "mode": "adaptive",
+  "profile": "volcano",
+  "base_width_in": 7,
+  "base_height_in": 6,
+  "base_label_chars": 8,
+  "per_label_char_in": 0.12,
+  "base_labels": 16,
+  "per_label_in": 0.1,
+  "width_in": 7,
+  "height_in": 6,
+  "dpi": 200,
+  "n_genes": 7343,
+  "n_groups": 1,
+  "n_labels": 16,
+  "max_label_chars": 7,
+  "svg_device": "svglite"
+}

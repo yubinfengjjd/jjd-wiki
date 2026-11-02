@@ -1,0 +1,74 @@
+{
+  "label": "devin-a25-review-continue",
+  "pid": 24884,
+  "cwd": "E:\\青光眼单细胞\\wiki-use\\acceptance-20261024",
+  "status": "returned",
+  "tool_events": 240,
+  "message_chars": 2492,
+  "updated_at": "2026-10-25T06:10:14Z",
+  "load_session_supported": true,
+  "last_tool": "Ran tmp', python.exe, wiki.py",
+  "session_id": "glimmer-opossum",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    26568,
+    24732,
+    18136,
+    24700,
+    26080,
+    3612,
+    25380,
+    25372,
+    25196,
+    24296,
+    4804,
+    24096,
+    13216,
+    25176,
+    2576,
+    21768,
+    18276,
+    13640,
+    24184,
+    23128,
+    2804,
+    25908,
+    24056,
+    26152,
+    26052,
+    2608,
+    26196,
+    26332,
+    1072,
+    15104,
+    7104,
+    14712,
+    23428,
+    6300,
+    22936,
+    21096
+  ],
+  "stop_reason": "end_turn"
+}

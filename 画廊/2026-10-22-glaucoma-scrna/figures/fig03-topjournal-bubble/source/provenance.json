@@ -1,0 +1,12 @@
+{
+  "source_image": "source/fig03.png",
+  "source_image_sha256": "12e88bd5bd8a3704af779facd0f555fdd88e9ad0e5cc80ae4149ab659f69beb1",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "12e88bd5bd8a3704af779facd0f555fdd88e9ad0e5cc80ae4149ab659f69beb1",
+  "bbox": [0, 0, 1153, 2304],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\annotation_bubble.pdf"
+  ],
+  "note": "Selected representative is the top-journal bubble dot plot; the SCpubr dot plot in annotation.pdf is a different style and was not selected."
+}

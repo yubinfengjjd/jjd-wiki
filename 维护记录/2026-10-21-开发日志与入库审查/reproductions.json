@@ -1,0 +1,31 @@
+{
+  "new_version_reingest": {
+    "single_panel_only": true,
+    "after_version_bump": "pending_signoff",
+    "after_repeat_ingest": "pending_template",
+    "author_signoff_called": false,
+    "bug_reproduced": true
+  },
+  "ready_without_replay": {
+    "status": "ready",
+    "verify_receipt_exists": false,
+    "bug_reproduced": true
+  },
+  "stale_replay": {
+    "before_code_change": true,
+    "after_code_change": true,
+    "queue": "confirm",
+    "stage": "template_confirm",
+    "bug_reproduced": true
+  },
+  "empty_method_confirmation": {
+    "http_status": 200,
+    "status": "ready",
+    "lint": [],
+    "suggested": [
+      "empty-note"
+    ],
+    "purpose": "",
+    "bug_reproduced": true
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "status": "delivered_with_explicit_limits",
+  "phase": "deployed_and_independently_checked",
+  "coding_owner": "Devin CLI",
+  "review_owner": "Codex",
+  "model": "swe-2-max",
+  "session_id": "functional-tartan",
+  "active_label": null,
+  "active_state": null,
+  "active_events": null,
+  "active_result": null,
+  "workspace": "E:/research-wiki-env/work/wiki-cross-domain-20261024/development",
+  "real_project": "E:/青光眼单细胞",
+  "baseline": "baseline.json",
+  "project_inventory": "glaucoma-object-inventory.json",
+  "review_approved": true,
+  "deployed": true,
+  "constraints": [
+    "no_install",
+    "no_subagents",
+    "no_paper_harness",
+    "protect_originals",
+    "single_devin_coder"
+  ],
+  "independent_review": {
+    "status": "batch2_review_in_progress_tested_checkpoint_green",
+    "provisional_affected_tests": 108,
+    "adversarial_failures": 13,
+    "api_invalid_query_status": 500,
+    "runtime_hash_comparisons": 34,
+    "runtime_hash_regressions": 0,
+    "frontend_typecheck": "passed",
+    "frontend_existing_tests": "passed",
+    "review_file": "codex-review-round1.md",
+    "next_action": "review repairs then independently retest before pilot",
+    "full_suite": {
+      "passed": 563,
+      "failed": 5,
+      "skipped": 2,
+      "failure_reason": "missing historical R1 fixture in isolation",
+      "targeted_fixture_retest_passed": 5
+    },
+    "current_generalization_tests": {
+      "passed": 13,
+      "failed": 7,
+      "log": "logs/codex-batch1-adversarial-current20.log",
+      "frontend_condition_display": "failed_after_conditional_parser_extension"
+    },
+    "review1_final_retest": {
+      "passed": 13,
+      "failed": 7,
+      "conditions": "failed",
+      "api_negative_limit": 422,
+      "runtime_compatibility_unchanged": 34
+    },
+    "batch2": {
+      "cases": 15,
+      "passed": 15,
+      "failed": 0,
+      "evidence": "logs/codex-batch2-integration15-checkpoint.json",
+      "win64_query": "passed_self_and_owned_finished_child_no_signals",
+      "foundation_regression_passed": 25,
+      "scope": "live coding checkpoint; stable final review/consumer/deploy not completed"
+    },
+    "full_run_interrupted": "codex-batch2-snapshot-full.log incomplete, exec session36755 gone; must rerun not passed",
+    "full_suite_final_frozen": {
+      "passed": 648,
+      "skipped": 3,
+      "seconds": 469.45,
+      "log": "logs/codex-batch2-snapshot-full-rerun.log"
+    },
+    "latest": {
+      "frozen_full_passed": 648,
+      "frozen_full_skipped": 3,
+      "latest_cli_passed": 44,
+      "latest_cli_skipped": 1,
+      "adverse_cases_passed": 25,
+      "integration_cases_passed": 15,
+      "taxonomy_focused_passed": 38,
+      "production_browser": "passed actual clicks and badge check",
+      "pilot_output_rows_checked": 7403,
+      "pilot_trial_tool_files_unchanged": 296,
+      "pilot_metadata_corrected_revision": 50,
+      "diagnostic_json_gap": "reproduced SerialParam S4 serialization failure; driver repair in review",
+      "deployment": "not_started"
+    }
+  },
+  "scientific_question_disposition": "D021: user does not know design, software acceptance proceeds with GSM labels; no repeated question",
+  "previous_round": {
+    "label": "devin-review3",
+    "status": "returned_end_turn",
+    "original_process_confirmed_ended": true
+  },
+  "scientific_design_record": "glaucoma-design-conflict.md",
+  "scientific_design_status": "unknown_not_blocking_software_acceptance_D021",
+  "author_question_status": "answered_no_repeat",
+  "independent_viability": {
+    "scope": "existing Seurat component only, native result to ridge plot, not agent-entry or disease inference",
+    "record": "native-viability-review.md",
+    "cells": 10100,
+    "formats": [
+      "png",
+      "pdf",
+      "svg"
+    ],
+    "originals_unchanged": true
+  },
+  "foundation_checkpoint": {
+    "status": "passed_tested_scope",
+    "snapshot": "E:/research-wiki-env/work/wiki-cross-domain-20261024/foundation-snapshot",
+    "independent_full": {
+      "passed": 611,
+      "skipped": 2,
+      "seconds": 293.26
+    },
+    "independent_adverse_cases": 25,
+    "frontend_tests": "passed",
+    "typecheck": "passed",
+    "whole_project_accepted": false
+  },
+  "updated_at": "2026-10-25T06:59:35.848966+00:00",
+  "next_action": "Framework delivery complete; G3 material gap, existing scp-detest options maintenance and author lesson review remain explicitly open",
+  "continuation_latest": "continuation-20261025-2.md",
+  "a25_first_trial": {
+    "session": "glimmer-opossum",
+    "status": "ended_partial_changes_required",
+    "project_code_and_plot_real": true,
+    "stock_analysis_call_missing": true,
+    "unintended_registration_recovered": "04c1f767f81541639e6f1c824ae1c14620e875e7",
+    "product_hashes_unchanged": 296
+  },
+  "delivery": "final-acceptance.md",
+  "acceptance": {
+    "G0": "passed_structural",
+    "G1": "passed_real_descriptive_scoped; options_restoration_gap_explicit",
+    "G2": "scoped_GSM_handover_and_reuse_passed; disease_inference_not_approved",
+    "G3": "partial_not_run_material_runtime_inventory_gap",
+    "A25": "first_partial_then_reviewed_actual_call_and_plot; actual_fresh_handoff_passed",
+    "authors": "3_project_lessons_pending_no_signoff",
+    "formal_api": "200",
+    "formal_browser": "passed",
+    "five_installs": 296
+  }
+}

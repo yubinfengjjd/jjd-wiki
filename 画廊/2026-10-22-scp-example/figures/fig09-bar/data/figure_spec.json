@@ -1,0 +1,57 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig09.png",
+  "reference_panel": "source/reference_panel.png",
+  "reference_panel_bbox": [
+    484,
+    0,
+    969,
+    337
+  ],
+  "full_original": "source/full_original.jpg",
+  "full_original_sha256": "a63a3a53beb2c052a4c0278bbeec477c4d741f889d8551808fdcdee9471e4814",
+  "logical_panel": "A",
+  "chart_type": "bar",
+  "input": "data/render-cell-metadata.csv",
+  "aggregated_input": "data/phase_by_celltype.csv",
+  "input_columns": {
+    "cell": "cell identifier; unique within the figure",
+    "CellType": "group / x category; one value per cell; order explicit",
+    "Phase": "stat / series category; one value per cell; order explicit"
+  },
+  "params": {
+    "plot_type": "bar",
+    "stat_type": "count",
+    "position": "stack",
+    "label": true,
+    "label_size": 3.5,
+    "group_levels": [
+      "Ductal",
+      "Ngn3 low EP",
+      "Ngn3 high EP",
+      "Pre-endocrine",
+      "Endocrine"
+    ],
+    "stat_levels": [
+      "G1",
+      "S",
+      "G2M"
+    ],
+    "xlab": "CellType",
+    "ylab": "Count",
+    "legend_title": "Phase:",
+    "palette": "Paired",
+    "alpha": 1,
+    "flip": false,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; counts via base xtabs",
+    "code": "native SCP ggplot bar construction extracted verbatim (geom_col width 0.8, black border, stack position, geom_text_repel labels); table-producing step separated",
+    "license": "GPL (>= 3)"
+  },
+  "source_image_sha256": "d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71"
+}

@@ -1,0 +1,24 @@
+{
+  "results": [
+    {
+      "navigate": {
+        "frameId": "FB027045EE8CD752A32B67BAFB4E34A2",
+        "loaderId": "D6C2D186F5D3F64A3EA1026D42183B34",
+        "isDownload": false
+      }
+    },
+    {
+      "eval": "({url:location.hash,labels:[...document.querySelectorAll('.chain-ref-label')].map(e=>e.textContent),hasUnverified:document.querySelector('.methods .grid')?.text",
+      "value": {
+        "url": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90&purpose=%E9%A2%84%E5%A4%84%E7%90%86%E4%B8%8E%E8%B4%A8%E9%87%8F%E6%8E%A7%E5%88%B6",
+        "labels": [
+          "需要适配 · 图模板可用",
+          "需要适配 · 图模板可用"
+        ],
+        "hasUnverified": true,
+        "ambiguous": false
+      }
+    }
+  ],
+  "logs": []
+}

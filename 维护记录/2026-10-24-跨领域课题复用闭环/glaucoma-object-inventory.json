@@ -1,0 +1,109 @@
+{
+  "project": "E:/青光眼单细胞",
+  "R_version": "R version 4.5.0 (2025-04-11 ucrt)",
+  "libraries": ["E:/research-wiki-env/R-lib-scp/4.5", "D:/R-4.5.0/library"],
+  "packages": {
+    "Seurat": "5.6.0",
+    "SeuratObject": "5.4.0",
+    "Matrix": "1.7.3",
+    "jsonlite": "2.0.0",
+    "ggplot2": "3.5.2",
+    "rlang": "1.1.6",
+    "BiocParallel": "1.42.0",
+    "harmony": null,
+    "SingleR": null,
+    "scDblFinder": null,
+    "monocle": null,
+    "monocle3": null,
+    "AUCell": null,
+    "UCell": null,
+    "GSVA": null,
+    "singscore": null
+  },
+  "object_observations": {
+    "GSE251716_seurat_annotated.rds": {
+      "file": "GSE251716_seurat_annotated.rds",
+      "object_class": "Seurat",
+      "dimensions": [17918, 10100],
+      "assays": "RNA",
+      "active_assay": "RNA",
+      "reductions": {
+        "pca": {
+          "rows": 10100,
+          "dimensions": 50
+        },
+        "harmony": {
+          "rows": 10100,
+          "dimensions": 50
+        },
+        "umap": {
+          "rows": 10100,
+          "dimensions": 2
+        }
+      },
+      "metadata_columns": ["orig.ident", "nCount_RNA", "nFeature_RNA", "RNA_snn_res.0.5", "seurat_clusters", "pANN_0.25_0.005_309", "DF.classifications_0.25_0.005_309", "doublet", "pANN_0.25_0.005_444", "DF.classifications_0.25_0.005_444", "phenotype", "percent.mt", "percent.rp", "percent.hb", "RNA_snn_res.0.05", "RNA_snn_res.0.1", "RNA_snn_res.0.2", "RNA_snn_res.0.3", "RNA_snn_res.0.8", "RNA_snn_res.1", "RNA_snn_res.1.2", "plot_group", "celltype"],
+      "signature_columns": [],
+      "categorical_counts": {
+        "celltype": {
+          "Muller_Glia": 2582,
+          "Rod_Photoreceptor": 2235,
+          "Bipolar": 3522,
+          "Cone_Photoreceptor": 887,
+          "RGC_like": 702,
+          "RPE": 79,
+          "Vascular_Pericyte": 36,
+          "Amacrine": 31,
+          "Amacrine_Horizontal_like": 26
+        },
+        "orig.ident": {
+          "GSM7986396": 4118,
+          "GSM7986397": 5982
+        }
+      },
+      "provenance_scope": "Read-only object structure. Annotation correctness and prior successful execution not certified."
+    },
+    "GSE251716_seurat_annotated_pathway_scored.rds": {
+      "file": "GSE251716_seurat_annotated_pathway_scored.rds",
+      "object_class": "Seurat",
+      "dimensions": [17918, 10100],
+      "assays": "RNA",
+      "active_assay": "RNA",
+      "reductions": {
+        "pca": {
+          "rows": 10100,
+          "dimensions": 50
+        },
+        "harmony": {
+          "rows": 10100,
+          "dimensions": 50
+        },
+        "umap": {
+          "rows": 10100,
+          "dimensions": 2
+        }
+      },
+      "metadata_columns": ["orig.ident", "nCount_RNA", "nFeature_RNA", "RNA_snn_res.0.5", "seurat_clusters", "pANN_0.25_0.005_309", "DF.classifications_0.25_0.005_309", "doublet", "pANN_0.25_0.005_444", "DF.classifications_0.25_0.005_444", "phenotype", "percent.mt", "percent.rp", "percent.hb", "RNA_snn_res.0.05", "RNA_snn_res.0.1", "RNA_snn_res.0.2", "RNA_snn_res.0.3", "RNA_snn_res.0.8", "RNA_snn_res.1", "RNA_snn_res.1.2", "plot_group", "celltype", "AP1_FOSB_score", "Complement_total_score", "Complement_classical_score", "Inflammation_score", "TNF_NFKB_score", "Microglia_activation_score", "Reactive_glia_score", "Oxidative_stress_NRF2_score", "RGC_injury_score", "RGC_identity_score"],
+      "signature_columns": ["AP1_FOSB_score", "Complement_total_score", "Complement_classical_score", "Inflammation_score", "TNF_NFKB_score", "Microglia_activation_score", "Reactive_glia_score", "Oxidative_stress_NRF2_score", "RGC_injury_score", "RGC_identity_score"],
+      "categorical_counts": {
+        "celltype": {
+          "Muller_Glia": 2582,
+          "Rod_Photoreceptor": 2235,
+          "Bipolar": 3522,
+          "Cone_Photoreceptor": 887,
+          "RGC_like": 702,
+          "RPE": 79,
+          "Vascular_Pericyte": 36,
+          "Amacrine": 31,
+          "Amacrine_Horizontal_like": 26
+        },
+        "orig.ident": {
+          "GSM7986396": 4118,
+          "GSM7986397": 5982
+        }
+      },
+      "provenance_scope": "Read-only object structure. Annotation correctness and prior successful execution not certified."
+    }
+  },
+  "action": "read_only_inspection",
+  "analysis_executed": false
+}

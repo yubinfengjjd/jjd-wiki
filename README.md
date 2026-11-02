@@ -34,14 +34,14 @@ research-wiki\                  jjd-wiki 仓库根
      chart-types\    图型概念页（何时选它、与相近图型区别、常见误用）
      layouts\        画廊复刻图样的来源记录（历史状态只读）
      projects\       课题页（用过什么、怎么适配、图在哪）
-     .gitignore      含限制性许可源码的托管块（save 自动维护）
+     .gitignore      敏感文件与本机运行产物排除规则
      .protected-hashes.json   作者 user 块字节基准（gh protect-baseline 生成，CI 核验）
   文档\              requirements / design / handoff / session / features、决策记录、各轮计划与核查
   tools\             launcher.ps1（双击启动）、deploy.py（部署技能副本）与其测试
      bin\            rwiki.cmd（PowerShell / cmd）与 rwiki（Git Bash）：命令入口
   research wiki\     一个 Obsidian vault 的配置与插件（.obsidian\、.claudian\）
-  画廊\              原始层，sci-figure-replica 的产物，知识库只读（不入库）
-  维护记录\          本地验收与部署证据（不入库）
+  画廊\              原始层，sci-figure-replica 的产物，知识库只读（知识材料默认保存 Git）
+  维护记录\          本地验收与部署证据（知识材料默认保存 Git）
   开发\                         jjd-wiki-dev 仓库根（独立仓库）
      staged\research-wiki\   代码、技能 SKILL.md 与 references\、前端构建产物
      frontend\               React 源码
@@ -69,23 +69,16 @@ rwiki run --dir <副本>              # 配方副本原地运行；模板用 rwi
 ## 可选的 GitHub 流程
 
 - 日常收录与按批次入库在本地 `main` 提交即可。开发代码大改、需要 CI 与评审记录时，用 `wiki.py gh start-task` → `finish-task` → `review` → `merge`；评审由非编码 agent 回帖，`gh merge` 按门禁合并并关闭 Issue、释放写入锁、清理 worktree。
-- pre-push hook 只拒绝 `legacy/*`，并对每次推送运行 `gh guard` 内容扫描（画廊、课题数据、限制性许可源码、超限文件、本机绝对路径）。
+- pre-push hook 只拒绝 `legacy/*`，并对每次推送运行 `gh guard` 内容扫描（私有数据、课题数据、密码/令牌/私钥、超限文件、本机绝对路径）。
 - hook 不入库：新克隆或新机器先运行 `wiki.py gh install-hook --repo dev` 与 `wiki.py gh install-hook --repo vault`。
 
-## 不推送的内容
+## Git 保存规则（作者 2026-11-02 修订）
 
-由两个仓库的 `.gitignore`、`知识库/.gitignore` 的托管块与 `gh guard` 共同保证：
+所有知识默认保存 Git：方法理论、源码、复用代码、公开示例、配色等必要资源、模板、画廊知识及验证材料。保留原许可证、署名与来源，限制性许可不会因保存 Git 而改变。旧的“GPL/CC 源码只留本机”规则已取消。
 
-- `画廊/`（受版权的论文图）及开发仓库里的画廊副本 `test-gallery*/`
-- `维护记录/`（含本机绝对路径的本地证据；Issue 只记相对路径与 sha256）
-- 限制性许可源码（GPL 系与 CC-*-NC/SA/ND，如 FigureYa 的 CC BY-NC-SA 4.0）：限制性许可配方的 `source/`、此类许可模板的 `code/` 与 `example/`、GPL 方法的 `code/` 与 `source/`，以及带 GPL 许可头的代码；新检出用 `wiki.py restore <配方…>` 从来源快照取回配方原字节
-- 课题数据 `**/wiki-use/_project/`
-- 本机配置 `开发/staged/research-wiki/config.json`、Codex 运行记录 `开发/codex/`
-- `*.lnk`、`Rplots.pdf`、`.launcher.log`、`.codegraph/`、`.omo/` 等本机产物
-- 超过 5 MB 的单个文件、含本机绝对路径的新增内容（`.push-guard-allow` 只能按条豁免 `abs-path` 与 `size`，须写理由）
-- `legacy/*` 分支（旧 master 历史只留本地）
+不推送私有数据、密码、令牌或私钥。环境、缓存、浏览器会话、重复备份与运行噪音属于非知识产物，继续排除；公开示例与知识代码不能因此漏传。单文件大小与本机路径检查继续保留，已审查的知识资源用精确豁免保存。`legacy/*` 历史仍不推送。
 
-GitHub 上的 vault 因此缺少限制性许可源码、画廊与维护记录：CI 用 `lint --ci`，缺失项报 `LOCAL-ONLY`；完整 lint 与方法复核只在本机主检出或带联接的 worktree 中运行。
+换电脑继续见 [Windows 下载与待运行验证交接](文档/Windows迁移与验证-20261102.md)。
 
 ## 双击打开
 

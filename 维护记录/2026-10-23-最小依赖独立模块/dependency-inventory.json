@@ -1,0 +1,1444 @@
+{
+  "schema_version": 1,
+  "kind": "dependency-inventory",
+  "date": "2026-10-23",
+  "methods": [
+    {
+      "id": "cell-quality-control",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_cell_quality_control",
+          "implementation": "scp-runcellqc",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "scDblFinder": "doublet branch when qc_metrics includes doublets",
+              "scds": "scds doublet branch",
+              "reticulate": "Scrublet/DoubletDetection Python branches"
+            },
+            "Python": {
+              "scrublet": "Scrublet doublet branch",
+              "doubletdetection": "DoubletDetection doublet branch"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/cellqc_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-runcellqc-portability.json",
+          "algorithm_evidence": "verification/scp-runcellqc-standalone.json",
+          "source_functions": [
+            "R/SCP-cellqc.R:RunCellQC",
+            "R/SCP-cellqc.R:RunDoubletCalling",
+            "R/SCP-cellqc.R:db_scDblFinder",
+            "R/SCP-cellqc.R:db_scds",
+            "R/SCP-cellqc.R:db_Scrublet",
+            "R/SCP-cellqc.R:db_DoubletDetection"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+            "compiled asMatrix helper excluded; its only call is unreachable in upstream as_matrix"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "doublet-detection",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_doublet_detection",
+          "implementation": "scp-rundoublet",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "scDblFinder": "scDblFinder branch",
+              "scds": "scds branch",
+              "reticulate": "Scrublet/DoubletDetection branches"
+            },
+            "Python": {
+              "scrublet": "Scrublet branch",
+              "doubletdetection": "DoubletDetection branch"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/doublet_native.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-rundoublet-portability.json",
+          "algorithm_evidence": "verification/scp-rundoublet-standalone.json",
+          "source_functions": [
+            "R/SCP-cellqc.R:RunDoubletCalling",
+            "R/SCP-cellqc.R:db_scDblFinder",
+            "R/SCP-cellqc.R:db_scds",
+            "R/SCP-cellqc.R:db_Scrublet",
+            "R/SCP-cellqc.R:db_DoubletDetection"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 compatibility shim",
+            "compiled asMatrix helper excluded; unreachable upstream call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dimensionality-reduction",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_dimensionality_reduction",
+          "implementation": "scp-dimreduction",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang",
+              "data.table",
+              "uwot",
+              "intrinsicDimension"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "NMF": "linear_reduction='nmf'",
+              "glmpca": "linear_reduction='glmpca'",
+              "destiny": "nonlinear_reduction='dm'",
+              "reticulate": "phate/pacmap/trimap/largevis branches"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/dimreduction_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-dimreduction-portability.json",
+          "algorithm_evidence": "verification/scp-dimreduction-standalone.json",
+          "source_functions": [
+            "R/SCP-workflow.R:RunDimReduction",
+            "R/Seurat-function.R:RunUMAP2",
+            "R/Seurat-function.R:RunNMF",
+            "R/Seurat-function.R:RunGLMPCA",
+            "R/Seurat-function.R:RunMDS",
+            "R/Seurat-function.R:RunDM",
+            "R/Seurat-function.R:RunPHATE",
+            "R/Seurat-function.R:RunPaCMAP",
+            "R/Seurat-function.R:RunTriMap",
+            "R/Seurat-function.R:RunLargeVis",
+            "R/Seurat-function.R:RunFR"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 GetAssayData compatibility shim",
+            "compiled asMatrix helper excluded; unreachable upstream call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batch-integration",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_seurat_integration",
+          "implementation": "scp-seurat",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang",
+              "data.table",
+              "uwot",
+              "intrinsicDimension",
+              "proxyC",
+              "dplyr",
+              "future",
+              "future.apply"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "harmony": "Harmony_integrate branch",
+              "Signac": "TFIDF/ChromatinAssay branch",
+              "reticulate": "Leiden clustering branch"
+            },
+            "Python": {
+              "leidenalg": "leiden clustering"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/integration_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-seurat-portability.json",
+          "algorithm_evidence": "verification/scp-seurat-standalone.json",
+          "source_functions": [
+            "R/SCP-workflow.R:Seurat_integrate",
+            "R/SCP-workflow.R:Harmony_integrate",
+            "R/SCP-workflow.R:RunDimReduction",
+            "R/Seurat-function.R:RunUMAP2",
+            "R/Seurat-function.R:RunHarmony2"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 GetAssayData compatibility shim",
+            "compiled asMatrix helper excluded; unreachable upstream call"
+          ]
+        },
+        {
+          "old_entry": "code/analysis.R:run_batch_integration",
+          "implementation": "scp-harmony",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang",
+              "data.table",
+              "uwot",
+              "intrinsicDimension",
+              "proxyC",
+              "dplyr",
+              "future",
+              "future.apply"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "harmony": "Harmony_integrate branch",
+              "Signac": "TFIDF/ChromatinAssay branch",
+              "reticulate": "Leiden clustering branch"
+            },
+            "Python": {
+              "leidenalg": "leiden clustering"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/integration_native.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-harmony-portability.json",
+          "algorithm_evidence": "verification/scp-harmony-standalone.json",
+          "source_functions": [
+            "R/SCP-workflow.R:Seurat_integrate",
+            "R/SCP-workflow.R:Harmony_integrate",
+            "R/SCP-workflow.R:RunDimReduction",
+            "R/Seurat-function.R:RunUMAP2",
+            "R/Seurat-function.R:RunHarmony2"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 GetAssayData compatibility shim",
+            "compiled asMatrix helper excluded; unreachable upstream call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cell-type-annotation",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_cell_type_annotation",
+          "implementation": "scp-singler",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang",
+              "SingleR",
+              "SingleCellExperiment",
+              "SummarizedExperiment"
+            ]
+          },
+          "optional_packages": {
+            "R": {}
+          },
+          "files": [
+            "code/analysis.R",
+            "code/annotation_native.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-singler-portability.json",
+          "algorithm_evidence": "verification/scp-singler-standalone.json",
+          "source_functions": [
+            "R/SCP-cell_annotation.R:RunSingleR"
+          ],
+          "source_modifications": [
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData compatibility shim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "differential-expression",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_differential_expression",
+          "implementation": "scp-detest",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "BiocParallel",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "limma": "limma test branches",
+              "edgeR": "edgeR test branches",
+              "DESeq2": "DESeq2 test branches"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/de_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-detest-portability.json",
+          "algorithm_evidence": "verification/scp-detest-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunDEtest"
+          ],
+          "source_modifications": [
+            "SeuratObject >= 5 Assays/GetAssayData compatibility shims"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gene-set-enrichment",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_gene_set_enrichment",
+          "implementation": "scp-enrichment",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "clusterProfiler",
+              "BiocParallel",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "org.Hs.eg.db": "built-in human database",
+              "org.Mm.eg.db": "built-in mouse database",
+              "GO.db": "GO database",
+              "msigdbr": "MSigDB database",
+              "gson": "gson database",
+              "AnnotationDbi": "database/ID conversion branch",
+              "biomaRt": "database/ID conversion branch",
+              "R.cache": "database cache",
+              "reshape2": "database branch",
+              "data.table": "database branch",
+              "idconvert": "IDtype -> result_IDtype conversion branch"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/enrichment_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-enrichment-portability.json",
+          "algorithm_evidence": "verification/scp-enrichment-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunEnrichment",
+            "R/SCP-analysis.R:PrepareDB",
+            "R/SCP-analysis.R:GeneConvert"
+          ],
+          "source_modifications": [
+            "check_R replaced with a fail-only guard",
+            "network/database branches require the corresponding local packages; no installation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gene-set-scoring",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_gene_set_scoring",
+          "implementation": "scp-cellscoring",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "BiocParallel",
+              "rlang",
+              "ggplot2"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "AUCell": "method='AUCell'",
+              "UCell": "method='UCell'",
+              "clusterProfiler": "built-in database lookup",
+              "biomaRt": "built-in database lookup",
+              "R.cache": "built-in database cache",
+              "AnnotationDbi": "built-in database lookup",
+              "reshape2": "built-in database lookup"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/scoring_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-cellscoring-portability.json",
+          "algorithm_evidence": "verification/scp-cellscoring-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:CellScoring",
+            "R/SCP-analysis.R:AddModuleScore2"
+          ],
+          "source_modifications": [
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData compatibility shim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trajectory-inference",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_trajectory_inference",
+          "implementation": "scp-slingshot",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "slingshot",
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "ggplot2": "Slingshot plot branch",
+              "patchwork": "Slingshot plot branch",
+              "ggrepel": "Slingshot plot branch",
+              "ggnewscale": "Slingshot plot branch",
+              "circlize": "Slingshot plot branch",
+              "gtable": "Slingshot plot branch",
+              "plotly": "Slingshot plot branch",
+              "dplyr": "Slingshot plot branch",
+              "reshape2": "Slingshot plot branch",
+              "scales": "Slingshot plot branch",
+              "BiocParallel": "Slingshot plot branch",
+              "grid": "Slingshot plot branch"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/slingshot_native.R",
+            "code/data/palette_list.rda"
+          ],
+          "resources": [
+            {
+              "path": "code/data/palette_list.rda",
+              "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+              "role": "SCP palette data used by optional plot helpers"
+            }
+          ],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-slingshot-portability.json",
+          "algorithm_evidence": "verification/scp-slingshot-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunSlingshot"
+          ],
+          "source_modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+            "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+          ]
+        },
+        {
+          "old_entry": "code/monocle2.R:run_trajectory_monocle2",
+          "implementation": "scp-monocle2",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "monocle",
+              "DDRTree",
+              "VGAM",
+              "BiocGenerics",
+              "Biobase",
+              "igraph",
+              "Matrix",
+              "rlang",
+              "Seurat",
+              "SeuratObject"
+            ]
+          },
+          "optional_packages": {
+            "R": {}
+          },
+          "files": [
+            "code/monocle2.R",
+            "code/monocle2_core.R",
+            "code/monocle2_core_helpers.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-monocle2-portability.json",
+          "algorithm_evidence": "verification/scp-monocle2-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunMonocle2"
+          ],
+          "source_modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+            "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+          ]
+        },
+        {
+          "old_entry": "code/monocle3.R:run_trajectory_monocle3",
+          "implementation": "scp-monocle3",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "monocle3",
+              "SingleCellExperiment",
+              "SummarizedExperiment",
+              "igraph",
+              "Matrix",
+              "Seurat",
+              "SeuratObject"
+            ]
+          },
+          "optional_packages": {
+            "R": {}
+          },
+          "files": [
+            "code/monocle3.R",
+            "code/monocle3_core.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-monocle3-portability.json",
+          "algorithm_evidence": "verification/scp-monocle3-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunMonocle3"
+          ],
+          "source_modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+            "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+          ]
+        },
+        {
+          "old_entry": "code/monocle2_core.R:run_monocle2_core",
+          "implementation": "scp-monocle2-core",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "monocle",
+              "DDRTree",
+              "VGAM",
+              "BiocGenerics",
+              "Biobase",
+              "igraph",
+              "Matrix",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {}
+          },
+          "files": [
+            "code/monocle2_core.R",
+            "code/monocle2_core_helpers.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-monocle2-core-portability.json",
+          "algorithm_evidence": "verification/scp-monocle2-core-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunMonocle2",
+            "R/SCP-analysis.R:orderCells",
+            "R/SCP-analysis.R:project2MST"
+          ],
+          "source_modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+            "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+          ]
+        },
+        {
+          "old_entry": "code/monocle3_core.R:run_monocle3_core",
+          "implementation": "scp-monocle3-core",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "monocle3",
+              "SingleCellExperiment",
+              "SummarizedExperiment",
+              "igraph",
+              "Matrix"
+            ]
+          },
+          "optional_packages": {
+            "R": {}
+          },
+          "files": [
+            "code/monocle3_core.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-monocle3-core-portability.json",
+          "algorithm_evidence": "verification/scp-monocle3-core-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunMonocle3"
+          ],
+          "source_modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData/Assays compatibility shims",
+            "Monocle2/3: RunMonocle2/3 split into analysis core, Seurat adapter and optional plot; plotting/interactive root selection removed from the core; root/partition must be explicit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dynamic-feature-analysis",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_dynamic_feature_analysis",
+          "implementation": "scp-dynamicfeatures",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "BiocParallel",
+              "mgcv",
+              "rlang"
+            ]
+          },
+          "optional_packages": {
+            "R": {}
+          },
+          "files": [
+            "code/analysis.R",
+            "code/dynamic_native.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/scp-dynamicfeatures-portability.json",
+          "algorithm_evidence": "verification/scp-dynamicfeatures-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunDynamicFeatures"
+          ],
+          "source_modifications": [
+            "check_R replaced with a fail-only guard",
+            "SeuratObject >= 5 GetAssayData compatibility shim"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reference-mapping",
+      "implementations": [
+        {
+          "old_entry": "code/transfer.R:run_reference_label_transfer",
+          "implementation": "seurat-label-transfer",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "Signac": "TFIDF branch",
+              "reticulate": "Leiden clustering branch"
+            },
+            "Python": {
+              "leidenalg": "leiden clustering"
+            }
+          },
+          "files": [
+            "code/transfer.R"
+          ],
+          "resources": [],
+          "portability": "verified",
+          "algorithm_state": "passed",
+          "portability_evidence": "verification/seurat-label-transfer-portability.json",
+          "algorithm_evidence": "verification/seurat-label-transfer-standalone.json",
+          "source_functions": [
+            "R/SCP-projection.R:FindTransferAnchors",
+            "R/SCP-projection.R:TransferData"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 compatibility shims",
+            "compiled asMatrix helper excluded; unreachable upstream call"
+          ]
+        },
+        {
+          "old_entry": "code/analysis.R:run_reference_mapping",
+          "implementation": "scp-runseuratmap",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang",
+              "data.table",
+              "uwot",
+              "intrinsicDimension",
+              "dplyr",
+              "proxyC"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "Signac": "TFIDF branch",
+              "reticulate": "Leiden clustering branch"
+            },
+            "Python": {
+              "leidenalg": "leiden clustering"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/reference_native.R"
+          ],
+          "resources": [],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-runseuratmap-portability.json",
+          "algorithm_evidence": "verification/scp-runseuratmap-standalone.json",
+          "source_functions": [
+            "R/SCP-projection.R:RunSeuratMap",
+            "R/SCP-projection.R:RunKNNMap"
+          ],
+          "source_modifications": [
+            "check_R/check_Python replaced with fail-only guards",
+            "SeuratObject >= 5 compatibility shims",
+            "compiled asMatrix helper excluded; unreachable upstream call"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rna-velocity",
+      "implementations": [
+        {
+          "old_entry": "code/analysis.R:run_rna_velocity",
+          "implementation": "scp-scvelo",
+          "runtime_mode": "standalone",
+          "required_packages": {
+            "R": [
+              "reticulate",
+              "Seurat",
+              "SeuratObject",
+              "Matrix",
+              "rlang"
+            ],
+            "Python": [
+              "scanpy",
+              "numpy",
+              "scvelo"
+            ]
+          },
+          "optional_packages": {
+            "R": {
+              "ggplot2": "plot branch",
+              "patchwork": "plot branch",
+              "ggrepel": "plot branch",
+              "ggnewscale": "plot branch",
+              "circlize": "plot branch",
+              "gtable": "plot branch",
+              "plotly": "plot branch",
+              "dplyr": "plot branch",
+              "reshape2": "plot branch",
+              "scales": "plot branch",
+              "BiocParallel": "plot branch",
+              "grid": "plot branch"
+            },
+            "Python": {
+              "magic-impute": "magic imputation"
+            }
+          },
+          "files": [
+            "code/analysis.R",
+            "code/velocity_native.R",
+            "code/data/palette_list.rda"
+          ],
+          "resources": [
+            {
+              "path": "code/data/palette_list.rda",
+              "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+              "role": "SCP palette data used by optional plot helpers"
+            }
+          ],
+          "portability": "not_run",
+          "algorithm_state": "not_run",
+          "portability_evidence": "verification/scp-scvelo-portability.json",
+          "algorithm_evidence": "verification/scp-scvelo-standalone.json",
+          "source_functions": [
+            "R/SCP-analysis.R:RunSCVELO"
+          ],
+          "source_modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R/check_Python replaced with fail-only guards"
+          ]
+        }
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "ggplot2",
+          "ggrepel",
+          "scales",
+          "rlang",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_volcano_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_ring_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig03-pie--pie",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_stat_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_stat_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_stat_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_stat_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_stat_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "ComplexHeatmap",
+          "circlize",
+          "grid",
+          "gtable",
+          "patchwork",
+          "ggplot2",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_group_heatmap_native.R",
+        "code/scp_helpers.R",
+        "code/sizing.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "scales",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_bar_native.R",
+        "code/scp_helpers.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "gtable",
+          "patchwork",
+          "purrr",
+          "stringr",
+          "tidyr",
+          "grid",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_sankey_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig11-chord--chord",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "circlize",
+          "graphics",
+          "grid",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_chord_native.R",
+        "code/scp_helpers.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig12-venn--venn",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "ggVennDiagram",
+          "sf",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_venn_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig13-upset--upset",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "rlang",
+          "ggupset",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_helpers.R",
+        "code/scp_upset_native.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "ComplexHeatmap",
+          "circlize",
+          "grid",
+          "gtable",
+          "patchwork",
+          "ggplot2",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_feature_heatmap_native.R",
+        "code/scp_helpers.R",
+        "code/sizing.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "ComplexHeatmap",
+          "circlize",
+          "dplyr",
+          "ggplot2",
+          "grid",
+          "gtable",
+          "patchwork",
+          "rlang",
+          "scales",
+          "Seurat",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_cell-cor-heatmap_native.R",
+        "code/scp_helpers.R",
+        "code/sizing.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    },
+    {
+      "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "runtime_mode": "standalone",
+      "required_packages": {
+        "R": [
+          "dplyr",
+          "ggplot2",
+          "patchwork",
+          "rlang",
+          "ggridges",
+          "SeuratObject",
+          "methods",
+          "jsonlite"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+        }
+      },
+      "files": [
+        "code/core.R",
+        "code/data/palette_list.rda",
+        "code/panel.R",
+        "code/render.R",
+        "code/scp_cell-density_native.R",
+        "code/scp_helpers.R"
+      ],
+      "resources": [
+        {
+          "path": "code/data/palette_list.rda",
+          "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+          "role": "SCP palette data used by the native helpers"
+        }
+      ],
+      "portability": "verified",
+      "portability_evidence": "verify/runtime-portability.json"
+    }
+  ]
+}

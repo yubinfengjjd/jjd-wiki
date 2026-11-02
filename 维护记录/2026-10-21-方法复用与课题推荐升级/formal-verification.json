@@ -1,0 +1,83 @@
+{
+  "gallery_unchanged": 249,
+  "source_and_figure_assets_unchanged": 61,
+  "author_blocks_unchanged": 16,
+  "deployments": [
+    {
+      "host": ".agents",
+      "skill": "research-wiki",
+      "files": 264
+    },
+    {
+      "host": ".agents",
+      "skill": "sci-figure-replica",
+      "files": 136
+    },
+    {
+      "host": ".codex",
+      "skill": "research-wiki",
+      "files": 264
+    },
+    {
+      "host": ".codex",
+      "skill": "sci-figure-replica",
+      "files": 136
+    },
+    {
+      "host": ".claude",
+      "skill": "research-wiki",
+      "files": 264
+    },
+    {
+      "host": ".claude",
+      "skill": "sci-figure-replica",
+      "files": 136
+    }
+  ],
+  "relations": 5,
+  "download_byte_hash_checks": 58,
+  "code_files": {
+    "layouts/2026-10-19-regression-stability__fig03-density-panel.md": 12,
+    "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md": 12,
+    "methods/paired-reference-visual-comparison.md": 0,
+    "methods/regression-resampling-evaluation.md": 8,
+    "methods/repeated-benchmark-distribution.md": 0,
+    "methods/shap-explanation.md": 5,
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": 7,
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": 7,
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": 7
+  },
+  "deployed_app_matches": true,
+  "cli_checks": [
+    {
+      "host": ".agents",
+      "lint": "OK",
+      "methods": [
+        "regression-resampling-evaluation",
+        "shap-explanation"
+      ]
+    },
+    {
+      "host": ".codex",
+      "lint": "OK",
+      "methods": [
+        "regression-resampling-evaluation",
+        "shap-explanation"
+      ]
+    },
+    {
+      "host": ".claude",
+      "lint": "OK",
+      "methods": [
+        "regression-resampling-evaluation",
+        "shap-explanation"
+      ]
+    }
+  ],
+  "methods": {
+    "paired-reference-visual-comparison": "archived",
+    "regression-resampling-evaluation": "ready",
+    "repeated-benchmark-distribution": "archived",
+    "shap-explanation": "ready"
+  }
+}

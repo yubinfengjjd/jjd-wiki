@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "function": "CellDensityPlot",
+  "line_ranges": [
+    [
+      5679,
+      5917
+    ]
+  ],
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "b11037932b4d7948722debc5f27a1670d21cd3ebec816399175fab38cb064014",
+  "note": "Exact CellDensityPlot() excerpt with a provenance header; not the full file."
+}

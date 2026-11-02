@@ -1,0 +1,12 @@
+{
+  "method": "dimensionality-reduction",
+  "state": "passed",
+  "reference": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\reference\\dimensionality-reduction.rds",
+  "candidate": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\dimensionality-reduction\\result.rds",
+  "checks": {
+    "PCA embeddings equal": true,
+    "UMAP embeddings equal": true,
+    "reduction names equal": true
+  },
+  "compared_at": "2026-10-23 16:02:13 UTC"
+}

@@ -1,0 +1,23 @@
+{
+  "trajectory_implementations": [
+    "scp-slingshot",
+    "scp-monocle2",
+    "scp-monocle3",
+    "scp-monocle2-core",
+    "scp-monocle3-core"
+  ],
+  "velocity_required_packages": {
+    "R": [
+      "reticulate",
+      "Seurat",
+      "SeuratObject",
+      "Matrix",
+      "rlang"
+    ],
+    "Python": [
+      "scanpy",
+      "numpy",
+      "scvelo"
+    ]
+  }
+}

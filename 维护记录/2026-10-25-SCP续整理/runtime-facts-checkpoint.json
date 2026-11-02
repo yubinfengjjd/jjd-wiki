@@ -1,0 +1,71 @@
+{
+  "id": "fig17-group-heatmap-dot--heatmap-dot",
+  "declared": true,
+  "entry": "code/render.R",
+  "language": "r",
+  "issues": [],
+  "mode": "standalone",
+  "entry_kind": "function",
+  "required_packages": {
+    "R": [
+      "ComplexHeatmap",
+      "circlize",
+      "grid",
+      "gtable",
+      "patchwork",
+      "ggplot2",
+      "jsonlite"
+    ]
+  },
+  "optional_packages": {
+    "R": {
+      "svglite": "vector SVG device when installed; otherwise grDevices::svg fallback"
+    }
+  },
+  "files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_group_heatmap_dot_native.R",
+    "code/scp_helpers.R",
+    "code/sizing.R",
+    "spec.json"
+  ],
+  "resources": [
+    {
+      "path": "code/data/palette_list.rda",
+      "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+      "role": "SCP palette data used by the native helpers"
+    }
+  ],
+  "tools": [],
+  "external_resources": [],
+  "hardware": {},
+  "invocation": {},
+  "fingerprint_mode": "v1",
+  "source": {
+    "package": "SCP-local",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+      "R/SCP-plot.R GroupHeatmap() lines 7911-9036, add_dot/add_reticle branch"
+    ],
+    "modifications": [
+      "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+      "matrices and percent matrices are read from the render-group-heatmap table instead of computed from a Seurat object",
+      "add_violin, flip, feature_split, split.by, cell/feature annotation branches are rejected explicitly, not implemented",
+      "exp legend title and column split annotation defaults pinned to the observed native defaults"
+    ]
+  },
+  "portability": {
+    "state": "invalid",
+    "scope": "Isolated copy of the candidate (spec, code, example); new R process; no SCP-local/Wiki source path; render.R invoked from an unrelated directory",
+    "evidence": "verify/runtime-portability.json",
+    "closure_hash": "6b73ccd27cc03829dd6fdf2f9f84c08e07bdb65c7e602127519c32bc89cf99a7",
+    "issues": [
+      "独立性收据绑定的闭包已变化"
+    ]
+  }
+}

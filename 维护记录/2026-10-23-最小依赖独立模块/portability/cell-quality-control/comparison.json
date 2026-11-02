@@ -1,0 +1,11 @@
+{
+  "method": "cell-quality-control",
+  "state": "passed",
+  "reference": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\reference\\cell-quality-control.rds",
+  "candidate": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-quality-control\\result.rds",
+  "checks": {
+    "QC metadata identical": true,
+    "QC cells identical": true
+  },
+  "compared_at": "2026-10-23 16:02:13 UTC"
+}

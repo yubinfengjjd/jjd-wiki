@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": 17,
+  "items": [
+    "card buttons independent of navigation anchors",
+    "code click does not navigate or flip",
+    "version tabs and multi-file languages",
+    "copy preserves current file exact text",
+    "download exact original bytes/hash",
+    "snippet and file loading explicit without old code",
+    "late file response cannot replace current file",
+    "HTML and notebook payload remain escaped text",
+    "binary is download-only with copy disabled",
+    "reusable reconstruction and verification scope explicit",
+    "mobile modal stays within viewport width",
+    "keyboard focus stays in modal",
+    "Escape closes and restores trigger focus",
+    "figure card opens its own item dialog",
+    "no code shown as explicit empty state",
+    "API error clear without stale code",
+    "cross-item slow response never leaks content"
+  ],
+  "consoleExceptions": [],
+  "fixtureUrl": "http://127.0.0.1:5173/__t06",
+  "temp": "E:\\research-wiki-env\\t06-ui-kGIcvU",
+  "scope": "isolated fixture; no production API or code execution"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "2026-10-22-scp-example__fig11-chord",
+  "post": {
+    "title": "SCP v0.5.6 示例数据图型",
+    "account": "SCP",
+    "author": "Hao Zhang",
+    "publish_date": "2026-10-22",
+    "url": "https://github.com/zhanghao-njmu/scp"
+  },
+  "figure": {
+    "index": 11,
+    "label": "单panel：分组流向和弦图",
+    "caption": "SCP CellStatPlot(plot_type='chord') on pancreas_sub: chord diagram of CellType x Phase counts. Matches the fourth panel of man/figures/Example-2.jpg.",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "chord"
+    ],
+    "canvas_px": [
+      1200,
+      900
+    ],
+    "panel_map": {
+      "A": "chord"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [],
+    "free": [
+      "SCP",
+      "pancreas_sub",
+      "chord",
+      "composition"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "original",
+  "code_provenance": "adapted",
+  "original_code_provenance": "original_runs",
+  "files": {
+    "source_image": "source/fig11.png",
+    "reference_panel": "source/reference_panel.png",
+    "full_original": "source/full_original.jpg",
+    "original_code": "original_code/cellstat.R",
+    "original_code_provenance": "original_code/provenance.json",
+    "code": "code/replica.R",
+    "core_code": "code/scp_chord_native.R",
+    "render_code": "code/render.R",
+    "helpers_code": "code/scp_helpers.R",
+    "loader_code": "code/core.R",
+    "palette_data": "code/data/palette_list.rda",
+    "data": "data/render-cell-linkage.csv",
+    "aggregated_data": "data/chord-count-matrix.csv",
+    "estimated_data": "data/estimated_data.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log",
+    "session_info": "output/sessionInfo.txt",
+    "run_summary": "output/run-summary.txt",
+    "patches": "PATCHES.md"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+  "created_at": "2026-10-22T14:38:11.351464Z",
+  "updated_at": "2026-10-22T14:38:11.351464Z",
+  "approved_version": 1
+}

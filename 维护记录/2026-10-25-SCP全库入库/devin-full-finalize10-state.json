@@ -1,0 +1,74 @@
+{
+  "label": "devin-full-finalize10",
+  "pid": 12796,
+  "cwd": "E:\\research-wiki-env\\work\\scp-full-ingest-20261025",
+  "status": "running",
+  "tool_events": 414,
+  "message_chars": 3824,
+  "updated_at": "2026-10-26T08:54:22Z",
+  "load_session_supported": true,
+  "session_id": "cuddly-custard",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "last_tool": "Ran python.exe",
+  "owned_terminal_pids": [
+    18216,
+    26696,
+    27092,
+    12136,
+    30176,
+    29748,
+    28928,
+    8152,
+    20792,
+    14252,
+    8608,
+    23596,
+    22164,
+    31636,
+    11752,
+    16832,
+    11900,
+    27024,
+    21272,
+    23768,
+    19716,
+    7304,
+    31288,
+    22444,
+    13404,
+    28952,
+    7368,
+    19064,
+    3904,
+    15616,
+    11820,
+    3120,
+    15444,
+    30692,
+    23324,
+    18864,
+    19660
+  ]
+}

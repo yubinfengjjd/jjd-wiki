@@ -1,0 +1,83 @@
+[
+  {
+    "host": ".agents",
+    "skill": "research-wiki",
+    "files_verified": 268,
+    "changed": [
+      "SKILL.md",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "references/knowledge-linking.md",
+      "rwiki/lint.py",
+      "tests/test_semantic_relations.py",
+      "app/assets/index-B3KeUiRh.css",
+      "app/assets/index-BOpX94s3.js"
+    ],
+    "stale_app_removed": [
+      "app/assets/index-CHMNjMYZ.js",
+      "app/assets/index-Dae4LbsR.css"
+    ]
+  },
+  {
+    "host": ".agents",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "host": ".codex",
+    "skill": "research-wiki",
+    "files_verified": 268,
+    "changed": [
+      "SKILL.md",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "references/knowledge-linking.md",
+      "rwiki/lint.py",
+      "tests/test_semantic_relations.py",
+      "app/assets/index-B3KeUiRh.css",
+      "app/assets/index-BOpX94s3.js"
+    ],
+    "stale_app_removed": [
+      "app/assets/index-CHMNjMYZ.js",
+      "app/assets/index-Dae4LbsR.css"
+    ]
+  },
+  {
+    "host": ".codex",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "host": ".claude",
+    "skill": "research-wiki",
+    "files_verified": 268,
+    "changed": [
+      "SKILL.md",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "references/knowledge-linking.md",
+      "rwiki/lint.py",
+      "tests/test_semantic_relations.py",
+      "app/assets/index-B3KeUiRh.css",
+      "app/assets/index-BOpX94s3.js"
+    ],
+    "stale_app_removed": [
+      "app/assets/index-CHMNjMYZ.js",
+      "app/assets/index-Dae4LbsR.css"
+    ]
+  },
+  {
+    "host": ".claude",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  }
+]

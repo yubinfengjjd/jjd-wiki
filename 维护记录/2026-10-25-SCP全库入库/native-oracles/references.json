@@ -1,0 +1,80 @@
+{
+  "source_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "purpose": "real source-only reference generation; no standalone or scientific approval implied",
+  "cases": {
+    "cell-dim-CellType": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["cell-dim-CellType.png", "cell-dim-CellType.svg"],
+      "function_name": "CellDimPlot",
+      "elapsed_sec": 0.5
+    },
+    "feature-dim-Neurog3": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["feature-dim-Neurog3.png", "feature-dim-Neurog3.svg"],
+      "function_name": "FeatureDimPlot",
+      "elapsed_sec": 0.38
+    },
+    "feature-stat-violin": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["feature-stat-violin.png", "feature-stat-violin.svg"],
+      "function_name": "FeatureStatPlot",
+      "elapsed_sec": 0.41
+    },
+    "feature-stat-box": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["feature-stat-box.png", "feature-stat-box.svg"],
+      "function_name": "FeatureStatPlot",
+      "elapsed_sec": 1.39
+    },
+    "feature-stat-bar": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["feature-stat-bar.png", "feature-stat-bar.svg"],
+      "function_name": "FeatureStatPlot",
+      "elapsed_sec": 0.97
+    },
+    "feature-stat-dot": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["feature-stat-dot.png", "feature-stat-dot.svg"],
+      "function_name": "FeatureStatPlot",
+      "elapsed_sec": 0.31
+    },
+    "feature-stat-col": {
+      "state": "reference_generated",
+      "class": ["gg", "ggplot"],
+      "files": ["feature-stat-col.png", "feature-stat-col.svg"],
+      "function_name": "FeatureStatPlot",
+      "elapsed_sec": 1.28
+    },
+    "feature-cor-two-markers": {
+      "state": "reference_generated",
+      "class": ["patchwork", "wrapped_patch", "patch", "gg", "ggplot"],
+      "files": ["feature-cor-two-markers.png", "feature-cor-two-markers.svg"],
+      "function_name": "FeatureCorPlot",
+      "elapsed_sec": 1.05
+    },
+    "nmf-NMF-matrix": {
+      "state": "reference_call_failed",
+      "error": "'what' must be a function or character string",
+      "function_name": "RunNMF.default",
+      "elapsed_sec": 1.43
+    },
+    "mds-cmdscale-matrix": {
+      "state": "reference_generated",
+      "class": "DimReduc",
+      "dim": [40, 3],
+      "finite": true,
+      "files": "mds-cmdscale-matrix.rds",
+      "function_name": "RunMDS.default",
+      "elapsed_sec": 0.02
+    }
+  },
+  "input_file_unchanged": true,
+  "object_unchanged": true,
+  "reduction": "UMAP"
+}

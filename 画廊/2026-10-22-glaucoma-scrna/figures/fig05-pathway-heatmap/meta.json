@@ -1,0 +1,68 @@
+{
+  "id": "2026-10-22-glaucoma-scrna__fig05-pathway-heatmap",
+  "post": {
+    "title": "青光眼单细胞项目（GSE251716）图表复刻",
+    "account": "作者课题",
+    "author": "作者",
+    "publish_date": "2026-10-22",
+    "url": null
+  },
+  "figure": {
+    "index": 5,
+    "label": "单panel：通路热图",
+    "caption": "按作者 pathway_heatmap_cns_function.R 的通路热图样式复刻；示例数据为合成。",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "heatmap"
+    ],
+    "canvas_px": [
+      1536,
+      672
+    ],
+    "panel_map": {
+      "A": "heatmap"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [
+      "transcriptomics"
+    ],
+    "free": [
+      "GSE251716",
+      "pathway"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "synthetic",
+  "code_provenance": "adapted",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig05.png",
+    "source_provenance": "source/provenance.json",
+    "code": "code/replica.R",
+    "core_code": "code/core.R",
+    "data": "data/estimated_data.csv",
+    "columns": "data/estimated_columns.csv",
+    "data_generator": "data/make_synthetic.R",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log"
+  },
+  "status": "review",
+  "version": 1,
+  "source_image_sha256": "c7f9e6925d5de90fcbe5dbe6c7e5013a38888ec41d0d1853fdc4bb9bfdcfbfa6",
+  "created_at": "2026-10-22T05:38:14.916017Z",
+  "updated_at": "2026-10-22T05:38:14.916017Z"
+}

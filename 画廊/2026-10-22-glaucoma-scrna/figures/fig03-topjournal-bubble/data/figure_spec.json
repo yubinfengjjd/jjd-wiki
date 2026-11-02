@@ -1,0 +1,25 @@
+{
+  "kind": "dotplot",
+  "canvas_px": [1153, 2304],
+  "panels": [
+    {"id": "A", "kind": "dotplot"}
+  ],
+  "style": {
+    "canvas_px": [1153, 2304],
+    "expr_limits": [0, 1],
+    "expr_breaks": [0, 0.25, 0.5, 0.75, 1],
+    "size_limits": [0, 100],
+    "size_breaks": [25, 50, 75],
+    "size_range": [1.2, 7.0],
+    "panel_fill": "#F2F2F2",
+    "expr_palette": ["#083B6F", "#3B8FC2", "#D9EEF4", "#F6F3EA", "#F07C56", "#8A001F"],
+    "x_colors": ["#F2A000", "#37B7AE", "#13A25B", "#F0DB35", "#1C9AD6", "#D65F00", "#AEB0B4", "#C98CB7", "#E64B35"],
+    "italic_y": true
+  },
+  "data_provenance": "synthetic",
+  "notes": [
+    "Synthetic average expression and percent expressed; not original observations.",
+    "Feature order follows the source: target cell type position first, then original marker order; unmapped groups last.",
+    "The bottom color chips are group annotations, not a second data encoding."
+  ]
+}

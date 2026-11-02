@@ -1,0 +1,67 @@
+{
+  "id": "2026-10-22-scp-example__fig02-ring",
+  "post": {
+    "title": "SCP v0.5.6 示例数据图型",
+    "account": "SCP",
+    "author": "Hao Zhang",
+    "publish_date": "2026-10-22",
+    "url": "https://github.com/zhanghao-njmu/scp"
+  },
+  "figure": {
+    "index": 2,
+    "label": "单panel：Ring composition",
+    "caption": "SCP CellStatPlot(plot_type='ring') on the pancreas_sub example data: group=CellType, stat=Phase, within-group proportions. Table-consuming ring core adapted from SCP; single logical panel; not a published article figure.",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "ring"
+    ],
+    "canvas_px": [
+      1200,
+      900
+    ],
+    "panel_map": {
+      "A": "ring"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [],
+    "free": [
+      "SCP",
+      "pancreas_sub",
+      "ring",
+      "composition"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "original",
+  "code_provenance": "adapted",
+  "original_code_provenance": "original_runs",
+  "files": {
+    "source_image": "source/fig02.png",
+    "original_code": "original_code/ring.R",
+    "original_code_provenance": "original_code/provenance.json",
+    "code": "code/replica.R",
+    "core_code": "code/core.R",
+    "data": "data/estimated_data.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log"
+  },
+  "status": "approved",
+  "version": 2,
+  "source_image_sha256": "a5e297c57511ec76e4a5fa54a75552b896ac8e45d60964b34ae4d0965dc15456",
+  "created_at": "2026-10-22T08:17:55.057366Z",
+  "updated_at": "2026-10-22T08:52:33.196314+00:00",
+  "approved_version": 2
+}

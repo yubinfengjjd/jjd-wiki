@@ -1,0 +1,62 @@
+{
+  "label": "devin-final-review-fix",
+  "pid": 14552,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "returned",
+  "tool_events": 190,
+  "message_chars": 4222,
+  "updated_at": "2026-10-25T05:39:56Z",
+  "load_session_supported": true,
+  "last_tool": "Ran npm",
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    22628,
+    7868,
+    24108,
+    24372,
+    21832,
+    13956,
+    1816,
+    11680,
+    16324,
+    2324,
+    14508,
+    18744,
+    24308,
+    21680,
+    23280,
+    15536,
+    22988,
+    17668,
+    16352,
+    7780,
+    24512,
+    16244,
+    21704,
+    24408
+  ],
+  "stop_reason": "end_turn"
+}

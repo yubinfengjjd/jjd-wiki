@@ -1,0 +1,33 @@
+{
+  "method": "trajectory-inference",
+  "state": "passed",
+  "error": {},
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" trajectory-inference \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\trajectory-inference\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/trajectory-inference/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\trajectory-inference\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/trajectory-inference/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/trajectory-inference/result-input.rds",
+  "case": {
+    "label": "Slingshot",
+    "parameters": {
+      "parameters": {
+        "group.by": "CellType",
+        "reduction": "UMAP",
+        "dims": [1, 2],
+        "show_plot": false,
+        "seed": 11
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "8846786778b63768610ce037776e6fe7e3256f97229c6cf8b595aeac051e991c",
+    "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "slingshot_native.R": "ca9b68c5493fbeedfcaf805340e7c91c8cbe7a9a5b4f4f4a61ff32fe788545d9"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:01:37 UTC",
+  "executed_at": "2026-10-23 16:01:44 UTC"
+}

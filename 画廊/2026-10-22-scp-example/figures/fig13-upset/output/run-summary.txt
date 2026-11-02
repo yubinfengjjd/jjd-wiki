@@ -1,0 +1,9 @@
+plot_type: upset
+sets: Ductal, Endocrine, G1S, G2M
+cells: 1000
+intersections: 3
+intersection_counts: Endocrine & G1S=512; Ductal & G1S=411; Ductal & G2M=77
+size_in: 8x6
+dpi: 150
+svg_device: svglite
+replica_png_sha256: b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a

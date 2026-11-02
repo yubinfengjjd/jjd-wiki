@@ -1,0 +1,2653 @@
+{
+ "module_root": "E:\\research-wiki-env\\work\\scp-full-ingest-20261025\\coverage\\modules",
+ "summary": {
+  "receipts": 188,
+  "receipts_reusable": 138,
+  "receipts_revalidate": 50,
+  "probes_reusable": [],
+  "native_oracle_files": 69
+ },
+ "receipts": [
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-harmony-portability.json",
+   "implementation": "scp-harmony",
+   "state": "not_run",
+   "scope": "Missing R dependency: harmony; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-harmony-standalone.json",
+   "implementation": "scp-harmony",
+   "state": "not_run",
+   "scope": "Missing R dependency: harmony; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-harmony.json",
+   "implementation": "scp-harmony",
+   "state": "not_run",
+   "scope": "SCP Harmony_integrate 分支；本机 R 库无 harmony。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-seurat-portability.json",
+   "implementation": "scp-seurat",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-seurat-replay-20261026-152256.json",
+   "implementation": "scp-seurat",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-seurat-replay-20261026-160335.json",
+   "implementation": "scp-seurat",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 263,
+   "drifted": 12,
+   "drift_sample": [
+    "code/bbknn-integrate/code/module.R",
+    "code/combat-integrate/code/module.R",
+    "code/conos-integrate/code/module.R",
+    "code/css-integrate/code/module.R",
+    "code/fastmnn-integrate/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-seurat-standalone.json",
+   "implementation": "scp-seurat",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-seurat; case={\"label\": \"Seurat anchor integration\", \"parameters\": {\"parameters\": {\"nHVF\": 300, \"linear_reduction_dims\": 20, \"nonlinear_reduction_dims\": 2, \"cluster_resolution\": 0.5, \"IntegrateData_params\": {\"k.weight\": 30}, \"seed\": 11}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/batch-integration/verification/scp-seurat.json",
+   "implementation": "scp-seurat",
+   "state": "passed",
+   "scope": "实际调用 SCP Seurat_integrate：pancreas_sub 120 细胞拆成两个显式批次，300 HVF、20 PC、k.weight=30；比较封装与上游 UMAP。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-clustering/verification/seurat-findclusters-replay-20261026-152256.json",
+   "implementation": "seurat-findclusters",
+   "state": "passed",
+   "scope": "Isolated replay: PCA 1:20 res 0.5 on pancreas_sub; labels vs explicit Seurat calls",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-clustering/verification/seurat-findclusters-replay-20261026-160335.json",
+   "implementation": "seurat-findclusters",
+   "state": "passed",
+   "scope": "Isolated replay: PCA 1:20 res 0.5 on pancreas_sub; labels vs explicit Seurat calls",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-clustering/verification/seurat-findclusters.json",
+   "implementation": "seurat-findclusters",
+   "state": "passed",
+   "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-quality-control/verification/scp-runcellqc-portability.json",
+   "implementation": "scp-runcellqc",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-quality-control/verification/scp-runcellqc-replay-20261026-152256.json",
+   "implementation": "scp-runcellqc",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-quality-control/verification/scp-runcellqc-replay-20261026-160335.json",
+   "implementation": "scp-runcellqc",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 11,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-quality-control/verification/scp-runcellqc-standalone.json",
+   "implementation": "scp-runcellqc",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-runcellqc; case={\"label\": \"QC non-doublet\", \"parameters\": {\"parameters\": {\"qc_metrics\": [\"umi\", \"gene\", \"mito\"], \"UMI_threshold\": 0, \"gene_threshold\": 0, \"mito_threshold\": 100, \"return_filtered\": false, \"assay\": \"RNA\", \"seed\": 11}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-quality-control/verification/scp-runcellqc.json",
+   "implementation": "scp-runcellqc",
+   "state": "passed",
+   "scope": "实际调用 SCP RunCellQC 于 pancreas_sub 的 80 个细胞；比较封装与上游 CellQC、检查输入未变。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-type-annotation/verification/scp-singler-portability.json",
+   "implementation": "scp-singler",
+   "state": "not_run",
+   "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-type-annotation/verification/scp-singler-standalone.json",
+   "implementation": "scp-singler",
+   "state": "not_run",
+   "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/cell-type-annotation/verification/scp-singler.json",
+   "implementation": "scp-singler",
+   "state": "not_run",
+   "scope": "SCP RunSingleR 分支；本机 R 库无 SingleR。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-detest-portability.json",
+   "implementation": "scp-detest",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-detest-replay-20261026-152256.json",
+   "implementation": "scp-detest",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-detest-replay-20261026-160335.json",
+   "implementation": "scp-detest",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 16,
+   "drifted": 1,
+   "drift_sample": [
+    "code/rundetest/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-detest-standalone.json",
+   "implementation": "scp-detest",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-detest; case={\"label\": \"Wilcoxon DE\", \"parameters\": {\"parameters\": {\"group_by\": \"CellType\", \"group1\": \"Ductal\", \"group2\": \"Endocrine\", \"test.use\": \"wilcox\", \"only.pos\": false, \"fc.threshold\": 1, \"min.pct\": 0.1, \"p.adjust.method\": \"bonferroni\", \"slot\": \"data\", \"assay\": \"RNA\", \"verbose\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-detest.json",
+   "implementation": "scp-detest",
+   "state": "passed",
+   "scope": "实际调用 SCP RunDEtest：pancreas_sub 全数据，Ductal vs Endocrine，wilcox；比较封装与上游 AllMarkers 表。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-rundetest-conserved_no_grouping-alg.json",
+   "implementation": "scp-rundetest",
+   "state": "refused_as_expected",
+   "scope": "conserved_no_grouping",
+   "files": 16,
+   "drifted": 1,
+   "drift_sample": [
+    "code/rundetest/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-rundetest-conserved_no_grouping-port.json",
+   "implementation": "scp-rundetest",
+   "state": "not_run",
+   "scope": "module copied to scp-rundetest_conserved_no_grouping_1793001830; entry RunDEtest invoked fresh-process",
+   "files": 16,
+   "drifted": 1,
+   "drift_sample": [
+    "code/rundetest/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-rundetest-wilcox_celltype-alg.json",
+   "implementation": "scp-rundetest",
+   "state": "not_run",
+   "scope": "wilcox_celltype",
+   "files": 16,
+   "drifted": 1,
+   "drift_sample": [
+    "code/rundetest/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/differential-expression/verification/scp-rundetest-wilcox_celltype-port.json",
+   "implementation": "scp-rundetest",
+   "state": "not_run",
+   "scope": "module copied to scp-rundetest_wilcox_celltype_1793001811; entry RunDEtest invoked fresh-process",
+   "files": 16,
+   "drifted": 1,
+   "drift_sample": [
+    "code/rundetest/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-dimreduction-portability.json",
+   "implementation": "scp-dimreduction",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-dimreduction-replay-20261026-152256.json",
+   "implementation": "scp-dimreduction",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-dimreduction-replay-20261026-160335.json",
+   "implementation": "scp-dimreduction",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-dimreduction-standalone.json",
+   "implementation": "scp-dimreduction",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-dimreduction; case={\"label\": \"PCA UMAP\", \"parameters\": {\"parameters\": {\"features\": [\"Iapp\", \"Gcg\", \"Nnat\", \"Ins2\", \"Ins1\", \"2810417H13Rik\", \"Ghrl\", \"Slc38a5\", \"Pyy\", \"Hmgb2\", \"Chgb\", \"Gadd45a\", \"Rbp4\", \"Neurog3\", \"Cdkn1a\", \"Ppp1r1a\", \"Lrpprc\", \"Cck\", \"Sst\", \"Spp1\", \"Gast\", \"Top2a\", \"Hhex\", \"Ccnb1\", \"Cdk1\", \"Ppy\", \"Cdc20\", \"Fev\", \"Npy\", \"Clu\", \"Sdf2l1\", \"Cks2\", \"Tmem27\", \"Chga\", \"Hes1\", \"8430408G22Rik\", \"Birc5\", \"Btbd17\", \"Dlk1\", \"Ldha\", \"Peg10\", \"Scg2\", \"Tuba1b\", \"Ccnd1\", \"Mt2\", \"Dll3\", \"Serpina1c\", \"Cdkn1c\", \"Ptn\", \"Isl1\", \"Krtap17-1\", \"Mt1\", \"Gmnn\", \"Gip\", \"Spc24\", \"Arg1\", \"Cdca8\", \"Wfdc2\", \"Cldn10\", \"Id1\", \"Creld2\", \"Cyr61\", \"Cenpf\", \"Pcsk2\", \"Cenpa\", \"Mafb\", \"Gng12\", \"Ccnb2\", \"Cdca3\", \"H2afx\", \"Pcsk1n\", \"Ppp1r14a\", \"Arx\", \"Mki67\", \"Vim\", \"Ttr\", \"Tk1\", \"Dbpht2\", \"Myl9\", \"Tmsb4x\", \"Sytl4\", \"Gpx3\", \"Tubb5\", \"Anxa2\", \"Id2\", \"Zcchc18\", \"Gadd45g\", \"1700086L19Rik\", \"Sox9\", \"Stmn1\", \"Tubb3\", \"Irx2\", \"Selm\", \"Cym\", \"Tuba1c\", \"Dbi\", \"C2cd4b\", \"1700011H14Rik\", \"Sparc\", \"Arl6ip1\"], \"linear_reduction\": \"pca\", \"nonlinear_reduction\": \"umap\", \"linear_reduction_dims\": 20, \"reduction_use\": \"pca\", \"reduction_dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"force_linear_reduction\": true, \"force_nonlinear_reduction\": true, \"verbose\": false}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-dimreduction.json",
+   "implementation": "scp-dimreduction",
+   "state": "passed",
+   "scope": "实际调用 SCP RunDimReduction：pancreas_sub 200 细胞，100 HVF、20 PC、UMAP；比较封装与上游 UMAP。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-dm_missing-alg.json",
+   "implementation": "scp-rundimreduction",
+   "state": "refused_as_expected",
+   "scope": "dm_missing",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-dm_missing-port.json",
+   "implementation": "scp-rundimreduction",
+   "state": "not_run",
+   "scope": "module copied to scp-rundimreduction_dm_missing_1793001997; entry RunDimReduction invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-mds_via_dispatch-alg.json",
+   "implementation": "scp-rundimreduction",
+   "state": "passed",
+   "scope": "mds_via_dispatch",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-mds_via_dispatch-port.json",
+   "implementation": "scp-rundimreduction",
+   "state": "passed",
+   "scope": "module copied to scp-rundimreduction_mds_via_dispatch_1793001904; entry RunDimReduction invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-pca_umap-alg.json",
+   "implementation": "scp-rundimreduction",
+   "state": "not_run",
+   "scope": "pca_umap",
+   "files": 144,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-pca_umap-port.json",
+   "implementation": "scp-rundimreduction",
+   "state": "not_run",
+   "scope": "module copied to scp-rundimreduction_pca_umap_1793002180; entry RunDimReduction invoked fresh-process",
+   "files": 144,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-umap_on_existing_pca-alg.json",
+   "implementation": "scp-rundimreduction",
+   "state": "not_run",
+   "scope": "umap_on_existing_pca",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-rundimreduction-umap_on_existing_pca-port.json",
+   "implementation": "scp-rundimreduction",
+   "state": "not_run",
+   "scope": "module copied to scp-rundimreduction_umap_on_existing_pca_1793001886; entry RunDimReduction invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runfr-plain_matrix_refused-alg.json",
+   "implementation": "scp-runfr",
+   "state": "refused_as_expected",
+   "scope": "plain_matrix_refused",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runfr-plain_matrix_refused-port.json",
+   "implementation": "scp-runfr",
+   "state": "not_run",
+   "scope": "module copied to scp-runfr_plain_matrix_refused_1793002024; entry RunFR invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runfr-real_snn-alg.json",
+   "implementation": "scp-runfr",
+   "state": "passed",
+   "scope": "real_snn",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runfr-real_snn-port.json",
+   "implementation": "scp-runfr",
+   "state": "passed",
+   "scope": "module copied to scp-runfr_real_snn_1793002015; entry RunFR invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runlargevis-uwot_lvish_matrix-alg.json",
+   "implementation": "scp-runlargevis",
+   "state": "passed",
+   "scope": "uwot_lvish_matrix",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runlargevis-uwot_lvish_matrix-port.json",
+   "implementation": "scp-runlargevis",
+   "state": "passed",
+   "scope": "module copied to scp-runlargevis_uwot_lvish_matrix_1793002032; entry RunLargeVis invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runmds-bad_method-alg.json",
+   "implementation": "scp-runmds",
+   "state": "refused_as_expected",
+   "scope": "bad_method",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runmds-bad_method-port.json",
+   "implementation": "scp-runmds",
+   "state": "not_run",
+   "scope": "module copied to scp-runmds_bad_method_1793002067; entry RunMDS invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runmds-cmdscale_matrix-alg.json",
+   "implementation": "scp-runmds",
+   "state": "passed",
+   "scope": "cmdscale_matrix",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runmds-cmdscale_matrix-port.json",
+   "implementation": "scp-runmds",
+   "state": "passed",
+   "scope": "module copied to scp-runmds_cmdscale_matrix_1793002059; entry RunMDS invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runnmf-nmf_method_NMF-alg.json",
+   "implementation": "scp-runnmf",
+   "state": "passed",
+   "scope": "nmf_method_NMF",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runnmf-nmf_method_NMF-port.json",
+   "implementation": "scp-runnmf",
+   "state": "passed",
+   "scope": "module copied to scp-runnmf_nmf_method_NMF_1793002074; entry RunNMF invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runnmf-rcppml_missing-alg.json",
+   "implementation": "scp-runnmf",
+   "state": "refused_as_expected",
+   "scope": "rcppml_missing",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dimensionality-reduction/verification/scp-runnmf-rcppml_missing-port.json",
+   "implementation": "scp-runnmf",
+   "state": "not_run",
+   "scope": "module copied to scp-runnmf_rcppml_missing_1793002085; entry RunNMF invoked fresh-process",
+   "files": 144,
+   "drifted": 3,
+   "drift_sample": [
+    "code/rundimreduction/code/module.R",
+    "code/runphate/code/module.R",
+    "code/runumap2/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/doublet-detection/verification/scp-rundoublet-portability.json",
+   "implementation": "scp-rundoublet",
+   "state": "not_run",
+   "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/doublet-detection/verification/scp-rundoublet-standalone.json",
+   "implementation": "scp-rundoublet",
+   "state": "not_run",
+   "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/doublet-detection/verification/scp-rundoublet.json",
+   "implementation": "scp-rundoublet",
+   "state": "not_run",
+   "scope": "SCP RunDoubletCalling 的 scDblFinder 分支；本机 R 库无 scDblFinder。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures-portability.json",
+   "implementation": "scp-dynamicfeatures",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures-replay-20261026-152256.json",
+   "implementation": "scp-dynamicfeatures",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures-replay-20261026-160335.json",
+   "implementation": "scp-dynamicfeatures",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 28,
+   "drifted": 2,
+   "drift_sample": [
+    "code/rundynamicenrichment/code/module.R",
+    "code/rundynamicfeatures/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures-standalone.json",
+   "implementation": "scp-dynamicfeatures",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-dynamicfeatures; case={\"label\": \"GAM dynamic features\", \"parameters\": {\"parameters\": {\"lineages\": \"fixture_time\", \"features\": [\"Gcg\", \"Krt19\"], \"slot\": \"data\", \"n_candidates\": {}, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures.json",
+   "implementation": "scp-dynamicfeatures",
+   "state": "passed",
+   "scope": "实际调用 SCP RunDynamicFeatures：pancreas_sub 80 细胞，显式 fixture pseudotime，Gcg/Krt19；比较 GAM 表。pseudotime 为软件夹具，不代表真实轨迹。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-enrichment/verification/scp-enrichment-portability.json",
+   "implementation": "scp-enrichment",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-enrichment/verification/scp-enrichment-replay-20261026-152256.json",
+   "implementation": "scp-enrichment",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-enrichment/verification/scp-enrichment-replay-20261026-160335.json",
+   "implementation": "scp-enrichment",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 24,
+   "drifted": 2,
+   "drift_sample": [
+    "code/runenrichment/code/module.R",
+    "code/rungsea/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-enrichment/verification/scp-enrichment-standalone.json",
+   "implementation": "scp-enrichment",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-enrichment; case={\"label\": \"ORA custom TERM2GENE\", \"parameters\": {\"parameters\": {\"geneID_groups\": {}, \"IDtype\": \"symbol\", \"species\": \"Homo_sapiens\", \"TERM2GENE\": {\"term\": [\"T1\", \"T1\", \"T1\", \"T2\", \"T2\", \"T2\"], \"gene\": [\"Ins1\", \"Gcg\", \"Sst\", \"Krt19\", \"Krt8\", \"Epcam\"]}, \"TERM2NAME\": {\"term\": [\"T1\", \"T2\"], \"name\": [\"Endocrine\", \"Ductal\"]}, \"minGSSize\": 1, \"maxGSSize\": 500, \"db_update\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-enrichment/verification/scp-enrichment.json",
+   "implementation": "scp-enrichment",
+   "state": "passed",
+   "scope": "实际调用 SCP RunEnrichment 的 ORA 分支，显式 TERM2GENE/TERM2NAME（两个合成基因集），与上游结果表比较。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-scoring/verification/scp-cellscoring-portability.json",
+   "implementation": "scp-cellscoring",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-scoring/verification/scp-cellscoring-replay-20261026-152256.json",
+   "implementation": "scp-cellscoring",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-scoring/verification/scp-cellscoring-replay-20261026-160335.json",
+   "implementation": "scp-cellscoring",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 18,
+   "drifted": 1,
+   "drift_sample": [
+    "code/cellscoring/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-scoring/verification/scp-cellscoring-standalone.json",
+   "implementation": "scp-cellscoring",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-cellscoring; case={\"label\": \"Seurat module score\", \"parameters\": {\"parameters\": {\"features\": {\"Endocrine\": [\"Gcg\", \"Sst\"], \"Ductal\": [\"Krt19\", \"Krt8\", \"Epcam\"]}, \"method\": \"Seurat\", \"classification\": false, \"name\": \"X\", \"slot\": \"data\", \"assay\": \"RNA\", \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/gene-set-scoring/verification/scp-cellscoring.json",
+   "implementation": "scp-cellscoring",
+   "state": "passed",
+   "scope": "实际调用 SCP CellScoring 的 Seurat/AddModuleScore 分支，显式 name='X' 避开上游空 name 的列名缺陷；与上游分数比较。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/scp-runseuratmap-portability.json",
+   "implementation": "scp-runseuratmap",
+   "state": "not_run",
+   "scope": "Argument 'dim.' must be an integer vector of length two",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/scp-runseuratmap-standalone.json",
+   "implementation": "scp-runseuratmap",
+   "state": "not_run",
+   "scope": "Argument 'dim.' must be an integer vector of length two",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/scp-runseuratmap.json",
+   "implementation": "scp-runseuratmap",
+   "state": "not_run",
+   "scope": "SCP RunSeuratMap 的 UMAP 投影分支在 Seurat 5.6 下失败；标签转移另由 seurat-label-transfer 分支验证。",
+   "files": 2,
+   "drifted": 2,
+   "drift_sample": [
+    "code/analysis.R",
+    "code/transfer.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/seurat-label-transfer-portability.json",
+   "implementation": "seurat-label-transfer",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/seurat-label-transfer-replay-20261026-152256.json",
+   "implementation": "seurat-label-transfer",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/seurat-label-transfer-replay-20261026-160335.json",
+   "implementation": "seurat-label-transfer",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 48,
+   "drifted": 2,
+   "drift_sample": [
+    "code/runcssmap/code/module.R",
+    "code/runseuratmap/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/seurat-label-transfer-standalone.json",
+   "implementation": "seurat-label-transfer",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for seurat-label-transfer; case={\"label\": \"Seurat label transfer\", \"parameters\": {\"dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"k_weight\": 50}}",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/reference-mapping/verification/seurat-label-transfer.json",
+   "implementation": "seurat-label-transfer",
+   "state": "passed",
+   "scope": "从 SCP RunSeuratMap 提取 FindTransferAnchors + TransferData 标签转移分支；pancreas_sub 300 参考/700 查询，检查每细胞预测、顺序与 anchor 数。不包含 UMAP 投影。",
+   "files": 2,
+   "drifted": 2,
+   "drift_sample": [
+    "code/analysis.R",
+    "code/transfer.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/regression-resampling-evaluation/verification/summarize-predictions-replay-20261026-152256.json",
+   "implementation": "summarize-predictions",
+   "state": "passed",
+   "scope": "Isolated replay: scientific python checks against B methods root",
+   "files": 0,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "revalidate",
+   "note": "no files bound"
+  },
+  {
+   "receipt": "wiki/methods/regression-resampling-evaluation/verification/summarize-predictions-replay-20261026-160335.json",
+   "implementation": "summarize-predictions",
+   "state": "passed",
+   "scope": "Isolated replay: scientific python checks against B methods root",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/regression-resampling-evaluation/verification/summarize-predictions.json",
+   "implementation": "summarize-predictions",
+   "state": "passed",
+   "scope": "手算折外指标、常数预测 r 未定义、不修改输入、完整 coverage 拒绝。不包含训练或重采样。",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/rna-velocity/verification/scp-scvelo-portability.json",
+   "implementation": "scp-scvelo",
+   "state": "not_run",
+   "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/rna-velocity/verification/scp-scvelo-standalone.json",
+   "implementation": "scp-scvelo",
+   "state": "not_run",
+   "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/rna-velocity/verification/scp-scvelo.json",
+   "implementation": "scp-scvelo",
+   "state": "not_run",
+   "scope": "SCP RunSCVELO 分支需要 reticulate 与 scvelo；本机未设置 RETICULATE_PYTHON，且未安装 scvelo/scanpy。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-visualization-interface/verification/scp-table-adapters-replay-20261026-152256.json",
+   "implementation": "scp-table-adapters",
+   "state": "passed",
+   "scope": "Isolated replay: synthetic table-adapter checks in B code dir",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-visualization-interface/verification/scp-table-adapters-replay-20261026-160335.json",
+   "implementation": "scp-table-adapters",
+   "state": "passed",
+   "scope": "Isolated replay: synthetic table-adapter checks in B code dir",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-visualization-interface/verification/scp-table-adapters.json",
+   "implementation": "scp-table-adapters",
+   "state": "passed",
+   "scope": "SCP/Seurat 导出表到 Wiki 绘图接口的适配层；20 个合成表检查。未验证 SCP 绘图函数视觉等价。",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldensityplot-ins1_density-alg.json",
+   "implementation": "scp-celldensityplot",
+   "state": "passed",
+   "scope": "ins1_density",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldensityplot-ins1_density-port.json",
+   "implementation": "scp-celldensityplot",
+   "state": "passed",
+   "scope": "module copied to scp-celldensityplot_ins1_density_1793002093; entry CellDensityPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-bad_group-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "refused_as_expected",
+   "scope": "bad_group",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-bad_group-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_bad_group_1793002202; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-celltype_umap-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "celltype_umap",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-celltype_umap-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_celltype_umap_1793002111; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_circle-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "mark_circle",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_circle-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_mark_circle_1793002172; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_ellipse-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "mark_ellipse",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_ellipse-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_mark_ellipse_1793002141; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_hull-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "mark_hull",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_hull-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_mark_hull_1793002126; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_rect-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "mark_rect",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-mark_rect-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_mark_rect_1793002156; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-subcelltype-alg.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "subcelltype",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-celldimplot-subcelltype-port.json",
+   "implementation": "scp-celldimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-celldimplot_subcelltype_1793002187; entry CellDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-bad_feature-alg.json",
+   "implementation": "scp-featuredimplot",
+   "state": "refused_as_expected",
+   "scope": "bad_feature",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-bad_feature-port.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featuredimplot_bad_feature_1793002275; entry FeatureDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-keep_all-alg.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "keep_all",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-keep_all-port.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featuredimplot_keep_all_1793002261; entry FeatureDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-neurog3-alg.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "neurog3",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-neurog3-port.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featuredimplot_neurog3_1793002231; entry FeatureDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-two_blend-alg.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "two_blend",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-dimplots/verification/scp-featuredimplot-two_blend-port.json",
+   "implementation": "scp-featuredimplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featuredimplot_two_blend_1793002246; entry FeatureDimPlot invoked fresh-process",
+   "files": 98,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-cellcorheatmap-self_cor-alg.json",
+   "implementation": "scp-cellcorheatmap",
+   "state": "not_run",
+   "scope": "self_cor",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-cellcorheatmap-self_cor-port.json",
+   "implementation": "scp-cellcorheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-cellcorheatmap_self_cor_1793002304; entry CellCorHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-dynamicheatmap-native_heatmap-alg.json",
+   "implementation": "scp-dynamicheatmap",
+   "state": "not_run",
+   "scope": "native_heatmap",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-dynamicheatmap-native_heatmap-port.json",
+   "implementation": "scp-dynamicheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-dynamicheatmap_native_heatmap_1793002324; entry DynamicHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-dynamicheatmap-needs_dynamic-alg.json",
+   "implementation": "scp-dynamicheatmap",
+   "state": "refused_as_expected",
+   "scope": "needs_dynamic",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-dynamicheatmap-needs_dynamic-port.json",
+   "implementation": "scp-dynamicheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-dynamicheatmap_needs_dynamic_1793002406; entry DynamicHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-featureheatmap-default-alg.json",
+   "implementation": "scp-featureheatmap",
+   "state": "not_run",
+   "scope": "default",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-featureheatmap-default-port.json",
+   "implementation": "scp-featureheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-featureheatmap_default_1793002427; entry FeatureHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-annotation-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "annotation",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-annotation-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_annotation_1793002533; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-default-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "default",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-default-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_default_1793002550; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-dot_flip-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "dot_flip",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-dot_flip-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_dot_flip_1793002489; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-flip-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "flip",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-flip-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_flip_1793002613; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-kmeans_split-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "kmeans_split",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-kmeans_split-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_kmeans_split_1793002572; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-raw_exp-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "raw_exp",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-raw_exp-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_raw_exp_1793002593; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-split_dot_reticle-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "split_dot_reticle",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-split_dot_reticle-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_split_dot_reticle_1793002511; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-violin_expression-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "violin_expression",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-violin_expression-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_violin_expression_1793002469; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-violin_group-alg.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "violin_group",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-heatmaps/verification/scp-groupheatmap-violin_group-port.json",
+   "implementation": "scp-groupheatmap",
+   "state": "not_run",
+   "scope": "module copied to scp-groupheatmap_violin_group_1793002449; entry GroupHeatmap invoked fresh-process",
+   "files": 204,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-dynamicplot-native_curve-alg.json",
+   "implementation": "scp-dynamicplot",
+   "state": "passed",
+   "scope": "native_curve",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-dynamicplot-native_curve-port.json",
+   "implementation": "scp-dynamicplot",
+   "state": "passed",
+   "scope": "module copied to scp-dynamicplot_native_curve_1793002633; entry DynamicPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-dynamicplot-needs_dynamic-alg.json",
+   "implementation": "scp-dynamicplot",
+   "state": "refused_as_expected",
+   "scope": "needs_dynamic",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-dynamicplot-needs_dynamic-port.json",
+   "implementation": "scp-dynamicplot",
+   "state": "not_run",
+   "scope": "module copied to scp-dynamicplot_needs_dynamic_1793002664; entry DynamicPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-enrichmentplot-needs_enrich-alg.json",
+   "implementation": "scp-enrichmentplot",
+   "state": "refused_as_expected",
+   "scope": "needs_enrich",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-enrichmentplot-needs_enrich-port.json",
+   "implementation": "scp-enrichmentplot",
+   "state": "not_run",
+   "scope": "module copied to scp-enrichmentplot_needs_enrich_1793002699; entry EnrichmentPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-graphplot-adj_graph-alg.json",
+   "implementation": "scp-graphplot",
+   "state": "passed",
+   "scope": "adj_graph",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-graphplot-adj_graph-port.json",
+   "implementation": "scp-graphplot",
+   "state": "passed",
+   "scope": "module copied to scp-graphplot_adj_graph_1793002740; entry GraphPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-graphplot-real_curved-alg.json",
+   "implementation": "scp-graphplot",
+   "state": "passed",
+   "scope": "real_curved",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-graphplot-real_curved-port.json",
+   "implementation": "scp-graphplot",
+   "state": "passed",
+   "scope": "module copied to scp-graphplot_real_curved_1793002734; entry GraphPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-graphplot-real_straight-alg.json",
+   "implementation": "scp-graphplot",
+   "state": "passed",
+   "scope": "real_straight",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-graphplot-real_straight-port.json",
+   "implementation": "scp-graphplot",
+   "state": "passed",
+   "scope": "module copied to scp-graphplot_real_straight_1793002726; entry GraphPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-gseaplot-needs_gsea-alg.json",
+   "implementation": "scp-gseaplot",
+   "state": "refused_as_expected",
+   "scope": "needs_gsea",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-gseaplot-needs_gsea-port.json",
+   "implementation": "scp-gseaplot",
+   "state": "not_run",
+   "scope": "module copied to scp-gseaplot_needs_gsea_1793002713; entry GSEAPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-lineageplot-needs_lineages-alg.json",
+   "implementation": "scp-lineageplot",
+   "state": "refused_as_expected",
+   "scope": "needs_lineages",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-lineageplot-needs_lineages-port.json",
+   "implementation": "scp-lineageplot",
+   "state": "not_run",
+   "scope": "module copied to scp-lineageplot_needs_lineages_1793002747; entry LineagePlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-pagaplot-needs_paga-alg.json",
+   "implementation": "scp-pagaplot",
+   "state": "refused_as_expected",
+   "scope": "needs_paga",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-pagaplot-needs_paga-port.json",
+   "implementation": "scp-pagaplot",
+   "state": "not_run",
+   "scope": "module copied to scp-pagaplot_needs_paga_1793002759; entry PAGAPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-projectionplot-self_projection-alg.json",
+   "implementation": "scp-projectionplot",
+   "state": "not_run",
+   "scope": "self_projection",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-projectionplot-self_projection-port.json",
+   "implementation": "scp-projectionplot",
+   "state": "not_run",
+   "scope": "module copied to scp-projectionplot_self_projection_1793002772; entry ProjectionPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-velocityplot-velocity_umap-alg.json",
+   "implementation": "scp-velocityplot",
+   "state": "not_run",
+   "scope": "velocity_umap",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-model-overlays/verification/scp-velocityplot-velocity_umap-port.json",
+   "implementation": "scp-velocityplot",
+   "state": "not_run",
+   "scope": "module copied to scp-velocityplot_velocity_umap_1793002784; entry VelocityPlot invoked fresh-process",
+   "files": 120,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-cellstatplot-bar_celltype-alg.json",
+   "implementation": "scp-cellstatplot",
+   "state": "not_run",
+   "scope": "bar_celltype",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-cellstatplot-bar_celltype-port.json",
+   "implementation": "scp-cellstatplot",
+   "state": "not_run",
+   "scope": "module copied to scp-cellstatplot_bar_celltype_1793002796; entry CellStatPlot invoked fresh-process",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-featurecorplot-two_markers-alg.json",
+   "implementation": "scp-featurecorplot",
+   "state": "not_run",
+   "scope": "two_markers",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-featurecorplot-two_markers-port.json",
+   "implementation": "scp-featurecorplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featurecorplot_two_markers_1793002810; entry FeatureCorPlot invoked fresh-process",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-featurestatplot-box-alg.json",
+   "implementation": "scp-featurestatplot",
+   "state": "not_run",
+   "scope": "box",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-featurestatplot-box-port.json",
+   "implementation": "scp-featurestatplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featurestatplot_box_1793002838; entry FeatureStatPlot invoked fresh-process",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-featurestatplot-violin-alg.json",
+   "implementation": "scp-featurestatplot",
+   "state": "not_run",
+   "scope": "violin",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/scp-viz-statplots/verification/scp-featurestatplot-violin-port.json",
+   "implementation": "scp-featurestatplot",
+   "state": "not_run",
+   "scope": "module copied to scp-featurestatplot_violin_1793002823; entry FeatureStatPlot invoked fresh-process",
+   "files": 114,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/shap-explanation/verification/shap-explain-model-replay-20261026-152256.json",
+   "implementation": "shap-explain-model",
+   "state": "passed",
+   "scope": "Isolated replay: scientific python checks against B methods root",
+   "files": 0,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "revalidate",
+   "note": "no files bound"
+  },
+  {
+   "receipt": "wiki/methods/shap-explanation/verification/shap-explain-model-replay-20261026-160335.json",
+   "implementation": "shap-explain-model",
+   "state": "passed",
+   "scope": "Isolated replay: scientific python checks against B methods root",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/shap-explanation/verification/shap-explain-model.json",
+   "implementation": "shap-explain-model",
+   "state": "passed",
+   "scope": "解析线性模型 SHAP 精确解；检查 summary/samples 表、百分比、输入与模型未变、特征顺序保护。",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle2-core-portability.json",
+   "implementation": "scp-monocle2-core",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle2-core-standalone.json",
+   "implementation": "scp-monocle2-core",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle; automatic installation is disabled",
+   "files": 8,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle2-portability.json",
+   "implementation": "scp-monocle2",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle; automatic installation is disabled",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle2-standalone.json",
+   "implementation": "scp-monocle2",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle; automatic installation is disabled",
+   "files": 8,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle3-core-portability.json",
+   "implementation": "scp-monocle3-core",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+   "files": 1,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle3-core-standalone.json",
+   "implementation": "scp-monocle3-core",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+   "files": 8,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle3-portability.json",
+   "implementation": "scp-monocle3",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+   "files": 2,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-monocle3-standalone.json",
+   "implementation": "scp-monocle3",
+   "state": "not_run",
+   "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+   "files": 8,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-runslingshot-subcelltype_umap-alg.json",
+   "implementation": "scp-runslingshot",
+   "state": "passed",
+   "scope": "subcelltype_umap",
+   "files": 50,
+   "drifted": 5,
+   "drift_sample": [
+    "code/runslingshot/code/module.R",
+    "code/runslingshot/code/fns/StatSankeyBumpFlow.R",
+    "code/runslingshot/code/fns/StatSankeyFlow.R",
+    "code/runslingshot/code/fns/StatSankeyNode.R",
+    "code/runslingshot/code/fns/StatSankeyText.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-runslingshot-subcelltype_umap-port.json",
+   "implementation": "scp-runslingshot",
+   "state": "passed",
+   "scope": "module copied to runslingshot_subcelltype_umap_1792995068; entry RunSlingshot invoked fresh-process",
+   "files": 50,
+   "drifted": 5,
+   "drift_sample": [
+    "code/runslingshot/code/module.R",
+    "code/runslingshot/code/fns/StatSankeyBumpFlow.R",
+    "code/runslingshot/code/fns/StatSankeyFlow.R",
+    "code/runslingshot/code/fns/StatSankeyNode.R",
+    "code/runslingshot/code/fns/StatSankeyText.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-slingshot-portability.json",
+   "implementation": "scp-slingshot",
+   "state": "passed",
+   "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-slingshot-replay-20261026-152256.json",
+   "implementation": "scp-slingshot",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 3,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-slingshot-replay-20261026-160335.json",
+   "implementation": "scp-slingshot",
+   "state": "passed",
+   "scope": "Isolated replay of legacy verified branch against B family assets; copy-manifest runner, new R process",
+   "files": 242,
+   "drifted": 3,
+   "drift_sample": [
+    "code/runpaga/code/module.R",
+    "code/runpalantir/code/module.R",
+    "code/runwot/code/module.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-slingshot-standalone.json",
+   "implementation": "scp-slingshot",
+   "state": "passed",
+   "scope": "Actual isolated run and comparison for scp-slingshot; case={\"label\": \"Slingshot\", \"parameters\": {\"parameters\": {\"group.by\": \"CellType\", \"reduction\": \"UMAP\", \"dims\": [1, 2], \"show_plot\": false, \"seed\": 11}}}",
+   "files": 8,
+   "drifted": 0,
+   "drift_sample": [],
+   "decision": "reusable",
+   "note": null
+  },
+  {
+   "receipt": "wiki/methods/trajectory-inference/verification/scp-slingshot.json",
+   "implementation": "scp-slingshot",
+   "state": "passed",
+   "scope": "实际调用 SCP RunSlingshot：pancreas_sub 80 细胞，CellType 分组，UMAP 1:2；比较 pseudotime 与 BranchID。",
+   "files": 1,
+   "drifted": 1,
+   "drift_sample": [
+    "code/analysis.R"
+   ],
+   "decision": "revalidate",
+   "note": null
+  }
+ ],
+ "probes": [
+  {
+   "probe": "codex-module-probe-20261025T163205.json",
+   "modules": {
+    "runmds": false,
+    "runnmf": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-module-probe-20261025T163849.json",
+   "modules": {
+    "runmds": false,
+    "runnmf": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-module-probe-20261026T065106.json",
+   "modules": {
+    "runmds": false,
+    "runnmf": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-module-probe-20261026T070318.json",
+   "modules": {
+    "runmds": false,
+    "runnmf": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-module-probe-20261026T081423.json",
+   "modules": {
+    "runmds": false,
+    "runnmf": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-module-probe-20261026T081817.json",
+   "modules": {
+    "runmds": false,
+    "runnmf": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-visual-probe-20261026T073451.json",
+   "modules": {
+    "celldimplot3d": false,
+    "featuredimplot3d": false,
+    "graphplot": false
+   },
+   "decision": "revalidate"
+  },
+  {
+   "probe": "codex-visual-probe-20261026T081424.json",
+   "modules": {
+    "celldimplot3d": false,
+    "featuredimplot3d": false,
+    "graphplot": false
+   },
+   "decision": "revalidate"
+  }
+ ],
+ "native_oracles": [
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/3d-feature-browser.png",
+   "sha256": "d936a4e6322d791f5048b6af8f5920f23d280f7998b90c2fe95a152d4c7c0983",
+   "bytes": 34258
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/cell-dim-CellType.png",
+   "sha256": "c32d8dc7ff1032dffad5b43defaa241fbbd9805dbfde8d09c40b92a583d8e501",
+   "bytes": 133861
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/cell-dim-CellType.svg",
+   "sha256": "9411c0dd4bd6333af047042d95c11bb3cbcaa599d8825c8e4b92aa270f6a6958",
+   "bytes": 129545
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-cor-two-markers.png",
+   "sha256": "6862931669c5feeaa460b4fc836c5b0391ccdf217553f534722ee56bfc8889f1",
+   "bytes": 96519
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-cor-two-markers.svg",
+   "sha256": "92d21b2e1baaa3a657a06dd417ee85dfce0cbc96a4e0b7d1f89e851e73b74913",
+   "bytes": 322521
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-dim-Neurog3.png",
+   "sha256": "d819ddf0014de428336097a8088c3d45eabd77d601fcfb44f741e2c7608041e0",
+   "bytes": 113037
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-dim-Neurog3.svg",
+   "sha256": "e4ad682fa7fb92696863884fe61be777d213f754074a9d1bc8fb0b7d292f2356",
+   "bytes": 114995
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-bar.png",
+   "sha256": "5e1eba64a2ca2e7d21c1a6e91468540102ba03dab067087289a98e7da788521f",
+   "bytes": 54854
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-bar.svg",
+   "sha256": "23018ee4c13c31c1303d2c3d8ee2c7915f137058a08b8727cfe4eab1a465ae65",
+   "bytes": 12729
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-box.png",
+   "sha256": "f4e8e0f5aa80b34f8c11c4a9e82e9de88e47b55e25a80727e5a0be7b175f4ca0",
+   "bytes": 56260
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-box.svg",
+   "sha256": "2a185117c62d3e95b598a3eb848a986d507d440d89f2c4af03cbe09814c7916a",
+   "bytes": 15284
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-col.png",
+   "sha256": "78cb869486b1752b96fb641ffebb5963aae7a6d120fac97218aad7c891524203",
+   "bytes": 48341
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-col.svg",
+   "sha256": "c85ae3c7b0fe488de8a11c82af094dcdf9d54f181a0259e9c4f0586a7248096a",
+   "bytes": 171414
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-dot.png",
+   "sha256": "a867b9435ac9b54d2e0ed8bd8a2fa08179d1000a850c667dcf377a4f972e4ad8",
+   "bytes": 71581
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-dot.svg",
+   "sha256": "4eb8d9dc5f6a948a63893e71dc2459446f77e8f26cb73fd998a1da326c59465a",
+   "bytes": 13949
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-violin.png",
+   "sha256": "94c7fa34c846b9244eaf51641eacd65aba9ff333e346086359095b56301a5937",
+   "bytes": 85125
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/feature-stat-violin.svg",
+   "sha256": "69e3f041792090d00a20d8360d625c708e7f21f4c471eb79e68e2355941e842c",
+   "bytes": 81542
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/formal-source-classification.png",
+   "sha256": "99a486273ba53ac670ff2d0adeaead1880527f01ccbd814a8a63f974e1519897",
+   "bytes": 99235
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/mds-cmdscale-matrix.rds",
+   "sha256": "3f09829107b1b739add2dbc26c7923ec29034763b64b469e4b57bbbb5f389e21",
+   "bytes": 1533
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/nmf-attachment-probe.json",
+   "sha256": "844241dae24077393708f43658fb6e9d6d19928cbbe14410e76d812bfd96c697",
+   "bytes": 142
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/nmf-native-minimal.json",
+   "sha256": "2f8f57c16efa6eefe1da709afd767f3cd76bd04c659865c0fd572d224e6ebe3c",
+   "bytes": 210
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/nmf-native-minimal.rds",
+   "sha256": "16f7d19ac5a6de455991871d62adf43dff7daaf941d21ab26ec4adbd6901e051",
+   "bytes": 2499
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/real-counts-subset.rds",
+   "sha256": "b6605d71a42a50fabb20d909d226ca8d76f7dc2d988dbc5d9f438916982c611e",
+   "bytes": 1761
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/references.json",
+   "sha256": "1c4d9370baa68ade350fa5ea71c448d868211a23c425d34052cb0876254aa5d8",
+   "bytes": 2772
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/Rplots.pdf",
+   "sha256": "88e6ecc50b8078cd6cceae2fc2a6f8ef57dd894b9b66cef8fa1ff7bd934829e7",
+   "bytes": 3667
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/structures-before-caller-argument-correction.json",
+   "sha256": "d689d1b5ac15b32ca56eb3cc11ed8e2539c18a1ff1f1eec8394b48aee59f82a3",
+   "bytes": 2430
+  },
+  {
+   "path": "E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/trajectory-before-harness-scope-correction.json",
+   "sha256": "dba3c3272c7111f67e2b8bd780df05e55a35659bdbc02aeb68618ca87c656de1",
+   "bytes": 425
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-circle.png",
+   "sha256": "3e4fa6406281b91b169ca458cfc0f4a06f231bc24edf995ea014494b7eb26ceb",
+   "bytes": 186227
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-circle.svg",
+   "sha256": "8780665cbbb9bc8f9b7af39a48de887e97d29fa68046d65398e8bd880b1c374a",
+   "bytes": 128314
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-ellipse.png",
+   "sha256": "23e066811c6f40b23d6c3c3410dd92100d257cb3811570490f69c8f3bb8dc769",
+   "bytes": 188180
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-ellipse.svg",
+   "sha256": "9574a77d762b05aba2a1b2d495057d050fdcfd531dc753f27e937f41d6a0b027",
+   "bytes": 128376
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-hull.png",
+   "sha256": "9f096ae687530071113083d595b4e25e639e9c24ff2fb3c943b9cbe27efb09db",
+   "bytes": 199828
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-hull.svg",
+   "sha256": "9502d52790e955d4745806f8cbb20e0882d4e33c97cc732f8e2b227526c3ba32",
+   "bytes": 127721
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-rect.png",
+   "sha256": "b6c2ec80d43e780c5e704950c0895f152abe26ab51fcbf59ec31e2c3886c5951",
+   "bytes": 135763
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/cell-dim-mark-rect.svg",
+   "sha256": "152542064011c2d0bb65b6ba9ed71f67a53ea486ed8497eba59a78eba39ab436",
+   "bytes": 116616
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-annotation.png",
+   "sha256": "ce43442e7e870ec6bec6d38af67b336db3370443daf07dd561e08108f1be4418",
+   "bytes": 71928
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-annotation.svg",
+   "sha256": "c1570d7165da6d01aa9c9e6eddcd6dc4d169cc2973652dfc5697e23d9aec6e3f",
+   "bytes": 150313
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-dot-flip.png",
+   "sha256": "232ecaaa6338f765a3959a32d9fbce1ab08f6685ad10bd44e3f90205ac9cfcc6",
+   "bytes": 83779
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-dot-flip.svg",
+   "sha256": "6bd4adae1a3542db352a2bf1c77959e5ad29e845fa049e617fb47a617056d79f",
+   "bytes": 50313
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-split-dot-reticle.png",
+   "sha256": "a2705d8523b8ee6438f15f9300e604cf63468562ab79df31b472e4111f609a40",
+   "bytes": 148314
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-split-dot-reticle.svg",
+   "sha256": "c51e43e84a2c20fb698dc7a6148d2e5d3eef8d9dcff6ab5f11b6188773495ec5",
+   "bytes": 84251
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-violin-expression.png",
+   "sha256": "db11e88638e4cd9c86f4e2959f3fd594fed206cd5139b6df4330bdaa4cd6a97e",
+   "bytes": 49787
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-violin-expression.svg",
+   "sha256": "f6b4360d671d57ed1cc2a879cc49e756c9497cace2d81002e306382613242d4b",
+   "bytes": 1308605
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-violin-group.png",
+   "sha256": "e020f2f2d192d95a328713e72a0bf97888915a01de7a2c884a4495056d2e9e82",
+   "bytes": 49850
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/group-violin-group.svg",
+   "sha256": "95ae013d554b24ba123c832103f5bdb6328c6c26c0e28f2ae6b6e4f58a1487a3",
+   "bytes": 1308605
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/references.json",
+   "sha256": "7abf6d0986cb9dfa7efc2dbb2b0eb2826f6610972ba00a3cb44c41cff2b926e9",
+   "bytes": 2639
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-structures/Rplots.pdf",
+   "sha256": "4701093dd4127c42bcd15ad9716f7bfd51a9d112734717fc367e27c34f5fdc52",
+   "bytes": 3667
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/dynamic-native-curve.png",
+   "sha256": "ef68eb391d8e8fa243a3fe72897dd7fde8d9002b58a61b8cb3847fd6dc295a5f",
+   "bytes": 115209
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/dynamic-native-curve.svg",
+   "sha256": "ed4704630301cf771add31d7a8d6705ad1da4d71d2b038b105943d05774cda6f",
+   "bytes": 283802
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/dynamic-native-heatmap.png",
+   "sha256": "f2100f4109e331f3bc5f76ccb23bea98405228492967136d01725b125b2ef0d6",
+   "bytes": 72021
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/dynamic-native-heatmap.svg",
+   "sha256": "82f701909a55b910618954284e1c9b71ff5cdf346e14f7b8a5b523eda25114fe",
+   "bytes": 713057
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/references.json",
+   "sha256": "b81b1e652099fea1c6b3c53d92bb2c92e4f4578dcee81ee7449717cb1091ce25",
+   "bytes": 1067
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/Rplots.pdf",
+   "sha256": "44741a1e18522d61b0a9d86e792749d9d4b768c5f83a2fc29960f5f7febf6b9f",
+   "bytes": 3667
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-trajectory/slingshot-pancreas-native.rds",
+   "sha256": "038a3d951feef76b9678628d14b0642e553a9a7e80ee13376646f26166b02afd",
+   "bytes": 27090906
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-graph/graph-curved.png",
+   "sha256": "f849994d2942524a46ac5ce86023b0c8f2e5f5b0721d362b7b7bc8165061f0b2",
+   "bytes": 101176
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-graph/graph-curved.svg",
+   "sha256": "7a6c111ba13db9a837b898879ab5f46a2023b0bf21c58c810a231087dad3e2c7",
+   "bytes": 57224
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-graph/graph-real-neighbours.rds",
+   "sha256": "921022b6fb1eccdc3c0a758620e72acf4dbf70a8a76b0ba828d2e9966a79bd51",
+   "bytes": 2045
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-graph/graph-straight.png",
+   "sha256": "3e79a084a350c668db66df24595e749c8d1cd7889ef6cbb5f31724f7ec0320c0",
+   "bytes": 99516
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-graph/graph-straight.svg",
+   "sha256": "e71e3c6c4104b824d860e56072136255bff3185c39faa4fab3dcf6784e857cd8",
+   "bytes": 27527
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-graph/references.json",
+   "sha256": "f85f44a565333bb1877b58277ca877b9d3263bdaa0c9f178178c1409d2035db8",
+   "bytes": 804
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-3d/cell-traces.rds",
+   "sha256": "94c25b29936e0d1a2da3729ad527e94a7ec32bee973ab170e25b3c5ca0bb30a6",
+   "bytes": 23240
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-3d/cell.html",
+   "sha256": "0f6543cc3a7bce0be9a79abfa08d75072d62ffcc99e880aae851369e227b13e9",
+   "bytes": 274685
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-3d/feature-traces.rds",
+   "sha256": "e5cfba08bc087fa7cfe3745c96b1eb4ecc3bbe91f662713bca1141cf946a6903",
+   "bytes": 24109
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-3d/feature.html",
+   "sha256": "c98fba8afb12272b653d09aceffb03a3a1f4aead51970f5a518efaf8f0389171",
+   "bytes": 291598
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-3d/references.json",
+   "sha256": "f711f3f3f56754057a9d018395da47a3eb6fa9048ab2042f4dc6339accda63b2",
+   "bytes": 550
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-largevis/largevis-native.json",
+   "sha256": "d39091783b48f0fc85f1710df3405f4842c7c55777baf8f06f2a958a97aa5335",
+   "bytes": 914
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-largevis/largevis-native.rds",
+   "sha256": "ba832c96848bc362a6243f963176fbb29f84b045b82fec948d4765f4703a92b8",
+   "bytes": 1263
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-fr/fr-native.json",
+   "sha256": "3674c284264fa26d6dd120f057c1dc0e1c768b468d931fba7b5a20c00888a6e5",
+   "bytes": 923
+  },
+  {
+   "path": "E:/research-wiki-env/work/codex-scp-native-fr/fr-native.rds",
+   "sha256": "7a394e3b61af2879306b7a991f9b2f2073facf174a6e17ce7a134e5449da7035",
+   "bytes": 2252
+  }
+ ],
+ "rule": "reusable only when every bound code/manifest/input hash equals current bytes; native oracles are controls, never verification by themselves"
+}

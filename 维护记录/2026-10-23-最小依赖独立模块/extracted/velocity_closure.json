@@ -1,0 +1,23 @@
+{
+  {"name": "py_to_r_auto", "file": "SCP-analysis.R", "from": 5314, "to": 5319},
+  {"name": "srt_to_adata", "file": "SCP-analysis.R", "from": 5351, "to": 5496},
+  {"name": "adata_to_srt", "file": "SCP-analysis.R", "from": 5521, "to": 5681},
+  {"name": "maxDepth", "file": "SCP-analysis.R", "from": 5683, "to": 5689},
+  {"name": "check_python_element", "file": "SCP-analysis.R", "from": 5692, "to": 5725},
+  {"name": "RunSCVELO", "file": "SCP-analysis.R", "from": 5895, "to": 5967},
+  {"name": "palette_scp", "file": "SCP-plot.R", "from": 168, "to": 271},
+  {"name": "SrtAppend", "file": "SCP-workflow.R", "from": 692, "to": 754},
+  {"name": "PrepareEnv", "file": "utils.R", "from": 13, "to": 129},
+  {"name": "Env_requirements", "file": "utils.R", "from": 144, "to": 265},
+  {"name": "installed_Python_pkgs", "file": "utils.R", "from": 271, "to": 285},
+  {"name": "exist_Python_pkgs", "file": "utils.R", "from": 291, "to": 330},
+  {"name": "env_exist", "file": "utils.R", "from": 336, "to": 353},
+  {"name": "get_envname", "file": "utils.R", "from": 355, "to": 362},
+  {"name": "find_conda", "file": "utils.R", "from": 367, "to": 384},
+  {"name": "conda_install", "file": "utils.R", "from": 389, "to": 453},
+  {"name": "conda_python", "file": "utils.R", "from": 458, "to": 478},
+  {"name": "run_Python", "file": "utils.R", "from": 480, "to": 492},
+  {"name": "check_Python", "file": "utils.R", "from": 510, "to": 546},
+  {"name": "as_matrix", "file": "utils.R", "from": 831, "to": 841}
+}
+

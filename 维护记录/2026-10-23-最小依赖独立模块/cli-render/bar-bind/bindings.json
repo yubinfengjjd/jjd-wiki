@@ -1,0 +1,10 @@
+{
+  "tables": {
+    "metadata": {
+      "file": "meta_author.csv",
+      "columns": {
+        "group": "cell_type"
+      }
+    }
+  }
+}

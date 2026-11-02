@@ -1,0 +1,32 @@
+fig, axes = plot_observed_predicted(
+    df_samples=df_oof_pred,
+    x_col="y_true",
+    y_col="y_pred",
+
+    # 图中显示的名称和单位
+    x_label="Observed",
+    y_label="Predicted",
+    x_unit="SR",
+    y_unit="SR",
+
+    # fold 指标表
+    df_fold_metrics=df_fold_metrics,
+    fold_col="fold",
+
+    # 不传时自动根据数据确定
+    xlim=None,
+    ylim=None,
+
+    # 自定义配色
+    colors=colors,
+    cmap="RdYlGn_r",
+
+    # 自动刻度数量
+    tick_count=6,
+    annotation_text="Test (XGBoost)",
+
+    # 保存图片
+    savepath="observed_predicted.png",
+)
+
+plt.show()

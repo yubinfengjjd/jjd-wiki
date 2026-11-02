@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "changed_wiki_files": [
+    "AGENTS.md",
+    "log.md",
+    "methods/regression-resampling-evaluation.md"
+  ],
+  "source_count": 2,
+  "ready_templates": 5,
+  "historical_shap_templates": 3,
+  "knowledge_graph_unchanged": true,
+  "metadata_and_relations_unchanged": true,
+  "protected_author_blocks": 14,
+  "gallery_hashes_unchanged": 249,
+  "all_code_data_and_previews_unchanged": true,
+  "queue_actions": 0,
+  "three_hosts": [
+    {
+      "host": ".agents",
+      "skill": "research-wiki",
+      "files_verified": 266,
+      "skill_valid": true
+    },
+    {
+      "host": ".agents",
+      "skill": "sci-figure-replica",
+      "files_verified": 136,
+      "skill_valid": true
+    },
+    {
+      "host": ".codex",
+      "skill": "research-wiki",
+      "files_verified": 266,
+      "skill_valid": true
+    },
+    {
+      "host": ".codex",
+      "skill": "sci-figure-replica",
+      "files_verified": 136,
+      "skill_valid": true
+    },
+    {
+      "host": ".claude",
+      "skill": "research-wiki",
+      "files_verified": 266,
+      "skill_valid": true
+    },
+    {
+      "host": ".claude",
+      "skill": "sci-figure-replica",
+      "files_verified": 136,
+      "skill_valid": true
+    }
+  ],
+  "scope": "Presentation and ingestion acceptance; no algorithms, data or signoff changes"
+}

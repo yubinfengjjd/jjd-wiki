@@ -1,0 +1,66 @@
+{
+  "id": "2026-10-22-glaucoma-scrna__fig07-axis-module-counts",
+  "post": {
+    "title": "青光眼单细胞项目（GSE251716）图表复刻",
+    "account": "作者课题",
+    "author": "作者",
+    "publish_date": "2026-10-22",
+    "url": null
+  },
+  "figure": {
+    "index": 7,
+    "label": "单panel：疾病模块轴数分组柱",
+    "caption": "按作者 generate_axisnet_panels_clean.py 的 Panel C 样式复刻；使用真实 ranking CSV。",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "bar"
+    ],
+    "canvas_px": [
+      2189,
+      1523
+    ],
+    "panel_map": {
+      "A": "bar"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "experimental-statistics"
+    ],
+    "secondary": [],
+    "free": [
+      "TCM",
+      "axis-ranking"
+    ]
+  },
+  "language": "python",
+  "data_provenance": "original",
+  "code_provenance": "adapted",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig07.png",
+    "source_provenance": "source/provenance.json",
+    "code": "code/replica.py",
+    "core_code": "code/core.py",
+    "data_prep": "code/make_data.py",
+    "data": "data/module-counts.csv",
+    "ranking": "data/ranking.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log"
+  },
+  "status": "review",
+  "version": 1,
+  "source_image_sha256": "85f7339030568f8af3427d2d11b30697caeabd301755d680f031c1e3029f4bde",
+  "created_at": "2026-10-22T05:38:15.176953Z",
+  "updated_at": "2026-10-22T05:38:15.176953Z"
+}

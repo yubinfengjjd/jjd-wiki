@@ -1,0 +1,5 @@
+.libPaths(c("E:/research-wiki-env/R-lib-scp/4.5", .libPaths()))
+want <- c("VGAM","BiocGenerics","Bibase","Bibase","Biobase","SingleCellExperiment","SummarizedExperiment","igraph","proxyC","dplyr","future","future.apply","data.table","R.cache","reshape2","ggnewscale","circlize","plotly","gtable","patchwork","ggrepel","ggplot2","rlang","uwot","intrinsicDimension","NMF","glmpca","destiny","presto","limma","edgeR","DESeq2","msigdbr","gson","AUCell","UCell","SingleR","scDblFinder","scds","harmony","monocle","monocle3","DDRTree","reticulate","mgcv","BiocParallel","slingshot","clusterProfiler","AnnotationDbi","biomaRt")
+ip <- rownames(installed.packages())
+cat("PRESENT:", paste(intersect(want, ip), collapse=", "), "\n")
+cat("MISSING:", paste(setdiff(want, ip), collapse=", "), "\n")

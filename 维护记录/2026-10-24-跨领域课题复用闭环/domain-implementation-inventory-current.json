@@ -1,0 +1,164 @@
+[
+  {
+    "id": "batch-integration",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-seurat",
+      "scp-harmony"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "cell-clustering",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "seurat-findclusters"
+    ],
+    "runtime_manifest": false
+  },
+  {
+    "id": "cell-quality-control",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-runcellqc"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "cell-type-annotation",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-singler"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "differential-expression",
+    "tags": [
+      "单细胞分析",
+      "转录组"
+    ],
+    "implementations": [
+      "scp-detest"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "dimensionality-reduction",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-dimreduction"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "doublet-detection",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-rundoublet"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "dynamic-feature-analysis",
+    "tags": [
+      "单细胞分析",
+      "转录组"
+    ],
+    "implementations": [
+      "scp-dynamicfeatures"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "gene-set-enrichment",
+    "tags": [
+      "单细胞分析",
+      "转录组"
+    ],
+    "implementations": [
+      "scp-enrichment"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "gene-set-scoring",
+    "tags": [
+      "单细胞分析",
+      "转录组"
+    ],
+    "implementations": [
+      "scp-cellscoring"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "reference-mapping",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "seurat-label-transfer",
+      "scp-runseuratmap"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "regression-resampling-evaluation",
+    "tags": [
+      "机器学习",
+      "实验统计"
+    ],
+    "implementations": [
+      "summarize-predictions"
+    ],
+    "runtime_manifest": false
+  },
+  {
+    "id": "rna-velocity",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-scvelo"
+    ],
+    "runtime_manifest": true
+  },
+  {
+    "id": "shap-explanation",
+    "tags": [
+      "机器学习",
+      "模型解释与特征重要性"
+    ],
+    "implementations": [
+      "shap-explain-model"
+    ],
+    "runtime_manifest": false
+  },
+  {
+    "id": "trajectory-inference",
+    "tags": [
+      "单细胞分析"
+    ],
+    "implementations": [
+      "scp-slingshot",
+      "scp-monocle2",
+      "scp-monocle3",
+      "scp-monocle2-core",
+      "scp-monocle3-core"
+    ],
+    "runtime_manifest": true
+  }
+]

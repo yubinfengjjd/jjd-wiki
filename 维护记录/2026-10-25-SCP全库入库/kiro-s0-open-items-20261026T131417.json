@@ -1,0 +1,198 @@
+{
+ "sources": [
+  "codex-independent-checkpoint-20261026T0830.md",
+  "codex-finalize10-live-review.md",
+  "B/codex-finalize10-handoff.md"
+ ],
+ "items": [
+  {
+   "id": "loader-global-shadow",
+   "source": "checkpoint#1 / handoff 1.1",
+   "status": "fixed_in_scratch",
+   "evidence": "kiro-s1-regression-*.json MDS_with_user_global_matrix",
+   "tasks": [
+    "2.1",
+    "2.9",
+    "2.4"
+   ]
+  },
+  {
+   "id": "loader-generics-residual",
+   "source": "checkpoint#2 / handoff 1.2",
+   "status": "fixed_in_scratch",
+   "evidence": "kiro-s1-regression-*.json NMF detached includes package:generics, residual empty",
+   "tasks": [
+    "2.2",
+    "2.9",
+    "2.7"
+   ]
+  },
+  {
+   "id": "options-classification",
+   "source": "checkpoint#2 / live-review",
+   "status": "fixed_in_scratch",
+   "evidence": "module env .scp_options_* four classes",
+   "tasks": [
+    "2.3",
+    "2.8"
+   ]
+  },
+  {
+   "id": "runner-fallback-passed",
+   "source": "checkpoint#3 / handoff 2",
+   "status": "open",
+   "tasks": [
+    "3.1",
+    "3.2"
+   ]
+  },
+  {
+   "id": "receipt-hash-drift-and-command",
+   "source": "checkpoint#3",
+   "status": "open",
+   "tasks": [
+    "3.3",
+    "3.7"
+   ]
+  },
+  {
+   "id": "receipt-selection-scope-nmf",
+   "source": "checkpoint#3",
+   "status": "open",
+   "tasks": [
+    "3.4",
+    "3.5"
+   ]
+  },
+  {
+   "id": "legacy-replay-python-env-field",
+   "source": "checkpoint#4",
+   "status": "open",
+   "tasks": [
+    "3.3",
+    "8.4"
+   ]
+  },
+  {
+   "id": "doc-runwot-group_by",
+   "source": "checkpoint#5",
+   "status": "open",
+   "tasks": [
+    "4.1"
+   ]
+  },
+  {
+   "id": "doc-findexpressedmarkers-group_by",
+   "source": "checkpoint#5",
+   "status": "open",
+   "tasks": [
+    "4.1"
+   ]
+  },
+  {
+   "id": "doc-monocle-package-name",
+   "source": "handoff 2",
+   "status": "open",
+   "tasks": [
+    "4.1"
+   ]
+  },
+  {
+   "id": "doc-assay5-boundary",
+   "source": "checkpoint#5",
+   "status": "open",
+   "tasks": [
+    "4.1"
+   ]
+  },
+  {
+   "id": "doc-calls-aliases",
+   "source": "checkpoint#5",
+   "status": "open",
+   "tasks": [
+    "4.1",
+    "4.2"
+   ]
+  },
+  {
+   "id": "scp-local-source-stale-sentence",
+   "source": "live-review 08:52",
+   "status": "open",
+   "tasks": [
+    "4.1"
+   ]
+  },
+  {
+   "id": "code-freeze-single-rebuild",
+   "source": "handoff 1",
+   "status": "open",
+   "tasks": [
+    "6.1",
+    "6.2",
+    "7.1"
+   ]
+  },
+  {
+   "id": "legacy-replay-after-freeze",
+   "source": "checkpoint#4",
+   "status": "open",
+   "tasks": [
+    "8.4"
+   ]
+  },
+  {
+   "id": "module-load-audit-final",
+   "source": "checkpoint (final delayed version)",
+   "status": "open",
+   "tasks": [
+    "8.5"
+   ]
+  },
+  {
+   "id": "wiki-map-142-v2",
+   "source": "checkpoint#6 / handoff 3",
+   "status": "open",
+   "tasks": [
+    "10.1",
+    "10.2"
+   ]
+  },
+  {
+   "id": "gallery-native-sources",
+   "source": "checkpoint#6 / handoff 3",
+   "status": "open",
+   "tasks": [
+    "11.1",
+    "12.1",
+    "12.2",
+    "13-20"
+   ]
+  },
+  {
+   "id": "baseline-12ready-13verified",
+   "source": "checkpoint",
+   "status": "open",
+   "tasks": [
+    "23.1",
+    "23.10"
+   ]
+  },
+  {
+   "id": "check-entry-record-lint-pending",
+   "source": "handoff 4",
+   "status": "open",
+   "tasks": [
+    "24.1"
+   ]
+  },
+  {
+   "id": "3d-distilled-browser-check",
+   "source": "checkpoint (native only checked)",
+   "status": "open",
+   "tasks": [
+    "20.5",
+    "25.3"
+   ]
+  }
+ ]
+}

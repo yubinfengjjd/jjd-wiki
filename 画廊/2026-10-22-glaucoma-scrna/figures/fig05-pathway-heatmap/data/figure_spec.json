@@ -1,0 +1,26 @@
+{
+  "kind": "heatmap",
+  "canvas_px": [1536, 672],
+  "panels": [
+    {"id": "A", "kind": "heatmap"}
+  ],
+  "style": {
+    "canvas_px": [1536, 672],
+    "scale_rows": true,
+    "cluster_rows": true,
+    "cluster_columns": false,
+    "column_title_rot": 45,
+    "row_names_fontsize": 10,
+    "column_title_fontsize": 9,
+    "heatmap_width_cm": 10.5,
+    "heatmap_height_cm": 4.5,
+    "anno1_colors": {"Control": "#71ad96", "Glaucoma": "#5d5c84"},
+    "col_fun": ["#08306B", "#F7F7F7", "#B2182B"]
+  },
+  "data_provenance": "synthetic",
+  "notes": [
+    "Synthetic pathway scores; not original observations.",
+    "Rows are z-scored across columns before plotting; colors are relative, not absolute activity.",
+    "Column order is cell type then Control/Glaucoma; row order is determined by clustering."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "linkage": {
+      "interface": "render-cell-linkage",
+      "description": "每个细胞每个维度一行的长表；dimension_order 决定两个维度的次序，category_levels 给出显式类别顺序；模板按原 StatPlot 的 table(useNA='ifany') 重建二维计数矩阵，不聚合输入。"
+    }
+  },
+  "style": {
+    "cell_col": "cell",
+    "dimension_col": "dimension",
+    "category_col": "category",
+    "dimension_order_col": "dimension_order",
+    "dimension_order": null,
+    "category_levels": null,
+    "palette": "Paired",
+    "palcolor": null,
+    "NA_color": "grey",
+    "alpha": 1,
+    "label": false,
+    "legend": false,
+    "transparency": 0.2,
+    "link_lwd": 1,
+    "link_lty": 1,
+    "link_border": 1,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11,
+    "sizing": {
+      "mode": "adaptive",
+      "base_in": 5.0,
+      "per_sector_in": 0.35,
+      "base_label_chars": 12,
+      "per_label_char_in": 0.12,
+      "min_width_in": 6.0,
+      "min_height_in": 5.0,
+      "aspect": 0.75,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

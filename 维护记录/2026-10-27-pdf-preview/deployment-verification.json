@@ -1,0 +1,86 @@
+[
+  {
+    "host": ".agents",
+    "verified": 339,
+    "changed": [
+      "rwiki/recipes.py",
+      "tests/conftest.py",
+      "tests/test_ci_workflow.py",
+      "tests/test_repo_files.py",
+      "tests/test_rule_docs.py",
+      "tests/test_v2_sources_recipes.py",
+      "tests/test_vault_root.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".codex",
+    "verified": 339,
+    "changed": [
+      "rwiki/recipes.py",
+      "tests/conftest.py",
+      "tests/test_ci_workflow.py",
+      "tests/test_repo_files.py",
+      "tests/test_rule_docs.py",
+      "tests/test_v2_sources_recipes.py",
+      "tests/test_vault_root.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".claude",
+    "verified": 339,
+    "changed": [
+      "rwiki/recipes.py",
+      "tests/conftest.py",
+      "tests/test_ci_workflow.py",
+      "tests/test_repo_files.py",
+      "tests/test_rule_docs.py",
+      "tests/test_v2_sources_recipes.py",
+      "tests/test_vault_root.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 339,
+    "changed": [
+      "rwiki/recipes.py",
+      "tests/conftest.py",
+      "tests/test_ci_workflow.py",
+      "tests/test_repo_files.py",
+      "tests/test_rule_docs.py",
+      "tests/test_v2_sources_recipes.py",
+      "tests/test_vault_root.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 339,
+    "changed": [
+      "rwiki/recipes.py",
+      "tests/conftest.py",
+      "tests/test_ci_workflow.py",
+      "tests/test_repo_files.py",
+      "tests/test_rule_docs.py",
+      "tests/test_v2_sources_recipes.py",
+      "tests/test_vault_root.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".kiro",
+    "verified": 339,
+    "changed": [
+      "rwiki/recipes.py",
+      "tests/conftest.py",
+      "tests/test_ci_workflow.py",
+      "tests/test_repo_files.py",
+      "tests/test_rule_docs.py",
+      "tests/test_v2_sources_recipes.py",
+      "tests/test_vault_root.py"
+    ],
+    "stale_removed": []
+  }
+]

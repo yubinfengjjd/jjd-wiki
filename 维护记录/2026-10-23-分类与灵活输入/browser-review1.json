@@ -1,0 +1,51 @@
+{
+  "server": "http://127.0.0.1:8788",
+  "checks": [
+    {
+      "name": "initial load",
+      "cards": 15,
+      "hash": "#/methods"
+    },
+    {
+      "name": "click domain",
+      "hash": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90",
+      "cards": 13
+    },
+    {
+      "name": "click purpose",
+      "hash": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90&purpose=%E8%BD%A8%E8%BF%B9%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E6%9E%90",
+      "cards": 3,
+      "titles": [
+        "分析家族 1拟时序动态特征分析",
+        "分析家族 2RNA 速度分析",
+        "分析家族 3拟时序与轨迹推断"
+      ]
+    },
+    {
+      "name": "search purpose",
+      "hash": "#/methods?q=%E6%A8%A1%E5%9E%8B%E8%A7%A3%E9%87%8A",
+      "cards": 1,
+      "input": "模型解释",
+      "titles": [
+        "分析家族 1基于 SHAP 的模型解释"
+      ]
+    },
+    {
+      "name": "clear search",
+      "hash": "#/methods",
+      "input": ""
+    },
+    {
+      "name": "refresh keeps selection",
+      "hash": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90&purpose=%E8%BD%A8%E8%BF%B9%E4%B8%8E%E5%8A%A8%E6%80%81%E5%88%86%E6%9E%90",
+      "cards": 3,
+      "input": ""
+    },
+    {
+      "name": "click method card",
+      "hash": "#/page/methods/dynamic-feature-analysis.md",
+      "title": "拟时序动态特征分析"
+    }
+  ],
+  "console_errors": []
+}

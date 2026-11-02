@@ -1,0 +1,16 @@
+{
+  "approved_for_draft_publication": true,
+  "approved_for_ready_template": false,
+  "author_approved": false,
+  "closure_hash": "c474e19d0f9c45a8202e9b710fd0cd04f5566b0ddee2cdc18d595f5c5b15a5a4",
+  "scope": "GroupHeatmap add_dot draft source + current interface semantics + compiled technical/chart notes; no scientific approval",
+  "evidence": [
+    "codex-portable-final.json",
+    "codex-artifacts.json",
+    "codex-dot-review2/checks.json",
+    "browser-isolated.json",
+    "logs/codex-isolated-lint.log",
+    "codex-protection-current.json"
+  ],
+  "time": "2026-10-25T12:34:55.071842+00:00"
+}

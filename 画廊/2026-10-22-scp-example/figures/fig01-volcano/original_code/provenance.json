@@ -1,0 +1,12 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "line_start": 7088,
+  "line_end": 7194,
+  "function": "VolcanoPlot",
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "9805034fb2c991d3d208bd9816261310724fabe1f332f0902851c45516c77ae2",
+  "note": "Exact function excerpt; not the full source file."
+}

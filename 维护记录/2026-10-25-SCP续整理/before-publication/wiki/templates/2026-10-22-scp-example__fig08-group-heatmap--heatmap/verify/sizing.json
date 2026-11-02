@@ -1,0 +1,10 @@
+{
+  "mode": "fixed",
+  "profile": "group_heatmap",
+  "n_x": 13,
+  "n_y": 13,
+  "max_label_chars": 13,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150
+}

@@ -1,0 +1,12 @@
+{
+  "actual_process_exit": 0,
+  "actual_elapsed_sec": 157.003,
+  "rows": 7403,
+  "raw_table_identical_to_initial": true,
+  "sha256": "971b39c5c7a4abce111c3ff7f2efdd69068eb3c03cd8907c67443b7dd0d743fd",
+  "s4_diagnostic_serialization": "passed, original diagnostics.rds plus explicit class/summary JSON",
+  "search_restored": true,
+  "options_restored": false,
+  "closure_options_restored": false,
+  "restriction": "Observed options added by package initialization/attach; call in isolated fresh R process only. No source algorithm modification or silent promotion. This is an observed existing implementation maintenance gap, not all side-effect postconditions passed."
+}

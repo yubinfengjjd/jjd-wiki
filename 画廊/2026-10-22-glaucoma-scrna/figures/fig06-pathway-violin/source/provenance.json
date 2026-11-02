@@ -1,0 +1,13 @@
+{
+  "source_image": "source/fig06.png",
+  "source_image_sha256": "f785723ef86aa6b0248fdda88a0325b32150c09e945b24f430a530248b71472b",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "f785723ef86aa6b0248fdda88a0325b32150c09e945b24f430a530248b71472b",
+  "bbox": [0, 0, 2304, 1248],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\complement_violin.pdf",
+    "E:\\青光眼单细胞\\score_pathway_signatures.R"
+  ],
+  "note": "Selected representative is the complement pathway grouped violin; p and mean/SD annotations are part of the panel."
+}

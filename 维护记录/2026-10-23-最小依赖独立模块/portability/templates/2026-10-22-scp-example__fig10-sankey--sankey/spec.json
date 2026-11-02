@@ -1,0 +1,56 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "linkage": {
+      "interface": "render-cell-linkage",
+      "description": "每个细胞 × 每个维度一行的长表（cell, dimension, category, dimension_order）；模板按 dimension_order 与显式类别顺序透视为 cell × dimension 宽表，再执行上游 make_long()/geom_sankey() 的计数与绘图。桑基流量是细胞行数，不是权重，也不计算组内比例。"
+    }
+  },
+  "style": {
+    "cell_col": "cell",
+    "dimension_col": "dimension",
+    "category_col": "category",
+    "dimension_order_col": "dimension_order",
+    "dimension_levels": {
+      "CellType": [
+        "Ductal",
+        "Ngn3 low EP",
+        "Ngn3 high EP",
+        "Pre-endocrine",
+        "Endocrine"
+      ],
+      "Phase": [
+        "G1",
+        "S",
+        "G2M"
+      ]
+    },
+    "plot_type": "sankey",
+    "stat_type": "count",
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "label": false,
+    "legend_position": "right",
+    "legend_direction": "vertical",
+    "seed": 11,
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "sizing": {
+      "mode": "adaptive",
+      "base_in": 5.0,
+      "per_dimension_in": 0.6,
+      "per_node_in": 0.08,
+      "base_height_in": 4.2,
+      "per_node_height_in": 0.25,
+      "min_width_in": 6.0,
+      "min_height_in": 4.0,
+      "base_label_chars": 14,
+      "per_label_char_in": 0.08,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

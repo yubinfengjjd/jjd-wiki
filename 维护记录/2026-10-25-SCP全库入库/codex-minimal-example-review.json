@@ -1,0 +1,9 @@
+{
+  "RunMDS": "RunMDS(object=srt, ...)；默认方法 RunMDS.default <- function(object=…, ...=…)",
+  "RunNMF": "RunNMF(object=srt, ...)；默认方法 RunNMF.default <- function(object=…, ...=…)",
+  "RunFR": "RunFR(object=srt, ...)；默认方法 RunFR.default <- function(object=…, ...=…)",
+  "GroupHeatmap": "GroupHeatmap(srt=srt)",
+  "CellDimPlot3D": "CellDimPlot3D(srt=srt, group.by=\"CellType\")",
+  "StatPlot": "StatPlot(meta.data=meta.data, stat.by=\"CellType\")",
+  "FeatureStatPlot": "FeatureStatPlot(srt=srt, stat.by=\"CellType\")"
+}

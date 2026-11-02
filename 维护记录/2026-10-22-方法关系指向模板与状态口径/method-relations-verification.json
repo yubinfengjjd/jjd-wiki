@@ -1,0 +1,48 @@
+{
+  "method_relations": [
+    {
+      "figure": "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "kind": "template",
+      "status": "ready",
+      "compatibility": "adaptable"
+    },
+    {
+      "figure": "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "kind": "template",
+      "status": "ready",
+      "compatibility": "adaptable"
+    }
+  ],
+  "figure_refs": [
+    "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+    "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md"
+  ],
+  "layouts": {
+    "layouts/2026-10-19-regression-stability__fig03-density-panel.md": {
+      "status": "pending_template",
+      "workflow": {
+        "stage": "complete",
+        "queue": null,
+        "label": "模板已就绪",
+        "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+        "templates": [
+          "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md"
+        ]
+      }
+    },
+    "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md": {
+      "status": "pending_template",
+      "workflow": {
+        "stage": "complete",
+        "queue": null,
+        "label": "模板已就绪",
+        "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+        "templates": [
+          "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md"
+        ]
+      }
+    }
+  }
+}

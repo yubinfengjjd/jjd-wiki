@@ -1,0 +1,123 @@
+{
+  "counts": {
+    "chart-type/na": 5,
+    "interface/na": 8,
+    "layout/archived": 3,
+    "layout/pending_template": 2,
+    "method/archived": 2,
+    "method/ready": 2,
+    "template/ready": 5
+  },
+  "queue_actions": [],
+  "installed": [
+    {
+      "host": ".agents",
+      "skill": "research-wiki",
+      "files": 266,
+      "mismatches": [],
+      "wiki_root": "E:\\research-wiki\\知识库",
+      "gallery_root": "E:\\research-wiki\\画廊"
+    },
+    {
+      "host": ".agents",
+      "skill": "sci-figure-replica",
+      "files": 136,
+      "mismatches": [],
+      "wiki_root": null,
+      "gallery_root": "E:\\research-wiki\\画廊"
+    },
+    {
+      "host": ".codex",
+      "skill": "research-wiki",
+      "files": 266,
+      "mismatches": [],
+      "wiki_root": "E:\\research-wiki\\知识库",
+      "gallery_root": "E:\\research-wiki\\画廊"
+    },
+    {
+      "host": ".codex",
+      "skill": "sci-figure-replica",
+      "files": 136,
+      "mismatches": [],
+      "wiki_root": null,
+      "gallery_root": "E:\\research-wiki\\画廊"
+    },
+    {
+      "host": ".claude",
+      "skill": "research-wiki",
+      "files": 266,
+      "mismatches": [],
+      "wiki_root": "E:\\research-wiki\\知识库",
+      "gallery_root": "E:\\research-wiki\\画廊"
+    },
+    {
+      "host": ".claude",
+      "skill": "sci-figure-replica",
+      "files": 136,
+      "mismatches": [],
+      "wiki_root": null,
+      "gallery_root": "E:\\research-wiki\\画廊"
+    }
+  ],
+  "wiki_rules_match": true,
+  "code_inventories": [
+    {
+      "page": "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md",
+      "files": 13
+    },
+    {
+      "page": "layouts/2026-10-19-regression-stability__fig01-density-grid.md",
+      "files": 9
+    },
+    {
+      "page": "layouts/2026-10-19-regression-stability__fig02-metric-boxplots.md",
+      "files": 9
+    },
+    {
+      "page": "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+      "files": 12
+    },
+    {
+      "page": "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+      "files": 12
+    },
+    {
+      "page": "methods/paired-reference-visual-comparison.md",
+      "files": 0
+    },
+    {
+      "page": "methods/regression-resampling-evaluation.md",
+      "files": 8
+    },
+    {
+      "page": "methods/repeated-benchmark-distribution.md",
+      "files": 0
+    },
+    {
+      "page": "methods/shap-explanation.md",
+      "files": 5
+    },
+    {
+      "page": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+      "files": 7
+    },
+    {
+      "page": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md",
+      "files": 7
+    },
+    {
+      "page": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md",
+      "files": 7
+    },
+    {
+      "page": "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "files": 15
+    },
+    {
+      "page": "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "files": 15
+    }
+  ],
+  "graph_nodes": 27,
+  "graph_edges": 56
+}

@@ -1,0 +1,53 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig06.png",
+  "reference_panel": "source/reference_panel.png",
+  "reference_panel_bbox": [
+    484,
+    337,
+    969,
+    675
+  ],
+  "full_original": "source/full_original.jpg",
+  "logical_panel": "A",
+  "chart_type": "area",
+  "input": "data/render-cell-metadata.csv",
+  "aggregated_input": "data/phase_by_celltype.csv",
+  "input_columns": {
+    "cell": "cell identifier; unique within the figure",
+    "CellType": "group / x category; one value per cell; order explicit",
+    "Phase": "stat / series category; one value per cell; order explicit"
+  },
+  "params": {
+    "plot_type": "area",
+    "stat_type": "percent",
+    "position": "stack",
+    "label": true,
+    "group_levels": [
+      "Ductal",
+      "Ngn3 low EP",
+      "Ngn3 high EP",
+      "Pre-endocrine",
+      "Endocrine"
+    ],
+    "stat_levels": [
+      "G1",
+      "S",
+      "G2M"
+    ],
+    "xlab": "CellType",
+    "ylab": "Percentage",
+    "legend_title": "Phase:",
+    "palette": "Paired",
+    "merge_polar_endpoints": false,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; counts via base xtabs; proportions derived once",
+    "code": "native SCP ggplot construction extracted verbatim; table-producing step separated; optional polar endpoint-label merge is off for these representative calls",
+    "license": "GPL (>= 3)"
+  }
+}

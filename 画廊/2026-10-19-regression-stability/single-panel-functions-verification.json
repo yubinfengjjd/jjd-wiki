@@ -1,0 +1,23 @@
+{
+  "command": [
+    "C:/Users/86186/.codex/venvs/sci-figure-replica/Scripts/python.exe",
+    "-X",
+    "utf8",
+    "E:\\research-wiki-env\\tmp\\single-panel-20261021\\zip-extract-test\\example\\render_example.py"
+  ],
+  "cwd": "E:\\research-wiki-env\\tmp\\single-panel-20261021",
+  "exit_code": 0,
+  "stdout": "Two demonstration panels exported. These are graphical estimates, not original observations.\n",
+  "stderr": "",
+  "archive_crc": "PASS",
+  "zip_sha256": "07167ecff646b22434f51731db15079ad8eea9f13bc3ed28a0538994f3c903f4",
+  "exported_files": [
+    "example_outputs\\boxplot_panel.pdf",
+    "example_outputs\\boxplot_panel.png",
+    "example_outputs\\boxplot_panel.svg",
+    "example_outputs\\density_panel.pdf",
+    "example_outputs\\density_panel.png",
+    "example_outputs\\density_panel.svg"
+  ],
+  "scope": "Actual extracted distribution executed from unrelated cwd. Dedicated plotting environment tested; project environments not supplied/tested."
+}

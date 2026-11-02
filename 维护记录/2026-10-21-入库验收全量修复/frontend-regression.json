@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "description": "Two source pages explicitly reuse the same template and exact panel structure; Gallery and method display both show one style and preserve both source links.",
+  "gallery_style_paths": [
+    "layouts/source-one.md"
+  ],
+  "callable_templates": 1,
+  "method_visuals": 1
+}

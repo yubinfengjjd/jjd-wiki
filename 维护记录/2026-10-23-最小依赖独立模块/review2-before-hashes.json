@@ -1,0 +1,150 @@
+[
+  {
+    "path": "知识库/methods/trajectory-inference/acceptance.json",
+    "sha256": "2a5f496cc610c453fa081e5db0db4f69f18bb9e99c205d5ae0de746830e70e88"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/runtime.json",
+    "sha256": "41b45a313a53587a12958b115c610697e35efdad8fed5d185a256ed123f19da2"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/analysis.R",
+    "sha256": "8846786778b63768610ce037776e6fe7e3256f97229c6cf8b595aeac051e991c"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle2.R",
+    "sha256": "62e437932fe9b89cd3aef89d60a8a410eba565a12be935e2c1f354f479e5b673"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle2_core.R",
+    "sha256": "f19a181d3ddba4acd20b1a07fc8c61cffd5d94998626daf65d04876626675816"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle2_core_helpers.R",
+    "sha256": "831b519ea7044eee7cc9b75b1bbfbf952b14f25298d9b12f4d0e8d72df11bafe"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle2_plot.R",
+    "sha256": "dfe6410454a113269555a7a9ab5961b3edcce4ecd20b39f0dfd81802fd442718"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle3.R",
+    "sha256": "ecbc495fe291cd070c16e5bf765caf810b09121d323b948fee867ef0ad0b6f52"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle3_core.R",
+    "sha256": "00a9a03c455cd4af5f1f7665a27ee6f6743c6cc2b34d6635b219d62e7c1051b1"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/monocle3_plot.R",
+    "sha256": "eac14fcd0753cbb5b59be611a4f584c6cb6f1a15d4da13cd88fe3f95b7c98554"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/code/slingshot_native.R",
+    "sha256": "ca9b68c5493fbeedfcaf805340e7c91c8cbe7a9a5b4f4f4a61ff32fe788545d9"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/example/usage.json",
+    "sha256": "7bca5e730f8f1b7247e058d40bd099b19b2e35210cd220c1e34009807c037997"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle2-core-portability.json",
+    "sha256": "f34225f508ecee2442512d1b2aa1c5af0574170bc2371e691ccc463cf16db4b7"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle2-core-standalone.json",
+    "sha256": "a2b7a11f4c7192ec5386cd25c63a2f233a393e18dfe18a26b0009191bf0e26e2"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle2-plot-portability.json",
+    "sha256": "fc025d7b71d0cde5d9d46d2c12e6f79b5935fe6b2cf6e0a7ee381a8429d407f7"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle2-plot-standalone.json",
+    "sha256": "0356a8b384e7fb1b863564d8ae46caf3c805e8d69c6a58538d3e3df2f1e5fce6"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle2-portability.json",
+    "sha256": "58a3ebfb1df53c55fe83cfef2f3953d1b4fed614d9d410e527236dd612cc499a"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle2-standalone.json",
+    "sha256": "6cb76478a69a79157be8956831e344aa39bad51338775cfe8ca6d1accae329d6"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle3-core-portability.json",
+    "sha256": "39c50577b1697e74606dea7b53659eb45f746a27c676cd61f188140fc1614b76"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle3-core-standalone.json",
+    "sha256": "4fa6542b54643d92b3b7ad0b50cb58ac7b70f1bec0abc816e43e5322f577367d"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle3-plot-portability.json",
+    "sha256": "6e5eeac55efb1749367233d01e5d51b0eb285630274f6095dffd79834a8cbfcd"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle3-plot-standalone.json",
+    "sha256": "f8d77aee3a95266696dd69ac7c97130892ce74e10389b50efb9f030eb00c8bdc"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle3-portability.json",
+    "sha256": "4076e77395e6af20eeb9d1b04fae830b6ec7a5475e0899ad13515eb272fbc197"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-monocle3-standalone.json",
+    "sha256": "304a5fdd48ca1b8cdac481bad40586064cb745565b0a0830ecfd18558610b51c"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-slingshot-portability.json",
+    "sha256": "4e8cce01d9c59ea5fbf52109f92fbad146c2fb4935bac8c7ba3126197dac087f"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-slingshot-standalone.json",
+    "sha256": "8ae307faeb8cf9595a260ea9ca2a23dab9a3385c6017eb91d672505b1f9221b1"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference/verification/scp-slingshot.json",
+    "sha256": "81ee117a57b593ba4a6cd7f4931e853a4608b6074e98b175d8223269b147f924"
+  },
+  {
+    "path": "知识库/methods/trajectory-inference.md",
+    "sha256": "a87903f0a2292929403ab3bd0092363f7385ab2c08f643b94b7ae5c323f598a2"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/acceptance.json",
+    "sha256": "23e595783286e9d104143ba75204ce5c393220e860235cdb4065a30cd1da7c71"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/runtime.json",
+    "sha256": "531e4efef7b4aad7c38df6de8fc3d89372345abc3f707d59093969371af41dd0"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/code/analysis.R",
+    "sha256": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/code/velocity_native.R",
+    "sha256": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/example/usage.json",
+    "sha256": "cd9478f68266403f2d2ee72e55dfb6db79e57baedbded5210e54a4d444e4129d"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/verification/scp-scvelo-portability.json",
+    "sha256": "644326f0d3a049457aaf18909e36216f4969eb10ef508f94d6bd0b54c56e3260"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/verification/scp-scvelo-standalone.json",
+    "sha256": "961ab37ec57d9299b62b4a35c858461c1da672d58d05206d8b7ba0e1d1b6848a"
+  },
+  {
+    "path": "知识库/methods/rna-velocity/verification/scp-scvelo.json",
+    "sha256": "4c91b840dc9b4cb5926a1f75b9936d0e3c54c8ca95458455d73d19d17ac72e19"
+  },
+  {
+    "path": "知识库/methods/rna-velocity.md",
+    "sha256": "caa9d48091aea14ace96bc686053ec11dec599691deb81a371dc5c1a6ea11020"
+  }
+]

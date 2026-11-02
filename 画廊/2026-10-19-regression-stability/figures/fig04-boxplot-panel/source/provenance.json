@@ -1,0 +1,23 @@
+{
+  "full_original": {
+    "path": "source/full_original.png",
+    "sha256": "a35ba248ab50e44e87715d398f193a52e5ebcb3531855e0f93b2d0d47f48d30f",
+    "article_candidate": "candidate-08.png",
+    "bbox": [
+      0,
+      0,
+      872,
+      777
+    ]
+  },
+  "selected_unit": "entire standalone logical panel, no crop/re-encoding",
+  "data_parent": "E:\\research-wiki\\画廊\\2026-10-19-regression-stability\\figures\\fig02-metric-boxplots",
+  "inputs": {
+    "data\\estimated_data.csv": "ed4a9452a0333ac9d2f49d454fc47c79cc3472de0c57e487582aa76475c53ce6",
+    "data\\figure_spec.json": "83c786555d0c335bcb18f6dff68c6d2767ece4efd29e55e01e66f888c65fd729"
+  },
+  "prior_renderer_sha256": "89ecf3c327ae4f57f5c4386d5b2ca1921d17bfef789354b16cfae22e9ec25fbd",
+  "original_snippets": "original_code/; archived only, not executed; absent plotting definitions",
+  "draw_mapping": "previous renderer boxplot branch -> panels.draw_boxplot -> panel.draw / panels.plot_panel",
+  "statistical_changes": "none; graphical values/annotations preserved; no training or missing algorithm implemented"
+}

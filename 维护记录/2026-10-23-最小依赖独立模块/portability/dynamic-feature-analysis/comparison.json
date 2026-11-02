@@ -1,0 +1,11 @@
+{
+  "method": "dynamic-feature-analysis",
+  "state": "passed",
+  "reference": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\reference\\dynamic-feature-analysis.rds",
+  "candidate": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\dynamic-feature-analysis\\result.rds",
+  "checks": {
+    "dynamic table identical": true,
+    "dynamic rows": true
+  },
+  "compared_at": "2026-10-23 16:02:14 UTC"
+}

@@ -1,0 +1,47 @@
+{
+  "single": [
+    {
+      "path": "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+      "sources": 1
+    },
+    {
+      "path": "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+      "sources": 1
+    },
+    {
+      "path": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+      "sources": 0
+    },
+    {
+      "path": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md",
+      "sources": 0
+    },
+    {
+      "path": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md",
+      "sources": 0
+    }
+  ],
+  "templates": [
+    {
+      "path": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+      "sources": 0
+    },
+    {
+      "path": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md",
+      "sources": 0
+    },
+    {
+      "path": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md",
+      "sources": 0
+    },
+    {
+      "path": "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "sources": 1
+    },
+    {
+      "path": "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "sources": 1
+    }
+  ],
+  "method_visuals": 8
+}

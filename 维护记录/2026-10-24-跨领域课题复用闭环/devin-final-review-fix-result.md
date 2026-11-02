@@ -1,0 +1,21 @@
+Read the review file and locate the method-card badge code:The '可用' comes from `displayStatus` on the figure's `StatusBadge`, next to the '需要适配' compat badge. Check STATUS_LABEL and test expectations:Add a behavioral test for the qualified badge — check the existing fixture:Add the badge test before the `if (failed)` line:Run the frontend tests and typecheck:Frontend green + build succeeded. Now the A25 semantic guards — read the exact SKILL.md spots to patch:Read `project-reuse.md` fully to place the guards precisely:Applying the semantic guards — SKILL.md first (step 1 provenance, step 5 checks honesty, step 6 formal-write gate, plus family-binding axiom):Now `project-reuse.md` — reuse-identity at line 33, formal-write gate + family binding in 记录与回存：Now `AGENTS.md` — read the flow lines around 243-250 to place the guards:Now patch AGENTS.md — the unconditional `record-use` in step 6 is the direct cause of the consumer's unauthorized commit:Now the report fixes. Verify actual `_SHA_CHUNK` first, then fix the three files:The sync map needs the redeploy-drift finding — locate the actual installed taxonomy copies to document them accurately:Update the sync map with the measured live-copy inventory, purposes wording, and authorized-adoption framing:Now fix the report mismatches — `batch2-result.md` (1 MiB + remove redundant approval gates) and `verification-matrix.md` (A16):Check no other unconditional `record-use` remains in staged docs:Semantic guards all in place. Check for a skill/reference structure validation test:No dedicated doc-structure test exists — validate SKILL.md frontmatter + reference links + CLI load directly:Structure clean. Update `batch2-result.md` + `batch2-progress.md` with this final-pass delta:Final sweep — confirm no other doc has an unconditional `record-use` and re-run frontend tests:Final review pass complete. All requested fixes applied and validated.
+
+**Frontend badge fix** (P2 copy ambiguity)
+- `src/figureModels.ts`: new `methodFigureStatusLabel` — bare `可用` on a method's associated-figure card becomes `图模板可用`/`图样可用`; other labels pass through.
+- `src/views/MethodOverview.tsx`: uses the qualified label (dropped now-unused `displayStatus` import). Gallery/GraphView/shared `StatusBadge` semantics unchanged.
+- `tests/methods.test.tsx`: new DOM check asserting `图模板可用` + `需要适配` + no bare `>可用<`.
+- `npm run test` all green; `npm run build` passed → new bundles `app/assets/index-Cb2F4umq.js` (848.09 kB) and `GraphView-BYrDSZDC.js` (69.23 kB).
+
+**A25 semantic guards** (SKILL.md + project-reuse.md + AGENTS.md, same-source wording)
+- Code provenance: Wiki branch vs project-own code recorded honestly; real implementation reuse = compatible verified branch + runtime-declared files + new-process explicit call + preserved scope/diagnostics.
+- Family binding by operation actually performed — consuming labels/predictions/poses ≠ executing the producing algorithm; unbound task + explicit provenance when no canonical match; gap stays explicit, no new family.
+- Checks recorded with who performed them; no invented visual-inspection signoff.
+- `record-use`/`record-method-use` are formal Wiki writes that may commit Git — invoked only when authorization explicitly includes formal writes; the unconditional "每张图 record-use" step is removed (root cause of the consumer's `5119fa3` violation).
+
+**Report/audit fixes**
+- `batch2-result.md`: `_SHA_CHUNK` corrected to 1 MiB; author-question section now only lists the real G3 material gap.
+- `verification-matrix.md`: A16 marked authorized-but-not-executed (pending actual evidence).
+- `taxonomy-sync-map.md`: measured live inventory (`.claude`/`.agents`/`.config/opencode` = `2537c5fc`; `.codex` + dev primary source `sci-figure-replica-dev-20261020/staged` + `E:/research-wiki/开发/spec` = `2abfe96d`), purposes-coverage wording, deployment steps covering primary source + all installed copies + manifests, redundant approval gate removed.
+- Doc/CLI sweep: no remaining unconditional `record-use`; SKILL frontmatter + all reference links validate.
+
+**Not done**: no backend code touched (frozen 648-passed suite stands); no formal/install/deploy writes; trial consumer project untouched. Stopped at Codex review.

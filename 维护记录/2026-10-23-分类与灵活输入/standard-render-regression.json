@@ -1,0 +1,23 @@
+{
+  "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot": {
+    "baseline_sha256": "886c1332a7c288021b56ae0b709661094d9fbe9625507423073cbd52d7498557",
+    "current_standard_sha256": "886c1332a7c288021b56ae0b709661094d9fbe9625507423073cbd52d7498557",
+    "same_bytes": true,
+    "same_size": true,
+    "mean_abs_difference": 0.0
+  },
+  "2026-10-22-scp-example__fig09-bar--bar": {
+    "baseline_sha256": "9fd7c89660883d7e0dec1848d741d4f32843be1b771777814949d659f70bbc3e",
+    "current_standard_sha256": "9fd7c89660883d7e0dec1848d741d4f32843be1b771777814949d659f70bbc3e",
+    "same_bytes": true,
+    "same_size": true,
+    "mean_abs_difference": 0.0
+  },
+  "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar": {
+    "baseline_sha256": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc",
+    "current_standard_sha256": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc",
+    "same_bytes": true,
+    "same_size": true,
+    "mean_abs_difference": 0.0
+  }
+}

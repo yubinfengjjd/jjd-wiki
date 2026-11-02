@@ -1,0 +1,8 @@
+{
+  "selection_post_seconds": 6.67,
+  "selection_preserved": "figureya:FigureYa12box=removed",
+  "new_selection_made_by_agent": false,
+  "browser_verified": ["immediate in-card saving feedback", "saved confirmation", "remove button re-enabled"],
+  "backend_tests_passed": 47,
+  "frontend_tests_and_build_passed": true
+}

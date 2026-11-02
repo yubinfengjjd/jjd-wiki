@@ -1,0 +1,54 @@
+{
+  "archived_templates": [
+    {
+      "path": "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "preview": {
+        "url": "/files/wiki/layouts/2026-10-19-regression-stability__fig03-density-panel/thumb.png",
+        "kind": "source",
+        "label": "来源参考图 · 模板尚无回放"
+      },
+      "delete_plan": {
+        "title": "density-scatter · 单panel：密度散点与边缘分布 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+        "path": "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+        "revision": "f81a21c79756415b9046393b772fe3c53f63bc0fb6dd8b4d1c82bbf53c137939",
+        "asset_files": 7,
+        "affected": [
+          {
+            "path": "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+            "title": "单panel：密度散点与边缘分布 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性"
+          }
+        ],
+        "layout_files_updated": [],
+        "gallery_preserved": true
+      }
+    },
+    {
+      "path": "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "preview": {
+        "url": "/files/wiki/layouts/2026-10-19-regression-stability__fig04-boxplot-panel/thumb.png",
+        "kind": "source",
+        "label": "来源参考图 · 模板尚无回放"
+      },
+      "delete_plan": {
+        "title": "boxplot · 单panel：箱线散点与均值 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+        "path": "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+        "revision": "e94d5c3fdba2a702913cc2eab2f85afd522e3ec1c304b29ad967d5c373e59534",
+        "asset_files": 7,
+        "affected": [
+          {
+            "path": "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+            "title": "单panel：箱线散点与均值 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性"
+          }
+        ],
+        "layout_files_updated": [],
+        "gallery_preserved": true
+      }
+    }
+  ],
+  "production_deletions": 0,
+  "frontend_tests": 5,
+  "backend_tests": 29,
+  "gallery_unchanged": true,
+  "browser_verification": "4 images loaded; delete plan dialog displayed actual 7 asset files and 1 affected source; cancelled without submitting",
+  "wiki_lint": "OK"
+}

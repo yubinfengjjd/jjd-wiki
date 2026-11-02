@@ -1,0 +1,69 @@
+{
+  "id": "2026-10-19-regression-stability__fig01-density-grid",
+  "post": {
+    "title": "EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+    "account": "Python机器学习AI",
+    "author": "Python机器学习AI",
+    "publish_date": "2026-10-19",
+    "url": "https://mp.weixin.qq.com/s/LDPZ8guXNKnSRtjZC2YbNg"
+  },
+  "figure": {
+    "index": 1,
+    "label": "六模型验证预测密度散点组图",
+    "caption": "图形复刻；估读数据与原帖标注，仅供个人研究参考，待作者目视签核。",
+    "panels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "chart_types": [
+      "density-scatter"
+    ],
+    "canvas_px": [
+      1080,
+      649
+    ],
+    "panel_map": {
+      "A": "density-scatter",
+      "B": "density-scatter",
+      "C": "density-scatter",
+      "D": "density-scatter",
+      "E": "density-scatter",
+      "F": "density-scatter"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "experimental-statistics"
+    ],
+    "secondary": [],
+    "free": [
+      "regression",
+      "cross-validation"
+    ]
+  },
+  "language": "python",
+  "data_provenance": "estimated",
+  "code_provenance": "reconstructed",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig01.png",
+    "code": "code/replica.py",
+    "data": "data/estimated_data.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "395dbb3c12505ee12fd43cdeff6b9380f0ad4987591884d965b724db5dca7a51",
+  "created_at": "2026-10-21T07:25:40.599549Z",
+  "updated_at": "2026-10-21T11:36:10.427833+00:00"
+}

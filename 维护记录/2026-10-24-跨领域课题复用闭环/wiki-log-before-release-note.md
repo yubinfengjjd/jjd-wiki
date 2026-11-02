@@ -1,0 +1,1045 @@
+# 操作日志
+
+## [2026-10-21 04:48 UTC] init
+
+## [2026-10-21 04:48 UTC] ingest 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
+
+## [2026-10-21 04:49 UTC] ingest 2026-08-17-shap-feature-mechanism__fig01-shap-a-f 适用说明
+
+## [2026-10-21 04:49 UTC] signoff 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
+
+## [2026-10-21 04:50 UTC] add interface shap-summary
+
+## [2026-10-21 04:50 UTC] add interface shap-samples
+
+## [2026-10-21 04:51 UTC] scaffold template 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-21 04:51 UTC] scaffold template 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+
+## [2026-10-21 04:51 UTC] scaffold template 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-21 04:53 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-21 04:53 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+
+## [2026-10-21 04:53 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-21 04:53 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
+
+## [2026-10-21 04:54 UTC] 处理待办：post01 拆为 3 个单图模板，回放通过，待作者确认
+
+## [2026-10-21 04:55 UTC] scaffold method xgboost-shap-regression
+
+## [2026-10-21 04:56 UTC] verify method xgboost-shap-regression
+
+## [2026-10-21 04:56 UTC] 收录方法 xgboost-shap-regression：示例跑通，待作者确认
+
+## [2026-10-21 05:06 UTC] confirm xgboost-shap-regression
+
+## [2026-10-21 05:11 UTC] ready 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-21 05:11 UTC] ready 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+
+## [2026-10-21 05:11 UTC] ready 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-21 05:11 UTC] ready 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
+
+## [2026-10-21 05:40 UTC] R1 migrate methods to notes and scenarios to tags
+
+## [2026-10-21 05:40 UTC] scaffold method shap-explanation
+
+## [2026-10-21 05:42 UTC] 收录方法 shap-explanation：通用 SHAP 解释笔记与代码模板；移除开发期的两个方法
+
+## [2026-10-21 05:49 UTC] confirm shap-explanation
+
+## [2026-10-21 06:57 UTC] scaffold method regression-resampling-evaluation
+
+## [2026-10-21 06:59 UTC] add interface regression-predictions
+
+## [2026-10-21 06:59 UTC] add interface regression-fold-metrics
+
+## [2026-10-21 07:01 UTC] 新增回归重采样评估方法草稿与预测/指标接口；保留作者确认门槛
+
+## [2026-10-21 07:01 UTC] 归档公众号原文及7段代码，补充两项回归接口定义
+
+## [2026-10-21 07:33 UTC] ingest 2026-10-19-regression-stability__fig01-density-grid
+
+## [2026-10-21 07:33 UTC] ingest 2026-10-19-regression-stability__fig02-metric-boxplots
+
+## [2026-10-21 07:34 UTC] 收录两张回归评估组图及方法关联，补充适用范围与视觉QA，待作者签核
+
+## [2026-10-21 08:25 UTC] 单panel样式优先、前置咨询计划与分析/绘图函数复用规则；保留历史内容
+
+## [2026-10-21 08:46 UTC] scaffold method paired-reference-visual-comparison
+
+## [2026-10-21 08:46 UTC] scaffold method repeated-benchmark-distribution
+
+## [2026-10-21 08:51 UTC] ingest 2026-10-19-regression-stability__fig03-density-panel
+
+## [2026-10-21 08:51 UTC] ingest 2026-10-19-regression-stability__fig04-boxplot-panel
+
+## [2026-10-21 08:53 UTC] 收录两个代表单panel、可复制绘图函数与分析迁移文字笔记；保留待作者签核
+
+## [2026-10-21 09:25 UTC] 函数化加入可变规模与自适应尺寸契约；默认单panel保持间距继续扩展
+
+## [2026-10-21 10:38 UTC] 澄清n为任意合法组数；课题agent自行编排，验例不构成固定数量要求
+
+## [2026-10-21 11:06 UTC] 修复方法配图与来源范围分栏，补有依据的方法关联及每次收录检查规则
+
+## [2026-10-21 11:34 UTC] signoff 2026-10-19-regression-stability__fig03-density-panel
+
+## [2026-10-21 11:36 UTC] signoff 2026-10-19-regression-stability__fig01-density-grid
+
+## [2026-10-21 11:36 UTC] signoff 2026-10-19-regression-stability__fig02-metric-boxplots
+
+## [2026-10-21 11:36 UTC] signoff 2026-10-19-regression-stability__fig04-boxplot-panel
+
+## [2026-10-21 11:36 UTC] confirm paired-reference-visual-comparison
+
+## [2026-10-21 11:36 UTC] confirm regression-resampling-evaluation
+
+## [2026-10-21 11:36 UTC] confirm repeated-benchmark-distribution
+
+## [2026-10-21 11:38 UTC] scaffold template 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 11:38 UTC] scaffold template 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-21 11:46 UTC] archive 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
+
+## [2026-10-21 11:46 UTC] archive 2026-10-19-regression-stability__fig01-density-grid
+
+## [2026-10-21 11:46 UTC] archive 2026-10-19-regression-stability__fig02-metric-boxplots
+
+## [2026-10-21 11:46 UTC] 仅收录单panel：归档整图并迁移有用关联
+
+## [2026-10-21 11:52 UTC] 保留中断的单panel草稿：标注待完成配置与未实现状态
+
+## [2026-10-21 11:54 UTC] archive 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 11:55 UTC] archive 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-21 12:07 UTC] 归档删除与预览规则：保留画廊、保护备注、确认后执行
+
+## [2026-10-21 12:10 UTC] delete archived 2026-10-19-regression-stability__fig03-density-panel--density-scatter; cleaned 1 references
+
+## [2026-10-21 12:11 UTC] delete archived 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot; cleaned 1 references
+
+## [2026-10-21 13:08 UTC] archive paired-reference-visual-comparison
+
+## [2026-10-21 13:08 UTC] archive repeated-benchmark-distribution
+
+## [2026-10-21 13:08 UTC] 方法家族范围、双向图关系、原生代码查看和课题适配规则；归档两篇宽泛迁移笔记
+
+## [2026-10-21 13:13 UTC] 方法家族范围、双向图关系、原生代码查看和课题适配规则；归档两篇宽泛迁移笔记
+
+## [2026-10-21 13:38 UTC] scaffold template 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 13:38 UTC] scaffold template 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-21 13:41 UTC] add interface render-scatter-rgb
+
+## [2026-10-21 13:41 UTC] add interface render-marginal-bars
+
+## [2026-10-21 13:41 UTC] add interface render-category-points
+
+## [2026-10-21 13:41 UTC] add interface render-box-summaries
+
+## [2026-10-21 13:42 UTC] verify 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 13:42 UTC] verify 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-21 13:50 UTC] verify 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 13:52 UTC] 处理两个单panel待办：绘图函数、任意n尺寸、接口和知识关联；回放通过待作者确认
+
+## [2026-10-21 13:58 UTC] 模板资产整理：代码与估读数据溯源文件分开保存，不修改原件
+
+## [2026-10-21 14:21 UTC] ready 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 14:21 UTC] ready 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-21 14:34 UTC] 作者确认两个单panel模板；修复待办按实际动作派生并同步说明
+
+## [2026-10-21 14:36 UTC] 移除方法正文残留的待模板化描述
+
+## [2026-10-21 15:01 UTC] 对齐方法家族展示、来源计数说明与Skill/Wiki入库验收
+
+## [2026-10-21 15:19 UTC] 纠正图样入口：SHAP单panel模板同时作为图样展示，保留既有来源与状态
+
+## [2026-10-21 16:04 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-21 16:05 UTC] add knowledge-link review to SHAP single-panel templates
+
+## [2026-10-21 16:05 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-21 16:06 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+
+## [2026-10-21 16:06 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-21 16:06 UTC] acceptance check 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-21 16:06 UTC] acceptance check 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-21 16:06 UTC] acceptance check shap-explanation
+
+## [2026-10-21 16:06 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-21 16:26 UTC] record existing author signoff for two legacy single-panel sources
+
+## [2026-10-21 16:42 UTC] make ready templates the primary method relations
+
+## [2026-10-21 16:42 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-21 16:44 UTC] record template-primary method relation rule
+
+## [2026-10-21 16:45 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-21 16:57 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-21 16:57 UTC] record chain completeness and read-interface rule
+
+## [2026-10-22 04:15 UTC] acceptance check 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-22 04:16 UTC] acceptance check 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-22 04:16 UTC] acceptance check 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-22 04:16 UTC] acceptance check 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-22 04:16 UTC] update rules
+
+## [2026-10-22 04:36 UTC] update rules
+
+## [2026-10-22 05:20 UTC] 补充方法收录规则：常规单次检验（t/Wilcoxon 等）不单独成方法页
+
+## [2026-10-22 05:22 UTC] scaffold method scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-22 05:22 UTC] scaffold method scrna-marker-annotation
+
+## [2026-10-22 05:22 UTC] scaffold method scrna-pathway-signature-ensemble
+
+## [2026-10-22 05:24 UTC] 编写单细胞预处理方法笔记（M1）
+
+## [2026-10-22 05:24 UTC] 编写 M2 细胞注释、M3 通路打分方法笔记
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig01-cns-umap
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig05-pathway-heatmap
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig06-pathway-violin
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig07-axis-module-counts
+
+## [2026-10-22 05:54 UTC] ingest 2026-10-22-glaucoma-scrna__fig08-axis-herb-robustness
+
+## [2026-10-22 05:55 UTC] 收录青光眼单细胞 8 个 layout 并补适用说明
+
+## [2026-10-22 05:58 UTC] archive 2026-10-22-glaucoma-scrna__fig05-pathway-heatmap
+
+## [2026-10-22 05:58 UTC] archive 2026-10-22-glaucoma-scrna__fig07-axis-module-counts
+
+## [2026-10-22 05:59 UTC] archive 2026-10-22-glaucoma-scrna__fig08-axis-herb-robustness
+
+## [2026-10-22 05:59 UTC] delete archived repeated-benchmark-distribution; cleaned 1 references
+
+## [2026-10-22 05:59 UTC] signoff 2026-10-22-glaucoma-scrna__fig01-cns-umap
+
+## [2026-10-22 06:00 UTC] signoff 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap
+
+## [2026-10-22 06:00 UTC] signoff 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble
+
+## [2026-10-22 06:00 UTC] signoff 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow
+
+## [2026-10-22 06:00 UTC] signoff 2026-10-22-glaucoma-scrna__fig06-pathway-violin
+
+## [2026-10-22 06:01 UTC] confirm scrna-marker-annotation
+
+## [2026-10-22 06:01 UTC] confirm scrna-pathway-signature-ensemble
+
+## [2026-10-22 06:01 UTC] confirm scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-22 06:02 UTC] scaffold template 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 06:04 UTC] add interface render-umap-groups
+
+## [2026-10-22 06:04 UTC] delete archived 2026-10-22-glaucoma-scrna__fig05-pathway-heatmap; cleaned 0 references
+
+## [2026-10-22 06:05 UTC] delete archived 2026-10-22-glaucoma-scrna__fig07-axis-module-counts; cleaned 0 references
+
+## [2026-10-22 06:05 UTC] delete archived 2026-10-22-glaucoma-scrna__fig08-axis-herb-robustness; cleaned 0 references
+
+## [2026-10-22 06:05 UTC] delete archived paired-reference-visual-comparison; cleaned 1 references
+
+## [2026-10-22 06:06 UTC] verify 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 06:07 UTC] verify 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 06:07 UTC] add interface render-umap-feature-long
+
+## [2026-10-22 06:07 UTC] add interface render-dotplot-long
+
+## [2026-10-22 06:07 UTC] add interface render-cell-proportions
+
+## [2026-10-22 06:07 UTC] add interface render-grouped-values
+
+## [2026-10-22 06:08 UTC] add interface render-group-summaries
+
+## [2026-10-22 06:08 UTC] scaffold template 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 06:08 UTC] scaffold template 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 06:08 UTC] scaffold template 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 06:09 UTC] verify 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 06:10 UTC] verify 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 06:11 UTC] scaffold template 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 06:12 UTC] verify 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 06:13 UTC] verify 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 06:15 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-22 06:18 UTC] 补方法-模板关系并完成 5 个图模板回放
+
+## [2026-10-22 06:18 UTC] acceptance check scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-22 06:18 UTC] acceptance check scrna-marker-annotation
+
+## [2026-10-22 06:18 UTC] acceptance check scrna-pathway-signature-ensemble
+
+## [2026-10-22 06:22 UTC] ready 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 06:22 UTC] ready 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 06:22 UTC] ready 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 06:23 UTC] ready 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 06:23 UTC] ready 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 06:37 UTC] 标签改为受控大类，具体词移入 keywords
+
+## [2026-10-22 06:38 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-22 06:38 UTC] acceptance check shap-explanation
+
+## [2026-10-22 06:38 UTC] acceptance check scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-22 06:38 UTC] acceptance check scrna-marker-annotation
+
+## [2026-10-22 06:38 UTC] acceptance check scrna-pathway-signature-ensemble
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 06:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 06:40 UTC] 更新标签规则：受控大类 tags + 具体关键词 keywords
+
+## [2026-10-22 06:55 UTC] scaffold method scp-local-source
+
+## [2026-10-22 06:58 UTC] scaffold method scp-cellqc-doublet
+
+## [2026-10-22 06:58 UTC] scaffold method scp-standard-workflow
+
+## [2026-10-22 06:58 UTC] scaffold method scp-integration
+
+## [2026-10-22 06:58 UTC] scaffold method scp-de-enrichment-dynamic
+
+## [2026-10-22 06:58 UTC] scaffold method scp-annotation-projection
+
+## [2026-10-22 06:58 UTC] scaffold method scp-trajectory-velocity
+
+## [2026-10-22 06:58 UTC] scaffold method scp-visualization-interface
+
+## [2026-10-22 07:02 UTC] 录入 SCP 源码本地化、6 个方法族与可视化接口页
+
+## [2026-10-22 07:03 UTC] 补充 SCP 本地化与适配层验证记录
+
+## [2026-10-22 07:03 UTC] acceptance check scp-local-source
+
+## [2026-10-22 07:03 UTC] acceptance check scp-cellqc-doublet
+
+## [2026-10-22 07:03 UTC] acceptance check scp-standard-workflow
+
+## [2026-10-22 07:03 UTC] acceptance check scp-integration
+
+## [2026-10-22 07:03 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 07:03 UTC] acceptance check scp-annotation-projection
+
+## [2026-10-22 07:03 UTC] acceptance check scp-trajectory-velocity
+
+## [2026-10-22 07:03 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 07:06 UTC] 补充 SCP 可视化模板 group_levels 说明
+
+## [2026-10-22 07:06 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 07:26 UTC] ready scp-local-source
+
+## [2026-10-22 07:26 UTC] ready scp-cellqc-doublet
+
+## [2026-10-22 07:27 UTC] ready scp-standard-workflow
+
+## [2026-10-22 07:27 UTC] ready scp-integration
+
+## [2026-10-22 07:27 UTC] ready scp-de-enrichment-dynamic
+
+## [2026-10-22 07:27 UTC] ready scp-annotation-projection
+
+## [2026-10-22 07:27 UTC] ready scp-trajectory-velocity
+
+## [2026-10-22 07:27 UTC] ready scp-visualization-interface
+
+## [2026-10-22 07:59 UTC] ingest 2026-10-22-scp-example__fig01-volcano
+
+## [2026-10-22 08:00 UTC] 收录 SCP 示例 Volcano 单 panel 来源
+
+## [2026-10-22 08:01 UTC] acceptance check scp-local-source
+
+## [2026-10-22 08:09 UTC] signoff 2026-10-22-scp-example__fig01-volcano
+
+## [2026-10-22 08:10 UTC] scaffold template 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:10 UTC] add interface render-de-results
+
+## [2026-10-22 08:11 UTC] verify 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:12 UTC] verify 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:12 UTC] ready 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:13 UTC] 关联 SCP Volcano 模板
+
+## [2026-10-22 08:13 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 08:22 UTC] ingest 2026-10-22-scp-example__fig02-ring
+
+## [2026-10-22 08:28 UTC] save scp ring layout
+
+## [2026-10-22 08:29 UTC] acceptance check scp-local-source
+
+## [2026-10-22 08:30 UTC] signoff 2026-10-22-scp-example__fig02-ring
+
+## [2026-10-22 08:31 UTC] scaffold template 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 08:47 UTC] verify 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 08:50 UTC] ingest 2026-10-22-scp-example__fig02-ring
+
+## [2026-10-22 08:52 UTC] signoff 2026-10-22-scp-example__fig02-ring
+
+## [2026-10-22 08:53 UTC] verify 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:54 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 08:54 UTC] ready 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 08:55 UTC] verify 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:57 UTC] acceptance check 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 08:57 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 09:33 UTC] ingest 2026-10-22-scp-example__fig01-volcano
+
+## [2026-10-22 09:33 UTC] ingest 2026-10-22-scp-example__fig02-ring
+
+## [2026-10-22 09:34 UTC] signoff 2026-10-22-scp-example__fig01-volcano
+
+## [2026-10-22 09:34 UTC] signoff 2026-10-22-scp-example__fig02-ring
+
+## [2026-10-22 09:38 UTC] verify 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 09:38 UTC] verify 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 09:43 UTC] verify 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 09:43 UTC] verify 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 09:44 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 09:44 UTC] acceptance check 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 09:45 UTC] acceptance check scp-local-source
+
+## [2026-10-22 09:46 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 09:47 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 09:47 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 09:48 UTC] acceptance check 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 11:40 UTC] ingest 2026-10-22-scp-example__fig03-pie
+
+## [2026-10-22 11:40 UTC] ingest 2026-10-22-scp-example__fig04-rose
+
+## [2026-10-22 11:40 UTC] ingest 2026-10-22-scp-example__fig05-trend
+
+## [2026-10-22 11:40 UTC] ingest 2026-10-22-scp-example__fig06-area
+
+## [2026-10-22 11:40 UTC] ingest 2026-10-22-scp-example__fig07-dot
+
+## [2026-10-22 11:41 UTC] scaffold template 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 11:41 UTC] scaffold template 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 11:41 UTC] scaffold template 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 11:41 UTC] scaffold template 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 11:41 UTC] scaffold template 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 11:43 UTC] add interface render-cell-metadata
+
+## [2026-10-22 11:45 UTC] verify 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 11:45 UTC] verify 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 11:45 UTC] verify 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 11:45 UTC] verify 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 11:45 UTC] verify 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 11:53 UTC] verify 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 11:53 UTC] verify 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 11:54 UTC] verify 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 11:54 UTC] verify 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 11:54 UTC] verify 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 11:54 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 11:55 UTC] ready 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 11:55 UTC] ready 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 11:56 UTC] ready 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 11:56 UTC] ready 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 11:56 UTC] ready 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 11:56 UTC] acceptance check 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 11:56 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 11:57 UTC] acceptance check 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 11:57 UTC] acceptance check 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 11:57 UTC] acceptance check 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 12:22 UTC] compile interface meanings, chart-type judgments and source preview
+
+## [2026-10-22 12:23 UTC] verify 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 12:23 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 12:23 UTC] acceptance check scrna-marker-annotation
+
+## [2026-10-22 12:24 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 12:24 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 12:24 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 12:24 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 12:24 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 12:25 UTC] acceptance check 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 12:25 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 12:25 UTC] acceptance check 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 12:25 UTC] acceptance check 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 12:25 UTC] acceptance check 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 12:30 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-22 12:31 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-22 12:33 UTC] note pathway summary is not a template interface
+
+## [2026-10-22 12:33 UTC] acceptance check scrna-pathway-signature-ensemble
+
+## [2026-10-22 13:02 UTC] align stored pages with the 2026-10-22 compile format
+
+## [2026-10-22 13:03 UTC] acceptance check scp-local-source
+
+## [2026-10-22 13:03 UTC] acceptance check scp-standard-workflow
+
+## [2026-10-22 13:03 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 13:03 UTC] acceptance check scp-cellqc-doublet
+
+## [2026-10-22 13:03 UTC] acceptance check scp-integration
+
+## [2026-10-22 13:04 UTC] acceptance check scp-annotation-projection
+
+## [2026-10-22 13:04 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 13:04 UTC] acceptance check scp-trajectory-velocity
+
+## [2026-10-22 13:33 UTC] verify 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 13:34 UTC] verify 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 13:34 UTC] verify 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 13:34 UTC] verify 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 13:34 UTC] verify 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 13:37 UTC] verify 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 13:38 UTC] verify 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 13:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 13:38 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 13:39 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 13:39 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 13:39 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 13:42 UTC] dedupe method original code against gallery raw archive
+
+## [2026-10-22 13:42 UTC] acceptance check shap-explanation
+
+## [2026-10-22 13:42 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-22 13:43 UTC] retitle pages: content-first Chinese names, ids unchanged
+
+## [2026-10-22 13:44 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+
+## [2026-10-22 13:44 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+
+## [2026-10-22 13:44 UTC] acceptance check 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+
+## [2026-10-22 13:44 UTC] acceptance check 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+
+## [2026-10-22 13:44 UTC] acceptance check 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+
+## [2026-10-22 13:45 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+
+## [2026-10-22 13:45 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-10-22 13:45 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-22 13:45 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+
+## [2026-10-22 13:45 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+
+## [2026-10-22 13:46 UTC] acceptance check 2026-10-22-scp-example__fig01-volcano--volcano
+
+## [2026-10-22 13:46 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-10-22 13:46 UTC] acceptance check 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-22 13:46 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-22 13:46 UTC] acceptance check 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-22 13:47 UTC] acceptance check 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-22 13:47 UTC] acceptance check 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-22 13:47 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-22 13:47 UTC] acceptance check scp-annotation-projection
+
+## [2026-10-22 13:47 UTC] acceptance check scp-cellqc-doublet
+
+## [2026-10-22 13:48 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 13:48 UTC] acceptance check scp-integration
+
+## [2026-10-22 13:48 UTC] acceptance check scp-local-source
+
+## [2026-10-22 13:48 UTC] acceptance check scp-standard-workflow
+
+## [2026-10-22 13:48 UTC] acceptance check scp-trajectory-velocity
+
+## [2026-10-22 13:48 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 13:49 UTC] acceptance check scrna-marker-annotation
+
+## [2026-10-22 13:49 UTC] acceptance check scrna-pathway-signature-ensemble
+
+## [2026-10-22 13:49 UTC] acceptance check scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-22 13:49 UTC] acceptance check shap-explanation
+
+## [2026-10-22 13:58 UTC] add interface render-group-heatmap
+
+## [2026-10-22 13:59 UTC] ingest 2026-10-22-scp-example__fig08-group-heatmap
+
+## [2026-10-22 14:00 UTC] scaffold template 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:02 UTC] verify 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:03 UTC] acceptance check 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:03 UTC] ready 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:03 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 14:04 UTC] add GroupHeatmap template, interface and method relation
+
+## [2026-10-22 14:08 UTC] verify 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:09 UTC] acceptance check 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:18 UTC] acceptance check 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+
+## [2026-10-22 14:30 UTC] add interface render-cell-linkage
+
+## [2026-10-22 14:30 UTC] add interface render-cell-membership
+
+## [2026-10-22 14:31 UTC] add linkage and membership interfaces
+
+## [2026-10-22 14:33 UTC] add sankey chord venn upset chart types
+
+## [2026-10-22 14:45 UTC] ingest 2026-10-22-scp-example__fig09-bar
+
+## [2026-10-22 14:45 UTC] scaffold template 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-22 14:46 UTC] verify 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-22 14:48 UTC] ready 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-22 14:48 UTC] acceptance check 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-22 14:49 UTC] ingest 2026-10-22-scp-example__fig11-chord
+
+## [2026-10-22 14:50 UTC] scaffold template 2026-10-22-scp-example__fig11-chord--chord
+
+## [2026-10-22 14:50 UTC] verify 2026-10-22-scp-example__fig11-chord--chord
+
+## [2026-10-22 14:51 UTC] ready 2026-10-22-scp-example__fig11-chord--chord
+
+## [2026-10-22 14:52 UTC] acceptance check 2026-10-22-scp-example__fig11-chord--chord
+
+## [2026-10-22 14:52 UTC] ingest 2026-10-22-scp-example__fig13-upset
+
+## [2026-10-22 14:53 UTC] scaffold template 2026-10-22-scp-example__fig13-upset--upset
+
+## [2026-10-22 14:53 UTC] verify 2026-10-22-scp-example__fig13-upset--upset
+
+## [2026-10-22 14:54 UTC] ready 2026-10-22-scp-example__fig13-upset--upset
+
+## [2026-10-22 14:54 UTC] acceptance check 2026-10-22-scp-example__fig13-upset--upset
+
+## [2026-10-22 14:54 UTC] ingest 2026-10-22-scp-example__fig12-venn
+
+## [2026-10-22 14:55 UTC] scaffold template 2026-10-22-scp-example__fig12-venn--venn
+
+## [2026-10-22 14:56 UTC] verify 2026-10-22-scp-example__fig12-venn--venn
+
+## [2026-10-22 14:57 UTC] ready 2026-10-22-scp-example__fig12-venn--venn
+
+## [2026-10-22 14:57 UTC] acceptance check 2026-10-22-scp-example__fig12-venn--venn
+
+## [2026-10-22 14:58 UTC] ingest 2026-10-22-scp-example__fig10-sankey
+
+## [2026-10-22 14:58 UTC] scaffold template 2026-10-22-scp-example__fig10-sankey--sankey
+
+## [2026-10-22 14:59 UTC] verify 2026-10-22-scp-example__fig10-sankey--sankey
+
+## [2026-10-22 15:00 UTC] ready 2026-10-22-scp-example__fig10-sankey--sankey
+
+## [2026-10-22 15:00 UTC] acceptance check 2026-10-22-scp-example__fig10-sankey--sankey
+
+## [2026-10-22 15:02 UTC] add S2 CellStatPlot templates bar sankey chord venn upset
+
+## [2026-10-22 15:03 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 15:12 UTC] ingest 2026-10-22-scp-example__fig09-bar
+
+## [2026-10-22 15:13 UTC] acceptance check 2026-10-22-scp-example__fig09-bar
+
+## [2026-10-22 15:14 UTC] correct bar reference panel to stack and re-record
+
+## [2026-10-22 15:14 UTC] acceptance check 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-22 15:16 UTC] add interface render-feature-heatmap
+
+## [2026-10-22 15:16 UTC] add interface render-correlation-heatmap
+
+## [2026-10-22 15:17 UTC] add interface render-cell-feature-values
+
+## [2026-10-22 15:18 UTC] add S3 interfaces
+
+## [2026-10-22 15:21 UTC] add ridge chart type
+
+## [2026-10-22 15:22 UTC] add order columns to cell feature values interface
+
+## [2026-10-22 15:25 UTC] ingest 2026-10-22-scp-example__fig16-cell-density
+
+## [2026-10-22 15:26 UTC] scaffold template 2026-10-22-scp-example__fig16-cell-density--ridge
+
+## [2026-10-22 15:26 UTC] verify 2026-10-22-scp-example__fig16-cell-density--ridge
+
+## [2026-10-22 15:27 UTC] ready 2026-10-22-scp-example__fig16-cell-density--ridge
+
+## [2026-10-22 15:28 UTC] acceptance check 2026-10-22-scp-example__fig16-cell-density--ridge
+
+## [2026-10-22 15:30 UTC] ingest 2026-10-22-scp-example__fig14-feature-heatmap
+
+## [2026-10-22 15:30 UTC] scaffold template 2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+
+## [2026-10-22 15:31 UTC] verify 2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+
+## [2026-10-22 15:31 UTC] ready 2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+
+## [2026-10-22 15:32 UTC] acceptance check 2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+
+## [2026-10-22 15:34 UTC] ingest 2026-10-22-scp-example__fig15-cell-cor-heatmap
+
+## [2026-10-22 15:35 UTC] scaffold template 2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap
+
+## [2026-10-22 15:35 UTC] verify 2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap
+
+## [2026-10-22 15:37 UTC] ready 2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap
+
+## [2026-10-22 15:37 UTC] acceptance check 2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap
+
+## [2026-10-22 15:40 UTC] add S3 templates and relations
+
+## [2026-10-22 15:40 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 15:47 UTC] note S3 direct boundary
+
+## [2026-10-22 15:48 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 15:51 UTC] final S3 consistency
+
+## [2026-10-22 16:19 UTC] scaffold method cell-quality-control
+
+## [2026-10-22 16:19 UTC] scaffold method doublet-detection
+
+## [2026-10-22 16:19 UTC] scaffold method batch-integration
+
+## [2026-10-22 16:19 UTC] scaffold method differential-expression
+
+## [2026-10-22 16:20 UTC] scaffold method gene-set-enrichment
+
+## [2026-10-22 16:20 UTC] scaffold method gene-set-scoring
+
+## [2026-10-22 16:21 UTC] scaffold method trajectory-inference
+
+## [2026-10-22 16:21 UTC] scaffold method rna-velocity
+
+## [2026-10-22 16:21 UTC] scaffold method cell-type-annotation
+
+## [2026-10-22 16:22 UTC] scaffold method reference-mapping
+
+## [2026-10-22 16:22 UTC] scaffold method dimensionality-reduction
+
+## [2026-10-22 16:22 UTC] scaffold method cell-clustering
+
+## [2026-10-22 16:23 UTC] scaffold method dynamic-feature-analysis
+
+## [2026-10-22 17:03 UTC] method families: classify analysis/workflow/technical and migrate relations
+
+## [2026-10-22 17:04 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-22 17:04 UTC] acceptance check scp-annotation-projection
+
+## [2026-10-22 17:05 UTC] acceptance check scp-cellqc-doublet
+
+## [2026-10-22 17:06 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 17:06 UTC] acceptance check scp-integration
+
+## [2026-10-22 17:07 UTC] acceptance check scp-local-source
+
+## [2026-10-22 17:07 UTC] acceptance check scp-standard-workflow
+
+## [2026-10-22 17:08 UTC] acceptance check scp-trajectory-velocity
+
+## [2026-10-22 17:10 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 17:11 UTC] acceptance check scrna-marker-annotation
+
+## [2026-10-22 17:12 UTC] acceptance check scrna-pathway-signature-ensemble
+
+## [2026-10-22 17:13 UTC] acceptance check scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-22 17:14 UTC] acceptance check shap-explanation
+
+## [2026-10-22 17:25 UTC] rules: LLM Wiki mode, method families, implementation receipts
+
+## [2026-10-22 17:27 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 17:30 UTC] method family: narrow annotation summary
+
+## [2026-10-22 17:34 UTC] verification: SCP table adapters 25 checks
+
+## [2026-10-22 17:35 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 17:44 UTC] verification: add cross-directory reruns to passed receipts
+
+## [2026-10-22 17:47 UTC] scp-local: clarify loading verification is not algorithm validation
+
+## [2026-10-22 18:14 UTC] round1: cross-source strategy tables and migration links
+
+## [2026-10-22 18:15 UTC] acceptance check shap-explanation
+
+## [2026-10-22 18:16 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-22 18:18 UTC] round1: eight-step ingest, source-panel rules, code branch status
+
+## [2026-10-22 18:50 UTC] round2: label 2026-10-22 environment history and current family evidence
+
+## [2026-10-22 18:51 UTC] acceptance check scp-annotation-projection
+
+## [2026-10-22 18:52 UTC] acceptance check scp-cellqc-doublet
+
+## [2026-10-22 18:53 UTC] acceptance check scp-de-enrichment-dynamic
+
+## [2026-10-22 18:54 UTC] acceptance check scp-integration
+
+## [2026-10-22 18:55 UTC] acceptance check scp-local-source
+
+## [2026-10-22 18:56 UTC] acceptance check scp-standard-workflow
+
+## [2026-10-22 18:58 UTC] acceptance check scp-trajectory-velocity
+
+## [2026-10-22 18:59 UTC] acceptance check scp-visualization-interface
+
+## [2026-10-22 19:00 UTC] acceptance check scrna-marker-annotation
+
+## [2026-10-22 19:01 UTC] acceptance check scrna-pathway-signature-ensemble
+
+## [2026-10-22 19:03 UTC] acceptance check scrna-preprocess-doublet-qc-harmony
+
+## [2026-10-23 03:42 UTC] acceptance check shap-explanation
+
+## [2026-10-23 03:42 UTC] acceptance check regression-resampling-evaluation
+
+## [2026-10-23 03:48 UTC] T2 optional columns and template data requirements
+
+## [2026-10-23 03:48 UTC] verify 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-23 03:49 UTC] verify 2026-10-22-scp-example__fig03-pie--pie
+
+## [2026-10-23 03:50 UTC] verify 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-10-23 03:51 UTC] verify 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-10-23 03:51 UTC] verify 2026-10-22-scp-example__fig06-area--area
+
+## [2026-10-23 03:52 UTC] verify 2026-10-22-scp-example__fig07-dot--dot
+
+## [2026-10-23 03:53 UTC] verify 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-23 03:54 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+
+## [2026-10-23 03:54 UTC] acceptance check 2026-10-22-scp-example__fig09-bar--bar
+
+## [2026-10-23 04:00 UTC] facts: analysis purposes
+
+## [2026-10-23 04:15 UTC] rules: taxonomy and flexible input
+
+## [2026-10-23 04:55 UTC] rules: review1 binding safety
+
+## [2026-10-23 04:59 UTC] rules: pivot value identity wording
+
+## [2026-10-23 05:53 UTC] ready batch-integration
+
+## [2026-10-23 05:54 UTC] ready cell-clustering
+
+## [2026-10-23 05:55 UTC] ready cell-quality-control
+
+## [2026-10-23 05:55 UTC] ready cell-type-annotation
+
+## [2026-10-23 05:56 UTC] ready differential-expression
+
+## [2026-10-23 05:57 UTC] ready dimensionality-reduction
+
+## [2026-10-23 05:57 UTC] ready doublet-detection
+
+## [2026-10-23 05:58 UTC] ready dynamic-feature-analysis
+
+## [2026-10-23 05:58 UTC] ready gene-set-enrichment
+
+## [2026-10-23 05:59 UTC] ready gene-set-scoring
+
+## [2026-10-23 06:00 UTC] ready reference-mapping
+
+## [2026-10-23 06:00 UTC] ready rna-velocity
+
+## [2026-10-23 06:01 UTC] ready trajectory-inference
+
+## [2026-10-23 06:04 UTC] acceptance check dynamic-feature-analysis
+
+## [2026-10-23 06:05 UTC] acceptance check trajectory-inference
+
+## [2026-10-23 09:04 UTC] minimal runtime closure: standalone modules, runtime manifests and portability evidence
+
+## [2026-10-23 09:20 UTC] standalone modules: fail-only install guards and options restoration
+
+## [2026-10-23 09:26 UTC] portability receipts: record input-unchanged check
+
+## [2026-10-23 10:26 UTC] acceptance check doublet-detection
+
+## [2026-10-23 10:27 UTC] acceptance check gene-set-enrichment
+
+## [2026-10-23 10:27 UTC] acceptance check reference-mapping
+
+## [2026-10-23 10:28 UTC] acceptance check trajectory-inference
+
+## [2026-10-23 10:33 UTC] acceptance check doublet-detection
+
+## [2026-10-23 16:05 UTC] acceptance check rna-velocity
+
+## [2026-10-23 16:05 UTC] acceptance check trajectory-inference
+
+## [2026-10-23 16:10 UTC] review round 2 receipts: executed file hashes, template commands, python facts
+
+## [2026-10-23 16:17 UTC] acceptance check rna-velocity
+
+## [2026-10-25 05:19 UTC] use 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow in gse251716-glaucoma-scrna
+
+## [2026-10-25 05:28 UTC] 撤回隔离验收误登记
+
+验收会话误执行的使用登记（5119fa326da1）已撤回，正式方法/模板关联与项目页恢复。课题隔离目录中的图与运行材料继续保留，仅作软件实验；不构成方法调用验证或作者签核。本日志保留原事件并追加纠正说明，Git 留存针对性撤回记录。
+
+## [2026-10-25 06:50 UTC] acceptance check cell-type-annotation

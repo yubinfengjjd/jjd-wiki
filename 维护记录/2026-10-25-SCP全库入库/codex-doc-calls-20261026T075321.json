@@ -1,0 +1,58 @@
+{
+  "scope": "static named-argument review; ... may explicitly forward valid backend args, which requires actual evidence, not blanket rejection",
+  "issues": [
+    {
+      "function": "FindExpressedMarkers",
+      "example": "FindExpressedMarkers(srt, group_by = \"CellType\")",
+      "unknown_named_args": [
+        "group_by"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "base",
+        "cells.1",
+        "cells.2",
+        "fc.name",
+        "features",
+        "ident.1",
+        "ident.2",
+        "latent.vars",
+        "logfc.threshold",
+        "max.cells.per.ident",
+        "mean.fxn",
+        "min.cells.feature",
+        "min.cells.group",
+        "min.diff.pct",
+        "min.expression",
+        "min.pct",
+        "norm.method",
+        "object",
+        "only.pos",
+        "pseudocount.use",
+        "slot",
+        "test.use",
+        "verbose"
+      ]
+    },
+    {
+      "function": "ZINBWaVE_integrate",
+      "example": "ZINBWaVE_integrate(srt_merge, batch = \"orig.ident\")",
+      "unknown_named_args": [
+        "batch"
+      ],
+      "has_dots": false,
+      "source_formals_union": []
+    },
+    {
+      "function": "scanorama_integrate",
+      "example": "scanorama_integrate(srt_merge, batch = \"orig.ident\")  # 需 Python scanorama",
+      "unknown_named_args": [
+        "batch"
+      ],
+      "has_dots": false,
+      "source_formals_union": []
+    }
+  ]
+}

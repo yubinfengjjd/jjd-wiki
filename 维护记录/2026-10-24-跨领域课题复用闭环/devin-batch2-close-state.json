@@ -1,0 +1,60 @@
+{
+  "label": "devin-batch2-close",
+  "pid": 11588,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "returned",
+  "tool_events": 97,
+  "message_chars": 3269,
+  "updated_at": "2026-10-25T05:01:56Z",
+  "load_session_supported": true,
+  "last_tool": "Edited E:/research-wiki-env/work/wiki-cross-domain-20261024/development/staged/research-wiki/references/project-reuse.md",
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    21296,
+    20664,
+    21676,
+    21404,
+    21780,
+    22224,
+    22316,
+    22308,
+    8660,
+    22100,
+    7476,
+    2584,
+    9360,
+    4292,
+    6060,
+    11504,
+    10012,
+    19416,
+    22600,
+    2088,
+    20464,
+    22428
+  ],
+  "stop_reason": "end_turn"
+}

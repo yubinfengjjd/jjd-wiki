@@ -1,0 +1,7 @@
+plot_type: pie
+stat_type: percent
+position: stack
+label: FALSE
+size_in: 8x6
+dpi: 150
+png_md5: 951eaff7eee67a6257b33461a16e3269

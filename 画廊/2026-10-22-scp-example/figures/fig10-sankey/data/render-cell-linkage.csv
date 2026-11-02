@@ -1,0 +1,2001 @@
+"cell","dimension","category","dimension_order"
+"CAGCCGAAGCGATATA","CellType","Ductal",1
+"AGTGTCATCGCCGTGA","CellType","Pre-endocrine",1
+"GATGAAAAGTTGTAGA","CellType","Ngn3 low EP",1
+"CACAGTACATCCGTGG","CellType","Endocrine",1
+"CGGAGCTCATTGGGCC","CellType","Ductal",1
+"AGAGCTTGTGTGACCC","CellType","Ductal",1
+"GCTCTGTAGCGTGAGT","CellType","Ngn3 high EP",1
+"ACCGTAACAAGGTTCT","CellType","Endocrine",1
+"CCACTACAGGTGGGTT","CellType","Endocrine",1
+"TGCGTGGGTCCCTTGT","CellType","Pre-endocrine",1
+"AGGGAGTGTCTTCTCG","CellType","Pre-endocrine",1
+"CCGTGGACACGAAGCA","CellType","Ngn3 high EP",1
+"GAACATCAGCAATATG","CellType","Ngn3 high EP",1
+"TTCTACACAGTCGATT","CellType","Endocrine",1
+"ACGGCCACACGTGAGA","CellType","Ductal",1
+"CTCGTACAGAGGTTAT","CellType","Ngn3 low EP",1
+"CGTCTACAGATGCGAC","CellType","Endocrine",1
+"CTCACACGTCACACGC","CellType","Ngn3 high EP",1
+"AAAGCAACACGGTAAG","CellType","Ductal",1
+"CATCGGGCACGTTGGC","CellType","Endocrine",1
+"ATCATCTGTGTTTGTG","CellType","Endocrine",1
+"CAAGGCCCAAGAAAGG","CellType","Endocrine",1
+"AGATCTGGTTCGGCAC","CellType","Endocrine",1
+"CTCTGGTCAAGACACG","CellType","Endocrine",1
+"TACAGTGTCCCTAACC","CellType","Pre-endocrine",1
+"GGACAGATCAGCATGT","CellType","Ngn3 high EP",1
+"CACTCCACATATGGTC","CellType","Ductal",1
+"GTTCATTGTTCCAACA","CellType","Endocrine",1
+"TAAGTGCCAATAGCAA","CellType","Endocrine",1
+"TACTCGCTCTTCGGTC","CellType","Endocrine",1
+"GCTGCTTTCCTCGCAT","CellType","Ngn3 low EP",1
+"GCTGGGTGTCTAGAGG","CellType","Ngn3 high EP",1
+"AGCTCTCAGCGTGAGT","CellType","Pre-endocrine",1
+"CGAGCACTCTAACTCT","CellType","Pre-endocrine",1
+"GATCGTAAGTGCAAGC","CellType","Endocrine",1
+"TGTCCCAGTCTCGTTC","CellType","Endocrine",1
+"CTTGGCTCAGCCACCA","CellType","Ngn3 high EP",1
+"GGGTCTGGTAAACCTC","CellType","Ngn3 low EP",1
+"CGGACTGTCTTGAGAC","CellType","Endocrine",1
+"GGTGCGTTCTGGTATG","CellType","Endocrine",1
+"TACCTTATCCGATATG","CellType","Endocrine",1
+"ACGGGTCTCTATCGCC","CellType","Ductal",1
+"GTACGTACATCGATGT","CellType","Ngn3 high EP",1
+"TCGTAGATCTTTACGT","CellType","Pre-endocrine",1
+"AAAGTAGAGAGTGAGA","CellType","Endocrine",1
+"AGCGTATTCTGCTGTC","CellType","Pre-endocrine",1
+"GGACAAGTCATAACCG","CellType","Pre-endocrine",1
+"ACATCAGTCCTTGGTC","CellType","Ngn3 high EP",1
+"CCAGCGACAGGCTGAA","CellType","Endocrine",1
+"GGACAGAAGTGGAGAA","CellType","Ngn3 low EP",1
+"GACTACAAGCGTGTCC","CellType","Pre-endocrine",1
+"GGCAATTGTAGAGCTG","CellType","Endocrine",1
+"GTTCTCGCAAGTCTAC","CellType","Endocrine",1
+"CGAATGTTCTTCATGT","CellType","Endocrine",1
+"CCGTGGACATTCCTGC","CellType","Endocrine",1
+"CTAATGGAGCCGGTAA","CellType","Ngn3 low EP",1
+"AGCGGTCGTCGAATCT","CellType","Ngn3 high EP",1
+"GTATTCTTCACTTACT","CellType","Pre-endocrine",1
+"CAGTCCTAGGTGGGTT","CellType","Endocrine",1
+"CGACTTCCACAACGTT","CellType","Endocrine",1
+"AAACGGGTCCGCGCAA","CellType","Pre-endocrine",1
+"CTAGTGACATTGAGCT","CellType","Ngn3 high EP",1
+"CTCCTAGAGAGTGACC","CellType","Pre-endocrine",1
+"GCAGTTATCTTGAGAC","CellType","Ductal",1
+"CGAACATCAAGCGAGT","CellType","Ngn3 low EP",1
+"GGGAGATAGCGAAGGG","CellType","Endocrine",1
+"CATCGGGAGGCCCTTG","CellType","Endocrine",1
+"TGGACGCAGCTGCAAG","CellType","Endocrine",1
+"CAGAATCCACGCATCG","CellType","Ductal",1
+"CTCGGAGGTTGGACCC","CellType","Ngn3 high EP",1
+"CGGACACTCTATCCTA","CellType","Endocrine",1
+"CGTGTAATCATTATCC","CellType","Ngn3 high EP",1
+"CGTGTAAGTTAAGATG","CellType","Endocrine",1
+"ATTTCTGTCCCTGACT","CellType","Endocrine",1
+"AGAGCGAGTTGGACCC","CellType","Ductal",1
+"CAGATCACAACCGCCA","CellType","Ngn3 high EP",1
+"CGGCTAGCATTCCTCG","CellType","Endocrine",1
+"CCACGGACAGATGAGC","CellType","Ngn3 low EP",1
+"TGGCGCAAGAAGATTC","CellType","Ductal",1
+"CATGACACAAAGTCAA","CellType","Endocrine",1
+"AACGTTGTCAGTTAGC","CellType","Pre-endocrine",1
+"CTGGTCTAGGTGATTA","CellType","Endocrine",1
+"TCAGGATTCCAGTAGT","CellType","Endocrine",1
+"CATTATCGTCATATCG","CellType","Pre-endocrine",1
+"GCGCAACAGTGTACCT","CellType","Pre-endocrine",1
+"GTGCATACAATAGCAA","CellType","Ductal",1
+"TTTACTGGTTCGTTGA","CellType","Pre-endocrine",1
+"GTAGTCAGTCCGACGT","CellType","Ngn3 high EP",1
+"CCTACACGTTCTCATT","CellType","Endocrine",1
+"AGCTCTCTCAACACGT","CellType","Ductal",1
+"CTAACTTGTAGGAGTC","CellType","Endocrine",1
+"ACGAGCCGTGACTACT","CellType","Ductal",1
+"GTAGGCCGTTACCAGT","CellType","Endocrine",1
+"TCTCATATCAGAGCTT","CellType","Endocrine",1
+"GCTGGGTGTCATACTG","CellType","Endocrine",1
+"GGGAATGTCGACCAGC","CellType","Ngn3 high EP",1
+"TAAGTGCTCCAAATGC","CellType","Endocrine",1
+"TAAGTGCAGGGTTTCT","CellType","Ductal",1
+"CGGACTGAGGTAGCTG","CellType","Ductal",1
+"CAACCTCTCTCTGTCG","CellType","Endocrine",1
+"CTGAAACGTTCCCTTG","CellType","Endocrine",1
+"GTAGTCAGTACTCAAC","CellType","Pre-endocrine",1
+"AGGCCACCACCTATCC","CellType","Ductal",1
+"CAGAGAGGTACCGTTA","CellType","Pre-endocrine",1
+"TTCTACAAGATCGATA","CellType","Ngn3 low EP",1
+"TCACAAGCACCGAAAG","CellType","Ngn3 high EP",1
+"TCGGGACGTCATCGGC","CellType","Ngn3 high EP",1
+"ACGCCAGAGGAACTGC","CellType","Ngn3 high EP",1
+"CATATGGCATGTTGAC","CellType","Ductal",1
+"ATCATCTTCTGTCAAG","CellType","Ductal",1
+"CCGTTCACAGTAGAGC","CellType","Endocrine",1
+"GTCAAGTGTGGTCCGT","CellType","Ductal",1
+"TTTGTCAGTTGTTTGG","CellType","Ductal",1
+"ATTATCCAGACCCACC","CellType","Ngn3 high EP",1
+"CACCACTCAATCTACG","CellType","Endocrine",1
+"GCGCGATGTCCGAATT","CellType","Endocrine",1
+"CATTATCTCTGAAAGA","CellType","Pre-endocrine",1
+"TTAGGACAGCTAAGAT","CellType","Ductal",1
+"GCGCGATTCGCGTAGC","CellType","Ngn3 low EP",1
+"CTACATTCACCGTTGG","CellType","Pre-endocrine",1
+"TCATTTGCATTGGCGC","CellType","Pre-endocrine",1
+"AGCAGCCCAGGAATGC","CellType","Ductal",1
+"GGGATGAGTCTGCGGT","CellType","Endocrine",1
+"TGCGCAGTCTGCCAGG","CellType","Ngn3 low EP",1
+"AGCGTATTCTCGTATT","CellType","Endocrine",1
+"GTCTCGTAGATCTGCT","CellType","Endocrine",1
+"CAGAATCGTGTAAGTA","CellType","Ngn3 low EP",1
+"TGACTTTAGGTCATCT","CellType","Ngn3 low EP",1
+"GTGCATATCAGAGACG","CellType","Endocrine",1
+"TGGCCAGCACGAAAGC","CellType","Ductal",1
+"TGGCGCACAATGTTGC","CellType","Ductal",1
+"CAGTAACGTCTGATCA","CellType","Pre-endocrine",1
+"CAGCGACAGATCACGG","CellType","Endocrine",1
+"AAAGATGAGTGAACAT","CellType","Ngn3 low EP",1
+"CTTCTCTGTCAGAGGT","CellType","Endocrine",1
+"ATTTCTGAGAAGATTC","CellType","Pre-endocrine",1
+"CTCTAATTCACCATAG","CellType","Pre-endocrine",1
+"CGTGTCTTCTTGTCAT","CellType","Ductal",1
+"GCCTCTAAGCTAGTCT","CellType","Endocrine",1
+"CCTAAAGTCATGCAAC","CellType","Ductal",1
+"AGGCCACAGCTGTCTA","CellType","Ngn3 low EP",1
+"GAAATGACACATGACT","CellType","Ductal",1
+"ACTGAGTAGGCTAGGT","CellType","Ductal",1
+"GGCGTGTCAACTGCTA","CellType","Endocrine",1
+"AACTCAGAGAGCTGCA","CellType","Ngn3 low EP",1
+"CGCTTCACAGATCGGA","CellType","Pre-endocrine",1
+"GCTGCTTTCTGGTGTA","CellType","Ngn3 low EP",1
+"CGTGTCTCATACTCTT","CellType","Pre-endocrine",1
+"ACTATCTGTCAGGACA","CellType","Endocrine",1
+"CTGAAACTCGATAGAA","CellType","Ngn3 high EP",1
+"GTTCTCGCAGCTGGCT","CellType","Ductal",1
+"CATATGGAGGCCCGTT","CellType","Pre-endocrine",1
+"ACTGAACAGCCTCGTG","CellType","Ductal",1
+"CCTAGCTCAGGTGCCT","CellType","Pre-endocrine",1
+"CCCTCCTAGACCCACC","CellType","Ngn3 high EP",1
+"TTAACTCGTCCGAACC","CellType","Ductal",1
+"GTGGGTCCATAAAGGT","CellType","Endocrine",1
+"CTGAAACTCAAACCAC","CellType","Pre-endocrine",1
+"GTTCTCGGTTTGTGTG","CellType","Pre-endocrine",1
+"ACATCAGTCCGTTGTC","CellType","Endocrine",1
+"ATCCACCTCCTTTCTC","CellType","Endocrine",1
+"ACAGCCGAGCCAACAG","CellType","Endocrine",1
+"AAGACCTAGTAGGCCA","CellType","Ngn3 high EP",1
+"AACTCTTCACTCGACG","CellType","Pre-endocrine",1
+"AGCGTATCACGAGGTA","CellType","Endocrine",1
+"GGACAGAAGGCCGAAT","CellType","Endocrine",1
+"ACTGTCCCACGTAAGG","CellType","Pre-endocrine",1
+"TCCACACCAGGCGATA","CellType","Endocrine",1
+"CGTCACTCAGTATAAG","CellType","Pre-endocrine",1
+"CACACCTGTCGCTTTC","CellType","Ngn3 high EP",1
+"GGCTCGAGTCGCTTCT","CellType","Pre-endocrine",1
+"TGGCTGGCAGTGAGTG","CellType","Endocrine",1
+"GATGAAACAGGCTGAA","CellType","Endocrine",1
+"TTCTTAGTCGCAGGCT","CellType","Ngn3 high EP",1
+"TCCCGATGTAAGTGTA","CellType","Ductal",1
+"CTGAAACAGTATCGAA","CellType","Endocrine",1
+"ACTATCTTCTGCTGTC","CellType","Endocrine",1
+"GATCGCGAGCTGAACG","CellType","Ductal",1
+"CATGCCTAGTGGTAGC","CellType","Ngn3 high EP",1
+"GACCAATGTAAGAGAG","CellType","Endocrine",1
+"CATCAGAGTTCGCTAA","CellType","Endocrine",1
+"CCATTCGGTGCTAGCC","CellType","Endocrine",1
+"CCACTACTCTTTAGTC","CellType","Endocrine",1
+"AAACGGGGTGAAATCA","CellType","Ngn3 high EP",1
+"ACCGTAATCTATCCCG","CellType","Ductal",1
+"ACTTACTCAATACGCT","CellType","Ngn3 high EP",1
+"GAACGGATCACAACGT","CellType","Ductal",1
+"CGGTTAAGTCTAGCCG","CellType","Ngn3 high EP",1
+"GGATGTTGTTACGCGC","CellType","Endocrine",1
+"CAAGAAACACTAGTAC","CellType","Pre-endocrine",1
+"AGTTGGTGTCGCATCG","CellType","Ngn3 high EP",1
+"ACTGCTCGTCCTAGCG","CellType","Ngn3 high EP",1
+"CGTCCATGTCTAACGT","CellType","Endocrine",1
+"CAGCTAACAACACGCC","CellType","Ductal",1
+"CAGTAACCATACGCTA","CellType","Endocrine",1
+"CTCGTACCAGCCAGAA","CellType","Endocrine",1
+"ATTATCCGTATAAACG","CellType","Endocrine",1
+"GTACTTTTCAGTTCGA","CellType","Endocrine",1
+"AGTAGTCCACATGACT","CellType","Ngn3 low EP",1
+"AGTGAGGTCTGTTGAG","CellType","Pre-endocrine",1
+"TCTCATAAGCAGATCG","CellType","Ngn3 high EP",1
+"ATCACGATCAGGATCT","CellType","Endocrine",1
+"AGCAGCCCAAGTCATC","CellType","Ngn3 high EP",1
+"TATTACCAGCTAGTCT","CellType","Endocrine",1
+"GTGGGTCGTACTTCTT","CellType","Endocrine",1
+"GTCCTCAAGTTCGATC","CellType","Endocrine",1
+"GCCAAATGTAAACACA","CellType","Pre-endocrine",1
+"ACTTACTGTTTGGGCC","CellType","Ngn3 high EP",1
+"ACTTACTCACCGTTGG","CellType","Endocrine",1
+"CAGAGAGAGGACCACA","CellType","Endocrine",1
+"AAGACCTGTGGCTCCA","CellType","Endocrine",1
+"AACTTTCCACAGTCGC","CellType","Ngn3 high EP",1
+"CAGATCATCTCGATGA","CellType","Ductal",1
+"TGTTCCGGTCAGCTAT","CellType","Ngn3 low EP",1
+"GCGCCAAAGAGGTTAT","CellType","Ductal",1
+"CATGCCTTCGCACTCT","CellType","Ngn3 high EP",1
+"GTAACTGTCAGTGCAT","CellType","Ductal",1
+"CGGAGCTGTTACGGAG","CellType","Endocrine",1
+"AGCAGCCGTCGCATCG","CellType","Ngn3 high EP",1
+"CGCCAAGTCTAAGCCA","CellType","Endocrine",1
+"ACTATCTTCATGTAGC","CellType","Endocrine",1
+"ATGCGATGTTACTGAC","CellType","Ngn3 high EP",1
+"GATGAAAAGACAGACC","CellType","Ductal",1
+"GTCAAGTAGTATCGAA","CellType","Endocrine",1
+"TCAGGTACAGTCACTA","CellType","Endocrine",1
+"TATCTCACATTGTGCA","CellType","Endocrine",1
+"CGTAGCGAGACTGTAA","CellType","Pre-endocrine",1
+"ACGATGTGTCGCGGTT","CellType","Endocrine",1
+"CTCTGGTTCCCAGGTG","CellType","Ngn3 high EP",1
+"GGATGTTAGTAAGTAC","CellType","Endocrine",1
+"CAGAATCCACAAGCCC","CellType","Endocrine",1
+"GTAACTGGTCACTGGC","CellType","Pre-endocrine",1
+"AACTTTCGTGGTCCGT","CellType","Ductal",1
+"ACGCAGCCAATCCGAT","CellType","Endocrine",1
+"TTTCCTCAGTGTCCCG","CellType","Endocrine",1
+"TATTACCGTTGAGTTC","CellType","Ngn3 high EP",1
+"ACTTTCATCAGAGCTT","CellType","Endocrine",1
+"TAAGTGCTCGCCTGAG","CellType","Endocrine",1
+"TCGTACCCATATACGC","CellType","Ductal",1
+"TGGTTCCGTTGATTCG","CellType","Ductal",1
+"AGAGCTTCATTCGACA","CellType","Endocrine",1
+"GGTGTTACATGTTGAC","CellType","Endocrine",1
+"CCTCTGACATCGGTTA","CellType","Ngn3 high EP",1
+"CTCTACGCACTAAGTC","CellType","Pre-endocrine",1
+"CTCGGAGGTGAAGGCT","CellType","Pre-endocrine",1
+"ACGTCAACAGACAAAT","CellType","Ductal",1
+"TCGAGGCAGTTAACGA","CellType","Endocrine",1
+"CAAGTTGTCTAACTGG","CellType","Pre-endocrine",1
+"AGGGAGTAGGGTATCG","CellType","Ngn3 high EP",1
+"CTTTGCGGTACTTGAC","CellType","Ductal",1
+"AGAGCTTTCTTGAGGT","CellType","Ngn3 high EP",1
+"GCACATAAGCAATATG","CellType","Ngn3 low EP",1
+"GGGAGATAGTGACATA","CellType","Endocrine",1
+"TGTGGTACAGTCGATT","CellType","Ngn3 low EP",1
+"TAAGAGACAGTAGAGC","CellType","Endocrine",1
+"CACATTTTCGAGGTAG","CellType","Endocrine",1
+"AGACGTTCAATGGTCT","CellType","Endocrine",1
+"GGAACTTGTCGAACAG","CellType","Ductal",1
+"TGAGCATGTTAAAGAC","CellType","Ngn3 high EP",1
+"TTGTAGGTCCAAATGC","CellType","Pre-endocrine",1
+"GAGGTGATCTAGCACA","CellType","Ductal",1
+"CGTAGCGTCACTATTC","CellType","Ductal",1
+"AAACGGGCACTGTGTA","CellType","Ductal",1
+"TGCGCAGTCTCTTATG","CellType","Ngn3 high EP",1
+"AACACGTTCGGAATCT","CellType","Ngn3 high EP",1
+"ACTGATGGTCGACTGC","CellType","Ngn3 high EP",1
+"CGTTCTGTCCGCGGTA","CellType","Ductal",1
+"CAGTAACAGCCACCTG","CellType","Endocrine",1
+"ACTGATGAGTGCAAGC","CellType","Ductal",1
+"CTGCTGTGTTGTGGCC","CellType","Ngn3 high EP",1
+"GAGTCCGCAATTGCTG","CellType","Ductal",1
+"TTTCCTCTCTGAAAGA","CellType","Ductal",1
+"CCTCAGTAGCGTAATA","CellType","Pre-endocrine",1
+"GTCATTTGTCTCAACA","CellType","Ductal",1
+"GACTAACCACTCGACG","CellType","Ductal",1
+"GGTGAAGAGCAGGTCA","CellType","Pre-endocrine",1
+"GAATAAGTCTGATACG","CellType","Ductal",1
+"GTGCGGTCACCGAATT","CellType","Endocrine",1
+"CAGGTGCAGACTTGAA","CellType","Ductal",1
+"GAGGTGAAGCTACCTA","CellType","Ductal",1
+"CATTCGCGTGCAGACA","CellType","Endocrine",1
+"ATGTGTGAGTTTGCGT","CellType","Pre-endocrine",1
+"TCTATTGCAGTAAGCG","CellType","Endocrine",1
+"TTGGCAATCGGATGGA","CellType","Endocrine",1
+"CGTCAGGAGTCATCCA","CellType","Ngn3 low EP",1
+"CACCACTTCAGCTTAG","CellType","Ngn3 high EP",1
+"TGCCCTAGTATCGCAT","CellType","Pre-endocrine",1
+"ACGGGCTAGACTTGAA","CellType","Pre-endocrine",1
+"TGGCGCAGTGTATGGG","CellType","Ductal",1
+"CCGTACTGTCAGAAGC","CellType","Pre-endocrine",1
+"GATCGATAGAAAGTGG","CellType","Pre-endocrine",1
+"TGCGGGTTCCAGGGCT","CellType","Ngn3 high EP",1
+"GTCTTCGTCCTACAGA","CellType","Ductal",1
+"AGGGATGTCGCATGGC","CellType","Ngn3 high EP",1
+"TGCCCTACAATCACAC","CellType","Ductal",1
+"CCCATACTCGTGGACC","CellType","Pre-endocrine",1
+"GACTAACCATGAGCGA","CellType","Endocrine",1
+"TCACAAGAGCCACTAT","CellType","Ductal",1
+"GGCAATTTCACATGCA","CellType","Endocrine",1
+"TGGTTCCAGGAATGGA","CellType","Ductal",1
+"TTCGGTCAGGGCATGT","CellType","Endocrine",1
+"GCATGTAAGAATCTCC","CellType","Endocrine",1
+"GTTACAGTCTAGAGTC","CellType","Endocrine",1
+"GTTCGGGAGTCACGCC","CellType","Ngn3 low EP",1
+"GATCGCGTCTGGAGCC","CellType","Ductal",1
+"TGTGGTAAGAGGTTAT","CellType","Pre-endocrine",1
+"CCGTACTGTTACTGAC","CellType","Ductal",1
+"TTATGCTTCGTTTAGG","CellType","Endocrine",1
+"GCATGCGCAAATTGCC","CellType","Ngn3 high EP",1
+"TCAACGACACCATCCT","CellType","Ductal",1
+"CCTCTGATCATGTCTT","CellType","Ngn3 low EP",1
+"CGTGAGCTCTTCTGGC","CellType","Endocrine",1
+"CTCAGAATCTTGAGAC","CellType","Endocrine",1
+"CGTCCATCATGGTAGG","CellType","Ductal",1
+"TTAGTTCCATGAGCGA","CellType","Ngn3 high EP",1
+"AGCTTGATCAACACGT","CellType","Ngn3 high EP",1
+"CAGCAGCAGAGGTACC","CellType","Ngn3 high EP",1
+"ATCATGGGTTCTCATT","CellType","Endocrine",1
+"CTAGCCTGTGCGATAG","CellType","Ductal",1
+"GTGTGCGGTCTCCACT","CellType","Endocrine",1
+"GCATGATCATGCATGT","CellType","Endocrine",1
+"TACGGTATCCCATTTA","CellType","Endocrine",1
+"CCTTCGAAGCTAGGCA","CellType","Endocrine",1
+"AACTGGTGTCGAGTTT","CellType","Pre-endocrine",1
+"GACCAATGTACGAAAT","CellType","Ductal",1
+"GTATTCTTCAGGTAAA","CellType","Ductal",1
+"TACCTATGTAACGTTC","CellType","Ductal",1
+"TCACAAGCAACGATGG","CellType","Endocrine",1
+"CCCAGTTTCAGCACAT","CellType","Endocrine",1
+"TGCCAAACATGACATC","CellType","Ngn3 high EP",1
+"CTAAGACGTACTCTCC","CellType","Endocrine",1
+"CGATGGCTCAGTGTTG","CellType","Endocrine",1
+"CCAGCGACAGCGATCC","CellType","Ductal",1
+"TGAGAGGAGCCAGGAT","CellType","Endocrine",1
+"AGAGCGACACAACTGT","CellType","Ngn3 high EP",1
+"CTTTGCGGTCGAATCT","CellType","Endocrine",1
+"TTTGGTTTCCTTTCGG","CellType","Endocrine",1
+"GCCTCTAAGTCCGGTC","CellType","Ngn3 high EP",1
+"GGGATGATCTGTCCGT","CellType","Endocrine",1
+"CGCTGGACATCCTAGA","CellType","Ductal",1
+"GCACATATCACGGTTA","CellType","Ngn3 low EP",1
+"CATCCACCAGATGGGT","CellType","Endocrine",1
+"TGCCCTATCATAAAGG","CellType","Endocrine",1
+"ACTGTCCAGGTTCCTA","CellType","Ductal",1
+"GCTGCTTGTCACTTCC","CellType","Pre-endocrine",1
+"GACAGAGCAGTCAGAG","CellType","Ngn3 high EP",1
+"ATCATCTTCAGTCCCT","CellType","Pre-endocrine",1
+"AATCGGTGTCACACGC","CellType","Ngn3 high EP",1
+"TACGGATAGTTTAGGA","CellType","Ngn3 low EP",1
+"GTGTGCGCAGCGATCC","CellType","Endocrine",1
+"CCACGGAGTCTTGATG","CellType","Ductal",1
+"GGCTCGACAGCTATTG","CellType","Endocrine",1
+"AGATTGCCACCAGGCT","CellType","Ductal",1
+"AGTGTCACACCAGGTC","CellType","Pre-endocrine",1
+"CACCAGGGTACCTACA","CellType","Ductal",1
+"GGCCGATTCAGAGACG","CellType","Ngn3 high EP",1
+"CCACCTATCTAAGCCA","CellType","Endocrine",1
+"GACTGCGGTCGCCATG","CellType","Endocrine",1
+"GAATGAACAGCCTTGG","CellType","Ductal",1
+"CGCTGGAAGGGCATGT","CellType","Ductal",1
+"CTAATGGCATGGTTGT","CellType","Pre-endocrine",1
+"ACGAGGATCAATCTCT","CellType","Endocrine",1
+"AGTCTTTTCGTACGGC","CellType","Ngn3 high EP",1
+"TTCCCAGAGGATTCGG","CellType","Ngn3 high EP",1
+"GGCAATTCATCTCCCA","CellType","Ngn3 high EP",1
+"GTGCGGTAGTGAATTG","CellType","Endocrine",1
+"TACCTATGTCCAACTA","CellType","Endocrine",1
+"TACTTGTAGACAAAGG","CellType","Endocrine",1
+"GTCCTCACACCACGTG","CellType","Endocrine",1
+"TAAACCGCATTCCTCG","CellType","Ductal",1
+"AACACGTGTCGACTGC","CellType","Pre-endocrine",1
+"TCAGCTCAGGCTATCT","CellType","Endocrine",1
+"CACAGTAGTTCCTCCA","CellType","Ductal",1
+"TCGCGAGCACACATGT","CellType","Ductal",1
+"ACGGCCACACGCTTTC","CellType","Ductal",1
+"AGATTGCCATTCCTGC","CellType","Endocrine",1
+"CTCAGAATCAGGTTCA","CellType","Ngn3 low EP",1
+"TGAGGGACAGACTCGC","CellType","Ductal",1
+"TACGGTATCTTTCCTC","CellType","Endocrine",1
+"GATCGCGAGCGTTGCC","CellType","Endocrine",1
+"CAGCGACCACAGGAGT","CellType","Ductal",1
+"TCTTCGGTCTGCTTGC","CellType","Endocrine",1
+"GTCACGGCATACTACG","CellType","Endocrine",1
+"AAGGCAGTCCGAGCCA","CellType","Ngn3 low EP",1
+"GGACAGATCCTGCAGG","CellType","Ductal",1
+"GGCAATTGTCCATCCT","CellType","Endocrine",1
+"AACTTTCCACTGCCAG","CellType","Ductal",1
+"ACCAGTAGTCATGCCG","CellType","Ngn3 high EP",1
+"ATCACGAGTGCACCAC","CellType","Endocrine",1
+"AACACGTGTGACTCAT","CellType","Ngn3 high EP",1
+"CTGAAGTTCTGCGGCA","CellType","Pre-endocrine",1
+"GGCGACTCACCAGGTC","CellType","Ngn3 low EP",1
+"GGGACCTAGCTGCCCA","CellType","Ngn3 high EP",1
+"AATCGGTCAAACAACA","CellType","Ngn3 high EP",1
+"CGGAGCTGTACATCCA","CellType","Ngn3 high EP",1
+"CATGGCGAGAGTCTGG","CellType","Ngn3 high EP",1
+"CGTGTAATCGTTGACA","CellType","Endocrine",1
+"CGATCGGAGCTGCAAG","CellType","Pre-endocrine",1
+"TGCACCTAGTACGCGA","CellType","Ductal",1
+"AGTGTCACATAGTAAG","CellType","Endocrine",1
+"GAACGGACAAGGTGTG","CellType","Ductal",1
+"TTGTAGGGTTACGGAG","CellType","Pre-endocrine",1
+"AGGGTGAAGGTGCAAC","CellType","Endocrine",1
+"CTACACCCAGGGCATA","CellType","Ngn3 high EP",1
+"AAGCCGCGTTATCCGA","CellType","Pre-endocrine",1
+"AAGCCGCTCTTGCATT","CellType","Endocrine",1
+"AACTGGTTCGTCCAGG","CellType","Endocrine",1
+"AAGTCTGGTCTCCATC","CellType","Pre-endocrine",1
+"AGGGAGTGTGTAAGTA","CellType","Ngn3 high EP",1
+"CGCTATCAGGTGATAT","CellType","Endocrine",1
+"AACTCTTAGCTAACAA","CellType","Pre-endocrine",1
+"GTGTGCGGTAGTACCT","CellType","Endocrine",1
+"GGGTCTGCAGCAGTTT","CellType","Endocrine",1
+"CGTAGGCCAACACCCG","CellType","Endocrine",1
+"CGAGCACTCTACCTGC","CellType","Ductal",1
+"CATCGAAAGATGTTAG","CellType","Ductal",1
+"GCAATCACAGCTGCTG","CellType","Endocrine",1
+"AACACGTAGTAATCCC","CellType","Pre-endocrine",1
+"GATCTAGCATCACCCT","CellType","Ngn3 high EP",1
+"GGCTCGACAGCTTCGG","CellType","Endocrine",1
+"TGTGGTAGTTAGAACA","CellType","Endocrine",1
+"GAGCAGAAGCCAGTTT","CellType","Pre-endocrine",1
+"CTCGAGGGTAAGTAGT","CellType","Endocrine",1
+"GGACAGAGTCAGCTAT","CellType","Endocrine",1
+"ACTTTCAAGGATATAC","CellType","Ductal",1
+"GATCAGTGTATAATGG","CellType","Ductal",1
+"CTTCTCTCATGCGCAC","CellType","Endocrine",1
+"AGCGTATCAGACTCGC","CellType","Ductal",1
+"GTACTCCGTAGCGATG","CellType","Endocrine",1
+"CTGTGCTCAGCTCCGA","CellType","Pre-endocrine",1
+"CCTTCGATCAAGAAGT","CellType","Ngn3 low EP",1
+"GTCTTCGAGCGTGAGT","CellType","Pre-endocrine",1
+"CGCTGGACACGGTAAG","CellType","Ngn3 low EP",1
+"CAACCAAAGCGTTCCG","CellType","Pre-endocrine",1
+"CATCAGAAGTGGTAAT","CellType","Pre-endocrine",1
+"CGAATGTAGTTCCACA","CellType","Ductal",1
+"GCTGCGACAATCGGTT","CellType","Ngn3 high EP",1
+"TTATGCTTCCAGTATG","CellType","Pre-endocrine",1
+"TTCTTAGTCGGCGCTA","CellType","Ngn3 high EP",1
+"AGCTTGATCTGACCTC","CellType","Ductal",1
+"CCGTACTGTTCCACTC","CellType","Ductal",1
+"TAAACCGAGGATGGAA","CellType","Ngn3 high EP",1
+"CTTACCGCAAAGTCAA","CellType","Ductal",1
+"CGGTTAATCGTCTGAA","CellType","Ductal",1
+"CTCGTCATCGGTCTAA","CellType","Ductal",1
+"GTTAAGCTCCGCATAA","CellType","Ngn3 high EP",1
+"CGTCAGGCAATCTGCA","CellType","Ngn3 high EP",1
+"TGGACGCAGCGTCTAT","CellType","Endocrine",1
+"TGGACGCGTATTCGTG","CellType","Ngn3 high EP",1
+"CCACGGAAGATCCTGT","CellType","Endocrine",1
+"CTGAAGTTCTTTAGGG","CellType","Endocrine",1
+"CAGTAACCATGCCTAA","CellType","Ngn3 low EP",1
+"AGTAGTCAGCGTTCCG","CellType","Ngn3 high EP",1
+"ACGAGCCCACCTTGTC","CellType","Ngn3 high EP",1
+"TGCGTGGAGGTTCCTA","CellType","Pre-endocrine",1
+"TGTGTTTGTATATCCG","CellType","Endocrine",1
+"ATCATCTAGTGATCGG","CellType","Ductal",1
+"GACGCGTAGACGCACA","CellType","Endocrine",1
+"CCTCAGTGTGATAAGT","CellType","Endocrine",1
+"AGATTGCCACAAGCCC","CellType","Pre-endocrine",1
+"GACGTGCTCCGGCACA","CellType","Endocrine",1
+"TGCGTGGTCTTTACGT","CellType","Endocrine",1
+"CATCAGATCATCGCTC","CellType","Pre-endocrine",1
+"CTTGGCTCATCCCACT","CellType","Endocrine",1
+"AGCATACGTCGCGAAA","CellType","Endocrine",1
+"CTTAACTGTCGGGTCT","CellType","Ngn3 low EP",1
+"GTTTCTATCAACGGCC","CellType","Endocrine",1
+"GAGGTGAGTGACAAAT","CellType","Ductal",1
+"TCTTTCCGTTATGTGC","CellType","Ductal",1
+"CCCAGTTAGGTGCTAG","CellType","Ductal",1
+"GAATGAACAATCGAAA","CellType","Ductal",1
+"CCTACACAGATCCGAG","CellType","Ngn3 low EP",1
+"GATGCTACAAGCGCTC","CellType","Ngn3 high EP",1
+"GTTACAGTCTTGAGAC","CellType","Endocrine",1
+"AAGACCTAGACCTTTG","CellType","Endocrine",1
+"GACTACACATATGAGA","CellType","Ductal",1
+"TGTGGTAAGTGGTCCC","CellType","Endocrine",1
+"CGTTAGATCAGTCAGT","CellType","Ngn3 high EP",1
+"GTGCTTCTCCAAACTG","CellType","Ductal",1
+"GATGAGGAGAAACCTA","CellType","Endocrine",1
+"GAAATGATCTTCAACT","CellType","Endocrine",1
+"GCTCCTAGTCGGGTCT","CellType","Ductal",1
+"ATCCACCTCATGCAAC","CellType","Endocrine",1
+"CGACCTTCACACAGAG","CellType","Endocrine",1
+"GCGCAGTGTACGCACC","CellType","Endocrine",1
+"GCACTCTTCCGGCACA","CellType","Ngn3 low EP",1
+"GTACTCCTCTCTTATG","CellType","Endocrine",1
+"CACATAGTCATTGCGA","CellType","Endocrine",1
+"CTGAAACGTATGGTTC","CellType","Endocrine",1
+"CGTGAGCAGTCTCAAC","CellType","Ductal",1
+"CCTTTCTTCTTCGAGA","CellType","Pre-endocrine",1
+"CTGAAACGTAGCGCAA","CellType","Endocrine",1
+"TTGGAACGTCCGTTAA","CellType","Pre-endocrine",1
+"CATTATCAGCTCCCAG","CellType","Endocrine",1
+"CGGAGTCCATAACCTG","CellType","Endocrine",1
+"GTGCAGCTCGTTTATC","CellType","Pre-endocrine",1
+"ACGCCAGGTTCTGAAC","CellType","Ductal",1
+"CAACCTCAGCGTGAAC","CellType","Ngn3 high EP",1
+"AACTGGTGTACCGTTA","CellType","Endocrine",1
+"CGATTGAAGTTAGCGG","CellType","Pre-endocrine",1
+"GGCGTGTCACCAGGTC","CellType","Ngn3 high EP",1
+"GGACGTCCAGTATCTG","CellType","Ductal",1
+"TTCGGTCAGGTCGGAT","CellType","Ngn3 high EP",1
+"TTAGGACAGGTCATCT","CellType","Endocrine",1
+"CAAGGCCTCGTACCGG","CellType","Ngn3 low EP",1
+"TAAGCGTCAATGCCAT","CellType","Ngn3 high EP",1
+"GCAAACTTCGGAATCT","CellType","Endocrine",1
+"TGACTAGCACGGTGTC","CellType","Ductal",1
+"GGGACCTGTTGGACCC","CellType","Endocrine",1
+"CTCGAGGTCAACTCTT","CellType","Ductal",1
+"GAATGAATCATCGGAT","CellType","Endocrine",1
+"TGGTTAGCAGTCGTGC","CellType","Pre-endocrine",1
+"CTCTAATAGTTATCGC","CellType","Endocrine",1
+"AACTCTTAGCTGCGAA","CellType","Ductal",1
+"GGGCACTTCACGAAGG","CellType","Ngn3 low EP",1
+"CGTGTCTGTAGTGAAT","CellType","Ductal",1
+"GGGTTGCTCCCAGGTG","CellType","Pre-endocrine",1
+"ATCCGAACACGGTAGA","CellType","Ductal",1
+"TTCTCAATCACTCCTG","CellType","Pre-endocrine",1
+"ACTGATGTCCCTAACC","CellType","Ngn3 low EP",1
+"AGTCTTTGTCTAAACC","CellType","Pre-endocrine",1
+"TCGCGAGTCGACGGAA","CellType","Pre-endocrine",1
+"AAATGCCAGACTAAGT","CellType","Endocrine",1
+"TACGGGCAGATTACCC","CellType","Ductal",1
+"AACTCTTCATTTGCCC","CellType","Endocrine",1
+"CAGCTGGTCGCCGTGA","CellType","Pre-endocrine",1
+"CACATAGAGGGAAACA","CellType","Endocrine",1
+"ACAGCCGCATCGTCGG","CellType","Ngn3 high EP",1
+"GCGCAGTGTCCTAGCG","CellType","Ductal",1
+"AAGGCAGCAGTACACT","CellType","Ngn3 high EP",1
+"TGGTTCCTCAACCATG","CellType","Endocrine",1
+"GTGTTAGAGTTTCCTT","CellType","Pre-endocrine",1
+"CTTCTCTAGTACTTGC","CellType","Pre-endocrine",1
+"CACATTTGTATAGTAG","CellType","Ngn3 high EP",1
+"GTGCATAAGAATGTTG","CellType","Ductal",1
+"GGACATTAGAAACCAT","CellType","Ductal",1
+"TCTCTAAGTGGCAAAC","CellType","Ngn3 high EP",1
+"ACGATACTCGCGCCAA","CellType","Endocrine",1
+"GAATAAGCACGAAATA","CellType","Endocrine",1
+"CATGACACATCCGCGA","CellType","Ductal",1
+"ACGGGTCAGGGTGTTG","CellType","Ductal",1
+"GATCAGTTCGGCGCAT","CellType","Ngn3 low EP",1
+"ACTGTCCGTGCGATAG","CellType","Ductal",1
+"CGTTGGGGTTTAAGCC","CellType","Pre-endocrine",1
+"AACTCAGTCTGGTTCC","CellType","Ductal",1
+"TAAGCGTAGATCGATA","CellType","Ngn3 low EP",1
+"CGTTCTGTCACAATGC","CellType","Ngn3 high EP",1
+"GGGACCTGTCAGCTAT","CellType","Endocrine",1
+"ATGCGATAGAAACGAG","CellType","Pre-endocrine",1
+"TATGCCCTCTTCCTTC","CellType","Ngn3 low EP",1
+"CCACCTATCGGAAACG","CellType","Endocrine",1
+"CGATGGCCAACTGGCC","CellType","Endocrine",1
+"CAGCCGAGTAGCCTAT","CellType","Ngn3 high EP",1
+"CTCGAAAGTGGTGTAG","CellType","Endocrine",1
+"TGCGGGTTCTCAAACG","CellType","Ductal",1
+"TACGGATTCCAAGTAC","CellType","Ngn3 high EP",1
+"TTTGCGCAGCAACGGT","CellType","Endocrine",1
+"CCTACACCATTATCTC","CellType","Ngn3 high EP",1
+"CTGAAACTCTGTTTGT","CellType","Ngn3 high EP",1
+"CCATGTCTCCGCATAA","CellType","Ngn3 high EP",1
+"CAGCCGAAGTAGGTGC","CellType","Ductal",1
+"TGACGGCGTCAGGACA","CellType","Pre-endocrine",1
+"ACTGATGCACATGACT","CellType","Endocrine",1
+"ATCATCTGTAGGACAC","CellType","Endocrine",1
+"ATCTGCCGTCATATGC","CellType","Pre-endocrine",1
+"TACACGAAGATCCCAT","CellType","Endocrine",1
+"CATCCACGTTACGACT","CellType","Endocrine",1
+"AGATCTGCACCAGGTC","CellType","Pre-endocrine",1
+"AGCAGCCGTCGAACAG","CellType","Ngn3 high EP",1
+"GCTGCAGCAATCCAAC","CellType","Ductal",1
+"GGGCACTCAATGAAAC","CellType","Ngn3 high EP",1
+"GTGCTTCTCACGACTA","CellType","Endocrine",1
+"GATCGTACAGGCGATA","CellType","Pre-endocrine",1
+"GCTGCGAAGAACAACT","CellType","Endocrine",1
+"CTACACCCATCAGTCA","CellType","Endocrine",1
+"AACACGTGTCGGCTCA","CellType","Ngn3 high EP",1
+"CGCTTCATCAGTTCGA","CellType","Ductal",1
+"ATAGACCAGTGATCGG","CellType","Endocrine",1
+"GACACGCAGTATGACA","CellType","Ngn3 high EP",1
+"ACGGGTCCATGATCCA","CellType","Ngn3 high EP",1
+"CGTCTACTCAGTCCCT","CellType","Pre-endocrine",1
+"TTATGCTCACTACAGT","CellType","Endocrine",1
+"GATCAGTTCCCGGATG","CellType","Ngn3 high EP",1
+"GATCTAGGTGCCTTGG","CellType","Ductal",1
+"AAAGTAGGTCAGATAA","CellType","Endocrine",1
+"CTCGTACGTTGGTTTG","CellType","Endocrine",1
+"TTGGCAATCGAACGGA","CellType","Ductal",1
+"CATCGAAGTTACGCGC","CellType","Ductal",1
+"ACGCAGCGTCAACTGT","CellType","Pre-endocrine",1
+"GTCAAGTCAAAGTGCG","CellType","Ductal",1
+"GAAGCAGGTCTAGAGG","CellType","Endocrine",1
+"CCCAGTTGTGCGCTTG","CellType","Endocrine",1
+"ATTCTACGTTTAGGAA","CellType","Endocrine",1
+"GGGAATGCACATTTCT","CellType","Ductal",1
+"CCTTCGATCCTGCTTG","CellType","Ngn3 low EP",1
+"CAGCTAAAGAGCCCAA","CellType","Ductal",1
+"GTGCAGCGTCTCTTAT","CellType","Ductal",1
+"AACGTTGCATGGGACA","CellType","Ductal",1
+"TGTGTTTTCATTCACT","CellType","Endocrine",1
+"GATGCTATCCCTCTTT","CellType","Pre-endocrine",1
+"TCGCGAGTCAACGCTA","CellType","Ductal",1
+"TTAACTCCACGCCAGT","CellType","Pre-endocrine",1
+"GTGCGGTTCTGATTCT","CellType","Endocrine",1
+"GCTGGGTCACGAGGTA","CellType","Ngn3 low EP",1
+"TCTATTGGTCTAGCCG","CellType","Endocrine",1
+"TCACGAACAGGCGATA","CellType","Endocrine",1
+"CGAACATTCACAAACC","CellType","Ductal",1
+"TCTATTGTCACATAGC","CellType","Ductal",1
+"ACTTTCAAGACACTAA","CellType","Endocrine",1
+"GCGAGAAGTGGGTATG","CellType","Endocrine",1
+"TTCTCAAAGTACGCGA","CellType","Ngn3 high EP",1
+"CTCGAGGTCTGTTGAG","CellType","Ngn3 high EP",1
+"ACATACGAGCTATGCT","CellType","Endocrine",1
+"ACGATACAGTCATCCA","CellType","Endocrine",1
+"ACGCAGCGTTCATGGT","CellType","Endocrine",1
+"TTAACTCCACGAGAGT","CellType","Ngn3 high EP",1
+"CGGCTAGAGGCACATG","CellType","Endocrine",1
+"TGAGCATTCGGGAGTA","CellType","Ductal",1
+"CTCGAAATCGCAAACT","CellType","Endocrine",1
+"TTAGGCAGTTAAGAAC","CellType","Pre-endocrine",1
+"TTGTAGGCATACTCTT","CellType","Ductal",1
+"GTAACGTGTCACTGGC","CellType","Ductal",1
+"AATCGGTCATATGGTC","CellType","Ngn3 high EP",1
+"GGTGCGTGTCCGAGTC","CellType","Ductal",1
+"AACACGTTCCGCGCAA","CellType","Ngn3 low EP",1
+"CCTTCCCCAAAGTGCG","CellType","Ductal",1
+"GTAACTGAGCCGGTAA","CellType","Endocrine",1
+"AGCATACCAATGCCAT","CellType","Ngn3 high EP",1
+"CATCAAGGTGGTCTCG","CellType","Endocrine",1
+"AGTCTTTGTCTCGTTC","CellType","Endocrine",1
+"CTGATAGAGCTCAACT","CellType","Ductal",1
+"TCTTTCCTCGTCTGCT","CellType","Ngn3 low EP",1
+"CCTTCGATCTCCAACC","CellType","Endocrine",1
+"GAGGTGAGTCCGAGTC","CellType","Ngn3 low EP",1
+"CGTGTAACATGGTCTA","CellType","Endocrine",1
+"GTTCATTAGGGTCTCC","CellType","Ductal",1
+"GCGACCATCACCAGGC","CellType","Endocrine",1
+"GTACTTTCATGGTCAT","CellType","Ngn3 high EP",1
+"TCAGCAAAGCGATGAC","CellType","Ngn3 high EP",1
+"TCACAAGTCTGGTTCC","CellType","Endocrine",1
+"TAGACCATCTTATCTG","CellType","Endocrine",1
+"AGACGTTAGCCGATTT","CellType","Endocrine",1
+"GAACCTACAGCGATCC","CellType","Endocrine",1
+"CCAATCCAGAGTAAGG","CellType","Ductal",1
+"AAACGGGGTACAGTTC","CellType","Endocrine",1
+"CAGGTGCGTACAAGTA","CellType","Endocrine",1
+"GCTCCTATCTCACATT","CellType","Ductal",1
+"TATCAGGCACCAGTTA","CellType","Ngn3 high EP",1
+"TGCTACCCATAAGACA","CellType","Ngn3 high EP",1
+"GATTCAGAGTACGTTC","CellType","Endocrine",1
+"CGGACTGCATCCCATC","CellType","Endocrine",1
+"GCGCCAACACCTCGGA","CellType","Endocrine",1
+"AGGTCATTCTGCGTAA","CellType","Ngn3 high EP",1
+"CTACCCAGTCAAACTC","CellType","Ductal",1
+"TGGCCAGAGCTACCTA","CellType","Ductal",1
+"TGTCCCACACGGTAGA","CellType","Ngn3 high EP",1
+"ATGTGTGAGGAATTAC","CellType","Endocrine",1
+"TACAGTGAGCGTTTAC","CellType","Endocrine",1
+"CGATTGAAGTCTTGCA","CellType","Ductal",1
+"TTCGGTCGTCACAAGG","CellType","Ductal",1
+"GTCTCGTCACGTGAGA","CellType","Ductal",1
+"CTTCTCTCAGCATACT","CellType","Endocrine",1
+"GCTTGAACATTTGCTT","CellType","Endocrine",1
+"AGAGCTTGTTAAAGAC","CellType","Ductal",1
+"GCTCTGTTCGCTTAGA","CellType","Ductal",1
+"GATCAGTAGGTTCCTA","CellType","Ngn3 high EP",1
+"GTACTTTAGATATGCA","CellType","Pre-endocrine",1
+"ATGTGTGTCAAAGACA","CellType","Ngn3 high EP",1
+"TCAGATGGTAGATTAG","CellType","Endocrine",1
+"TGTCCCAAGTTTAGGA","CellType","Ngn3 low EP",1
+"CTGATCCTCAGTTGAC","CellType","Ductal",1
+"CTAAGACTCACTCCTG","CellType","Ngn3 high EP",1
+"CACAGTATCTTAGAGC","CellType","Ductal",1
+"CACACCTCATTGTGCA","CellType","Ngn3 high EP",1
+"TTAGGCAGTAGCGTAG","CellType","Ductal",1
+"ACTGAACAGTACATGA","CellType","Ductal",1
+"TATTACCAGATGGGTC","CellType","Endocrine",1
+"GGAAAGCGTACGCACC","CellType","Ductal",1
+"GGGCATCCATTTCAGG","CellType","Endocrine",1
+"CCCTCCTGTCTAACGT","CellType","Ductal",1
+"TTAGGCAGTGTGAATA","CellType","Ngn3 high EP",1
+"TCGGTAACAGGGTACA","CellType","Endocrine",1
+"AGGGAGTCACCGAATT","CellType","Ngn3 low EP",1
+"GTGGGTCGTAGGAGTC","CellType","Pre-endocrine",1
+"GAACGGAAGACGCTTT","CellType","Pre-endocrine",1
+"GCTGCTTGTCTTCAAG","CellType","Ductal",1
+"ATAAGAGTCCACGTTC","CellType","Ductal",1
+"GATCGTAAGTAGGTGC","CellType","Pre-endocrine",1
+"TGCGTGGAGGTAAACT","CellType","Ngn3 low EP",1
+"CACCACTGTCGGCTCA","CellType","Ductal",1
+"ACGAGCCCACTCTGTC","CellType","Ductal",1
+"GCATGTATCACGATGT","CellType","Pre-endocrine",1
+"TTAGGACAGATGGGTC","CellType","Endocrine",1
+"CGCGTTTGTATTACCG","CellType","Pre-endocrine",1
+"ACTGCTCAGGTGTTAA","CellType","Pre-endocrine",1
+"GCTGCAGCATTCTCAT","CellType","Ngn3 high EP",1
+"CACAGTATCAGAGGTG","CellType","Ductal",1
+"TTCGAAGTCAACGCTA","CellType","Pre-endocrine",1
+"TGGACGCAGATTACCC","CellType","Pre-endocrine",1
+"TTGAACGGTGATGCCC","CellType","Ductal",1
+"ATCATGGTCCAGAGGA","CellType","Ductal",1
+"AGCTTGACAGTAAGAT","CellType","Ductal",1
+"CATCGAAGTAGCGTCC","CellType","Endocrine",1
+"TGGACGCTCTTGTTTG","CellType","Pre-endocrine",1
+"AGAGTGGGTCACCTAA","CellType","Ngn3 low EP",1
+"CGTCAGGCAAACGCGA","CellType","Endocrine",1
+"CGTCACTGTCAGGACA","CellType","Ductal",1
+"GCGACCACACGTTGGC","CellType","Endocrine",1
+"CCATGTCGTTTGCATG","CellType","Ngn3 high EP",1
+"TGCCAAAAGCGCTTAT","CellType","Pre-endocrine",1
+"AACTCAGAGGTAGCCA","CellType","Endocrine",1
+"ACAGCCGAGAGAACAG","CellType","Pre-endocrine",1
+"CGGAGCTGTTCTGAAC","CellType","Ductal",1
+"CAACTAGAGCTTCGCG","CellType","Ductal",1
+"CGGACTGCAGCCAATT","CellType","Endocrine",1
+"GACCAATAGCCGGTAA","CellType","Ngn3 low EP",1
+"GGACGTCGTCAGAAGC","CellType","Pre-endocrine",1
+"AGGTCCGAGTTACCCA","CellType","Ngn3 high EP",1
+"GGAAAGCGTCTTGATG","CellType","Ductal",1
+"CCGGGATGTACCGCTG","CellType","Ngn3 low EP",1
+"CATCCACAGTCACGCC","CellType","Ductal",1
+"CGCTATCCAGGCAGTA","CellType","Ngn3 high EP",1
+"TCAGGTACACTGTCGG","CellType","Ductal",1
+"GGCGTGTTCTCGTATT","CellType","Endocrine",1
+"CGGACGTAGACAGACC","CellType","Pre-endocrine",1
+"AGTTGGTTCACATAGC","CellType","Ngn3 high EP",1
+"GTGGGTCGTCCAGTAT","CellType","Endocrine",1
+"TATGCCCAGGGTATCG","CellType","Endocrine",1
+"GGGCATCCATGACATC","CellType","Ductal",1
+"AGAGTGGCACCTCGGA","CellType","Pre-endocrine",1
+"ACCCACTTCTGAGGGA","CellType","Pre-endocrine",1
+"TATTACCTCGTTGCCT","CellType","Endocrine",1
+"ACGATGTTCGCAGGCT","CellType","Pre-endocrine",1
+"TGACAACTCGCACTCT","CellType","Pre-endocrine",1
+"GACGCGTCATTTCAGG","CellType","Ductal",1
+"CATATGGTCAACACAC","CellType","Ngn3 low EP",1
+"AGTGGGAGTGGTCCGT","CellType","Ngn3 low EP",1
+"ATTGGTGTCCAGTATG","CellType","Ductal",1
+"GATGCTAAGCGATAGC","CellType","Ngn3 high EP",1
+"GGGCACTTCTAACTGG","CellType","Ductal",1
+"TTCTCAACAGTTTACG","CellType","Ductal",1
+"TCACAAGAGCATGGCA","CellType","Endocrine",1
+"GGAATAACACGACGAA","CellType","Ductal",1
+"GGGAGATGTTAAAGAC","CellType","Endocrine",1
+"AACTTTCGTGACCAAG","CellType","Ngn3 low EP",1
+"CGAGAAGCACTTACGA","CellType","Endocrine",1
+"AACTCCCAGTACGACG","CellType","Endocrine",1
+"CGTTAGAAGTATCTCG","CellType","Ductal",1
+"CCTATTACAAACGTGG","CellType","Ductal",1
+"GCTGCTTAGATCTGCT","CellType","Pre-endocrine",1
+"CCATTCGCAAGCCATT","CellType","Endocrine",1
+"GTATCTTGTACTCAAC","CellType","Endocrine",1
+"TGCTACCCAGGGCATA","CellType","Ngn3 low EP",1
+"GGAACTTAGGTTACCT","CellType","Ngn3 low EP",1
+"AGATTGCAGCTAGTCT","CellType","Ductal",1
+"TTAGGACGTTCAGTAC","CellType","Ngn3 low EP",1
+"TGGCGCATCACATAGC","CellType","Endocrine",1
+"CTTTGCGAGGAATGGA","CellType","Ngn3 low EP",1
+"ATTATCCCAACTGCTA","CellType","Ngn3 high EP",1
+"AGGCCACCAACTGCGC","CellType","Endocrine",1
+"AAACGGGCAAAGAATC","CellType","Endocrine",1
+"AGTCTTTAGTCTCGGC","CellType","Endocrine",1
+"TCTGGAAGTCATCGGC","CellType","Endocrine",1
+"AAATGCCCACCAACCG","CellType","Ngn3 high EP",1
+"CATTCGCTCGCTTGTC","CellType","Endocrine",1
+"GGTGTTACACCTCGGA","CellType","Endocrine",1
+"CTCGAGGCAAGTCTGT","CellType","Endocrine",1
+"CGGACTGTCGGACAAG","CellType","Pre-endocrine",1
+"ACCAGTAGTTCGTTGA","CellType","Endocrine",1
+"CGTCACTCATAGTAAG","CellType","Ngn3 low EP",1
+"TTTGGTTCAAATTGCC","CellType","Endocrine",1
+"ATTGGTGGTACTTGAC","CellType","Ductal",1
+"GCCTCTAAGAGTTGGC","CellType","Endocrine",1
+"CGGCTAGGTAACGACG","CellType","Endocrine",1
+"AAAGATGAGTCATGCT","CellType","Endocrine",1
+"GTACTCCCACGTCTCT","CellType","Ngn3 low EP",1
+"TTGAACGAGGAATCGC","CellType","Endocrine",1
+"TGAGCCGTCGATAGAA","CellType","Endocrine",1
+"CTCTAATTCAGCGACC","CellType","Ngn3 high EP",1
+"TATGCCCAGAACAATC","CellType","Pre-endocrine",1
+"AACCATGGTTGAACTC","CellType","Pre-endocrine",1
+"CAGCATAGTAATAGCA","CellType","Pre-endocrine",1
+"AGGGAGTTCCTCAATT","CellType","Endocrine",1
+"CTCAGAATCTGGCGAC","CellType","Ductal",1
+"ATCACGATCACGGTTA","CellType","Endocrine",1
+"GAGCAGAGTTTGCATG","CellType","Endocrine",1
+"TGCACCTAGATAGTCA","CellType","Pre-endocrine",1
+"CAGCCGAAGTGACTCT","CellType","Ductal",1
+"GAATGAATCTGGTATG","CellType","Ductal",1
+"AGCTCCTAGTACACCT","CellType","Ngn3 low EP",1
+"CATGCCTAGCGATGAC","CellType","Ductal",1
+"TCCACACTCACGATGT","CellType","Endocrine",1
+"TCAGATGCACGACGAA","CellType","Endocrine",1
+"CAGCTGGGTCTAACGT","CellType","Pre-endocrine",1
+"CTCAGAATCAACACTG","CellType","Ductal",1
+"CTTAGGACATCTATGG","CellType","Ngn3 high EP",1
+"AGAGCGAAGTAGATGT","CellType","Ductal",1
+"ATCTACTGTGAACCTT","CellType","Ngn3 high EP",1
+"CGATGTAGTGGTACAG","CellType","Endocrine",1
+"CTAGCCTGTCTCTTAT","CellType","Ductal",1
+"TCTGAGATCTGAGTGT","CellType","Ngn3 low EP",1
+"AACTGGTTCGTGACAT","CellType","Ductal",1
+"AGATTGCTCCATGAGT","CellType","Ngn3 low EP",1
+"CAGCTAAGTACCGAGA","CellType","Ngn3 high EP",1
+"ACTGAGTGTTTCGCTC","CellType","Ductal",1
+"AGAGCGATCTCTTGAT","CellType","Ductal",1
+"GAAGCAGTCAAGGCTT","CellType","Ductal",1
+"GTCGTAAAGGTGATTA","CellType","Pre-endocrine",1
+"CACACTCAGGCGCTCT","CellType","Ductal",1
+"TGGGAAGGTCATGCAT","CellType","Endocrine",1
+"CGCGGTACATTAGGCT","CellType","Endocrine",1
+"GAATGAAAGAATGTGT","CellType","Ngn3 high EP",1
+"CATGCCTGTTCGTCTC","CellType","Endocrine",1
+"CTGGTCTTCGTTACAG","CellType","Pre-endocrine",1
+"TCTCTAAAGCTGGAAC","CellType","Endocrine",1
+"CGGTTAAAGTAGCGGT","CellType","Endocrine",1
+"GAACGGAAGGAGCGAG","CellType","Endocrine",1
+"CCTTACGCAAGGTGTG","CellType","Ngn3 low EP",1
+"AGGCCACCACGAAGCA","CellType","Endocrine",1
+"CAACCTCGTCTAAACC","CellType","Pre-endocrine",1
+"AGCGGTCGTACCGAGA","CellType","Ngn3 high EP",1
+"CTCGTCATCTTCTGGC","CellType","Ngn3 low EP",1
+"TGCGTGGCAGTATAAG","CellType","Endocrine",1
+"GGCCGATGTCAAACTC","CellType","Ngn3 high EP",1
+"TTCTACAGTGTTGAGG","CellType","Ngn3 low EP",1
+"AAAGTAGAGCGCCTTG","CellType","Endocrine",1
+"GATCGATCAGTCGATT","CellType","Endocrine",1
+"TTGGCAACATCATCCC","CellType","Endocrine",1
+"TTTATGCTCCATTCTA","CellType","Ductal",1
+"AACTTTCAGGCATTGG","CellType","Endocrine",1
+"GCCTCTAGTGACTACT","CellType","Pre-endocrine",1
+"ACGGGTCAGATGGCGT","CellType","Pre-endocrine",1
+"TACGGTAGTGTGCCTG","CellType","Endocrine",1
+"ACTGCTCAGATATGCA","CellType","Ngn3 low EP",1
+"GGCGTGTTCGTGGGAA","CellType","Pre-endocrine",1
+"AAGCCGCAGGAGTTGC","CellType","Endocrine",1
+"CTGAAACAGGAGTAGA","CellType","Endocrine",1
+"CATGGCGAGCCCTAAT","CellType","Endocrine",1
+"ACATGGTCAAGGACTG","CellType","Ngn3 low EP",1
+"GGCGTGTGTCCGACGT","CellType","Ngn3 low EP",1
+"GACGTGCTCCTCTAGC","CellType","Ductal",1
+"TTAACTCCAAAGAATC","CellType","Ductal",1
+"GCTCTGTAGCCACCTG","CellType","Pre-endocrine",1
+"ATGTGTGCATGGGACA","CellType","Endocrine",1
+"CGTGAGCTCACAGGCC","CellType","Pre-endocrine",1
+"TTGAACGTCATCGATG","CellType","Endocrine",1
+"AAGACCTAGGTGTGGT","CellType","Ngn3 high EP",1
+"TCAGGTACACGGCCAT","CellType","Ngn3 high EP",1
+"CGTGTAATCCATGCTC","CellType","Ductal",1
+"ACTGATGCATCAGTAC","CellType","Ngn3 high EP",1
+"GGGATGAAGGGCATGT","CellType","Endocrine",1
+"CTCGTACGTTCCGTCT","CellType","Ductal",1
+"ACGAGGACATGGTTGT","CellType","Endocrine",1
+"ATCTGCCGTCAGAAGC","CellType","Endocrine",1
+"CGTTCTGAGAGCAATT","CellType","Ngn3 high EP",1
+"CACACAACACACTGCG","CellType","Ductal",1
+"TAGGCATTCGTTGCCT","CellType","Endocrine",1
+"TCTCTAATCAAAGACA","CellType","Ngn3 high EP",1
+"ACACCCTGTCAGATAA","CellType","Ngn3 high EP",1
+"AGATCTGTCGATCCCT","CellType","Endocrine",1
+"TCTGAGATCTTGCAAG","CellType","Ngn3 low EP",1
+"TGACTAGCAAAGGTGC","CellType","Ngn3 low EP",1
+"TAGAGCTTCTCGCTTG","CellType","Endocrine",1
+"CTACGTCAGTCTCGGC","CellType","Endocrine",1
+"CATCCACTCTTCTGGC","CellType","Ductal",1
+"TCTCATACAGATCTGT","CellType","Ngn3 low EP",1
+"CACACCTCACTGCCAG","CellType","Endocrine",1
+"CTCGTACCAATGGATA","CellType","Ductal",1
+"ACACCAAAGTAGGCCA","CellType","Endocrine",1
+"TACACGAGTGCAACTT","CellType","Ngn3 high EP",1
+"GCTGCGAAGTATTGGA","CellType","Ngn3 high EP",1
+"AGACGTTTCGAGCCCA","CellType","Ngn3 high EP",1
+"CAGAGAGGTGTGAATA","CellType","Endocrine",1
+"GCACTCTGTCTGCAAT","CellType","Endocrine",1
+"TGTGGTACAAGACGTG","CellType","Ductal",1
+"AGGCCGTCACGACGAA","CellType","Ngn3 high EP",1
+"TATGCCCTCTTACCTA","CellType","Ngn3 low EP",1
+"AATCGGTCATGTTGAC","CellType","Ductal",1
+"AGTCTTTCACGGACAA","CellType","Endocrine",1
+"GTCGGGTGTGCAACTT","CellType","Endocrine",1
+"TCTGAGATCGTAGGTT","CellType","Ductal",1
+"CGTCTACGTTTCCACC","CellType","Endocrine",1
+"CCTAGCTCAGACTCGC","CellType","Ductal",1
+"AGCTCTCAGACATAAC","CellType","Pre-endocrine",1
+"CTCGAGGAGTGGAGAA","CellType","Ngn3 high EP",1
+"CTGATAGTCGGCTACG","CellType","Ductal",1
+"TTGTAGGGTTGTTTGG","CellType","Ngn3 low EP",1
+"CGAGCACGTCCATCCT","CellType","Ductal",1
+"CATGACAGTCATGCAT","CellType","Pre-endocrine",1
+"CTCGGAGAGAATGTGT","CellType","Ngn3 high EP",1
+"GACCAATAGAATGTGT","CellType","Endocrine",1
+"CAGCGACCATATGGTC","CellType","Ngn3 high EP",1
+"TGCTGCTGTCCGTCAG","CellType","Ductal",1
+"TCAGATGCACTCGACG","CellType","Pre-endocrine",1
+"TATCAGGGTCGAATCT","CellType","Ductal",1
+"GGGAATGGTCGGCTCA","CellType","Ngn3 low EP",1
+"TAGTTGGAGTCAAGCG","CellType","Ngn3 high EP",1
+"TACCTATTCGTTACGA","CellType","Endocrine",1
+"CGTCACTCAAAGGTGC","CellType","Ductal",1
+"TGAGGGAAGCCGGTAA","CellType","Endocrine",1
+"CGTGTCTTCCTTTCGG","CellType","Ductal",1
+"TGATTTCAGTGGAGTC","CellType","Endocrine",1
+"CTAACTTAGATCACGG","CellType","Endocrine",1
+"CATCAGAGTCCGAATT","CellType","Ductal",1
+"GAAATGATCGTCCGTT","CellType","Endocrine",1
+"TGCGGGTTCCACTCCA","CellType","Endocrine",1
+"GTTCGGGAGGCAATTA","CellType","Endocrine",1
+"GCGCCAATCGGACAAG","CellType","Ductal",1
+"AGTGGGATCAACTCTT","CellType","Ngn3 high EP",1
+"CGACTTCGTTGATTCG","CellType","Ngn3 high EP",1
+"GATCAGTGTAACGACG","CellType","Ngn3 high EP",1
+"TGAGCCGTCTCTGAGA","CellType","Pre-endocrine",1
+"TTTGCGCTCTTCCTTC","CellType","Endocrine",1
+"ACTGATGGTTCCTCCA","CellType","Endocrine",1
+"AAGGAGCAGTACATGA","CellType","Endocrine",1
+"CAGCTAAAGCGCTTAT","CellType","Ngn3 high EP",1
+"TACTTACGTGTGGCTC","CellType","Pre-endocrine",1
+"ATGCGATTCGCGTAGC","CellType","Endocrine",1
+"ATTGGACAGTCAAGGC","CellType","Ductal",1
+"ACGCCAGTCCGCTGTT","CellType","Ngn3 high EP",1
+"TGCGGGTAGACGCACA","CellType","Ngn3 high EP",1
+"ATGAGGGGTTCTGGTA","CellType","Ngn3 high EP",1
+"CGACCTTAGCTGCCCA","CellType","Ngn3 high EP",1
+"GTAACGTGTGCCTGCA","CellType","Ngn3 high EP",1
+"GCTCTGTAGCTGAACG","CellType","Ngn3 high EP",1
+"GTATTCTAGGTGCTTT","CellType","Ngn3 low EP",1
+"TCTGGAATCGGTGTCG","CellType","Ductal",1
+"GACGTTAAGACGCAAC","CellType","Ductal",1
+"AGGCCGTAGAGGACGG","CellType","Ngn3 low EP",1
+"ATGAGGGCAAGGTTTC","CellType","Endocrine",1
+"GTGCGGTCAAAGCAAT","CellType","Pre-endocrine",1
+"CATCGGGTCATTTGGG","CellType","Endocrine",1
+"ACATACGGTAAACACA","CellType","Endocrine",1
+"CTGCTGTGTTATCACG","CellType","Ngn3 high EP",1
+"TAGAGCTAGTGCCATT","CellType","Pre-endocrine",1
+"CCACGGAGTCTCTTAT","CellType","Ductal",1
+"CCATTCGCATGAAGTA","CellType","Ductal",1
+"CATTCGCTCTGCTGCT","CellType","Endocrine",1
+"ACGATGTTCTGCTGCT","CellType","Ngn3 high EP",1
+"GCGCAGTCACCATCCT","CellType","Ductal",1
+"TAGTTGGGTACCGTAT","CellType","Ductal",1
+"GCGCAACCAACACCTA","CellType","Ngn3 high EP",1
+"CCAGCGAGTACCGTAT","CellType","Endocrine",1
+"AGCGTATCATCTCCCA","CellType","Ngn3 high EP",1
+"AATCGGTTCCAAACTG","CellType","Ngn3 high EP",1
+"ACGCAGCCATTCTCAT","CellType","Pre-endocrine",1
+"GAATGAATCCTGTAGA","CellType","Endocrine",1
+"GGAAAGCTCTCGGACG","CellType","Ductal",1
+"ACTGATGGTCCGACGT","CellType","Endocrine",1
+"GTAACGTCAGCCTATA","CellType","Endocrine",1
+"GGGAGATAGCGTTCCG","CellType","Endocrine",1
+"TACGGATTCTAACTCT","CellType","Endocrine",1
+"GAAATGACATCTACGA","CellType","Endocrine",1
+"GTGTGCGTCTCTGAGA","CellType","Ductal",1
+"TCTCATAGTTACCAGT","CellType","Ngn3 high EP",1
+"ACGTCAACACGGTGTC","CellType","Ductal",1
+"ACTGATGTCTAGAGTC","CellType","Pre-endocrine",1
+"TGTATTCCAATGACCT","CellType","Ductal",1
+"AGGGAGTAGCTAGCCC","CellType","Pre-endocrine",1
+"CCACTACAGAGCTGGT","CellType","Pre-endocrine",1
+"GGCAATTTCCGAATGT","CellType","Ngn3 high EP",1
+"GATCGTAGTCCTAGCG","CellType","Ductal",1
+"TGAGCATCAAGCCGCT","CellType","Endocrine",1
+"AACTGGTGTACAGTGG","CellType","Ductal",1
+"TGTGTTTAGCAGGCTA","CellType","Pre-endocrine",1
+"CCACTACGTTAAGAAC","CellType","Endocrine",1
+"GGAAAGCAGGCATGGT","CellType","Endocrine",1
+"ACAGCTATCGAGCCCA","CellType","Pre-endocrine",1
+"CTCGAAAGTAAAGTCA","CellType","Ngn3 high EP",1
+"TAAACCGAGTCGTACT","CellType","Ductal",1
+"CTCGGAGTCATCGCTC","CellType","Endocrine",1
+"CACCACTCACGAAATA","CellType","Endocrine",1
+"CGTAGGCTCGCGCCAA","CellType","Ductal",1
+"TCGCGTTTCTCTGCTG","CellType","Pre-endocrine",1
+"GGACAAGTCCGCGGTA","CellType","Pre-endocrine",1
+"CGTTCTGAGCCCAGCT","CellType","Endocrine",1
+"TCACGAATCCTATGTT","CellType","Ngn3 low EP",1
+"ACGCAGCGTGGCTCCA","CellType","Endocrine",1
+"ACAGCTATCAAGGCTT","CellType","Endocrine",1
+"ATAACGCAGCGTGAGT","CellType","Ngn3 high EP",1
+"ATTCTACTCAGGTAAA","CellType","Ductal",1
+"CTGATCCCAAGCGTAG","CellType","Ductal",1
+"TCTTCGGTCTGGCGTG","CellType","Endocrine",1
+"TGCCCTAAGTCCGGTC","CellType","Pre-endocrine",1
+"GGGAATGAGGAGCGAG","CellType","Pre-endocrine",1
+"CACAGGCTCAAGATCC","CellType","Endocrine",1
+"ACGAGCCAGTTCGCAT","CellType","Pre-endocrine",1
+"GCTGGGTTCGCCATAA","CellType","Endocrine",1
+"CCACTACAGAGTACCG","CellType","Ngn3 low EP",1
+"AGCCTAAAGCCCAACC","CellType","Ductal",1
+"AAGGCAGGTCTAGCCG","CellType","Endocrine",1
+"AGTGGGACAGTATCTG","CellType","Pre-endocrine",1
+"CAACCAATCGGGAGTA","CellType","Ductal",1
+"TGTCCCATCTTGACGA","CellType","Ductal",1
+"CGTCCATCAGTCGTGC","CellType","Endocrine",1
+"GTTTCTAGTCCTCTTG","CellType","Endocrine",1
+"GCACATACATTACGAC","CellType","Ngn3 high EP",1
+"ATGGGAGTCGGTTCGG","CellType","Ngn3 low EP",1
+"ATAAGAGTCCGAACGC","CellType","Ductal",1
+"ACGCCGAAGCTTCGCG","CellType","Endocrine",1
+"CAGCCGAAGCGATATA","Phase","G2M",2
+"AGTGTCATCGCCGTGA","Phase","G1",2
+"GATGAAAAGTTGTAGA","Phase","G2M",2
+"CACAGTACATCCGTGG","Phase","G1",2
+"CGGAGCTCATTGGGCC","Phase","G2M",2
+"AGAGCTTGTGTGACCC","Phase","G1",2
+"GCTCTGTAGCGTGAGT","Phase","G1",2
+"ACCGTAACAAGGTTCT","Phase","G1",2
+"CCACTACAGGTGGGTT","Phase","G1",2
+"TGCGTGGGTCCCTTGT","Phase","G1",2
+"AGGGAGTGTCTTCTCG","Phase","G1",2
+"CCGTGGACACGAAGCA","Phase","G1",2
+"GAACATCAGCAATATG","Phase","G1",2
+"TTCTACACAGTCGATT","Phase","G1",2
+"ACGGCCACACGTGAGA","Phase","G1",2
+"CTCGTACAGAGGTTAT","Phase","S",2
+"CGTCTACAGATGCGAC","Phase","G1",2
+"CTCACACGTCACACGC","Phase","G1",2
+"AAAGCAACACGGTAAG","Phase","G2M",2
+"CATCGGGCACGTTGGC","Phase","G1",2
+"ATCATCTGTGTTTGTG","Phase","G1",2
+"CAAGGCCCAAGAAAGG","Phase","G1",2
+"AGATCTGGTTCGGCAC","Phase","G1",2
+"CTCTGGTCAAGACACG","Phase","G1",2
+"TACAGTGTCCCTAACC","Phase","G1",2
+"GGACAGATCAGCATGT","Phase","G1",2
+"CACTCCACATATGGTC","Phase","S",2
+"GTTCATTGTTCCAACA","Phase","G1",2
+"TAAGTGCCAATAGCAA","Phase","G1",2
+"TACTCGCTCTTCGGTC","Phase","G1",2
+"GCTGCTTTCCTCGCAT","Phase","G1",2
+"GCTGGGTGTCTAGAGG","Phase","G1",2
+"AGCTCTCAGCGTGAGT","Phase","G1",2
+"CGAGCACTCTAACTCT","Phase","G1",2
+"GATCGTAAGTGCAAGC","Phase","G1",2
+"TGTCCCAGTCTCGTTC","Phase","G1",2
+"CTTGGCTCAGCCACCA","Phase","G1",2
+"GGGTCTGGTAAACCTC","Phase","G2M",2
+"CGGACTGTCTTGAGAC","Phase","G1",2
+"GGTGCGTTCTGGTATG","Phase","G1",2
+"TACCTTATCCGATATG","Phase","G1",2
+"ACGGGTCTCTATCGCC","Phase","G1",2
+"GTACGTACATCGATGT","Phase","G1",2
+"TCGTAGATCTTTACGT","Phase","G1",2
+"AAAGTAGAGAGTGAGA","Phase","G1",2
+"AGCGTATTCTGCTGTC","Phase","G1",2
+"GGACAAGTCATAACCG","Phase","G1",2
+"ACATCAGTCCTTGGTC","Phase","G1",2
+"CCAGCGACAGGCTGAA","Phase","G1",2
+"GGACAGAAGTGGAGAA","Phase","G2M",2
+"GACTACAAGCGTGTCC","Phase","G1",2
+"GGCAATTGTAGAGCTG","Phase","G1",2
+"GTTCTCGCAAGTCTAC","Phase","G1",2
+"CGAATGTTCTTCATGT","Phase","G1",2
+"CCGTGGACATTCCTGC","Phase","G1",2
+"CTAATGGAGCCGGTAA","Phase","G1",2
+"AGCGGTCGTCGAATCT","Phase","G1",2
+"GTATTCTTCACTTACT","Phase","G1",2
+"CAGTCCTAGGTGGGTT","Phase","G1",2
+"CGACTTCCACAACGTT","Phase","G1",2
+"AAACGGGTCCGCGCAA","Phase","G1",2
+"CTAGTGACATTGAGCT","Phase","G1",2
+"CTCCTAGAGAGTGACC","Phase","G1",2
+"GCAGTTATCTTGAGAC","Phase","G1",2
+"CGAACATCAAGCGAGT","Phase","G1",2
+"GGGAGATAGCGAAGGG","Phase","G1",2
+"CATCGGGAGGCCCTTG","Phase","G1",2
+"TGGACGCAGCTGCAAG","Phase","G1",2
+"CAGAATCCACGCATCG","Phase","S",2
+"CTCGGAGGTTGGACCC","Phase","G1",2
+"CGGACACTCTATCCTA","Phase","G1",2
+"CGTGTAATCATTATCC","Phase","G1",2
+"CGTGTAAGTTAAGATG","Phase","G1",2
+"ATTTCTGTCCCTGACT","Phase","G1",2
+"AGAGCGAGTTGGACCC","Phase","G2M",2
+"CAGATCACAACCGCCA","Phase","S",2
+"CGGCTAGCATTCCTCG","Phase","G1",2
+"CCACGGACAGATGAGC","Phase","S",2
+"TGGCGCAAGAAGATTC","Phase","S",2
+"CATGACACAAAGTCAA","Phase","G1",2
+"AACGTTGTCAGTTAGC","Phase","G1",2
+"CTGGTCTAGGTGATTA","Phase","G1",2
+"TCAGGATTCCAGTAGT","Phase","G1",2
+"CATTATCGTCATATCG","Phase","G1",2
+"GCGCAACAGTGTACCT","Phase","G1",2
+"GTGCATACAATAGCAA","Phase","S",2
+"TTTACTGGTTCGTTGA","Phase","G1",2
+"GTAGTCAGTCCGACGT","Phase","G1",2
+"CCTACACGTTCTCATT","Phase","G1",2
+"AGCTCTCTCAACACGT","Phase","G1",2
+"CTAACTTGTAGGAGTC","Phase","G1",2
+"ACGAGCCGTGACTACT","Phase","G1",2
+"GTAGGCCGTTACCAGT","Phase","G1",2
+"TCTCATATCAGAGCTT","Phase","G1",2
+"GCTGGGTGTCATACTG","Phase","G1",2
+"GGGAATGTCGACCAGC","Phase","G1",2
+"TAAGTGCTCCAAATGC","Phase","G1",2
+"TAAGTGCAGGGTTTCT","Phase","G1",2
+"CGGACTGAGGTAGCTG","Phase","G1",2
+"CAACCTCTCTCTGTCG","Phase","G1",2
+"CTGAAACGTTCCCTTG","Phase","G1",2
+"GTAGTCAGTACTCAAC","Phase","G1",2
+"AGGCCACCACCTATCC","Phase","G1",2
+"CAGAGAGGTACCGTTA","Phase","G1",2
+"TTCTACAAGATCGATA","Phase","G1",2
+"TCACAAGCACCGAAAG","Phase","G1",2
+"TCGGGACGTCATCGGC","Phase","G1",2
+"ACGCCAGAGGAACTGC","Phase","G1",2
+"CATATGGCATGTTGAC","Phase","S",2
+"ATCATCTTCTGTCAAG","Phase","G2M",2
+"CCGTTCACAGTAGAGC","Phase","G1",2
+"GTCAAGTGTGGTCCGT","Phase","G2M",2
+"TTTGTCAGTTGTTTGG","Phase","G1",2
+"ATTATCCAGACCCACC","Phase","G1",2
+"CACCACTCAATCTACG","Phase","G1",2
+"GCGCGATGTCCGAATT","Phase","G1",2
+"CATTATCTCTGAAAGA","Phase","G1",2
+"TTAGGACAGCTAAGAT","Phase","G1",2
+"GCGCGATTCGCGTAGC","Phase","G1",2
+"CTACATTCACCGTTGG","Phase","G1",2
+"TCATTTGCATTGGCGC","Phase","G1",2
+"AGCAGCCCAGGAATGC","Phase","G2M",2
+"GGGATGAGTCTGCGGT","Phase","G1",2
+"TGCGCAGTCTGCCAGG","Phase","S",2
+"AGCGTATTCTCGTATT","Phase","G1",2
+"GTCTCGTAGATCTGCT","Phase","G1",2
+"CAGAATCGTGTAAGTA","Phase","G1",2
+"TGACTTTAGGTCATCT","Phase","G1",2
+"GTGCATATCAGAGACG","Phase","G1",2
+"TGGCCAGCACGAAAGC","Phase","G1",2
+"TGGCGCACAATGTTGC","Phase","G2M",2
+"CAGTAACGTCTGATCA","Phase","G1",2
+"CAGCGACAGATCACGG","Phase","G1",2
+"AAAGATGAGTGAACAT","Phase","G1",2
+"CTTCTCTGTCAGAGGT","Phase","G1",2
+"ATTTCTGAGAAGATTC","Phase","G1",2
+"CTCTAATTCACCATAG","Phase","G1",2
+"CGTGTCTTCTTGTCAT","Phase","S",2
+"GCCTCTAAGCTAGTCT","Phase","G1",2
+"CCTAAAGTCATGCAAC","Phase","G2M",2
+"AGGCCACAGCTGTCTA","Phase","S",2
+"GAAATGACACATGACT","Phase","G1",2
+"ACTGAGTAGGCTAGGT","Phase","S",2
+"GGCGTGTCAACTGCTA","Phase","G1",2
+"AACTCAGAGAGCTGCA","Phase","G1",2
+"CGCTTCACAGATCGGA","Phase","G1",2
+"GCTGCTTTCTGGTGTA","Phase","S",2
+"CGTGTCTCATACTCTT","Phase","G1",2
+"ACTATCTGTCAGGACA","Phase","G1",2
+"CTGAAACTCGATAGAA","Phase","G1",2
+"GTTCTCGCAGCTGGCT","Phase","G1",2
+"CATATGGAGGCCCGTT","Phase","G1",2
+"ACTGAACAGCCTCGTG","Phase","G1",2
+"CCTAGCTCAGGTGCCT","Phase","G1",2
+"CCCTCCTAGACCCACC","Phase","G1",2
+"TTAACTCGTCCGAACC","Phase","S",2
+"GTGGGTCCATAAAGGT","Phase","G1",2
+"CTGAAACTCAAACCAC","Phase","G1",2
+"GTTCTCGGTTTGTGTG","Phase","G1",2
+"ACATCAGTCCGTTGTC","Phase","G1",2
+"ATCCACCTCCTTTCTC","Phase","G1",2
+"ACAGCCGAGCCAACAG","Phase","G1",2
+"AAGACCTAGTAGGCCA","Phase","G1",2
+"AACTCTTCACTCGACG","Phase","G1",2
+"AGCGTATCACGAGGTA","Phase","G1",2
+"GGACAGAAGGCCGAAT","Phase","G1",2
+"ACTGTCCCACGTAAGG","Phase","G1",2
+"TCCACACCAGGCGATA","Phase","G1",2
+"CGTCACTCAGTATAAG","Phase","G1",2
+"CACACCTGTCGCTTTC","Phase","G1",2
+"GGCTCGAGTCGCTTCT","Phase","G1",2
+"TGGCTGGCAGTGAGTG","Phase","G1",2
+"GATGAAACAGGCTGAA","Phase","G1",2
+"TTCTTAGTCGCAGGCT","Phase","G1",2
+"TCCCGATGTAAGTGTA","Phase","G1",2
+"CTGAAACAGTATCGAA","Phase","G1",2
+"ACTATCTTCTGCTGTC","Phase","G1",2
+"GATCGCGAGCTGAACG","Phase","G2M",2
+"CATGCCTAGTGGTAGC","Phase","G1",2
+"GACCAATGTAAGAGAG","Phase","G1",2
+"CATCAGAGTTCGCTAA","Phase","G1",2
+"CCATTCGGTGCTAGCC","Phase","G1",2
+"CCACTACTCTTTAGTC","Phase","G1",2
+"AAACGGGGTGAAATCA","Phase","G2M",2
+"ACCGTAATCTATCCCG","Phase","S",2
+"ACTTACTCAATACGCT","Phase","G1",2
+"GAACGGATCACAACGT","Phase","G1",2
+"CGGTTAAGTCTAGCCG","Phase","G1",2
+"GGATGTTGTTACGCGC","Phase","G1",2
+"CAAGAAACACTAGTAC","Phase","G1",2
+"AGTTGGTGTCGCATCG","Phase","G1",2
+"ACTGCTCGTCCTAGCG","Phase","G1",2
+"CGTCCATGTCTAACGT","Phase","G1",2
+"CAGCTAACAACACGCC","Phase","G1",2
+"CAGTAACCATACGCTA","Phase","G1",2
+"CTCGTACCAGCCAGAA","Phase","G1",2
+"ATTATCCGTATAAACG","Phase","G1",2
+"GTACTTTTCAGTTCGA","Phase","G1",2
+"AGTAGTCCACATGACT","Phase","G1",2
+"AGTGAGGTCTGTTGAG","Phase","G1",2
+"TCTCATAAGCAGATCG","Phase","G1",2
+"ATCACGATCAGGATCT","Phase","G1",2
+"AGCAGCCCAAGTCATC","Phase","S",2
+"TATTACCAGCTAGTCT","Phase","G1",2
+"GTGGGTCGTACTTCTT","Phase","G1",2
+"GTCCTCAAGTTCGATC","Phase","G1",2
+"GCCAAATGTAAACACA","Phase","G1",2
+"ACTTACTGTTTGGGCC","Phase","G1",2
+"ACTTACTCACCGTTGG","Phase","G1",2
+"CAGAGAGAGGACCACA","Phase","G1",2
+"AAGACCTGTGGCTCCA","Phase","G1",2
+"AACTTTCCACAGTCGC","Phase","G1",2
+"CAGATCATCTCGATGA","Phase","S",2
+"TGTTCCGGTCAGCTAT","Phase","G2M",2
+"GCGCCAAAGAGGTTAT","Phase","S",2
+"CATGCCTTCGCACTCT","Phase","G1",2
+"GTAACTGTCAGTGCAT","Phase","S",2
+"CGGAGCTGTTACGGAG","Phase","G1",2
+"AGCAGCCGTCGCATCG","Phase","G1",2
+"CGCCAAGTCTAAGCCA","Phase","G1",2
+"ACTATCTTCATGTAGC","Phase","G1",2
+"ATGCGATGTTACTGAC","Phase","G2M",2
+"GATGAAAAGACAGACC","Phase","G1",2
+"GTCAAGTAGTATCGAA","Phase","G1",2
+"TCAGGTACAGTCACTA","Phase","G1",2
+"TATCTCACATTGTGCA","Phase","G1",2
+"CGTAGCGAGACTGTAA","Phase","G1",2
+"ACGATGTGTCGCGGTT","Phase","G1",2
+"CTCTGGTTCCCAGGTG","Phase","S",2
+"GGATGTTAGTAAGTAC","Phase","G1",2
+"CAGAATCCACAAGCCC","Phase","G1",2
+"GTAACTGGTCACTGGC","Phase","G1",2
+"AACTTTCGTGGTCCGT","Phase","S",2
+"ACGCAGCCAATCCGAT","Phase","G1",2
+"TTTCCTCAGTGTCCCG","Phase","G1",2
+"TATTACCGTTGAGTTC","Phase","G1",2
+"ACTTTCATCAGAGCTT","Phase","G1",2
+"TAAGTGCTCGCCTGAG","Phase","G1",2
+"TCGTACCCATATACGC","Phase","G1",2
+"TGGTTCCGTTGATTCG","Phase","G2M",2
+"AGAGCTTCATTCGACA","Phase","G1",2
+"GGTGTTACATGTTGAC","Phase","G1",2
+"CCTCTGACATCGGTTA","Phase","G1",2
+"CTCTACGCACTAAGTC","Phase","G1",2
+"CTCGGAGGTGAAGGCT","Phase","G1",2
+"ACGTCAACAGACAAAT","Phase","S",2
+"TCGAGGCAGTTAACGA","Phase","G1",2
+"CAAGTTGTCTAACTGG","Phase","G1",2
+"AGGGAGTAGGGTATCG","Phase","G2M",2
+"CTTTGCGGTACTTGAC","Phase","G1",2
+"AGAGCTTTCTTGAGGT","Phase","G1",2
+"GCACATAAGCAATATG","Phase","S",2
+"GGGAGATAGTGACATA","Phase","G1",2
+"TGTGGTACAGTCGATT","Phase","G1",2
+"TAAGAGACAGTAGAGC","Phase","G1",2
+"CACATTTTCGAGGTAG","Phase","G1",2
+"AGACGTTCAATGGTCT","Phase","G1",2
+"GGAACTTGTCGAACAG","Phase","S",2
+"TGAGCATGTTAAAGAC","Phase","G1",2
+"TTGTAGGTCCAAATGC","Phase","G1",2
+"GAGGTGATCTAGCACA","Phase","G2M",2
+"CGTAGCGTCACTATTC","Phase","G1",2
+"AAACGGGCACTGTGTA","Phase","S",2
+"TGCGCAGTCTCTTATG","Phase","S",2
+"AACACGTTCGGAATCT","Phase","G1",2
+"ACTGATGGTCGACTGC","Phase","G2M",2
+"CGTTCTGTCCGCGGTA","Phase","G1",2
+"CAGTAACAGCCACCTG","Phase","G1",2
+"ACTGATGAGTGCAAGC","Phase","S",2
+"CTGCTGTGTTGTGGCC","Phase","G1",2
+"GAGTCCGCAATTGCTG","Phase","S",2
+"TTTCCTCTCTGAAAGA","Phase","S",2
+"CCTCAGTAGCGTAATA","Phase","G1",2
+"GTCATTTGTCTCAACA","Phase","G1",2
+"GACTAACCACTCGACG","Phase","G2M",2
+"GGTGAAGAGCAGGTCA","Phase","G1",2
+"GAATAAGTCTGATACG","Phase","S",2
+"GTGCGGTCACCGAATT","Phase","G1",2
+"CAGGTGCAGACTTGAA","Phase","S",2
+"GAGGTGAAGCTACCTA","Phase","G1",2
+"CATTCGCGTGCAGACA","Phase","G1",2
+"ATGTGTGAGTTTGCGT","Phase","G1",2
+"TCTATTGCAGTAAGCG","Phase","G1",2
+"TTGGCAATCGGATGGA","Phase","G1",2
+"CGTCAGGAGTCATCCA","Phase","S",2
+"CACCACTTCAGCTTAG","Phase","S",2
+"TGCCCTAGTATCGCAT","Phase","G1",2
+"ACGGGCTAGACTTGAA","Phase","G1",2
+"TGGCGCAGTGTATGGG","Phase","G1",2
+"CCGTACTGTCAGAAGC","Phase","G1",2
+"GATCGATAGAAAGTGG","Phase","G1",2
+"TGCGGGTTCCAGGGCT","Phase","S",2
+"GTCTTCGTCCTACAGA","Phase","G1",2
+"AGGGATGTCGCATGGC","Phase","G1",2
+"TGCCCTACAATCACAC","Phase","S",2
+"CCCATACTCGTGGACC","Phase","G1",2
+"GACTAACCATGAGCGA","Phase","G1",2
+"TCACAAGAGCCACTAT","Phase","S",2
+"GGCAATTTCACATGCA","Phase","G1",2
+"TGGTTCCAGGAATGGA","Phase","G1",2
+"TTCGGTCAGGGCATGT","Phase","G1",2
+"GCATGTAAGAATCTCC","Phase","G1",2
+"GTTACAGTCTAGAGTC","Phase","G1",2
+"GTTCGGGAGTCACGCC","Phase","G2M",2
+"GATCGCGTCTGGAGCC","Phase","G2M",2
+"TGTGGTAAGAGGTTAT","Phase","G1",2
+"CCGTACTGTTACTGAC","Phase","S",2
+"TTATGCTTCGTTTAGG","Phase","G1",2
+"GCATGCGCAAATTGCC","Phase","S",2
+"TCAACGACACCATCCT","Phase","S",2
+"CCTCTGATCATGTCTT","Phase","S",2
+"CGTGAGCTCTTCTGGC","Phase","G1",2
+"CTCAGAATCTTGAGAC","Phase","G1",2
+"CGTCCATCATGGTAGG","Phase","S",2
+"TTAGTTCCATGAGCGA","Phase","S",2
+"AGCTTGATCAACACGT","Phase","G1",2
+"CAGCAGCAGAGGTACC","Phase","G1",2
+"ATCATGGGTTCTCATT","Phase","G1",2
+"CTAGCCTGTGCGATAG","Phase","G1",2
+"GTGTGCGGTCTCCACT","Phase","G1",2
+"GCATGATCATGCATGT","Phase","G1",2
+"TACGGTATCCCATTTA","Phase","G1",2
+"CCTTCGAAGCTAGGCA","Phase","G1",2
+"AACTGGTGTCGAGTTT","Phase","G1",2
+"GACCAATGTACGAAAT","Phase","S",2
+"GTATTCTTCAGGTAAA","Phase","S",2
+"TACCTATGTAACGTTC","Phase","G1",2
+"TCACAAGCAACGATGG","Phase","G1",2
+"CCCAGTTTCAGCACAT","Phase","G1",2
+"TGCCAAACATGACATC","Phase","G1",2
+"CTAAGACGTACTCTCC","Phase","G1",2
+"CGATGGCTCAGTGTTG","Phase","G1",2
+"CCAGCGACAGCGATCC","Phase","S",2
+"TGAGAGGAGCCAGGAT","Phase","G1",2
+"AGAGCGACACAACTGT","Phase","G2M",2
+"CTTTGCGGTCGAATCT","Phase","G1",2
+"TTTGGTTTCCTTTCGG","Phase","G1",2
+"GCCTCTAAGTCCGGTC","Phase","G1",2
+"GGGATGATCTGTCCGT","Phase","G1",2
+"CGCTGGACATCCTAGA","Phase","S",2
+"GCACATATCACGGTTA","Phase","G1",2
+"CATCCACCAGATGGGT","Phase","G1",2
+"TGCCCTATCATAAAGG","Phase","G1",2
+"ACTGTCCAGGTTCCTA","Phase","S",2
+"GCTGCTTGTCACTTCC","Phase","G1",2
+"GACAGAGCAGTCAGAG","Phase","G1",2
+"ATCATCTTCAGTCCCT","Phase","G1",2
+"AATCGGTGTCACACGC","Phase","G1",2
+"TACGGATAGTTTAGGA","Phase","G1",2
+"GTGTGCGCAGCGATCC","Phase","G1",2
+"CCACGGAGTCTTGATG","Phase","G2M",2
+"GGCTCGACAGCTATTG","Phase","G1",2
+"AGATTGCCACCAGGCT","Phase","G1",2
+"AGTGTCACACCAGGTC","Phase","G1",2
+"CACCAGGGTACCTACA","Phase","S",2
+"GGCCGATTCAGAGACG","Phase","G1",2
+"CCACCTATCTAAGCCA","Phase","G1",2
+"GACTGCGGTCGCCATG","Phase","G1",2
+"GAATGAACAGCCTTGG","Phase","G2M",2
+"CGCTGGAAGGGCATGT","Phase","S",2
+"CTAATGGCATGGTTGT","Phase","G1",2
+"ACGAGGATCAATCTCT","Phase","G1",2
+"AGTCTTTTCGTACGGC","Phase","G1",2
+"TTCCCAGAGGATTCGG","Phase","G1",2
+"GGCAATTCATCTCCCA","Phase","G1",2
+"GTGCGGTAGTGAATTG","Phase","G1",2
+"TACCTATGTCCAACTA","Phase","G1",2
+"TACTTGTAGACAAAGG","Phase","G1",2
+"GTCCTCACACCACGTG","Phase","G1",2
+"TAAACCGCATTCCTCG","Phase","G1",2
+"AACACGTGTCGACTGC","Phase","G1",2
+"TCAGCTCAGGCTATCT","Phase","G1",2
+"CACAGTAGTTCCTCCA","Phase","S",2
+"TCGCGAGCACACATGT","Phase","G1",2
+"ACGGCCACACGCTTTC","Phase","S",2
+"AGATTGCCATTCCTGC","Phase","G1",2
+"CTCAGAATCAGGTTCA","Phase","G1",2
+"TGAGGGACAGACTCGC","Phase","G1",2
+"TACGGTATCTTTCCTC","Phase","G1",2
+"GATCGCGAGCGTTGCC","Phase","G1",2
+"CAGCGACCACAGGAGT","Phase","S",2
+"TCTTCGGTCTGCTTGC","Phase","G1",2
+"GTCACGGCATACTACG","Phase","G1",2
+"AAGGCAGTCCGAGCCA","Phase","G1",2
+"GGACAGATCCTGCAGG","Phase","G2M",2
+"GGCAATTGTCCATCCT","Phase","G1",2
+"AACTTTCCACTGCCAG","Phase","G1",2
+"ACCAGTAGTCATGCCG","Phase","G1",2
+"ATCACGAGTGCACCAC","Phase","G1",2
+"AACACGTGTGACTCAT","Phase","G1",2
+"CTGAAGTTCTGCGGCA","Phase","G1",2
+"GGCGACTCACCAGGTC","Phase","S",2
+"GGGACCTAGCTGCCCA","Phase","G1",2
+"AATCGGTCAAACAACA","Phase","G1",2
+"CGGAGCTGTACATCCA","Phase","G1",2
+"CATGGCGAGAGTCTGG","Phase","S",2
+"CGTGTAATCGTTGACA","Phase","G1",2
+"CGATCGGAGCTGCAAG","Phase","G1",2
+"TGCACCTAGTACGCGA","Phase","G1",2
+"AGTGTCACATAGTAAG","Phase","G1",2
+"GAACGGACAAGGTGTG","Phase","G1",2
+"TTGTAGGGTTACGGAG","Phase","G1",2
+"AGGGTGAAGGTGCAAC","Phase","G1",2
+"CTACACCCAGGGCATA","Phase","G2M",2
+"AAGCCGCGTTATCCGA","Phase","G1",2
+"AAGCCGCTCTTGCATT","Phase","G1",2
+"AACTGGTTCGTCCAGG","Phase","G1",2
+"AAGTCTGGTCTCCATC","Phase","G1",2
+"AGGGAGTGTGTAAGTA","Phase","G1",2
+"CGCTATCAGGTGATAT","Phase","G1",2
+"AACTCTTAGCTAACAA","Phase","G1",2
+"GTGTGCGGTAGTACCT","Phase","G1",2
+"GGGTCTGCAGCAGTTT","Phase","G1",2
+"CGTAGGCCAACACCCG","Phase","G1",2
+"CGAGCACTCTACCTGC","Phase","G1",2
+"CATCGAAAGATGTTAG","Phase","G2M",2
+"GCAATCACAGCTGCTG","Phase","G1",2
+"AACACGTAGTAATCCC","Phase","G1",2
+"GATCTAGCATCACCCT","Phase","G1",2
+"GGCTCGACAGCTTCGG","Phase","G1",2
+"TGTGGTAGTTAGAACA","Phase","G1",2
+"GAGCAGAAGCCAGTTT","Phase","G1",2
+"CTCGAGGGTAAGTAGT","Phase","G1",2
+"GGACAGAGTCAGCTAT","Phase","G1",2
+"ACTTTCAAGGATATAC","Phase","S",2
+"GATCAGTGTATAATGG","Phase","G1",2
+"CTTCTCTCATGCGCAC","Phase","G1",2
+"AGCGTATCAGACTCGC","Phase","G2M",2
+"GTACTCCGTAGCGATG","Phase","G1",2
+"CTGTGCTCAGCTCCGA","Phase","G1",2
+"CCTTCGATCAAGAAGT","Phase","S",2
+"GTCTTCGAGCGTGAGT","Phase","G1",2
+"CGCTGGACACGGTAAG","Phase","G1",2
+"CAACCAAAGCGTTCCG","Phase","G1",2
+"CATCAGAAGTGGTAAT","Phase","G1",2
+"CGAATGTAGTTCCACA","Phase","G1",2
+"GCTGCGACAATCGGTT","Phase","S",2
+"TTATGCTTCCAGTATG","Phase","G1",2
+"TTCTTAGTCGGCGCTA","Phase","G1",2
+"AGCTTGATCTGACCTC","Phase","G2M",2
+"CCGTACTGTTCCACTC","Phase","S",2
+"TAAACCGAGGATGGAA","Phase","S",2
+"CTTACCGCAAAGTCAA","Phase","G2M",2
+"CGGTTAATCGTCTGAA","Phase","S",2
+"CTCGTCATCGGTCTAA","Phase","G1",2
+"GTTAAGCTCCGCATAA","Phase","G1",2
+"CGTCAGGCAATCTGCA","Phase","S",2
+"TGGACGCAGCGTCTAT","Phase","G1",2
+"TGGACGCGTATTCGTG","Phase","G1",2
+"CCACGGAAGATCCTGT","Phase","G1",2
+"CTGAAGTTCTTTAGGG","Phase","G1",2
+"CAGTAACCATGCCTAA","Phase","G2M",2
+"AGTAGTCAGCGTTCCG","Phase","G1",2
+"ACGAGCCCACCTTGTC","Phase","G1",2
+"TGCGTGGAGGTTCCTA","Phase","G1",2
+"TGTGTTTGTATATCCG","Phase","G1",2
+"ATCATCTAGTGATCGG","Phase","G1",2
+"GACGCGTAGACGCACA","Phase","G1",2
+"CCTCAGTGTGATAAGT","Phase","G1",2
+"AGATTGCCACAAGCCC","Phase","G1",2
+"GACGTGCTCCGGCACA","Phase","G1",2
+"TGCGTGGTCTTTACGT","Phase","G1",2
+"CATCAGATCATCGCTC","Phase","G1",2
+"CTTGGCTCATCCCACT","Phase","G1",2
+"AGCATACGTCGCGAAA","Phase","G1",2
+"CTTAACTGTCGGGTCT","Phase","S",2
+"GTTTCTATCAACGGCC","Phase","G1",2
+"GAGGTGAGTGACAAAT","Phase","G1",2
+"TCTTTCCGTTATGTGC","Phase","G1",2
+"CCCAGTTAGGTGCTAG","Phase","G1",2
+"GAATGAACAATCGAAA","Phase","G1",2
+"CCTACACAGATCCGAG","Phase","G1",2
+"GATGCTACAAGCGCTC","Phase","S",2
+"GTTACAGTCTTGAGAC","Phase","G1",2
+"AAGACCTAGACCTTTG","Phase","G1",2
+"GACTACACATATGAGA","Phase","G2M",2
+"TGTGGTAAGTGGTCCC","Phase","G1",2
+"CGTTAGATCAGTCAGT","Phase","G1",2
+"GTGCTTCTCCAAACTG","Phase","G2M",2
+"GATGAGGAGAAACCTA","Phase","G1",2
+"GAAATGATCTTCAACT","Phase","G1",2
+"GCTCCTAGTCGGGTCT","Phase","S",2
+"ATCCACCTCATGCAAC","Phase","G1",2
+"CGACCTTCACACAGAG","Phase","G1",2
+"GCGCAGTGTACGCACC","Phase","G1",2
+"GCACTCTTCCGGCACA","Phase","G1",2
+"GTACTCCTCTCTTATG","Phase","G1",2
+"CACATAGTCATTGCGA","Phase","G1",2
+"CTGAAACGTATGGTTC","Phase","G1",2
+"CGTGAGCAGTCTCAAC","Phase","S",2
+"CCTTTCTTCTTCGAGA","Phase","G1",2
+"CTGAAACGTAGCGCAA","Phase","G1",2
+"TTGGAACGTCCGTTAA","Phase","G1",2
+"CATTATCAGCTCCCAG","Phase","G1",2
+"CGGAGTCCATAACCTG","Phase","G1",2
+"GTGCAGCTCGTTTATC","Phase","G1",2
+"ACGCCAGGTTCTGAAC","Phase","S",2
+"CAACCTCAGCGTGAAC","Phase","G1",2
+"AACTGGTGTACCGTTA","Phase","G1",2
+"CGATTGAAGTTAGCGG","Phase","G1",2
+"GGCGTGTCACCAGGTC","Phase","G1",2
+"GGACGTCCAGTATCTG","Phase","S",2
+"TTCGGTCAGGTCGGAT","Phase","S",2
+"TTAGGACAGGTCATCT","Phase","G1",2
+"CAAGGCCTCGTACCGG","Phase","G2M",2
+"TAAGCGTCAATGCCAT","Phase","G1",2
+"GCAAACTTCGGAATCT","Phase","G1",2
+"TGACTAGCACGGTGTC","Phase","G1",2
+"GGGACCTGTTGGACCC","Phase","G1",2
+"CTCGAGGTCAACTCTT","Phase","G2M",2
+"GAATGAATCATCGGAT","Phase","G1",2
+"TGGTTAGCAGTCGTGC","Phase","G1",2
+"CTCTAATAGTTATCGC","Phase","G1",2
+"AACTCTTAGCTGCGAA","Phase","G1",2
+"GGGCACTTCACGAAGG","Phase","G1",2
+"CGTGTCTGTAGTGAAT","Phase","G1",2
+"GGGTTGCTCCCAGGTG","Phase","G1",2
+"ATCCGAACACGGTAGA","Phase","S",2
+"TTCTCAATCACTCCTG","Phase","G1",2
+"ACTGATGTCCCTAACC","Phase","G1",2
+"AGTCTTTGTCTAAACC","Phase","G1",2
+"TCGCGAGTCGACGGAA","Phase","G1",2
+"AAATGCCAGACTAAGT","Phase","G1",2
+"TACGGGCAGATTACCC","Phase","S",2
+"AACTCTTCATTTGCCC","Phase","G1",2
+"CAGCTGGTCGCCGTGA","Phase","G1",2
+"CACATAGAGGGAAACA","Phase","G1",2
+"ACAGCCGCATCGTCGG","Phase","S",2
+"GCGCAGTGTCCTAGCG","Phase","S",2
+"AAGGCAGCAGTACACT","Phase","G1",2
+"TGGTTCCTCAACCATG","Phase","G1",2
+"GTGTTAGAGTTTCCTT","Phase","G1",2
+"CTTCTCTAGTACTTGC","Phase","G1",2
+"CACATTTGTATAGTAG","Phase","G1",2
+"GTGCATAAGAATGTTG","Phase","S",2
+"GGACATTAGAAACCAT","Phase","S",2
+"TCTCTAAGTGGCAAAC","Phase","S",2
+"ACGATACTCGCGCCAA","Phase","G1",2
+"GAATAAGCACGAAATA","Phase","G1",2
+"CATGACACATCCGCGA","Phase","G1",2
+"ACGGGTCAGGGTGTTG","Phase","G1",2
+"GATCAGTTCGGCGCAT","Phase","G1",2
+"ACTGTCCGTGCGATAG","Phase","G1",2
+"CGTTGGGGTTTAAGCC","Phase","G1",2
+"AACTCAGTCTGGTTCC","Phase","S",2
+"TAAGCGTAGATCGATA","Phase","G1",2
+"CGTTCTGTCACAATGC","Phase","G1",2
+"GGGACCTGTCAGCTAT","Phase","G1",2
+"ATGCGATAGAAACGAG","Phase","G1",2
+"TATGCCCTCTTCCTTC","Phase","G1",2
+"CCACCTATCGGAAACG","Phase","G1",2
+"CGATGGCCAACTGGCC","Phase","G1",2
+"CAGCCGAGTAGCCTAT","Phase","G1",2
+"CTCGAAAGTGGTGTAG","Phase","G1",2
+"TGCGGGTTCTCAAACG","Phase","S",2
+"TACGGATTCCAAGTAC","Phase","G1",2
+"TTTGCGCAGCAACGGT","Phase","G1",2
+"CCTACACCATTATCTC","Phase","G1",2
+"CTGAAACTCTGTTTGT","Phase","G1",2
+"CCATGTCTCCGCATAA","Phase","G1",2
+"CAGCCGAAGTAGGTGC","Phase","G2M",2
+"TGACGGCGTCAGGACA","Phase","G1",2
+"ACTGATGCACATGACT","Phase","G1",2
+"ATCATCTGTAGGACAC","Phase","G1",2
+"ATCTGCCGTCATATGC","Phase","G1",2
+"TACACGAAGATCCCAT","Phase","G1",2
+"CATCCACGTTACGACT","Phase","G1",2
+"AGATCTGCACCAGGTC","Phase","G1",2
+"AGCAGCCGTCGAACAG","Phase","G1",2
+"GCTGCAGCAATCCAAC","Phase","S",2
+"GGGCACTCAATGAAAC","Phase","G1",2
+"GTGCTTCTCACGACTA","Phase","G1",2
+"GATCGTACAGGCGATA","Phase","G1",2
+"GCTGCGAAGAACAACT","Phase","G1",2
+"CTACACCCATCAGTCA","Phase","G1",2
+"AACACGTGTCGGCTCA","Phase","G1",2
+"CGCTTCATCAGTTCGA","Phase","S",2
+"ATAGACCAGTGATCGG","Phase","G1",2
+"GACACGCAGTATGACA","Phase","G1",2
+"ACGGGTCCATGATCCA","Phase","G1",2
+"CGTCTACTCAGTCCCT","Phase","G1",2
+"TTATGCTCACTACAGT","Phase","G1",2
+"GATCAGTTCCCGGATG","Phase","G1",2
+"GATCTAGGTGCCTTGG","Phase","S",2
+"AAAGTAGGTCAGATAA","Phase","G1",2
+"CTCGTACGTTGGTTTG","Phase","G1",2
+"TTGGCAATCGAACGGA","Phase","S",2
+"CATCGAAGTTACGCGC","Phase","G1",2
+"ACGCAGCGTCAACTGT","Phase","G1",2
+"GTCAAGTCAAAGTGCG","Phase","S",2
+"GAAGCAGGTCTAGAGG","Phase","G1",2
+"CCCAGTTGTGCGCTTG","Phase","G1",2
+"ATTCTACGTTTAGGAA","Phase","G1",2
+"GGGAATGCACATTTCT","Phase","S",2
+"CCTTCGATCCTGCTTG","Phase","S",2
+"CAGCTAAAGAGCCCAA","Phase","S",2
+"GTGCAGCGTCTCTTAT","Phase","G1",2
+"AACGTTGCATGGGACA","Phase","G2M",2
+"TGTGTTTTCATTCACT","Phase","G1",2
+"GATGCTATCCCTCTTT","Phase","G1",2
+"TCGCGAGTCAACGCTA","Phase","G2M",2
+"TTAACTCCACGCCAGT","Phase","G1",2
+"GTGCGGTTCTGATTCT","Phase","G1",2
+"GCTGGGTCACGAGGTA","Phase","G1",2
+"TCTATTGGTCTAGCCG","Phase","G1",2
+"TCACGAACAGGCGATA","Phase","G1",2
+"CGAACATTCACAAACC","Phase","G2M",2
+"TCTATTGTCACATAGC","Phase","S",2
+"ACTTTCAAGACACTAA","Phase","G1",2
+"GCGAGAAGTGGGTATG","Phase","G1",2
+"TTCTCAAAGTACGCGA","Phase","G1",2
+"CTCGAGGTCTGTTGAG","Phase","G1",2
+"ACATACGAGCTATGCT","Phase","G1",2
+"ACGATACAGTCATCCA","Phase","G1",2
+"ACGCAGCGTTCATGGT","Phase","G1",2
+"TTAACTCCACGAGAGT","Phase","G1",2
+"CGGCTAGAGGCACATG","Phase","G1",2
+"TGAGCATTCGGGAGTA","Phase","G2M",2
+"CTCGAAATCGCAAACT","Phase","G1",2
+"TTAGGCAGTTAAGAAC","Phase","G1",2
+"TTGTAGGCATACTCTT","Phase","S",2
+"GTAACGTGTCACTGGC","Phase","G1",2
+"AATCGGTCATATGGTC","Phase","G1",2
+"GGTGCGTGTCCGAGTC","Phase","S",2
+"AACACGTTCCGCGCAA","Phase","G2M",2
+"CCTTCCCCAAAGTGCG","Phase","G1",2
+"GTAACTGAGCCGGTAA","Phase","G1",2
+"AGCATACCAATGCCAT","Phase","G1",2
+"CATCAAGGTGGTCTCG","Phase","G1",2
+"AGTCTTTGTCTCGTTC","Phase","G1",2
+"CTGATAGAGCTCAACT","Phase","G2M",2
+"TCTTTCCTCGTCTGCT","Phase","G1",2
+"CCTTCGATCTCCAACC","Phase","G1",2
+"GAGGTGAGTCCGAGTC","Phase","S",2
+"CGTGTAACATGGTCTA","Phase","G1",2
+"GTTCATTAGGGTCTCC","Phase","G1",2
+"GCGACCATCACCAGGC","Phase","G1",2
+"GTACTTTCATGGTCAT","Phase","G1",2
+"TCAGCAAAGCGATGAC","Phase","G1",2
+"TCACAAGTCTGGTTCC","Phase","G1",2
+"TAGACCATCTTATCTG","Phase","G1",2
+"AGACGTTAGCCGATTT","Phase","G1",2
+"GAACCTACAGCGATCC","Phase","G1",2
+"CCAATCCAGAGTAAGG","Phase","G1",2
+"AAACGGGGTACAGTTC","Phase","G1",2
+"CAGGTGCGTACAAGTA","Phase","G1",2
+"GCTCCTATCTCACATT","Phase","G1",2
+"TATCAGGCACCAGTTA","Phase","G1",2
+"TGCTACCCATAAGACA","Phase","G1",2
+"GATTCAGAGTACGTTC","Phase","G1",2
+"CGGACTGCATCCCATC","Phase","G1",2
+"GCGCCAACACCTCGGA","Phase","G1",2
+"AGGTCATTCTGCGTAA","Phase","S",2
+"CTACCCAGTCAAACTC","Phase","G1",2
+"TGGCCAGAGCTACCTA","Phase","G2M",2
+"TGTCCCACACGGTAGA","Phase","G1",2
+"ATGTGTGAGGAATTAC","Phase","G1",2
+"TACAGTGAGCGTTTAC","Phase","G1",2
+"CGATTGAAGTCTTGCA","Phase","G1",2
+"TTCGGTCGTCACAAGG","Phase","G2M",2
+"GTCTCGTCACGTGAGA","Phase","S",2
+"CTTCTCTCAGCATACT","Phase","G1",2
+"GCTTGAACATTTGCTT","Phase","G1",2
+"AGAGCTTGTTAAAGAC","Phase","S",2
+"GCTCTGTTCGCTTAGA","Phase","S",2
+"GATCAGTAGGTTCCTA","Phase","S",2
+"GTACTTTAGATATGCA","Phase","G1",2
+"ATGTGTGTCAAAGACA","Phase","G1",2
+"TCAGATGGTAGATTAG","Phase","G1",2
+"TGTCCCAAGTTTAGGA","Phase","G1",2
+"CTGATCCTCAGTTGAC","Phase","S",2
+"CTAAGACTCACTCCTG","Phase","G1",2
+"CACAGTATCTTAGAGC","Phase","S",2
+"CACACCTCATTGTGCA","Phase","G1",2
+"TTAGGCAGTAGCGTAG","Phase","S",2
+"ACTGAACAGTACATGA","Phase","S",2
+"TATTACCAGATGGGTC","Phase","G1",2
+"GGAAAGCGTACGCACC","Phase","S",2
+"GGGCATCCATTTCAGG","Phase","G1",2
+"CCCTCCTGTCTAACGT","Phase","G1",2
+"TTAGGCAGTGTGAATA","Phase","G1",2
+"TCGGTAACAGGGTACA","Phase","G1",2
+"AGGGAGTCACCGAATT","Phase","G1",2
+"GTGGGTCGTAGGAGTC","Phase","G1",2
+"GAACGGAAGACGCTTT","Phase","G1",2
+"GCTGCTTGTCTTCAAG","Phase","S",2
+"ATAAGAGTCCACGTTC","Phase","S",2
+"GATCGTAAGTAGGTGC","Phase","G1",2
+"TGCGTGGAGGTAAACT","Phase","G1",2
+"CACCACTGTCGGCTCA","Phase","G2M",2
+"ACGAGCCCACTCTGTC","Phase","G1",2
+"GCATGTATCACGATGT","Phase","G1",2
+"TTAGGACAGATGGGTC","Phase","G1",2
+"CGCGTTTGTATTACCG","Phase","G1",2
+"ACTGCTCAGGTGTTAA","Phase","G1",2
+"GCTGCAGCATTCTCAT","Phase","G1",2
+"CACAGTATCAGAGGTG","Phase","G2M",2
+"TTCGAAGTCAACGCTA","Phase","G1",2
+"TGGACGCAGATTACCC","Phase","G1",2
+"TTGAACGGTGATGCCC","Phase","S",2
+"ATCATGGTCCAGAGGA","Phase","S",2
+"AGCTTGACAGTAAGAT","Phase","S",2
+"CATCGAAGTAGCGTCC","Phase","G1",2
+"TGGACGCTCTTGTTTG","Phase","G1",2
+"AGAGTGGGTCACCTAA","Phase","G1",2
+"CGTCAGGCAAACGCGA","Phase","G1",2
+"CGTCACTGTCAGGACA","Phase","G1",2
+"GCGACCACACGTTGGC","Phase","G1",2
+"CCATGTCGTTTGCATG","Phase","G1",2
+"TGCCAAAAGCGCTTAT","Phase","G1",2
+"AACTCAGAGGTAGCCA","Phase","G1",2
+"ACAGCCGAGAGAACAG","Phase","G1",2
+"CGGAGCTGTTCTGAAC","Phase","G1",2
+"CAACTAGAGCTTCGCG","Phase","G2M",2
+"CGGACTGCAGCCAATT","Phase","G1",2
+"GACCAATAGCCGGTAA","Phase","S",2
+"GGACGTCGTCAGAAGC","Phase","G1",2
+"AGGTCCGAGTTACCCA","Phase","G1",2
+"GGAAAGCGTCTTGATG","Phase","S",2
+"CCGGGATGTACCGCTG","Phase","G2M",2
+"CATCCACAGTCACGCC","Phase","G2M",2
+"CGCTATCCAGGCAGTA","Phase","G2M",2
+"TCAGGTACACTGTCGG","Phase","S",2
+"GGCGTGTTCTCGTATT","Phase","G1",2
+"CGGACGTAGACAGACC","Phase","G1",2
+"AGTTGGTTCACATAGC","Phase","G1",2
+"GTGGGTCGTCCAGTAT","Phase","G1",2
+"TATGCCCAGGGTATCG","Phase","G1",2
+"GGGCATCCATGACATC","Phase","G2M",2
+"AGAGTGGCACCTCGGA","Phase","G1",2
+"ACCCACTTCTGAGGGA","Phase","G1",2
+"TATTACCTCGTTGCCT","Phase","G1",2
+"ACGATGTTCGCAGGCT","Phase","G1",2
+"TGACAACTCGCACTCT","Phase","G1",2
+"GACGCGTCATTTCAGG","Phase","G1",2
+"CATATGGTCAACACAC","Phase","G2M",2
+"AGTGGGAGTGGTCCGT","Phase","G1",2
+"ATTGGTGTCCAGTATG","Phase","S",2
+"GATGCTAAGCGATAGC","Phase","S",2
+"GGGCACTTCTAACTGG","Phase","S",2
+"TTCTCAACAGTTTACG","Phase","S",2
+"TCACAAGAGCATGGCA","Phase","G1",2
+"GGAATAACACGACGAA","Phase","G2M",2
+"GGGAGATGTTAAAGAC","Phase","G1",2
+"AACTTTCGTGACCAAG","Phase","S",2
+"CGAGAAGCACTTACGA","Phase","G1",2
+"AACTCCCAGTACGACG","Phase","G1",2
+"CGTTAGAAGTATCTCG","Phase","S",2
+"CCTATTACAAACGTGG","Phase","S",2
+"GCTGCTTAGATCTGCT","Phase","G1",2
+"CCATTCGCAAGCCATT","Phase","G1",2
+"GTATCTTGTACTCAAC","Phase","G1",2
+"TGCTACCCAGGGCATA","Phase","G1",2
+"GGAACTTAGGTTACCT","Phase","G1",2
+"AGATTGCAGCTAGTCT","Phase","G1",2
+"TTAGGACGTTCAGTAC","Phase","G1",2
+"TGGCGCATCACATAGC","Phase","G1",2
+"CTTTGCGAGGAATGGA","Phase","G1",2
+"ATTATCCCAACTGCTA","Phase","G1",2
+"AGGCCACCAACTGCGC","Phase","G1",2
+"AAACGGGCAAAGAATC","Phase","G1",2
+"AGTCTTTAGTCTCGGC","Phase","G1",2
+"TCTGGAAGTCATCGGC","Phase","G1",2
+"AAATGCCCACCAACCG","Phase","G1",2
+"CATTCGCTCGCTTGTC","Phase","G1",2
+"GGTGTTACACCTCGGA","Phase","G1",2
+"CTCGAGGCAAGTCTGT","Phase","G1",2
+"CGGACTGTCGGACAAG","Phase","G1",2
+"ACCAGTAGTTCGTTGA","Phase","G1",2
+"CGTCACTCATAGTAAG","Phase","G1",2
+"TTTGGTTCAAATTGCC","Phase","G1",2
+"ATTGGTGGTACTTGAC","Phase","G1",2
+"GCCTCTAAGAGTTGGC","Phase","G1",2
+"CGGCTAGGTAACGACG","Phase","G1",2
+"AAAGATGAGTCATGCT","Phase","G1",2
+"GTACTCCCACGTCTCT","Phase","G1",2
+"TTGAACGAGGAATCGC","Phase","G1",2
+"TGAGCCGTCGATAGAA","Phase","G1",2
+"CTCTAATTCAGCGACC","Phase","G1",2
+"TATGCCCAGAACAATC","Phase","G1",2
+"AACCATGGTTGAACTC","Phase","G1",2
+"CAGCATAGTAATAGCA","Phase","G1",2
+"AGGGAGTTCCTCAATT","Phase","G1",2
+"CTCAGAATCTGGCGAC","Phase","S",2
+"ATCACGATCACGGTTA","Phase","G1",2
+"GAGCAGAGTTTGCATG","Phase","G1",2
+"TGCACCTAGATAGTCA","Phase","G1",2
+"CAGCCGAAGTGACTCT","Phase","S",2
+"GAATGAATCTGGTATG","Phase","G2M",2
+"AGCTCCTAGTACACCT","Phase","S",2
+"CATGCCTAGCGATGAC","Phase","G2M",2
+"TCCACACTCACGATGT","Phase","G1",2
+"TCAGATGCACGACGAA","Phase","G1",2
+"CAGCTGGGTCTAACGT","Phase","G1",2
+"CTCAGAATCAACACTG","Phase","G2M",2
+"CTTAGGACATCTATGG","Phase","G1",2
+"AGAGCGAAGTAGATGT","Phase","G1",2
+"ATCTACTGTGAACCTT","Phase","G1",2
+"CGATGTAGTGGTACAG","Phase","G1",2
+"CTAGCCTGTCTCTTAT","Phase","G2M",2
+"TCTGAGATCTGAGTGT","Phase","G1",2
+"AACTGGTTCGTGACAT","Phase","S",2
+"AGATTGCTCCATGAGT","Phase","G2M",2
+"CAGCTAAGTACCGAGA","Phase","G1",2
+"ACTGAGTGTTTCGCTC","Phase","G2M",2
+"AGAGCGATCTCTTGAT","Phase","S",2
+"GAAGCAGTCAAGGCTT","Phase","G1",2
+"GTCGTAAAGGTGATTA","Phase","G1",2
+"CACACTCAGGCGCTCT","Phase","G1",2
+"TGGGAAGGTCATGCAT","Phase","G1",2
+"CGCGGTACATTAGGCT","Phase","G1",2
+"GAATGAAAGAATGTGT","Phase","G1",2
+"CATGCCTGTTCGTCTC","Phase","G1",2
+"CTGGTCTTCGTTACAG","Phase","G1",2
+"TCTCTAAAGCTGGAAC","Phase","G1",2
+"CGGTTAAAGTAGCGGT","Phase","G1",2
+"GAACGGAAGGAGCGAG","Phase","G1",2
+"CCTTACGCAAGGTGTG","Phase","G1",2
+"AGGCCACCACGAAGCA","Phase","G1",2
+"CAACCTCGTCTAAACC","Phase","G1",2
+"AGCGGTCGTACCGAGA","Phase","G1",2
+"CTCGTCATCTTCTGGC","Phase","G2M",2
+"TGCGTGGCAGTATAAG","Phase","G1",2
+"GGCCGATGTCAAACTC","Phase","G1",2
+"TTCTACAGTGTTGAGG","Phase","G1",2
+"AAAGTAGAGCGCCTTG","Phase","G1",2
+"GATCGATCAGTCGATT","Phase","G1",2
+"TTGGCAACATCATCCC","Phase","G1",2
+"TTTATGCTCCATTCTA","Phase","S",2
+"AACTTTCAGGCATTGG","Phase","G1",2
+"GCCTCTAGTGACTACT","Phase","G1",2
+"ACGGGTCAGATGGCGT","Phase","G1",2
+"TACGGTAGTGTGCCTG","Phase","G1",2
+"ACTGCTCAGATATGCA","Phase","S",2
+"GGCGTGTTCGTGGGAA","Phase","G1",2
+"AAGCCGCAGGAGTTGC","Phase","G1",2
+"CTGAAACAGGAGTAGA","Phase","G1",2
+"CATGGCGAGCCCTAAT","Phase","G1",2
+"ACATGGTCAAGGACTG","Phase","G1",2
+"GGCGTGTGTCCGACGT","Phase","G1",2
+"GACGTGCTCCTCTAGC","Phase","S",2
+"TTAACTCCAAAGAATC","Phase","G2M",2
+"GCTCTGTAGCCACCTG","Phase","G1",2
+"ATGTGTGCATGGGACA","Phase","G1",2
+"CGTGAGCTCACAGGCC","Phase","S",2
+"TTGAACGTCATCGATG","Phase","G1",2
+"AAGACCTAGGTGTGGT","Phase","G1",2
+"TCAGGTACACGGCCAT","Phase","G1",2
+"CGTGTAATCCATGCTC","Phase","S",2
+"ACTGATGCATCAGTAC","Phase","G1",2
+"GGGATGAAGGGCATGT","Phase","G1",2
+"CTCGTACGTTCCGTCT","Phase","G1",2
+"ACGAGGACATGGTTGT","Phase","G1",2
+"ATCTGCCGTCAGAAGC","Phase","G1",2
+"CGTTCTGAGAGCAATT","Phase","G1",2
+"CACACAACACACTGCG","Phase","S",2
+"TAGGCATTCGTTGCCT","Phase","G1",2
+"TCTCTAATCAAAGACA","Phase","G1",2
+"ACACCCTGTCAGATAA","Phase","G1",2
+"AGATCTGTCGATCCCT","Phase","G1",2
+"TCTGAGATCTTGCAAG","Phase","G1",2
+"TGACTAGCAAAGGTGC","Phase","S",2
+"TAGAGCTTCTCGCTTG","Phase","G1",2
+"CTACGTCAGTCTCGGC","Phase","G1",2
+"CATCCACTCTTCTGGC","Phase","S",2
+"TCTCATACAGATCTGT","Phase","G2M",2
+"CACACCTCACTGCCAG","Phase","G1",2
+"CTCGTACCAATGGATA","Phase","G1",2
+"ACACCAAAGTAGGCCA","Phase","G1",2
+"TACACGAGTGCAACTT","Phase","G1",2
+"GCTGCGAAGTATTGGA","Phase","G1",2
+"AGACGTTTCGAGCCCA","Phase","G1",2
+"CAGAGAGGTGTGAATA","Phase","G1",2
+"GCACTCTGTCTGCAAT","Phase","G1",2
+"TGTGGTACAAGACGTG","Phase","G2M",2
+"AGGCCGTCACGACGAA","Phase","G2M",2
+"TATGCCCTCTTACCTA","Phase","G2M",2
+"AATCGGTCATGTTGAC","Phase","S",2
+"AGTCTTTCACGGACAA","Phase","G1",2
+"GTCGGGTGTGCAACTT","Phase","G1",2
+"TCTGAGATCGTAGGTT","Phase","G1",2
+"CGTCTACGTTTCCACC","Phase","G1",2
+"CCTAGCTCAGACTCGC","Phase","G1",2
+"AGCTCTCAGACATAAC","Phase","G1",2
+"CTCGAGGAGTGGAGAA","Phase","G1",2
+"CTGATAGTCGGCTACG","Phase","G2M",2
+"TTGTAGGGTTGTTTGG","Phase","G1",2
+"CGAGCACGTCCATCCT","Phase","G2M",2
+"CATGACAGTCATGCAT","Phase","G1",2
+"CTCGGAGAGAATGTGT","Phase","G1",2
+"GACCAATAGAATGTGT","Phase","G1",2
+"CAGCGACCATATGGTC","Phase","G1",2
+"TGCTGCTGTCCGTCAG","Phase","S",2
+"TCAGATGCACTCGACG","Phase","G1",2
+"TATCAGGGTCGAATCT","Phase","S",2
+"GGGAATGGTCGGCTCA","Phase","G1",2
+"TAGTTGGAGTCAAGCG","Phase","S",2
+"TACCTATTCGTTACGA","Phase","G1",2
+"CGTCACTCAAAGGTGC","Phase","S",2
+"TGAGGGAAGCCGGTAA","Phase","G1",2
+"CGTGTCTTCCTTTCGG","Phase","S",2
+"TGATTTCAGTGGAGTC","Phase","G1",2
+"CTAACTTAGATCACGG","Phase","G1",2
+"CATCAGAGTCCGAATT","Phase","G1",2
+"GAAATGATCGTCCGTT","Phase","G1",2
+"TGCGGGTTCCACTCCA","Phase","G1",2
+"GTTCGGGAGGCAATTA","Phase","G1",2
+"GCGCCAATCGGACAAG","Phase","G2M",2
+"AGTGGGATCAACTCTT","Phase","G1",2
+"CGACTTCGTTGATTCG","Phase","S",2
+"GATCAGTGTAACGACG","Phase","G1",2
+"TGAGCCGTCTCTGAGA","Phase","G1",2
+"TTTGCGCTCTTCCTTC","Phase","G1",2
+"ACTGATGGTTCCTCCA","Phase","G1",2
+"AAGGAGCAGTACATGA","Phase","G1",2
+"CAGCTAAAGCGCTTAT","Phase","G1",2
+"TACTTACGTGTGGCTC","Phase","G1",2
+"ATGCGATTCGCGTAGC","Phase","G1",2
+"ATTGGACAGTCAAGGC","Phase","S",2
+"ACGCCAGTCCGCTGTT","Phase","S",2
+"TGCGGGTAGACGCACA","Phase","G1",2
+"ATGAGGGGTTCTGGTA","Phase","G1",2
+"CGACCTTAGCTGCCCA","Phase","S",2
+"GTAACGTGTGCCTGCA","Phase","G1",2
+"GCTCTGTAGCTGAACG","Phase","S",2
+"GTATTCTAGGTGCTTT","Phase","G2M",2
+"TCTGGAATCGGTGTCG","Phase","G1",2
+"GACGTTAAGACGCAAC","Phase","G1",2
+"AGGCCGTAGAGGACGG","Phase","G2M",2
+"ATGAGGGCAAGGTTTC","Phase","G1",2
+"GTGCGGTCAAAGCAAT","Phase","G1",2
+"CATCGGGTCATTTGGG","Phase","G1",2
+"ACATACGGTAAACACA","Phase","G1",2
+"CTGCTGTGTTATCACG","Phase","G1",2
+"TAGAGCTAGTGCCATT","Phase","G1",2
+"CCACGGAGTCTCTTAT","Phase","S",2
+"CCATTCGCATGAAGTA","Phase","G1",2
+"CATTCGCTCTGCTGCT","Phase","G1",2
+"ACGATGTTCTGCTGCT","Phase","G1",2
+"GCGCAGTCACCATCCT","Phase","G1",2
+"TAGTTGGGTACCGTAT","Phase","S",2
+"GCGCAACCAACACCTA","Phase","G1",2
+"CCAGCGAGTACCGTAT","Phase","G1",2
+"AGCGTATCATCTCCCA","Phase","G1",2
+"AATCGGTTCCAAACTG","Phase","G1",2
+"ACGCAGCCATTCTCAT","Phase","G1",2
+"GAATGAATCCTGTAGA","Phase","G1",2
+"GGAAAGCTCTCGGACG","Phase","G1",2
+"ACTGATGGTCCGACGT","Phase","G1",2
+"GTAACGTCAGCCTATA","Phase","G1",2
+"GGGAGATAGCGTTCCG","Phase","G1",2
+"TACGGATTCTAACTCT","Phase","G1",2
+"GAAATGACATCTACGA","Phase","G1",2
+"GTGTGCGTCTCTGAGA","Phase","S",2
+"TCTCATAGTTACCAGT","Phase","G1",2
+"ACGTCAACACGGTGTC","Phase","S",2
+"ACTGATGTCTAGAGTC","Phase","G1",2
+"TGTATTCCAATGACCT","Phase","S",2
+"AGGGAGTAGCTAGCCC","Phase","G1",2
+"CCACTACAGAGCTGGT","Phase","G1",2
+"GGCAATTTCCGAATGT","Phase","G1",2
+"GATCGTAGTCCTAGCG","Phase","S",2
+"TGAGCATCAAGCCGCT","Phase","G1",2
+"AACTGGTGTACAGTGG","Phase","S",2
+"TGTGTTTAGCAGGCTA","Phase","G1",2
+"CCACTACGTTAAGAAC","Phase","G1",2
+"GGAAAGCAGGCATGGT","Phase","G1",2
+"ACAGCTATCGAGCCCA","Phase","G1",2
+"CTCGAAAGTAAAGTCA","Phase","S",2
+"TAAACCGAGTCGTACT","Phase","S",2
+"CTCGGAGTCATCGCTC","Phase","G1",2
+"CACCACTCACGAAATA","Phase","G1",2
+"CGTAGGCTCGCGCCAA","Phase","S",2
+"TCGCGTTTCTCTGCTG","Phase","G1",2
+"GGACAAGTCCGCGGTA","Phase","G1",2
+"CGTTCTGAGCCCAGCT","Phase","G1",2
+"TCACGAATCCTATGTT","Phase","G1",2
+"ACGCAGCGTGGCTCCA","Phase","G1",2
+"ACAGCTATCAAGGCTT","Phase","G1",2
+"ATAACGCAGCGTGAGT","Phase","G2M",2
+"ATTCTACTCAGGTAAA","Phase","S",2
+"CTGATCCCAAGCGTAG","Phase","G1",2
+"TCTTCGGTCTGGCGTG","Phase","G1",2
+"TGCCCTAAGTCCGGTC","Phase","G1",2
+"GGGAATGAGGAGCGAG","Phase","G1",2
+"CACAGGCTCAAGATCC","Phase","G1",2
+"ACGAGCCAGTTCGCAT","Phase","G1",2
+"GCTGGGTTCGCCATAA","Phase","G1",2
+"CCACTACAGAGTACCG","Phase","S",2
+"AGCCTAAAGCCCAACC","Phase","G2M",2
+"AAGGCAGGTCTAGCCG","Phase","G1",2
+"AGTGGGACAGTATCTG","Phase","G1",2
+"CAACCAATCGGGAGTA","Phase","S",2
+"TGTCCCATCTTGACGA","Phase","G2M",2
+"CGTCCATCAGTCGTGC","Phase","G1",2
+"GTTTCTAGTCCTCTTG","Phase","G1",2
+"GCACATACATTACGAC","Phase","G1",2
+"ATGGGAGTCGGTTCGG","Phase","G2M",2
+"ATAAGAGTCCGAACGC","Phase","G2M",2
+"ACGCCGAAGCTTCGCG","Phase","G1",2

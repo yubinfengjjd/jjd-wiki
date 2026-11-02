@@ -1,0 +1,487 @@
+{
+  "protected_sources_checked": 962,
+  "protected_pages_checked": 123,
+  "source_failures": [],
+  "author_failures": [],
+  "changed_files": [
+    {
+      "path": "开发/staged/research-wiki/SKILL.md",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/app/index.html",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/assets/AGENTS.md",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/references/code-assets.md",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/references/llm-wiki-mode.md",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/references/method-families.md",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/references/project-reuse.md",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/rwiki/cli.py",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/rwiki/code_assets.py",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/rwiki/lint.py",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/rwiki/method_implementations.py",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/rwiki/server.py",
+      "change": "modified"
+    },
+    {
+      "path": "开发/staged/research-wiki/app/assets/GraphView-YXCVFOBx.js",
+      "change": "deleted"
+    },
+    {
+      "path": "开发/staged/research-wiki/app/assets/index-COKeoE4Y.css",
+      "change": "deleted"
+    },
+    {
+      "path": "开发/staged/research-wiki/app/assets/index-DPqbN9Ne.js",
+      "change": "deleted"
+    },
+    {
+      "path": "开发/frontend/src/api.ts",
+      "change": "modified"
+    },
+    {
+      "path": "开发/frontend/src/CodeViewer.tsx",
+      "change": "modified"
+    },
+    {
+      "path": "开发/frontend/src/methods.ts",
+      "change": "modified"
+    },
+    {
+      "path": "开发/frontend/src/styles.css",
+      "change": "modified"
+    },
+    {
+      "path": "开发/frontend/tests/methods.test.tsx",
+      "change": "modified"
+    },
+    {
+      "path": "开发/frontend/src/views/MethodOverview.tsx",
+      "change": "modified"
+    },
+    {
+      "path": "开发/frontend/src/views/PageView.tsx",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/AGENTS.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/log.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/batch-integration.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/cell-quality-control.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/cell-type-annotation.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/differential-expression.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/dimensionality-reduction.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/doublet-detection.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/dynamic-feature-analysis.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/gene-set-enrichment.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/gene-set-scoring.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/reference-mapping.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/rna-velocity.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/trajectory-inference.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig01-volcano--volcano.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig02-ring--ring.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig03-pie--pie.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig04-rose--rose.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig05-trend--trend.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig06-area--area.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig07-dot--dot.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig09-bar--bar.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig10-sankey--sankey.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig11-chord--chord.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig12-venn--venn.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig13-upset--upset.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig16-cell-density--ridge.md",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/batch-integration/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/cell-quality-control/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/cell-type-annotation/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/differential-expression/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/dimensionality-reduction/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/doublet-detection/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/dynamic-feature-analysis/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/gene-set-enrichment/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/gene-set-scoring/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/reference-mapping/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/rna-velocity/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/trajectory-inference/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/batch-integration/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/cell-quality-control/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/cell-type-annotation/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/differential-expression/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/dimensionality-reduction/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/doublet-detection/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/dynamic-feature-analysis/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/gene-set-enrichment/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/gene-set-scoring/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/reference-mapping/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/reference-mapping/code/transfer.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/rna-velocity/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/methods/trajectory-inference/code/analysis.R",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig01-volcano--volcano/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig02-ring--ring/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig03-pie--pie/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig04-rose--rose/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig05-trend--trend/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig06-area--area/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig07-dot--dot/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig09-bar--bar/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig10-sankey--sankey/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig11-chord--chord/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig12-venn--venn/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig13-upset--upset/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/acceptance.json",
+      "change": "modified"
+    },
+    {
+      "path": "知识库/templates/2026-10-22-scp-example__fig16-cell-density--ridge/acceptance.json",
+      "change": "modified"
+    }
+  ],
+  "new_files": [
+    "开发/staged/research-wiki/references/minimal-runtime.md",
+    "开发/staged/research-wiki/rwiki/runtime_contract.py",
+    "开发/staged/research-wiki/tests/test_runtime_contract.py",
+    "开发/staged/research-wiki/app/assets/GraphView-Bh9hK9Zx.js",
+    "开发/staged/research-wiki/app/assets/index-BbLO8wJL.css",
+    "开发/staged/research-wiki/app/assets/index-BzlcxxQc.js",
+    "知识库/methods/batch-integration/runtime.json",
+    "知识库/methods/cell-quality-control/runtime.json",
+    "知识库/methods/cell-type-annotation/runtime.json",
+    "知识库/methods/differential-expression/runtime.json",
+    "知识库/methods/dimensionality-reduction/runtime.json",
+    "知识库/methods/doublet-detection/runtime.json",
+    "知识库/methods/dynamic-feature-analysis/runtime.json",
+    "知识库/methods/gene-set-enrichment/runtime.json",
+    "知识库/methods/gene-set-scoring/runtime.json",
+    "知识库/methods/reference-mapping/runtime.json",
+    "知识库/methods/rna-velocity/runtime.json",
+    "知识库/methods/trajectory-inference/runtime.json",
+    "知识库/methods/batch-integration/code/integration_native.R",
+    "知识库/methods/batch-integration/verification/scp-harmony-portability.json",
+    "知识库/methods/batch-integration/verification/scp-harmony-standalone.json",
+    "知识库/methods/batch-integration/verification/scp-seurat-portability.json",
+    "知识库/methods/batch-integration/verification/scp-seurat-standalone.json",
+    "知识库/methods/cell-quality-control/code/cellqc_native.R",
+    "知识库/methods/cell-quality-control/verification/scp-runcellqc-portability.json",
+    "知识库/methods/cell-quality-control/verification/scp-runcellqc-standalone.json",
+    "知识库/methods/cell-type-annotation/code/annotation_native.R",
+    "知识库/methods/cell-type-annotation/verification/scp-singler-portability.json",
+    "知识库/methods/cell-type-annotation/verification/scp-singler-standalone.json",
+    "知识库/methods/differential-expression/code/de_native.R",
+    "知识库/methods/differential-expression/verification/scp-detest-portability.json",
+    "知识库/methods/differential-expression/verification/scp-detest-standalone.json",
+    "知识库/methods/dimensionality-reduction/code/dimreduction_native.R",
+    "知识库/methods/dimensionality-reduction/verification/scp-dimreduction-portability.json",
+    "知识库/methods/dimensionality-reduction/verification/scp-dimreduction-standalone.json",
+    "知识库/methods/doublet-detection/code/doublet_native.R",
+    "知识库/methods/doublet-detection/verification/scp-rundoublet-portability.json",
+    "知识库/methods/doublet-detection/verification/scp-rundoublet-standalone.json",
+    "知识库/methods/dynamic-feature-analysis/code/dynamic_native.R",
+    "知识库/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures-portability.json",
+    "知识库/methods/dynamic-feature-analysis/verification/scp-dynamicfeatures-standalone.json",
+    "知识库/methods/gene-set-enrichment/code/enrichment_native.R",
+    "知识库/methods/gene-set-enrichment/verification/scp-enrichment-portability.json",
+    "知识库/methods/gene-set-enrichment/verification/scp-enrichment-standalone.json",
+    "知识库/methods/gene-set-scoring/code/scoring_native.R",
+    "知识库/methods/gene-set-scoring/verification/scp-cellscoring-portability.json",
+    "知识库/methods/gene-set-scoring/verification/scp-cellscoring-standalone.json",
+    "知识库/methods/reference-mapping/code/reference_native.R",
+    "知识库/methods/reference-mapping/verification/scp-runseuratmap-portability.json",
+    "知识库/methods/reference-mapping/verification/scp-runseuratmap-standalone.json",
+    "知识库/methods/reference-mapping/verification/seurat-label-transfer-portability.json",
+    "知识库/methods/reference-mapping/verification/seurat-label-transfer-standalone.json",
+    "知识库/methods/rna-velocity/code/velocity_native.R",
+    "知识库/methods/rna-velocity/verification/scp-scvelo-portability.json",
+    "知识库/methods/rna-velocity/verification/scp-scvelo-standalone.json",
+    "知识库/methods/rna-velocity/code/data/palette_list.rda",
+    "知识库/methods/trajectory-inference/code/monocle2.R",
+    "知识库/methods/trajectory-inference/code/monocle2_core.R",
+    "知识库/methods/trajectory-inference/code/monocle2_core_helpers.R",
+    "知识库/methods/trajectory-inference/code/monocle3.R",
+    "知识库/methods/trajectory-inference/code/monocle3_core.R",
+    "知识库/methods/trajectory-inference/code/slingshot_native.R",
+    "知识库/methods/trajectory-inference/verification/scp-monocle2-core-portability.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle2-core-standalone.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle2-portability.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle2-standalone.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle3-core-portability.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle3-core-standalone.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle3-portability.json",
+    "知识库/methods/trajectory-inference/verification/scp-monocle3-standalone.json",
+    "知识库/methods/trajectory-inference/verification/scp-slingshot-portability.json",
+    "知识库/methods/trajectory-inference/verification/scp-slingshot-standalone.json",
+    "知识库/methods/trajectory-inference/code/data/palette_list.rda",
+    "知识库/templates/2026-10-22-scp-example__fig01-volcano--volcano/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig02-ring--ring/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig03-pie--pie/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig04-rose--rose/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig05-trend--trend/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig06-area--area/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig07-dot--dot/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig09-bar--bar/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig10-sankey--sankey/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig11-chord--chord/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig12-venn--venn/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig13-upset--upset/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig16-cell-density--ridge/runtime.json",
+    "知识库/templates/2026-10-22-scp-example__fig01-volcano--volcano/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig02-ring--ring/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig03-pie--pie/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig04-rose--rose/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig05-trend--trend/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig06-area--area/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig07-dot--dot/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig09-bar--bar/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig10-sankey--sankey/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig11-chord--chord/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig12-venn--venn/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig13-upset--upset/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/verify/runtime-portability.json",
+    "知识库/templates/2026-10-22-scp-example__fig16-cell-density--ridge/verify/runtime-portability.json"
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "scope": "in-progress independently copied modules; not final acceptance",
+  "manifests": {
+    "bbknn-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "BBKNN_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "cellcorheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "celldensityplot": {
+      "valid": true,
+      "issues": []
+    },
+    "celldimplot": {
+      "valid": true,
+      "issues": []
+    },
+    "celldimplot3d": {
+      "valid": true,
+      "issues": []
+    },
+    "cellscoring": {
+      "valid": true,
+      "issues": []
+    },
+    "cellstatplot": {
+      "valid": true,
+      "issues": []
+    },
+    "combat-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "ComBat_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "compute-velocity-on-grid": {
+      "valid": true,
+      "issues": []
+    },
+    "compute_velocity_on_grid": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "conos-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "Conos_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "css-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "CSS_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "db-doubletdetection": {
+      "valid": true,
+      "issues": []
+    },
+    "db-scdblfinder": {
+      "valid": true,
+      "issues": []
+    },
+    "db-scds": {
+      "valid": true,
+      "issues": []
+    },
+    "db-scrublet": {
+      "valid": true,
+      "issues": []
+    },
+    "db_DoubletDetection": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "db_scDblFinder": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "db_scds": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "db_Scrublet": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "dynamicheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "dynamicplot": {
+      "valid": true,
+      "issues": []
+    },
+    "enrichmentplot": {
+      "valid": true,
+      "issues": []
+    },
+    "fastmnn-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "fastMNN_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "featurecorplot": {
+      "valid": true,
+      "issues": []
+    },
+    "featuredimplot": {
+      "valid": true,
+      "issues": []
+    },
+    "featuredimplot3d": {
+      "valid": true,
+      "issues": []
+    },
+    "featureheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "featurestatplot": {
+      "valid": true,
+      "issues": []
+    },
+    "findexpressedmarkers": {
+      "valid": true,
+      "issues": []
+    },
+    "graphplot": {
+      "valid": true,
+      "issues": []
+    },
+    "groupheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "gseaplot": {
+      "valid": true,
+      "issues": []
+    },
+    "harmony-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "Harmony_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "integration-scp": {
+      "valid": true,
+      "issues": []
+    },
+    "Integration_SCP": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "isoutlier": {
+      "valid": true,
+      "issues": []
+    },
+    "liger-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "LIGER_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "lineageplot": {
+      "valid": true,
+      "issues": []
+    },
+    "mnn-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "MNN_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "pagaplot": {
+      "valid": true,
+      "issues": []
+    },
+    "projectionplot": {
+      "valid": true,
+      "issues": []
+    },
+    "recovercounts": {
+      "valid": true,
+      "issues": []
+    },
+    "runcellqc": {
+      "valid": true,
+      "issues": []
+    },
+    "runcssmap": {
+      "valid": true,
+      "issues": []
+    },
+    "rundetest": {
+      "valid": true,
+      "issues": []
+    },
+    "rundimreduction": {
+      "valid": true,
+      "issues": []
+    },
+    "rundm": {
+      "valid": true,
+      "issues": []
+    },
+    "rundoubletcalling": {
+      "valid": true,
+      "issues": []
+    },
+    "rundynamicenrichment": {
+      "valid": true,
+      "issues": []
+    },
+    "rundynamicfeatures": {
+      "valid": true,
+      "issues": []
+    },
+    "runenrichment": {
+      "valid": true,
+      "issues": []
+    },
+    "runfr": {
+      "valid": true,
+      "issues": []
+    },
+    "runglmpca": {
+      "valid": true,
+      "issues": []
+    },
+    "rungsea": {
+      "valid": true,
+      "issues": []
+    },
+    "runharmony2": {
+      "valid": true,
+      "issues": []
+    },
+    "runknnmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runknnpredict": {
+      "valid": true,
+      "issues": []
+    },
+    "runlargevis": {
+      "valid": true,
+      "issues": []
+    },
+    "runmds": {
+      "valid": true,
+      "issues": []
+    },
+    "runmonocle2": {
+      "valid": true,
+      "issues": []
+    },
+    "runmonocle3": {
+      "valid": true,
+      "issues": []
+    },
+    "runnmf": {
+      "valid": true,
+      "issues": []
+    },
+    "runpacmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runpaga": {
+      "valid": true,
+      "issues": []
+    },
+    "runpalantir": {
+      "valid": true,
+      "issues": []
+    },
+    "runpcamap": {
+      "valid": true,
+      "issues": []
+    },
+    "runphate": {
+      "valid": true,
+      "issues": []
+    },
+    "runscmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runscvelo": {
+      "valid": true,
+      "issues": []
+    },
+    "runseuratmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runsingler": {
+      "valid": true,
+      "issues": []
+    },
+    "runslingshot": {
+      "valid": true,
+      "issues": []
+    },
+    "runsymphonymap": {
+      "valid": true,
+      "issues": []
+    },
+    "runtrimap": {
+      "valid": true,
+      "issues": []
+    },
+    "runumap2": {
+      "valid": true,
+      "issues": []
+    },
+    "runwot": {
+      "valid": true,
+      "issues": []
+    },
+    "scanorama-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "Scanorama_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "scvi-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "scVI_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "seurat-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "Seurat_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "standard-scp": {
+      "valid": true,
+      "issues": []
+    },
+    "Standard_SCP": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "statplot": {
+      "valid": true,
+      "issues": []
+    },
+    "uncorrected-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "Uncorrected_integrate": {
+      "valid": false,
+      "issues": [
+        "runtime.json kind 必须为 method",
+        "runtime.json 缺少实现声明"
+      ]
+    },
+    "velocityplot": {
+      "valid": true,
+      "issues": []
+    },
+    "volcanoplot": {
+      "valid": true,
+      "issues": []
+    }
+  },
+  "RunMDS": {
+    "files": {
+      "code/module.R": "df568a62e2bf5d78339f300c7f28de0f3a54fe463f8c42ab65c4e058fbff48dc",
+      "code/fns/RunMDS.Assay.R": "fc4a94a01f6c5f9ea9d5e572bb12a6703d6443aba69270afa5456f71d4913c43",
+      "code/fns/RunMDS.R": "ff2de2d9d719518952d36b5b03d3fd620084dee4dfeebc0242b01efdf97547ba",
+      "code/fns/RunMDS.Seurat.R": "0c957c8407043a4f283bb6aa658073e3bf26c4ce5f1dbfd37a59e0b900f071d3",
+      "code/fns/RunMDS.default.R": "812845b991c602ee97e8525c4937a9c45dcda8ed4f74dfc0dfd77643d621d94c",
+      "code/fns/asMatrix.R": "aed236b7211abf8dedae5dda27ee8251d44409e17172860cc39c312ab6f1a54c",
+      "code/fns/as_matrix.R": "fe0687d6838891449d8c95c7a40db7c37ee711db2867e205a9552e36102d0195"
+    }
+  },
+  "RunNMF": {
+    "files": {
+      "code/module.R": "17fedadf59a4374d3ce272f47a568183d53bf5fb065a8d2514a06399935d5695",
+      "code/fns/RunNMF.Assay.R": "ed169613f51c67aab057e736a930f569a0cdbcb531eb68495767a4cad710a343",
+      "code/fns/RunNMF.R": "37c3b67f463dede45bec62e94c43c9268151a78616e142e1c93bce1e38f535b7",
+      "code/fns/RunNMF.Seurat.R": "c440856ee92e05a96c7c8c8f0572bcd19a391315b646f6a95a89d9b8394f6ecc",
+      "code/fns/RunNMF.default.R": "d6d466f3f59197ab478cda513b7ba7bf1cb8e847a845a1dcfc42d8c81e45011c",
+      "code/fns/asMatrix.R": "aed236b7211abf8dedae5dda27ee8251d44409e17172860cc39c312ab6f1a54c",
+      "code/fns/as_matrix.R": "fe0687d6838891449d8c95c7a40db7c37ee711db2867e205a9552e36102d0195"
+    }
+  },
+  "r_exit_code": 0,
+  "real_calls": {
+    "nested_source_MDS": {
+      "state": "error",
+      "error": "no applicable method for 'RunMDS' applied to an object of class \"c('matrix', 'array', 'double', 'numeric')\""
+    },
+    "direct_default_MDS": {
+      "state": "passed"
+    },
+    "nested_project_driver": {
+      "state": "error",
+      "error": "'E:/research-wiki-env/work/codex-scp-full-probe/fns/asMatrix.R' is not an existing file"
+    },
+    "public_NMF": {
+      "state": "error",
+      "error": "no applicable method for 'RunNMF' applied to an object of class \"c('matrix', 'array', 'double', 'numeric')\""
+    },
+    "input_unchanged": true
+  }
+}

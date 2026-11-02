@@ -1,0 +1,26 @@
+{
+  "author_policy_date": "2026-11-02",
+  "knowledge_default_git": true,
+  "private_data_credentials_excluded": true,
+  "algorithm_code_changed": false,
+  "remote_validation_performed": false,
+  "old_method_code_files": 1119,
+  "old_method_code_hash_mismatches": 0,
+  "waiting_declared_branches": 34,
+  "source_or_theory_only_notes": 21,
+  "notes": [
+    "Private inputs remain in the original project directories.",
+    "Source licenses and original bytes are retained.",
+    "Historical receipts retain their original scope; Git storage does not establish validation."
+  ],
+  "tests": {
+    "passed": 96,
+    "skipped": 1,
+    "warnings": 1
+  },
+  "lint": {
+    "exit": 0,
+    "warnings": 71
+  },
+  "source_commit": "6f8eb988743dedb0fc5c19ea8a7824a8408c7f6e"
+}

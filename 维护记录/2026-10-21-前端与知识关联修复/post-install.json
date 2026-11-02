@@ -1,0 +1,19 @@
+{
+  "matching_installations": [
+    "C:\\Users\\86186\\.agents\\skills\\research-wiki",
+    "C:\\Users\\86186\\.codex\\skills\\research-wiki",
+    "C:\\Users\\86186\\.claude\\skills\\research-wiki",
+    "C:\\Users\\86186\\.agents\\skills\\sci-figure-replica",
+    "C:\\Users\\86186\\.codex\\skills\\sci-figure-replica",
+    "C:\\Users\\86186\\.claude\\skills\\sci-figure-replica"
+  ],
+  "live_server": "http://127.0.0.1:8765",
+  "live_page_count": 21,
+  "live_edge_count": 39,
+  "live_api_exposes_directional_figure_refs": true,
+  "live_app_is_new_build": true,
+  "arbitrary_n_rules_present_in_all_skills_and_wiki": true,
+  "config_files_unchanged": true,
+  "protected_historical_assets_unchanged": 282,
+  "statuses_interfaces_and_author_blocks_unchanged": true
+}

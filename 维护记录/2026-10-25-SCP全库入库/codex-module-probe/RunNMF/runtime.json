@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "runnmf",
+  "implementations": [
+    {
+      "id": "scp-runnmf",
+      "entry": "code/module.R",
+      "entry_function": "RunNMF",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/module.R",
+        "code/fns/RunNMF.Assay.R",
+        "code/fns/RunNMF.R",
+        "code/fns/RunNMF.Seurat.R",
+        "code/fns/RunNMF.default.R",
+        "code/fns/asMatrix.R",
+        "code/fns/as_matrix.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "Matrix",
+          "Seurat",
+          "SeuratObject",
+          "rlang"
+        ]
+      },
+      "optional_packages": {
+        "R": {
+          "NMF": "lazy branch dependency via check_R in RunNMF.default",
+          "RcppML": "lazy branch dependency via check_R in RunNMF.default"
+        }
+      },
+      "python": [],
+      "source": {
+        "package": "SCP",
+        "version": "0.5.6",
+        "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+        "license": "MIT",
+        "functions": [
+          "R/Seurat-function.R:RunNMF (27-29)",
+          "R/Seurat-function.R:RunNMF.Assay (70-100)",
+          "R/Seurat-function.R:RunNMF.Seurat (35-63)",
+          "R/Seurat-function.R:RunNMF.default (108-162)",
+          "R/RcppExports.R:asMatrix (4-6)",
+          "R/utils.R:as_matrix (831-841)"
+        ],
+        "modifications": [
+          "SCP:: namespace prefix stripped from copied source (data injected locally)",
+          "installer functions replaced by locked no-install guards: check_R",
+          "bare-called package exports bound in private imports env; no search-path changes"
+        ]
+      }
+    }
+  ]
+}

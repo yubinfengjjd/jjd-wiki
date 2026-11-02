@@ -1,0 +1,28 @@
+{
+  "argv": [
+    "D:/anaconda/python.exe",
+    "-X",
+    "utf8",
+    "C:/Users/86186/.agents/skills/research-wiki/wiki.py",
+    "mark-ready",
+    "asthma-lactylation-source-catalog",
+    "asthma-lactylation-workflow",
+    "figureya-multilanguage-assets",
+    "local-omics-analysis-guide",
+    "local-omics-visualization-guide",
+    "scop-analysis-guide",
+    "scop-source-catalog",
+    "scop-visualization-guide",
+    "scop-workflows",
+    "scp-source-catalog",
+    "scp-viz-dimplots",
+    "scp-viz-heatmaps",
+    "scp-viz-model-overlays",
+    "scp-viz-statplots",
+    "uc-ptm-source-catalog",
+    "uc-ptm-workflow",
+    "uc-spatial-workflows"
+  ],
+  "authorization": "User explicitly requested agent handling of the current frontend confirmation queue",
+  "scope": "Technical/workflow note confirmation only; algorithm, portability, not_run and parameter coverage unchanged"
+}

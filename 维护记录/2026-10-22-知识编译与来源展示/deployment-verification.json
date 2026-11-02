@@ -1,0 +1,42 @@
+[
+  {
+    "host": ".agents",
+    "verified": 270,
+    "changed": [
+      "rwiki/server.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".codex",
+    "verified": 270,
+    "changed": [
+      "rwiki/server.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".claude",
+    "verified": 270,
+    "changed": [
+      "rwiki/server.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 270,
+    "changed": [
+      "rwiki/server.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 270,
+    "changed": [
+      "rwiki/server.py"
+    ],
+    "stale_removed": []
+  }
+]

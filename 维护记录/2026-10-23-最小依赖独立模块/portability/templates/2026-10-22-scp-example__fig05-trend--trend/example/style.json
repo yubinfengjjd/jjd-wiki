@@ -1,0 +1,23 @@
+{
+  "sizing": {
+    "mode": "fixed"
+  },
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "xlab": "CellType",
+  "ylab": "Count",
+  "legend_title": "Phase:",
+  "group_levels": [
+    "Ductal",
+    "Ngn3 low EP",
+    "Ngn3 high EP",
+    "Pre-endocrine",
+    "Endocrine"
+  ],
+  "celltype_levels": [
+    "G1",
+    "S",
+    "G2M"
+  ]
+}

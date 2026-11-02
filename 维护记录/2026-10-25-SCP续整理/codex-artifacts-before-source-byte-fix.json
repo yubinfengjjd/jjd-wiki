@@ -1,0 +1,54 @@
+{
+  "fixed-1m_png": {
+    "reference": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+    "candidate": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+    "equal": true
+  },
+  "fixed-1m_svg": {
+    "reference": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b",
+    "candidate": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b",
+    "equal": true
+  },
+  "fixed-1m_pdf_pixels": {
+    "size1": [
+      1200,
+      901
+    ],
+    "size2": [
+      1200,
+      901
+    ],
+    "equal": true
+  },
+  "fixed-1m-reticle_png": {
+    "reference": "ac5b96aeb32b199870ec14d02e9af7edba47498afd979048dcc481fa18bba9ec",
+    "candidate": "ac5b96aeb32b199870ec14d02e9af7edba47498afd979048dcc481fa18bba9ec",
+    "equal": true
+  },
+  "fixed-2m_png": {
+    "reference": "ce44217c149f8d35ffa2f68c15b3b3d62384536815563984124808c7aa125698",
+    "candidate": "ce44217c149f8d35ffa2f68c15b3b3d62384536815563984124808c7aa125698",
+    "equal": true
+  },
+  "fixed-2m_svg": {
+    "reference": "9a4f9d58034421746a2d7eae6d1ac0f0e9b2065c9f0734c80afbf4e3e65838f1",
+    "candidate": "9a4f9d58034421746a2d7eae6d1ac0f0e9b2065c9f0734c80afbf4e3e65838f1",
+    "equal": true
+  },
+  "fixed-2m_pdf_pixels": {
+    "size1": [
+      1200,
+      901
+    ],
+    "size2": [
+      1200,
+      901
+    ],
+    "equal": true
+  },
+  "original_excerpt": {
+    "source_file_sha256": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+    "excerpt_bytes_identical": false,
+    "text_identical": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "source": "SCP v0.5.6 FeatureHeatmap (R/SCP-plot.R 9114-9979), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig14.png",
+  "logical_panel": "A",
+  "chart_type": "heatmap",
+  "input": "data/render-feature-heatmap.csv",
+  "input_columns": {
+    "matrix": "matrix/grouping variable name; one matrix in this example (CellType)",
+    "feature": "gene/feature identifier; 20 DE genes",
+    "cell": "cell identifier; each cell once per matrix",
+    "group": "cell group (CellType) annotation",
+    "value": "zscore(normalized counts); upstream transformation, not recomputed",
+    "matrix_order": "matrix order from 1",
+    "feature_order": "feature row order from 1",
+    "cell_order": "cell column order from 1",
+    "group_order": "group legend/annotation order from 1"
+  },
+  "params": {
+    "features": "head(de_filter$gene, 20)",
+    "group.by": "CellType",
+    "split.by": null,
+    "slot": "counts",
+    "exp_method": "zscore",
+    "exp_legend_title": "zscore(normalized counts)",
+    "max_cells": 100,
+    "nlabel": 20,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; 20 DE genes from RunDEtest, head(20) for a readable 8x6 panel",
+    "code": "native FeatureHeatmap ComplexHeatmap construction extracted; table/plot split; no installed SCP package",
+    "license": "GPL (>= 3)"
+  },
+  "source_image_sha256": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518"
+}

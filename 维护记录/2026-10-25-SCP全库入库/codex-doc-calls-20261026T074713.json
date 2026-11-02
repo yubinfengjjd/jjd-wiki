@@ -1,0 +1,303 @@
+{
+  "scope": "static named-argument review; ... may explicitly forward valid backend args, which requires actual evidence, not blanket rejection",
+  "issues": [
+    {
+      "function": "RunMDS",
+      "example": "RunMDS(srt, reduction_use = \"PCA\", dims = 1:20)  # 或 RunMDS(mat)",
+      "unknown_named_args": [
+        "dims",
+        "reduction_use"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "dist.method",
+        "features",
+        "mds.method",
+        "nmds",
+        "object",
+        "reduction.key",
+        "reduction.name",
+        "rev.mds",
+        "seed.use",
+        "slot",
+        "verbose"
+      ]
+    },
+    {
+      "function": "RunNMF",
+      "example": "RunNMF(srt, method = \"NMF\", nmf.method = \"nsNMF\", rank = 10)",
+      "unknown_named_args": [
+        "method",
+        "rank"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "features",
+        "maxit",
+        "nbes",
+        "ndims.print",
+        "nfeatures.print",
+        "nmf.method",
+        "object",
+        "reduction.key",
+        "reduction.name",
+        "rev.nmf",
+        "seed.use",
+        "slot",
+        "tol",
+        "verbose"
+      ]
+    },
+    {
+      "function": "RunLargeVis",
+      "example": "RunLargeVis(srt, reduction_use = \"PCA\", dims = 1:20)",
+      "unknown_named_args": [
+        "reduction_use"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "batch",
+        "dims",
+        "epoch_callback",
+        "fast_sgd",
+        "features",
+        "grain_size",
+        "init",
+        "init_sdev",
+        "kernel",
+        "learning_rate",
+        "metric",
+        "n_components",
+        "n_epochs",
+        "n_neighbors",
+        "n_sgd_threads",
+        "n_threads",
+        "n_trees",
+        "negative_sample_rate",
+        "nn_method",
+        "object",
+        "opt_args",
+        "pca",
+        "pca_center",
+        "pca_method",
+        "pcg_rand",
+        "perplexity",
+        "reduction",
+        "reduction.key",
+        "reduction.name",
+        "repulsion_strength",
+        "scale",
+        "search_k",
+        "seed.use",
+        "slot",
+        "verbose"
+      ]
+    },
+    {
+      "function": "RunFR",
+      "example": "RunFR(srt, reduction_use = \"PCA\", dims = 1:20)",
+      "unknown_named_args": [
+        "reduction_use"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "dims",
+        "features",
+        "graph",
+        "k.param",
+        "ndim",
+        "neighbor",
+        "niter",
+        "object",
+        "reduction",
+        "reduction.key",
+        "reduction.name",
+        "seed.use",
+        "slot",
+        "verbose"
+      ]
+    },
+    {
+      "function": "FindExpressedMarkers",
+      "example": "FindExpressedMarkers(srt, group_by = \"CellType\")",
+      "unknown_named_args": [
+        "group_by"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "base",
+        "cells.1",
+        "cells.2",
+        "fc.name",
+        "features",
+        "ident.1",
+        "ident.2",
+        "latent.vars",
+        "logfc.threshold",
+        "max.cells.per.ident",
+        "mean.fxn",
+        "min.cells.feature",
+        "min.cells.group",
+        "min.diff.pct",
+        "min.expression",
+        "min.pct",
+        "norm.method",
+        "object",
+        "only.pos",
+        "pseudocount.use",
+        "slot",
+        "test.use",
+        "verbose"
+      ]
+    },
+    {
+      "function": "RunMonocle2",
+      "example": "RunMonocle2(srt, gene_notes = NULL, root_state = NULL)  # 需 monocle2",
+      "unknown_named_args": [
+        "gene_notes"
+      ],
+      "has_dots": false,
+      "source_formals_union": [
+        "assay",
+        "disp_filter",
+        "expressionFamily",
+        "feature_type",
+        "features",
+        "max_components",
+        "norm_method",
+        "pseudo_expr",
+        "reduction_method",
+        "residualModelFormulaStr",
+        "root_state",
+        "seed",
+        "slot",
+        "srt"
+      ]
+    },
+    {
+      "function": "RunWOT",
+      "example": "RunWOT(srt, time.by = \"TimeInfo\")  # 需 Python wot 发行",
+      "unknown_named_args": [
+        "time.by"
+      ],
+      "has_dots": false,
+      "source_formals_union": [
+        "adata",
+        "assay_X",
+        "assay_layers",
+        "dirpath",
+        "dpi",
+        "fileprefix",
+        "get_coupling",
+        "group_by",
+        "growth_iters",
+        "palcolor",
+        "palette",
+        "recalculate",
+        "return_seurat",
+        "save",
+        "show_plot",
+        "slot_X",
+        "slot_layers",
+        "srt",
+        "time_field",
+        "time_from",
+        "time_to",
+        "tmap_out"
+      ]
+    },
+    {
+      "function": "RunDM",
+      "example": "RunDM(srt, reduction_use = \"PCA\")",
+      "unknown_named_args": [
+        "reduction_use"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "assay",
+        "dims",
+        "dist.method",
+        "features",
+        "k",
+        "ndcs",
+        "object",
+        "reduction",
+        "reduction.key",
+        "reduction.name",
+        "seed.use",
+        "sigma",
+        "slot",
+        "verbose"
+      ]
+    },
+    {
+      "function": "RunUMAP2",
+      "example": "RunUMAP2(srt, reduction_use = \"PCA\", dims = 1:20)",
+      "unknown_named_args": [
+        "reduction_use"
+      ],
+      "has_dots": true,
+      "source_formals_union": [
+        "...",
+        "a",
+        "assay",
+        "b",
+        "dims",
+        "features",
+        "graph",
+        "learning.rate",
+        "local.connectivity",
+        "metric",
+        "min.dist",
+        "n.components",
+        "n.epochs",
+        "n.neighbors",
+        "n_threads",
+        "negative.sample.rate",
+        "neighbor",
+        "object",
+        "reduction",
+        "reduction.key",
+        "reduction.model",
+        "reduction.name",
+        "repulsion.strength",
+        "return.model",
+        "seed.use",
+        "set.op.mix.ratio",
+        "slot",
+        "spread",
+        "umap.method",
+        "verbose"
+      ]
+    },
+    {
+      "function": "ZINBWaVE_integrate",
+      "example": "ZINBWaVE_integrate(srt_merge, batch = \"orig.ident\")",
+      "unknown_named_args": [
+        "batch"
+      ],
+      "has_dots": false,
+      "source_formals_union": []
+    },
+    {
+      "function": "scanorama_integrate",
+      "example": "scanorama_integrate(srt_merge, batch = \"orig.ident\")  # 需 Python scanorama",
+      "unknown_named_args": [
+        "batch"
+      ],
+      "has_dots": false,
+      "source_formals_union": []
+    }
+  ]
+}

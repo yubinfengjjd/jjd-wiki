@@ -1,0 +1,10 @@
+{
+  "bug_reproduced": true,
+  "description": "Two source pages explicitly reuse the same template and exact panel structure; Gallery still shows two styles while method display deduplicates to one.",
+  "gallery_style_paths": [
+    "layouts/source-one.md",
+    "layouts/source-two.md"
+  ],
+  "callable_templates": 1,
+  "method_visuals": 1
+}

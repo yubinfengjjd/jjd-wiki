@@ -1,0 +1,8 @@
+{
+  "nodes": 27,
+  "links": 56,
+  "relation_links": 7,
+  "method": "methods/shap-explanation.md",
+  "figure": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+  "source": "GET http://127.0.0.1:8765/api/graph after restart"
+}

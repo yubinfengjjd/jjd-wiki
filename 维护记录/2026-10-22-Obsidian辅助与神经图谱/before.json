@@ -1,0 +1,97 @@
+{
+  "originals": [
+    {
+      "path": "E:\\research-wiki\\知识库\\.gitignore",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\0\\.gitignore",
+      "sha256": "e59d79a8f5ef625245dc20f7b60f26c836478d092e62d75d63de8ebe9f802d65"
+    },
+    {
+      "path": "E:\\research-wiki\\知识库\\AGENTS.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\1\\AGENTS.md",
+      "sha256": "59a8d10c39a0f1b9d926cfca107ba870969cd91e4a527fd287c17c6fe1400713"
+    },
+    {
+      "path": "C:\\Users\\86186\\AppData\\Roaming\\obsidian\\obsidian.json",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\2\\obsidian.json",
+      "sha256": "9b102f8eaa070ee75f6c2e9fd2b0ac3af9957265416580d206b1a137813748c8"
+    },
+    {
+      "path": "E:\\research-wiki\\开发\\staged\\research-wiki\\SKILL.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\3\\SKILL.md",
+      "sha256": "fb2c65d6ce67415927007bd2ba411c25417d1484efe896c6d542fdf5d680c1dd"
+    },
+    {
+      "path": "E:\\research-wiki\\开发\\staged\\research-wiki\\assets\\AGENTS.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\4\\AGENTS.md",
+      "sha256": "59a8d10c39a0f1b9d926cfca107ba870969cd91e4a527fd287c17c6fe1400713"
+    },
+    {
+      "path": "C:\\Users\\86186\\.codex\\skills\\research-wiki\\SKILL.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\5\\SKILL.md",
+      "sha256": "fb2c65d6ce67415927007bd2ba411c25417d1484efe896c6d542fdf5d680c1dd"
+    },
+    {
+      "path": "C:\\Users\\86186\\.codex\\skills\\research-wiki\\assets\\AGENTS.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\6\\AGENTS.md",
+      "sha256": "59a8d10c39a0f1b9d926cfca107ba870969cd91e4a527fd287c17c6fe1400713"
+    },
+    {
+      "path": "C:\\Users\\86186\\.agents\\skills\\research-wiki\\SKILL.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\7\\SKILL.md",
+      "sha256": "fb2c65d6ce67415927007bd2ba411c25417d1484efe896c6d542fdf5d680c1dd"
+    },
+    {
+      "path": "C:\\Users\\86186\\.agents\\skills\\research-wiki\\assets\\AGENTS.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\8\\AGENTS.md",
+      "sha256": "59a8d10c39a0f1b9d926cfca107ba870969cd91e4a527fd287c17c6fe1400713"
+    },
+    {
+      "path": "C:\\Users\\86186\\.claude\\skills\\research-wiki\\SKILL.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\9\\SKILL.md",
+      "sha256": "fb2c65d6ce67415927007bd2ba411c25417d1484efe896c6d542fdf5d680c1dd"
+    },
+    {
+      "path": "C:\\Users\\86186\\.claude\\skills\\research-wiki\\assets\\AGENTS.md",
+      "backup": "E:\\research-wiki\\维护记录\\2026-10-22-Obsidian辅助与神经图谱\\before\\10\\AGENTS.md",
+      "sha256": "59a8d10c39a0f1b9d926cfca107ba870969cd91e4a527fd287c17c6fe1400713"
+    }
+  ],
+  "markdown_sha256": {
+    "AGENTS.md": "59a8d10c39a0f1b9d926cfca107ba870969cd91e4a527fd287c17c6fe1400713",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "index.md": "46b861179750830823aec61090625c7300b492246855411c8eee1204929a1fca",
+    "log.md": "26cba00b7e9dadf0dcdbf5fef145d904f6fb4e21235e0268a2c6edf770587462",
+    "chart-types\\bar.md": "d030046b7af94094d45f67bf4d5f4118bc6f5f9dffe3a6058fb3af696996bb42",
+    "chart-types\\beeswarm.md": "f17eeea048e0f29964e44c6b4c889c629f34fffddc6aa227252f402a57ce3a77",
+    "chart-types\\boxplot.md": "c232ddecb11a82382260efb4d5abdabb2c0fcd09637841dc87d9f4447532d738",
+    "chart-types\\density-scatter.md": "d150eb7d437f3df92a3ad2ac2ae38e660ee467a0b2fcd73bf8fdf50e1fb8a1c1",
+    "chart-types\\radial-bar.md": "8c8b6111f0258839b41b7eda840618ff227416fb7619bb9e70be65db073b1f10",
+    "interfaces\\regression-fold-metrics.md": "308264b0492388d48708240c1a6fc8b6290ef0bf0bc38f709f41adb219a9cd6a",
+    "interfaces\\regression-predictions.md": "0d1ce9454b7ecf2d4f450c41f59ae702f8c93d9e6dfbcdcc424432c8b0dbaf7c",
+    "interfaces\\render-box-summaries.md": "46a8ec2d9d302db0ac338f0ed146d4ca483dafe47cbdf1c0c9eedabf1f8f3b67",
+    "interfaces\\render-category-points.md": "9c45b018377693d75b85c63c12e6d26d5a5ded20a48d7f867a4b5c35af3381ce",
+    "interfaces\\render-marginal-bars.md": "14756b5a758b3d37dc4dc0f519be667bd688e2f697ff9806184fa4db15172d0d",
+    "interfaces\\render-scatter-rgb.md": "5d8d05b082c268422caced55ae38d5ea1247ad77d210e037b067c17d85a404ee",
+    "interfaces\\shap-samples.md": "828599d11618e15fca03b700b8fa33137c74f2081fea2e67a2e7c18856612b10",
+    "interfaces\\shap-summary.md": "8d4138220730273dd2187f7bf9be783387567c81e2a0cc2fb982f3cddaa1640d",
+    "layouts\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md": "eb4c36f7fae91efb3df30be33c1a961ab7e09960db89286e4480c8edf67cdf11",
+    "layouts\\2026-10-19-regression-stability__fig01-density-grid.md": "345a9f7f1e4cdffef81d08e1ff47c88b10180997e54fdb8922c999e12e9ead9e",
+    "layouts\\2026-10-19-regression-stability__fig02-metric-boxplots.md": "4fdfb5a177f484eebc4719542d8cf86fc6011c8eec59d6b1b4ff4d2ce01bb7f8",
+    "layouts\\2026-10-19-regression-stability__fig03-density-panel.md": "fb90cce3498eaae868ed5ea3605595eac7c2743c77f6b47016fad342882717ff",
+    "layouts\\2026-10-19-regression-stability__fig04-boxplot-panel.md": "ec31dd3a4748e8e689504da75806fa57388bb9378183334889a4aa781244bcde",
+    "methods\\paired-reference-visual-comparison.md": "fa3bad121faf84c252ce9e34a65938a54dc04240ae7bfba53446abca874ed97c",
+    "methods\\regression-resampling-evaluation.md": "49bced1997df2741e714e71086391422763e67daf71b541057964d1c6569ec35",
+    "methods\\repeated-benchmark-distribution.md": "72b5bdd3690043447e52d53a5017c101d376abe567ebd905b5e2fbc11220e115",
+    "methods\\shap-explanation.md": "a18b012ea2f97cbffa9eb4108fe5bba5945570bff51b74bf091d12a0f1e9f7d2",
+    "templates\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": "1174153ab9319cabd293501c41a027056a54b02a8b5b1aa13aa779410dc6ffb6",
+    "templates\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": "112de31ec86968b16c4cf4995b1c07fd6c893f9df3cd019be6cd4ef900cfeeba",
+    "templates\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": "cc77358d631610c32bb733c50670163ab94b1326e4ba89ba32cab530f9fbeedd",
+    "templates\\2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": "83010a58461494c5b4f1abd3cde07ff78af3878ec6a9cf5cb13b1a75645664e6",
+    "templates\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": "ce1d2c04f53c3be51c739fa58c7193228d3c24c2321e3ad4a13c6ae1c9ad0f1c",
+    "methods\\regression-resampling-evaluation\\verification.md": "587a4fd23aac9886a65726badc97b67597047961d8af7517a147cc43343a561e",
+    "methods\\regression-resampling-evaluation\\source\\source.md": "7281069b9b71046dfe0c2023889d02e4654264795dead9283405737c09430cf4",
+    "methods\\shap-explanation\\source\\README.md": "b0af8f3c50b4f41e03f262de6d6636fba24d0c8e5554c566ac59856e6f8c104f",
+    "templates\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\README.md": "21f7071465db3abc50abc68d43496b52adb4e8ada93df1b6c3214fb81e0e3f0e",
+    "templates\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\README.md": "a3da92755dd4213f0ddf6529d685b7d4ab7da66a229d332319340db6190bfb05"
+  }
+}

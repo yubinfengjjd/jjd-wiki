@@ -1,0 +1,32 @@
+{
+  "method": "rna-velocity",
+  "state": "not_run",
+  "error": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" rna-velocity \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\rna-velocity\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\rna-velocity\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result-input.rds",
+  "case": {
+    "label": "scVelo",
+    "parameters": {
+      "parameters": {
+        "assay_X": "RNA",
+        "assay_layers": ["spliced", "unspliced"],
+        "group_by": "CellType",
+        "linear_reduction": "PCA"
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "velocity_native.R": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:01:58 UTC",
+  "executed_at": "2026-10-23 16:02:02 UTC"
+}

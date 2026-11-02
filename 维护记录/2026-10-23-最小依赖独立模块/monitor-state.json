@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-23T16:19:07.041252+00:00",
+  "session_id": "60c0159e-9c13-45c6-bfd5-b81dfc41e567",
+  "active_stream": "claude-review2-recovery5-stream.jsonl",
+  "stream_bytes": 2985035,
+  "events": 10350,
+  "tool_calls": 118,
+  "recent_tools": [
+    {
+      "name": "Bash",
+      "file": ""
+    },
+    {
+      "name": "Edit",
+      "file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/verification-matrix.md"
+    },
+    {
+      "name": "Bash",
+      "file": ""
+    },
+    {
+      "name": "Bash",
+      "file": ""
+    },
+    {
+      "name": "Bash",
+      "file": ""
+    }
+  ],
+  "new_tools": 7,
+  "exit": "0",
+  "result": {
+    "subtype": "success",
+    "is_error": false,
+    "duration_ms": 1430546,
+    "num_turns": 119
+  }
+}

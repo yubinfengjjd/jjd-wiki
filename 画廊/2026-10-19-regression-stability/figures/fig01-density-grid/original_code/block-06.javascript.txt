@@ -1,0 +1,9 @@
+fig, ax = plot_prediction_error(
+    model_metrics=model_metrics,
+    metric_col="MAE",
+    title="Absolute error",
+    y_label="Test MAE (SR)",
+    savepath="mae.png",
+)
+
+plt.show()

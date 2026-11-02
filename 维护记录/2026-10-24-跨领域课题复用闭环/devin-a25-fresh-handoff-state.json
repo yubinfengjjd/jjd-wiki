@@ -1,0 +1,78 @@
+{
+  "label": "devin-a25-fresh-handoff",
+  "pid": 21856,
+  "cwd": "E:\\青光眼单细胞\\wiki-use\\acceptance-20261024",
+  "status": "returned",
+  "tool_events": 247,
+  "message_chars": 1614,
+  "updated_at": "2026-10-25T06:45:01Z",
+  "load_session_supported": true,
+  "session_id": "relic-sailor",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "last_tool": "Wrote E:\\青光眼单细胞\\wiki-use\\acceptance-20261024\\FRESH-SESSION-REVIEW.md",
+  "owned_terminal_pids": [
+    22040,
+    24880,
+    5676,
+    25236,
+    20812,
+    2276,
+    7300,
+    3272,
+    15532,
+    24148,
+    22484,
+    17604,
+    7732,
+    17428,
+    19984,
+    21744,
+    10272,
+    2208,
+    24380,
+    26024,
+    14116,
+    13944,
+    12912,
+    16684,
+    18148,
+    26480,
+    25524,
+    26348,
+    25044,
+    13812,
+    4756,
+    24532,
+    8792,
+    2616,
+    20752,
+    24048,
+    18344,
+    3436,
+    6744,
+    4456
+  ],
+  "stop_reason": "end_turn"
+}

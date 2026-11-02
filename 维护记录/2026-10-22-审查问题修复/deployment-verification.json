@@ -1,0 +1,32 @@
+[
+  {
+    "host": ".agents",
+    "verified": 270,
+    "changed": [
+      "assets/AGENTS.md",
+      "rwiki/templates.py",
+      "tests/test_hardening.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".codex",
+    "verified": 270,
+    "changed": [
+      "assets/AGENTS.md",
+      "rwiki/templates.py",
+      "tests/test_hardening.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".claude",
+    "verified": 270,
+    "changed": [
+      "assets/AGENTS.md",
+      "rwiki/templates.py",
+      "tests/test_hardening.py"
+    ],
+    "stale_removed": []
+  }
+]

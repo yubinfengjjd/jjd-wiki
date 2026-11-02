@@ -1,0 +1,50 @@
+{
+  "source": "SCP v0.5.6 GroupHeatmap (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig08.png",
+  "logical_panel": "A",
+  "chart_type": "heatmap",
+  "input": "data/render-group-heatmap.csv",
+  "input_columns": {
+    "matrix": "group.by variable / matrix name",
+    "feature": "gene or metadata feature; unique within matrix",
+    "group": "column group/cell type",
+    "value": "aggregated transformed expression (zscore)",
+    "percent": "fraction of cells above exp_cutoff, 0-1",
+    "matrix_order": "matrix display order",
+    "group_order": "column order within matrix",
+    "feature_order": "row order shared by matrices"
+  },
+  "params": {
+    "features": [
+      "Sox9",
+      "Anxa2",
+      "Bicc1",
+      "Neurog3",
+      "Hes6",
+      "Fev",
+      "Neurod1",
+      "Rbp4",
+      "Pyy",
+      "Ins1",
+      "Gcg",
+      "Sst",
+      "Ghrl"
+    ],
+    "group_by": [
+      "CellType",
+      "SubCellType"
+    ],
+    "exp_method": "zscore",
+    "exp_legend_title": "zscore(normalized counts)",
+    "nlabel": 20,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; GroupHeatmap matrix_list/matrix_percent from the native function",
+    "code": "table half and plotting half split; plotting half reproduces GroupHeatmap ht1 byte-for-byte",
+    "license": "GPL (>= 3)"
+  }
+}

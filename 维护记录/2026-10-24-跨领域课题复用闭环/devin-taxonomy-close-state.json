@@ -1,0 +1,69 @@
+{
+  "label": "devin-taxonomy-close",
+  "pid": 17208,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "returned",
+  "tool_events": 162,
+  "message_chars": 3762,
+  "updated_at": "2026-10-25T06:29:14Z",
+  "load_session_supported": true,
+  "last_tool": "Ran python.exe",
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    7884,
+    26024,
+    20752,
+    26288,
+    24012,
+    17756,
+    12668,
+    25968,
+    24888,
+    24300,
+    25716,
+    2292,
+    25040,
+    8132,
+    13392,
+    23752,
+    23652,
+    26480,
+    25840,
+    15572,
+    14524,
+    21624,
+    15092,
+    492,
+    22224,
+    15240,
+    18288,
+    23224,
+    20028,
+    23292,
+    6352
+  ],
+  "stop_reason": "end_turn"
+}

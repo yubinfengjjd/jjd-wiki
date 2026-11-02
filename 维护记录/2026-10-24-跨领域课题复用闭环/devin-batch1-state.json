@@ -1,0 +1,36 @@
+{
+  "label": "devin-batch1",
+  "pid": 14616,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "failed",
+  "tool_events": 709,
+  "message_chars": 7154,
+  "updated_at": "2026-10-24T10:52:55Z",
+  "load_session_supported": true,
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "last_tool": "",
+  "error": "ACP request exceeded bounded wait"
+}

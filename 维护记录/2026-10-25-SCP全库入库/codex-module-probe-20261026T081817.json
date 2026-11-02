@@ -1,0 +1,465 @@
+{
+  "scope": "in-progress independently copied modules; not final acceptance",
+  "copied_to": "E:\\research-wiki-env\\work\\codex-scp-full-probe-20261026T081817",
+  "manifests": {
+    "bbknn-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "css-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "cellcorheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "celldensityplot": {
+      "valid": true,
+      "issues": []
+    },
+    "celldimplot": {
+      "valid": true,
+      "issues": []
+    },
+    "celldimplot3d": {
+      "valid": true,
+      "issues": []
+    },
+    "cellscoring": {
+      "valid": true,
+      "issues": []
+    },
+    "cellstatplot": {
+      "valid": true,
+      "issues": []
+    },
+    "combat-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "conos-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "dynamicheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "dynamicplot": {
+      "valid": true,
+      "issues": []
+    },
+    "enrichmentplot": {
+      "valid": true,
+      "issues": []
+    },
+    "featurecorplot": {
+      "valid": true,
+      "issues": []
+    },
+    "featuredimplot": {
+      "valid": true,
+      "issues": []
+    },
+    "featuredimplot3d": {
+      "valid": true,
+      "issues": []
+    },
+    "featureheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "featurestatplot": {
+      "valid": true,
+      "issues": []
+    },
+    "findexpressedmarkers": {
+      "valid": true,
+      "issues": []
+    },
+    "gseaplot": {
+      "valid": true,
+      "issues": []
+    },
+    "graphplot": {
+      "valid": true,
+      "issues": []
+    },
+    "groupheatmap": {
+      "valid": true,
+      "issues": []
+    },
+    "harmony-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "integration-scp": {
+      "valid": true,
+      "issues": []
+    },
+    "liger-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "lineageplot": {
+      "valid": true,
+      "issues": []
+    },
+    "mnn-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "pagaplot": {
+      "valid": true,
+      "issues": []
+    },
+    "projectionplot": {
+      "valid": true,
+      "issues": []
+    },
+    "recovercounts": {
+      "valid": true,
+      "issues": []
+    },
+    "runcssmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runcellqc": {
+      "valid": true,
+      "issues": []
+    },
+    "rundetest": {
+      "valid": true,
+      "issues": []
+    },
+    "rundm": {
+      "valid": true,
+      "issues": []
+    },
+    "rundimreduction": {
+      "valid": true,
+      "issues": []
+    },
+    "rundoubletcalling": {
+      "valid": true,
+      "issues": []
+    },
+    "rundynamicenrichment": {
+      "valid": true,
+      "issues": []
+    },
+    "rundynamicfeatures": {
+      "valid": true,
+      "issues": []
+    },
+    "runenrichment": {
+      "valid": true,
+      "issues": []
+    },
+    "runfr": {
+      "valid": true,
+      "issues": []
+    },
+    "runglmpca": {
+      "valid": true,
+      "issues": []
+    },
+    "rungsea": {
+      "valid": true,
+      "issues": []
+    },
+    "runharmony2": {
+      "valid": true,
+      "issues": []
+    },
+    "runknnmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runknnpredict": {
+      "valid": true,
+      "issues": []
+    },
+    "runlargevis": {
+      "valid": true,
+      "issues": []
+    },
+    "runmds": {
+      "valid": true,
+      "issues": []
+    },
+    "runmonocle2": {
+      "valid": true,
+      "issues": []
+    },
+    "runmonocle3": {
+      "valid": true,
+      "issues": []
+    },
+    "runnmf": {
+      "valid": true,
+      "issues": []
+    },
+    "runpaga": {
+      "valid": true,
+      "issues": []
+    },
+    "runpcamap": {
+      "valid": true,
+      "issues": []
+    },
+    "runphate": {
+      "valid": true,
+      "issues": []
+    },
+    "runpacmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runpalantir": {
+      "valid": true,
+      "issues": []
+    },
+    "runscvelo": {
+      "valid": true,
+      "issues": []
+    },
+    "runscmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runseuratmap": {
+      "valid": true,
+      "issues": []
+    },
+    "runsingler": {
+      "valid": true,
+      "issues": []
+    },
+    "runslingshot": {
+      "valid": true,
+      "issues": []
+    },
+    "runsymphonymap": {
+      "valid": true,
+      "issues": []
+    },
+    "runtrimap": {
+      "valid": true,
+      "issues": []
+    },
+    "runumap2": {
+      "valid": true,
+      "issues": []
+    },
+    "runwot": {
+      "valid": true,
+      "issues": []
+    },
+    "scanorama-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "seurat-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "standard-scp": {
+      "valid": true,
+      "issues": []
+    },
+    "statplot": {
+      "valid": true,
+      "issues": []
+    },
+    "uncorrected-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "velocityplot": {
+      "valid": true,
+      "issues": []
+    },
+    "volcanoplot": {
+      "valid": true,
+      "issues": []
+    },
+    "compute-velocity-on-grid": {
+      "valid": true,
+      "issues": []
+    },
+    "db-doubletdetection": {
+      "valid": true,
+      "issues": []
+    },
+    "db-scrublet": {
+      "valid": true,
+      "issues": []
+    },
+    "db-scdblfinder": {
+      "valid": true,
+      "issues": []
+    },
+    "db-scds": {
+      "valid": true,
+      "issues": []
+    },
+    "fastmnn-integrate": {
+      "valid": true,
+      "issues": []
+    },
+    "isoutlier": {
+      "valid": true,
+      "issues": []
+    },
+    "scvi-integrate": {
+      "valid": true,
+      "issues": []
+    }
+  },
+  "RunMDS": {
+    "files": {
+      "code/module.R": "bf7495ef7a39b462d1b95f4cfb7d1e8dd762879326c007ea71edbc8f1c85318c",
+      "code/fns/RunMDS.Assay.R": "5a0395a37585dedf634dd9ce56e28df36b0985628aa024606c6ae64704674728",
+      "code/fns/RunMDS.R": "d83404b0dac4ee7d9a9f9cd7362556426f9e4ea3efcac51966e504a737af19c4",
+      "code/fns/RunMDS.Seurat.R": "ad79fa7bf1b4a8f191e1f004bc199db4de9ce741a988bcefb29f50c7234da0c3",
+      "code/fns/RunMDS.default.R": "581f550b5c7a586aaa88819cb10cae798f7a64834433bdab4f6403795facb003",
+      "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+      "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+      "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+    }
+  },
+  "RunNMF": {
+    "files": {
+      "code/module.R": "7a782808b88d63d54bd21c0f3a2b088f8e0bfc59959f821c21763037d0a5d0ac",
+      "code/fns/RunNMF.Assay.R": "0cfec9c0350de3d6ceb70fac13d7f69bdf6581c039c6562665394d737379eefa",
+      "code/fns/RunNMF.R": "71f7a71becf8d7c5b15d32e3f7a5f622cc86f73e008ed4b08f357eaed8d86ffe",
+      "code/fns/RunNMF.Seurat.R": "6bb92264343c2b4341117ad4de5200af367c384e704de0b0690ca954015e7a6d",
+      "code/fns/RunNMF.default.R": "6afc770f1ee8055523034ff1c95580257b37afcc3edf4ebfce1595c5ec6e8b8c",
+      "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+      "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+      "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+    }
+  },
+  "r_exit_code": 0,
+  "real_calls": {
+    "nested_source_MDS": {
+      "state": "passed"
+    },
+    "direct_default_MDS": {
+      "state": "passed"
+    },
+    "nested_project_driver": {
+      "state": "passed"
+    },
+    "public_NMF": {
+      "state": "passed"
+    },
+    "MDS_after_loading_NMF": {
+      "state": "passed"
+    },
+    "input_unchanged": true,
+    "search_unchanged": false,
+    "search_added": "package:generics",
+    "search_removed": [],
+    "options_added": [
+      "ambiguousMethodSelection",
+      "BioC",
+      "callr.condition_handler_cli_message",
+      "dotCall64.verbose",
+      "dplyr.show_progress",
+      "foreachDoparLocal",
+      "future.ClusterFuture.clusterEvalQ",
+      "future.debug.indent",
+      "future.globals.keepWhere",
+      "future.globals.method.default",
+      "future.regression.note",
+      "globals.debug.indent",
+      "progressr.clear",
+      "progressr.enable",
+      "progressr.enable_after",
+      "progressr.interrupts",
+      "progressr.interval",
+      "progressr.lifecycle.progress",
+      "progressr.times",
+      "Seurat.coords.short_range",
+      "Seurat.input.sparse_ratio",
+      "Seurat.io.rds.strict",
+      "Seurat.object.assay.brackets",
+      "Seurat.object.assay.v3.missing_layer",
+      "Seurat.object.assay.version",
+      "Seurat.object.project",
+      "spam.cex",
+      "spam.cholincreasefactor",
+      "spam.cholpivotcheck",
+      "spam.cholsymmetrycheck",
+      "spam.cholupdatesingular",
+      "spam.dopivoting",
+      "spam.drop",
+      "spam.eps",
+      "spam.force64",
+      "spam.imagesize",
+      "spam.inefficiencywarning",
+      "spam.listmethod",
+      "spam.NAOK",
+      "spam.nearestdistincreasefactor",
+      "spam.nearestdistnnz",
+      "spam.printsize",
+      "spam.safemodevalidity",
+      "spam.structurebased",
+      "spam.trivalues",
+      "spam.validate"
+    ],
+    "options_existing_changed": [],
+    "changed_options": [
+      "ambiguousMethodSelection",
+      "BioC",
+      "callr.condition_handler_cli_message",
+      "dotCall64.verbose",
+      "dplyr.show_progress",
+      "foreachDoparLocal",
+      "future.ClusterFuture.clusterEvalQ",
+      "future.debug.indent",
+      "future.globals.keepWhere",
+      "future.globals.method.default",
+      "future.regression.note",
+      "globals.debug.indent",
+      "progressr.clear",
+      "progressr.enable",
+      "progressr.enable_after",
+      "progressr.interrupts",
+      "progressr.interval",
+      "progressr.lifecycle.progress",
+      "progressr.times",
+      "Seurat.coords.short_range",
+      "Seurat.input.sparse_ratio",
+      "Seurat.io.rds.strict",
+      "Seurat.object.assay.brackets",
+      "Seurat.object.assay.v3.missing_layer",
+      "Seurat.object.assay.version",
+      "Seurat.object.project",
+      "spam.cex",
+      "spam.cholincreasefactor",
+      "spam.cholpivotcheck",
+      "spam.cholsymmetrycheck",
+      "spam.cholupdatesingular",
+      "spam.dopivoting",
+      "spam.drop",
+      "spam.eps",
+      "spam.force64",
+      "spam.imagesize",
+      "spam.inefficiencywarning",
+      "spam.listmethod",
+      "spam.NAOK",
+      "spam.nearestdistincreasefactor",
+      "spam.nearestdistnnz",
+      "spam.printsize",
+      "spam.safemodevalidity",
+      "spam.structurebased",
+      "spam.trivalues",
+      "spam.validate"
+    ]
+  }
+}

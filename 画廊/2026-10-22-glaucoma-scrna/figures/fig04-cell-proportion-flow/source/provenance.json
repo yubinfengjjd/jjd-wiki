@@ -1,0 +1,12 @@
+{
+  "source_image": "source/fig04.png",
+  "source_image_sha256": "08a1bb5dc82dce225bc3be15e6f873e88ada9da32fe4a2cc38306491719c56d3",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "08a1bb5dc82dce225bc3be15e6f873e88ada9da32fe4a2cc38306491719c56d3",
+  "bbox": [0, 0, 1056, 864],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\cell_proportion_flow.pdf"
+  ],
+  "note": "Selected representative is the two-group proportion bar + flow ribbon panel."
+}

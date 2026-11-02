@@ -1,0 +1,9 @@
+{
+  "mode": "fixed",
+  "profile": "venn",
+  "n_sets": 4,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "svg_device": "svglite"
+}

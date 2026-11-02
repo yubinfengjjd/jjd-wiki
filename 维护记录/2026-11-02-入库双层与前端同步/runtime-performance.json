@@ -1,0 +1,16 @@
+{
+  "local-omics-analysis-guide": {
+    "seconds": 23.126,
+    "states": {
+      "not_run": 10,
+      "verified": 12
+    }
+  },
+  "local-omics-visualization-guide": {
+    "seconds": 8.313,
+    "states": {
+      "verified": 7,
+      "not_run": 11
+    }
+  }
+}

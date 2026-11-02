@@ -1,0 +1,142 @@
+[
+  {
+    "label": "primary-source",
+    "path": "E:\\桌面\\ARIS\\sci-figure-replica-dev-20261020\\staged\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2abfe96d2768bcb16cc0a5708e29997cf8a9955e982529b4f096f3e172d8fa70",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  },
+  {
+    "label": "primary-source",
+    "path": "E:\\桌面\\ARIS\\sci-figure-replica-dev-20261020\\staged\\sci-figure-replica\\assets\\metadata.schema.json",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\metadata.schema.reviewed.json",
+    "old": "58cae736d3a9b63cb6e239ff9dd05da3d0b4c981e9017a868c34b04e61f833f0",
+    "new": "fce9d2ebc9ce69e4ec0e016f810dfd262495791cee31a7e57a64975813d7b6fe"
+  },
+  {
+    "label": "primary-source",
+    "path": "E:\\桌面\\ARIS\\sci-figure-replica-dev-20261020\\staged\\sci-figure-replica\\references\\scenario-taxonomy.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario-taxonomy.reference.md",
+    "old": "758c7722cae4b8309ac53d5bef228337867f00d18fd3e867652ab9324165a717",
+    "new": "a9fd02ca8c7f491324411a1ece767b32aeb3b0863f0c84c40bff1c81e18a5f37"
+  },
+  {
+    "label": ".agents",
+    "path": "C:\\Users\\86186\\.agents\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2537c5fc0ce3e54960fe380f2dba874543bc536d820ac514a144598fb8c746e0",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  },
+  {
+    "label": ".agents",
+    "path": "C:\\Users\\86186\\.agents\\skills\\sci-figure-replica\\assets\\metadata.schema.json",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\metadata.schema.reviewed.json",
+    "old": "58cae736d3a9b63cb6e239ff9dd05da3d0b4c981e9017a868c34b04e61f833f0",
+    "new": "fce9d2ebc9ce69e4ec0e016f810dfd262495791cee31a7e57a64975813d7b6fe"
+  },
+  {
+    "label": ".agents",
+    "path": "C:\\Users\\86186\\.agents\\skills\\sci-figure-replica\\references\\scenario-taxonomy.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario-taxonomy.reference.md",
+    "old": "758c7722cae4b8309ac53d5bef228337867f00d18fd3e867652ab9324165a717",
+    "new": "a9fd02ca8c7f491324411a1ece767b32aeb3b0863f0c84c40bff1c81e18a5f37"
+  },
+  {
+    "label": ".codex",
+    "path": "C:\\Users\\86186\\.codex\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2abfe96d2768bcb16cc0a5708e29997cf8a9955e982529b4f096f3e172d8fa70",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  },
+  {
+    "label": ".codex",
+    "path": "C:\\Users\\86186\\.codex\\skills\\sci-figure-replica\\assets\\metadata.schema.json",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\metadata.schema.reviewed.json",
+    "old": "58cae736d3a9b63cb6e239ff9dd05da3d0b4c981e9017a868c34b04e61f833f0",
+    "new": "fce9d2ebc9ce69e4ec0e016f810dfd262495791cee31a7e57a64975813d7b6fe"
+  },
+  {
+    "label": ".codex",
+    "path": "C:\\Users\\86186\\.codex\\skills\\sci-figure-replica\\references\\scenario-taxonomy.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario-taxonomy.reference.md",
+    "old": "758c7722cae4b8309ac53d5bef228337867f00d18fd3e867652ab9324165a717",
+    "new": "a9fd02ca8c7f491324411a1ece767b32aeb3b0863f0c84c40bff1c81e18a5f37"
+  },
+  {
+    "label": ".claude",
+    "path": "C:\\Users\\86186\\.claude\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2537c5fc0ce3e54960fe380f2dba874543bc536d820ac514a144598fb8c746e0",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  },
+  {
+    "label": ".claude",
+    "path": "C:\\Users\\86186\\.claude\\skills\\sci-figure-replica\\assets\\metadata.schema.json",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\metadata.schema.reviewed.json",
+    "old": "58cae736d3a9b63cb6e239ff9dd05da3d0b4c981e9017a868c34b04e61f833f0",
+    "new": "fce9d2ebc9ce69e4ec0e016f810dfd262495791cee31a7e57a64975813d7b6fe"
+  },
+  {
+    "label": ".claude",
+    "path": "C:\\Users\\86186\\.claude\\skills\\sci-figure-replica\\references\\scenario-taxonomy.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario-taxonomy.reference.md",
+    "old": "758c7722cae4b8309ac53d5bef228337867f00d18fd3e867652ab9324165a717",
+    "new": "a9fd02ca8c7f491324411a1ece767b32aeb3b0863f0c84c40bff1c81e18a5f37"
+  },
+  {
+    "label": ".cc-switch",
+    "path": "C:\\Users\\86186\\.cc-switch\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2537c5fc0ce3e54960fe380f2dba874543bc536d820ac514a144598fb8c746e0",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  },
+  {
+    "label": ".cc-switch",
+    "path": "C:\\Users\\86186\\.cc-switch\\skills\\sci-figure-replica\\assets\\metadata.schema.json",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\metadata.schema.reviewed.json",
+    "old": "58cae736d3a9b63cb6e239ff9dd05da3d0b4c981e9017a868c34b04e61f833f0",
+    "new": "fce9d2ebc9ce69e4ec0e016f810dfd262495791cee31a7e57a64975813d7b6fe"
+  },
+  {
+    "label": ".cc-switch",
+    "path": "C:\\Users\\86186\\.cc-switch\\skills\\sci-figure-replica\\references\\scenario-taxonomy.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario-taxonomy.reference.md",
+    "old": "758c7722cae4b8309ac53d5bef228337867f00d18fd3e867652ab9324165a717",
+    "new": "a9fd02ca8c7f491324411a1ece767b32aeb3b0863f0c84c40bff1c81e18a5f37"
+  },
+  {
+    "label": ".config/opencode",
+    "path": "C:\\Users\\86186\\.config\\opencode\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2537c5fc0ce3e54960fe380f2dba874543bc536d820ac514a144598fb8c746e0",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  },
+  {
+    "label": ".config/opencode",
+    "path": "C:\\Users\\86186\\.config\\opencode\\skills\\sci-figure-replica\\assets\\metadata.schema.json",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\metadata.schema.reviewed.json",
+    "old": "58cae736d3a9b63cb6e239ff9dd05da3d0b4c981e9017a868c34b04e61f833f0",
+    "new": "fce9d2ebc9ce69e4ec0e016f810dfd262495791cee31a7e57a64975813d7b6fe"
+  },
+  {
+    "label": ".config/opencode",
+    "path": "C:\\Users\\86186\\.config\\opencode\\skills\\sci-figure-replica\\references\\scenario-taxonomy.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario-taxonomy.reference.md",
+    "old": "758c7722cae4b8309ac53d5bef228337867f00d18fd3e867652ab9324165a717",
+    "new": "a9fd02ca8c7f491324411a1ece767b32aeb3b0863f0c84c40bff1c81e18a5f37"
+  },
+  {
+    "label": "formal-wiki",
+    "path": "E:\\research-wiki\\知识库\\AGENTS.md",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\staged\\research-wiki\\assets\\AGENTS.md",
+    "old": "5523d6991c05e2e495ed11d4d86d250f7c2323d853016d0bc777d54dabed4469",
+    "new": "3e3af02b40e4222d932ee4cdc4d06ded6f2aecbddc6d6022596935b6d9944479"
+  },
+  {
+    "label": "development-spec",
+    "path": "E:\\research-wiki\\开发\\spec\\scenario_taxonomy.yaml",
+    "source": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development\\spec\\scenario_taxonomy.yaml",
+    "old": "2abfe96d2768bcb16cc0a5708e29997cf8a9955e982529b4f096f3e172d8fa70",
+    "new": "802e3c1d2a72486407abf2e93d672bb21fa0b4634728643217a93c9855275dbb"
+  }
+]

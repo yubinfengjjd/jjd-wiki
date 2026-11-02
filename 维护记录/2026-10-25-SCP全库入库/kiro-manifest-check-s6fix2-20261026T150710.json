@@ -1,0 +1,1377 @@
+{
+ "module_root": "E:\\research-wiki-env\\tmp\\kiro-scp-s6fix2\\modules",
+ "summary": {
+  "modules": 79,
+  "invalid": [],
+  "problems": [],
+  "modules_with_raw_installer_text": {}
+ },
+ "rows": [
+  {
+   "module": "bbknn-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "proxyC",
+     "reticulate",
+     "rlang",
+     "stats"
+    ],
+    "Python": [
+     "bbknn"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "cellcorheatmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ComplexHeatmap",
+     "Matrix",
+     "SeuratObject",
+     "circlize",
+     "ggplot2",
+     "grid",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "celldensityplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "dplyr",
+     "ggplot2",
+     "ggridges",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "celldimplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "celldimplot3d",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grDevices",
+     "plotly",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "cellscoring",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "Matrix",
+     "R.cache",
+     "Seurat",
+     "SeuratObject",
+     "ggplot2",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "cellstatplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grDevices",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "combat-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats",
+     "sva"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "compute-velocity-on-grid",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "igraph",
+     "proxyC",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "conos-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "conos",
+     "dplyr",
+     "igraph",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "css-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "qlcMatrix",
+     "rlang",
+     "simspec",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "db-doubletdetection",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "methods",
+     "reticulate",
+     "rlang"
+    ],
+    "Python": [
+     "doubletdetection"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "db-scdblfinder",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang",
+     "scDblFinder"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "db-scds",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang",
+     "scds"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "db-scrublet",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "methods",
+     "reticulate",
+     "rlang"
+    ],
+    "Python": [
+     "scrublet"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "dynamicheatmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ComplexHeatmap",
+     "Matrix",
+     "SeuratObject",
+     "circlize",
+     "grid",
+     "methods",
+     "rlang",
+     "stats",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "dynamicplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "MatrixGenerics",
+     "SeuratObject",
+     "dplyr",
+     "ggnewscale",
+     "ggplot2",
+     "grid",
+     "gtable",
+     "methods",
+     "patchwork",
+     "plotly",
+     "reshape2",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "enrichmentplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "ggplot2",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "fastmnn-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "batchelor",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "featurecorplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "gtable",
+     "patchwork",
+     "proxyC",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "featuredimplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "ggplot2",
+     "grid",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "featuredimplot3d",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "ggplot2",
+     "grDevices",
+     "plotly",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "featureheatmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ComplexHeatmap",
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "grid",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "featurestatplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "ggplot2",
+     "methods",
+     "reshape2",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "findexpressedmarkers",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "graphplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "reshape2",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": [],
+   "graphplot_required_ok": true
+  },
+  {
+   "module": "groupheatmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ComplexHeatmap",
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "ggplot2",
+     "grid",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "gseaplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "ggplot2",
+     "methods",
+     "rlang",
+     "stats",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "harmony-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "harmony",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "integration-scp",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "rlang",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "isoutlier",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "liger-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang",
+     "rliger",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "lineageplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "mnn-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "batchelor",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "pagaplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "reshape2",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "projectionplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggnewscale",
+     "ggplot2",
+     "grid",
+     "plotly",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "recovercounts",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "methods",
+     "rlang",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runcellqc",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runcssmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang",
+     "simspec"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rundetest",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rundimreduction",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rundm",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "destiny",
+     "methods"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rundoubletcalling",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rundynamicenrichment",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "Matrix",
+     "R.cache",
+     "Seurat",
+     "SeuratObject",
+     "ggplot2",
+     "methods",
+     "mgcv",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rundynamicfeatures",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "mgcv",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runenrichment",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "R.cache",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runfr",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "igraph"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runglmpca",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "glmpca",
+     "methods",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "rungsea",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "R.cache",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runharmony2",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "harmony",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runknnmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runknnpredict",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runlargevis",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "uwot"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runmds",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "methods",
+     "proxyC",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runmonocle2",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Biobase",
+     "BiocGenerics",
+     "DDRTree",
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "VGAM",
+     "ggplot2",
+     "grid",
+     "igraph",
+     "methods",
+     "monocle",
+     "rlang",
+     "stats",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runmonocle3",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "SingleCellExperiment",
+     "ggnewscale",
+     "ggplot2",
+     "ggrepel",
+     "grid",
+     "igraph",
+     "methods",
+     "monocle3",
+     "rlang",
+     "stats",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runnmf",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "RcppML",
+     "SeuratObject",
+     "methods",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runpacmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "reticulate"
+    ],
+    "Python": [
+     "pacmap"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runpaga",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "reticulate",
+     "rlang"
+    ],
+    "Python": [
+     "scanpy"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runpalantir",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "reticulate",
+     "rlang"
+    ],
+    "Python": [
+     "palantir"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runpcamap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runphate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "reticulate"
+    ],
+    "Python": [
+     "phate"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runscmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "S4Vectors",
+     "SeuratObject",
+     "SingleCellExperiment",
+     "SummarizedExperiment",
+     "methods",
+     "rlang",
+     "scmap"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runscvelo",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "reticulate",
+     "rlang"
+    ],
+    "Python": [
+     "scvelo"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runseuratmap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runsingler",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "BiocParallel",
+     "S4Vectors",
+     "SeuratObject",
+     "SingleCellExperiment",
+     "SingleR",
+     "SummarizedExperiment",
+     "methods",
+     "rlang"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runslingshot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Seurat",
+     "ggplot2",
+     "slingshot"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runsymphonymap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "methods",
+     "rlang",
+     "stats",
+     "symphony"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runtrimap",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "SeuratObject",
+     "reticulate"
+    ],
+    "Python": [
+     "trimap"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runumap2",
+   "valid": true,
+   "issues": [],
+   "required": {},
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "runwot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "reticulate",
+     "rlang"
+    ],
+    "Python": [
+     "wot"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "scanorama-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "reticulate",
+     "rlang",
+     "stats"
+    ],
+    "Python": [
+     "scanorama"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "scvi-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "igraph",
+     "methods",
+     "reticulate",
+     "rlang",
+     "stats"
+    ],
+    "Python": [
+     "numpy",
+     "scanpy",
+     "scvi-tools"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "seurat-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "standard-scp",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "statplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "ggplot2",
+     "grDevices",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "uncorrected-integrate",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "Seurat",
+     "SeuratObject",
+     "dplyr",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "velocityplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "dplyr",
+     "ggplot2",
+     "grid",
+     "igraph",
+     "metR",
+     "proxyC",
+     "reshape2",
+     "rlang",
+     "stats"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  },
+  {
+   "module": "volcanoplot",
+   "valid": true,
+   "issues": [],
+   "required": {
+    "R": [
+     "dplyr",
+     "ggplot2",
+     "ggrepel",
+     "methods",
+     "rlang",
+     "stats",
+     "utils"
+    ]
+   },
+   "has_python_field": false,
+   "raw_installer_calls": []
+  }
+ ]
+}

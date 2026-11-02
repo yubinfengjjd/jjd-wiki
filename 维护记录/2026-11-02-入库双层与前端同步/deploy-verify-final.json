@@ -1,0 +1,41 @@
+{
+  "consistent": true,
+  "hosts": [
+    {
+      "host": ".agents",
+      "missing": [],
+      "different": [],
+      "extra": []
+    },
+    {
+      "host": ".codex",
+      "missing": [],
+      "different": [],
+      "extra": []
+    },
+    {
+      "host": ".claude",
+      "missing": [],
+      "different": [],
+      "extra": []
+    },
+    {
+      "host": ".cc-switch",
+      "missing": [],
+      "different": [],
+      "extra": []
+    },
+    {
+      "host": ".config/opencode",
+      "missing": [],
+      "different": [],
+      "extra": []
+    },
+    {
+      "host": ".kiro",
+      "missing": [],
+      "different": [],
+      "extra": []
+    }
+  ]
+}

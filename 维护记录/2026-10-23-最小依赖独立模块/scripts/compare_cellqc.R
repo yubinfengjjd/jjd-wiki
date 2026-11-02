@@ -1,0 +1,7 @@
+ref <- readRDS("codex-reference.rds")
+new <- readRDS("portability/cellqc/result.rds")
+cat("ref names:", paste(names(ref), collapse=", "), "\n")
+str(ref$qc)
+cat("identical QC table:", identical(ref$qc, new$qc), "\n")
+if (!identical(ref$qc, new$qc)) print(all.equal(ref$qc, new$qc))
+cat("cells:", length(new$cells), "\n")

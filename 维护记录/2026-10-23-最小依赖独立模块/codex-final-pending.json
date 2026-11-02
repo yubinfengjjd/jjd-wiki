@@ -1,0 +1,26 @@
+[
+  {
+    "path": "methods/cell-type-annotation.md",
+    "stage": "method_implementation",
+    "queue": "agent",
+    "label": "待验证实现",
+    "reason": "笔记已确认；实现尚无当前有效验证，不作为可执行分析推荐。",
+    "templates": []
+  },
+  {
+    "path": "methods/doublet-detection.md",
+    "stage": "method_implementation",
+    "queue": "agent",
+    "label": "待验证实现",
+    "reason": "笔记已确认；实现尚无当前有效验证，不作为可执行分析推荐。",
+    "templates": []
+  },
+  {
+    "path": "methods/rna-velocity.md",
+    "stage": "method_implementation",
+    "queue": "agent",
+    "label": "待验证实现",
+    "reason": "笔记已确认；实现尚无当前有效验证，不作为可执行分析推荐。",
+    "templates": []
+  }
+]

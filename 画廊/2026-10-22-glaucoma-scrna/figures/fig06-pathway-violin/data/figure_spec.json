@@ -1,0 +1,23 @@
+{
+  "kind": "violin",
+  "canvas_px": [2304, 1248],
+  "panels": [
+    {"id": "A", "kind": "violin"}
+  ],
+  "style": {
+    "canvas_px": [2304, 1248],
+    "dodge_width": 0.8,
+    "violin_width": 0.7,
+    "box_width": 0.18,
+    "jitter_width": 0.18,
+    "color_scheme": ["#FF7F0E", "#1F77B4"],
+    "title": "Complement Pathway Score Comparison",
+    "ylab": "Pathway Score"
+  },
+  "data_provenance": "synthetic",
+  "notes": [
+    "Synthetic cell-level values; not original observations.",
+    "p labels and mean/SD labels are precomputed in the summary table; the plotting function does not run tests.",
+    "Cell-level Wilcoxon p values are descriptive only: cells are not independent and each group has one sample in the source project."
+  ]
+}

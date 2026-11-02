@@ -1,0 +1,66 @@
+{
+  "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble",
+  "post": {
+    "title": "青光眼单细胞项目（GSE251716）图表复刻",
+    "account": "作者课题",
+    "author": "作者",
+    "publish_date": "2026-10-22",
+    "url": null
+  },
+  "figure": {
+    "index": 3,
+    "label": "单panel：顶刊气泡点图",
+    "caption": "按作者 annotation.R 的顶刊气泡样式复刻；示例数据为合成，不是原始观测。",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "dotplot"
+    ],
+    "canvas_px": [
+      1153,
+      2304
+    ],
+    "panel_map": {
+      "A": "dotplot"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [],
+    "free": [
+      "GSE251716",
+      "dotplot"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "synthetic",
+  "code_provenance": "adapted",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig03.png",
+    "source_provenance": "source/provenance.json",
+    "code": "code/replica.R",
+    "core_code": "code/core.R",
+    "data": "data/estimated_data.csv",
+    "data_generator": "data/make_synthetic.R",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "12e88bd5bd8a3704af779facd0f555fdd88e9ad0e5cc80ae4149ab659f69beb1",
+  "created_at": "2026-10-22T05:38:14.672823Z",
+  "updated_at": "2026-10-22T06:00:32.133152+00:00",
+  "approved_version": 1
+}

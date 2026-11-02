@@ -1,0 +1,129 @@
+{
+  "results": [
+    {
+      "navigate": {
+        "frameId": "6B6C67124F1D1284B0FFF9568DB5CE1B",
+        "loaderId": "B2AF6F15E10958DC07ED2AADAEC9E538",
+        "isDownload": false
+      }
+    },
+    {
+      "eval": "({url:location.hash, title:document.querySelector('h1')?.textContent, domains:[...document.querySelectorAll('.taxonomy-domains a')].map(a=>({text:a.textContent,",
+      "value": {
+        "url": "#/methods",
+        "title": "方法库",
+        "domains": [
+          {
+            "text": "全部 15",
+            "href": "#/methods"
+          },
+          {
+            "text": "单细胞分析 13",
+            "href": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90"
+          },
+          {
+            "text": "转录组 4",
+            "href": "#/methods?domain=%E8%BD%AC%E5%BD%95%E7%BB%84"
+          },
+          {
+            "text": "机器学习 2",
+            "href": "#/methods?domain=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"
+          },
+          {
+            "text": "实验统计 1",
+            "href": "#/methods?domain=%E5%AE%9E%E9%AA%8C%E7%BB%9F%E8%AE%A1"
+          },
+          {
+            "text": "模型解释与特征重要性 1",
+            "href": "#/methods?domain=%E6%A8%A1%E5%9E%8B%E8%A7%A3%E9%87%8A%E4%B8%8E%E7%89%B9%E5%BE%81%E9%87%8D%E8%A6%81%E6%80%A7"
+          }
+        ],
+        "census": [
+          "15",
+          "15",
+          "12"
+        ]
+      }
+    },
+    {
+      "eval": "[...document.querySelectorAll('.taxonomy-domains a')].find(a=>a.textContent.includes('单细胞分析'))?.click(); 'clicked domain'",
+      "value": "clicked domain"
+    },
+    {
+      "eval": "({url:location.hash,title:document.querySelector('h1')?.textContent,selection:document.querySelector('.taxonomy-domains a[aria-current]')?.textContent,purposes:",
+      "value": {
+        "url": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90",
+        "title": "方法库",
+        "selection": "单细胞分析 13",
+        "purposes": [
+          "全部",
+          "预处理与质量控制 2",
+          "降维与聚类 2",
+          "整合与批次校正 1",
+          "注释与参考映射 2",
+          "差异与功能分析 3",
+          "轨迹与动态分析 3"
+        ],
+        "count": "显示 13 / 15 个分析家族；同一页面即使属于多个领域或用途也只计一次。"
+      }
+    },
+    {
+      "eval": "[...document.querySelectorAll('.taxonomy-purposes a')].find(a=>a.textContent.includes('预处理与质量控制'))?.click(); 'clicked purpose'",
+      "value": "clicked purpose"
+    },
+    {
+      "eval": "({url:location.hash,title:document.querySelector('h1')?.textContent,selection:document.querySelector('.taxonomy-purposes a[aria-current]')?.textContent,count:do",
+      "value": {
+        "url": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90&purpose=%E9%A2%84%E5%A4%84%E7%90%86%E4%B8%8E%E8%B4%A8%E9%87%8F%E6%8E%A7%E5%88%B6",
+        "title": "方法库",
+        "selection": "预处理与质量控制 2",
+        "count": "显示 2 / 15 个分析家族；同一页面即使属于多个领域或用途也只计一次。",
+        "links": [
+          {
+            "text": "需要适配 · 可用分析家族 1单细胞质量控制按显式阈值计算逐细胞 UMI、基因数与线粒体/核糖体比例，标记 Pass/Fail，不把 QC 指标当生物学分组。笔记已确认已验证 1/1 个实现",
+            "href": "#/page/methods/cell-quality-control.md"
+          },
+          {
+            "text": "打开",
+            "href": "#/page/methods/cell-quality-control.md"
+          },
+          {
+            "text": "需要适配 · 可用分析家族 2双细胞检测按样本识别双细胞；scDblFinder 与 DoubletFinder 是不同算法，当前均未在本机跑通，保留来源与精确缺失原因。待验证实现暂无已验证实现",
+            "href": "#/page/methods/doublet-detection.md"
+          },
+          {
+            "text": "打开",
+            "href": "#/page/methods/doublet-detection.md"
+          }
+        ]
+      }
+    },
+    {
+      "eval": "history.back(); 'browser back'",
+      "value": "browser back"
+    },
+    {
+      "eval": "({url:location.hash,title:document.querySelector('h1')?.textContent,count:document.querySelector('.taxonomy-result')?.textContent})",
+      "value": {
+        "url": "#/methods?domain=%E5%8D%95%E7%BB%86%E8%83%9E%E5%88%86%E6%9E%90",
+        "title": "方法库",
+        "count": "显示 13 / 15 个分析家族；同一页面即使属于多个领域或用途也只计一次。"
+      }
+    },
+    {
+      "eval": "location.hash='#/page/methods/gene-set-scoring.md'; 'open actual method'",
+      "value": "open actual method"
+    },
+    {
+      "eval": "[...document.querySelectorAll('details')].forEach(d=>{if(d.textContent.includes('最小')||d.textContent.includes('实现')) d.open=true}); ({url:location.hash,title:do",
+      "value": {
+        "url": "#/page/methods/gene-set-scoring.md",
+        "title": "基因集与通路签名打分",
+        "sourceImageLabels": [],
+        "runtimeText": true,
+        "sourceOnly": false
+      }
+    }
+  ],
+  "logs": []
+}

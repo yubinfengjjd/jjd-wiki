@@ -1,0 +1,7 @@
+plot_type: trend
+stat_type: count
+position: stack
+label: TRUE
+size_in: 8x6
+dpi: 150
+png_md5: f2568ebf278edc6baf4e443746370e25

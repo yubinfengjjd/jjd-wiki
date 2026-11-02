@@ -1,0 +1,11 @@
+{
+  "method": "reference-transfer",
+  "state": "passed",
+  "checks": {
+    "one_prediction_per_query": true,
+    "required_columns": true,
+    "query_order_preserved": true,
+    "anchors_reported": true
+  },
+  "compared_at": "2026-10-23 16:01:57 UTC"
+}

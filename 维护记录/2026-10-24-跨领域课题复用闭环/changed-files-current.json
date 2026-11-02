@@ -1,0 +1,158 @@
+[
+  {
+    "path": "frontend/src/api.ts",
+    "change": "modified",
+    "bytes": 17568,
+    "sha256": "8c0fc1af37685a37bbe7bab431e4115816e071294f46445e2fa132a87ba9d299"
+  },
+  {
+    "path": "frontend/src/methods.ts",
+    "change": "modified",
+    "bytes": 7109,
+    "sha256": "c1b41f4bad28cc0ea1813832893eeff0fff3c27c8924476f6dfb83457097d92b"
+  },
+  {
+    "path": "frontend/src/views/MethodOverview.tsx",
+    "change": "modified",
+    "bytes": 10126,
+    "sha256": "4e91550834711221127eb96e2485d3325404b1b3ffe5b2931f0a599037b70b49"
+  },
+  {
+    "path": "frontend/src/views/PageView.tsx",
+    "change": "modified",
+    "bytes": 16366,
+    "sha256": "cf809b2893910582a99690daaffadb318013eba83fdecaa9d6444a20cbcf99af"
+  },
+  {
+    "path": "frontend/tests/methods.test.tsx",
+    "change": "modified",
+    "bytes": 29732,
+    "sha256": "3151dc85ac4fec225b2eb1799af3f6ed782c338bc60d512c2c8a3504eb5600e6"
+  },
+  {
+    "path": "staged/research-wiki/SKILL.md",
+    "change": "modified",
+    "bytes": 26411,
+    "sha256": "1569b3e423c882b2af3d3298b78f960ee1cb693a219b10eb0d9ed720047e91c6"
+  },
+  {
+    "path": "staged/research-wiki/references/minimal-runtime.md",
+    "change": "modified",
+    "bytes": 9699,
+    "sha256": "fb97bcb9d79d4cdb63ddb1324699f5199cab3d21e1e48a9047a3121cd88b8f86"
+  },
+  {
+    "path": "staged/research-wiki/references/project-reuse.md",
+    "change": "modified",
+    "bytes": 7947,
+    "sha256": "ecabc8bf1a0a27798fc9742f550732799dfc5b8fe4636e3410378d037e68fc5b"
+  },
+  {
+    "path": "staged/research-wiki/references/project-state.md",
+    "change": "added",
+    "bytes": 9620,
+    "sha256": "799566ea021f2bc22e4cf8e6c22de06bdf2b6efc4250bba970c081ef58ef35d2"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/cli.py",
+    "change": "modified",
+    "bytes": 30436,
+    "sha256": "386d9a1eb24297329aa8a87891ef1987f82bee7bb0e54ed67792716e6a74f21d"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/discovery.py",
+    "change": "added",
+    "bytes": 5218,
+    "sha256": "3e3c0654f4d39aa8ecf99dd41662e6af63d901f21787d3d4d1e1f7cd51a43622"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/domain_profiles.py",
+    "change": "added",
+    "bytes": 22574,
+    "sha256": "d5610117a64e6295e614c8cf7fd9de2cd7acbcf82c7491fa88699316b934c9d6"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/domain_profiles.yaml",
+    "change": "added",
+    "bytes": 12199,
+    "sha256": "79d7922e56ea39c2dcae0100e6591008c5d56a90922c38018eb104913b9f6e5a"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/method_implementations.py",
+    "change": "modified",
+    "bytes": 10976,
+    "sha256": "b0e91b49165f9fee118559f2e67ee36e9e23474dffa89fc44f78084808aed0c5"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/project_state.py",
+    "change": "added",
+    "bytes": 108592,
+    "sha256": "c7ce5727ba8195705235b6c887cb54f7d8fb065ef33d1a2243f96e3d8e05990c"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/runtime_contract.py",
+    "change": "modified",
+    "bytes": 29743,
+    "sha256": "510afbc3c6da8bd7e77546e6a8f9c55fa6c91c3eb825097ecd469874ad8b43ae"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/server.py",
+    "change": "modified",
+    "bytes": 23869,
+    "sha256": "0a41d654636a0e94b35ddce6c632120a3b2764c853b089233176547ccd2966d0"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/store.py",
+    "change": "modified",
+    "bytes": 3191,
+    "sha256": "78de40477a447e589e3dfdf7c9b0099531a10c7dbf7ed2cc5d643ef9d0da1830"
+  },
+  {
+    "path": "staged/research-wiki/rwiki/usage.py",
+    "change": "modified",
+    "bytes": 9726,
+    "sha256": "60b38b7e4e1b2491838c1bce739a6036bfcdf0dc0818f1132e5aa02eb71be944"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_batch2.py",
+    "change": "added",
+    "bytes": 29378,
+    "sha256": "a32e82287d28883728e75a7675f9953f613154328ad485152aeabdf0084514f8"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_cli_project.py",
+    "change": "added",
+    "bytes": 5756,
+    "sha256": "80eb5d8c61a2d5954feba2e2778120cd6856d9ef511a3f0e9c0c285af32449ee"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_discovery.py",
+    "change": "added",
+    "bytes": 4927,
+    "sha256": "b6656099cd6e4da059f0d315200d18c05865c27477d89a1487ad00da17a0b5e6"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_domain_profiles.py",
+    "change": "added",
+    "bytes": 17900,
+    "sha256": "30c76d05c660acdb64d955197657b51fed47662e5b67a91c1d7c69a60bce0caf"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_project_state.py",
+    "change": "added",
+    "bytes": 37031,
+    "sha256": "c4ba84fcef2f49d015e48953833f3b16ee2a7eb95e34f8e161a97900788e270a"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_runtime_v2.py",
+    "change": "added",
+    "bytes": 14031,
+    "sha256": "2349249c518578a602b1d9a8005438f45f3300f06585293379fb52aa1eab6611"
+  },
+  {
+    "path": "staged/research-wiki/tests/test_server.py",
+    "change": "modified",
+    "bytes": 14517,
+    "sha256": "e9bdcf52a1413ae19c19fa2eef48f37f2e3f1a719d6eff3abf2c13ba828cfc54"
+  }
+]

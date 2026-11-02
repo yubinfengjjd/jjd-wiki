@@ -1,0 +1,62 @@
+[
+  {
+    "host": ".agents",
+    "files_verified": 266,
+    "changed": [
+      "SKILL.md",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "rwiki/facts.py",
+      "rwiki/server.py",
+      "rwiki/templates.py",
+      "rwiki/workflow.py",
+      "tests/test_semantic_relations.py",
+      "tests/test_templates.py",
+      "tests/test_workflow.py",
+      "app/assets/index-BmExtzHC.js"
+    ],
+    "old_bundles_backed_up": [
+      "app/assets/index-DWgJb30t.js"
+    ]
+  },
+  {
+    "host": ".codex",
+    "files_verified": 266,
+    "changed": [
+      "SKILL.md",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "rwiki/facts.py",
+      "rwiki/server.py",
+      "rwiki/templates.py",
+      "rwiki/workflow.py",
+      "tests/test_semantic_relations.py",
+      "tests/test_templates.py",
+      "tests/test_workflow.py",
+      "app/assets/index-BmExtzHC.js"
+    ],
+    "old_bundles_backed_up": [
+      "app/assets/index-DWgJb30t.js"
+    ]
+  },
+  {
+    "host": ".claude",
+    "files_verified": 266,
+    "changed": [
+      "SKILL.md",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "rwiki/facts.py",
+      "rwiki/server.py",
+      "rwiki/templates.py",
+      "rwiki/workflow.py",
+      "tests/test_semantic_relations.py",
+      "tests/test_templates.py",
+      "tests/test_workflow.py",
+      "app/assets/index-BmExtzHC.js"
+    ],
+    "old_bundles_backed_up": [
+      "app/assets/index-DWgJb30t.js"
+    ]
+  }
+]

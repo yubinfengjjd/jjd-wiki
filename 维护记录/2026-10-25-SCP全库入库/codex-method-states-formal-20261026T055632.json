@@ -1,0 +1,604 @@
+[
+  {
+    "id": "batch-integration",
+    "title": "单细胞批次整合",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-seurat",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-seurat; case={\"label\": \"Seurat anchor integration\", \"parameters\": {\"parameters\": {\"nHVF\": 300, \"linear_reduction_dims\": 20, \"nonlinear_reduction_dims\": 2, \"cluster_resolution\": 0.5, \"IntegrateData_params\": {\"k.weight\": 30}, \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_seurat_integration",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-seurat-portability.json",
+          "closure_hash": "afd4c264791d5b00f1ba1006bfee402e4f10643e07dbe700186bfec410786d89",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-harmony",
+        "state": "not_run",
+        "scope": "Missing R dependency: harmony; automatic installation is disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_batch_integration",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: harmony; automatic installation is disabled",
+          "evidence": "verification/scp-harmony-portability.json",
+          "closure_hash": "afd4c264791d5b00f1ba1006bfee402e4f10643e07dbe700186bfec410786d89",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "cell-clustering",
+    "title": "单细胞聚类分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "seurat-findclusters",
+        "state": "verified",
+        "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "cell-quality-control",
+    "title": "单细胞质量控制",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-runcellqc",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-runcellqc; case={\"label\": \"QC non-doublet\", \"parameters\": {\"parameters\": {\"qc_metrics\": [\"umi\", \"gene\", \"mito\"], \"UMI_threshold\": 0, \"gene_threshold\": 0, \"mito_threshold\": 100, \"return_filtered\": false, \"assay\": \"RNA\", \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_cell_quality_control",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-runcellqc-portability.json",
+          "closure_hash": "d62795a6124b9dbe16fb98c42dc8b22f76f1b75d14a14e163b59dfce3ac0b7ad",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "cell-type-annotation",
+    "title": "细胞类型注释",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-singler",
+        "state": "not_run",
+        "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_cell_type_annotation",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+          "evidence": "verification/scp-singler-portability.json",
+          "closure_hash": "e154822fb451133f55efdc0cbdd53a7e720183e99b0c2238221170801a3b8ed5",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "differential-expression",
+    "title": "差异表达分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-detest",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-detest; case={\"label\": \"Wilcoxon DE\", \"parameters\": {\"parameters\": {\"group_by\": \"CellType\", \"group1\": \"Ductal\", \"group2\": \"Endocrine\", \"test.use\": \"wilcox\", \"only.pos\": false, \"fc.threshold\": 1, \"min.pct\": 0.1, \"p.adjust.method\": \"bonferroni\", \"slot\": \"data\", \"assay\": \"RNA\", \"verbose\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_differential_expression",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-detest-portability.json",
+          "closure_hash": "e6f951350c01e9e28f86e7021254cb66154ae82664f2ba4d44b37d9f3b61cb67",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "dimensionality-reduction",
+    "title": "单细胞降维分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-dimreduction",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-dimreduction; case={\"label\": \"PCA UMAP\", \"parameters\": {\"parameters\": {\"features\": [\"Iapp\", \"Gcg\", \"Nnat\", \"Ins2\", \"Ins1\", \"2810417H13Rik\", \"Ghrl\", \"Slc38a5\", \"Pyy\", \"Hmgb2\", \"Chgb\", \"Gadd45a\", \"Rbp4\", \"Neurog3\", \"Cdkn1a\", \"Ppp1r1a\", \"Lrpprc\", \"Cck\", \"Sst\", \"Spp1\", \"Gast\", \"Top2a\", \"Hhex\", \"Ccnb1\", \"Cdk1\", \"Ppy\", \"Cdc20\", \"Fev\", \"Npy\", \"Clu\", \"Sdf2l1\", \"Cks2\", \"Tmem27\", \"Chga\", \"Hes1\", \"8430408G22Rik\", \"Birc5\", \"Btbd17\", \"Dlk1\", \"Ldha\", \"Peg10\", \"Scg2\", \"Tuba1b\", \"Ccnd1\", \"Mt2\", \"Dll3\", \"Serpina1c\", \"Cdkn1c\", \"Ptn\", \"Isl1\", \"Krtap17-1\", \"Mt1\", \"Gmnn\", \"Gip\", \"Spc24\", \"Arg1\", \"Cdca8\", \"Wfdc2\", \"Cldn10\", \"Id1\", \"Creld2\", \"Cyr61\", \"Cenpf\", \"Pcsk2\", \"Cenpa\", \"Mafb\", \"Gng12\", \"Ccnb2\", \"Cdca3\", \"H2afx\", \"Pcsk1n\", \"Ppp1r14a\", \"Arx\", \"Mki67\", \"Vim\", \"Ttr\", \"Tk1\", \"Dbpht2\", \"Myl9\", \"Tmsb4x\", \"Sytl4\", \"Gpx3\", \"Tubb5\", \"Anxa2\", \"Id2\", \"Zcchc18\", \"Gadd45g\", \"1700086L19Rik\", \"Sox9\", \"Stmn1\", \"Tubb3\", \"Irx2\", \"Selm\", \"Cym\", \"Tuba1c\", \"Dbi\", \"C2cd4b\", \"1700011H14Rik\", \"Sparc\", \"Arl6ip1\"], \"linear_reduction\": \"pca\", \"nonlinear_reduction\": \"umap\", \"linear_reduction_dims\": 20, \"reduction_use\": \"pca\", \"reduction_dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"force_linear_reduction\": true, \"force_nonlinear_reduction\": true, \"verbose\": false}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_dimensionality_reduction",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-dimreduction-portability.json",
+          "closure_hash": "f125e9a3007421f100d68781bc51e85992340c5562eb5d691775d6bac54a51b1",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "doublet-detection",
+    "title": "双细胞检测",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-rundoublet",
+        "state": "not_run",
+        "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_doublet_detection",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+          "evidence": "verification/scp-rundoublet-portability.json",
+          "closure_hash": "fc957d60a9db2c22bdd6f492ee0a3e4f1504746f6d81b30807115e6634cc340d",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "dynamic-feature-analysis",
+    "title": "拟时序动态特征分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-dynamicfeatures",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-dynamicfeatures; case={\"label\": \"GAM dynamic features\", \"parameters\": {\"parameters\": {\"lineages\": \"fixture_time\", \"features\": [\"Gcg\", \"Krt19\"], \"slot\": \"data\", \"n_candidates\": {}, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_dynamic_feature_analysis",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-dynamicfeatures-portability.json",
+          "closure_hash": "94d6cce35d64c1ac6107d0544f7ab33e1586ffcfb01092dfea9993622cfb9481",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "gene-set-enrichment",
+    "title": "基因集富集分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-enrichment",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-enrichment; case={\"label\": \"ORA custom TERM2GENE\", \"parameters\": {\"parameters\": {\"geneID_groups\": {}, \"IDtype\": \"symbol\", \"species\": \"Homo_sapiens\", \"TERM2GENE\": {\"term\": [\"T1\", \"T1\", \"T1\", \"T2\", \"T2\", \"T2\"], \"gene\": [\"Ins1\", \"Gcg\", \"Sst\", \"Krt19\", \"Krt8\", \"Epcam\"]}, \"TERM2NAME\": {\"term\": [\"T1\", \"T2\"], \"name\": [\"Endocrine\", \"Ductal\"]}, \"minGSSize\": 1, \"maxGSSize\": 500, \"db_update\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_gene_set_enrichment",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-enrichment-portability.json",
+          "closure_hash": "c9d3b5ec28f5b0687d62c2d145cada7567de17a249c8fec595df50ab2ed16edb",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "gene-set-scoring",
+    "title": "基因集与通路签名打分",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-cellscoring",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-cellscoring; case={\"label\": \"Seurat module score\", \"parameters\": {\"parameters\": {\"features\": {\"Endocrine\": [\"Gcg\", \"Sst\"], \"Ductal\": [\"Krt19\", \"Krt8\", \"Epcam\"]}, \"method\": \"Seurat\", \"classification\": false, \"name\": \"X\", \"slot\": \"data\", \"assay\": \"RNA\", \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_gene_set_scoring",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-cellscoring-portability.json",
+          "closure_hash": "2cf7ae5ac906caf335f83d6746cd57839859f555bdc3ba209aa5b0c27d2d54e4",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "reference-mapping",
+    "title": "参考图谱映射",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "seurat-label-transfer",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for seurat-label-transfer; case={\"label\": \"Seurat label transfer\", \"parameters\": {\"dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"k_weight\": 50}}",
+        "entry": "code/transfer.R",
+        "entry_function": "run_reference_label_transfer",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/seurat-label-transfer-portability.json",
+          "closure_hash": "b637161be53f661531d5cacddd819c48b35b40ee3e69b6873419dff9a46ff05f",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runseuratmap",
+        "state": "not_run",
+        "scope": "Argument 'dim.' must be an integer vector of length two",
+        "entry": "code/analysis.R",
+        "entry_function": "run_reference_mapping",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Argument 'dim.' must be an integer vector of length two",
+          "evidence": "verification/scp-runseuratmap-portability.json",
+          "closure_hash": "6dc64d1569f60e9ca4a8914f2d756c8d4bbe47a41ca99b5186200d847f1c3028",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "regression-resampling-evaluation",
+    "title": "回归模型的重采样评估与折外预测",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "summarize-predictions",
+        "state": "verified",
+        "scope": "手算折外指标、常数预测 r 未定义、不修改输入、完整 coverage 拒绝。不包含训练或重采样。",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "rna-velocity",
+    "title": "RNA 速度分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-scvelo",
+        "state": "not_run",
+        "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_rna_velocity",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+          "evidence": "verification/scp-scvelo-portability.json",
+          "closure_hash": "875550c702d09b117515a290e2fadff710db925be8298092446bebe4f97bbef0",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-annotation-projection",
+    "title": "单细胞自动注释与参考投影",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-cellqc-doublet",
+    "title": "单细胞 QC 与双细胞检测",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-de-enrichment-dynamic",
+    "title": "单细胞差异表达、基因集富集与动态特征",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-integration",
+    "title": "单细胞多样本整合",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-local-source",
+    "title": "SCP 源码本地化",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-standard-workflow",
+    "title": "单细胞标准预处理、降维与聚类",
+    "kind": "workflow",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-trajectory-velocity",
+    "title": "单细胞轨迹推断与 RNA 速度",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-visualization-interface",
+    "title": "SCP 绘图函数与图接口映射",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-table-adapters",
+        "state": "verified",
+        "scope": "SCP/Seurat 导出表到 Wiki 绘图接口的适配层；20 个合成表检查。未验证 SCP 绘图函数视觉等价。",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scrna-marker-annotation",
+    "title": "单细胞标记基因注释与聚类检查",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scrna-pathway-signature-ensemble",
+    "title": "单细胞通路签名打分与组间比较",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scrna-preprocess-doublet-qc-harmony",
+    "title": "单细胞预处理、批次校正与聚类",
+    "kind": "workflow",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "shap-explanation",
+    "title": "基于 SHAP 的模型解释",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "shap-explain-model",
+        "state": "verified",
+        "scope": "解析线性模型 SHAP 精确解；检查 summary/samples 表、百分比、输入与模型未变、特征顺序保护。",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "trajectory-inference",
+    "title": "拟时序与轨迹推断",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": true,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-slingshot",
+        "state": "verified",
+        "scope": "Actual isolated run and comparison for scp-slingshot; case={\"label\": \"Slingshot\", \"parameters\": {\"parameters\": {\"group.by\": \"CellType\", \"reduction\": \"UMAP\", \"dims\": [1, 2], \"show_plot\": false, \"seed\": 11}}}",
+        "entry": "code/analysis.R",
+        "entry_function": "run_trajectory_inference",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "verified",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-slingshot-portability.json",
+          "closure_hash": "cc7ea133afc00ee3a62dee45defdbda590c121427a0220de65a5caa5fffe14e7",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-monocle2",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle; automatic installation is disabled",
+        "entry": "code/monocle2.R",
+        "entry_function": "run_trajectory_monocle2",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: monocle; automatic installation is disabled",
+          "evidence": "verification/scp-monocle2-portability.json",
+          "closure_hash": "1fbdb6ec6dcf73961a7a97204dc240d3924fa35f25277b917c423adafc533522",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-monocle3",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+        "entry": "code/monocle3.R",
+        "entry_function": "run_trajectory_monocle3",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+          "evidence": "verification/scp-monocle3-portability.json",
+          "closure_hash": "63ab37f11124d3ff3d03bc214b19b49338c2e3ea6045f07222f6b94dee703461",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-monocle2-core",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle; automatic installation is disabled",
+        "entry": "code/monocle2_core.R",
+        "entry_function": "run_monocle2_core",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: monocle; automatic installation is disabled",
+          "evidence": "verification/scp-monocle2-core-portability.json",
+          "closure_hash": "ab7dc45b302df309bbc7e873b616d88f57fbc06c0f41530d02144dffe227eca3",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-monocle3-core",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+        "entry": "code/monocle3_core.R",
+        "entry_function": "run_monocle3_core",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "not_run",
+          "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+          "evidence": "verification/scp-monocle3-core-portability.json",
+          "closure_hash": "e003ceb2fcf135191e4ae8b3d611db21f9e49e0d49d31d39d271ca5439bbd80f",
+          "issues": []
+        }
+      }
+    ]
+  }
+]

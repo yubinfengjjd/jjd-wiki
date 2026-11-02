@@ -1,0 +1,960 @@
+{
+  "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md": {
+    "stage": "archived",
+    "queue": null,
+    "label": "已归档",
+    "reason": "已归档，不进入待办。",
+    "templates": []
+  },
+  "layouts/2026-10-19-regression-stability__fig01-density-grid.md": {
+    "stage": "archived",
+    "queue": null,
+    "label": "已归档",
+    "reason": "已归档，不进入待办。",
+    "templates": []
+  },
+  "layouts/2026-10-19-regression-stability__fig02-metric-boxplots.md": {
+    "stage": "archived",
+    "queue": null,
+    "label": "已归档",
+    "reason": "已归档，不进入待办。",
+    "templates": []
+  },
+  "methods/asthma-lactylation-source-catalog.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/asthma-lactylation-workflow.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "流程资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/batch-integration.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/cell-clustering.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/cell-quality-control.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/cell-type-annotation.md": {
+    "stage": "method_implementation",
+    "queue": "agent",
+    "label": "待验证实现",
+    "reason": "笔记已确认；实现尚无当前有效验证，不作为可执行分析推荐。",
+    "templates": []
+  },
+  "methods/differential-expression.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/dimensionality-reduction.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/doublet-detection.md": {
+    "stage": "method_implementation",
+    "queue": "agent",
+    "label": "待验证实现",
+    "reason": "笔记已确认；实现尚无当前有效验证，不作为可执行分析推荐。",
+    "templates": []
+  },
+  "methods/dynamic-feature-analysis.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/figureya-multilanguage-assets.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/gene-set-enrichment.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/gene-set-scoring.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/local-omics-analysis-guide.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/local-omics-visualization-guide.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/reference-mapping.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/regression-resampling-evaluation.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/rna-velocity.md": {
+    "stage": "method_implementation",
+    "queue": "agent",
+    "label": "待验证实现",
+    "reason": "笔记已确认；实现尚无当前有效验证，不作为可执行分析推荐。",
+    "templates": []
+  },
+  "methods/scop-analysis-guide.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scop-source-catalog.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scop-visualization-guide.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scop-workflows.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "流程资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-annotation-projection.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-cellqc-doublet.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-de-enrichment-dynamic.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-integration.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-local-source.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-source-catalog.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-standard-workflow.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "流程资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-trajectory-velocity.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-visualization-interface.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-viz-dimplots.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-viz-heatmaps.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-viz-model-overlays.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scp-viz-statplots.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scrna-marker-annotation.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scrna-pathway-signature-ensemble.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/scrna-preprocess-doublet-qc-harmony.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "流程资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/shap-explanation.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/trajectory-inference.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "已验证实现",
+    "reason": "笔记已确认；仅实现收据中列明的分支和范围通过验证。",
+    "templates": []
+  },
+  "methods/uc-ptm-source-catalog.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "技术资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/uc-ptm-workflow.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "流程资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "methods/uc-spatial-workflows.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "流程资料已确认",
+    "reason": "笔记与资料内容已确认；不作为可执行分析推荐，也不要求分析实现收据。",
+    "templates": []
+  },
+  "recipes/figureya-102multipanelroc.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-11bubble.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-138nicecalibration.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-13gsea-java-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-141risk.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-143survcor-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-153ccgraph.md": {
+    "stage": "recipe_work",
+    "queue": "agent",
+    "label": "待补齐",
+    "reason": "最近运行为 fail：The `.dots` argument of `group_by()` was deprecated in dplyr 1.0.0 and",
+    "templates": []
+  },
+  "recipes/figureya-162boxviolin.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-173fancybar.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-193risktable.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-196panpie.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-1survivalcurve-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-227boxdensity.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-228linkcor.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-236circgroup.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-25sankey-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-284pairwiselogrank.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-293machinelearning.md": {
+    "stage": "recipe_work",
+    "queue": "agent",
+    "label": "待补齐",
+    "reason": "最近运行为 fail：arguments imply differing number of rows: 269, 268",
+    "templates": []
+  },
+  "recipes/figureya-30nomogram-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-31lasso-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-33dca-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-37correlationv2-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-39bar.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-59volcanov2.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-61gsva.md": {
+    "stage": "recipe_work",
+    "queue": "agent",
+    "label": "待补齐",
+    "reason": "最近运行为 fail：unable to find an inherited method for function 'gsva' for signature 'param = \"missing\"'",
+    "templates": []
+  },
+  "recipes/figureya-6rhrsv2.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-76corrgram.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-85timeroc.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-92immune-gene-update.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "recipes/figureya-99smoothhrv2.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可原样运行",
+    "reason": "已确认；当前原字节有通过的原样运行收据。",
+    "templates": []
+  },
+  "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig01-volcano--volcano.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig02-ring--ring.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig03-pie--pie.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig04-rose--rose.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig05-trend--trend.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig06-area--area.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig07-dot--dot.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig09-bar--bar.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig10-sankey--sankey.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig11-chord--chord.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig12-venn--venn.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig13-upset--upset.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig16-cell-density--ridge.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/figureya-1survivalcurve-update--km-curve.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/figureya-59volcanov2--volcano.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "templates/figureya-6rhrsv2--forest.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "可用",
+    "reason": "已确认可用；当前笔记与回放完整。",
+    "templates": []
+  },
+  "layouts/2026-10-19-regression-stability__fig03-density-panel.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md"
+    ]
+  },
+  "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md"
+    ]
+  },
+  "layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md"
+    ]
+  },
+  "layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md"
+    ]
+  },
+  "layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md"
+    ]
+  },
+  "layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md"
+    ]
+  },
+  "layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig01-volcano.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig01-volcano--volcano.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig02-ring.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig02-ring--ring.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig03-pie.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig03-pie--pie.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig04-rose.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig04-rose--rose.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig05-trend.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig05-trend--trend.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig06-area.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig06-area--area.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig07-dot.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig07-dot--dot.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig08-group-heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig09-bar.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig09-bar--bar.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig10-sankey.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig10-sankey--sankey.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig11-chord.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig11-chord--chord.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig12-venn.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig12-venn--venn.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig13-upset.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig13-upset--upset.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig14-feature-heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig16-cell-density.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig16-cell-density--ridge.md"
+    ]
+  },
+  "layouts/2026-10-22-scp-example__fig17-group-heatmap-dot.md": {
+    "stage": "complete",
+    "queue": null,
+    "label": "模板已就绪",
+    "reason": "选定 panel 已由可用模板完整覆盖，来源不再计入待办；不表示另做了来源版式回放。",
+    "templates": [
+      "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap.md"
+    ]
+  }
+}

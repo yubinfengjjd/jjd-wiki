@@ -1,0 +1,23 @@
+{
+  "confirmed": [
+    "batch-integration",
+    "cell-clustering",
+    "cell-quality-control",
+    "cell-type-annotation",
+    "differential-expression",
+    "dimensionality-reduction",
+    "doublet-detection",
+    "dynamic-feature-analysis",
+    "gene-set-enrichment",
+    "gene-set-scoring",
+    "reference-mapping",
+    "rna-velocity",
+    "trajectory-inference"
+  ],
+  "queues": {
+    "agent": 3
+  },
+  "implementation_status_unchanged": true,
+  "protected_assets": 97,
+  "user_blocks_unchanged": 100
+}

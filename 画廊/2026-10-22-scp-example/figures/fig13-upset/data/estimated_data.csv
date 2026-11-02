@@ -1,0 +1,4 @@
+intersection,degree,count,proportion_of_cells
+Endocrine & G1S,2,512,0.512
+Ductal & G1S,2,411,0.411
+Ductal & G2M,2,77,0.077

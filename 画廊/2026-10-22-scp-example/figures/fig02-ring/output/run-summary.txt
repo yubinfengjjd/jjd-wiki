@@ -1,0 +1,8 @@
+command: D:\R-4.5.0\bin\x64\Rterm.exe --no-echo --no-restore --vanilla --file=E:/research-wiki/画廊/2026-10-22-scp-example/figures/fig02-ring/code/replica.R
+SCP local root: E:/research-wiki/知识库/methods/scp-local-source/code/SCP-local
+source commit: b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0
+input: data/ring_phase_by_celltype.csv
+rows: 15
+groups: Ductal 3; Endocrine 3; Ngn3 high EP 3; Ngn3 low EP 3; Pre-endocrine 3
+output: output/replica.png
+exit: 0

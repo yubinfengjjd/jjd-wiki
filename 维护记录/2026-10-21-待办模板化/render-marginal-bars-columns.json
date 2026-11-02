@@ -1,0 +1,1 @@
+{"orientation": {"type": "str", "description": "top或right，分别对应横轴或纵轴边缘"}, "position": {"type": "float", "description": "条形中心坐标，单位与对应轴一致"}, "height": {"type": "float", "description": "预先计算的非负条高，计数/密度含义由上游声明"}, "width": {"type": "float", "description": "预先计算的正条宽，单位与对应轴一致"}}

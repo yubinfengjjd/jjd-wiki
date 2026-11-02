@@ -1,0 +1,858 @@
+{
+  "exports": 142,
+  "unique_exports": 142,
+  "rows": [
+    {
+      "export": "\"%>%\"",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "\"%||%\"",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "AnnotateFeatures",
+      "definition": "R/SCP-feature_annotation.R:33",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "BBKNN_integrate",
+      "definition": "R/SCP-workflow.R:2541",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CC_GenePrefetch",
+      "definition": "R/SCP-analysis.R:472",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CSS_integrate",
+      "definition": "R/SCP-workflow.R:2765",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CellCorHeatmap",
+      "definition": "R/SCP-plot.R:10113",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CellDensityPlot",
+      "definition": "R/SCP-plot.R:5679",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig16-cell-density--ridge.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CellDimPlot",
+      "definition": "R/SCP-plot.R:1328",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CellDimPlot3D",
+      "definition": "R/SCP-plot.R:2843",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CellScoring",
+      "definition": "R/SCP-analysis.R:731",
+      "existing_textual_pointers": "methods/gene-set-scoring.md | methods/scp-de-enrichment-dynamic.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CellStatPlot",
+      "definition": "R/SCP-plot.R:4463",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig03-pie--pie.md | templates/2026-10-22-scp-example__fig04-rose--rose.md | templates/2026-10-22-scp-example__fig05-trend--trend.md | templates/2026-10-22-scp-example__fig06-area--area.md | templates/2026-10-22-scp-example__fig07-dot--dot.md | templates/2026-10-22-scp-example__fig09-bar--bar.md | templates/2026-10-22-scp-example__fig10-sankey--sankey.md | templates/2026-10-22-scp-example__fig11-chord--chord.md | templates/2026-10-22-scp-example__fig12-venn--venn.md | templates/2026-10-22-scp-example__fig13-upset--upset.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "ComBat_integrate",
+      "definition": "R/SCP-workflow.R:3395",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Conos_integrate",
+      "definition": "R/SCP-workflow.R:3183",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CreateDataFile",
+      "definition": "R/SCP-app.R:20",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "CreateMetaFile",
+      "definition": "R/SCP-app.R:104",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "DefaultReduction",
+      "definition": "R/SCP-workflow.R:1034",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "DynamicHeatmap",
+      "definition": "R/SCP-plot.R:11020",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "DynamicPlot",
+      "definition": "R/SCP-plot.R:12102",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "EnrichmentPlot",
+      "definition": "R/SCP-plot.R:12727",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Env_requirements",
+      "definition": "R/utils.R:144",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FeatureCorPlot",
+      "definition": "R/SCP-plot.R:5232",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FeatureDimPlot",
+      "definition": "R/SCP-plot.R:2042",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FeatureDimPlot3D",
+      "definition": "R/SCP-plot.R:3066",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FeatureHeatmap",
+      "definition": "R/SCP-plot.R:9114",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md | templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FeatureStatPlot",
+      "definition": "R/SCP-plot.R:3524",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FetchH5",
+      "definition": "R/SCP-app.R:345",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "FindExpressedMarkers",
+      "definition": "R/SCP-analysis.R:1229",
+      "existing_textual_pointers": "methods/scp-de-enrichment-dynamic.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "GSEAPlot",
+      "definition": "R/SCP-plot.R:13563",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "GeneConvert",
+      "definition": "R/SCP-analysis.R:70",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "GraphPlot",
+      "definition": "R/SCP-plot.R:6287",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "GroupHeatmap",
+      "definition": "R/SCP-plot.R:7911",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md | templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md | templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Harmony_integrate",
+      "definition": "R/SCP-workflow.R:2140",
+      "existing_textual_pointers": "methods/batch-integration.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Integration_SCP",
+      "definition": "R/SCP-workflow.R:3907",
+      "existing_textual_pointers": "methods/batch-integration.md | methods/scp-integration.md | methods/scp-standard-workflow.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "LIGER_integrate",
+      "definition": "R/SCP-workflow.R:2971",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "LineagePlot",
+      "definition": "R/SCP-plot.R:5918",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "ListDB",
+      "definition": "R/SCP-analysis.R:2123",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "MNN_integrate",
+      "definition": "R/SCP-workflow.R:1762",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "PAGAPlot",
+      "definition": "R/SCP-plot.R:6121",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "PrepareDB",
+      "definition": "R/SCP-analysis.R:2243",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "PrepareEnv",
+      "definition": "R/utils.R:13",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "PrepareSCExplorer",
+      "definition": "R/SCP-app.R:250",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "ProjectionPlot",
+      "definition": "R/SCP-plot.R:12511",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RecoverCounts",
+      "definition": "R/SCP-workflow.R:420",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RenameClusters",
+      "definition": "R/SCP-workflow.R:560",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RenameFeatures",
+      "definition": "R/SCP-workflow.R:500",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunCSSMap",
+      "definition": "R/SCP-projection.R:471",
+      "existing_textual_pointers": "methods/scp-annotation-projection.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunCellQC",
+      "definition": "R/SCP-cellqc.R:314",
+      "existing_textual_pointers": "methods/cell-quality-control.md | methods/scp-cellqc-doublet.md | methods/scp-local-source.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunDEtest",
+      "definition": "R/SCP-analysis.R:1671",
+      "existing_textual_pointers": "methods/differential-expression.md | methods/scp-de-enrichment-dynamic.md | templates/2026-10-22-scp-example__fig01-volcano--volcano.md | templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunDM",
+      "definition": "R/Seurat-function.R:458",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunDimReduction",
+      "definition": "R/SCP-workflow.R:781",
+      "existing_textual_pointers": "methods/dimensionality-reduction.md | methods/scp-standard-workflow.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunDoubletCalling",
+      "definition": "R/SCP-cellqc.R:180",
+      "existing_textual_pointers": "methods/doublet-detection.md | methods/scp-cellqc-doublet.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunDynamicEnrichment",
+      "definition": "R/SCP-analysis.R:5218",
+      "existing_textual_pointers": "methods/scp-de-enrichment-dynamic.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunDynamicFeatures",
+      "definition": "R/SCP-analysis.R:4948",
+      "existing_textual_pointers": "methods/dynamic-feature-analysis.md | methods/scp-de-enrichment-dynamic.md | methods/scp-trajectory-velocity.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunEnrichment",
+      "definition": "R/SCP-analysis.R:3766",
+      "existing_textual_pointers": "methods/gene-set-enrichment.md | methods/scp-de-enrichment-dynamic.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunFR",
+      "definition": "R/Seurat-function.R:1678",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunGLMPCA",
+      "definition": "R/Seurat-function.R:323",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunGSEA",
+      "definition": "R/SCP-analysis.R:4030",
+      "existing_textual_pointers": "methods/scp-de-enrichment-dynamic.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunHarmony2",
+      "definition": "R/Seurat-function.R:1787",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunKNNMap",
+      "definition": "R/SCP-projection.R:43",
+      "existing_textual_pointers": "methods/reference-mapping.md | methods/scp-annotation-projection.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunKNNPredict",
+      "definition": "R/SCP-cell_annotation.R:98",
+      "existing_textual_pointers": "methods/scp-annotation-projection.md | templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunLargeVis",
+      "definition": "R/Seurat-function.R:1550",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunMDS",
+      "definition": "R/Seurat-function.R:187",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunMonocle2",
+      "definition": "R/SCP-analysis.R:4410",
+      "existing_textual_pointers": "methods/scp-trajectory-velocity.md | methods/trajectory-inference.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunMonocle3",
+      "definition": "R/SCP-analysis.R:4745",
+      "existing_textual_pointers": "methods/scp-trajectory-velocity.md | methods/trajectory-inference.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunNMF",
+      "definition": "R/Seurat-function.R:27",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunPAGA",
+      "definition": "R/SCP-analysis.R:5785",
+      "existing_textual_pointers": "methods/scp-trajectory-velocity.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunPCAMap",
+      "definition": "R/SCP-projection.R:281",
+      "existing_textual_pointers": "methods/scp-annotation-projection.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunPHATE",
+      "definition": "R/Seurat-function.R:1280",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunPaCMAP",
+      "definition": "R/Seurat-function.R:1151",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunPalantir",
+      "definition": "R/SCP-analysis.R:6001",
+      "existing_textual_pointers": "methods/scp-trajectory-velocity.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunSCExplorer",
+      "definition": "R/SCP-app.R:581",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunSCVELO",
+      "definition": "R/SCP-analysis.R:5895",
+      "existing_textual_pointers": "methods/rna-velocity.md | methods/scp-trajectory-velocity.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunScmap",
+      "definition": "R/SCP-cell_annotation.R:527",
+      "existing_textual_pointers": "methods/scp-annotation-projection.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunSeuratMap",
+      "definition": "R/SCP-projection.R:382",
+      "existing_textual_pointers": "methods/reference-mapping.md | methods/scp-annotation-projection.md | methods/scp-local-source.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunSingleR",
+      "definition": "R/SCP-cell_annotation.R:655",
+      "existing_textual_pointers": "methods/cell-type-annotation.md | methods/scp-annotation-projection.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunSlingshot",
+      "definition": "R/SCP-analysis.R:4307",
+      "existing_textual_pointers": "methods/scp-de-enrichment-dynamic.md | methods/scp-trajectory-velocity.md | methods/trajectory-inference.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunSymphonyMap",
+      "definition": "R/SCP-projection.R:565",
+      "existing_textual_pointers": "methods/scp-annotation-projection.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunTriMap",
+      "definition": "R/Seurat-function.R:1431",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunUMAP2",
+      "definition": "R/Seurat-function.R:579",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "RunWOT",
+      "definition": "R/SCP-analysis.R:6086",
+      "existing_textual_pointers": "methods/scp-trajectory-velocity.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Scanorama_integrate",
+      "definition": "R/SCP-workflow.R:2348",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Seurat_integrate",
+      "definition": "R/SCP-workflow.R:1276",
+      "existing_textual_pointers": "methods/batch-integration.md | methods/cell-clustering.md | methods/scp-local-source.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "SrtAppend",
+      "definition": "R/SCP-workflow.R:692",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "SrtReorder",
+      "definition": "R/SCP-workflow.R:623",
+      "existing_textual_pointers": "methods/scp-standard-workflow.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Standard_SCP",
+      "definition": "R/SCP-workflow.R:3663",
+      "existing_textual_pointers": "methods/cell-clustering.md | methods/dimensionality-reduction.md | methods/scp-standard-workflow.md | templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md | templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "StatPlot",
+      "definition": "R/SCP-plot.R:4564",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig02-ring--ring.md | templates/2026-10-22-scp-example__fig03-pie--pie.md | templates/2026-10-22-scp-example__fig04-rose--rose.md | templates/2026-10-22-scp-example__fig05-trend--trend.md | templates/2026-10-22-scp-example__fig06-area--area.md | templates/2026-10-22-scp-example__fig07-dot--dot.md | templates/2026-10-22-scp-example__fig09-bar--bar.md | templates/2026-10-22-scp-example__fig10-sankey--sankey.md | templates/2026-10-22-scp-example__fig11-chord--chord.md | templates/2026-10-22-scp-example__fig12-venn--venn.md | templates/2026-10-22-scp-example__fig13-upset--upset.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "Uncorrected_integrate",
+      "definition": "R/SCP-workflow.R:1092",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "VelocityPlot",
+      "definition": "R/SCP-plot.R:6745",
+      "existing_textual_pointers": "methods/scp-trajectory-velocity.md | methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "VolcanoPlot",
+      "definition": "R/SCP-plot.R:7088",
+      "existing_textual_pointers": "methods/scp-local-source.md | methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig01-volcano--volcano.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "adata_to_srt",
+      "definition": "R/SCP-analysis.R:5521",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "adjcolors",
+      "definition": "R/SCP-plot.R:1000",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "arrow",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "as_matrix",
+      "definition": "R/utils.R:831",
+      "existing_textual_pointers": "methods/scp-local-source.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "blendcolors",
+      "definition": "R/SCP-plot.R:1026",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "capitalize",
+      "definition": "R/utils.R:852",
+      "existing_textual_pointers": "methods/scp-local-source.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "check_DataType",
+      "definition": "R/SCP-workflow.R:14",
+      "existing_textual_pointers": "methods/scp-cellqc-doublet.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "check_Python",
+      "definition": "R/utils.R:510",
+      "existing_textual_pointers": "methods/rna-velocity.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "check_R",
+      "definition": "R/utils.R:558",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "check_srtList",
+      "definition": "R/SCP-workflow.R:75",
+      "existing_textual_pointers": "methods/scp-standard-workflow.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "check_srtMerge",
+      "definition": "R/SCP-workflow.R:334",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "compute_velocity_on_grid",
+      "definition": "R/SCP-plot.R:6963",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "db_DoubletDetection",
+      "definition": "R/SCP-cellqc.R:132",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "db_Scrublet",
+      "definition": "R/SCP-cellqc.R:89",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "db_scDblFinder",
+      "definition": "R/SCP-cellqc.R:17",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "db_scds",
+      "definition": "R/SCP-cellqc.R:50",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "download",
+      "definition": "R/utils.R:685",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "drop_data",
+      "definition": "R/SCP-plot.R:833",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "exist_Python_pkgs",
+      "definition": "R/utils.R:291",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "fastMNN_integrate",
+      "definition": "R/SCP-workflow.R:1968",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "find_conda",
+      "definition": "R/utils.R:367",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_alluvial",
+      "definition": "R/ggsankey.R:860",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_alluvial_label",
+      "definition": "R/ggsankey.R:932",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_alluvial_text",
+      "definition": "R/ggsankey.R:907",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_sankey",
+      "definition": "R/ggsankey.R:691",
+      "existing_textual_pointers": "templates/2026-10-22-scp-example__fig10-sankey--sankey.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_sankey_bump",
+      "definition": "R/ggsankey.R:976",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_sankey_label",
+      "definition": "R/ggsankey.R:768",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "geom_sankey_text",
+      "definition": "R/ggsankey.R:805",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "get_vars",
+      "definition": "R/SCP-plot.R:963",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "gpar",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "installed_Python_pkgs",
+      "definition": "R/utils.R:271",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "invoke",
+      "definition": "R/utils.R:767",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "isOutlier",
+      "definition": "R/SCP-cellqc.R:238",
+      "existing_textual_pointers": "methods/scp-cellqc-doublet.md | methods/scp-local-source.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "iterchunks",
+      "definition": "R/utils.R:932",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "make_long",
+      "definition": "R/ggsankey.R:70",
+      "existing_textual_pointers": "templates/2026-10-22-scp-example__fig10-sankey--sankey.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "palette_scp",
+      "definition": "R/SCP-plot.R:168",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig01-volcano--volcano.md | templates/2026-10-22-scp-example__fig02-ring--ring.md | templates/2026-10-22-scp-example__fig03-pie--pie.md | templates/2026-10-22-scp-example__fig04-rose--rose.md | templates/2026-10-22-scp-example__fig05-trend--trend.md | templates/2026-10-22-scp-example__fig06-area--area.md | templates/2026-10-22-scp-example__fig07-dot--dot.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "panel_fix",
+      "definition": "R/SCP-plot.R:453",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "panel_fix_overall",
+      "definition": "R/SCP-plot.R:588",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "scVI_integrate",
+      "definition": "R/SCP-workflow.R:1573",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "segementsDf",
+      "definition": "R/SCP-plot.R:6666",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "show_palettes",
+      "definition": "R/SCP-plot.R:298",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "slim_data",
+      "definition": "R/SCP-plot.R:918",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "srt_to_adata",
+      "definition": "R/SCP-analysis.R:5351",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "theme_alluvial",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "theme_blank",
+      "definition": "R/SCP-plot.R:84",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "theme_sankey",
+      "definition": "R/ggsankey.R:124",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "theme_sankey_bump",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "theme_scp",
+      "definition": "R/SCP-plot.R:16",
+      "existing_textual_pointers": "methods/scp-visualization-interface.md | templates/2026-10-22-scp-example__fig01-volcano--volcano.md | templates/2026-10-22-scp-example__fig02-ring--ring.md | templates/2026-10-22-scp-example__fig03-pie--pie.md | templates/2026-10-22-scp-example__fig04-rose--rose.md | templates/2026-10-22-scp-example__fig05-trend--trend.md | templates/2026-10-22-scp-example__fig06-area--area.md | templates/2026-10-22-scp-example__fig07-dot--dot.md | templates/2026-10-22-scp-example__fig09-bar--bar.md | templates/2026-10-22-scp-example__fig13-upset--upset.md | templates/2026-10-22-scp-example__fig16-cell-density--ridge.md",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "tochunks",
+      "definition": "R/utils.R:892",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "try_get",
+      "definition": "R/utils.R:647",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "unit",
+      "definition": "",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    },
+    {
+      "export": "unnest",
+      "definition": "R/utils.R:800",
+      "existing_textual_pointers": "",
+      "interpretation": "textual pointer only; branch coverage requires actual receipt review"
+    }
+  ]
+}

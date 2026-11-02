@@ -1,0 +1,66 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "metadata": {
+      "interface": "render-cell-metadata",
+      "description": "每个细胞一行的 group/stat 元数据；模板按原 StatPlot 的 xtabs 计数步骤聚合成 group x stat 表"
+    }
+  },
+  "style": {
+    "plot_type": "bar",
+    "stat_type": "count",
+    "position": "stack",
+    "group_col": "group",
+    "stat_col": "stat",
+    "group_levels": [
+      "Ductal",
+      "Ngn3 low EP",
+      "Ngn3 high EP",
+      "Pre-endocrine",
+      "Endocrine"
+    ],
+    "stat_levels": [
+      "G1",
+      "S",
+      "G2M"
+    ],
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "bg_col": null,
+    "bg_palette": "Paired",
+    "bg_palcolor": null,
+    "bg_alpha": 0.2,
+    "flip": false,
+    "label": true,
+    "label_size": 3.5,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "legend_title": "Phase:",
+    "legend_position": "right",
+    "legend_direction": "vertical",
+    "xlab": "CellType",
+    "ylab": "Count",
+    "NA_stat": true,
+    "seed": 11,
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "sizing": {
+      "mode": "adaptive",
+      "base_in": 5.0,
+      "per_group_in": 0.7,
+      "per_stat_in": 0.25,
+      "base_height_in": 4.6,
+      "min_width_in": 6.0,
+      "min_height_in": 3.5,
+      "base_label_chars": 14,
+      "per_label_char_in": 0.1,
+      "aspect": 0.75,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

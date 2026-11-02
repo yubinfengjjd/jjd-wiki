@@ -1,0 +1,13 @@
+{
+  "method": "batch-integration",
+  "state": "passed",
+  "reference": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\reference\\batch-integration.rds",
+  "candidate": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\batch-integration\\result.rds",
+  "checks": {
+    "cells equal": true,
+    "Seurat UMAP equal": true,
+    "cluster assignments equal": true,
+    "reduction names equal": true
+  },
+  "compared_at": "2026-10-23 16:02:13 UTC"
+}

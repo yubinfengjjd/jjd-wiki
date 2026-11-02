@@ -1,0 +1,8 @@
+.libPaths(c("E:/research-wiki-env/R-lib-scp/4.5", .libPaths()))
+cat("Seurat", as.character(packageVersion("Seurat")), "SeuratObject", as.character(packageVersion("SeuratObject")), "\n")
+print(args(SeuratObject::GetAssayData))
+load("E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda")
+x <- tryCatch(SeuratObject::GetAssayData(pancreas_sub, slot="counts"), error=function(e) conditionMessage(e))
+cat("slot call:", if (is.character(x)) x else "OK", "\n")
+x2 <- tryCatch(SeuratObject::GetAssayData(pancreas_sub, layer="counts"), error=function(e) conditionMessage(e))
+cat("layer call:", if (is.character(x2)) x2 else "OK", "\n")

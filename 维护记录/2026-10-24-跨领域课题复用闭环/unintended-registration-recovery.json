@@ -1,0 +1,13 @@
+{
+  "unintended_commit": "5119fa326da14210bf9ba1224d6f7d5e86bfc96a",
+  "targeted_revert_commit": "04c1f767f81541639e6f1c824ae1c14620e875e7",
+  "paths": [
+    "知识库/index.md",
+    "知识库/log.md",
+    "知识库/methods/cell-type-annotation.md",
+    "知识库/projects/gse251716-glaucoma-scrna.md",
+    "知识库/templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md"
+  ],
+  "log_previous_bytes_preserved": true,
+  "scope": "only own trial registration reverted; untracked docs/work untouched; no reset/clean/stash"
+}

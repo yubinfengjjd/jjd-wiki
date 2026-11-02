@@ -1,0 +1,64 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig11.png",
+  "reference_panel": "source/reference_panel.png",
+  "reference_panel_bbox": [
+    1454,
+    0,
+    1939,
+    337
+  ],
+  "full_original": "source/full_original.jpg",
+  "full_original_sha256": "a63a3a53beb2c052a4c0278bbeec477c4d741f889d8551808fdcdee9471e4814",
+  "logical_panel": "A",
+  "chart_type": "chord",
+  "input": "data/render-cell-linkage.csv",
+  "aggregated_input": "data/chord-count-matrix.csv",
+  "input_columns": {
+    "cell": "cell identifier; one row per cell per dimension",
+    "dimension": "annotation/dimension name (CellType, Phase)",
+    "category": "category value of that dimension for the cell",
+    "dimension_order": "1-based dimension order; 1 = first chord sector group"
+  },
+  "params": {
+    "plot_type": "chord",
+    "stat_by": [
+      "CellType",
+      "Phase"
+    ],
+    "stat_type": "count",
+    "category_levels": {
+      "CellType": [
+        "Ductal",
+        "Ngn3 low EP",
+        "Ngn3 high EP",
+        "Pre-endocrine",
+        "Endocrine"
+      ],
+      "Phase": [
+        "G1",
+        "S",
+        "G2M"
+      ]
+    },
+    "palette": "Paired",
+    "palcolor": null,
+    "NA_color": "grey",
+    "transparency": 0.2,
+    "link_lwd": 1,
+    "link_lty": 1,
+    "link_border": 1,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11,
+    "device_png": "grDevices::png(width=1200, height=900, res=150, bg=\"white\"); grDevices::replayPlot(p)",
+    "device_pdf": "grDevices::cairo_pdf(width=8, height=6, bg=\"white\"); grDevices::replayPlot(p)",
+    "device_svg": "svglite::svglite(width=8, height=6, bg=\"white\"); grDevices::replayPlot(p)"
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; CellType and Phase read from @meta.data; counts via base table(useNA='ifany')",
+    "code": "native SCP chord branch extracted verbatim; table-producing step separated; no custom ggplot",
+    "license": "GPL (>= 3)"
+  }
+}

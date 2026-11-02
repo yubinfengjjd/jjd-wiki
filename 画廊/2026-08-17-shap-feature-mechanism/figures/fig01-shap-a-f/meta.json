@@ -1,0 +1,86 @@
+{
+  "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f",
+  "post": {
+    "title": "期刊配图：基于SHAP的特征驱动机制条形图、蜂群图与环形贡献配图形式",
+    "account": "Python机器学习AI",
+    "author": "deep",
+    "publish_date": "2026-08-17",
+    "url": "https://mp.weixin.qq.com/s/Shi2jsgSzbf4nYQEHhjhog"
+  },
+  "figure": {
+    "index": 1,
+    "label": "Fig. 4",
+    "caption": "Fig. 4. (A) Mean absolute SHAP values of the top-ranked descriptors for pLC50 predicted by the LightGBM model. (B) SHAP beeswarm plot showing the distribution and direction of descriptor effects on pLC50 prediction. (C) Circular summary plot of relative feature contributions for the LightGBM model. (D) Mean absolute SHAP values of the top-ranked descriptors for androgen receptor (AR)-DBP binding energy predicted by the CatBoost model. (E) SHAP beeswarm plot showing the distribution and direction of descriptor effects on AR-DBP binding energy prediction. (F) Circular summary plot of relative feature contributions for the CatBoost model.",
+    "panels": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F"
+    ],
+    "chart_types": [
+      "bar",
+      "beeswarm",
+      "radial_bar"
+    ],
+    "canvas_px": [
+      893,
+      509
+    ],
+    "source_px": [
+      893,
+      579
+    ],
+    "panel_map": {
+      "A": "bar",
+      "B": "beeswarm",
+      "C": "radial_bar",
+      "D": "bar",
+      "E": "beeswarm",
+      "F": "radial_bar"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "model-explanation-shap",
+      "chem-informatics-qsar"
+    ],
+    "secondary": [],
+    "free": [
+      "SHAP",
+      "LightGBM",
+      "CatBoost",
+      "pLC50",
+      "AR-DBP"
+    ]
+  },
+  "language": "python",
+  "data_provenance": "mixed",
+  "code_provenance": "reconstructed",
+  "original_code_provenance": "example_not_target",
+  "files": {
+    "source_image": "source/fig01.png",
+    "source_text": "source/source.md",
+    "replica_code": "code/replica.py",
+    "estimated_data": "data/estimated_data.csv",
+    "estimated_beeswarm": "data/estimated_beeswarm.csv",
+    "figure_spec": "data/figure_spec.json",
+    "transcription_notes": "data/transcription_notes.md",
+    "output_png": "output/replica.png",
+    "output_pdf": "output/replica.pdf",
+    "output_svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "qa_report": "qa_report.md",
+    "readme": "README.md",
+    "thumb": "thumb.png",
+    "original_code": "original_code/README.md",
+    "run_log": "run.log",
+    "prepare_inputs": "data/prepare_inputs.py"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "a0111cfba26b6460cd7ab79a079b7c31112970cff6ce03ba05df944ef97831ab",
+  "created_at": "2026-10-20T08:05:09.656437+00:00",
+  "updated_at": "2026-10-21T04:49:46.004427+00:00"
+}

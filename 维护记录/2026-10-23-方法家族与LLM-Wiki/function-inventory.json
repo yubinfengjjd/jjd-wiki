@@ -1,0 +1,406 @@
+[
+  {
+    "family": "batch-integration",
+    "title": "单细胞批次整合",
+    "summary": "在保留生物差异的前提下对齐样本/技术批次，产出整合嵌入与聚类，供跨样本比较。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "含明确 batch 列的 Seurat 原始 counts（batch 是样本/技术批次，不是生物学分组）。",
+      "output": "整合后的 Seurat 对象（Seuratpca、SeuratUMAP2D、Seuratclusters）或每细胞嵌入表。"
+    },
+    "implementations": [
+      {
+        "id": "scp-seurat",
+        "title": "SCP Seurat_integrate 锚点分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_seurat_integration",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject"
+        ],
+        "verification": "verification/scp-seurat.json",
+        "state": "passed",
+        "source_mapping": "methods/batch-integration/code/"
+      },
+      {
+        "id": "scp-harmony",
+        "title": "SCP Harmony_integrate 分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_batch_integration",
+        "dependencies": [
+          "Seurat",
+          "harmony"
+        ],
+        "verification": "verification/scp-harmony.json",
+        "state": "not_run",
+        "source_mapping": "methods/batch-integration/code/"
+      }
+    ]
+  },
+  {
+    "family": "cell-clustering",
+    "title": "单细胞聚类分析",
+    "summary": "在低维嵌入上构建邻居图并划分 cluster；cluster 是分析单位，不是细胞类型。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "已有 PCA/UMAP 嵌入的 Seurat 对象；dims、resolution、algorithm 显式。",
+      "output": "每细胞 cluster 标签；cluster 不是细胞类型。"
+    },
+    "implementations": [
+      {
+        "id": "seurat-findclusters",
+        "title": "SCP Standard_SCP 聚类分支",
+        "language": "R",
+        "entrypoint": "code/clustering.R:run_seurat_clustering",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject"
+        ],
+        "verification": "verification/seurat-findclusters.json",
+        "state": "passed",
+        "source_mapping": "methods/cell-clustering/code/"
+      }
+    ]
+  },
+  {
+    "family": "cell-quality-control",
+    "title": "单细胞质量控制",
+    "summary": "按显式阈值计算逐细胞 UMI、基因数与线粒体/核糖体比例，标记 Pass/Fail，不把 QC 指标当生物学分组。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "Seurat RNA assay 的原始 counts（基因×细胞）；每个细胞一列，每个基因一行。",
+      "output": "每细胞一行的 QC 结果：nCount_RNA、nFeature_RNA、percent.mito、percent.ribo、CellQC=Pass/Fail。"
+    },
+    "implementations": [
+      {
+        "id": "scp-runcellqc",
+        "title": "SCP RunCellQC 封装",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_cell_quality_control",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject"
+        ],
+        "verification": "verification/scp-runcellqc.json",
+        "state": "passed",
+        "source_mapping": "methods/cell-quality-control/code/"
+      }
+    ]
+  },
+  {
+    "family": "cell-type-annotation",
+    "title": "细胞类型注释",
+    "summary": "用参考数据集或标记基因给查询细胞分配类型标签，并检查注释置信度与 marker 一致性。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "query/reference Seurat 对象 + reference 标签列；query 与 ref 同物种、同基因标识且共享特征。",
+      "output": "每细胞 predicted label 与 score（运行成功时）；当前 SingleR 分支未运行。"
+    },
+    "implementations": [
+      {
+        "id": "scp-singler",
+        "title": "SCP RunSingleR 分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_cell_type_annotation",
+        "dependencies": [
+          "Seurat",
+          "SingleR"
+        ],
+        "verification": "verification/scp-singler.json",
+        "state": "not_run",
+        "source_mapping": "methods/cell-type-annotation/code/"
+      }
+    ]
+  },
+  {
+    "family": "differential-expression",
+    "title": "差异表达分析",
+    "summary": "在明确对比组之间检验基因表达差异，输出效应量、p 值与阳性比例；细胞级 p 值不等于样本级推断。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "已标准化/注释的 Seurat 对象 + 分组列；比较组与参照组显式给出，组内细胞数足够。",
+      "output": "SCP tools 中的 gene×contrast 表：gene、group1、group2、avg_log2FC、p_val、p_val_adj、pct.1、pct.2。"
+    },
+    "implementations": [
+      {
+        "id": "scp-detest",
+        "title": "SCP RunDEtest 封装",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_differential_expression",
+        "dependencies": [
+          "Seurat",
+          "BiocParallel"
+        ],
+        "verification": "verification/scp-detest.json",
+        "state": "passed",
+        "source_mapping": "methods/differential-expression/code/"
+      }
+    ]
+  },
+  {
+    "family": "dimensionality-reduction",
+    "title": "单细胞降维分析",
+    "summary": "在标准化/缩放后的表达上计算 PCA 与 UMAP，为聚类、可视化和轨迹提供低维表示。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "已标准化、选 HVF 并缩放的 Seurat 对象；features 或 reduction_use 显式。",
+      "output": "PCA/UMAP 嵌入，每细胞一行坐标。"
+    },
+    "implementations": [
+      {
+        "id": "scp-dimreduction",
+        "title": "SCP RunDimReduction 封装",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_dimensionality_reduction",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject"
+        ],
+        "verification": "verification/scp-dimreduction.json",
+        "state": "passed",
+        "source_mapping": "methods/dimensionality-reduction/code/"
+      }
+    ]
+  },
+  {
+    "family": "doublet-detection",
+    "title": "双细胞检测",
+    "summary": "识别同一液滴中两个及以上细胞的转录组，按样本和预期双细胞率标记，供 QC 与下游过滤决策。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "Seurat RNA assay 的原始 counts；通常按样本分别运行，并显式给出预期双细胞率。",
+      "output": "每细胞一行的 doublet class/score（运行成功时）；当前分支未运行，未产生结果。"
+    },
+    "implementations": [
+      {
+        "id": "scp-rundoublet",
+        "title": "SCP RunDoubletCalling 的 scDblFinder 分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_doublet_detection",
+        "dependencies": [
+          "Seurat",
+          "scDblFinder"
+        ],
+        "verification": "verification/scp-rundoublet.json",
+        "state": "not_run",
+        "source_mapping": "methods/doublet-detection/code/"
+      }
+    ]
+  },
+  {
+    "family": "dynamic-feature-analysis",
+    "title": "拟时序动态特征分析",
+    "summary": "沿 pseudotime 拟合每个特征的平滑趋势，输出变化显著性、解释度和峰/谷时间。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "Seurat 对象 + pseudotime/lineage 列 + 候选 features；pseudotime 必须来自轨迹推断。",
+      "output": "每 feature 的 GAM 表：features、exp_ncells、r.sq、dev.expl、peaktime、valleytime、pvalue、padjust。"
+    },
+    "implementations": [
+      {
+        "id": "scp-dynamicfeatures",
+        "title": "SCP RunDynamicFeatures 封装",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_dynamic_feature_analysis",
+        "dependencies": [
+          "Seurat",
+          "mgcv",
+          "BiocParallel"
+        ],
+        "verification": "verification/scp-dynamicfeatures.json",
+        "state": "passed",
+        "source_mapping": "methods/dynamic-feature-analysis/code/"
+      }
+    ]
+  },
+  {
+    "family": "gene-set-enrichment",
+    "title": "基因集富集分析",
+    "summary": "用显式基因列表和背景检验基因集过代表（ORA），GO/KEGG 是资源，GSEA 是另一种策略且本页未实现。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "geneID 向量（可选分组）+ 显式 TERM2GENE/TERM2NAME，或由 DE 表派生的基因列表；背景/物种/ID 类型明确。",
+      "output": "每个基因集一行的 ORA 表：ID、Description、GeneRatio、BgRatio、pvalue、p.adjust、qvalue、geneID、Count。"
+    },
+    "implementations": [
+      {
+        "id": "scp-enrichment",
+        "title": "SCP RunEnrichment 的 ORA 分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_gene_set_enrichment",
+        "dependencies": [
+          "clusterProfiler",
+          "DOSE",
+          "Seurat"
+        ],
+        "verification": "verification/scp-enrichment.json",
+        "state": "passed",
+        "source_mapping": "methods/gene-set-enrichment/code/"
+      }
+    ]
+  },
+  {
+    "family": "gene-set-scoring",
+    "title": "基因集与通路签名打分",
+    "summary": "按命名基因集给每个细胞打相对签名分数，用于描述状态差异；分数不是通路活性或富集显著性。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "Seurat 对象 + 命名基因集列表；同一数据集、同一 assay/slot 内比较。",
+      "output": "每细胞×基因集的相对分数（Seurat metadata）或长表；不产出富集 p 值。"
+    },
+    "implementations": [
+      {
+        "id": "scp-cellscoring",
+        "title": "SCP CellScoring 的 Seurat/AddModuleScore 分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_gene_set_scoring",
+        "dependencies": [
+          "Seurat",
+          "BiocParallel"
+        ],
+        "verification": "verification/scp-cellscoring.json",
+        "state": "passed",
+        "source_mapping": "methods/gene-set-scoring/code/"
+      }
+    ]
+  },
+  {
+    "family": "reference-mapping",
+    "title": "参考图谱映射",
+    "summary": "把查询细胞映射到参考标签并返回预测分数；Seurat 标签转移已验证，UMAP 投影分支未通过。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "query/reference Seurat 对象 + reference 标签列；reference 有 PCA，query/ref 共享特征。",
+      "output": "每 query 细胞 predicted_id、max_score、margin；不包含 UMAP 投影（该分支未通过）。"
+    },
+    "implementations": [
+      {
+        "id": "seurat-label-transfer",
+        "title": "Seurat 锚点标签转移分支",
+        "language": "R",
+        "entrypoint": "code/transfer.R:run_reference_label_transfer",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject"
+        ],
+        "verification": "verification/seurat-label-transfer.json",
+        "state": "passed",
+        "source_mapping": "methods/reference-mapping/code/"
+      },
+      {
+        "id": "scp-runseuratmap",
+        "title": "SCP RunSeuratMap UMAP 投影分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_reference_mapping",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/scp-runseuratmap.json",
+        "state": "not_run",
+        "source_mapping": "methods/reference-mapping/code/"
+      }
+    ]
+  },
+  {
+    "family": "regression-resampling-evaluation",
+    "title": "回归模型的重采样评估与折外预测",
+    "summary": "汇总已有折外回归预测，计算逐折 RMSE/MAE/R2/r；不训练模型、不生成重采样。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "折外预测表 regression-predictions：sample_id/model/repeat/fold/y_true/y_pred/split_design；一行一个验证样本。",
+      "output": "逐折指标表：model/repeat/fold/n_test/RMSE/MAE/R2/r/split_design；另可输出描述性均值/SD。"
+    },
+    "implementations": [
+      {
+        "id": "summarize-predictions",
+        "title": "折外预测指标汇总",
+        "language": "Python",
+        "entrypoint": "code/summarize_predictions.py:summarize",
+        "dependencies": [
+          "numpy",
+          "pandas"
+        ],
+        "verification": "verification/summarize-predictions.json",
+        "state": "passed",
+        "source_mapping": "methods/regression-resampling-evaluation/code/"
+      }
+    ]
+  },
+  {
+    "family": "rna-velocity",
+    "title": "RNA 速度分析",
+    "summary": "利用 spliced/unspliced 计数推断转录动态方向；当前 Python 后端缺失，函数保留但未运行。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "含 spliced/unspliced layers 的 Seurat 对象或 AnnData；同一细胞集合的剪接/未剪接计数。",
+      "output": "velocity 图、latent time、velocity confidence（运行成功时）；当前未产生结果。"
+    },
+    "implementations": [
+      {
+        "id": "scp-scvelo",
+        "title": "SCP RunSCVELO 分支",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_rna_velocity",
+        "dependencies": [
+          "Seurat",
+          "reticulate",
+          "scvelo"
+        ],
+        "verification": "verification/scp-scvelo.json",
+        "state": "not_run",
+        "source_mapping": "methods/rna-velocity/code/"
+      }
+    ]
+  },
+  {
+    "family": "shap-explanation",
+    "title": "基于 SHAP 的模型解释",
+    "summary": "对既定模型输出作 SHAP 归因，输出汇总表和逐样本贡献表；不训练、不划分数据。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "已拟合模型、背景 DataFrame、解释样本 DataFrame；特征列同名同序、有限数值。",
+      "output": "样本×特征 SHAP 矩阵、summary 表（feature/shap/percent）、samples 长表；不产生训练或预测指标。"
+    },
+    "implementations": [
+      {
+        "id": "shap-explain-model",
+        "title": "SHAP 纯函数封装",
+        "language": "Python",
+        "entrypoint": "code/explain_model.py:explain_model",
+        "dependencies": [
+          "shap",
+          "numpy",
+          "pandas"
+        ],
+        "verification": "verification/shap-explain-model.json",
+        "state": "passed",
+        "source_mapping": "methods/shap-explanation/code/"
+      }
+    ]
+  },
+  {
+    "family": "trajectory-inference",
+    "title": "拟时序与轨迹推断",
+    "summary": "在低维嵌入上连接细胞群，推断 lineage 与 pseudotime；轨迹是模型假设，不是真实时间。",
+    "method_kind": "analysis",
+    "data_contract": {
+      "input": "Seurat 对象 + 稳定低维嵌入 + cluster 标签 + 起点/终点；cluster 是轨迹状态，不是细胞类型断言。",
+      "output": "每细胞 lineage pseudotime 与 BranchID（Seurat metadata）；曲线对象在 tools。"
+    },
+    "implementations": [
+      {
+        "id": "scp-slingshot",
+        "title": "SCP RunSlingshot 封装",
+        "language": "R",
+        "entrypoint": "code/analysis.R:run_trajectory_inference",
+        "dependencies": [
+          "Seurat",
+          "slingshot"
+        ],
+        "verification": "verification/scp-slingshot.json",
+        "state": "passed",
+        "source_mapping": "methods/trajectory-inference/code/"
+      }
+    ]
+  }
+]

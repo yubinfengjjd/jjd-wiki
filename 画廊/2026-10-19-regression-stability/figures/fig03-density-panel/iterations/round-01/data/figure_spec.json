@@ -1,0 +1,46 @@
+{
+  "kind": "density",
+  "canvas_px": [
+    1043,
+    927
+  ],
+  "panels": [
+    {
+      "id": "A",
+      "kind": "density"
+    }
+  ],
+  "style": {
+    "canvas_px": [
+      1043,
+      927
+    ],
+    "limits": [
+      -5,
+      109,
+      -5,
+      109
+    ],
+    "fit": [
+      0.86,
+      5.29
+    ],
+    "annotation": "$y=0.86x+5.29$\n$R^2=0.86\\pm0.06$\n$RMSE=10.18\\pm2.06$\n$MAE=6.90\\pm1.09$\n$r=0.93\\pm0.03$\n$n_{\\mathrm{split}}=10$",
+    "label": "Test (XGBoost)",
+    "right_limits": [
+      0,
+      40
+    ],
+    "right_ticks": [
+      0,
+      20,
+      40
+    ]
+  },
+  "data_provenance": "estimated",
+  "notes": [
+    "Graphical estimates are not original observations.",
+    "Printed metrics and fit are source annotations, not recalculated.",
+    "RGB and marginal shapes are graphical readings, not inferred density/counts. Marginal count scale retained from old group (0..40); standalone source right axis has 0..20."
+  ]
+}

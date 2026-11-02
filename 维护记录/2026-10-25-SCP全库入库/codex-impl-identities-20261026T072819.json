@@ -1,0 +1,131 @@
+{
+  "scope": "in-progress snapshot; changed entry/receipt needs review, not automatic rejection",
+  "changes": [
+    {
+      "page": "batch-integration",
+      "implementation": "scp-seurat",
+      "old_entry": "code/analysis.R:run_seurat_integration",
+      "new_entry": "code/analysis.R:run_seurat_integration",
+      "old_verification": "verification/scp-seurat-standalone.json",
+      "new_verification": "verification/scp-seurat-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "cell-clustering",
+      "implementation": "seurat-findclusters",
+      "old_entry": "code/clustering.R:run_seurat_clustering",
+      "new_entry": "code/clustering.R:run_seurat_clustering",
+      "old_verification": "verification/seurat-findclusters.json",
+      "new_verification": "verification/seurat-findclusters-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "cell-quality-control",
+      "implementation": "scp-runcellqc",
+      "old_entry": "code/analysis.R:run_cell_quality_control",
+      "new_entry": "code/analysis.R:run_cell_quality_control",
+      "old_verification": "verification/scp-runcellqc-standalone.json",
+      "new_verification": "verification/scp-runcellqc-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "differential-expression",
+      "implementation": "scp-detest",
+      "old_entry": "code/analysis.R:run_differential_expression",
+      "new_entry": "code/analysis.R:run_differential_expression",
+      "old_verification": "verification/scp-detest-standalone.json",
+      "new_verification": "verification/scp-detest-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "dimensionality-reduction",
+      "implementation": "scp-dimreduction",
+      "old_entry": "code/analysis.R:run_dimensionality_reduction",
+      "new_entry": "code/analysis.R:run_dimensionality_reduction",
+      "old_verification": "verification/scp-dimreduction-standalone.json",
+      "new_verification": "verification/scp-dimreduction-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "dynamic-feature-analysis",
+      "implementation": "scp-dynamicfeatures",
+      "old_entry": "code/analysis.R:run_dynamic_feature_analysis",
+      "new_entry": "code/analysis.R:run_dynamic_feature_analysis",
+      "old_verification": "verification/scp-dynamicfeatures-standalone.json",
+      "new_verification": "verification/scp-dynamicfeatures-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "gene-set-enrichment",
+      "implementation": "scp-enrichment",
+      "old_entry": "code/analysis.R:run_gene_set_enrichment",
+      "new_entry": "code/analysis.R:run_gene_set_enrichment",
+      "old_verification": "verification/scp-enrichment-standalone.json",
+      "new_verification": "verification/scp-enrichment-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "gene-set-scoring",
+      "implementation": "scp-cellscoring",
+      "old_entry": "code/analysis.R:run_gene_set_scoring",
+      "new_entry": "code/analysis.R:run_gene_set_scoring",
+      "old_verification": "verification/scp-cellscoring-standalone.json",
+      "new_verification": "verification/scp-cellscoring-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "reference-mapping",
+      "implementation": "seurat-label-transfer",
+      "old_entry": "code/transfer.R:run_reference_label_transfer",
+      "new_entry": "code/transfer.R:run_reference_label_transfer",
+      "old_verification": "verification/seurat-label-transfer-standalone.json",
+      "new_verification": "verification/seurat-label-transfer-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "reference-mapping",
+      "implementation": "scp-runseuratmap",
+      "old_entry": "code/analysis.R:run_reference_mapping",
+      "new_entry": "code/runseuratmap/code/module.R:RunSeuratMap",
+      "old_verification": "verification/scp-runseuratmap-standalone.json",
+      "new_verification": null,
+      "old_code_still_present": true
+    },
+    {
+      "page": "regression-resampling-evaluation",
+      "implementation": "summarize-predictions",
+      "old_entry": "code/summarize_predictions.py:summarize",
+      "new_entry": "code/summarize_predictions.py:summarize",
+      "old_verification": "verification/summarize-predictions.json",
+      "new_verification": "verification/summarize-predictions-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "scp-visualization-interface",
+      "implementation": "scp-table-adapters",
+      "old_entry": "code/scp_tables.R:scp_umap_groups",
+      "new_entry": "code/scp_tables.R:scp_umap_groups",
+      "old_verification": "verification/scp-table-adapters.json",
+      "new_verification": "verification/scp-table-adapters-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "shap-explanation",
+      "implementation": "shap-explain-model",
+      "old_entry": "code/explain_model.py:explain_model",
+      "new_entry": "code/explain_model.py:explain_model",
+      "old_verification": "verification/shap-explain-model.json",
+      "new_verification": "verification/shap-explain-model-replay-20261026-152256.json",
+      "old_code_still_present": true
+    },
+    {
+      "page": "trajectory-inference",
+      "implementation": "scp-slingshot",
+      "old_entry": "code/analysis.R:run_trajectory_inference",
+      "new_entry": "code/analysis.R:run_trajectory_inference",
+      "old_verification": "verification/scp-slingshot-standalone.json",
+      "new_verification": "verification/scp-slingshot-replay-20261026-152256.json",
+      "old_code_still_present": true
+    }
+  ]
+}

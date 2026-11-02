@@ -1,0 +1,52 @@
+{
+  "kind": "boxplot",
+  "canvas_px": [
+    872,
+    777
+  ],
+  "panels": [
+    {
+      "id": "A",
+      "kind": "boxplot"
+    }
+  ],
+  "style": {
+    "canvas_px": [
+      872,
+      777
+    ],
+    "order": [
+      "ET",
+      "RF",
+      "XGB",
+      "MLP",
+      "GB",
+      "AdaBoost"
+    ],
+    "limits": [
+      5.9,
+      15.3
+    ],
+    "ticks": [
+      6,
+      7.5,
+      9,
+      10.5,
+      12,
+      13.5,
+      15
+    ],
+    "title": "Prediction error",
+    "ylabel": "Test RMSE (SR)",
+    "columns": {
+      "category": "model"
+    },
+    "tick_format": "%.1f"
+  },
+  "data_provenance": "mixed",
+  "notes": [
+    "Graphical estimates are not original observations.",
+    "Printed metrics and fit are source annotations, not recalculated.",
+    "Dot y, box stats and means were independently read; x jitter is synthetic and retained."
+  ]
+}

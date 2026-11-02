@@ -1,0 +1,14 @@
+{
+  "mode": "fixed",
+  "profile": "chord",
+  "n_dimensions": 2,
+  "n_sectors": 8,
+  "n_cells": 1000,
+  "n_rows": 2000,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "width_px": 1200,
+  "height_px": 900,
+  "svg_device": "svglite"
+}

@@ -1,0 +1,10 @@
+{
+  "mode": "fixed",
+  "profile": "ring_composition",
+  "n_groups": 5,
+  "n_celltypes": 3,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "svg_device": "svglite"
+}

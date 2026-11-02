@@ -1,0 +1,10 @@
+{
+  "scope": "SCP localized native reference; default Slingshot root inferred by source algorithm, not a biological direction claim; no extracted-module validation or author confirmation",
+  "input_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "cases": {
+    "slingshot": {
+      "state": "reference_failed",
+      "error": "object of type 'closure' is not subsettable"
+    }
+  }
+}

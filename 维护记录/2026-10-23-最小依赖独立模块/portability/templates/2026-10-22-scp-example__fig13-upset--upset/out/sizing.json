@@ -1,0 +1,14 @@
+{
+  "mode": "fixed",
+  "profile": "upset",
+  "n_sets": 4,
+  "n_intersections": 3,
+  "n_shown": 3,
+  "n_cells": 1000,
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "svg_device": "svglite",
+  "set_levels": ["Ductal", "Endocrine", "G1S", "G2M"],
+  "membership_rows": 4000
+}

@@ -1,0 +1,239 @@
+{
+  "CellDimPlot": {
+    "named_args": ["group.by", "reduction"]
+  },
+  "FeatureDimPlot": {
+    "named_args": ["features", "reduction"]
+  },
+  "CellDimPlot3D": {
+    "named_args": ["group.by", "reduction", "dims"]
+  },
+  "FeatureDimPlot3D": {
+    "named_args": ["features", "reduction", "dims"]
+  },
+  "CellDensityPlot": {
+    "named_args": ["features"]
+  },
+  "CellStatPlot": {
+    "named_args": ["stat.by", "group.by", "plot_type"]
+  },
+  "StatPlot": {
+    "named_args": ["stat.by", "group.by", "plot_type"]
+  },
+  "FeatureStatPlot": {
+    "named_args": ["stat.by", "group.by", "plot_type"]
+  },
+  "VolcanoPlot": {
+    "named_args": ["group_by"]
+  },
+  "FeatureCorPlot": {
+    "named_args": ["features"]
+  },
+  "FeatureHeatmap": {
+    "named_args": ["features", "group.by"]
+  },
+  "GroupHeatmap": {
+    "named_args": ["features", "group.by"]
+  },
+  "CellCorHeatmap": {
+    "named_args": ["query_group", "ref_group"]
+  },
+  "DynamicHeatmap": {
+    "named_args": ["lineages", "features"]
+  },
+  "DynamicPlot": {
+    "named_args": ["lineages", "features"]
+  },
+  "VelocityPlot": {
+    "named_args": ["reduction", "velocity"]
+  },
+  "PAGAPlot": {
+    "named_args": {}
+  },
+  "LineagePlot": {
+    "named_args": ["lineages", "reduction"]
+  },
+  "ProjectionPlot": {
+    "named_args": {}
+  },
+  "GraphPlot": {
+    "named_args": {}
+  },
+  "EnrichmentPlot": {
+    "named_args": ["db", "group_by"]
+  },
+  "GSEAPlot": {
+    "named_args": ["db", "group_by"]
+  },
+  "RunMDS": {
+    "named_args": ["reduction_use", "dims"]
+  },
+  "RunNMF": {
+    "named_args": ["method", "nmf.method", "rank"]
+  },
+  "RunLargeVis": {
+    "named_args": ["reduction_use", "dims"]
+  },
+  "RunFR": {
+    "named_args": ["reduction_use", "dims"]
+  },
+  "RunDimReduction": {
+    "named_args": ["prefix", "linear_reduction", "nonlinear_reduction"]
+  },
+  "RunDEtest": {
+    "named_args": ["group_by", "markers_type"]
+  },
+  "FindExpressedMarkers": {
+    "named_args": ["group_by"]
+  },
+  "RunEnrichment": {
+    "named_args": ["group_by", "db"]
+  },
+  "RunGSEA": {
+    "named_args": ["group_by", "db"]
+  },
+  "PrepareDB": {
+    "named_args": ["species", "db"]
+  },
+  "GeneConvert": {
+    "named_args": ["geneID_from_IDtype", "geneID_to_IDtype"]
+  },
+  "CellScoring": {
+    "named_args": ["features", "method", "name"]
+  },
+  "RunKNNPredict": {
+    "named_args": ["ref_group"]
+  },
+  "RunScmap": {
+    "named_args": ["ref_group"]
+  },
+  "RunSingleR": {
+    "named_args": ["ref_group"]
+  },
+  "RunMonocle2": {
+    "named_args": ["gene_notes", "root_state"]
+  },
+  "RunMonocle3": {
+    "named_args": {}
+  },
+  "RunSlingshot": {
+    "named_args": ["group.by", "reduction", "show_plot"]
+  },
+  "RunPalantir": {
+    "named_args": ["early_cell"]
+  },
+  "RunPAGA": {
+    "named_args": ["group_by"]
+  },
+  "RunWOT": {
+    "named_args": ["time.by"]
+  },
+  "RunSCVELO": {
+    "named_args": ["assay_X", "assay_layers", "mode"]
+  },
+  "RunDynamicFeatures": {
+    "named_args": ["lineages", "features"]
+  },
+  "RunDynamicEnrichment": {
+    "named_args": ["lineages", "db"]
+  },
+  "RunCellQC": {
+    "named_args": ["qc_metrics", "return_filtered"]
+  },
+  "isOutlier": {
+    "named_args": ["nmads"]
+  },
+  "RecoverCounts": {
+    "named_args": ["trans"]
+  },
+  "Integration_SCP": {
+    "named_args": ["batch", "integration_method"]
+  },
+  "Standard_SCP": {
+    "named_args": {}
+  },
+  "RunDoubletCalling": {
+    "named_args": ["db_method"]
+  },
+  "RunHarmony2": {
+    "named_args": ["group.by.vars"]
+  },
+  "RunSeuratMap": {
+    "named_args": ["ref_group"]
+  },
+  "RunKNNMap": {
+    "named_args": ["ref_group"]
+  },
+  "RunPCAMap": {
+    "named_args": {}
+  },
+  "RunCSSMap": {
+    "named_args": ["ref_group"]
+  },
+  "RunSymphonyMap": {
+    "named_args": ["ref_group"]
+  },
+  "RunDM": {
+    "named_args": ["reduction_use"]
+  },
+  "RunGLMPCA": {
+    "named_args": ["L"]
+  },
+  "RunUMAP2": {
+    "named_args": ["reduction_use", "dims"]
+  },
+  "RunPHATE": {
+    "named_args": {}
+  },
+  "RunPaCMAP": {
+    "named_args": {}
+  },
+  "RunTriMap": {
+    "named_args": {}
+  },
+  "Uncorrected_integrate": {
+    "named_args": ["batch"]
+  },
+  "Harmony_integrate": {
+    "named_args": ["batch"]
+  },
+  "MNN_integrate": {
+    "named_args": ["batch"]
+  },
+  "fastMNN_integrate": {
+    "named_args": ["batch"]
+  },
+  "ComBat_integrate": {
+    "named_args": ["batch"]
+  },
+  "ZINBWaVE_integrate": {
+    "named_args": ["batch"]
+  },
+  "Seurat_integrate": {
+    "named_args": ["batch"]
+  },
+  "scanorama_integrate": {
+    "named_args": ["batch"]
+  },
+  "Scanorama_integrate": {
+    "named_args": ["batch"]
+  },
+  "CSS_integrate": {
+    "named_args": ["batch"]
+  },
+  "LIGER_integrate": {
+    "named_args": ["batch"]
+  },
+  "BBKNN_integrate": {
+    "named_args": ["batch"]
+  },
+  "Conos_integrate": {
+    "named_args": ["batch"]
+  },
+  "scVI_integrate": {
+    "named_args": ["batch"]
+  },
+  "compute_velocity_on_grid": {
+    "named_args": {}
+  }
+}

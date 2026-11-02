@@ -1,0 +1,66 @@
+{
+  "id": "2026-10-22-glaucoma-scrna__fig08-axis-herb-robustness",
+  "post": {
+    "title": "青光眼单细胞项目（GSE251716）图表复刻",
+    "account": "作者课题",
+    "author": "作者",
+    "publish_date": "2026-10-22",
+    "url": null
+  },
+  "figure": {
+    "index": 8,
+    "label": "单panel：herb 稳健排序点图",
+    "caption": "按作者 generate_axisnet_panels_clean.py 的 Panel D 样式复刻；使用真实 cv_results.json。",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "errorbar"
+    ],
+    "canvas_px": [
+      2248,
+      1586
+    ],
+    "panel_map": {
+      "A": "errorbar"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "experimental-statistics"
+    ],
+    "secondary": [],
+    "free": [
+      "TCM",
+      "robust-ranking"
+    ]
+  },
+  "language": "python",
+  "data_provenance": "original",
+  "code_provenance": "adapted",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig08.png",
+    "source_provenance": "source/provenance.json",
+    "code": "code/replica.py",
+    "core_code": "code/core.py",
+    "data_prep": "code/make_data.py",
+    "data": "data/herb-robustness.csv",
+    "cv_results": "data/cv_results.json",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "overlay": "compare/overlay.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md",
+    "qa": "qa_report.md",
+    "run_log": "run.log"
+  },
+  "status": "review",
+  "version": 1,
+  "source_image_sha256": "de6acc99798c2be2c50e75f72e2e48277d649931838a90d0768f5d6ac85a4cc3",
+  "created_at": "2026-10-22T05:38:15.309724Z",
+  "updated_at": "2026-10-22T05:38:15.309724Z"
+}

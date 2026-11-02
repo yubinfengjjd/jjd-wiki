@@ -1,0 +1,14 @@
+{
+  "pdf_pages": 1,
+  "pdf_extracted_text_chars": 89,
+  "pdf_fonts": [
+    {
+      "name": "/BQYMKZ+ArialMT",
+      "embedded": true
+    }
+  ],
+  "all_pdf_fonts_embedded": true,
+  "svg_text_nodes": 15,
+  "svg_root": "{http://www.w3.org/2000/svg}svg",
+  "independent_pdf_svg_visual": "NOT TESTED; structure is not visual acceptance or guarantee in Illustrator"
+}

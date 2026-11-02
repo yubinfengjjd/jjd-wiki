@@ -1,0 +1,56 @@
+{
+  "local-omics-analysis-guide": {
+    "code_roles": [
+      "analysis",
+      "visualization",
+      "runtime"
+    ],
+    "theory_methods": [
+      "cell-quality-control",
+      "batch-integration",
+      "dimensionality-reduction",
+      "cell-clustering",
+      "cell-type-annotation",
+      "differential-expression",
+      "gene-set-scoring",
+      "gene-set-enrichment",
+      "trajectory-inference",
+      "dynamic-feature-analysis",
+      "regression-resampling-evaluation",
+      "shap-explanation"
+    ],
+    "implementation_states": {
+      "not_run": 10,
+      "verified": 12
+    },
+    "reusable_files": 365,
+    "sample_paths": [
+      "code/binary_evaluation.py",
+      "code/dependency_analysis.R",
+      "code/dynamic_monocle2_seurat5.R"
+    ],
+    "download_matches_current_file": true
+  },
+  "local-omics-visualization-guide": {
+    "code_roles": [
+      "visualization"
+    ],
+    "theory_methods": [
+      "gene-set-scoring",
+      "gene-set-enrichment",
+      "trajectory-inference",
+      "dynamic-feature-analysis",
+      "regression-resampling-evaluation"
+    ],
+    "implementation_states": {
+      "verified": 7,
+      "not_run": 11
+    },
+    "reusable_files": 2,
+    "sample_paths": [
+      "code/dependency_plot.R",
+      "code/roc_render.py"
+    ],
+    "download_matches_current_file": true
+  }
+}

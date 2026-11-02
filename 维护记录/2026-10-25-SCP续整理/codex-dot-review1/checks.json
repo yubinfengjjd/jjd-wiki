@@ -1,0 +1,17 @@
+{
+  "nested_source_no_global_helpers": true,
+  "public_exports_only": true,
+  "value_equals_independently_rerun_upstream": true,
+  "percent_equals_independently_rerun_upstream": true,
+  "repeat_calls_return_native_objects": true,
+  "input_unchanged": true,
+  "factor_value_refused": true,
+  "factor_percent_refused": true,
+  "missing_order_refused": false,
+  "infinite_order_refused": false,
+  "fractional_order_refused": false,
+  "negative_order_refused": false,
+  "ambiguous_order_refused": false,
+  "duplicate_joint_key_refused": true,
+  "percent_0to100_refused": true
+}

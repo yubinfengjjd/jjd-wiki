@@ -1,0 +1,474 @@
+[
+  {
+    "id": "regression-resampling-evaluation",
+    "kind": "method",
+    "title": "回归模型的重采样评估与折外预测",
+    "page": "methods/regression-resampling-evaluation.md",
+    "status": "ready",
+    "tags": [
+      "回归评估",
+      "交叉验证",
+      "模型比较",
+      "折外预测"
+    ],
+    "score": 3.0,
+    "reasons": [
+      "关键词匹配：回归",
+      "关键词匹配：预测",
+      "关键词匹配：验证",
+      "列覆盖（regression-predictions）：覆盖 无；缺少 sample_id、model、repeat、fold、y_true、y_pred、split_design"
+    ],
+    "purpose": "汇总回归模型在预先规定的数据划分下的验证预测，生成逐折 RMSE、MAE、R²、Pearson r，用密度散点查看预测偏差，用箱线图描述划分间性能波动。适用于任意能导出预测的模型，不绑定 XGBoost、Python 或 R。\n\n本页依据原帖主题及官方文档重新编写，不代表原帖的缺失函数已恢复，也不复现其数值。原帖明确使用模拟数据；文献的重复随机划分与帖子改用的 K 折是两种设计，必须分别记录。",
+    "applicable": "- 连续结局、可追踪样本标识、明确验证设计的监督学习回归任务。\n- 多模型在相同验证划分上比较；一行保存一个验证样本的真实值与预测值。\n- 用于描述预测误差和划分敏感性；所有特征处理、模型选择都必须遵守训练/验证边界。",
+    "not_applicable": "- 分类、存活结局或多输出回归不能直接套用这些指标。\n- 患者多次测量、双眼、多中心或时间依赖数据，不能直接使用普通随机 K 折；应在课题环境中实施分组、中心留出或时间划分。\n- 只知道每折均值而没有逐样本预测，不能补造散点；没有真实数据时只能制作明确标注的合成视觉示例。\n- 箱体窄、相关性高、K 折标准差小，均不足以证明外部泛化、临床效用或因果机制。",
+    "input": "[[interfaces/regression-predictions|回归模型逐样本验证预测表]]：文件名 `regression-predictions.csv`，必需列为 `sample_id,model,repeat,fold,y_true,y_pred,split_design`。一行是一个样本在某模型、重复、验证折上的预测。标识须跨模型保持一致；同一标识的结局也须一致。\n\n`split_design` 取 `kfold`、`repeated_kfold`、`group_kfold`、`time_series` 或 `repeated_holdout`。K 折每次重复中每个样本至多验证一次；重复留出中一个样本可多次出现，不能将汇总后的点数当作独立样本量。时间划分可能包含无法获得预测的初始训练窗口，应说明覆盖率。",
+    "inputs": [
+      "regression-predictions"
+    ],
+    "outputs": [
+      "regression-fold-metrics"
+    ],
+    "input_requirements": {
+      "regression-predictions": {
+        "interface": "regression-predictions",
+        "title": "回归模型逐样本验证预测表",
+        "columns": {
+          "sample_id": {
+            "type": "str",
+            "description": "课题内唯一的样本标识；重复测量仍需另有受试者分组"
+          },
+          "model": {
+            "type": "str",
+            "description": "模型或完整训练流程名称"
+          },
+          "repeat": {
+            "type": "int",
+            "description": "重采样重复编号，从1起；普通K折为1"
+          },
+          "fold": {
+            "type": "int",
+            "description": "本次重复内的验证折或划分编号，从1起"
+          },
+          "y_true": {
+            "type": "float",
+            "description": "该验证样本的真实连续结局"
+          },
+          "y_pred": {
+            "type": "float",
+            "description": "未使用该验证样本训练或调参的流程给出的预测"
+          },
+          "split_design": {
+            "type": "str",
+            "description": "kfold/repeated_kfold/group_kfold/time_series/repeated_holdout"
+          }
+        }
+      }
+    },
+    "prerequisites": [
+      "连续结局且同一原始量纲；明确样本、模型、重复/折身份。",
+      "需先确定密度/边缘分布策略与注释统计，不用估读颜色倒推真实频数。",
+      "同一验证方案、指标定义与单位；明确折间相关性。",
+      "按已确认的箱体/须/均值规则产生一致结果，横向抖动仅作展示。"
+    ],
+    "relations": [
+      {
+        "method": "methods/regression-resampling-evaluation.md",
+        "figure": "layouts/2026-10-19-regression-stability__fig03-density-panel.md",
+        "method_title": "回归模型的重采样评估与折外预测",
+        "figure_title": "单panel：密度散点与边缘分布 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+        "method_status": "ready",
+        "figure_status": "pending_template",
+        "compatibility": "adaptable",
+        "reason": "验证预测中的真实值与预测值可用于观察偏差和边缘分布；现存来源是估读 RGB/直方表，不能直接接真实预测。",
+        "prerequisites": [
+          "连续结局且同一原始量纲；明确样本、模型、重复/折身份。",
+          "需先确定密度/边缘分布策略与注释统计，不用估读颜色倒推真实频数。"
+        ],
+        "adaptation": "先确认真实预测的密度/分布计算方案，另完成单 panel 模板化；算法缺失不作为格式改名自动补写。",
+        "evidence": [
+          "methods/regression-resampling-evaluation.md#输入",
+          "layouts/2026-10-19-regression-stability__fig03-density-panel.md#适用"
+        ],
+        "verification": {
+          "state": "not_run",
+          "scope": "本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。",
+          "evidence": []
+        },
+        "target_kind": "layout",
+        "active": true
+      },
+      {
+        "method": "methods/regression-resampling-evaluation.md",
+        "figure": "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md",
+        "method_title": "回归模型的重采样评估与折外预测",
+        "figure_title": "单panel：箱线散点与均值 EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+        "method_status": "ready",
+        "figure_status": "pending_template",
+        "compatibility": "adaptable",
+        "reason": "逐折指标可按模型比较一个指标的分布；来源只消费独立 points/summaries，需要真实一致的摘要且尚未模板化。",
+        "prerequisites": [
+          "同一验证方案、指标定义与单位；明确折间相关性。",
+          "按已确认的箱体/须/均值规则产生一致结果，横向抖动仅作展示。"
+        ],
+        "adaptation": "在课题中选指标、整理长表；另确认摘要/须规则和待模板化实现，不拿原估读摘要配真实点。",
+        "evidence": [
+          "methods/regression-resampling-evaluation.md#输出",
+          "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md#适用"
+        ],
+        "verification": {
+          "state": "not_run",
+          "scope": "本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。",
+          "evidence": []
+        },
+        "target_kind": "layout",
+        "active": true
+      }
+    ],
+    "license": "none",
+    "code_files": [
+      "methods/regression-resampling-evaluation/code/summarize_predictions.py"
+    ],
+    "code_status": {
+      "available": true,
+      "has_original": true,
+      "has_reusable": true,
+      "files": [
+        {
+          "variant": "original",
+          "path": "source/block-01.python.txt",
+          "language": "python",
+          "size": 1536,
+          "sha256": "4755da6094884423acf7c472cffeeaf34dae9e628a176c2224a28e6870477f8d",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：python（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/block-02.python.txt",
+          "language": "python",
+          "size": 594,
+          "sha256": "7baae44b872e9f566cf3f77d15f6409aef4b44b1c699a0693b624f779c93d416",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：python（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/block-03.python.txt",
+          "language": "python",
+          "size": 352,
+          "sha256": "94c6d63a564bc8297091664f2e9968faea446de4632d761c5670366458d09571",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：python（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/block-04.makefile.txt",
+          "language": "makefile",
+          "size": 69,
+          "sha256": "6a2377ab39cc30469f9f117cd690fe9d81d06e688dd4caf09c25ce5356dafbd6",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：makefile（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/block-05.javascript.txt",
+          "language": "javascript",
+          "size": 157,
+          "sha256": "abcd7bec52b0fc6438624f4004a6c202d0faea79ea26089ec1f832ee17756154",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：javascript（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/block-06.javascript.txt",
+          "language": "javascript",
+          "size": 182,
+          "sha256": "c73a3ea54372b1038a01ccafe75f553fc0e66802cf268d2e2ea675aeca90fb6d",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：javascript（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/block-07.javascript.txt",
+          "language": "javascript",
+          "size": 175,
+          "sha256": "38f0126b03c5ef4930aa9c7da26ff3f549ec19404e2522ce9daf274db8396a46",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：javascript（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "reusable",
+          "path": "code/summarize_predictions.py",
+          "language": "python",
+          "size": 4908,
+          "sha256": "03879225fa5ecb3670f44e89f70ba67209d23fa1ffded5ecbba3f36dcba8d1d8",
+          "text": true,
+          "source": "Wiki 复用/改造代码；具体实现与验证范围以条目和记录为准；清单来源说明（未经独立核验）：重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+          "verification": {
+            "state": "example",
+            "scope": "历史合成预测表指标/校验检查记录；不含模型训练或真实课题分析→出图联调。",
+            "evidence": [
+              "methods/regression-resampling-evaluation/verification.md"
+            ],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        }
+      ],
+      "note": "只读代码资产；原始版本分类不等于作者原版或完整实现，复用版不等于已验证。文本查看上限 1 MiB。",
+      "execution_note": "文件存在或复用版不证明可运行；验证范围见各文件记录。"
+    },
+    "project_readiness": "requires_project_review",
+    "discovery_note": "关键词与列覆盖仅为检索线索；需由课题 agent 核对研究目的、每行单位、量纲和方法前提。"
+  },
+  {
+    "id": "shap-explanation",
+    "kind": "method",
+    "title": "机器学习模型 + SHAP 解释",
+    "page": "methods/shap-explanation.md",
+    "status": "ready",
+    "tags": [
+      "模型解释",
+      "SHAP",
+      "方法家族"
+    ],
+    "score": 2,
+    "reasons": [
+      "关键词匹配：回归",
+      "关键词匹配：验证",
+      "未声明可比较的输入列；仍保留候选，需核对实际材料与前提"
+    ],
+    "purpose": "对既定模型输出作特征归因，分别保存逐样本带符号贡献和特征级平均绝对贡献。此页是有条件的方法家族说明；家族范围、代码分支、实际验证三个维度分开。解释训练模型的行为，不提供因果或临床效用结论。",
+    "applicable": "已明确研究任务、训练好的模型、特征处理、背景/解释样本及模型输出。现存复用脚本面向数值表格的回归或二分类示例；真实课题先审查训练/验证边界、类别编码、缺失值与重复测量。标签名或模型名不能代替这些前提。",
+    "not_applicable": "不能直接据此处理多分类、多输出、时序/分组划分或任意原生类别特征；需要另核接口和实现。特征归因不等于因果、预测校准、外部验证或模型临床有效性。相关特征与背景选择必须说明，不能仅看排名定机制。",
+    "input": "家族需要既定模型、训练时对应的特征处理、解释样本和背景定义。现存脚本读取 data.csv（一行一个样本，数值特征及目标列），DATA/TARGET/TASK/MODEL 等集中在文件开头，并会自己随机划分与训练；它不是接入任意已拟合模型的纯函数。",
+    "inputs": [],
+    "outputs": [
+      "shap-summary",
+      "shap-samples"
+    ],
+    "input_requirements": {},
+    "prerequisites": [
+      "同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。",
+      "使用真实 SHAP 表；示例估读/合成数据仅作画法参考。",
+      "模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。"
+    ],
+    "relations": [
+      {
+        "method": "methods/shap-explanation.md",
+        "figure": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+        "method_title": "机器学习模型 + SHAP 解释",
+        "figure_title": "SHAP 条形图（含环形 inset）",
+        "method_status": "ready",
+        "figure_status": "ready",
+        "compatibility": "direct",
+        "reason": "特征级平均绝对 SHAP 及其占比对应汇总图契约。",
+        "prerequisites": [
+          "同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。",
+          "使用真实 SHAP 表；示例估读/合成数据仅作画法参考。",
+          "模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。"
+        ],
+        "adaptation": "",
+        "evidence": [
+          "methods/shap-explanation.md#输出",
+          "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/spec.json",
+          "interfaces/shap-summary.md"
+        ],
+        "verification": {
+          "state": "not_run",
+          "scope": "本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。",
+          "evidence": []
+        },
+        "target_kind": "template",
+        "active": true
+      },
+      {
+        "method": "methods/shap-explanation.md",
+        "figure": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md",
+        "method_title": "机器学习模型 + SHAP 解释",
+        "figure_title": "SHAP 蜂群图",
+        "method_status": "ready",
+        "figure_status": "ready",
+        "compatibility": "direct",
+        "reason": "逐样本×特征的带符号 SHAP 和着色特征值对应蜂群图契约。",
+        "prerequisites": [
+          "同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。",
+          "使用真实 SHAP 表；示例估读/合成数据仅作画法参考。",
+          "模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。"
+        ],
+        "adaptation": "",
+        "evidence": [
+          "methods/shap-explanation.md#输出",
+          "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/spec.json",
+          "interfaces/shap-samples.md"
+        ],
+        "verification": {
+          "state": "not_run",
+          "scope": "本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。",
+          "evidence": []
+        },
+        "target_kind": "template",
+        "active": true
+      },
+      {
+        "method": "methods/shap-explanation.md",
+        "figure": "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md",
+        "method_title": "机器学习模型 + SHAP 解释",
+        "figure_title": "SHAP 环形贡献图",
+        "method_status": "ready",
+        "figure_status": "ready",
+        "compatibility": "direct",
+        "reason": "特征级平均绝对 SHAP 及其占比对应汇总图契约。",
+        "prerequisites": [
+          "同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。",
+          "使用真实 SHAP 表；示例估读/合成数据仅作画法参考。",
+          "模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。"
+        ],
+        "adaptation": "",
+        "evidence": [
+          "methods/shap-explanation.md#输出",
+          "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json",
+          "interfaces/shap-summary.md"
+        ],
+        "verification": {
+          "state": "not_run",
+          "scope": "本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。",
+          "evidence": []
+        },
+        "target_kind": "template",
+        "active": true
+      }
+    ],
+    "license": "none",
+    "code_files": [
+      "methods/shap-explanation/code/shap_explain.py"
+    ],
+    "code_status": {
+      "available": true,
+      "has_original": true,
+      "has_reusable": true,
+      "files": [
+        {
+          "variant": "original",
+          "path": "source/code_block_01.py",
+          "language": "python",
+          "size": 2472,
+          "sha256": "803a94c15b285381648fa49325554325b39930d28c3dbe92e7bcd950425439bc",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：python（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/code_block_02.txt",
+          "language": "javascript",
+          "size": 235,
+          "sha256": "9b37a15231cd90aa67a06dc942383069c7dd4825cf1c5265cd65463d0912d58b",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：javascript（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/code_block_03.txt",
+          "language": "makefile",
+          "size": 497,
+          "sha256": "11cdbe21abc789ed7477ffa5f6e19cead17809d7dd167425ed59f5790bfd8f28",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：makefile（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "original",
+          "path": "source/code_block_04.txt",
+          "language": "makefile",
+          "size": 488,
+          "sha256": "9d0411add6d71b107e2bca492a895c4707365871e9734fc3ccd7e97c88d3199e",
+          "text": true,
+          "source": "Wiki 来源归档（原始版本分类；不据目录名推定作者原版或完整算法）；原始 fence 标签：makefile（未核实语法）；清单来源说明（未经独立核验）：只读归档的来源示例/片段；不是目标图完整原实现。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮仅展示原字节与来源，未执行；原始材料可能为示例/片段，非目标图完整实现。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        },
+        {
+          "variant": "reusable",
+          "path": "code/shap_explain.py",
+          "language": "python",
+          "size": 6804,
+          "sha256": "4cc9395490a619ea3a9a0c290575f75d59be3cf6ae0c8b538484026642c36b16",
+          "text": true,
+          "source": "Wiki 复用/改造代码；具体实现与验证范围以条目和记录为准；清单来源说明（未经独立核验）：重建/整理的复用版本；不是原作者原件，具体分支和环境须核对。",
+          "verification": {
+            "state": "not_run",
+            "scope": "本轮未执行，不将存在代码当成验证通过。",
+            "evidence": [],
+            "basis": "清单声明，查看接口未独立执行验证"
+          }
+        }
+      ],
+      "note": "只读代码资产；原始版本分类不等于作者原版或完整实现，复用版不等于已验证。文本查看上限 1 MiB。",
+      "execution_note": "文件存在或复用版不证明可运行；验证范围见各文件记录。"
+    },
+    "project_readiness": "requires_project_review",
+    "discovery_note": "关键词与列覆盖仅为检索线索；需由课题 agent 核对研究目的、每行单位、量纲和方法前提。"
+  }
+]

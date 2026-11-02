@@ -1,0 +1,50 @@
+{
+  "label": "devin-final-asset-driver",
+  "pid": 11168,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "returned",
+  "tool_events": 87,
+  "message_chars": 4235,
+  "updated_at": "2026-10-25T06:34:40Z",
+  "load_session_supported": true,
+  "last_tool": "Edited E:/research-wiki-env/work/wiki-cross-domain-20261024/development/maintenance/taxonomy-sync-map.md",
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    11544,
+    7080,
+    25072,
+    2632,
+    12708,
+    13892,
+    11332,
+    19620,
+    17348,
+    22512,
+    8356,
+    14716
+  ],
+  "stop_reason": "end_turn"
+}

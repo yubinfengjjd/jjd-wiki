@@ -1,0 +1,581 @@
+{
+  "2026-10-22-scp-example__fig01-volcano--volcano": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "2b22c692995f014537c364282d5e3dcb7be2030780a8612b625abcb0f12308dd",
+      "figure.pdf": "ff9e6e0d35ad7f04ebb25a7e691f23b5ecc54b27f2e86887c01f62d1e720c883",
+      "figure.svg": "d8abdbaf1d3035c116843eb33aeb969958f3c002f27d13206403f0ad9864f670",
+      "sizing.json": "0e1b2daf20d4e7bd9f237b3aad63b10240f3bb00e16e2464bc58ce08a9be8dda"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:04.721527+00:00",
+    "executed_at": "2026-10-23T15:57:12.242787+00:00",
+    "code_sha256": {
+      "code/core.R": "7350448637b768e1c8d0d6a09eb275818f654339c4f34900eaa8dc817e7d1f1f",
+      "code/panel.R": "0f60402fa7ddee2be166527be99de0988800ed8a948f5ae7c946d3f0692121de",
+      "code/render.R": "20828ca4ed49389ac61dffa8d472e7665b8e74f6024b61e93ba9db4ceb52f40b",
+      "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+      "code/scp_volcano_native.R": "9002eee52453ea7eedb5586a91f0721521283aca62a3b1ef3e2a733c339df064",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "2b22c692995f014537c364282d5e3dcb7be2030780a8612b625abcb0f12308dd",
+      "pdf": "a62a0a7874185658b066efed5e5f72fbba5e60e75235b199780153880ce41b9a",
+      "svg": "3abbc513a886d5aa15cf083b8b6f5c2c091a27640b60b43994b5aaccc3d63452"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": false
+    }
+  },
+  "2026-10-22-scp-example__fig02-ring--ring": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "85b3c9b778644b216f17897025591a5e518fe41d95d22ae2d000baf4dda8c56a",
+      "figure.pdf": "95336afde3a3c902d64173729d954d8071cefb92b1645a56633cb5a9b722cc2f",
+      "figure.svg": "53c9e23c658403ee37d6f0ce57109eb10116fd3fa6e43d12e489c01387e9167d",
+      "sizing.json": "f4fe08eef120c35dcfe7b638d5dedf82b740a953036250ea0aaf1aff4547576d"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:12.295124+00:00",
+    "executed_at": "2026-10-23T15:57:14.073545+00:00",
+    "code_sha256": {
+      "code/core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
+      "code/panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
+      "code/render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
+      "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+      "code/scp_ring_native.R": "0dd96b2b11f62e2103b692a160d5d448f81fe467f64949fc8777f21950ac766a",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "85b3c9b778644b216f17897025591a5e518fe41d95d22ae2d000baf4dda8c56a",
+      "pdf": "ad47b089013136693e38588d5549be58835b2e1107c21640f3deca27e9f991b8",
+      "svg": "59caea60a41ec87bbdb85cca88a6274b96dd8b2c7aa1596ac87b3310fc1fa869"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": false
+    }
+  },
+  "2026-10-22-scp-example__fig03-pie--pie": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "feb14e9357f5630f8d0a06a39f164e33fb8826d202f9697aad8e076c2c39c6b1",
+      "figure.pdf": "3b4d2afab712194eba658504a6b039ac5d6b3198c550148d46939af0eba0a65a",
+      "figure.svg": "282fd76dcc50f30ef4edec7dea30602aa02852730d6cdc4d854de6c05c4d200a",
+      "sizing.json": "206d5ba0849a1e77d03913414d30682b36160a2fa5e8f9d7dd600f732808f83f"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig03-pie--pie\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:14.090194+00:00",
+    "executed_at": "2026-10-23T15:57:15.570425+00:00",
+    "code_sha256": {
+      "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+      "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+      "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "feb14e9357f5630f8d0a06a39f164e33fb8826d202f9697aad8e076c2c39c6b1",
+      "pdf": "ad910d0965e477f4708abe922eb2ce74a9d70d117b0ff88224ca5071d74bd40c",
+      "svg": "282fd76dcc50f30ef4edec7dea30602aa02852730d6cdc4d854de6c05c4d200a"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig04-rose--rose": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "e86cc13d39198f6a8cc6ec46b7c5682d5d7442fbd181b0d4454c3615e02e8a2f",
+      "figure.pdf": "0f853e82eebf951c1a38f590c5f6c6d627dfff879e17b7a7d54a95f53db0de31",
+      "figure.svg": "e3bd540f40788ebe495a1597760832cc4d45cf258f66c5996c2de8e2a9b5d56d",
+      "sizing.json": "14a1f9181f327018fadcd6a22b569e4dd10750848507ca77f5299e991d1f9e0f"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig04-rose--rose\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:15.588162+00:00",
+    "executed_at": "2026-10-23T15:57:17.246899+00:00",
+    "code_sha256": {
+      "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+      "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+      "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "e86cc13d39198f6a8cc6ec46b7c5682d5d7442fbd181b0d4454c3615e02e8a2f",
+      "pdf": "e37b1035710f66d72e8183e240d05e0beaf22f2e65806599058b7ac4e3268aa5",
+      "svg": "e3bd540f40788ebe495a1597760832cc4d45cf258f66c5996c2de8e2a9b5d56d"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig05-trend--trend": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "06fe12eeb4f2049d38786d3415b7559fd18edeeff3e90dde33a9984cd2eff7dc",
+      "figure.pdf": "cbab07433722123318c00a23c20d36eacd37cc5cceff2ad15b291e251f71ce04",
+      "figure.svg": "156a2184729fb2dc88db0d21b186d86b641ace6b319e242983fced869cbd7895",
+      "sizing.json": "78ec65c5c2afd5080d3557cffc4fd1b6aed3f9a864b138d20e2bd2ef6bb45c80"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:17.263765+00:00",
+    "executed_at": "2026-10-23T15:57:18.990391+00:00",
+    "code_sha256": {
+      "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+      "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+      "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "06fe12eeb4f2049d38786d3415b7559fd18edeeff3e90dde33a9984cd2eff7dc",
+      "pdf": "9619c8e037ac62a2e54c1d428d1d52a4784cf635095e73c75a16235e967534ed",
+      "svg": "156a2184729fb2dc88db0d21b186d86b641ace6b319e242983fced869cbd7895"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig06-area--area": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "d7428e700a306ff689d04244c19f4b3bdae0dc01259178a5184b7f9ed755fcc9",
+      "figure.pdf": "63ea17f520780c49c0948c98618e03fa8fc7780102da76b90ec177286b99a8cf",
+      "figure.svg": "68712a5c4ac2e85cbb8e2da110d34568c79645b0f32ef0db7ce1ca4bcf2a4e28",
+      "sizing.json": "81d31250069659ea9a918b38348edeebd0b14f12aa5f4cdadd48c32142290e7c"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig06-area--area\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:19.024921+00:00",
+    "executed_at": "2026-10-23T15:57:20.791624+00:00",
+    "code_sha256": {
+      "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+      "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+      "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "d7428e700a306ff689d04244c19f4b3bdae0dc01259178a5184b7f9ed755fcc9",
+      "pdf": "79bd11b56271247077c14496ade6b279db00aa49e1c2217d4d875764dafd83ba",
+      "svg": "68712a5c4ac2e85cbb8e2da110d34568c79645b0f32ef0db7ce1ca4bcf2a4e28"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig07-dot--dot": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "ddabf0eed555227b0a7d25848ebc3a5aa68676f570f9d2e5b6d737044e112117",
+      "figure.pdf": "5b5f2d614cd125b806d47bf1bcad3a57976cd14fe0b26d2abb88e2eade3f884f",
+      "figure.svg": "bf973e9bf5ff9745dffbe79c32f42cbf4fa68825effacf83dfda5c289a1161c1",
+      "sizing.json": "0ff5f74a741c74a45e721727870c7e5bb93e9d623ddd47172196e81bdfb6f5df"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig07-dot--dot\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:20.810117+00:00",
+    "executed_at": "2026-10-23T15:57:22.223055+00:00",
+    "code_sha256": {
+      "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+      "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+      "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "ddabf0eed555227b0a7d25848ebc3a5aa68676f570f9d2e5b6d737044e112117",
+      "pdf": "629078d11013af94695aed9c1dd626e30ce3be2e6c9e06db6768d03398b149c7",
+      "svg": "bf973e9bf5ff9745dffbe79c32f42cbf4fa68825effacf83dfda5c289a1161c1"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig08-group-heatmap--heatmap": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "00b0698d08ebdd6b8840b500febaf9652d9881ccb857ed69eb0b5fdf1ec314b4",
+      "figure.pdf": "c80d49f69230785116cb9be4f76151b7c4a57121c330463926cfe8719aa2d77f",
+      "figure.svg": "14ed588ab02e981629a532909cb1e4ef5a71c1e59ff330904fc42f1e2baf5d8c",
+      "sizing.json": "25888a22b9b1da4fd71782723ae1f8d59b257d28f00e95369f54ac7b162ee568"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:22.241445+00:00",
+    "executed_at": "2026-10-23T15:57:28.537433+00:00",
+    "code_sha256": {
+      "code/core.R": "8481c5ed54f5da9dfea568a18839815f8d2fb0f23446bf782d64d6c115094fcc",
+      "code/panel.R": "baab431b34919f28d4cbff05570879d3208f6bbdb48cc7a86782a43c750b501e",
+      "code/render.R": "c39eceb2dd863642a1a5e6099acf60f096d348b4ee958c1165bcbeac74c66467",
+      "code/scp_group_heatmap_native.R": "eaefd5d94a4be994aaf347ccd973d40bebe586e3d398b5ce9074485fb5314fe4",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "00b0698d08ebdd6b8840b500febaf9652d9881ccb857ed69eb0b5fdf1ec314b4",
+      "pdf": "e0d0e3104fa3cb432f79ff98e6076e7c6fd7872ed26507ff5984792fc2e06858",
+      "svg": "14ed588ab02e981629a532909cb1e4ef5a71c1e59ff330904fc42f1e2baf5d8c"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig09-bar--bar": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71",
+      "figure.pdf": "a27192f9fe8bab98617559a357fa61cef998b81fea0c4b1447f4dcfa84cd6a09",
+      "figure.svg": "908e8723f68ba34a9d13509ef07da3a49a97daa01ce5e32b842a793453a5d35e",
+      "sizing.json": "f3dda51d75ec3ec87277ca869ea6c0a7b61a264e9f27587faea4126a7dda6c7a"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:28.571949+00:00",
+    "executed_at": "2026-10-23T15:57:30.636120+00:00",
+    "code_sha256": {
+      "code/core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
+      "code/panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
+      "code/render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
+      "code/scp_bar_native.R": "1d234184e817e6b983e819817b95fb6ccec26c9e00de9ee7fa2ceef2899c62b4",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71",
+      "pdf": "ea38df933284a66cc8c9c7d93e8a0f958c2cb707bd286c992a5e0dc646117c81",
+      "svg": "908e8723f68ba34a9d13509ef07da3a49a97daa01ce5e32b842a793453a5d35e"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig10-sankey--sankey": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "7b16c62001e6780ff1c4fd2bee40eb230127704717bc37b4a792afc675fcbf95",
+      "figure.pdf": "e357cdce48a3afb885cf62c8575b87af2ad986e609ae425fd1ea90eabf1a8207",
+      "figure.svg": "a2c69241e4c657baaca862296d45d26495ad49a63594a67068097608212a400e",
+      "sizing.json": "7a306d3e4a698fccfd7f0c642017e4c64b41cab3286dfaf36d80197a71d495f5"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:30.656078+00:00",
+    "executed_at": "2026-10-23T15:57:33.307910+00:00",
+    "code_sha256": {
+      "code/core.R": "95d8fd9a0b348f33e13e6c2ca80e22a8089437503b887f6c4b16929a3dc9abe7",
+      "code/panel.R": "54f79b6ff58d5ea8bf989dfa84d78971480cccbf06e92c45ec2065571ba173d4",
+      "code/render.R": "2a29f1aa642085379f7070a14b672730bb3c8f2a10800f0af54da455c5049cda",
+      "code/scp_helpers.R": "8cc7bb62299c3c9476e82b0cd0cbb2b99cfceb926859dea4516383be0f83d30f",
+      "code/scp_sankey_native.R": "e3a838078ebf296234136edbf9da8ff5459e3dd380ebdf718da70d303a4c26a8",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "7b16c62001e6780ff1c4fd2bee40eb230127704717bc37b4a792afc675fcbf95",
+      "pdf": "5e54f622bd2e29af5bced112f7cea985a086e626a828ed5771f178b459dfd638",
+      "svg": "a2c69241e4c657baaca862296d45d26495ad49a63594a67068097608212a400e"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig11-chord--chord": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+      "figure.pdf": "101fac5cf6e26e1fecd5f3a5e8d1c4bba6a9a76b147984342efb4bd009ca8505",
+      "figure.svg": "291f21f08bccc58c09ac8f51b1aba026e4b99c2effa97c37c3052c0f46e2d899",
+      "sizing.json": "95e34e41b6db83981dcdf44e2378fce0dc97b45a5f9b37a59cf55152de85c457"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig11-chord--chord\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:33.328422+00:00",
+    "executed_at": "2026-10-23T15:57:34.494685+00:00",
+    "code_sha256": {
+      "code/core.R": "f5386c52a3f80cba303c99a80d364f0917e5b09df29a0ba812a9bca5ce5853e6",
+      "code/panel.R": "98a111988068d1d2e9a65057f2cbe6217d48e66dfbb463ba92a2e24428fdf99b",
+      "code/render.R": "4098ea066d6854b7da0dcd77caa4c0ba0677d559932392cf4c97d4d109937d3b",
+      "code/scp_chord_native.R": "743a9442832a83de33eadf23aa57cc8a91966dc013fba7c4f3d09113b41dbbe3",
+      "code/scp_helpers.R": "f4a9e47280d2a1bd8704a619bc26434784bdda0d67365c3c3c4790e13b28bca7",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+      "pdf": "234ea5686293788837b7aec396e19a2fdfc0296d02fdbad89d1bacf1260382d7",
+      "svg": "291f21f08bccc58c09ac8f51b1aba026e4b99c2effa97c37c3052c0f46e2d899"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig12-venn--venn": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "a5bf19955f2efc74b28c1133945c886cf8f8370ce179fb2582f530c6d96b6119",
+      "figure.pdf": "6e34818fef3a0bc16122c363c87654d0073c9326e1f0408296d83089aa1f78e0",
+      "figure.svg": "c0b29fd1df3dd1474d6c76dd0a2c80294fb501d8d6cf60d6b1fb1180e3ddac5c",
+      "sizing.json": "4ceb449e247335250a968df5b159c4db8152a58c4d1b3b0d67cf4bd104c03acf"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig12-venn--venn\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:34.518865+00:00",
+    "executed_at": "2026-10-23T15:57:39.080116+00:00",
+    "code_sha256": {
+      "code/core.R": "5e3bdcd1a12d0441374b2335cddbbccf1140051f8dacd7fbca242f9ab955e9dd",
+      "code/panel.R": "ee6b4c5be744b002c870d5c79a0e2c78b3ccefec97fd5ebcf94b4fd09d09d2f7",
+      "code/render.R": "3216273c5228e0c5b6a4b10fb168144e65a7e84cf170345a51a897491ab081e5",
+      "code/scp_helpers.R": "3e210b55d1a3e5243bcc614fbc0a269bc49ad4fbead0d490ca19c11fb15495b3",
+      "code/scp_venn_native.R": "3c83298e77b72521d5fa6fcadbc9c784b0cc96dd51efe0755307dd40c0c0e760",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "a5bf19955f2efc74b28c1133945c886cf8f8370ce179fb2582f530c6d96b6119",
+      "pdf": "eac5e3c30c4119c3955e836163c6861197ff8b169fa1a02ac0518ea7b6d500dc",
+      "svg": "c0b29fd1df3dd1474d6c76dd0a2c80294fb501d8d6cf60d6b1fb1180e3ddac5c"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig13-upset--upset": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+      "figure.pdf": "6430f80c7c3b5248fdab2523f0e59dd2d8639cc3fe0197fd23f88ab0915ac594",
+      "figure.svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7",
+      "sizing.json": "821d8983ee2d64f1b4a6a2bcffff2f78227fcf646f69e64929c7ffbdd0227884"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig13-upset--upset\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:39.100447+00:00",
+    "executed_at": "2026-10-23T15:57:41.241560+00:00",
+    "code_sha256": {
+      "code/core.R": "b95be47d5b7e3c3a9ba0b1cf42c027b95a361aa115ac12e58151a8c8983ba41f",
+      "code/panel.R": "e915f513e83ba02428eca18fedec09156c543d5d0a6688eb2bd03632e3ca8159",
+      "code/render.R": "443420cb3c0f174739b8ebf3cd45abb603e473b9c313df2468ad6e83619d91cc",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/scp_upset_native.R": "0f62fbfac5372a1954e547e60777d92f5ef2be1b85eb9608565d9bfa85cd3a5d",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+      "pdf": "f38a8cebf21d6f8f9cd1b2bf834dcbbd498b84940c8448b6e95f33666e54605a",
+      "svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig14-feature-heatmap--heatmap": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518",
+      "figure.pdf": "2d3d4eb98abea7be66c864807200c3c7d2f9f9b216d7d18d0c418572f0453f9e",
+      "figure.svg": "41c1932b7d5294b69595c511b371acf4644a520d9813645699de3758b87deb34",
+      "sizing.json": "2506209cc3d18134ea3f5d9ab2bb841ddb5ecc5f4c1a8741344a18c38f7552d3"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:41.265393+00:00",
+    "executed_at": "2026-10-23T15:57:45.124071+00:00",
+    "code_sha256": {
+      "code/core.R": "b5763a8f02b2bd61d8b63bb43b3c1d845f7b70d4da25179a7f98142edfb1111c",
+      "code/panel.R": "7cc1f0e93173de05000b0654efa43f2fec513d969ec0a0bc0834efe53dacb4e1",
+      "code/render.R": "10c3253cd984e3e643c7dce6109c455c662be52a31154591e52ea0ad6874385a",
+      "code/scp_feature_heatmap_native.R": "6f331665a7e97d237c17e3c76fc38a6ad1e5cc4d900c93cdc66bc45cbbe06b45",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518",
+      "pdf": "1a821a9790821d5edb4a90fc8fb9016c5ce8c44ffb8d6a15f50900a32ecaff8b",
+      "svg": "41c1932b7d5294b69595c511b371acf4644a520d9813645699de3758b87deb34"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
+      "figure.pdf": "e72c2c419a5fb35da7e01b915eb4eb576f2dab000f591e05f61c4bace7942944",
+      "figure.svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e",
+      "sizing.json": "e34ab4450959f32e655a52391090967250ca02ed0f876adf9593ca77cb0ad03c"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:45.143963+00:00",
+    "executed_at": "2026-10-23T15:57:48.457600+00:00",
+    "code_sha256": {
+      "code/core.R": "d10f72feb25ea7f8542ceff9eb6eada98979790570734eb8fba1098a327fc45a",
+      "code/panel.R": "99858de32de88b1489805a6752500528e88c532d842e41ad6ff41ae86a7f4b7b",
+      "code/render.R": "5c84422c0f495e758f32c85568998eb0301333892f716330f2ece17f5505599d",
+      "code/scp_cell-cor-heatmap_native.R": "c0aea1e936644f9e9b54e56d54aef9915ec2add0c20a3eee2c2dae007a492b05",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
+      "pdf": "548877d7a797c352ce2cc3ba0eff1f79630977b06fcb302d32fb3e337caa099a",
+      "svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  },
+  "2026-10-22-scp-example__fig16-cell-density--ridge": {
+    "state": "passed",
+    "exit_code": 0,
+    "outputs": {
+      "figure.png": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+      "figure.pdf": "200e6591bf382a76cdb8ff69037894c37ef4d987a511dfb18f23b611394a07ea",
+      "figure.svg": "be821e733029f39a3023714de4f9b9387ef33adb7a81c4b13867cd27f7870e59",
+      "sizing.json": "e20b84512c9567f2c1754e8f5ec08dde7e842fccd97d7a07685bf1472f253ddf"
+    },
+    "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example\\style.json",
+    "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge",
+    "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\code",
+    "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example",
+    "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\out",
+    "working_directory": "E:/research-wiki-env/tmp",
+    "started_at": "2026-10-23T15:57:48.481489+00:00",
+    "executed_at": "2026-10-23T15:57:50.121871+00:00",
+    "code_sha256": {
+      "code/core.R": "287e17caf25c25e8179c70fe8cd32a70d2f52ff25327f702227214c92e0767ca",
+      "code/panel.R": "82cd2decee92015b0a788bf8882c8362c8aee688aa0e1e470def1427fc740702",
+      "code/render.R": "cc306e09d897bea9a5b2825e6907576a51cef7383e133374532d55bfb9c853f7",
+      "code/scp_cell-density_native.R": "cd99401b0165930d2f43d99431b6c62a80b8b02c04203340501fa73dd4b4e055",
+      "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+      "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+    },
+    "previous_outputs": {
+      "png": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+      "pdf": "4846ae6f433f77c45a6a962318827f199c25f04ca95754a2c3eb54bd4f870e25",
+      "svg": "be821e733029f39a3023714de4f9b9387ef33adb7a81c4b13867cd27f7870e59"
+    },
+    "same_as_previous": {
+      "png": true,
+      "pdf": false,
+      "svg": true
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "author_confirmation": "two new templates ready through mark-ready",
+  "source_statuses_preserved": [
+    "pending_template",
+    "pending_template"
+  ],
+  "source_template_progress": "complete",
+  "api_queued": [],
+  "cli_and_api_same": true,
+  "gallery_files_unchanged": 249,
+  "all_existing_non_markdown_wiki_assets_unchanged": true,
+  "old_author_blocks_checked": 16,
+  "hosts": [
+    {
+      "host": ".agents",
+      "files_verified": 266,
+      "cli_pending": 0
+    },
+    {
+      "host": ".codex",
+      "files_verified": 266,
+      "cli_pending": 0
+    },
+    {
+      "host": ".claude",
+      "files_verified": 266,
+      "cli_pending": 0
+    }
+  ],
+  "recommendations": {
+    "密度散点": {
+      "confirmed_template_found": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+      "all_candidates_ready": true
+    },
+    "箱线": {
+      "confirmed_template_found": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+      "all_candidates_ready": true
+    }
+  },
+  "scope": "Queue and state/asset preservation; no new scientific analysis or layout signoff"
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "GraphPlot real 50-cell engineering fixture; original/native renderer fidelity only, not a project biological conclusion or author signoff",
+  "evidence": "codex-visual-probe-20261026T073451.json",
+  "reviewer": "Codex image inspection",
+  "curved_image": "E:/research-wiki-env/work/codex-scp-visual-probe-20261026T073451/graph-curved.png",
+  "observed": [
+    "Curved weighted edges and node groups are visible; legend and axis ticks are not clipped",
+    "Color mapping, node geometry, layout, and edge curvature match original pixels exactly",
+    "Source defaults omit coordinate axis titles; downstream project caption must identify that these coordinates are pre-existing UMAP positions",
+    "Fixture is an explicitly prepared subset of real pancreas observations, not evidence for any glaucoma/cancer inference"
+  ],
+  "author_signoff": "pending",
+  "other_branches": "not_inherited"
+}

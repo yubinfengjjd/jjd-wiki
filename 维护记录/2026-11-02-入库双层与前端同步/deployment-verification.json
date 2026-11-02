@@ -1,0 +1,104 @@
+[
+  {
+    "host": ".agents",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "SKILL.md"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-CI1NFvV5.js"
+    ]
+  },
+  {
+    "host": ".codex",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "SKILL.md"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-CI1NFvV5.js"
+    ]
+  },
+  {
+    "host": ".claude",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "SKILL.md"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-CI1NFvV5.js"
+    ]
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "SKILL.md"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-CI1NFvV5.js"
+    ]
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "SKILL.md"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-CI1NFvV5.js"
+    ]
+  },
+  {
+    "host": ".kiro",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css",
+      "app/index.html",
+      "assets/AGENTS.md",
+      "SKILL.md"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-BjhdQIal.js",
+      "app/assets/index-B_gnI0je.css",
+      "app/assets/index-CI1NFvV5.js"
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "label": "devin-full-pass4",
+  "pid": 29800,
+  "cwd": "E:\\research-wiki-env\\work\\scp-full-ingest-20261025",
+  "status": "failed",
+  "tool_events": 246,
+  "message_chars": 2367,
+  "updated_at": "2026-10-25T16:18:45Z",
+  "load_session_supported": true,
+  "last_tool": "Ran python.exe, ., scp-full-ingest-20261025",
+  "session_id": "wakeful-ravioli",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    51616,
+    16164,
+    23460,
+    29980,
+    31656,
+    50140,
+    39548,
+    47612,
+    47604,
+    51656,
+    10440,
+    53084,
+    50480,
+    51500,
+    19756,
+    13224,
+    48020,
+    44832,
+    46580,
+    19980,
+    19732,
+    46860,
+    19004,
+    48232,
+    52328,
+    45400,
+    35568,
+    50692,
+    51228,
+    17060,
+    44508,
+    54132,
+    45340,
+    51668,
+    43252,
+    50564,
+    23696,
+    16872,
+    49584,
+    17308,
+    53360,
+    47156,
+    46236,
+    46460,
+    52628,
+    52052,
+    2792,
+    49912,
+    46328,
+    40468,
+    46480,
+    49340
+  ],
+  "error": "ACP stdout closed",
+  "partial_result": "E:\\research-wiki\\维护记录\\2026-10-25-SCP全库入库\\devin-full-pass4-result-partial.md"
+}

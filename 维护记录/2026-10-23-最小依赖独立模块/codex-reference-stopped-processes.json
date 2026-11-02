@@ -1,0 +1,86 @@
+[
+  {
+    "ProcessId": 31832,
+    "ParentProcessId": 28452,
+    "Name": "Rscript.exe",
+    "CommandLine": "\"D:\\R-4.5.0\\bin\\Rscript.exe\" --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\codex-reference.R"
+  },
+  {
+    "ProcessId": 27308,
+    "ParentProcessId": 31832,
+    "Name": "cmd.exe",
+    "CommandLine": "C:\\WINDOWS\\system32\\cmd.exe /c \"\"D:\\R-4.5.0\\bin\\x64\\Rscript.exe\" \"--vanilla\" \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\codex-reference.R\"\""
+  },
+  {
+    "ProcessId": 27432,
+    "ParentProcessId": 27308,
+    "Name": "Rscript.exe",
+    "CommandLine": "\"D:\\R-4.5.0\\bin\\x64\\Rscript.exe\"  \"--vanilla\" \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\codex-reference.R\""
+  },
+  {
+    "ProcessId": 32256,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 26200,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 29316,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 27700,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 30536,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 30752,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 24464,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 19280,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 30724,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 28472,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  },
+  {
+    "ProcessId": 30704,
+    "ParentProcessId": 27432,
+    "Name": "Rscript.exe",
+    "CommandLine": "D:\\R-4.5.0\\bin\\x64\\Rscript.exe D:/R-4.5.0/library/BiocParallel/snow/RSOCKnode.R MASTER=localhost PORT=11137 OUT=/dev/null SNOWLIB=D:/R-4.5.0/library/BiocParallel"
+  }
+]

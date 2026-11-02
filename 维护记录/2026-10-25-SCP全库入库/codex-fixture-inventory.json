@@ -1,0 +1,35 @@
+{
+  "pancreas_sub": {
+    "file": "pancreas_sub.rda",
+    "dimensions": [15958, 1000],
+    "assays": ["RNA", "spliced", "unspliced"],
+    "reductions": ["PCA", "UMAP"],
+    "graphs": {},
+    "metadata": ["orig.ident", "nCount_RNA", "nFeature_RNA", "S_score", "G2M_score", "nCount_spliced", "nFeature_spliced", "nCount_unspliced", "nFeature_unspliced", "CellType", "SubCellType", "Phase"],
+    "tools": {},
+    "misc": ["clusters_coarse_colors", "clusters_colors", "day_colors", "pca"],
+    "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744"
+  },
+  "ifnb_sub": {
+    "file": "ifnb_sub.rda",
+    "dimensions": [13215, 2000],
+    "assays": "RNA",
+    "reductions": {},
+    "graphs": {},
+    "metadata": ["orig.ident", "nCount_RNA", "nFeature_RNA", "stim", "seurat_annotations"],
+    "tools": {},
+    "misc": {},
+    "sha256": "e4e6b3b8ea9f93507953874d4c9c40b8651423fee09f1b8009388d83a3a2e4f2"
+  },
+  "panc8_sub": {
+    "file": "panc8_sub.rda",
+    "dimensions": [13716, 1600],
+    "assays": "RNA",
+    "reductions": {},
+    "graphs": {},
+    "metadata": ["orig.ident", "nCount_RNA", "nFeature_RNA", "tech", "replicate", "assigned_cluster", "celltype", "dataset"],
+    "tools": {},
+    "misc": {},
+    "sha256": "d3f7dded2660ecc430157b08e795edc75fed2b724caba248f1a4cbf62f8ce83b"
+  }
+}

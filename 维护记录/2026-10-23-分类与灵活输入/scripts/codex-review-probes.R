@@ -1,0 +1,8 @@
+source('E:/research-wiki/开发/staged/research-wiki/assets/input_binding.R', encoding='UTF-8')
+cols <- list(group=list(type='str'), feature=list(type='str'))
+dup <- tryCatch(bind_table(data.frame(feature='CD3'), cols, list(group='feature')),error=function(e) conditionMessage(e))
+cat('implicit consumer:'); print(if(is.list(dup)) dup$rows else dup)
+emptykey <- tryCatch(.reshape_binding(c('id','grp','value'),data.frame(id=c('',''),grp=c('A','B'),value=c('1','2')), list(op='pivot',index='id',columns='grp',values='value')),error=function(e) conditionMessage(e))
+cat('pivot empty string key:');print(if(is.list(emptykey)) emptykey$rows else emptykey)
+embedded <- tryCatch(.reshape_binding(c('a','b','grp','value'),data.frame(a='x\ry',b='z',grp='A',value='2'), list(op='pivot',index=c('a','b'),columns='grp',values='value')),error=function(e) conditionMessage(e))
+cat('pivot embedded CR key:');print(if(is.list(embedded)) embedded$rows else embedded)

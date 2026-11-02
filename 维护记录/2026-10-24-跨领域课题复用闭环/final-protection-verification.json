@@ -1,0 +1,49 @@
+{
+  "sources": {
+    "checked": 36,
+    "changed_or_missing": []
+  },
+  "project": {
+    "checked": 25,
+    "changed_or_missing": []
+  },
+  "development": {
+    "checked": 329,
+    "expected_reviewed_source_changes": [
+      "staged/research-wiki/SKILL.md",
+      "staged/research-wiki/app/index.html",
+      "staged/research-wiki/app/assets/GraphView-Bh9hK9Zx.js",
+      "staged/research-wiki/app/assets/index-BzlcxxQc.js",
+      "staged/research-wiki/assets/AGENTS.md",
+      "staged/research-wiki/references/llm-wiki-mode.md",
+      "staged/research-wiki/references/minimal-runtime.md",
+      "staged/research-wiki/references/project-reuse.md",
+      "staged/research-wiki/rwiki/cli.py",
+      "staged/research-wiki/rwiki/method_implementations.py",
+      "staged/research-wiki/rwiki/runtime_contract.py",
+      "staged/research-wiki/rwiki/server.py",
+      "staged/research-wiki/rwiki/store.py",
+      "staged/research-wiki/rwiki/usage.py",
+      "staged/research-wiki/tests/test_server.py",
+      "frontend/src/api.ts",
+      "frontend/src/components.tsx",
+      "frontend/src/figureModels.ts",
+      "frontend/src/methods.ts",
+      "frontend/src/views/MethodOverview.tsx",
+      "frontend/src/views/PageView.tsx",
+      "frontend/tests/methods.test.tsx"
+    ],
+    "changed_or_missing": [],
+    "note": "Worktree changed only by reviewed allowlist; original staged index preserved, no reset/stage/commit."
+  },
+  "gallery_source_and_metadata": {
+    "checked": 146,
+    "changed_or_missing": []
+  },
+  "author_fields_and_marker_fragments": {
+    "checked": 101,
+    "actual_line_delimited_user_blocks": 100,
+    "note": "Initial baseline includes rule-document marker examples; do not count them as author blocks.",
+    "changed_or_missing": []
+  }
+}

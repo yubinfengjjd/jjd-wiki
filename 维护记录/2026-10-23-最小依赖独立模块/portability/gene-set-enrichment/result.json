@@ -1,0 +1,43 @@
+{
+  "method": "gene-set-enrichment",
+  "state": "passed",
+  "error": {},
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" gene-set-enrichment \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-enrichment\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\gene-set-enrichment\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/result-input.rds",
+  "case": {
+    "label": "ORA custom TERM2GENE",
+    "parameters": {
+      "parameters": {
+        "geneID_groups": {},
+        "IDtype": "symbol",
+        "species": "Homo_sapiens",
+        "TERM2GENE": {
+          "term": ["T1", "T1", "T1", "T2", "T2", "T2"],
+          "gene": ["Ins1", "Gcg", "Sst", "Krt19", "Krt8", "Epcam"]
+        },
+        "TERM2NAME": {
+          "term": ["T1", "T2"],
+          "name": ["Endocrine", "Ductal"]
+        },
+        "minGSSize": 1,
+        "maxGSSize": 500,
+        "db_update": false,
+        "BPPARAM": "<SerialParam>",
+        "seed": 11
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "a2f8d72eaa3cf43c2db958ce14f2296dc01ea8cc09fadf17a1fcfa03164c8f3f",
+    "enrichment_native.R": "49f0489f90936f43ca58b4d5135eda4694caa0fdc8892f9aa58da293bb24d4c7"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:01:23 UTC",
+  "executed_at": "2026-10-23 16:01:28 UTC"
+}

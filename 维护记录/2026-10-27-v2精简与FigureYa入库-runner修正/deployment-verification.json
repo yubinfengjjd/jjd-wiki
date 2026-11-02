@@ -1,0 +1,56 @@
+[
+  {
+    "host": ".agents",
+    "verified": 337,
+    "changed": [
+      "assets/rmd_knit_runner.R",
+      "tests/test_v2_sources_recipes.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".codex",
+    "verified": 337,
+    "changed": [
+      "assets/rmd_knit_runner.R",
+      "tests/test_v2_sources_recipes.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".claude",
+    "verified": 337,
+    "changed": [
+      "assets/rmd_knit_runner.R",
+      "tests/test_v2_sources_recipes.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 337,
+    "changed": [
+      "assets/rmd_knit_runner.R",
+      "tests/test_v2_sources_recipes.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 337,
+    "changed": [
+      "assets/rmd_knit_runner.R",
+      "tests/test_v2_sources_recipes.py"
+    ],
+    "stale_removed": []
+  },
+  {
+    "host": ".kiro",
+    "verified": 337,
+    "changed": [
+      "assets/rmd_knit_runner.R",
+      "tests/test_v2_sources_recipes.py"
+    ],
+    "stale_removed": []
+  }
+]

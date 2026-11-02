@@ -1,0 +1,14 @@
+{
+  "original": 313,
+  "removed": 182,
+  "remaining": 131,
+  "recipes": 15,
+  "templates": 0,
+  "scenarios": 7,
+  "protected_pages_checked": 197,
+  "lint_errors": 0,
+  "lint_warnings": 29,
+  "author_blocks_preserved": true,
+  "decisions_and_source_catalogs_preserved": true,
+  "recipe_pages_preserved": true
+}

@@ -1,0 +1,19 @@
+{
+  "scope": "实际 Codex CLI/Claude Code CLI 新上下文只读夹具；不执行真实研究",
+  "codex": {
+    "completed": true,
+    "first_run": "240s timeout, retained as codex-first-timeout.jsonl",
+    "rerun": "compact bounded read-only review completed",
+    "core_rules_review": "方法/图样状态、语义映射、缺材料、有限家族推广、回存需确认均正确识别",
+    "full_project_context_verified": false,
+    "limitation": "精简复核报告 README/context 回显截断，未完整核验课题定义；不记为完整课题端到端验收",
+    "host_warning": "模型清单刷新超时；会话仍完成"
+  },
+  "claude_code": {
+    "completed": true,
+    "core_rules_review": "读课题必要材料后区分当前可做/补材料；列名映射、待模板化、代码范围、单位未知先问、回存需确认均明确",
+    "launcher": "installed claude.cmd; powershell5 ps1 execution policy unchanged",
+    "scope_note": "CLI 当前配置模型的只读回答，未做真实课题统计有效性验证"
+  },
+  "source_protection": "readonly host runs; no proposed mapping or algorithm persisted into formal Wiki"
+}

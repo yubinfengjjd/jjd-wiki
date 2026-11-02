@@ -1,0 +1,79 @@
+{
+  "label": "devin-dot-review2",
+  "pid": 23672,
+  "cwd": "E:\\research-wiki-env\\work\\scp-ingestion-20261025",
+  "status": "failed",
+  "tool_events": 385,
+  "message_chars": 1582,
+  "updated_at": "2026-10-25T12:26:12Z",
+  "load_session_supported": true,
+  "last_tool": "Ran python.exe, wiki.py, $W",
+  "session_id": "valley-handsaw",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    4924,
+    40544,
+    40224,
+    35696,
+    25084,
+    35104,
+    38932,
+    32556,
+    40864,
+    28224,
+    39824,
+    40516,
+    31636,
+    38628,
+    39448,
+    38468,
+    39744,
+    40736,
+    37968,
+    39844,
+    39952,
+    38716,
+    40064,
+    21352,
+    39076,
+    38092,
+    38360,
+    39412,
+    38632,
+    38924,
+    38016,
+    41724,
+    39620,
+    40520,
+    39892,
+    38384,
+    35740,
+    41540,
+    17176,
+    10656
+  ],
+  "error": "ACP request exceeded bounded wait",
+  "partial_result": "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\devin-dot-review2-result-partial.md"
+}

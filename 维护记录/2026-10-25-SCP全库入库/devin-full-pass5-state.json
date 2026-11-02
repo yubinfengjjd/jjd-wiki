@@ -1,0 +1,91 @@
+{
+  "label": "devin-full-pass5",
+  "pid": 50336,
+  "cwd": "E:\\research-wiki-env\\work\\scp-full-ingest-20261025",
+  "status": "interrupted_process_absent",
+  "tool_events": 305,
+  "message_chars": 3233,
+  "updated_at": "2026-10-25T16:49:32Z",
+  "load_session_supported": true,
+  "last_tool": "Ran Rscript.exe",
+  "session_id": "wakeful-ravioli",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    47132,
+    22836,
+    46556,
+    45220,
+    48300,
+    46588,
+    17972,
+    42260,
+    45480,
+    6376,
+    50372,
+    40272,
+    40600,
+    49820,
+    47752,
+    17448,
+    1644,
+    45476,
+    54016,
+    19308,
+    54508,
+    48832,
+    48164,
+    44376,
+    31492,
+    54244,
+    47480,
+    43252,
+    54012,
+    53044,
+    14488,
+    36392,
+    19404,
+    52676,
+    53096,
+    13236,
+    47008,
+    50812,
+    18628,
+    19264,
+    42276,
+    19060,
+    40352,
+    52132,
+    47700,
+    10652,
+    53652,
+    14040,
+    12568,
+    52692,
+    10304,
+    53100,
+    48092
+  ],
+  "review_note": "No matching ACP at continuation; no returned result. Retain actual files and logs, not completion."
+}

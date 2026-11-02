@@ -1,0 +1,46 @@
+{
+  "source": {
+    "exit": 0,
+    "log": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\codex-review1-formal-source.log",
+    "tail": [
+      "direct_source=PASS",
+      "nested_project_source=PASS"
+    ]
+  },
+  "multi-module": {
+    "exit": 0,
+    "log": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\codex-review1-formal-multi-module.log",
+    "tail": [
+      "... 0 low-UMI cells ",
+      "... 0 low-gene cells ",
+      "... 0 high-mito cells ",
+      "... 0 high-ribo cells ",
+      "... 0 ribo_mito_ratio outlier cells ",
+      "... 0 species-contaminated cells ",
+      ">>> Remained cells after filtering: 80 ",
+      "load_QC_then_scoring_then_call_QC=PASS"
+    ]
+  },
+  "qc": {
+    "exit": 0,
+    "log": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\codex-review1-formal-qc.log",
+    "tail": [
+      "... 0 low-UMI cells ",
+      "... 0 low-gene cells ",
+      "... 0 high-mito cells ",
+      "... 0 high-ribo cells ",
+      "... 0 ribo_mito_ratio outlier cells ",
+      "... 0 species-contaminated cells ",
+      ">>> Remained cells after filtering: 80 ",
+      "USER_PREATTACHED_PACKAGES_PRESERVED=PASS"
+    ]
+  },
+  "cell-quality-control-sha256": {
+    "analysis.R": "7c362e7f499881c770c87f37d75b3da1751cfd1c73c0b4d27e9ea899cacbbb0d",
+    "cellqc_native.R": "212cb03dc15114bd24ecbe8074993e810d02645f858030b3670e6aa8cf6035dd"
+  },
+  "gene-set-scoring-sha256": {
+    "analysis.R": "7a2239615e2f3c3553b7499576fb2c656450d345e7c9cc1ad7c2da56fd04373e",
+    "scoring_native.R": "6ec1cd1c76f8a7fe6d34c039c40c668d0de8def68f0fd0bf7fdd705302b39046"
+  }
+}

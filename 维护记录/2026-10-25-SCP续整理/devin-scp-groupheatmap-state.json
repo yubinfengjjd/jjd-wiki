@@ -1,0 +1,47 @@
+{
+  "label": "devin-scp-groupheatmap",
+  "pid": 552,
+  "cwd": "E:\\research-wiki-env\\work\\scp-ingestion-20261025",
+  "status": "failed",
+  "tool_events": 104,
+  "message_chars": 958,
+  "updated_at": "2026-10-25T09:07:09Z",
+  "load_session_supported": true,
+  "last_tool": "Ran powershell",
+  "session_id": "harvest-speedwell",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    32744,
+    33644,
+    32276,
+    30584,
+    32420,
+    29888,
+    22016,
+    31380
+  ],
+  "error": "ACP stdout closed",
+  "partial_result": "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\devin-scp-groupheatmap-result-partial.md"
+}

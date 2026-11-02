@@ -1,0 +1,33 @@
+{
+  "method": "batch-integration-harmony",
+  "state": "not_run",
+  "error": "Missing R dependency: harmony; automatic installation is disabled",
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" batch-integration-harmony \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\batch-integration-harmony\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration-harmony/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\batch-integration-harmony\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration-harmony/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration-harmony/result-input.rds",
+  "case": {
+    "label": "Harmony integration",
+    "parameters": {
+      "parameters": {
+        "batch": "batch",
+        "nHVF": 300,
+        "linear_reduction_dims": 20,
+        "nonlinear_reduction_dims": 2,
+        "cluster_resolution": 0.5,
+        "seed": 11
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "4748d53b33ccdbc6b7edb50b0c6ee720c9d203fcc5e3e8225484119ac3036b77",
+    "integration_native.R": "326d164fdb00dc28dfbb11867ca28203bd52d3fb0997c307b671092beb7c2f2f"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:00:55 UTC",
+  "executed_at": "2026-10-23 16:00:58 UTC"
+}

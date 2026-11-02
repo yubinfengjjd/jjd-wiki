@@ -1,0 +1,7 @@
+plot_type: rose
+stat_type: count
+position: dodge
+label: TRUE
+size_in: 8x6
+dpi: 150
+png_md5: 5c7f1beda5a9c86588cd805159b791c3

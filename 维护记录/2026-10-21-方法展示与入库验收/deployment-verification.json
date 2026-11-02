@@ -1,0 +1,68 @@
+[
+  {
+    "host": ".agents",
+    "skill": "research-wiki",
+    "files_verified": 266,
+    "changed": [
+      "app/index.html",
+      "app/assets/index-CA0qIEfr.js",
+      "app/assets/index-Dad9Ag9i.css"
+    ],
+    "old_bundles_backed_up": [
+      "app/assets/index-ClNRLNAd.css",
+      "app/assets/index-h2Ycs2Uc.js"
+    ]
+  },
+  {
+    "host": ".agents",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "host": ".codex",
+    "skill": "research-wiki",
+    "files_verified": 266,
+    "changed": [
+      "app/index.html",
+      "app/assets/index-CA0qIEfr.js",
+      "app/assets/index-Dad9Ag9i.css"
+    ],
+    "old_bundles_backed_up": [
+      "app/assets/index-ClNRLNAd.css",
+      "app/assets/index-h2Ycs2Uc.js"
+    ]
+  },
+  {
+    "host": ".codex",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "host": ".claude",
+    "skill": "research-wiki",
+    "files_verified": 266,
+    "changed": [
+      "app/index.html",
+      "app/assets/index-CA0qIEfr.js",
+      "app/assets/index-Dad9Ag9i.css"
+    ],
+    "old_bundles_backed_up": [
+      "app/assets/index-ClNRLNAd.css",
+      "app/assets/index-h2Ycs2Uc.js"
+    ]
+  },
+  {
+    "host": ".claude",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  }
+]

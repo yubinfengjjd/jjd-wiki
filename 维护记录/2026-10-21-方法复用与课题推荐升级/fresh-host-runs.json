@@ -1,0 +1,12 @@
+[
+  {
+    "host": ".codex",
+    "timeout_seconds": 240
+  },
+  {
+    "host": ".claude",
+    "returncode": 1,
+    "stdout_chars": 0,
+    "stderr_chars": 493
+  }
+]

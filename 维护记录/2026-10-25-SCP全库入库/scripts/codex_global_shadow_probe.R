@@ -1,0 +1,18 @@
+# Concrete namespace-pollution test using observed counts; not an algorithm receipt.
+out <- 'E:/research-wiki-env/work/codex-scp-global-shadow'
+dir.create(out,recursive=TRUE,showWarnings=FALSE)
+x <- readRDS('E:/research-wiki/维护记录/2026-10-25-SCP全库入库/native-oracles/real-counts-subset.rds')
+before <- digest::digest(x,algo='sha256')
+e <- new.env(parent=baseenv())
+source('E:/research-wiki-env/work/scp-full-ingest-20261025/coverage/modules/runmds/code/module.R',local=e)
+run <- function()tryCatch({ y<-e$RunMDS(x,assay='RNA',nmds=3,verbose=FALSE);list(state='called',size=dim(y@cell.embeddings)) },error=function(e)list(state='error',error=conditionMessage(e)))
+r <- list(scope='Public MDS robustness to ordinary caller variables; no source algorithm modification',clean=run())
+stopifnot(!exists('matrix',envir=globalenv(),inherits=FALSE))
+assign('matrix',Matrix::sparseMatrix(i=c(1,2),j=c(1,2),x=c(1,2),dims=c(2,2)),envir=globalenv())
+r$shadow_class <- class(matrix)
+r$with_user_matrix_variable <- run()
+rm('matrix',envir=globalenv())
+r$after_removal <- run()
+r$input_unchanged <- identical(before,digest::digest(x,algo='sha256'))
+jsonlite::write_json(r,file.path(out,'result.json'),auto_unbox=TRUE,pretty=TRUE)
+cat(jsonlite::toJSON(r,auto_unbox=TRUE),'\n')

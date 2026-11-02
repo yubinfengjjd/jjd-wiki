@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "tool": "kiro_browser_check.py",
+  "checked_at": "2026-10-26T14:52:25.719208+00:00",
+  "browser": {
+    "executable": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "command": [
+      "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "--headless=new",
+      "--remote-debugging-port=57976",
+      "--remote-allow-origins=*",
+      "--user-data-dir=E:\\research-wiki-env\\tmp\\kiro-scp-browser-g7tc8jgl",
+      "--window-size=1200,900",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--disable-extensions",
+      "--allow-file-access-from-files",
+      "--enable-unsafe-swiftshader",
+      "about:blank"
+    ],
+    "version": "Edg/156.0.4314.42",
+    "terminated": true,
+    "remaining_pids": []
+  },
+  "url": "file:///E:/research-wiki-env/work/codex-scp-native-3d/cell.html",
+  "window": [
+    1200,
+    900
+  ],
+  "camera": "plotly default (no interaction before screenshot)",
+  "load_event": true,
+  "page": {
+    "plotly_found": true,
+    "title": "plotly",
+    "n_traces": 5,
+    "trace_names": [
+      "Ductal",
+      "Ngn3 low EP",
+      "Ngn3 high EP",
+      "Pre-endocrine",
+      "Endocrine"
+    ],
+    "trace_types": [
+      "scatter3d",
+      "scatter3d",
+      "scatter3d",
+      "scatter3d",
+      "scatter3d"
+    ],
+    "n_canvas": 1,
+    "webgl": true,
+    "layout_ready": true,
+    "legend_items": 5
+  },
+  "screenshot": {
+    "path": "E:/research-wiki-env/work/kiro-scp-native/v8-3d/cell-native-browser.png",
+    "sha256": "eff0b881e5c4de137e810a65bc12220df21822ac91cf28f2c9f666c22d2050ff",
+    "size": [
+      1200,
+      900
+    ],
+    "distinct_colors": 757,
+    "note": "截图仅为辅助证据/来源参考图；交互验收以下方实际浏览器检查为准"
+  },
+  "legend_toggle": {
+    "visible_initial": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "legend_item": {
+      "x": 822.9375,
+      "y": 279.5,
+      "w": 123.875,
+      "h": 19,
+      "text": "Ductal"
+    },
+    "visible_after_hide_click": [
+      "legendonly",
+      true,
+      true,
+      true,
+      true
+    ],
+    "hidden_screenshot": {
+      "path": "E:/research-wiki-env/work/kiro-scp-native/v8-3d/cell-native-browser-legend-hidden.png",
+      "sha256": "8c088b19ef81f2581cbddd0248c49508b37c78ba4bb12007ba4f3d8d2cd9ab13",
+      "size": [
+        1200,
+        900
+      ],
+      "distinct_colors": 675
+    },
+    "visible_after_restore_click": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "hide_ok": true,
+    "restore_ok": true
+  },
+  "console": [
+    {
+      "level": "warning",
+      "text": "Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently"
+    }
+  ],
+  "state": "completed",
+  "target_file": {
+    "path": "E:/research-wiki-env/work/codex-scp-native-3d/cell.html",
+    "sha256": "0f6543cc3a7bce0be9a79abfa08d75072d62ffcc99e880aae851369e227b13e9"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "check": "density: actual old renderer vs functions, coordinates/RGB/fit/histograms or dots/jitter/means/boxes equivalent within 1e-12",
+      "status": "PASS"
+    },
+    {
+      "check": "density: no input mutation; copied package works from unrelated cwd",
+      "status": "PASS"
+    },
+    {
+      "check": "density: renamed columns and draw adapter preserve graphical values",
+      "status": "PASS"
+    },
+    {
+      "check": "density: different data size/categories/range accepted, output inspected by numeric artists",
+      "status": "PASS"
+    },
+    {
+      "check": "density: missing columns and nonfinite values rejected explicitly",
+      "status": "PASS"
+    },
+    {
+      "check": "boxplot: actual old renderer vs functions, coordinates/RGB/fit/histograms or dots/jitter/means/boxes equivalent within 1e-12",
+      "status": "PASS"
+    },
+    {
+      "check": "boxplot: no input mutation; copied package works from unrelated cwd",
+      "status": "PASS"
+    },
+    {
+      "check": "boxplot: renamed columns and draw adapter preserve graphical values",
+      "status": "PASS"
+    },
+    {
+      "check": "boxplot: different data size/categories/range accepted, output inspected by numeric artists",
+      "status": "PASS"
+    },
+    {
+      "check": "boxplot: missing columns and nonfinite values rejected explicitly",
+      "status": "PASS"
+    },
+    {
+      "check": "Old two entries unchanged byte-for-byte (all baseline files)",
+      "status": "PASS"
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 0
+  },
+  "scope": "Graphical equivalence and portable Python API only. No original-data, model, OOF, statistical or clinical validation. Actual wiki render pending author signoff; draw adapter tested directly.",
+  "deliberate_visual_changes": "Single-panel canvas and larger fonts/marks; density y max109 vs old group110; right count axis old0..40 retained vs standalone source0..20; data values unchanged."
+}

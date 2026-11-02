@@ -1,0 +1,32 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot(plot_type='ring') / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig02.png",
+  "logical_panel": "A",
+  "chart_type": "ring",
+  "input": "data/ring_phase_by_celltype.csv",
+  "input_columns": {
+    "CellType": "group / concentric ring; order explicit",
+    "Phase": "stat / sector category; order explicit",
+    "count": "number of cells in the group x phase cell (traceability only)",
+    "proportion": "within-group proportion used by the plot; each CellType sums to 1"
+  },
+  "params": {
+    "plot_type": "ring",
+    "stat_type": "percent",
+    "group_levels": ["Ductal", "Ngn3 low EP", "Ngn3 high EP", "Pre-endocrine", "Endocrine"],
+    "stat_levels": ["G1", "S", "G2M"],
+    "palette": "Paired",
+    "label": true,
+    "label.size": 3.5,
+    "merge_polar_endpoints": true,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; counts via base xtabs, proportions derived once in scp_ring_table()",
+    "code": "native SCP ggplot construction extracted verbatim; table-producing step separated; endpoint label compatibility documented in code comments",
+    "license": "GPL (>= 3)"
+  }
+}

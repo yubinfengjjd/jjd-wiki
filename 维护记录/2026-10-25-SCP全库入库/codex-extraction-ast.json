@@ -1,0 +1,1200 @@
+{
+  "scope": "native AST vs unmodified extraction; not derived module or algorithm approval",
+  "expected_count": 238,
+  "extracted_count": 238,
+  "missing": [],
+  "unexpected": [],
+  "problems": [],
+  "definitions": {
+    "prepare_params": {
+      "file": "ggsankey.R",
+      "start": 8,
+      "end": 34
+    },
+    "find_default_space": {
+      "file": "ggsankey.R",
+      "start": 36,
+      "end": 46
+    },
+    "sigmoid": {
+      "file": "ggsankey.R",
+      "start": 48,
+      "end": 55
+    },
+    "make_long": {
+      "file": "ggsankey.R",
+      "start": 70,
+      "end": 108
+    },
+    "theme_sankey": {
+      "file": "ggsankey.R",
+      "start": 124,
+      "end": 151
+    },
+    "theme_alluvial": {
+      "file": "ggsankey.R",
+      "start": 155,
+      "end": 180
+    },
+    "theme_sankey_bump": {
+      "file": "ggsankey.R",
+      "start": 184,
+      "end": 210
+    },
+    "StatSankeyFlow": {
+      "file": "ggsankey.R",
+      "start": 214,
+      "end": 342
+    },
+    "StatSankeyBumpFlow": {
+      "file": "ggsankey.R",
+      "start": 346,
+      "end": 500
+    },
+    "StatSankeyText": {
+      "file": "ggsankey.R",
+      "start": 503,
+      "end": 579
+    },
+    "StatSankeyNode": {
+      "file": "ggsankey.R",
+      "start": 583,
+      "end": 651
+    },
+    "geom_sankey": {
+      "file": "ggsankey.R",
+      "start": 691,
+      "end": 744
+    },
+    "geom_sankey_label": {
+      "file": "ggsankey.R",
+      "start": 768,
+      "end": 801
+    },
+    "geom_sankey_text": {
+      "file": "ggsankey.R",
+      "start": 805,
+      "end": 838
+    },
+    "geom_alluvial": {
+      "file": "ggsankey.R",
+      "start": 860,
+      "end": 883
+    },
+    "geom_alluvial_text": {
+      "file": "ggsankey.R",
+      "start": 907,
+      "end": 928
+    },
+    "geom_alluvial_label": {
+      "file": "ggsankey.R",
+      "start": 932,
+      "end": 953
+    },
+    "geom_sankey_bump": {
+      "file": "ggsankey.R",
+      "start": 976,
+      "end": 1004
+    },
+    "asMatrix": {
+      "file": "RcppExports.R",
+      "start": 4,
+      "end": 6
+    },
+    "GeneConvert": {
+      "file": "SCP-analysis.R",
+      "start": 70,
+      "end": 440
+    },
+    "searchDatasets": {
+      "file": "SCP-analysis.R",
+      "start": 442,
+      "end": 451
+    },
+    "CC_GenePrefetch": {
+      "file": "SCP-analysis.R",
+      "start": 472,
+      "end": 504
+    },
+    "LengthCheck": {
+      "file": "SCP-analysis.R",
+      "start": 506,
+      "end": 510
+    },
+    "AddModuleScore2": {
+      "file": "SCP-analysis.R",
+      "start": 518,
+      "end": 646
+    },
+    "CellScoring": {
+      "file": "SCP-analysis.R",
+      "start": 731,
+      "end": 914
+    },
+    "metap": {
+      "file": "SCP-analysis.R",
+      "start": 916,
+      "end": 920
+    },
+    "wilkinsonp": {
+      "file": "SCP-analysis.R",
+      "start": 923,
+      "end": 954
+    },
+    "maximump": {
+      "file": "SCP-analysis.R",
+      "start": 956,
+      "end": 962
+    },
+    "minimump": {
+      "file": "SCP-analysis.R",
+      "start": 964,
+      "end": 967
+    },
+    "meanp": {
+      "file": "SCP-analysis.R",
+      "start": 970,
+      "end": 989
+    },
+    "sump": {
+      "file": "SCP-analysis.R",
+      "start": 992,
+      "end": 1024
+    },
+    "votep": {
+      "file": "SCP-analysis.R",
+      "start": 1027,
+      "end": 1066
+    },
+    "FindConservedMarkers2": {
+      "file": "SCP-analysis.R",
+      "start": 1070,
+      "end": 1218
+    },
+    "FindExpressedMarkers": {
+      "file": "SCP-analysis.R",
+      "start": 1229,
+      "end": 1431
+    },
+    "FoldChange.default": {
+      "file": "SCP-analysis.R",
+      "start": 1433,
+      "end": 1454
+    },
+    "PerformDE": {
+      "file": "SCP-analysis.R",
+      "start": 1457,
+      "end": 1539
+    },
+    "WilcoxDETest": {
+      "file": "SCP-analysis.R",
+      "start": 1544,
+      "end": 1564
+    },
+    "RunDEtest": {
+      "file": "SCP-analysis.R",
+      "start": 1671,
+      "end": 2106
+    },
+    "ListDB": {
+      "file": "SCP-analysis.R",
+      "start": 2123,
+      "end": 2148
+    },
+    "PrepareDB": {
+      "file": "SCP-analysis.R",
+      "start": 2243,
+      "end": 3679
+    },
+    "RunEnrichment": {
+      "file": "SCP-analysis.R",
+      "start": 3766,
+      "end": 3975
+    },
+    "RunGSEA": {
+      "file": "SCP-analysis.R",
+      "start": 4030,
+      "end": 4272
+    },
+    "RunSlingshot": {
+      "file": "SCP-analysis.R",
+      "start": 4307,
+      "end": 4361
+    },
+    "RunMonocle2": {
+      "file": "SCP-analysis.R",
+      "start": 4410,
+      "end": 4495
+    },
+    "orderCells": {
+      "file": "SCP-analysis.R",
+      "start": 4497,
+      "end": 4579
+    },
+    "project2MST": {
+      "file": "SCP-analysis.R",
+      "start": 4580,
+      "end": 4626
+    },
+    "extract_ddrtree_ordering": {
+      "file": "SCP-analysis.R",
+      "start": 4627,
+      "end": 4673
+    },
+    "RunMonocle3": {
+      "file": "SCP-analysis.R",
+      "start": 4745,
+      "end": 4898
+    },
+    "RunDynamicFeatures": {
+      "file": "SCP-analysis.R",
+      "start": 4948,
+      "end": 5171
+    },
+    "RunDynamicEnrichment": {
+      "file": "SCP-analysis.R",
+      "start": 5218,
+      "end": 5311
+    },
+    "py_to_r_auto": {
+      "file": "SCP-analysis.R",
+      "start": 5314,
+      "end": 5319
+    },
+    "srt_to_adata": {
+      "file": "SCP-analysis.R",
+      "start": 5351,
+      "end": 5496
+    },
+    "adata_to_srt": {
+      "file": "SCP-analysis.R",
+      "start": 5521,
+      "end": 5681
+    },
+    "maxDepth": {
+      "file": "SCP-analysis.R",
+      "start": 5683,
+      "end": 5689
+    },
+    "check_python_element": {
+      "file": "SCP-analysis.R",
+      "start": 5692,
+      "end": 5725
+    },
+    "RunPAGA": {
+      "file": "SCP-analysis.R",
+      "start": 5785,
+      "end": 5850
+    },
+    "RunSCVELO": {
+      "file": "SCP-analysis.R",
+      "start": 5895,
+      "end": 5967
+    },
+    "RunPalantir": {
+      "file": "SCP-analysis.R",
+      "start": 6001,
+      "end": 6071
+    },
+    "RunWOT": {
+      "file": "SCP-analysis.R",
+      "start": 6086,
+      "end": 6156
+    },
+    "RunCellRank": {
+      "file": "SCP-analysis.R",
+      "start": 6158,
+      "end": 6228
+    },
+    "CreateDataFile": {
+      "file": "SCP-app.R",
+      "start": 20,
+      "end": 83
+    },
+    "CreateMetaFile": {
+      "file": "SCP-app.R",
+      "start": 104,
+      "end": 229
+    },
+    "PrepareSCExplorer": {
+      "file": "SCP-app.R",
+      "start": 250,
+      "end": 306
+    },
+    "FetchH5": {
+      "file": "SCP-app.R",
+      "start": 345,
+      "end": 455
+    },
+    "CreateSeuratObject2": {
+      "file": "SCP-app.R",
+      "start": 460,
+      "end": 505
+    },
+    "RunSCExplorer": {
+      "file": "SCP-app.R",
+      "start": 581,
+      "end": 2299
+    },
+    "RunKNNPredict": {
+      "file": "SCP-cell_annotation.R",
+      "start": 98,
+      "end": 493
+    },
+    "RunScmap": {
+      "file": "SCP-cell_annotation.R",
+      "start": 527,
+      "end": 621
+    },
+    "RunSingleR": {
+      "file": "SCP-cell_annotation.R",
+      "start": 655,
+      "end": 787
+    },
+    "db_scDblFinder": {
+      "file": "SCP-cellqc.R",
+      "start": 17,
+      "end": 31
+    },
+    "db_scds": {
+      "file": "SCP-cellqc.R",
+      "start": 50,
+      "end": 70
+    },
+    "db_Scrublet": {
+      "file": "SCP-cellqc.R",
+      "start": 89,
+      "end": 113
+    },
+    "db_DoubletDetection": {
+      "file": "SCP-cellqc.R",
+      "start": 132,
+      "end": 159
+    },
+    "RunDoubletCalling": {
+      "file": "SCP-cellqc.R",
+      "start": 180,
+      "end": 215
+    },
+    "isOutlier": {
+      "file": "SCP-cellqc.R",
+      "start": 238,
+      "end": 254
+    },
+    "RunCellQC": {
+      "file": "SCP-cellqc.R",
+      "start": 314,
+      "end": 500
+    },
+    "AnnotateFeatures": {
+      "file": "SCP-feature_annotation.R",
+      "start": 33,
+      "end": 121
+    },
+    "theme_scp": {
+      "file": "SCP-plot.R",
+      "start": 16,
+      "end": 60
+    },
+    "theme_blank": {
+      "file": "SCP-plot.R",
+      "start": 84,
+      "end": 134
+    },
+    "palette_scp": {
+      "file": "SCP-plot.R",
+      "start": 168,
+      "end": 271
+    },
+    "show_palettes": {
+      "file": "SCP-plot.R",
+      "start": 298,
+      "end": 343
+    },
+    "panel_fix": {
+      "file": "SCP-plot.R",
+      "start": 453,
+      "end": 579
+    },
+    "panel_fix_overall": {
+      "file": "SCP-plot.R",
+      "start": 588,
+      "end": 813
+    },
+    "drop_data": {
+      "file": "SCP-plot.R",
+      "start": 833,
+      "end": 835
+    },
+    "drop_data.ggplot": {
+      "file": "SCP-plot.R",
+      "start": 841,
+      "end": 882
+    },
+    "drop_data.patchwork": {
+      "file": "SCP-plot.R",
+      "start": 888,
+      "end": 894
+    },
+    "drop_data.default": {
+      "file": "SCP-plot.R",
+      "start": 899,
+      "end": 901
+    },
+    "slim_data": {
+      "file": "SCP-plot.R",
+      "start": 918,
+      "end": 920
+    },
+    "slim_data.ggplot": {
+      "file": "SCP-plot.R",
+      "start": 926,
+      "end": 937
+    },
+    "slim_data.patchwork": {
+      "file": "SCP-plot.R",
+      "start": 943,
+      "end": 949
+    },
+    "slim_data.default": {
+      "file": "SCP-plot.R",
+      "start": 953,
+      "end": 955
+    },
+    "get_vars": {
+      "file": "SCP-plot.R",
+      "start": 963,
+      "end": 979
+    },
+    "adjcolors": {
+      "file": "SCP-plot.R",
+      "start": 1000,
+      "end": 1007
+    },
+    "blendcolors": {
+      "file": "SCP-plot.R",
+      "start": 1026,
+      "end": 1042
+    },
+    "RGBA2RGB": {
+      "file": "SCP-plot.R",
+      "start": 1044,
+      "end": 1048
+    },
+    "Blend2Color": {
+      "file": "SCP-plot.R",
+      "start": 1050,
+      "end": 1074
+    },
+    "BlendRGBList": {
+      "file": "SCP-plot.R",
+      "start": 1076,
+      "end": 1094
+    },
+    "CellDimPlot": {
+      "file": "SCP-plot.R",
+      "start": 1328,
+      "end": 1851
+    },
+    "FeatureDimPlot": {
+      "file": "SCP-plot.R",
+      "start": 2042,
+      "end": 2815
+    },
+    "CellDimPlot3D": {
+      "file": "SCP-plot.R",
+      "start": 2843,
+      "end": 3044
+    },
+    "FeatureDimPlot3D": {
+      "file": "SCP-plot.R",
+      "start": 3066,
+      "end": 3369
+    },
+    "FeatureStatPlot": {
+      "file": "SCP-plot.R",
+      "start": 3524,
+      "end": 3718
+    },
+    "ExpressionStatPlot": {
+      "file": "SCP-plot.R",
+      "start": 3723,
+      "end": 4401
+    },
+    "CellStatPlot": {
+      "file": "SCP-plot.R",
+      "start": 4463,
+      "end": 4490
+    },
+    "StatPlot": {
+      "file": "SCP-plot.R",
+      "start": 4564,
+      "end": 5159
+    },
+    "FeatureCorPlot": {
+      "file": "SCP-plot.R",
+      "start": 5232,
+      "end": 5624
+    },
+    "CellDensityPlot": {
+      "file": "SCP-plot.R",
+      "start": 5679,
+      "end": 5872
+    },
+    "LineagePlot": {
+      "file": "SCP-plot.R",
+      "start": 5918,
+      "end": 6030
+    },
+    "PAGAPlot": {
+      "file": "SCP-plot.R",
+      "start": 6121,
+      "end": 6214
+    },
+    "GraphPlot": {
+      "file": "SCP-plot.R",
+      "start": 6287,
+      "end": 6631
+    },
+    "segementsDf": {
+      "file": "SCP-plot.R",
+      "start": 6666,
+      "end": 6683
+    },
+    "VelocityPlot": {
+      "file": "SCP-plot.R",
+      "start": 6745,
+      "end": 6945
+    },
+    "compute_velocity_on_grid": {
+      "file": "SCP-plot.R",
+      "start": 6963,
+      "end": 7039
+    },
+    "VolcanoPlot": {
+      "file": "SCP-plot.R",
+      "start": 7088,
+      "end": 7194
+    },
+    "fc_matrix": {
+      "file": "SCP-plot.R",
+      "start": 7196,
+      "end": 7198
+    },
+    "zscore_matrix": {
+      "file": "SCP-plot.R",
+      "start": 7199,
+      "end": 7201
+    },
+    "log2fc_matrix": {
+      "file": "SCP-plot.R",
+      "start": 7202,
+      "end": 7204
+    },
+    "log1p_matrix": {
+      "file": "SCP-plot.R",
+      "start": 7205,
+      "end": 7207
+    },
+    "matrix_process": {
+      "file": "SCP-plot.R",
+      "start": 7208,
+      "end": 7226
+    },
+    "extractgrobs": {
+      "file": "SCP-plot.R",
+      "start": 7228,
+      "end": 7234
+    },
+    "grid_draw": {
+      "file": "SCP-plot.R",
+      "start": 7237,
+      "end": 7245
+    },
+    "cluster_within_group2": {
+      "file": "SCP-plot.R",
+      "start": 7250,
+      "end": 7292
+    },
+    "heatmap_enrichment": {
+      "file": "SCP-plot.R",
+      "start": 7297,
+      "end": 7539
+    },
+    "heatmap_rendersize": {
+      "file": "SCP-plot.R",
+      "start": 7543,
+      "end": 7603
+    },
+    "heatmap_fixsize": {
+      "file": "SCP-plot.R",
+      "start": 7608,
+      "end": 7672
+    },
+    "standardise": {
+      "file": "SCP-plot.R",
+      "start": 7675,
+      "end": 7678
+    },
+    "mestimate": {
+      "file": "SCP-plot.R",
+      "start": 7680,
+      "end": 7686
+    },
+    "GroupHeatmap": {
+      "file": "SCP-plot.R",
+      "start": 7911,
+      "end": 9036
+    },
+    "FeatureHeatmap": {
+      "file": "SCP-plot.R",
+      "start": 9114,
+      "end": 9978
+    },
+    "FeatureCorHeatmap": {
+      "file": "SCP-plot.R",
+      "start": 9980,
+      "end": 9982
+    },
+    "CellCorHeatmap": {
+      "file": "SCP-plot.R",
+      "start": 10113,
+      "end": 10888
+    },
+    "DynamicHeatmap": {
+      "file": "SCP-plot.R",
+      "start": 11020,
+      "end": 12022
+    },
+    "DynamicPlot": {
+      "file": "SCP-plot.R",
+      "start": 12102,
+      "end": 12470
+    },
+    "GroupTreePlot": {
+      "file": "SCP-plot.R",
+      "start": 12472,
+      "end": 12474
+    },
+    "ProjectionPlot": {
+      "file": "SCP-plot.R",
+      "start": 12511,
+      "end": 12583
+    },
+    "EnrichmentPlot": {
+      "file": "SCP-plot.R",
+      "start": 12727,
+      "end": 13438
+    },
+    "adjustlayout": {
+      "file": "SCP-plot.R",
+      "start": 13441,
+      "end": 13502
+    },
+    "GSEAPlot": {
+      "file": "SCP-plot.R",
+      "start": 13563,
+      "end": 14543
+    },
+    "gsInfo": {
+      "file": "SCP-plot.R",
+      "start": 14545,
+      "end": 14568
+    },
+    "gseaScores": {
+      "file": "SCP-plot.R",
+      "start": 14570,
+      "end": 14594
+    },
+    "build_patchwork": {
+      "file": "SCP-plot.R",
+      "start": 14602,
+      "end": 14695
+    },
+    "patchworkGrob": {
+      "file": "SCP-plot.R",
+      "start": 14698,
+      "end": 14706
+    },
+    "as_grob": {
+      "file": "SCP-plot.R",
+      "start": 14710,
+      "end": 14720
+    },
+    "as_gtable": {
+      "file": "SCP-plot.R",
+      "start": 14724,
+      "end": 14741
+    },
+    "get_legend": {
+      "file": "SCP-plot.R",
+      "start": 14743,
+      "end": 14751
+    },
+    "add_grob": {
+      "file": "SCP-plot.R",
+      "start": 14755,
+      "end": 14794
+    },
+    "RunKNNMap": {
+      "file": "SCP-projection.R",
+      "start": 43,
+      "end": 261
+    },
+    "RunPCAMap": {
+      "file": "SCP-projection.R",
+      "start": 281,
+      "end": 356
+    },
+    "RunSeuratMap": {
+      "file": "SCP-projection.R",
+      "start": 382,
+      "end": 452
+    },
+    "RunCSSMap": {
+      "file": "SCP-projection.R",
+      "start": 471,
+      "end": 543
+    },
+    "RunSymphonyMap": {
+      "file": "SCP-projection.R",
+      "start": 565,
+      "end": 674
+    },
+    "buildReferenceFromSeurat": {
+      "file": "SCP-projection.R",
+      "start": 679,
+      "end": 742
+    },
+    "mapQuery": {
+      "file": "SCP-projection.R",
+      "start": 748,
+      "end": 811
+    },
+    "check_DataType": {
+      "file": "SCP-workflow.R",
+      "start": 14,
+      "end": 47
+    },
+    "check_srtList": {
+      "file": "SCP-workflow.R",
+      "start": 75,
+      "end": 321
+    },
+    "check_srtMerge": {
+      "file": "SCP-workflow.R",
+      "start": 334,
+      "end": 390
+    },
+    "RecoverCounts": {
+      "file": "SCP-workflow.R",
+      "start": 420,
+      "end": 481
+    },
+    "RenameFeatures": {
+      "file": "SCP-workflow.R",
+      "start": 500,
+      "end": 525
+    },
+    "RenameClusters": {
+      "file": "SCP-workflow.R",
+      "start": 560,
+      "end": 605
+    },
+    "SrtReorder": {
+      "file": "SCP-workflow.R",
+      "start": 623,
+      "end": 679
+    },
+    "SrtAppend": {
+      "file": "SCP-workflow.R",
+      "start": 692,
+      "end": 754
+    },
+    "RunDimReduction": {
+      "file": "SCP-workflow.R",
+      "start": 781,
+      "end": 1011
+    },
+    "DefaultReduction": {
+      "file": "SCP-workflow.R",
+      "start": 1034,
+      "end": 1084
+    },
+    "Uncorrected_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 1092,
+      "end": 1264
+    },
+    "Seurat_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 1276,
+      "end": 1559
+    },
+    "scVI_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 1573,
+      "end": 1753
+    },
+    "MNN_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 1762,
+      "end": 1958
+    },
+    "fastMNN_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 1968,
+      "end": 2130
+    },
+    "Harmony_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 2140,
+      "end": 2334
+    },
+    "Scanorama_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 2348,
+      "end": 2530
+    },
+    "BBKNN_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 2541,
+      "end": 2755
+    },
+    "CSS_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 2765,
+      "end": 2960
+    },
+    "LIGER_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 2971,
+      "end": 3172
+    },
+    "Conos_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 3183,
+      "end": 3386
+    },
+    "ComBat_integrate": {
+      "file": "SCP-workflow.R",
+      "start": 3395,
+      "end": 3583
+    },
+    "Standard_SCP": {
+      "file": "SCP-workflow.R",
+      "start": 3663,
+      "end": 3814
+    },
+    "Integration_SCP": {
+      "file": "SCP-workflow.R",
+      "start": 3907,
+      "end": 3959
+    },
+    "RunNMF": {
+      "file": "Seurat-function.R",
+      "start": 27,
+      "end": 29
+    },
+    "RunNMF.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 35,
+      "end": 63
+    },
+    "RunNMF.Assay": {
+      "file": "Seurat-function.R",
+      "start": 70,
+      "end": 100
+    },
+    "RunNMF.default": {
+      "file": "Seurat-function.R",
+      "start": 108,
+      "end": 162
+    },
+    "RunMDS": {
+      "file": "Seurat-function.R",
+      "start": 187,
+      "end": 189
+    },
+    "RunMDS.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 195,
+      "end": 220
+    },
+    "RunMDS.Assay": {
+      "file": "Seurat-function.R",
+      "start": 227,
+      "end": 253
+    },
+    "RunMDS.default": {
+      "file": "Seurat-function.R",
+      "start": 263,
+      "end": 298
+    },
+    "RunGLMPCA": {
+      "file": "Seurat-function.R",
+      "start": 323,
+      "end": 325
+    },
+    "RunGLMPCA.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 331,
+      "end": 355
+    },
+    "RunGLMPCA.Assay": {
+      "file": "Seurat-function.R",
+      "start": 362,
+      "end": 388
+    },
+    "RunGLMPCA.default": {
+      "file": "Seurat-function.R",
+      "start": 394,
+      "end": 430
+    },
+    "RunDM": {
+      "file": "Seurat-function.R",
+      "start": 458,
+      "end": 460
+    },
+    "RunDM.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 466,
+      "end": 511
+    },
+    "RunDM.default": {
+      "file": "Seurat-function.R",
+      "start": 518,
+      "end": 538
+    },
+    "RunUMAP2": {
+      "file": "Seurat-function.R",
+      "start": 579,
+      "end": 581
+    },
+    "RunUMAP2.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 587,
+      "end": 662
+    },
+    "RunUMAP2.default": {
+      "file": "Seurat-function.R",
+      "start": 669,
+      "end": 1119
+    },
+    "RunPaCMAP": {
+      "file": "Seurat-function.R",
+      "start": 1151,
+      "end": 1153
+    },
+    "RunPaCMAP.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 1159,
+      "end": 1207
+    },
+    "RunPaCMAP.default": {
+      "file": "Seurat-function.R",
+      "start": 1214,
+      "end": 1244
+    },
+    "RunPHATE": {
+      "file": "Seurat-function.R",
+      "start": 1280,
+      "end": 1282
+    },
+    "RunPHATE.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 1288,
+      "end": 1336
+    },
+    "RunPHATE.default": {
+      "file": "Seurat-function.R",
+      "start": 1344,
+      "end": 1399
+    },
+    "RunTriMap": {
+      "file": "Seurat-function.R",
+      "start": 1431,
+      "end": 1433
+    },
+    "RunTriMap.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 1439,
+      "end": 1487
+    },
+    "RunTriMap.default": {
+      "file": "Seurat-function.R",
+      "start": 1494,
+      "end": 1523
+    },
+    "RunLargeVis": {
+      "file": "Seurat-function.R",
+      "start": 1550,
+      "end": 1552
+    },
+    "RunLargeVis.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 1558,
+      "end": 1612
+    },
+    "RunLargeVis.default": {
+      "file": "Seurat-function.R",
+      "start": 1618,
+      "end": 1650
+    },
+    "RunFR": {
+      "file": "Seurat-function.R",
+      "start": 1678,
+      "end": 1680
+    },
+    "RunFR.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 1686,
+      "end": 1738
+    },
+    "RunFR.default": {
+      "file": "Seurat-function.R",
+      "start": 1745,
+      "end": 1762
+    },
+    "RunHarmony2": {
+      "file": "Seurat-function.R",
+      "start": 1787,
+      "end": 1789
+    },
+    "RunHarmony2.Seurat": {
+      "file": "Seurat-function.R",
+      "start": 1797,
+      "end": 1857
+    },
+    "PrepareEnv": {
+      "file": "utils.R",
+      "start": 13,
+      "end": 129
+    },
+    "Env_requirements": {
+      "file": "utils.R",
+      "start": 144,
+      "end": 265
+    },
+    "installed_Python_pkgs": {
+      "file": "utils.R",
+      "start": 271,
+      "end": 285
+    },
+    "exist_Python_pkgs": {
+      "file": "utils.R",
+      "start": 291,
+      "end": 330
+    },
+    "env_exist": {
+      "file": "utils.R",
+      "start": 336,
+      "end": 353
+    },
+    "get_envname": {
+      "file": "utils.R",
+      "start": 355,
+      "end": 362
+    },
+    "find_conda": {
+      "file": "utils.R",
+      "start": 367,
+      "end": 384
+    },
+    "conda_install": {
+      "file": "utils.R",
+      "start": 389,
+      "end": 453
+    },
+    "conda_python": {
+      "file": "utils.R",
+      "start": 458,
+      "end": 478
+    },
+    "run_Python": {
+      "file": "utils.R",
+      "start": 480,
+      "end": 492
+    },
+    "check_Python": {
+      "file": "utils.R",
+      "start": 510,
+      "end": 546
+    },
+    "check_R": {
+      "file": "utils.R",
+      "start": 558,
+      "end": 617
+    },
+    "try_get": {
+      "file": "utils.R",
+      "start": 647,
+      "end": 674
+    },
+    "download": {
+      "file": "utils.R",
+      "start": 685,
+      "end": 713
+    },
+    "kegg_get": {
+      "file": "utils.R",
+      "start": 715,
+      "end": 721
+    },
+    "rescale": {
+      "file": "utils.R",
+      "start": 723,
+      "end": 729
+    },
+    "zero_range": {
+      "file": "utils.R",
+      "start": 731,
+      "end": 752
+    },
+    "col2hex": {
+      "file": "utils.R",
+      "start": 755,
+      "end": 758
+    },
+    "invoke": {
+      "file": "utils.R",
+      "start": 767,
+      "end": 793
+    },
+    "unnest": {
+      "file": "utils.R",
+      "start": 800,
+      "end": 817
+    },
+    "as_matrix": {
+      "file": "utils.R",
+      "start": 831,
+      "end": 841
+    },
+    "capitalize": {
+      "file": "utils.R",
+      "start": 852,
+      "end": 870
+    },
+    "str_wrap": {
+      "file": "utils.R",
+      "start": 872,
+      "end": 881
+    },
+    "tochunks": {
+      "file": "utils.R",
+      "start": 892,
+      "end": 894
+    },
+    "iterchunks": {
+      "file": "utils.R",
+      "start": 932,
+      "end": 942
+    },
+    ".onAttach": {
+      "file": "zzz.R",
+      "start": 1,
+      "end": 50
+    }
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "kind": "density",
+  "canvas_px": [
+    1080,
+    649
+  ],
+  "panels": [
+    {
+      "id": "A",
+      "name": "XGBoost",
+      "slope": 0.86,
+      "intercept": 5.29,
+      "R2": ".86",
+      "R2_sd": ".06",
+      "RMSE": "10.18",
+      "RMSE_sd": "2.06",
+      "MAE": "6.90",
+      "MAE_sd": "1.09",
+      "r": ".93",
+      "r_sd": ".03",
+      "bbox": [
+        36,
+        58,
+        291,
+        288
+      ],
+      "limits": [
+        -5,
+        109,
+        -5,
+        110
+      ],
+      "top_bbox": [
+        36,
+        4,
+        291,
+        52
+      ],
+      "right_bbox": [
+        296,
+        58,
+        350,
+        288
+      ],
+      "colorbar_bbox": [
+        241,
+        175,
+        254,
+        273
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Random Forest",
+      "slope": 0.85,
+      "intercept": 5.59,
+      "R2": ".86",
+      "R2_sd": ".04",
+      "RMSE": "10.11",
+      "RMSE_sd": "1.32",
+      "MAE": "7.05",
+      "MAE_sd": ".67",
+      "r": ".93",
+      "r_sd": ".02",
+      "bbox": [
+        398,
+        58,
+        653,
+        288
+      ],
+      "limits": [
+        -5,
+        109,
+        -5,
+        110
+      ],
+      "top_bbox": [
+        398,
+        4,
+        653,
+        52
+      ],
+      "right_bbox": [
+        658,
+        58,
+        712,
+        288
+      ],
+      "colorbar_bbox": [
+        603,
+        175,
+        616,
+        273
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Extra Trees",
+      "slope": 0.87,
+      "intercept": 4.88,
+      "R2": ".87",
+      "R2_sd": ".04",
+      "RMSE": "9.89",
+      "RMSE_sd": "1.63",
+      "MAE": "6.81",
+      "MAE_sd": ".82",
+      "r": ".93",
+      "r_sd": ".02",
+      "bbox": [
+        760,
+        58,
+        1015,
+        288
+      ],
+      "limits": [
+        -5,
+        109,
+        -5,
+        110
+      ],
+      "top_bbox": [
+        760,
+        4,
+        1015,
+        52
+      ],
+      "right_bbox": [
+        1020,
+        58,
+        1074,
+        288
+      ],
+      "colorbar_bbox": [
+        965,
+        175,
+        978,
+        273
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Gradient Boosting",
+      "slope": 0.87,
+      "intercept": 4.96,
+      "R2": ".86",
+      "R2_sd": ".04",
+      "RMSE": "10.24",
+      "RMSE_sd": "1.44",
+      "MAE": "7.16",
+      "MAE_sd": ".82",
+      "r": ".93",
+      "r_sd": ".02",
+      "bbox": [
+        36,
+        391,
+        291,
+        621
+      ],
+      "limits": [
+        -5,
+        109,
+        -5,
+        110
+      ],
+      "top_bbox": [
+        36,
+        338,
+        291,
+        385
+      ],
+      "right_bbox": [
+        296,
+        391,
+        350,
+        621
+      ],
+      "colorbar_bbox": [
+        241,
+        508,
+        254,
+        606
+      ]
+    },
+    {
+      "id": "E",
+      "name": "AdaBoost",
+      "slope": 0.79,
+      "intercept": 9.06,
+      "R2": ".82",
+      "R2_sd": ".05",
+      "RMSE": "11.57",
+      "RMSE_sd": "1.47",
+      "MAE": "8.56",
+      "MAE_sd": ".84",
+      "r": ".91",
+      "r_sd": ".03",
+      "bbox": [
+        398,
+        391,
+        653,
+        621
+      ],
+      "limits": [
+        -5,
+        109,
+        -5,
+        110
+      ],
+      "top_bbox": [
+        398,
+        338,
+        653,
+        385
+      ],
+      "right_bbox": [
+        658,
+        391,
+        712,
+        621
+      ],
+      "colorbar_bbox": [
+        603,
+        508,
+        616,
+        606
+      ]
+    },
+    {
+      "id": "F",
+      "name": "MLP",
+      "slope": 0.89,
+      "intercept": 3.74,
+      "R2": ".86",
+      "R2_sd": ".02",
+      "RMSE": "10.21",
+      "RMSE_sd": ".68",
+      "MAE": "7.46",
+      "MAE_sd": ".56",
+      "r": ".94",
+      "r_sd": ".01",
+      "bbox": [
+        760,
+        391,
+        1015,
+        621
+      ],
+      "limits": [
+        -5,
+        105,
+        -5,
+        110
+      ],
+      "top_bbox": [
+        760,
+        338,
+        1015,
+        385
+      ],
+      "right_bbox": [
+        1020,
+        391,
+        1074,
+        621
+      ],
+      "colorbar_bbox": [
+        965,
+        508,
+        978,
+        606
+      ]
+    }
+  ],
+  "data_provenance": "estimated",
+  "calibration": "linear axis mapping from main bbox; source image pixels retained in CSV",
+  "color": "source raster RGB estimates; no KDE recomputation",
+  "annotations": "transcribed source labels only, not metrics recomputed from graphical detections",
+  "caption_bbox": null,
+  "quality_flags": [
+    "raster_overlap",
+    "source_annotations_rounded",
+    "source_font_unknown"
+  ]
+}

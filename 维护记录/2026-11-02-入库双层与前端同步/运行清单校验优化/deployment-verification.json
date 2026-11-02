@@ -1,0 +1,110 @@
+[
+  {
+    "host": ".agents",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DQ01ORH0.js",
+      "app/assets/index-BqhVKvxW.css",
+      "app/assets/index-C3aXfork.js",
+      "app/index.html",
+      "rwiki/method_implementations.py",
+      "rwiki/runtime_contract.py",
+      "tests/test_runtime_contract.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css"
+    ]
+  },
+  {
+    "host": ".codex",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DQ01ORH0.js",
+      "app/assets/index-BqhVKvxW.css",
+      "app/assets/index-C3aXfork.js",
+      "app/index.html",
+      "rwiki/method_implementations.py",
+      "rwiki/runtime_contract.py",
+      "tests/test_runtime_contract.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css"
+    ]
+  },
+  {
+    "host": ".claude",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DQ01ORH0.js",
+      "app/assets/index-BqhVKvxW.css",
+      "app/assets/index-C3aXfork.js",
+      "app/index.html",
+      "rwiki/method_implementations.py",
+      "rwiki/runtime_contract.py",
+      "tests/test_runtime_contract.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css"
+    ]
+  },
+  {
+    "host": ".cc-switch",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DQ01ORH0.js",
+      "app/assets/index-BqhVKvxW.css",
+      "app/assets/index-C3aXfork.js",
+      "app/index.html",
+      "rwiki/method_implementations.py",
+      "rwiki/runtime_contract.py",
+      "tests/test_runtime_contract.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css"
+    ]
+  },
+  {
+    "host": ".config/opencode",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DQ01ORH0.js",
+      "app/assets/index-BqhVKvxW.css",
+      "app/assets/index-C3aXfork.js",
+      "app/index.html",
+      "rwiki/method_implementations.py",
+      "rwiki/runtime_contract.py",
+      "tests/test_runtime_contract.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css"
+    ]
+  },
+  {
+    "host": ".kiro",
+    "verified": 351,
+    "changed": [
+      "app/assets/GraphView-DQ01ORH0.js",
+      "app/assets/index-BqhVKvxW.css",
+      "app/assets/index-C3aXfork.js",
+      "app/index.html",
+      "rwiki/method_implementations.py",
+      "rwiki/runtime_contract.py",
+      "tests/test_runtime_contract.py"
+    ],
+    "stale_removed": [
+      "app/assets/GraphView-g-OH8wi7.js",
+      "app/assets/index-CwbKjWwd.js",
+      "app/assets/index-DIEKWgzI.css"
+    ]
+  }
+]

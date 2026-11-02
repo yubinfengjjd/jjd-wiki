@@ -1,0 +1,101 @@
+matrix,feature,group,n_cells,mean_value
+CellType,Cyr61,Ductal,100,0.984126
+CellType,Adamts1,Ductal,100,0.930855
+CellType,Anxa2,Ductal,100,0.914526
+CellType,Bicc1,Ductal,100,0.96834
+CellType,1700011H14Rik,Ductal,100,0.822029
+CellType,Gsta3,Ductal,100,0.737804
+CellType,Hpgd,Ductal,100,0.946222
+CellType,Ccnd1,Ductal,100,1.06732
+CellType,Phgdh,Ductal,100,1.15016
+CellType,Ldha,Ductal,100,1.16705
+CellType,Spp1,Ductal,100,0.845499
+CellType,Sox9,Ductal,100,0.898518
+CellType,Dbi,Ductal,100,0.99786
+CellType,Wfdc2,Ductal,100,1.04778
+CellType,Psat1,Ductal,100,0.93949
+CellType,Cldn10,Ductal,100,1.11628
+CellType,Nudt19,Ductal,100,1.20043
+CellType,Cldn3,Ductal,100,0.872744
+CellType,Ptn,Ductal,100,0.811735
+CellType,Vim,Ductal,100,0.904457
+CellType,Cyr61,Ngn3 low EP,81,0.637524
+CellType,Adamts1,Ngn3 low EP,81,0.86589
+CellType,Anxa2,Ngn3 low EP,81,1.04937
+CellType,Bicc1,Ngn3 low EP,81,0.942967
+CellType,1700011H14Rik,Ngn3 low EP,81,1.18578
+CellType,Gsta3,Ngn3 low EP,81,1.03415
+CellType,Hpgd,Ngn3 low EP,81,0.340639
+CellType,Ccnd1,Ngn3 low EP,81,0.115034
+CellType,Phgdh,Ngn3 low EP,81,0.375749
+CellType,Ldha,Ngn3 low EP,81,0.382681
+CellType,Spp1,Ngn3 low EP,81,1.15916
+CellType,Sox9,Ngn3 low EP,81,0.635736
+CellType,Dbi,Ngn3 low EP,81,1.04152
+CellType,Wfdc2,Ngn3 low EP,81,0.648946
+CellType,Psat1,Ngn3 low EP,81,0.427388
+CellType,Cldn10,Ngn3 low EP,81,0.25595
+CellType,Nudt19,Ngn3 low EP,81,0.437231
+CellType,Cldn3,Ngn3 low EP,81,1.12479
+CellType,Ptn,Ngn3 low EP,81,0.477697
+CellType,Vim,Ngn3 low EP,81,0.738371
+CellType,Cyr61,Ngn3 high EP,100,-0.492706
+CellType,Adamts1,Ngn3 high EP,100,-0.48761
+CellType,Anxa2,Ngn3 high EP,100,-0.492473
+CellType,Bicc1,Ngn3 high EP,100,-0.581246
+CellType,1700011H14Rik,Ngn3 high EP,100,-0.541056
+CellType,Gsta3,Ngn3 high EP,100,-0.389719
+CellType,Hpgd,Ngn3 high EP,100,-0.399291
+CellType,Ccnd1,Ngn3 high EP,100,-0.324994
+CellType,Phgdh,Ngn3 high EP,100,-0.448122
+CellType,Ldha,Ngn3 high EP,100,-0.44338
+CellType,Spp1,Ngn3 high EP,100,-0.319523
+CellType,Sox9,Ngn3 high EP,100,-0.379439
+CellType,Dbi,Ngn3 high EP,100,-0.335476
+CellType,Wfdc2,Ngn3 high EP,100,-0.248471
+CellType,Psat1,Ngn3 high EP,100,-0.469829
+CellType,Cldn10,Ngn3 high EP,100,-0.39272
+CellType,Nudt19,Ngn3 high EP,100,-0.548527
+CellType,Cldn3,Ngn3 high EP,100,-0.52467
+CellType,Ptn,Ngn3 high EP,100,-0.246846
+CellType,Vim,Ngn3 high EP,100,-0.466699
+CellType,Cyr61,Pre-endocrine,100,-0.509567
+CellType,Adamts1,Pre-endocrine,100,-0.561181
+CellType,Anxa2,Pre-endocrine,100,-0.64854
+CellType,Bicc1,Pre-endocrine,100,-0.597821
+CellType,1700011H14Rik,Pre-endocrine,100,-0.638463
+CellType,Gsta3,Pre-endocrine,100,-0.59647
+CellType,Hpgd,Pre-endocrine,100,-0.39417
+CellType,Ccnd1,Pre-endocrine,100,-0.4458
+CellType,Phgdh,Pre-endocrine,100,-0.501099
+CellType,Ldha,Pre-endocrine,100,-0.52056
+CellType,Spp1,Pre-endocrine,100,-0.731457
+CellType,Sox9,Pre-endocrine,100,-0.43344
+CellType,Dbi,Pre-endocrine,100,-0.771894
+CellType,Wfdc2,Pre-endocrine,100,-0.666252
+CellType,Psat1,Pre-endocrine,100,-0.418359
+CellType,Cldn10,Pre-endocrine,100,-0.454931
+CellType,Nudt19,Pre-endocrine,100,-0.508935
+CellType,Cldn3,Pre-endocrine,100,-0.557512
+CellType,Ptn,Pre-endocrine,100,-0.486372
+CellType,Vim,Pre-endocrine,100,-0.340614
+CellType,Cyr61,Endocrine,100,-0.498247
+CellType,Adamts1,Endocrine,100,-0.583435
+CellType,Anxa2,Endocrine,100,-0.623505
+CellType,Bicc1,Endocrine,100,-0.553077
+CellType,1700011H14Rik,Endocrine,100,-0.602993
+CellType,Gsta3,Endocrine,100,-0.589278
+CellType,Hpgd,Endocrine,100,-0.428678
+CellType,Ccnd1,Endocrine,100,-0.389701
+CellType,Phgdh,Endocrine,100,-0.505292
+CellType,Ldha,Endocrine,100,-0.513081
+CellType,Spp1,Endocrine,100,-0.733434
+CellType,Sox9,Endocrine,100,-0.600585
+CellType,Dbi,Endocrine,100,-0.734123
+CellType,Wfdc2,Endocrine,100,-0.658699
+CellType,Psat1,Endocrine,100,-0.397487
+CellType,Cldn10,Endocrine,100,-0.47595
+CellType,Nudt19,Endocrine,100,-0.497127
+CellType,Cldn3,Endocrine,100,-0.701642
+CellType,Ptn,Endocrine,100,-0.465452
+CellType,Vim,Endocrine,100,-0.695224

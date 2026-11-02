@@ -1,0 +1,12 @@
+{
+  "source_image": "source/fig02.png",
+  "source_image_sha256": "642d17e831d389bcb5e1cd19e7480c6043614711210dab7bf1d4cdeb7705438c",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "642d17e831d389bcb5e1cd19e7480c6043614711210dab7bf1d4cdeb7705438c",
+  "bbox": [0, 0, 2113, 1920],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\marker_feature_umap.pdf"
+  ],
+  "note": "Selected representative is the full 3x3 marker feature UMAP grid; the nine axes form one logical panel."
+}

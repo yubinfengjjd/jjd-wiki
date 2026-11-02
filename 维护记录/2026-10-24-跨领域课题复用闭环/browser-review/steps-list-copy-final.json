@@ -1,0 +1,5 @@
+[
+  {"waitFor":"document.querySelectorAll('.chain-ref-label').length===2"},
+  {"eval":"({url:location.hash,labels:[...document.querySelectorAll('.chain-ref-label')].map(e=>e.textContent),hasUnverified:document.querySelector('.methods .grid')?.textContent.includes('暂无已验证实现'),ambiguous:document.querySelector('.methods .grid')?.textContent.includes(' · 可用')})"},
+  {"shot":"method-list-copy-final.png"}
+]

@@ -1,0 +1,10 @@
+command: D:\R-4.5.0\bin\x64\Rterm.exe --no-echo --no-restore --vanilla --file=E:/research-wiki/画廊/2026-10-22-scp-example/figures/fig01-volcano/code/replica.R
+SCP local root: E:/research-wiki/知识库/methods/scp-local-source/code/SCP-local
+source commit: b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0
+input: data/de_endocrine_vs_rest.csv
+rows: 7343
+DE: 791 border: 388
+x range: -0.616 .. 0.785
+y range: -114.295 .. 136.891
+output: output/replica.png
+exit: 0

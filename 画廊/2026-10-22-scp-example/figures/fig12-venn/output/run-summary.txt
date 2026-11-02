@@ -1,0 +1,7 @@
+plot_type: venn
+stat_type: count (forced by upstream StatPlot for venn; percent requested in the call)
+sets: Ductal,Endocrine,G1S,G2M
+set_level: TRUE
+size_in: 8x6
+dpi: 150
+png_md5: d19c3c580a0cf1dafe5a106f00565d87

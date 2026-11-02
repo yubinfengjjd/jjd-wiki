@@ -1,0 +1,7 @@
+{
+  "original_function_unchanged": true,
+  "limited_imports": ["NMF", "SeuratObject", "utils::capture.output", "pinned as_matrix"],
+  "installation_disabled": true,
+  "ok": true,
+  "class": "DimReduc"
+}

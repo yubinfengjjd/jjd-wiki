@@ -1,0 +1,16 @@
+{
+  "fixture": true,
+  "question": "固定验证方案的连续结局预测评估，现有逐样本预测还能做什么分析/配什么图？",
+  "unit": "synthetic quantity; observed and predicted use same unit",
+  "row_unit": "one subject/model/held-out fold",
+  "completed": [
+    {
+      "work": "synthetic prediction table exists",
+      "evidence": "E:\\research-wiki\\维护记录\\2026-10-21-方法复用与课题推荐升级\\qa-project\\data\\observed-predicted.csv"
+    }
+  ],
+  "unknown": [
+    "no real fitted model or features supplied; SHAP cannot be executed from prediction table"
+  ],
+  "environment": "D:\\anaconda\\python.exe; synthetic software QA only"
+}

@@ -1,0 +1,419 @@
+{
+  "fixed_source_changes": [],
+  "formal_development_changes": [],
+  "formal_wiki_changes_since_post_p0": [
+    "log.md",
+    "chart-types/heatmap.md",
+    "methods/scp-visualization-interface.md",
+    "methods/scp-visualization-interface/acceptance.json"
+  ],
+  "formal_original_asset_changes": [],
+  "initial_fixture_commit": "db9e0062a555a3a6789e6e8dd80250a211b7d1f1",
+  "formal_author_state_delta_from_pre_p0": [
+    {
+      "page": "interfaces\\render-group-heatmap.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig01-density-grid.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig02-metric-boxplots.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig03-density-panel.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig04-boxplot-panel.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig01-cns-umap.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig06-pathway-violin.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig01-volcano.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig02-ring.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig03-pie.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig04-rose.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig05-trend.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig06-area.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig07-dot.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig17-group-heatmap-dot.md",
+      "field": "status",
+      "baseline": "pending_signoff",
+      "current": "pending_template"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig17-group-heatmap-dot.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\cell-type-annotation.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-annotation-projection.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-cellqc-doublet.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-de-enrichment-dynamic.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-integration.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-local-source.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-standard-workflow.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-trajectory-velocity.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scrna-marker-annotation.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scrna-pathway-signature-ensemble.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scrna-preprocess-doublet-qc-harmony.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig01-volcano--volcano.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig02-ring--ring.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig03-pie--pie.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig04-rose--rose.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig05-trend--trend.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig06-area--area.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig07-dot--dot.md",
+      "field": "user"
+    }
+  ],
+  "isolated_author_state_delta_from_pre_p0": [
+    {
+      "page": "interfaces\\render-group-heatmap.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig01-density-grid.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig02-metric-boxplots.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig03-density-panel.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-19-regression-stability__fig04-boxplot-panel.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig01-cns-umap.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-glaucoma-scrna__fig06-pathway-violin.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig01-volcano.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig02-ring.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig03-pie.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig04-rose.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig05-trend.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig06-area.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig07-dot.md",
+      "field": "user"
+    },
+    {
+      "page": "layouts\\2026-10-22-scp-example__fig17-group-heatmap-dot.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\batch-integration.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\cell-quality-control.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\cell-type-annotation.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\differential-expression.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\dimensionality-reduction.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\doublet-detection.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\dynamic-feature-analysis.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\gene-set-enrichment.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\gene-set-scoring.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\reference-mapping.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\rna-velocity.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-annotation-projection.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-cellqc-doublet.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-de-enrichment-dynamic.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-integration.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-local-source.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-standard-workflow.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scp-trajectory-velocity.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scrna-marker-annotation.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scrna-pathway-signature-ensemble.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\scrna-preprocess-doublet-qc-harmony.md",
+      "field": "user"
+    },
+    {
+      "page": "methods\\trajectory-inference.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig01-volcano--volcano.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig02-ring--ring.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig03-pie--pie.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig04-rose--rose.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig05-trend--trend.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig06-area--area.md",
+      "field": "user"
+    },
+    {
+      "page": "templates\\2026-10-22-scp-example__fig07-dot--dot.md",
+      "field": "user"
+    }
+  ],
+  "scope": "The explicitly approved fig17 P0 state change is expected; inspect all others. No status reset or source overwrite authorized."
+}

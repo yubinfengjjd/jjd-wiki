@@ -1,0 +1,215 @@
+import argparse
+import json
+import sys
+from pathlib import Path
+
+from .config import load_config
+from .contact_sheet import contact_sheet
+from .errors import WikiError
+from .ingest import ingest_figure
+from .interfaces import add_interface
+from .methods import scaffold_method
+from .lint import lint
+from .layouts import render_layout, verify_layout
+from .store import init, save
+from .suggest import suggest, suggest_methods, suggest_pipeline
+from .templates import attach_template, mark_ready, pending, render, scaffold_template, verify_template
+from .usage import record_use
+
+
+def serve(config, no_browser: bool) -> None:
+    import asyncio
+    import webbrowser
+
+    import uvicorn
+
+    from .server import create_app
+
+    server = uvicorn.Server(uvicorn.Config(create_app(config), host="127.0.0.1", port=config.port))
+
+    async def run_server():
+        task = asyncio.create_task(server.serve())
+        while not server.started and not task.done():
+            await asyncio.sleep(0.05)
+        if server.started and not no_browser:
+            webbrowser.open(f"http://127.0.0.1:{config.port}/")
+        await task
+
+    asyncio.run(run_server())
+
+
+def parser() -> argparse.ArgumentParser:
+    result = argparse.ArgumentParser(description="科研知识库")
+    result.add_argument("--config", type=Path, default=Path(__file__).resolve().parents[1] / "config.json")
+    commands = result.add_subparsers(dest="command", required=True)
+    commands.add_parser("init")
+    ingest = commands.add_parser("ingest-figure")
+    selection = ingest.add_mutually_exclusive_group(required=True)
+    selection.add_argument("entry_id", nargs="?")
+    selection.add_argument("--all", action="store_true")
+    commands.add_parser("save").add_argument("message")
+    commands.add_parser("lint")
+    commands.add_parser("pending").add_argument('--json', action='store_true')
+    checking = commands.add_parser('check-entry')
+    checking.add_argument('entry_id')
+    checking.add_argument('--record', action='store_true')
+    commands.add_parser("serve").add_argument("--no-browser", action="store_true")
+    for name in ("verify-template", "verify-layout", "mark-ready"):
+        commands.add_parser(name).add_argument("entry_id")
+    scaffold = commands.add_parser("scaffold-template")
+    scaffold.add_argument("entry_id")
+    scaffold.add_argument("--chart-type", required=True)
+    scaffold.add_argument("--panels", required=True)
+    scaffold.add_argument("--title", help="concise panel name; defaults to the chart type")
+    interface = commands.add_parser("add-interface")
+    interface.add_argument("slug")
+    interface.add_argument("--title", required=True)
+    interface.add_argument("--columns", type=Path, required=True)
+    method = commands.add_parser("scaffold-method")
+    method.add_argument("entry_id")
+    method.add_argument("--title", required=True)
+    method.add_argument("--license", required=True)
+    source = method.add_mutually_exclusive_group(required=True)
+    source.add_argument("--from-entry")
+    source.add_argument("--from-path", type=Path)
+    source.add_argument("--written", action="store_true")
+    method.add_argument("--url")
+    method.add_argument("--commit")
+    attach = commands.add_parser("attach-template")
+    attach.add_argument("entry_id")
+    attach.add_argument("template_id")
+    attach.add_argument("--panels", required=True)
+    rendering = commands.add_parser("render")
+    rendering.add_argument("entry_id")
+    rendering.add_argument("--data", type=Path, required=True)
+    rendering.add_argument("--out", type=Path, required=True)
+    rendering.add_argument("--style", type=Path)
+    rendering.add_argument("--bindings", type=Path,
+                           help="显式映射外部文件/列；不提供时读取 <接口>.csv")
+    layout_rendering = commands.add_parser("render-layout")
+    layout_rendering.add_argument("entry_id")
+    layout_rendering.add_argument("--data", type=Path, required=True)
+    layout_rendering.add_argument("--out", type=Path, required=True)
+    layout_rendering.add_argument("--style", type=Path)
+    suggesting = commands.add_parser("suggest")
+    suggesting.add_argument("--chart-type", nargs="+", action="extend", default=[])
+    suggesting.add_argument("--columns")
+    suggesting.add_argument("--q", default="")
+    suggesting.add_argument("--limit", type=int, default=3)
+    method_suggesting = commands.add_parser("suggest-methods")
+    method_suggesting.add_argument("--q", default="")
+    method_suggesting.add_argument("--columns")
+    method_suggesting.add_argument("--limit", type=int, default=3)
+    pipeline = commands.add_parser("suggest-pipeline")
+    pipeline.add_argument("--figure")
+    pipeline.add_argument("--q", default="")
+    sheet = commands.add_parser("contact-sheet")
+    sheet.add_argument("entry_ids", nargs="+")
+    sheet.add_argument("--out", type=Path, required=True)
+    usage = commands.add_parser("record-use")
+    usage.add_argument("entry_id")
+    usage.add_argument("--project", required=True)
+    usage.add_argument("--title", required=True)
+    usage.add_argument("--output", required=True)
+    usage.add_argument("--note")
+    usage.add_argument("--method")
+    return result
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = parser().parse_args(argv)
+    try:
+        config = load_config(args.config)
+        if args.command == "init":
+            init(config)
+        elif args.command == "ingest-figure":
+            ingest_figure(config, args.entry_id)
+        elif args.command == "save":
+            save(config, args.message)
+        elif args.command == "serve":
+            serve(config, args.no_browser)
+        elif args.command == "pending":
+            if args.json:
+                from .workflow import workflow_snapshot
+                print(json.dumps([{'path': path, **item} for path, item in workflow_snapshot(config).items()
+                                  if item['queue'] == 'agent'], ensure_ascii=False, indent=2))
+            else:
+                for entry_id in pending(config):
+                    print(entry_id)
+        elif args.command == 'check-entry':
+            from .acceptance import acceptance_stale, entry_errors, record_acceptance
+            from .pages import read_page, visual_path
+            page = visual_path(config.wiki_root, args.entry_id)
+            meta, _ = read_page(page)
+            content_errors = entry_errors(config, page)
+            stale = meta.get('status') == 'ready' and acceptance_stale(page)
+            runtime_errors = []
+            runtime_warnings = []
+            if meta.get('type') in ('method', 'template'):
+                from .runtime_contract import lint_manifest, read_manifest
+                kind = 'method' if meta['type'] == 'method' else 'template'
+                _, manifest_issues = read_manifest(page.with_suffix(''), meta['id'], kind)
+                runtime_errors = manifest_issues
+                if not manifest_issues:
+                    runtime_warnings = lint_manifest(page.with_suffix(''), meta['id'], kind)
+            errors = (content_errors + runtime_errors
+                      + (['验收记录与当前内容不同，请核对后 --record'] if stale else []))
+            from .method_taxonomy import missing_purpose
+            warnings = (['purposes 缺失：请按分析用途分类；不影响已有状态，但不是完整分类']
+                        if missing_purpose(meta) else []) + runtime_warnings
+            report = {'page': page.relative_to(config.wiki_root).as_posix(), 'passed': not errors,
+                      'errors': errors, 'warnings': warnings,
+                      'scope': '结构和当前回放检查，不代替科学审查或作者确认'}
+            if args.record and not content_errors and not runtime_errors:
+                report['record'] = record_acceptance(config, page)
+                report['passed'] = True
+                report['errors'] = []
+                save(config, f'acceptance check {args.entry_id}')
+            print(json.dumps(report, ensure_ascii=False, indent=2))
+            if errors and not (args.record and not content_errors and not runtime_errors):
+                return 1
+        elif args.command == "scaffold-template":
+            scaffold_template(config, args.entry_id, args.chart_type,
+                              args.panels.split(","), title=args.title)
+        elif args.command == "add-interface":
+            add_interface(config, args.slug, args.title, args.columns)
+        elif args.command == "scaffold-method":
+            scaffold_method(config, args.entry_id, args.title, args.license,
+                            args.from_entry, args.from_path, args.url, args.commit, args.written)
+        elif args.command == "attach-template":
+            attach_template(config, args.entry_id, args.template_id, args.panels.split(","))
+        elif args.command == "render":
+            render(config, args.entry_id, args.data, args.out, args.style, args.bindings)
+        elif args.command == "verify-template":
+            verify_template(config, args.entry_id)
+        elif args.command == "verify-layout":
+            verify_layout(config, args.entry_id)
+        elif args.command == "render-layout":
+            render_layout(config, args.entry_id, args.data, args.out, args.style)
+        elif args.command == "mark-ready":
+            mark_ready(config, args.entry_id)
+        elif args.command == "suggest":
+            print(json.dumps(suggest(config, args.chart_type, args.columns,
+                                     args.q, args.limit), ensure_ascii=False, indent=2))
+        elif args.command == "suggest-pipeline":
+            print(json.dumps(suggest_pipeline(config, args.figure, args.q),
+                             ensure_ascii=False, indent=2))
+        elif args.command == "suggest-methods":
+            print(json.dumps(suggest_methods(config, args.q, args.columns, args.limit),
+                             ensure_ascii=False, indent=2))
+        elif args.command == "contact-sheet":
+            print(contact_sheet(config, args.entry_ids, args.out))
+        elif args.command == "record-use":
+            record_use(config, args.entry_id, args.project, args.title, args.output, args.note,
+                       args.method)
+        elif args.command == "lint":
+            diagnostics = lint(config)
+            for line in diagnostics:
+                print(line)
+            if any(line.startswith("ERROR ") for line in diagnostics):
+                return 1
+            print("OK")
+    except WikiError as error:
+        print(error, file=sys.stderr)
+        return 1
+    return 0

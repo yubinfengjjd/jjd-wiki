@@ -1,0 +1,1965 @@
+[
+  {
+    "id": "batch-integration",
+    "title": "单细胞批次整合",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-seurat",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_seurat_integration",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-seurat-portability.json",
+          "closure_hash": "4907ef223e833bd4d44b2adfb0d7ece0d57c1f1857330089a95b61090a2f5ab8",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-harmony",
+        "state": "not_run",
+        "scope": "Missing R dependency: harmony; automatic installation is disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_batch_integration",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: harmony; automatic installation is disabled",
+          "evidence": "verification/scp-harmony-portability.json",
+          "closure_hash": "4907ef223e833bd4d44b2adfb0d7ece0d57c1f1857330089a95b61090a2f5ab8",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-integration-scp",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/integration-scp/code/module.R",
+        "entry_function": "Integration_SCP",
+        "runtime_mode": "standalone",
+        "dependency_match": false,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "6a89c7789633aff3faaa863a11d02bdba21e1a5fddb764f6bc5530fa9c558609",
+          "issues": [
+            "页面 dependencies 与 runtime.json 的 required_packages 不一致；前端使用 runtime.json，页面字段仅作历史兼容"
+          ]
+        }
+      },
+      {
+        "id": "scp-bbknn-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/bbknn-integrate/code/module.R",
+        "entry_function": "BBKNN_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "5930f3ecab1e73eba45a715f050c945bcadced424901a3963e349d1799d8a3f1",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-css-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/css-integrate/code/module.R",
+        "entry_function": "CSS_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "53c9e7f3b8c7cc9d77a559232968f58624412c53934f34d6214bdfe1efb4729d",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-combat-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/combat-integrate/code/module.R",
+        "entry_function": "ComBat_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "f1dcbadcc139db3ad33faadb6cc337243c2a877901f531dd828fd24f087d01e3",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-conos-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/conos-integrate/code/module.R",
+        "entry_function": "Conos_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "38643328f400f769570260c8b2a64ac0211884f78b56cf134f5136ab64025f50",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-harmony-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/harmony-integrate/code/module.R",
+        "entry_function": "Harmony_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "35f022c1cd2b588f9ddb87d6ea2aa50e60802824fbfa902346142c8ccd309246",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-liger-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/liger-integrate/code/module.R",
+        "entry_function": "LIGER_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "0b16874db80141bc7964dc3f4ddd4daccb679a91ada9be1379e05979a5d39365",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-mnn-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/mnn-integrate/code/module.R",
+        "entry_function": "MNN_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "558867480be93ff5a8b4c8c3c006a9f521129937f2e10c9c54908f09d8a67132",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runharmony2",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runharmony2/code/module.R",
+        "entry_function": "RunHarmony2",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "eca26187942fd971483704fb7f6e84445fb230095eff9fa3a4252a6f4a2fa39e",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-scanorama-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/scanorama-integrate/code/module.R",
+        "entry_function": "Scanorama_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "0ebd04a802fec3ab29da6c90878a47f88c7c68a19bdb630a6e27ffd0a520b737",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-seurat-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/seurat-integrate/code/module.R",
+        "entry_function": "Seurat_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d4d708e968cd66e589e2389ed299dfd0ae654e08c19a4bfc52e9aef9ce494ecd",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-uncorrected-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/uncorrected-integrate/code/module.R",
+        "entry_function": "Uncorrected_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "77b717cf2ed0b20542eb4ea016a3bffbe1a06d44427b2320a43ecef75c3cee37",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-fastmnn-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/fastmnn-integrate/code/module.R",
+        "entry_function": "fastMNN_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "72213c72b9666e46c9bab0bd861c6ca697ab62d03c639e2796cf3f33306f35ff",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-scvi-integrate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/scvi-integrate/code/module.R",
+        "entry_function": "scVI_integrate",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "1997c2e7387c12d9740eeab4039bfa5f223d6f8b3776836d0780cdb188153e41",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "cell-clustering",
+    "title": "单细胞聚类分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "seurat-findclusters",
+        "state": "verified",
+        "scope": "Isolated replay: PCA 1:20 res 0.5 on pancreas_sub; labels vs explicit Seurat calls",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "cell-quality-control",
+    "title": "单细胞质量控制",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-runcellqc",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_cell_quality_control",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-runcellqc-portability.json",
+          "closure_hash": "2fe7832392f65f164e1edc3e129e7c611261cc181c3d9f386383256c7f835c6e",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-runcellqc-src",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runcellqc/code/module.R",
+        "entry_function": "RunCellQC",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "7ca8a9eb4c4f1ebeea485a5938260beb54b7ae6542295a8b6ce601dc9353ee87",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-isoutlier",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/isoutlier/code/module.R",
+        "entry_function": "isOutlier",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "11925dcfa7aed1e2191e54bcee917caeac18579aee5813620f98a6941e5e3f4c",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "cell-type-annotation",
+    "title": "细胞类型注释",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-singler",
+        "state": "not_run",
+        "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_cell_type_annotation",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: SingleR; automatic installation is disabled",
+          "evidence": "verification/scp-singler-portability.json",
+          "closure_hash": "5a71529343ad6b1ac837b169a450a7d33199bbdad7d370a0d512ea9020615726",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-runknnpredict",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runknnpredict/code/module.R",
+        "entry_function": "RunKNNPredict",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d363cb15e166cfe6b2359f35fefae561b6ce7a4474362a5b749b7a4e5f51bcb3",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runscmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runscmap/code/module.R",
+        "entry_function": "RunScmap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d423e13274faf711370adb97b12cea309d5b738ecb98ff3dd950880491fbc17c",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runsingler",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runsingler/code/module.R",
+        "entry_function": "RunSingleR",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "dcd29948b383e209c178eb94a78092462d629fda2fbd2e57f0ac4f0a3dd1e8f2",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "count-recovery",
+    "title": "已知归一化模型的计数反推",
+    "kind": "analysis",
+    "status": "draft",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-recovercounts",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/recovercounts/code/module.R",
+        "entry_function": "RecoverCounts",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "3361b998126d823c32edd5b0297590dae1ea1ac1da0bf4f8bd96960e212a6aa9",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "differential-expression",
+    "title": "差异表达分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-detest",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_differential_expression",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-detest-portability.json",
+          "closure_hash": "2836a37e407f1926983e36df0a9824e367b8097d15b474cd65d35f819097aeaa",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-findexpressedmarkers",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/findexpressedmarkers/code/module.R",
+        "entry_function": "FindExpressedMarkers",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "5cd0db60f60ae893eea59aa3c7988237bee3da9549dd0809b971080f1b4911fb",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-rundetest",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/rundetest/code/module.R",
+        "entry_function": "RunDEtest",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "db4f26e608517ff94ff21aaabc8f15b7affbd7d079261f41a643e7c77b187386",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "dimensionality-reduction",
+    "title": "单细胞降维分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-dimreduction",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_dimensionality_reduction",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-dimreduction-portability.json",
+          "closure_hash": "04e23ddd5c092deef3de5a46f5c384e561075a5c1b84a8c0d6728d5b2650e60f",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-rundm",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/rundm/code/module.R",
+        "entry_function": "RunDM",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d4d21249f624c9d53979c51bdbe4530125db6ce96f62f410cb26cdf2b348e6f9",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-rundimreduction",
+        "state": "not_run",
+        "scope": "mds_via_dispatch",
+        "entry": "code/rundimreduction/code/module.R",
+        "entry_function": "RunDimReduction",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "b0031c24bc797c5d39d20ae45071ab952354b09eace1676202c5537c3d28a737",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runfr",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runfr/code/module.R",
+        "entry_function": "RunFR",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "1805f6fa86e94c67511449b52f845a35d9db45e71cf3829a5ff962bca702dfef",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runglmpca",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runglmpca/code/module.R",
+        "entry_function": "RunGLMPCA",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "4b2757b88ffc05ed022eac1e2cdaf1eea17909688badcc5e29afcfba89bcf69c",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runlargevis",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runlargevis/code/module.R",
+        "entry_function": "RunLargeVis",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "a11f3f1abfc42c43ea2f2392fdeaf75df45319ac7b86e9fbafac19ddef9dea4e",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runmds",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/runmds/code/module.R",
+        "entry_function": "RunMDS",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d83e4e624cd1bb9399377c44cff14f1e4131443913ee33c66481e31aabe1e0d9",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runnmf",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/runnmf/code/module.R",
+        "entry_function": "RunNMF",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "4220882791c4896ce947690131fd535e69e65c066417e25bbba4d8cb50a87687",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runphate",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runphate/code/module.R",
+        "entry_function": "RunPHATE",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "f782b6004fd69b3f45b0c939bb1b079f03a4257febd05e6862c9302937d568de",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runpacmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runpacmap/code/module.R",
+        "entry_function": "RunPaCMAP",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "2244666a70730ec19f6c352eb56063655fe88ea12927dace040ca46042e30dfd",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runtrimap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runtrimap/code/module.R",
+        "entry_function": "RunTriMap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "8a2ca82579151bcc7ac43e4fa53b9b1fbaedeeae9d18a3bb4e82345ba78a49a8",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runumap2",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runumap2/code/module.R",
+        "entry_function": "RunUMAP2",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "379842862771deacc9b02059f1684fde6e39f28eeee764c7d7e73261f731293f",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "doublet-detection",
+    "title": "双细胞检测",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-rundoublet",
+        "state": "not_run",
+        "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_doublet_detection",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
+          "evidence": "verification/scp-rundoublet-portability.json",
+          "closure_hash": "b6e90f6d32397d89a78cd49de19ae8eda96326cd44a4fcae951bbb7b52b58cc2",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-rundoubletcalling",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/rundoubletcalling/code/module.R",
+        "entry_function": "RunDoubletCalling",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "fefabee9079714575d564db5d96a6448d7bdc688ff9f0d3df91960dda9f5b09a",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-db-doubletdetection",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/db-doubletdetection/code/module.R",
+        "entry_function": "db_DoubletDetection",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "b433dbf1683a0aab907a2dc8f09a6c54533c1a96d6112f41b2650f212c0d1295",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-db-scrublet",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/db-scrublet/code/module.R",
+        "entry_function": "db_Scrublet",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "e286ceed3b313fc81379c33bdd1a42283f25876498a63b480e4f025f242072bd",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-db-scdblfinder",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/db-scdblfinder/code/module.R",
+        "entry_function": "db_scDblFinder",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "013b8f91788dbd86176823124dfafb0edd83fc2e39f09c0e6e3849500282314d",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-db-scds",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/db-scds/code/module.R",
+        "entry_function": "db_scds",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "3bba4cec17f1f566e5964153a6815bbdc859516aa190a3e96c3fbf21465088cc",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "dynamic-feature-analysis",
+    "title": "拟时序动态特征分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-dynamicfeatures",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_dynamic_feature_analysis",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-dynamicfeatures-portability.json",
+          "closure_hash": "004e5da77e067e31ecdbab7b89329b1bfc6f8ca8ce207234d73fbe28657c54d6",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-rundynamicenrichment",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/rundynamicenrichment/code/module.R",
+        "entry_function": "RunDynamicEnrichment",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d7773d332b8014593fe7a5f0cc0eaec53f141008347303bdcb1e976916b1a39d",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-rundynamicfeatures",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/rundynamicfeatures/code/module.R",
+        "entry_function": "RunDynamicFeatures",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "0cbe55fdeac8ab04f3acda9172eda1bf9fe274d78775c2286e086129bbe365d6",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "gene-set-enrichment",
+    "title": "基因集富集分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-enrichment",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_gene_set_enrichment",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-enrichment-portability.json",
+          "closure_hash": "cab1cf510a71e19149e647db90cb1fb1ed71bb95bfe80fec2fb460d3be8a56e7",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-runenrichment",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runenrichment/code/module.R",
+        "entry_function": "RunEnrichment",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "26b89cd7437240277dfff543cd8bad8adf9ed11a7a926bb5281012b1b403d50f",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-rungsea",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/rungsea/code/module.R",
+        "entry_function": "RunGSEA",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "3287330523259c1ed39ec9d2a6187f960aadf53c4aa0056ccc459c4a50a5a859",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "gene-set-scoring",
+    "title": "基因集与通路签名打分",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-cellscoring",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_gene_set_scoring",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-cellscoring-portability.json",
+          "closure_hash": "80cd085d36226f49a0842c8188ee63fab0d1978f418102d38b23e0caf4c07728",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-cellscoring-src",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/cellscoring/code/module.R",
+        "entry_function": "CellScoring",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "16e018acafa32f44781baf201a9865081d4f3cbb79820ab326c308d16b4c18ff",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "reference-mapping",
+    "title": "参考图谱映射",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "seurat-label-transfer",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/transfer.R",
+        "entry_function": "run_reference_label_transfer",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/seurat-label-transfer-portability.json",
+          "closure_hash": "fe183755ddf83f1086f11cfa1286312be8e9ee0f9c6957cfb414dc3a23b9e86a",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-runcssmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runcssmap/code/module.R",
+        "entry_function": "RunCSSMap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "d949518003151454652c81b42f93f740f11dba630986c2932f168b116e619765",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runknnmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runknnmap/code/module.R",
+        "entry_function": "RunKNNMap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "4295793c5d9d34e03af1178359edac1aba9eb2ed029736419cfb68706a42e2c7",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runpcamap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runpcamap/code/module.R",
+        "entry_function": "RunPCAMap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "ef2ae4ad1db00b1df23e5fc416b26074d65eb7850655ecafcd8499649f4b9e4a",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runseuratmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runseuratmap/code/module.R",
+        "entry_function": "RunSeuratMap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "f44bf798a8c48720ee07c3144b226c2c6b52224e975e5880a0abfd9d4312d157",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runsymphonymap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runsymphonymap/code/module.R",
+        "entry_function": "RunSymphonyMap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "ba87efce618d84bb18a93809e0fa6819dd5efdf796b8cd5ef5cad603cabced7d",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "regression-resampling-evaluation",
+    "title": "回归模型的重采样评估与折外预测",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "summarize-predictions",
+        "state": "invalid",
+        "scope": "",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "rna-velocity",
+    "title": "RNA 速度分析",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-scvelo",
+        "state": "not_run",
+        "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+        "entry": "code/analysis.R",
+        "entry_function": "run_rna_velocity",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
+          "evidence": "verification/scp-scvelo-portability.json",
+          "closure_hash": "f546b937462b2ea5380d2b6945fbceb9fb3b6acf82ee3e5081677bede1556022",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-runscvelo",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runscvelo/code/module.R",
+        "entry_function": "RunSCVELO",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "6a93ccfa53680f1ab6fdc8443a3f87100412189b7c14eeafb71bd257ed48bd45",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-annotation-projection",
+    "title": "单细胞自动注释与参考投影",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-cellqc-doublet",
+    "title": "单细胞 QC 与双细胞检测",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-de-enrichment-dynamic",
+    "title": "单细胞差异表达、基因集富集与动态特征",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-environment-installers",
+    "title": "SCP 安装器与环境函数（已排除）",
+    "kind": "technical",
+    "status": "draft",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-integration",
+    "title": "单细胞多样本整合",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-integration-scp",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/integration-scp/code/module.R",
+        "entry_function": "Integration_SCP",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "f983b7461909d15c44b9609beecbbd68ae550dee85acd8e86e7f592a5318207d",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-local-source",
+    "title": "SCP 源码本地化",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-standard-workflow",
+    "title": "单细胞标准预处理、降维与聚类",
+    "kind": "workflow",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-standard-scp",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/standard-scp/code/module.R",
+        "entry_function": "Standard_SCP",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "f36a17b0a8f3daf0cd55ad3920423eabdbe869e4ce4cc388223d0dcf778bb47c",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-trajectory-velocity",
+    "title": "单细胞轨迹推断与 RNA 速度",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scp-visualization-interface",
+    "title": "SCP 绘图函数与图接口映射",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-table-adapters",
+        "state": "verified",
+        "scope": "Isolated replay: synthetic table-adapter checks in B code dir",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-viz-dimplots",
+    "title": "SCP 嵌入散点绘图",
+    "kind": "technical",
+    "status": "draft",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-celldensityplot",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/celldensityplot/code/module.R",
+        "entry_function": "CellDensityPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "1a1776b3b2b77ca5b90cfc442d6dcdd03b7dbdae0ed2d669188d053e23c7a1f6",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-celldimplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/celldimplot/code/module.R",
+        "entry_function": "CellDimPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "1642165b45d1bc54d5c61c1727295fe501f908a11c509329637fc25ea6bc7a24",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-celldimplot3d",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/celldimplot3d/code/module.R",
+        "entry_function": "CellDimPlot3D",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "83c7b415fe7903d116f6e5b79e041dc909242e7237e3e9f6bf57accc2b6f8686",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-featuredimplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/featuredimplot/code/module.R",
+        "entry_function": "FeatureDimPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "821d9fd8c61cf9a0c39b85f19daecfbc38b4cb23cae2ae8761cd7c3964aff8b0",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-featuredimplot3d",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/featuredimplot3d/code/module.R",
+        "entry_function": "FeatureDimPlot3D",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "6a25e8db8ac88293bd14d383b4bcb3ae790ac417fd3287a55ae1d18d9208cc45",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-viz-heatmaps",
+    "title": "SCP 热图绘制",
+    "kind": "technical",
+    "status": "draft",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-cellcorheatmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/cellcorheatmap/code/module.R",
+        "entry_function": "CellCorHeatmap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "77bc59dfae2b0b2d11500fa2e1833491da24f9a97551304236a201b1e808e8e4",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-dynamicheatmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/dynamicheatmap/code/module.R",
+        "entry_function": "DynamicHeatmap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "ac0e174995c9da19bf4e9932a91ff8de12e347b6c18e4ea692262a879e0b7650",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-featureheatmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/featureheatmap/code/module.R",
+        "entry_function": "FeatureHeatmap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "c586e2ffa9949b3ac8b03b357f33dd95b24193d951ccd55dede284b10c50363d",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-groupheatmap",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/groupheatmap/code/module.R",
+        "entry_function": "GroupHeatmap",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "a5e2d35dff33cb8c1658ccec132a619ec3d8ad60edc8b27144108fa443a9504f",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-viz-model-overlays",
+    "title": "SCP 模型结果叠加绘图",
+    "kind": "technical",
+    "status": "draft",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-dynamicplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/dynamicplot/code/module.R",
+        "entry_function": "DynamicPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "220aaf239cd4734975a29e073672b5d0905a9fe64e264ef426b95904529776cd",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-enrichmentplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/enrichmentplot/code/module.R",
+        "entry_function": "EnrichmentPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "9eecc37965db065fcb6a5bf6445c14a8c23d4797a9640395f74d941f00c676db",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-gseaplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/gseaplot/code/module.R",
+        "entry_function": "GSEAPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "4bf5635ec73eeab571822122fcb46ad1bfca228195e1b6cd1474143fcbbf409f",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-graphplot",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/graphplot/code/module.R",
+        "entry_function": "GraphPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "4728f38f8a6d0af97d85bbd79ab53cec5844e1865ecf4a4d34f73c04b610ae44",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-lineageplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/lineageplot/code/module.R",
+        "entry_function": "LineagePlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "5fb46f553607a1a965846d8e568306b322f2403df6103313c0059d67f1599ea0",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-pagaplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/pagaplot/code/module.R",
+        "entry_function": "PAGAPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "7416a652b38c68d6c5a712e908d1dcc030fdd8a5d334cd07522d49e2bf21f827",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-projectionplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/projectionplot/code/module.R",
+        "entry_function": "ProjectionPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "eca9b93633f5b3d95ef0a50c6fa94d1caca7ed4f670adf288fccb7b4ef669fe3",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-velocityplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/velocityplot/code/module.R",
+        "entry_function": "VelocityPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "1ea350a1e48f1cf8cd64aafe0d5b073c550ebe37c1b0f6483ba5f975ea94ef93",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-compute-velocity-on-grid",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/compute-velocity-on-grid/code/module.R",
+        "entry_function": "compute_velocity_on_grid",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "44899e173826e02c4890b385a8d70f5e29a4c4dd630784366eee51e5b97b5acf",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scp-viz-statplots",
+    "title": "SCP 统计比较绘图",
+    "kind": "technical",
+    "status": "draft",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-cellstatplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/cellstatplot/code/module.R",
+        "entry_function": "CellStatPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "1bd4a6838cebac2a5a0a3ea146dc42557cec4ff47ff95e80fec840b8602eed4e",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-featurecorplot",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/featurecorplot/code/module.R",
+        "entry_function": "FeatureCorPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "270eee2e460bcfe80cc32eb5b86c5c9b822b76430d0a4b61b3ba80279a45e780",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-featurestatplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/featurestatplot/code/module.R",
+        "entry_function": "FeatureStatPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "fa0bf53250470294f9dac553f4cb1766fb11166cf9303ba91732015cfc649f5b",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-statplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/statplot/code/module.R",
+        "entry_function": "StatPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "21e7383517ff817d0ff5b86f9dae90c91c95c6164e09786b6c9de4fb228868cf",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-volcanoplot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/volcanoplot/code/module.R",
+        "entry_function": "VolcanoPlot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "14c3d16eda650fbb5265ae8e37c951e47b6acbc53f67f363f60ec4075677ba30",
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "scrna-marker-annotation",
+    "title": "单细胞标记基因注释与聚类检查",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scrna-pathway-signature-ensemble",
+    "title": "单细胞通路签名打分与组间比较",
+    "kind": "technical",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "scrna-preprocess-doublet-qc-harmony",
+    "title": "单细胞预处理、批次校正与聚类",
+    "kind": "workflow",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": []
+  },
+  {
+    "id": "shap-explanation",
+    "title": "基于 SHAP 的模型解释",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "shap-explain-model",
+        "state": "invalid",
+        "scope": "",
+        "entry": null,
+        "entry_function": null,
+        "runtime_mode": "unknown",
+        "dependency_match": null,
+        "portability": {
+          "state": "unknown",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": null,
+          "issues": []
+        }
+      }
+    ]
+  },
+  {
+    "id": "trajectory-inference",
+    "title": "拟时序与轨迹推断",
+    "kind": "analysis",
+    "status": "ready",
+    "ready_for_use": false,
+    "metadata_errors": [],
+    "implementations": [
+      {
+        "id": "scp-slingshot",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/analysis.R",
+        "entry_function": "run_trajectory_inference",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
+          "evidence": "verification/scp-slingshot-portability.json",
+          "closure_hash": "f8c031a17edf6f130256473c703b2cf4f98b7a63fff987fded3befd4e827d382",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-monocle2",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle; automatic installation is disabled",
+        "entry": "code/monocle2.R",
+        "entry_function": "run_trajectory_monocle2",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: monocle; automatic installation is disabled",
+          "evidence": "verification/scp-monocle2-portability.json",
+          "closure_hash": "96f348823908f445df6599f5706753f42a32c624af47b76a7ca9d570f439759f",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-monocle3",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+        "entry": "code/monocle3.R",
+        "entry_function": "run_trajectory_monocle3",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+          "evidence": "verification/scp-monocle3-portability.json",
+          "closure_hash": "ad98b80080b8cd51b5cad39dd9764f846e1b915dd5a21650c6d53afd371509ce",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-monocle2-core",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle; automatic installation is disabled",
+        "entry": "code/monocle2_core.R",
+        "entry_function": "run_monocle2_core",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: monocle; automatic installation is disabled",
+          "evidence": "verification/scp-monocle2-core-portability.json",
+          "closure_hash": "09d654c196c93f59ef6deca46de3063c9348d8bee7a0e55f5b637161f8a189ac",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-monocle3-core",
+        "state": "not_run",
+        "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+        "entry": "code/monocle3_core.R",
+        "entry_function": "run_monocle3_core",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "invalid",
+          "scope": "Missing R dependency: monocle3; automatic installation is disabled",
+          "evidence": "verification/scp-monocle3-core-portability.json",
+          "closure_hash": "5c9d12034a994c700bd363ddca7627c67fee28808adac54c40fb688dc66ee2b7",
+          "issues": [
+            "独立性收据绑定的闭包已变化"
+          ]
+        }
+      },
+      {
+        "id": "scp-runmonocle2",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runmonocle2/code/module.R",
+        "entry_function": "RunMonocle2",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "665676be1fd90dff84bf7b15b1b4863b63c775dcc418e8ad6b1ddc73dc7b8e97",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runmonocle3",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runmonocle3/code/module.R",
+        "entry_function": "RunMonocle3",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "6e5911a576382d452a3c363a5fa83ae4a95e9524eed2e05ece1852a9ba82dcc5",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runpaga",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runpaga/code/module.R",
+        "entry_function": "RunPAGA",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "588fb90b9a20d00f5d439e1dd172134a89c3e377c31421ef648e35fac216165f",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runpalantir",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runpalantir/code/module.R",
+        "entry_function": "RunPalantir",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "c622cbfc4e965d0007f501dbcefc13c2637188e55057b20fea5abf9fa34cdadd",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runslingshot",
+        "state": "invalid",
+        "scope": "",
+        "entry": "code/runslingshot/code/module.R",
+        "entry_function": "RunSlingshot",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "f0a6e7cbb1285906b63c1c79e98e833f0d684c958d79e04a7eec259a91e2e0d4",
+          "issues": []
+        }
+      },
+      {
+        "id": "scp-runwot",
+        "state": "not_run",
+        "scope": "",
+        "entry": "code/runwot/code/module.R",
+        "entry_function": "RunWOT",
+        "runtime_mode": "standalone",
+        "dependency_match": true,
+        "portability": {
+          "state": "declared",
+          "scope": "",
+          "evidence": null,
+          "closure_hash": "7011136da13e4e9199e8a869962168da45a923791259d07b55c5e6e4c08a15d3",
+          "issues": []
+        }
+      }
+    ]
+  }
+]

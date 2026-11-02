@@ -1,0 +1,77 @@
+{
+  "scope": "native source reference only; localized infrastructure loader + locked no-install guards; no portability/scientific/author approval",
+  "cases": {
+    "group-violin-group": {
+      "state": "reference_generated",
+      "class": "list",
+      "files": [
+        "group-violin-group.png",
+        "group-violin-group.svg"
+      ],
+      "function_name": "GroupHeatmap",
+      "object_unchanged": true
+    },
+    "group-violin-expression": {
+      "state": "reference_generated",
+      "class": "list",
+      "files": [
+        "group-violin-expression.png",
+        "group-violin-expression.svg"
+      ],
+      "function_name": "GroupHeatmap",
+      "object_unchanged": true
+    },
+    "group-dot-flip": {
+      "state": "reference_generated",
+      "class": "list",
+      "files": [
+        "group-dot-flip.png",
+        "group-dot-flip.svg"
+      ],
+      "function_name": "GroupHeatmap",
+      "object_unchanged": true
+    },
+    "group-split-dot-reticle": {
+      "state": "reference_generated",
+      "class": "list",
+      "files": [
+        "group-split-dot-reticle.png",
+        "group-split-dot-reticle.svg"
+      ],
+      "function_name": "GroupHeatmap",
+      "object_unchanged": true
+    },
+    "group-annotation": {
+      "state": "reference_generated",
+      "class": "list",
+      "files": ["group-annotation.png", "group-annotation.svg"],
+      "function_name": "GroupHeatmap",
+      "object_unchanged": true
+    },
+    "cell-dim-mark-hull": {
+      "state": "reference_failed",
+      "error": "argument 4 matches multiple formal arguments",
+      "function_name": "CellDimPlot",
+      "object_unchanged": true
+    },
+    "cell-dim-mark-ellipse": {
+      "state": "reference_failed",
+      "error": "argument 4 matches multiple formal arguments",
+      "function_name": "CellDimPlot",
+      "object_unchanged": true
+    },
+    "cell-dim-mark-rect": {
+      "state": "reference_failed",
+      "error": "argument 4 matches multiple formal arguments",
+      "function_name": "CellDimPlot",
+      "object_unchanged": true
+    },
+    "cell-dim-mark-circle": {
+      "state": "reference_failed",
+      "error": "argument 4 matches multiple formal arguments",
+      "function_name": "CellDimPlot",
+      "object_unchanged": true
+    }
+  },
+  "input_file_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744"
+}

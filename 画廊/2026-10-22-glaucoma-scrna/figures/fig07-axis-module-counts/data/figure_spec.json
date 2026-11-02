@@ -1,0 +1,27 @@
+{
+  "kind": "bar",
+  "canvas_px": [2189, 1523],
+  "panels": [
+    {"id": "A", "kind": "bar"}
+  ],
+  "style": {
+    "canvas_px": [2189, 1523],
+    "figsize": [7.4, 5.2],
+    "bar_width": 0.38,
+    "series": ["All ranked axes", "Top 20 axes"],
+    "module_order": ["TM_IOP", "ECM_TGFB_EMT", "RGC_NEURODEGENERATION", "INFLAMMATION_COMPLEMENT", "MITO_FERROPTOSIS"],
+    "module_labels": {
+      "TM_IOP": "TM / IOP",
+      "ECM_TGFB_EMT": "ECM / TGFβ / EMT",
+      "RGC_NEURODEGENERATION": "RGC neurodegeneration",
+      "INFLAMMATION_COMPLEMENT": "Inflammation / Complement",
+      "MITO_FERROPTOSIS": "Mitochondria / Ferroptosis"
+    }
+  },
+  "data_provenance": "original",
+  "notes": [
+    "Counts are derived from the real enhanced_axis_ranking_v8.csv (1000 axes).",
+    "Top 20 counts use the first 20 rows by rank.",
+    "The QA-required data/estimated_data.csv is a copy of the real module counts; it is not estimated."
+  ]
+}

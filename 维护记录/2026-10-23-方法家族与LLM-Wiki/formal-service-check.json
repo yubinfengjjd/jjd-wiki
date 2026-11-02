@@ -1,0 +1,20 @@
+{
+  "formal_url": "http://127.0.0.1:8765",
+  "classification": {
+    "analysis": 15,
+    "technical": 9,
+    "workflow": 2
+  },
+  "mixed_branch_states": [
+    {
+      "id": "scp-seurat",
+      "state": "verified"
+    },
+    {
+      "id": "scp-harmony",
+      "state": "not_run"
+    }
+  ],
+  "root_http_ok": true,
+  "deployed_service": true
+}

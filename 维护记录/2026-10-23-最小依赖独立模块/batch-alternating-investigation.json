@@ -1,0 +1,6 @@
+{
+  "case": "120 cells, legal alternating A/B batch labels (interleaved cell order)",
+  "original": "ERROR: invalid class \"Assay\" object: 'counts' must have the same cells as 'data'",
+  "new": "ERROR: invalid class \"Assay\" object: 'counts' must have the same cells as 'data'",
+  "conclusion": "both original and newly extracted branch fail identically with the Assay counts/data cell mismatch; continuous-block fixture passes; this does not prove all legal cell orders are supported and does not change statistical defaults"
+}

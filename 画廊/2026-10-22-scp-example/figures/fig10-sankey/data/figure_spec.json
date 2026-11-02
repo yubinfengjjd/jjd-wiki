@@ -1,0 +1,65 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig10.png",
+  "reference_panel": "source/reference_panel.png",
+  "reference_panel_bbox": [
+    1454,
+    675,
+    1939,
+    1013
+  ],
+  "full_original": "source/full_original.jpg",
+  "full_original_sha256": "a63a3a53beb2c052a4c0278bbeec477c4d741f889d8551808fdcdee9471e4814",
+  "logical_panel": "A",
+  "chart_type": "sankey",
+  "input": "data/render-cell-linkage.csv",
+  "input_columns": {
+    "cell": "cell identifier; one row per cell x dimension; unique within a dimension",
+    "dimension": "annotation/dimension name; CellType then Phase",
+    "category": "category of that dimension for the cell",
+    "dimension_order": "1-based dimension order; 1 = CellType, 2 = Phase"
+  },
+  "aggregated_qa": "data/celltype_phase_counts.csv",
+  "params": {
+    "plot_type": "sankey",
+    "stat_type": "count",
+    "dimension_order": [
+      "CellType",
+      "Phase"
+    ],
+    "dimension_levels": {
+      "CellType": [
+        "Ductal",
+        "Ngn3 low EP",
+        "Ngn3 high EP",
+        "Pre-endocrine",
+        "Endocrine"
+      ],
+      "Phase": [
+        "G1",
+        "S",
+        "G2M"
+      ]
+    },
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "legend_position": "right",
+    "legend_direction": "vertical",
+    "label": false,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; CellType/Phase labels are exact, not estimated",
+    "code": "native SCP StatPlot sankey branch extracted verbatim; make_long()/geom_sankey() vendored from R/ggsankey.R; three documented compatibility patches (P1-P3) in PATCHES.md",
+    "license": "GPL (>= 3)"
+  },
+  "patches": [
+    "P1 legend cbind/rbind over as_gtable()",
+    "P2 wrap_plots(list(gtable))",
+    "P3 get_legend() skips zeroGrob guide-box slots"
+  ]
+}

@@ -1,0 +1,9 @@
+fig, ax = plot_prediction_error(
+    model_metrics=model_metrics,
+    metric_col="R2",
+    ylim=(0.75, 1),
+    title="Explained variance",
+    savepath="r2.png",
+)
+
+plt.show()

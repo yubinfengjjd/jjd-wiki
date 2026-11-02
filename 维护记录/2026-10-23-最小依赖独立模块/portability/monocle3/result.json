@@ -1,0 +1,30 @@
+{
+  "method": "monocle3",
+  "state": "not_run",
+  "error": "Missing R dependency: monocle3; automatic installation is disabled",
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" monocle3 \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3/result-input.rds",
+  "case": {
+    "label": "Monocle3 core+adapter with explicit partition and root",
+    "parameters": {
+      "parameters": {
+        "seed": 11,
+        "use_partition": true,
+        "root_cells": "CAGCCGAAGCGATATA"
+      }
+    }
+  },
+  "code_sha256": {
+    "monocle3.R": "ecbc495fe291cd070c16e5bf765caf810b09121d323b948fee867ef0ad0b6f52",
+    "monocle3_core.R": "fcf3b21d6ecc9e87a3ff48553c2b2fdf600ab84de974ddbabb265cd12748455e"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:02:05 UTC",
+  "executed_at": "2026-10-23 16:02:08 UTC"
+}

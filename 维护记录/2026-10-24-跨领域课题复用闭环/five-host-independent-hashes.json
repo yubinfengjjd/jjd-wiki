@@ -1,0 +1,27 @@
+[
+  {
+    "host": ".agents",
+    "files": 296,
+    "config_formal": true
+  },
+  {
+    "host": ".codex",
+    "files": 296,
+    "config_formal": true
+  },
+  {
+    "host": ".claude",
+    "files": 296,
+    "config_formal": true
+  },
+  {
+    "host": ".cc-switch",
+    "files": 296,
+    "config_formal": true
+  },
+  {
+    "host": ".config/opencode",
+    "files": 296,
+    "config_formal": true
+  }
+]

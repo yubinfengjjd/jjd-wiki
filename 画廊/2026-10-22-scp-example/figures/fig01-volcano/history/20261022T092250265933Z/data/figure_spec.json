@@ -1,0 +1,32 @@
+{
+  "source": "SCP v0.5.6 VolcanoPlot (R/SCP-plot.R)",
+  "group": "Endocrine",
+  "x_metric": "diff_pct",
+  "log2fc_cutoff": 0,
+  "padj_cutoff": 0.05,
+  "direction": "up",
+  "nlabel": 8,
+  "cap_quantiles": [
+    0.01,
+    0.99
+  ],
+  "color_limits": [
+    -5,
+    5
+  ],
+  "palette": [
+    "#053061",
+    "#2166AC",
+    "#F7F7F7",
+    "#B2182B",
+    "#67001F"
+  ],
+  "pt_size": 1,
+  "pt_alpha": 1,
+  "highlight_size": 1.5,
+  "label_size": 4,
+  "aspect_ratio": null,
+  "width_in": 7,
+  "height_in": 6,
+  "dpi": 200
+}

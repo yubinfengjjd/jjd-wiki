@@ -1,0 +1,16 @@
+group,celltype,count
+Ductal,G1,82
+Ductal,S,106
+Ductal,G2M,51
+Ngn3 low EP,G1,45
+Ngn3 low EP,S,19
+Ngn3 low EP,G2M,17
+Ngn3 high EP,G1,134
+Ngn3 high EP,S,25
+Ngn3 high EP,G2M,9
+Pre-endocrine,G1,149
+Pre-endocrine,S,1
+Pre-endocrine,G2M,0
+Endocrine,G1,362
+Endocrine,S,0
+Endocrine,G2M,0

@@ -1,0 +1,20 @@
+{
+  "kind": "errorbar",
+  "canvas_px": [2248, 1586],
+  "panels": [
+    {"id": "A", "kind": "errorbar"}
+  ],
+  "style": {
+    "canvas_px": [2248, 1586],
+    "figsize": [7.6, 5.4],
+    "xerr_factor": 0.5,
+    "xlabel": "Robust score (mean − 0.5 × SD)",
+    "ylabel": "Herb"
+  },
+  "data_provenance": "original",
+  "notes": [
+    "Values are from the real cv_results.json top10_herbs; not synthetic.",
+    "xerr = std * 0.5 follows the source script; it is not a 95% confidence interval.",
+    "The QA-required data/estimated_data.csv is a copy of the real table; it is not estimated."
+  ]
+}

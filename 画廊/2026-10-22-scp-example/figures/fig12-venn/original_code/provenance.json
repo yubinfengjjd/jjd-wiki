@@ -1,0 +1,21 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "function": "CellStatPlot / StatPlot (venn branch)",
+  "line_ranges": [
+    [
+      4463,
+      4490
+    ],
+    [
+      4492,
+      5159
+    ]
+  ],
+  "requested_line_range_note": "The task brief cited 4463-5678 for CellStatPlot + StatPlot. In this checkout StatPlot ends at line 5159 (full-file SHA256 verifies the commit); lines 5160-5678 belong to the next function block and are excluded.",
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "c8f95d63840ddba007ef238b85fcab6d3ffdf4acf2ab525cd3fceded5fd01294",
+  "note": "Exact CellStatPlot and StatPlot function excerpts with a short provenance header; not the full source file."
+}

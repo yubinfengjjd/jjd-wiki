@@ -1,0 +1,30 @@
+{
+ "task": "scp-full-ingest 7.1 (S5) one rebuild + one integration",
+ "freeze": "code-freeze-20261026T134325.json",
+ "commands": [
+  "D:/anaconda/python.exe -X utf8 scripts/assemble-modules3.py",
+  "D:/anaconda/python.exe -X utf8 scripts/integrate-wiki2.py",
+  "D:/anaconda/python.exe -X utf8 scripts/repair-collisions.py",
+  "D:/anaconda/python.exe -X utf8 scripts/fill-pages2.py"
+ ],
+ "cwd": "E:/research-wiki-env/work/scp-full-ingest-20261025",
+ "log": "E:/research-wiki-env/tmp/kiro-scp-s5.log",
+ "all_exit_zero": true,
+ "elapsed_sec": 24.9,
+ "freeze_check": {
+  "modules_vs_frozen_scratch": "identical (79/79)",
+  "generators": "unchanged",
+  "cases": "unchanged",
+  "non_indexed_legacy_dirs": ["compute_velocity_on_grid", "db_scds"],
+  "families_recorded_post": 24
+ },
+ "page_checks": {
+  "evidence": "kiro-page-examples-s5-*.json",
+  "snippets_parse": "87/87",
+  "placeholders": 0,
+  "user_blocks_changed": 0,
+  "non_scp_pages_changed": 0,
+  "status_changed": 0,
+  "ids_lost": 0
+ }
+}

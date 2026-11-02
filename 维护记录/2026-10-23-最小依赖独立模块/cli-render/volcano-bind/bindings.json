@@ -1,0 +1,10 @@
+{
+  "tables": {
+    "de": {
+      "file": "de_author.csv",
+      "columns": {
+        "avg_log2FC": "logFC"
+      }
+    }
+  }
+}

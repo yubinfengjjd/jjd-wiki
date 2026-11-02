@@ -1,0 +1,44 @@
+{
+  "source": {
+    "exit": 1,
+    "log": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\codex-initial-installed-source.log",
+    "tail": [
+      "direct_source=PASS",
+      "nested_project_source=FAIL: 'E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/codex-probes/project/cellqc_native.R' is not an existing file"
+    ]
+  },
+  "multi-module": {
+    "exit": 1,
+    "log": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\codex-initial-installed-multi-module.log",
+    "tail": [
+      "Loading required namespace: SeuratObject",
+      "Warning messages:",
+      "1: package 'Seurat' was built under R version 4.5.3 ",
+      "2: package 'SeuratObject' was built under R version 4.5.3 ",
+      "3: package 'sp' was built under R version 4.5.3 ",
+      "load_QC_then_scoring_then_call_QC=FAIL: 'what' must be a function or character string"
+    ]
+  },
+  "qc": {
+    "exit": 1,
+    "log": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\codex-initial-installed-qc.log",
+    "tail": [
+      "3: package 'sp' was built under R version 4.5.3 ",
+      "QC_NUMERICAL_EQUIVALENCE=PASS",
+      "INPUT_UNCHANGED=PASS",
+      "NO_BUNDLE_ARGUMENT=PASS",
+      "SEARCH_BEFORE: .GlobalEnv,package:stats,package:graphics,package:grDevices,package:utils,package:datasets,package:methods,Autoloads,package:base ",
+      "SEARCH_AFTER: .GlobalEnv,package:SeuratObject,package:sp,package:stats,package:graphics,package:grDevices,package:utils,package:datasets,package:methods,Autoloads,package:base ",
+      "SEARCH_RESTORED: FALSE ",
+      "FUTURE_OPTION_RESTORED: TRUE "
+    ]
+  },
+  "cell-quality-control-sha256": {
+    "analysis.R": "47dc990f296389f0380a77c16ba5f0a5885b8324c6be7fe4b171e296b2e2de00",
+    "cellqc_native.R": "212cb03dc15114bd24ecbe8074993e810d02645f858030b3670e6aa8cf6035dd"
+  },
+  "gene-set-scoring-sha256": {
+    "analysis.R": "07dbb0a5816cec9c34691da3b74827a89a44fd3a676a5336e250e7306c3d6017",
+    "scoring_native.R": "6ec1cd1c76f8a7fe6d34c039c40c668d0de8def68f0fd0bf7fdd705302b39046"
+  }
+}

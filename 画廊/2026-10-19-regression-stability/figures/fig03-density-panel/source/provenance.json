@@ -1,0 +1,24 @@
+{
+  "full_original": {
+    "path": "source/full_original.png",
+    "sha256": "1cc8c8f6db3cd30b935cf09ed255b093dc2e71c2527cd95dda8b880281e7a702",
+    "article_candidate": "candidate-06.png",
+    "bbox": [
+      0,
+      0,
+      1043,
+      927
+    ]
+  },
+  "selected_unit": "entire standalone logical panel, no crop/re-encoding",
+  "data_parent": "E:\\research-wiki\\画廊\\2026-10-19-regression-stability\\figures\\fig01-density-grid",
+  "inputs": {
+    "data\\estimated_data.csv": "588b388737a0b01bbdae8b311eb4378770c2b9c7e10670e43443e85f1bd5dcda",
+    "data\\estimated_histograms.csv": "f94f374a00009d14a0e3b1f5b2cce1e10a32407c41f7898f7e124bd21d5c00fb",
+    "data\\figure_spec.json": "d51b9c2715607cc0d380f02df5b4f72e957f0cd1321ef2c51c1deb86a529225d"
+  },
+  "prior_renderer_sha256": "89ecf3c327ae4f57f5c4386d5b2ca1921d17bfef789354b16cfae22e9ec25fbd",
+  "original_snippets": "original_code/; archived only, not executed; absent plotting definitions",
+  "draw_mapping": "previous renderer density branch -> panels.draw_density -> panel.draw / panels.plot_panel",
+  "statistical_changes": "none; graphical values/annotations preserved; no training or missing algorithm implemented"
+}

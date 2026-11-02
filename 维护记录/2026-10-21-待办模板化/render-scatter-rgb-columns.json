@@ -1,0 +1,1 @@
+{"x": {"type": "float", "description": "横轴数值；量纲由课题说明"}, "y": {"type": "float", "description": "配对纵轴数值；1:1线仅在同量纲时使用"}, "red": {"type": "int", "description": "预先给定的红通道0..255"}, "green": {"type": "int", "description": "预先给定的绿通道0..255"}, "blue": {"type": "int", "description": "预先给定的蓝通道0..255"}}

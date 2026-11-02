@@ -1,0 +1,9 @@
+{
+  "synthetic_fixture": true,
+  "source_preserved": true,
+  "metric_rows": 6,
+  "rename_value_roundtrip": true,
+  "long_wide_value_roundtrip": true,
+  "missing_preserved": true,
+  "copy_code_bytes_equal": true
+}

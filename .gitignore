@@ -1,8 +1,32 @@
 # 独立工具仓库：自行持有 .git，外层不跟踪
 /开发/
-# 不推送：受版权的论文图与本地维护证据（Issue 只记相对路径与哈希）
-/画廊/
-/维护记录/
+# 知识与画廊默认保存；维护记录仅排除重复备份、会话与运行产物。
+/维护记录/**
+!/维护记录/**/
+!/维护记录/**/*.md
+!/维护记录/**/*.json
+!/维护记录/**/*.py
+!/维护记录/**/*.ps1
+!/维护记录/**/*.mjs
+!/维护记录/**/*.R
+!/维护记录/**/*.r
+!/维护记录/**/*.js
+!/维护记录/**/*.cjs
+!/维护记录/**/*.diff
+!/维护记录/**/*.yaml
+!/维护记录/**/*.yml
+/维护记录/**/browser/
+/维护记录/**/backup/
+/维护记录/**/before/
+/维护记录/**/baseline/
+/维护记录/**/deployment/
+/维护记录/**/*-before/
+/维护记录/**/logs/
+/维护记录/**/.git/
+/维护记录/**/fixtures/
+/维护记录/**/migration-fixture/
+/维护记录/**/修改前/
+
 # 内嵌本机绝对路径或本机生成的产物
 *.lnk
 Rplots.pdf
@@ -22,3 +46,35 @@ Thumbs.db
 维护记录/**/migration-fixture/
 # Obsidian 工作区状态（随窗口布局频繁变动）
 research wiki/.obsidian/workspace*
+
+# 私有数据与凭据禁止入 Git；公开示例数据保留。
+**/private-data/
+**/private_data/
+**/私有数据/
+**/隐私数据/
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+!**/.env.template
+**/.npmrc
+**/.pypirc
+**/credentials.json
+**/secrets.json
+**/id_rsa
+**/id_dsa
+**/id_ecdsa
+**/id_ed25519
+*.pfx
+*.p12
+*.key
+
+# 运行日志不作为知识原件；配方原字节中的日志按 source.json 保留。
+/画廊/**/*.log
+/画廊/**/stdout.txt
+/画廊/**/stderr.txt
+
+# 维护用嵌套试验仓库与重复构建产物不属于知识原件。
+/维护记录/**/controlled-tags-red*/
+/维护记录/**/frontend-dist/
+/维护记录/**/node_modules/

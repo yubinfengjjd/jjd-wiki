@@ -1,0 +1,9 @@
+group,n_cells,min,median,max
+Ductal,239,0,4,20
+Ngn3 low EP,81,0,3,17
+Ngn3 high EP,168,0,0,7
+Pre-endocrine,150,0,0,3
+Beta,177,0,0,4
+Alpha,135,0,0,2
+Delta,18,0,0,3
+Epsilon,32,0,0,2

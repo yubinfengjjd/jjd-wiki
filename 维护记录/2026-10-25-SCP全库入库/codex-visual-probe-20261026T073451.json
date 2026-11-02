@@ -1,0 +1,104 @@
+{
+  "scope": "Independent copied public modules; original-native control comparison only, not scientific or author approval",
+  "snapshot": "E:\\research-wiki-env\\work\\codex-scp-visual-probe-20261026T073451",
+  "modules": {
+    "CellDimPlot3D": {
+      "source_module": "celldimplot3d",
+      "files": {
+        "code/module.R": "e2d90a275b0f660e09f574f873fc2712da9a0a45c98790671ed1bf60636d2085",
+        "code/fns/CellDimPlot3D.R": "63d77aefe55f1acc213a84ab2bb3f27a264fc34985c72fc60850de459164f9b6",
+        "code/fns/DefaultReduction.R": "fe47ec70b6ca489e47be700e80fa92e9c99fc0b0e625d998dd5caa1f0b40bca2",
+        "code/fns/col2hex.R": "acdb6a5edf07cb376bfa9587a1415c9e5e8b6739daa55fff0ad5d38ff535d5a7",
+        "code/fns/palette_scp.R": "f8b9d5aca0e6787ea0dbe8377540076860e9d703129121579117e8c626311187",
+        "code/fns/show_palettes.R": "aea81bf98ff6f9b8d5612ae1c3033e199feaaf4e5576a5d7ff98b7676fc1a043",
+        "code/fns/theme_scp.R": "4e289f889f93b434b3289f217a0dff07aaab79fa53b1f4f7f11e9c1e8aa13d81",
+        "resources/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    },
+    "FeatureDimPlot3D": {
+      "source_module": "featuredimplot3d",
+      "files": {
+        "code/module.R": "ff0672bedcfba673205ab1c3fcb66c62de44365d5a23f9c41bea53c194ad5211",
+        "code/fns/DefaultReduction.R": "fe47ec70b6ca489e47be700e80fa92e9c99fc0b0e625d998dd5caa1f0b40bca2",
+        "code/fns/FeatureDimPlot3D.R": "8b02756ad7ace054a868af0b6e1bd7ad6b2bf06c056abd8a4b3b4a3b0128900e",
+        "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+        "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+        "code/fns/check_DataType.R": "722fb20e500395a04db89ae3a95b5e269f03c68bd0d0c903f862dc27b32f1fdc",
+        "code/fns/col2hex.R": "acdb6a5edf07cb376bfa9587a1415c9e5e8b6739daa55fff0ad5d38ff535d5a7",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    },
+    "GraphPlot": {
+      "source_module": "graphplot",
+      "files": {
+        "code/module.R": "b5a84e3a497e810f32e699e4ee1f6d9304c56d0495d723522ee93ebe7ae8e0a9",
+        "code/fns/GraphPlot.R": "cd2345009748e56b2923c0d69b65a1595c241e12ec714360db8509224140eb95",
+        "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+        "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+        "code/fns/palette_scp.R": "f8b9d5aca0e6787ea0dbe8377540076860e9d703129121579117e8c626311187",
+        "code/fns/segementsDf.R": "501f5b1920e5f23d03c2f14f27d9af999c2b7efdc6c90816ee506bf49ab03032",
+        "code/fns/show_palettes.R": "aea81bf98ff6f9b8d5612ae1c3033e199feaaf4e5576a5d7ff98b7676fc1a043",
+        "code/fns/theme_scp.R": "4e289f889f93b434b3289f217a0dff07aaab79fa53b1f4f7f11e9c1e8aa13d81",
+        "resources/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    }
+  },
+  "exit": 0,
+  "results": {
+    "CellDimPlot3D_native_traces": {
+      "state": "error",
+      "error": "verbose must be TRUE or FALSE"
+    },
+    "FeatureDimPlot3D_native_traces": {
+      "state": "error",
+      "error": "verbose must be TRUE or FALSE"
+    },
+    "GraphPlot_real_graph_render": {
+      "state": "passed"
+    },
+    "input_unchanged": true
+  },
+  "native_pixel_comparisons": {
+    "straight": {
+      "actual_size": [
+        1200,
+        900
+      ],
+      "native_size": [
+        1200,
+        900
+      ],
+      "same_size": true,
+      "pixels_identical": true,
+      "mean_abs_channel_difference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "curved": {
+      "actual_size": [
+        1200,
+        900
+      ],
+      "native_size": [
+        1200,
+        900
+      ],
+      "same_size": true,
+      "pixels_identical": true,
+      "mean_abs_channel_difference": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "code_still_current": {
+    "CellDimPlot3D": true,
+    "FeatureDimPlot3D": true,
+    "GraphPlot": true
+  }
+}

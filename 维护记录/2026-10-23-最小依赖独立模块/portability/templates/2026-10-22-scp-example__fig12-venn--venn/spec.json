@@ -1,0 +1,44 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "membership": {
+      "interface": "render-cell-membership",
+      "description": "每个细胞每个集合一行的长表（cell, set, member）；member 只取 0/1，模板按 cell × set 透视为宽逻辑矩阵后重建原 StatPlot venn 分支。"
+    }
+  },
+  "style": {
+    "cell_col": "cell",
+    "set_cols": null,
+    "set_levels": null,
+    "set_level": "TRUE",
+    "palette": "Paired",
+    "palcolor": null,
+    "alpha": 1,
+    "label": true,
+    "label_size": 3.5,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "title": null,
+    "subtitle": null,
+    "legend_position": "none",
+    "legend_direction": "vertical",
+    "seed": 11,
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "sizing": {
+      "mode": "adaptive",
+      "base_in": 6.0,
+      "per_set_in": 0.35,
+      "base_label_chars": 8,
+      "per_label_char_in": 0.08,
+      "min_width_in": 5.0,
+      "min_height_in": 4.5,
+      "aspect": 0.75,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

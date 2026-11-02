@@ -1,0 +1,89 @@
+{
+  "label": "devin-scp-batch1-recovered",
+  "pid": 27796,
+  "cwd": "E:\\research-wiki-env\\work\\scp-ingestion-20261025",
+  "status": "failed",
+  "tool_events": 394,
+  "message_chars": 2898,
+  "updated_at": "2026-10-25T08:57:23Z",
+  "load_session_supported": true,
+  "session_id": "harvest-speedwell",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "last_tool": "Ran powershell",
+  "owned_terminal_pids": [
+    26668,
+    31460,
+    29884,
+    29440,
+    29444,
+    18504,
+    27876,
+    28876,
+    29896,
+    30776,
+    30208,
+    22984,
+    28356,
+    31344,
+    25096,
+    29256,
+    28784,
+    31712,
+    30096,
+    12036,
+    27544,
+    28252,
+    29688,
+    21740,
+    27144,
+    27300,
+    30372,
+    28884,
+    28256,
+    26680,
+    31184,
+    31148,
+    30952,
+    31288,
+    29464,
+    28120,
+    28888,
+    30016,
+    29060,
+    31716,
+    29828,
+    25596,
+    15840,
+    33344,
+    32516,
+    15692,
+    32920,
+    32944,
+    29124,
+    15300
+  ],
+  "error": "ACP request exceeded bounded wait",
+  "partial_result": "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\devin-scp-batch1-recovered-result-partial.md"
+}

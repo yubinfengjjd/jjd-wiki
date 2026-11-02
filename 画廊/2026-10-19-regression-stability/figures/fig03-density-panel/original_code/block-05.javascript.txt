@@ -1,0 +1,8 @@
+fig, ax = plot_prediction_error(
+    model_metrics=model_metrics,
+    metric_col="RMSE",
+    y_label="Test RMSE (SR)",
+    savepath="rmse.png",
+)
+
+plt.show()

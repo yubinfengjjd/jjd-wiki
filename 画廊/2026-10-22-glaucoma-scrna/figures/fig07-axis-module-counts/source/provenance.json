@@ -1,0 +1,14 @@
+{
+  "source_image": "source/fig07.png",
+  "source_image_sha256": "85f7339030568f8af3427d2d11b30697caeabd301755d680f031c1e3029f4bde",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "85f7339030568f8af3427d2d11b30697caeabd301755d680f031c1e3029f4bde",
+  "bbox": [0, 0, 2189, 1523],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\axisnet_separate_panels_clean\\Panel_C_disease_module_distribution_clean.png",
+    "E:\\青光眼单细胞\\axisnet_rd_v8\\outputs\\rankings\\enhanced_axis_ranking_v8.csv"
+  ],
+  "data_source_sha256": "fd19021a3286aee445cabb61c7f49b6eb293c5124efd96eac6fbf1065cb5f18d",
+  "note": "Real project output; counts are not synthetic. The ranking CSV is copied to data/ranking.csv."
+}

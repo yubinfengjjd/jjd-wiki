@@ -1,0 +1,27 @@
+{
+  "/": {
+    "status": 200,
+    "bytes": 458,
+    "seconds": 0.094,
+    "current_bundle": true
+  },
+  "/api/method-taxonomy": {
+    "status": 200,
+    "bytes": 1134,
+    "seconds": 0.125,
+    "total": 15,
+    "domains": [
+      "单细胞分析",
+      "转录组",
+      "机器学习",
+      "实验统计",
+      "模型解释与特征重要性"
+    ]
+  },
+  "/api/discover-methods?limit=2": {
+    "status": 200,
+    "bytes": 4267,
+    "seconds": 0.562,
+    "json_type": "dict"
+  }
+}

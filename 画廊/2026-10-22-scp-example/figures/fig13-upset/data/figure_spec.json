@@ -1,0 +1,55 @@
+{
+  "source": "SCP v0.5.6 CellStatPlot / StatPlot (R/SCP-plot.R), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig13.png",
+  "reference_panel": "source/reference_panel.png",
+  "reference_panel_bbox": [
+    950,
+    330,
+    1400,
+    680
+  ],
+  "full_original": "source/full_original.jpg",
+  "full_original_sha256": "a63a3a53beb2c052a4c0278bbeec477c4d741f889d8551808fdcdee9471e4814",
+  "logical_panel": "A",
+  "chart_type": "upset",
+  "input": "data/render-cell-membership.csv",
+  "aggregated_input": "data/upset-intersection-counts.csv",
+  "input_columns": {
+    "cell": "cell identifier; one row per cell x set",
+    "set": "set name; explicit order Ductal, Endocrine, G1S, G2M",
+    "member": "0/1 membership of that cell in that set"
+  },
+  "derivation": {
+    "Ductal": "CellType %in% c('Ductal', 'Ngn3 low EP', 'Ngn3 high EP')",
+    "Endocrine": "CellType %in% c('Pre-endocrine', 'Endocrine')",
+    "G1S": "Phase %in% c('G1', 'S')",
+    "G2M": "Phase == 'G2M'"
+  },
+  "params": {
+    "plot_type": "upset",
+    "stat_level": "TRUE",
+    "set_levels": [
+      "Ductal",
+      "Endocrine",
+      "G1S",
+      "G2M"
+    ],
+    "label_size": 3.5,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "alpha": 1,
+    "legend": false,
+    "xlab": "",
+    "fill_palette": "material-indigo",
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; four logical sets derived from CellType and Phase exactly as the venn panel of Example-2.jpg",
+    "code": "native SCP ggplot construction extracted verbatim; table-producing step separated; no custom ggplot",
+    "license": "GPL (>= 3)"
+  }
+}

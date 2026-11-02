@@ -1,0 +1,21 @@
+{
+  "pages": 27,
+  "templates": 5,
+  "methods": 4,
+  "layouts": 5,
+  "relations": 5,
+  "template_statuses": {
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": "complete",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": "complete",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": "complete",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": "complete",
+    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": "complete"
+  },
+  "method_statuses": {
+    "methods/regression-resampling-evaluation.md": "complete",
+    "methods/shap-explanation.md": "complete"
+  },
+  "agent_queue": [],
+  "code_files": 7,
+  "app_matches_staged_build": true
+}

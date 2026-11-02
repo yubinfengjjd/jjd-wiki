@@ -1,0 +1,26 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "function": "CellStatPlot / StatPlot (bar branch)",
+  "line_ranges": [
+    [
+      4463,
+      5678
+    ]
+  ],
+  "function_ranges": {
+    "CellStatPlot": [
+      4463,
+      4490
+    ],
+    "StatPlot": [
+      4564,
+      5624
+    ]
+  },
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "cf5e7ff887fe32e6b643c189cc592c71276cb5375ce202662a2abf448274a3c6",
+  "note": "Exact byte excerpt of lines 4463-5678 with a short provenance header; not the full source file. The patched copy is code/scp_bar_native.R."
+}

@@ -1,0 +1,7 @@
+{
+  {"name": "metap", "file": "SCP-analysis.R", "from": 916, "to": 920},
+  {"name": "FindConservedMarkers2", "file": "SCP-analysis.R", "from": 1070, "to": 1218},
+  {"name": "RunDEtest", "file": "SCP-analysis.R", "from": 1671, "to": 2106},
+  {"name": "check_DataType", "file": "SCP-workflow.R", "from": 14, "to": 47}
+}
+

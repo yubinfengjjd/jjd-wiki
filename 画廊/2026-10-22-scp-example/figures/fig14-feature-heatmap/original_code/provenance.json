@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/zhanghao-njmu/scp",
+  "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "file": "R/SCP-plot.R",
+  "function": "FeatureHeatmap",
+  "line_ranges": [
+    [
+      9114,
+      9979
+    ]
+  ],
+  "license": "GPL (>= 3)",
+  "sha256_full_file": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+  "sha256_excerpt": "e069d6d8bca3752026b266f93abb165d38a665ba6fd21ab6da03830287d12755",
+  "note": "Exact FeatureHeatmap() excerpt with a provenance header; not the full file."
+}

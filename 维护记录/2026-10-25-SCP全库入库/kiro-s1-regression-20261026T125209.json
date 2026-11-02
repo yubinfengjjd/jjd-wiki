@@ -1,0 +1,424 @@
+{
+  "scope": "S1 loader regression on copied public modules vs native controls; software fixture data, not scientific evidence",
+  "module_root": "E:\\research-wiki-env\\tmp\\kiro-scp-s1-build\\modules",
+  "snapshot": "E:\\research-wiki-env\\tmp\\kiro-scp-s1-regression-20261026T125209",
+  "modules": {
+    "RunMDS": {
+      "module": "runmds",
+      "files": {
+        "code/module.R": "6f4ef5eb44370ee3498c0e4dc0762c82ae05902d2e9221728b6a81162af7eaab",
+        "code/fns/RunMDS.Assay.R": "5a0395a37585dedf634dd9ce56e28df36b0985628aa024606c6ae64704674728",
+        "code/fns/RunMDS.R": "d83404b0dac4ee7d9a9f9cd7362556426f9e4ea3efcac51966e504a737af19c4",
+        "code/fns/RunMDS.Seurat.R": "ad79fa7bf1b4a8f191e1f004bc199db4de9ce741a988bcefb29f50c7234da0c3",
+        "code/fns/RunMDS.default.R": "581f550b5c7a586aaa88819cb10cae798f7a64834433bdab4f6403795facb003",
+        "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+        "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    },
+    "RunNMF": {
+      "module": "runnmf",
+      "files": {
+        "code/module.R": "f9369dc5811bdfc1d3ed67554ecd4c9831bdc535d2fdb810d2b7ff2203abc548",
+        "code/fns/RunNMF.Assay.R": "0cfec9c0350de3d6ceb70fac13d7f69bdf6581c039c6562665394d737379eefa",
+        "code/fns/RunNMF.R": "71f7a71becf8d7c5b15d32e3f7a5f622cc86f73e008ed4b08f357eaed8d86ffe",
+        "code/fns/RunNMF.Seurat.R": "6bb92264343c2b4341117ad4de5200af367c384e704de0b0690ca954015e7a6d",
+        "code/fns/RunNMF.default.R": "6afc770f1ee8055523034ff1c95580257b37afcc3edf4ebfce1595c5ec6e8b8c",
+        "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+        "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    },
+    "GraphPlot": {
+      "module": "graphplot",
+      "files": {
+        "code/module.R": "4fdd0b7e6ce7f85371f6fe4da1d8e010469f3e95ab39d9dbf3ecee989c5f32ea",
+        "code/fns/GraphPlot.R": "cd2345009748e56b2923c0d69b65a1595c241e12ec714360db8509224140eb95",
+        "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+        "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+        "code/fns/palette_scp.R": "f8b9d5aca0e6787ea0dbe8377540076860e9d703129121579117e8c626311187",
+        "code/fns/segementsDf.R": "501f5b1920e5f23d03c2f14f27d9af999c2b7efdc6c90816ee506bf49ab03032",
+        "code/fns/show_palettes.R": "aea81bf98ff6f9b8d5612ae1c3033e199feaaf4e5576a5d7ff98b7676fc1a043",
+        "code/fns/theme_scp.R": "4e289f889f93b434b3289f217a0dff07aaab79fa53b1f4f7f11e9c1e8aa13d81",
+        "resources/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    },
+    "CellDimPlot3D": {
+      "module": "celldimplot3d",
+      "files": {
+        "code/module.R": "e97e54fe3615613abe3f509a00986a04720aaf172a445454838b84f727094796",
+        "code/fns/CellDimPlot3D.R": "63d77aefe55f1acc213a84ab2bb3f27a264fc34985c72fc60850de459164f9b6",
+        "code/fns/DefaultReduction.R": "fe47ec70b6ca489e47be700e80fa92e9c99fc0b0e625d998dd5caa1f0b40bca2",
+        "code/fns/col2hex.R": "acdb6a5edf07cb376bfa9587a1415c9e5e8b6739daa55fff0ad5d38ff535d5a7",
+        "code/fns/palette_scp.R": "f8b9d5aca0e6787ea0dbe8377540076860e9d703129121579117e8c626311187",
+        "code/fns/show_palettes.R": "aea81bf98ff6f9b8d5612ae1c3033e199feaaf4e5576a5d7ff98b7676fc1a043",
+        "code/fns/theme_scp.R": "4e289f889f93b434b3289f217a0dff07aaab79fa53b1f4f7f11e9c1e8aa13d81",
+        "resources/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    },
+    "FeatureDimPlot3D": {
+      "module": "featuredimplot3d",
+      "files": {
+        "code/module.R": "b8fc73e789edb828c5f8ebe8c53d33162115e758621212c27d4bf646b108e387",
+        "code/fns/DefaultReduction.R": "fe47ec70b6ca489e47be700e80fa92e9c99fc0b0e625d998dd5caa1f0b40bca2",
+        "code/fns/FeatureDimPlot3D.R": "8b02756ad7ace054a868af0b6e1bd7ad6b2bf06c056abd8a4b3b4a3b0128900e",
+        "code/fns/asMatrix.R": "9a90a8b662df0293b722766dbd049ecdc8c56b41801e8b52bff168ea9aab33d9",
+        "code/fns/as_matrix.R": "4f2bc3a7ac6b1b51c8a43c5eba5eb9bb30d1796adf7e1f5580cc1356f3e5dfcd",
+        "code/fns/check_DataType.R": "722fb20e500395a04db89ae3a95b5e269f03c68bd0d0c903f862dc27b32f1fdc",
+        "code/fns/col2hex.R": "acdb6a5edf07cb376bfa9587a1415c9e5e8b6739daa55fff0ad5d38ff535d5a7",
+        "LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6"
+      }
+    }
+  },
+  "command": "cd E:\\research-wiki-env\\tmp\\kiro-scp-s1-regression-20261026T125209 && D:/R-4.5.0/bin/x64/Rscript.exe --vanilla driver.R",
+  "exit": 0,
+  "results": {
+    "MDS_clean": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [
+        "ambiguousMethodSelection",
+        "callr.condition_handler_cli_message",
+        "dotCall64.verbose",
+        "future.ClusterFuture.clusterEvalQ",
+        "future.debug.indent",
+        "future.globals.keepWhere",
+        "future.globals.method.default",
+        "future.regression.note",
+        "globals.debug.indent",
+        "progressr.clear",
+        "progressr.enable",
+        "progressr.enable_after",
+        "progressr.interrupts",
+        "progressr.interval",
+        "progressr.lifecycle.progress",
+        "progressr.times",
+        "Seurat.coords.short_range",
+        "Seurat.input.sparse_ratio",
+        "Seurat.io.rds.strict",
+        "Seurat.object.assay.brackets",
+        "Seurat.object.assay.v3.missing_layer",
+        "Seurat.object.assay.version",
+        "Seurat.object.project",
+        "spam.cex",
+        "spam.cholincreasefactor",
+        "spam.cholpivotcheck",
+        "spam.cholsymmetrycheck",
+        "spam.cholupdatesingular",
+        "spam.dopivoting",
+        "spam.drop",
+        "spam.eps",
+        "spam.force64",
+        "spam.imagesize",
+        "spam.inefficiencywarning",
+        "spam.listmethod",
+        "spam.NAOK",
+        "spam.nearestdistincreasefactor",
+        "spam.nearestdistnnz",
+        "spam.printsize",
+        "spam.safemodevalidity",
+        "spam.structurebased",
+        "spam.trivalues",
+        "spam.validate"
+      ],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [
+          "ambiguousMethodSelection",
+          "callr.condition_handler_cli_message",
+          "dotCall64.verbose",
+          "future.ClusterFuture.clusterEvalQ",
+          "future.debug.indent",
+          "future.globals.keepWhere",
+          "future.globals.method.default",
+          "future.regression.note",
+          "globals.debug.indent",
+          "progressr.clear",
+          "progressr.enable",
+          "progressr.enable_after",
+          "progressr.interrupts",
+          "progressr.interval",
+          "progressr.lifecycle.progress",
+          "progressr.times",
+          "Seurat.coords.short_range",
+          "Seurat.input.sparse_ratio",
+          "Seurat.io.rds.strict",
+          "Seurat.object.assay.brackets",
+          "Seurat.object.assay.v3.missing_layer",
+          "Seurat.object.assay.version",
+          "Seurat.object.project",
+          "spam.cex",
+          "spam.cholincreasefactor",
+          "spam.cholpivotcheck",
+          "spam.cholsymmetrycheck",
+          "spam.cholupdatesingular",
+          "spam.dopivoting",
+          "spam.drop",
+          "spam.eps",
+          "spam.force64",
+          "spam.imagesize",
+          "spam.inefficiencywarning",
+          "spam.listmethod",
+          "spam.NAOK",
+          "spam.nearestdistincreasefactor",
+          "spam.nearestdistnnz",
+          "spam.printsize",
+          "spam.safemodevalidity",
+          "spam.structurebased",
+          "spam.trivalues",
+          "spam.validate"
+        ],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "MDS_with_user_global_matrix": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "MDS_after_removal": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "nested_project_driver": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": []
+    },
+    "NMF_public_nmf_method_NMF": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [
+        "BioC",
+        "dplyr.show_progress",
+        "foreachDoparLocal"
+      ],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [
+          "package:Biobase",
+          "package:BiocGenerics",
+          "package:generics"
+        ],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [
+          "BioC",
+          "dplyr.show_progress",
+          "foreachDoparLocal"
+        ],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": [
+          "RcppML.threads",
+          "RcppML.verbose"
+        ]
+      }
+    },
+    "MDS_after_loading_NMF": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "GraphPlot_straight_curved": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "CellDimPlot3D_traces_build_html": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [
+        "datatable.alloccol",
+        "datatable.allow.cartesian",
+        "datatable.auto.index",
+        "datatable.dfdispatchwarn",
+        "datatable.optimize",
+        "datatable.print.class",
+        "datatable.print.colnames",
+        "datatable.print.keys",
+        "datatable.print.nrows",
+        "datatable.print.rownames",
+        "datatable.print.topn",
+        "datatable.print.trunc.cols",
+        "datatable.show.indices",
+        "datatable.use.index",
+        "datatable.verbose",
+        "datatable.warnredundantby",
+        "httr_oauth_cache",
+        "httr_oob_default",
+        "pboptions",
+        "Seurat.checkdots",
+        "Seurat.memsafe",
+        "Seurat.nthreads",
+        "Seurat.presto.wilcox.msg",
+        "Seurat.Rfast2.msg",
+        "Seurat.warn.findmarkers.bpcells.colmajor",
+        "Seurat.warn.vlnplot.split"
+      ],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [
+          "datatable.alloccol",
+          "datatable.allow.cartesian",
+          "datatable.auto.index",
+          "datatable.dfdispatchwarn",
+          "datatable.optimize",
+          "datatable.print.class",
+          "datatable.print.colnames",
+          "datatable.print.keys",
+          "datatable.print.nrows",
+          "datatable.print.rownames",
+          "datatable.print.topn",
+          "datatable.print.trunc.cols",
+          "datatable.show.indices",
+          "datatable.use.index",
+          "datatable.verbose",
+          "datatable.warnredundantby",
+          "httr_oauth_cache",
+          "httr_oob_default",
+          "pboptions",
+          "Seurat.checkdots",
+          "Seurat.memsafe",
+          "Seurat.nthreads",
+          "Seurat.presto.wilcox.msg",
+          "Seurat.Rfast2.msg",
+          "Seurat.warn.findmarkers.bpcells.colmajor",
+          "Seurat.warn.vlnplot.split"
+        ],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "FeatureDimPlot3D_traces_build_html": {
+      "state": "passed",
+      "caller_search_restored": true,
+      "caller_search_added": [],
+      "caller_options_existing_changed": [],
+      "caller_options_added": [],
+      "module_diagnostics": {
+        "search_restored": true,
+        "detached": [],
+        "detach_residual": [],
+        "options_existing_restored": [],
+        "options_ns_init_kept": [],
+        "options_algorithm_removed": [],
+        "options_unrestored": [],
+        "options_restored": true,
+        "algo_options": []
+      }
+    },
+    "input_unchanged": {
+      "counts": true,
+      "pancreas_sub": true
+    },
+    "environment": {
+      "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+      "platform": "x86_64-w64-mingw32",
+      "r_libs_user": "E:/research-wiki-env/R-lib-scp/4.5",
+      "lib_paths": [
+        "E:/research-wiki-env/R-lib-scp/4.5",
+        "D:/R-4.5.0/library"
+      ]
+    }
+  },
+  "graph_pixel_comparison": {
+    "straight": {
+      "same_size": true,
+      "pixels_identical": true,
+      "mean_abs": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "curved": {
+      "same_size": true,
+      "pixels_identical": true,
+      "mean_abs": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "failures": [
+    "package:generics appears in search diagnostics"
+  ],
+  "passed": false
+}

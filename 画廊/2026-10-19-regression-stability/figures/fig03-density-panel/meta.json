@@ -1,0 +1,59 @@
+{
+  "id": "2026-10-19-regression-stability__fig03-density-panel",
+  "post": {
+    "title": "EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+    "account": "Python机器学习AI",
+    "author": "Python机器学习AI",
+    "publish_date": "2026-10-19",
+    "url": "https://mp.weixin.qq.com/s/LDPZ8guXNKnSRtjZC2YbNg"
+  },
+  "figure": {
+    "index": 3,
+    "label": "单panel：密度散点与边缘分布",
+    "caption": "单panel图形复刻；估读坐标、颜色、边缘形状，转录原图指标标注；右边缘刻度保留旧估读0–40。待作者目视签核。",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "density-scatter"
+    ],
+    "canvas_px": [
+      1043,
+      927
+    ],
+    "panel_map": {
+      "A": "density-scatter"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "experimental-statistics"
+    ],
+    "secondary": [],
+    "free": [
+      "regression"
+    ]
+  },
+  "language": "python",
+  "data_provenance": "estimated",
+  "code_provenance": "reconstructed",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig03.png",
+    "source_text": "source/source.md",
+    "code": "code/replica.py",
+    "data": "data/estimated_data.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "1cc8c8f6db3cd30b935cf09ed255b093dc2e71c2527cd95dda8b880281e7a702",
+  "created_at": "2026-10-21T08:43:16.770414Z",
+  "updated_at": "2026-10-21T11:34:57.113356+00:00"
+}

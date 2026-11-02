@@ -1,0 +1,65 @@
+"row","column","similarity","row_group","column_group","row_order","column_order"
+"Ductal","Ductal",1,"Ductal","Ductal",1,1
+"Ngn3 low EP","Ductal",0.98433092367998,"Ngn3 low EP","Ductal",2,1
+"Ngn3 high EP","Ductal",0.80026167440747,"Ngn3 high EP","Ductal",3,1
+"Pre-endocrine","Ductal",0.67582702953499,"Pre-endocrine","Ductal",4,1
+"Beta","Ductal",0.63081118628897,"Beta","Ductal",5,1
+"Alpha","Ductal",0.63843555614438,"Alpha","Ductal",6,1
+"Delta","Ductal",0.62133905190649,"Delta","Ductal",7,1
+"Epsilon","Ductal",0.6519782719081,"Epsilon","Ductal",8,1
+"Ductal","Ngn3 low EP",0.98433092367998,"Ductal","Ngn3 low EP",1,2
+"Ngn3 low EP","Ngn3 low EP",1,"Ngn3 low EP","Ngn3 low EP",2,2
+"Ngn3 high EP","Ngn3 low EP",0.83343116867678,"Ngn3 high EP","Ngn3 low EP",3,2
+"Pre-endocrine","Ngn3 low EP",0.69446293479814,"Pre-endocrine","Ngn3 low EP",4,2
+"Beta","Ngn3 low EP",0.63652215046078,"Beta","Ngn3 low EP",5,2
+"Alpha","Ngn3 low EP",0.64397096652346,"Alpha","Ngn3 low EP",6,2
+"Delta","Ngn3 low EP",0.63384813119547,"Delta","Ngn3 low EP",7,2
+"Epsilon","Ngn3 low EP",0.6674612898778,"Epsilon","Ngn3 low EP",8,2
+"Ductal","Ngn3 high EP",0.80026167440747,"Ductal","Ngn3 high EP",1,3
+"Ngn3 low EP","Ngn3 high EP",0.83343116867678,"Ngn3 low EP","Ngn3 high EP",2,3
+"Ngn3 high EP","Ngn3 high EP",1,"Ngn3 high EP","Ngn3 high EP",3,3
+"Pre-endocrine","Ngn3 high EP",0.84340957224915,"Pre-endocrine","Ngn3 high EP",4,3
+"Beta","Ngn3 high EP",0.70962470061265,"Beta","Ngn3 high EP",5,3
+"Alpha","Ngn3 high EP",0.70635231546762,"Alpha","Ngn3 high EP",6,3
+"Delta","Ngn3 high EP",0.69504415437281,"Delta","Ngn3 high EP",7,3
+"Epsilon","Ngn3 high EP",0.75734494050928,"Epsilon","Ngn3 high EP",8,3
+"Ductal","Pre-endocrine",0.67582702953499,"Ductal","Pre-endocrine",1,4
+"Ngn3 low EP","Pre-endocrine",0.69446293479814,"Ngn3 low EP","Pre-endocrine",2,4
+"Ngn3 high EP","Pre-endocrine",0.84340957224915,"Ngn3 high EP","Pre-endocrine",3,4
+"Pre-endocrine","Pre-endocrine",1,"Pre-endocrine","Pre-endocrine",4,4
+"Beta","Pre-endocrine",0.8792661962816,"Beta","Pre-endocrine",5,4
+"Alpha","Pre-endocrine",0.88920176936827,"Alpha","Pre-endocrine",6,4
+"Delta","Pre-endocrine",0.86300735754966,"Delta","Pre-endocrine",7,4
+"Epsilon","Pre-endocrine",0.89032539136132,"Epsilon","Pre-endocrine",8,4
+"Ductal","Beta",0.63081118628897,"Ductal","Beta",1,5
+"Ngn3 low EP","Beta",0.63652215046078,"Ngn3 low EP","Beta",2,5
+"Ngn3 high EP","Beta",0.70962470061265,"Ngn3 high EP","Beta",3,5
+"Pre-endocrine","Beta",0.8792661962816,"Pre-endocrine","Beta",4,5
+"Beta","Beta",1,"Beta","Beta",5,5
+"Alpha","Beta",0.92404204082131,"Alpha","Beta",6,5
+"Delta","Beta",0.87973988757013,"Delta","Beta",7,5
+"Epsilon","Beta",0.85786636136854,"Epsilon","Beta",8,5
+"Ductal","Alpha",0.63843555614438,"Ductal","Alpha",1,6
+"Ngn3 low EP","Alpha",0.64397096652346,"Ngn3 low EP","Alpha",2,6
+"Ngn3 high EP","Alpha",0.70635231546762,"Ngn3 high EP","Alpha",3,6
+"Pre-endocrine","Alpha",0.88920176936827,"Pre-endocrine","Alpha",4,6
+"Beta","Alpha",0.92404204082131,"Beta","Alpha",5,6
+"Alpha","Alpha",1,"Alpha","Alpha",6,6
+"Delta","Alpha",0.88028015203151,"Delta","Alpha",7,6
+"Epsilon","Alpha",0.91812768472056,"Epsilon","Alpha",8,6
+"Ductal","Delta",0.62133905190649,"Ductal","Delta",1,7
+"Ngn3 low EP","Delta",0.63384813119547,"Ngn3 low EP","Delta",2,7
+"Ngn3 high EP","Delta",0.69504415437281,"Ngn3 high EP","Delta",3,7
+"Pre-endocrine","Delta",0.86300735754966,"Pre-endocrine","Delta",4,7
+"Beta","Delta",0.87973988757013,"Beta","Delta",5,7
+"Alpha","Delta",0.88028015203151,"Alpha","Delta",6,7
+"Delta","Delta",1,"Delta","Delta",7,7
+"Epsilon","Delta",0.87082259135215,"Epsilon","Delta",8,7
+"Ductal","Epsilon",0.6519782719081,"Ductal","Epsilon",1,8
+"Ngn3 low EP","Epsilon",0.6674612898778,"Ngn3 low EP","Epsilon",2,8
+"Ngn3 high EP","Epsilon",0.75734494050928,"Ngn3 high EP","Epsilon",3,8
+"Pre-endocrine","Epsilon",0.89032539136132,"Pre-endocrine","Epsilon",4,8
+"Beta","Epsilon",0.85786636136854,"Beta","Epsilon",5,8
+"Alpha","Epsilon",0.91812768472056,"Alpha","Epsilon",6,8
+"Delta","Epsilon",0.87082259135215,"Delta","Epsilon",7,8
+"Epsilon","Epsilon",1,"Epsilon","Epsilon",8,8

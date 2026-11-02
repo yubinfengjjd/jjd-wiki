@@ -1,0 +1,210 @@
+{
+  "items": [
+    {
+      "kind": "method",
+      "id": "batch-integration",
+      "branch": "scp-seurat",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "batch-integration",
+      "branch": "scp-harmony",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "cell-quality-control",
+      "branch": "scp-runcellqc",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "cell-type-annotation",
+      "branch": "scp-singler",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "differential-expression",
+      "branch": "scp-detest",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "dimensionality-reduction",
+      "branch": "scp-dimreduction",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "doublet-detection",
+      "branch": "scp-rundoublet",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "dynamic-feature-analysis",
+      "branch": "scp-dynamicfeatures",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "gene-set-enrichment",
+      "branch": "scp-enrichment",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "gene-set-scoring",
+      "branch": "scp-cellscoring",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "reference-mapping",
+      "branch": "seurat-label-transfer",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "reference-mapping",
+      "branch": "scp-runseuratmap",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "rna-velocity",
+      "branch": "scp-scvelo",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "trajectory-inference",
+      "branch": "scp-slingshot",
+      "state": "verified"
+    },
+    {
+      "kind": "method",
+      "id": "trajectory-inference",
+      "branch": "scp-monocle2-core",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "trajectory-inference",
+      "branch": "scp-monocle2",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "trajectory-inference",
+      "branch": "scp-monocle3-core",
+      "state": "not_run"
+    },
+    {
+      "kind": "method",
+      "id": "trajectory-inference",
+      "branch": "scp-monocle3",
+      "state": "not_run"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "branch": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "branch": "2026-10-22-scp-example__fig02-ring--ring",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig03-pie--pie",
+      "branch": "2026-10-22-scp-example__fig03-pie--pie",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "branch": "2026-10-22-scp-example__fig04-rose--rose",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "branch": "2026-10-22-scp-example__fig05-trend--trend",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "branch": "2026-10-22-scp-example__fig06-area--area",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "branch": "2026-10-22-scp-example__fig07-dot--dot",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "branch": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "branch": "2026-10-22-scp-example__fig09-bar--bar",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "branch": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig11-chord--chord",
+      "branch": "2026-10-22-scp-example__fig11-chord--chord",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig12-venn--venn",
+      "branch": "2026-10-22-scp-example__fig12-venn--venn",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig13-upset--upset",
+      "branch": "2026-10-22-scp-example__fig13-upset--upset",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "branch": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "branch": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "state": "verified"
+    },
+    {
+      "kind": "template",
+      "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "branch": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "state": "verified"
+    }
+  ],
+  "failures": [],
+  "rules_identical": true
+}

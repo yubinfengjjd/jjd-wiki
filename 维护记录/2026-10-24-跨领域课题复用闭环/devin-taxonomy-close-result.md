@@ -1,0 +1,19 @@
+Narrow sync task. Let me look at the stale spots first:Found three stale spots in AGENTS.md (lines 88, 92, 145). Now the spec files:Check who references the spec taxonomy file before adopting:All stale text is in `AGENTS.md` only (lines 88, 92, 145, 333). Adopting v2 as the scratch spec first:Now the four AGENTS.md fixes:The rule view may be a cached snapshot — verifying my AGENTS.md edits actually landed:Edits landed — the injected rule view was pre-edit cache. Now rewrite the copied reference with SSOT lookup:Focused checks — validate the adopted taxonomy parses and update the sync map's hash/drift record for the adopted file:Python is a Store stub — use node for validation and hashing:Now check what the sync map records for the dev spec copy (hash changed on adoption):Adoption changes a test fixture source (`conftest.py:128` copies the spec file). Check tests that might pin the key list:Taxonomy only maps gallery keys→labels; new keys are additive. Run the focused tests that consume the fixture:All 38 taxonomy tests pass with the new 15-key fixture. Now update the sync map to reflect the adoption:Check the batch reports for stale "proposal pending" taxonomy claims:Final sweep for remaining stale text across staged docs/references:Done. Narrow synchronization complete — exact changed files:
+
+**Taxonomy source**
+- `spec/scenario_taxonomy.yaml` — v1 → **v2 adopted** (15 keys, byte-identical to proposal, sha256 `802e3c1d…`). All existing canonical keys/labels preserved; adds `proteomics`, `metabolomics`, `network-pharmacology` （含 网络药理毒理学/网络毒理学/网络毒理 aliases), `computational-drug-design` （含 计算机药物设计）, and DL aliases under `machine-learning`.
+- `spec/scenario_taxonomy.v2.proposed.yaml` — **unchanged**, kept as adoption provenance.
+- `spec/scenario-taxonomy.reference.md` — rewritten: frozen "10 keys" list/count removed; `assets/scenario_taxonomy.yaml` is now the referenced SSOT. Preserved: 1–2 primary/nonempty, unknown→`other` + author confirmation, canonical-keys-vs-aliases/free, imaging-radiomics data-plot scope exclusion (image grids/CAM out of scope), extension-synchronization rule, plus the added "vocabulary extension ≠ implemented/verified methods" caveat.
+
+**Staged rules**
+- `staged/research-wiki/assets/AGENTS.md` — 4 spots: line 88 hardcoded 11-label list → `config.taxonomy`→`scenario_taxonomy.yaml` single controlled vocabulary (no duplicated list); line 92 removed "11 类" count + "v2 评审稿待作者批准" and now states vocabulary extension confers no implemented methods, `purposes` stays in `method_taxonomy.py` with design+test evidence required; line 145 and line 333 count references → "受控词表的规范键". Sweep confirms zero remaining "11 类"/"待作者批准"/frozen lists in SKILL.md, references, or spec docs.
+
+**Maintenance/reports**
+- `maintenance/taxonomy-sync-map.md` — repo spec row now `802e3c1d…`/已采纳； proposal row marked provenance; section heading updated (staged-adopted vs installed-undeployed); deployment step 3 reworded (formal `E:/research-wiki/开发/spec` copy still pending; repo fixture already synced).
+- `batch2-result.md`, `batch2-progress.md`, `verification-matrix.md` — "评审稿/未部署" claims corrected to "暂存层已采纳，安装/正式副本未部署".
+
+**Verification (focused, no broad suite)**
+- `test_config.py` 3 pass + `test_ingest.py`/`test_method_taxonomy.py` 35 pass under codex venv — new 15-key fixture (`conftest.py:128` source) works; `load_taxonomy` reads it cleanly (`other` fallback intact).
+- Caveat: `load_taxonomy` only maps gallery keys→labels, so new keys are purely additive; frontend tag dropdown derives from page metadata, not this file. Installed copies, dev main source (`E:/桌面/ARIS/...`), and formal spec copy remain old-hash pending the authorized deployment path — explicitly not executed here.
+
+Stopped at Codex review.

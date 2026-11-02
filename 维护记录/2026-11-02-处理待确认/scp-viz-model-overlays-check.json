@@ -1,0 +1,11 @@
+{
+  "page": "methods/scp-viz-model-overlays.md",
+  "passed": true,
+  "errors": [],
+  "warnings": [
+    "method scp-viz-model-overlays / scp-pagaplot: 独立声明尚无独立性证据",
+    "method scp-viz-model-overlays / scp-velocityplot: 独立声明尚无独立性证据",
+    "method scp-viz-model-overlays / scp-compute-velocity-on-grid: 独立声明尚无独立性证据"
+  ],
+  "scope": "结构和当前回放检查，不代替科学审查或作者确认"
+}

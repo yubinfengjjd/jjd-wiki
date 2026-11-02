@@ -1,0 +1,14 @@
+{
+  {"name": "GeneConvert", "file": "SCP-analysis.R", "from": 70, "to": 440},
+  {"name": "searchDatasets", "file": "SCP-analysis.R", "from": 442, "to": 451},
+  {"name": "ListDB", "file": "SCP-analysis.R", "from": 2123, "to": 2148},
+  {"name": "PrepareDB", "file": "SCP-analysis.R", "from": 2243, "to": 3679},
+  {"name": "RunEnrichment", "file": "SCP-analysis.R", "from": 3766, "to": 3975},
+  {"name": "check_R", "file": "utils.R", "from": 558, "to": 617},
+  {"name": "try_get", "file": "utils.R", "from": 647, "to": 674},
+  {"name": "download", "file": "utils.R", "from": 685, "to": 713},
+  {"name": "kegg_get", "file": "utils.R", "from": 715, "to": 721},
+  {"name": "unnest", "file": "utils.R", "from": 800, "to": 817},
+  {"name": "capitalize", "file": "utils.R", "from": 852, "to": 870}
+}
+

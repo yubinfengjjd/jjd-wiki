@@ -1,0 +1,978 @@
+{
+  "asthma-lactylation-source-catalog": {
+    "id": "asthma-lactylation-source-catalog",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "asthma-lactylation-workflow": {
+    "id": "asthma-lactylation-workflow",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "workflow",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "figureya-multilanguage-assets": {
+    "id": "figureya-multilanguage-assets",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "local-omics-analysis-guide": {
+    "id": "local-omics-analysis-guide",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": [
+      {
+        "id": "native-library",
+        "title": "原生函数目录与显式绑定入口",
+        "language": "R",
+        "entrypoint": "code/native.R:run_local_r_function",
+        "dependencies": [],
+        "verification": "verification/native-library-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-normalize",
+        "title": "原生函数 normalize",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_normalize",
+        "dependencies": [],
+        "verification": "verification/native-normalize-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-gini",
+        "title": "原生函数 gini_index",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_gini",
+        "dependencies": [],
+        "verification": "verification/native-gini-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-combinations",
+        "title": "原生函数 generate_combinations",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_combinations",
+        "dependencies": [],
+        "verification": "verification/native-combinations-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-gmt",
+        "title": "原生函数 wf_read_gmt",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_gmt",
+        "dependencies": [],
+        "verification": "verification/native-gmt-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-dynamic",
+        "title": "原生函数 DynamicPlotMonocle2",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_dynamic",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject",
+          "ggplot2",
+          "rlang",
+          "mgcv",
+          "patchwork",
+          "ggnewscale",
+          "RColorBrewer"
+        ],
+        "verification": "verification/native-dynamic-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-score-dot",
+        "title": "原生函数 DotPlotScores",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_score_dot",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject",
+          "ggplot2",
+          "rlang",
+          "cowplot"
+        ],
+        "verification": "verification/native-score-dot-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-cellchat",
+        "title": "原生函数 create_cellchat",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_cellchat",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/native-cellchat-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-singscore",
+        "title": "原生函数 Addsingscore",
+        "language": "R",
+        "entrypoint": "code/native_cases.R:native_singscore",
+        "dependencies": [
+          "Seurat",
+          "singscore",
+          "dplyr",
+          "purrr",
+          "stringr",
+          "magrittr"
+        ],
+        "verification": "verification/native-singscore-algorithm-20261102b.json"
+      },
+      {
+        "id": "irgsea-score",
+        "title": "依赖分析调用 irgsea_score",
+        "language": "R",
+        "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+        "dependencies": [
+          "irGSEA"
+        ],
+        "verification": "verification/irgsea-score-algorithm-20261102b.json"
+      },
+      {
+        "id": "irgsea-integrate",
+        "title": "依赖分析调用 irgsea_integrate",
+        "language": "R",
+        "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+        "dependencies": [
+          "irGSEA"
+        ],
+        "verification": "verification/irgsea-integrate-algorithm-20261102b.json"
+      },
+      {
+        "id": "consensus-cluster",
+        "title": "依赖分析调用 consensus_cluster",
+        "language": "R",
+        "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+        "dependencies": [
+          "ConsensusClusterPlus"
+        ],
+        "verification": "verification/consensus-cluster-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-create",
+        "title": "依赖分析调用 cellchat_create",
+        "language": "R",
+        "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-create-algorithm-20261102b.json"
+      },
+      {
+        "id": "gsva-call",
+        "title": "依赖分析调用 gsva",
+        "language": "R",
+        "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+        "dependencies": [
+          "GSVA"
+        ],
+        "verification": "verification/gsva-call-algorithm-20261102b.json"
+      },
+      {
+        "id": "py-eval-binary",
+        "title": "原生模型评价 eval_binary",
+        "language": "Python",
+        "entrypoint": "code/binary_evaluation.py:eval_binary",
+        "dependencies": [
+          "numpy",
+          "scikit-learn"
+        ],
+        "verification": "verification/py-eval-binary-algorithm-20261102b.json"
+      },
+      {
+        "id": "py-compute-specificity",
+        "title": "原生模型评价 compute_specificity",
+        "language": "Python",
+        "entrypoint": "code/binary_evaluation.py:compute_specificity",
+        "dependencies": [
+          "numpy",
+          "scikit-learn"
+        ],
+        "verification": "verification/py-compute-specificity-algorithm-20261102b.json"
+      },
+      {
+        "id": "py-youden-threshold",
+        "title": "原生模型评价 youden_threshold",
+        "language": "Python",
+        "entrypoint": "code/binary_evaluation.py:youden_threshold",
+        "dependencies": [
+          "numpy",
+          "scikit-learn"
+        ],
+        "verification": "verification/py-youden-threshold-algorithm-20261102b.json"
+      },
+      {
+        "id": "py-bootstrap-ci-auc",
+        "title": "原生模型评价 bootstrap_ci_auc",
+        "language": "Python",
+        "entrypoint": "code/binary_evaluation.py:bootstrap_ci_auc",
+        "dependencies": [
+          "numpy",
+          "scikit-learn"
+        ],
+        "verification": "verification/py-bootstrap-ci-auc-algorithm-20261102b.json"
+      },
+      {
+        "id": "py-get-proba",
+        "title": "原生模型评价 get_proba",
+        "language": "Python",
+        "entrypoint": "code/binary_evaluation.py:get_proba",
+        "dependencies": [
+          "numpy",
+          "scikit-learn"
+        ],
+        "verification": "verification/py-get-proba-algorithm-20261102b.json"
+      },
+      {
+        "id": "stacking-cli",
+        "title": "显式文件与阶段的原生模型工作流",
+        "language": "Python",
+        "entrypoint": "code/stacking_runner.py:run_stacking_cli",
+        "dependencies": [
+          "numpy",
+          "pandas",
+          "scikit-learn",
+          "joblib",
+          "matplotlib",
+          "scikit-optimize"
+        ],
+        "verification": "verification/stacking-cli-algorithm-20261102b.json"
+      },
+      {
+        "id": "native-dynamic-seurat5",
+        "title": "原 DynamicPlotMonocle2 的 Seurat 5 接口兼容分支",
+        "language": "R",
+        "entrypoint": "code/dynamic_monocle2_seurat5.R:run_dynamic_monocle2_seurat5",
+        "dependencies": [
+          "Seurat",
+          "SeuratObject",
+          "Matrix",
+          "rlang",
+          "mgcv",
+          "ggplot2",
+          "patchwork",
+          "ggnewscale",
+          "RColorBrewer"
+        ],
+        "verification": "verification/native-dynamic-seurat5-algorithm-20261102b.json"
+      },
+      {
+        "id": "r-child-runner",
+        "title": "按实际 Windows 架构启动 R 子进程",
+        "language": "Python",
+        "entrypoint": "code/run_r.py:run_r_script",
+        "dependencies": [],
+        "verification": "verification/r-child-runner-algorithm-20261102b.json"
+      }
+    ],
+    "code_roles": [
+      "analysis",
+      "visualization",
+      "runtime"
+    ],
+    "theory_methods": [
+      "cell-quality-control",
+      "batch-integration",
+      "dimensionality-reduction",
+      "cell-clustering",
+      "cell-type-annotation",
+      "differential-expression",
+      "gene-set-scoring",
+      "gene-set-enrichment",
+      "trajectory-inference",
+      "dynamic-feature-analysis",
+      "regression-resampling-evaluation",
+      "shap-explanation"
+    ]
+  },
+  "local-omics-visualization-guide": {
+    "id": "local-omics-visualization-guide",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": [
+      {
+        "id": "py-roc-render",
+        "title": "消费预计算结果的多队列曲线绘图",
+        "language": "Python",
+        "entrypoint": "code/roc_render.py:render_roc_curves",
+        "dependencies": [
+          "matplotlib"
+        ],
+        "verification": "verification/py-roc-render-algorithm-20261102b.json"
+      },
+      {
+        "id": "irgsea-heatmap",
+        "title": "依赖原生绘图 irgsea_heatmap",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "irGSEA"
+        ],
+        "verification": "verification/irgsea-heatmap-algorithm-20261102b.json"
+      },
+      {
+        "id": "scp-cell-dim",
+        "title": "依赖原生绘图 scp_cell_dim",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "SCP"
+        ],
+        "verification": "verification/scp-cell-dim-algorithm-20261102b.json"
+      },
+      {
+        "id": "scp-feature-dim",
+        "title": "依赖原生绘图 scp_feature_dim",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "SCP"
+        ],
+        "verification": "verification/scp-feature-dim-algorithm-20261102b.json"
+      },
+      {
+        "id": "scp-feature-stat",
+        "title": "依赖原生绘图 scp_feature_stat",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "SCP"
+        ],
+        "verification": "verification/scp-feature-stat-algorithm-20261102b.json"
+      },
+      {
+        "id": "scp-feature-heatmap",
+        "title": "依赖原生绘图 scp_feature_heatmap",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "SCP"
+        ],
+        "verification": "verification/scp-feature-heatmap-algorithm-20261102b.json"
+      },
+      {
+        "id": "seurat-dim",
+        "title": "依赖原生绘图 seurat_dim",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/seurat-dim-algorithm-20261102b.json"
+      },
+      {
+        "id": "seurat-feature",
+        "title": "依赖原生绘图 seurat_feature",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/seurat-feature-algorithm-20261102b.json"
+      },
+      {
+        "id": "seurat-violin",
+        "title": "依赖原生绘图 seurat_violin",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/seurat-violin-algorithm-20261102b.json"
+      },
+      {
+        "id": "seurat-dot",
+        "title": "依赖原生绘图 seurat_dot",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/seurat-dot-algorithm-20261102b.json"
+      },
+      {
+        "id": "seurat-spatial-dim",
+        "title": "依赖原生绘图 seurat_spatial_dim",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/seurat-spatial-dim-algorithm-20261102b.json"
+      },
+      {
+        "id": "seurat-spatial-feature",
+        "title": "依赖原生绘图 seurat_spatial_feature",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "Seurat"
+        ],
+        "verification": "verification/seurat-spatial-feature-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-circle",
+        "title": "依赖原生绘图 cellchat_circle",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-circle-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-bubble",
+        "title": "依赖原生绘图 cellchat_bubble",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-bubble-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-aggregate",
+        "title": "依赖原生绘图 cellchat_aggregate",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-aggregate-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-heatmap",
+        "title": "依赖原生绘图 cellchat_heatmap",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-heatmap-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-role-heatmap",
+        "title": "依赖原生绘图 cellchat_role_heatmap",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-role-heatmap-algorithm-20261102b.json"
+      },
+      {
+        "id": "cellchat-role-scatter",
+        "title": "依赖原生绘图 cellchat_role_scatter",
+        "language": "R",
+        "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+        "dependencies": [
+          "CellChat"
+        ],
+        "verification": "verification/cellchat-role-scatter-algorithm-20261102b.json"
+      }
+    ],
+    "code_roles": [
+      "visualization"
+    ],
+    "theory_methods": [
+      "gene-set-scoring",
+      "gene-set-enrichment",
+      "trajectory-inference",
+      "dynamic-feature-analysis",
+      "regression-resampling-evaluation"
+    ]
+  },
+  "scop-analysis-guide": {
+    "id": "scop-analysis-guide",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scop-source-catalog": {
+    "id": "scop-source-catalog",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scop-visualization-guide": {
+    "id": "scop-visualization-guide",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scop-workflows": {
+    "id": "scop-workflows",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "workflow",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scp-source-catalog": {
+    "id": "scp-source-catalog",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scp-viz-dimplots": {
+    "id": "scp-viz-dimplots",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": [
+      {
+        "id": "scp-celldensityplot",
+        "title": "SCP CellDensityPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/celldensityplot/code/module.R:CellDensityPlot",
+        "dependencies": [
+          "SeuratObject",
+          "dplyr",
+          "ggplot2",
+          "ggridges",
+          "rlang"
+        ],
+        "verification": "verification/scp-celldensityplot-f_x_order_rank-20261101T071920-15996-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-celldimplot",
+        "title": "SCP CellDimPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/celldimplot/code/module.R:CellDimPlot",
+        "dependencies": [
+          "ggplot2",
+          "grid",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-celldimplot-mark_circle-20261101T071929-14232-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-celldimplot3d",
+        "title": "SCP CellDimPlot3D 原生实现",
+        "language": "R",
+        "entrypoint": "code/celldimplot3d/code/module.R:CellDimPlot3D",
+        "dependencies": [
+          "ggplot2",
+          "grDevices",
+          "plotly",
+          "rlang"
+        ],
+        "verification": "verification/scp-celldimplot3d-cell_3d-20261101T071945-3384-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-featuredimplot",
+        "title": "SCP FeatureDimPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/featuredimplot/code/module.R:FeatureDimPlot",
+        "dependencies": [
+          "SeuratObject",
+          "ggplot2",
+          "grid",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-featuredimplot-keep_all-20261101T071958-19992-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-featuredimplot3d",
+        "title": "SCP FeatureDimPlot3D 原生实现",
+        "language": "R",
+        "entrypoint": "code/featuredimplot3d/code/module.R:FeatureDimPlot3D",
+        "dependencies": [
+          "SeuratObject",
+          "ggplot2",
+          "grDevices",
+          "plotly",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-featuredimplot3d-feature_3d-20261101T072014-13780-alg.json",
+        "note": "可视化入口"
+      }
+    ],
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scp-viz-heatmaps": {
+    "id": "scp-viz-heatmaps",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": [
+      {
+        "id": "scp-cellcorheatmap",
+        "title": "SCP CellCorHeatmap 原生实现",
+        "language": "R",
+        "entrypoint": "code/cellcorheatmap/code/module.R:CellCorHeatmap",
+        "dependencies": [
+          "ComplexHeatmap",
+          "Matrix",
+          "SeuratObject",
+          "circlize",
+          "ggplot2",
+          "grid",
+          "methods",
+          "rlang"
+        ],
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-dynamicheatmap",
+        "title": "SCP DynamicHeatmap 原生实现",
+        "language": "R",
+        "entrypoint": "code/dynamicheatmap/code/module.R:DynamicHeatmap",
+        "dependencies": [
+          "ComplexHeatmap",
+          "Matrix",
+          "SeuratObject",
+          "circlize",
+          "grid",
+          "methods",
+          "rlang",
+          "stats",
+          "utils"
+        ],
+        "verification": "verification/scp-dynamicheatmap-f_exp_method_raw-20261101T072104-12072-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-featureheatmap",
+        "title": "SCP FeatureHeatmap 原生实现",
+        "language": "R",
+        "entrypoint": "code/featureheatmap/code/module.R:FeatureHeatmap",
+        "dependencies": [
+          "ComplexHeatmap",
+          "Matrix",
+          "Seurat",
+          "SeuratObject",
+          "grid",
+          "methods",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-featureheatmap-default-20261101T072115-19668-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-groupheatmap",
+        "title": "SCP GroupHeatmap 原生实现",
+        "language": "R",
+        "entrypoint": "code/groupheatmap/code/module.R:GroupHeatmap",
+        "dependencies": [
+          "ComplexHeatmap",
+          "Matrix",
+          "Seurat",
+          "SeuratObject",
+          "ggplot2",
+          "grid",
+          "methods",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-groupheatmap-annotation-20261101T072128-6744-alg.json",
+        "note": "可视化入口"
+      }
+    ],
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scp-viz-model-overlays": {
+    "id": "scp-viz-model-overlays",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": [
+      {
+        "id": "scp-dynamicplot",
+        "title": "SCP DynamicPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/dynamicplot/code/module.R:DynamicPlot",
+        "dependencies": [
+          "Matrix",
+          "MatrixGenerics",
+          "SeuratObject",
+          "dplyr",
+          "ggnewscale",
+          "ggplot2",
+          "grid",
+          "gtable",
+          "methods",
+          "patchwork",
+          "plotly",
+          "reshape2",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-dynamicplot-native_curve-20261101T072613-14040-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-enrichmentplot",
+        "title": "SCP EnrichmentPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/enrichmentplot/code/module.R:EnrichmentPlot",
+        "dependencies": [
+          "dplyr",
+          "ggplot2",
+          "methods",
+          "rlang",
+          "stats"
+        ],
+        "note": "可视化入口",
+        "verification": "verification/scp-enrichmentplot-positive_native_material-20261101T072627-4256-alg.json"
+      },
+      {
+        "id": "scp-gseaplot",
+        "title": "SCP GSEAPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/gseaplot/code/module.R:GSEAPlot",
+        "dependencies": [
+          "dplyr",
+          "ggplot2",
+          "methods",
+          "rlang",
+          "stats",
+          "utils"
+        ],
+        "note": "可视化入口",
+        "verification": "verification/scp-gseaplot-positive_native_material-20261101T072646-13900-alg.json"
+      },
+      {
+        "id": "scp-graphplot",
+        "title": "SCP GraphPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/graphplot/code/module.R:GraphPlot",
+        "dependencies": [
+          "ggplot2",
+          "grid",
+          "reshape2",
+          "rlang"
+        ],
+        "verification": "verification/scp-graphplot-real_curved-20261101T072648-13072-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-lineageplot",
+        "title": "SCP LineagePlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/lineageplot/code/module.R:LineagePlot",
+        "dependencies": [
+          "ggplot2",
+          "grid",
+          "rlang"
+        ],
+        "note": "可视化入口",
+        "verification": "verification/scp-lineageplot-positive_native_material-20261101T072702-8460-alg.json"
+      },
+      {
+        "id": "scp-pagaplot",
+        "title": "SCP PAGAPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/pagaplot/code/module.R:PAGAPlot",
+        "dependencies": [
+          "ggplot2",
+          "grid",
+          "reshape2",
+          "rlang",
+          "stats"
+        ],
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-projectionplot",
+        "title": "SCP ProjectionPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/projectionplot/code/module.R:ProjectionPlot",
+        "dependencies": [
+          "ggnewscale",
+          "ggplot2",
+          "grid",
+          "plotly",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-projectionplot-self_projection-20261101T072710-1308-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-velocityplot",
+        "title": "SCP VelocityPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/velocityplot/code/module.R:VelocityPlot",
+        "dependencies": [
+          "Matrix",
+          "SeuratObject",
+          "dplyr",
+          "ggplot2",
+          "grid",
+          "igraph",
+          "metR",
+          "proxyC",
+          "reshape2",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-velocityplot-velocity_umap-20261026T152936-26340-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-compute-velocity-on-grid",
+        "title": "SCP compute_velocity_on_grid",
+        "language": "R",
+        "entrypoint": "code/compute-velocity-on-grid/code/module.R:compute_velocity_on_grid",
+        "dependencies": [
+          "Matrix",
+          "SeuratObject",
+          "igraph",
+          "proxyC",
+          "rlang",
+          "stats"
+        ],
+        "note": "VelocityPlot 网格辅助；非速度算法"
+      }
+    ],
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "scp-viz-statplots": {
+    "id": "scp-viz-statplots",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": [
+      {
+        "id": "scp-cellstatplot",
+        "title": "SCP CellStatPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/cellstatplot/code/module.R:CellStatPlot",
+        "dependencies": [
+          "ggplot2",
+          "grDevices",
+          "rlang",
+          "stats"
+        ],
+        "verification": "verification/scp-cellstatplot-f_plot_type_upset-20261101T072722-15920-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-featurecorplot",
+        "title": "SCP FeatureCorPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/featurecorplot/code/module.R:FeatureCorPlot",
+        "dependencies": [
+          "Matrix",
+          "SeuratObject",
+          "gtable",
+          "patchwork",
+          "proxyC",
+          "rlang"
+        ],
+        "verification": "verification/scp-featurecorplot-two_markers-20261101T072731-6580-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-featurestatplot",
+        "title": "SCP FeatureStatPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/featurestatplot/code/module.R:FeatureStatPlot",
+        "dependencies": [
+          "SeuratObject",
+          "ggplot2",
+          "methods",
+          "reshape2",
+          "rlang"
+        ],
+        "verification": "verification/scp-featurestatplot-f_add_stat_mean-20261101T072744-15780-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-statplot",
+        "title": "SCP StatPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/statplot/code/module.R:StatPlot",
+        "dependencies": [
+          "ggplot2",
+          "grDevices",
+          "stats"
+        ],
+        "verification": "verification/scp-statplot-f_position_dodge-20261101T072746-13688-alg.json",
+        "note": "可视化入口"
+      },
+      {
+        "id": "scp-volcanoplot",
+        "title": "SCP VolcanoPlot 原生实现",
+        "language": "R",
+        "entrypoint": "code/volcanoplot/code/module.R:VolcanoPlot",
+        "dependencies": [
+          "dplyr",
+          "ggplot2",
+          "ggrepel",
+          "methods",
+          "rlang",
+          "stats",
+          "utils"
+        ],
+        "note": "可视化入口",
+        "verification": "verification/scp-volcanoplot-positive_native_material-20261101T072804-15236-alg.json"
+      }
+    ],
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "uc-ptm-source-catalog": {
+    "id": "uc-ptm-source-catalog",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "technical",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "uc-ptm-workflow": {
+    "id": "uc-ptm-workflow",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "workflow",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  },
+  "uc-spatial-workflows": {
+    "id": "uc-spatial-workflows",
+    "favorite": false,
+    "archived_from": null,
+    "method_kind": "workflow",
+    "implementations": null,
+    "code_roles": null,
+    "theory_methods": null
+  }
+}

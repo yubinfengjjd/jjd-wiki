@@ -1,0 +1,9 @@
+{
+  "sizing": {
+    "mode": "fixed"
+  },
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "set_levels": ["Ductal", "Endocrine", "G1S", "G2M"]
+}

@@ -1,0 +1,7 @@
+.libPaths(c("E:/research-wiki-env/R-lib-scp/4.5", .libPaths()))
+cat("libPaths:", paste(.libPaths(), collapse=" | "), "\n")
+ip <- rownames(installed.packages())
+cat("total packages:", length(ip), "\n")
+want <- c('SCP','Seurat','SeuratObject','monocle','monocle3','SingleR','scDblFinder','harmony','slingshot','clusterProfiler','ggplot2','ggsankey','circlize','ComplexHeatmap','reticulate','AUCell','UCell','scmap','scds','NMF','intrinsicDimension','simplifyEnrichment','GOSemSim','GO.db','org.Hs.eg.db','org.Mm.eg.db','DDRTree','destiny','batchelor','glmGamPoi','glmpca','uwot','patchwork','ggrepel','ggforce','ggnewscale','ggridges','ggVennDiagram','ggupset','ggwordcloud','hexbin','metR','scattermore','concaveman','symphony','conos','sva','SummarizedExperiment','SingleCellExperiment','Biobase','HDF5Array','rhdf5','Signac','AnnotationDbi','biomaRt','BiocParallel','data.table','dplyr','future','future.apply','pbapply','proxyC','R.cache','R.utils','reshape2','rlang','scales','Matrix','mgcv','igraph','png','plotly','gtable','Rcpp','RcppParallel','RcppML','ggsignif')
+cat("PRESENT:", paste(intersect(want, ip), collapse=", "), "\n")
+cat("MISSING:", paste(setdiff(want, ip), collapse=", "), "\n")

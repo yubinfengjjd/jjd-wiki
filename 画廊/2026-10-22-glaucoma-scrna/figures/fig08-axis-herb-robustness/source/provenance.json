@@ -1,0 +1,14 @@
+{
+  "source_image": "source/fig08.png",
+  "source_image_sha256": "de6acc99798c2be2c50e75f72e2e48277d649931838a90d0768f5d6ac85a4cc3",
+  "full_original": "source/full_original.png",
+  "full_original_sha256": "de6acc99798c2be2c50e75f72e2e48277d649931838a90d0768f5d6ac85a4cc3",
+  "bbox": [0, 0, 2248, 1586],
+  "source_kind": "author_project_figure",
+  "source_paths": [
+    "E:\\青光眼单细胞\\axisnet_separate_panels_clean\\Panel_D_bootstrap_CV_robust_ranking_clean.png",
+    "E:\\青光眼单细胞\\axisnet_rd_v8\\outputs\\rankings\\cv_results.json"
+  ],
+  "data_source_sha256": "5f2e12d93d0f127af5ffc3f948fbc3639061c42951bd01190d9698b547ad5169",
+  "note": "Real project output; herb IDs mapped to names with the source script's known dictionary."
+}

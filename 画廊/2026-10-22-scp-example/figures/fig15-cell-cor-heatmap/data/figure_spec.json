@@ -1,0 +1,33 @@
+{
+  "source": "SCP v0.5.6 CellCorHeatmap (R/SCP-plot.R 10113-11019), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig15.png",
+  "logical_panel": "A",
+  "chart_type": "heatmap",
+  "input": "data/render-correlation-heatmap.csv",
+  "input_columns": {
+    "row": "query group label; row of the similarity matrix",
+    "column": "reference group label; column of the similarity matrix",
+    "similarity": "cosine similarity computed by RunKNNPredict; template does not recompute",
+    "row_group": "row annotation group",
+    "column_group": "column annotation group",
+    "row_order": "row order from 1",
+    "column_order": "column order from 1"
+  },
+  "params": {
+    "query_group": "SubCellType",
+    "ref_group": "SubCellType",
+    "query_collapsing": true,
+    "ref_collapsing": true,
+    "simil_name": "Cosine similarity",
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, Standard_SCP; 8 SubCellType groups; query-query cosine similarity",
+    "code": "native CellCorHeatmap similarity matrix + ComplexHeatmap construction extracted; table/plot split; RunKNNPredict metadata-name patch documented",
+    "license": "GPL (>= 3)"
+  },
+  "source_image_sha256": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7"
+}

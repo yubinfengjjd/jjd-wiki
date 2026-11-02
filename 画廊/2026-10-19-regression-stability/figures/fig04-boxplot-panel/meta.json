@@ -1,0 +1,59 @@
+{
+  "id": "2026-10-19-regression-stability__fig04-boxplot-panel",
+  "post": {
+    "title": "EST同款复现：多模型重复实验（K折交叉验证）的密度散点与箱线图评估模型稳定性",
+    "account": "Python机器学习AI",
+    "author": "Python机器学习AI",
+    "publish_date": "2026-10-19",
+    "url": "https://mp.weixin.qq.com/s/LDPZ8guXNKnSRtjZC2YbNg"
+  },
+  "figure": {
+    "index": 4,
+    "label": "单panel：箱线散点与均值",
+    "caption": "估读图形复刻；箱线图横向抖动为合成展示，原始样本不可恢复。待作者目视签核。",
+    "panels": [
+      "A"
+    ],
+    "chart_types": [
+      "boxplot"
+    ],
+    "canvas_px": [
+      872,
+      777
+    ],
+    "panel_map": {
+      "A": "boxplot"
+    }
+  },
+  "scenarios": {
+    "primary": [
+      "experimental-statistics"
+    ],
+    "secondary": [],
+    "free": [
+      "regression"
+    ]
+  },
+  "language": "python",
+  "data_provenance": "mixed",
+  "code_provenance": "reconstructed",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig04.png",
+    "source_text": "source/source.md",
+    "code": "code/replica.py",
+    "data": "data/estimated_data.csv",
+    "spec": "data/figure_spec.json",
+    "replica": "output/replica.png",
+    "pdf": "output/replica.pdf",
+    "svg": "output/replica.svg",
+    "compare": "compare/side_by_side.png",
+    "thumbnail": "thumb.png",
+    "readme": "README.md"
+  },
+  "status": "approved",
+  "version": 1,
+  "source_image_sha256": "a35ba248ab50e44e87715d398f193a52e5ebcb3531855e0f93b2d0d47f48d30f",
+  "created_at": "2026-10-21T08:43:17.178919Z",
+  "updated_at": "2026-10-21T11:36:29.797171+00:00"
+}

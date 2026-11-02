@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-25T06:48:29.811706+00:00",
+  "decision": "approve_bounded_framework_release",
+  "coding": "Devin functional-tartan ended; no coding process active",
+  "evidence": [
+    "logs/codex-batch2-snapshot-full-rerun.log",
+    "logs/codex-batch2-latest-cli.log",
+    "logs/codex-taxonomy-final-tests.log",
+    "logs/codex-batch2-snapshot-adverse25.log",
+    "logs/codex-batch2-snapshot-integration15.json",
+    "browser-review/cdp-production-results.json",
+    "browser-review/cdp-method-list-final-results.json",
+    "a25-independent-output-review.json",
+    "native-reviewed-independent-check.json",
+    "fresh-handoff-independent-check.json",
+    "pilot-metadata-correction.json"
+  ],
+  "accepted_scope": "generic project state, discovery, scoped rules and minimal runtime facts, UI synchronization, real descriptive single-cell reuse and read-only fresh-session recovery",
+  "not_approved": [
+    "G3 multi-domain actual algorithm coverage",
+    "disease inference / historical annotation correctness",
+    "author lesson signoff",
+    "shared R session side-effect-free scp-detest use"
+  ],
+  "known_gap": "existing native closure leaves added R options; fresh-process isolation only, pending lesson, no source/receipt promotion",
+  "deployment": "authorized guarded integration plan35 + governance20/scoped manifests5 + existing five-host deploy tool; preserve original development Git index"
+}

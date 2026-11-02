@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-25T06:33:03.312787+00:00",
+  "reviewer": "Codex",
+  "raw_rows": 7403,
+  "mapped_rows": 7403,
+  "zero_p_values": 71,
+  "render_floor": 4.02332e-319,
+  "mapping": "same row keys and numbers except documented 71 adjusted-p display floors; no aggregate or unit conversion",
+  "runtime_closure": {
+    "code/analysis.R": "d551f051a41c74c3f74d57df4c631c75f39d4f9be218912eb9d709d0218f4bf4",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "trial_skill_unchanged_files": 296,
+  "isolated_wiki_unchanged_except_preapproved_AGENTS": 916,
+  "raw_sha256": "971b39c5c7a4abce111c3ff7f2efdd69068eb3c03cd8907c67443b7dd0d743fd",
+  "diagnostics_gap": "0-byte JSON remains; historical process diagnostics/exit success not established",
+  "visual_review": "Codex actually opened PNG: RGC_like, diff_pct X, signed -log10 adjusted p Y, log2FC color; top display floor; labels visible. This is the native SCP variant, not a conventional log2FC X volcano.",
+  "scientific_limits": "cell-level descriptive markers for preexisting labels; not donor-level inference or independent annotation validation",
+  "status": "passed_scoped_output_mapping_and_provenance_checks_with_diagnostics_gap"
+}

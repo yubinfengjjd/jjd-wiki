@@ -1,0 +1,10 @@
+{
+  "sizing": {
+    "mode": "fixed"
+  },
+  "width_in": 8,
+  "height_in": 6,
+  "dpi": 150,
+  "xlab": "CellType",
+  "legend_title": "Phase:"
+}

@@ -1,0 +1,50 @@
+{
+  "source": "SCP v0.5.6 GroupHeatmap(add_dot=TRUE) (R/SCP-plot.R lines 7911-9036), commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "source_image": "source/fig17.png",
+  "logical_panel": "A",
+  "chart_type": "heatmap (dot matrix overlay)",
+  "input": "data/render-group-heatmap.csv",
+  "input_columns": {
+    "matrix": "group.by variable / matrix name",
+    "feature": "gene or metadata feature; unique within matrix",
+    "group": "column group/cell type",
+    "value": "aggregated transformed expression (zscore)",
+    "percent": "fraction of cells above exp_cutoff, 0-1 (drives dot size)",
+    "matrix_order": "matrix display order",
+    "group_order": "column order within matrix",
+    "feature_order": "row order shared by matrices"
+  },
+  "params": {
+    "features": [
+      "Sox9",
+      "Anxa2",
+      "Neurog3",
+      "Hes6",
+      "Fev",
+      "Neurod1",
+      "Rbp4",
+      "Pyy",
+      "Ins1",
+      "Gcg",
+      "Sst",
+      "Ghrl"
+    ],
+    "group_by": [
+      "CellType"
+    ],
+    "add_dot": true,
+    "dot_size_mm": 8,
+    "exp_method": "zscore",
+    "exp_legend_title": "zscore(normalized counts)",
+    "nlabel": 20,
+    "width_in": 8,
+    "height_in": 6,
+    "dpi": 150,
+    "seed": 11
+  },
+  "provenance": {
+    "data": "pancreas_sub example, 1000 cells; mat_list/mat_perc_list frame-captured from the unmodified native function run in this session",
+    "code": "plotting half reproduces the native add_dot branch byte-for-byte (PNG/SVG); add_violin/flip/split/annotation branches rejected",
+    "license": "GPL (>= 3)"
+  }
+}

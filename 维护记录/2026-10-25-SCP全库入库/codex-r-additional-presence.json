@@ -1,0 +1,35 @@
+{
+  "scope": "installed metadata only; not algorithm/load validation",
+  "packages": {
+    "sva": {
+      "present": true,
+      "version": "3.56.0",
+      "library": "D:/R-4.5.0/library"
+    },
+    "GSVA": {
+      "present": false
+    },
+    "MAST": {
+      "present": false
+    },
+    "DESeq2": {
+      "present": false
+    },
+    "largeVis": {
+      "present": false
+    },
+    "uwot": {
+      "present": true,
+      "version": "0.2.5",
+      "library": "E:/research-wiki-env/R-lib-scp/4.5"
+    },
+    "MASS": {
+      "present": true,
+      "version": "7.3-65",
+      "library": "D:/R-4.5.0/library"
+    },
+    "RcppML": {
+      "present": false
+    }
+  }
+}

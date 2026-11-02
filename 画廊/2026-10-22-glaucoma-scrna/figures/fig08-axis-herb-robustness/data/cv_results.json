@@ -1,0 +1,98 @@
+{
+  "method": "robust_ensemble_5_bootstrap",
+  "best_axis": {
+    "herb": "Lv Cha",
+    "compound": "EGCG (Epigallocatechin Gallate)",
+    "target": "FOSB",
+    "module": "INFLAMMATION_COMPLEMENT",
+    "robust_score": 2.0825285125287434,
+    "mean_score": 2.0827927350997926,
+    "std_score": 0.0005284451420983036
+  },
+  "stability_note": "Robust = mean - 0.5*std penalizes unstable predictions",
+  "score_stats": {
+    "mean": 0.013425759971141815,
+    "std": 0.6155741214752197,
+    "min": -0.5815527439117432,
+    "max": 2.1058053970336914
+  },
+  "module_distribution": {
+    "TM_IOP": 919,
+    "ECM_TGFB_EMT": 164,
+    "RGC_NEURODEGENERATION": 32,
+    "INFLAMMATION_COMPLEMENT": 776,
+    "MITO_FERROPTOSIS": 109
+  },
+  "top10_herbs": [
+    {
+      "rank": 1,
+      "herb": "HIT2:H0189",
+      "robust": 2.0825285125287434,
+      "mean": 2.0827927350997926,
+      "std": 0.0005284451420983036
+    },
+    {
+      "rank": 2,
+      "herb": "HIT2:H0173",
+      "robust": 2.072524630916977,
+      "mean": 2.0732271666960282,
+      "std": 0.001405071558103077
+    },
+    {
+      "rank": 3,
+      "herb": "HIT2:H0750",
+      "robust": 2.0721886566477545,
+      "mean": 2.0731017642667444,
+      "std": 0.0018262152379796687
+    },
+    {
+      "rank": 4,
+      "herb": "HIT2:H0462",
+      "robust": 2.0681029140949247,
+      "mean": 2.0688098231951395,
+      "std": 0.0014138182004292954
+    },
+    {
+      "rank": 5,
+      "herb": "HIT2:H0028",
+      "robust": 2.0648998529502736,
+      "mean": 2.0667047068476676,
+      "std": 0.0036097077947877193
+    },
+    {
+      "rank": 6,
+      "herb": "HIT2:H0697",
+      "robust": 2.064148483570101,
+      "mean": 2.066508974631627,
+      "std": 0.004720982123051777
+    },
+    {
+      "rank": 7,
+      "herb": "HIT2:H1040",
+      "robust": 2.056575794850175,
+      "mean": 2.057431829969088,
+      "std": 0.0017120702378259649
+    },
+    {
+      "rank": 8,
+      "herb": "HIT2:H0938",
+      "robust": 2.0352138258837584,
+      "mean": 2.036246561010679,
+      "std": 0.00206547025384085
+    },
+    {
+      "rank": 9,
+      "herb": "HIT2:H0631",
+      "robust": 2.0106187109479343,
+      "mean": 2.012749848763148,
+      "std": 0.004262275630427399
+    },
+    {
+      "rank": 10,
+      "herb": "HIT2:H0366",
+      "robust": 2.010307494525916,
+      "mean": 2.010741949081421,
+      "std": 0.0008689091110097515
+    }
+  ]
+}

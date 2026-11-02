@@ -1,0 +1,12 @@
+options(error=function() { traceback(30); q(status=1) })
+.libPaths(c("E:/research-wiki-env/R-lib-scp/4.5", .libPaths()))
+load("E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda")
+future::plan("sequential")
+options(future.globals.maxSize=4*1024^3)
+env <- new.env(parent=globalenv())
+setwd("portability/batch-integration/code")
+source("analysis.R", local=env)
+srt <- pancreas_sub[,1:120]; srt$batch <- rep(c("A","B"), each=60)
+res <- env$run_seurat_integration(srt, "batch", parameters=list(nHVF=300, linear_reduction_dims=20,
+  nonlinear_reduction_dims=2, cluster_resolution=0.5, IntegrateData_params=list(k.weight=30), seed=11))
+cat("OK\n")

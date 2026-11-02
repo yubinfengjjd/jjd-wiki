@@ -1,0 +1,107 @@
+[
+  {
+    "id": "asthma-lactylation-source-catalog",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "asthma-lactylation-workflow",
+    "kind": "workflow",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "figureya-multilanguage-assets",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scop-analysis-guide",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scop-source-catalog",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scop-visualization-guide",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scop-workflows",
+    "kind": "workflow",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-annotation-projection",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-cellqc-doublet",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-de-enrichment-dynamic",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-integration",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-local-source",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-source-catalog",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-standard-workflow",
+    "kind": "workflow",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scp-trajectory-velocity",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scrna-marker-annotation",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scrna-pathway-signature-ensemble",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "scrna-preprocess-doublet-qc-harmony",
+    "kind": "workflow",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "uc-ptm-source-catalog",
+    "kind": "technical",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "uc-ptm-workflow",
+    "kind": "workflow",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  },
+  {
+    "id": "uc-spatial-workflows",
+    "kind": "workflow",
+    "scope": "Theory/workflow/source navigation; no declared executable branches"
+  }
+]

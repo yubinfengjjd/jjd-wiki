@@ -1,0 +1,13 @@
+.libPaths(c('E:/research-wiki-env/R-lib-scp/4.5', .libPaths()))
+suppressPackageStartupMessages(library(ggplot2))
+load('E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda')
+env <- new.env(parent=globalenv())
+source(commandArgs(trailingOnly=TRUE)[1], local=env)
+before <- search()
+srt <- pancreas_sub[,1:80]
+msg <- tryCatch({env$run_doublet_detection(srt, parameters=list(assay='RNA', db_method='scDblFinder', db_rate=0.01, seed=11)); NA_character_}, error=function(e) conditionMessage(e))
+after <- search()
+cat('ERROR_PATH_MESSAGE=', msg, '\n', sep='')
+cat('SEARCH_RESTORED_AFTER_ERROR=', identical(before, after), '\n', sep='')
+cat('USER_PKG_STILL_ATTACHED=', 'package:ggplot2' %in% after, '\n', sep='')
+if (!identical(before, after)) quit(status=1)

@@ -1,0 +1,67 @@
+{
+  "label": "devin-review1",
+  "pid": 3632,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "returned",
+  "tool_events": 480,
+  "message_chars": 6310,
+  "updated_at": "2026-10-24T11:22:48Z",
+  "load_session_supported": true,
+  "last_tool": "Wrote E:/research-wiki-env/work/wiki-cross-domain-20261024/development/review1-result.md",
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    3596,
+    12508,
+    22628,
+    22808,
+    16512,
+    3412,
+    9552,
+    24528,
+    23608,
+    23936,
+    23484,
+    16148,
+    24444,
+    24080,
+    24192,
+    23604,
+    18416,
+    5416,
+    10820,
+    24400,
+    4284,
+    24088,
+    18464,
+    11984,
+    3584,
+    11508,
+    24248,
+    24120,
+    9160
+  ],
+  "stop_reason": "end_turn"
+}

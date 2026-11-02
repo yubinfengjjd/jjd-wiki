@@ -1,0 +1,57 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "heatmap": {
+      "interface": "render-feature-heatmap",
+      "description": "一个 matrix × feature × cell 的长表（matrix 为 group.by 变量名）；模板按 matrix 重建特征×细胞矩阵、分组注释与显式行/列顺序，表达变换在上游完成，模板不重算"
+    }
+  },
+  "style": {
+    "exp_method": "zscore",
+    "exp_legend_title": "zscore(normalized counts)",
+    "heatmap_palette": "RdBu",
+    "heatmap_palcolor": null,
+    "group_palette": "Paired",
+    "group_palcolor": null,
+    "group_levels": null,
+    "nlabel": 20,
+    "features_label": null,
+    "label_size": 10,
+    "label_color": "black",
+    "flip": false,
+    "cluster_rows": false,
+    "cluster_columns": false,
+    "cluster_row_slices": false,
+    "cluster_column_slices": false,
+    "border": true,
+    "show_row_names": false,
+    "show_column_names": false,
+    "row_names_rot": 0,
+    "column_names_rot": 90,
+    "use_raster": null,
+    "raster_device": "png",
+    "raster_by_magick": false,
+    "width": null,
+    "height": null,
+    "units": "inch",
+    "dpi": 150,
+    "width_in": 8,
+    "height_in": 6,
+    "seed": 11,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 4,
+      "per_x_in": 0.004,
+      "base_height_in": 2.5,
+      "per_y_in": 0.18,
+      "min_width_in": 6,
+      "min_height_in": 5,
+      "base_label_chars": 12,
+      "per_label_char_in": 0.08,
+      "aspect": null,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

@@ -1,0 +1,2362 @@
+diff --git a/frontend/src/App.tsx b/frontend/src/App.tsx
+index 4de2305..ba8ed4e 100644
+--- a/frontend/src/App.tsx
++++ b/frontend/src/App.tsx
+@@ -1,7 +1,8 @@
+ import { useCallback, useEffect, useMemo, useState } from 'react';
+-import { api, GraphData, isItem, PageSummary } from './api';
++import { api, GraphData, PageSummary } from './api';
+ import { useBackdropZone } from './backdrop/instance';
+ import { Flow } from './flow';
++import { singlePanelKnowledge } from './figureModels';
+ import { RenderEnv } from './markdown';
+ import { useRoute } from './route';
+ import { Gallery } from './views/Gallery';
+@@ -9,7 +10,8 @@ import { GraphView } from './views/GraphView';
+ import { LogView } from './views/LogView';
+ import { MethodsView } from './views/MethodsView';
+ import { PageView } from './views/PageView';
+-import { QueueView, QUEUED } from './views/QueueView';
++import { QueueView } from './views/QueueView';
++import { pendingCount as countPending } from './workflow';
+ 
+ export interface AppData {
+   pages: PageSummary[];
+@@ -33,21 +35,24 @@ export function App() {
+   const [pages, setPages] = useState<PageSummary[] | null>(null);
+   const [graph, setGraph] = useState<GraphData | null>(null);
+   const [error, setError] = useState('');
++  const [hiddenSources, setHiddenSources] = useState<Set<string>>(new Set());
+ 
+   const reload = useCallback(async () => {
+     const [p, g] = await Promise.all([api.pages(), api.graph()]);
+-    setPages(p);
+-    setGraph(g);
++    const visible = singlePanelKnowledge(p, g);
++    setPages(visible.pages);
++    setGraph(visible.graph);
++    setHiddenSources(visible.hiddenSources);
+   }, []);
+ 
+   useEffect(() => {
+     reload().catch((e: Error) => setError(e.message));
+   }, [reload]);
+ 
+-  const env = useMemo<RenderEnv>(() => ({ titles: new Map((pages ?? []).map((p) => [p.path, p.meta.title])) }), [pages]);
++  const env = useMemo<RenderEnv>(() => ({ titles: new Map((pages ?? []).map((p) => [p.path, p.meta.title])), hiddenSources }), [pages, hiddenSources]);
+   const flow = useMemo(() => new Flow(graph ?? { nodes: [], links: [] }), [graph]);
+ 
+-  const pendingCount = (pages ?? []).filter((p) => isItem(p.meta) && QUEUED.has(p.meta.status)).length;
++  const pendingCount = countPending(pages ?? []);
+ 
+   let content;
+   if (error) content = <p className="notice error">连不上本地服务（{error}）。在终端运行 wiki.py serve 后刷新页面。</p>;
+diff --git a/frontend/src/api.ts b/frontend/src/api.ts
+index ae1c5cd..26c34cd 100644
+--- a/frontend/src/api.ts
++++ b/frontend/src/api.ts
+@@ -3,6 +3,52 @@ export type PageType = 'layout' | 'template' | 'method' | 'interface' | 'chart-t
+ /** Page types the author acts on; each has its own status machine and the shared favorite/note/tags/archive endpoints. */
+ export type Kind = 'layouts' | 'templates' | 'methods';
+ 
++export type Compatibility = 'direct' | 'adaptable' | 'candidate';
++export interface Verification {
++  state: string;
++  scope?: string;
++  evidence?: string[];
++}
++/** The same semantic record is returned on both the method and figure page. */
++export interface Relation {
++  method: string;
++  figure: string;
++  method_title: string;
++  figure_title: string;
++  method_status: Status;
++  figure_status: Status;
++  compatibility: Compatibility;
++  reason: string;
++  prerequisites: string[];
++  adaptation: string;
++  evidence: string[];
++  verification: Verification;
++  target_kind: 'template' | 'layout';
++  active: boolean;
++}
++export type CodeVariant = 'original' | 'reusable';
++export interface CodeFile {
++  variant: CodeVariant;
++  path: string;
++  language: string;
++  size: number;
++  sha256: string;
++  text: boolean;
++  source: unknown;
++  verification: Verification;
++}
++export interface CodeListing { files: CodeFile[]; note: string }
++export interface CodeText {
++  path: string;
++  variant: CodeVariant;
++  language: string;
++  text: string | null;
++  encoding: string | null;
++  note: string;
++  sha256: string;
++  size: number;
++}
++
+ interface ItemBase {
+   id: string;
+   title: string;
+@@ -64,6 +110,35 @@ export type PageMeta = ItemMeta | InterfaceMeta | HubMeta;
+ export interface PageSummary<M extends PageMeta = PageMeta> {
+   path: string;
+   meta: M;
++  /** Explicit outgoing figure links in a method body; general backlinks are not illustrations. */
++  figure_refs?: string[];
++  relations?: Relation[];
++  preview?: Preview | null;
++  workflow?: Workflow | null;
++}
++
++/** Derived remaining action, independent of stored signoff and layout replay state. */
++export interface Workflow {
++  stage: string;
++  queue: 'signoff' | 'confirm' | 'agent' | null;
++  label: string;
++  reason: string;
++  templates: string[];
++}
++
++export interface Preview {
++  url: string | null;
++  kind: 'replay' | 'source' | 'none';
++  label: string;
++}
++
++export interface DeletePlan {
++  title: string;
++  path: string;
++  revision: string;
++  asset_files: number;
++  affected: { path: string; title: string }[];
++  gallery_preserved: boolean;
+ }
+ 
+ export interface Backlink {
+@@ -86,6 +161,7 @@ export interface PageDetail extends PageSummary {
+   body: string;
+   backlinks: Backlink[];
+   gallery: GalleryMeta | null;
++  reuse?: { sizing_declared: boolean; mode: string | null; profile: string | null } | null;
+ }
+ 
+ export interface GraphNode {
+@@ -95,11 +171,13 @@ export interface GraphNode {
+   status: Status | null;
+ }
+ 
+-/** `feeds` runs method → interface → template/method and is directed; `link` is any other wiki link. */
++/** Interface structure (`feeds`) and reviewed semantic relations remain independent. */
+ export interface GraphLink {
+   source: string;
+   target: string;
+-  kind: 'feeds' | 'link';
++  kind: 'feeds' | 'link' | 'relation';
++  compatibility?: Compatibility;
++  verification?: Verification;
+ }
+ 
+ export interface GraphData {
+@@ -121,8 +199,8 @@ export const STATUS_LABEL: Record<Status, string> = {
+ };
+ 
+ export const TYPE_LABEL: Record<PageType, string> = {
+-  layout: '整图版式',
+-  template: '单图模板',
++  layout: '来源图样',
++  template: '可调用模板',
+   method: '分析方法',
+   interface: '数据接口',
+   'chart-type': '图型',
+@@ -149,15 +227,30 @@ const act = (kind: Kind, id: string, action: string) => `/api/${kind}/${encodeUR
+ 
+ /** Last fetched detail per page, so a page can paint on the first frame of a transition. */
+ export const pageCache = new Map<string, PageDetail>();
++const previewCache = new Map<string, Preview | null>();
++const workflowCache = new Map<string, Workflow | null>();
++const previewKey = (meta: PageMeta) => 'id' in meta ? `${meta.type}/${meta.id}` : '';
+ 
+ export const api = {
+-  pages: () => request<PageSummary[]>('/api/pages'),
++  pages: async () => {
++    const pages = await request<PageSummary[]>('/api/pages');
++    previewCache.clear();
++    workflowCache.clear();
++    for (const p of pages) if (p.preview !== undefined) previewCache.set(previewKey(p.meta), p.preview);
++    for (const p of pages) if (p.workflow !== undefined) workflowCache.set(previewKey(p.meta), p.workflow);
++    return pages;
++  },
+   page: async (path: string) => {
+     const page = await request<PageDetail>(`/api/page?path=${encodeURIComponent(path)}`);
+     pageCache.set(path, page);
++    if (page.preview !== undefined) previewCache.set(previewKey(page.meta), page.preview);
++    if (page.workflow !== undefined) workflowCache.set(previewKey(page.meta), page.workflow);
+     return page;
+   },
+   graph: () => request<GraphData>('/api/graph'),
++  codeFiles: (kind: Kind, id: string, signal?: AbortSignal) => request<CodeListing>(act(kind, id, 'code-files'), { signal }),
++  code: (kind: Kind, id: string, variant: CodeVariant, path: string, signal?: AbortSignal) =>
++    request<CodeText>(`${act(kind, id, 'code')}?${new URLSearchParams({ variant, path })}`, { signal }),
+   log: () => request<LogEntry[]>('/api/log'),
+   signoff: (id: string) => post(act('layouts', id, 'signoff')),
+   reject: (id: string, reason: string) => post(act('layouts', id, 'reject'), { reason }),
+@@ -168,21 +261,45 @@ export const api = {
+   note: (kind: Kind, id: string, text: string) => post(act(kind, id, 'note'), { text }),
+   archive: (kind: Kind, id: string) => post(act(kind, id, 'archive')),
+   restore: (kind: Kind, id: string) => post(act(kind, id, 'restore')),
++  deletePlan: (kind: Kind, id: string) => request<DeletePlan>(act(kind, id, 'delete-plan')),
++  deleteArchived: async (kind: Kind, id: string, revision: string) => {
++    const result = await request<DeletePlan & { deleted: boolean; audit: string }>(act(kind, id, 'delete'), {
++      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ confirmed: true, revision }),
++    });
++    pageCache.clear();
++    return result;
++  },
+ };
+ 
+ const encodePath = (path: string) => path.split('/').map(encodeURIComponent).join('/');
+ 
+ export const KIND_OF: Record<ItemMeta['type'], Kind> = { layout: 'layouts', template: 'templates', method: 'methods' };
++export const codeDownload = (kind: Kind, id: string, file: Pick<CodeFile, 'variant' | 'path'>) =>
++  `${act(kind, id, 'code-download')}?${new URLSearchParams({ variant: file.variant, path: file.path })}`;
+ export const wikiFile = (path: string) => `/files/wiki/${encodePath(path)}`;
+ export const galleryFile = (entry: string, file: string) => `/files/gallery/${encodePath(`${entry}/${file}`)}`;
+ export const pageHref = (path: string) => `#/page/${encodePath(path)}`;
+ 
+ /** The picture that stands for an item: the gallery thumbnail for a layout, the replay preview for a panel template. */
+ export function imageOf(meta: PageMeta): string | null {
++  const known = previewCache.get(previewKey(meta));
++  if (known !== undefined) return known?.url ?? null;
+   if (meta.type === 'layout') return wikiFile(`layouts/${meta.id}/thumb.png`);
+   if (meta.type === 'template') return wikiFile(`templates/${meta.id}/preview.png`);
+   return null;
+ }
+ 
++export function previewOf(meta: PageMeta): Preview | null {
++  return previewCache.get(previewKey(meta)) ?? null;
++}
++
++export function workflowOf(meta: PageMeta): Workflow | null {
++  return workflowCache.get(previewKey(meta)) ?? null;
++}
++
++export function displayStatus(meta: ItemMeta): string {
++  return workflowOf(meta)?.label ?? STATUS_LABEL[meta.status];
++}
++
+ export const isItem = (meta: PageMeta): meta is ItemMeta => meta.type === 'layout' || meta.type === 'template' || meta.type === 'method';
+ export const isFigure = (meta: PageMeta): meta is LayoutMeta | TemplateMeta => meta.type === 'layout' || meta.type === 'template';
+diff --git a/frontend/src/components.tsx b/frontend/src/components.tsx
+index 0504cc8..5c3adc7 100644
+--- a/frontend/src/components.tsx
++++ b/frontend/src/components.tsx
+@@ -1,9 +1,12 @@
+ import { PointerEvent, ReactNode, useRef, useState } from 'react';
+-import { imageOf, ItemMeta, LayoutMeta, MethodMeta, PageType, STATUS_LABEL, Status, TemplateMeta } from './api';
++import { imageOf, previewOf, workflowOf, displayStatus, ItemMeta, LayoutMeta, MethodMeta, PageMeta, PageType, STATUS_LABEL, Status, TemplateMeta } from './api';
+ import { pageLink } from './nav';
++import { figureLabel, MethodFigure, methodPlateFigures } from './figureModels';
++import { CodeButton } from './CodeViewer';
++import { COMPATIBILITY_LABEL } from './relations';
+ 
+-export function StatusBadge({ status }: { status: Status }) {
+-  return <span className={`badge status-${status}`}>{STATUS_LABEL[status]}</span>;
++export function StatusBadge({ status, label }: { status: Status; label?: string }) {
++  return <span className={`badge status-${status}`}>{label ?? STATUS_LABEL[status]}</span>;
+ }
+ 
+ /** The legend mark for a page type: the same disc, square or diamond the graph draws. */
+@@ -17,7 +20,7 @@ const HINT: Record<ItemMeta['type'], Partial<Record<Status, string>>> = {
+   layout: {
+     pending_signoff: '等你对照原图签核。',
+     pending_template: '已签核，等 agent 拆成单图模板。',
+-    ready: '可以按原版式整张套用。',
++    ready: '可以按已确认的来源范围套用。',
+     archived: '已归档，不会被推荐。',
+   },
+   template: {
+@@ -32,7 +35,7 @@ const HINT: Record<ItemMeta['type'], Partial<Record<Status, string>>> = {
+   },
+ };
+ 
+-export const hintOf = (meta: ItemMeta) => HINT[meta.type][meta.status] ?? STATUS_LABEL[meta.status];
++export const hintOf = (meta: ItemMeta) => workflowOf(meta)?.reason ?? HINT[meta.type][meta.status] ?? STATUS_LABEL[meta.status];
+ 
+ /** The card leans towards the pointer like a plate picked up from the table. */
+ function tilt(e: PointerEvent<HTMLElement>) {
+@@ -57,10 +60,11 @@ interface CardShell {
+   label: string;
+   plate: ReactNode;
+   back: ReactNode;
++  note?: string;
+ }
+ 
+ /** Card stock with a figure plate on the front and a summary on the back. */
+-function Card({ path, meta, number, label, plate, back }: CardShell) {
++function Card({ path, meta, number, label, plate, back, note }: CardShell) {
+   const [flipped, setFlipped] = useState(false);
+   const plateRef = useRef<HTMLDivElement>(null);
+   const link = pageLink(path, () => plateRef.current);
+@@ -78,8 +82,9 @@ function Card({ path, meta, number, label, plate, back }: CardShell) {
+               <span className="fig-no">{label} {number}</span>
+               {meta.title}
+             </h3>
++            {note && <p className="caption-note muted small">{note}</p>}
+             <div className="caption-foot">
+-              <StatusBadge status={meta.status} />
++              <StatusBadge status={workflowOf(meta)?.stage === 'complete' ? 'ready' : meta.status} label={displayStatus(meta)} />
+               {'language' in meta && <span className="lang">{LANGUAGE[meta.language] ?? meta.language}</span>}
+             </div>
+           </div>
+@@ -94,6 +99,7 @@ function Card({ path, meta, number, label, plate, back }: CardShell) {
+           <a className="button primary" {...link} tabIndex={flipped ? 0 : -1}>打开</a>
+         </div>
+       </div>
++      <CodeButton meta={meta} className="card-code" />
+       <button className="turn" onClick={() => setFlipped(!flipped)} aria-pressed={flipped} aria-label={flipped ? '翻回正面' : '翻到背面'}>
+         <svg viewBox="0 0 20 20" aria-hidden="true">
+           <path d="M4 7a6 6 0 0 1 11-1.5M16 13a6 6 0 0 1-11 1.5M15 2.5v3.5h-3.5M5 17.5V14h3.5" />
+@@ -107,16 +113,30 @@ interface FigureProps {
+   path: string;
+   meta: LayoutMeta | TemplateMeta;
+   number: number;
++  note?: string;
++  asStyle?: boolean;
+ }
+ 
+-export function PlateCard({ path, meta, number }: FigureProps) {
++export function FigureImage({ meta }: { meta: PageMeta }) {
++  const src = imageOf(meta);
++  const [failed, setFailed] = useState(false);
++  const preview = previewOf(meta);
++  if (!src || failed) return <span className="preview-empty">暂无预览图</span>;
++  return <>
++    <img key={src} src={src} alt={preview?.label ?? '图样预览'} loading="lazy" onError={() => setFailed(true)} />
++    {meta.type === 'template' && preview?.kind === 'source' && <span className="preview-label">{preview.label}</span>}
++  </>;
++}
++
++export function PlateCard({ path, meta, number, note, asStyle = false }: FigureProps) {
+   return (
+     <Card
+       path={path}
+       meta={meta}
+       number={number}
+-      label={meta.type === 'layout' ? '图' : '单图'}
+-      plate={<img src={imageOf(meta)!} alt="" loading="lazy" />}
++      label={asStyle ? '单 panel 图样' : figureLabel(meta)}
++      note={note}
++      plate={<FigureImage key={imageOf(meta)} meta={meta} />}
+       back={
+         <>
+           <dt>图型</dt>
+@@ -124,7 +144,7 @@ export function PlateCard({ path, meta, number }: FigureProps) {
+           {meta.type === 'layout' && (
+             <>
+               <dt>面板</dt>
+-              <dd>{Object.keys(meta.panels).length} 个，拆成 {meta.templates.length} 个单图模板</dd>
++              <dd>{Object.keys(meta.panels).length} 个逻辑 panel；{meta.templates.length ? `已有 ${meta.templates.length} 个可调用模板` : '可调用模板尚待制作'}</dd>
+             </>
+           )}
+           {meta.type === 'template' && (
+@@ -150,7 +170,7 @@ interface MethodProps {
+   meta: MethodMeta;
+   number: number;
+   outputs: { path: string; title: string }[];
+-  figures: { path: string; meta: TemplateMeta }[];
++  figures: MethodFigure[];
+ }
+ 
+ /** A method's plate is its chain: the tables it writes, flowing into the figures they can draw. */
+@@ -166,8 +186,12 @@ export function MethodCard({ path, meta, number, outputs, figures }: MethodProps
+         <>
+           <dt>输出</dt>
+           <dd>{outputs.map((o) => o.title).join('、')}</dd>
+-          <dt>可接的图</dt>
+-          <dd>{figures.map((f) => f.meta.title).join('、') || '暂无'}</dd>
++          <dt>语义关联图样</dt>
++          <dd>{figures.filter((f) => f.relation === 'semantic').map((f) => `${f.meta.title}（${COMPATIBILITY_LABEL[f.semantic!.compatibility]}）`).join('、') || '暂无'}</dd>
++          <dt>接口结构匹配</dt>
++          <dd>{figures.filter((f) => f.relation === 'compatible').map((f) => f.meta.title).join('、') || '暂无'}</dd>
++          <dt>相关参考图样</dt>
++          <dd>{figures.filter((f) => f.relation === 'reference').map((f) => f.meta.title).join('、') || '暂无'}</dd>
+           <dt>引用</dt>
+           <dd>{meta.cite.length} 篇</dd>
+           <dt>许可证</dt>
+@@ -179,15 +203,18 @@ export function MethodCard({ path, meta, number, outputs, figures }: MethodProps
+ }
+ 
+ function ChainPlate({ outputs, figures }: Pick<MethodProps, 'outputs' | 'figures'>) {
++  const shown = methodPlateFigures(figures);
+   return (
+     <div className="chain" aria-hidden="true">
+       <span className="chain-fan">
+-        {figures.slice(0, 3).map((f, i) => (
+-          <img key={f.path} src={imageOf(f.meta)!} alt="" loading="lazy" style={{ ['--i' as string]: i - (Math.min(figures.length, 3) - 1) / 2 }} />
++        {shown.map((f, i) => (
++          <img key={f.path} src={imageOf(f.meta)!} alt={f.meta.title} loading="lazy" style={{ ['--i' as string]: i - (shown.length - 1) / 2 }} />
+         ))}
+       </span>
++      {figures.length === 0 && <span className="chain-empty">尚无关联图样<br />文字方法笔记</span>}
++      {shown.length > 0 && <span className="chain-ref-label">{shown[0].relation === 'semantic' ? COMPATIBILITY_LABEL[shown[0].semantic!.compatibility] : shown[0].relation === 'compatible' ? '接口结构匹配' : '参考图样'} · {displayStatus(shown[0].meta)}</span>}
+       <span className="chain-out">
+-        <span className="chain-arrow" />
++        {outputs.length > 0 && <span className="chain-arrow" />}
+         {outputs.map((o) => (
+           <span key={o.path} className="chain-tag">
+             <TypeMark type="interface" />
+@@ -197,4 +224,4 @@ function ChainPlate({ outputs, figures }: Pick<MethodProps, 'outputs' | 'figures
+       </span>
+     </div>
+   );
+-}
+\ No newline at end of file
++}
+diff --git a/frontend/src/graph/ForceGraph.ts b/frontend/src/graph/ForceGraph.ts
+index 86b50aa..e1a1e5e 100644
+--- a/frontend/src/graph/ForceGraph.ts
++++ b/frontend/src/graph/ForceGraph.ts
+@@ -1,8 +1,8 @@
+ import { forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation, Simulation } from 'd3-force-3d';
+ import * as THREE from 'three';
+ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+-import type { GraphData, GraphNode, PageType } from '../api';
+-import { HAS_STATUS, INK, IS_HUB, STATUS_COLOR, TYPE_COLOR, TYPE_SHAPE } from '../palette';
++import type { GraphData, GraphLink, GraphNode, PageType } from '../api';
++import { COMPATIBILITY_COLOR, HAS_STATUS, INK, IS_HUB, STATUS_COLOR, TYPE_COLOR, TYPE_SHAPE } from '../palette';
+ import { linkFragment, linkVertex, nodeFragment, nodeVertex } from './shaders';
+ 
+ interface Node extends GraphNode {
+@@ -23,6 +23,8 @@ interface Link {
+   source: Node;
+   target: Node;
+   feeds: boolean;
++  kind: GraphLink['kind'];
++  compatibility: GraphLink['compatibility'];
+ }
+ 
+ interface Events {
+@@ -172,7 +174,7 @@ export class ForceGraph {
+     this.links = data.links.flatMap((l) => {
+       const source = this.byId.get(l.source);
+       const target = this.byId.get(l.target);
+-      return source && target ? [{ source, target, feeds: l.kind === 'feeds' }] : [];
++      return source && target ? [{ source, target, feeds: l.kind === 'feeds', kind: l.kind, compatibility: l.compatibility }] : [];
+     });
+     this.neighbours = new Map(this.nodes.map((n) => [n.id, new Set<string>()]));
+     for (const { source, target } of this.links) {
+@@ -398,13 +400,14 @@ export class ForceGraph {
+     const strong = new THREE.Color(INK.ink);
+     const flow = new THREE.Color(INK.plum);
+     const c = new THREE.Color();
+-    this.links.forEach(({ source: s, target: t, feeds }, i) => {
++    this.links.forEach(({ source: s, target: t, feeds, kind, compatibility }, i) => {
+       lp.set([s.x, s.y, s.z, t.x, t.y, t.z], i * 6);
+       const e = this.linkEmph[i];
+       const lit = Math.max(0, (e - 1) / 0.3);
+-      c.lerpColors(feeds ? flow : quiet, strong, lit).toArray(lc, i * 6);
++      const base = kind === 'relation' ? new THREE.Color(COMPATIBILITY_COLOR[compatibility ?? 'candidate']) : feeds ? flow : quiet;
++      c.lerpColors(base, strong, lit * 0.65).toArray(lc, i * 6);
+       c.toArray(lc, i * 6 + 3);
+-      const alpha = Math.min(e, 1) * ((feeds ? 0.62 : 0.42) + 0.4 * lit) * this.birth;
++      const alpha = Math.min(e, 1) * ((kind === 'relation' ? 0.78 : feeds ? 0.62 : 0.42) + 0.4 * lit) * this.birth;
+       la[i * 2] = alpha;
+       la[i * 2 + 1] = alpha;
+     });
+diff --git a/frontend/src/markdown.ts b/frontend/src/markdown.ts
+index 22e0327..49bdd82 100644
+--- a/frontend/src/markdown.ts
++++ b/frontend/src/markdown.ts
+@@ -3,6 +3,7 @@ import { pageHref, wikiFile } from './api';
+ 
+ export interface RenderEnv {
+   titles: Map<string, string>;
++  hiddenSources?: Set<string>;
+ }
+ 
+ const md = new MarkdownIt({ html: false, linkify: true });
+@@ -39,6 +40,7 @@ const ASSET = /\.(py|r|sh|txt|csv|json|ya?ml)$/i;
+ 
+ md.renderer.rules.wiki_link = (tokens, idx, _opts, env: RenderEnv) => {
+   const { target, label } = tokens[idx].meta;
++  if (env.hiddenSources?.has(target)) return '<span class="muted">原始来源已归档（保留溯源记录）</span>';
+   if (ASSET.test(target)) {
+     return `<a class="wikilink file" href="${wikiFile(target)}" target="_blank" rel="noreferrer">${md.utils.escapeHtml(label ?? target.split('/').pop()!)}</a>`;
+   }
+@@ -60,10 +62,17 @@ const MARKERS = /<!-- (facts|user):(start|end) -->\n?/g;
+ export const userBlock = (body: string) => body.match(USER_BLOCK)?.[1].trim() ?? '';
+ 
+ /** Render a page body; the H1 is shown by the view, the user block by the note editor. */
+-export function renderBody(body: string, env: RenderEnv, { dropUser = false } = {}): string {
++export function renderBody(body: string, env: RenderEnv, { dropUser = false, dropFacts = false } = {}): string {
+   let src = body.replace(/^# .*\n/, '');
+   if (dropUser) src = src.replace(USER_BLOCK, '');
++  if (dropFacts) src = src.replace(/<!-- facts:start -->[\s\S]*?<!-- facts:end -->\r?\n?/, '');
+   return md.render(src.replace(MARKERS, ''), env);
+ }
+ 
++export function methodPurpose(body: string): string {
++  const agent = body.split('<!-- user:start -->')[0];
++  const start = /^## 用途[ \t]*\r?\n/m.exec(agent);
++  return start ? agent.slice(start.index + start[0].length).trim().split(/\r?\n## /)[0].split(/\r?\n\s*\r?\n/)[0] : '';
++}
++
+ export const renderText = (text: string, env: RenderEnv) => md.render(text, env);
+diff --git a/frontend/src/palette.ts b/frontend/src/palette.ts
+index 60a7490..ac51504 100644
+--- a/frontend/src/palette.ts
++++ b/frontend/src/palette.ts
+@@ -1,4 +1,4 @@
+-import type { PageType, Status } from './api';
++import type { Compatibility, PageType, Status } from './api';
+ 
+ /**
+  * Journal-figure palette. Green marks what is alive (chart-type hubs, usable items),
+@@ -27,6 +27,12 @@ export const STATUS_COLOR: Record<Status, string> = {
+   archived: INK.faint,
+ };
+ 
++export const COMPATIBILITY_COLOR: Record<Compatibility, string> = {
++  direct: INK.hub,
++  adaptable: INK.ochre,
++  candidate: INK.slate,
++};
++
+ export const TYPE_COLOR: Record<PageType, string> = {
+   'chart-type': INK.hub,
+   layout: INK.ink,
+diff --git a/frontend/src/styles.css b/frontend/src/styles.css
+index 4867a3a..12a78f6 100644
+--- a/frontend/src/styles.css
++++ b/frontend/src/styles.css
+@@ -767,6 +767,43 @@ input[type='checkbox'] {
+   object-fit: contain;
+ }
+ 
++/* Constrain intrinsic raster sizes inside fixed card plates; preserve the entire panel. */
++.plate-card .plate > img {
++  position: absolute;
++  inset: 0;
++  width: 100%;
++  height: 100%;
++  padding: 10px;
++  object-fit: contain;
++}
++
++.shelf-help { margin: 12px 0 20px; }
++.chain-ref-label { font-size: 11px; color: var(--muted); }
++.chain-empty { position: absolute; inset: 25% 12px auto; text-align: center; color: var(--muted); font-size: 13px; }
++.method-figures { margin: 26px 0; }
++.method-figure-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
++.method-figure-link { display: grid; gap: 8px; align-content: start; }
++.method-figure-link .plate { height: 150px; aspect-ratio: auto; }
++.method-figure-link img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
++.inventory-note { padding: 12px 15px; border-left: 3px solid var(--plum); background: #f3f6f5; line-height: 1.7; }
++.caption-note { margin: 7px 0 0; line-height: 1.5; }
++.method-purpose { line-height: 1.8; margin: 10px 0 20px; }
++.method-data-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 20px 0; }
++.method-data-grid > div { padding: 13px 16px; border: 1px solid var(--rule); border-radius: 6px; background: #f7f9f8; }
++.method-data-grid h2 { font-size: 15px; margin: 0 0 10px; }
++.method-data-grid a { display: block; margin: 6px 0; }
++.method-overview > h2 { font-size: 21px; margin-bottom: 8px; }
++.method-visual { min-width: 0; padding: 13px; border: 1px solid var(--rule); border-radius: 6px; }
++.method-visual .plate { border: 0; height: 180px; }
++.method-visual p { margin: 9px 0; line-height: 1.65; }
++.method-visual-badges { display: flex; flex-wrap: wrap; gap: 9px; align-items: center; margin: 10px 0; }
++.adaptation-note { padding: 9px; background: #fbf7ef; border-radius: 4px; }
++.method-details { margin: 24px 0; border-block: 1px solid var(--rule); padding: 14px 0; }
++.method-details > summary { cursor: pointer; font-weight: 600; }
++@media (max-width: 700px) { .method-data-grid { grid-template-columns: 1fr; } }
++.reuse-note { margin: 20px 0; padding: 14px; border-left: 3px solid var(--rule); background: #f6f8f8; }
++.reuse-note p { margin: 6px 0; }
++
+ .fav {
+   position: absolute;
+   top: 4px;
+@@ -1021,6 +1058,7 @@ button.chip.toggle.on {
+ }
+ 
+ .page-side {
++  min-width: 0;
+   position: sticky;
+   top: 88px;
+   display: flex;
+@@ -1297,6 +1335,10 @@ button.chip.toggle.on {
+   transition: translate 0.4s var(--ease), rotate 0.4s var(--ease);
+ }
+ 
++.chain-fan img:only-child {
++  width: 88%;
++}
++
+ .plate-card:hover .chain-fan img {
+   translate: calc(-50% + var(--i) * 44%) calc(-50% + var(--i) * var(--i) * 10px);
+   rotate: calc(var(--i) * 8deg);
+@@ -1590,6 +1632,7 @@ a.chain-item:hover {
+   margin: 6px 0 0;
+   padding-left: 18px;
+   font-size: 13px;
++  overflow-wrap: anywhere;
+ }
+ 
+ /* Card → page morph (View Transitions) */
+@@ -1735,3 +1778,68 @@ a.chain-item:hover {
+   border-bottom: 1px solid var(--rule);
+ }
+ 
++.preview-empty { display: flex; align-items: center; justify-content: center; width: 100%; min-height: 10rem; color: var(--muted, #687482); }
++.preview-label { position: absolute; left: .5rem; bottom: .5rem; padding: .25rem .45rem; background: rgba(255,255,255,.94); color: #536573; font: 12px/1.4 sans-serif; border-radius: 3px; }
++.archived-entry { min-width: 0; }
++.delete-archived { margin: .6rem 0; }
++.delete-backdrop { position: fixed; inset: 0; z-index: 1000; background: #18243366; display: flex; align-items: center; justify-content: center; padding: 1rem; }
++.delete-dialog { width: min(38rem, 100%); max-height: 85vh; overflow: auto; padding: 1.5rem; background: white; }
++.delete-dialog .panel-row { margin-top: 1rem; }
++
++/* Independent code action stays outside both sides of the card's navigation anchor. */
++.card-code { position: absolute; right: 12px; bottom: 12px; z-index: 3; }
++.plate-card .caption { padding-bottom: 42px; }
++.plate-card .back { padding-bottom: 58px; }
++.page-title-row { display: flex; gap: 16px; align-items: baseline; justify-content: space-between; flex-wrap: wrap; }
++.page-title-row h1 { margin-bottom: 12px; }
++
++.semantic-relations { margin: 28px 0; }
++.semantic-relations h2 { font-size: 20px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
++.relation-list { display: grid; gap: 14px; }
++.relation-record { padding: 16px; border: 1px solid var(--rule); border-radius: 6px; background: #fbfcfa; }
++.relation-record.inactive { background: var(--paper); }
++.relation-record p { margin: 8px 0; }
++.relation-record .facts ul { margin: 0; padding-left: 18px; }
++.relation-target { color: var(--muted); }
++.compatibility { border: 1px solid currentColor; border-radius: 4px; font-size: 12px; padding: 2px 7px; white-space: nowrap; }
++.compatibility-direct { color: var(--hub); }
++.compatibility-adaptable { color: var(--ochre); }
++.compatibility-candidate { color: var(--slate); }
++
++.edge-legend { margin: 12px 0; font-size: 12px; }
++.edge-mark { width: 24px; height: 0; flex: 0 0 24px; border-top: 2px solid; }
++.interface-edge { color: var(--plum); position: relative; }
++.interface-edge::after { content: ''; position: absolute; right: -1px; top: -4px; border: 3px solid transparent; border-left: 6px solid var(--plum); border-right: 0; }
++.semantic-direct { color: var(--hub); }
++.semantic-adaptable { color: var(--ochre); }
++.semantic-candidate { color: var(--slate); }
++.reference-edge { color: #9aa3ad; border-top-width: 1px; }
++.links .graph-neighbour { display: flex; flex-direction: column; align-items: flex-start; padding-bottom: 7px; }
++
++.code-backdrop { position: fixed; inset: 0; z-index: 1100; background: #18243388; display: flex; align-items: center; justify-content: center; padding: 24px; }
++.code-dialog { width: min(1180px, 100%); max-height: calc(100dvh - 48px); padding: 22px; overflow: auto; box-shadow: var(--lift); }
++.code-dialog h2 { font-size: 20px; margin: 0; }
++.code-dialog > p { margin: 12px 0; }
++.code-tabs { display: flex; }
++.code-browser { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 20px; }
++.code-browser > .notice { grid-column: 1 / -1; }
++.code-file-list { display: flex; flex-direction: column; gap: 6px; max-height: 65vh; overflow-y: auto; align-self: start; }
++.code-file-list button { text-align: left; padding: 8px 10px; min-width: 0; overflow-wrap: anywhere; }
++.code-file-list button small { display: block; color: var(--muted); font-size: 11px; }
++.code-file-list button.active { border-color: var(--ink); box-shadow: inset 3px 0 0 var(--plum); background: var(--paper); }
++.code-current { min-width: 0; }
++.code-current h3 { font-family: 'Cascadia Code', Consolas, monospace; font-size: 14px; margin: 0; overflow-wrap: anywhere; }
++.code-provenance { margin: 10px 0; padding: 8px 10px; border-left: 3px solid var(--ochre); background: #fff7eb; font-size: 13px; }
++.code-hash { font-family: 'Cascadia Code', Consolas, monospace; font-size: 11px; }
++.code-toolbar { justify-content: flex-start; margin: 14px 0; }
++.code-text { max-height: 55vh; overflow: auto; margin: 12px 0 0; padding: 12px 0; background: #f4f6f7; border: 1px solid var(--rule); border-radius: 4px; font: 12px/1.65 'Cascadia Code', Consolas, monospace; tab-size: 4; }
++.code-line { display: flex; min-height: 1.65em; padding-right: 14px; }
++.line-number { display: inline-block; flex: 0 0 4.5em; padding-right: 12px; margin-right: 12px; text-align: right; border-right: 1px solid var(--rule); color: var(--muted); user-select: none; }
++
++@media (max-width: 720px) {
++  .code-backdrop { padding: 8px; }
++  .code-dialog { padding: 14px; max-height: calc(100dvh - 16px); }
++  .code-browser { grid-template-columns: minmax(0, 1fr); gap: 14px; }
++  .code-file-list { max-height: 150px; }
++  .code-current .facts { grid-template-columns: auto minmax(0, 1fr); }
++}
+diff --git a/frontend/src/views/Gallery.tsx b/frontend/src/views/Gallery.tsx
+index b2c7065..b15c664 100644
+--- a/frontend/src/views/Gallery.tsx
++++ b/frontend/src/views/Gallery.tsx
+@@ -1,9 +1,10 @@
+ import { useEffect, useMemo, useRef, useState } from 'react';
+-import { GraphNode, isFigure, LayoutMeta, STATUS_LABEL, Status, TemplateMeta, TYPE_LABEL } from '../api';
++import { GraphNode, LayoutMeta, STATUS_LABEL, Status, TemplateMeta, TYPE_LABEL, workflowOf } from '../api';
+ import type { AppData } from '../App';
+ import { PlateCard } from '../components';
+ import { Lattice } from '../hero/Lattice';
+ import { openPage } from '../nav';
++import { FigureShelf, galleryEntries, galleryInventory, templateSourceNote } from '../figureModels';
+ 
+ interface Filters {
+   q: string;
+@@ -14,24 +15,30 @@ interface Filters {
+   favorite: boolean;
+ }
+ 
+-type Shelf = 'layout' | 'template';
++type Shelf = FigureShelf;
+ type FigureMeta = LayoutMeta | TemplateMeta;
+ 
+ const EMPTY: Filters = { q: '', tag: '', chart: '', language: '', status: '', favorite: false };
+ const PIPELINE: Record<Shelf, Status[]> = {
+-  layout: ['pending_signoff', 'pending_template', 'ready'],
++  single: ['pending_signoff', 'pending_template', 'ready'],
+   template: ['draft', 'ready'],
+ };
+ const SHELVES: [Shelf, string][] = [
+-  ['layout', '整图版式'],
+-  ['template', '单图模板'],
++  ['single', '单 panel 图样'],
++  ['template', '可调用模板'],
+ ];
++const SOURCE_STAGES: [string, string][] = [
++  ['signoff', '待签核'], ['template_missing', '待补齐模板'], ['template_work', '模板制作中'],
++  ['template_confirm', '模板待你确认'], ['complete', '模板已就绪'],
++];
++
++const progressOf = (meta: FigureMeta, shelf: Shelf) => shelf === 'single' ? workflowOf(meta)?.stage ?? (meta.status === 'ready' ? 'complete' : meta.status) : meta.status;
+ 
+-function matches(meta: FigureMeta, f: Filters): boolean {
++function matches(meta: FigureMeta, f: Filters, shelf: Shelf): boolean {
+   if (f.tag && !meta.tags.includes(f.tag)) return false;
+   if (f.chart && !meta.chart_types.includes(f.chart)) return false;
+   if (f.language && meta.language !== f.language) return false;
+-  if (f.status && meta.status !== f.status) return false;
++  if (f.status && progressOf(meta, shelf) !== f.status) return false;
+   if (f.favorite && !meta.favorite) return false;
+   if (!f.q) return true;
+   const haystack = [meta.title, ...meta.tags, ...meta.chart_types]
+@@ -71,17 +78,13 @@ function LatticeFigure({ data }: { data: AppData }) {
+ 
+ export function Gallery({ data }: { data: AppData }) {
+   const [f, setF] = useState<Filters>(EMPTY);
+-  const [shelf, setShelf] = useState<Shelf>('layout');
+-
+-  const figures = useMemo(
+-    () =>
+-      data.pages.flatMap((p) =>
+-        isFigure(p.meta) && p.meta.status !== 'archived' ? [{ path: p.path, meta: p.meta }] : [],
+-      ),
+-    [data.pages],
+-  );
+-  const templates = figures.filter((t) => t.meta.type === shelf);
+-  const shown = templates.filter((t) => matches(t.meta, f));
++  const [shelf, setShelf] = useState<Shelf>('single');
++  const inventory = galleryInventory(data.pages, data.env.hiddenSources);
++
++  const entries = useMemo(() => galleryEntries(data.pages), [data.pages]);
++  const templates = entries[shelf];
++  const stages: [string, string][] = shelf === 'single' ? SOURCE_STAGES : PIPELINE.template.map((s) => [s, STATUS_LABEL[s]]);
++  const shown = templates.filter((t) => matches(t.meta, f, shelf));
+   const pickShelf = (next: Shelf) => {
+     setShelf(next);
+     // Status values differ per shelf, so a status filter would silently hide everything.
+@@ -95,16 +98,16 @@ export function Gallery({ data }: { data: AppData }) {
+         <div className="hero-text">
+           <h1>图库</h1>
+           <p className="lede">
+-            复刻并签核过的科研数据图。整张图签核后拆成单图模板，agent 读模板的适用说明、按你的数据挑出合适的几张，换上你的数据重新出图；需要先做分析的，到方法库找能接上的方法。标签只帮助搜索，不限定用途。
++            这里只收录单 panel 图样与可调用模板。先识别去重样式，再确认代表单 panel、数据和复刻细节；完整原图仅保留作溯源。复用时，agent 根据你的实际分组数 n 编排尺寸、标签和间距；图上的原始组数不构成函数上限。
+           </p>
+           <dl className="census">
+-            {PIPELINE[shelf].map((s) => (
++            {stages.map(([s, label]) => (
+               <div key={s}>
+                 <dt>
+                   <span className={`dot status-${s}`} aria-hidden="true" />
+-                  {STATUS_LABEL[s]}
++                  {label}
+                 </dt>
+-                <dd>{templates.filter((t) => t.meta.status === s).length}</dd>
++                <dd>{templates.filter((t) => progressOf(t.meta, shelf) === s).length}</dd>
+               </div>
+             ))}
+           </dl>
+@@ -116,11 +119,16 @@ export function Gallery({ data }: { data: AppData }) {
+         {SHELVES.map(([key, label]) => (
+           <button key={key} role="tab" aria-selected={shelf === key} className={shelf === key ? 'active' : ''} onClick={() => pickShelf(key)}>
+             {label}
+-            <span className="muted"> {figures.filter((t) => t.meta.type === key).length}</span>
++            <span className="muted"> {entries[key].length}</span>
+           </button>
+         ))}
+       </div>
+ 
++      <p className="shelf-help muted small">
++        {shelf === 'template' ? '这里按可调用函数浏览；待确认的模板须完成回放和确认后使用。历史模板使用前需由 agent 检查任意 n 的适配情况。' : '这里按单 panel 图形样式浏览，也包含已函数化的图样。同一图样只展示一次；已有函数的图样也可在“可调用模板”中找到。'}
++      </p>
++      <p className="inventory-note small">当前可浏览 {inventory.styles} 种单 panel 图样、{inventory.templates} 个函数模板。两栏可以包含同一条记录，分别便于看样式和调用代码。{inventory.historical > 0 && `其中 ${inventory.historical} 个历史单 panel 模板也已作为图样展示；它们的整图来源继续归档保留。`}</p>
++
+       <div className="filters" role="search">
+         <input
+           type="search"
+@@ -149,8 +157,8 @@ export function Gallery({ data }: { data: AppData }) {
+         </select>
+         <select aria-label="状态" value={f.status} onChange={(e) => set('status', e.target.value)}>
+           <option value="">全部状态</option>
+-          {PIPELINE[shelf].map((s) => (
+-            <option key={s} value={s}>{STATUS_LABEL[s]}</option>
++          {stages.map(([s, label]) => (
++            <option key={s} value={s}>{label}</option>
+           ))}
+         </select>
+         <label className="check">
+@@ -163,14 +171,14 @@ export function Gallery({ data }: { data: AppData }) {
+         <p className="notice">
+           {templates.length > 0
+             ? '没有符合筛选条件的图，换个关键词或清空筛选再试。'
+-            : shelf === 'layout'
+-              ? '还没有收录任何图。用 sci-figure-replica 复刻一张图，它会自动出现在这里。'
+-              : '还没有单图模板。整图签核后，在 agent 里说“处理待办”即可拆出。'}
++            : shelf !== 'template'
++              ? '本栏尚无单 panel 图样。确认样式与细节后，用 sci-figure-replica 复刻代表单 panel。'
++              : '还没有可调用模板。选定图样签核后，在 agent 里说“处理待办”即可制作。'}
+         </p>
+       ) : (
+         <div className="grid">
+           {shown.map((t, i) => (
+-            <PlateCard key={t.path} path={t.path} meta={t.meta} number={i + 1} />
++            <PlateCard key={t.path} path={t.path} meta={t.meta} number={i + 1} asStyle={shelf === 'single'} note={t.meta.type === 'template' ? templateSourceNote(t.meta, data.pages, data.env.hiddenSources) : undefined} />
+           ))}
+         </div>
+       )}
+diff --git a/frontend/src/views/GraphView.tsx b/frontend/src/views/GraphView.tsx
+index 3884d2d..8cd711e 100644
+--- a/frontend/src/views/GraphView.tsx
++++ b/frontend/src/views/GraphView.tsx
+@@ -1,10 +1,11 @@
+ import { useEffect, useMemo, useRef, useState } from 'react';
+-import { GraphNode, imageOf, PageType, STATUS_LABEL, Status, TYPE_LABEL } from '../api';
++import { GraphLink, GraphNode, imageOf, PageType, STATUS_LABEL, Status, TYPE_LABEL } from '../api';
+ import type { AppData } from '../App';
+ import { StatusBadge, TypeMark } from '../components';
+ import { ForceGraph } from '../graph/ForceGraph';
+ import { openPage } from '../nav';
+ import { HAS_STATUS } from '../palette';
++import { COMPATIBILITY_LABEL, verificationLabel } from '../relations';
+ 
+ const TYPES: PageType[] = ['chart-type', 'layout', 'template', 'method', 'interface', 'project'];
+ const STATUSES: [Status, string][] = [
+@@ -80,8 +81,16 @@ export function GraphView({ data }: { data: AppData }) {
+       <aside className="legend sheet">
+         <h2>知识网络</h2>
+         <p className="muted small">
+-          {count(() => true)} 页，{data.graph.links.length} 条链接。拖节点会带动相连的节点，单击查看，双击打开。带箭头的紫线是“分析 → 数据接口 → 出图”。
++          {count(() => true)} 页，{data.graph.links.length} 条链接。拖节点会带动相连的节点，单击查看，双击打开。语义兼容与运行验证分别记录；选择节点可查看关系说明。
+         </p>
++        <ul className="legend-list edge-legend" aria-label="关系类型">
++          <li><span className="edge-mark interface-edge" />接口结构匹配（紫色箭头）</li>
++          <li><span className="edge-mark semantic-direct" />语义关系 · 直接可接</li>
++          <li><span className="edge-mark semantic-adaptable" />语义关系 · 需要适配</li>
++          <li><span className="edge-mark semantic-candidate" />语义关系 · 待核实</li>
++          <li><span className="edge-mark reference-edge" />来源／参考链接</li>
++        </ul>
++        <p className="muted small">接口结构匹配只说明声明的表结构；语义关系不等于已在真实课题运行。</p>
+         <div className="finder">
+           <input type="search" placeholder="查找页面" aria-label="按标题查找" value={query} onChange={(e) => setQuery(e.target.value)} />
+           {matches.length > 0 && (
+@@ -156,12 +165,15 @@ export function GraphView({ data }: { data: AppData }) {
+ const dotClass = (n: GraphNode) => (HAS_STATUS(n.type) ? `status-${n.status}` : `type-${n.type}`);
+ 
+ function neighboursOf(id: string, data: AppData, nodes: Map<string, GraphNode>) {
+-  const ids = new Set<string>();
++  const ids = new Map<string, GraphLink[]>();
+   for (const l of data.graph.links) {
+-    if (l.source === id) ids.add(l.target);
+-    if (l.target === id) ids.add(l.source);
++    const other = l.source === id ? l.target : l.target === id ? l.source : null;
++    if (other) ids.set(other, [...(ids.get(other) ?? []), l]);
+   }
+-  return [...ids].flatMap((n) => nodes.get(n) ?? []).sort((a, b) => TYPES.indexOf(a.type) - TYPES.indexOf(b.type));
++  return [...ids].flatMap(([key, links]) => {
++    const node = nodes.get(key);
++    return node ? [{ node, links }] : [];
++  }).sort((a, b) => TYPES.indexOf(a.node.type) - TYPES.indexOf(b.node.type));
+ }
+ 
+ function HoverCard({ node, x, y, thumb }: { node: GraphNode; x: number; y: number; thumb: string | null }) {
+@@ -182,7 +194,7 @@ function HoverCard({ node, x, y, thumb }: { node: GraphNode; x: number; y: numbe
+ interface PanelProps {
+   node: GraphNode | null;
+   thumb: string | null;
+-  neighbours: GraphNode[];
++  neighbours: { node: GraphNode; links: GraphLink[] }[];
+   onPick: (id: string) => void;
+   onClose: () => void;
+ }
+@@ -206,12 +218,15 @@ function NodePanel({ node, thumb, neighbours, onPick, onClose }: PanelProps) {
+           <button className="primary" onClick={() => openPage(node.id)}>打开页面</button>
+           <h3>相连的页面 {neighbours.length}</h3>
+           <ul className="links">
+-            {neighbours.map((n) => (
+-              <li key={n.id}>
++            {neighbours.map(({ node: n, links }) => (
++              <li className="graph-neighbour" key={n.id}>
+                 <button className="link-button" onClick={() => onPick(n.id)}>
+                   <span className={`dot ${dotClass(n)}`} aria-hidden="true" />
+                   {n.title}
+                 </button>
++                {links.map((l, i) => <span className="small muted" key={i}>{l.kind === 'relation'
++                  ? `${COMPATIBILITY_LABEL[l.compatibility ?? 'candidate']} · ${verificationLabel(l.verification)}${l.verification?.scope ? `：${l.verification.scope}` : '；验证范围未记录'}`
++                  : l.kind === 'feeds' ? '接口结构匹配' : '来源／参考链接'}</span>)}
+               </li>
+             ))}
+           </ul>
+diff --git a/frontend/src/views/ItemPanel.tsx b/frontend/src/views/ItemPanel.tsx
+index e042934..5517e07 100644
+--- a/frontend/src/views/ItemPanel.tsx
++++ b/frontend/src/views/ItemPanel.tsx
+@@ -1,6 +1,7 @@
+ import { useState } from 'react';
+-import { api, galleryFile, ItemMeta, KIND_OF, LayoutMeta, MethodMeta, PageDetail, wikiFile } from '../api';
++import { api, galleryFile, ItemMeta, KIND_OF, LayoutMeta, MethodMeta, PageDetail, wikiFile, Workflow } from '../api';
+ import { StatusBadge } from '../components';
++import { DeleteArchived } from '../DeleteArchived';
+ 
+ type Run = (action: () => Promise<PageDetail>) => Promise<void>;
+ 
+@@ -8,6 +9,8 @@ interface ActionProps {
+   meta: ItemMeta;
+   run: Run;
+   busy: boolean;
++  onDeleted?: () => Promise<void>;
++  workflow?: Workflow | null;
+ }
+ 
+ /** Layout viewer: the replay of the whole figure first once it exists, then the gallery's own images. */
+@@ -16,7 +19,7 @@ export function LayoutImages({ page, meta }: { page: PageDetail; meta: LayoutMet
+   const views: [string, string][] = [];
+   if (meta.status === 'ready') views.push(['按版式回放', wikiFile(`layouts/${meta.id}/preview.png`)]);
+   if (files.compare) views.push(['并排对比', galleryFile(meta.gallery_entry, files.compare)]);
+-  if (files.output_png) views.push(['复刻图', galleryFile(meta.gallery_entry, files.output_png)]);
++  if (files.output_png || files.replica) views.push(['复刻图', galleryFile(meta.gallery_entry, files.output_png || files.replica)]);
+   if (files.source_image) views.push(['原图', galleryFile(meta.gallery_entry, files.source_image)]);
+   const [active, setActive] = useState(0);
+ 
+@@ -68,7 +71,7 @@ function ReasonForm({ label, submit, cancel, busy }: { label: string; submit: (r
+   );
+ }
+ 
+-export function ItemActions({ meta, run, busy }: ActionProps) {
++export function ItemActions({ meta, run, busy, onDeleted, workflow }: ActionProps) {
+   const [reasoning, setReasoning] = useState(false);
+   const kind = KIND_OF[meta.type];
+   const withReason = (send: (reason: string) => Promise<PageDetail>) => (reason: string) => run(() => send(reason)).then(() => setReasoning(false));
+@@ -76,7 +79,7 @@ export function ItemActions({ meta, run, busy }: ActionProps) {
+   return (
+     <div className="panel">
+       <div className="panel-row">
+-        <StatusBadge status={meta.status} />
++        <StatusBadge status={workflow?.stage === 'complete' ? 'ready' : meta.status} label={workflow?.label} />
+         <button className="ghost" disabled={busy} onClick={() => run(() => api.favorite(kind, meta.id, !meta.favorite))} aria-pressed={meta.favorite}>
+           {meta.favorite ? '★ 已收藏' : '☆ 收藏'}
+         </button>
+@@ -98,13 +101,13 @@ export function ItemActions({ meta, run, busy }: ActionProps) {
+           )}
+           {meta.type === 'layout' && meta.status === 'pending_template' && (
+             <>
+-              <p className="muted">已签核。在 agent 里说“处理待办”即可拆成单图模板。</p>
++              <p className="muted">{workflow?.reason ?? '已签核。在 agent 里说“处理待办”继续模板制作。'}</p>
+               <div className="panel-row">
+                 <button disabled={busy} onClick={() => setReasoning(true)}>撤回签核</button>
+               </div>
+             </>
+           )}
+-          {meta.type === 'template' && meta.status === 'draft' && <p className="muted">已拆出，等 agent 回放、你确认后可用。</p>}
++          {meta.type === 'template' && meta.status === 'draft' && <p className="muted">{workflow?.reason ?? '模板待完成回放与作者确认。'}</p>}
+           {meta.type === 'method' && meta.status === 'draft' && (
+             <>
+               <p className="muted">方法笔记已写好。读完用途、适用与代码后再确认。</p>
+@@ -129,6 +132,7 @@ export function ItemActions({ meta, run, busy }: ActionProps) {
+           <button className="ghost danger" disabled={busy} onClick={() => run(() => api.archive(kind, meta.id))}>归档</button>
+         )}
+       </div>
++      {onDeleted && <DeleteArchived meta={meta} onDeleted={onDeleted} />}
+     </div>
+   );
+ }
+@@ -211,20 +215,3 @@ export function MethodSource({ meta }: { meta: MethodMeta }) {
+     </div>
+   );
+ }
+-/** The reusable code templates under a method's code/ directory: what the agent copies into a project and adapts. */
+-export function CodeFiles({ meta, files }: { meta: MethodMeta; files: string[] }) {
+-  return (
+-    <section className="code-files">
+-      <h2>代码模板</h2>
+-      <p className="muted small">要改的参数集中在脚本开头；复制到课题目录改完再运行，知识库不运行它们。</p>
+-      <ul className="links">
+-        {files.map((name) => (
+-          <li key={name}>
+-            <code>{name}</code>
+-            <a href={wikiFile(`methods/${meta.id}/code/${name}`)} target="_blank" rel="noreferrer">查看</a>
+-          </li>
+-        ))}
+-      </ul>
+-    </section>
+-  );
+-}
+diff --git a/frontend/src/views/MethodsView.tsx b/frontend/src/views/MethodsView.tsx
+index 2cef653..6e676a2 100644
+--- a/frontend/src/views/MethodsView.tsx
++++ b/frontend/src/views/MethodsView.tsx
+@@ -1,7 +1,8 @@
+-import { InterfaceMeta, MethodMeta, PageSummary, STATUS_LABEL, Status, TemplateMeta } from '../api';
++import { InterfaceMeta, MethodMeta, PageSummary, STATUS_LABEL, Status } from '../api';
+ import type { AppData } from '../App';
+ import { MethodCard, TypeMark } from '../components';
+ import { pageLink } from '../nav';
++import { methodFigures } from '../figureModels';
+ 
+ const PIPELINE: Status[] = ['draft', 'ready'];
+ 
+@@ -17,7 +18,7 @@ export function MethodsView({ data }: { data: AppData }) {
+         <div className="hero-text">
+           <h1>方法库</h1>
+           <p className="lede">
+-            一步分析一篇笔记：写清什么时候用、要什么数据、怎么做、哪些代码可以复用。agent 读懂后在你的课题环境里改参数、运行，把结果整理成数据接口表，交给读取该接口的图模板出图。
++            每个方法家族写清目的、适用前提、原始实现与未验证分支。agent 先读当前课题的计划、数据和结果，再找有依据的方法与图样；选定后在课题环境适配和运行。页面可用、代码存在与运行验证分别记录。
+           </p>
+           <dl className="census">
+             {PIPELINE.map((s) => (
+@@ -44,7 +45,7 @@ export function MethodsView({ data }: { data: AppData }) {
+               meta={m.meta}
+               number={i + 1}
+               outputs={data.flow.outputs(m.path).map((path) => ({ path, title: title(path) }))}
+-              figures={data.flow.figuresOf(m.path).map((path) => ({ path, meta: byPath.get(path)!.meta as TemplateMeta }))}
++              figures={methodFigures(m.path, data.pages, data.graph, data.flow)}
+             />
+           ))}
+         </div>
+diff --git a/frontend/src/views/PageView.tsx b/frontend/src/views/PageView.tsx
+index 9e6a1ad..626a6aa 100644
+--- a/frontend/src/views/PageView.tsx
++++ b/frontend/src/views/PageView.tsx
+@@ -1,11 +1,15 @@
+ import { useCallback, useEffect, useState } from 'react';
+-import { api, imageOf, isItem, LayoutMeta, PageDetail, pageCache, PageSummary, TYPE_LABEL } from '../api';
++import { api, imageOf, isItem, LayoutMeta, PageDetail, pageCache, PageSummary, TYPE_LABEL, wikiFile } from '../api';
+ import type { AppData } from '../App';
+-import { TypeMark } from '../components';
++import { FigureImage, TypeMark } from '../components';
++import { figureLabel, isWholeSource, methodFigures, templateSourceNote } from '../figureModels';
+ import { renderBody, userBlock } from '../markdown';
+ import { pageLink } from '../nav';
+ import { Chain } from './Chain';
+-import { CodeFiles, ItemActions, LayoutImages, MethodSource, NoteEditor, SingleImage, TagsEditor } from './ItemPanel';
++import { ItemActions, LayoutImages, MethodSource, NoteEditor, TagsEditor } from './ItemPanel';
++import { CodeButton } from '../CodeViewer';
++import { RelationList } from '../RelationList';
++import { MethodOverview } from './MethodOverview';
+ 
+ // The viewer shows the figure, so the page's own leading image embed (kept for Obsidian) is dropped here.
+ const LEAD_EMBED = /^!\[\[[^\]]+\.png\]\]\n/m;
+@@ -41,8 +45,9 @@ export function PageView({ path, data }: { path: string; data: AppData }) {
+   if (!page) return error ? <p className="notice error">{error}</p> : null;
+ 
+   const { meta } = page;
++  if (isWholeSource(meta)) return <p className="notice">整图来源已归档并隐藏。请从图库选择单 panel 图样或可调用模板；完整原图保留在画廊作溯源。</p>;
+   const item = isItem(meta) ? meta : null;
+-  const html = renderBody(page.body.replace(LEAD_EMBED, ''), data.env, { dropUser: item !== null });
++  const html = renderBody(page.body.replace(LEAD_EMBED, ''), data.env, { dropUser: item !== null, dropFacts: meta.type === 'method' });
+   const byPath = new Map(data.pages.map((p) => [p.path, p]));
+   const pagesOf = (paths: string[]) => paths.flatMap((p) => byPath.get(p) ?? []);
+   const { flow } = data;
+@@ -54,34 +59,47 @@ export function PageView({ path, data }: { path: string; data: AppData }) {
+           <a href={meta.type === 'method' || meta.type === 'interface' ? '#/methods' : '#/gallery'}>
+             {meta.type === 'method' || meta.type === 'interface' ? '方法库' : '图库'}
+           </a>{' '}
+-          / {TYPE_LABEL[meta.type]}
++          / {meta.type === 'template' ? '单 panel 图样 / 可调用模板' : meta.type === 'layout' ? figureLabel(meta) : TYPE_LABEL[meta.type]}
+         </p>
+-        <h1>{meta.title}</h1>
++        <div className="page-title-row"><h1>{meta.title}</h1>{item && <CodeButton meta={item} />}</div>
+         {error && <p className="notice error" role="alert">{error}</p>}
+ 
+         {meta.type === 'layout' && <LayoutImages page={page} meta={meta} />}
+-        {meta.type === 'template' && <SingleImage src={imageOf(meta)!} alt="模板回放" />}
++        {meta.type === 'template' && <figure className="viewer"><div className="plate"><FigureImage key={imageOf(meta)} meta={meta} /></div></figure>}
+         {meta.type === 'layout' && <PanelSet meta={meta} pages={pagesOf(meta.templates)} />}
+ 
+-        {meta.type === 'method' && (
++        {meta.type === 'method' && <MethodOverview meta={meta} body={page.body} figures={methodFigures(path, data.pages.map((p) => p.path === path ? page : p), data.graph, flow)} pages={data.pages} hiddenSources={data.env.hiddenSources} />}
++        {meta.type === 'method' && <details className="method-details"><summary>查看接口结构匹配与完整关联证据</summary>
+           <Chain
+-            title="分析 → 出图"
+-            hint="这个方法写出的表，以及能直接读这些表出图的模板。"
++            title="接口结构匹配"
++            hint="以下仅按已声明的数据接口连接；仍需另行核对含义、每行单位、量纲与方法前提。"
+             self={path}
+             columns={[
+               { label: '分析方法', pages: pagesOf([path]) },
+               { label: '输出的数据接口', pages: pagesOf(flow.outputs(path)) },
+-              { label: '可接的图', pages: pagesOf(flow.figuresOf(path)) },
++              { label: '结构匹配的模板', pages: pagesOf(flow.figuresOf(path)) },
+             ]}
+-          />
++          /><RelationList relations={page.relations ?? []} self={path} />
++        </details>}
++        {item && meta.type !== 'method' && <RelationList relations={page.relations ?? []} self={path} />}
++        {meta.type === 'template' && (
++          <section className="reuse-note">
++            <p>{templateSourceNote(meta, data.pages, data.env.hiddenSources)}</p>
++            <strong>换数据与任意 n 复用</strong>
++            <p>n 由实际数据决定，agent 根据课题编排尺寸、标签、配色和间距；原图组数不构成函数上限。</p>
++            <p className="small muted">{page.reuse?.sizing_declared
++              ? page.reuse.profile === 'unbound' ? '此模板的尺寸策略尚待绑定具体数据表与列，使用前需适配验证。' : '此模板已声明尺寸策略；仍需按实际数据验证图型与排版。'
++              : '此历史模板尚未声明新的尺寸策略；使用前需由 agent 按函数化契约适配并验证。'}</p>
++            <a href={wikiFile('AGENTS.md')} target="_blank" rel="noreferrer">查看当前知识库维护规则</a>
++          </section>
+         )}
+         {meta.type === 'template' && (
+           <Chain
+-            title="分析 → 出图"
+-            hint="这张图读哪些表，以及能产出这些表的分析方法。"
++            title="接口结构匹配"
++            hint="已声明的接口说明表结构；这种匹配不代表方法与图的科学含义、单位及前提已核实。"
+             self={path}
+             columns={[
+-              { label: '可接的分析方法', pages: pagesOf(flow.methodsFor(path)) },
++              { label: '结构匹配的分析方法', pages: pagesOf(flow.methodsFor(path)) },
+               { label: '读取的数据接口', pages: pagesOf(flow.inputs(path)) },
+               { label: '这张图', pages: pagesOf([path]) },
+             ]}
+@@ -90,7 +108,7 @@ export function PageView({ path, data }: { path: string; data: AppData }) {
+         {meta.type === 'interface' && (
+           <Chain
+             title="谁写它，谁读它"
+-            hint={`文件名固定为 ${meta.slug}.csv，方法的输出目录可以直接交给读取它的模板。`}
++            hint={`文件名约定为 ${meta.slug}.csv；接口结构匹配仍需核对当前课题的含义、单位和前提。`}
+             self={path}
+             columns={[
+               { label: '产出方法', pages: pagesOf(flow.inputs(path)) },
+@@ -102,12 +120,11 @@ export function PageView({ path, data }: { path: string; data: AppData }) {
+ 
+         <div className="prose" dangerouslySetInnerHTML={{ __html: html }} />
+ 
+-        {meta.type === 'method' && <CodeFiles meta={meta} files={codeFilesOf(page.body)} />}
+       </div>
+ 
+       {item && (
+         <aside className="page-side sheet">
+-          <ItemActions meta={item} run={run} busy={busy} />
++          <ItemActions meta={item} workflow={page.workflow} run={run} busy={busy} onDeleted={async () => { await data.reload(); location.hash = '#/queue'; }} />
+           {/* Keys remount the editors when the saved value changes; prefixed so two empty values never collide. */}
+           <TagsEditor key={`tags:${item.tags.join('|')}`} meta={item} run={run} busy={busy} />
+           <NoteEditor key={`note:${userBlock(page.body)}`} meta={item} note={userBlock(page.body)} run={run} busy={busy} />
+@@ -127,12 +144,12 @@ export function PageView({ path, data }: { path: string; data: AppData }) {
+               </dl>
+             </div>
+           )}
+-          <Backlinks page={page} />
++          <Backlinks page={{ ...page, backlinks: page.backlinks.filter((b) => data.env.titles.has(b.path)) }} />
+         </aside>
+       )}
+       {!item && (
+         <aside className="page-side sheet">
+-          <Backlinks page={page} />
++          <Backlinks page={{ ...page, backlinks: page.backlinks.filter((b) => data.env.titles.has(b.path)) }} />
+         </aside>
+       )}
+     </article>
+@@ -159,18 +176,6 @@ function Backlinks({ page }: { page: PageDetail }) {
+   );
+ }
+ 
+-/**
+- * Files listed under the method's code/ directory in its facts block, which is the one place the wiki keeps
+- * that list. The facts writer links them as `/files/wiki/...`; hand-written pages may use a wikilink.
+- */
+-function codeFilesOf(body: string): string[] {
+-  const found = [
+-    ...body.matchAll(/\/files\/wiki\/methods\/[^/)]+\/code\/([^)\s]+)/g),
+-    ...body.matchAll(/\[\[methods\/[^\]/]+\/code\/([^\]|]+)/g),
+-  ].map((m) => decodeURIComponent(m[1].trim()));
+-  return [...new Set(found)];
+-}
+-
+ /** The single-figure templates a layout was split into, with the panel letters each one draws. */
+ function PanelSet({ meta, pages }: { meta: LayoutMeta; pages: PageSummary[] }) {
+   if (pages.length === 0) return null;
+@@ -181,7 +186,7 @@ function PanelSet({ meta, pages }: { meta: LayoutMeta; pages: PageSummary[] }) {
+         {pages.map((p) => (
+           <a key={p.path} className="panel-set-item" {...pageLink(p.path)}>
+             <span className="plate">
+-              <img src={imageOf(p.meta)!} alt="" loading="lazy" />
++              <FigureImage key={imageOf(p.meta)} meta={p.meta} />
+             </span>
+             <span className="letters">{(meta.template_panels[p.path.replace(/^templates\/|\.md$/g, '')] ?? []).join(' · ')}</span>
+             <span>{p.meta.title}</span>
+diff --git a/frontend/src/views/QueueView.tsx b/frontend/src/views/QueueView.tsx
+index ae68857..5b11acb 100644
+--- a/frontend/src/views/QueueView.tsx
++++ b/frontend/src/views/QueueView.tsx
+@@ -1,33 +1,30 @@
+-import { isItem, ItemMeta, PageSummary, Status, TemplateMeta } from '../api';
++import { isItem, ItemMeta, PageSummary, Status } from '../api';
++import { methodFigures } from '../figureModels';
+ import type { AppData } from '../App';
+ import { MethodCard, PlateCard } from '../components';
++import { DeleteArchived } from '../DeleteArchived';
++import { queueOf } from '../workflow';
+ 
+-/** Statuses that put an item on the to-do list (archived items have their own shelf). */
+-export const QUEUED = new Set<Status>(['pending_signoff', 'draft', 'pending_template']);
+-
+-const SECTIONS: { key: string; title: string; hint: string; dot: Status; pick: (m: ItemMeta) => boolean }[] = [
++const SECTIONS: { key: string; title: string; hint: string; dot: Status }[] = [
+   {
+     key: 'signoff',
+     title: '待你签核',
+-    hint: '打开整图，把原图和复刻图对照着看一遍，再签核或退回。',
++    hint: '打开选定图样，把原图和复刻图对照着看一遍，再签核或退回。单 panel 可独立签核。',
+     dot: 'pending_signoff',
+-    pick: (m) => m.status === 'pending_signoff',
+   },
+   {
+     key: 'confirm',
+     title: '待你确认',
+-    hint: '方法笔记已写好。打开读一遍用途、适用和代码，没问题就确认，有问题写明理由退回。',
++    hint: '方法笔记或已完成回放的模板待你确认。模板请核对回放及数据来源，再在对话中确认，由 agent 标为可用。',
+     dot: 'draft',
+-    pick: (m) => m.type === 'method' && m.status === 'draft',
+   },
+   {
+     key: 'agent',
+     title: '等 agent 处理',
+-    hint: '在 Codex 或 Claude Code 里说“处理待办”：签核过的整图会被拆成单图模板并回放，草稿模板等待回放确认。',
++    hint: '只列仍需制作、补齐关联或完成回放的工作。已有模板继续处理；来源与模板不重复计数，等待你确认的内容列在上一栏。',
+     dot: 'pending_template',
+-    pick: (m) => m.status === 'pending_template' || (m.type !== 'method' && m.status === 'draft'),
+   },
+-  { key: 'archived', title: '已归档', hint: '不再被推荐。打开详情可以恢复。', dot: 'archived', pick: (m) => m.status === 'archived' },
++  { key: 'archived', title: '已归档', hint: '不再被推荐。可打开详情恢复，或查看删除范围后永久删除 Wiki 条目；原始画廊保留。', dot: 'archived' },
+ ];
+ 
+ export function QueueView({ data }: { data: AppData }) {
+@@ -42,7 +39,7 @@ export function QueueView({ data }: { data: AppData }) {
+         meta={meta}
+         number={i + 1}
+         outputs={data.flow.outputs(path).map((p) => ({ path: p, title: byPath.get(p)?.meta.title ?? p }))}
+-        figures={data.flow.figuresOf(path).map((p) => ({ path: p, meta: byPath.get(p)!.meta as TemplateMeta }))}
++        figures={methodFigures(path, data.pages, data.graph, data.flow)}
+       />
+     ) : (
+       <PlateCard key={path} path={path} meta={meta} number={i + 1} />
+@@ -51,8 +48,8 @@ export function QueueView({ data }: { data: AppData }) {
+   return (
+     <section>
+       <h1 className="page-title">待办与归档</h1>
+-      {SECTIONS.map(({ key, title, hint, dot, pick }) => {
+-        const shown = items.filter((p) => pick(p.meta));
++      {SECTIONS.map(({ key, title, hint, dot }) => {
++        const shown = items.filter((p) => key === 'archived' ? p.meta.status === 'archived' : queueOf(p) === key);
+         return (
+           <div key={key} className="queue-section">
+             <h2>
+@@ -61,7 +58,7 @@ export function QueueView({ data }: { data: AppData }) {
+               <span className="count">{shown.length}</span>
+             </h2>
+             <p className="muted">{hint}</p>
+-            {shown.length === 0 ? <p className="empty">这一栏是空的。</p> : <div className="grid">{shown.map(card)}</div>}
++            {shown.length === 0 ? <p className="empty">这一栏是空的。</p> : <div className="grid">{shown.map((p, i) => key === 'archived' ? <div className="archived-entry" key={p.path}>{card(p, i)}<DeleteArchived meta={p.meta} onDeleted={data.reload} /></div> : card(p, i))}</div>}
+           </div>
+         );
+       })}
+diff --git a/staged/research-wiki/SKILL.md b/staged/research-wiki/SKILL.md
+index 67de48d..4785c37 100644
+--- a/staged/research-wiki/SKILL.md
++++ b/staged/research-wiki/SKILL.md
+@@ -8,8 +8,8 @@ description: Use when the author wants a figure or an analysis for a research pr
+ 作者的知识库是一个 LLM Wiki，写给你读的说明书：
+ 
+ - **图模板**：带可运行代码，换上作者的数据就能出图（`render`）。
+-- **方法笔记**：写清一步分析怎么做，有的附可复用的代码模板。你在作者课题的环境里写代码、运行，知识库不替你跑。
+-- **数据接口**：方法最后要整理成的表格格式，也就是模板读取的表。
++- **方法笔记**：先写用途、输入/输出、适用边界和依据，可附有来源的函数；没有可执行代码也能成为有用笔记。知识库不替你运行分析。
++- **数据接口**：描述数据含义和执行入口的表格契约。发现阶段不要求列名完全相同；执行前在课题副本适配并检查。
+ 
+ 你通过本技能目录下的 `wiki.py` 操作知识库，不读 `rwiki/` 源码也能完成全部工作。
+ 
+@@ -30,33 +30,44 @@ description: Use when the author wants a figure or an analysis for a research pr
+ | 作者的话 | 命令 |
+ |---|---|
+ | 数据已经是整理好的表，要出图 | `suggest --columns a,b,c --q …` → `contact-sheet <模板 id，1–3 个> --out <课题>\candidates.png` |
++| 课题还能做什么分析 | `suggest-methods --q …`，先读课题必要计划、代码、结果和数据说明 |
+ | 要先做分析再出图 | `suggest-pipeline [--figure <模板 id>] --q …` |
+ 
+-`suggest` 只是初筛：读候选页面的“适用/不适用”，按作者课题和数据的实际情况判断，不按标签判断。只推荐 `ready` 的模板和方法。给 2–3 套候选（方法 + 可接的图），写明适用理由和作者数据要怎么改。同一张图有多个方法时按“适用/不适用”对比，给首选和理由。**然后停下等作者选。** 作者已经点名了方法和图（且都是 ready）时，不再推荐，直接执行下面的步骤。
++两种入口先读 [课题推荐与适配流程](references/project-reuse.md)。优先当前可做项，再列少量补材料候选，说明用途、依据、前提、缺口和代码状态。含义明确可在课题副本映射列名/整理长宽表，含义不清或缺关键数据先问；不自动聚合、填补、换算单位或改变统计逻辑。项目适配先留项目，有通用价值时经作者再次确认才回存。
++
++`suggest` 只是初筛：读候选页面的“适用/不适用”，按数据和接口判断，不按标签或图长得像就断言方法适用。只推荐 `ready` 的模板和方法，说明候选的用途、数据要求和差异，等作者选。已有明确选择与计划则复用，不重复询问。
++
++输入是文章、图或代码时，先让 agent 读图，列去重后的样式卡（代表裁图、来源/重复位置、编码、附属结构、已有模板和不确定点），再确认样式、数据、保真重点、代码与交付计划。每个选定样式只做一个代表单 panel；inset、色标、边缘分布属于该 panel，模型/指标/颜色变化不自动新增模板，实质结构差异保留变体。完整整图仅作只读溯源，不复刻整组或收录整图条目。缺原始数据须说明缺口并询问本次用估读还是合成；未回答不是同意。方法联想限定为有依据的方法家族推广（如 XGBoost＋SHAP → 满足条件的机器学习模型＋SHAP）：保留原实现，说明适用范围、前提、限制与未实现/未验证分支；不从画法通用性推导宽泛新分析方法。先写文字，有来源代码可按函数契约融入，不自动补算法。渲染和正式收录在关键选择与计划明确后进行，详见总库 AGENTS.md。
+ 
+ 作者选定后连续执行，全部产出放课题目录：
+ 
+-1. 读方法笔记的“输入”“怎么做”“代码”。方法有 `code/` 时复制到 `<课题>\scripts\`，改脚本开头的参数；没有就按笔记写脚本。
++1. 读方法笔记的输入、输出、适用边界和代码状态。有代码则复制所需模块到 `<课题>\scripts\`，在显式参数中传数据/列映射/该方法所需参数；没有代码可继续咨询或写文字笔记，缺分析算法时先提出具体方案询问，不自动补实现。
+ 2. 在课题自己的 Python / R 环境里运行。缺包时列出包名问作者，不要擅自装，也不要改用知识库的解释器。
+-3. 检查结果是否可信（笔记“怎么做”写了判断方法，例如模型在测试集上不比基线好时解释没有意义），不可信就停下告诉作者。
+-4. 把结果整理成模板要的接口表：`<课题>\analysis\<接口 slug>.csv`，列名与接口页一致。
+-5. 每张图：`render <模板 id> --data <课题>\analysis --out <课题>\figures\<名>`（整张组图用 `render-layout`）。打开 PNG 看一眼。
++3. 按方法笔记检查数据前提和必要诊断，不满足时说明影响；代码能运行不等于统计或科学有效。
++4. 分析函数返回结构化结果表，绘图函数读取表，可独立调用或串联。持久化时在显式调用层写 `<课题>\analysis\<接口 slug>.csv`；按执行入口在课题副本中适配到接口列名；先核对语义、粒度、量纲与配对关系，记录映射，原表保留。绘图不能隐式训练或重做分析。
++5. 每张图：`render <模板 id> --data <课题>\analysis --out <课题>\figures\<名>`。打开 PNG 看一眼。
+ 6. 每张图：`record-use <模板 id> --project <课题 slug> --title "<课题名>" --output <png 路径> --method <方法 id>`
+ 
+-只在报错或结果异常（输出为空、模型不比基线好、数值离谱、图上文字被裁切）时停下说明。给作者的消息里写关键数字和你改过的参数。
++报错、方法前提不满足或结果异常（输出为空、数值离谱、图上文字被裁切）时保存现场并说明；需要改变统计逻辑或补分析算法时先询问。给作者的消息里写关键数字和改过的参数。
+ 
+ ## 其他操作
+ 
+ | 场景 | 命令 |
+ |---|---|
+ | sci-figure-replica 复刻完一张图 | `ingest-figure <画廊条目 id>`，再按 AGENTS.md“收录”补适用说明 |
+-| 作者说“处理待办” | `pending`，按 AGENTS.md“处理待办”拆模板 |
++| 作者说“处理待办” | `pending`，按实际剩余工作继续已有草稿或补齐模板；不按状态盲目重建 |
+ | 收录一段分析代码或写方法笔记 | AGENTS.md“收录方法”（`scaffold-method` → 写笔记 → 作者确认） |
+ | 体检 | `lint` |
+ | 网页 | `serve`（作者在网页签核、确认方法、改标签） |
+ 
++作者源码函数化保留原语言、源字节/哈希与修改副本，记录输入/输出、依赖、随机性和限制；比较原版与封装版数值等价，再在不同工作目录/换数据检查可移植性。函数不硬编码课题/知识库路径，使用课题环境；绘图对象按语言返回，多个 axes 仍可构成一个 panel。保留现有 `draw(fig, rect, tables, style)`/render 入口并共用绘图核心。统计逻辑改变或补缺失分析算法前询问作者；不为收录而制作公共 pip/R 包。详细契约见总库 AGENTS.md。
++
++函数化也要验证改变组数/类别数/行列后能套用，不能只封装固定规模。 n为实际数据中的任意合法数量，由课题agent识别并编排，不为固定几个n另写分支/模板；尺寸默认系数可按课题覆盖。按数据结构配置尺寸增长，默认保持单panel与间距并继续加宽/增高；只在作者明确设置上限时协商其他布局。新Python模板使用可复制的 `code/sizing.py` 和 `spec.style.sizing`，独立函数与render共用核心；复刻比例与换数据自适应分开验收。实现、配置和迁移边界见 [尺寸适配契约](references/adaptive-sizing.md)。
++
+ 所有写操作最后都是 `save "<说明>"`（多数命令已自带）。完整参数：`wiki.py <命令> --help`。
+ 
++单 panel 模板经 `verify-template` 和作者确认后可 `mark-ready`、独立 `render`，不要求 `verify-layout`；来源 layout 可仍为 `pending_template`。若还要将该 layout 标为 ready，则做只覆盖已选 panel 的布局/preview 并 `verify-layout`（单 panel 可为 1×1），再由作者确认；不包含未选 panel。
++
+ ## 常见错误
+ 
+ - 用 `python_exe` 跑 wiki.py：报 `No module named 'yaml'`。
+@@ -64,3 +75,17 @@ description: Use when the author wants a figure or an analysis for a research pr
+ - 分析脚本、数据、成图写进知识库目录；知识库只通过 `record-use` 记录路径。
+ - 手改 `<!-- facts -->` 区块、frontmatter 的 `status`，或 `<!-- user -->` 区块。
+ - 临时文件、缓存写 C 盘：先设 TEMP/TMP/MPLCONFIGDIR 到 E 盘。
++
++## 每次收录的知识关联与代码
++
++新增或实质更新知识时双向检查“一方法多图／一图多方法”，包括不同来源。核对目的、行单位、语义、量纲、前提和代码能力；有依据在方法侧唯一维护 figure_relations，反向图页和图谱自动派生。分别标“直接可接／需要适配／待核实”及独立验证范围，接口结构匹配不自动等于直接可接。检查记录与未关联原因写正文；不为连通网络硬连。见 [方法家族与关系契约](references/knowledge-linking.md)。
++
++原生代码和复用版附在对应方法/单 panel，保留原语言和源字节，不覆盖原件。网页卡片“查看代码”可在 Wiki 内按版本/文件查看、复制、下载，只读不执行；存在文件不证明可运行或已验证。见 [代码资产](references/code-assets.md)。
++
++
++待办按后端只读 `workflow` 派生，CLI与前端统一：无成功回放的模板归agent，成功回放草稿归作者确认；同一工作转到模板后来源不重复计数，选定panel已由ready模板完整覆盖则来源退出待办。`pending`只列仍需agent处理的来源ID，先读其现有模板与工作说明，不重复scaffold；为空不等于所有来源做过可选的layout回放。归档/删除导致有效覆盖缺失时重新列出，恢复后重算。保留来源签核、模板确认和运行证据各自含义，不为清零而改状态。
++
++
++## 入库验收
++
++按正式Wiki AGENTS.md“入库与展示验收”逐项核查：来源/单panel范围、明示覆盖关系下的配图去重、两栏数量口径、方法家族边界、多对多关系与适配、代码资产、前端实查和队列交接。图样栏按逻辑样式浏览，包含已有单panel函数模板；模板栏按函数入口浏览，同一记录可在两栏出现。按明示来源覆盖去重，不能用存储页面类型排除模板；历史整图归档不隐藏已拆出的单panel图样，不为补展示而重新入库或新增待办。方法页优先用途、输入/输出、去重配图与适配要求，完整证据可展开；不照抄示例的图数或direct能力，不改完整Markdown事实/作者备注。未完成验收项如实记录，不补算法或凑来源。
+diff --git a/staged/research-wiki/assets/AGENTS.md b/staged/research-wiki/assets/AGENTS.md
+index eae0e1e..da68fd2 100644
+--- a/staged/research-wiki/assets/AGENTS.md
++++ b/staged/research-wiki/assets/AGENTS.md
+@@ -4,6 +4,10 @@
+ 
+ 它是写给 agent 读的说明书，不是执行平台：页面写清每样东西是什么、什么时候用、需要什么数据、代码怎么改；agent 读懂后在作者当前课题的环境里自己写代码、运行。图模板带可运行代码并经回放验证；分析方法是笔记，可附可复用的代码模板，知识库不运行它们。
+ 
++## 当前收录范围
++
++复刻与新收录只接受一个逻辑 panel。先识别去重样式，再询问代表单 panel、数据及关键细节并确认计划；完整原图只读保留在画廊用于溯源，不作为 Wiki 条目或复刻交付目标。现有整图来源已归档并在前端隐藏，保留其来源记录及既有单 panel 模板。图库保留“单 panel 图样”和“可调用模板”两个可重叠浏览入口。
++
+ ## 三层
+ 
+ - **原始层（只读）**：科研绘图画廊（路径见 research-wiki 技能的 `config.json` 里的 `gallery_root`）。每张复刻图是一个条目，`meta.json` 是事实来源。第二版会加入 Zotero、笔记、PDF。不改原始层，签核状态除外（只能通过 `wiki.py` 或网页修改）。
+@@ -14,9 +18,9 @@
+ 
+ | 目录 | type | 内容 |
+ |---|---|---|
+-| `layouts/<id>.md` | layout | 组合版式：一张复刻的整图，记录由哪些 panel 模板、怎样排列组成。`<id>` 与画廊条目 id 相同，签核状态在这里 |
++| `layouts/<id>.md` | layout | 一个逻辑 panel 来源，记录所含模板；历史整图仅保留归档记录。`<id>` 与画廊条目 id 相同，签核状态在这里 |
+ | `layouts/<id>/` | — | 版式资产：`thumb.png`、`layout.json`、`example/`、`preview.png` |
+-| `templates/<id>.md` | template | 一个 panel 模板，可单独套用。`<id>` 为 `<版式 id>--<图型>`；可被多个版式引用 |
++| `templates/<id>.md` | template | 一个逻辑 panel 模板，可单独套用。沿用 `<版式 id>--<图型>` id；结构变体默认分属不同代表条目，可被多个版式引用 |
+ | `templates/<id>/` | — | 模板资产：`spec.json`、`code/`（含 `panel.py`）、`example/`、`preview.png` |
+ | `methods/<id>.md` | method | 方法笔记（一步分析）：用途、适用/不适用、输入、怎么做、代码、输出成哪个接口、来源与许可证 |
+ | `methods/<id>/` | — | 方法资产（都可选）：`source/`（原代码归档，只读）、`code/`（可复用代码模板） |
+@@ -26,7 +30,7 @@
+ | `index.md` | — | 脚本生成的目录，不要手改 |
+ | `log.md` | — | 只追加的操作日志，不要手改 |
+ 
+-链接一律用相对本目录根的双链：`[[templates/<id>|显示名]]`、`[[layouts/<id>]]`、`[[interfaces/shap-summary]]`。frontmatter 里的列表字段（`tags`、`chart_types`、`templates`、`layouts`、`panels`、`inputs`、`outputs`）存的是值，不是链接；页面关系靠正文链接表达。
++链接一律用相对本目录根的双链：`[[templates/<id>|显示名]]`、`[[layouts/<id>]]`、`[[interfaces/shap-summary]]`。frontmatter 里的列表字段（`tags`、`chart_types`、`templates`、`layouts`、`panels`、`inputs`、`outputs`）存的是值，不是链接；来源/互补关系靠正文链接表达；方法—图语义关系在方法侧 figure_relations 唯一维护，反向自动派生。
+ 
+ `tags` 是自由标签（如“模型解释”“SHAP”“原图出自 QSAR”），只帮助检索，不是分类，也不限定用途。一张图或一个方法能用在哪里，写在“适用”节：它回答什么问题、需要什么形状的数据，与学科无关。
+ 
+@@ -36,6 +40,14 @@
+ - 图型页只在收录复刻图时自动补齐；课题页只由 `record-use` 生成。
+ - 方法笔记由 agent 用 `scaffold-method` 建骨架后编写，来源可以是帖子代码、作者课题脚本、GitHub/论文代码，或 agent 依据文献与官方文档编写（`--written`，必须写 `cite`）。
+ 
++## 先咨询样式与范围
++
++输入文章、图或代码时，agent 实际读图后列去重样式卡：代表裁图、原图/bbox 与重复位置、视觉编码、附属结构、已有模板/差异、不确定点。每个选定样式只做一个代表单 panel；模型/指标/单位/颜色变化通常作为参数，编码或结构实质不同才保留可选变体并说明理由。inset、色标、边缘分布和必要共享标注随主 panel，多 axes 不等于多个模板。图片数、哈希或图型名均不能代替样式判断。
++
++在渲染或正式收录前，集中明确选定样式/代表、数据来源、保真重点、语言/代码及交付计划；复用已有答案。缺原始数据先说明缺口及影响，询问作者本次用估读还是合成并等待选择。完整原图/哈希只读保留，选定裁图与原图 bbox 另记；未选 panel 不构成本轮覆盖要求。完整整图只在画廊只读保留作溯源，不再复刻整组或新建整图 Wiki 条目。历史整图来源通过 Wiki API 归档并在前端隐藏，保留历史模板的出处。
++
++方法联想限定为有依据的方法家族推广（如 XGBoost＋SHAP → 满足条件的机器学习模型＋SHAP）：保留原实现，说明适用范围、前提、限制与未实现/未验证分支；不从画法通用性推导宽泛新分析方法。先写文字，有来源代码可按函数契约融入，不自动补算法。
++
+ ## 谁能改什么
+ 
+ - `<!-- user:start -->` 与 `<!-- user:end -->` 之间是作者的内容。agent 一个字都不改，也不移动。
+@@ -50,51 +62,96 @@
+ ### 收录（ingest）
+ 
+ 1. `wiki.py ingest-figure <entry_id>`：建或更新版式页骨架、补齐图型页、提交。标签从画廊条目带过来。
+-2. 读画廊条目的 README、`qa_report.md`、`figure_spec.json` 和原帖 `source.md`，填写版式页的“适用”和“不适用”：这张图回答什么问题、需要什么数据、什么时候不该用它。写图本身的用途，不要因为原图出自某个学科就把它限定在那个学科；原图的学科背景可以作为一个标签留下。只写有依据的内容。
++2. 读画廊条目的 README、`qa_report.md`、`figure_spec.json` 和原帖 `source.md`，核对实际范围：单 panel 的 `source_image` 是选定裁图、`source_image_sha256` 是裁图哈希；完整原图另存并记录独立哈希/bbox。填写版式页的“适用”和“不适用”：所选图样回答什么问题、需要什么数据、什么时候不该用它。写有依据的用途，学科背景可作标签，不据此限定或夸大适用性。新 layout 页只代表一个选定逻辑 panel；收录前核对 panel_map 恰好一项。完整原图不进入新 Wiki 条目。
+ 3. `wiki.py save "ingest <id> 说明"`。
+ 
++### 收录后的配图、范围与知识关联
++
++新增/实质更新方法或图样后，双向检查“一方法多图／一图多方法”，包括不同来源。核对目的、语义、行单位、量纲、前提与代码状态，有依据才写 figure_relations（方法侧唯一记录）。状态为 direct/adaptable/candidate，分别为直接可接/需要适配/待核实，另写 verification 的状态、范围、证据。来源图样不能 direct；接口 feeds 只表示结构匹配。方法页/图页/图谱从同一记录派生；归档不再推荐，删除清理关系并审计。正文记录检查范围、依据和未关联原因。详见 research-wiki 的 references/knowledge-linking.md。
++
++图库仅按单panel图样、可调用模板两栏区分。新layout只容纳单panel来源；历史整图归档隐藏。逻辑panel数而非axes数决定来源范围。图片、状态和范围都需在前端实查，逐一检查已有单panel函数模板能在图样入口找到。n为任意合法数量，由课题agent编排；文档中的能力标准不代表所有历史模板已经适配。
++
+ ### 处理待办：拆 panel 与模板化
+ 
+ 作者签核后版式变为 pending_template。作者说“处理待办”时：
+ 
+-1. `wiki.py pending` 列出待处理的版式。
+-2. 按图型拆：同一图型的面板合成一个模板（例如 A、D 都是 SHAP 条形图，就是一个模板用了两次）。inset 和面板自带的色标属于所在面板。
+-3. 先查已有的 ready 模板：同一图型已有模板且画法相同，用 `attach-template` 复用；差异明显（不同的编码方式、附加元素）才 `scaffold-template` 新建，并在模板页“不适用”里写清和已有模板的区别。
+-4. 改写代码：`code/` 是一个包，模块间用相对导入；`panel.py` 的 `draw(fig, rect, tables, style)` 只在给定区域作画；可调的视觉参数放进 spec.style。
+-5. 每个模板 `verify-template` 单独回放；写 `layouts/<id>/layout.json` 并 `verify-layout` 拼回整图，与原复刻图对比。
+-6. 把各模板预览和整图对比交给作者看，作者确认后依次 `mark-ready` 各模板，再 `mark-ready` 版式。
++1. `wiki.py pending` 列出尚需agent处理的来源；先查关联模板，继续已有草稿或补缺口，不重复新建。
++2. 按选定样式处理，不按图型名机械合并。一个代表单 panel 一个条目；inset、色标、边缘分布属于该 panel。结构变体默认在不同条目中保留，现有 `<条目 id>--<图型>` id 无需扩展。同条目的历史组图若存在同图型不同结构，不能为适应 id 冲突强合并；记录具体限制再决定最小处理，不自动重做旧图。
++3. 先查已有 ready 模板，核对数据接口、编码和附属元素；相同画法用 `attach-template` 复用，实质不同才 `scaffold-template`，写清差异。模型/指标名或颜色变更不自动新增模板。
++4. 按下述函数契约处理代码。`code/` 包内相对导入；保留 `panel.py` 的 `draw(fig, rect, tables, style)` 适配，在给定区域作画，可调视觉参数放 spec.style。独立调用、render 和组图共享绘图核心。
++5. 每个模板 `verify-template` 单独回放，对照选定裁图检查并交作者确认；确认后 `mark-ready <模板 id>`，即可独立 `render` 并换数据检查。这个链路不依赖 `verify-layout`，来源 layout 此时仍可为 `pending_template`。
++6. 若还要将来源 layout 标为 `ready`，须为它准备自己的 `layout.json`、覆盖本条目已选 panel 的布局和 `preview.png`，运行 `verify-layout`，交作者确认后再 `mark-ready <版式 id>`。选定 A 单 panel 时使用只含 A 的 1×1 布局与覆盖，绝不要求未选 B；不再制作整组回放或要求未选 panel。测试或回放不自动推进作者签核。
+ 
+ ### 接口
+ 
+ - 接口按数据本身定义，与模型和工具无关：“SHAP 汇总表”是一个接口，不分 XGBoost 还是随机森林。
+ - 新建前先找已有接口：`scaffold-template` 会打印列名相同的接口，能复用就复用。确需新建时用 `add-interface`，并在“含义”节写清一行代表什么、与相近接口的区别。
+-- 模板 spec 的每张表只写 `interface` 和 `description`，文件名固定为 `<接口 slug>.csv`：分析最后把结果写成这些文件，所在目录就能直接交给模板出图。
++- 模板 spec 的每张表只写 `interface` 和 `description`，文件名固定为 `<接口 slug>.csv`。分析函数返回表，显式调用层可将表写成这些文件交 `render`；内存表也可直接传绘图函数。接口相接只是候选条件，仍须检查方法前提。
+ 
+ ### 收录方法（写方法笔记）
+ 
+ 1. `scaffold-method <id> --title … --license …`，来源选一种：`--from-entry <画廊条目>`（帖子代码）、`--from-path <路径>`（作者课题脚本；GitHub/论文代码加 `--url --commit`，下载前须征得作者同意）、`--written`（依据文献或官方文档编写）。原代码复制到 `source/`，不改。
+-2. 一个方法讲一步分析，并且不绑定具体工具：能换模型、换软件包做的事写成一个方法，在“怎么做”里说明各种情况怎么改（例如 SHAP 解释适用于任何训练好的模型：树模型用 TreeExplainer，线性模型用 LinearExplainer，其他模型用 `shap.Explainer`）。预处理与分析分开写；前一步的输出接口等于后一步的输入接口时可以串联。
++2. 一个方法页可表达有边界的方法家族；写清核心目的、来源具体实现、成立条件、已有代码分支、限制与未验证分支。按实际数据条件和实现边界说明工具/模型适用性；不能为支持“任意模型”强改算法。预处理与分析分开写；前后接口兼容且方法前提满足时才串联。只有联想而无代码的方法先保留文字，不自动实现。
+ 3. 写正文各节：
+    - **用途**：做什么、结果是什么。
+    - **适用 / 不适用**：数据前提（样本量、变量类型、任务类型）、什么情况会得出误导结论。
+    - **输入**：需要什么数据、每行代表什么、哪些列。
+-   - **怎么做**：步骤；作者数据不同时要改的地方；结果是否可信怎么判断（例如模型在测试集上不比基线好，解释就没有意义）。
+-   - **代码**：有现成可复用代码时放进 `code/`，要改的参数集中在脚本开头并在这里逐个列出含义和合理取值；没有就写关键代码片段。代码依赖的包写在这里，不在知识库里装环境。
++   - **怎么做**：步骤；作者数据不同时要改的地方；方法前提、必要诊断及结果限制，避免无依据的通用判断。
++   - **代码**：有来源代码时按下述契约放修改副本进 `code/`，写函数签名、参数含义、依赖、限制和验证状态；没有则明确“文字笔记/未实现”，不强制补代码。包依赖在这里说明，不在知识库里装环境。
+    - **输出**：最后怎样整理成哪个接口表（列名、每行含义），frontmatter 的 `outputs` 同步写接口 slug。
+    `license` 不明时写 `none`，页面会显示“仅供个人研究参考”；`cite` 只写能核实的文献。
+ 4. 写完交作者确认（网页“确认”或 `mark-ready`），确认后才推荐。
+ 
++### 有来源代码的函数契约
++
++- 记录原语言、来源/许可证或未知状态、原字节及 SHA-256；源代码只读，函数化修改版独立，列原函数与新入口映射。普通路径/输入输出整理和参数化在已确认计划内可做；改变统计逻辑、估计量、泄漏边界、缺失值/异常值算法，替换或补缺失分析算法前，说明具体差异并询问作者。
++- 分析函数显式接受数据对象、变量/结局/分组列、算法实际需要的参数和随机性，返回结构化结果表及必要诊断，记录列/类型/每行含义。默认不隐式读写、绘图、联网、安装或修改知识库；原算法必要副作用明确隔离和记录，不能静默删除。
++- 绘图函数消费表，显式列映射与视觉参数，不隐式训练或重做分析。按原语言传入/返回可组合对象：Python 通常为 figure/axes，R 为适合的 plot/grob。边缘分布等多 axes 仍为一个逻辑 panel，导出由显式调用层处理。
++- 复制所需模块到作者课题，用课题自己的 Python/R 环境；数据、列和必要参数显式传入，不依赖原工作目录、硬编码路径、知识库目录或全局临时变量。保留 render/draw 适配，共用绘图核心；分析和绘图可独立或串联。不要求制作全局 pip/R 安装包。
++- 实际比较原版与封装版数值结果、行顺序、缺失值处理、随机性和图形结构；必要容差说明依据。检查不同工作目录、复制到课题后换数据的可移植性，记录命令/环境/结果。未运行项目标未测，不能把单例通过扩大为任意数据、模型或科学有效性。
++
++
++### 数据规模适配也是函数化验收的一部分
++
++这里 n 是依据课题既定分组定义从实际数据识别的任意合法组数（正整数），不设固定数量白名单，不为每个 n 写分支或另建模板。agent 在做课题时自行绑定数据、识别 n，并按图型、标签、附属元素和版面要求编排尺寸、留白、配色和位置；每项宽/高等默认系数只是可覆盖初值。不得擅自改变研究分组含义来适应图形。作者已指定的样式/尺寸限制继续遵守；未指定时按既有单panel、可读字号和间距原则执行。
++
++函数化须能适应同类场景的数据结构变化，不只是把原脚本包进函数。分组/类别/系列数量、顺序、标签、配色和位置从显式输入或数据获取；不把原图六组、固定模型名或固定列数写成复用限制。分析函数仍遵守自身算法前提，不为支持更多组而自动改变统计方法。
++
++绘图先声明尺寸驱动：纵向分类图按类别数加宽，横向条形图按条目数增高，矩阵按行列数调整；散点不因样本数增多而无限放大，必要时使用固定比例。规则例如 W=左右留白+n_x×每项宽度、H=上下留白+n_y×每项高度；系数与物理单位由模板说明、参数化，长标签可增加所需空间。字号和最小组间距保持可读，不能靠缩小字体掩盖拥挤。
++
++默认保持一个逻辑panel、保留间距并继续加宽/增高；max_width_in/max_height_in默认null。只有作者明确设置尺寸上限，才在超限时报告所需/允许尺寸并询问方案，不自动截断、压缩、分面或隐藏类别。布局须同时检查标签/图例/色标及配色是否足够；不得对离散组静默循环有限色板。
++
++原图复刻用replica/fixed模式保留显式宽高及原图比例；换数据用adaptive模式，验收宽高增长、间距和文字，不拿原图宽高比阈值约束自适应复用。调用方可显式覆盖参数。组图draw(fig,rect,tables,style)尊重外层画布，不能自行resize；空间不足应交调用层扩大布局或询问作者。
++
++新Python模板的spec.style.sizing从research-wiki config.json的function_defaults.sizing快照，随code/sizing.py复制到课题；配置优先级为调用覆盖>模板快照>建模板时的全局默认。默认profile=unbound，agent必须确认实际表/列和方向后绑定，不凭图型名猜数据含义。函数与render共用同一尺寸/绘图核心，输出解析后的尺寸记录。Python实现及完整例子见research-wiki的references/adaptive-sizing.md；R保留原语言并实现同等行为，不能把Python验证写成R已验证。
++
++验收覆盖代表规模变化：由agent按模板和课题选择若干不同组数及适当边界案例，另测不同样本数、长标签、显式顺序/列映射、配色不足处理、手动尺寸与用户上限；横向图/矩阵检查相应维度增长。比较数值和行序不变、无输入修改、图形数量正确、物理组间距不缩小、文字无裁切；复制到另一目录换数据实际运行，独立入口和render/组合入口分别记录。仅测试原图规模不算完成规模适配。历史模板逐一记录legacy/适配状态，不因新规则自动宣称已迁移或批量改历史图。
++
+ ### 查询与推荐（query）
+ 
+-1. 读 `index.md`，再读候选模板页、版式页与方法页。只推荐 `status: ready` 的。按页面“适用”节判断是否合适，不按标签筛选。
+-2. 按作者课题与数据形态挑 2–3 个候选：作者要单张图就推荐 panel 模板，要整张组图就推荐版式。说明各自适用理由和需要的数据表，生成候选拼图给作者看，等作者选定。不替作者选。
+-3. 作者要“做某种分析并出图”时用 `suggest-pipeline`：给 2–3 套“方法 + 可接的图”，写明作者数据要怎么改。同一张图有多个可接方法时，按各方法的适用/不适用对比，给出首选及理由。
+-4. 作者选定后连续执行，产出都放课题目录：按方法笔记（有 `code/` 就复制到课题里改参数）在**课题的环境**里写代码、运行 → 检查结果是否可信 → 把结果整理成模板要的接口表 → `render` 出图 → `record-use --method`。课题环境缺包时列出来问作者。只在报错或结果异常（如输出为空、模型不比基线好、数值离谱）时停下说明。
++1. 先读当前课题必要计划、数据说明、代码、结果表头与运行证据，明确研究目的、样本/行单位、验证设计、当前阶段及未知项。代码存在不证明已跑完；缺目的或关键条件先问作者。不由网页服务器扫描任意课题目录。
++2. “课题还能做什么分析”：用 suggest-methods 查 ready 方法，不限是否已有配图；优先少量当前可做项，再给少量有价值且能说明缺哪些材料的候选。说明用途、项目依据、前提、缺口、代码存在/验证范围、可配图样。无合适库存就如实说明。
++3. “分析已跑完选图”：先核对结果语义/粒度/量纲/重复层级，再 suggest 查单 panel/模板；不必新增方法。接口/列名不同不能是发现的唯一排除条件，同名也不证明直接适用。suggest-pipeline 结合关系提供候选，agent 仍须读正文。
++4. 有现成选择与计划就复用，否则等作者选定。含义清楚且不改分析逻辑时，课题副本可映射列名、列顺序、文件名和长宽表；原表不改，继续通过执行入口的严格检查。核对源哈希、主键、值、实体、单位与转换可还原；不能要求长宽转换总行数相同。
++5. 未知单位/指标定义、重复身份不清、缺关键材料，或涉及聚合/删行/填补/补样本/重算统计量/单位换算/阈值或验证设计改变，说明具体差异先问作者。缺包也先问，不在 Wiki 装包或换 Wiki 环境代跑课题。
++6. 选定后复制代码到课题，用课题环境运行、检查前提/诊断、出图并 record-use。无算法的文字笔记不授权补算法。方法/图关联直接可接不证明当前课题统计有效。
++7. 复用课题已有记录；无约定则用 <课题>/wiki-use/<本次标识>/ 记录 context、recommendations、mapping、实际调用与检查。项目映射先留课题；有通用价值时提出回存内容和证据，作者再次确认才入库，不覆盖原版或污染全库接口。详细模板见 research-wiki 的 references/project-reuse.md。
++
++### 原生代码与网页查看
++
++原生 source/ 与复用 code/ 分开，语言/字节/来源/许可证/哈希保留；原文片段不能标成完整原版。方法、单 panel 图样、模板卡片的“查看代码”在 Wiki 内显示版本和文件，支持复制/下载，仅只读查看。未知编码或二进制原字节下载，不运行网页代码或 Notebook 输出，不增独立代码分类。枚举真实文件，无代码如实说明。代码存在、页面 ready、关系兼容与实际验证范围独立。详见 research-wiki 的 references/code-assets.md。
+ 
+ ### 体检（lint）
+ 
+ `wiki.py lint` 报告断链、frontmatter 不合规、页面与画廊状态不一致、空白的适用说明。逐条修复（能改页面的改页面；属于原始层的问题报告给作者），然后 `save`。
+ 
++
++### 归档条目的删除与预览
++
++网页归档区和详情可先查看删除范围，再由作者明确确认永久删除 Wiki 页面及其专属资产；自动清理 agent 正文、元数据与布局中的关联，记录到 deletion-records，原始画廊保留。操作不可从网页恢复，Git 历史不作清除。后端仅允许 archived 状态，并核对确认时的内容版本；他页作者备注引用须由作者先处理，不能自动改备注。agent 不因作者要求“加删除功能”就代删正式条目。
++
++预览以实际存在的资源为准。模板没有回放图时可显示对应单 panel 来源缩略图，明确标“来源参考图 · 模板尚无回放”；没有可用图时显示暂无预览，不请求不存在的 preview.png，不以来源图冒充已验证模板。
++
+ ## 状态
+ 
+ 版式：
+@@ -102,8 +159,8 @@
+ | status | 含义 | 谁来推进 |
+ |---|---|---|
+ | pending_signoff | 画廊条目尚未签核 | 作者在网页签核 |
+-| pending_template | 已签核，待拆 panel 与模板化 | 作者说“处理待办”时 agent 处理 |
+-| ready | 所有 panel 模板就绪，整图可按原版式套用 | — |
++| pending_template | 已签核；模板进度按有效覆盖派生 | 作者说“处理待办”时 agent 处理 |
++| ready | 选定单位模板就绪，且本 layout 的覆盖与 preview 经回放、作者确认；可按其版式套用 | — |
+ | archived | 已归档，不再推荐；`archived_from` 记录原状态 | 作者在网页恢复 |
+ 
+ panel 模板：
+@@ -127,3 +184,39 @@ panel 模板：
+ - 页面写给作者和下一个 agent 看：事实优先，短句，不写套话。
+ - 不编造数据、文献或适用结论。不确定就写“待作者确认”。
+ - 不复制原始层的大段内容，链接或引用路径即可。
++
++
++### 待办按剩余动作派生（CLI 与前端共用）
++
++持久 status 表示来源签核/版式回放或模板确认阶段，不等于当前谁还有工作。后端只读 workflow 统一判断：
++
++- 已签核来源尚缺有效模板覆盖：agent核查缺口、归档或关联，保留已完成部分。
++- 已有草稿但无完整成功回放：agent继续该模板，不重复scaffold；来源不重复算一项。
++- 草稿已有成功回放记录和对应输出：交作者确认，列入“待你确认”，不列agent待办；代码改变后仍应重新verify-template并核对回放，文件存在不证明科学有效。
++- 所选panel已由ready模板完整覆盖：来源显示“模板已就绪”并退出待办，即使其status仍为pending_template。来源可选layout回放与单模板可用性分别记录。
++- 待签核来源/新版本仍交作者签核；回放不自动确认。归档/删除模板导致覆盖缺失时重新派生待办，恢复后重算。
++
++`pending`只列尚需agent处理的来源ID（包括已有未完成草稿）；先检查关联模板与当前说明，不见pending_template就重新拆模板。重复ingest或刷新不会新建待办记录或推进状态。不得为了清零而伪造layout验证、作者确认或删除来源。
++
++
++### 入库与展示验收
++
++新收录或实质更新的知识按以下标准检查；未完成项明确列出，不以入库、代码存在或页面ready代替实际验收。历史单panel模板可以保留，注明历史来源与尚未迁移的能力，不据新标准伪造已完成记录。
++
++| 检查项 | 验收要求 |
++|---|---|
++| 来源与范围 | 新图样只记录已选定的一个逻辑panel；裁图、完整原图/bbox、数据及代码来源可追溯，估读/合成标注清楚。原图与原生代码只读，关键选择复用作者已给答案。 |
++| 图样去重 | 模型/指标/颜色/组数变化不机械新增样式。方法配图只在明示的来源与模板覆盖关系成立时合并视觉入口，保留所有语义关系及来源链接；不同结构变体和不同方法不得因图型同名而误合并。 |
++| 两栏数量 | 单panel图样按逻辑图形样式浏览，包含已有单panel函数模板；可调用模板按函数入口浏览，同一记录可同时出现在两栏。图样依据明示来源覆盖去重，不能按页面存储类型把模板排除。历史整图来源归档只隐藏整图，不隐藏已拆出的单panel图样；保留出处与能力限制，不新增伪来源或待办。两栏允许一对多、多对一，数量不要求强行相等。 |
++| 方法家族 | 写清用途、原始具体实现、可推广范围、适用/不适用、输入、输出、代码与未验证分支。原实现保留，方法联想有依据；一方法多图/一图多方法双向检查，不能从通用画法推出无边界的新分析。 |
++| 数据与关系 | 按语义、行单位、量纲、配对和研究前提判断。列名/长宽表不一致可在课题副本适配；缺数据或改变统计逻辑先问。关系direct/adaptable/candidate与运行验证分别记录；需适配的图明确写数据来自何处、还缺何种准备，不制造直通流水线。 |
++| 代码资产 | 有原生代码则保持原语言与原字节/哈希，原始版/复用版可区分；卡片查看代码真实可用，可复制/下载。无代码的方法如实标文字笔记，不补算法凑齐。绘图与分析分离，函数可复制到课题，任意合法n由实际数据识别并编排。 |
++| 方法页可读性 | 以用途、分析输入/输出、去重配图及适配说明为主要入口；像SHAP页一样能辨认方法与结果、图的对应，但不能照抄其直接可接能力。来源、接口结构和完整证据可展开查看，原始Markdown保留完整事实与作者备注。无配图/无直连接口如实解释，不只呈现误导性的空链路。 |
++| 状态与队列 | 来源签核、模板回放、作者确认和实际运行验证分开。CLI/网页按同一个workflow判定剩余动作，来源与模板不重复计数；已确认且覆盖完整退出待办，归档/删除/恢复后重算。不为清零改签核状态。 |
++| 实际验收 | 检查数据/代码/预览链接与前端实际呈现；模板完成公开verify-template、换数据/规模/可移植检查与作者确认。方法笔记核对边界和代码验证范围后交作者确认；文字笔记不强制具备可执行流水线。机械/示例通过不扩大成统计、真实课题或科学有效性证明。 |
++| 交付一致 | 记录检查范围、依据、未通过/未测项；规则变更同步正式Wiki与三处全局安装，共用同一库。更新不改变已确认的数据、算法、来源、作者区块和签核；若需实质改变，单独说明并询问。 |
++
++SHAP和回归评估仅是同一验收标准的不同例子：前者的已声明输出表对应三个历史绘图模板；后者有两个绘图模板，但要另准备同源RGB/边缘表或选定指标与摘要，仍标需要适配。例子的图数、模型名和列名不是后续入库的固定要求。
++
++
++单panel图样与可调用模板是可重叠的浏览视图，不是互斥的页面类型。已拆出的SHAP条形、蜂群、环形等合法单panel模板也属于图样；不能因其仍追溯到归档整图而遗漏。已有对应单panel来源时按明示覆盖只展示一次，缺独立来源页时直接链接现有模板记录，不为前端展示重新入库或生成待办。
+diff --git a/staged/research-wiki/config.json b/staged/research-wiki/config.json
+index b335c19..7b5f092 100644
+--- a/staged/research-wiki/config.json
++++ b/staged/research-wiki/config.json
+@@ -4,5 +4,34 @@
+   "taxonomy": "C:\\Users\\86186\\.claude\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+   "python_exe": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
+   "rscript_exe": "D:\\R-4.5.0\\bin\\Rscript.exe",
+-  "port": 8765
++  "port": 8765,
++  "function_defaults": {
++    "sizing": {
++      "mode": "adaptive",
++      "profile": "unbound",
++      "table": null,
++      "x": null,
++      "y": null,
++      "item_width_in": 0.8,
++      "item_height_in": 0.32,
++      "plot_width_in": 5.4,
++      "plot_height_in": 4.4,
++      "margins_in": [
++        0.9,
++        0.25,
++        0.85,
++        0.55
++      ],
++      "min_width_in": 3.2,
++      "min_height_in": 2.8,
++      "max_width_in": null,
++      "max_height_in": null,
++      "width_in": null,
++      "height_in": null,
++      "label_fontsize": 11,
++      "label_rotation": 45,
++      "label_gap_in": 0.12
++    }
++  },
++  "single_panel_only": true
+ }
+diff --git a/staged/research-wiki/rwiki/cli.py b/staged/research-wiki/rwiki/cli.py
+index 492b4ec..763e41a 100644
+--- a/staged/research-wiki/rwiki/cli.py
++++ b/staged/research-wiki/rwiki/cli.py
+@@ -12,7 +12,7 @@ from .methods import scaffold_method
+ from .lint import lint
+ from .layouts import render_layout, verify_layout
+ from .store import init, save
+-from .suggest import suggest, suggest_pipeline
++from .suggest import suggest, suggest_methods, suggest_pipeline
+ from .templates import attach_template, mark_ready, pending, render, scaffold_template, verify_template
+ from .usage import record_use
+ 
+@@ -86,6 +86,10 @@ def parser() -> argparse.ArgumentParser:
+     suggesting.add_argument("--columns")
+     suggesting.add_argument("--q", default="")
+     suggesting.add_argument("--limit", type=int, default=3)
++    method_suggesting = commands.add_parser("suggest-methods")
++    method_suggesting.add_argument("--q", default="")
++    method_suggesting.add_argument("--columns")
++    method_suggesting.add_argument("--limit", type=int, default=3)
+     pipeline = commands.add_parser("suggest-pipeline")
+     pipeline.add_argument("--figure")
+     pipeline.add_argument("--q", default="")
+@@ -142,6 +146,9 @@ def main(argv: list[str] | None = None) -> int:
+         elif args.command == "suggest-pipeline":
+             print(json.dumps(suggest_pipeline(config, args.figure, args.q),
+                              ensure_ascii=False, indent=2))
++        elif args.command == "suggest-methods":
++            print(json.dumps(suggest_methods(config, args.q, args.columns, args.limit),
++                             ensure_ascii=False, indent=2))
+         elif args.command == "contact-sheet":
+             print(contact_sheet(config, args.entry_ids, args.out))
+         elif args.command == "record-use":
+diff --git a/staged/research-wiki/rwiki/compose_runner.py b/staged/research-wiki/rwiki/compose_runner.py
+index 6659be5..ea2c437 100644
+--- a/staged/research-wiki/rwiki/compose_runner.py
++++ b/staged/research-wiki/rwiki/compose_runner.py
+@@ -11,6 +11,13 @@ matplotlib.use("Agg")
+ import matplotlib.pyplot as plt
+ import pandas as pd
+ 
++# This runner is also loaded by file path from unrelated working directories.
++_sizing_spec = importlib.util.spec_from_file_location(
++    "_compose_sizing", Path(__file__).with_name("sizing.py"))
++_sizing = importlib.util.module_from_spec(_sizing_spec)
++_sizing_spec.loader.exec_module(_sizing)
++check_region = _sizing.check_region
++
+ 
+ def load_panel(template: Path, panel: str):
+     name = "panel_" + uuid4().hex
+@@ -42,7 +49,12 @@ def main():
+         target = args.wiki / "templates" / panel["template"]
+         spec = json.loads((target / "spec.json").read_text(encoding="utf-8"))
+         tables = {name: pd.read_csv(args.data / filename) for name, filename in panel["tables"].items()}
+-        style = spec["style"] | panel["style"] | overrides.get(panel["letter"], {})
++        style = dict(spec["style"])
++        for values in [panel["style"], overrides.get(panel["letter"], {})]:
++            for key, value in values.items():
++                style[key] = (style.get(key, {}) | value) if key == "sizing" and isinstance(value, dict) else value
++        if "sizing" in style:
++            check_region(fig, panel["rect"], tables, style)
+         load_panel(target, spec["panel"])(fig, panel["rect"], tables, style)
+     for label in layout["labels"]:
+         fig.text(label["x"], label["y"], label["text"], fontsize=label["size"],
+diff --git a/staged/research-wiki/rwiki/config.py b/staged/research-wiki/rwiki/config.py
+index d6f3c50..826f1b8 100644
+--- a/staged/research-wiki/rwiki/config.py
++++ b/staged/research-wiki/rwiki/config.py
+@@ -1,5 +1,5 @@
+ import json
+-from dataclasses import dataclass
++from dataclasses import dataclass, field
+ from pathlib import Path
+ 
+ from .errors import WikiError
+@@ -13,6 +13,8 @@ class Config:
+     python_exe: Path
+     rscript_exe: Path
+     port: int
++    function_defaults: dict = field(default_factory=dict)
++    single_panel_only: bool = False
+ 
+ 
+ def read_json(path: Path) -> dict:
+@@ -30,7 +32,20 @@ def load_config(path: Path) -> Config:
+     missing = [key for key in (*required, "port") if key not in values]
+     if missing:
+         raise WikiError(f"配置缺少: {', '.join(missing)}")
+-    return Config(*(Path(values[key]).resolve() for key in required), port=values["port"])
++    single_only = values.get("single_panel_only", False)
++    if not isinstance(single_only, bool):
++        raise WikiError("single_panel_only 必须是布尔值")
++    defaults = values.get("function_defaults", {})
++    if not isinstance(defaults, dict) or defaults.keys() - {"sizing"}:
++        raise WikiError("function_defaults 只允许 sizing 对象")
++    if defaults:
++        from .sizing import validate_policy
++        try:
++            defaults = {"sizing": validate_policy(defaults.get("sizing"))}
++        except ValueError as error:
++            raise WikiError(str(error)) from error
++    return Config(*(Path(values[key]).resolve() for key in required), port=values["port"],
++                  function_defaults=defaults, single_panel_only=single_only)
+ 
+ 
+ def load_taxonomy(path: Path) -> dict:
+diff --git a/staged/research-wiki/rwiki/facts.py b/staged/research-wiki/rwiki/facts.py
+index 22d1e4d..49f7182 100644
+--- a/staged/research-wiki/rwiki/facts.py
++++ b/staged/research-wiki/rwiki/facts.py
+@@ -5,6 +5,7 @@ from urllib.parse import quote
+ from .config import Config, read_json
+ from .interfaces import load_interface
+ from .pages import read_page, set_block, write_page
++from .relations import COMPATIBILITY_LABELS, relations_for
+ 
+ 
+ def declarations(root, kind: str) -> dict:
+@@ -33,6 +34,29 @@ def interface_link(root, slug: str) -> str:
+     return page_link("interfaces", load_interface(root, slug))
+ 
+ 
++def relationship_facts(config: Config, path: str) -> str:
++    """The same authored record is presented from either endpoint."""
++    lines = ["\n- 方法配图关系（语义审查）："]
++    for relation in relations_for(config, path):
++        other = "figure" if path.startswith("methods/") else "method"
++        target = relation[other].removesuffix(".md")
++        label = relation[f"{other}_title"]
++        status = relation[f"{other}_status"]
++        verification = relation["verification"]
++        reference = "；来源图样参考，执行时另查关联模板" if relation["target_kind"] == "layout" else ""
++        archived = "；已归档，不推荐" if not relation["active"] else ""
++        lines.append(f"  - [[{target}|{label}]]（{status}）："
++                     f"{COMPATIBILITY_LABELS[relation['compatibility']]}（{relation['compatibility']}）"
++                     f"{reference}{archived}；调用验证：{verification['state']}；范围：{verification['scope']}")
++        lines.append(f"    - 依据：{relation['reason']}；前提：{'；'.join(relation['prerequisites']) or '无额外声明'}"
++                     f"；适配：{relation['adaptation'] or '无格式适配声明'}")
++        lines.append(f"    - 关系证据：{'；'.join(relation['evidence'])}；运行证据："
++                     f"{'；'.join(verification['evidence']) or '无'}")
++    if len(lines) == 1:
++        lines.append("  - 暂无已记录关系；接口或标签相同不代表语义已核实。")
++    return "\n".join(lines) + "\n"
++
++
+ def template_facts(config: Config, meta: dict) -> str:
+     root = config.wiki_root
+     layouts = [page_link("layouts", read_page(root / "layouts" / f"{lid}.md")[0])
+@@ -52,7 +76,8 @@ def template_facts(config: Config, meta: dict) -> str:
+             f"- 面板（来源版式）：{'、'.join(meta['panels'])}\n- 语言：{meta['language']}\n"
+             f"- 标签：{'、'.join(meta['tags'])}\n- 图型：{charts}\n"
+             f"- 输入接口：{' · '.join(interfaces) or '未声明'}\n"
+-            f"- 可接的分析方法：{' · '.join(compatible) or '暂无'}\n")
++            f"- 接口结构匹配的分析方法（仅结构候选，未核实语义）：{' · '.join(compatible) or '暂无'}\n"
++            + relationship_facts(config, f"templates/{meta['id']}.md"))
+ 
+ 
+ def method_facts(config: Config, meta: dict) -> str:
+@@ -81,17 +106,18 @@ def method_facts(config: Config, meta: dict) -> str:
+                     and input_interfaces(method) and input_interfaces(method) <= outputs]
+     code_files = [f"[{path.relative_to(root).as_posix()}](/files/wiki/{quote(path.relative_to(root).as_posix(), safe='/')})"
+                   for path in sorted((root / "methods" / meta["id"] / "code").rglob("*"))
+-                  if path.is_file()]
++                  if path.is_file() and "__pycache__" not in path.parts
++                  and path.suffix.lower() not in (".pyc", ".pyo")]
+     license_text = "仅供个人研究参考" if meta["license"] == "none" else meta["license"]
+     return "\n".join([
+         f"\n- 来源：{origin}", f"- 许可证：{license_text}",
+         f"- 引用：{'；'.join(meta['cite']) or '无'}", f"- 标签：{'、'.join(meta['tags'])}",
+         f"- 输入接口：{' · '.join(interface_link(root, slug) for slug in meta['inputs']) or '未声明'}",
+         f"- 输出接口：{' · '.join(interface_link(root, slug) for slug in meta['outputs']) or '未声明'}",
+-        f"- 可接的图：{' · '.join(figures) or '暂无'}",
+-        f"- 可接的下一步方法：{' · '.join(next_methods) or '暂无'}",
++        f"- 接口结构匹配的图（仅结构候选，未核实语义）：{' · '.join(figures) or '暂无'}",
++        f"- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：{' · '.join(next_methods) or '暂无'}",
+         f"- 代码模板：{' · '.join(code_files) or '无'}",
+-    ]) + "\n"
++    ]) + "\n" + relationship_facts(config, f"methods/{meta['id']}.md")
+ 
+ 
+ def interface_facts(config: Config, meta: dict) -> str:
+@@ -114,7 +140,7 @@ def page_facts(config: Config, meta: dict) -> str:
+     if meta["type"] == "layout":
+         from .ingest import layout_facts
+ 
+-        return layout_facts(config, meta)
++        return layout_facts(config, meta) + relationship_facts(config, f"layouts/{meta['id']}.md")
+     if meta["type"] == "interface":
+         return interface_facts(config, meta)
+     if meta["type"] == "method":
+diff --git a/staged/research-wiki/rwiki/ingest.py b/staged/research-wiki/rwiki/ingest.py
+index 0cb1ad1..f4166a9 100644
+--- a/staged/research-wiki/rwiki/ingest.py
++++ b/staged/research-wiki/rwiki/ingest.py
+@@ -102,6 +102,11 @@ def ingest_entry(config: Config, entry: Path, entry_id: str, taxonomy: dict) ->
+             or not isinstance(value, str) or not value.strip() for letter, value in panel_map.items()):
+         raise WikiError(f"缺少或非法 figure.panel_map，请用 sci-figure-replica 补上: {entry_id}")
+     path = config.wiki_root / "layouts" / f"{entry_id}.md"
++    if config.single_panel_only and len(panel_map) != 1:
++        # Existing historical records remain untouched, never reactivated by ingest --all.
++        if path.exists() and read_page(path)[0]["status"] == "archived":
++            return
++        raise WikiError("仅收录一个逻辑 panel；请先识别样式、确认代表裁图。整图只保留作溯源。")
+     relative_entry = entry.relative_to(config.gallery_root).as_posix()
+     if path.exists():
+         meta, body = read_page(path)
+@@ -134,5 +139,7 @@ def ingest_figure(config: Config, entry_id: str | None = None) -> None:
+     else:
+         for path in sorted(config.gallery_root.glob("*/figures/*/meta.json")):
+             expected_id = f"{path.parents[2].name}__{path.parent.name}"
++            if config.single_panel_only and len(read_json(path)["figure"].get("panel_map", {})) > 1:
++                continue
+             ingest_entry(config, path.parent, expected_id, taxonomy)
+         save(config, "ingest --all")
+diff --git a/staged/research-wiki/rwiki/layouts.py b/staged/research-wiki/rwiki/layouts.py
+index 8bf1808..7f88a02 100644
+--- a/staged/research-wiki/rwiki/layouts.py
++++ b/staged/research-wiki/rwiki/layouts.py
+@@ -91,7 +91,7 @@ def compose(config: Config, target: Path, data: Path, out: Path, style: Path | N
+     for panel in layout["panels"]:
+         for name, filename in panel["tables"].items():
+             check_table_data(name, specs[panel["letter"]]["tables"][name], data / filename)
+-    command = [str(config.python_exe), str(Path(__file__).with_name("compose_runner.py")),
++    command = [str(config.python_exe), "-X", "utf8", str(Path(__file__).with_name("compose_runner.py")),
+                "--wiki", str(config.wiki_root), "--layout", str((target / "layout.json").resolve()),
+                "--data", str(data.resolve()), "--out", str(out.resolve())]
+     if style is not None:
+diff --git a/staged/research-wiki/rwiki/lint.py b/staged/research-wiki/rwiki/lint.py
+index fc0ec63..4f7d729 100644
+--- a/staged/research-wiki/rwiki/lint.py
++++ b/staged/research-wiki/rwiki/lint.py
+@@ -10,6 +10,7 @@ from .interfaces import load_interface
+ from .spec import load_spec
+ from .facts import page_facts
+ from .templates import layout_ready_errors
++from .relations import relation_errors
+ 
+ REQUIRED = {
+     "layout": ("type", "id", "title", "status", "gallery_entry", "gallery_version",
+@@ -142,6 +143,10 @@ def lint(config: Config) -> list[str]:
+     for path in page_paths(root):
+         meta, body, parse_error = parse_page(path.read_text(encoding="utf-8"))
+         errors = [parse_error] if parse_error else metadata_errors(meta)
++        if not parse_error and meta.get("type") == "method":
++            errors.extend(relation_errors(config, meta))
++        elif "figure_relations" in meta:
++            errors.append("figure_relations 只能在 method 页声明；图端关系由方法页反向计算")
+         for error in errors:
+             report("ERROR", path, error)
+         if not errors:
+diff --git a/staged/research-wiki/rwiki/pages.py b/staged/research-wiki/rwiki/pages.py
+index 8bf0471..231ff71 100644
+--- a/staged/research-wiki/rwiki/pages.py
++++ b/staged/research-wiki/rwiki/pages.py
+@@ -7,9 +7,11 @@ from .errors import WikiError
+ 
+ 
+ def parse_page(text: str) -> tuple[dict, str, str | None]:
+-    if not text.startswith("---\n") or "\n---\n" not in text[4:]:
++    newline = "\r\n" if text.startswith("---\r\n") else "\n"
++    opening, closing = "---" + newline, newline + "---" + newline
++    if not text.startswith(opening) or closing not in text[len(opening):]:
+         return {}, text, "frontmatter 缺失或未闭合"
+-    header, body = text[4:].split("\n---\n", 1)
++    header, body = text[len(opening):].split(closing, 1)
+     try:
+         meta = yaml.safe_load(header)
+     except yaml.YAMLError as error:
+@@ -22,7 +24,10 @@ def parse_page(text: str) -> tuple[dict, str, str | None]:
+ def read_page(path: Path) -> tuple[dict, str]:
+     if not path.is_file():
+         raise WikiError(f"页面不存在: {path}")
+-    meta, body, error = parse_page(path.read_text(encoding="utf-8"))
++    # Author blocks are protected bytes, including their line endings.
++    # Universal newline conversion would silently alter them during facts refresh.
++    with path.open(encoding="utf-8", newline="") as stream:
++        meta, body, error = parse_page(stream.read())
+     if error:
+         raise WikiError(f"{path}: {error}")
+     return meta, body
+@@ -72,7 +77,7 @@ def section_bounds(body: str, title: str) -> tuple[int, int]:
+     # Ignore headings inside the author's block while retaining original offsets.
+     start, end = block_bounds(body, "user")
+     agent_body = body[:start] + re.sub(r"[^\n]", " ", body[start:end]) + body[end:]
+-    section = re.search(rf"^## {re.escape(title)}[ \t]*\n(.*?)(?=^## |\Z)",
++    section = re.search(rf"^## {re.escape(title)}[ \t]*\r?\n(.*?)(?=^## |\Z)",
+                         agent_body, re.M | re.S)
+     if section is None:
+         raise WikiError(f"缺少{title}节")
+diff --git a/staged/research-wiki/rwiki/server.py b/staged/research-wiki/rwiki/server.py
+index 121fd5d..0dba6e0 100644
+--- a/staged/research-wiki/rwiki/server.py
++++ b/staged/research-wiki/rwiki/server.py
+@@ -2,6 +2,7 @@ import json
+ import re
+ from datetime import datetime, timezone
+ from pathlib import Path
++from urllib.parse import quote
+ 
+ from fastapi import FastAPI, HTTPException
+ from fastapi.exceptions import RequestValidationError
+@@ -16,6 +17,10 @@ from .links import extract_links, resolve
+ from .pages import read_page, set_block, write_page
+ from .methods import confirm_method
+ from .store import save
++from .deletion import prepare, delete_archived
++from .relations import relations_for, all_relations
++from .code_assets import code_files, read_code, code_file
++from .workflow import workflow_snapshot
+ 
+ 
+ class RejectBody(BaseModel):
+@@ -34,6 +39,11 @@ class NoteBody(BaseModel):
+     text: StrictStr
+ 
+ 
++class DeleteBody(BaseModel):
++    confirmed: StrictBool
++    revision: StrictStr
++
++
+ def safe_file(root: Path, value: str) -> Path:
+     if Path(value).anchor:
+         raise HTTPException(404, "文件路径必须相对根目录")
+@@ -74,8 +84,42 @@ def create_app(config: Config) -> FastAPI:
+     def targets(body: str) -> set[Path]:
+         return {resolve(root, target).resolve() for target in extract_links(body)}
+ 
++    def figure_refs(meta: dict, body: str) -> list[str]:
++        if meta["type"] != "method":
++            return []
++        allowed = set(pages())
++        return sorted(target.relative_to(root).as_posix() for target in targets(body)
++                      if target in allowed and read_page(target)[0]["type"] in ("layout", "template"))
++
++    def preview(meta: dict) -> dict | None:
++        if meta["type"] not in ("layout", "template"):
++            return None
++        candidates = []
++        if meta["type"] == "template":
++            candidates.append((root / "templates" / meta["id"] / "preview.png", "replay", "模板回放"))
++            for lid in meta["layouts"]:
++                origin = root / "layouts" / f"{lid}.md"
++                if origin.is_file() and len(read_page(origin)[0]["panels"]) == 1:
++                    candidates.append((root / "layouts" / lid / "thumb.png", "source", "来源参考图 · 模板尚无回放"))
++        else:
++            candidates.append((root / "layouts" / meta["id"] / "thumb.png", "source", "来源图样"))
++        for path, kind, label in candidates:
++            resolved = path.resolve()
++            if resolved.is_relative_to(root) and resolved.is_file():
++                return {"url": "/files/wiki/" + quote(resolved.relative_to(root).as_posix()),
++                        "kind": kind, "label": label}
++        return {"url": None, "kind": "none", "label": "暂无预览图"}
++
+     def response(path: Path) -> dict:
+         meta, body = read_page(path)
++        reuse = None
++        if meta["type"] == "template":
++            spec_path = path.with_suffix("") / "spec.json"
++            spec = read_json(spec_path) if spec_path.is_file() else {}
++            sizing = spec.get("style", {}).get("sizing")
++            reuse = {"sizing_declared": isinstance(sizing, dict),
++                     "mode": sizing.get("mode") if isinstance(sizing, dict) else None,
++                     "profile": sizing.get("profile") if isinstance(sizing, dict) else None}
+         backlinks = []
+         for other in pages():
+             if other == path:
+@@ -86,7 +130,10 @@ def create_app(config: Config) -> FastAPI:
+                                   "title": other_meta["title"], "type": other_meta["type"]})
+         return {"path": path.relative_to(root).as_posix(), "meta": meta, "body": body,
+                 "backlinks": sorted(backlinks, key=lambda item: item["title"]),
+-                "gallery": read_json(gallery_file(meta)) if meta["type"] == "layout" else None}
++                "gallery": read_json(gallery_file(meta)) if meta["type"] == "layout" else None,
++                "reuse": reuse, "figure_refs": figure_refs(meta, body), "preview": preview(meta),
++                "workflow": workflow_snapshot(config).get(path.relative_to(root).as_posix()),
++                "relations": relations_for(config, path.relative_to(root).as_posix())}
+ 
+     def visual(kind: str, entry_id: str) -> tuple[Path, dict, str]:
+         if kind not in ("layouts", "templates", "methods"):
+@@ -112,8 +159,15 @@ def create_app(config: Config) -> FastAPI:
+ 
+     @app.get("/api/pages")
+     def list_pages():
+-        return [{"path": path.relative_to(root).as_posix(), "meta": read_page(path)[0]}
+-                for path in pages()]
++        records = []
++        workflow = workflow_snapshot(config)
++        for path in pages():
++            meta, body = read_page(path)
++            records.append({"path": path.relative_to(root).as_posix(), "meta": meta,
++                            "figure_refs": figure_refs(meta, body), "preview": preview(meta),
++                            "workflow": workflow.get(path.relative_to(root).as_posix()),
++                            "relations": relations_for(config, path.relative_to(root).as_posix())})
++        return records
+ 
+     @app.get("/api/page")
+     def get_page(path: str):
+@@ -144,8 +198,46 @@ def create_app(config: Config) -> FastAPI:
+         feed_pairs = {tuple(sorted((a, b))) for a, b in feeds}
+         links = [{"source": a, "target": b, "kind": "feeds"} for a, b in sorted(feeds)]
+         links.extend({"source": a, "target": b, "kind": "link"} for a, b in sorted(edges - feed_pairs))
++        links.extend({"source": item["method"], "target": item["figure"], "kind": "relation",
++                      "compatibility": item["compatibility"], "verification": item["verification"],
++                      "active": item["active"]}
++                     for item in all_relations(config) if item["method"] in ids and item["figure"] in ids)
+         return {"nodes": nodes, "links": links}
+ 
++    @app.get("/api/relations")
++    def semantic_relations(path: str | None = None):
++        if path is not None:
++            page_file(path)
++            return relations_for(config, path)
++        return all_relations(config)
++
++    def code_page(kind: str, entry_id: str) -> str:
++        path, _, _ = visual(kind, entry_id)
++        return path.relative_to(root).as_posix()
++
++    @app.get("/api/{kind}/{entry_id}/code-files")
++    def list_code(kind: str, entry_id: str):
++        try:
++            return code_files(config, code_page(kind, entry_id))
++        except WikiError as error:
++            raise HTTPException(404, str(error)) from error
++
++    @app.get("/api/{kind}/{entry_id}/code")
++    def get_code(kind: str, entry_id: str, variant: str, path: str):
++        try:
++            return read_code(config, code_page(kind, entry_id), variant, path)
++        except WikiError as error:
++            raise HTTPException(404, str(error)) from error
++
++    @app.get("/api/{kind}/{entry_id}/code-download")
++    def download_code(kind: str, entry_id: str, variant: str, path: str):
++        try:
++            target = code_file(config, code_page(kind, entry_id), variant, path)
++        except WikiError as error:
++            raise HTTPException(404, str(error)) from error
++        return FileResponse(target, filename=target.name, media_type="application/octet-stream",
++                            headers={"X-Content-Type-Options": "nosniff"})
++
+     @app.get("/api/log")
+     def log():
+         entries = [{"time": time, "message": message} for time, message in
+@@ -224,6 +316,24 @@ def create_app(config: Config) -> FastAPI:
+         meta["status"] = meta.pop("archived_from")
+         return finish(path, meta, body, f"restore {entry_id}")
+ 
++    @app.get("/api/{kind}/{entry_id}/delete-plan")
++    def deletion_plan(kind: str, entry_id: str):
++        path, _, _ = visual(kind, entry_id)
++        try:
++            return prepare(config, path)[0]
++        except WikiError as error:
++            raise HTTPException(409, str(error)) from error
++
++    @app.post("/api/{kind}/{entry_id}/delete")
++    def delete_item(kind: str, entry_id: str, request: DeleteBody):
++        if not request.confirmed:
++            raise HTTPException(422, "请明确确认永久删除")
++        path, _, _ = visual(kind, entry_id)
++        try:
++            return delete_archived(config, path, request.revision)
++        except WikiError as error:
++            raise HTTPException(409, str(error)) from error
++
+     @app.post("/api/templates/{entry_id}/signoff")
+     @app.post("/api/templates/{entry_id}/reject")
+     def no_template_signoff(entry_id: str):
+diff --git a/staged/research-wiki/rwiki/suggest.py b/staged/research-wiki/rwiki/suggest.py
+index 69f1790..0ff4f86 100644
+--- a/staged/research-wiki/rwiki/suggest.py
++++ b/staged/research-wiki/rwiki/suggest.py
+@@ -3,19 +3,116 @@ from decimal import Decimal, ROUND_HALF_UP
+ from .catalog import page_paths
+ from .config import Config
+ from .errors import WikiError
++from .interfaces import load_interface
+ 
+ from .pages import get_block, read_page, section_text
+ from .spec import load_spec
++from .relations import all_relations
++
++
++DISCOVERY_NOTE = "关键词与列覆盖仅为检索线索；需由课题 agent 核对研究目的、每行单位、量纲和方法前提。"
++
++
++def _section(body: str, title: str) -> str:
++    try:
++        return section_text(body, title)
++    except WikiError:
++        return ""
++
++
++def _code_context(config: Config, path) -> dict:
++    from .code_assets import code_files
++
++    inventory = code_files(config, path.relative_to(config.wiki_root).as_posix())
++    files = inventory["files"]
++    return {"available": bool(files),
++            "has_original": any(item["variant"] == "original" for item in files),
++            "has_reusable": any(item["variant"] == "reusable" for item in files),
++            "files": files, "note": inventory.get("note", ""),
++            "execution_note": "文件存在或复用版不证明可运行；验证范围见各文件记录。"}
++
++
++def _reusable_files(config: Config, path) -> list[str]:
++    return [item.relative_to(config.wiki_root).as_posix()
++            for item in sorted((path.with_suffix("") / "code").rglob("*"))
++            if item.is_file() and "__pycache__" not in item.parts
++            and item.suffix.lower() not in (".pyc", ".pyo")]
++
++
++def _requirements(config: Config, slugs: list[str]) -> dict:
++    requirements = {}
++    for slug in slugs:
++        try:
++            interface = load_interface(config.wiki_root, slug)
++            requirements[slug] = {"interface": slug, "title": interface["title"],
++                                  "columns": interface["columns"]}
++        except WikiError as error:
++            requirements[slug] = {"interface": slug, "columns": {}, "error": str(error)}
++    return requirements
++
++
++def _method_candidate(config: Config, path, meta: dict, body: str, query: str,
++                      columns: str | None, relations: list[dict]) -> dict:
++    requirements = _requirements(config, meta["inputs"])
++    applicable = _section(body, "适用")
++    searchable = "\n".join([meta["title"], *meta["tags"], applicable,
++                             _section(body, "用途"), _section(body, "输入")]).casefold()
++    score, reasons = 0, []
++    for word in dict.fromkeys(query.casefold().split()):
++        if word in searchable:
++            score += 1
++            reasons.append(f"关键词匹配：{word}")
++    if columns is not None:
++        points, details = column_score(requirements, columns)
++        score += points
++        reasons.extend(details)
++    declared = meta.get("prerequisites", [])
++    prerequisites = [item for item in declared if isinstance(item, str)] if isinstance(declared, list) else []
++    prerequisites = list(dict.fromkeys([*prerequisites, *(prerequisite for relation in relations
++                                                        for prerequisite in relation["prerequisites"])]))
++    return {"id": meta["id"], "kind": "method", "title": meta["title"],
++            "page": path.relative_to(config.wiki_root).as_posix(), "status": meta["status"],
++            "tags": meta["tags"], "score": score, "reasons": reasons,
++            "purpose": _section(body, "用途"), "applicable": applicable,
++            "not_applicable": _section(body, "不适用"), "input": _section(body, "输入"),
++            "inputs": meta["inputs"], "outputs": meta["outputs"],
++            "input_requirements": requirements, "prerequisites": prerequisites,
++            "relations": relations, "license": meta["license"],
++            "code_files": _reusable_files(config, path), "code_status": _code_context(config, path),
++            "project_readiness": "requires_project_review", "discovery_note": DISCOVERY_NOTE}
++
++
++def suggest_methods(config: Config, query: str = "", columns: str | None = None,
++                    limit: int = 3) -> list[dict]:
++    """Discover confirmed notes, including notes with no figure or matching columns.
++
++    This is inventory discovery, not scientific inference or permission to run.
++    Preconditions/materials must be assessed against the current project by its agent.
++    """
++    if limit < 0:
++        raise WikiError("--limit 不能为负数")
++    relations = all_relations(config, include_archived=False)
++    results = []
++    for path in sorted((config.wiki_root / "methods").glob("*.md")):
++        meta, body = read_page(path)
++        if meta.get("status") != "ready":
++            continue
++        linked = [record for record in relations
++                  if record["method"] == path.relative_to(config.wiki_root).as_posix()]
++        results.append(_method_candidate(config, path, meta, body, query, columns, linked))
++    return sorted(results, key=lambda item: (-item["score"], item["title"], item["id"]))[:limit]
+ 
+ 
+ def column_score(tables: dict, columns: str) -> tuple[float, list[str]]:
+     supplied = {column.strip().casefold() for column in columns.split(",")}
+     coverage = Decimal(0)
+     reasons = []
++    if not tables:
++        return 0, ["未声明可比较的输入列；仍保留候选，需核对实际材料与前提"]
+     for name, table in tables.items():
+         covered = [column for column in table["columns"] if column.casefold() in supplied]
+         missing = [column for column in table["columns"] if column.casefold() not in supplied]
+-        coverage += Decimal(len(covered)) / len(table["columns"])
++        coverage += Decimal(len(covered)) / len(table["columns"]) if table["columns"] else Decimal(0)
+         reasons.append(f"列覆盖（{name}）：覆盖 {'、'.join(covered) or '无'}；缺少 {'、'.join(missing) or '无'}")
+     score = (coverage / len(tables) * 4).quantize(Decimal("0.1"), rounding=ROUND_HALF_UP)
+     return float(score), reasons
+@@ -26,10 +123,13 @@ def suggest(config: Config, chart_types: list[str],
+     if limit < 0:
+         raise WikiError("--limit 不能为负数")
+     results = []
++    relations = all_relations(config, include_archived=False)
+     for path in page_paths(config.wiki_root):
+         meta, body = read_page(path)
+         if meta["type"] not in ("layout", "template") or meta["status"] != "ready":
+             continue
++        if getattr(config, "single_panel_only", False) and meta["type"] == "layout" and len(meta["panels"]) != 1:
++            continue
+         target = path.with_suffix("")
+         if meta["type"] == "template":
+             spec = load_spec(target)
+@@ -62,6 +162,12 @@ def suggest(config: Config, chart_types: list[str],
+                         "note": note, "tables": tables, "style_keys": style_keys}
+         if meta["type"] == "layout":
+             item["templates"] = meta["templates"]
++        linked = [relation for relation in relations if relation["figure"] == item["page"]
++                  and relation["method_status"] == "ready"]
++        item.update(relations=linked,
++                    prerequisites=list(dict.fromkeys(prerequisite for relation in linked
++                                                      for prerequisite in relation["prerequisites"])),
++                    code_status=_code_context(config, path), discovery_note=DISCOVERY_NOTE)
+         results.append(item)
+     return sorted(results, key=lambda item: (-item["score"], item["title"]))[:limit]
+ 
+@@ -71,7 +177,8 @@ def suggest_pipeline(config: Config, figure: str | None = None, query: str = "")
+     for path in sorted((config.wiki_root / "methods").glob("*.md")):
+         meta, body = read_page(path)
+         if meta["status"] == "ready":
+-            methods.append((meta, body))
++            methods.append((path, meta, body))
++    relations = all_relations(config, include_archived=False)
+     groups = []
+     for path in sorted((config.wiki_root / "templates").glob("*.md")):
+         template, body = read_page(path)
+@@ -80,8 +187,14 @@ def suggest_pipeline(config: Config, figure: str | None = None, query: str = "")
+         spec = load_spec(path.with_suffix(""))
+         required = {table["interface"] for table in spec["tables"].values()}
+         candidates = []
+-        for meta, method_body in methods:
+-            if not required <= set(meta["outputs"]):
++        figure_path = path.relative_to(config.wiki_root).as_posix()
++        figure_relations = [relation for relation in relations
++                            if relation["figure"] == figure_path and relation["method_status"] == "ready"]
++        for method_path, meta, method_body in methods:
++            method_page = method_path.relative_to(config.wiki_root).as_posix()
++            relation = next((record for record in figure_relations if record["method"] == method_page), None)
++            structural = bool(required) and required <= set(meta["outputs"])
++            if not structural and relation is None:
+                 continue
+             score, reasons = 0, []
+             applicable = section_text(method_body, "适用")
+@@ -91,14 +204,19 @@ def suggest_pipeline(config: Config, figure: str | None = None, query: str = "")
+                 if word in searchable:
+                     score += 1
+                     reasons.append(f"关键词匹配：{word}")
+-            code_files = [p.relative_to(config.wiki_root).as_posix()
+-                          for p in sorted((config.wiki_root / "methods" / meta["id"] / "code").rglob("*"))
+-                          if p.is_file()]
+-            candidates.append({"id": meta["id"], "title": meta["title"], "tags": meta["tags"],
+-                               "score": score, "reasons": reasons, "applicable": applicable,
+-                               "not_applicable": section_text(method_body, "不适用"),
+-                               "license": meta["license"], "code_files": code_files})
+-        groups.append({"id": template["id"], "title": template["title"], "interfaces": sorted(required),
++            candidate = _method_candidate(config, method_path, meta, method_body, "", None,
++                                          [relation] if relation else [])
++            candidate.update(score=score, reasons=reasons, structural_match=structural,
++                             match_basis="reviewed_relation" if relation else "interface_structure",
++                             compatibility=relation["compatibility"] if relation else None,
++                             verification=relation["verification"] if relation else None)
++            if not relation:
++                candidate["match_note"] = "仅接口结构匹配，语义与课题前提尚待核实；不代表直接可接。"
++            candidates.append(candidate)
++        groups.append({"id": template["id"], "kind": "template", "page": figure_path,
++                       "title": template["title"], "interfaces": sorted(required),
++                       "relations": figure_relations, "code_status": _code_context(config, path),
++                       "discovery_note": DISCOVERY_NOTE,
+                        "methods": sorted(candidates, key=lambda item: (-item["score"], item["title"], item["id"]))})
+     return sorted(groups, key=lambda group: (-max((m["score"] for m in group["methods"]), default=0),
+                                            group["title"], group["id"]))
+diff --git a/staged/research-wiki/rwiki/templates.py b/staged/research-wiki/rwiki/templates.py
+index 8548103..65de208 100644
+--- a/staged/research-wiki/rwiki/templates.py
++++ b/staged/research-wiki/rwiki/templates.py
+@@ -1,6 +1,7 @@
+ import csv
+ import json
+ import shutil
++from copy import deepcopy
+ from pathlib import Path
+ 
+ from .config import Config, read_json
+@@ -15,12 +16,8 @@ from .verification import record_preview
+ 
+ 
+ def pending(config: Config) -> list[str]:
+-    ids = []
+-    for path in sorted((config.wiki_root / "layouts").glob("*.md")):
+-        meta, _ = read_page(path)
+-        if meta["status"] == "pending_template":
+-            ids.append(meta["id"])
+-    return ids
++    from .workflow import pending_sources
++    return pending_sources(config)
+ 
+ 
+ def require_pending(meta: dict) -> None:
+@@ -84,6 +81,10 @@ def scaffold_template(config: Config, entry_id: str, chart_type: str, panels: li
+     spec = {"entry": entry, "language": language, "tables": tables, "style": {}}
+     if language == "python":
+         spec["panel"] = "code/panel.py"
++        if config.function_defaults:
++            spec["style"] = deepcopy(config.function_defaults)
++            shutil.copyfile(Path(__file__).with_name("sizing.py"), target / "code/sizing.py")
++            shutil.copyfile(Path(__file__).parents[1] / "assets/function_render.py", target / entry)
+     (target / "spec.json").write_text(json.dumps(spec, ensure_ascii=False, indent=2) + "\n",
+                                       encoding="utf-8", newline="\n")
+     title = f"{chart_type} · {meta['title']}"
+@@ -172,7 +173,8 @@ def render(config: Config, entry_id: str, data_dir: Path, out_dir: Path,
+         if unknown:
+             raise WikiError(f"未知 style 键: {', '.join(sorted(unknown))}")
+     executable = config.python_exe if spec["language"] == "python" else config.rscript_exe
+-    command = [str(executable), spec["entry"], "--data", str(data_dir.resolve()),
++    command = [str(executable)] + (["-X", "utf8"] if spec["language"] == "python" else [])
++    command += [spec["entry"], "--data", str(data_dir.resolve()),
+                "--out", str(out_dir.resolve())]
+     if style is not None:
+         command.extend(["--style", str(style.resolve())])
+diff --git a/staged/research-wiki/tests/test_t3.py b/staged/research-wiki/tests/test_t3.py
+index f254afd..dae4119 100644
+--- a/staged/research-wiki/tests/test_t3.py
++++ b/staged/research-wiki/tests/test_t3.py
+@@ -107,7 +107,8 @@ def test_suggest_metadata_and_author_note_are_returned(candidates):
+     config, path = candidates
+     first = suggestions(path)[0]
+     assert set(first) == {"id", "title", "score", "reasons", "page", "preview", "applicable",
+-                          "not_applicable", "note", "tables", "style_keys", "kind"}
++                          "not_applicable", "note", "tables", "style_keys", "kind", "relations",
++                          "prerequisites", "code_status", "discovery_note"}
+     assert first["page"] == "templates/alpha.md"
+     assert first["preview"] == str((config.wiki_root / "templates/alpha/preview.png").resolve())
+     assert first["applicable"] == "用于比较 模型贡献。"
+diff --git a/staged/research-wiki/tests/test_templates.py b/staged/research-wiki/tests/test_templates.py
+index 9924e9d..e385dbf 100644
+--- a/staged/research-wiki/tests/test_templates.py
++++ b/staged/research-wiki/tests/test_templates.py
+@@ -69,7 +69,8 @@ def test_pending_lists_only_pending_template(approved):
+     meta, body = read_page(page)
+     meta["status"] = "ready"
+     write_page(page, meta, body)
+-    assert run_cli(path, "pending").stdout == ""
++    # A raw ready flag cannot hide missing template coverage from remaining work.
++    assert run_cli(path, "pending").stdout == LAYOUT_ID + "\n"
+ 
+ 
+ def test_scaffold_rejects_wrong_state(ingested):

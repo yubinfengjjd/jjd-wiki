@@ -1,0 +1,75 @@
+{
+  "label": "devin-dot-review1",
+  "pid": 29192,
+  "cwd": "E:\\research-wiki-env\\work\\scp-ingestion-20261025",
+  "status": "returned",
+  "tool_events": 288,
+  "message_chars": 3762,
+  "updated_at": "2026-10-25T09:51:15Z",
+  "load_session_supported": true,
+  "last_tool": "Ran Get-FileHash, ForEach-Object",
+  "session_id": "valley-handsaw",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    16904,
+    14288,
+    33576,
+    24936,
+    32872,
+    24696,
+    33720,
+    2684,
+    33624,
+    9124,
+    9104,
+    10824,
+    13380,
+    33268,
+    16340,
+    31984,
+    17672,
+    30704,
+    23600,
+    32740,
+    29312,
+    5384,
+    16492,
+    15644,
+    33388,
+    26680,
+    22064,
+    3764,
+    23812,
+    18176,
+    29736,
+    22804,
+    11664,
+    14732,
+    31536,
+    15556,
+    19424
+  ],
+  "stop_reason": "end_turn"
+}

@@ -1,0 +1,37 @@
+{
+  "wiki_root": "E:\\research-wiki\\知识库",
+  "gallery_root": "E:\\research-wiki\\画廊",
+  "taxonomy": "C:\\Users\\86186\\.claude\\skills\\sci-figure-replica\\assets\\scenario_taxonomy.yaml",
+  "python_exe": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
+  "rscript_exe": "D:\\R-4.5.0\\bin\\Rscript.exe",
+  "port": 8787,
+  "function_defaults": {
+    "sizing": {
+      "mode": "adaptive",
+      "profile": "unbound",
+      "table": null,
+      "x": null,
+      "y": null,
+      "item_width_in": 0.8,
+      "item_height_in": 0.32,
+      "plot_width_in": 5.4,
+      "plot_height_in": 4.4,
+      "margins_in": [
+        0.9,
+        0.25,
+        0.85,
+        0.55
+      ],
+      "min_width_in": 3.2,
+      "min_height_in": 2.8,
+      "max_width_in": null,
+      "max_height_in": null,
+      "width_in": null,
+      "height_in": null,
+      "label_fontsize": 11,
+      "label_rotation": 45,
+      "label_gap_in": 0.12
+    }
+  },
+  "single_panel_only": true
+}

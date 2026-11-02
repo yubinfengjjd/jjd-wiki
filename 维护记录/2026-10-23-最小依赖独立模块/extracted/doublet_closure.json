@@ -1,0 +1,22 @@
+{
+  {"name": "db_scDblFinder", "file": "SCP-cellqc.R", "from": 17, "to": 31},
+  {"name": "db_scds", "file": "SCP-cellqc.R", "from": 50, "to": 70},
+  {"name": "db_Scrublet", "file": "SCP-cellqc.R", "from": 89, "to": 113},
+  {"name": "db_DoubletDetection", "file": "SCP-cellqc.R", "from": 132, "to": 159},
+  {"name": "RunDoubletCalling", "file": "SCP-cellqc.R", "from": 180, "to": 215},
+  {"name": "check_DataType", "file": "SCP-workflow.R", "from": 14, "to": 47},
+  {"name": "PrepareEnv", "file": "utils.R", "from": 13, "to": 129},
+  {"name": "Env_requirements", "file": "utils.R", "from": 144, "to": 265},
+  {"name": "installed_Python_pkgs", "file": "utils.R", "from": 271, "to": 285},
+  {"name": "exist_Python_pkgs", "file": "utils.R", "from": 291, "to": 330},
+  {"name": "env_exist", "file": "utils.R", "from": 336, "to": 353},
+  {"name": "get_envname", "file": "utils.R", "from": 355, "to": 362},
+  {"name": "find_conda", "file": "utils.R", "from": 367, "to": 384},
+  {"name": "conda_install", "file": "utils.R", "from": 389, "to": 453},
+  {"name": "conda_python", "file": "utils.R", "from": 458, "to": 478},
+  {"name": "run_Python", "file": "utils.R", "from": 480, "to": 492},
+  {"name": "check_Python", "file": "utils.R", "from": 510, "to": 546},
+  {"name": "check_R", "file": "utils.R", "from": 558, "to": 617},
+  {"name": "as_matrix", "file": "utils.R", "from": 831, "to": 841}
+}
+

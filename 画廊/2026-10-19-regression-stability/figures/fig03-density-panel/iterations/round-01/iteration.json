@@ -1,0 +1,16 @@
+{
+  "round": 1,
+  "exit_code": 0,
+  "timeout": false,
+  "changes": "Initial representative single-panel reconstruction using previous estimates; visual review complete with WARNs.",
+  "source_sha256": "1cc8c8f6db3cd30b935cf09ed255b093dc2e71c2527cd95dda8b880281e7a702",
+  "code_sha256": "4c6bcb49f8d612b961186e261ce016f69146355155224f6df74f860b7c996a4c",
+  "outputs": {
+    "replica.png": "009ffa8908779b5e048ea9388806c5d7a3617325c9ea8259f95f6e72b8d1ab33",
+    "replica.pdf": "c25e4c57c399076e2fbd7f827f8d17b23619145ee36ce9dfbe887a72512b4120",
+    "replica.svg": "1fce16ecd36dac46a3c1bd4a9aa73c24a1c3b55697456a9059240652e2e275cf"
+  },
+  "run_evidence": "run.log, stdout.txt, stderr.txt",
+  "qa": "qa_report.md",
+  "author_signoff": null
+}

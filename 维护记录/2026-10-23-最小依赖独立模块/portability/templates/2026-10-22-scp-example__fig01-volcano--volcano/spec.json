@@ -1,0 +1,49 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "de": {
+      "interface": "render-de-results",
+      "description": "单个比较组的 DE 结果；group1 必须唯一，pct_1/pct_2 为 0–1 阳性细胞比例，p_val_adj 必须 > 0"
+    }
+  },
+  "style": {
+    "group_col": "group1",
+    "group": null,
+    "columns": null,
+    "x_metric": "diff_pct",
+    "de_threshold": "avg_log2FC > 0 & p_val_adj < 0.05",
+    "palette": "RdBu",
+    "palcolor": null,
+    "pt_size": 1,
+    "pt_alpha": 1,
+    "cols_highlight": "black",
+    "sizes_highlight": 1,
+    "alpha_highlight": 1,
+    "stroke_highlight": 0.5,
+    "nlabel": 8,
+    "features_label": null,
+    "label_fg": "black",
+    "label_bg": "white",
+    "label_bg_r": 0.1,
+    "label_size": 4,
+    "xlab": null,
+    "ylab": "-log10(p-adjust)",
+    "aspect_ratio": null,
+    "seed": 1,
+    "dpi": 200,
+    "width_in": 7,
+    "height_in": 6,
+    "sizing": {
+      "mode": "adaptive",
+      "base_width_in": 7,
+      "base_height_in": 6,
+      "base_label_chars": 8,
+      "per_label_char_in": 0.12,
+      "base_labels": 16,
+      "per_label_in": 0.1,
+      "max_width_in": null,
+      "max_height_in": null
+    }
+  }
+}

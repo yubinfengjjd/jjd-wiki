@@ -1,0 +1,25 @@
+{
+  "cell_col": "cell",
+  "set_cols": [
+    "Ductal",
+    "Endocrine",
+    "G1S",
+    "G2M"
+  ],
+  "set_level": "TRUE",
+  "palette": "Paired",
+  "palcolor": null,
+  "alpha": 1,
+  "label": true,
+  "label_size": 3.5,
+  "label_fg": "black",
+  "label_bg": "white",
+  "label_bg_r": 0.1,
+  "seed": 11,
+  "dpi": 150,
+  "width_in": 8,
+  "height_in": 6,
+  "sizing": {
+    "mode": "fixed"
+  }
+}

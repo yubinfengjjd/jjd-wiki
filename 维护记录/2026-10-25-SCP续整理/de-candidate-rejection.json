@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-25T09:07:11.096194+00:00",
+  "scope": "candidate analysis.R only restored to exact initial bytes; original formal library untouched",
+  "reasons": [
+    "new cleanup broke second actual call",
+    "implicit temp registry and relaxed restored flag rejected",
+    "repeated package .onLoad rejected as broad lifecycle reinitialization"
+  ],
+  "backup": "E:\\research-wiki\\维护记录\\2026-10-25-SCP续整理\\unaccepted-de-candidate",
+  "followup": "DE maintenance deferred; sole next coding scope GroupHeatmap"
+}

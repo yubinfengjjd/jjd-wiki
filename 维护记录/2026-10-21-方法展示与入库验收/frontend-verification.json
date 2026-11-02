@@ -1,0 +1,1 @@
+{"passed":true,"checks":29,"regressionVisuals":2,"shapVisuals":3,"underlyingRegressionRelations":4,"inventory":{"sources":2,"templates":5,"historical":3},"scope":"actual PageView SSR, display dedupe, provenance, compatibility and full-record preservation"}

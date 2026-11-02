@@ -1,0 +1,26 @@
+{
+  "pages": 1,
+  "page_size_pt": [
+    864.0,
+    252.0
+  ],
+  "extractable_text_chars": 253,
+  "fonts": [
+    {
+      "name": "/F2",
+      "font": "/GHKBDO+DejaVuSans-Oblique",
+      "embedded": true
+    },
+    {
+      "name": "/F3",
+      "font": "/CSIITC+DejaVuSans",
+      "embedded": true
+    },
+    {
+      "name": "/F1",
+      "font": "/HEPQGD+ArialMT",
+      "embedded": true
+    }
+  ],
+  "limitation": "Structural checks only; independent PDF/SVG renderer visual inspection not performed."
+}

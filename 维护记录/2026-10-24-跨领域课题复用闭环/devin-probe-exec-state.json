@@ -1,0 +1,36 @@
+{
+  "label": "devin-probe-exec",
+  "pid": 27848,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\probe",
+  "status": "returned",
+  "tool_events": 8,
+  "message_chars": 658,
+  "updated_at": "2026-10-24T05:53:01Z",
+  "load_session_supported": true,
+  "last_tool": "",
+  "session_id": "sour-parallel",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "stop_reason": "end_turn"
+}

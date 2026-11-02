@@ -1,0 +1,74 @@
+[
+  {
+    "host": ".agents",
+    "skill": "research-wiki",
+    "files_verified": 268,
+    "changed": [
+      "rwiki/acceptance.py",
+      "rwiki/cli.py",
+      "rwiki/ingest.py",
+      "rwiki/suggest.py",
+      "rwiki/templates.py",
+      "rwiki/workflow.py",
+      "tests/test_acceptance_gates.py",
+      "tests/test_t3.py"
+    ],
+    "stale_app_removed": []
+  },
+  {
+    "host": ".agents",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "host": ".codex",
+    "skill": "research-wiki",
+    "files_verified": 268,
+    "changed": [
+      "rwiki/acceptance.py",
+      "rwiki/cli.py",
+      "rwiki/ingest.py",
+      "rwiki/suggest.py",
+      "rwiki/templates.py",
+      "rwiki/workflow.py",
+      "tests/test_acceptance_gates.py",
+      "tests/test_t3.py"
+    ],
+    "stale_app_removed": []
+  },
+  {
+    "host": ".codex",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  },
+  {
+    "host": ".claude",
+    "skill": "research-wiki",
+    "files_verified": 268,
+    "changed": [
+      "rwiki/acceptance.py",
+      "rwiki/cli.py",
+      "rwiki/ingest.py",
+      "rwiki/suggest.py",
+      "rwiki/templates.py",
+      "rwiki/workflow.py",
+      "tests/test_acceptance_gates.py",
+      "tests/test_t3.py"
+    ],
+    "stale_app_removed": []
+  },
+  {
+    "host": ".claude",
+    "skill": "sci-figure-replica",
+    "files_verified": 136,
+    "changed": [
+      "SKILL.md"
+    ]
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "label": "devin-batch2",
+  "pid": 17180,
+  "cwd": "E:\\research-wiki-env\\work\\wiki-cross-domain-20261024\\development",
+  "status": "failed",
+  "tool_events": 420,
+  "message_chars": 3624,
+  "updated_at": "2026-10-24T12:30:00Z",
+  "load_session_supported": true,
+  "last_tool": "Ran python.exe",
+  "session_id": "functional-tartan",
+  "modes": [
+    {
+      "id": "accept-edits",
+      "name": "Code"
+    },
+    {
+      "id": "smart",
+      "name": "Smart"
+    },
+    {
+      "id": "ask",
+      "name": "Ask"
+    },
+    {
+      "id": "plan",
+      "name": "Plan"
+    },
+    {
+      "id": "bypass",
+      "name": "Bypass Permissions"
+    }
+  ],
+  "model": "swe-2-max",
+  "owned_terminal_pids": [
+    26280,
+    26092,
+    1148,
+    25096,
+    26424,
+    25820,
+    14476,
+    26484,
+    24580,
+    6148,
+    25048,
+    27552,
+    25120,
+    27208,
+    16780,
+    13500,
+    26192,
+    26068,
+    25864,
+    20148,
+    26964,
+    21984
+  ],
+  "error": "ACP stdout closed",
+  "partial_result": "E:\\research-wiki\\维护记录\\2026-10-24-跨领域课题复用闭环\\devin-batch2-result-partial.md"
+}

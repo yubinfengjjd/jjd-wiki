@@ -1,0 +1,7 @@
+plot_type: area
+stat_type: percent
+position: stack
+label: TRUE
+size_in: 8x6
+dpi: 150
+png_md5: 4ca85bf354fa95732405115c23293133

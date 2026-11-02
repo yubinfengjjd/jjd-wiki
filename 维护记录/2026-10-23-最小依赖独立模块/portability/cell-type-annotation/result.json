@@ -1,0 +1,30 @@
+{
+  "method": "cell-type-annotation",
+  "state": "not_run",
+  "error": "Missing R dependency: SingleR; automatic installation is disabled",
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" cell-type-annotation \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-type-annotation\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-type-annotation/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\cell-type-annotation\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-type-annotation/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/cell-type-annotation/result-input.rds",
+  "case": {
+    "label": "SingleR annotation",
+    "parameters": {
+      "parameters": {
+        "ref_group": "CellType",
+        "query_assay": "RNA",
+        "ref_assay": "RNA"
+      }
+    }
+  },
+  "code_sha256": {
+    "analysis.R": "4b22e86b85b6d0f9b31b023347bf86f930b78aebafecb77009aafc970de3f932",
+    "annotation_native.R": "b449540b1bd281b8f9d0a925a725a4cabbbcda332e29638e20e2acd24de35be4"
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "started_at": "2026-10-23 16:00:58 UTC",
+  "executed_at": "2026-10-23 16:01:02 UTC"
+}

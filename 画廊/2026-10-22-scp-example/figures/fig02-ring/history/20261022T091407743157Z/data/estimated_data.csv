@@ -1,0 +1,16 @@
+"group","celltype","proportion"
+"Ductal","G1",0.343096234309623
+"Ngn3 low EP","G1",0.555555555555556
+"Ngn3 high EP","G1",0.797619047619048
+"Pre-endocrine","G1",0.993333333333333
+"Endocrine","G1",1
+"Ductal","S",0.443514644351464
+"Ngn3 low EP","S",0.234567901234568
+"Ngn3 high EP","S",0.148809523809524
+"Pre-endocrine","S",0.00666666666666667
+"Endocrine","S",0
+"Ductal","G2M",0.213389121338912
+"Ngn3 low EP","G2M",0.209876543209877
+"Ngn3 high EP","G2M",0.0535714285714286
+"Pre-endocrine","G2M",0
+"Endocrine","G2M",0

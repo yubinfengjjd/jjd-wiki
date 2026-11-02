@@ -1,0 +1,19 @@
+{
+  "method": "monocle3-plot",
+  "state": "not_run",
+  "error": "plot layer requires a monocle3 core result; monocle3 is not installed",
+  "input_unchanged": true,
+  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" monocle3-plot \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3-plot\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3-plot/result.rds\"",
+  "script": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R",
+  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\monocle3-plot\\code",
+  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "out_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3-plot/result.rds",
+  "input_file": "E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3-plot/result-input.rds",
+  "case": {
+    "label": "monocle3-plot",
+    "parameters": []
+  },
+  "R_version": "4.5.0",
+  "platform": "x86_64-w64-mingw32",
+  "executed_at": "2026-10-23 10:11:00 UTC"
+}

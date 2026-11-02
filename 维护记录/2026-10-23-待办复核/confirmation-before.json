@@ -1,0 +1,972 @@
+{
+  "implementations": {
+    "methods/batch-integration.md": [
+      {
+        "id": "scp-seurat",
+        "title": "SCP Seurat_integrate 锚点分支",
+        "state": "verified",
+        "scope": "实际调用 SCP Seurat_integrate：pancreas_sub 120 细胞拆成两个显式批次，300 HVF、20 PC、k.weight=30；比较封装与上游 UMAP。"
+      },
+      {
+        "id": "scp-harmony",
+        "title": "SCP Harmony_integrate 分支",
+        "state": "not_run",
+        "scope": "SCP Harmony_integrate 分支；本机 R 库无 harmony。"
+      }
+    ],
+    "methods/cell-clustering.md": [
+      {
+        "id": "seurat-findclusters",
+        "title": "SCP Standard_SCP 聚类分支",
+        "state": "verified",
+        "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。"
+      }
+    ],
+    "methods/cell-quality-control.md": [
+      {
+        "id": "scp-runcellqc",
+        "title": "SCP RunCellQC 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunCellQC 于 pancreas_sub 的 80 个细胞；比较封装与上游 CellQC、检查输入未变。"
+      }
+    ],
+    "methods/cell-type-annotation.md": [
+      {
+        "id": "scp-singler",
+        "title": "SCP RunSingleR 分支",
+        "state": "not_run",
+        "scope": "SCP RunSingleR 分支；本机 R 库无 SingleR。"
+      }
+    ],
+    "methods/differential-expression.md": [
+      {
+        "id": "scp-detest",
+        "title": "SCP RunDEtest 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunDEtest：pancreas_sub 全数据，Ductal vs Endocrine，wilcox；比较封装与上游 AllMarkers 表。"
+      }
+    ],
+    "methods/dimensionality-reduction.md": [
+      {
+        "id": "scp-dimreduction",
+        "title": "SCP RunDimReduction 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunDimReduction：pancreas_sub 200 细胞，100 HVF、20 PC、UMAP；比较封装与上游 UMAP。"
+      }
+    ],
+    "methods/doublet-detection.md": [
+      {
+        "id": "scp-rundoublet",
+        "title": "SCP RunDoubletCalling 的 scDblFinder 分支",
+        "state": "not_run",
+        "scope": "SCP RunDoubletCalling 的 scDblFinder 分支；本机 R 库无 scDblFinder。"
+      }
+    ],
+    "methods/dynamic-feature-analysis.md": [
+      {
+        "id": "scp-dynamicfeatures",
+        "title": "SCP RunDynamicFeatures 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunDynamicFeatures：pancreas_sub 80 细胞，显式 fixture pseudotime，Gcg/Krt19；比较 GAM 表。pseudotime 为软件夹具，不代表真实轨迹。"
+      }
+    ],
+    "methods/gene-set-enrichment.md": [
+      {
+        "id": "scp-enrichment",
+        "title": "SCP RunEnrichment 的 ORA 分支",
+        "state": "verified",
+        "scope": "实际调用 SCP RunEnrichment 的 ORA 分支，显式 TERM2GENE/TERM2NAME（两个合成基因集），与上游结果表比较。"
+      }
+    ],
+    "methods/gene-set-scoring.md": [
+      {
+        "id": "scp-cellscoring",
+        "title": "SCP CellScoring 的 Seurat/AddModuleScore 分支",
+        "state": "verified",
+        "scope": "实际调用 SCP CellScoring 的 Seurat/AddModuleScore 分支，显式 name='X' 避开上游空 name 的列名缺陷；与上游分数比较。"
+      }
+    ],
+    "methods/reference-mapping.md": [
+      {
+        "id": "seurat-label-transfer",
+        "title": "Seurat 锚点标签转移分支",
+        "state": "verified",
+        "scope": "从 SCP RunSeuratMap 提取 FindTransferAnchors + TransferData 标签转移分支；pancreas_sub 300 参考/700 查询，检查每细胞预测、顺序与 anchor 数。不包含 UMAP 投影。"
+      },
+      {
+        "id": "scp-runseuratmap",
+        "title": "SCP RunSeuratMap UMAP 投影分支",
+        "state": "not_run",
+        "scope": "SCP RunSeuratMap 的 UMAP 投影分支在 Seurat 5.6 下失败；标签转移另由 seurat-label-transfer 分支验证。"
+      }
+    ],
+    "methods/regression-resampling-evaluation.md": [
+      {
+        "id": "summarize-predictions",
+        "title": "折外预测指标汇总",
+        "state": "verified",
+        "scope": "手算折外指标、常数预测 r 未定义、不修改输入、完整 coverage 拒绝。不包含训练或重采样。"
+      }
+    ],
+    "methods/rna-velocity.md": [
+      {
+        "id": "scp-scvelo",
+        "title": "SCP RunSCVELO 分支",
+        "state": "not_run",
+        "scope": "SCP RunSCVELO 分支需要 reticulate 与 scvelo；本机未设置 RETICULATE_PYTHON，且未安装 scvelo/scanpy。"
+      }
+    ],
+    "methods/scp-annotation-projection.md": [],
+    "methods/scp-cellqc-doublet.md": [],
+    "methods/scp-de-enrichment-dynamic.md": [],
+    "methods/scp-integration.md": [],
+    "methods/scp-local-source.md": [],
+    "methods/scp-standard-workflow.md": [],
+    "methods/scp-trajectory-velocity.md": [],
+    "methods/scp-visualization-interface.md": [
+      {
+        "id": "scp-table-adapters",
+        "title": "SCP/Seurat 表到 Wiki 接口适配层",
+        "state": "verified",
+        "scope": "SCP/Seurat 导出表到 Wiki 绘图接口的适配层；20 个合成表检查。未验证 SCP 绘图函数视觉等价。"
+      }
+    ],
+    "methods/scrna-marker-annotation.md": [],
+    "methods/scrna-pathway-signature-ensemble.md": [],
+    "methods/scrna-preprocess-doublet-qc-harmony.md": [],
+    "methods/shap-explanation.md": [
+      {
+        "id": "shap-explain-model",
+        "title": "SHAP 纯函数封装",
+        "state": "verified",
+        "scope": "解析线性模型 SHAP 精确解；检查 summary/samples 表、百分比、输入与模型未变、特征顺序保护。"
+      }
+    ],
+    "methods/trajectory-inference.md": [
+      {
+        "id": "scp-slingshot",
+        "title": "SCP RunSlingshot 封装",
+        "state": "verified",
+        "scope": "实际调用 SCP RunSlingshot：pancreas_sub 80 细胞，CellType 分组，UMAP 1:2；比较 pseudotime 与 BranchID。"
+      }
+    ]
+  },
+  "user": {
+    "interfaces/regression-fold-metrics.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/regression-predictions.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-box-summaries.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-category-points.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-cell-feature-values.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-cell-linkage.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-cell-membership.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-cell-metadata.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-cell-proportions.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-correlation-heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-de-results.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-dotplot-long.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-feature-heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-group-heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-group-summaries.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-grouped-values.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-marginal-bars.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-scatter-rgb.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-umap-feature-long.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/render-umap-groups.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/shap-samples.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "interfaces/shap-summary.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-19-regression-stability__fig01-density-grid.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-19-regression-stability__fig02-metric-boxplots.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-19-regression-stability__fig03-density-panel.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig01-volcano.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig02-ring.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig03-pie.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig04-rose.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig05-trend.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig06-area.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig07-dot.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig08-group-heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig09-bar.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig10-sankey.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig11-chord.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig12-venn.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig13-upset.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig14-feature-heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "layouts/2026-10-22-scp-example__fig16-cell-density.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/batch-integration.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/cell-clustering.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/cell-quality-control.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/cell-type-annotation.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/differential-expression.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/dimensionality-reduction.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/doublet-detection.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/dynamic-feature-analysis.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/gene-set-enrichment.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/gene-set-scoring.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/reference-mapping.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/regression-resampling-evaluation.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/rna-velocity.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-annotation-projection.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-cellqc-doublet.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-de-enrichment-dynamic.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-integration.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-local-source.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-standard-workflow.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-trajectory-velocity.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scp-visualization-interface.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scrna-marker-annotation.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scrna-pathway-signature-ensemble.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/scrna-preprocess-doublet-qc-harmony.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/shap-explanation.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "methods/trajectory-inference.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig02-ring--ring.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig03-pie--pie.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig04-rose--rose.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig05-trend--trend.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig06-area--area.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig07-dot--dot.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig09-bar--bar.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig11-chord--chord.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig12-venn--venn.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig13-upset--upset.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "templates/2026-10-22-scp-example__fig16-cell-density--ridge.md": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "fields": {
+    "chart-types/area.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/bar.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/beeswarm.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/boxplot.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/chord.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/density-scatter.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/dot.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/dotplot.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/errorbar.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/heatmap.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/pie.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/radial-bar.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/ridge.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/ring.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/rose.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/sankey.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/stacked-bar-flow.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/trend.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/umap.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/upset.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/venn.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/violin.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "chart-types/volcano.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/regression-fold-metrics.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/regression-predictions.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-box-summaries.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-category-points.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-cell-feature-values.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-cell-linkage.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-cell-membership.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-cell-metadata.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-cell-proportions.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-correlation-heatmap.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-de-results.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-dotplot-long.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-feature-heatmap.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-group-heatmap.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-group-summaries.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-grouped-values.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-marginal-bars.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-scatter-rgb.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-umap-feature-long.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/render-umap-groups.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/shap-samples.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "interfaces/shap-summary.md": {
+      "id": null,
+      "favorite": null,
+      "archived_from": null
+    },
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f.md": {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f",
+      "favorite": false,
+      "archived_from": "ready"
+    },
+    "layouts/2026-10-19-regression-stability__fig01-density-grid.md": {
+      "id": "2026-10-19-regression-stability__fig01-density-grid",
+      "favorite": false,
+      "archived_from": "pending_template"
+    },
+    "layouts/2026-10-19-regression-stability__fig02-metric-boxplots.md": {
+      "id": "2026-10-19-regression-stability__fig02-metric-boxplots",
+      "favorite": false,
+      "archived_from": "pending_template"
+    },
+    "layouts/2026-10-19-regression-stability__fig03-density-panel.md": {
+      "id": "2026-10-19-regression-stability__fig03-density-panel",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md": {
+      "id": "2026-10-19-regression-stability__fig04-boxplot-panel",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig01-volcano.md": {
+      "id": "2026-10-22-scp-example__fig01-volcano",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig02-ring.md": {
+      "id": "2026-10-22-scp-example__fig02-ring",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig03-pie.md": {
+      "id": "2026-10-22-scp-example__fig03-pie",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig04-rose.md": {
+      "id": "2026-10-22-scp-example__fig04-rose",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig05-trend.md": {
+      "id": "2026-10-22-scp-example__fig05-trend",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig06-area.md": {
+      "id": "2026-10-22-scp-example__fig06-area",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig07-dot.md": {
+      "id": "2026-10-22-scp-example__fig07-dot",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig08-group-heatmap.md": {
+      "id": "2026-10-22-scp-example__fig08-group-heatmap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig09-bar.md": {
+      "id": "2026-10-22-scp-example__fig09-bar",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig10-sankey.md": {
+      "id": "2026-10-22-scp-example__fig10-sankey",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig11-chord.md": {
+      "id": "2026-10-22-scp-example__fig11-chord",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig12-venn.md": {
+      "id": "2026-10-22-scp-example__fig12-venn",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig13-upset.md": {
+      "id": "2026-10-22-scp-example__fig13-upset",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig14-feature-heatmap.md": {
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig15-cell-cor-heatmap.md": {
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "layouts/2026-10-22-scp-example__fig16-cell-density.md": {
+      "id": "2026-10-22-scp-example__fig16-cell-density",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/batch-integration.md": {
+      "id": "batch-integration",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/cell-clustering.md": {
+      "id": "cell-clustering",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/cell-quality-control.md": {
+      "id": "cell-quality-control",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/cell-type-annotation.md": {
+      "id": "cell-type-annotation",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/differential-expression.md": {
+      "id": "differential-expression",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/dimensionality-reduction.md": {
+      "id": "dimensionality-reduction",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/doublet-detection.md": {
+      "id": "doublet-detection",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/dynamic-feature-analysis.md": {
+      "id": "dynamic-feature-analysis",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/gene-set-enrichment.md": {
+      "id": "gene-set-enrichment",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/gene-set-scoring.md": {
+      "id": "gene-set-scoring",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/reference-mapping.md": {
+      "id": "reference-mapping",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/regression-resampling-evaluation.md": {
+      "id": "regression-resampling-evaluation",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/rna-velocity.md": {
+      "id": "rna-velocity",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-annotation-projection.md": {
+      "id": "scp-annotation-projection",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-cellqc-doublet.md": {
+      "id": "scp-cellqc-doublet",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-de-enrichment-dynamic.md": {
+      "id": "scp-de-enrichment-dynamic",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-integration.md": {
+      "id": "scp-integration",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-local-source.md": {
+      "id": "scp-local-source",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-standard-workflow.md": {
+      "id": "scp-standard-workflow",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-trajectory-velocity.md": {
+      "id": "scp-trajectory-velocity",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scp-visualization-interface.md": {
+      "id": "scp-visualization-interface",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scrna-marker-annotation.md": {
+      "id": "scrna-marker-annotation",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scrna-pathway-signature-ensemble.md": {
+      "id": "scrna-pathway-signature-ensemble",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/scrna-preprocess-doublet-qc-harmony.md": {
+      "id": "scrna-preprocess-doublet-qc-harmony",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/shap-explanation.md": {
+      "id": "shap-explanation",
+      "favorite": false,
+      "archived_from": null
+    },
+    "methods/trajectory-inference.md": {
+      "id": "trajectory-inference",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": {
+      "id": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": {
+      "id": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md": {
+      "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig01-volcano--volcano.md": {
+      "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig02-ring--ring.md": {
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig03-pie--pie.md": {
+      "id": "2026-10-22-scp-example__fig03-pie--pie",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig04-rose--rose.md": {
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig05-trend--trend.md": {
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig06-area--area.md": {
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig07-dot--dot.md": {
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md": {
+      "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig09-bar--bar.md": {
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey.md": {
+      "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig11-chord--chord.md": {
+      "id": "2026-10-22-scp-example__fig11-chord--chord",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig12-venn--venn.md": {
+      "id": "2026-10-22-scp-example__fig12-venn--venn",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig13-upset--upset.md": {
+      "id": "2026-10-22-scp-example__fig13-upset--upset",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md": {
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md": {
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "favorite": false,
+      "archived_from": null
+    },
+    "templates/2026-10-22-scp-example__fig16-cell-density--ridge.md": {
+      "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "favorite": false,
+      "archived_from": null
+    }
+  },
+  "assets": {
+    "methods/batch-integration/code/analysis.R": "5545deed6c7ed5d7bf8d85667acbec33e45701c8bb3a5a174a17844c1ca003b0",
+    "methods/batch-integration/verification/scp-harmony.json": "e4bf7870c9242b8d3968936b79996a64a9deda61df1b76d248d646fc5b808cb0",
+    "methods/batch-integration/verification/scp-seurat.json": "e0f89ea54d9622fe31e6d99c31bf3eb2cf68942fda2956dab58530b54fd07645",
+    "methods/cell-clustering/code/clustering.R": "b34d95110775192454bb809614e4c922463d9d7ad7d89fc95ad191b0d1604b7f",
+    "methods/cell-clustering/verification/seurat-findclusters.json": "9f1dd95284bd2ff96b0176fddb113e1a96bb9054ced797b6a66aeb6802986960",
+    "methods/cell-quality-control/code/analysis.R": "d9e361f7e847b19cb4638c93c3d6857850969d2cddbbcb0758466cf214e9a236",
+    "methods/cell-quality-control/verification/scp-runcellqc.json": "2ff35709dc2f2f7439946eefc218a9b981d7fa7469c06405749a5e9ee3aa0948",
+    "methods/cell-type-annotation/code/analysis.R": "160c2e0ba76e9a3b3069d5324bad3ea99bf27ac9a65bbabc5b8f375cb4232d79",
+    "methods/cell-type-annotation/verification/scp-singler.json": "52148d845595e1dbbf4d854bfa8b76a399138b719408817377d5aa906d6f7064",
+    "methods/differential-expression/code/analysis.R": "1615d18e776980639067c83b8cbb01772b2d393e929d359960a4c84961e5593d",
+    "methods/differential-expression/verification/scp-detest.json": "a5ac981863ea1c50660299e421a67b95306ef56364919ade1911489e559eb375",
+    "methods/dimensionality-reduction/code/analysis.R": "30bebc2a3b2c50fb09ce93496640d04e2512ebd3fcef21a136d71af87a4ec290",
+    "methods/dimensionality-reduction/verification/scp-dimreduction.json": "c160ee2746f661e6da9fdace34141a202604ca0caadcd4f72a719dcb55687459",
+    "methods/doublet-detection/code/analysis.R": "209f5dc5347728b221c91859be78e1b70c1722c14e9f12fdfa7679b4384d5c63",
+    "methods/doublet-detection/verification/scp-rundoublet.json": "0393aae409957d4a5e14708d771204b5850c04071dbd892aabf10de0064375d8",
+    "methods/dynamic-feature-analysis/code/analysis.R": "99ba731ab15278daa62fdb09cea7855ec927886430a2c4b38dd366efcb95e58b",
+    "methods/dynamic-feature-analysis/verification/scp-dynamicfeatures.json": "eaffccf4ba9fe496a4c94ea4a97f3e72e63e530dd04f7c2e75293566089e0aa9",
+    "methods/gene-set-enrichment/code/analysis.R": "f29569c3de6617f852224e2a64fefbdd1be909ac58acf1852035bb4f1d542f5b",
+    "methods/gene-set-enrichment/verification/scp-enrichment.json": "59463cfdbed043556785f9769adfcaec1033ae3b4ea10c5fd3bc6a963610ee95",
+    "methods/gene-set-scoring/code/analysis.R": "220e5b9d4a2100634a2deceaf0d093dfcd7b6a7d14f6fb597f7663adeda9f0f7",
+    "methods/gene-set-scoring/verification/scp-cellscoring.json": "a0a3e880c9b22f0eaeed950d902e5631fdeb4f10102e585d46abc4b2808ebaae",
+    "methods/reference-mapping/code/analysis.R": "cfeb4dab804cf3c443678850ad5e22a99eebdb90a299c0e72c57f4fe38439be3",
+    "methods/reference-mapping/code/transfer.R": "787fb695e4e282f23288b595231df3941a27dee91e0e830cf96264e3ca063558",
+    "methods/reference-mapping/verification/scp-runseuratmap.json": "707c46ac34b45b80c9473223c17c5354df6d42c9d9ab9fc6c8a19f05221f282c",
+    "methods/reference-mapping/verification/seurat-label-transfer.json": "8766e2ac3c1710c35a2f9bc9f237b3d9b9a7a6f6620f89a19953d563e0b986a4",
+    "methods/regression-resampling-evaluation/code/summarize_predictions.py": "03879225fa5ecb3670f44e89f70ba67209d23fa1ffded5ecbba3f36dcba8d1d8",
+    "methods/regression-resampling-evaluation/verification/summarize-predictions.json": "7fed9d222941efef37a43550ce11403cefdc00c91b83e8ab1a61d4cfebf09501",
+    "methods/rna-velocity/code/analysis.R": "0e0c3e08e111cc9d5a9f529c17843dd2a7cc52967bbfe769bae22a997188df53",
+    "methods/rna-velocity/verification/scp-scvelo.json": "4c91b840dc9b4cb5926a1f75b9936d0e3c54c8ca95458455d73d19d17ac72e19",
+    "methods/scp-annotation-projection/source/SCP-cell_annotation.R": "7373a8c936399b110ed9b1ad1c5f8d626d76485b280f7281aaabf4949388aae9",
+    "methods/scp-annotation-projection/source/SCP-projection.R": "2f59969cea9afce2e54345f5eded7c8bc0bc76a83152c02265d571bb8491c422",
+    "methods/scp-cellqc-doublet/source/SCP-cellqc.R": "6902be2de32be6fc5a166f19937a0e8ac3f0f8cd56dda437df8b8e4275997f6d",
+    "methods/scp-de-enrichment-dynamic/source/SCP-analysis.R": "87818c100e1f6e41252f015d23a1fdf2ed856da92d006d7a3e71fc03b0892eec",
+    "methods/scp-integration/source/SCP-workflow.R": "0cf89f24437f7a8f54fc38f69196960e48b6b3fdca0f1ae9300a3884bb7da040",
+    "methods/scp-local-source/source/DESCRIPTION": "8001a11a99140811e070628b2739e8b10cdd0e8bcff7be545f63c040a0ee3ddd",
+    "methods/scp-local-source/source/LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6",
+    "methods/scp-local-source/source/NAMESPACE": "5d550cf056d579d750585f106df71ff6cee0e4c05115647106079fa95d5d4d72",
+    "methods/scp-local-source/code/SCP-local/DESCRIPTION": "8001a11a99140811e070628b2739e8b10cdd0e8bcff7be545f63c040a0ee3ddd",
+    "methods/scp-local-source/code/SCP-local/FUNCTIONS.csv": "72bbbdf15d0101f69cb02662443d54ffe782ea3ae68140723588cb1235f07e52",
+    "methods/scp-local-source/code/SCP-local/LICENSE.md": "89d1c772dd39d09f0f01dec447c02a556240f058fc5b190cfb597ad7a99000b6",
+    "methods/scp-local-source/code/SCP-local/load_scp_local.R": "691205ab30ec565f205a476f1500137278794c24405a14270df5adbc292ac187",
+    "methods/scp-local-source/code/SCP-local/PATCHES.md": "5122863f98809cf1a9556abef6fd5557e67cc778b2b129e446e2231a8adcf147",
+    "methods/scp-local-source/code/SCP-local/README.md": "aad8cbf12c00d69f62fc78a26134a035fd023ec3a36b77450dec606b97bad7f0",
+    "methods/scp-local-source/code/SCP-local/verification.md": "11cedffa6073fe02720f3fd13b3c9cdbd844350093e6b991d8ee3c21fd6a7a40",
+    "methods/scp-local-source/code/SCP-local/verify_local.R": "90e389ab51df9691f584af164a20bda51fc608a57cc414db34b89a2fc78b01b0",
+    "methods/scp-local-source/code/SCP-local/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "methods/scp-local-source/code/SCP-local/data/words_excluded.rda": "f27c75472c9a97caa4c4864c47f706e2373d51bfb92275bf1c5302e4389160a0",
+    "methods/scp-local-source/code/SCP-local/python/harmonizomeapi.py": "4d47e68f2979520a28afbd358d48ef8f978cf88c395083a53d8ea22b3b8815d7",
+    "methods/scp-local-source/code/SCP-local/python/SCP_analysis.py": "aa63e209b8163934370584c4d839d641c511a93af93cb760b87fd932279df57c",
+    "methods/scp-local-source/code/SCP-local/R/data.R": "526d0766cfac8e1f394f38c90aae257fb2f3007202a550fd1c9c2deb9ad25384",
+    "methods/scp-local-source/code/SCP-local/R/ggsankey.R": "d15a2e5bcc980cdf73a2632dd3dabb08ed1a2c6748e7ed3416c6864067cfc69e",
+    "methods/scp-local-source/code/SCP-local/R/SCP-analysis.R": "91bdc867ef62bce327eba96a01552db6f8aa001d2da82b584eb8634443b75a5a",
+    "methods/scp-local-source/code/SCP-local/R/SCP-cellqc.R": "6902be2de32be6fc5a166f19937a0e8ac3f0f8cd56dda437df8b8e4275997f6d",
+    "methods/scp-local-source/code/SCP-local/R/SCP-cell_annotation.R": "7373a8c936399b110ed9b1ad1c5f8d626d76485b280f7281aaabf4949388aae9",
+    "methods/scp-local-source/code/SCP-local/R/SCP-feature_annotation.R": "b879dc9d359d5d8689651f5315b216678c5f14c32438bc753719f6b42b99ba14",
+    "methods/scp-local-source/code/SCP-local/R/SCP-imputation.R": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "methods/scp-local-source/code/SCP-local/R/SCP-plot.R": "eb9f7c14afd612ebc8e736e59df4190d12accb1d52f34156fa0b7bd3fc571936",
+    "methods/scp-local-source/code/SCP-local/R/SCP-projection.R": "2f59969cea9afce2e54345f5eded7c8bc0bc76a83152c02265d571bb8491c422",
+    "methods/scp-local-source/code/SCP-local/R/SCP-workflow.R": "0cf89f24437f7a8f54fc38f69196960e48b6b3fdca0f1ae9300a3884bb7da040",
+    "methods/scp-local-source/code/SCP-local/R/Seurat-function.R": "ea057f2e4a0bd192c684f4e2d55dc899c7a0f197a6b831d42dc1154cfb975129",
+    "methods/scp-local-source/code/SCP-local/R/utils.R": "cc713dbf45a23af96437185f15da4ff9d20610f4f1731b5ac6a1cd97550903e2",
+    "methods/scp-local-source/code/SCP-local/src/asMatrix.cpp": "e644e2796b05273810d1ecd6b113b08a859bdd4a8dc30b1f3d2b3c418e2fd7f9",
+    "methods/scp-local-source/code/SCP-local/src/RcppExports.cpp": "51d44e3ecc9b4266201de9d3d947172ff29a25a9c16c247bd497aabcc093b3c4",
+    "methods/scp-local-source/source/R/data.R": "526d0766cfac8e1f394f38c90aae257fb2f3007202a550fd1c9c2deb9ad25384",
+    "methods/scp-local-source/source/R/ggsankey.R": "d15a2e5bcc980cdf73a2632dd3dabb08ed1a2c6748e7ed3416c6864067cfc69e",
+    "methods/scp-local-source/source/R/RcppExports.R": "eff1d5ed5e6164015f74ef833dd78d9388ad1036d560eb78fa352885ed925f9b",
+    "methods/scp-local-source/source/R/reexports.R": "1e2b59b270f9b65397f54a11e0dd06b022a12ac084e59d1b89f7b423a1b49e82",
+    "methods/scp-local-source/source/R/SCP-analysis.R": "87818c100e1f6e41252f015d23a1fdf2ed856da92d006d7a3e71fc03b0892eec",
+    "methods/scp-local-source/source/R/SCP-app.R": "ff6bc50dc653376aee6592328c337bfd06b77093b6a4e671aa2e527bf79be4ad",
+    "methods/scp-local-source/source/R/SCP-cellqc.R": "6902be2de32be6fc5a166f19937a0e8ac3f0f8cd56dda437df8b8e4275997f6d",
+    "methods/scp-local-source/source/R/SCP-cell_annotation.R": "7373a8c936399b110ed9b1ad1c5f8d626d76485b280f7281aaabf4949388aae9",
+    "methods/scp-local-source/source/R/SCP-feature_annotation.R": "b879dc9d359d5d8689651f5315b216678c5f14c32438bc753719f6b42b99ba14",
+    "methods/scp-local-source/source/R/SCP-imputation.R": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "methods/scp-local-source/source/R/SCP-plot.R": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+    "methods/scp-local-source/source/R/SCP-projection.R": "2f59969cea9afce2e54345f5eded7c8bc0bc76a83152c02265d571bb8491c422",
+    "methods/scp-local-source/source/R/SCP-workflow.R": "0cf89f24437f7a8f54fc38f69196960e48b6b3fdca0f1ae9300a3884bb7da040",
+    "methods/scp-local-source/source/R/Seurat-function.R": "ea057f2e4a0bd192c684f4e2d55dc899c7a0f197a6b831d42dc1154cfb975129",
+    "methods/scp-local-source/source/R/utils.R": "cc713dbf45a23af96437185f15da4ff9d20610f4f1731b5ac6a1cd97550903e2",
+    "methods/scp-local-source/source/R/zzz.R": "cceaf335964c086b7a05fa3968ba041afaf4d86234aa08aa74dedc3b71cc8f64",
+    "methods/scp-local-source/source/src/asMatrix.cpp": "e644e2796b05273810d1ecd6b113b08a859bdd4a8dc30b1f3d2b3c418e2fd7f9",
+    "methods/scp-local-source/source/src/RcppExports.cpp": "51d44e3ecc9b4266201de9d3d947172ff29a25a9c16c247bd497aabcc093b3c4",
+    "methods/scp-local-source/source/inst/python/harmonizomeapi.py": "4d47e68f2979520a28afbd358d48ef8f978cf88c395083a53d8ea22b3b8815d7",
+    "methods/scp-local-source/source/inst/python/SCP_analysis.py": "aa63e209b8163934370584c4d839d641c511a93af93cb760b87fd932279df57c",
+    "methods/scp-standard-workflow/source/SCP-workflow.R": "0cf89f24437f7a8f54fc38f69196960e48b6b3fdca0f1ae9300a3884bb7da040",
+    "methods/scp-trajectory-velocity/source/SCP-analysis.R": "87818c100e1f6e41252f015d23a1fdf2ed856da92d006d7a3e71fc03b0892eec",
+    "methods/scp-visualization-interface/code/scp_tables.R": "99e35bda0192b2dec487446e5c791a3094ccf937d574f4833f14069b4541ad5c",
+    "methods/scp-visualization-interface/code/test_scp_tables.R": "f3dc63d8a497e30fa8f940dfebe418694aeeb886e963caa760248d54bd47e39d",
+    "methods/scp-visualization-interface/source/SCP-plot.R": "03a0b55f3e8be87c676d0755dab9c1410cc8a59d35d011750861ac8bcaca3a02",
+    "methods/scp-visualization-interface/verification/scp-table-adapters.json": "75901d1b5493cbcd158aa8ce7c0dc1826bdd6d4a2b742b9cbd5c831811e42649",
+    "methods/scrna-marker-annotation/source/annotation.R": "0442cb50bbcbefc98f02f25fc6d61bc9fc5969692b546146699e04e7c681bba7",
+    "methods/scrna-pathway-signature-ensemble/source/score_pathway_signatures.R": "a2ff07d68546fdd908831ba06f21a0a4b68b3bf29d0a1f9f4c9205ccdc61caac",
+    "methods/scrna-preprocess-doublet-qc-harmony/source/preprocess.R": "7b4832e8aa1aac41aec151f928ef107e6abac69d5fbaa0daece77e33e483ad7b",
+    "methods/shap-explanation/code/explain_model.py": "83d40595be743f045d92a7bf7c363eed3e05107b16807950f4ff7676ff013fbc",
+    "methods/shap-explanation/code/shap_explain.py": "4cc9395490a619ea3a9a0c290575f75d59be3cf6ae0c8b538484026642c36b16",
+    "methods/shap-explanation/verification/shap-explain-model.json": "7f4b94a1d512d58d785dadc0c1fdf7e03d1671b1ce34f2fd4f8f90c147822919",
+    "methods/trajectory-inference/code/analysis.R": "4d7986bad6cbc5158df306abb49759bbca1b69562a7bb0c17f31ff563bcbeef3",
+    "methods/trajectory-inference/verification/scp-slingshot.json": "81ee117a57b593ba4a6cd7f4931e853a4608b6074e98b175d8223269b147f924"
+  }
+}
