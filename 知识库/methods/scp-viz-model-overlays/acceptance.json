@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T07:33:28.597544+00:00",
+  "checked_at": "2026-11-02T11:18:13.645352+00:00",
   "page": "methods/scp-viz-model-overlays.md",
-  "snapshot": "308a5f86bf12a33a125890af07a3e34a5a576b17e9a6ae34fc6f763dc04013b5",
+  "snapshot": "4f65b1d7de244ed1e10ba4bdfdc8d4e7f272ce4b4948df400edbb7de6fd42b01",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

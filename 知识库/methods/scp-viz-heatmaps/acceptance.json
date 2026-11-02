@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T07:33:16.020024+00:00",
+  "checked_at": "2026-11-02T11:18:13.608559+00:00",
   "page": "methods/scp-viz-heatmaps.md",
-  "snapshot": "b0621b831f472ee0382382e8a399bbbfeaea008765839f482f168701bb9556ba",
+  "snapshot": "9b9d4a0e0b7c9502b652c22a069eb71e26867c66fc76eb180439eadfacd91b96",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

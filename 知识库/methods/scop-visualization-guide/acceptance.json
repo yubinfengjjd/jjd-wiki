@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T12:27:50.832381+00:00",
+  "checked_at": "2026-11-02T11:18:13.494043+00:00",
   "page": "methods/scop-visualization-guide.md",
-  "snapshot": "e7dd4294e3d4805dd2c47959d9e4a0641f80cb02878e7441eb0ec548999ed1d9",
+  "snapshot": "f828597b7cbcfb217c285bf8eebf866ac02c5fd4029872f125f5f48335043b56",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

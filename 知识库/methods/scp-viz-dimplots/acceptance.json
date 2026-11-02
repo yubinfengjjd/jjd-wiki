@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T07:33:06.783588+00:00",
+  "checked_at": "2026-11-02T11:18:13.579905+00:00",
   "page": "methods/scp-viz-dimplots.md",
-  "snapshot": "b333788c517a9d7e9052c0ba6e23a311d2e4fae81d18eb776bb9c0ebecf59a2e",
+  "snapshot": "72737d0895380549717ebb633cea514bd2ea08d3b82f11501da23125043f2576",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

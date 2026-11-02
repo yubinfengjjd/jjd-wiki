@@ -2,7 +2,7 @@
 type: method
 id: local-omics-analysis-guide
 title: 组学课题方法去重与选择
-status: draft
+status: ready
 tags:
 - single-cell
 - transcriptomics
@@ -495,7 +495,7 @@ theory_methods:
 
 ## 不适用
 
-代码存在、成功 use、source 或 --help 均不授予科学或完整流程验证。只有各实现当前收据覆盖的用例有运行证据；其余为 not_run，页面保持 draft。禁止将少数用例通过扩展为整库、整个函数所有参数或真实课题有效性已验证。
+代码存在、成功 use、source 或 --help 均不授予科学或完整流程验证。只有各实现当前收据覆盖的用例有运行证据；其余仍为 not_run；资料确认与实现运行验证分别记录。禁止将少数用例通过扩展为整库、整个函数所有参数或真实课题有效性已验证。
 
 ## 输入
 
@@ -602,6 +602,10 @@ irGSEA、SCP 包本体、CellChat、ConsensusClusterPlus、singscore/AUCell/UCel
 ## Seurat 5 兼容入口调用
 
 在 use 副本中单独 source code/dynamic_monocle2_seurat5.R；调用 run_dynamic_monocle2_seurat5(srt=actual_seurat, pseudotime="作者明确的拟时序列", features=actual_genes, group.by="作者明确的分组列", assay="RNA", slot="data", exp_method="raw", lib_normalize=FALSE)。返回 value 图与 diagnostics。assay/slot 必须是精确现有输入；不自动 JoinLayers、不补表达、不替换分组。不把该入口的通过状态赋给未改原函数。
+
+## 资料确认记录（2026-11-02）
+
+作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
 
 <!-- user:start -->
 <!-- user:end -->

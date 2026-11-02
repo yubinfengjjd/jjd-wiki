@@ -2,7 +2,7 @@
 type: method
 id: scop-analysis-guide
 title: 单细胞与空间分析方法导航
-status: draft
+status: ready
 favorite: false
 method_kind: technical
 tags:
@@ -358,6 +358,10 @@ data_contract:
 ## 使用记录
 
 2026-11-01：来源级语义整理，全部 scop 候选未在本机执行。
+
+## 资料确认记录（2026-11-02）
+
+作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
 
 <!-- user:start -->
 <!-- user:end -->

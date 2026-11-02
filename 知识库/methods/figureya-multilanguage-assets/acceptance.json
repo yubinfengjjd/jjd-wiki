@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-31T07:45:56.410824+00:00",
+  "checked_at": "2026-11-02T11:18:13.199678+00:00",
   "page": "methods/figureya-multilanguage-assets.md",
-  "snapshot": "9051e05db047fd3334101c65320e675c1afe97843b3e69777c529b88d46549e0",
+  "snapshot": "78289e4602cbfe95240808ea80ed5b33303befc5699295bca37997c76a840ca5",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

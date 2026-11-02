@@ -1187,3 +1187,5 @@
 ## [2026-11-02 09:58 UTC] 续整本机组学代码复用层：Seurat5兼容、绘图回放与19个限定分支证据
 
 ## [2026-11-02 10:29 UTC] 默认双层入库并同步前端：登记绘图代码与理论关联、固化展示验收规则
+
+## [2026-11-02 11:20 UTC] ready 17: asthma-lactylation-source-catalog, asthma-lactylation-workflow, figureya-multilanguage-assets, local-omics-analysis-guide, local-omics-visualization-guide, scop-analysis-guide, scop-source-catalog, scop-visualization-guide, scop-workflows, scp-source-catalog, scp-viz-dimplots, scp-viz-heat

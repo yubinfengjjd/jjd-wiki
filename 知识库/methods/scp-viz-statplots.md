@@ -2,7 +2,7 @@
 type: method
 id: scp-viz-statplots
 title: 单细胞统计与相关绘图入口
-status: draft
+status: ready
 inputs: []
 outputs: []
 license: GPL-3
@@ -78,7 +78,7 @@ source:
 cite:
 - 'SCP: https://github.com/zhanghao-njmu/scp (commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0)'
 method_kind: technical
-summary: 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
+summary: SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
 data_contract:
   input: CellStatPlot：Seurat 元数据 stat.by、group.by、split.by；FeatureCorPlot：Seurat 中
     features 的逐细胞表达及 group.by；FeatureStatPlot：Seurat features/元数据 stat.by，group.by
@@ -116,7 +116,7 @@ keywords:
 
 ## 用途
 
-复用已拆出的 SCP 0.5.6 原生绘图闭包。每个入口独立声明依赖；读取 Seurat 对象或原生结果，不强制转成 CSV。以下范围由当前字节的实际收据核对，页面保持 draft。
+复用已拆出的 SCP 0.5.6 原生绘图闭包。每个入口独立声明依赖；读取 Seurat 对象或原生结果，不强制转成 CSV。以下范围由当前字节的实际收据核对；资料确认与逐分支运行验证分别记录。
 
 ## 适用
 
@@ -416,6 +416,10 @@ runtime.json 列出逐入口闭包、必需/可选依赖、资源用途和原始
 ## 本机组学课题来源增量（2026-11-02）
 
 项目中的 FeatureStatPlot 记录为依赖调用；CellStatPlot 仅为相近既有入口，本批静态调用未发现它。汇总/统计选项需逐形态核对，未运行。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
+## 资料确认记录（2026-11-02）
+
+作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
 
 <!-- user:start -->
 <!-- user:end -->

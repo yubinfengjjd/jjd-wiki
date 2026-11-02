@@ -118,47 +118,41 @@
 
 ## 组合流程
 
-### draft
+### ready
 
 - [[methods/asthma-lactylation-workflow|乳酸化与代谢研究分析流程]] — 保留来源步骤、参数与分组差异的研究流程；共同分析引用现有家族，所有来源分支未重跑。
 - [[methods/uc-ptm-workflow|修饰分型与模型分析流程]] — 保留来源步骤、参数与分组差异的研究流程；共同分析引用现有家族，所有来源分支未重跑。
 - [[methods/scop-workflows|单细胞与空间组学工作流]] — 12 份固定版本上游 Rmd 流程的输入、执行边界和方法链；未 Knit，未作为 L1 配方运行。
-- [[methods/uc-spatial-workflows|空间转录组分支与推断边界]] — 区分原空间探索、整理版主线、历史 CellTrek/伪超分辨与 RCTD+CellChat 最终来源及其后处理，保留算法替代的真实含义。
-
-### ready
-
 - [[methods/scp-standard-workflow|单细胞标准预处理、降维与聚类]] — SCP 标准预处理、降维与聚类的组合流程记录；单步方法见质量控制、降维、聚类和整合家族。
 - [[methods/scrna-preprocess-doublet-qc-harmony|单细胞预处理、批次校正与聚类]] — 青光眼课题的预处理、QC、双细胞与 Harmony 组合流程记录；单步方法见对应家族。
+- [[methods/uc-spatial-workflows|空间转录组分支与推断边界]] — 区分原空间探索、整理版主线、历史 CellTrek/伪超分辨与 RCTD+CellChat 最终来源及其后处理，保留算法替代的真实含义。
 
 ## 技术资料
-
-### draft
-
-- [[methods/asthma-lactylation-source-catalog|乳酸化研究脚本来源索引]] — 159 份研究代码、154 个不同字节版本的来源及去重索引；只编译知识，未运行。
-- [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
-- [[methods/uc-ptm-source-catalog|修饰研究脚本来源索引]] — 132 份研究代码、90 个不同字节版本的来源及去重索引；只编译知识，未运行。
-- [[methods/scop-analysis-guide|单细胞与空间分析方法导航]] — 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；本机未运行。
-- [[methods/scop-source-catalog|单细胞与空间组学来源索引]] — 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；完整来源导航，本机未运行。
-- [[methods/scop-visualization-guide|单细胞与空间绘图入口导航]] — 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；全部本机未运行，不继承 SCP 图样或回放。
-- [[methods/scp-source-catalog|单细胞全库来源与入口索引]] — 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与 22 个 draft 原生绘图入口，区分归档、运行和确认。
-- [[methods/scp-viz-statplots|单细胞统计与相关绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
-- [[methods/scp-viz-heatmaps|单细胞表达与动态热图入口]] — 4 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
-- [[methods/scp-viz-dimplots|单细胞降维与表达绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
-- [[methods/local-omics-analysis-guide|组学课题方法去重与选择]] — 按方法理论关联原语言复用代码：自定义 DotPlotScores/动态曲线、模型评价和依赖适配；验证限定到具体分支。
-- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造]] — 依赖原生图、自定义函数与预计算 ROC 分流；复用已有 SCP 闭包，逐分支保留依赖和验证边界。
-- [[methods/scp-viz-model-overlays|轨迹富集与网络绘图入口]] — 8 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 
 ### ready
 
 - [[methods/scp-local-source|SCP 源码本地化]] — SCP v0.5.6 源码本地化与加载器资料；不是可执行分析，也不是独立方法家族。
 - [[methods/scp-visualization-interface|SCP 绘图函数与图接口映射]] — SCP 绘图函数到 Wiki 图表接口的映射与适配资料；不是分析方法。
+- [[methods/asthma-lactylation-source-catalog|乳酸化研究脚本来源索引]] — 159 份研究代码、154 个不同字节版本的来源及去重索引；只编译知识，未运行。
+- [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
+- [[methods/uc-ptm-source-catalog|修饰研究脚本来源索引]] — 132 份研究代码、90 个不同字节版本的来源及去重索引；只编译知识，未运行。
 - [[methods/scp-cellqc-doublet|单细胞 QC 与双细胞检测]] — SCP QC 与双细胞检测的原始脚本和作者实现记录；分析问题见质量控制与双细胞检测家族。
+- [[methods/scop-analysis-guide|单细胞与空间分析方法导航]] — 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；本机未运行。
+- [[methods/scop-source-catalog|单细胞与空间组学来源索引]] — 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；完整来源导航，本机未运行。
+- [[methods/scop-visualization-guide|单细胞与空间绘图入口导航]] — 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；全部本机未运行，不继承 SCP 图样或回放。
+- [[methods/scp-source-catalog|单细胞全库来源与入口索引]] — 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与原生绘图入口，区分来源归档、实现运行和资料确认。
 - [[methods/scp-integration|单细胞多样本整合]] — SCP 单细胞多样本整合的原始脚本与作者实现记录；分析问题见批次整合家族。
 - [[methods/scp-de-enrichment-dynamic|单细胞差异表达、基因集富集与动态特征]] — SCP 差异表达、富集和动态特征的原始脚本与作者实现记录；分析问题见四个对应家族。
 - [[methods/scrna-marker-annotation|单细胞标记基因注释与聚类检查]] — 青光眼 scRNA 课题的 marker 注释与聚类检查实现记录；分析问题见细胞类型注释与聚类家族。
+- [[methods/scp-viz-statplots|单细胞统计与相关绘图入口]] — SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
 - [[methods/scp-annotation-projection|单细胞自动注释与参考投影]] — SCP 自动注释与参考投影的原始脚本和作者实现记录；分析问题见细胞类型注释与参考映射家族。
+- [[methods/scp-viz-heatmaps|单细胞表达与动态热图入口]] — SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
 - [[methods/scp-trajectory-velocity|单细胞轨迹推断与 RNA 速度]] — SCP 轨迹与 RNA 速度的原始脚本和作者实现记录；分析问题见轨迹、速度和动态特征家族。
 - [[methods/scrna-pathway-signature-ensemble|单细胞通路签名打分与组间比较]] — 青光眼课题的通路签名打分与组间比较实现记录；五种分数相加是课题特定组合，不是通用标准。
+- [[methods/scp-viz-dimplots|单细胞降维与表达绘图入口]] — SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
+- [[methods/local-omics-analysis-guide|组学课题方法去重与选择]] — 按方法理论关联原语言复用代码：自定义 DotPlotScores/动态曲线、模型评价和依赖适配；验证限定到具体分支。
+- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造]] — 依赖原生图、自定义函数与预计算 ROC 分流；复用已有 SCP 闭包，逐分支保留依赖和验证边界。
+- [[methods/scp-viz-model-overlays|轨迹富集与网络绘图入口]] — SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
 
 ## 待分类方法
 

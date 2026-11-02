@@ -2,7 +2,7 @@
 type: method
 id: scp-source-catalog
 title: 单细胞全库来源与入口索引
-status: draft
+status: ready
 favorite: false
 method_kind: technical
 tags:
@@ -163,7 +163,7 @@ source:
 license: GPL-3.0-or-later
 cite:
 - SCP 0.5.6, Hao Zhang, https://github.com/zhanghao-njmu/SCP/tree/b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0
-summary: 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与 22 个 draft 原生绘图入口，区分归档、运行和确认。
+summary: 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与原生绘图入口，区分来源归档、实现运行和资料确认。
 data_contract:
   input: 固定 commit 的 NAMESPACE、R AST、Rd、依赖声明及本机当前方法清单；只读审计。
   output: 逐导出来源、文档、规范页、候选模块、helper 消费者和验证范围索引；不产生科学结果。
@@ -216,28 +216,28 @@ data_contract:
 
 | 入口 | 技术页 | 当前算法收据范围 | 状态 |
 |---|---|---|---|
-| `CellCorHeatmap` | [[methods/scp-viz-heatmaps]] | 无通过范围 | not_run / draft |
-| `CellDensityPlot` | [[methods/scp-viz-dimplots]] | f_x_order_rank | verified / draft |
-| `CellDimPlot` | [[methods/scp-viz-dimplots]] | mark_circle | verified / draft |
-| `CellDimPlot3D` | [[methods/scp-viz-dimplots]] | cell_3d | verified / draft |
-| `CellStatPlot` | [[methods/scp-viz-statplots]] | f_plot_type_upset | verified / draft |
-| `DynamicHeatmap` | [[methods/scp-viz-heatmaps]] | f_exp_method_raw | verified / draft |
-| `DynamicPlot` | [[methods/scp-viz-model-overlays]] | native_curve | verified / draft |
-| `EnrichmentPlot` | [[methods/scp-viz-model-overlays]] | positive_native_material | verified / draft |
-| `FeatureCorPlot` | [[methods/scp-viz-statplots]] | two_markers | verified / draft |
-| `FeatureDimPlot` | [[methods/scp-viz-dimplots]] | keep_all | verified / draft |
-| `FeatureDimPlot3D` | [[methods/scp-viz-dimplots]] | feature_3d | verified / draft |
-| `FeatureHeatmap` | [[methods/scp-viz-heatmaps]] | default | verified / draft |
-| `FeatureStatPlot` | [[methods/scp-viz-statplots]] | f_add_stat_mean | verified / draft |
-| `GSEAPlot` | [[methods/scp-viz-model-overlays]] | positive_native_material | verified / draft |
-| `GraphPlot` | [[methods/scp-viz-model-overlays]] | real_curved | verified / draft |
-| `GroupHeatmap` | [[methods/scp-viz-heatmaps]] | annotation | verified / draft |
-| `LineagePlot` | [[methods/scp-viz-model-overlays]] | positive_native_material | verified / draft |
-| `PAGAPlot` | [[methods/scp-viz-model-overlays]] | 无通过范围 | not_run / draft |
-| `ProjectionPlot` | [[methods/scp-viz-model-overlays]] | self_projection | verified / draft |
-| `StatPlot` | [[methods/scp-viz-statplots]] | f_position_dodge | verified / draft |
-| `VelocityPlot` | [[methods/scp-viz-model-overlays]] | velocity_umap | not_run / draft |
-| `VolcanoPlot` | [[methods/scp-viz-statplots]] | positive_native_material | verified / draft |
+| `CellCorHeatmap` | [[methods/scp-viz-heatmaps]] | 无通过范围 | not_run / ready |
+| `CellDensityPlot` | [[methods/scp-viz-dimplots]] | f_x_order_rank | verified / ready |
+| `CellDimPlot` | [[methods/scp-viz-dimplots]] | mark_circle | verified / ready |
+| `CellDimPlot3D` | [[methods/scp-viz-dimplots]] | cell_3d | verified / ready |
+| `CellStatPlot` | [[methods/scp-viz-statplots]] | f_plot_type_upset | verified / ready |
+| `DynamicHeatmap` | [[methods/scp-viz-heatmaps]] | f_exp_method_raw | verified / ready |
+| `DynamicPlot` | [[methods/scp-viz-model-overlays]] | native_curve | verified / ready |
+| `EnrichmentPlot` | [[methods/scp-viz-model-overlays]] | positive_native_material | verified / ready |
+| `FeatureCorPlot` | [[methods/scp-viz-statplots]] | two_markers | verified / ready |
+| `FeatureDimPlot` | [[methods/scp-viz-dimplots]] | keep_all | verified / ready |
+| `FeatureDimPlot3D` | [[methods/scp-viz-dimplots]] | feature_3d | verified / ready |
+| `FeatureHeatmap` | [[methods/scp-viz-heatmaps]] | default | verified / ready |
+| `FeatureStatPlot` | [[methods/scp-viz-statplots]] | f_add_stat_mean | verified / ready |
+| `GSEAPlot` | [[methods/scp-viz-model-overlays]] | positive_native_material | verified / ready |
+| `GraphPlot` | [[methods/scp-viz-model-overlays]] | real_curved | verified / ready |
+| `GroupHeatmap` | [[methods/scp-viz-heatmaps]] | annotation | verified / ready |
+| `LineagePlot` | [[methods/scp-viz-model-overlays]] | positive_native_material | verified / ready |
+| `PAGAPlot` | [[methods/scp-viz-model-overlays]] | 无通过范围 | not_run / ready |
+| `ProjectionPlot` | [[methods/scp-viz-model-overlays]] | self_projection | verified / ready |
+| `StatPlot` | [[methods/scp-viz-statplots]] | f_position_dodge | verified / ready |
+| `VelocityPlot` | [[methods/scp-viz-model-overlays]] | velocity_umap | not_run / ready |
+| `VolcanoPlot` | [[methods/scp-viz-statplots]] | positive_native_material | verified / ready |
 
 ### 分析入口
 
@@ -422,7 +422,7 @@ data_contract:
 
 ## 输出
 
-本批输出：142 条唯一导出记录、238 个 R 定义核对、22 个绘图契约、4 个 draft 技术页，以及 153 条绘图参数形态的显式证据对应。状态以当前文件计算；不以这些计数宣称全库验收完成。
+本批输出：142 条唯一导出记录、238 个 R 定义核对、22 个绘图契约、4 个 draft 技术页，以及 153 条绘图参数形态的显式证据对应。以上为来源整理阶段的数量；本轮只确认资料内容，当前实现状态仍按文件与收据计算，不以这些计数宣称全库验收完成。
 
 ## 知识关联检查
 
@@ -464,6 +464,10 @@ data_contract:
 ## 使用记录
 
 2026-11-01：按 v2 接续来源和既有绘图闭包入库；保留旧 id、作者块、状态与原始层，未执行装包或代签核。
+
+## 资料确认记录（2026-11-02）
+
+作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
 
 <!-- user:start -->
 <!-- user:end -->

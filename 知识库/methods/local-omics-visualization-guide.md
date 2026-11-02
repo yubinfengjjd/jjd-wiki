@@ -2,7 +2,7 @@
 type: method
 id: local-omics-visualization-guide
 title: 课题绘图依赖与自定义改造
-status: draft
+status: ready
 tags:
 - single-cell
 - transcriptomics
@@ -207,7 +207,7 @@ theory_methods:
 
 ## 不适用
 
-代码存在、成功 use、source 或 --help 均不授予科学或完整流程验证。只有各实现当前收据覆盖的用例有运行证据；其余为 not_run，页面保持 draft。禁止将少数用例通过扩展为整库、整个函数所有参数或真实课题有效性已验证。
+代码存在、成功 use、source 或 --help 均不授予科学或完整流程验证。只有各实现当前收据覆盖的用例有运行证据；其余仍为 not_run；资料确认与实现运行验证分别记录。禁止将少数用例通过扩展为整库、整个函数所有参数或真实课题有效性已验证。
 
 ## 输入
 
@@ -290,6 +290,10 @@ ROC 用例保留原真实预计算 FPR/TPR/AUC，原版对照的曲线数据、R
 通过 find → show → use 复用 [[methods/scp-viz-dimplots]]、[[methods/scp-viz-statplots]]、[[methods/scp-viz-heatmaps]] 中的 CellDimPlot、FeatureDimPlot、FeatureStatPlot、FeatureHeatmap；未再建同名模板或复制一套 SCP 实现进本页。4 个既有闭包均在原 711 细胞对象上运行并完成仅复制各 runtime 声明文件后的新进程确定性回放。Heatmap 选择 raw data、不做库大小归一化，返回表达矩阵还与原 RNA data 对应行列核对；统计图未执行组间检验。
 
 这是既有闭包对当前项目对象的集成证据，不是 SCP 包本体的新版等价验证，不授予本页 4 个缺包路由 passed。FeatureHeatmap 会留下部分绘图 options（具体键见 scp-project-integration-20261102b.json），因此保持独立 R 子进程使用，不承诺在用户交互会话中无副作用。原 SCP 文件、旧收据与状态均未改。源码保留的手工 scale 无匹配 level 提示如实留在运行日志；所选成图已检查，未据此修改统计或绘图原算法。
+
+## 资料确认记录（2026-11-02）
+
+作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
 
 <!-- user:start -->
 <!-- user:end -->
