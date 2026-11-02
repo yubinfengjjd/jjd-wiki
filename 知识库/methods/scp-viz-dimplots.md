@@ -280,5 +280,9 @@ runtime.json 列出逐入口闭包、必需/可选依赖、资源用途和原始
 
 2026-11-01：接续 10 月隔离区已完成的代码与真实收据，核对当前字节并整理为 draft 技术入口。没有代作者签核，也没有把本批入库记作课题使用。
 
+## 本机组学课题来源增量（2026-11-02）
+
+项目中的 CellDimPlot/FeatureDimPlot 记录为依赖原生调用与参数来源，不新建同义 UMAP 模板，不继承本页验证。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

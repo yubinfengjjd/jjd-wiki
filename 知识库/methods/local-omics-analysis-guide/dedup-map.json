@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "files": 291,
+  "unique_sha256": 242,
+  "duplicate_excess": 49,
+  "duplicate_groups": [
+    {
+      "sha256": "ef96d9c63716cf5e54603d435c04ce5138a6556c4adae12c3e67338bd681f733",
+      "canonical": "uc-ptm:1.数据预处理/数据预处理.R",
+      "members": [
+        "uc-ptm:1.数据预处理/数据预处理.R",
+        "uc-ptm:整理_1-20_code_pdf/1.数据预处理/code/数据预处理.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "ebd6631a7314f0636961f98c3c4fed58fd060ad4bb73ad438a582999e60b8c69",
+      "canonical": "uc-ptm:11.表达差异图与基因ROC/diif_boxplot and ROC.R",
+      "members": [
+        "uc-ptm:11.表达差异图与基因ROC/diif_boxplot and ROC.R",
+        "uc-ptm:整理_1-20_code_pdf/11.表达差异图与基因ROC/code/diif_boxplot and ROC.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "2952b570ea5e601d4199f53ba04e366da6d935f0bf6ff5f16fcfdbcb67629294",
+      "canonical": "uc-ptm:15.单细胞注释/1.R",
+      "members": [
+        "uc-ptm:15.单细胞注释/1.R",
+        "uc-ptm:整理_1-20_code_pdf/15.单细胞注释/code/1.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "7bdff16edf6f286713afb2c632d40240a893f072d0ed93627a60bdb8443bd087",
+      "canonical": "uc-ptm:16.20种修饰量化/1.R",
+      "members": [
+        "uc-ptm:16.20种修饰量化/1.R",
+        "uc-ptm:整理_1-20_code_pdf/16.20种修饰量化/code/1.R",
+        "asthma-lactylation:4.乳酸化评分/dotplot.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "647344df9ae20d03de42cd23490066f9b8d7f43533f8d3f4236fed686aeb8565",
+      "canonical": "uc-ptm:17.基因功能探究/1.R",
+      "members": [
+        "uc-ptm:17.基因功能探究/1.R",
+        "uc-ptm:整理_1-20_code_pdf/17.基因功能探究/code/1.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "3159ac3f7a9e2666428530e87966107e1a4a27810d4f210a4de495b0980c9020",
+      "canonical": "uc-ptm:2.20种修饰一致性聚类/Consensus.R",
+      "members": [
+        "uc-ptm:2.20种修饰一致性聚类/Consensus.R",
+        "uc-ptm:整理_1-20_code_pdf/2.20种修饰一致性聚类/code/Consensus.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "fa5074167582918042480560e867ceceebd786d2f54da2050f2acd8bc32bf3ee",
+      "canonical": "uc-ptm:3.bulk-DEGs/DEGs.R",
+      "members": [
+        "uc-ptm:3.bulk-DEGs/DEGs.R",
+        "uc-ptm:整理_1-20_code_pdf/3.bulk-DEGs/code/DEGs.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "3efeda7bbe142bd6370000cb74d3db9a5b848306d2d0bb5b6d8fd6779732c8b4",
+      "canonical": "uc-ptm:4.WGCNA/WGCNA.R",
+      "members": [
+        "uc-ptm:4.WGCNA/WGCNA.R",
+        "uc-ptm:整理_1-20_code_pdf/4.WGCNA/code/WGCNA.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "c075ad897451cd23178733d28e0c8b64b8fddd9b829504e87557ae1c7434d4ee",
+      "canonical": "uc-ptm:5.交集韦恩图/Venn.R",
+      "members": [
+        "uc-ptm:5.交集韦恩图/Venn.R",
+        "uc-ptm:整理_1-20_code_pdf/5.交集韦恩图/code/Venn.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "f7c52e80fef04fd08ef0ce6555c54434146ec14e4b1b8423e52111822bc6ff91",
+      "canonical": "uc-ptm:6.GMM-LR/GMM-LR.R",
+      "members": [
+        "uc-ptm:6.GMM-LR/GMM-LR.R",
+        "uc-ptm:整理_1-20_code_pdf/6.GMM-LR/code/GMM-LR.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "51aa046419492b5eb05a237ec50014619bc930e860049d48f9e50ba3c36fdeb3",
+      "canonical": "uc-ptm:6.GMM-LR/GMM-LR_cv.R",
+      "members": [
+        "uc-ptm:6.GMM-LR/GMM-LR_cv.R",
+        "uc-ptm:整理_1-20_code_pdf/6.GMM-LR/code/GMM-LR_cv.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "7198c1e0998db3ed3600e0c339a735844c6e96558a2f2bbb598217e8113aa6bd",
+      "canonical": "uc-ptm:7.20种修饰模型比较/1.R",
+      "members": [
+        "uc-ptm:7.20种修饰模型比较/1.R",
+        "uc-ptm:整理_1-20_code_pdf/7.20种修饰模型比较/code/1.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "5091bfbe86d34eef7ea03deaca3ac6d50df2ece983664f6521dcb8675941fa09",
+      "canonical": "uc-ptm:7.20种修饰模型比较/comparison.R",
+      "members": [
+        "uc-ptm:7.20种修饰模型比较/comparison.R",
+        "uc-ptm:整理_1-20_code_pdf/7.20种修饰模型比较/code/comparison.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "8aeb9c0e3a68df2c2e3042a7912b5fce0d4f7892bf3c76d5c8bd74a3d339d111",
+      "canonical": "uc-ptm:9.PTMD评分/PTMDs.R",
+      "members": [
+        "uc-ptm:9.PTMD评分/PTMDs.R",
+        "uc-ptm:整理_1-20_code_pdf/9.PTMD评分/code/PTMDs.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+      "canonical": "asthma-lactylation:16.细胞轨迹/DynamicPlot.R",
+      "members": [
+        "uc-ptm:整理_1-20_code_pdf/18.拟时序分析/code/DynamicPlot.R",
+        "asthma-lactylation:16.细胞轨迹/DynamicPlot.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "2de2b8273add8a80d6368bd122bb49708e0d2a43d002ebf10019d18d3b32aa17",
+      "canonical": "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/plot_helpers.R",
+      "members": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/10.paper_ready/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/11.audit_and_manifest/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/2.preprocess_and_reference/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/4.svg_spatial/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/5.bayesspace_domain/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/6.ube2l6_binary/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/7.neighborhood_celltype/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/8.ptm_isgylation/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.10.celltrek_storyline/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.11.cellchat_ube2l6_comparison/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.superres_lr_cellchat/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/helpers/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/plot_helpers.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "a9eb819f531a31591526b218dba22932d728b492b76f79cd25138e43eff3b49b",
+      "canonical": "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/workflow_helpers.R",
+      "members": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/0.visual_spec/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/10.paper_ready/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/11.audit_and_manifest/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/2.preprocess_and_reference/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/4.svg_spatial/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/5.bayesspace_domain/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/6.ube2l6_binary/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/7.neighborhood_celltype/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/8.ptm_isgylation/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.10.celltrek_storyline/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.11.cellchat_ube2l6_comparison/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/02_legacy_celltrek_superres_branch/9.superres_lr_cellchat/code/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/helpers/workflow_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/workflow_helpers.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "664574f6537bd5ca23db7e64c6a6103eb5f31ae109871d7a7a0ff8f71eae40c9",
+      "canonical": "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/1.raw_qc/code/plot_helpers.R",
+      "members": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/1.raw_qc/code/plot_helpers.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/01_main_workflow_from_raw/3.rctd_deconvolution/code/plot_helpers.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "45c23b076bf9d0c7c6fd96170f1039b908d8126e24cbfab8b171a5e4f231934b",
+      "canonical": "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/9.21_spatial_comm_premium.R",
+      "members": [
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.20_cellchat_rctd_spot_final/code/workflow/9.21_spatial_comm_premium.R",
+        "uc-ptm:整理_1-20_code_pdf/20.sptial/03_rctd_cellchat_branch/9.21_rctd_cellchat_premium_polish/code/9.21_spatial_comm_premium.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "6e6c44fb495580d9921cf6de9fce78583681df74265f7b70cd4b560e130c4ce9",
+      "canonical": "asthma-lactylation:11.深度学习/DL-asthma.ipynb",
+      "members": [
+        "asthma-lactylation:11.深度学习/DL-asthma.ipynb",
+        "asthma-lactylation:Computer Methods and Programs in Biomedicine/github_open_source_manuscript_order/methods/99_misc/DL-asthma.ipynb"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "d5b8d5949a0404a7afcc19985bf0b48ae063e4dff1dab03bbb09c1b20b7bb234",
+      "canonical": "asthma-lactylation:8.百种机器学习/refer.ML.R",
+      "members": [
+        "asthma-lactylation:8.百种机器学习/refer.ML.R",
+        "asthma-lactylation:8.百种机器学习/15.ML/refer.ML.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "ef4bb4b98b341410768ea3648a770a66c6374cddbd1835a538a7976997ccdf00",
+      "canonical": "asthma-lactylation:废弃/dxw1.R",
+      "members": [
+        "asthma-lactylation:废弃/dxw1(1).R",
+        "asthma-lactylation:废弃/dxw1.R",
+        "asthma-lactylation:废弃/dxw/step1/dxw1.R"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    },
+    {
+      "sha256": "d90c5aaa619d596d4b37c1431331bc745dce1def2cd22bce29acfeef8906300e",
+      "canonical": "asthma-lactylation:废弃/code240925/ANCA-GN_transcriptomics-main/annotations_visium/touch_folders.py",
+      "members": [
+        "asthma-lactylation:废弃/code240925/ANCA-GN_transcriptomics-main/annotations_visium/touch_folders.py",
+        "asthma-lactylation:废弃/code240925/ANCA-GN_transcriptomics-main/annotations_visium_v2/touch_folders.py"
+      ],
+      "scope": "byte identity only; does not choose scientific/latest version"
+    }
+  ],
+  "existing_wiki_exact_matches": [],
+  "existing_match_scope": "methods/templates .R/.py/.Rmd bytes on 2026-11-02, not all external source archives; semantic family mapping is separate"
+}

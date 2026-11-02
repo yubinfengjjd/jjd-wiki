@@ -188,5 +188,9 @@ implementations:
 
 两篇旧宽泛迁移笔记 配对值迁移（已归档）（条目已删除）、基准分布迁移（已归档）（条目已删除） 保留历史且不再推荐。有依据内容限定在本家族：配对与量纲一致、重复/折身份可追踪、点与摘要同源。方法家族不推广成参考解、耗时/内存等其他分析。
 
+## 本机组学课题来源增量（2026-11-02）
+
+GMM-LR、ML/CV、stacking/DNN 与 ROC 的上游来源；训练、选模、模型性能聚类与指标汇总区分，未证明切分无泄漏。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

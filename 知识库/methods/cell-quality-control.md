@@ -186,5 +186,9 @@ Seurat 对象（`RNA` assay 的 `counts`），或能转为同样基因×细胞�
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 80 细胞做软件调用、输入不变和上游一致性检查；未做真实课题阈值决策。
 
+## 本机组学课题来源增量（2026-11-02）
+
+Seurat 过滤与质量控制来源；复用已有家族，参数与样本单位保留在各来源，未运行。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

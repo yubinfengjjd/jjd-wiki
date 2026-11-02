@@ -211,5 +211,9 @@ figure_relations:
 
 2026-10-23：核对 SCP RunSingleR、青光眼 marker 注释脚本与本机依赖；SingleR 缺失、marker 脚本未函数化，均未写成已验证实现。
 
+## 本机组学课题来源增量（2026-11-02）
+
+marker 注释、SingleR 调用与图形来源；细胞标签、参考库与手工判断需按原对象核对。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

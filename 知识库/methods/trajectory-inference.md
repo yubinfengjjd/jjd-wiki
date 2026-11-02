@@ -246,5 +246,9 @@ Slingshot：Seurat metadata 增加 `Lineage1`（pseudotime）和 `BranchID`，`r
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 80 细胞实际运行 Slingshot 并与上游比较；未做真实轨迹方向论证。
 
+## 本机组学课题来源增量（2026-11-02）
+
+SCP RunMonocle2 与原生 monocle 的新来源配置；不是已验证 Slingshot 分支的复用证据。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

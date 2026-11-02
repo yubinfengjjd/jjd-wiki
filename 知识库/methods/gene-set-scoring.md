@@ -150,5 +150,9 @@ AUCell、UCell 分支未运行（本机缺包）；原始课题的五种分数�
 
 2026-10-23：在隔离 R 环境用两个命名基因集实际运行 Seurat 打分并与上游比较；AUCell/UCell 未运行，未安装。
 
+## 本机组学课题来源增量（2026-11-02）
+
+UC/哮喘五算法分数求和、PTMD/MBDs/114 签名与 irGSEA.score 的来源；不同分数直接 rowSums 为课题特定策略，RRA 不是同一后处理。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

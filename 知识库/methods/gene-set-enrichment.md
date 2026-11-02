@@ -128,5 +128,9 @@ ORA 用超几何/富集检验比较列表内外的基因集命中；GSEA 则使�
 
 2026-10-23：在隔离 R 环境用自定义 TERM2GENE/TERM2NAME 实际运行 ORA 并与上游比较；未运行在线 GO/KEGG 或 GSEA。
 
+## 本机组学课题来源增量（2026-11-02）
+
+clusterProfiler 与 irGSEA.integrate/RRA 的候选技术来源；打分、组间整合与 irGSEA.heatmap 分开，不将热图重复收为新方法。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

@@ -170,5 +170,9 @@ SCP `RunDEtest` 默认调用 Seurat `FindMarkers` 的 Wilcoxon 分支，并按�
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 实际运行并与上游表比较；未做真实课题的 pseudobulk 或样本级推断。
 
+## 本机组学课题来源增量（2026-11-02）
+
+limma 与 Seurat FindMarkers/FindAllMarkers 的新增来源；保留样本/细胞单位与对比模型。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

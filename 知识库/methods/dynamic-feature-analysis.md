@@ -170,5 +170,9 @@ Seurat 对象、`lineages`（pseudotime 列名，可多个）、`features`、`sl
 
 2026-10-23：在隔离 R 环境用软件夹具 pseudotime 实际运行并与上游比较；未做真实轨迹或计数模型验证。
 
+## 本机组学课题来源增量（2026-11-02）
+
+DynamicPlotMonocle2 在绘图内重拟合 mgcv GAM，并有 fallback；与 SCP 原生动态入口单列实现来源，未运行、未改算法。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

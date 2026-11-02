@@ -182,5 +182,9 @@ implementations:
 
 [[methods/regression-resampling-evaluation]] 与 SHAP 是互补参考：前者评估预测，后者归因。预测/指标表没有 SHAP 所需模型、特征及背景，不能直接串联；未发现第二个有依据的现存方法可直接读取 SHAP 图表契约。
 
+## 本机组学课题来源增量（2026-11-02）
+
+kernelshap/shapviz/LIME 和 Python 解释脚本的来源候选；LIME 另属解释策略，未运行真实模型联调。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

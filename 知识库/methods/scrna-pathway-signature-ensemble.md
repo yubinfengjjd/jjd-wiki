@@ -124,5 +124,9 @@ data_contract:
 
 2026-10-22 建页，归档原脚本；作者已确认方法页。fig06 模板已建并用合成示例回放；fig05 热图来源已归档，未建模板。
 
+## 本机组学课题来源增量（2026-11-02）
+
+两个新增来源有同类五分数求和；按 gene-set-scoring 统一导航，不按疾病/签名列表再造同义分析页。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

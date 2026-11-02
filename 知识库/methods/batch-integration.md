@@ -180,5 +180,9 @@ Seurat 分支返回 `list(result=Seurat, diagnostics=...)`；`result` 含整合 
 
 2026-10-23：Seurat 分支在隔离 R 环境实际运行并与上游比较；Harmony 分支缺包保留 not_run，未安装。
 
+## 本机组学课题来源增量（2026-11-02）
+
+Harmony 与 bulk 批次处理的来源候选；bulk/单细胞输入不同，不能凭包名当可互换实现。 来源清单见 [[methods/uc-ptm-source-catalog]]、[[methods/asthma-lactylation-source-catalog]]；具体实现与原始路径对照见 [[methods/local-omics-analysis-guide]]，图形调用见 [[methods/local-omics-visualization-guide]]。本段只补知识与来源，不更改现有实现、运行/独立性收据、状态或作者确认。
+
 <!-- user:start -->
 <!-- user:end -->

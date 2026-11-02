@@ -120,7 +120,10 @@
 
 ### draft
 
+- [[methods/asthma-lactylation-workflow|乳酸化与代谢研究分析流程]] — 保留来源步骤、参数与分组差异的研究流程；共同分析引用现有家族，所有来源分支未重跑。
+- [[methods/uc-ptm-workflow|修饰分型与模型分析流程]] — 保留来源步骤、参数与分组差异的研究流程；共同分析引用现有家族，所有来源分支未重跑。
 - [[methods/scop-workflows|单细胞与空间组学工作流]] — 12 份固定版本上游 Rmd 流程的输入、执行边界和方法链；未 Knit，未作为 L1 配方运行。
+- [[methods/uc-spatial-workflows|空间转录组分支与推断边界]] — 区分原空间探索、整理版主线、历史 CellTrek/伪超分辨与 RCTD+CellChat 最终来源及其后处理，保留算法替代的真实含义。
 
 ### ready
 
@@ -131,7 +134,9 @@
 
 ### draft
 
+- [[methods/asthma-lactylation-source-catalog|乳酸化研究脚本来源索引]] — 159 份研究代码、154 个不同字节版本的来源及去重索引；只编译知识，未运行。
 - [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
+- [[methods/uc-ptm-source-catalog|修饰研究脚本来源索引]] — 132 份研究代码、90 个不同字节版本的来源及去重索引；只编译知识，未运行。
 - [[methods/scop-analysis-guide|单细胞与空间分析方法导航]] — 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；本机未运行。
 - [[methods/scop-source-catalog|单细胞与空间组学来源索引]] — 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；完整来源导航，本机未运行。
 - [[methods/scop-visualization-guide|单细胞与空间绘图入口导航]] — 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；全部本机未运行，不继承 SCP 图样或回放。
@@ -139,6 +144,8 @@
 - [[methods/scp-viz-statplots|单细胞统计与相关绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 - [[methods/scp-viz-heatmaps|单细胞表达与动态热图入口]] — 4 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 - [[methods/scp-viz-dimplots|单细胞降维与表达绘图入口]] — 5 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
+- [[methods/local-omics-analysis-guide|组学课题方法去重与选择]] — 把两个课题的共同分析映射到现有家族；区分参数、算法分支、工作流和绘图适配，避免按项目重复建方法。
+- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造]] — 将 irGSEA、SCP、Seurat、CellChat 等直接出图区分为依赖调用，并单列带汇总或 GAM 重拟合的本地改造。
 - [[methods/scp-viz-model-overlays|轨迹富集与网络绘图入口]] — 8 个 SCP 原生绘图入口的对象输入、上游链路、独立闭包及逐形态证据；draft，不作为分析家族。
 
 ### ready
