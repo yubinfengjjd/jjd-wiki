@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T12:27:50.917866+00:00",
+  "checked_at": "2026-11-02T05:44:56.850841+00:00",
   "page": "methods/cell-clustering.md",
-  "snapshot": "f4b7820bcd9cd88cc734ba794a569b5b361bc5de8053a62ab750bf8a77cabf97",
+  "snapshot": "b3f8b25da73d64d153d0f71809be60cac76ef6ffed0ddb1889dbc0d732361ed6",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

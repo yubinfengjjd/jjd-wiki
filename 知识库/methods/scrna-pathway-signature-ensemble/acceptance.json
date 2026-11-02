@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-22T19:00:13.799988+00:00",
+  "checked_at": "2026-11-02T05:44:57.311233+00:00",
   "page": "methods/scrna-pathway-signature-ensemble.md",
-  "snapshot": "f4808dfe7b22fc497b8582edd7bb76adda2f5953ce7cde218e27b688b103671f",
+  "snapshot": "11924e2b611578d58780521f597e95fa77e35d467ef3aa81d56bcdba9ae03110",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

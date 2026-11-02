@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T03:42:20.403573+00:00",
+  "checked_at": "2026-11-02T05:44:57.268238+00:00",
   "page": "methods/regression-resampling-evaluation.md",
-  "snapshot": "dcf7441b5c093ffd5d61af1f078232f89ea1d2d604ce959695141cd89cbc5298",
+  "snapshot": "11ac13562005b9d92b3f5a4a645bc7438e29b4cdb3d03bf3565376ad957d02dd",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
