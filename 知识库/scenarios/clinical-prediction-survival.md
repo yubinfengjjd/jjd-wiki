@@ -71,17 +71,10 @@ summary: 队列随访或二分类结局：生存曲线、HR 森林图、预后�
 | [[recipes/figureya-1survivalcurve-update|多组 KM 生存曲线与风险表]] | L1 | ready · 运行 pass | 两组/多组 KM 曲线 + 风险表，最常用起点 |
 | [[recipes/figureya-284pairwiselogrank|三组以上 KM 曲线与两两比较表]] | L1 | ready · 运行 pass | ≥3 组时加两两 log-rank 表 |
 | [[recipes/figureya-6rhrsv2|临床亚组分析森林图]] | L1 | ready · 运行 pass | 已算好 HR 的临床亚组森林图 |
-| [[recipes/figureya-193risktable|训练与验证集风险评分多因素森林表]] | L1 | ready · 运行 pass | 训练/验证集 riskscore 多因素森林表 |
-| [[recipes/figureya-31lasso-update|LASSO Cox 系数路径与交叉验证图]] | L1 | ready · 运行 pass | LASSO Cox 筛基因、建签名 |
-| [[recipes/figureya-141risk|风险评分分布与签名基因热图联图]] | L1 | ready · 运行 pass | 风险评分分布 + 生存状态 + 签名热图 |
 | [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] | L1 | ready · 运行 pass | 列线图与校准曲线 |
-| [[recipes/figureya-85timeroc|多模型时间依赖 ROC 曲线]] | L1 | ready · 运行 pass | 时间依赖 ROC |
 | [[recipes/figureya-138nicecalibration|Logistic 模型校准曲线与 HL 检验]] | L1 | ready · 运行 pass | Logistic 诊断模型校准（不用于预后模型） |
 | [[recipes/figureya-33dca-update|决策曲线与净获益分析]] | L1 | ready · 运行 pass | 决策曲线 / 净获益 |
 | [[recipes/figureya-99smoothhrv2|限制性立方样条 HR 曲线]] | L1 | ready · 运行 pass | RCS 非线性 HR 曲线 |
-| [[recipes/figureya-102multipanelroc|多变量 Logistic 模型训练/测试 ROC]] | L1 | ready · 运行 pass | 多变量 Logistic 训练/测试 ROC |
-| [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] | L1 | draft · 运行 fail | 多算法组合预后模型 C 指数比较（重） |
-| `figureya:FigureYa186swimmerplot` | L0 | catalog | 治疗时间线泳道图（L0，未在 Wiki 运行） |
 <!-- facts:end -->
 
 ## 注意
@@ -89,6 +82,14 @@ summary: 队列随访或二分类结局：生存曲线、HR 森林图、预后�
 - HR、OR、C 指数等统计量由上游代码计算；换数据前确认结局编码（0/1）、时间单位和参考组。
 - Logistic 校准不能当预后模型校准；生存模型用 30nomogram 的 bootstrap 校准或另行确认。
 - 最佳截断、多模型挑最优都有过拟合风险，正式结论需外部验证。
+
+<!-- figureya-selection:start -->
+## 样式筛选记录
+
+2026-11-02 按作者的 FigureYa 样式筛选更新当前首选展示：原 14 项，当前展示 7 项。
+
+被移除项退出当前首选表；原 `picks` 关系保留用于恢复和溯源，不能据历史关系重新推荐已移除样式。
+<!-- figureya-selection:end -->
 
 ## 作者备注
 

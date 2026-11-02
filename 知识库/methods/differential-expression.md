@@ -161,6 +161,11 @@ SCP `RunDEtest` 默认调用 Seurat `FindMarkers` 的 Wilcoxon 分支，并按�
 
 2026-10-23 检查了气泡点图和火山图模板。DE marker 可整理为 group×feature 的平均表达/阳性比例，或 gene×effect/p 值的火山图输入；两者均为 adaptable，模板不重算 DE。没有 direct：模板不读 Seurat tools 槽。细胞级 p 值不能直接标注为样本级显著性，图注需说明检验层级。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunDEtest`、`FindMarkers`、`FindAllMarkers`。scop 的 Seurat 和 SummarizedExperiment 方法、细胞级检验和样本级伪批量检验要分开；sample_col/condition_col/design/contrast 不能靠猜测补齐。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 实际运行并与上游表比较；未做真实课题的 pseudobulk 或样本级推断。

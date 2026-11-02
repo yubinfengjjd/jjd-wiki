@@ -51,17 +51,21 @@ summary: 样本或细胞的降维展示、单细胞注释与 marker、细胞通�
 | [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 细胞类型 UMAP（L2） |
 | [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]] | L2 | ready · 可用 | 细胞类型 × 基因气泡点图（L2） |
 | [[methods/scp-standard-workflow|单细胞标准预处理、降维与聚类]] | note | ready | 单细胞标准预处理、降维与聚类 |
-| `figureya:FigureYa244PCAPlot` | L0 | catalog | bulk PCA 图（L0） |
 | `figureya:FigureYa229PCOA` | L0 | catalog | PCoA 图（L0） |
-| `figureya:FigureYa254scViolin` | L0 | catalog | 单细胞小提琴（L0） |
-| `figureya:FigureYa267scCellChat` | L0 | catalog | CellChat 细胞通讯（L0） |
-| `figureya:FigureYa178receptorLigand` | L0 | catalog | 受体—配体图（L0） |
 <!-- facts:end -->
 
 ## 注意
 
 - L0 条目未在 Wiki 运行，用前先 promote 并原样跑通。
 - 单细胞流程参数（分辨率、批次方法）属于分析决策，按课题确认。
+
+<!-- figureya-selection:start -->
+## 样式筛选记录
+
+2026-11-02 按作者的 FigureYa 样式筛选更新当前首选展示：原 8 项，当前展示 4 项。
+
+被移除项退出当前首选表；原 `picks` 关系保留用于恢复和溯源，不能据历史关系重新推荐已移除样式。
+<!-- figureya-selection:end -->
 
 ## 作者备注
 

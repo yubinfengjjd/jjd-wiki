@@ -141,6 +141,11 @@ AUCell、UCell 分支未运行（本机缺包）；原始课题的五种分数�
 
 2026-10-23 检查了分组小提琴模板。签名分数可按 celltype/group 展示分布，关系为 adaptable；模板不重算分数或检验。没有 direct：模板不读 Seurat metadata，需先导出 `render-grouped-values`。细胞级 p 值不能当样本级推断，图注需说明。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`CellScoring`、`RunGSVA`、`RunMetabolism`。各打分方法的量纲和假设不同，不能将分数相加或直接作相同尺度比较。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用两个命名基因集实际运行 Seurat 打分并与上游比较；AUCell/UCell 未运行，未安装。

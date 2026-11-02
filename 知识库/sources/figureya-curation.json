@@ -1,0 +1,733 @@
+{
+  "schema_version": 1,
+  "decisions": {
+    "figureya:FigureYa12box": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa22FPKM2TPM": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T12:52:31+00:00"
+    },
+    "figureya:FigureYa76corrgram": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa4bestSeparation": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa11bubble": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa15WGCNA": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa16fitting": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa20mortality": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa24ROC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa27tSNE_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa31lasso_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa40lineage": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa62twoAxis": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa72biomarker": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa80GOclustering": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa84roast": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa87fish": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa85timeROC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa82IGVzoom": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa79CNV": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa86SNPmotif": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa89ggplotCirco": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa88DAVIDkappa": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa92immune_gene_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa96R2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa94STEMbox_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa98STEMheatmapV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa102multipanelROC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa101PCA": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa105GDSC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa106immunotherapy": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa112Plus_venn": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa121MethCGIcluster": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa103coAbundant": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa93UMAP": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa117multilinearDE": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa116supervisedCluster": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa122mut2expr": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa123mutVSexpr": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa124AssociationHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa127HeatmapPie": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa126CorrelationHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa125FishertestV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa128Prognostic": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa135multiVolcano": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa136fgsea": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa140mosaicpie": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa143survCor_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa141risk": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa145target": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa144DiagHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa146TMEbox": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa150diversityScore": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa152DouleCorPlot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa154immuneSubtypes": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa153ccgraph": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa156enrichSimulation": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa157ChIPpvalue": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa155ATAC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa158MutationPattern": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa159LR_RF_V2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa160scGSVA": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa161stemness": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa166scCNV": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa165heatmapPvalue": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa167TumorIndex": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa169sigHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa168legoplot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa170ImmuLncRNA": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa172ggplot2Gviz": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa171subgroupSurv": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa174squareCross": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa175quadrant": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa173fancybar": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa176BlandAltman": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa178receptorLigand": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa177RNAvelocity": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa179AMDAplot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa180FGAplotV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa181multiCorrelation": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa182RFSurvV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa183condSurv": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa184ranger": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa185sciATAC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa186swimmerplot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa187RMS": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa189timeCindex": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa190batchLogistic": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa188CNVload": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa191bestLogistic": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa192breakpoint": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa193RiskTable": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa196PanPie": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa196Plus_PanPie": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa197SmoothHaz": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa198SignatureCombinationV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa201ClusterCorrelation": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa205immunophenoscore_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa207Randomization": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa208FPI": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa209batchEnrich": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa210survivalScape": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa213customizeHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa217RMR": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa218Elasticnet": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa222PCAgene": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa220repeatedLasso": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa216MetaREM": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa225GiViTl": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa224scMarker": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa223scNMF": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa228linkCor": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa232scRankHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa233genepair": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa234panImmune": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa235scDEG": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa236circGroup": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa237circVenn": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa238corRiskMut": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa240CRISPR": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa241scRNA_NMI": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa243scMarkerGroupHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa244PCAPlot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa242corMethExpr": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa245VarDecompose_update": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa246supervisedGDSC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa247oncoPredict": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa249Regulon": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa250ImmGenePair": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa252mclust": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa254scViolin": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa256panelLink": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa259circLink": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa258SNF": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa257armCNV": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa260CNV": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa261circGene": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa262GDC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa265panCNV": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa264epiImmune": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa263panDiff": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa266panHeatmap": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa267scCellChat": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa268panCNVexpr": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa271panMethExpr": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa270panMeth": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa269scMetabolism": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa272scBulkCCCI": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa273BAPC": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa274MuSiCbulkProop": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa276panSNV": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa278heatmapPoints": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa279panGeneGSEA": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa280TMEofSTS": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa283vennyPvalue": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa281wheel": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa282CMAP_XSum": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa285scRNA_monocle": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa286ExprCorORR": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa289TILSig": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa288MutualExclusivity": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa287L2logV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa290BarGraph": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa291PancanProgSigatureV2": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa292HCCsubtype": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa293machineLearning": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa295ClassDiscovery": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa297Rbar": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa298ecdfPvalue": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa299pancanSurv": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa301scCoExpr": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa302NTPPAM": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa296VIPER": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa303panCircos": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa306slingshot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa312CellPreference": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa313CircularPlot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa316RF_XGBoost_Boruta": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa319ContribScore": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa317RoeDot": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa322SSEA": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    },
+    "figureya:FigureYa321volcanoSE": {
+      "decision": "removed",
+      "updated_at": "2026-11-01T13:08:59+00:00"
+    }
+  }
+}

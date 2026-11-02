@@ -154,6 +154,11 @@ data.frame，一行一个细胞：`cell_id`、`cluster`、`reduction`、`resolut
 
 2026-10-23 检查了 UMAP 分组和细胞比例模板。cluster 可着色 UMAP、展示样本组成；均为 adaptable。没有 direct；cluster 编号不等于细胞类型，图注必须说明 resolution 和注释来源。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`FindNeighbors`、`FindClusters`、`RunCHOIR`。聚类标签不是细胞类型；图构建、分辨率与显著性聚类路径分别核对。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 200 细胞实际运行并与相同 Seurat 调用比较；未做真实课题 resolution 选择。

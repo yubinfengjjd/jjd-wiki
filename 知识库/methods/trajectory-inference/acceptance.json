@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T16:05:01.033062+00:00",
+  "checked_at": "2026-11-01T12:27:51.301476+00:00",
   "page": "methods/trajectory-inference.md",
-  "snapshot": "0451844632ac9f907abb578c67f68f3788853a639cc4a6623a0ede0480c09706",
+  "snapshot": "15a164747a04b4c96f5f209ff85e5cf950473dc10bf6a00cffdf6c31a6b5a068",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

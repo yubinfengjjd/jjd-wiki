@@ -1,0 +1,1641 @@
+{
+  "SCP_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "scop_commit": "2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb",
+  "shared_export_names": 89,
+  "scop_only_names": [
+    "AddATACMotifs",
+    "AddFeaturesData",
+    "AddModuleScore",
+    "AggregateExpression",
+    "AnnotateATACPeaks",
+    "AverageExpression",
+    "BranchStreamPlot",
+    "CCA_integrate",
+    "CCCHeatmap",
+    "CCCNetworkPlot",
+    "CCCStatPlot",
+    "CNVPlot",
+    "COMMOTPlot",
+    "Cell2locationPlot",
+    "CellCycleScoring",
+    "CellOraclePlot",
+    "CellRankPlot",
+    "CellScoringPlot",
+    "CellTypistModels",
+    "CheckATACData",
+    "CheckDataList",
+    "CheckDataMerge",
+    "CheckDataType",
+    "ClusterTreePlot",
+    "CombineATACPeaks",
+    "ConvertHomologs",
+    "Coralysis_integrate",
+    "CoverageTrackPlot",
+    "CycGenePrefetch",
+    "CytoTRACEPlot",
+    "DEtestManhattanPlot",
+    "DEtestPlot",
+    "DEtestRingPlot",
+    "DeconvolutionPlot",
+    "DimsEstimatePlot",
+    "DorotheaPlot",
+    "EstimateGenePlot",
+    "EstimateScorePlot",
+    "ExportATACResults",
+    "FerrisWheelPlot",
+    "FetchDataZero",
+    "FilterATACPeaks",
+    "FindAllMarkers",
+    "FindClusters",
+    "FindMarkers",
+    "FindMultiModalNeighbors",
+    "FindNeighbors",
+    "FindVariableFeatures",
+    "FitDevoPlot",
+    "FoldChange",
+    "GLUE_integrate",
+    "GSVAPlot",
+    "GeneImmuneCorPlot",
+    "GetAssayData5",
+    "GetCCCObject",
+    "GetFeaturesData",
+    "GetSimilarFeatures",
+    "GetSpatialDMResult",
+    "GetSpatialGraph",
+    "GetSpatialResult",
+    "Harmony5_integrate",
+    "IREAPlot",
+    "ImmuneAbundancePlot",
+    "IntegrationBenchmarkPlot",
+    "ListCCCDB",
+    "ListEnv",
+    "MetaCellPlot",
+    "MetabolismPlot",
+    "MistyRPlot",
+    "MultiMAP_integrate",
+    "NMFHeatmap",
+    "NormalizeData",
+    "PalantirTrajectoryPlot",
+    "PlotscPagwas",
+    "PrepareCCCDB",
+    "PrepareCORUM",
+    "PrepareCSPA",
+    "PrepareCellChat",
+    "PrepareCellTalk",
+    "PrepareChromosome",
+    "PrepareCustomDB",
+    "PrepareCytoTRACE2",
+    "PrepareDO",
+    "PrepareENCODE",
+    "PrepareEnzyme",
+    "PrepareGO",
+    "PrepareGeneType",
+    "PrepareHPO",
+    "PrepareHTFtarget",
+    "PrepareIREA",
+    "PrepareJASPAR",
+    "PrepareKEGG",
+    "PrepareMP",
+    "PrepareMSigDB",
+    "PreparePFAM",
+    "PrepareReactome",
+    "PrepareSPRomeDB",
+    "PrepareSurfaceome",
+    "PrepareTF",
+    "PrepareTFLink",
+    "PrepareTRRUST",
+    "PrepareVerSeDa",
+    "PrepareWikiPathway",
+    "ProportionTestPlot",
+    "PseudotimeProjectionPlot",
+    "RPCA_integrate",
+    "ReadATACData",
+    "ReadMultiomeData",
+    "ReadSpatialData",
+    "RecountATAC",
+    "RemoveEnv",
+    "RunATACQC",
+    "RunAugur",
+    "RunBANKSY",
+    "RunBayesSpace",
+    "RunCARD",
+    "RunCCA",
+    "RunCCC",
+    "RunCHOIR",
+    "RunCIBERSORT",
+    "RunCNV",
+    "RunCOMMOT",
+    "RunCSIDE",
+    "RunCell2fate",
+    "RunCell2location",
+    "RunCellChat",
+    "RunCellCycle",
+    "RunCellOracle",
+    "RunCellRank",
+    "RunCellRankEnrichment",
+    "RunCellRankTrends",
+    "RunCellTypist",
+    "RunCellphoneDB",
+    "RunChromVAR",
+    "RunCisTarget",
+    "RunCoEmbedding",
+    "RunCytoSPACE",
+    "RunCytoTRACE",
+    "RunDecontX",
+    "RunDeconvolution",
+    "RunDimsEstimate",
+    "RunDimsReduction",
+    "RunDorothea",
+    "RunDoubletDetection",
+    "RunESTIMATE",
+    "RunFWP",
+    "RunFitDevo",
+    "RunGENIE3",
+    "RunGNIPLR",
+    "RunGRN",
+    "RunGRNBoost2",
+    "RunGSVA",
+    "RunGeneActivity",
+    "RunIREA",
+    "RunIntegration",
+    "RunIntegrationBenchmark",
+    "RunLIANA",
+    "RunLISI",
+    "RunLabelTransfer",
+    "RunLinkPeaks",
+    "RunMDIC3",
+    "RunMERINGUE",
+    "RunMetaCell",
+    "RunMetabolism",
+    "RunMilo",
+    "RunMistyR",
+    "RunMotifEnrichment",
+    "RunMultiNichenetr",
+    "RunNichenetr",
+    "RunPCA",
+    "RunPermutation",
+    "RunPropeller",
+    "RunProportionTest",
+    "RunRCTD",
+    "RunRareQ",
+    "RunReferenceMapping",
+    "RunSCENIC",
+    "RunSCENICPlus",
+    "RunSPOTlight",
+    "RunSTdeconvolve",
+    "RunSciBet",
+    "RunScissor",
+    "RunScrublet",
+    "RunSecAct",
+    "RunSecActCCC",
+    "RunSecActPatternGenes",
+    "RunSecActSignalingPattern",
+    "RunSecActVelocity",
+    "RunSmoothClust",
+    "RunSpaNorm",
+    "RunSpaTalk",
+    "RunSpatialBenchmark",
+    "RunSpatialCellChat",
+    "RunSpatialDM",
+    "RunSpatialEcoTyper",
+    "RunSpatialGradientFeatures",
+    "RunSpatialIntegration",
+    "RunSpatialNeighborhood",
+    "RunSpatialNetwork",
+    "RunSpatialVariableFeatures",
+    "RunSpotQC",
+    "RunSpotSweeper",
+    "RunStandardWorkflow",
+    "RunStatialKontextual",
+    "RunUMAP",
+    "RunVECTOR",
+    "RunmcRigor",
+    "RunscCODA",
+    "RunscDblFinder",
+    "RunscFEA",
+    "RunscMalignantFinder",
+    "RunscMalignantRegion",
+    "RunscMalignantStates",
+    "RunscOMM",
+    "RunscPagwas",
+    "RunscTenifoldKnk",
+    "RunscTenifoldNet",
+    "Runscds",
+    "RuntAge",
+    "SCENICPlot",
+    "SCENICPlusPlot",
+    "STdeconvolvePlot",
+    "ScaleData",
+    "ScissorPlot",
+    "SelectIntegrationFeatures",
+    "SetSpatialImageAxes",
+    "SpaTalkPlot",
+    "SpatialBenchmarkPlot",
+    "SpatialCellChatPlot",
+    "SpatialCellPlot",
+    "SpatialCoordinates",
+    "SpatialDMPlot",
+    "SpatialDeconvolutionPlot",
+    "SpatialGradientPlot",
+    "SpatialIntegrationPlot",
+    "SpatialNeighborhoodPlot",
+    "SpatialNeighborhoodProfile",
+    "SpatialNetworkPlot",
+    "SpatialSpotPlot",
+    "SpatialVariableFeaturePlot",
+    "StatialKontextualPlot",
+    "TACSPlot",
+    "TrainCellTypist",
+    "VECTORPlot",
+    "WNN_integrate",
+    "ccc_to_adata",
+    "ccc_to_liana",
+    "check_python",
+    "env_requirements",
+    "fastMNN5_integrate",
+    "giotto_to_srt",
+    "h5ad_to_srt",
+    "integration_scop",
+    "loom_to_adata",
+    "loom_to_srt",
+    "remove_python",
+    "scFEABalanceBarPlot",
+    "scFEAHeatmap",
+    "scFEAVolcanoPlot",
+    "scTenifoldKnkPlot",
+    "scTenifoldNetPlot",
+    "scVI5_integrate",
+    "scop_logo",
+    "spe_to_srt",
+    "srt_append",
+    "srt_reorder",
+    "srt_to_giotto",
+    "srt_to_h5ad",
+    "srt_to_spe",
+    "standard_scop",
+    "tAgePlot",
+    "theme_scop",
+    "theme_spatial"
+  ],
+  "SCP_only_names": [
+    "CC_GenePrefetch",
+    "Env_requirements",
+    "GraphPlot",
+    "Integration_SCP",
+    "RunDimReduction",
+    "SrtAppend",
+    "SrtReorder",
+    "Standard_SCP",
+    "StatPlot",
+    "adjcolors",
+    "arrow",
+    "as_matrix",
+    "blendcolors",
+    "capitalize",
+    "check_DataType",
+    "check_Python",
+    "check_R",
+    "check_srtList",
+    "check_srtMerge",
+    "compute_velocity_on_grid",
+    "download",
+    "drop_data",
+    "exist_Python_pkgs",
+    "find_conda",
+    "geom_alluvial",
+    "geom_alluvial_label",
+    "geom_alluvial_text",
+    "geom_sankey",
+    "geom_sankey_bump",
+    "geom_sankey_label",
+    "geom_sankey_text",
+    "get_vars",
+    "gpar",
+    "installed_Python_pkgs",
+    "invoke",
+    "isOutlier",
+    "iterchunks",
+    "make_long",
+    "palette_scp",
+    "panel_fix",
+    "panel_fix_overall",
+    "segementsDf",
+    "show_palettes",
+    "slim_data",
+    "theme_alluvial",
+    "theme_blank",
+    "theme_sankey",
+    "theme_sankey_bump",
+    "theme_scp",
+    "tochunks",
+    "try_get",
+    "unit",
+    "unnest"
+  ],
+  "same_name_comparison": [
+    {
+      "name": "%>%",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "%||%",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "AnnotateFeatures",
+      "parameters_added": [
+        "...",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "BBKNN_integrate",
+      "parameters_added": [
+        "backend",
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CSS_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CellCorHeatmap",
+      "parameters_added": [
+        "cell_annotation_border",
+        "cell_annotation_border_palcolor",
+        "cell_annotation_border_size",
+        "feature_annotation_border",
+        "feature_annotation_border_palcolor",
+        "feature_annotation_border_size",
+        "heatmap_border",
+        "heatmap_border_palcolor",
+        "heatmap_border_size",
+        "legend.position",
+        "query_annotation",
+        "query_annotation_palcolor",
+        "query_annotation_palette",
+        "ref_annotation",
+        "ref_annotation_palcolor",
+        "ref_annotation_palette",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "query_cell_annotation",
+        "query_cell_annotation_palcolor",
+        "query_cell_annotation_palette",
+        "ref_cell_annotation",
+        "ref_cell_annotation_palcolor",
+        "ref_cell_annotation_palette"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CellDensityPlot",
+      "parameters_added": [
+        "layer",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CellDimPlot",
+      "parameters_added": [
+        "add_grid",
+        "grid_alpha",
+        "grid_color",
+        "grid_n",
+        "grid_size",
+        "label.by",
+        "legend.by",
+        "legend.title",
+        "mark.by",
+        "mark_border",
+        "mark_linewidth",
+        "mark_palcolor",
+        "mark_palette",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "CellDimPlot3D",
+      "parameters_added": [
+        "density_bandwidth",
+        "density_color_stops",
+        "density_colors",
+        "density_label",
+        "density_label_color",
+        "density_label_min_distance",
+        "density_label_top_n",
+        "density_n",
+        "density_power",
+        "density_show_axes",
+        "density_show_colorbar",
+        "density_show_title",
+        "density_surface_opacity",
+        "density_threshold",
+        "object",
+        "plot_type",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "CellScoring",
+      "parameters_added": [
+        "backend",
+        "cores",
+        "layer",
+        "object",
+        "store_metadata",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "BPPARAM",
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CellStatPlot",
+      "parameters_added": [
+        "...",
+        "grid_major",
+        "grid_major_colour",
+        "grid_major_linetype",
+        "grid_major_linewidth",
+        "object",
+        "x_text_angle"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "ComBat_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "Conos_integrate",
+      "parameters_added": [
+        "cores",
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "num_threads",
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CreateDataFile",
+      "parameters_added": [
+        "data_file",
+        "layers",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "DataFile",
+        "slots"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "CreateMetaFile",
+      "parameters_added": [
+        "meta_file",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "MetaFile"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "DefaultReduction",
+      "parameters_added": [
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "DynamicHeatmap",
+      "parameters_added": [
+        "...",
+        "cell_annotation_border",
+        "cell_annotation_border_palcolor",
+        "cell_annotation_border_size",
+        "cores",
+        "feature_annotation_border",
+        "feature_annotation_border_palcolor",
+        "feature_annotation_border_size",
+        "fit_method",
+        "heatmap_border",
+        "heatmap_border_palcolor",
+        "heatmap_border_size",
+        "knot",
+        "layer",
+        "legend.position",
+        "max_knot_allowed",
+        "minfreq",
+        "n_candidates",
+        "object",
+        "padjust_method",
+        "suffix",
+        "terms_background_alpha",
+        "terms_background_palcolor",
+        "terms_bar_palcolor",
+        "terms_border",
+        "terms_border_palcolor",
+        "terms_border_size",
+        "terms_group_background",
+        "terms_stat",
+        "terms_stat_axis",
+        "terms_stat_background_palcolor",
+        "terms_stat_border",
+        "terms_stat_border_palcolor",
+        "terms_stat_border_size",
+        "terms_stat_digits",
+        "terms_stat_label",
+        "terms_stat_label_palcolor",
+        "terms_stat_width",
+        "terms_text_palcolor",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "DynamicPlot",
+      "parameters_added": [
+        "cores",
+        "fit.by",
+        "group_use",
+        "layer",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "EnrichmentPlot",
+      "parameters_added": [
+        "enrichmap_nlabel",
+        "grid_major",
+        "group.by",
+        "object",
+        "rank_by",
+        "rank_label_size",
+        "rank_label_terms",
+        "rank_nlabel",
+        "rank_pt_alpha",
+        "rank_pt_size",
+        "rank_shared_y",
+        "scoreCutoff",
+        "score_col",
+        "score_label",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "group_by"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FeatureCorPlot",
+      "parameters_added": [
+        "layer",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FeatureDimPlot",
+      "parameters_added": [
+        "layer",
+        "legend.title",
+        "object",
+        "show_points",
+        "title.color",
+        "title.face",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FeatureDimPlot3D",
+      "parameters_added": [
+        "layer",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FeatureHeatmap",
+      "parameters_added": [
+        "...",
+        "cell_annotation_border",
+        "cell_annotation_border_palcolor",
+        "cell_annotation_border_size",
+        "feature_annotation_border",
+        "feature_annotation_border_palcolor",
+        "feature_annotation_border_size",
+        "heatmap_border",
+        "heatmap_border_palcolor",
+        "heatmap_border_size",
+        "layer",
+        "legend.position",
+        "object",
+        "row_names_wrap",
+        "terms_background_alpha",
+        "terms_background_palcolor",
+        "terms_bar_palcolor",
+        "terms_border",
+        "terms_border_palcolor",
+        "terms_border_size",
+        "terms_group_background",
+        "terms_stat",
+        "terms_stat_axis",
+        "terms_stat_background_palcolor",
+        "terms_stat_border",
+        "terms_stat_border_palcolor",
+        "terms_stat_border_size",
+        "terms_stat_digits",
+        "terms_stat_label",
+        "terms_stat_label_palcolor",
+        "terms_stat_width",
+        "terms_text_palcolor",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FeatureStatPlot",
+      "parameters_added": [
+        "...",
+        "auto_comparison",
+        "grid_major",
+        "grid_major_colour",
+        "grid_major_linetype",
+        "grid_major_linewidth",
+        "layer",
+        "legend.title",
+        "object",
+        "verbose",
+        "x_text_angle"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FetchH5",
+      "parameters_added": [
+        "data_file",
+        "layer",
+        "meta_file",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "DataFile",
+        "MetaFile",
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "FindExpressedMarkers",
+      "parameters_added": [
+        "layer",
+        "seed"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "GSEAPlot",
+      "parameters_added": [
+        "enrichmap_nlabel",
+        "group.by",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "group_by"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "GeneConvert",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "GroupHeatmap",
+      "parameters_added": [
+        "...",
+        "cell_annotation_border",
+        "cell_annotation_border_palcolor",
+        "cell_annotation_border_size",
+        "feature_annotation_border",
+        "feature_annotation_border_palcolor",
+        "feature_annotation_border_size",
+        "heatmap_border",
+        "heatmap_border_palcolor",
+        "heatmap_border_size",
+        "layer",
+        "legend.position",
+        "legend_params",
+        "object",
+        "row_names_wrap",
+        "terms_background_alpha",
+        "terms_background_palcolor",
+        "terms_bar_palcolor",
+        "terms_border",
+        "terms_border_palcolor",
+        "terms_border_size",
+        "terms_group_background",
+        "terms_stat",
+        "terms_stat_axis",
+        "terms_stat_background_palcolor",
+        "terms_stat_border",
+        "terms_stat_border_palcolor",
+        "terms_stat_border_size",
+        "terms_stat_digits",
+        "terms_stat_label",
+        "terms_stat_label_palcolor",
+        "terms_stat_width",
+        "terms_text_palcolor",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "Harmony_integrate",
+      "parameters_added": [
+        "harmony_dims_use",
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "Harmony_dims_use",
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "LIGER_integrate",
+      "parameters_added": [
+        "liger_dims_use",
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "LIGER_dims_use",
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "LineagePlot",
+      "parameters_added": [
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "ListDB",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "MNN_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "PAGAPlot",
+      "parameters_added": [
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "PrepareDB",
+      "parameters_added": [
+        "...",
+        "data_dir",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "PrepareEnv",
+      "parameters_added": [
+        "components",
+        "configure_runtime",
+        "cores",
+        "modules",
+        "pip_options",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "PrepareSCExplorer",
+      "parameters_added": [
+        "data_file",
+        "layers",
+        "meta_file",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "DataFile",
+        "MetaFile",
+        "slots"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "ProjectionPlot",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RecoverCounts",
+      "parameters_added": [
+        "object"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RenameClusters",
+      "parameters_added": [
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RenameFeatures",
+      "parameters_added": [
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunCSSMap",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunCellQC",
+      "parameters_added": [
+        "atac_args",
+        "decontX_args",
+        "decontX_assay_name",
+        "decontX_background",
+        "decontX_background_assay",
+        "decontX_batch",
+        "decontX_bg_batch",
+        "decontX_round_counts",
+        "decontX_store_assay",
+        "decontX_threshold",
+        "group.by",
+        "hb_gene",
+        "hb_pattern",
+        "hb_range",
+        "object",
+        "qc_features",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunDEtest",
+      "parameters_added": [
+        "object"
+      ],
+      "parameters_removed": [
+        "BPPARAM",
+        "assay",
+        "base",
+        "cells1",
+        "cells2",
+        "fc.threshold",
+        "features",
+        "group1",
+        "group2",
+        "group_by",
+        "grouping.var",
+        "latent.vars",
+        "markers_type",
+        "max.cells.per.ident",
+        "mean.fxn",
+        "meta.method",
+        "min.cells.feature",
+        "min.cells.group",
+        "min.diff.pct",
+        "min.pct",
+        "norm.method",
+        "only.pos",
+        "p.adjust.method",
+        "pseudocount.use",
+        "seed",
+        "slot",
+        "test.use",
+        "verbose"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunDM",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunDoubletCalling",
+      "parameters_added": [
+        "data_type",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunDynamicEnrichment",
+      "parameters_added": [
+        "...",
+        "backend",
+        "cores",
+        "features",
+        "layer",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "BPPARAM",
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunDynamicFeatures",
+      "parameters_added": [
+        "cores",
+        "fit_method",
+        "knot",
+        "layer",
+        "max_knot_allowed",
+        "object",
+        "padjust_method",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "BPPARAM",
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunEnrichment",
+      "parameters_added": [
+        "...",
+        "backend",
+        "features",
+        "group.by",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "BPPARAM",
+        "group_by",
+        "seed"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunFR",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunGLMPCA",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunGSEA",
+      "parameters_added": [
+        "...",
+        "eps",
+        "features",
+        "group.by",
+        "nPermSimple",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "BPPARAM",
+        "group_by",
+        "seed"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunHarmony2",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunKNNMap",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunKNNPredict",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunLargeVis",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunMDS",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunMonocle2",
+      "parameters_added": [
+        "backend",
+        "ddrtree_maxIter",
+        "ddrtree_ncenter",
+        "ddrtree_tol",
+        "group.by",
+        "layer",
+        "n_neighbors",
+        "object",
+        "show_plot",
+        "verbose",
+        "xlab",
+        "ylab"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunMonocle3",
+      "parameters_added": [
+        "group.by",
+        "layer",
+        "object",
+        "show_plot",
+        "verbose",
+        "xlab",
+        "ylab"
+      ],
+      "parameters_removed": [
+        "slot"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunNMF",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunPAGA",
+      "parameters_added": [
+        "assay_x",
+        "assay_y",
+        "backend",
+        "cores",
+        "group.by",
+        "layer_x",
+        "layer_y",
+        "legend.position",
+        "object",
+        "plot_dpi",
+        "plot_format",
+        "plot_prefix",
+        "save_plot",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "assay_X",
+        "assay_layers",
+        "dpi",
+        "fileprefix",
+        "group_by",
+        "save",
+        "slot_X",
+        "slot_layers"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunPCAMap",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunPHATE",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunPaCMAP",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunPalantir",
+      "parameters_added": [
+        "allow_approximate",
+        "assay_x",
+        "assay_y",
+        "backend",
+        "conda",
+        "cores",
+        "envname",
+        "group.by",
+        "layer_x",
+        "layer_y",
+        "legend.position",
+        "magic_impute",
+        "magic_layer",
+        "object",
+        "plot_dpi",
+        "plot_format",
+        "plot_prefix",
+        "save_plot",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "assay_X",
+        "assay_layers",
+        "dpi",
+        "fileprefix",
+        "group_by",
+        "n_jobs",
+        "save",
+        "slot_X",
+        "slot_layers"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunSCExplorer",
+      "parameters_added": [
+        "data_file",
+        "meta_file",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "DataFile",
+        "MetaFile",
+        "plotting_workers",
+        "session_workers"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunSCVELO",
+      "parameters_added": [
+        "assay_x",
+        "assay_y",
+        "backend",
+        "compute_paga",
+        "compute_pseudotime",
+        "compute_terminal_states",
+        "compute_velocity_confidence",
+        "compute_velocity_graph",
+        "cores",
+        "diff_kinetics",
+        "filter_genes",
+        "group.by",
+        "layer_x",
+        "layer_y",
+        "legend.position",
+        "log_transform",
+        "max_dense_gib",
+        "min_counts",
+        "min_counts_u",
+        "normalize_per_cell",
+        "object",
+        "plot_dpi",
+        "plot_format",
+        "plot_prefix",
+        "save_plot",
+        "use_raw",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "assay_X",
+        "assay_layers",
+        "dpi",
+        "fileprefix",
+        "group_by",
+        "n_jobs",
+        "save",
+        "slot_X",
+        "slot_layers"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunScmap",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunSeuratMap",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunSingleR",
+      "parameters_added": [
+        "cores",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "BPPARAM"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunSlingshot",
+      "parameters_added": [
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunSymphonyMap",
+      "parameters_added": [
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunTriMap",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunUMAP2",
+      "parameters_added": [],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "RunWOT",
+      "parameters_added": [
+        "assay_x",
+        "assay_y",
+        "group.by",
+        "layer_x",
+        "layer_y",
+        "object",
+        "plot_dpi",
+        "plot_format",
+        "plot_prefix",
+        "save_plot",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "assay_X",
+        "assay_layers",
+        "dpi",
+        "fileprefix",
+        "group_by",
+        "save",
+        "slot_X",
+        "slot_layers"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "Scanorama_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "Seurat_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "Uncorrected_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "VelocityPlot",
+      "parameters_added": [
+        "group.by",
+        "object",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "group_by"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "VolcanoPlot",
+      "parameters_added": [
+        "annotate_enrichment",
+        "cols.background",
+        "enrich_db",
+        "enrich_from",
+        "enrich_gsva_score_cutoff",
+        "enrich_nlabel",
+        "enrich_padj_cutoff",
+        "enrich_terms",
+        "enrich_top_terms",
+        "group.by",
+        "group_use",
+        "gsva_method",
+        "hyperbola_c",
+        "label.by",
+        "object",
+        "only.pos",
+        "res",
+        "threshold_method",
+        "verbose",
+        "y_metric"
+      ],
+      "parameters_removed": [
+        "group_by"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "adata_to_srt",
+      "parameters_added": [
+        "prepare_env",
+        "verbose"
+      ],
+      "parameters_removed": [],
+      "verification_inherited": false
+    },
+    {
+      "name": "db_DoubletDetection",
+      "parameters_added": [],
+      "parameters_removed": [
+        "assay",
+        "db_rate",
+        "srt"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "db_Scrublet",
+      "parameters_added": [],
+      "parameters_removed": [
+        "assay",
+        "db_rate",
+        "srt"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "db_scDblFinder",
+      "parameters_added": [],
+      "parameters_removed": [
+        "assay",
+        "db_rate",
+        "srt"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "db_scds",
+      "parameters_added": [],
+      "parameters_removed": [
+        "assay",
+        "db_rate",
+        "method",
+        "srt"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "fastMNN_integrate",
+      "parameters_added": [
+        "srt_list",
+        "srt_merge",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "scVI_integrate",
+      "parameters_added": [
+        "POISSONVI_params",
+        "cores",
+        "srt_list",
+        "srt_merge",
+        "train_params",
+        "verbose"
+      ],
+      "parameters_removed": [
+        "num_threads",
+        "srtList",
+        "srtMerge"
+      ],
+      "verification_inherited": false
+    },
+    {
+      "name": "srt_to_adata",
+      "parameters_added": [
+        "assay_x",
+        "assay_y",
+        "graphs",
+        "layer_x",
+        "layer_y",
+        "neighbors",
+        "object",
+        "prepare_env",
+        "reductions"
+      ],
+      "parameters_removed": [
+        "assay_X",
+        "assay_layers",
+        "slot_X",
+        "slot_layers"
+      ],
+      "verification_inherited": false
+    }
+  ],
+  "meaning": "name/parameter comparison only; no algorithm identity, numeric equivalence, or receipt inheritance asserted"
+}

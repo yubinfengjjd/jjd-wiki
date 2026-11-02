@@ -1149,3 +1149,29 @@
 ## [2026-10-31 07:51 UTC] resolve existing promoted FigureYa entries in archive reuse manifest
 
 ## [2026-10-31 07:53 UTC] document local archive link and recipe promotion limitations
+
+## [2026-11-01 07:35 UTC] SCP v2: index all exports and curate native plotting closures
+
+## [2026-11-01 12:34 UTC] ingest pinned scop source and knowledge navigation
+
+## [2026-11-01 12:34 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:36 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:41 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:43 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:51 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:52 UTC] FigureYa visual selection: later (1 modules)
+
+## [2026-11-01 12:52 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 12:53 UTC] FigureYa visual selection: removed (1 modules)
+
+## [2026-11-01 13:09 UTC] FigureYa visual selection: removed (181 modules)
+
+## [2026-11-01 16:44 UTC] 按作者 FigureYa 样式筛选整理来源、配方说明与场景导航
+
+## [2026-11-01 16:46 UTC] 集中记录样式移除，保持配方原页与验收收据不变

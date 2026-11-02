@@ -1,0 +1,689 @@
+{
+  "schema_version": 1,
+  "source_commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+  "entries": [
+    {
+      "function": "CellStatPlot",
+      "page": "scp-viz-statplots",
+      "implementation": "scp-cellstatplot",
+      "entry": "code/cellstatplot/code/module.R:CellStatPlot",
+      "input": "Seurat 元数据 stat.by、group.by、split.by",
+      "upstream_page": null,
+      "output": "从细胞元数据调用分类统计图",
+      "boundary": "细胞计数不能冒充独立患者数；共享 StatPlot 形态不表示所有包装路径均通过。",
+      "algorithm_state": "verified",
+      "scope": "f_plot_type_upset",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "stat_type",
+          "value": "percent",
+          "state": "passed",
+          "scope": "f_stat_type_percent",
+          "receipt": "verification/scp-cellstatplot-f_stat_type_percent-20261101T070759-13468-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "stat_type",
+          "value": "count",
+          "state": "passed",
+          "scope": "f_stat_type_count",
+          "receipt": "verification/scp-cellstatplot-f_stat_type_count-20261101T070810-20832-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "position",
+          "value": "stack",
+          "state": "passed",
+          "scope": "f_position_stack",
+          "receipt": "verification/scp-cellstatplot-f_position_stack-20261101T070821-20932-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "position",
+          "value": "dodge",
+          "state": "passed",
+          "scope": "f_position_dodge",
+          "receipt": "verification/scp-cellstatplot-f_position_dodge-20261101T070832-20600-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "bar",
+          "state": "passed",
+          "scope": "f_position_dodge",
+          "receipt": "verification/scp-cellstatplot-f_position_dodge-20261101T070832-20600-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "rose",
+          "state": "passed",
+          "scope": "f_plot_type_rose",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_rose-20261101T070844-11048-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "ring",
+          "state": "passed",
+          "scope": "f_plot_type_ring",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_ring-20261101T070855-3708-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "pie",
+          "state": "passed",
+          "scope": "f_plot_type_pie",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_pie-20261101T070906-14720-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "trend",
+          "state": "passed",
+          "scope": "f_plot_type_trend",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_trend-20261101T070917-16792-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "area",
+          "state": "passed",
+          "scope": "f_plot_type_area",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_area-20261101T070928-7484-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "dot",
+          "state": "passed",
+          "scope": "f_plot_type_dot",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_dot-20261101T070940-21968-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "sankey",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "chord",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "venn",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "upset",
+          "state": "passed",
+          "scope": "f_plot_type_upset",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_upset-20261101T072722-15920-alg.json",
+          "reason": "compared"
+        }
+      ],
+      "current_receipt": "verification/scp-cellstatplot-f_plot_type_upset-20261101T072722-15920-alg.json",
+      "replay_previews": [
+        {
+          "case": "bar_celltype",
+          "path": "verification/previews/CellStatPlot-bar_celltype.png",
+          "sha256": "74aac0ab6ada7c204ba643b0adbd8ae525d764158200573f05facef5107ac082",
+          "receipt": "verification/scp-cellstatplot-bar_celltype-20261026T152948-11976-alg.json"
+        },
+        {
+          "case": "f_plot_type_area",
+          "path": "verification/previews/CellStatPlot-f_plot_type_area.png",
+          "sha256": "ea6447903be833d6236a609f3d30cdfe13d0443be418d644e31c9fa48bc2863b",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_area-20261101T070928-7484-alg.json"
+        },
+        {
+          "case": "f_plot_type_dot",
+          "path": "verification/previews/CellStatPlot-f_plot_type_dot.png",
+          "sha256": "7c7e616f74d0ebb873c1e7ea6ddd0b2783489908d44350e18b337036a723208d",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_dot-20261101T070940-21968-alg.json"
+        },
+        {
+          "case": "f_plot_type_pie",
+          "path": "verification/previews/CellStatPlot-f_plot_type_pie.png",
+          "sha256": "c7e5d84c4cdf163655fc401f1826666ca08e58bd855da8e8bee13cf438f75c85",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_pie-20261101T070906-14720-alg.json"
+        },
+        {
+          "case": "f_plot_type_ring",
+          "path": "verification/previews/CellStatPlot-f_plot_type_ring.png",
+          "sha256": "03e4bd99cabb8d40598434194257736061ebea4f025b2953afeb54f725c7e80d",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_ring-20261101T070855-3708-alg.json"
+        },
+        {
+          "case": "f_plot_type_rose",
+          "path": "verification/previews/CellStatPlot-f_plot_type_rose.png",
+          "sha256": "dce3d6e92e903487ddf0a9513f305923e32909ef3ad70b21f4d3a8980913322a",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_rose-20261101T070844-11048-alg.json"
+        },
+        {
+          "case": "f_plot_type_trend",
+          "path": "verification/previews/CellStatPlot-f_plot_type_trend.png",
+          "sha256": "7b3908b90339d85b3ded7ef100daeb9badb5685378b3e8c292e14a69181637f8",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_trend-20261101T070917-16792-alg.json"
+        },
+        {
+          "case": "f_plot_type_upset",
+          "path": "verification/previews/CellStatPlot-f_plot_type_upset.png",
+          "sha256": "6d0ad6fac13b763a59caf5ad7e39765e96f281a8b77af0b5cf22c16a2505e7ec",
+          "receipt": "verification/scp-cellstatplot-f_plot_type_upset-20261101T070952-18988-alg.json"
+        },
+        {
+          "case": "f_position_dodge",
+          "path": "verification/previews/CellStatPlot-f_position_dodge.png",
+          "sha256": "b00b4aca8d8b4a39322ec6795a92fda83e3b7065f0e2f6e294a3905a608fe4ec",
+          "receipt": "verification/scp-cellstatplot-f_position_dodge-20261101T070832-20600-alg.json"
+        },
+        {
+          "case": "f_position_stack",
+          "path": "verification/previews/CellStatPlot-f_position_stack.png",
+          "sha256": "74aac0ab6ada7c204ba643b0adbd8ae525d764158200573f05facef5107ac082",
+          "receipt": "verification/scp-cellstatplot-f_position_stack-20261101T070821-20932-alg.json"
+        },
+        {
+          "case": "f_stat_type_count",
+          "path": "verification/previews/CellStatPlot-f_stat_type_count.png",
+          "sha256": "6131072d89fdead3fca5e9d1fb5ef109b10b58989c1caa3a5ea6448c6d067885",
+          "receipt": "verification/scp-cellstatplot-f_stat_type_count-20261101T070810-20832-alg.json"
+        },
+        {
+          "case": "f_stat_type_percent",
+          "path": "verification/previews/CellStatPlot-f_stat_type_percent.png",
+          "sha256": "74aac0ab6ada7c204ba643b0adbd8ae525d764158200573f05facef5107ac082",
+          "receipt": "verification/scp-cellstatplot-f_stat_type_percent-20261101T070759-13468-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "FeatureCorPlot",
+      "page": "scp-viz-statplots",
+      "implementation": "scp-featurecorplot",
+      "entry": "code/featurecorplot/code/module.R:FeatureCorPlot",
+      "input": "Seurat 中 features 的逐细胞表达及 group.by",
+      "upstream_page": null,
+      "output": "特征相关图",
+      "boundary": "相关不代表因果；细胞与生物学重复单位要区分，不能仅凭列名复用。",
+      "algorithm_state": "verified",
+      "scope": "two_markers",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "cor_method",
+          "value": "pearson",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "cor_method",
+          "value": "spearman",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "cor_method",
+          "value": "kendall",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-featurecorplot-two_markers-20261101T072731-6580-alg.json",
+      "replay_previews": [
+        {
+          "case": "two_markers",
+          "path": "verification/previews/FeatureCorPlot-two_markers.png",
+          "sha256": "6862931669c5feeaa460b4fc836c5b0391ccdf217553f534722ee56bfc8889f1",
+          "receipt": "verification/scp-featurecorplot-two_markers-20261026T153002-23016-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "FeatureStatPlot",
+      "page": "scp-viz-statplots",
+      "implementation": "scp-featurestatplot",
+      "entry": "code/featurestatplot/code/module.R:FeatureStatPlot",
+      "input": "Seurat features/元数据 stat.by，group.by 为细胞分组",
+      "upstream_page": null,
+      "output": "violin/box/bar/dot/col 数值分布或汇总",
+      "boundary": "默认逐细胞展示；检验与汇总的统计单位、配对及多重比较需课题确认。",
+      "algorithm_state": "verified",
+      "scope": "f_add_stat_mean",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "plot_type",
+          "value": "violin",
+          "state": "passed",
+          "scope": "f_add_stat_mean",
+          "receipt": "verification/scp-featurestatplot-f_add_stat_mean-20261101T072744-15780-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "box",
+          "state": "passed",
+          "scope": "box",
+          "receipt": "verification/scp-featurestatplot-box-20261026T153054-26704-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "bar",
+          "state": "passed",
+          "scope": "bar",
+          "receipt": "verification/scp-featurestatplot-bar-20261026T153120-10136-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "dot",
+          "state": "passed",
+          "scope": "dot",
+          "receipt": "verification/scp-featurestatplot-dot-20261026T153141-9292-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "col",
+          "state": "passed",
+          "scope": "col",
+          "receipt": "verification/scp-featurestatplot-col-20261026T153207-21212-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot.by",
+          "value": "group",
+          "state": "passed",
+          "scope": "f_plot_by_group",
+          "receipt": "verification/scp-featurestatplot-f_plot_by_group-20261101T071006-9640-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot.by",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "fill.by",
+          "value": "group",
+          "state": "passed",
+          "scope": "f_fill_by_group",
+          "receipt": "verification/scp-featurestatplot-f_fill_by_group-20261101T071020-15652-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "fill.by",
+          "value": "feature",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "fill.by",
+          "value": "expression",
+          "state": "passed",
+          "scope": "f_fill_by_expression",
+          "receipt": "verification/scp-featurestatplot-f_fill_by_expression-20261101T071034-12344-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "add_stat",
+          "value": "none",
+          "state": "passed",
+          "scope": "f_add_stat_none",
+          "receipt": "verification/scp-featurestatplot-f_add_stat_none-20261101T071047-18232-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "add_stat",
+          "value": "mean",
+          "state": "passed",
+          "scope": "f_add_stat_mean",
+          "receipt": "verification/scp-featurestatplot-f_add_stat_mean-20261101T072744-15780-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "add_stat",
+          "value": "median",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "sig_label",
+          "value": "p.signif",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "sig_label",
+          "value": "p.format",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        }
+      ],
+      "current_receipt": "verification/scp-featurestatplot-f_add_stat_mean-20261101T072744-15780-alg.json",
+      "replay_previews": [
+        {
+          "case": "bar",
+          "path": "verification/previews/FeatureStatPlot-bar.png",
+          "sha256": "5e1eba64a2ca2e7d21c1a6e91468540102ba03dab067087289a98e7da788521f",
+          "receipt": "verification/scp-featurestatplot-bar-20261026T153120-10136-alg.json"
+        },
+        {
+          "case": "box",
+          "path": "verification/previews/FeatureStatPlot-box.png",
+          "sha256": "f4e8e0f5aa80b34f8c11c4a9e82e9de88e47b55e25a80727e5a0be7b175f4ca0",
+          "receipt": "verification/scp-featurestatplot-box-20261026T153054-26704-alg.json"
+        },
+        {
+          "case": "col",
+          "path": "verification/previews/FeatureStatPlot-col.png",
+          "sha256": "78cb869486b1752b96fb641ffebb5963aae7a6d120fac97218aad7c891524203",
+          "receipt": "verification/scp-featurestatplot-col-20261026T153207-21212-alg.json"
+        },
+        {
+          "case": "dot",
+          "path": "verification/previews/FeatureStatPlot-dot.png",
+          "sha256": "a867b9435ac9b54d2e0ed8bd8a2fa08179d1000a850c667dcf377a4f972e4ad8",
+          "receipt": "verification/scp-featurestatplot-dot-20261026T153141-9292-alg.json"
+        },
+        {
+          "case": "f_add_stat_mean",
+          "path": "verification/previews/FeatureStatPlot-f_add_stat_mean.png",
+          "sha256": "46785e4717533b68ab8788d26e22aac21c6719ec209e21d5893268b04d057dc1",
+          "receipt": "verification/scp-featurestatplot-f_add_stat_mean-20261101T071100-10360-alg.json"
+        },
+        {
+          "case": "f_add_stat_none",
+          "path": "verification/previews/FeatureStatPlot-f_add_stat_none.png",
+          "sha256": "94c7fa34c846b9244eaf51641eacd65aba9ff333e346086359095b56301a5937",
+          "receipt": "verification/scp-featurestatplot-f_add_stat_none-20261101T071047-18232-alg.json"
+        },
+        {
+          "case": "f_fill_by_expression",
+          "path": "verification/previews/FeatureStatPlot-f_fill_by_expression.png",
+          "sha256": "22443f21b5774f6db9343906d1c6a593cba6c726b41b22cc530a7dc1632715a6",
+          "receipt": "verification/scp-featurestatplot-f_fill_by_expression-20261101T071034-12344-alg.json"
+        },
+        {
+          "case": "f_fill_by_group",
+          "path": "verification/previews/FeatureStatPlot-f_fill_by_group.png",
+          "sha256": "69b04682eacffccfe8fc3d8913e5d681498dd6388071a0d75af3c9647b49c53f",
+          "receipt": "verification/scp-featurestatplot-f_fill_by_group-20261101T071020-15652-alg.json"
+        },
+        {
+          "case": "f_plot_by_group",
+          "path": "verification/previews/FeatureStatPlot-f_plot_by_group.png",
+          "sha256": "69b04682eacffccfe8fc3d8913e5d681498dd6388071a0d75af3c9647b49c53f",
+          "receipt": "verification/scp-featurestatplot-f_plot_by_group-20261101T071006-9640-alg.json"
+        },
+        {
+          "case": "violin",
+          "path": "verification/previews/FeatureStatPlot-violin.png",
+          "sha256": "94c7fa34c846b9244eaf51641eacd65aba9ff333e346086359095b56301a5937",
+          "receipt": "verification/scp-featurestatplot-violin-20261026T153024-17908-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "StatPlot",
+      "page": "scp-viz-statplots",
+      "implementation": "scp-statplot",
+      "entry": "code/statplot/code/module.R:StatPlot",
+      "input": "meta.data：每行一个观测，stat.by 为统计分类，group.by 为分组",
+      "upstream_page": null,
+      "output": "11 种分类计数、比例、流向与集合图",
+      "boundary": "venn/upset 需要显式集合成员编码；计数和百分比的分母必须核对。",
+      "algorithm_state": "verified",
+      "scope": "f_position_dodge",
+      "portability_state": "verified",
+      "forms": [
+        {
+          "parameter": "stat_type",
+          "value": "percent",
+          "state": "passed",
+          "scope": "pie",
+          "receipt": "verification/scp-statplot-pie-20261026T153238-28252-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "stat_type",
+          "value": "count",
+          "state": "passed",
+          "scope": "f_position_dodge",
+          "receipt": "verification/scp-statplot-f_position_dodge-20261101T072746-13688-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "position",
+          "value": "stack",
+          "state": "passed",
+          "scope": "f_position_stack",
+          "receipt": "verification/scp-statplot-f_position_stack-20261101T071102-15136-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "position",
+          "value": "dodge",
+          "state": "passed",
+          "scope": "f_position_dodge",
+          "receipt": "verification/scp-statplot-f_position_dodge-20261101T072746-13688-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "bar",
+          "state": "passed",
+          "scope": "f_position_dodge",
+          "receipt": "verification/scp-statplot-f_position_dodge-20261101T072746-13688-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "rose",
+          "state": "passed",
+          "scope": "rose",
+          "receipt": "verification/scp-statplot-rose-20261026T153228-25996-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "ring",
+          "state": "passed",
+          "scope": "ring",
+          "receipt": "verification/scp-statplot-ring-20261026T153233-27176-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "pie",
+          "state": "passed",
+          "scope": "pie",
+          "receipt": "verification/scp-statplot-pie-20261026T153238-28252-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "trend",
+          "state": "passed",
+          "scope": "trend",
+          "receipt": "verification/scp-statplot-trend-20261026T153243-23940-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "area",
+          "state": "passed",
+          "scope": "area",
+          "receipt": "verification/scp-statplot-area-20261026T153247-33292-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "dot",
+          "state": "passed",
+          "scope": "dot",
+          "receipt": "verification/scp-statplot-dot-20261026T153254-21080-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "sankey",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "chord",
+          "state": "passed",
+          "scope": "chord",
+          "receipt": "verification/scp-statplot-chord-20261026T153304-3644-alg.json",
+          "reason": "compared"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "venn",
+          "state": "not_run",
+          "scope": null,
+          "receipt": null,
+          "reason": "no current receipt explicitly exercises this parameter value"
+        },
+        {
+          "parameter": "plot_type",
+          "value": "upset",
+          "state": "passed",
+          "scope": "upset",
+          "receipt": "verification/scp-statplot-upset-20261026T153315-22464-alg.json",
+          "reason": "compared"
+        }
+      ],
+      "current_receipt": "verification/scp-statplot-f_position_dodge-20261101T072746-13688-alg.json",
+      "replay_previews": [
+        {
+          "case": "area",
+          "path": "verification/previews/StatPlot-area.png",
+          "sha256": "0986854f6a1df587f6d7a31e9fbbd8e89ff167697977e2db5457de009ef9ec43",
+          "receipt": "verification/scp-statplot-area-20261026T153247-33292-alg.json"
+        },
+        {
+          "case": "bar",
+          "path": "verification/previews/StatPlot-bar.png",
+          "sha256": "8431a3fa6014fb20534298c25f3fb8ca165c7cc4c57320dc63e6f3d9eaf308f1",
+          "receipt": "verification/scp-statplot-bar-20261026T153224-23772-alg.json"
+        },
+        {
+          "case": "chord",
+          "path": "verification/previews/StatPlot-chord.png",
+          "sha256": "66a82ebc0b7d52becf6c599be4f1f1943f0a3f2b2c9705240955a3a1094396a2",
+          "receipt": "verification/scp-statplot-chord-20261026T153304-3644-alg.json"
+        },
+        {
+          "case": "dot",
+          "path": "verification/previews/StatPlot-dot.png",
+          "sha256": "e5a43eba1ae7c6c135262a292b43b1c13bc5faa48ddfce6aed1ef0b980d00a3b",
+          "receipt": "verification/scp-statplot-dot-20261026T153254-21080-alg.json"
+        },
+        {
+          "case": "f_position_dodge",
+          "path": "verification/previews/StatPlot-f_position_dodge.png",
+          "sha256": "17bf540d17edaaa772b51e9d0e64c0b02b8a6c53b3078d33eb79335d518b79bd",
+          "receipt": "verification/scp-statplot-f_position_dodge-20261101T071103-22416-alg.json"
+        },
+        {
+          "case": "f_position_stack",
+          "path": "verification/previews/StatPlot-f_position_stack.png",
+          "sha256": "8431a3fa6014fb20534298c25f3fb8ca165c7cc4c57320dc63e6f3d9eaf308f1",
+          "receipt": "verification/scp-statplot-f_position_stack-20261101T071102-15136-alg.json"
+        },
+        {
+          "case": "pie",
+          "path": "verification/previews/StatPlot-pie.png",
+          "sha256": "8cde9c14c7ba0244765b1c9d7dfb3db630b7c90670a32f592782398a21ad5d16",
+          "receipt": "verification/scp-statplot-pie-20261026T153238-28252-alg.json"
+        },
+        {
+          "case": "ring",
+          "path": "verification/previews/StatPlot-ring.png",
+          "sha256": "13a684a460fbb85c35124ebfe52a3857ce8b340fa78113c02048f0a75ceec1ef",
+          "receipt": "verification/scp-statplot-ring-20261026T153233-27176-alg.json"
+        },
+        {
+          "case": "rose",
+          "path": "verification/previews/StatPlot-rose.png",
+          "sha256": "71c7c8d78b1c446baf8f2a2d672eb485797e8839efbe215bd2159172780ace2a",
+          "receipt": "verification/scp-statplot-rose-20261026T153228-25996-alg.json"
+        },
+        {
+          "case": "trend",
+          "path": "verification/previews/StatPlot-trend.png",
+          "sha256": "e2beab47c10f92331b9c0b6411157be8b75d6f983e802ad982decc566338edae",
+          "receipt": "verification/scp-statplot-trend-20261026T153243-23940-alg.json"
+        },
+        {
+          "case": "upset",
+          "path": "verification/previews/StatPlot-upset.png",
+          "sha256": "32f647fccb4c26b7921c57d0d039e62e67e860d673c910c98289979238b71cc5",
+          "receipt": "verification/scp-statplot-upset-20261026T153315-22464-alg.json"
+        }
+      ]
+    },
+    {
+      "function": "VolcanoPlot",
+      "page": "scp-viz-statplots",
+      "implementation": "scp-volcanoplot",
+      "entry": "code/volcanoplot/code/module.R:VolcanoPlot",
+      "input": "RunDEtest 后 Seurat tools 中 DEtest_<group_by> 的 AllMarkers_<test.use> 表",
+      "upstream_page": "differential-expression",
+      "output": "差异表达指标与显著性展示",
+      "boundary": "原生签名没有 res 参数；x_metric 默认 diff_pct，不自动等同 avg_log2FC。",
+      "algorithm_state": "verified",
+      "scope": "positive_native_material",
+      "portability_state": "verified",
+      "forms": [],
+      "current_receipt": "verification/scp-volcanoplot-positive_native_material-20261101T072804-15236-alg.json",
+      "replay_previews": [
+        {
+          "case": "positive_native_material",
+          "path": "verification/previews/VolcanoPlot-positive_native_material.png",
+          "sha256": "e88a8dcb26e2189d7ae74aef3ced7ab7586b9a075d3ea98b9efa74355757ab44",
+          "receipt": "verification/scp-volcanoplot-positive_native_material-20261101T072804-15236-alg.json"
+        }
+      ]
+    }
+  ]
+}

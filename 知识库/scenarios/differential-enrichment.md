@@ -58,8 +58,6 @@ summary: 两组或多组的差异基因展示（火山图）与通路层面的�
 | [[recipes/figureya-13gsea-java-update|Java GSEA 结果多通路美化图]] | L1 | ready · 运行 pass | Java GSEA 输出的多通路美化图 |
 | [[recipes/figureya-61gsva|GSVA 通路评分与组间差异]] | L1 | draft · 运行 fail | GSVA 通路评分 + limma 差异 |
 | [[recipes/figureya-39bar|分组着色柱图与正负富集柱图]] | L1 | ready · 运行 pass | 正负方向发散柱图（接 GSVA 结果） |
-| [[recipes/figureya-11bubble|富集分析对角排列气泡图]] | L1 | ready · 运行 pass | 多组富集对角气泡图 |
-| [[recipes/figureya-153ccgraph|层级关系同心环网络图]] | L1 | draft · 运行 fail | 层级关系同心环图 |
 | [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | 差异表达方法页 |
 | [[methods/gene-set-enrichment|基因集富集分析]] | L2 | ready · 可用 | 基因集富集方法页 |
 <!-- facts:end -->
@@ -68,6 +66,14 @@ summary: 两组或多组的差异基因展示（火山图）与通路层面的�
 
 - 火山图阈值（log2FC、校正 P）按课题定，改阈值含义前先问作者。
 - 富集结果图只画上游给定的统计量，不重算 P 值。
+
+<!-- figureya-selection:start -->
+## 样式筛选记录
+
+2026-11-02 按作者的 FigureYa 样式筛选更新当前首选展示：原 9 项，当前展示 7 项。
+
+被移除项退出当前首选表；原 `picks` 关系保留用于恢复和溯源，不能据历史关系重新推荐已移除样式。
+<!-- figureya-selection:end -->
 
 ## 作者备注
 

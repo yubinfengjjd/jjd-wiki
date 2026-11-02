@@ -44,14 +44,20 @@ summary: 机器学习模型的特征重要性与 SHAP 解释图，以及特征�
 | [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]] | L2 | ready · 可用 | SHAP 蜂群图（L2） |
 | [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]] | L2 | ready · 可用 | SHAP 条形图（L2） |
 | [[methods/shap-explanation|基于 SHAP 的模型解释]] | L2 | ready · 可用 | SHAP 模型解释方法页 |
-| `figureya:FigureYa316RF_XGBoost_Boruta` | L0 | catalog | RF / XGBoost / Boruta 特征筛选（L0） |
-| [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] | L1 | draft · 运行 fail | 多算法组合预后模型比较（重） |
 <!-- facts:end -->
 
 ## 注意
 
 - SHAP 值来自模型，不等于因果效应。
 - 特征筛选与模型评价应在独立数据上验证。
+
+<!-- figureya-selection:start -->
+## 样式筛选记录
+
+2026-11-02 按作者的 FigureYa 样式筛选更新当前首选展示：原 5 项，当前展示 3 项。
+
+被移除项退出当前首选表；原 `picks` 关系保留用于恢复和溯源，不能据历史关系重新推荐已移除样式。
+<!-- figureya-selection:end -->
 
 ## 作者备注
 

@@ -161,6 +161,11 @@ Seurat 对象、`lineages`（pseudotime 列名，可多个）、`features`、`sl
 
 复用分组小提琴模板时，当前 spec 要求同时提供 [[interfaces/render-grouped-values]] 与 [[interfaces/render-group-summaries]]。摘要表的均值、SD、p 标签及标注位置须由课题上游明确提供，并核对同源数据、分组及推断层级；本方法不自动生成这些统计或补值。缺少合法摘要时，当前模板不能直接调用；关系仍为 adaptable，未验证真实课题分析到绘图。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunDynamicFeatures`、`RunDynamicEnrichment`。拟时序必须来自已说明的上游；模型 family、counts/归一化层和趋势不确定性分别核对。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用软件夹具 pseudotime 实际运行并与上游比较；未做真实轨迹或计数模型验证。

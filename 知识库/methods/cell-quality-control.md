@@ -177,6 +177,11 @@ Seurat 对象（`RNA` assay 的 `counts`），或能转为同样基因×细胞�
 
 2026-10-23 检查了 `templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap`、`fig04-cell-proportion-flow--stacked-bar-flow`、`fig06-pathway-violin--violin`。QC Pass/Fail 或指标可作为 UMAP 着色、样本比例、分组分布；模板不计算 QC，关系为 adaptable。没有 direct：模板不读 Seurat 对象，需先导出 `render-umap-groups`、`render-cell-proportions`、`render-grouped-values` 等接口。双细胞图不在此页直连，见 [[methods/doublet-detection]]。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunCellQC`、`RunATACQC`、`RunSpotQC`、`RunSpotSweeper`。RNA 细胞、ATAC 细胞与空间 spot 的 QC 指标和阈值分开；不能沿用旧 RNA 阈值覆盖其他平台。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用 `pancreas_sub` 80 细胞做软件调用、输入不变和上游一致性检查；未做真实课题阈值决策。

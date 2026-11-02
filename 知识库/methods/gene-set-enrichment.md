@@ -119,6 +119,11 @@ ORA 用超几何/富集检验比较列表内外的基因集命中；GSEA 则使�
 
 2026-10-23 检查了现有单 panel 模板。ORA 结果是 gene-set×ontology 表，现有 dotplot 的 group×feature 语义不匹配，分组小提琴也不表达富集比例；本库暂无 ORA/GSEA 专用模板，因此不建立 figure_relations。无图原因：缺少语义匹配的富集图模板，不用“结构像”强行直连。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunEnrichment`、`RunGSEA`、`RunDynamicEnrichment`。ORA、GSEA 和动态富集不是同一估计目标；基因背景、排序、物种与 ID 类型需显式确定。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：在隔离 R 环境用自定义 TERM2GENE/TERM2NAME 实际运行 ORA 并与上游比较；未运行在线 GO/KEGG 或 GSEA。

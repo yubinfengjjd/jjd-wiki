@@ -170,6 +170,11 @@ query/reference Seurat 对象、`ref_group_col` 标签列、`dims`；reference �
 
 2026-10-23 检查了 UMAP 分组和细胞比例模板。预测标签可着色 query 自身 UMAP、展示样本组成；均为 adaptable，模板不执行映射。没有 direct：模板不读 Seurat，也不产生参考投影。不能把 query UMAP 的标签着色图称为“参考图谱投影图”。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunReferenceMapping`、`RunLabelTransfer`、`RunSeuratMap`、`RunKNNMap`、`RunPCAMap`。投影位置、标签转移与批次整合分别解释；同一细胞同时出现在查询和参考中不是独立验证。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：标签转移分支在隔离 R 环境实际运行；SCP RunSeuratMap 投影分支在 Seurat 5.6 下失败，保留 not_run。

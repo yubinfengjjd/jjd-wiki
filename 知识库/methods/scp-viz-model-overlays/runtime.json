@@ -1,0 +1,826 @@
+{
+ "schema_version": 1,
+ "kind": "method",
+ "id": "scp-viz-model-overlays",
+ "implementations": [
+  {
+   "id": "scp-dynamicplot",
+   "entry": "code/dynamicplot/code/module.R",
+   "entry_function": "DynamicPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/dynamicplot/code/module.R",
+    "code/dynamicplot/code/fns/DynamicPlot.R",
+    "code/dynamicplot/code/fns/RunDynamicFeatures.R",
+    "code/dynamicplot/code/fns/add_grob.R",
+    "code/dynamicplot/code/fns/asMatrix.R",
+    "code/dynamicplot/code/fns/as_grob.R",
+    "code/dynamicplot/code/fns/as_gtable.R",
+    "code/dynamicplot/code/fns/as_matrix.R",
+    "code/dynamicplot/code/fns/build_patchwork.R",
+    "code/dynamicplot/code/fns/check_DataType.R",
+    "code/dynamicplot/code/fns/get_legend.R",
+    "code/dynamicplot/code/fns/palette_scp.R",
+    "code/dynamicplot/code/fns/patchworkGrob.R",
+    "code/dynamicplot/code/fns/show_palettes.R",
+    "code/dynamicplot/code/fns/theme_scp.R",
+    "code/dynamicplot/resources/palette_list.rda",
+    "code/dynamicplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/dynamicplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "Matrix",
+     "MatrixGenerics",
+     "SeuratObject",
+     "dplyr",
+     "ggnewscale",
+     "ggplot2",
+     "grid",
+     "gtable",
+     "methods",
+     "patchwork",
+     "plotly",
+     "reshape2",
+     "rlang",
+     "stats"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "BiocParallel": "called only from a non-default branch",
+     "Seurat": "called only from a non-default branch",
+     "mgcv": "lazy check_R-guarded branch",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-plot.R:DynamicPlot (12102-12470)",
+     "R/SCP-analysis.R:RunDynamicFeatures (4948-5171)",
+     "R/SCP-plot.R:add_grob (14755-14794)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/SCP-plot.R:as_grob (14710-14720)",
+     "R/SCP-plot.R:as_gtable (14724-14741)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:build_patchwork (14602-14695)",
+     "R/SCP-workflow.R:check_DataType (14-47)",
+     "R/SCP-plot.R:get_legend (14743-14751)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:patchworkGrob (14698-14706)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/SCP-plot.R:theme_scp (16-60)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "installer functions replaced by locked no-install guards: check_R",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   },
+   "evidence": {
+    "portability": "verification/scp-dynamicplot-portability-20261101b.json"
+   }
+  },
+  {
+   "id": "scp-enrichmentplot",
+   "entry": "code/enrichmentplot/code/module.R",
+   "entry_function": "EnrichmentPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/enrichmentplot/code/module.R",
+    "code/enrichmentplot/code/fns/Blend2Color.R",
+    "code/enrichmentplot/code/fns/BlendRGBList.R",
+    "code/enrichmentplot/code/fns/EnrichmentPlot.R",
+    "code/enrichmentplot/code/fns/RGBA2RGB.R",
+    "code/enrichmentplot/code/fns/adjustlayout.R",
+    "code/enrichmentplot/code/fns/asMatrix.R",
+    "code/enrichmentplot/code/fns/as_matrix.R",
+    "code/enrichmentplot/code/fns/blendcolors.R",
+    "code/enrichmentplot/code/fns/capitalize.R",
+    "code/enrichmentplot/code/fns/palette_scp.R",
+    "code/enrichmentplot/code/fns/rescale.R",
+    "code/enrichmentplot/code/fns/show_palettes.R",
+    "code/enrichmentplot/code/fns/str_wrap.R",
+    "code/enrichmentplot/code/fns/theme_scp.R",
+    "code/enrichmentplot/code/fns/unnest.R",
+    "code/enrichmentplot/code/fns/zero_range.R",
+    "code/enrichmentplot/resources/palette_list.rda",
+    "code/enrichmentplot/resources/words_excluded.rda",
+    "code/enrichmentplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/enrichmentplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    },
+    {
+     "path": "code/enrichmentplot/resources/words_excluded.rda",
+     "sha256": "f27c75472c9a97caa4c4864c47f706e2373d51bfb92275bf1c5302e4389160a0",
+     "role": "SCP package data object 'words_excluded' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "dplyr",
+     "ggplot2",
+     "methods",
+     "rlang",
+     "stats"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "patchwork": "off-default (conditional branch (length(plist) > 1 not decidable from defaults))",
+     "ggwordcloud": "lazy check_R-guarded branch",
+     "simplifyEnrichment": "lazy check_R-guarded branch",
+     "plotly": "off-default",
+     "igraph": "off-default",
+     "proxyC": "off-default",
+     "Matrix": "off-default (conditional branch (!inherits(matrix, \"dgCMatrix\") not decidable from defaults))",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "ggforce": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)",
+     "ggrepel": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)",
+     "clusterProfiler": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-plot.R:Blend2Color (1050-1074)",
+     "R/SCP-plot.R:BlendRGBList (1076-1094)",
+     "R/SCP-plot.R:EnrichmentPlot (12727-13438)",
+     "R/SCP-plot.R:RGBA2RGB (1044-1048)",
+     "R/SCP-plot.R:adjustlayout (13441-13502)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:blendcolors (1026-1042)",
+     "R/utils.R:capitalize (852-870)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/utils.R:rescale (723-729)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/utils.R:str_wrap (872-881)",
+     "R/SCP-plot.R:theme_scp (16-60)",
+     "R/utils.R:unnest (800-817)",
+     "R/utils.R:zero_range (731-752)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "installer functions replaced by locked no-install guards: check_R",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   },
+   "evidence": {
+    "portability": "verification/scp-enrichmentplot-portability-20261101b.json"
+   }
+  },
+  {
+   "id": "scp-gseaplot",
+   "entry": "code/gseaplot/code/module.R",
+   "entry_function": "GSEAPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/gseaplot/code/module.R",
+    "code/gseaplot/code/fns/Blend2Color.R",
+    "code/gseaplot/code/fns/BlendRGBList.R",
+    "code/gseaplot/code/fns/GSEAPlot.R",
+    "code/gseaplot/code/fns/RGBA2RGB.R",
+    "code/gseaplot/code/fns/add_grob.R",
+    "code/gseaplot/code/fns/adjustlayout.R",
+    "code/gseaplot/code/fns/asMatrix.R",
+    "code/gseaplot/code/fns/as_grob.R",
+    "code/gseaplot/code/fns/as_gtable.R",
+    "code/gseaplot/code/fns/as_matrix.R",
+    "code/gseaplot/code/fns/blendcolors.R",
+    "code/gseaplot/code/fns/build_patchwork.R",
+    "code/gseaplot/code/fns/capitalize.R",
+    "code/gseaplot/code/fns/get_legend.R",
+    "code/gseaplot/code/fns/gsInfo.R",
+    "code/gseaplot/code/fns/gseaScores.R",
+    "code/gseaplot/code/fns/palette_scp.R",
+    "code/gseaplot/code/fns/panel_fix_overall.R",
+    "code/gseaplot/code/fns/patchworkGrob.R",
+    "code/gseaplot/code/fns/rescale.R",
+    "code/gseaplot/code/fns/show_palettes.R",
+    "code/gseaplot/code/fns/str_wrap.R",
+    "code/gseaplot/code/fns/theme_scp.R",
+    "code/gseaplot/code/fns/unnest.R",
+    "code/gseaplot/code/fns/zero_range.R",
+    "code/gseaplot/resources/palette_list.rda",
+    "code/gseaplot/resources/words_excluded.rda",
+    "code/gseaplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/gseaplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    },
+    {
+     "path": "code/gseaplot/resources/words_excluded.rda",
+     "sha256": "f27c75472c9a97caa4c4864c47f706e2373d51bfb92275bf1c5302e4389160a0",
+     "role": "SCP package data object 'words_excluded' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "dplyr",
+     "ggplot2",
+     "methods",
+     "rlang",
+     "stats",
+     "utils"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "ggrepel": "off-default (plot_type == \"comparison\")",
+     "patchwork": "off-default (plot_type == \"comparison\")",
+     "igraph": "off-default (plot_type == \"comparison\")",
+     "plotly": "off-default (plot_type == \"comparison\")",
+     "Matrix": "off-default (plot_type == \"comparison\")",
+     "scales": "explicit pkg:: call in off-default (plot_type == \"comparison\")",
+     "simplifyEnrichment": "explicit pkg:: call in off-default (plot_type == \"comparison\")",
+     "ggwordcloud": "explicit pkg:: call in off-default (plot_type == \"comparison\")",
+     "concaveman": "lazy check_R-guarded branch",
+     "gtable": "called only from a non-default branch",
+     "proxyC": "called only from a non-default branch",
+     "BiocParallel": "called only from a non-default branch",
+     "ragg": "explicit pkg:: call in called only from a non-default branch (isTRUE(raster))",
+     "png": "explicit pkg:: call in called only from a non-default branch (isTRUE(raster))",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "clusterProfiler": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)",
+     "ggforce": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-plot.R:Blend2Color (1050-1074)",
+     "R/SCP-plot.R:BlendRGBList (1076-1094)",
+     "R/SCP-plot.R:GSEAPlot (13563-14543)",
+     "R/SCP-plot.R:RGBA2RGB (1044-1048)",
+     "R/SCP-plot.R:add_grob (14755-14794)",
+     "R/SCP-plot.R:adjustlayout (13441-13502)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/SCP-plot.R:as_grob (14710-14720)",
+     "R/SCP-plot.R:as_gtable (14724-14741)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:blendcolors (1026-1042)",
+     "R/SCP-plot.R:build_patchwork (14602-14695)",
+     "R/utils.R:capitalize (852-870)",
+     "R/SCP-plot.R:get_legend (14743-14751)",
+     "R/SCP-plot.R:gsInfo (14545-14568)",
+     "R/SCP-plot.R:gseaScores (14570-14594)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:panel_fix_overall (588-813)",
+     "R/SCP-plot.R:patchworkGrob (14698-14706)",
+     "R/utils.R:rescale (723-729)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/utils.R:str_wrap (872-881)",
+     "R/SCP-plot.R:theme_scp (16-60)",
+     "R/utils.R:unnest (800-817)",
+     "R/utils.R:zero_range (731-752)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "installer functions replaced by locked no-install guards: check_R",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   },
+   "evidence": {
+    "portability": "verification/scp-gseaplot-portability-20261101b.json"
+   }
+  },
+  {
+   "id": "scp-graphplot",
+   "entry": "code/graphplot/code/module.R",
+   "entry_function": "GraphPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/graphplot/code/module.R",
+    "code/graphplot/code/fns/GraphPlot.R",
+    "code/graphplot/code/fns/asMatrix.R",
+    "code/graphplot/code/fns/as_matrix.R",
+    "code/graphplot/code/fns/palette_scp.R",
+    "code/graphplot/code/fns/segementsDf.R",
+    "code/graphplot/code/fns/show_palettes.R",
+    "code/graphplot/code/fns/theme_blank.R",
+    "code/graphplot/code/fns/theme_scp.R",
+    "code/graphplot/resources/palette_list.rda",
+    "code/graphplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/graphplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "reshape2",
+     "rlang"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "ggnewscale": "off-default (conditional branch (nrow(edge_df) == 0 not decidable from defaults))",
+     "Matrix": "off-default (!is.null(transition))",
+     "dplyr": "off-default (isTRUE(label))",
+     "ggrepel": "off-default (isTRUE(label))",
+     "proxyC": "called only from a non-default branch",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-plot.R:GraphPlot (6287-6631)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:segementsDf (6666-6683)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/SCP-plot.R:theme_blank (84-134)",
+     "R/SCP-plot.R:theme_scp (16-60)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "none",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   },
+   "evidence": {
+    "portability": "verification/scp-graphplot-portability-20261101b.json"
+   }
+  },
+  {
+   "id": "scp-lineageplot",
+   "entry": "code/lineageplot/code/module.R",
+   "entry_function": "LineagePlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/lineageplot/code/module.R",
+    "code/lineageplot/code/fns/DefaultReduction.R",
+    "code/lineageplot/code/fns/LineagePlot.R",
+    "code/lineageplot/code/fns/palette_scp.R",
+    "code/lineageplot/code/fns/show_palettes.R",
+    "code/lineageplot/code/fns/theme_blank.R",
+    "code/lineageplot/code/fns/theme_scp.R",
+    "code/lineageplot/resources/palette_list.rda",
+    "code/lineageplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/lineageplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "rlang"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "dplyr": "off-default (conditional branch (missing(x) not decidable from defaults))",
+     "Matrix": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "igraph": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-workflow.R:DefaultReduction (1034-1084)",
+     "R/SCP-plot.R:LineagePlot (5918-6030)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/SCP-plot.R:theme_blank (84-134)",
+     "R/SCP-plot.R:theme_scp (16-60)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "none",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   },
+   "evidence": {
+    "portability": "verification/scp-lineageplot-portability-20261101b.json"
+   }
+  },
+  {
+   "id": "scp-pagaplot",
+   "entry": "code/pagaplot/code/module.R",
+   "entry_function": "PAGAPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/pagaplot/code/module.R",
+    "code/pagaplot/code/fns/DefaultReduction.R",
+    "code/pagaplot/code/fns/GraphPlot.R",
+    "code/pagaplot/code/fns/PAGAPlot.R",
+    "code/pagaplot/code/fns/asMatrix.R",
+    "code/pagaplot/code/fns/as_matrix.R",
+    "code/pagaplot/code/fns/palette_scp.R",
+    "code/pagaplot/code/fns/segementsDf.R",
+    "code/pagaplot/code/fns/show_palettes.R",
+    "code/pagaplot/code/fns/theme_blank.R",
+    "code/pagaplot/code/fns/theme_scp.R",
+    "code/pagaplot/resources/palette_list.rda",
+    "code/pagaplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/pagaplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "ggplot2",
+     "grid",
+     "reshape2",
+     "rlang",
+     "stats"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "ggnewscale": "off-default (conditional branch (nrow(edge_df) == 0 not decidable from defaults))",
+     "Matrix": "off-default (!is.null(transition))",
+     "dplyr": "off-default (isTRUE(label))",
+     "ggrepel": "off-default (isTRUE(label))",
+     "proxyC": "called only from a non-default branch",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-workflow.R:DefaultReduction (1034-1084)",
+     "R/SCP-plot.R:GraphPlot (6287-6631)",
+     "R/SCP-plot.R:PAGAPlot (6121-6214)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:segementsDf (6666-6683)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/SCP-plot.R:theme_blank (84-134)",
+     "R/SCP-plot.R:theme_scp (16-60)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "none",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   }
+  },
+  {
+   "id": "scp-projectionplot",
+   "entry": "code/projectionplot/code/module.R",
+   "entry_function": "ProjectionPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/projectionplot/code/module.R",
+    "code/projectionplot/code/fns/Blend2Color.R",
+    "code/projectionplot/code/fns/BlendRGBList.R",
+    "code/projectionplot/code/fns/CellDimPlot.R",
+    "code/projectionplot/code/fns/CellStatPlot.R",
+    "code/projectionplot/code/fns/DefaultReduction.R",
+    "code/projectionplot/code/fns/GraphPlot.R",
+    "code/projectionplot/code/fns/LineagePlot.R",
+    "code/projectionplot/code/fns/PAGAPlot.R",
+    "code/projectionplot/code/fns/ProjectionPlot.R",
+    "code/projectionplot/code/fns/RGBA2RGB.R",
+    "code/projectionplot/code/fns/StatPlot.R",
+    "code/projectionplot/code/fns/VelocityPlot.R",
+    "code/projectionplot/code/fns/add_grob.R",
+    "code/projectionplot/code/fns/asMatrix.R",
+    "code/projectionplot/code/fns/as_grob.R",
+    "code/projectionplot/code/fns/as_gtable.R",
+    "code/projectionplot/code/fns/as_matrix.R",
+    "code/projectionplot/code/fns/blendcolors.R",
+    "code/projectionplot/code/fns/build_patchwork.R",
+    "code/projectionplot/code/fns/capitalize.R",
+    "code/projectionplot/code/fns/compute_velocity_on_grid.R",
+    "code/projectionplot/code/fns/geom_sankey.R",
+    "code/projectionplot/code/fns/get_legend.R",
+    "code/projectionplot/code/fns/make_long.R",
+    "code/projectionplot/code/fns/palette_scp.R",
+    "code/projectionplot/code/fns/patchworkGrob.R",
+    "code/projectionplot/code/fns/prepare_params.R",
+    "code/projectionplot/code/fns/segementsDf.R",
+    "code/projectionplot/code/fns/show_palettes.R",
+    "code/projectionplot/code/fns/theme_blank.R",
+    "code/projectionplot/code/fns/theme_scp.R",
+    "code/projectionplot/resources/palette_list.rda",
+    "code/projectionplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/projectionplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "ggnewscale",
+     "ggplot2",
+     "grid",
+     "plotly",
+     "rlang",
+     "stats"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "patchwork": "off-default (conditional branch (length(plist) > 1 not decidable from defaults))",
+     "scattermore": "lazy check_R-guarded branch",
+     "reshape2": "called only from a non-default branch",
+     "Matrix": "called only from a non-default branch (!is.null(transition))",
+     "dplyr": "called only from a non-default branch (isTRUE(label))",
+     "ggrepel": "called only from a non-default branch (isTRUE(label))",
+     "gtable": "off-default (conditional branch (is.null(legend) not decidable from defaults))",
+     "circlize": "called only from a non-default branch (conditional branch (plot_type %in% c(\"bar\", \"rose\", \"ring\", \"pie\", \"trend\", \"area\", \"dot\") not decidable from defaults))",
+     "ggVennDiagram": "explicit pkg:: call in called only from a non-default branch (conditional branch (plot_type %in% c(\"bar\", \"rose\", \"ring\", \"pie\", \"trend\", \"area\", \"dot\") not decidable from defaults))",
+     "ggupset": "explicit pkg:: call in called only from a non-default branch (conditional branch (plot_type %in% c(\"bar\", \"rose\", \"ring\", \"pie\", \"trend\", \"area\", \"dot\") not decidable from defaults))",
+     "sf": "lazy check_R-guarded branch",
+     "metR": "explicit pkg:: call in called only from a non-default branch (!is.null(streamline_color))",
+     "BiocParallel": "called only from a non-default branch",
+     "proxyC": "called only from a non-default branch",
+     "SeuratObject": "called only from a non-default branch",
+     "igraph": "called only from a non-default branch",
+     "reticulate": "explicit pkg:: call in called only from a non-default branch (isTRUE(adjust_for_stream))",
+     "purrr": "explicit pkg:: call in called only from a non-default branch",
+     "AnnotationDbi": "called only from a non-default branch (conditional branch (!missing(value) not decidable from defaults))",
+     "tidyr": "explicit pkg:: call in called only from a non-default branch (conditional branch (!missing(value) not decidable from defaults))",
+     "stringr": "explicit pkg:: call in called only from a non-default branch",
+     "mgcv": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "splines": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "ggforce": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-plot.R:Blend2Color (1050-1074)",
+     "R/SCP-plot.R:BlendRGBList (1076-1094)",
+     "R/SCP-plot.R:CellDimPlot (1328-1851)",
+     "R/SCP-plot.R:CellStatPlot (4463-4490)",
+     "R/SCP-workflow.R:DefaultReduction (1034-1084)",
+     "R/SCP-plot.R:GraphPlot (6287-6631)",
+     "R/SCP-plot.R:LineagePlot (5918-6030)",
+     "R/SCP-plot.R:PAGAPlot (6121-6214)",
+     "R/SCP-plot.R:ProjectionPlot (12511-12583)",
+     "R/SCP-plot.R:RGBA2RGB (1044-1048)",
+     "R/SCP-plot.R:StatPlot (4564-5159)",
+     "R/SCP-plot.R:VelocityPlot (6745-6945)",
+     "R/SCP-plot.R:add_grob (14755-14794)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/SCP-plot.R:as_grob (14710-14720)",
+     "R/SCP-plot.R:as_gtable (14724-14741)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:blendcolors (1026-1042)",
+     "R/SCP-plot.R:build_patchwork (14602-14695)",
+     "R/utils.R:capitalize (852-870)",
+     "R/SCP-plot.R:compute_velocity_on_grid (6963-7039)",
+     "R/ggsankey.R:geom_sankey (691-744)",
+     "R/SCP-plot.R:get_legend (14743-14751)",
+     "R/ggsankey.R:make_long (70-108)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:patchworkGrob (14698-14706)",
+     "R/ggsankey.R:prepare_params (8-34)",
+     "R/SCP-plot.R:segementsDf (6666-6683)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/SCP-plot.R:theme_blank (84-134)",
+     "R/SCP-plot.R:theme_scp (16-60)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "installer functions replaced by locked no-install guards: check_R",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   },
+   "evidence": {
+    "portability": "verification/scp-projectionplot-portability-20261101b.json"
+   }
+  },
+  {
+   "id": "scp-velocityplot",
+   "entry": "code/velocityplot/code/module.R",
+   "entry_function": "VelocityPlot",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/velocityplot/code/module.R",
+    "code/velocityplot/code/fns/VelocityPlot.R",
+    "code/velocityplot/code/fns/asMatrix.R",
+    "code/velocityplot/code/fns/as_matrix.R",
+    "code/velocityplot/code/fns/compute_velocity_on_grid.R",
+    "code/velocityplot/code/fns/palette_scp.R",
+    "code/velocityplot/code/fns/show_palettes.R",
+    "code/velocityplot/code/fns/theme_blank.R",
+    "code/velocityplot/code/fns/theme_scp.R",
+    "code/velocityplot/resources/palette_list.rda",
+    "code/velocityplot/LICENSE.md"
+   ],
+   "resources": [
+    {
+     "path": "code/velocityplot/resources/palette_list.rda",
+     "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+     "role": "SCP package data object 'palette_list' referenced by copied source"
+    }
+   ],
+   "required_packages": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "dplyr",
+     "ggplot2",
+     "grid",
+     "igraph",
+     "metR",
+     "proxyC",
+     "reshape2",
+     "rlang",
+     "stats"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "reticulate": "explicit pkg:: call in off-default (isTRUE(adjust_for_stream))",
+     "mgcv": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "splines": "bare standard-package symbol lazily bound; namespace loads on first use only"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/SCP-plot.R:VelocityPlot (6745-6945)",
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:compute_velocity_on_grid (6963-7039)",
+     "R/SCP-plot.R:palette_scp (168-271)",
+     "R/SCP-plot.R:show_palettes (298-343)",
+     "R/SCP-plot.R:theme_blank (84-134)",
+     "R/SCP-plot.R:theme_scp (16-60)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "installer functions replaced by locked no-install guards: check_R",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   }
+  },
+  {
+   "id": "scp-compute-velocity-on-grid",
+   "entry": "code/compute-velocity-on-grid/code/module.R",
+   "entry_function": "compute_velocity_on_grid",
+   "language": "R",
+   "runtime_mode": "standalone",
+   "files": [
+    "code/compute-velocity-on-grid/code/module.R",
+    "code/compute-velocity-on-grid/code/fns/asMatrix.R",
+    "code/compute-velocity-on-grid/code/fns/as_matrix.R",
+    "code/compute-velocity-on-grid/code/fns/compute_velocity_on_grid.R",
+    "code/compute-velocity-on-grid/LICENSE.md"
+   ],
+   "resources": [],
+   "required_packages": {
+    "R": [
+     "Matrix",
+     "SeuratObject",
+     "igraph",
+     "proxyC",
+     "rlang",
+     "stats"
+    ]
+   },
+   "optional_packages": {
+    "R": {
+     "reticulate": "explicit pkg:: call in off-default (isTRUE(adjust_for_stream))",
+     "nlme": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "splines": "bare standard-package symbol lazily bound; namespace loads on first use only",
+     "ggplot2": "symbols referenced in copied source outside the analysed default path (text scan; loaded only if that branch runs)"
+    }
+   },
+   "python": [],
+   "source": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+    "license": "GPL (>= 3)",
+    "functions": [
+     "R/RcppExports.R:asMatrix (4-6)",
+     "R/utils.R:as_matrix (831-841)",
+     "R/SCP-plot.R:compute_velocity_on_grid (6963-7039)"
+    ],
+    "modifications": [
+     "SCP:: namespace prefix stripped from copied source (data injected locally)",
+     "system.file(\"python\", package=\"SCP\") repointed to module resources/",
+     "none",
+     "imported package symbols bound lazily per NAMESPACE importFrom map; namespaces load on first real use, not at source",
+     "module resolves like a package namespace: imports env parent is baseenv(), the caller's global env is excluded; NAMESPACE-imported plus bare standard-package symbols are bound explicitly so user objects (e.g. a variable named 'matrix') cannot shadow them",
+     "per-method object-namespace ensure wrappers for Seurat-family S3 methods; matrix/default branches never load Seurat",
+     "entry restores caller search()/options(): packages attached by the call are detached newest-first in a retry loop until clean or no progress; residuals recorded in env$.scp_detach_residual; pre-existing option values restored; options added by the call and literally assigned by the copied source (e.g. RcppML.verbose) removed as algorithm-temporary; other added options (namespace .onLoad defaults) kept; all four classes recorded in env$.scp_options_*",
+     "infrastructure shims bound after source: asMatrix (pure-R faithful translation of src/asMatrix.cpp), GetAssayData/SetAssayData/Assays slot->layer compatibility for SeuratObject >= 5"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "file": "vignettes/cell-annotation-workflow.Rmd",
+    "title": "细胞注释与参考映射",
+    "sha256": "4d5a060af9b52b6ee77d7444d85dd1f2eb49ab2812d78709c0f26548e58ef1e4",
+    "declared_calls": [
+      "AverageExpression",
+      "CellCorHeatmap",
+      "CellDimPlot",
+      "DefaultReduction",
+      "FeatureDimPlot",
+      "ProjectionPlot",
+      "RunKNNMap",
+      "RunKNNPredict",
+      "RunStandardWorkflow"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/cellrank-palantir-fate-workflow.Rmd",
+    "title": "CellRank / Palantir 命运分析",
+    "sha256": "e35fb9eb055d6a3aa5bb92bae612dc44cc691cba47ceda503fa0f23f36da2e31",
+    "declared_calls": [
+      "CellDimPlot",
+      "CellRankPlot",
+      "FeatureDimPlot",
+      "PalantirTrajectoryPlot",
+      "PrepareEnv",
+      "RunCellRank",
+      "RunCellRankEnrichment",
+      "RunCellRankTrends",
+      "RunPalantir",
+      "RunStandardWorkflow"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/differential-enrichment-workflow.Rmd",
+    "title": "差异与富集",
+    "sha256": "e83cbc1eb6f3ed5623eb1723d2b9e84db8663afc5c0eead4d45e4e63603c48dc",
+    "declared_calls": [
+      "DEtestPlot",
+      "EnrichmentPlot",
+      "FeatureHeatmap",
+      "GSEAPlot",
+      "GetAssayData5",
+      "RunDEtest",
+      "RunEnrichment",
+      "RunGSEA",
+      "RunStandardWorkflow"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/integration-benchmark-workflow.Rmd",
+    "title": "整合评价",
+    "sha256": "daef1bb3fac189af9d72cb1a6fb04300cf86bbd4c9745f8eddd0c6579ecc22fb",
+    "declared_calls": [
+      "IntegrationBenchmarkPlot",
+      "RunHarmony2",
+      "RunIntegration",
+      "RunIntegrationBenchmark"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/integration-workflow.Rmd",
+    "title": "多样本整合",
+    "sha256": "cfee8bef0668b52001a5eda20eac456c9e8537d353dedab292e72eeaa2e14433",
+    "declared_calls": [
+      "CellDimPlot",
+      "FeatureDimPlot",
+      "RunHarmony2",
+      "RunIntegration",
+      "RunStandardWorkflow"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/reproduce-pancreatic-endocrinogenesis.Rmd",
+    "title": "胰腺内分泌发育复现",
+    "sha256": "ad3b75ab189d21ceaae2bc8e011e7831aa813521e462024de15fbd59d53683bf",
+    "declared_calls": [
+      "CellDimPlot",
+      "DEtestPlot",
+      "DynamicHeatmap",
+      "EnrichmentPlot",
+      "FeatureDimPlot",
+      "GroupHeatmap",
+      "PrepareSCExplorer",
+      "RunCellQC",
+      "RunDEtest",
+      "RunDynamicFeatures",
+      "RunEnrichment",
+      "RunGRNBoost2",
+      "RunMonocle3",
+      "RunSCENIC",
+      "RunSCVELO",
+      "RunSlingshot",
+      "RunStandardWorkflow",
+      "SCENICPlot",
+      "VelocityPlot"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/single-cell-main-workflow.Rmd",
+    "title": "单细胞主流程",
+    "sha256": "1304d289d831bbc241e0b6561ba5db9114d74998e79ce5f3e15064f67a699986",
+    "declared_calls": [
+      "CellDimPlot",
+      "FeatureDimPlot",
+      "GetAssayData5",
+      "GroupHeatmap",
+      "RunCellQC",
+      "RunStandardWorkflow"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/spatial-benchmark-workflow.Rmd",
+    "title": "空间分析评价",
+    "sha256": "f055c5338f4903985fdf5f627a8301bd0dcf2633e9d0f3ed3f0660912f30f5df",
+    "declared_calls": [
+      "RunIntegrationBenchmark",
+      "RunSpatialBenchmark",
+      "SpatialBenchmarkPlot"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/spatial-framework-bridges.Rmd",
+    "title": "空间框架转换",
+    "sha256": "8bef5f47d1861813f04095ad70feeb0971ffbc96b2fba29ffc8c8031b317754e",
+    "declared_calls": [
+      "GetAssayData5",
+      "NormalizeData",
+      "SpatialCoordinates",
+      "SpatialSpotPlot",
+      "giotto_to_srt",
+      "spe_to_srt",
+      "srt_to_giotto",
+      "srt_to_spe"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/spatial-main-workflow.Rmd",
+    "title": "空间主流程",
+    "sha256": "3dae1b5b7de447b6e4293b518af3a9edb3ebf177acb87532931327294f682427",
+    "declared_calls": [
+      "RunRCTD",
+      "RunSPOTlight",
+      "RunSpatialIntegration",
+      "RunStandardWorkflow",
+      "SpatialCellPlot",
+      "SpatialCoordinates",
+      "SpatialDeconvolutionPlot",
+      "SpatialSpotPlot",
+      "SpatialVariableFeaturePlot"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/spatial-platform-workflows.Rmd",
+    "title": "空间平台与输入",
+    "sha256": "902ed780284cca34994e5fe85c8bfe81e8a77b0467ad228fe5d632b9544731c4",
+    "declared_calls": [
+      "Cell2locationPlot",
+      "GetAssayData5",
+      "NormalizeData",
+      "ReadSpatialData",
+      "RunBayesSpace",
+      "RunCell2location",
+      "RunRCTD",
+      "RunSPOTlight",
+      "RunSpatialIntegration",
+      "RunStandardWorkflow",
+      "SpatialCellPlot",
+      "SpatialCoordinates",
+      "SpatialDeconvolutionPlot",
+      "SpatialIntegrationPlot",
+      "SpatialSpotPlot"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  },
+  {
+    "file": "vignettes/trajectory-dynamic-workflow.Rmd",
+    "title": "轨迹与动态特征",
+    "sha256": "159424bcf2ffe9a45196042852e0cf2f3413a37683cad658c5d8023a8104200d",
+    "declared_calls": [
+      "CellDimPlot",
+      "DynamicHeatmap",
+      "DynamicPlot",
+      "FeatureDimPlot",
+      "PAGAPlot",
+      "RunDynamicFeatures",
+      "RunMonocle3",
+      "RunPAGA",
+      "RunSCVELO",
+      "RunSlingshot",
+      "RunStandardWorkflow",
+      "VelocityPlot"
+    ],
+    "state": "not_run",
+    "reason": "upstream vignette exists; chunks and package checks have not been executed locally"
+  }
+]

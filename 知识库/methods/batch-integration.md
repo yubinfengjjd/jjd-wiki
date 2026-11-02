@@ -171,6 +171,11 @@ Seurat 分支返回 `list(result=Seurat, diagnostics=...)`；`result` 含整合 
 
 2026-10-23 检查了 UMAP 分组图与细胞比例图。整合嵌入可按 batch/celltype 着色，比例图可检查组成变化；两者都是 adaptable，模板不执行整合。没有 direct。不能把“整合后 UMAP 混合”当作批次校正成功的唯一证据，仍需 marker 与比例检查。
 
+
+### scop 候选来源（未运行）
+
+另有 [[methods/scop-analysis-guide|scop 0.9.2 候选来源]]：`RunIntegration`、`Seurat_integrate`、`Harmony_integrate`、`WNN_integrate`、`GLUE_integrate`。单模态批次校正与 RNA/ATAC 多模态整合的输入、目标不同；每个后端另验。 本机尚未执行，不继承本页 SCP/其他实现的验证；未修改本页实现或统计逻辑。
+
 ## 使用记录
 
 2026-10-23：Seurat 分支在隔离 R 环境实际运行并与上游比较；Harmony 分支缺包保留 not_run，未安装。

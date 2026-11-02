@@ -47,8 +47,6 @@ summary: 分类变量的构成比例、层级之间的流向与分型对应关�
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[recipes/figureya-25sankey-update|多层分类流向桑基图]] | L1 | ready · 运行 pass | 多层分类流向桑基图 |
-| [[recipes/figureya-196panpie|分组临床分期扇形矩阵图]] | L1 | ready · 运行 pass | 分组 × 临床分期扇形矩阵 |
-| [[recipes/figureya-236circgroup|分型对应关系圈状热图]] | L1 | ready · 运行 pass | 分型对应关系圈状热图 |
 | [[templates/2026-10-22-scp-example__fig10-sankey--sankey|分组流向桑基图]] | L2 | ready · 可用 | 分组流向桑基图（L2） |
 | [[templates/2026-10-22-scp-example__fig02-ring--ring|分组构成同心环图]] | L2 | ready · 可用 | 分组构成同心环（L2） |
 | [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]] | L2 | ready · 可用 | 细胞比例堆叠流带（L2） |
@@ -58,6 +56,14 @@ summary: 分类变量的构成比例、层级之间的流向与分型对应关�
 
 - 类别过多时饼图难读，考虑堆叠柱或流带图。
 - 构成差异的检验（卡方、Fisher）另做并写进图注。
+
+<!-- figureya-selection:start -->
+## 样式筛选记录
+
+2026-11-02 按作者的 FigureYa 样式筛选更新当前首选展示：原 6 项，当前展示 4 项。
+
+被移除项退出当前首选表；原 `picks` 关系保留用于恢复和溯源，不能据历史关系重新推荐已移除样式。
+<!-- figureya-selection:end -->
 
 ## 作者备注
 

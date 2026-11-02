@@ -79,7 +79,7 @@ implementations:
 1. 某个 SCP 图（UMAP、feature UMAP、比例、点图、小提琴/箱线、热图、富集、GSEA、轨迹、速度等）需要什么形状的数据？
 2. 现有 Wiki 模板能复用哪些画法，SCP 的 Seurat 对象输出怎样改造成模板读的 CSV？
 
-本页是来源与接口映射资料，不另建分析家族。已有图优先复制各模板 runtime.json 声明的最小闭包；整库加载器只作为历史来源/原版对照，不能冒充最小依赖入口。新模板仍须先有画廊来源并按正常流程签核。
+本页是来源与接口映射资料，不另建分析家族。已有图优先复制各模板 runtime.json 声明的最小闭包；整库加载器只作为历史来源/原版对照，不能冒充最小依赖入口。v2 下开源库走来源/配方路径，画廊复刻走 ingest-figure；已有原生对象绘图闭包见 [[methods/scp-source-catalog|全库索引]] 与四个 draft 绘图技术页，用到时再做新的 L2。
 
 ## 原始实现与家族范围
 
@@ -106,7 +106,7 @@ implementations:
 ## 不适用
 
 - 不能把 SCP 绘图函数直接当成 Wiki 模板：模板入口是 `spec.json` + `code/render.*` + CSV 接口；SCP 函数读 Seurat 对象，二者契约不同。
-- 图模板须来自已签核的画廊条目（`ingest-figure` → `scaffold-template`）。S1–S3有16个SCP示例模板，另加作者已确认的点阵分支共17个；历史收据只证明各自示例，不覆盖整个函数。全库入库仍在继续，未覆盖分支单列。
+- v2 的图模板可来自开源配方或画廊复刻；ready 仍表示作者确认。S1–S3有16个SCP示例模板，另加作者已确认的点阵分支共17个；历史收据只证明各自示例，不覆盖整个函数。全库入库仍在继续，未覆盖分支单列。
 - 不能把“画法相似”当成“语义直连”：CellDensityPlot 与密度散点不是同一图。GroupHeatmap 的 ht1 已有 fig08；新增 [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]] 为已确认的原生结构分支，不拿普通气泡图替代。
 - 不能保证全家族视觉等价：本批独立重跑GroupHeatmap add_dot的单矩阵、reticle及双矩阵；其余模板仍按各自已有证据解释，未在本批全量重跑。add_violin、split、annotation等未实现，S4+其余绘图入口仍有缺口。
 - 不能把 SCP 的默认配色/主题当期刊规范；模板样式以 spec 为准。
@@ -128,9 +128,9 @@ implementations:
 ## 怎么做
 
 1. 先判断要画的图属于哪一类：降维图、统计图、热图、富集/GSEA、轨迹/速度。每类先读对应函数的参数和返回类型。
-2. 如果现有 Wiki 模板能表达同一画法，优先导出 CSV 给模板，而不是在课题里重画 SCP 图；导出前核对接口列名、行单位、量纲和配对关系。
+2. 已有 CSV 数据优先复用相应表驱动模板；已有 Seurat/原生结果对象可按绘图技术页直接选闭包。是否转表取决于输入与图意，不能仅因接口列名相似就转换。
 3. 如果现有模板不能表达（例如 lineage 曲线、velocity 箭头、PAGA 网络、enrichmap、wordcloud、动态热图、3D），如实标记“无模板”，不要强行套用相似模板。bar/rose/chord/venn/upset 与 ring 已有单 panel 原生模板；它们各自只覆盖一个 `plot_type`，不能互相替代。
-4. 用 SCP 绘图函数直接出图时，先 `source(".../load_scp_local.R")`，调用 `SCP_local$CellDimPlot(...)` 等；确认依赖包（ggplot2、ComplexHeatmap、circlize、ggrepel、ggforce、ggnewscale、patchwork、plotly 等）已安装。
+4. 原生对象绘图优先读 [[methods/scp-viz-dimplots]]、[[methods/scp-viz-statplots]]、[[methods/scp-viz-heatmaps]]、[[methods/scp-viz-model-overlays]] 的清单，复制所选闭包。旧整库 `load_scp_local.R` 仅供历史兼容/原版对照；确认依赖包（ggplot2、ComplexHeatmap、circlize、ggrepel、ggforce、ggnewscale、patchwork、plotly 等）已安装。
 5. 表适配：
    - `scp_umap_groups()`：坐标 + 元数据 → `render-umap-groups`。
    - `scp_umap_feature_long()`：坐标 + 表达（宽/长）+ 元数据 → `render-umap-feature-long`。

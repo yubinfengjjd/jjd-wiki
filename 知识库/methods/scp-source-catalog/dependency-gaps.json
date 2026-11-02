@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-11-01",
+  "scope": "R package presence in Wiki-only libraries; not namespace load or algorithm evidence; no installation",
+  "R": "R version 4.5.0 (2025-04-11 ucrt)",
+  "missing_by_candidate_module": {
+    "css-integrate": [
+      "qlcMatrix",
+      "simspec"
+    ],
+    "conos-integrate": "conos",
+    "harmony-integrate": "harmony",
+    "liger-integrate": "rliger",
+    "mnn-integrate": "batchelor",
+    "runcssmap": "simspec",
+    "rundm": "destiny",
+    "runharmony2": "harmony",
+    "runmonocle2": [
+      "DDRTree",
+      "monocle"
+    ],
+    "runmonocle3": "monocle3",
+    "runnmf": "RcppML",
+    "runscmap": "scmap",
+    "runsingler": "SingleR",
+    "runsymphonymap": "symphony",
+    "db-scdblfinder": "scDblFinder",
+    "db-scds": "scds",
+    "fastmnn-integrate": "batchelor"
+  }
+}

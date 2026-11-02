@@ -52,13 +52,13 @@ data_contract:
 
 把 SCP v0.5.6 的 R/Python 源码复制到本知识库，做成可直接 `source()` 的本地函数集合；不安装、不加载 `SCP` 包，也不依赖 `SCP::` 命名空间。适合需要固定版本、审计/修改源码、或在不能安装 GitHub 包的课题环境中复用 SCP 实现的情况。
 
-本地化包位于 `code/SCP-local/`；上游原字节归档在 `source/`，两者分开。6 个分析族页和可视化页都引用这个本地包。
+本地化包位于 `code/SCP-local/`；上游原字节归档在 `source/`，两者分开。该整库保留用于历史归档、审计与原版对照。课题优先复制各规范家族声明的 standalone 闭包，是否验证以当前分支收据为准；全库逐项去向见 [[methods/scp-source-catalog|来源与入口索引]]。
 
 ## 适用
 
 - 作者课题环境已有或准备安装 Seurat、SeuratObject 和所需 Bioconductor 包；只希望避免安装 SCP 包本身。
 - 需要把函数源码复制到课题、按课题修改参数或加日志；需要保留上游 commit、许可证和补丁记录。
-- 需要离线阅读/检索 SCP 的 226 个顶层定义，而不是只看到 `SCP::` 调用。
+- 需要离线阅读/检索 SCP 的原始顶层定义（本次按固定快照重新解析为 238 项），而不是只看到 `SCP::` 调用。
 - 需要把绘图函数固定在某一个版本，避免上游更新改变行为。
 
 ## 不适用
@@ -100,7 +100,7 @@ data_contract:
 - `code/SCP-local/data/`：`palette_list.rda`、`words_excluded.rda`。
 - `code/SCP-local/src/`：`asMatrix.cpp`、`RcppExports.cpp`，仅作溯源，不编译。
 - `code/SCP-local/load_scp_local.R`：加载器；定义 `SCP_local`、`scp_local_attach()`、`scp_local_export()`、`scp_local_list()`。
-- `code/SCP-local/FUNCTIONS.csv`：172 个 NAMESPACE 导出 + 226 个顶层定义的索引；162 个导出由本地源码定义。
+- `code/SCP-local/FUNCTIONS.csv`：历史加载器索引，不能作为当前上游导出计数；固定快照重新核对为 142 个 NAMESPACE 导出和 238 个 R 顶层定义，见 [[methods/scp-source-catalog|全库来源索引]]。
 - `code/SCP-local/PATCHES.md`：逐项补丁、排除文件、已知原实现细节。
 - `code/SCP-local/README.md`：快速开始、依赖、限制。
 - `code/SCP-local/verify_local.R`：可重复的静态/免 Seurat 运行检查；2026-10-22 记录 61 PASS / 0 FAIL，2026-10-23 未重跑该脚本。
@@ -110,13 +110,18 @@ data_contract:
 
 ## 输出
 
-- R 会话中的 `SCP_local` 环境：包含 162 个可调用导出函数、内部辅助函数、`palette_list`、`words_excluded`、`asMatrix`。
+- R 会话中的 `SCP_local` 环境：历史加载器暴露的函数名数量按其 FUNCTIONS.csv 解释；上游 NAMESPACE 实际有 142 个导出（含重导出），不以历史加载器计数替代。加载器还包含内部辅助函数、`palette_list`、`words_excluded`、`asMatrix`。
 - 可选：`scp_local_attach()` 挂到搜索路径；`scp_local_export()` 把指定函数复制到全局环境。
 - 不产生分析结果表或图；各方法族页负责说明如何把 SCP 返回的 Seurat 对象/tools 槽整理成图接口表。
 
 ## 知识关联检查
 
 2026-10-23 分类为技术/来源资料：旧 id、`source/` 原字节和作者备注保留，但不再作为默认分析家族推荐。语义配图关系已迁往 [[methods/cell-quality-control|单细胞质量控制]]、[[methods/doublet-detection|双细胞检测]]、[[methods/batch-integration|单细胞批次整合]]、[[methods/differential-expression|差异表达分析]]、[[methods/gene-set-enrichment|基因集富集分析]]、[[methods/gene-set-scoring|基因集与通路签名打分]]、[[methods/trajectory-inference|拟时序与轨迹推断]]、[[methods/rna-velocity|RNA 速度分析]]、[[methods/cell-type-annotation|细胞类型注释]]、[[methods/reference-mapping|参考图谱映射]]、[[methods/dimensionality-reduction|单细胞降维分析]]、[[methods/cell-clustering|单细胞聚类分析]]、[[methods/dynamic-feature-analysis|拟时序动态特征分析]]；本页只保留来源与实现证据链接，不再维护 `figure_relations` 主记录。原页面正文中的模板/证据链接仍可用于溯源；结构相似不等于科学直连。
+
+
+### scop 候选来源（未运行）
+
+后续衍生来源见 [[methods/scop-source-catalog|scop 0.9.2 来源]]。其 object/layer、thisplot/thisutils 与 C++ 依赖不能由本历史加载器或旧 SCP 收据替代；本页原字节和兼容代码不改。
 
 ## 使用记录
 
