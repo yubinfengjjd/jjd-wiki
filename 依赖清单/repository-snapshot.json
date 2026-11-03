@@ -1,0 +1,4264 @@
+{
+  "checked_on": "2026-11-03",
+  "scope": "Package identity and source metadata verified; no installation or compatibility claim.",
+  "indexes": [
+    "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+    "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+    "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+    "https://bioconductor.posit.co/packages/3.21/data/experiment/src/contrib/PACKAGES.gz"
+  ],
+  "packages": {
+    "Seurat": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Seurat",
+      "version": "5.6.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, SeuratObject (>= 5.0.2)",
+      "system_requirements": ""
+    },
+    "SeuratObject": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "SeuratObject",
+      "version": "5.4.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), sp (>= 1.5.0)",
+      "system_requirements": ""
+    },
+    "Matrix": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Matrix",
+      "version": "1.7-6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7), methods",
+      "system_requirements": ""
+    },
+    "rlang": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rlang",
+      "version": "1.3.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "data.table": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "data.table",
+      "version": "1.18.6.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "uwot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "uwot",
+      "version": "0.2.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "Matrix",
+      "system_requirements": ""
+    },
+    "intrinsicDimension": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "intrinsicDimension",
+      "version": "1.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "yaImpute",
+      "system_requirements": ""
+    },
+    "proxyC": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "proxyC",
+      "version": "0.6.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.0), methods",
+      "system_requirements": ""
+    },
+    "dplyr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "dplyr",
+      "version": "1.2.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "future": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "future",
+      "version": "1.82.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0)",
+      "system_requirements": ""
+    },
+    "future.apply": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "future.apply",
+      "version": "1.21.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0), future (>= 1.80.0)",
+      "system_requirements": ""
+    },
+    "harmony": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "harmony",
+      "version": "2.0.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R(>= 4.2.0), Rcpp",
+      "system_requirements": ""
+    },
+    "Signac": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Signac",
+      "version": "1.17.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), methods",
+      "system_requirements": ""
+    },
+    "reticulate": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "reticulate",
+      "version": "1.47.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5)",
+      "system_requirements": ""
+    },
+    "NMF": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "NMF",
+      "version": "0.28",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.0), methods, utils, registry, rngtools (>= 1.2.3), cluster",
+      "system_requirements": ""
+    },
+    "glmpca": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "glmpca",
+      "version": "0.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5),",
+      "system_requirements": ""
+    },
+    "mgcv": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mgcv",
+      "version": "1.9-4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7), nlme (>= 3.1-64)",
+      "system_requirements": ""
+    },
+    "msigdbr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "msigdbr",
+      "version": "26.1.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "gson": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gson",
+      "version": "0.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "R.cache": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "R.cache",
+      "version": "0.17.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0)",
+      "system_requirements": ""
+    },
+    "reshape2": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "reshape2",
+      "version": "1.4.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1)",
+      "system_requirements": ""
+    },
+    "ggplot2": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggplot2",
+      "version": "4.0.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "AnnoProbe": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "AnnoProbe",
+      "version": "0.1.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "BART": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "BART",
+      "version": "2.9.10",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6), nlme, survival",
+      "system_requirements": ""
+    },
+    "DDRTree": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "DDRTree",
+      "version": "0.1.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "irlba",
+      "system_requirements": ""
+    },
+    "FNN": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "FNN",
+      "version": "1.1.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "FactoMineR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "FactoMineR",
+      "version": "2.18",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3) car,cluster,DT,ellipse,emmeans,flashClust,ggplot2,ggrepel,graphics,grDevices,irlba,lattice,leaps,MASS,multcompView,scales,scatterplot3d,showtext,stats,sysfonts,utils",
+      "system_requirements": ""
+    },
+    "Hmisc": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Hmisc",
+      "version": "5.3-0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2.0)",
+      "system_requirements": ""
+    },
+    "IOBR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "IOBR",
+      "version": "2.2.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "MASS": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "MASS",
+      "version": "7.3-66",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7), grDevices, graphics, stats, utils",
+      "system_requirements": ""
+    },
+    "RColorBrewer": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RColorBrewer",
+      "version": "1.1-3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.0.0)",
+      "system_requirements": ""
+    },
+    "RcppML": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RcppML",
+      "version": "0.3.7.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "Rmisc": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Rmisc",
+      "version": "1.5.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "lattice, plyr",
+      "system_requirements": ""
+    },
+    "SCpubr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "SCpubr",
+      "version": "3.0.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "VennDiagram": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "VennDiagram",
+      "version": "1.8.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), grid (>= 2.14.1), futile.logger",
+      "system_requirements": ""
+    },
+    "WGCNA": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "WGCNA",
+      "version": "1.74",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0), dynamicTreeCut (>= 1.62), fastcluster",
+      "system_requirements": ""
+    },
+    "caret": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "caret",
+      "version": "7.0-1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "ggplot2, lattice (>= 0.20), R (>= 3.2.0)",
+      "system_requirements": ""
+    },
+    "circlize": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "circlize",
+      "version": "0.4.18",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), graphics",
+      "system_requirements": ""
+    },
+    "clustree": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "clustree",
+      "version": "0.5.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5), ggraph",
+      "system_requirements": ""
+    },
+    "colorspace": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "colorspace",
+      "version": "2.1-4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.0), methods",
+      "system_requirements": ""
+    },
+    "cowplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "cowplot",
+      "version": "1.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "doParallel": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "doParallel",
+      "version": "1.0.17",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0), foreach (>= 1.2.0), iterators (>= 1.0.0), parallel, utils",
+      "system_requirements": ""
+    },
+    "e1071": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "e1071",
+      "version": "1.7-17",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "factoextra": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "factoextra",
+      "version": "2.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), ggplot2 (>= 3.5.2)",
+      "system_requirements": ""
+    },
+    "forcats": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "forcats",
+      "version": "1.0.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "gbm": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gbm",
+      "version": "2.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "ggExtra": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggExtra",
+      "version": "0.11.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.0)",
+      "system_requirements": ""
+    },
+    "ggalluvial": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggalluvial",
+      "version": "0.12.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6), ggplot2 (>= 2.2)",
+      "system_requirements": ""
+    },
+    "ggforce": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggforce",
+      "version": "0.5.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "ggplot2 (>= 3.5.0), R (>= 3.3.0)",
+      "system_requirements": ""
+    },
+    "ggnetwork": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggnetwork",
+      "version": "0.5.14",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5), ggplot2 (>= 2.0.0)",
+      "system_requirements": ""
+    },
+    "ggnewscale": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggnewscale",
+      "version": "0.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "ggplotify": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggplotify",
+      "version": "0.1.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "ggpointdensity": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggpointdensity",
+      "version": "0.2.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2)",
+      "system_requirements": ""
+    },
+    "ggpubr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggpubr",
+      "version": "1.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), ggplot2 (>= 3.5.2)",
+      "system_requirements": ""
+    },
+    "ggrastr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggrastr",
+      "version": "1.0.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.2)",
+      "system_requirements": ""
+    },
+    "ggrepel": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggrepel",
+      "version": "0.9.8",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), ggplot2 (>= 3.5.2)",
+      "system_requirements": ""
+    },
+    "ggridges": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggridges",
+      "version": "0.5.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2)",
+      "system_requirements": ""
+    },
+    "ggsci": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggsci",
+      "version": "5.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "ggsignif": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggsignif",
+      "version": "0.6.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "ggthemes": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggthemes",
+      "version": "7.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "glmnet": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "glmnet",
+      "version": "5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0), Matrix (>= 1.0-6)",
+      "system_requirements": ""
+    },
+    "gplots": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gplots",
+      "version": "3.3.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0)",
+      "system_requirements": ""
+    },
+    "gridExtra": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gridExtra",
+      "version": "2.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "igraph": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "igraph",
+      "version": "2.3.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "methods, R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "jsonlite": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "jsonlite",
+      "version": "2.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "methods",
+      "system_requirements": ""
+    },
+    "kernelshap": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "kernelshap",
+      "version": "0.9.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0)",
+      "system_requirements": ""
+    },
+    "lares": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "lares",
+      "version": "5.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "lime": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "lime",
+      "version": "0.5.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "mboost": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mboost",
+      "version": "2.9-14",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0), methods, stats, parallel, stabs (>= 0.5-0)",
+      "system_requirements": ""
+    },
+    "mclust": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mclust",
+      "version": "6.1.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0)",
+      "system_requirements": ""
+    },
+    "metap": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "metap",
+      "version": "1.14",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "multcompView": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "multcompView",
+      "version": "0.1-12",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "openxlsx": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "openxlsx",
+      "version": "4.2.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3.0)",
+      "system_requirements": ""
+    },
+    "pROC": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pROC",
+      "version": "1.19.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14)",
+      "system_requirements": ""
+    },
+    "paletteer": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "paletteer",
+      "version": "1.7.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "patchwork": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "patchwork",
+      "version": "1.3.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "pdftools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pdftools",
+      "version": "3.9.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "pheatmap": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pheatmap",
+      "version": "1.0.13",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.0)",
+      "system_requirements": ""
+    },
+    "pkgload": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pkgload",
+      "version": "1.5.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "plsRglm": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "plsRglm",
+      "version": "1.7.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "plyr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "plyr",
+      "version": "1.8.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.0)",
+      "system_requirements": ""
+    },
+    "purrr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "purrr",
+      "version": "1.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "randomForest": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "randomForest",
+      "version": "4.7-1.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), stats",
+      "system_requirements": ""
+    },
+    "randomForestSRC": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "randomForestSRC",
+      "version": "3.10.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3.0),",
+      "system_requirements": ""
+    },
+    "randomcoloR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "randomcoloR",
+      "version": "1.1.0.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "readr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "readr",
+      "version": "2.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "readxl": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "readxl",
+      "version": "1.6.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2)",
+      "system_requirements": ""
+    },
+    "scTenifoldKnk": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "scTenifoldKnk",
+      "version": "2.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "scales": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "scales",
+      "version": "1.4.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "sctransform": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "sctransform",
+      "version": "0.4.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "seqinr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "seqinr",
+      "version": "4.2-44",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10.0)",
+      "system_requirements": ""
+    },
+    "shapviz": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "shapviz",
+      "version": "0.10.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "snowfall": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "snowfall",
+      "version": "1.84-6.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10), snow",
+      "system_requirements": ""
+    },
+    "spdep": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "spdep",
+      "version": "1.4-2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3.0), methods, spData (>= 2.3.1), sf",
+      "system_requirements": ""
+    },
+    "stringr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "stringr",
+      "version": "1.6.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "tibble": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tibble",
+      "version": "3.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "tidydr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidydr",
+      "version": "0.0.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "tidyr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidyr",
+      "version": "1.3.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "tidyverse": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidyverse",
+      "version": "2.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3)",
+      "system_requirements": ""
+    },
+    "vcd": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "vcd",
+      "version": "1.4-14",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.4.0), grid",
+      "system_requirements": ""
+    },
+    "vegan": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "vegan",
+      "version": "2.7-6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "permute (>= 0.9-0), R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "viridis": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "viridis",
+      "version": "0.6.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10), viridisLite (>= 0.4.0)",
+      "system_requirements": ""
+    },
+    "viridisLite": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "viridisLite",
+      "version": "0.4.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "wesanderson": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "wesanderson",
+      "version": "0.3.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0)",
+      "system_requirements": ""
+    },
+    "xgboost": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "xgboost",
+      "version": "3.2.1.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3.0)",
+      "system_requirements": ""
+    },
+    "yaml": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "yaml",
+      "version": "2.3.12",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "magrittr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "magrittr",
+      "version": "2.0.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "gtable": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gtable",
+      "version": "0.3.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0)",
+      "system_requirements": ""
+    },
+    "plotly": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "plotly",
+      "version": "4.12.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), ggplot2 (>= 3.0.0)",
+      "system_requirements": ""
+    },
+    "nlme": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "nlme",
+      "version": "3.1-172",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7)",
+      "system_requirements": ""
+    },
+    "scattermore": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "scattermore",
+      "version": "1.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "ggVennDiagram": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggVennDiagram",
+      "version": "1.5.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "ggupset": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggupset",
+      "version": "0.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "sf": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "sf",
+      "version": "1.1-3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "methods, R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "metR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "metR",
+      "version": "0.19.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "htmlwidgets": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "htmlwidgets",
+      "version": "1.6.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "magick": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "magick",
+      "version": "2.9.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "RcppParallel": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RcppParallel",
+      "version": "6.2.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "ragg": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ragg",
+      "version": "1.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "png": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "png",
+      "version": "0.1-9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.9.0)",
+      "system_requirements": ""
+    },
+    "httr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "httr",
+      "version": "1.4.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6)",
+      "system_requirements": ""
+    },
+    "R.utils": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "R.utils",
+      "version": "2.13.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0), R.oo",
+      "system_requirements": ""
+    },
+    "dendextend": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "dendextend",
+      "version": "1.19.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.0)",
+      "system_requirements": ""
+    },
+    "survival": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "survival",
+      "version": "3.8-12",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7)",
+      "system_requirements": ""
+    },
+    "ggwordcloud": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggwordcloud",
+      "version": "0.6.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), ggplot2 (>= 3.0.0)",
+      "system_requirements": ""
+    },
+    "concaveman": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "concaveman",
+      "version": "1.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "VGAM": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "VGAM",
+      "version": "1.1-14",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), methods, stats, stats4, splines",
+      "system_requirements": ""
+    },
+    "svglite": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "svglite",
+      "version": "2.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "survminer": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "survminer",
+      "version": "0.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "ggplot2(>= 3.4.0), ggpubr(>= 0.1.6)",
+      "system_requirements": ""
+    },
+    "forestplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "forestplot",
+      "version": "3.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), grid, checkmate, abind",
+      "system_requirements": ""
+    },
+    "knitr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "knitr",
+      "version": "1.52",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "rms": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rms",
+      "version": "8.2-1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4.0), Hmisc (>= 5.3-0)",
+      "system_requirements": ""
+    },
+    "ResourceSelection": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ResourceSelection",
+      "version": "0.3-6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.13.0)",
+      "system_requirements": ""
+    },
+    "shape": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "shape",
+      "version": "1.4.6.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.01)",
+      "system_requirements": ""
+    },
+    "GOplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "GOplot",
+      "version": "1.0.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "ggplot2 (>= 2.0.0), ggdendro (>= 0.1-17), gridExtra (>= 2.0.0), RColorBrewer (>= 1.1.2), R (>= 3.2.3)",
+      "system_requirements": ""
+    },
+    "ggraph": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggraph",
+      "version": "2.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10), ggplot2 (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "tidygraph": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidygraph",
+      "version": "1.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "aplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "aplot",
+      "version": "0.3.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "gridBase": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gridBase",
+      "version": "0.4-7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.3.0)",
+      "system_requirements": ""
+    },
+    "SimDesign": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "SimDesign",
+      "version": "2.28",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "ggpp": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggpp",
+      "version": "0.6.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), ggplot2 (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "plsRcox": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "plsRcox",
+      "version": "1.8.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.4.0)",
+      "system_requirements": ""
+    },
+    "superpc": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "superpc",
+      "version": "1.12",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "CoxBoost": {
+      "installer": "github",
+      "spec": "binderh/CoxBoost@50d5fff7d7eebc4a1174dfa32adcfb4b4a69ad13",
+      "version": "1.5.2.9000",
+      "url": "https://raw.githubusercontent.com/binderh/CoxBoost/50d5fff7d7eebc4a1174dfa32adcfb4b4a69ad13/DESCRIPTION",
+      "description": {
+        "Package": "CoxBoost",
+        "Title": "Cox Models by Likelihood Based Boosting for a Single Survival Endpoint or Competing Risks",
+        "Version": "1.5.2.9000",
+        "Authors@R": "c( person(\"John\", \"Zobolas\", , \"bblodfon@gmail.com\", role = c(\"cre\", \"aut\"), comment = c(ORCID = \"0000-0002-3609-8674\")), person(\"Harald\", \"Binder\", , \"harald.binder@uniklinik-freiburg.de\", role = \"aut\", comment = c(ORCID = \"0000-0002-5666-8662\")) )",
+        "Description": "Provides routines for fitting Cox models by likelihood based boosting for single event survival data with right censoring or in the presence of competing risks. The methodology is described in Binder and Schumacher (2008) <doi:10.1186/1471-2105-9-14> and Binder et al. (2009) <doi:10.1093/bioinformatics/btp088>.",
+        "License": "MIT + file LICENSE",
+        "Depends": " R (>= 3.6.0)",
+        "Imports": " Matrix, survival",
+        "Suggests": " parallel, prodlim, snowfall",
+        "Encoding": "UTF-8",
+        "Config/roxygen2/version": "8.1.0",
+        "URL": "https://github.com/binderh/CoxBoost",
+        "BugReports": "https://github.com/binderh/CoxBoost/issues"
+      }
+    },
+    "survivalsvm": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "survivalsvm",
+      "version": "0.0.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "survival",
+      "system_requirements": ""
+    },
+    "miscTools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "miscTools",
+      "version": "0.6-30",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0)",
+      "system_requirements": ""
+    },
+    "compareC": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "compareC",
+      "version": "1.3.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "ggbreak": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggbreak",
+      "version": "0.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "nomogramEx": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "nomogramEx",
+      "version": "3.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "timeROC": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "timeROC",
+      "version": "0.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "ggstatsplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggstatsplot",
+      "version": "1.1.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.5.0)",
+      "system_requirements": ""
+    },
+    "smoothHR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "smoothHR",
+      "version": "1.0.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.12.0), survival, splines",
+      "system_requirements": ""
+    },
+    "ClassDiscovery": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ClassDiscovery",
+      "version": "3.4.11",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4), cluster, oompaBase (>= 3.0.1)",
+      "system_requirements": ""
+    },
+    "RIdeogram": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RIdeogram",
+      "version": "0.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "export": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "export",
+      "version": "0.3.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0)",
+      "system_requirements": ""
+    },
+    "Cairo": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Cairo",
+      "version": "1.7-0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0)",
+      "system_requirements": ""
+    },
+    "corrplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "corrplot",
+      "version": "0.95",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "BiocManager": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "BiocManager",
+      "version": "1.30.27",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz"
+    },
+    "coin": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "coin",
+      "version": "1.4-6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0), survival",
+      "system_requirements": ""
+    },
+    "survivalROC": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "survivalROC",
+      "version": "1.0.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 1.6.1)",
+      "system_requirements": ""
+    },
+    "gtools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "gtools",
+      "version": "3.9.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "methods, stats, utils",
+      "system_requirements": ""
+    },
+    "xlsx": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "xlsx",
+      "version": "0.6.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "janitor": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "janitor",
+      "version": "2.2.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.2)",
+      "system_requirements": ""
+    },
+    "dendsort": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "dendsort",
+      "version": "0.3.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "squash": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "squash",
+      "version": "1.0.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "rgl": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rgl",
+      "version": "1.3.36",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "caTools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "caTools",
+      "version": "1.18.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "GSA": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "GSA",
+      "version": "1.03.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "BlandAltmanLeh": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "BlandAltmanLeh",
+      "version": "0.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "MethComp": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "MethComp",
+      "version": "1.30.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5)",
+      "system_requirements": ""
+    },
+    "smatr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "smatr",
+      "version": "3.5-2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "devtools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "devtools",
+      "version": "2.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1), usethis (>= 3.2.1)",
+      "system_requirements": ""
+    },
+    "ranger": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ranger",
+      "version": "0.18.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1)",
+      "system_requirements": ""
+    },
+    "survRM2": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "survRM2",
+      "version": "1.0-4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "survival",
+      "system_requirements": ""
+    },
+    "pec": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pec",
+      "version": "2025.06.24",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.9.0), prodlim (>= 1.4.9)",
+      "system_requirements": ""
+    },
+    "officer": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "officer",
+      "version": "0.7.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "strucchange": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "strucchange",
+      "version": "1.6-0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10.0), zoo, sandwich",
+      "system_requirements": ""
+    },
+    "scatterpie": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "scatterpie",
+      "version": "0.2.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), ggplot2",
+      "system_requirements": ""
+    },
+    "muhaz": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "muhaz",
+      "version": "1.2.6.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R(>= 2.3)",
+      "system_requirements": ""
+    },
+    "cluster": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "cluster",
+      "version": "2.1.8.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7)",
+      "system_requirements": ""
+    },
+    "oompaBase": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "oompaBase",
+      "version": "3.2.12",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4)",
+      "system_requirements": ""
+    },
+    "Boruta": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Boruta",
+      "version": "10.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "DT": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "DT",
+      "version": "0.34.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "tidyestimate": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidyestimate",
+      "version": "1.1.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "ridge": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ridge",
+      "version": "3.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.1)",
+      "system_requirements": ""
+    },
+    "tidyjson": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidyjson",
+      "version": "0.3.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.0)",
+      "system_requirements": ""
+    },
+    "meta": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "meta",
+      "version": "8.5-0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), metabook (>= 0.2-0)",
+      "system_requirements": ""
+    },
+    "mRMRe": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mRMRe",
+      "version": "2.1.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5), survival, igraph, methods",
+      "system_requirements": ""
+    },
+    "kableExtra": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "kableExtra",
+      "version": "1.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.0)",
+      "system_requirements": ""
+    },
+    "pbapply": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pbapply",
+      "version": "1.7-5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0)",
+      "system_requirements": ""
+    },
+    "givitiR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "givitiR",
+      "version": "1.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "foreign": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "foreign",
+      "version": "0.8-92",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7)",
+      "system_requirements": ""
+    },
+    "ape": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ape",
+      "version": "5.8-1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0)",
+      "system_requirements": ""
+    },
+    "usedist": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "usedist",
+      "version": "0.4.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "matlab": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "matlab",
+      "version": "1.0.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.15)",
+      "system_requirements": ""
+    },
+    "EnvStats": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "EnvStats",
+      "version": "3.1.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "showtext": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "showtext",
+      "version": "0.9-8",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "sysfonts (>= 0.7.1), showtextdb (>= 2.0)",
+      "system_requirements": ""
+    },
+    "tidyHeatmap": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "tidyHeatmap",
+      "version": "1.13.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3.0)",
+      "system_requirements": ""
+    },
+    "entropy": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "entropy",
+      "version": "1.3.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "infotheo": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "infotheo",
+      "version": "1.2.0.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "colorRamps": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "colorRamps",
+      "version": "2.3.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "lme4": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "lme4",
+      "version": "2.1-0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6), Matrix, methods, stats",
+      "system_requirements": ""
+    },
+    "oncoPredict": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "oncoPredict",
+      "version": "1.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "car": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "car",
+      "version": "3.1-5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), carData (>= 3.0-0)",
+      "system_requirements": ""
+    },
+    "snow": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "snow",
+      "version": "0.4-4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.13.1), utils",
+      "system_requirements": ""
+    },
+    "ComparisonSurv": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ComparisonSurv",
+      "version": "1.1.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1), survival",
+      "system_requirements": ""
+    },
+    "rstatix": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rstatix",
+      "version": "1.1.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3.0)",
+      "system_requirements": ""
+    },
+    "SNFtool": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "SNFtool",
+      "version": "2.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "RCircos": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RCircos",
+      "version": "1.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "ggprism": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggprism",
+      "version": "1.0.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2)",
+      "system_requirements": ""
+    },
+    "ggcorrplot": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggcorrplot",
+      "version": "0.3.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3), ggplot2 (>= 3.3.6)",
+      "system_requirements": ""
+    },
+    "presto": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "presto",
+      "version": "1.1.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "rsvd": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rsvd",
+      "version": "2.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4.0)",
+      "system_requirements": ""
+    },
+    "stringi": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "stringi",
+      "version": "1.8.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4)",
+      "system_requirements": ""
+    },
+    "networkD3": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "networkD3",
+      "version": "0.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.0)",
+      "system_requirements": ""
+    },
+    "bamp": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "bamp",
+      "version": "3.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "SuperExactTest": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "SuperExactTest",
+      "version": "1.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "grid (>= 3.1.0), methods, R (>= 3.1.0)",
+      "system_requirements": ""
+    },
+    "nnet": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "nnet",
+      "version": "7.3-21",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7), stats, utils",
+      "system_requirements": ""
+    },
+    "class": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "class",
+      "version": "7.3-24",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7), stats, utils",
+      "system_requirements": ""
+    },
+    "naivebayes": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "naivebayes",
+      "version": "1.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "kernlab": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "kernlab",
+      "version": "0.9-33",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "party": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "party",
+      "version": "1.3-23",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.0), methods, grid, stats, mvtnorm (>= 1.0-2), modeltools (>= 0.2-21), strucchange",
+      "system_requirements": ""
+    },
+    "C50": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "C50",
+      "version": "0.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10.0)",
+      "system_requirements": ""
+    },
+    "neuralnet": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "neuralnet",
+      "version": "1.44.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.9.0)",
+      "system_requirements": ""
+    },
+    "FSelector": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "FSelector",
+      "version": "0.34",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "mlr3": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mlr3",
+      "version": "1.8.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "mlr3learners": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mlr3learners",
+      "version": "0.16.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "mlr3 (>= 1.8.0), R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "VIM": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "VIM",
+      "version": "7.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0),colorspace,grid",
+      "system_requirements": ""
+    },
+    "phangorn": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "phangorn",
+      "version": "2.12.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "ape (>= 5.8), R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "mixtools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mixtools",
+      "version": "2.0.0.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "fs": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "fs",
+      "version": "2.1.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "ggpattern": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggpattern",
+      "version": "1.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "glue": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "glue",
+      "version": "1.8.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "ggtext": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggtext",
+      "version": "0.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5)",
+      "system_requirements": ""
+    },
+    "pamr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pamr",
+      "version": "1.57",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5)",
+      "system_requirements": ""
+    },
+    "arrow": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "arrow",
+      "version": "26.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2)",
+      "system_requirements": ""
+    },
+    "spatstat.explore": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "spatstat.explore",
+      "version": "3.8-3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), spatstat.data (>= 3.1-9), spatstat.univar (>= 3.2-0), spatstat.geom (>= 3.8-3), spatstat.random (>= 3.5-2), stats, graphics, grDevices, utils, methods, nlme",
+      "system_requirements": ""
+    },
+    "epitools": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "epitools",
+      "version": "0.5-10.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "mlbench": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "mlbench",
+      "version": "2.1-11",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "fmsb": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "fmsb",
+      "version": "0.7.8",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.2.0)",
+      "system_requirements": ""
+    },
+    "lattice": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "lattice",
+      "version": "0.23-1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.7)",
+      "system_requirements": ""
+    },
+    "dynamicTreeCut": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "dynamicTreeCut",
+      "version": "1.63-1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.3.0), stats",
+      "system_requirements": ""
+    },
+    "rentrez": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rentrez",
+      "version": "1.2.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.6.0)",
+      "system_requirements": ""
+    },
+    "pubmed.mineR": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pubmed.mineR",
+      "version": "1.0.21",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), methods",
+      "system_requirements": ""
+    },
+    "directlabels": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "directlabels",
+      "version": "2026.8.27",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "ggtern": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ggtern",
+      "version": "4.0.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0), ggplot2 (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "matrixStats": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "matrixStats",
+      "version": "1.5.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "GetoptLong": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "GetoptLong",
+      "version": "1.1.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "wakefield": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "wakefield",
+      "version": "0.3.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.0)",
+      "system_requirements": ""
+    },
+    "MatchIt": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "MatchIt",
+      "version": "4.8.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "XML": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "XML",
+      "version": "3.99-0.25",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, utils",
+      "system_requirements": ""
+    },
+    "rsvg": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rsvg",
+      "version": "2.7.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "KMsurv": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "KMsurv",
+      "version": "0.1-6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "Rcpp": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "Rcpp",
+      "version": "1.1.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "conos": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "conos",
+      "version": "1.5.4",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), Matrix, igraph",
+      "system_requirements": ""
+    },
+    "covr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "covr",
+      "version": "3.6.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.1.0), methods",
+      "system_requirements": ""
+    },
+    "hexbin": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "hexbin",
+      "version": "1.28.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.0.1), methods",
+      "system_requirements": ""
+    },
+    "promises": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "promises",
+      "version": "1.5.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "renv": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "renv",
+      "version": "1.3.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "shiny": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "shiny",
+      "version": "1.14.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "methods, R (>= 3.1.2)",
+      "system_requirements": ""
+    },
+    "styler": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "styler",
+      "version": "1.11.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "testthat": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "testthat",
+      "version": "3.3.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "umap": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "umap",
+      "version": "0.2.10.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "withr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "withr",
+      "version": "3.0.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "cli": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "cli",
+      "version": "3.6.6",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4)",
+      "system_requirements": ""
+    },
+    "lifecycle": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "lifecycle",
+      "version": "1.0.5",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6)",
+      "system_requirements": ""
+    },
+    "thisplot": {
+      "installer": "github",
+      "spec": "mengxu98/thisplot@df334d3eafb1d92ca546604e9d38d0eb7a7a7d8c",
+      "version": "0.4.6",
+      "url": "https://raw.githubusercontent.com/mengxu98/thisplot/df334d3eafb1d92ca546604e9d38d0eb7a7a7d8c/DESCRIPTION",
+      "description": {
+        "Type": "Package",
+        "Package": "thisplot",
+        "Title": "Utility Functions for Plotting",
+        "Version": "0.4.6",
+        "Date": "2026-10-28",
+        "Authors@R": " c( person(\"Meng\", \"Xu\", email = \"mengxu98@qq.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-8300-1054\")), person(given = \"Haoliang\", family = \"Zhu\", email = \"hurry060215@gmail.com\", role = c(\"aut\"), comment = c(ORCID = \"0009-0004-9766-5179\")) )",
+        "Maintainer": "Meng Xu <mengxu98@qq.com>",
+        "Description": "Provides utility functions for plotting. Includes functions for color manipulation, plot customization, panel size control, data optimization for plots, and layout adjustments.",
+        "License": "MIT+ file LICENSE",
+        "URL": "https://mengxu98.github.io/thisplot/",
+        "BugReports": "https://github.com/mengxu98/thisplot/issues",
+        "Depends": " R (>= 4.1.0)",
+        "Imports": " cli, dendextend, ggforce, geomtextpath, ggrepel, ggnewscale, ggplot2 (>= 4.0.0), grDevices, grid, gtable, igraph, methods, patchwork, proxyC, reshape2, stats, thisutils (>= 0.5.0), utils",
+        "Suggests": " concaveman, circlize, ComplexHeatmap, dplyr, forcats, ggalluvial, ggExtra, ggpointdensity, ggrastr, ggupset, ggVennDiagram, htmltools, Matrix, png, purrr, ragg, scales, stringr, tidyr, venny",
+        "Config/Needs/website": "mengxu98/thistemplate",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "LazyData": "true",
+        "Config/roxygen2/version": "8.1.0",
+        "RoxygenNote": "8.1.1"
+      }
+    },
+    "thisutils": {
+      "installer": "github",
+      "spec": "mengxu98/thisutils@a9fd2d6e36599856ca550f6c2b7bb293773fc6d5",
+      "version": "0.5.3",
+      "url": "https://raw.githubusercontent.com/mengxu98/thisutils/a9fd2d6e36599856ca550f6c2b7bb293773fc6d5/DESCRIPTION",
+      "description": {
+        "Type": "Package",
+        "Package": "thisutils",
+        "Title": "Reliable Utilities for Reusable Research Workflows",
+        "Version": "0.5.3",
+        "Date": "2026-10-28",
+        "Authors@R": " c( person(given = \"Meng\", family = \"Xu\", email = \"mengxu98@qq.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-8300-1054\")), person(given = \"Haoliang\", family = \"Zhu\", email = \"hurry060215@gmail.com\", role = c(\"aut\"), comment = c(ORCID = \"0009-0004-9766-5179\")) )",
+        "Maintainer": "Meng Xu <mengxu98@qq.com>",
+        "Description": "Provides reusable building blocks for research packages across matrix representation, numerical computation, neighborhood evaluation, controlled execution, and runtime interoperability. Core tools preserve declared sparse semantics, expose dense-memory and output boundaries, standardize neighborhood and classification results, and align serial and parallel result and error behavior. Additional helpers support structured messages, optional dependency checks, and common statistical workflows.",
+        "License": "MIT+ file LICENSE",
+        "URL": "https://mengxu98.github.io/thisutils/",
+        "BugReports": "https://github.com/mengxu98/thisutils/issues",
+        "Depends": " R (>= 4.1.0)",
+        "Imports": " callr (>= 3.5.0), cli, methods, Matrix, mgcv, pak, parallel, ps, Rcpp, rlang, stats, splines, utils",
+        "Suggests": " BiocNeighbors, knitr, remotes, rmarkdown, testthat (>= 3.1.7)",
+        "LinkingTo": " cli, Rcpp",
+        "Config/Needs/website": "mengxu98/thistemplate",
+        "Config/testthat/edition": "3",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "Language": "en-US",
+        "Config/roxygen2/version": "8.1.0",
+        "RoxygenNote": "8.1.1"
+      }
+    },
+    "RcppArmadillo": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RcppArmadillo",
+      "version": "15.6.2-1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3.0)",
+      "system_requirements": ""
+    },
+    "RcppEigen": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RcppEigen",
+      "version": "0.3.4.0.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "RSpectra": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RSpectra",
+      "version": "0.16-2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.2)",
+      "system_requirements": ""
+    },
+    "enrichit": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "enrichit",
+      "version": "0.2.7",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "hdf5r": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "hdf5r",
+      "version": "1.3.16",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.2), methods",
+      "system_requirements": ""
+    },
+    "fastmatch": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "fastmatch",
+      "version": "1.1-8",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.3.0)",
+      "system_requirements": ""
+    },
+    "callr": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "callr",
+      "version": "3.8.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4)",
+      "system_requirements": ""
+    },
+    "geomtextpath": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "geomtextpath",
+      "version": "0.2.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "ggplot2 (>= 3.5.2), R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "funkyheatmap": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "funkyheatmap",
+      "version": "0.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "irlba": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "irlba",
+      "version": "2.4.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.2), Matrix",
+      "system_requirements": ""
+    },
+    "pak": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "pak",
+      "version": "0.11.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5)",
+      "system_requirements": ""
+    },
+    "keras": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "keras",
+      "version": "2.16.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6)",
+      "system_requirements": ""
+    },
+    "ps": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "ps",
+      "version": "1.9.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4)",
+      "system_requirements": ""
+    },
+    "RANN": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RANN",
+      "version": "2.6.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "RhpcBLASctl": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "RhpcBLASctl",
+      "version": "0.23-42",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "rliger": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rliger",
+      "version": "2.2.1",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "methods, stats, utils, R (>= 3.5)",
+      "system_requirements": ""
+    },
+    "rsample": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "rsample",
+      "version": "1.3.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "scTenifoldNet": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "scTenifoldNet",
+      "version": "1.4.3",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "statmod": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "statmod",
+      "version": "1.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.0.0)",
+      "system_requirements": ""
+    },
+    "usethis": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "usethis",
+      "version": "3.2.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "yardstick": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "yardstick",
+      "version": "1.4.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "numbat": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "numbat",
+      "version": "1.5.2",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), Matrix",
+      "system_requirements": ""
+    },
+    "PRECAST": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "PRECAST",
+      "version": "1.9",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz",
+      "depends": "parallel, gtools, R (>= 4.0.0)",
+      "system_requirements": ""
+    },
+    "scDblFinder": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "scDblFinder",
+      "version": "1.22.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0), SingleCellExperiment",
+      "system_requirements": ""
+    },
+    "scds": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "scds",
+      "version": "1.24.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "SingleR": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SingleR",
+      "version": "2.10.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "SummarizedExperiment",
+      "system_requirements": ""
+    },
+    "SingleCellExperiment": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SingleCellExperiment",
+      "version": "1.30.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "SummarizedExperiment",
+      "system_requirements": ""
+    },
+    "SummarizedExperiment": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SummarizedExperiment",
+      "version": "1.38.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, MatrixGenerics (>= 1.1.3), GenomicRanges (>= 1.55.2), Biobase",
+      "system_requirements": ""
+    },
+    "BiocParallel": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "BiocParallel",
+      "version": "1.42.2",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "methods, R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "limma": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "limma",
+      "version": "3.64.3",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0)",
+      "system_requirements": ""
+    },
+    "edgeR": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "edgeR",
+      "version": "4.6.3",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.0), limma (>= 3.63.6)",
+      "system_requirements": ""
+    },
+    "DESeq2": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "DESeq2",
+      "version": "1.48.2",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "S4Vectors (>= 0.23.18), IRanges, GenomicRanges, SummarizedExperiment (>= 1.1.6)",
+      "system_requirements": ""
+    },
+    "destiny": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "destiny",
+      "version": "3.22.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4.0)",
+      "system_requirements": ""
+    },
+    "clusterProfiler": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "clusterProfiler",
+      "version": "4.16.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2.0)",
+      "system_requirements": ""
+    },
+    "AnnotationDbi": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "AnnotationDbi",
+      "version": "1.70.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, stats4, BiocGenerics (>= 0.29.2), Biobase (>= 1.17.0), IRanges",
+      "system_requirements": ""
+    },
+    "biomaRt": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "biomaRt",
+      "version": "2.64.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), methods",
+      "system_requirements": ""
+    },
+    "AUCell": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "AUCell",
+      "version": "1.30.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "UCell": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "UCell",
+      "version": "2.12.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R(>= 4.3.0)",
+      "system_requirements": ""
+    },
+    "BayesSpace": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "BayesSpace",
+      "version": "1.18.4",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), SingleCellExperiment",
+      "system_requirements": ""
+    },
+    "ComplexHeatmap": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "ComplexHeatmap",
+      "version": "2.24.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, grid, graphics, stats, grDevices",
+      "system_requirements": ""
+    },
+    "ConsensusClusterPlus": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "ConsensusClusterPlus",
+      "version": "1.72.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "DOSE": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "DOSE",
+      "version": "4.2.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "FELLA": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "FELLA",
+      "version": "1.28.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "GEOquery": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GEOquery",
+      "version": "2.76.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), methods, Biobase",
+      "system_requirements": ""
+    },
+    "GOSemSim": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GOSemSim",
+      "version": "2.34.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2.0)",
+      "system_requirements": ""
+    },
+    "GSEABase": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GSEABase",
+      "version": "1.70.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.6.0), BiocGenerics (>= 0.13.8), Biobase (>= 2.17.8), annotate (>= 1.45.3), methods, graph (>= 1.37.2)",
+      "system_requirements": ""
+    },
+    "GSVA": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GSVA",
+      "version": "2.2.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "KEGGREST": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "KEGGREST",
+      "version": "1.48.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "Mfuzz": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Mfuzz",
+      "version": "2.68.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.5.0), Biobase (>= 2.5.5), e1071",
+      "system_requirements": ""
+    },
+    "Nebulosa": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Nebulosa",
+      "version": "1.18.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0), ggplot2, patchwork",
+      "system_requirements": ""
+    },
+    "enrichplot": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "enrichplot",
+      "version": "1.28.4",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "monocle": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "monocle",
+      "version": "2.36.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10.0), methods, Matrix (>= 1.2-6), Biobase, ggplot2 (>= 1.0.0), VGAM (>= 1.0-6), DDRTree (>= 0.1.4),",
+      "system_requirements": ""
+    },
+    "scater": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "scater",
+      "version": "1.36.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "SingleCellExperiment, scuttle, ggplot2",
+      "system_requirements": ""
+    },
+    "singscore": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "singscore",
+      "version": "1.28.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6)",
+      "system_requirements": ""
+    },
+    "spacexr": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "spacexr",
+      "version": "1.0.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.5.0)",
+      "system_requirements": ""
+    },
+    "sva": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "sva",
+      "version": "3.56.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2), mgcv, genefilter, BiocParallel",
+      "system_requirements": ""
+    },
+    "MatrixGenerics": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "MatrixGenerics",
+      "version": "1.20.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "matrixStats (>= 1.4.1)",
+      "system_requirements": ""
+    },
+    "simplifyEnrichment": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "simplifyEnrichment",
+      "version": "2.2.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "slingshot": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "slingshot",
+      "version": "2.16.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0), princurve (>= 2.0.4), stats, TrajectoryUtils",
+      "system_requirements": ""
+    },
+    "BiocGenerics": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "BiocGenerics",
+      "version": "0.54.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, utils, graphics, stats, generics",
+      "system_requirements": ""
+    },
+    "Biobase": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Biobase",
+      "version": "2.68.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10), BiocGenerics (>= 0.27.1), utils",
+      "system_requirements": ""
+    },
+    "rtracklayer": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "rtracklayer",
+      "version": "1.68.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5), methods, GenomicRanges (>= 1.37.2)",
+      "system_requirements": ""
+    },
+    "affy": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "affy",
+      "version": "1.86.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.8.0), BiocGenerics (>= 0.1.12), Biobase (>= 2.5.5)",
+      "system_requirements": ""
+    },
+    "affyPLM": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "affyPLM",
+      "version": "1.84.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.6.0), BiocGenerics (>= 0.3.2), affy (>= 1.11.0), Biobase (>= 2.17.8), gcrma, stats, preprocessCore (>= 1.5.1)",
+      "system_requirements": ""
+    },
+    "ChAMP": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "ChAMP",
+      "version": "2.38.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3), minfi, ChAMPdata (>= 2.6.0),DMRcate, Illumina450ProbeVariants.db,IlluminaHumanMethylationEPICmanifest, DT, RPMM prettydoc,Hmisc,globaltest,sva,illuminaio,rmarkdown,IlluminaHumanMethylation450kmanifest,IlluminaHumanMethylationEPICanno.ilm10b4.hg19, limma, DNAcopy, preprocessCore,impute, marray, wateRmelon, plyr,goseq,missMethyl,ggplot2, GenomicRanges,qvalue,isva,doParallel,bumphunter,quadprog,shiny,shinythemes,plotly (>= 4.5.6),RColorBrewer,dendextend, matrixStats,combinat",
+      "system_requirements": ""
+    },
+    "gcrma": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "gcrma",
+      "version": "2.80.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.6.0), affy (>= 1.23.2), graphics, methods, stats, utils",
+      "system_requirements": ""
+    },
+    "fgsea": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "fgsea",
+      "version": "1.34.2",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "TCGAbiolinks": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "TCGAbiolinks",
+      "version": "2.36.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "maftools": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "maftools",
+      "version": "2.24.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "pathifier": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "pathifier",
+      "version": "1.46.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "ChIPseeker": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "ChIPseeker",
+      "version": "1.44.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "GenomicFeatures": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GenomicFeatures",
+      "version": "1.60.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), BiocGenerics (>= 0.51.2), S4Vectors (>= 0.17.29), IRanges (>= 2.37.1), GenomeInfoDb (>= 1.35.8), GenomicRanges (>= 1.55.2), AnnotationDbi (>= 1.41.4)",
+      "system_requirements": ""
+    },
+    "MutationalPatterns": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "MutationalPatterns",
+      "version": "3.18.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2.0), GenomicRanges (>= 1.24.0), NMF (>= 0.20.6)",
+      "system_requirements": ""
+    },
+    "BSgenome": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "BSgenome",
+      "version": "1.76.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.8.0), methods, BiocGenerics (>= 0.13.8), S4Vectors (>= 0.17.28), IRanges (>= 2.13.16), GenomeInfoDb (>= 1.25.6), GenomicRanges (>= 1.31.10), Biostrings (>= 2.47.6), BiocIO, rtracklayer",
+      "system_requirements": ""
+    },
+    "preprocessCore": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "preprocessCore",
+      "version": "1.70.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "S4Vectors": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "S4Vectors",
+      "version": "0.46.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, utils, stats, stats4, BiocGenerics (>= 0.53.2)",
+      "system_requirements": ""
+    },
+    "cicero": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "cicero",
+      "version": "1.26.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), monocle, Gviz (>= 1.22.3)",
+      "system_requirements": ""
+    },
+    "survcomp": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "survcomp",
+      "version": "1.58.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "survival, prodlim, R (>= 3.4)",
+      "system_requirements": ""
+    },
+    "trackViewer": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "trackViewer",
+      "version": "1.44.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), grDevices, methods, GenomicRanges, grid",
+      "system_requirements": ""
+    },
+    "impute": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "impute",
+      "version": "1.82.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.10)",
+      "system_requirements": ""
+    },
+    "wateRmelon": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "wateRmelon",
+      "version": "2.14.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), Biobase, limma, methods, matrixStats, methylumi, lumi, ROC, IlluminaHumanMethylation450kanno.ilmn12.hg19, illuminaio",
+      "system_requirements": ""
+    },
+    "miRBaseConverter": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "miRBaseConverter",
+      "version": "1.32.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4)",
+      "system_requirements": ""
+    },
+    "batchelor": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "batchelor",
+      "version": "1.24.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "SingleCellExperiment",
+      "system_requirements": ""
+    },
+    "rhdf5": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "rhdf5",
+      "version": "2.52.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), methods",
+      "system_requirements": ""
+    },
+    "RTN": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "RTN",
+      "version": "2.32.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6.3), methods,",
+      "system_requirements": ""
+    },
+    "glmGamPoi": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "glmGamPoi",
+      "version": "1.20.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0)",
+      "system_requirements": ""
+    },
+    "genefu": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "genefu",
+      "version": "2.40.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1), survcomp, biomaRt, iC10, AIMS",
+      "system_requirements": ""
+    },
+    "PharmacoGx": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "PharmacoGx",
+      "version": "3.12.2",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), CoreGx",
+      "system_requirements": ""
+    },
+    "DelayedArray": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "DelayedArray",
+      "version": "0.34.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, stats4, Matrix, BiocGenerics (>= 0.53.3), MatrixGenerics (>= 1.1.3), S4Vectors (>= 0.27.2), IRanges (>= 2.17.3), S4Arrays (>= 1.5.4), SparseArray (>= 1.7.5)",
+      "system_requirements": ""
+    },
+    "EBImage": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "EBImage",
+      "version": "4.50.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "methods",
+      "system_requirements": ""
+    },
+    "viper": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "viper",
+      "version": "1.42.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0), Biobase, methods",
+      "system_requirements": ""
+    },
+    "msa": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "msa",
+      "version": "1.40.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3.0), methods, Biostrings (>= 2.40.0)",
+      "system_requirements": ""
+    },
+    "ggtree": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "ggtree",
+      "version": "3.16.3",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "SPIA": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SPIA",
+      "version": "2.60.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0), graphics, KEGGgraph",
+      "system_requirements": ""
+    },
+    "tradeSeq": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "tradeSeq",
+      "version": "1.22.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.6)",
+      "system_requirements": ""
+    },
+    "Gviz": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Gviz",
+      "version": "1.52.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3), methods, S4Vectors (>= 0.9.25), IRanges (>= 1.99.18), GenomicRanges (>= 1.17.20), grid",
+      "system_requirements": ""
+    },
+    "iClusterPlus": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "iClusterPlus",
+      "version": "1.44.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), parallel",
+      "system_requirements": ""
+    },
+    "DNAcopy": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "DNAcopy",
+      "version": "1.82.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "GenomicRanges": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GenomicRanges",
+      "version": "1.60.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, stats4, BiocGenerics (>= 0.53.2), S4Vectors (>= 0.45.2), IRanges (>= 2.41.1), GenomeInfoDb (>= 1.43.1)",
+      "system_requirements": ""
+    },
+    "AnnotationHub": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "AnnotationHub",
+      "version": "3.16.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "BiocGenerics (>= 0.15.10), BiocFileCache (>= 1.5.1)",
+      "system_requirements": ""
+    },
+    "sigFeature": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "sigFeature",
+      "version": "1.26.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "OmicCircos": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "OmicCircos",
+      "version": "1.46.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.14.0), methods,GenomicRanges",
+      "system_requirements": ""
+    },
+    "GenomeInfoDb": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GenomeInfoDb",
+      "version": "1.44.3",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, BiocGenerics (>= 0.53.2), S4Vectors (>= 0.45.2), IRanges (>= 2.41.1)",
+      "system_requirements": ""
+    },
+    "motifbreakR": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "motifbreakR",
+      "version": "2.22.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4.0), grid, MotifDb",
+      "system_requirements": ""
+    },
+    "minfi": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "minfi",
+      "version": "1.54.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "methods, BiocGenerics (>= 0.15.3), GenomicRanges, SummarizedExperiment (>= 1.1.6), Biostrings, bumphunter (>= 1.1.9)",
+      "system_requirements": ""
+    },
+    "HDF5Array": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "HDF5Array",
+      "version": "1.36.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.4), methods, SparseArray (>= 1.7.5), DelayedArray (>= 0.33.5), h5mread (>= 0.99.4)",
+      "system_requirements": ""
+    },
+    "scmap": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "scmap",
+      "version": "1.30.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R(>= 3.4)",
+      "system_requirements": ""
+    },
+    "IRanges": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "IRanges",
+      "version": "2.42.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), methods, utils, stats, BiocGenerics (>= 0.53.2), S4Vectors (>= 0.45.4)",
+      "system_requirements": ""
+    },
+    "Biostrings": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Biostrings",
+      "version": "2.76.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), BiocGenerics (>= 0.37.0), S4Vectors (>= 0.27.12), IRanges (>= 2.31.2), XVector (>= 0.37.1), GenomeInfoDb",
+      "system_requirements": ""
+    },
+    "motifmatchr": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "motifmatchr",
+      "version": "1.30.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.3)",
+      "system_requirements": ""
+    },
+    "TFBSTools": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "TFBSTools",
+      "version": "1.46.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.2.2)",
+      "system_requirements": ""
+    },
+    "chromVAR": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "chromVAR",
+      "version": "1.30.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "Rsamtools": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Rsamtools",
+      "version": "2.24.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "methods, GenomeInfoDb (>= 1.1.3), GenomicRanges (>= 1.31.8), Biostrings (>= 2.47.6), R (>= 3.5.0)",
+      "system_requirements": ""
+    },
+    "BiocNeighbors": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "BiocNeighbors",
+      "version": "2.2.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "GENIE3": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "GENIE3",
+      "version": "1.30.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "miloR": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "miloR",
+      "version": "2.4.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0.0), edgeR",
+      "system_requirements": ""
+    },
+    "scran": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "scran",
+      "version": "1.36.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "SingleCellExperiment, scuttle",
+      "system_requirements": ""
+    },
+    "scuttle": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "scuttle",
+      "version": "1.18.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "SingleCellExperiment",
+      "system_requirements": ""
+    },
+    "decontX": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "decontX",
+      "version": "1.6.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3.0)",
+      "system_requirements": ""
+    },
+    "SPOTlight": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SPOTlight",
+      "version": "1.12.2",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.5.0)",
+      "system_requirements": ""
+    },
+    "SpatialExperiment": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SpatialExperiment",
+      "version": "1.18.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1.0), methods, SingleCellExperiment",
+      "system_requirements": ""
+    },
+    "tricycle": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "tricycle",
+      "version": "1.16.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0), SingleCellExperiment",
+      "system_requirements": ""
+    },
+    "Banksy": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "Banksy",
+      "version": "1.4.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4.0)",
+      "system_requirements": ""
+    },
+    "CARDspa": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "CARDspa",
+      "version": "1.0.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.3.0)",
+      "system_requirements": ""
+    },
+    "infercnv": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "infercnv",
+      "version": "1.24.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R(>= 4.0)",
+      "system_requirements": ""
+    },
+    "nnSVG": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "nnSVG",
+      "version": "1.12.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2)",
+      "system_requirements": ""
+    },
+    "smoothclust": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "smoothclust",
+      "version": "1.4.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4.0)",
+      "system_requirements": ""
+    },
+    "SpotSweeper": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SpotSweeper",
+      "version": "1.4.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4.0)",
+      "system_requirements": ""
+    },
+    "spicyR": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "spicyR",
+      "version": "1.20.5",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.1)",
+      "system_requirements": ""
+    },
+    "SpaNorm": {
+      "installer": "repository",
+      "repository": "bioc",
+      "spec": "SpaNorm",
+      "version": "1.2.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/bioc/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.4)",
+      "system_requirements": ""
+    },
+    "org.Hs.eg.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "org.Hs.eg.db",
+      "version": "3.21.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.69.0)",
+      "system_requirements": ""
+    },
+    "org.Mm.eg.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "org.Mm.eg.db",
+      "version": "3.21.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.69.0)",
+      "system_requirements": ""
+    },
+    "GO.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "GO.db",
+      "version": "3.21.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.69.0)",
+      "system_requirements": ""
+    },
+    "reactome.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "reactome.db",
+      "version": "1.92.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.33.0)",
+      "system_requirements": ""
+    },
+    "PFAM.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "PFAM.db",
+      "version": "3.21.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.69.0)",
+      "system_requirements": ""
+    },
+    "BSgenome.Hsapiens.UCSC.hg19": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "BSgenome.Hsapiens.UCSC.hg19",
+      "version": "1.4.3",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "BSgenome (>= 1.54.0)",
+      "system_requirements": ""
+    },
+    "IlluminaHumanMethylation450kanno.ilmn12.hg19": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "IlluminaHumanMethylation450kanno.ilmn12.hg19",
+      "version": "0.6.1",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), minfi (>= 1.19.15)",
+      "system_requirements": ""
+    },
+    "hgu133plus2.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "hgu133plus2.db",
+      "version": "3.13.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 2.7.0), methods, AnnotationDbi (>= 1.53.2), org.Hs.eg.db (>= 3.13.0)",
+      "system_requirements": ""
+    },
+    "BSgenome.Hsapiens.UCSC.hg38": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "BSgenome.Hsapiens.UCSC.hg38",
+      "version": "1.4.5",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.2.0), GenomeInfoDb (>= 1.34.9), BSgenome (>= 1.66.2)",
+      "system_requirements": ""
+    },
+    "miRBaseVersions.db": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "miRBaseVersions.db",
+      "version": "1.1.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "",
+      "system_requirements": ""
+    },
+    "TxDb.Hsapiens.UCSC.hg38.knownGene": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "TxDb.Hsapiens.UCSC.hg38.knownGene",
+      "version": "3.21.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "GenomicFeatures",
+      "system_requirements": ""
+    },
+    "TxDb.Hsapiens.UCSC.hg19.knownGene": {
+      "installer": "repository",
+      "repository": "annotation",
+      "spec": "TxDb.Hsapiens.UCSC.hg19.knownGene",
+      "version": "3.2.2",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/annotation/src/contrib/PACKAGES.gz",
+      "depends": "GenomicFeatures (>= 1.21.30)",
+      "system_requirements": ""
+    },
+    "ChAMPdata": {
+      "installer": "repository",
+      "repository": "experiment",
+      "spec": "ChAMPdata",
+      "version": "2.40.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/experiment/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 3.5.0), GenomicRanges (>= 1.22.4), BiocGenerics (>= 0.16.1)",
+      "system_requirements": ""
+    },
+    "dorothea": {
+      "installer": "repository",
+      "repository": "experiment",
+      "spec": "dorothea",
+      "version": "1.20.0",
+      "url": "https://bioconductor.posit.co/packages/3.21/data/experiment/src/contrib/PACKAGES.gz",
+      "depends": "R (>= 4.0)",
+      "system_requirements": ""
+    },
+    "remotes": {
+      "installer": "repository",
+      "repository": "cran",
+      "spec": "remotes",
+      "version": "2.5.0",
+      "url": "https://cloud.r-project.org/src/contrib/PACKAGES.gz"
+    },
+    "SCP": {
+      "installer": "github",
+      "spec": "zhanghao-njmu/SCP@b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+      "version": "0.5.6",
+      "url": "https://raw.githubusercontent.com/zhanghao-njmu/SCP/b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0/DESCRIPTION",
+      "description": {
+        "Package": "SCP",
+        "Type": "Package",
+        "Title": "Single Cell Pipeline",
+        "Version": "0.5.6",
+        "Author": "Hao Zhang",
+        "Maintainer": "Hao Zhang <haozhang@njmu.edu.cn>",
+        "Description": "An end-to-end Single-Cell Pipeline designed to facilitate comprehensive analysis and exploration of single-cell data.",
+        "License": "GPL (>= 3)",
+        "Encoding": "UTF-8",
+        "LazyData": "True",
+        "LazyDataCompression": "xz",
+        "Depends": " R (>= 4.1.0)",
+        "biocViews": "SingleCell, GeneExpression, SingleCellWorkflow, Visualization, ShinyApps",
+        "Imports": " AnnotationDbi, biomaRt, BiocParallel, circlize, clusterProfiler, ComplexHeatmap (>= 2.13.0), data.table, dplyr (>= 1.1.0), future, future.apply, ggnewscale, ggplot2 (>= 3.4.0), ggrepel, ggforce, GO.db, GOSemSim, grDevices, grid, gtable, HDF5Array, igraph, intrinsicDimension, methods, mgcv, Matrix, patchwork, pbapply, png, plotly, proxyC, R.cache, R.utils, reshape2, reticulate, rlang, rhdf5, scales, simplifyEnrichment (>= 1.5.2), slingshot, Signac, Seurat (>= 4.2.0), SeuratObject, uwot",
+        "Suggests": " AUCell, batchelor, Biobase, BiocGenerics, BiocManager, concaveman, conos, covr, cowplot, dendextend, destiny, devtools, DDRTree, e1071, ggpubr, ggridges, ggsignif, ggupset, ggVennDiagram, ggwordcloud, glmGamPoi, glmpca, harmony, hexbin, htmlwidgets, httr, metR, monocle, MatrixGenerics, MASS, NMF, openxlsx, org.Hs.eg.db, org.Mm.eg.db, promises, purrr, PFAM.db, ragg, reactome.db, renv, RcppParallel, RcppML, scattermore, scds, scDblFinder, scmap, sf, shiny (>= 1.6.0), styler, stringr, sva, symphony, S4Vectors, SingleR, SingleCellExperiment, SummarizedExperiment, testthat (>= 3.0.0), tidyr, umap, UCell, withr",
+        "LinkingTo": "Rcpp",
+        "RoxygenNote": "7.2.3",
+        "Config/testthat/edition": "3",
+        "URL": "https://github.com/zhanghao-njmu/SCP"
+      }
+    },
+    "scop": {
+      "installer": "github",
+      "spec": "mengxu98/scop@2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb",
+      "version": "0.9.2",
+      "url": "https://raw.githubusercontent.com/mengxu98/scop/2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb/DESCRIPTION",
+      "description": {
+        "Package": "scop",
+        "Type": "Package",
+        "Title": "Single-cell and Spatial omics analysis pipeline",
+        "Version": "0.9.2",
+        "Date": "2026-10-28",
+        "Authors@R": "c( person(given = \"Xu\", family = \"Meng\", email = \"mengxu98@qq.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-8300-1054\")), person(given = \"Haoliang\", family = \"Zhu\", email = \"hurry060215@gmail.com\", role = c(\"aut\"), comment = c(ORCID = \"0009-0004-9766-5179\")), person(given = \"Yifan\", family = \"Li\", email = \"lyf163gryx@163.com\", role = c(\"aut\")), person(given = \"Hao\", family = \"Zhang\", email = \"haozhang@njmu.edu.cn\", role = c(\"aut\")) )",
+        "Maintainer": "Meng Xu <mengxu98@qq.com>",
+        "Description": "An R package for single-cell and spatial omics analysis, integration, visualization, and interactive exploration.",
+        "License": "GPL (>= 3)",
+        "Encoding": "UTF-8",
+        "LazyData": "True",
+        "LazyDataCompression": "gzip",
+        "Depends": " R (>= 4.1.0)",
+        "Imports": " cli, graphics, dplyr, ggnewscale (>= 0.5.2), ggrepel, igraph, lifecycle, reticulate, rlang, ggplot2 (>= 3.5.0), methods, Matrix, Rcpp (>= 1.0.13), S4Vectors, Seurat, SeuratObject, SummarizedExperiment, stats, thisplot (>= 0.4.3), tools, thisutils (>= 0.5.3), utils, uwot",
+        "Suggests": " IRanges, Biostrings, BSgenome, motifmatchr, TFBSTools, chromVAR, ggforce, ComplexHeatmap, Signac, enrichit, fgsea, GenomeInfoDb, hdf5r, Rsamtools, fastmatch, AnnotationDbi, arrow, AUCell, BayesSpace, batchelor, Biobase, BiocNeighbors, BiocParallel, biomaRt, callr, cluster, Coralysis, circlize, clusterProfiler, cowplot, data.table, e1071, GenomicRanges, geomtextpath, ggpubr, ggrastr, ggupset, ggVennDiagram, ggridges, ggwordcloud, gtable, funkyheatmap, future, GENIE3, glmpca, GOSemSim, GSVA, grDevices, grid, harmony, HDF5Array, htmlwidgets, httr, intrinsicDimension, irlba, limma, MatrixGenerics, metR, miloR, monocle3, MASS, mgcv, matrixStats, NMF, openxlsx, pak, patchwork, keras, pkgload, purrr, plotly, ps, proxyC, RANN, RcppML, R.cache, readxl, R.utils, reshape2, RhpcBLASctl, randomForest, rliger, rhdf5, RSpectra, rsample, scales, scatterpie, simplifyEnrichment, slingshot, scattermore, scran, scuttle, scds, scDblFinder, scTenifoldKnk (>= 2.0.0), scTenifoldNet, decontX, edgeR, statmod, scmap, SeuratData, stringr, sva, SingleR, SingleCellExperiment, SPOTlight, SpatialExperiment, spacexr, testthat (>= 3.0.0), tibble, tricycle, umap, UCell, usethis, xgboost, yardstick, Banksy, CARDspa, infercnv, numbat, nnSVG, PRECAST, smoothclust, SpotSweeper, spicyR, SpaNorm, withr",
+        "Remotes": " mengxu98/thisplot, mengxu98/thisutils",
+        "LinkingTo": " cli, Rcpp (>= 1.0.13), RcppArmadillo, RcppEigen, RSpectra, thisutils",
+        "Config/Needs/website": "mengxu98/thistemplate",
+        "URL": "https://mengxu98.github.io/scop/",
+        "BugReports": "https://github.com/mengxu98/scop/issues",
+        "Config/roxygen2/version": "8.1.0"
+      }
+    },
+    "CellChat": {
+      "installer": "github",
+      "spec": "jinworks/CellChat@75253cd0c9e68410e6e721a6d3a0419a1d7e358f",
+      "version": "2.2.0.9001",
+      "url": "https://raw.githubusercontent.com/jinworks/CellChat/75253cd0c9e68410e6e721a6d3a0419a1d7e358f/DESCRIPTION",
+      "description": {
+        "Package": "CellChat",
+        "Type": "Package",
+        "Title": "Inference and analysis of cell-cell communication from single-cell and spatially resolved transcriptomics data",
+        "Version": "2.2.0.9001",
+        "Author": "Suoqin Jin",
+        "Maintainer": "Suoqin Jin <sqjin@whu.edu.cn>",
+        "Description": "an open source R tool that infers, visualizes and analyzes the cell-cell communication networks from scRNA-seq and spatially resolved transcriptomics data.",
+        "Depends": "R (>= 3.6.0),dplyr,igraph,ggplot2",
+        "License": "GPL-3",
+        "Encoding": "UTF-8",
+        "LazyData": "TRUE",
+        "Imports": " future, future.apply, pbapply, irlba, NMF (>= 0.23.0), ggalluvial, stringr, svglite, Matrix, ggrepel, circlize (>= 0.4.12), RColorBrewer, cowplot, methods, ComplexHeatmap, RSpectra, Rcpp, reticulate, scales, sna, reshape2, FNN, shape, BiocGenerics, magrittr, patchwork, colorspace, plyr, ggpubr, ggnetwork, BiocNeighbors, plotly,shiny,bslib, collapse",
+        "LinkingTo": "Rcpp, RcppEigen",
+        "Suggests": " rmarkdown, knitr, roxygen2, Seurat (>= 4.0.0), SingleCellExperiment, SummarizedExperiment, purrr,uwot,gg.gap,wordcloud,bsicons,presto,tidyverse,tidyr,rlang",
+        "RoxygenNote": "7.3.1",
+        "VignetteBuilder": "knitr"
+      }
+    },
+    "irGSEA": {
+      "installer": "github",
+      "spec": "chuiqin/irGSEA@f83affd9ca1556328e5158a2cb740167527793c1",
+      "version": "3.3.4",
+      "url": "https://raw.githubusercontent.com/chuiqin/irGSEA/f83affd9ca1556328e5158a2cb740167527793c1/DESCRIPTION",
+      "description": {
+        "Package": "irGSEA",
+        "Type": "Package",
+        "Title": "The integration of single cell rank-based gene set enrichment analysis",
+        "Version": "3.3.4",
+        "Author": "Chuiqin Fan",
+        "Author@R": "person(\"Chuiqin\", \"Fan\", role = c('aut', 'cre'), email = '19cqfan@alumni.stu.edu.cn')",
+        "Maintainer": "Chuiqin Fan <19cqfan@alumni.stu.edu.cn>",
+        "Description": "The integration of single cell rank-based gene set enrichment analysis. Meanwhile, you are easy to visualize the results.",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.3.2",
+        "Imports": " AUCell, ComplexHeatmap, decoupleR, dplyr, gghalves, ggplotify, ggridges, ggsci, ggtree, GSVA, magrittr, msigdbr, Nebulosa, rlang (>= 0.4.11), RobustRankAggreg, Seurat, singscore, stringr, plyr, UCell",
+        "URL": "https://github.com/chuiqin/irGSEA",
+        "BugReports": "https://github.com/chuiqin/irGSEA/issues",
+        "Suggests": " aplot, BiocManager, BiocParallel, circlize, cowplot, devtools, data.table, doParallel, doRNG, fgsea, gficf, ggplot2, grDevices, ggfun, GSEABase, irlba, Matrix, methods, pagoda2, pointr, purrr, RcppML, readr, reshape2, reticulate, roxygen2, RMTstat, scde, SeuratDisk, SeuratObject, SummarizedExperiment, tidytree, tidyr, tibble, tidyselect, VAM, VISION, viper, sargent, sparseMatrixStats"
+      }
+    },
+    "monocle3": {
+      "installer": "github",
+      "spec": "cole-trapnell-lab/monocle3@536f1033d6de7c957f26a1f403f81efbd825e0db",
+      "version": "1.4.27",
+      "url": "https://raw.githubusercontent.com/cole-trapnell-lab/monocle3/536f1033d6de7c957f26a1f403f81efbd825e0db/DESCRIPTION",
+      "description": {
+        "Package": "monocle3",
+        "Title": "Clustering, Differential Expression, and Trajectory Analysis for Single-Cell RNA-Seq",
+        "Version": "1.4.27",
+        "Authors@R": "c( person(given = \"Hannah\", family = \"Pliner\", role = c(\"aut\"), email = \"hpliner@uw.edu\"), person(given = \"Xiaojie\", family = \"Qiu\", role = c(\"aut\"), email = \"xqiu@uw.edu\"), person(given = \"Cole\", family = \"Trapnell\", role = c(\"aut\"), email = \"coletrap@uw.edu\"), person(given = \"Brent\", family = \"Ewing\", role = c(\"cre\"), email = \"bge@uw.edu\"))",
+        "Description": "Monocle 3 performs clustering, differential expression and trajectory analysis for single-cell expression experiments. It orders individual cells according to progress through a biological process, without knowing ahead of time which genes define progress through that process. Monocle 3 also performs differential expression analysis, clustering, visualization, and other useful tasks on single-cell expression data.  It is designed to work with RNA-Seq data, but could be used with other types as well.",
+        "biocViews": " Software, SingleCell, RNASeq, ATACSeq, Normalization, Preprocessing, DimensionReduction, Visualization, QualityControl, Clustering, Classification, Annotation, GeneExpression, DifferentialExpression",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "LazyData": "false",
+        "Roxygen": "list(markdown = TRUE)",
+        "RoxygenNote": "7.3.2",
+        "LinkingTo": " Rcpp",
+        "Depends": " R (>= 4.0.0), Biobase, SingleCellExperiment",
+        "Imports": " assertthat (>= 0.2.1), batchelor, BiocGenerics (>= 0.28.0), BiocParallel, BPCells, DelayedArray (>= 0.8.0), DelayedMatrixStats (>= 1.4.0), digest (>= 0.6.28), dplyr (>= 0.8.0.1), future (>= 1.23.0), ggdist (>= 3.3.0), ggforce (>= 0.4.1), ggplot2 (>= 3.1.1), ggrastr, ggrepel (>= 0.8.1), HDF5Array, igraph (>= 1.5.0), irlba (>= 2.3.3), leidenbase (>= 0.1.25), limma (>= 3.38.3), lme4 (>= 1.1-27), lmtest (>= 0.9-36), MASS (>= 7.3-51.4), Matrix (>= 1.2-17), methods, openssl, pbapply (>= 1.4-0), pbmcapply (>= 1.4.1), pheatmap, plotly (>= 4.9.0), plyr (>= 1.8.4), proxy (>= 0.4-23), pscl (>= 1.5.2), purrr (>= 0.3.2), RANN (>= 2.6.1), RColorBrewer, Rcpp (>= 1.0.1), reshape2 (>= 1.4.3), rsample (>= 0.0.5), RhpcBLASctl, RcppAnnoy, RcppHNSW (>= 0.3.0), Rtsne (>= 0.15), S4Vectors, sf, shiny, slam (>= 0.1-45), spdep (>= 1.1-2), speedglm (>= 0.3-2), stats, stringr (>= 1.4.0), SummarizedExperiment (>= 1.11.5), utils, uwot (>= 0.1.8), tibble (>= 2.1.1), tidyr (>= 0.8.3), viridis (>= 0.5.1)",
+        "Suggests": " knitr, pryr (>= 0.1.4), rmarkdown, scran, spelling, testthat (>= 2.1.0)",
+        "Remotes": " github::bnprks/BPCells/r, github::cole-trapnell-lab/speedglm",
+        "VignetteBuilder": "knitr",
+        "Language": "en-US",
+        "NeedsCompilation": "yes",
+        "Packaged": "2022-05-10 17:21:53 UTC; brent",
+        "Maintainer": "Brent Ewing <bge@uw.edu>"
+      }
+    },
+    "BPCells": {
+      "installer": "github",
+      "spec": "bnprks/BPCells/r@5f2a5d21a21f6e75cf3650dee8b65f6220f50a41",
+      "version": "0.3.1",
+      "url": "https://raw.githubusercontent.com/bnprks/BPCells/5f2a5d21a21f6e75cf3650dee8b65f6220f50a41/r/DESCRIPTION",
+      "description": {
+        "Package": "BPCells",
+        "Title": "Single Cell Counts Matrices to PCA",
+        "Version": "0.3.1",
+        "Authors@R": "c( person(given = \"Benjamin\", family = \"Parks\", role = c(\"aut\", \"cre\", \"cph\"), email = \"bparks@alumni.stanford.edu\", comment = c(ORCID = \"0000-0002-0261-7472\")), person(\"Immanuel\", \"Abdi\", role = \"aut\"), person(\"Stanford University\", role=c(\"cph\", \"fnd\")), person(\"Genentech, Inc.\", role=c(\"cph\", \"fnd\")))",
+        "Description": "> Efficient operations for single cell ATAC-seq fragments and RNA counts matrices. Interoperable with standard file formats, and introduces efficient bit-packed formats that allow large storage savings and increased read speeds.",
+        "License": "Apache-2.0 or MIT",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.3.2",
+        "Roxygen": "list(markdown = TRUE)",
+        "URL": "https://bnprks.github.io/BPCells, https://github.com/bnprks/BPCells",
+        "LinkingTo": " Rcpp, RcppEigen",
+        "Imports": " methods, grDevices, magrittr, Matrix, Rcpp, rlang, tools, vctrs, lifecycle, stringr, tibble, dplyr (>= 1.0.0), tidyr, readr, ggplot2 (>= 3.4.0), scales, patchwork, scattermore, ggrepel, RColorBrewer, hexbin",
+        "Suggests": " IRanges, GenomicRanges, matrixStats, igraph, RcppHNSW, RcppAnnoy",
+        "Depends": " R (>= 4.0.0)",
+        "Config/Needs/website": "pkgdown, devtools, uwot, irlba, RcppHNSW, igraph, BiocManager, bioc::BSgenome.Hsapiens.UCSC.hg38, github::GreenleafLab/motifmatchr, github::GreenleafLab/chromVARmotifs, png, magrittr"
+      }
+    },
+    "Augur": {
+      "installer": "github",
+      "spec": "neurorestore/Augur@b252b84e4af687d9817813b1db409267eb44ec3f",
+      "version": "1.0.3",
+      "url": "https://raw.githubusercontent.com/neurorestore/Augur/b252b84e4af687d9817813b1db409267eb44ec3f/DESCRIPTION",
+      "description": {
+        "Package": "Augur",
+        "Title": "Cell type prioritization in high-dimensional single-cell data",
+        "Version": "1.0.3",
+        "Authors@R": "c( person(\"Michael\", \"Skinnider\", email = \"michael.skinnider@msl.ubc.ca\", role = c(\"aut\", \"cre\", \"led\")), person(\"Jordan\", \"Squair\", email = \"jordansquair@gmail.com\", role = \"aut\"))",
+        "BugReports": "https://github.com/neurorestore/Augur/issues",
+        "Description": "Augur is an R package to identify cell types involved in complex biological processes from high-dimensional single-cell data.",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": " dplyr (>= 0.8.0), purrr (>= 0.3.2), tibble (>= 2.1.3), magrittr (>= 1.5), tester (>= 0.1.7), Matrix (>= 1.2-14), sparseMatrixStats (>= 0.1.0), parsnip (>= 0.0.2), recipes (>= 0.1.4), rsample (>= 0.0.4), yardstick (>= 0.0.3), pbmcapply (>= 1.5.0), lmtest (>= 0.9-37), randomForest (>= 4.6-14), tidyselect (>= 0.2.5), rlang (>= 0.4.0), ggplot2 (>= 3.0.0), ggrepel (>= 0.8.2), pals (>= 1.6), scales (>= 1.1.1), tidyr (>= 1.1.2), glmnet (>= 3.0-2), viridis (>= 0.5.1), methods, stats, Rdpack (>= 0.7)",
+        "Suggests": "knitr, Seurat, monocle3, SingleCellExperiment, SummarizedExperiment",
+        "VignetteBuilder": "knitr",
+        "License": "GPL-3 + file LICENSE",
+        "Encoding": "UTF-8",
+        "RdMacros": "Rdpack",
+        "Roxygen": "list(markdown = TRUE)",
+        "RoxygenNote": "7.1.0"
+      }
+    },
+    "ClusterGVis": {
+      "installer": "github",
+      "spec": "junjunlab/ClusterGVis@b79200cbe1b0d7a038720148f3cca14db555f385",
+      "version": "0.99.9",
+      "url": "https://raw.githubusercontent.com/junjunlab/ClusterGVis/b79200cbe1b0d7a038720148f3cca14db555f385/DESCRIPTION",
+      "description": {
+        "Package": "ClusterGVis",
+        "Title": "One-Step to Cluster and Visualize Gene Expression Data",
+        "Version": "0.99.9",
+        "Authors@R": " person(given = \"Jun\", family = \"Zhang\", email = \"1138976957@qq.com\", role  = c(\"aut\", \"cre\", \"cph\"), comment = c(ORCID = \"0000-0001-7692-9105\"))",
+        "Description": "Provides a streamlined workflow for clustering and visualizing gene expression patterns, particularly from time-series RNA-Seq and single-cell experiments. The package is designed to integrate seamlessly within the Bioconductor ecosystem by operating directly on standard data classes such as `SummarizedExperiment` and `SingleCellExperiment`. It implements common clustering algorithms (e.g., k-means, fuzzy c-means) and generates a suite of publication-ready visualizations to explore co-expressed gene modules. Functions are also included to facilitate the visualization of clustering results derived from other popular tools.",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "LazyData": "false",
+        "Roxygen": "list(markdown = TRUE)",
+        "RoxygenNote": "7.3.3",
+        "Depends": " R (>= 4.0)",
+        "Imports": " colorRamps, dplyr, e1071, factoextra, ggplot2, grDevices, grid, Matrix, methods, purrr, reshape2, scales, stats, tibble, SingleCellExperiment, SummarizedExperiment, igraph, VGAM, scuttle",
+        "Suggests": " Biobase, ComplexHeatmap, clusterProfiler, TCseq, org.Mm.eg.db, circlize, knitr, monocle, pheatmap, rmarkdown, Seurat, WGCNA, utils, BiocManager, S4Vectors, pheatmap, testthat (>= 3.0.0)",
+        "biocViews": "RNASeq,Transcriptomics,Visualization,SingleCell,GeneExpression,Clustering",
+        "URL": "https://github.com/junjunlab/ClusterGVis/, https://junjunlab.github.io/ClusterGvis-manual/",
+        "BugReports": "https://github.com/junjunlab/ClusterGVis/issues",
+        "VignetteBuilder": "knitr",
+        "Config/testthat/edition": "3"
+      }
+    },
+    "MetaboAnalystR": {
+      "installer": "github",
+      "spec": "xia-lab/MetaboAnalystR@efc60a924202cd1021038f12e7df7b149cbbac1f",
+      "version": "4.3.0",
+      "url": "https://raw.githubusercontent.com/xia-lab/MetaboAnalystR/efc60a924202cd1021038f12e7df7b149cbbac1f/DESCRIPTION",
+      "description": {
+        "Package": "MetaboAnalystR",
+        "Title": "An R Package for Comprehensive Analysis of Metabolomics Data",
+        "Version": "4.3.0",
+        "Authors@R": "c(person(\"Jianguo\", \"Xia\", email = \"jeff.xia@mcgill.ca\", role = \"aut\"), person(\"Jasmine\", \"Chong\", email = \"jasmine.chong@mail.mcgill.ca\", role=c(\"aut\")), person(\"Zhiqiang\", \"Pang\", email = \"zhiqiang.pang@mail.mcgill.ca\", role=c(\"aut\", \"cre\")))",
+        "Author": "Jianguo Xia [aut, cre], Jasmine Chong [aut], Zhiqiang Pang [aut]",
+        "Maintainer": "Zhiqiang Pang <zhiqiang.pang@mail.mcgill.ca>",
+        "BugReports": "https://github.com/xia-lab/MetaboAnalystR/issues",
+        "Description": "This package contains the R functions and libraries underlying the popular MetaboAnalyst web server, including 500 functions for data processing, normalization, statistical analysis, metabolite set enrichment analysis, metabolic pathway analysis, and biomarker analysis. The package is synchronized with the web server. After installing and loading the package, users will be able to reproduce the same results from their local computers using the corresponding R command history downloaded from MetaboAnalyst, to achieve maximum flexibility and reproducibility.",
+        "Depends": "R (>= 4.0), methods",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "Imports": " RBGL, RColorBrewer, RSQLite, Cairo, ggplot2, BiocParallel, Rserve, rlang, jsonlite, plyr, purrr, data.table, vctrs, pROC, caret, crmn, dplyr, edgeR, fgsea, glasso, gplots, igraph, impute, pcaMethods, plotly, scales, tibble, siggenes, lattice, MASS",
+        "Suggests": " graph, htmltools, pls, ellipse, scatterplot3d, randomForest, caTools, e1071, som, RJSONIO, rjson, ROCR, globaltest, GlobalAncova, Rgraphviz, preprocessCore, genefilter, pheatmap, sva, limma, fitdistrplus, lars, Hmisc, magrittr, xtable, KEGGgraph, metap, entropy, rsm, httr, knitr, rmarkdown, devtools, testthat, visNetwork, ggraph, RSclient, car, gdata, huge, ppcor, ctc, qs, progress, MSnbase, OptiLCMS, fastmatch, vegan, waveslim, reshape2",
+        "Remotes": "xia-lab/OptiLCMS",
+        "VignetteBuilder": "knitr",
+        "Config/roxygen2/version": "8.0.0",
+        "RoxygenNote": "7.3.3"
+      }
+    },
+    "aPEAR": {
+      "installer": "github",
+      "spec": "kerseviciute/aPEAR@4eb4aec0b6072ec2bbe39c1c44ee553fd51a92b1",
+      "version": "1.0",
+      "url": "https://raw.githubusercontent.com/kerseviciute/aPEAR/4eb4aec0b6072ec2bbe39c1c44ee553fd51a92b1/DESCRIPTION",
+      "description": {
+        "Package": "aPEAR",
+        "Type": "Package",
+        "Title": "Clustering and Visualization of Pathway Enrichment Results",
+        "Version": "1.0",
+        "Date": "2023-02-14",
+        "Authors@R": "c(person(given = \"Ieva\", family = \"Kerseviciute\", email = \"kerseviciute.ieva@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"https://orcid.org/0000-0002-9353-038X\")))",
+        "Description": "Clustering and visualization of pathway enrichment results.",
+        "License": "MIT + file LICENSE",
+        "RoxygenNote": "7.2.3",
+        "Encoding": "UTF-8",
+        "Imports": " MCL, arules, bayesbio, lsa, tibble, data.table, foreach, ggforce, ggplot2, igraph, dplyr, ggrepel",
+        "Suggests": " Spectrum",
+        "URL": "https://github.com/ievaKer/aPEAR",
+        "BugReports": "https://github.com/ievaKer/aPEAR/issues"
+      }
+    },
+    "hdWGCNA": {
+      "installer": "github",
+      "spec": "smorabit/hdWGCNA@e3344d1f7bbac4264adf94f7aa31e0802fa8282d",
+      "version": "0.4.12",
+      "url": "https://raw.githubusercontent.com/smorabit/hdWGCNA/e3344d1f7bbac4264adf94f7aa31e0802fa8282d/DESCRIPTION",
+      "description": {
+        "Package": "hdWGCNA",
+        "Title": "hdWGCNA",
+        "Version": "0.4.12",
+        "Authors@R": "c( person(\"Sam\", \"Morabito\", , \"smorabit@uci.edu\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-7768-4856\")), person(\"Zechuan\", \"Shi\", , \"zechuas@uci.edu\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0002-2844-5816\")), person(\"Swarup Lab\", role = \"fnd\") )",
+        "Description": "hdWGCNA is an R package for performing weighted gene co-expression network analysis in high dimensional -omics such as single-cell RNA-seq or spatial transcriptomics.",
+        "License": "GNU GPLv3",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Roxygen": "list(markdown = TRUE)",
+        "RoxygenNote": "7.3.2",
+        "URL": "https://smorabit.github.io/hdWGCNA/, https://github.com/smorabit/hdWGCNA",
+        "Imports": "WGCNA, Seurat, Matrix, harmony, igraph, enrichR, ggplot2, dplyr, tester, proxy",
+        "Suggests": "testthat (>= 3.0.0)",
+        "Config/testthat/edition": "3",
+        "Depends": " R (>= 2.10), harmony (>= 1.0.1), Seurat (>= 4.0.0), ggrepel (>= 0.9.0), WGCNA, dplyr, igraph, ggraph, tidygraph, ggrepel, UCell, GeneOverlap, GenomicRanges, SummarizedExperiment, enrichR"
+      }
+    },
+    "linkET": {
+      "installer": "github",
+      "spec": "Hy4m/linkET@fa26a874b59cffad730f8fadc860d3750f59c37b",
+      "version": "0.1.0",
+      "url": "https://raw.githubusercontent.com/Hy4m/linkET/fa26a874b59cffad730f8fadc860d3750f59c37b/DESCRIPTION",
+      "description": {
+        "Package": "linkET",
+        "Type": "Package",
+        "Title": "Everything is Linkable",
+        "Version": "0.1.0",
+        "Author": "Houyun Huang <houyunhuang@163.com>",
+        "Maintainer": "Houyun Huang <houyunhuang@163.com>",
+        "Description": "The 'linkET' package can be used to visualize simply and directly a matrix heatmap based on 'ggplot2'. It provides a solution for reordering the correlation matrix, displaying the different significance level on the plot and other details. The most important parts, it also provides a graphical display of any correlation analysis and their combination (such as Mantel test, Partial correlation analysis, and so on).",
+        "License": "GPL-2",
+        "URL": "https://github.com/Hy4m/linkET",
+        "BugReports": "https://github.com/Hy4m/linkET/issues",
+        "LazyData": "TRUE",
+        "Encoding": "UTF-8",
+        "Depends": "R (>= 3.5.0)",
+        "Imports": " digest, dplyr, ggplot2 (>= 3.0.0), glue, grDevices, grid, gtable, magrittr, rlang, purrr, tibble, scales, stats, utils",
+        "Suggests": " testthat (>= 3.0.0), ade4, ambient, aplot, colorspace, FD, ggdendro, ggraph, ggtext, gridGraphics, Hmisc, igraph, tidygraph, knitr, latex2exp, patchwork, picante, psych, ragg, relaimpo, rfPermute, WGCNA",
+        "RoxygenNote": "7.2.1",
+        "Config/testthat/edition": "3"
+      }
+    },
+    "SeuratData": {
+      "installer": "github",
+      "spec": "satijalab/seurat-data@3e51f44303069b64f5dc4d68e6a3d4a343f55c39",
+      "version": "0.2.2.9002",
+      "url": "https://raw.githubusercontent.com/satijalab/seurat-data/3e51f44303069b64f5dc4d68e6a3d4a343f55c39/DESCRIPTION",
+      "description": {
+        "Package": "SeuratData",
+        "Version": "0.2.2.9002",
+        "Title": "Install and Manage Seurat Datasets",
+        "Description": "Single cell RNA sequencing datasets can be large, consisting of matrices that contain expression data for several thousand features across several thousand cells. This package is designed to easily install, manage, and learn about various single-cell datasets, provided Seurat objects and distributed as independent packages.",
+        "Authors@R": "c( person(given = 'Rahul', family = 'Satija', email = 'rsatija@nygenome.org', role = 'aut', comment = c(ORCID = '0000-0001-9448-8833')), person(given = 'Paul', family = 'Hoffman', email = 'phoffman@nygenome.org', role = c('aut', 'cre'), comment = c(ORCID = '0000-0002-7693-8957')), person(given = 'Andrew', family = 'Butler', email = 'abutler@nygenome.org', role = 'aut', comment = c(ORCID = '0000-0003-3608-0463')), person(given = \"Austin\", family = \"Hartman\", email = \"ahartman@nygenome.org\", role = \"ctb\", comment = c(ORCID = \"0000-0001-7278-1852\")), person(given = \"Yuhan\", family = \"Hao\", email = \"yhao@nygenome.org\", role = \"ctb\", comment = c(ORCID = \"0000-0002-1810-0822\")), person(given = \"Gesmira\", family = \"Molla\", email = 'gmolla@nygenome.org', role = 'ctb', comment = c(ORCID = '0000-0002-8628-5056')) )",
+        "License": "GPL-3 | file LICENSE",
+        "URL": "http://www.satijalab.org/seurat, https://github.com/satijalab/seurat-data",
+        "BugReports": "https://github.com/satijalab/seurat-data/issues",
+        "Depends": " R (>= 3.5.0)",
+        "Imports": " cli, crayon, Matrix, methods, rappdirs, SeuratObject (>= 5.0.0), Seurat (>= 5.0.0), stats, utils",
+        "Suggests": " Azimuth",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.3.2",
+        "Collate": " 'zzz.R' 'seurat_data.R'"
+      }
+    },
+    "SeuratDisk": {
+      "installer": "github",
+      "spec": "mojaveazure/seurat-disk@877d4e18ab38c686f5db54f8cd290274ccdbe295",
+      "version": "0.0.0.9021",
+      "url": "https://raw.githubusercontent.com/mojaveazure/seurat-disk/877d4e18ab38c686f5db54f8cd290274ccdbe295/DESCRIPTION",
+      "description": {
+        "Package": "SeuratDisk",
+        "Type": "Package",
+        "Title": "Interfaces for HDF5-Based Single Cell File Formats",
+        "Version": "0.0.0.9021",
+        "Date": "2023-03-16",
+        "Authors@R": "c( person(given = 'Paul', family = 'Hoffman', email = 'phoffman@nygenome.org', role = c('aut', 'cre'), comment = c(ORCID = '0000-0002-7693-8957')), person(given = 'Rahul', family = 'Satija', email = 'rsatija@nygenome.org', role = 'ctb', comment = c(ORCID = '0000-0001-9448-8833')) )",
+        "Description": "The h5Seurat file format is specifically designed for the storage and analysis of multi-modal single-cell and spatially-resolved expression experiments, for example, from CITE-seq or 10X Visium technologies. It holds all molecular information and associated metadata, including (for example) nearest-neighbor graphs, dimensional reduction information, spatial coordinates and image data, and cluster labels. We also support rapid and on-disk conversion between h5Seurat and AnnData objects, with the goal of enhancing interoperability between Seurat and Scanpy.",
+        "URL": "https://mojaveazure.github.io/seurat-disk/, https://github.com/mojaveazure/seurat-disk",
+        "BugReports": "https://github.com/mojaveazure/seurat-disk/issues",
+        "License": "GPL-3 | file LICENSE",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "RoxygenNote": "7.2.3",
+        "Remotes": "satijalab/seurat-data",
+        "Depends": " R (>= 3.6.0)",
+        "Imports": " cli (>= 2.0.1), crayon (>= 1.3.4), hdf5r (>= 1.3.0), Matrix (>= 1.2.18), methods (>= 3.6.0), R6 (>= 2.4.1), rlang (>= 0.4.4), Seurat (>= 3.2.0), SeuratObject (>= 4.0.0), stats, stringi (>= 1.4.6), tools, utils, withr (>= 2.1.2)",
+        "Collate": " 'zzz.R' 'GetObject.R' 'AssembleObject.R' 'AppendData.R' 'TestObject.R' 'TestH5.R' 'h5info.R' 'scdisk.R' 'h5Seurat.R' 'Connect.R' 'PadMatrix.R' 'sparse_matrix.R' 'Transpose.R' 'Convert.R' 'LoadH5Seurat.R' 'loom.R' 'loom_bindings.R' 'LoadLoom.R' 'ReadH5.R' 'WriteH5Group.R' 'SaveH5Seurat.R' 'SaveLoom.R' 'h5Seurat_bindings.R'",
+        "Suggests": " httr, knitr, rmarkdown, SeuratData",
+        "VignetteBuilder": "knitr"
+      }
+    },
+    "symphony": {
+      "installer": "github",
+      "spec": "immunogenomics/symphony@7c5905988734d9cfe6e1e97a658664717c4ba7b7",
+      "version": "0.1.3",
+      "url": "https://raw.githubusercontent.com/immunogenomics/symphony/7c5905988734d9cfe6e1e97a658664717c4ba7b7/DESCRIPTION",
+      "description": {
+        "Package": "symphony",
+        "Title": "Efficient and Precise Single-Cell Reference Atlas Mapping",
+        "Version": "0.1.3",
+        "Authors@R": "c( person(given = \"Joyce\", family = \"Kang\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0002-1962-1291\"), email = \"joyce.b.kang@gmail.com\"), person(\"Ilya\", \"Korsunsky\", email = \"ilya.korsunsky@gmail.com\", role = c(\"aut\"), comment = c(ORCID = \"0000-0003-4848-3948\")), person(\"Soumya\", \"Raychaudhuri\", role = c(\"aut\"), comment = c(ORCID = \"0000-0002-1901-8265\")) )",
+        "Description": "Implements the Symphony single-cell reference building and query mapping algorithms and additional functions described in Kang et al <https://www.nature.com/articles/s41467-021-25957-x>.",
+        "License": "GPL (>= 3)",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Roxygen": "list(markdown = TRUE)",
+        "RoxygenNote": "7.3.3",
+        "Suggests": "knitr, rmarkdown, testthat, ggthemes, ggrepel, ggrastr",
+        "LinkingTo": "Rcpp, RcppArmadillo",
+        "Imports": "methods, Rcpp, harmony, uwot, irlba, class, purrr, dplyr, ggplot2, stats, utils, magrittr, data.table, tibble, Matrix, tidyr, rlang, RColorBrewer, RANN",
+        "VignetteBuilder": "knitr",
+        "Depends": "R (>= 3.5)",
+        "NeedsCompilation": "yes",
+        "Packaged": "2023-01-16 17:25:13 UTC; jbk37",
+        "Author": "Joyce Kang [aut, cre] (<https://orcid.org/0000-0002-1962-1291>), Ilya Korsunsky [aut] (<https://orcid.org/0000-0003-4848-3948>), Soumya Raychaudhuri [aut] (<https://orcid.org/0000-0002-1901-8265>)",
+        "Maintainer": "Joyce Kang <joyce.b.kang@gmail.com>"
+      }
+    },
+    "Coralysis": {
+      "installer": "github",
+      "spec": "elolab/Coralysis@1d012cde5c0e393f3fc14030ce14586fce202dd5",
+      "version": "0.99.10",
+      "url": "https://raw.githubusercontent.com/elolab/Coralysis/1d012cde5c0e393f3fc14030ce14586fce202dd5/DESCRIPTION",
+      "description": {
+        "Package": "Coralysis",
+        "Type": "Package",
+        "Title": "Coralysis sensitive identification of imbalanced cell types and states in single-cell data via multi-level integration",
+        "Version": "0.99.10",
+        "Description": "Coralysis is an R package featuring a multi-level integration algorithm for sensitive integration, reference-mapping, and cell-state identification in single-cell data. The multi-level integration algorithm is inspired by the process of assembling a puzzle - where one begins by grouping pieces based on low-to high-level features, such as color and shading, before looking into shape and patterns. This approach progressively blends the batch effects and separates cell types across multiple rounds of divisive clustering.",
+        "Authors@R": "c(person(\"António\", \"Sousa\", email = \"aggode@utu.fi\", role=c(\"cre\", \"aut\"), comment = c(ORCID = \"0000-0003-4779-6459\")), person(\"Johannes\", \"Smolander\", role=c(\"ctb\", \"aut\"), comment = c(ORCID = \"0000-0003-3872-9668\")), person(\"Sini\", \"Junttila\", role=c(\"aut\"), comment = c(ORCID = \"0000-0003-3754-5584\")), person(\"Laura L\", \"Elo\", role=c(\"aut\"), comment = c(ORCID = \"0000-0001-5648-4532\")))",
+        "License": "GPL-3",
+        "Imports": " Matrix, aricode, LiblineaR, SparseM, ggplot2, umap, Rtsne, pheatmap, reshape2, dplyr, SingleCellExperiment, SummarizedExperiment, S4Vectors, methods, stats, utils, RANN, sparseMatrixStats, irlba, flexclust, scran, class, matrixStats, tidyr, cowplot, uwot, scatterpie, RColorBrewer, ggrastr, ggrepel, RSpectra, BiocParallel, withr",
+        "Depends": " R (>= 4.2.0)",
+        "Suggests": " knitr, rmarkdown, bluster, ComplexHeatmap, circlize, scater, viridis, scRNAseq, SingleR, MouseGastrulationData, testthat (>= 3.0.0), BiocStyle, scrapper",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "VignetteBuilder": "knitr",
+        "biocViews": " SingleCell, RNASeq, Proteomics, Transcriptomics, GeneExpression, BatchEffect, Clustering, Annotation, Classification, DifferentialExpression, DimensionReduction, Software",
+        "NeedsCompilation": "no",
+        "URL": "https://github.com/elolab/Coralysis, https://elolab.github.io/Coralysis/",
+        "BugReports": "https://github.com/elolab/Coralysis/issues",
+        "Config/testthat/edition": "3"
+      }
+    },
+    "gghalves": {
+      "installer": "github",
+      "spec": "erocoar/gghalves@e5c3c79e79f13a00795a2a7774794252d1980d86",
+      "version": "0.1.4",
+      "url": "https://raw.githubusercontent.com/erocoar/gghalves/e5c3c79e79f13a00795a2a7774794252d1980d86/DESCRIPTION",
+      "description": {
+        "Package": "gghalves",
+        "Title": "Compose Half-Half Plots Using Your Favourite Geoms",
+        "Version": "0.1.4",
+        "Authors@R": "person(\"Frederik\", \"Tiedemann\", email = \"fj.tiedemann@googlemail.com\", role = c(\"aut\", \"cre\"))",
+        "Description": "A 'ggplot2' extension for easy plotting of half-half geom combinations. Think half boxplot and half jitterplot, or half violinplot and half dotplot.",
+        "URL": "https://github.com/erocoar/gghalves",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Depends": " ggplot2 (>= 3.3.6), R (>= 3.3.0)",
+        "Imports": " grid, gtable, grDevices",
+        "RoxygenNote": "7.2.0",
+        "Suggests": " knitr, rmarkdown, dplyr",
+        "Collate": " 'utilities.R' 'geom_half_dotplot.R' 'geom_half_boxplot.R' 'geom_half_point.R' 'geom_half_point_panel.R' 'geom_half_violin.R' 'stat-half-bindot.R' 'stat-half-point.R' 'stat-half-ydensity.R' 'ggproto-classes.R'",
+        "VignetteBuilder": "knitr"
+      }
+    },
+    "qs": {
+      "installer": "archive",
+      "spec": "https://cloud.r-project.org/src/contrib/Archive/qs/qs_0.27.3.tar.gz",
+      "version": "0.27.3",
+      "url": "https://cloud.r-project.org/src/contrib/Archive/qs/"
+    },
+    "regplot": {
+      "installer": "archive",
+      "spec": "https://cloud.r-project.org/src/contrib/Archive/regplot/regplot_1.1.tar.gz",
+      "version": "1.1",
+      "url": "https://cloud.r-project.org/src/contrib/Archive/regplot/"
+    },
+    "survMisc": {
+      "installer": "archive",
+      "spec": "https://cloud.r-project.org/src/contrib/Archive/survMisc/survMisc_0.5.6.tar.gz",
+      "version": "0.5.6",
+      "url": "https://cloud.r-project.org/src/contrib/Archive/survMisc/"
+    },
+    "ggunchull": {
+      "installer": "github",
+      "spec": "sajuukLyu/ggunchull@282c549e4b27dc3a58d37e6dafb9e3f0a34de899",
+      "version": "1.0.1",
+      "url": "https://raw.githubusercontent.com/sajuukLyu/ggunchull/282c549e4b27dc3a58d37e6dafb9e3f0a34de899/DESCRIPTION",
+      "description": {
+        "Package": "ggunchull",
+        "Type": "Package",
+        "Title": "A ggplot extension for drawing smooth non-convex irregular circles around a set of points.",
+        "Version": "1.0.1",
+        "Author": "Yulin Lyu",
+        "Maintainer": "Yulin Lyu <lvyulin@pku.edu.cn>",
+        "Description": "A ggplot extension for drawing smooth non-convex irregular hulls around groups of points, which can fit the shape of boundaries perfectly!",
+        "License": "GPL3",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Imports": " alphahull, dbscan, ggplot2, magrittr, polyclip",
+        "RoxygenNote": "7.3.1",
+        "Depends": " R (>= 2.10)"
+      }
+    },
+    "ggunchained": {
+      "installer": "github",
+      "spec": "jankounchained/ggunchained@cab22c02e41c4b48e7235ffccef0e189f2af70a6",
+      "version": "0.0.1",
+      "url": "https://raw.githubusercontent.com/jankounchained/ggunchained/cab22c02e41c4b48e7235ffccef0e189f2af70a6/DESCRIPTION",
+      "description": {
+        "Package": "ggunchained",
+        "Type": "Package",
+        "Title": "ggplot visualisation shortcuts",
+        "Version": "0.0.1",
+        "Author": "JanCoUnchained",
+        "Authors@R": "person(\"Jan\", \"Kostkan\", email = \"kostkan.jan@gmail.com\", role = c(\"aut\", \"cre\"))",
+        "Description": "Standard plot design for our study group (in a very early stage of development)",
+        "License": "CC0",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Imports": " tidyverse, ggthemes",
+        "RoxygenNote": "6.1.1",
+        "Suggests": " testthat"
+      }
+    }
+  }
+}

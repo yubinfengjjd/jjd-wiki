@@ -1,0 +1,12 @@
+# Python 3.12 target, direct requirements; resolve then freeze on target PC.
+numpy
+pandas
+matplotlib
+scikit-learn
+scikit-optimize
+joblib
+catboost
+lightgbm
+xgboost
+shap
+torch

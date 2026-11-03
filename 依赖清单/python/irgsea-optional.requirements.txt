@@ -1,0 +1,6 @@
+# Only irGSEA Python-backed scoring methods; argparse is Python stdlib.
+anndata
+scanpy
+gseapy
+decoupler
+umap-learn

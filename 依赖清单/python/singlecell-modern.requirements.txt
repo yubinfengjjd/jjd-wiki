@@ -1,0 +1,13 @@
+# Separate modern candidate environment; do not combine with SCP 0.5.6 legacy pins.
+anndata
+scanpy
+numpy
+pandas
+scipy
+matplotlib
+scvelo
+leidenalg
+doubletdetection
+scrublet
+magic-impute
+umap-learn

@@ -1,0 +1,12 @@
+{
+  "scp_legacy": {
+    "source": "知识库/methods/scp-local-source/code/SCP-local/R/utils.R",
+    "sha256": "cc713dbf45a23af96437185f15da4ff9d20610f4f1731b5ac6a1cd97550903e2",
+    "rule": "Exact Env_requirements fixed requests; no function invocation."
+  },
+  "scop_candidates": {
+    "source_url": "https://raw.githubusercontent.com/mengxu98/scop/2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb/R/PrepareEnv.R",
+    "sha256": "2b7b6e960139ec535f60a261a1a3316369759dfae30a24cd52ac9ac7efc471bd",
+    "rule": "Fixed literals with source line numbers only; module constraints may conflict and are not merged."
+  }
+}

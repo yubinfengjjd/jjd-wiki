@@ -1,4 +1,4 @@
-# jjd-wiki CI：wiki.py 取自 dev 的 main（只读 deploy key）；GitHub 上没有 GPL 源码、画廊与维护记录。
+# jjd-wiki CI：wiki.py 取自 dev 的 main（只读 deploy key）；知识、源码和公开资源默认保存 Git，敏感内容排除。
 name: ci
 
 on:

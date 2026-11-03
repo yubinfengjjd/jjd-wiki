@@ -1,0 +1,10 @@
+tool	scope	official_source
+Git	Clone two private repositories	https://git-scm.com/downloads/win
+Python 3.12	Wiki / ML, separate venvs	https://www.python.org/downloads/windows/
+conda + Python 3.8	Legacy SCP environment; archived source pins	https://docs.conda.io/projects/conda/en/stable/commands/create.html
+R 4.5.x + Bioconductor 3.21	Existing baseline; dedicated Wiki library	https://www.bioconductor.org/news/bioc_3_21_release/
+Rtools45	Conditional: compiling R packages / SCP C++	https://cran.r-project.org/bin/windows/Rtools/rtools45/rtools.html
+Node.js + npm	Use frontend package-lock and Vite engine constraint; npm ci	https://nodejs.org/en/download
+Java runtime	Conditional: FigureYa GSEA Java/JAR module	https://www.gsea-msigdb.org/gsea/downloads.jsp
+HDF5 build dependencies	Conditional: BPCells source compilation, follow its platform instructions	https://bnprks.github.io/BPCells/articles/web-only/install.html
+Linux/WSL or separate backend environment	Conditional: optional upstream backend without native Windows support; not installed automatically	https://learn.microsoft.com/en-us/windows/wsl/install
