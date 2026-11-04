@@ -1229,3 +1229,5 @@
 ## [2026-11-04 06:28 UTC] verify 2026-10-22-scp-example__fig04-rose--rose
 
 ## [2026-11-04 06:32 UTC] verify 2026-10-22-scp-example__fig05-trend--trend
+
+## [2026-11-04 06:37 UTC] verify 2026-10-22-scp-example__fig06-area--area
