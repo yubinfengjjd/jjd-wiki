@@ -1225,3 +1225,5 @@
 ## [2026-11-04 06:14 UTC] acceptance check rna-velocity
 
 ## [2026-11-04 06:23 UTC] verify 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-11-04 06:28 UTC] verify 2026-10-22-scp-example__fig04-rose--rose
