@@ -1195,3 +1195,5 @@
 ## [2026-11-02 17:09 UTC] 补全上游原字节清单要求的来源元数据，修复新检出校验
 
 ## [2026-11-04 05:12 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-11-04 05:17 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
