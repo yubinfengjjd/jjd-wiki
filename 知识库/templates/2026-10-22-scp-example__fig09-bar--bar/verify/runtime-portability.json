@@ -4,13 +4,13 @@
   "implementation": "2026-10-22-scp-example__fig09-bar--bar",
   "state": "passed",
   "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
-  "closure_hash": "7fa8ac02df528c1cf439afa63d013ee46ae3effddaf692b3204333adbf5de20b",
+  "closure_hash": "4b7104da08eb7099d135873a4b0a87ff5fa183f31e3228126299d7221ee61ac1",
   "files": {
     "code/core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
     "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
     "code/panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
     "code/render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
-    "code/scp_bar_native.R": "1d234184e817e6b983e819817b95fb6ccec26c9e00de9ee7fa2ceef2899c62b4",
+    "code/scp_bar_native.R": "cc9a5d7cb6ca99f3ee5481522c5677b9de7f1caa5a93bd1772a312a50db62783",
     "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7"
   },
   "copied_files": [
@@ -21,15 +21,16 @@
     "code/scp_bar_native.R",
     "code/scp_helpers.R"
   ],
-  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example\\style.json",
-  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar",
-  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\code",
-  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example",
-  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\out",
+  "command": "D:\\Users\\admin\\GitHub\\research-wiki-env\\R-4.5.0\\bin\\x64\\Rscript.exe --vanilla D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\code\\render.R --data D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example --out D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\out --style D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example\\style.json",
+  "isolated_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar",
+  "code_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\code",
+  "example_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example",
+  "out_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig09-bar--bar\\out",
   "environment": {
     "R": "4.5.0",
-    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
-    "working_directory": "E:/research-wiki-env/tmp"
+    "Rscript": "D:/Users/admin/GitHub/research-wiki-env/R-4.5.0/bin/x64/Rscript.exe",
+    "R_LIBS_USER": "D:/Users/admin/GitHub/research-wiki-env/R-lib-4.5-3.21",
+    "working_directory": "D:/Users/admin/GitHub/research-wiki-env/tmp"
   },
   "checks": [
     "Template copied to an isolated directory without the SCP-local bundle",
@@ -39,21 +40,21 @@
     "PNG pixel-identical to the existing verify output (MAD=0)"
   ],
   "outputs": {
-    "figure.png": "d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71",
-    "figure.pdf": "a27192f9fe8bab98617559a357fa61cef998b81fea0c4b1447f4dcfa84cd6a09",
-    "figure.svg": "908e8723f68ba34a9d13509ef07da3a49a97daa01ce5e32b842a793453a5d35e",
+    "figure.png": "08040c043df3f4cc43aeea4d1fed0a062224882333698e6375cec3cbef7dd2ca",
+    "figure.pdf": "c22e451e265b21a56deb2fd6a4c03faa82b95e7a7681d3205e6a67d726fa8595",
+    "figure.svg": "5f0c1eaf4582d03b8cad27d28b74aa0594e89d2c3416c442eb7a7e21df5cc491",
     "sizing.json": "f3dda51d75ec3ec87277ca869ea6c0a7b61a264e9f27587faea4126a7dda6c7a"
   },
+  "started_at": "2026-11-04T06:42:43.855612+00:00",
+  "executed_at": "2026-11-04T06:42:47.977601+00:00",
   "previous_outputs": {
-    "png": "d9375658c7c439c9da75cf735d68211c5acb666fd282c2955d33cdc10d58ba71",
-    "pdf": "ea38df933284a66cc8c9c7d93e8a0f958c2cb707bd286c992a5e0dc646117c81",
-    "svg": "908e8723f68ba34a9d13509ef07da3a49a97daa01ce5e32b842a793453a5d35e"
+    "png": "08040c043df3f4cc43aeea4d1fed0a062224882333698e6375cec3cbef7dd2ca",
+    "pdf": "b33211dff627f904f6041a51ac5493219a282d6f06c50efac887e15cbf416467",
+    "svg": "5f0c1eaf4582d03b8cad27d28b74aa0594e89d2c3416c442eb7a7e21df5cc491"
   },
   "same_as_previous": {
     "png": true,
     "pdf": false,
     "svg": true
-  },
-  "started_at": "2026-10-23T15:57:28.571949+00:00",
-  "executed_at": "2026-10-23T15:57:30.636120+00:00"
+  }
 }

@@ -4,14 +4,14 @@
   "implementation": "2026-10-22-scp-example__fig02-ring--ring",
   "state": "passed",
   "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
-  "closure_hash": "e10e2e4bec23ff507d037e5c1c2a23ee6e6334c6d4cd2c9ce3e5273ddfc12896",
+  "closure_hash": "44b14741fba67401dd39c667d3800e553dc44b556f5b6505a3ab0919f1f89b24",
   "files": {
     "code/core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
     "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
     "code/panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
     "code/render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
     "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
-    "code/scp_ring_native.R": "0dd96b2b11f62e2103b692a160d5d448f81fe467f64949fc8777f21950ac766a"
+    "code/scp_ring_native.R": "8418a3d859b30f4a4aea200b20dcec32786079a96a21595772cce439cd92992f"
   },
   "copied_files": [
     "code/core.R",
@@ -21,15 +21,16 @@
     "code/scp_helpers.R",
     "code/scp_ring_native.R"
   ],
-  "command": "D:\\R-4.5.0\\bin\\Rscript.exe --vanilla E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\code\\render.R --data E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example --out E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\out --style E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example\\style.json",
-  "isolated_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring",
-  "code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\code",
-  "example_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example",
-  "out_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\out",
+  "command": "D:\\Users\\admin\\GitHub\\research-wiki-env\\R-4.5.0\\bin\\x64\\Rscript.exe --vanilla D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\code\\render.R --data D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example --out D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\out --style D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example\\style.json",
+  "isolated_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring",
+  "code_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\code",
+  "example_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example",
+  "out_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig02-ring--ring\\out",
   "environment": {
     "R": "4.5.0",
-    "Rscript": "D:/R-4.5.0/bin/Rscript.exe",
-    "working_directory": "E:/research-wiki-env/tmp"
+    "Rscript": "D:/Users/admin/GitHub/research-wiki-env/R-4.5.0/bin/x64/Rscript.exe",
+    "R_LIBS_USER": "D:/Users/admin/GitHub/research-wiki-env/R-lib-4.5-3.21",
+    "working_directory": "D:/Users/admin/GitHub/research-wiki-env/tmp"
   },
   "checks": [
     "Template copied to an isolated directory without the SCP-local bundle",
@@ -39,21 +40,21 @@
     "PNG pixel-identical to the existing verify output (MAD=0)"
   ],
   "outputs": {
-    "figure.png": "85b3c9b778644b216f17897025591a5e518fe41d95d22ae2d000baf4dda8c56a",
-    "figure.pdf": "95336afde3a3c902d64173729d954d8071cefb92b1645a56633cb5a9b722cc2f",
-    "figure.svg": "53c9e23c658403ee37d6f0ce57109eb10116fd3fa6e43d12e489c01387e9167d",
+    "figure.png": "118a7f5a1c8cc55d7270a028681d2e7874a05a3def568cd1c2be0d4aa15df0ff",
+    "figure.pdf": "4f6c0e802622273143f2d042633d8dd573890362df95da3b023e6a12132057ed",
+    "figure.svg": "c9ca20b81fe5a66a94aa9dabc54147122d9ff47729a5b4d295f8fa1da79e9209",
     "sizing.json": "f4fe08eef120c35dcfe7b638d5dedf82b740a953036250ea0aaf1aff4547576d"
   },
+  "started_at": "2026-11-04T06:42:25.350530+00:00",
+  "executed_at": "2026-11-04T06:42:29.806669+00:00",
   "previous_outputs": {
-    "png": "85b3c9b778644b216f17897025591a5e518fe41d95d22ae2d000baf4dda8c56a",
-    "pdf": "ad47b089013136693e38588d5549be58835b2e1107c21640f3deca27e9f991b8",
-    "svg": "59caea60a41ec87bbdb85cca88a6274b96dd8b2c7aa1596ac87b3310fc1fa869"
+    "png": "118a7f5a1c8cc55d7270a028681d2e7874a05a3def568cd1c2be0d4aa15df0ff",
+    "pdf": "ed6efc824ed0e311b6312a45f2ea04e65d68b4a399f9cb8cde5ee537c2d14929",
+    "svg": "c9ca20b81fe5a66a94aa9dabc54147122d9ff47729a5b4d295f8fa1da79e9209"
   },
   "same_as_previous": {
     "png": true,
     "pdf": false,
-    "svg": false
-  },
-  "started_at": "2026-10-23T15:57:12.295124+00:00",
-  "executed_at": "2026-10-23T15:57:14.073545+00:00"
+    "svg": true
+  }
 }
