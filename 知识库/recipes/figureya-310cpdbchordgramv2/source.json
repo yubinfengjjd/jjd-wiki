@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa310CPDBChordGramV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "cellphonedb_meta.txt": "da092edbe2b4ec16765ef17142dc1fe19b3441ef949008f87f7b2fafb05362d6",
+    "cpdb.chordgram.pdf": "a9ed61bff483665c16e6b379b33ff690dbcc1532fedca8460f0c9177e5aa9c3e",
+    "example.png": "ea7e49b76ff21c6710190460471a9b1ac4b653d4f5317b14ef6c18e7719eab1d",
+    "explain_picture.png": "ae9ab56ac0b3d21b6c7ca118a5d48e53bebe92e8142e0cbba798ddd550ac0524",
+    "FigureYa310CPDBChordGramV2.Rmd": "72b63062413b2907bfccc252f2eec9c9492a2996225a267fe21b379a665db3da",
+    "install_dependencies.R": "87db28d1d313d533843ebc3e70c7e5eacfa8a4ffa3e4173f6db77dc347cd5db1",
+    "out/deconvoluted.txt": "138350d7b38181613287cc86ec4c397c6cf5713ae844d10cc4f3457e7afbf27f",
+    "out/means.txt": "1225e0d4d3fe184845e0cefb79add2ccef4e029169c9971319d7b352d7b99345",
+    "out/pvalues.txt": "a19bdc77386b752ac0903980565160ff883afa6871c124ddf29d8484c48d94fb",
+    "out/significant_means.txt": "75175693454b34dcd5889ea703edacfce0d8b56ff7ae59421d404b3b9f36e808"
+  },
+  "excluded": [
+    "FigureYa310CPDBChordGramV2.html"
+  ],
+  "copied_at": "2026-11-04T09:51:00+00:00"
+}

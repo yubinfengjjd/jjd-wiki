@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa151pathifier",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "customized.gmt": "66755400ff8b113c6f9ea745470dad48367ed90b088f539364cc70051325a6c1",
+    "easy_input_expr.txt": "15b1e7216c6ecd3e7ead0f461a433d540fd780e8630b3689150560830ab4079d",
+    "easy_input_info.txt": "97df4d06ec9ff539e8cf318a4564051b710c2912656c57a1bf63a46f2a38fe01",
+    "example.png": "bbed6e8fca88405d3304e8048a7412894936101d8f75672afe1fbfa6f2394ecc",
+    "FigureYa151pathifier.Rmd": "a795c94e259ecbf5992ede94e7595eb9aae99fca5e6475188c6d5a36e627aa01",
+    "gene_paper1.txt": "ea9e3bc8c5106a5058e34e23e954d25c7ac764639de1e443bd0839ad619b2528",
+    "gene_paper2.txt": "17e8691940349d7a052fa9d6fb958203d261d7f0d29fb14a03444c175cf18530",
+    "gene_paper3.txt": "77e0142e205a3955a46ebb32a8f5d255be290996a4457a9c22c40e0256588880",
+    "install.log": "c5081e00d397f0549c5df53c4e01458459884bbd68d018cc9fee8791b94ab922",
+    "install_dependencies.R": "a4e58789c90d301bfec4d327caf8c37027059a3b3d30b59e10b68a04d8af26db",
+    "pathifier.pdf": "3e6935b4503dde1ea8ccd20f8481b140861a21dd9b6f746e8eb500385a0b95dc",
+    "pathifier_output.csv": "57d3f79eb49d8886bcf729f830896055a6446e76621eb67383b6e64018b3d5ce",
+    "Readme.png": "c360bcf29166e8b8548f67ca9dcf79da2c6defaacd9abc9162bbddbe5045de92"
+  },
+  "excluded": [
+    "FigureYa151pathifier.html"
+  ],
+  "copied_at": "2026-11-04T09:50:45+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa47HRtable",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "caret_7.0-1.tar.gz": "d1ea51a8ce1948718b424bacda84428bd397d8b7869310a96311553d329a815c",
+    "easy_input.csv": "b5ed61081fe98b6d4aa54e8424064d9799972e104570f978a402b7d001213143",
+    "example.png": "7e0257555a224fd047afe6ee89087c428957b1e0248f1a2a400e40f639f9c8fb",
+    "FigureYa47HRtable.jpg": "45850919db5e3e4d2c64f2177b553d3d50214ccd7082d467fb3d9dbf4aae8ca2",
+    "FigureYa47HRtable.Rmd": "bff9176d7e0eaaf0c01667357bcd6dde67823f31c5ef489d5a6d224ea47ff274",
+    "How_to_get_easy_input.R": "2fc00daa89b2625366d9f625f5f1c726c7b9ed6eb9870eb5309742e15ef75bc1",
+    "install.log": "d8561ed49f732a64eacbfab320db58becdcfb5d900e3fe77ad558b1ac9126d3d",
+    "install_dependencies.R": "782860ee1831cce79324b32bb414d8175570a19c4d4329977ab1b5efce3f17a5",
+    "Table2.csv": "bf3c196b2bfa568f99867fb61d6d89eb31331d15c64f535a6cac05ee11c00e1d",
+    "Table2.docx": "77b7001381088f2b2d103f68fb8ba041ee161bfd724548aee54e57bdc07f85ed"
+  },
+  "excluded": [
+    "FigureYa47HRtable.html"
+  ],
+  "copied_at": "2026-11-04T09:51:08+00:00"
+}

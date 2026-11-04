@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa26circos_R",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "circlize.pdf": "3c34ce50873faea3edecf82966ee607e2bc5991907c5253a63ee33212997b16b",
+    "circlize_rainbow.pdf": "d0de20e2732924c2636ca73f1c233bdf86c1d734870fad3d278c03dc94d1b5bc",
+    "example.png": "98ae37b5a5e637a116ccf0ad0c3006a93e8ae626cbb39cf24f4a46f652a39216",
+    "FigureYa26circos_R.jpg": "f7cfc6147f663f7e97dcfb0f6aeed3563e113ecbf5bd231ec81d0ffd2d62b36c",
+    "FigureYa26circos_R.Rmd": "7ef378d5c0d2c76eacbff7d18d20a9b8f6b12c867457117969e6066d3d6af677",
+    "Gene_feature.txt": "eca78c87eee939273e887fcfadacde94a1e38bb9d5fcb88303e6fb788cf7c368",
+    "Gene_ID.txt": "1199c37712e516ebc3b282d01e5f1fc481a64d11df72adf9e3da43f3aceaced6",
+    "install.log": "475d214db410dc5215e421626145a06c30dcbfe93ea75f8f5a9858dab2c34acc",
+    "install_dependencies.R": "3427df32a5e0600ecd450ba323a9d8e2ddbc9264b1d935ec489a786019ea7837",
+    "Links.txt": "ee17c1f6d46bb4f715c58749e6d057d8531533e9fe4c767145c1c8c16334b33e"
+  },
+  "excluded": [
+    "FigureYa26circos_R.html"
+  ],
+  "copied_at": "2026-11-04T09:50:56+00:00"
+}

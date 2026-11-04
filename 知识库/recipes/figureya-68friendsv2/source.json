@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa68friendsV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "61008103c32c34c3de100985f52065e4b17f4d9043153ec6a8671d5fe675065f",
+    "example.png": "91c22c3a539cdb050eca8302c3946888c201419d7ff08310714250526d719f65",
+    "FigureYa68friendsV2.Rmd": "d3c394421d903fcbc5ea5ed710d6fa1d196a6050922edb6f14c1113fbc53b266",
+    "friends.pdf": "0679c6e14ff9d60c76b20b8fd5c20d2ad191ace29ab4ddf1f36ea6d8f6db09f6",
+    "friends_box.pdf": "e8257577c39a42be1ed6c41f08557e53ae6300ee22d4059e24defc16a29918cd",
+    "friends_raincloud.pdf": "2b5b76e46465b27905f0e48a1ce01db88ae88b642b38363962c58892b4670cc7",
+    "fsim.rda": "28ef27af82d2e9897c3d89cec73a896666088a525979aa082451e4b1c6f84273",
+    "geom_flat_violin.R": "ed2fa5ea67dc050222ccfcdbe11e8a5a6822609ee3665f20053719b1e7331fb1",
+    "install.log": "e184b5ecf340bc66281873a048bd938826c36ddd6815f2bc9774a3b508c0d67b",
+    "install_dependencies.R": "67c4d9cad60a6b74e2b99c337794a80eb9037f9b873c60197791d9af47f7438b",
+    "very_easy_input.csv": "50b17a7f03928e6a842eee989e64f2be9178a89e209eb213c3b2ae78089762fb"
+  },
+  "excluded": [
+    "FigureYa68friendsV2.html"
+  ],
+  "copied_at": "2026-11-04T09:51:14+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa2ggtree+pheatmap+msa",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "adde8b6e8c55dda35e57b6cad0333ce16ca1098dfc1a594d414c4dfd614a8bf8",
+    "FigureYa2ggtree+pheatmap+msa.jpg": "2e22c7e5ac2944b9af99ec67e82c6f433d4cbb99091719966d157908c66b61c8",
+    "FigureYa2ggtree+pheatmap+msa.Rmd": "0ef640c4b7820827780e7e376315111ef994f9b18885d3c0bffa3cd990eb3ac2",
+    "FigureYa2ggtree+pheatmap+msa_files/figure-html/unnamed-chunk-2-1.png": "bd9af1d3d0d612f575b66170f65954b1af57775eda45d365f4775779e17c956d",
+    "ggtree.pdf": "8ce8eb0068db79dd7f6c224a88aa61f49dbe04974b6bec8d7bd5d12731df356c",
+    "heatmap.pdf": "73d5f64957b5469282ba2f21da1bc6479eb5f5e81d2b2815adf2e95a14739c35",
+    "install.log": "be85a9489605f8e7e67e57711f202127b0d943d4392f5180eddb9b56dc4dcfeb",
+    "install_dependencies.R": "3f2281418d7012de23031bd714a5ed5f1f6c3c6e705139d119d9cadd6376cb88",
+    "myFirstAlignment.pdf": "f9e319c027cf055d91be5eba9ddb0bdece26f0f06b551b21d85433fb8af8969f",
+    "myFirstAlignment.tex": "d05c09a3bcd520a190c8336c53703c559232eaaf84b113727716d19328d8506c"
+  },
+  "excluded": [
+    "FigureYa2ggtree+pheatmap+msa.html",
+    "ggtree_pheatmap_msa_cowplot.html"
+  ],
+  "copied_at": "2026-11-04T09:50:58+00:00"
+}

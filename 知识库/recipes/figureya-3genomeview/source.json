@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa3genomeView",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "2e3c7ba9a00a24f95c3cc1c474feba24618c978244cc63d67df17d57c39e63b4",
+    "FigureYa3genomeView.jpg": "c56e734ed38588a677a0179f6668e5015d28e35b8fee9c6bd909558e1b33bc83",
+    "FigureYa3genomeView.Rmd": "f6b0092f4f849723fe8ed0dc162fc9ec3c3f57a745f33f9c7727e0e70853ba97",
+    "FigureYa3输入文件.txt": "b92f60da79e9516551f247bd63fd721707d90e72cc062114d7e4ebc7edf9b2de",
+    "install_dependencies.R": "c48192b40e34e3a0c62b0a78492b55f53587ac78fb69eb6441961179a672b1cd",
+    "loci.bed": "a5022297c9be18037ebc1ba470c1af140b4d3d90d39b0239ac6e5e23182d45a1",
+    "loci.pdf": "9148301f51643d72d9fc3edb18ed315b04d50e97be540690789d46b16c835f5e"
+  },
+  "excluded": [
+    "FigureYa3genomeView.html"
+  ],
+  "copied_at": "2026-11-04T09:51:06+00:00"
+}

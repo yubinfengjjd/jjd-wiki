@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa119Multiclasslimma",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_FPKM.txt": "8000549d938b05661763e3c168a916710a181fd7675fe42d35ca3c2282b244da",
+    "easy_input_subtype.txt": "6f5872359fe1bbfd540e55428033cee622e103181c8cdf54d21a36a52d07f565",
+    "FigureYa119Multiclasslimma.Rmd": "47bc451f7bafc308b1d9be79e8f4f07202666536ffd86e9877072018b7401dbf",
+    "install.log": "7dcb6140942cee24f8cf58f62dcdd25f65293d1e1642080b7a1f5a8df8867ad7",
+    "install_dependencies.R": "145ec4eade4cb15b2679b10d7e7c1410c21a3c9858182d4cdc60ad1241a914d5",
+    "SKCM_limma_test_result.immune_vs_Others.txt": "9bef79a155b0f3047a6b37a16aeb7b419c8b20bb0b10067e30261b78f701b279",
+    "SKCM_limma_test_result.keratin_vs_Others.txt": "2e24c0dc007789e37dcebfea2911e1ae65dd60ef113d2c8809f98bdddfbbfbd1",
+    "SKCM_limma_test_result.MITF-low_vs_Others.txt": "6030ff1a832acc8c677ac0bac49366c0692fee5eff1b67065ad7eb8c5d4afe09"
+  },
+  "excluded": [
+    "FigureYa119Multiclasslimma.html"
+  ],
+  "copied_at": "2026-11-04T09:50:41+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa8radar",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "882138f6478fd8bc386dde6d1cbfbbc682a9b1d137f3962aea9dbbac9050e745",
+    "example.png": "9a44ab32bc7f693db857b8ec7cf6cb1b92df68e74e5a12e188efb40e5a282a94",
+    "FigureYa8radar.jpg": "4dd89a9e723f9815682ad99c238f38b6bf361132e649c91d581c0c51a8feae0d",
+    "FigureYa8radarChart.Rmd": "ef75f3cced6759ca04b6f3455ae6eabe672787c3792db3e7aacb797687297e68",
+    "install.log": "a050ae26c4818c3daac8441b167c32df6c9efe6d8a221cb7975124f09b26bf94",
+    "install_dependencies.R": "4b8c51cdfc0058e97eabdd1f30ab75bae01d3a3044c99550088d9487daf6fa9d",
+    "radar.pdf": "d44614e216da45ffa65212958ba45198a08d4893e047d15618d533629f805414",
+    "radar.svg": "c0d7d50d315519bea230a6bb6407bdb3de8d2e3603781c2fd8c1e1d2b0623a14",
+    "schematics.png": "a4916d71fe805cc03f8c77391b877c09cb528d94a4b9bfbdc860400913f060b9"
+  },
+  "excluded": [
+    "FigureYa8radarChart.html"
+  ],
+  "copied_at": "2026-11-04T09:51:19+00:00"
+}

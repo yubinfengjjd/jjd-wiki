@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa60GSEA_clusterProfilerV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_rnk.txt": "82550b47c6ca81ef564b913e33eea0523d9edd55632c138d4d414d91dcbf74c9",
+    "example.png": "4aa305ee2d0e84dad9b4c4d4607b273b7dbf7955338320fb496ae9ce048ba103",
+    "FigureYa60GSEA_clusterProfilerV2.jpg": "470047563b37a630758d7aee378aea02bc392637843f9dc9862aeb801b044821",
+    "FigureYa60GSEA_clusterProfilerV2.Rmd": "4b842152f62483d1994672aaf4a3aaadb30ada8bf998124eb2549b0d4973ac9d",
+    "gsea_genelist_hsa03030_group1.csv": "fe644949c33600ab0f36816f40fae3a6dd9f7267159a64e95e890dcbdb97bc05",
+    "gsea_genelist_hsa03050_group1.csv": "7475b4567f69660d84245fb5d0244d7a694042f9158abc300594227317f52c9f",
+    "gsea_genelist_hsa03050_group2.csv": "223a66b4a80c4be4183f33ce9454406e0cc08f586edbb37c0dfa65a6ac7e39fc",
+    "GSEA_multi_groups.pdf": "92782e92a52deda063a8033581cd570a0e43ce79983ec2f37b30ac5e83c8e1c2",
+    "GSEA_multi_pathways.pdf": "9c7145281e7e81938a6b4607841548ab880192e3034392b2dfdaec47f1ab17ad",
+    "gsea_output.csv": "84f25d4491976378f3026f764a9de29aa5fed010dfe055ec7ae47da44e668ef9",
+    "install.log": "c6f555cc5caddf80a7c3ccd8af77b874d92c837430d3c178ad1146bdc5c38d76",
+    "install_dependencies.R": "e3384b96e484e9ef12e1676b2c5ee2523cfb9eda70f3e27af1bf9753a78705d3"
+  },
+  "excluded": [
+    "FigureYa60GSEA_clusterProfilerV2.html"
+  ],
+  "copied_at": "2026-11-04T09:51:12+00:00"
+}

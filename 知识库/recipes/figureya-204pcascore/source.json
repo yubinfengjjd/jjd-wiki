@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa204PCAscore",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_cluster.txt": "59bfb088b4f9248cbba9d6535974f3de6b75e1908b29bbb6628fdafda2b4653d",
+    "easy_input_expr.txt": "fd8fcfc8b305a83c77935ee8d8b4e9169c081d6c7ff80789903ae4bea1d7d74a",
+    "explain picture.png": "a8624953b34e2269f5c91fc163ad9ef973e469900762f20fbe9610ece19ea9ed",
+    "FigureYa204PCAscore.Rmd": "3978043b77f653a7da842aa1d8ca096c3445fff0d9fb392bc71a4fedc6c8dd7f",
+    "heatmap_dimension_reduced.pdf": "0fb24a8ba145cdeba7eeb3841ed542e546fe1da945b03a8f9fe096458e1c311b",
+    "ICI_score.pdf": "d0b1de2bf473f8d01b2e5a2be6883f6f54c14187b20285536675a64b8c5d79db",
+    "install.log": "d2b12fd44f2b60cbb4c8804aa226b375eb0eefc0f5c3c8b210d0e442057dcea5",
+    "install_dependencies.R": "2e73683235cad7d1e489a3595c8b570fc5ab7222d7df5b378a927cc43e3dba5b",
+    "method.png": "d2e7065fe56f5d5c8819d669e220396587936a551ef3cfac84bd97f9369b5671",
+    "ouput_ICIsignatureGene.txt": "7648ceb91cd8f8f56e898616fe7601f5decc8a169f16ac83327d57f226e8ebb9",
+    "output_ICI_score.txt": "d40e14a8f755f96fa6705e68d876f6c13c63c0deb01ca944a70e925f36abe6b5"
+  },
+  "excluded": [
+    "FigureYa204PCAscore.html"
+  ],
+  "copied_at": "2026-11-04T09:50:50+00:00"
+}

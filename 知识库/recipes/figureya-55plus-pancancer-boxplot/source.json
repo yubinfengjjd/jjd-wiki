@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa55plus_pancancer_boxplot",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "d28f93290753f803a1f9a69e33ff24f426b73b65031953e9d054839b4a41b14a",
+    "FigureYa55plus_pancancer_boxplot.jpg": "fb5b5258481349cc503ba9dee5b2c83c9d2211fad3062a47d04f3390240edd18",
+    "FigureYa55plus_pancancer_boxplot.Rmd": "d07a8c9e65b5b599277dbf9003648e4c43e545f2ad373154fed84c170a2f7886",
+    "install.log": "f17c359f74ada47c25895331c3480d41a80ac7f62100a9d59b13b6c63c4edf69",
+    "install_dependencies.R": "a133cd78124262bd163f443b525fd0fdf3a8bd120df32eadad71f20f925b934d",
+    "pancancer_ggplot2box.pdf": "eeb883c8dd4403f715ca9a6ddf6ef5a9a280d0d0f824134cc0597d8084c88609",
+    "pancancer_ggplot2boxDot.pdf": "6035cc919f79cce994948ee136cb194a0a2390731d69336876c1cdbdecc1a626",
+    "pancancer_ggplot2boxDot_all.pdf": "8a751768b6eb55d79c578d63a5c9c278b3ed91d09ff94e4addeeaf765871a074",
+    "pancancer_ggpubr.pdf": "43c3db2dc18e0c6eded32b3a7efaa3545ce3e4b1b7bc7756d3ea8eb4108907d5"
+  },
+  "excluded": [
+    "FigureYa55plus_pancancer_boxplot.html"
+  ],
+  "copied_at": "2026-11-04T09:51:10+00:00"
+}

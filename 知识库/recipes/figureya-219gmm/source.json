@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa219GMM",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "BRCA-miRNA.txt": "f0c8dabb63289c4c062e93209e117e9d456794c1a28e2cb482df2d3e9586dd34",
+    "example.png": "b63460f4551cc8ca58969c35bc388aa5c8abdb37f29fcfa3c593fd615376d2f4",
+    "explain picture.png": "198c59981547678c93b7dc1f999c48dd914f2402ce0303606b99e6bda40f4d68",
+    "FigureYa219GMM.Rmd": "56d0f2218a0d14b5e0bd2adc4d11a03224039f2648cba1225f5d6ff486d08c5b",
+    "GMM cluster of all auc model combination.pdf": "2290ddb07831065cd7527bd09197880ce104e5050e9a72f036e8d7a65c1e6bc0",
+    "gse40525.expr.txt": "f1f5effe8e1cfa3cdbb12aa20812b666b1dda488a6ebc8f2a3715794601dc341",
+    "gse40525.miRNA.expr.TNBC.txt": "b8fa8976f60ee6f7481a869c359cd5f89a01574da06574f7461df305642bd5cf",
+    "gse40525.sinfo.txt": "72ad757106a818bf4f49a5df010e03ac837779f6ac3a26312e633201f481376a",
+    "gse_tnbc_limma_test_result.tumor_vs_normal.txt": "cbc4cc5da546bce57748bbe1280c0e119369ee7d4f5456f0e82858c71c4149d9",
+    "install.log": "d5f18711352d529dd01169ecb920507e260e1807f11497a6a20fd1a501de1adb",
+    "install_dependencies.R": "7fe1518f362f74fb4eb88da3f5c54ea759d8d051121b6ae24ba1bdc54e583e05",
+    "output_auc for all models with GMM clusters.txt": "33361260ca9fa65c414de04be9791d6507d506aed07e2b55ed513464338c158e",
+    "output_miRNA_selected.txt": "dfc4952596cb2706b084bd974468d12a5597071d899c0f566b08b44e758f7c11",
+    "tcga.miRNA.expr.TNBC.txt": "2b50ee19c03811c133f3707b03020bd569f1a331dffbdb38c1313c1beac96ad8",
+    "tcga.sinfo.txt": "6dd4489012de6e75027dd6c86bd5e6de8e057e1f4456d1184979ab56414976b2",
+    "tcga_tnbc_limma_test_result.tumor_vs_normal.txt": "7799bef1816558c2f08fbfeee1cb77be61ba6d447177315af5e24e56016d8d32",
+    "twoclasslimma.R": "e9b3847662bb7eaaed0abc465d4afa938ef32597d4e8f87ec0c03bc30c953abe"
+  },
+  "excluded": [
+    "FigureYa219GMM.html"
+  ],
+  "copied_at": "2026-11-04T09:50:52+00:00"
+}
