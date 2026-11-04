@@ -1,0 +1,21 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-compute-specificity",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true
+  },
+  "original_reference": 0.9056603773584735,
+  "isolated_result": 0.9056603773584735,
+  "promotion": "adopted",
+  "adopted_at": "2026-11-03T19:16:22.785646+00:00",
+  "independent_review": {
+    "agent_task": "migration_spec_review",
+    "verdict": "PASS",
+    "source": "Independent review final report, explicitly supplied by the primary agent in the adoption instruction",
+    "authorization": "Primary agent authorized formal adoption of these six groups after independent review"
+  },
+  "source_candidate_sha256": "a7eee086642fc292b941256124eb7807cc151b026667f849439eb56db3c16d3e"
+}

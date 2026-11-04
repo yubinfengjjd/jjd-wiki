@@ -1,8 +1,9 @@
-# Minimal runtime module extracted verbatim from SCP-local 0.5.6 (GPL (>= 3)).
+# Minimal runtime module extracted from SCP-local 0.5.6 (GPL (>= 3)).
 # Source: https://github.com/zhanghao-njmu/SCP commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0
 # Roots: RunSingleR
 # Functions: RunSingleR, check_DataType, check_R
-# Function bodies are copied from the pinned source without algorithm changes.
+# Score-vector names are removed before Seurat metadata assignment; numeric
+# values and positional order remain those returned by the pinned algorithm.
 # Automatic installation is disabled by the caller. Local resources are loaded only by the caller.
 
 # ---- SCP-cell_annotation.R:655-787 : RunSingleR ----
@@ -93,7 +94,7 @@ RunSingleR <- function(srt_query, srt_ref, query_group = NULL, ref_group = NULL,
     } else {
       SingleRCluster_results$labels[as.character(srt_query$query_group)]
     }
-    srt_query$singler_score <- sapply(as.character(unique(srt_query$query_group)), FUN = function(x) {
+    srt_query$singler_score <- unname(sapply(as.character(unique(srt_query$query_group)), FUN = function(x) {
       if (isTRUE(prune)) {
         y <- SingleRCluster_results$pruned.labels[x]
       } else {
@@ -105,7 +106,7 @@ RunSingleR <- function(srt_query, srt_ref, query_group = NULL, ref_group = NULL,
         out <- SingleRCluster_results$scores[x, y]
       }
       return(out)
-    })[as.character(srt_query$query_group)]
+    })[as.character(srt_query$query_group)])
   } else if (method == "SingleRCell") {
     message("Perform ", method, " on the data...")
     SingleRCell_results <- SingleR::SingleR(
@@ -123,7 +124,7 @@ RunSingleR <- function(srt_query, srt_ref, query_group = NULL, ref_group = NULL,
     } else {
       SingleRCell_results$labels
     }
-    srt_query$singler_score <- sapply(seq_len(ncol(srt_query)), FUN = function(x) {
+    srt_query$singler_score <- unname(sapply(seq_len(ncol(srt_query)), FUN = function(x) {
       if (isTRUE(prune)) {
         y <- SingleRCell_results$pruned.labels[x]
       } else {
@@ -135,7 +136,7 @@ RunSingleR <- function(srt_query, srt_ref, query_group = NULL, ref_group = NULL,
         out <- SingleRCell_results$scores[x, y]
       }
       return(out)
-    })
+    }))
   }
   return(srt_query)
 }

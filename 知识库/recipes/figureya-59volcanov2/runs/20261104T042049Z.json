@@ -1,0 +1,112 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-59volcanov2",
+  "run_id": "20261104T042049Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa59volcanoV2.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T04:20:49+00:00",
+  "duration_s": 18.9,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "dichromat": "2.0.1",
+      "digest": "0.6.39",
+      "dplyr": "1.2.1",
+      "evaluate": "1.0.5",
+      "farver": "2.1.2",
+      "fastmap": "1.2.0",
+      "generics": "0.1.4",
+      "ggplot2": "4.0.3",
+      "ggrepel": "0.9.8",
+      "ggthemes": "7.0.0",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "gridExtra": "2.3.1",
+      "gtable": "0.3.6",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "labeling": "0.4.3",
+      "lifecycle": "1.0.5",
+      "magrittr": "2.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pillar": "1.11.1",
+      "pkgconfig": "2.0.3",
+      "purrr": "1.2.2",
+      "R6": "2.6.1",
+      "ragg": "1.5.2",
+      "RColorBrewer": "1.1.3",
+      "Rcpp": "1.1.2",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "S7": "0.2.2",
+      "scales": "1.4.0",
+      "stats": "4.5.0",
+      "systemfonts": "1.3.2",
+      "textshaping": "1.0.5",
+      "tibble": "3.3.1",
+      "tidyselect": "1.2.1",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "vctrs": "0.7.3",
+      "withr": "3.0.3",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "easy_input_limma.csv": "555a6a49f22b662ec47f2c7dd67725d490f286c419311da675cf6b4938c9e9cf",
+    "easy_input_selected.csv": "6e9cdfe6f8ebcde6f32a0d29a0b77925f15e64fe9ba8455e30861314b9bc5b1c",
+    "example.png": "68550f9fa2c78c06b8a53af563f7b441fc053e737a1d3ff4cd5f4a27507fb6cf",
+    "FigureYa59volcanoV2.Rmd": "89d58a5aceca588a5d2db2a9946ebcce03ad77bc17f4d992e9da040c7ac1b4ee",
+    "install_dependencies.R": "568b09d76cb903d8f89a6bd1e5b262552d922c43560f217e7d1e8bb149f0043b",
+    "Volcano_advanced.pdf": "935638f201b90442f5a4569a780afdcfac38711d78da33725add176b5f98de6c",
+    "volcano_classic.pdf": "7ac7153308f7ff65d63651b04bdeabd50fe2a84e4201f067c1b5185e83a33ed6"
+  },
+  "outputs": {
+    "rwiki-figure/unnamed-chunk-4-1.png": "96fb73c53cca0e0a59659dc8a67f64919039649694fe8fc7b19411a3d4f21ce3",
+    "rwiki-figure/unnamed-chunk-4-2.png": "87c26a7f8b52356121daa94fd862c2fba55d409cf290d7d5b38cd0b8b29b6ec3",
+    "rwiki-figure/unnamed-chunk-4-3.png": "b54cbbf856f89deb68094bd290b2426becb96d323e661ca07af84b5e3717771c",
+    "rwiki-figure/unnamed-chunk-4-4.png": "01c2689a417e31804c967a80a4604770dca47832acd053fee3eed98ec65b57ee",
+    "Volcano_advanced.pdf": "d5e7afbf3d392aa048f6b879892fba945ecd34b947faff0f891b69206e121384"
+  },
+  "expected_outputs": [
+    "Volcano_advanced.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-4-1.png",
+    "rwiki-figure/unnamed-chunk-4-2.png",
+    "rwiki-figure/unnamed-chunk-4-3.png",
+    "rwiki-figure/unnamed-chunk-4-4.png"
+  ],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "rwiki-figure/unnamed-chunk-4-4.png",
+    "kind": "png"
+  },
+  "workdir": "<work_root>/runs/figureya-59volcanov2/20261104T042049179144Z"
+}

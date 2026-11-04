@@ -144,6 +144,25 @@ run_reference_mapping <- local({
         (is.null(names(parameters)) || any(!nzchar(names(parameters))) || anyDuplicated(names(parameters))))) {
       stop('parameters must be a uniquely named list')
     }
+    projection <- parameters$reduction_project_method
+    if ((is.null(projection) || identical(projection, 'pcaproject')) &&
+        inherits(srt_ref, 'Seurat') && requireNamespace('SeuratObject', quietly = TRUE)) {
+      available <- SeuratObject::Reductions(srt_ref)
+      reference_reduction <- parameters$ref_pca
+      if (is.null(reference_reduction)) {
+        candidates <- sort(available[grepl('pca', available, ignore.case = TRUE)])
+        if (length(candidates)) reference_reduction <- candidates[1]
+      }
+      if (is.character(reference_reduction) && length(reference_reduction) == 1L &&
+          reference_reduction %in% available) {
+        loadings <- SeuratObject::Loadings(srt_ref[[reference_reduction]])
+        if (!nrow(loadings) || !ncol(loadings)) {
+          stop("Reference reduction '", reference_reduction,
+               "' has no feature loadings; pcaproject requires a fitted reference reduction with feature loadings.",
+               call. = FALSE)
+        }
+      }
+    }
     out <- run_scp(
       'RunSeuratMap',
       c(list(srt_query = srt_query, srt_ref = srt_ref), parameters),

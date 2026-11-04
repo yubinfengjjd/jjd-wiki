@@ -235,7 +235,7 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
       ) +
       scalex +
       scaley +
-      coord_polar(theta = "x", start = ifelse(flip, pi / 2, 0))
+      coord_polar(theta = "x", start = ifelse(flip, pi / 2, 0), clip = "off")
   }
   if (type == "pie") {
     p <- ggplot(dat, aes(x = .data[[group.by]], y = .data[[value.by]], group = .data[[stat.by]])) +
@@ -295,7 +295,11 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
         ),
         colour = label.fg, size = label.size,
         bg.color = label.bg, bg.r = label.bg.r,
-        point.size = NA, max.overlaps = 100, min.segment.length = 0, force = 0,
+        point.size = NA, max.overlaps = 100, min.segment.length = 0,
+        force = if (type == "rose") 10 else 0,
+        force_pull = if (type == "rose") 0.05 else 1,
+        max.time = 2, max.iter = 20000,
+        box.padding = 0.4,
         position = position_use
       )
     }
@@ -322,6 +326,7 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
       order = 1,
       override.aes = list(size = 4, color = "black", alpha = 1)
     ))
+  if (type == "rose") p <- p + theme(plot.margin = margin(10, 30, 10, 30))
   if (isTRUE(flip) && !type %in% c("pie", "rose")) p <- p + coord_flip()
   p
 }

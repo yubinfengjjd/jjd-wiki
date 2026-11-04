@@ -1,0 +1,27 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-youden-threshold",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true
+  },
+  "original_reference": [
+    0.5925652573029451,
+    0.9836760652957388
+  ],
+  "isolated_result": [
+    0.5925652573029451,
+    0.9836760652957388
+  ],
+  "promotion": "adopted",
+  "adopted_at": "2026-11-03T19:16:22.785646+00:00",
+  "independent_review": {
+    "agent_task": "migration_spec_review",
+    "verdict": "PASS",
+    "source": "Independent review final report, explicitly supplied by the primary agent in the adoption instruction",
+    "authorization": "Primary agent authorized formal adoption of these six groups after independent review"
+  },
+  "source_candidate_sha256": "fdc8567fbaec5adbc487a6cca8b052a6d5272efd78433e47b72cd04e62d57fde"
+}

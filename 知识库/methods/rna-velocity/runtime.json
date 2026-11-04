@@ -27,12 +27,14 @@
           "Seurat",
           "SeuratObject",
           "Matrix",
-          "rlang"
+          "rlang",
+          "SCP"
         ],
         "Python": [
           "scanpy",
           "numpy",
-          "scvelo"
+          "scvelo",
+          "matplotlib"
         ]
       },
       "optional_packages": {
@@ -64,11 +66,13 @@
         ],
         "modifications": [
           "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
-          "check_R/check_Python replaced with fail-only guards"
+          "check_R/check_Python replaced with fail-only guards",
+          "Explicit legacy Assay construction at the AnnData conversion boundary; velocity calculations unchanged",
+          "Installed SCP supplies the fixed-source SCP_analysis.py backend and is a required package"
         ]
       },
       "evidence": {
-        "portability": "verification/scp-scvelo-portability.json"
+        "portability": "verification/scp-scvelo-public-pancreas-20261104-portability.json"
       }
     }
   ]

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-27T13:02:58.505411+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/figureya-6rhrsv2--forest/spec.json": "3d977018362c5a89ae6a6cc3962a1465673f0a22fb99fe0460356406623a0c61",
+    "templates/figureya-6rhrsv2--forest/code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
+    "templates/figureya-6rhrsv2--forest/code/panel.R": "7759da11c9bf6aedf0c849360635524f44f9100a47a9fc8e6f7332958d38be3a",
+    "interfaces/subgroup-effect-table#columns": "f98f25e0d5ae18c5556fea85bdb0a6f0aace8def767760dc3821aa40871f9d74",
+    "templates/figureya-6rhrsv2--forest/example/subgroup-effect-table.csv": "6092bfada9c76dda6684ff9dee124c08a8ca20e1d2241462bf423df6d7a9e42e"
+  },
+  "outputs": {
+    "png": "0edf8ffff97732a636a28e854267300ecd751c43127cd47c1deca0ea0b3db6f5",
+    "pdf": "4473e58decffce1616f7fcddf7b223152a2c5d4f9d86c637e2ea8450516c9e75",
+    "svg": "b1b75a320db036db9fae1d2149f887d91a28d976bfb3443623a63885d9f9a98c"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

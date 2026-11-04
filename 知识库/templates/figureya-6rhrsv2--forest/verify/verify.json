@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-27T13:02:58.505411+00:00",
+  "timestamp": "2026-11-04T04:20:47.958961+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/figureya-6rhrsv2--forest/spec.json": "3d977018362c5a89ae6a6cc3962a1465673f0a22fb99fe0460356406623a0c61",
@@ -10,13 +10,13 @@
     "templates/figureya-6rhrsv2--forest/example/subgroup-effect-table.csv": "6092bfada9c76dda6684ff9dee124c08a8ca20e1d2241462bf423df6d7a9e42e"
   },
   "outputs": {
-    "png": "0edf8ffff97732a636a28e854267300ecd751c43127cd47c1deca0ea0b3db6f5",
-    "pdf": "4473e58decffce1616f7fcddf7b223152a2c5d4f9d86c637e2ea8450516c9e75",
+    "png": "fc59499f911b97bc0d56f7e09a60e371e1e6105ea31d404ba35a732873a60f4e",
+    "pdf": "779c57be3910aebbcd612a5dbd04528da1a8c57dddc4e4402c134a086726907d",
     "svg": "b1b75a320db036db9fae1d2149f887d91a28d976bfb3443623a63885d9f9a98c"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

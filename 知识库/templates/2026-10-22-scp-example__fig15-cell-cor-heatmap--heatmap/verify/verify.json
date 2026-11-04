@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T15:35:34.101233+00:00",
+  "timestamp": "2026-11-04T04:20:47.452577+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/spec.json": "2ea2b39e8a0cf4854d875997606376b96c7aac59b017e35ebb02a4d92be42ebf",
@@ -17,11 +17,11 @@
   },
   "outputs": {
     "png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
-    "pdf": "548877d7a797c352ce2cc3ba0eff1f79630977b06fcb302d32fb3e337caa099a",
+    "pdf": "2a5ab502e836267e9942026ccdb691d5cf96d9ba1d5482e05a9b63aaafa75811",
     "svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

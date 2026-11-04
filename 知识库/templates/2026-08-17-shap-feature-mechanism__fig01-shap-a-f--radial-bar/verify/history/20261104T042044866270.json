@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T12:30:54.750672+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json": "355df8d01b335b7db7504b28b3e29b8c87253f7577f95604f3c0cb61914891c1",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/panel.py": "c40be32c40812e8cfdb8a98b4a709800d38a9699eee35e4e3506580f7e80e2cb",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-summary#columns": "39cb558e8dd3bc60c859c06ce104289a49996e07d1ce14a12731499526cc5424",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/example/shap-summary.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3"
+  },
+  "outputs": {
+    "png": "7bb863aed578306778085d41a50f0fe6575580f973bb2b2247d3637e3a5b2513",
+    "pdf": "473de239f31b484965473734529245659aadfafef804827669226ba5ad85d8d5",
+    "svg": "6ad69b6c794e3dda50eb7f606b39a35d6a346899d6133b1cccf1d0ce15ed6f71"
+  },
+  "environment": {
+    "executable": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

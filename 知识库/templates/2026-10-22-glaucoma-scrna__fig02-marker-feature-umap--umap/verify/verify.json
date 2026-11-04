@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T13:37:53.900454+00:00",
+  "timestamp": "2026-11-04T04:20:45.396172+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json": "0494a90cc98e9c252fa63d820d8641a6d8b68ade1638a12e3da7bd45e7001fad",
     "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/render.R": "210c4e05e64904e8427e0251c3926f0dbc0dc3a1de64150b8c2663799a3f9583",
     "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/core.R": "22abdf13286dbc47b1063ecc3911508c6710eac35c6d890357fb112fc1d92c03",
+    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/core.R": "2387026a0c449759356bfa296f415b132311f675fba4914c92743f004600f91e",
     "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
     "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
     "interfaces/render-umap-feature-long#columns": "76407c805469fb3fa852267a40fc9d289bc599ceaf33d23655f7e10ba65aeb8c",
@@ -17,13 +17,13 @@
     "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/example/style.json": "2db558e2959b06b62418d123b31c49f8d3eacf2760bbcbd740dde4d524dee829"
   },
   "outputs": {
-    "png": "50f2f56d2a2539beeda507734863b227939f2bd6d98e0ce568b58487414397b6",
-    "pdf": "4fdceaa033f301ec0abb4d3b2a044f9f5684c58b83c0b7742b2ca2457af1e82e",
-    "svg": "f8e716af02a5a838cefe7ded6db8f5425e3c085f42d0c85a78b5dd875c639984"
+    "png": "e43d790cc4a1587e1bcf277f2ca6866cef746507c08ba9301199188980c0909b",
+    "pdf": "48a9d4152605d42352e9790710f851d0adf568259119ebb497ff2e9e6bcec4a5",
+    "svg": "fb845b71dbccadd0c673bbbe8b8dee1352c13b10d2be9bcb17b81b7010f05714"
   },
   "environment": {
-    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

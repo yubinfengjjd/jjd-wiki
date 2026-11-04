@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T14:58:50.786847+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/spec.json": "680dbc1dbace16eb628791a32053ac349d56571838797582245c807e06cfe188",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/render.R": "2a29f1aa642085379f7070a14b672730bb3c8f2a10800f0af54da455c5049cda",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/core.R": "95d8fd9a0b348f33e13e6c2ca80e22a8089437503b887f6c4b16929a3dc9abe7",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/panel.R": "54f79b6ff58d5ea8bf989dfa84d78971480cccbf06e92c45ec2065571ba173d4",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/scp_helpers.R": "8cc7bb62299c3c9476e82b0cd0cbb2b99cfceb926859dea4516383be0f83d30f",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/scp_sankey_native.R": "e3a838078ebf296234136edbf9da8ff5459e3dd380ebdf718da70d303a4c26a8",
+    "interfaces/render-cell-linkage#columns": "20ceed4deba3e781a6fc7d732da4bd58f6569671010ba15bcfd34eb4d39c9cd3",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/example/render-cell-linkage.csv": "809869e248caa22acc7b658d00aa28a7fd9c2dbe5cad6e97fbf90abb39259d35",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/example/style.json": "de87d540dbdee48428c96669dae9149f93c1995e5591e41b1038dcf448829e44"
+  },
+  "outputs": {
+    "png": "7b16c62001e6780ff1c4fd2bee40eb230127704717bc37b4a792afc675fcbf95",
+    "pdf": "5e54f622bd2e29af5bced112f7cea985a086e626a828ed5771f178b459dfd638",
+    "svg": "a2c69241e4c657baaca862296d45d26495ad49a63594a67068097608212a400e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-eval-binary",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true
+  },
+  "original_reference": {
+    "roc_auc": 0.9888888888888889,
+    "pr_auc": 0.9923941165002925,
+    "accuracy": 0.958041958041958,
+    "precision": 0.9468085106382979,
+    "recall_sensitivity": 0.9888888888888889,
+    "specificity": 0.9056603773584735,
+    "f1": 0.967391304347826,
+    "brier": 0.031851304401227576,
+    "confusion_matrix": [
+      [
+        48,
+        5
+      ],
+      [
+        1,
+        89
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "isolated_result": {
+    "roc_auc": 0.9888888888888889,
+    "pr_auc": 0.9923941165002925,
+    "accuracy": 0.958041958041958,
+    "precision": 0.9468085106382979,
+    "recall_sensitivity": 0.9888888888888889,
+    "specificity": 0.9056603773584735,
+    "f1": 0.967391304347826,
+    "brier": 0.031851304401227576,
+    "confusion_matrix": [
+      [
+        48,
+        5
+      ],
+      [
+        1,
+        89
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "promotion": "adopted",
+  "adopted_at": "2026-11-03T19:16:22.785646+00:00",
+  "independent_review": {
+    "agent_task": "migration_spec_review",
+    "verdict": "PASS",
+    "source": "Independent review final report, explicitly supplied by the primary agent in the adoption instruction",
+    "authorization": "Primary agent authorized formal adoption of these six groups after independent review"
+  },
+  "source_candidate_sha256": "ba8084d2e4e7aeb78b29c21a1711f176dc86313292f105f539801d0d41b54d8a"
+}

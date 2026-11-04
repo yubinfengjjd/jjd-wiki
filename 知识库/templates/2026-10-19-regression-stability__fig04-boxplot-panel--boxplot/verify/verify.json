@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-21T16:05:16.356280+00:00",
+  "timestamp": "2026-11-04T04:20:45.129746+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/spec.json": "aa4a55dce6b8e051e3b9bccf1cd2aa0f5d12cf70d0fcd74e8aeeca0f91b87388",
@@ -18,12 +18,12 @@
   },
   "outputs": {
     "png": "fbf5fe903c724e84baa0d48687ef3123116fffe70274c4c1460b01e6d54faec2",
-    "pdf": "f40bf30043252dc759e8e75267fbd0c03fe65483b9d30431ab86b06ecefe367d",
-    "svg": "e39e73e2ec45705bd6d07e56b2799c37620a608d3305e8de8466960723e8a59f"
+    "pdf": "223582ec8c724896fdd0160f63406416d867568db0cf0cf5873bd4431c82a2be",
+    "svg": "360e848c5a1ea95f487570258123946728a447f856148e8913f326d310e27bb0"
   },
   "environment": {
-    "executable": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/ml-python/Scripts/python.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

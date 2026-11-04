@@ -37,7 +37,7 @@
     "position": "stack",
     "label": false,
     "xlab": "CellType",
-    "ylab": "Percentage",
+    "ylab": "Phase",
     "sizing": {
       "mode": "adaptive",
       "base_in": 5.0,

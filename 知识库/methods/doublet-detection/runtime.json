@@ -52,7 +52,7 @@
         ]
       },
       "evidence": {
-        "portability": "verification/scp-rundoublet-portability.json"
+        "portability": "verification/scp-rundoublet-public-pancreas-core-20261104-portability.json"
       }
     }
   ]

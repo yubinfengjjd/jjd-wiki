@@ -18,10 +18,12 @@ favorite: false
 method_kind: analysis
 purposes:
 - 轨迹与动态分析
-summary: 利用 spliced/unspliced 计数推断转录动态方向；当前 Python 后端缺失，函数保留但未运行。
+summary: 利用 spliced/unspliced 计数推断转录动态方向；scVelo 分支在批准的隔离 NumPy 1.23.5 环境完成真实推断，全量
+  SCP 算法等价未验证。
 data_contract:
   input: 含 spliced/unspliced layers 的 Seurat 对象或 AnnData；同一细胞集合的剪接/未剪接计数。
-  output: velocity 图、latent time、velocity confidence（运行成功时）；当前未产生结果。
+  output: velocity 图、latent time、velocity confidence（公开 pancreas 用例已产生有限 velocity
+    输出）；算法等价未验证。
 implementations:
 - id: scp-scvelo
   title: SCP RunSCVELO 分支
@@ -33,9 +35,11 @@ implementations:
   - SeuratObject
   - Matrix
   - rlang
+  - SCP
   - scanpy
   - numpy
   - scvelo
+  - matplotlib
   verification: verification/scp-scvelo-standalone.json
 keywords:
 - RNA velocity

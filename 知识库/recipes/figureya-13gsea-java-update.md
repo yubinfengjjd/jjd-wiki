@@ -17,7 +17,6 @@ runner: rmd-knit
 entry: source/FigureYa13GSEA_Java_update.Rmd
 inputs: []
 outputs:
-- ppoint2.pdf
 - prettyGSEApoint.pdf
 - prettyGSEAline.pdf
 - prettyGSEAbar.pdf
@@ -67,7 +66,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa13GSEA_Java_update.Rmd`）
 - 依赖：CRAN RColorBrewer, blueviolet, chocolate4, cowplot, ggplot2, grid, gridExtra, plyr
-- 最近运行：pass（as-is，2026-10-27 12:17 UTC，4.1 秒）
+- 最近运行：pass（as-is，2026-11-04 04:20 UTC，7.9 秒）
 - 派生模板（L2）：暂无
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
@@ -98,7 +97,8 @@ favorite: false
 
 ## 输出
 
-- `ppoint2.pdf`
+上游 ppoint2.pdf 的 ggsave 语句已注释，属于手动启用的可选导出；默认运行生成 prettyGSEApoint.pdf、prettyGSEAline.pdf 与 prettyGSEAbar.pdf。
+
 - `prettyGSEApoint.pdf`
 - `prettyGSEAline.pdf`
 - `prettyGSEAbar.pdf`

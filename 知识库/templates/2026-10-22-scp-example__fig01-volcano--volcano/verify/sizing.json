@@ -8,5 +8,5 @@
   "n_groups": 1,
   "n_labels": 16,
   "max_label_chars": 7,
-  "svg_device": "grDevices::svg (text may be outlined)"
+  "svg_device": "svglite"
 }

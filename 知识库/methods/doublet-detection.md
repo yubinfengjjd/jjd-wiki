@@ -18,10 +18,11 @@ favorite: false
 method_kind: analysis
 purposes:
 - 预处理与质量控制
-summary: 按样本识别双细胞；scDblFinder 与 DoubletFinder 是不同算法，当前均未在本机跑通，保留来源与精确缺失原因。
+summary: 按样本识别双细胞；scDblFinder 分支在批准公开用例与直接 scDblFinder 结果一致（非全量 SCP 等价），DoubletFinder
+  等其他分支未运行。
 data_contract:
   input: 按样本的 Seurat 原始 counts；显式预期双细胞率；scDblFinder 或 DoubletFinder 分支及其预处理前提。
-  output: 每细胞 doublet class/score（运行成功时）；当前两条路线均未产生结果。
+  output: 每细胞 doublet class/score（scDblFinder 公开用例已产生 77 singlet / 3 doublet）；其他分支未产生结果。
 implementations:
 - id: scp-rundoublet
   title: SCP RunDoubletCalling 的 scDblFinder 分支

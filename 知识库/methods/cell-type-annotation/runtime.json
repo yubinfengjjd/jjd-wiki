@@ -22,7 +22,8 @@
           "rlang",
           "SingleR",
           "SingleCellExperiment",
-          "SummarizedExperiment"
+          "SummarizedExperiment",
+          "scrapper"
         ]
       },
       "optional_packages": {
@@ -38,11 +39,12 @@
         ],
         "modifications": [
           "check_R replaced with a fail-only guard",
-          "SeuratObject >= 5 GetAssayData compatibility shim"
+          "SeuratObject >= 5 GetAssayData compatibility shim",
+          "Remove label-derived score-vector names before assigning per-cell Seurat metadata; values and order unchanged"
         ]
       },
       "evidence": {
-        "portability": "verification/scp-singler-portability.json"
+        "portability": "verification/scp-singler-public-pancreas-core-20261104-portability.json"
       }
     }
   ]

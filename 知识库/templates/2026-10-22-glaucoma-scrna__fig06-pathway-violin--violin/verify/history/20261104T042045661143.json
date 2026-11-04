@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T13:34:42.647658+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json": "da7fab88d4eda1dd34b3c342d6fecba12222684d505ebb08b1dddf034d9845d4",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/render.R": "ad91d13e007fefb784d6a9ef6b4f15480b04f2412d54df23023fa8321f88b527",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/core.R": "8ae67f406c489e6882e1b64b36d4ed004d1f0dfd342a3ed22ea902fa5bcc9ef7",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/panel.R": "4f08a53989127053d4fa588675b043eb0e9c3d7fb7c0bfb5bcc1b6b9354c4132",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-grouped-values#columns": "a6c4f9415f7187efd79577cc42833d9ec5302dce9a62cc09aa4a67a54d073fe3",
+    "interfaces/render-group-summaries#columns": "19fcd1ae1563ca2c73a76719210064984106ec405b49c220f533ebbe8d54cb85",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/estimated_data.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/estimated_summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/render-group-summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/render-grouped-values.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/style.json": "aa6cc3fa4d8d7cb9a57c59bef09fe991aa0eca526c62dd81d37d7ef3cf333597"
+  },
+  "outputs": {
+    "png": "915b95878f5455dd5a668ec014c00ac5606aa02ef76aa281bb726d0ce4d14c8e",
+    "pdf": "8c9299a8e7920ae0f0c2e27b6961ef264ad5d0ed71068aa9224070092a6b7869",
+    "svg": "0878e9787c6835ab3ee63759772e09b7022b0628456899e34793e080d6e71d48"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

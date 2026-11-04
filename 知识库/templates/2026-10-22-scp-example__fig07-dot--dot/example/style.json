@@ -6,7 +6,7 @@
   "height_in": 6,
   "dpi": 150,
   "xlab": "CellType",
-  "ylab": "Percentage",
+  "ylab": "Phase",
   "legend_title": "Phase:",
   "group_levels": [
     "Ductal",

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-scvelo",
+  "state": "passed",
+  "scope": "Copied declared closure executed in a new R process through reticulate into the approved isolated NumPy 1.23.5 Python environment; installed SCP 0.5.6 supplies the fixed-source SCP_analysis.py backend as a declared required package. The 80-cell public pancreas case produced actual finite velocity assays (velocity, stochastic, variance_velocity, variance_stochastic) with cell IDs and order preserved and the observed PCA basis used explicitly. Execution/portability evidence only - no whole-original-SCP algorithm equivalence is claimed.",
+  "closure_hash": "a6bfd01a52343b91b19cb819690953c3109bbafb516275ad0d08b8fed162f7c9",
+  "files": {
+    "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "code/velocity_native.R": "bd919afc80287701e3186326f3550a6d81f09e2b7c13c518a9c0c6fc9ba683e3",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/velocity_native.R",
+    "code/data/palette_list.rda"
+  ],
+  "executed_files": {
+    "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "code/velocity_native.R": "bd919afc80287701e3186326f3550a6d81f09e2b7c13c518a9c0c6fc9ba683e3",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/driver.R <RUN_ROOT>/case.json",
+  "argv": [
+    "<RSCRIPT>",
+    "--vanilla",
+    "<RUN_ROOT>/driver.R",
+    "<RUN_ROOT>/case.json"
+  ],
+  "case": {
+    "label": "scVelo",
+    "kind": "recorded_velocity",
+    "parameters": {
+      "assay_X": "RNA",
+      "assay_layers": [
+        "spliced",
+        "unspliced"
+      ],
+      "group_by": "CellType",
+      "linear_reduction": "PCA",
+      "basis": "PCA"
+    },
+    "cells": 80,
+    "seed": 11
+  },
+  "isolated_code_dir": "<RUN_ROOT>/module",
+  "fixture": "<SOURCES>/scp-2026-10-22/data/pancreas_sub.rda",
+  "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "manifest_sha256": "e84bc0d34f6830b22320e20a97808612100c35725c1421c6dc1dedc1aca575f6",
+  "output_sha256": "e1a28e9aabd7a69e0beba76bec96c4ab2024bef0c1721cdfee592c6f01fc7818",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "automatic_installation": false,
+    "backend_python": "<ENV>/scp-velocity-numpy123/python.exe",
+    "backend_python_version": "3.8.20",
+    "key_packages": {
+      "reticulate": "1.47.0",
+      "SCP": "0.5.6",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "numpy": "1.23.5",
+      "scvelo": "0.2.5",
+      "scanpy": "1.9.5",
+      "anndata": "0.9.2",
+      "matplotlib": "3.7.3"
+    }
+  },
+  "checks": [
+    "actual_invocation",
+    "input_object_unchanged",
+    "output_assertions",
+    "actual_velocity_assay",
+    "source_and_input_files_unchanged",
+    "Copied code files, input fixture and driver verified byte-identical before execution",
+    "Isolated NumPy 1.23.5 environment required for scVelo 0.2.5 ragged-array behavior",
+    "No package installation attempted; no source bytes modified"
+  ],
+  "run_evidence": "velocity-runs/rna-velocity-scp-scvelo-mxrz9k4c/execution-audit.json",
+  "executed_at": "2026-11-04T04:42:33.706216+00:00"
+}

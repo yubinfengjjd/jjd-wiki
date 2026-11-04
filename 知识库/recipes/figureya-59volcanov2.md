@@ -21,7 +21,6 @@ inputs:
 - file: easy_input_selected.csv
   note: easy_input_selected.csv，有时希望突出显示几个基因，例如后文进行功能验证的基因。会在突出显示的基因外面画黑色圆圈，并标出基因名。
 outputs:
-- volcano_classic.pdf
 - Volcano_advanced.pdf
 packages:
   cran:
@@ -61,7 +60,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa59volcanoV2.Rmd`）
 - 依赖：CRAN ggplot2, ggrepel, ggthemes, gridExtra
-- 最近运行：pass（as-is，2026-10-27 12:37 UTC，7.6 秒）
+- 最近运行：pass（as-is，2026-11-04 04:20 UTC，18.9 秒）
 - 派生模板（L2）：[[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
@@ -93,7 +92,8 @@ favorite: false
 
 ## 输出
 
-- `volcano_classic.pdf`
+上游固定示例设置 plot_mode 为 advanced，默认生成 Volcano_advanced.pdf。volcano_classic.pdf 属于 classic 模式的互斥输出，不要求同一次默认运行同时生成；切换模式需在使用副本中显式修改。
+
 - `Volcano_advanced.pdf`
 
 ## 知识关联检查

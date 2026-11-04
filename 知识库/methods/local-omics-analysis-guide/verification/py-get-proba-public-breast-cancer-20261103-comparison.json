@@ -1,0 +1,32 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-get-proba",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true,
+    "positive_probability_arrays_exact_equal": true
+  },
+  "original_reference": {
+    "array_sha256": "2512f6d83b2506bb85cbc9ee35b6a9ddcbe2d33b4efcb7f68dff514905ec4355",
+    "shape": [
+      143
+    ]
+  },
+  "isolated_result": {
+    "array_sha256": "2512f6d83b2506bb85cbc9ee35b6a9ddcbe2d33b4efcb7f68dff514905ec4355",
+    "shape": [
+      143
+    ]
+  },
+  "promotion": "adopted",
+  "adopted_at": "2026-11-03T19:16:22.785646+00:00",
+  "independent_review": {
+    "agent_task": "migration_spec_review",
+    "verdict": "PASS",
+    "source": "Independent review final report, explicitly supplied by the primary agent in the adoption instruction",
+    "authorization": "Primary agent authorized formal adoption of these six groups after independent review"
+  },
+  "source_candidate_sha256": "e9639b716e0f237325c5d831605f7aa3d9e3bf4eb6a5d576c2df0c63a3690932"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T12:30:54.750672+00:00",
+  "timestamp": "2026-11-04T04:20:44.916094+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json": "355df8d01b335b7db7504b28b3e29b8c87253f7577f95604f3c0cb61914891c1",
@@ -12,12 +12,12 @@
   },
   "outputs": {
     "png": "7bb863aed578306778085d41a50f0fe6575580f973bb2b2247d3637e3a5b2513",
-    "pdf": "473de239f31b484965473734529245659aadfafef804827669226ba5ad85d8d5",
-    "svg": "6ad69b6c794e3dda50eb7f606b39a35d6a346899d6133b1cccf1d0ce15ed6f71"
+    "pdf": "c78222596b3acb59d574b7c10c51b40d6f4d487d61c4d55946788ac00f286e1b",
+    "svg": "daf6811077c6bf9b639cef3f3b85441d281739f51a11722a48602f46bcc19dbc"
   },
   "environment": {
-    "executable": "C:\\Users\\86186\\.codex\\venvs\\sci-figure-replica\\Scripts\\python.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/ml-python/Scripts/python.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

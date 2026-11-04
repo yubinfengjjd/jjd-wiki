@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T14:56:12.969114+00:00",
+  "timestamp": "2026-11-04T04:20:47.103490+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig12-venn--venn/spec.json": "3af634844b387498d7fceb33dfd52f43c7455082b3d8c9b36b8111a90a24f464",
@@ -15,12 +15,12 @@
     "templates/2026-10-22-scp-example__fig12-venn--venn/example/style.json": "e67d612774a4092905bb7b9f23378ee6052d26f5325b95c1b325dd774a20d037"
   },
   "outputs": {
-    "png": "a5bf19955f2efc74b28c1133945c886cf8f8370ce179fb2582f530c6d96b6119",
-    "pdf": "eac5e3c30c4119c3955e836163c6861197ff8b169fa1a02ac0518ea7b6d500dc",
-    "svg": "c0b29fd1df3dd1474d6c76dd0a2c80294fb501d8d6cf60d6b1fb1180e3ddac5c"
+    "png": "f71770f803a57ef84d25fdb81ceabbbfc085294725d3cdab3c10dff5a18fb5fd",
+    "pdf": "d564d0900a58f3131e774d3f0465f068a79b513468b51adf1c1bcd19c2da4d8d",
+    "svg": "8afa4c46f0cabf2f84e7abc859ffc8851af67182ab898a3fe657232aac096e13"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

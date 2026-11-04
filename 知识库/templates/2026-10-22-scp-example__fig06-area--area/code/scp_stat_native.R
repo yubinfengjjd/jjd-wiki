@@ -147,7 +147,10 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
     scaley <- NULL
   } else if (position == "stack") {
     position_use <- position_stack(vjust = 0.5)
-    scalex <- scale_x_discrete(drop = !keep_empty, expand = c(0, 0))
+    scalex <- scale_x_discrete(
+      drop = !keep_empty,
+      expand = if (type == "area") expansion(add = 0.2) else c(0, 0)
+    )
     percent_labels <- function(x) {
       lab <- scales::percent(x)
       if (length(x) > 1L && isTRUE(all.equal(min(x), 0)) && isTRUE(all.equal(max(x), 1))) {
@@ -159,7 +162,7 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
     y_labels <- if (stat_type == "count") scales::number else if (isTRUE(merge_polar_endpoints) && type %in% c("pie", "rose")) percent_labels else scales::percent
     scaley <- scale_y_continuous(
       labels = y_labels,
-      expand = c(0, 0)
+      expand = if (type == "area") expansion(mult = c(0.03, 0.03)) else c(0, 0)
     )
   } else {
     if (type == "area") {
@@ -295,7 +298,8 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
         ),
         colour = label.fg, size = label.size,
         bg.color = label.bg, bg.r = label.bg.r,
-        point.size = NA, max.overlaps = 100, min.segment.length = 0, force = 0,
+        point.size = NA, max.overlaps = 100, min.segment.length = 0,
+        force = if (type == "area") 1 else 0,
         position = position_use
       )
     }

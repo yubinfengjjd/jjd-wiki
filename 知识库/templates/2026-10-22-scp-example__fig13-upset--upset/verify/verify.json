@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T14:53:16.987503+00:00",
+  "timestamp": "2026-11-04T04:20:47.195518+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig13-upset--upset/spec.json": "0aef4cf0a17affef6dd988e45b98b2a7bea20d5905cb5fa932ccc314b4408089",
@@ -16,11 +16,11 @@
   },
   "outputs": {
     "png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
-    "pdf": "f38a8cebf21d6f8f9cd1b2bf834dcbbd498b84940c8448b6e95f33666e54605a",
+    "pdf": "d65f1b175074b942d79ef45299b348d57b6ad73d5762ec1ebc6c8d79e20fef92",
     "svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

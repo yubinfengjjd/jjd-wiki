@@ -45,11 +45,15 @@
     "future": "sequential"
   },
   "files": {
-    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/analysis.R": "cceada1f1afce275c8598ad1e085d2554e0c92567767655c960ec36f782d6285",
     "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066",
     "code/transfer.R": "e08b3f8db1b24719c486a26f026df417689c3f0235f80812f42029c650e21786"
   },
   "executed_files": {
     "code/transfer.R": "e08b3f8db1b24719c486a26f026df417689c3f0235f80812f42029c650e21786"
+  },
+  "rebind": {
+    "at": "2026-11-04",
+    "note": "files rebound to the current code tree: code/analysis.R changed outside this implementation's call path (a RunSeuratMap-only input guard); the executed transfer.R bytes are unchanged and the 2026-11-03 rerun reproduced identical result.rds bytes (sha256 02619913d307ecf04438899afa11e00add6bc9094e054b98a31a45fcc1e5e4d3)."
   }
 }

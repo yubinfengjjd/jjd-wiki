@@ -51,7 +51,7 @@ implementations:
   entrypoint: code/roc_render.py:render_roc_curves
   dependencies:
   - matplotlib
-  verification: verification/py-roc-render-algorithm-20261102b.json
+  verification: verification/py-roc-render-public-breast-cancer-20261103-algorithm.json
 - id: irgsea-heatmap
   title: 依赖原生绘图 irgsea_heatmap
   language: R
@@ -294,6 +294,16 @@ ROC 用例保留原真实预计算 FPR/TPR/AUC，原版对照的曲线数据、R
 ## 资料确认记录（2026-11-02）
 
 作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
+
+## 公开数据功能补充验证（2026-11-04）
+
+经独立审查 migration_spec_review 最终 PASS 后，py-roc-render 当前算法收据采用已批准的公开乳腺癌软件功能用例。消费同一已拟合模型的预计算训练/留出 FPR、TPR 与 AUC，明确正类为 benign；不在绘图入口拟合、猜标签或反转方向。原生绘图 helper 与构图片段、提取版曲线数据、RGBA 及 PNG 完全一致，实际成图已检查；保留原 inset_axes/tight_layout 提示。
+
+本用例不替代旧 UC/哮喘私有输入的联调，也不将训练曲线作为独立队列或临床验收。全部旧收据保留；runtime.json 保持原字节，其默认独立性 evidence.portability 继续使用既有 20261102b 证据。下列新公开补充独立性收据单独链接，不改写默认指针。
+
+- `py-roc-render`：[公开用例补充独立性收据](local-omics-visualization-guide/verification/py-roc-render-public-breast-cancer-20261103-portability.json)；[实际原版对照](local-omics-visualization-guide/verification/py-roc-render-public-breast-cancer-20261103-comparison.json)。
+
+该补充验证只覆盖上述具体函数、真实公开输入及记录环境；其余分支状态不因本轮采用而提升。
 
 <!-- user:start -->
 <!-- user:end -->

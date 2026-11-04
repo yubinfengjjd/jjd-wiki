@@ -1,28 +1,48 @@
 {
   "schema_version": 1,
   "implementation": "scp-rundoublet",
-  "state": "not_run",
-  "scope": "Missing R dependency: scDblFinder; automatic installation is disabled",
-  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" doublet-detection \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\doublet-detection\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/doublet-detection/result.rds\"",
+  "state": "passed",
+  "scope": "Approved public pancreas case (80 cells, set.seed(11) before the call, dbr 0.01): corrected invocation output equals direct scDblFinder scores and classes (77 singlet / 3 doublet; scores 0.4008-0.759). The unsupported forwarded seed argument was dropped; the upstream call expression is otherwise unchanged. Full unmodified SCP comparison did not pass at its deprecated Seurat API.",
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/doublet_seed11_corrected.R <RUN_ROOT>/case.json",
   "case": {
     "label": "doublet scDblFinder",
     "parameters": {
-      "parameters": {
-        "assay": "RNA",
-        "db_method": "scDblFinder",
-        "db_rate": 0.01,
-        "seed": 11
-      }
-    }
+      "assay": "RNA",
+      "db_method": "scDblFinder",
+      "db_rate": 0.01
+    },
+    "cells": 80,
+    "seed_before_call": 11
   },
   "checks": [
-    "Observed: Missing R dependency: scDblFinder; automatic installation is disabled"
+    "actual_invocation",
+    "input_object_unchanged",
+    "cell_order_and_identifiers_preserved",
+    "metadata_order_preserved",
+    "score_per_cell",
+    "classification_per_cell",
+    "output_assertions",
+    "input_unchanged",
+    "cell_ids_equal",
+    "scores_equal",
+    "classes_equal",
+    "source_input_driver_files_unchanged"
   ],
   "environment": {
     "R": "4.5.0",
     "platform": "x86_64-w64-mingw32",
     "BPPARAM": "BiocParallel::SerialParam()",
-    "future": "sequential"
+    "future": "sequential",
+    "automatic_installation": false,
+    "key_packages": {
+      "scDblFinder": "1.22.0",
+      "SingleCellExperiment": "1.30.1",
+      "SummarizedExperiment": "1.38.1",
+      "scuttle": "1.18.0",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "Matrix": "1.7.3"
+    }
   },
   "files": {
     "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
@@ -32,5 +52,8 @@
     "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
     "code/doublet_native.R": "b06499321a51b750667df68fe4874496bcb49ae6641a769b6f794c0a1967c71e"
   },
-  "not_run_reason": "Missing R dependency: scDblFinder; automatic installation is disabled"
+  "input_sha256": "bced092bd3e539e785ffc005052182c7b6592e632c23a6aab5f9e5d40fb68b78",
+  "output_sha256": "6ddcbd3f3f1927375d583d3b19338b143e74beb87fc019fe773179d597b7cdb6",
+  "run_evidence": "method-runs/r-adoption-20261104-xmhg3zoa/doublet-detection/execution-audit.json",
+  "executed_at": "2026-11-04T04:42:01.775064+00:00"
 }

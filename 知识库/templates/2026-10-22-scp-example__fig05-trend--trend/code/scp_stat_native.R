@@ -159,7 +159,7 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
     y_labels <- if (stat_type == "count") scales::number else if (isTRUE(merge_polar_endpoints) && type %in% c("pie", "rose")) percent_labels else scales::percent
     scaley <- scale_y_continuous(
       labels = y_labels,
-      expand = c(0, 0)
+      expand = if (type == "trend") expansion(mult = c(0.03, 0.03)) else c(0, 0)
     )
   } else {
     if (type == "area") {
@@ -171,7 +171,7 @@ plot_scp_stat <- function(dat, type = c("pie", "rose", "trend", "area", "dot"),
     scaley <- scale_y_continuous(
       limits = c(0, max(dat[[value.by]], na.rm = TRUE) * 1.1),
       labels = if (stat_type == "count") scales::number else scales::percent,
-      expand = c(0, 0)
+      expand = if (type == "trend") expansion(mult = c(0.03, 0.03)) else c(0, 0)
     )
   }
   if (position == "stack") {

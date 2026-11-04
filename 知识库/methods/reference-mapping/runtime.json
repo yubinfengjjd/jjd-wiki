@@ -92,7 +92,8 @@
         "modifications": [
           "check_R/check_Python replaced with fail-only guards",
           "SeuratObject >= 5 compatibility shims",
-          "compiled asMatrix helper excluded; unreachable upstream call"
+          "compiled asMatrix helper excluded; unreachable upstream call",
+          "fail early when the selected PCA reference reduction has no feature loadings; no automatic refitting"
         ]
       },
       "evidence": {

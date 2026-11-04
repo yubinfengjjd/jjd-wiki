@@ -18,10 +18,11 @@ favorite: false
 method_kind: analysis
 purposes:
 - 注释与参考映射
-summary: 综合参考标签与 marker 集合给细胞分配类型；SingleR 分支未运行，青光眼 marker 手工注释尚未函数化。
+summary: 综合参考标签与 marker 集合给细胞分配类型；SingleR 分支在批准公开用例与直接 SingleR 结果一致（非全量 SCP 等价），青光眼
+  marker 手工注释尚未函数化。
 data_contract:
   input: query Seurat；参考标签分支需 reference Seurat + ref_group，marker 分支需预先定义的 marker→类型映射；同物种/同基因标识。
-  output: 每细胞 predicted label 与分数（SingleR 成功时），或手工 marker 注释标签表；当前无已验证输出。
+  output: 每细胞 predicted label 与分数（SingleR 公开 pancreas 用例已验证输出），或手工 marker 注释标签表。
 implementations:
 - id: scp-singler
   title: SCP RunSingleR 分支
@@ -35,6 +36,7 @@ implementations:
   - SingleR
   - SingleCellExperiment
   - SummarizedExperiment
+  - scrapper
   verification: verification/scp-singler-standalone.json
 keywords:
 - SingleR

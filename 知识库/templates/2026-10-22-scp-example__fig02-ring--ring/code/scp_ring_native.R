@@ -190,7 +190,7 @@ plot_scp_ring <- function(dat, group.by = "group", stat.by = "stat",
       ),
       colour = label.fg, size = label.size,
       bg.color = label.bg, bg.r = label.bg.r,
-      point.size = NA, max.overlaps = 100, min.segment.length = 0, force = 0,
+      point.size = NA, max.overlaps = 100, min.segment.length = 0, force = 1,
       position = position_use
     )
   }

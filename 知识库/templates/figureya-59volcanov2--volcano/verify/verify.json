@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-27T13:08:47.922281+00:00",
+  "timestamp": "2026-11-04T04:20:47.850890+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/figureya-59volcanov2--volcano/spec.json": "50fb97613082be1ec97b7a72a4ded92537a6683ed4bf57ca93dbc365940cf98b",
@@ -13,13 +13,13 @@
     "templates/figureya-59volcanov2--volcano/example/style.json": "b04b58b90997c96bf569c02dbae398c69be00dc822c967567ff897fb7bcd3c02"
   },
   "outputs": {
-    "png": "341381b2dbe23e327aa30e667cce68539e5c50bc74bd7729db37b5591746c277",
-    "pdf": "5967a6b0327b30e2f26064cf2b7933978141abf175500357ae4c2bcf6de37346",
+    "png": "9e669eba0e9883d615134f272c4793d8ffd09c3ce00078cbbde7dab3c6c92030",
+    "pdf": "d1946ccd3c898b7f7b8b4edfce13cfaf68d789cc730d5e2820aa00ea912bc82e",
     "svg": "26525330614b692662c3c839366b2fae0a74393661663e5715665f2dd756e7ac"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

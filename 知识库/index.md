@@ -100,13 +100,13 @@
 
 ### ready
 
-- [[methods/rna-velocity|RNA 速度分析]] — 利用 spliced/unspliced 计数推断转录动态方向；当前 Python 后端缺失，函数保留但未运行。
+- [[methods/rna-velocity|RNA 速度分析]] — 利用 spliced/unspliced 计数推断转录动态方向；scVelo 分支在批准的隔离 NumPy 1.23.5 环境完成真实推断，全量 SCP 算法等价未验证。
 - [[methods/batch-integration|单细胞批次整合]] — 在保留生物差异的前提下对齐样本/技术批次，产出整合嵌入与聚类，供跨样本比较。
 - [[methods/cell-clustering|单细胞聚类分析]] — 在低维嵌入上构建邻居图并划分 cluster；cluster 是分析单位，不是细胞类型。
 - [[methods/cell-quality-control|单细胞质量控制]] — 按显式阈值计算逐细胞 UMI、基因数与线粒体/核糖体比例，标记 Pass/Fail，不把 QC 指标当生物学分组。
 - [[methods/dimensionality-reduction|单细胞降维分析]] — 在标准化/缩放后的表达上计算 PCA 与 UMAP，为聚类、可视化和轨迹提供低维表示。
 - [[methods/reference-mapping|参考图谱映射]] — 把查询细胞映射到参考标签并返回预测分数；Seurat 标签转移已验证，UMAP 投影分支未通过。
-- [[methods/doublet-detection|双细胞检测]] — 按样本识别双细胞；scDblFinder 与 DoubletFinder 是不同算法，当前均未在本机跑通，保留来源与精确缺失原因。
+- [[methods/doublet-detection|双细胞检测]] — 按样本识别双细胞；scDblFinder 分支在批准公开用例与直接 scDblFinder 结果一致（非全量 SCP 等价），DoubletFinder 等其他分支未运行。
 - [[methods/regression-resampling-evaluation|回归模型的重采样评估与折外预测]] — 汇总已有折外回归预测，计算逐折 RMSE/MAE/R2/r；不训练模型、不生成重采样。
 - [[methods/shap-explanation|基于 SHAP 的模型解释]] — 对既定模型输出作 SHAP 归因，输出汇总表和逐样本贡献表；不训练、不划分数据。
 - [[methods/gene-set-scoring|基因集与通路签名打分]] — 按命名基因集给每个细胞打相对签名分数，用于描述状态差异；分数不是通路活性或富集显著性。
@@ -114,7 +114,7 @@
 - [[methods/differential-expression|差异表达分析]] — 在明确对比组之间检验基因表达差异，输出效应量、p 值与阳性比例；细胞级 p 值不等于样本级推断。
 - [[methods/trajectory-inference|拟时序与轨迹推断]] — 在低维嵌入上连接细胞群，推断 lineage 与 pseudotime；轨迹是模型假设，不是真实时间。
 - [[methods/dynamic-feature-analysis|拟时序动态特征分析]] — 沿 pseudotime 拟合每个特征的平滑趋势，输出变化显著性、解释度和峰/谷时间。
-- [[methods/cell-type-annotation|细胞类型注释]] — 综合参考标签与 marker 集合给细胞分配类型；SingleR 分支未运行，青光眼 marker 手工注释尚未函数化。
+- [[methods/cell-type-annotation|细胞类型注释]] — 综合参考标签与 marker 集合给细胞分配类型；SingleR 分支在批准公开用例与直接 SingleR 结果一致（非全量 SCP 等价），青光眼 marker 手工注释尚未函数化。
 
 ## 组合流程
 

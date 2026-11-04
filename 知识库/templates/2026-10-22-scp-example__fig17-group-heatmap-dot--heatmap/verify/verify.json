@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-25T13:37:17.973700+00:00",
+  "timestamp": "2026-11-04T04:20:47.672108+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/spec.json": "5f54594c5c393c27e62c09b03958564a5533ef72fb58fb6a191d6ee14fd375d6",
@@ -17,12 +17,12 @@
   },
   "outputs": {
     "png": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
-    "pdf": "24d784db1380b43b94cd52c7ec14eea2a54aa3f4cc75c4fa2d0a4e236f24d734",
+    "pdf": "e1660a91f43e62356d6e391b2b301ddadceb8df08cb3fb3ab725db5dff46c9d8",
     "svg": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

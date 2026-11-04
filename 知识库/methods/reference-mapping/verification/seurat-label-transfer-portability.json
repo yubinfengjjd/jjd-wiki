@@ -3,8 +3,8 @@
   "kind": "method",
   "implementation": "seurat-label-transfer",
   "state": "passed",
-  "scope": "Isolated copy of the declared closure; new R process; no SCP-local path; required packages only",
-  "closure_hash": "b637161be53f661531d5cacddd819c48b35b40ee3e69b6873419dff9a46ff05f",
+  "scope": "Copied declared closure (code/transfer.R only) executed in a new R process on the public pancreas case; 2026-11-03 rerun reproduced the same result.rds bytes as the original portable run. Output assertions and result comparison passed.",
+  "closure_hash": "4d9bc70a334680e551dd48431c8a210aa2b9b1c06f86d62701efe4854b15df08",
   "files": {
     "code/transfer.R": "e08b3f8db1b24719c486a26f026df417689c3f0235f80812f42029c650e21786"
   },
@@ -14,7 +14,16 @@
   "executed_files": {
     "code/transfer.R": "e08b3f8db1b24719c486a26f026df417689c3f0235f80812f42029c650e21786"
   },
-  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" reference-transfer \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-transfer\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/reference-transfer/result.rds\"",
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/historical_portable_run.R reference-transfer <RUN_ROOT>/module/code <SOURCES>/scp-2026-10-22/data/pancreas_sub.rda <RUN_ROOT>/result.rds",
+  "argv": [
+    "<RSCRIPT>",
+    "--vanilla",
+    "<RUN_ROOT>/historical_portable_run.R",
+    "reference-transfer",
+    "<RUN_ROOT>/module/code",
+    "<SOURCES>/scp-2026-10-22/data/pancreas_sub.rda",
+    "<RUN_ROOT>/result.rds"
+  ],
   "case": {
     "label": "Seurat label transfer",
     "parameters": {
@@ -43,22 +52,36 @@
       "k_weight": 50
     }
   },
-  "isolated_code_dir": "E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-transfer\\code",
-  "fixture": "E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda",
+  "isolated_code_dir": "<RUN_ROOT>/module/code",
+  "fixture": "<SOURCES>/scp-2026-10-22/data/pancreas_sub.rda",
+  "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "manifest_sha256": "6a5eaf8641279b705640a2a3021efd945141a6ba526e22877ce574bb8e5774af",
   "input_sha256": "bd418b3dadc87a2bccfd4e79183458478bf862af3215ebeca731f65c0706c5e0",
   "output_sha256": "02619913d307ecf04438899afa11e00add6bc9094e054b98a31a45fcc1e5e4d3",
   "environment": {
     "R": "4.5.0",
     "platform": "x86_64-w64-mingw32",
     "BPPARAM": "BiocParallel::SerialParam()",
-    "future": "sequential"
+    "future": "sequential",
+    "automatic_installation": false,
+    "key_packages": {
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0"
+    }
   },
   "checks": [
+    "actual_invocation",
+    "input_object_unchanged",
+    "output_assertions",
+    "nonempty_result",
+    "source_and_input_files_unchanged",
+    "one_prediction_per_query",
+    "required_columns",
+    "query_order_preserved",
+    "anchors_reported",
     "Module code copied to an isolated directory without the SCP-local bundle",
-    "New R process, source() only from the copied closure",
-    "No SCP-local path passed; package installation disabled",
-    "Input object unchanged (serialization before/after)",
-    "Actual call returned a result"
+    "No package installation attempted"
   ],
-  "executed_at": "2026-10-23 16:01:58 UTC"
+  "run_evidence": "method-runs/public-r-20261104-ig3shgyk/reference-mapping-seurat-label-transfer-x1dpog7o/execution-audit.json",
+  "executed_at": "2026-11-03T19:02:52.870078+00:00"
 }

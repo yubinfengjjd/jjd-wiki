@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T13:34:42.647658+00:00",
+  "timestamp": "2026-11-04T04:20:45.733391+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json": "da7fab88d4eda1dd34b3c342d6fecba12222684d505ebb08b1dddf034d9845d4",
@@ -18,13 +18,13 @@
     "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/example/style.json": "aa6cc3fa4d8d7cb9a57c59bef09fe991aa0eca526c62dd81d37d7ef3cf333597"
   },
   "outputs": {
-    "png": "915b95878f5455dd5a668ec014c00ac5606aa02ef76aa281bb726d0ce4d14c8e",
-    "pdf": "8c9299a8e7920ae0f0c2e27b6961ef264ad5d0ed71068aa9224070092a6b7869",
-    "svg": "0878e9787c6835ab3ee63759772e09b7022b0628456899e34793e080d6e71d48"
+    "png": "d5ef48e32901821917ebf3fa5cdd9d74db0da0ce77e3d80907ceb11dfc95eda5",
+    "pdf": "dc13533c56e4425540e5ecd5c972bef50d2f7d7291bf1d4a05670d6e701f7a06",
+    "svg": "0a2ecafeb1574674fd73366d630a1fd100e30906492431777646e16b006bf1a5"
   },
   "environment": {
-    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

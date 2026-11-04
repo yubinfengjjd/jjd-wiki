@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-10-22T13:37:39.284851+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json": "d6f5f8f9e059463443e07891222f2f0d4f3692388010d53252159ec3c5b695fe",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/render.R": "ebe66a007345c5951b7ca6bf4a83193fc72eda3f61a096141fb63f9578247981",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/core.R": "af484db9c46cbfbe285c8c0e65f52e3e6747c968b544b8d55eac1eaaa04784e2",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/panel.R": "ac6a6de3dd47964454ad8000536935039807f48b924f302055402ace1af0d067",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-umap-groups#columns": "cf1987a23260380478ab2ab2c122bbe1723a19182d057af1a701a70ca3a34a7f",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/example/estimated_data.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/example/render-umap-groups.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/example/style.json": "2f5685120af86b20f644984f823316f1ef5322a12599ddc6e8fb10ddeac20ea2"
+  },
+  "outputs": {
+    "png": "5380243c150732a92bf59eaae6c73f767557cfcf2fc2a9798b30e36adf848b77",
+    "pdf": "707de434c67460081af9cfe2de3f6a417ebc80d53e5bf97105d2d7ce1867c133",
+    "svg": "9156bb9fd0076baaf764ee332c76d26bcdd19c19d49823b9533d0b9b48f051f0"
+  },
+  "environment": {
+    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
+    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

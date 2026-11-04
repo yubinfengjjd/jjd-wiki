@@ -2,8 +2,8 @@
   "schema_version": 1,
   "implementation": "scp-runseuratmap",
   "state": "not_run",
-  "scope": "Argument 'dim.' must be an integer vector of length two",
-  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" reference-mapping \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\reference-mapping\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/reference-mapping/result.rds\"",
+  "scope": "Public reference reduction 'PCA' carries coordinates but a 0x0 feature-loading matrix; pcaproject requires a fitted reference reduction with feature loadings. The 2026-11-04 input guard emits the precise error instead of the opaque upstream 'dim.' failure (green regression passed; input and parameters unchanged). Author-deferred pending a reference object with valid PCA feature loadings; no refitting or substitute representation.",
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/driver.R <SOURCES>/scp-2026-10-22/data/pancreas_sub.rda <RUN_ROOT>/module",
   "case": {
     "label": "RunSeuratMap projection",
     "parameters": {
@@ -41,22 +41,29 @@
     }
   },
   "checks": [
-    "Observed: Argument 'dim.' must be an integer vector of length two"
+    "Observed: guard regression passed - expected missing-loadings error, input unchanged, parameters unchanged"
   ],
   "environment": {
     "R": "4.5.0",
     "platform": "x86_64-w64-mingw32",
     "BPPARAM": "BiocParallel::SerialParam()",
-    "future": "sequential"
+    "future": "sequential",
+    "automatic_installation": false,
+    "key_packages": {
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0"
+    }
   },
   "files": {
-    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/analysis.R": "cceada1f1afce275c8598ad1e085d2554e0c92567767655c960ec36f782d6285",
     "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066",
     "code/transfer.R": "e08b3f8db1b24719c486a26f026df417689c3f0235f80812f42029c650e21786"
   },
   "executed_files": {
-    "code/analysis.R": "194d6c9ff9b6aff8d2bf2cce503b11be0c03781c80ac8ead230e1fecef501c9e",
+    "code/analysis.R": "cceada1f1afce275c8598ad1e085d2554e0c92567767655c960ec36f782d6285",
     "code/reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066"
   },
-  "not_run_reason": "Argument 'dim.' must be an integer vector of length two"
+  "run_evidence": "method-runs/reference-guard-green-o6cj6atx/guard-test.json",
+  "executed_at": "2026-11-04T12:38:55+00:00",
+  "not_run_reason": "Reference reduction 'PCA' has no feature loadings; author-deferred pending a reference object with valid PCA feature loadings."
 }

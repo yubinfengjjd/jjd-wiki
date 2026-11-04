@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T09:43:08.667951+00:00",
+  "timestamp": "2026-11-04T04:20:45.960364+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig02-ring--ring/spec.json": "6d2428d27a48b8527997b8af9cdbb08448f0fc2bc18de83d6015144992621480",
@@ -9,19 +9,19 @@
     "templates/2026-10-22-scp-example__fig02-ring--ring/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
     "templates/2026-10-22-scp-example__fig02-ring--ring/code/panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
     "templates/2026-10-22-scp-example__fig02-ring--ring/code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
-    "templates/2026-10-22-scp-example__fig02-ring--ring/code/scp_ring_native.R": "0dd96b2b11f62e2103b692a160d5d448f81fe467f64949fc8777f21950ac766a",
+    "templates/2026-10-22-scp-example__fig02-ring--ring/code/scp_ring_native.R": "8418a3d859b30f4a4aea200b20dcec32786079a96a21595772cce439cd92992f",
     "interfaces/render-cell-proportions#columns": "0b4224dc426796ee7350f028c6efcaad60b78c3c629714b3366d08d3a6ca51f1",
     "templates/2026-10-22-scp-example__fig02-ring--ring/example/render-cell-proportions.csv": "2ecebe5a8db5b60d82ad79803aec6f7d021d0670c8a3d64beb40a31fa652d0c6",
     "templates/2026-10-22-scp-example__fig02-ring--ring/example/style.json": "46932a5c3f63eef9513f5877520c67864b327163821d2f7695d7ad057e2dd202"
   },
   "outputs": {
-    "png": "85b3c9b778644b216f17897025591a5e518fe41d95d22ae2d000baf4dda8c56a",
-    "pdf": "ad47b089013136693e38588d5549be58835b2e1107c21640f3deca27e9f991b8",
-    "svg": "59caea60a41ec87bbdb85cca88a6274b96dd8b2c7aa1596ac87b3310fc1fa869"
+    "png": "118a7f5a1c8cc55d7270a028681d2e7874a05a3def568cd1c2be0d4aa15df0ff",
+    "pdf": "c2e7ee24f78ac8bee0fcf59bb366dc55d4f7e75afc9e93ab882a2a9885aee032",
+    "svg": "c9ca20b81fe5a66a94aa9dabc54147122d9ff47729a5b4d295f8fa1da79e9209"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

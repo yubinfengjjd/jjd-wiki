@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-rundoublet",
+  "state": "passed",
+  "scope": "Copied declared closure executed in a new R process on the approved public pancreas case (80 cells, set.seed(11) before the call, dbr 0.01; the unsupported forwarded seed argument was dropped, upstream call expression otherwise unchanged). Output equals direct scDblFinder scores and classes (77 singlet / 3 doublet; scores 0.4008-0.759). Full unmodified SCP fails at its deprecated Seurat API and is not claimed.",
+  "closure_hash": "52c91712569a664053e101c09596c4cc55d935d4e1b0ad59a00217b54743bfc7",
+  "files": {
+    "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
+    "code/doublet_native.R": "b06499321a51b750667df68fe4874496bcb49ae6641a769b6f794c0a1967c71e"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/doublet_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
+    "code/doublet_native.R": "b06499321a51b750667df68fe4874496bcb49ae6641a769b6f794c0a1967c71e"
+  },
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/doublet_seed11_corrected.R <RUN_ROOT>/case.json",
+  "argv": [
+    "<RSCRIPT>",
+    "--vanilla",
+    "<RUN_ROOT>/doublet_seed11_corrected.R",
+    "<RUN_ROOT>/case.json"
+  ],
+  "case": {
+    "label": "doublet scDblFinder",
+    "parameters": {
+      "assay": "RNA",
+      "db_method": "scDblFinder",
+      "db_rate": 0.01
+    },
+    "cells": 80,
+    "seed_before_call": 11
+  },
+  "isolated_code_dir": "<RUN_ROOT>/module",
+  "fixture": "<SOURCES>/scp-2026-10-22/data/pancreas_sub.rda",
+  "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "manifest_sha256": "12ce1f2c0f76a75606740ab61c5951fc0294c6f0698d6a000ebb07d8e2564095",
+  "input_sha256": "bced092bd3e539e785ffc005052182c7b6592e632c23a6aab5f9e5d40fb68b78",
+  "output_sha256": "6ddcbd3f3f1927375d583d3b19338b143e74beb87fc019fe773179d597b7cdb6",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential",
+    "automatic_installation": false,
+    "key_packages": {
+      "scDblFinder": "1.22.0",
+      "SingleCellExperiment": "1.30.1",
+      "SummarizedExperiment": "1.38.1",
+      "scuttle": "1.18.0",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "Matrix": "1.7.3"
+    }
+  },
+  "checks": [
+    "actual_invocation",
+    "input_object_unchanged",
+    "cell_order_and_identifiers_preserved",
+    "metadata_order_preserved",
+    "score_per_cell",
+    "classification_per_cell",
+    "output_assertions",
+    "input_unchanged",
+    "cell_ids_equal",
+    "scores_equal",
+    "classes_equal",
+    "source_input_driver_files_unchanged",
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "No package installation attempted"
+  ],
+  "run_evidence": "method-runs/r-adoption-20261104-xmhg3zoa/doublet-detection/execution-audit.json",
+  "executed_at": "2026-11-04T04:42:01.775064+00:00"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T09:03:45.640008+00:00",
+  "checked_at": "2026-11-04T05:07:04.395320+00:00",
   "page": "templates/2026-10-22-scp-example__fig09-bar--bar.md",
-  "snapshot": "b8dab780ebb2c26df7b311489b83938992ebf1deaf9199d59bfe51ac4a4762ff",
+  "snapshot": "62a72c93ab054ee79c93af1b676ece9d55446f88600c5075afc75bbb8166d1c4",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

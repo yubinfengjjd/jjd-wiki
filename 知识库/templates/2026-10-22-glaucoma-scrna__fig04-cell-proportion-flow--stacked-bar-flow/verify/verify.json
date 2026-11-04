@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-22T13:34:30.236548+00:00",
+  "timestamp": "2026-11-04T04:20:45.624919+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json": "e03057ce3395544afd3e71f64d7c5a18d0d0d721e0e9b7c1bcfb4fc88d8fece4",
@@ -15,13 +15,13 @@
     "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/example/style.json": "57c5f3fea010149038eab0b2376176a1dfd2cd190414edb262854e93d9361c6b"
   },
   "outputs": {
-    "png": "922cd8de4a85faba62a24d2d9a59414fe6c5c94b186c0685170d774a16e106bb",
-    "pdf": "b86be53b75a03cd9f9da335695df589f80ac462e7a9310a6c42afbd77c855b9c",
-    "svg": "62b2e365cbfa1899ed8f4f07f0535bf6f7f616701be1328e083195f220a5cea0"
+    "png": "6a77537360f2fcb4045f6deb117c79ddcd5ea4ff4a6b6f1892154d39d08e8f66",
+    "pdf": "42e3a1a7abee8b3bb4571753e5dc3730fdb52b6514ce7e55632cd6c31f002896",
+    "svg": "8003e87c9f927e3c75cc4954f7bc01d136aeaa44da7b3d42e9415becea227ee7"
   },
   "environment": {
-    "executable": "D:\\R-4.3.1\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

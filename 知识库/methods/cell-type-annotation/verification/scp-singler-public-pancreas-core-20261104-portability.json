@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "scp-singler",
+  "state": "passed",
+  "scope": "Copied declared closure executed in a new R process on the approved public pancreas case (100 query / 300 reference cells, seed 11, SerialParam; 2 cells pruned; score range 0.6890-0.9244). Output equals direct SingleR labels and the unchanged upstream score expression. Full unmodified SCP fails at its deprecated Seurat API and is not claimed.",
+  "closure_hash": "c9dcc40b0218277edb1d0a4286c27ddaa4749a8fbc878eb8b613da0b0b4c1d9f",
+  "files": {
+    "code/analysis.R": "4b22e86b85b6d0f9b31b023347bf86f930b78aebafecb77009aafc970de3f932",
+    "code/annotation_native.R": "fbf0296f1af4cbc054906ab564229d1c9490139a3c569da41e335ceb6f3dad8d"
+  },
+  "copied_files": [
+    "code/analysis.R",
+    "code/annotation_native.R"
+  ],
+  "executed_files": {
+    "code/analysis.R": "4b22e86b85b6d0f9b31b023347bf86f930b78aebafecb77009aafc970de3f932",
+    "code/annotation_native.R": "fbf0296f1af4cbc054906ab564229d1c9490139a3c569da41e335ceb6f3dad8d"
+  },
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/singler_alignment_check.R <RUN_ROOT>/input.rds <RUN_ROOT>/module <RUN_ROOT>",
+  "argv": [
+    "<RSCRIPT>",
+    "--vanilla",
+    "<RUN_ROOT>/singler_alignment_check.R",
+    "<RUN_ROOT>/input.rds",
+    "<RUN_ROOT>/module",
+    "<RUN_ROOT>"
+  ],
+  "case": {
+    "label": "SingleR annotation",
+    "parameters": {
+      "ref_group": "CellType",
+      "query_assay": "RNA",
+      "ref_assay": "RNA",
+      "BPPARAM": "SerialParam"
+    },
+    "query_cells": 100,
+    "reference_cells": 300,
+    "seed": 11
+  },
+  "isolated_code_dir": "<RUN_ROOT>/module",
+  "fixture": "<SOURCES>/scp-2026-10-22/data/pancreas_sub.rda",
+  "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "manifest_sha256": "90e4f4d10f16b475405ae90e4416706b5551f1edb020a4bdbc645b0f73a5ca4e",
+  "input_sha256": "a951f0222562bdea252be32d639b034f33eb93835a4a7a04a24a01708da5c7a3",
+  "output_sha256": "ffc6dae9e04276b33afca26084f803c34253170eed7478e2136ce0ae39f3be79",
+  "environment": {
+    "R": "4.5.0",
+    "platform": "x86_64-w64-mingw32",
+    "BPPARAM": "BiocParallel::SerialParam()",
+    "future": "sequential",
+    "automatic_installation": false,
+    "key_packages": {
+      "SingleR": "2.10.0",
+      "SingleCellExperiment": "1.30.1",
+      "SummarizedExperiment": "1.38.1",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "Matrix": "1.7.3"
+    }
+  },
+  "checks": [
+    "actual_invocation",
+    "input_object_unchanged",
+    "cell_ids_preserved",
+    "metadata_ids_preserved",
+    "labels_equal_direct_SingleR",
+    "scores_equal_unchanged_upstream_expression",
+    "expected_score_names_are_labels",
+    "result_length",
+    "source_input_driver_files_unchanged",
+    "Module code copied to an isolated directory without the SCP-local bundle",
+    "No package installation attempted"
+  ],
+  "run_evidence": "method-runs/r-adoption-20261104-xmhg3zoa/cell-type-annotation/execution-audit.json",
+  "executed_at": "2026-11-04T04:40:42.184491+00:00"
+}

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-27T13:02:32.270841+00:00",
+  "timestamp": "2026-11-04T04:20:47.744751+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/figureya-1survivalcurve-update--km-curve/spec.json": "b30d83a95f141f6b4beff17c8c329ef03695f0f947fd7f6d013ef78b2a3d0339",
@@ -10,13 +10,13 @@
     "templates/figureya-1survivalcurve-update--km-curve/example/survival-time-event-group.csv": "47c2cd9389ee5c7a3e30eee98a233620dcb1e3ee8a873ec6cbfbc1336d19a681"
   },
   "outputs": {
-    "png": "71615ce631b8846a30c1a3c50d6ca2f415c86bca2fc03fb06a81eeaf8ce9c680",
-    "pdf": "e1295b40584657cd48dca5c51dbee618ed391186b60081ad6e74b6466ab896c9",
+    "png": "4f6deb1fc2279714bde27ab6d0f2ec50dc070ed1f2931d3e7f8068885cca145c",
+    "pdf": "6c4ed1185f224ed265d77085d30759d4afe30cebc6ae2c1c7cfee982216047cc",
     "svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

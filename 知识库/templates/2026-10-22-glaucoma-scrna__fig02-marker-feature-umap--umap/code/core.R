@@ -147,8 +147,9 @@ plot_feature_umap_grid <- function(
         legend.key.width = grid::unit(0.22, "cm"),
         plot.background = ggplot2::element_rect(fill = "white", colour = NA),
         panel.background = ggplot2::element_rect(fill = "white", colour = NA),
+        # Reserve canvas space for the coordinate labels outside the panel.
         plot.margin = ggplot2::margin(panel_margin, panel_margin,
-                                      panel_margin, panel_margin)
+                                      panel_margin + 14, panel_margin + 14)
       )
 
     target <- unname(gene_to_group[[gene]])

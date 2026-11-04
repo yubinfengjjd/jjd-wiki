@@ -1,8 +1,9 @@
-# Minimal runtime module extracted verbatim from SCP-local 0.5.6 (GPL (>= 3)).
+# Minimal runtime module extracted from SCP-local 0.5.6 (GPL (>= 3)).
 # Source: https://github.com/zhanghao-njmu/SCP commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0
 # Roots: RunSCVELO
 # Functions: py_to_r_auto, srt_to_adata, adata_to_srt, maxDepth, check_python_element, RunSCVELO, palette_scp, SrtAppend, PrepareEnv, Env_requirements, installed_Python_pkgs, exist_Python_pkgs, env_exist, get_envname, find_conda, conda_install, conda_python, run_Python, check_Python, as_matrix
-# Function bodies are copied from the pinned source without algorithm changes.
+# AnnData conversion explicitly creates the legacy Assay representation assumed
+# by the pinned source; velocity calculations are unchanged.
 # Automatic installation is disabled by the caller. Local resources are loaded only by the caller.
 
 # ---- SCP-analysis.R:5314-5319 : py_to_r_auto ----
@@ -182,7 +183,7 @@ adata_to_srt <- function(adata) {
     colnames(metadata) <- make.names(colnames(metadata))
   }
 
-  srt <- CreateSeuratObject(counts = x, meta.data = metadata)
+  srt <- CreateSeuratObject(counts = CreateAssayObject(counts = x), meta.data = metadata)
 
   if (inherits(adata$layers, "python.builtin.object")) {
     keys <- iterate(adata$layers$keys())

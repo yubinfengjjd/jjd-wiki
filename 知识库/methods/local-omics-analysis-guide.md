@@ -384,7 +384,7 @@ implementations:
   dependencies:
   - numpy
   - scikit-learn
-  verification: verification/py-eval-binary-algorithm-20261102b.json
+  verification: verification/py-eval-binary-public-breast-cancer-20261103-algorithm.json
 - id: py-compute-specificity
   title: 原生模型评价 compute_specificity
   language: Python
@@ -392,7 +392,7 @@ implementations:
   dependencies:
   - numpy
   - scikit-learn
-  verification: verification/py-compute-specificity-algorithm-20261102b.json
+  verification: verification/py-compute-specificity-public-breast-cancer-20261103-algorithm.json
 - id: py-youden-threshold
   title: 原生模型评价 youden_threshold
   language: Python
@@ -400,7 +400,7 @@ implementations:
   dependencies:
   - numpy
   - scikit-learn
-  verification: verification/py-youden-threshold-algorithm-20261102b.json
+  verification: verification/py-youden-threshold-public-breast-cancer-20261103-algorithm.json
 - id: py-bootstrap-ci-auc
   title: 原生模型评价 bootstrap_ci_auc
   language: Python
@@ -408,7 +408,7 @@ implementations:
   dependencies:
   - numpy
   - scikit-learn
-  verification: verification/py-bootstrap-ci-auc-algorithm-20261102b.json
+  verification: verification/py-bootstrap-ci-auc-public-breast-cancer-20261103-algorithm.json
 - id: py-get-proba
   title: 原生模型评价 get_proba
   language: Python
@@ -416,7 +416,7 @@ implementations:
   dependencies:
   - numpy
   - scikit-learn
-  verification: verification/py-get-proba-algorithm-20261102b.json
+  verification: verification/py-get-proba-public-breast-cancer-20261103-algorithm.json
 - id: stacking-cli
   title: 显式文件与阶段的原生模型工作流
   language: Python
@@ -606,6 +606,20 @@ irGSEA、SCP 包本体、CellChat、ConsensusClusterPlus、singscore/AUCell/UCel
 ## 资料确认记录（2026-11-02）
 
 作者在对话中明确授权 agent 代处理当前“待你确认”队列。本轮核对笔记用途、输入边界、知识关联和现有收据后，经正式批量确认入口记录资料审阅。ready 仅表示本技术/流程资料已确认；不会把未运行、缺依赖、未覆盖参数或其他版本变成已验证，也不代表整个课题或科学有效性验收。正文此前带日期的 draft/来源归档说明为当时历史记录，当前资料状态以前置信息和本次验收记录为准。
+
+## 公开数据功能补充验证（2026-11-04）
+
+经独立审查 migration_spec_review 最终 PASS 后，当前五个 Python 评价分支的算法收据指针采用公开乳腺癌软件功能用例。真实 569 例按 seed 11 分层切分为训练 426 例、留出 143 例；仅训练集标准化并拟合 LogisticRegression(max_iter=2000)。保留原标签 0=malignant、1=benign，正类为 benign；留出评价固定阈值 0.5，Youden 只测试训练概率，bootstrap 保留 n_boot=1000、seed=42。五个原始函数 AST、原版数值结果与独立闭包新进程调用一致，输入、模型与代码哈希未变。
+
+该公开用例不替代旧 UC/哮喘私有课题联调，不授予完整 stacking 流程或临床有效性结论；全部旧收据继续保留。runtime.json 保持原字节，因此其默认独立性 evidence.portability 仍指向既有 20261102b 证据。新公开用例的独立性收据作为补充链接如下，不替换或冒用旧默认指针。
+
+- `py-eval-binary`：[公开用例补充独立性收据](local-omics-analysis-guide/verification/py-eval-binary-public-breast-cancer-20261103-portability.json)；[实际原版对照](local-omics-analysis-guide/verification/py-eval-binary-public-breast-cancer-20261103-comparison.json)。
+- `py-compute-specificity`：[公开用例补充独立性收据](local-omics-analysis-guide/verification/py-compute-specificity-public-breast-cancer-20261103-portability.json)；[实际原版对照](local-omics-analysis-guide/verification/py-compute-specificity-public-breast-cancer-20261103-comparison.json)。
+- `py-youden-threshold`：[公开用例补充独立性收据](local-omics-analysis-guide/verification/py-youden-threshold-public-breast-cancer-20261103-portability.json)；[实际原版对照](local-omics-analysis-guide/verification/py-youden-threshold-public-breast-cancer-20261103-comparison.json)。
+- `py-bootstrap-ci-auc`：[公开用例补充独立性收据](local-omics-analysis-guide/verification/py-bootstrap-ci-auc-public-breast-cancer-20261103-portability.json)；[实际原版对照](local-omics-analysis-guide/verification/py-bootstrap-ci-auc-public-breast-cancer-20261103-comparison.json)。
+- `py-get-proba`：[公开用例补充独立性收据](local-omics-analysis-guide/verification/py-get-proba-public-breast-cancer-20261103-portability.json)；[实际原版对照](local-omics-analysis-guide/verification/py-get-proba-public-breast-cancer-20261103-comparison.json)。
+
+该补充验证只覆盖上述具体函数、真实公开输入及记录环境；其余分支状态不因本轮采用而提升。
 
 <!-- user:start -->
 <!-- user:end -->

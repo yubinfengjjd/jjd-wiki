@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-10-23T03:48:52.895377+00:00",
+  "timestamp": "2026-11-04T04:20:46.057805+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig03-pie--pie/spec.json": "fbf571c20d0c09d5bfee016784865b021825d6a4e4ce09501bad9b8a69302ff3",
@@ -15,13 +15,13 @@
     "templates/2026-10-22-scp-example__fig03-pie--pie/example/style.json": "fecb4b4215c8c55ed0a1e991eac69424c0d660ffac526489a147679ccd9537f4"
   },
   "outputs": {
-    "png": "feb14e9357f5630f8d0a06a39f164e33fb8826d202f9697aad8e076c2c39c6b1",
-    "pdf": "ad910d0965e477f4708abe922eb2ce74a9d70d117b0ff88224ca5071d74bd40c",
-    "svg": "282fd76dcc50f30ef4edec7dea30602aa02852730d6cdc4d854de6c05c4d200a"
+    "png": "64440fd79acd01609c9a1f959238b60207609816dd1a3e9409e2fadd95166929",
+    "pdf": "df80e8d67bbdcf8fe6b87b2eb478779ef1798e9b4e936f597a25eb7f4caf83ff",
+    "svg": "466d130ba8aef6f8ecb213952b5bfba17cfb58a0fb735a1ac275f13afc1109c0"
   },
   "environment": {
-    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

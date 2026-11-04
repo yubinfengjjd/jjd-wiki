@@ -2,40 +2,52 @@
   "schema_version": 1,
   "implementation": "scp-scvelo",
   "state": "not_run",
-  "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled",
-  "command": "\"D:/R-4.5.0/bin/x64/Rscript.exe\" --vanilla \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\scripts\\portable_run.R\" rna-velocity \"E:\\research-wiki\\维护记录\\2026-10-23-最小依赖独立模块\\portability\\rna-velocity\\code\" \"E:/research-wiki-env/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"E:/research-wiki/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result.rds\"",
+  "scope": "Actual velocity inference executed 2026-11-04 in the approved isolated NumPy 1.23.5 environment on the public pancreas case (80 cells; finite velocity and variance_velocity assays; cell IDs and order preserved; observed PCA basis used explicitly). Whole-original-SCP algorithm equivalence is not established: only the conversion-boundary repeatability comparison passed.",
+  "command": "<RSCRIPT> --vanilla <RUN_ROOT>/driver.R <RUN_ROOT>/case.json",
   "case": {
     "label": "scVelo",
+    "kind": "recorded_velocity",
     "parameters": {
-      "parameters": {
-        "assay_X": "RNA",
-        "assay_layers": [
-          "spliced",
-          "unspliced"
-        ],
-        "group_by": "CellType",
-        "linear_reduction": "PCA"
-      }
-    }
+      "assay_X": "RNA",
+      "assay_layers": [
+        "spliced",
+        "unspliced"
+      ],
+      "group_by": "CellType",
+      "linear_reduction": "PCA",
+      "basis": "PCA"
+    },
+    "cells": 80,
+    "seed": 11
   },
   "checks": [
-    "Observed: Set RETICULATE_PYTHON to an existing project interpreter; installation disabled"
+    "Observed: execution succeeded with actual finite velocity output; no independent whole-original-SCP comparison"
   ],
   "environment": {
     "R": "4.5.0",
     "platform": "x86_64-w64-mingw32",
-    "BPPARAM": "BiocParallel::SerialParam()",
-    "future": "sequential"
+    "automatic_installation": false,
+    "key_packages": {
+      "reticulate": "1.47.0",
+      "SCP": "0.5.6",
+      "Seurat": "5.6.0",
+      "SeuratObject": "5.4.0",
+      "numpy": "1.23.5",
+      "scvelo": "0.2.5",
+      "scanpy": "1.9.5"
+    }
   },
   "files": {
     "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
-    "code/velocity_native.R": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4",
+    "code/velocity_native.R": "bd919afc80287701e3186326f3550a6d81f09e2b7c13c518a9c0c6fc9ba683e3",
     "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
   },
   "executed_files": {
     "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
-    "code/velocity_native.R": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4",
+    "code/velocity_native.R": "bd919afc80287701e3186326f3550a6d81f09e2b7c13c518a9c0c6fc9ba683e3",
     "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
   },
-  "not_run_reason": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled"
+  "run_evidence": "velocity-runs/rna-velocity-scp-scvelo-mxrz9k4c/execution-audit.json",
+  "executed_at": "2026-11-04T04:42:33.706216+00:00",
+  "not_run_reason": "No independent whole-original-SCP algorithm comparison; full unmodified SCP fails at its deprecated Seurat/reticulate boundaries."
 }
