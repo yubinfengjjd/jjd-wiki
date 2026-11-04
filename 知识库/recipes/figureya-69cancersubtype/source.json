@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa69cancerSubtype",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "CC.pdf": "f9b7b3383a0fc17d2672c2fec99ccea4096be1b9d91ecbe335daae1bef3d909b",
+    "CNMF.pdf": "8b6bada4649849bd4af218bc409af3dd81f98fc9e7be9fe4f8e26925fad48441",
+    "example.png": "d508d6599ca79f5e37191293bc4fe95e003b9f0166e37c7a648eed4c2e556a77",
+    "ExcuteCNMF.R": "422ca0f49bd15301bb72c1afedd89a2c91c33db93852219c720c409156a52f1f",
+    "FigureYa69cancerSubtype.Rmd": "fe9987ac605c866acd47ad5e895dc54976eeda0acbf37337b4d00311bf866381",
+    "GeneExp.txt": "bee5011099dd12e17e1c8ae294d9f873e3d568c7114c8aaaa6cb3a05d0ef998a",
+    "How to get easy input from xena pan-cancer file.Rmd": "3c9e8f825ab2cf2076c4860f5b6b7c266b1ac5b5f5dbc55eea1229af64f29667",
+    "install_dependencies.R": "2bd208c795892396feeb8f91b7d96ab4b11a2c1fafa3b217118098eb183cd3b0",
+    "miRNAExp.txt": "82babb7d5ad8f40a4816605517fff9d0afbe45cd0db7812f2028d0ef50aa14b8",
+    "Molecular_Subtype_CC/consensus001.png": "f3d5e48792e62484cfdc74a7f9c0e68d01331be5b31a2a92bf510d1720ca3ff1",
+    "Molecular_Subtype_CC/consensus002.png": "75b4f871297470b63031874c93350d39547507e821e4c78c0fcdb57b70f75da9",
+    "Molecular_Subtype_CC/consensus003.png": "9d6f7ed2436307d641a1b9915bcc168cca5c10041eb98cdbe4a3534cd5fce31b",
+    "Molecular_Subtype_CC/consensus004.png": "915d1678a324a0ef29da3f602c3ff116ee75f4d5c64dd6d0d10e670893a2e0f0",
+    "Molecular_Subtype_CC/consensus005.png": "5f9a0a52cefad064f5e0d8ecf15440dab0c64833e65e3a9fce99733aead5c240",
+    "Molecular_Subtype_CC/consensus006.png": "c21152ac0b692d3f4c3b436af1caa1f1574457609a5f30ebed2f96cd66da0955",
+    "Molecular_Subtype_CC/consensus007.png": "71123d1ab0f6625c41043c6086e7e57b584e4aa807db36c16eca9fb82013cb41",
+    "Molecular_Subtype_CC/consensus008.png": "7603adb54fb81c55dfabef13bc9084e528f419a1c481ea9796cea07a9988b664",
+    "Molecular_Subtype_SNFCC/consensus001.png": "f3d5e48792e62484cfdc74a7f9c0e68d01331be5b31a2a92bf510d1720ca3ff1",
+    "Molecular_Subtype_SNFCC/consensus002.png": "ea1d49a1ca357b68dc9b42ba32375da482fc75ffb87c3e3febe0228599f1017e",
+    "Molecular_Subtype_SNFCC/consensus003.png": "c2203c476f5d9dd2c39d405228e33e6ca616352b165a527073266660231470a4",
+    "Molecular_Subtype_SNFCC/consensus004.png": "97e821b6208dd558bcde082af41012dc439414807adfe6e774eac41ba7bd7ed7",
+    "Molecular_Subtype_SNFCC/consensus005.png": "2527a1c63fb83017e2502f48e07aa2e390a3225ecdb20b583244d51e90de1997",
+    "Molecular_Subtype_SNFCC/consensus006.png": "a44e74acca9a1ff55c6eb16b95e77559101b41bb4eba90522747324459e64fea",
+    "Molecular_Subtype_SNFCC/consensus007.png": "b9a34267d9238952c6520f033268beb1b7fa95a785677a17aa5072c478ece28f",
+    "Molecular_Subtype_SNFCC/consensus008.png": "544a410aaa63fdc336002d010e96f3eb9d0bf12e20c6ae66e45d7596f71b74fb",
+    "SNFCC.pdf": "e15c8305a3cc6657b83a005f27229026d70cc27cfb5b7616d45a5b9628c6cd97",
+    "survinfo.txt": "e935aa20a240699d04aed5c48692ff2c4736f3b52508e224abeba834083b3bca"
+  },
+  "excluded": [
+    "FigureYa69cancerSubtype.html"
+  ],
+  "copied_at": "2026-11-04T10:01:40+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa112venn",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_1.txt": "ec6de30dc8c9e8a65a46a0e4b047b39b6d0f206030eb2ffcd4676bc022f224d6",
+    "easy_input_2.txt": "af90007df4915491c18d68b46fa4e19a674f10761870185f03998302892c4470",
+    "easy_input_3.txt": "1a0c4dd82c6be021dcf79d674df396d7db0ba981cb80daef6fc013b9e1f825d7",
+    "easy_input_4.txt": "876ec7921f434c0c568e7bce6b10180c5c4f2b872860a3f21906a9dbf63f5500",
+    "example.jpeg": "2017023a6200ab848ce7a2fa0720f4c0808ab916eff00a9fc27c512f1df6dc61",
+    "FigureYa112venn.Rmd": "8925cf878446c76400b92ad23a40175141e3b535f36f425f245cf3659e1360b7",
+    "install.log": "ac937e159031b19d57c5c5d8da50504277cf1102d14f86e831c367cdcc42f876",
+    "install_dependencies.R": "24af978a2e137c0bba98fdbcd7cd125dd6779c5687c385d88ac899ddfef88b47",
+    "plotVenn4d.R": "7080c9b7312c88a65aaed3fe84665a43f220e8cbee2a45fbfc349566d202236f",
+    "venn_num.pdf": "57bb61fae90b6289f490a3898422eb25ee3c4da1eeaef7966f0a889e4e14f361",
+    "venn_percent.pdf": "14a294daea7b8e3ce81263adfba72d8421dd4ab02179950828ff6a8a94ffd8d7",
+    "venn_test.png": "2b34c9eea3987f950499f0ce5a97de8484db0de25c357f4fde9aa18eadc7c668",
+    "venn_test.png.2025-09-20_18-28-32.669115.log": "3f782e5148f18c839432e511580ebec45ccd9296c038afaa2d05e703e439abf6",
+    "venn_test.png.2025-09-22_06-38-59.433276.log": "5b2e3cdda128ad794f7c174d341d10641877f2b03398c81b44fb645cc9499ded",
+    "venn_test.png.2025-09-22_12-22-59.761637.log": "bfc6708e0fbfaba4f2d0e60fc34b7801e6dbaeaa96386d4540381bb8c3ec9687"
+  },
+  "excluded": [
+    "FigureYa112venn.html"
+  ],
+  "copied_at": "2026-11-04T10:01:04+00:00"
+}

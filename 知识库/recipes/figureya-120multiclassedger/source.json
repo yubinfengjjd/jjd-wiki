@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa120MulticlassedgeR",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_counts.txt": "d59ae0a8007c217816f17ea8ac93ab5349a3e636cd1f77353709f08c8a4e52c6",
+    "easy_input_subtype.txt": "6f5872359fe1bbfd540e55428033cee622e103181c8cdf54d21a36a52d07f565",
+    "FigureYa120MulticlassedgeR.Rmd": "74849199619dfc96acc6c1fb92431f0827504ec637caf64a4c23306cfb820be7",
+    "install.log": "f849fd3854b95a1f77051afc7e91211ee5694d901df306ffaf0afe05f54a5e94",
+    "install_dependencies.R": "30befd394ff5417ab777c93e66ffb4d9aecd1d2a937c6d358718dcd6cf374633",
+    "SKCM_edgeR_test_result.immune_vs_Others.txt": "8de5cdcf319d55c7852ca27f8d6c42e9208753217ef63386d33cd7cc1ebbfb8c",
+    "SKCM_edgeR_test_result.keratin_vs_Others.txt": "f03f60793130e8a885c8d0e3da6c43a647689b5da22036ad42f919dc8fc096a2",
+    "SKCM_edgeR_test_result.MITF-low_vs_Others.txt": "6beecf38a40092a14e031062ed7ad356539f269fb3f0dae8e26c7461f8e66010"
+  },
+  "excluded": [
+    "FigureYa120MulticlassedgeR.html"
+  ],
+  "copied_at": "2026-11-04T10:01:06+00:00"
+}

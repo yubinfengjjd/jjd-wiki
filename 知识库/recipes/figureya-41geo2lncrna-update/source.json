@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa41GEO2lncRNA_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "0092133b7fd32c1e2548646838112d118bbadc6cfcfb1cb175c53b036f0bfbd6",
+    "FigureYa41GEO2lncRNA_update.jpg": "68424c44316fd7cec24f28735984f8b3986e66f446f25f23e81f747760aefba7",
+    "FigureYa41GEO2lncRNA_update.Rmd": "2d566f525c71ca60d17a9735a02b915c1dc05fef5a97752cfb266f58ed81d496",
+    "gene_biotype.csv": "9da2403ee7435e28311be5aeb27eb5455ff5215ab3ee0b23b9de2d045a5fe22d",
+    "install.log": "6e13b50a0d36afbffc594cd0b1d6a81b1f86acf3c94efb83ebc98910f95266e1",
+    "install_dependencies.R": "427cf863fd3df126c30e2fd480164df4a4f7bf6f40b0f8193da6348ccf0d9a44",
+    "lncRNA.list.txt": "129053bf7533939ea9d77697be525d7425dcf385d0a879944735b4a80f6a064b",
+    "lncRNA_expr.csv": "4d80ed6a51f8b89d3c3c73f2d9aad4cff8aa65ac20a018743b408b4bf71784c2",
+    "miRNA.list.txt": "666cd354d4e81919167f0a5f77cd92ad5b5b8572b7a74b55a736e3a7a7047d64",
+    "miRNA_expr.csv": "693b900c8b177500a2dabc2013a1aabba2983534a9ca90c458f4702680fe4635",
+    "mRNA.list.txt": "23f0d75e6aa10c4d30f02a3a11fed3caacf7abe85edb5d137e9bfd2c0c60b00c",
+    "mRNA_expr.csv": "f60817795e4de9827918b48fcc335de989da0c65a5da577f06e9718e42aaf953"
+  },
+  "excluded": [
+    "FigureYa41GEO2lncRNA_update.html"
+  ],
+  "copied_at": "2026-11-04T10:01:31+00:00"
+}

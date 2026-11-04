@@ -1249,3 +1249,5 @@
 ## [2026-11-04 09:50 UTC] promote figureya: figureya-10chromosomev2-update, figureya-118multiclassdeseq2, figureya-139tmb-titv, figureya-14circos, figureya-194pyscenic, figureya-203combat, figureya-215dnaage, figureya-231scscore, figureya-255time, figureya-294hccdrug, figureya-308ihs, figureya-320clontypeheatmap, figureya-38
 
 ## [2026-11-04 10:00 UTC] promote figureya: figureya-110mutationsignature, figureya-119multiclasslimma, figureya-142circosbar, figureya-151pathifier, figureya-195panpaire, figureya-204pcascore, figureya-219gmm, figureya-239st-pdac, figureya-26circos-r, figureya-2ggtree-pheatmap-msa, figureya-310cpdbchordgramv2, figureya-323s
+
+## [2026-11-04 10:12 UTC] promote figureya: figureya-112venn, figureya-120multiclassedger, figureya-147plus-string, figureya-163twovarcor-update, figureya-199crosslink, figureya-206scheatmap, figureya-21tcga2table, figureya-23count2tpm, figureya-275scaucell, figureya-300pancancor, figureya-311pam50heatmap, figureya-32id-tabl

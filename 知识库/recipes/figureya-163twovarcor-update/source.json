@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa163twoVarCor_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "aa79d9d11657c5fb04d5c86a78e306317ef777b385fd77cd904d8af5b64a54d1",
+    "example.png": "c1476d9a830f9373346c44bd4d3836dd68fd67e202a84949d817eb763f2e70d8",
+    "FigureYa163twoVarCor_update.Rmd": "17cf78be1944b91eb60bb2751335a6c1df620233c58177faabc603a381a670f2",
+    "method.jpg": "f78d65119328b3ce24e5b4bce5b77720c8b0672d6e5b13ae415540818c1713e2",
+    "Readme.png": "0b7a40b6de80e26c22d6fef75784181770cdbbc7a0e3c04ff56a9bbc76d913ca",
+    "TwoVarCor.pdf": "fd5416f1b4f2e1a5d4181fd3f6bd37f3c54bf32fc0c56023c6439e7203abb175"
+  },
+  "excluded": [
+    "FigureYa163twoVarCor_update.html"
+  ],
+  "copied_at": "2026-11-04T10:01:10+00:00"
+}

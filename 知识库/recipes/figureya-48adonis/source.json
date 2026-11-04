@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa48Adonis",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "adonis_barplot.pdf": "e51db8d346f9903d8817637111af66825b22b9a499a9ed6c80461576410e79ae",
+    "easy_input_factor.group.txt": "cb44c10dcf6afe7f3044c796ecff9cc2421636fe4904fd5d0a6ee49503f830c1",
+    "easy_input_factors.txt": "cbc61357666fe9aaeef57769231a7307ea742b6414efc407cc18139e2d6b0468",
+    "easy_input_meta.txt": "cd2176a055ed6e866658413e8dfdb30c3c372a4d57b3f3617b93a16a234bd7b7",
+    "FigureYa48Adonis.jpg": "55be64753bfe87e388ab318ce55d5274eadc716f831ff17dd5299aff360299c6",
+    "FigureYa48Adonis.Rmd": "78caf29d48110c44648beb41b8b1c430bbf54c88f8c86004dedaa2820e7034c9",
+    "install.log": "ee8028fa1a7fc869fcaee560326ce054c96ef99a349b14134e082a790ed68439",
+    "install_dependencies.R": "852bf10d52fb2aeebb38f9f6cc217cf8f11fea8538ca0d34853314c0f5dcafd2",
+    "output_Adonis.csv": "5e9fa36eb12cea9e41dea3d40d2c3aa84b5a132b18c11192e5a333980f7bb343"
+  },
+  "excluded": [
+    "FigureYa48Adonis.html"
+  ],
+  "copied_at": "2026-11-04T10:01:33+00:00"
+}

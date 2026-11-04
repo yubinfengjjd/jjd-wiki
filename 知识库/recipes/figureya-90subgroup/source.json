@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa90subgroup",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "0ef09c72c3b815367b62322d1f8ae02682ff1b847b2b825511ea9483ee740366",
+    "example.png": "a563a01c440697c3c23a2be231e78d204c269cf44a684f0b6ae3a6db83a65bd1",
+    "FigureYa90subgroup.Rmd": "4dd280f170e22ee9e46eb4acfac641053ce127eca4d3b167bcfd45a829474799",
+    "function_subgroup_survival_analysis.R": "295bd40450d00cda66c1232305fdabdd6a2888c26ae9c7ee8a7c12baef997416",
+    "install.log": "a79492fef0d7ac8968c3341fc0299c21799561b198a1fa93f81caf1f13814e70",
+    "install_dependencies.R": "00924fab413c1537de34508d091b7aada0a41a25f46fe8f32caa358db79b6d44",
+    "subgroup.csv": "6730c5b07fd2d0b958e09c1449bb379acaf0081c7aedc69dd222f57751509006",
+    "subgroup.pdf": "bd87c6c4686c76befcf662970bba7e821cae728e2beacb126f97a983080a624a"
+  },
+  "excluded": [
+    "FigureYa90subgroup.html"
+  ],
+  "copied_at": "2026-11-04T10:01:45+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa32ID_table",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.txt": "a5074a7ab5888b49e3d17b0ee661a60f9d4e4c33d9d39805628273a5c196a935",
+    "FigureYa32ID_table.jpg": "e3f39a4ba79faf98c792cd8bdf878f02d7b5e383b4366f6bf01c2bf056ce6685",
+    "FigureYa32ID_table.Rmd": "c9591d6162494d531248aa87f7bc04cea6895d3aca07f2df854e5f3edf52760b",
+    "guozixueshengxin.jpeg": "469f61ae846b735cd4a41c6bf862967e699ba0c6c35dc693da71a790680312cf",
+    "install.log": "982c0986a966baa0ec544588ff902a382d446a07d5aa1ac33eb995db45e38ddb",
+    "install_dependencies.R": "e48130ae7780c2b810fe873abd7e41e845e19256fe1a6bf3daf0c6bb526cad68",
+    "not_easy_input_expr.txt": "18ed7b39534eb05ebfb4a70ab327fc90a78184589ccff868493d9ba5d0c08017",
+    "not_easy_input_GO.txt": "7fe6f0d084ed4eb1906e32f99de3545fe1c34bec3b2bbf14808c8a79dcf03eec"
+  },
+  "excluded": [
+    "FigureYa32ID_table.html"
+  ],
+  "copied_at": "2026-11-04T10:01:29+00:00"
+}

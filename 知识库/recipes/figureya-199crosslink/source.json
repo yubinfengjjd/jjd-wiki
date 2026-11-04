@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa199crosslink",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "crosslink.R": "14d25cc8c72f770fd9debb4c4f64b709f8ad2c6cf30524284f224ed6e79460a3",
+    "crosslink_file.pdf": "b570b97000f9a84b00e8a2083be1b8e728bbb4219abba4a527afd66c33e745bf",
+    "crosslink_multiCol.pdf": "4df0ca2113478c8cbcff655eeb943ae3603f7509d379d64308d8c3171bc43196",
+    "crosslink_par.pdf": "0147f71824d8473c6f3be20857226428768c0e0737c2b30275de6cf091f64cd4",
+    "crosslinks-master.tar.gz": "3fe1da81758c83b414642e94c17830825154ba9fb12fe63f28c4585ab3aa2585",
+    "crossplot.R": "a3e10648209a6c97991a54a97f33b78dc287a48dfc7cbacb4c76ef958621d09c",
+    "easy_input2_edges.csv": "48c73de607d8131c7502480c956563eebf1aa9ecffd47c1285853b04354e1692",
+    "easy_input2_nodes.csv": "4e32c63069706180398fc278aa3279ba37d90dfad5deacb8db3c9fd5e45538df",
+    "easy_input_edges.csv": "15b7a1d82c9300ff134b4769e24d2f9e5a6f63f7c517f802676361f097e60b46",
+    "easy_input_nodes.csv": "63fa8d1bfbaf6761155e96b588daa2c9be7a67a6c13748bb2e059c2a89229f47",
+    "example1.png": "d826d09e543b9bc429342cf6bf9d5332d83a313e495796e4e5c6f483ee86cde7",
+    "example2.png": "ac1a522f5ea94ef7636c63dafbed4a8eaa25520c86fa19504a2152df00eea6d7",
+    "explain picture.png": "b06af163c0244b922fa9b9169d83ed2e30a2e041313421f5dbee29a2bd371ec0",
+    "FigureYa199crosslink.Rmd": "edf7ef08ca75c31d6aca09649f6d11610dd22a85a7473c118f271638c6209fb4",
+    "install.log": "5f4ef3afcfd29c1601bf2b250ad69e31ab2709283241943eaf0df4e6585400fd",
+    "install_dependencies.R": "48d37abb18547c95c6a1ebe1a44b6c91a83f419368a02cd84f302ebfae916025",
+    "layout.R": "e3103e211619c9c4dff3fcfb3f000318d79f0432439bc7d97be594589e5f3456",
+    "points-symbols.png": "5f2911b89e374c95c679f6070848458e5b9274643ff79c4a0cd3b97c2740fa81",
+    "transfromation.R": "d9aecce6b533388c0d859e068fbae91f3f0d012004c62ae3652b122f3f56a1ce",
+    "utils.R": "2602f09b5fe2ac5a6b742f79535392215d67ff2374f8e2a4dc19020957d9cb9a"
+  },
+  "excluded": [
+    "FigureYa199crosslink.html"
+  ],
+  "copied_at": "2026-11-04T10:01:13+00:00"
+}

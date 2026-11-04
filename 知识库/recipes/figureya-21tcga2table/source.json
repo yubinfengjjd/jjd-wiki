@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa21TCGA2table",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "0758e7d38f366cccff5d4f0b3255d1f61d9e2d6365431077ce6661a98c2b2b70",
+    "example.png": "b9b9287aae000ffb3ae5040762bbad03bf60a9d64257de1166763854d03bfc6e",
+    "FigureYa21TCGA2table.jpg": "e26ef53f94cc92682674e70b5637c3d3b99dfdc82a5d85502ca9c4f2a783a409",
+    "FigureYa21TCGA2table.Rmd": "615be1c6d00d8a2c8a85f2e19cca802a303a60e6388d386b1b300ec96ab19b1b",
+    "FigureYa21TCGA2table_latex.pdf": "35b0e69844678d0d7381407c27494de5e53787a6203e1eec839fb516959b48cb",
+    "FigureYa21TCGA2table_latex.Rmd": "b76b4728f4d8ecdacbb7560dbf389ffd58391f555f3d69186e76d5137be8aecf",
+    "FigureYa21TCGA2table_latex.tex": "2bf52fcec6370d618a029c7bb58c66958c65187c6f46853530e0cfae7568a901",
+    "install.log": "cceee48c544373bab3b462089a262276b4e84c1304183fdd327af5b54e2f466c",
+    "install_dependencies.R": "63f0d2c86c2f2bfbbbbd6a98dcfd66066d30d8f448c241390ef575868cdf4378"
+  },
+  "excluded": [
+    "FigureYa21TCGA2table.html"
+  ],
+  "copied_at": "2026-11-04T10:01:17+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa311PAM50Heatmap",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "data_mrna_seq_fpkm_polya.txt.zip": "57e36a35ec0225b0dc7b4599967caaa0c2e320f02b6dd3c4fe87e6203993eb6c",
+    "easyinput_clin.txt": "87f029148e01ed2b2c958c3df18f75de118703c2ea475d673841d53ab01abaa7",
+    "easyinput_signature.txt": "3ea0caad6b88eae38539099cf3e5de5b0b2bfb0d9d531d0348e96a722ef99ca4",
+    "example.png": "843bb4081ef930c90e167723f3259aaf38bf9e01d2270eeaa5aa3eb62c6aa32d",
+    "explain_picture.png": "0c3e06a7b59af1951e5ed231a3df67265101a55f842e8fb90af8744a52918647",
+    "FigureYa311PAM50Heatmap.Rmd": "57f4671cf85537246bdef31cca8fcd9fd7e33eb732bfacb0216b6fba0a1e9dec",
+    "install.log": "748ecafa81cbd85bf77cdd648a19d6c843fc96ce0104c14a40ef199ef09ee320",
+    "install_dependencies.R": "e141eb7d0d9b4f98da6e888591784e48e3bea1c198069b87dbc6a45198811bfe",
+    "logFC.PAM50Heatmap.pdf": "36ff9753f1a93b62210d11d44a5b2abd83eac7c495523959ab37ef38745c313f"
+  },
+  "excluded": [
+    "FigureYa311PAM50Heatmap.html"
+  ],
+  "copied_at": "2026-11-04T10:01:26+00:00"
+}
