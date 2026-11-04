@@ -1231,3 +1231,5 @@
 ## [2026-11-04 06:32 UTC] verify 2026-10-22-scp-example__fig05-trend--trend
 
 ## [2026-11-04 06:37 UTC] verify 2026-10-22-scp-example__fig06-area--area
+
+## [2026-11-04 06:41 UTC] verify 2026-10-22-scp-example__fig09-bar--bar

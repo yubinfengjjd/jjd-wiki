@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-04T04:20:46.742300+00:00",
+  "timestamp": "2026-11-04T06:37:19.250253+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/2026-10-22-scp-example__fig09-bar--bar/spec.json": "ec00fe01e1a94d73474694fe754392804f9bc49b0cc86ae7a1c5420f8495621e",
@@ -16,11 +16,11 @@
   },
   "outputs": {
     "png": "08040c043df3f4cc43aeea4d1fed0a062224882333698e6375cec3cbef7dd2ca",
-    "pdf": "a0dadb8f70b15817248fdf7b42a63e4af9c8f0b4d71c6209c537e231892328ee",
+    "pdf": "b33211dff627f904f6041a51ac5493219a282d6f06c50efac887e15cbf416467",
     "svg": "5f0c1eaf4582d03b8cad27d28b74aa0594e89d2c3416c442eb7a7e21df5cc491"
   },
   "environment": {
-    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "executable": "D:\\Users\\admin\\GitHub\\research-wiki-env\\R-4.5.0\\bin\\x64\\Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

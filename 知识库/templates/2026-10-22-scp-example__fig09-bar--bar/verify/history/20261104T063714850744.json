@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-04T04:20:46.742300+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/2026-10-22-scp-example__fig09-bar--bar/spec.json": "ec00fe01e1a94d73474694fe754392804f9bc49b0cc86ae7a1c5420f8495621e",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/code/render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/code/core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/code/panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/code/scp_bar_native.R": "cc9a5d7cb6ca99f3ee5481522c5677b9de7f1caa5a93bd1772a312a50db62783",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "interfaces/render-cell-metadata#columns": "6c36940f9fd803665034ea8ae0ebc94f0d4af5d4b48819883ed1e7a610cdfc6c",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/example/render-cell-metadata.csv": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+    "templates/2026-10-22-scp-example__fig09-bar--bar/example/style.json": "7ed8130799c95cdf9d811c1af099ade92f262f252fa80c0927235fec0dca9792"
+  },
+  "outputs": {
+    "png": "08040c043df3f4cc43aeea4d1fed0a062224882333698e6375cec3cbef7dd2ca",
+    "pdf": "a0dadb8f70b15817248fdf7b42a63e4af9c8f0b4d71c6209c537e231892328ee",
+    "svg": "5f0c1eaf4582d03b8cad27d28b74aa0594e89d2c3416c442eb7a7e21df5cc491"
+  },
+  "environment": {
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
