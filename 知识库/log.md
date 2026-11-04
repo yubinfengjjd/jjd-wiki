@@ -1199,3 +1199,5 @@
 ## [2026-11-04 05:17 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
 
 ## [2026-11-04 05:21 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-11-04 05:26 UTC] acceptance check 2026-10-22-scp-example__fig05-trend--trend
