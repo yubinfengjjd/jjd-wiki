@@ -1207,3 +1207,5 @@
 ## [2026-11-04 05:35 UTC] acceptance check 2026-10-22-scp-example__fig09-bar--bar
 
 ## [2026-11-04 05:39 UTC] acceptance check local-omics-analysis-guide
+
+## [2026-11-04 05:44 UTC] acceptance check local-omics-visualization-guide

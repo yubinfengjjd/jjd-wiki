@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.373236+00:00",
+  "checked_at": "2026-11-04T05:39:40.959381+00:00",
   "page": "methods/local-omics-visualization-guide.md",
-  "snapshot": "49e3e106d5efa5b87c6c6335d70aba61043bf262ac158002de58c4956dbda9fd",
+  "snapshot": "e3fc29e00278da772fa8a9743cb56e8d166ef1ff78097a745ff45e80202b6f44",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
