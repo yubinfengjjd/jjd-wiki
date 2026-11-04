@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa43ManhattanV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "0c66329000a47dc4404047f1b9db09542b99019d8a22d6f52e091721ffd40637",
+    "example.png": "4079eca3a21677e310db83aedfd06d1f910f5da7a33308f40937e37238d71689",
+    "FigureYa43ManhattanV2.jpg": "5cb23d62c4c65c416bbee82f26c9374b08d5eaeb8caa9bf41cc05f7af4c71506",
+    "FigureYa43ManhattanV2.Rmd": "09b26cf9e8bf50539e66964608c7480eaf4e5a480fa06e403fda04f13e52818c",
+    "install.log": "a1cfe407272c7f146ee6883955b2ff285e504e9e7fe53799e3dd0fd3dbc49351",
+    "install_dependencies.R": "ae91db66e454cda95aa23be64dbc5ec00f9241ecc1475db8eea54b8ff28d6a1a",
+    "Karyotype.txt": "4eb6f9c6e7f207b0d3f29c002987c5c6fcc1ca89d0c83c147c5042c0afeac620",
+    "Manhattan.pdf": "246aa330150d80b3241030fda7bb8d1fa882fc5b02c3c81bcfbd62b7b13bbd84"
+  },
+  "excluded": [
+    "FigureYa43ManhattanV2.html"
+  ],
+  "copied_at": "2026-11-04T10:41:57+00:00"
+}

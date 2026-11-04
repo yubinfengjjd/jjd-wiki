@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa65SVM",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "A_lasso.pdf": "e82ce976f090174b50048a1afc7f9edca1d9c6009fef333eac4de9c4e52450c6",
+    "B_svm-accuracy.pdf": "51cefce2416eac04725f1cdf5779a72463f8a8eb8c8508bda9962b0c926220ad",
+    "B_svm-error.pdf": "23cfa42789415719210d153d71cef2ceb9088d8c2e43b552d6ee35c86a18a3db",
+    "C_lasso_SVM_venn.pdf": "d7a88fa714d110b46449e4d79e5abe5ee4bf96ed72d47a0451812c5478ce222f",
+    "easy_input.csv": "a23667e4405001591e68c96adeec4aa9cc55befd704ba3369e54895257269567",
+    "example.png": "b77ded663c2d988f71fa869b60fa7af754dce150c746f3e6450ad5cfd354103f",
+    "example_lasso.txt": "8f0fb6b9e76ea9e1e250e20efd546f539b2f67357a26ba9573c3162bf474987a",
+    "example_overlap.txt": "8a488a2dbfd44d35cf371db5ce33a51233b0af07135e2030f2491a724defbf3c",
+    "example_SVM-RFE.txt": "4a0e0426ef79002876caa1ad0d3ee292d2a0c8e24068343b3eee79473122b6eb",
+    "featsweep.RData": "8fdcd9e63c8cf6e1a82a50c1a8b431066215afbbf780f1ca237e05b136e370c1",
+    "feature_lasso.csv": "577b8de5c9655412f95834717f5483ca80149b32ff38187e780723ce9b46140e",
+    "feature_svm.csv": "d95256be8244ad790673b8ba3eb4b5ee24f2e48e026150a33f6c08fa375b8e49",
+    "FigureYa65SVM-1.jpg": "1181caa202288faebe32dae42b2ca2cab097117124da9309898ec0c817e67dc5",
+    "FigureYa65SVM-2.jpg": "dc377fe91a8bc1b472c81412b7f2334665bb3a18ef47df0f102e73e6dcad5575",
+    "FigureYa65SVM.Rmd": "d80cf8bb98f9b2c93f11bbfd0d17c7b4429b85cb026da5b321def2f6c3843e4c",
+    "HowToGetEasyInput.R": "a1aefc2e6c8cba629e4a424a33c4a81edb15d0ff1f81e818d4f0a289e4704905",
+    "install.log": "1acf70f975d42e05b0140c4e8693c379fd08c698ddf8f1ccbd0b876d79080912",
+    "install_dependencies.R": "04d9aa2a61012a9ea3b67978a46fecc9118eb26f2d59ff4fc520858721056823",
+    "Lasso-SVM-REF-algorithm-Feature selection.R": "2ab6d302dae0c70583674c411a27f6b3a6cac459bfb3247c51be2a77f171d6dc",
+    "lasso_SVM_venn.pdf": "a4ed3d6747f2cbdf36d1ac33e9ef75789e8bf91497ef687896dbeeee3809dd34",
+    "msvmRFE.R": "5af12039ec283b381d7ed0e3e595af3e4454211c1d8a28dcaa5807dde1787063",
+    "VennDiagram.2025-09-20_18-02-43.770838.log": "a849e28a577312aaeeab8095e98c5880e9c19f55594f9c584fbc21e35207b87f",
+    "VennDiagram.2025-09-22_06-13-40.59918.log": "061fb5045469ee65cfa66a15ce1f20ecf338e156403c08119e5699d93f172ec0",
+    "VennDiagram.2025-09-22_11-57-49.891944.log": "132dfb3f9350eb4e59400877bda8129ab418483bcbf188ad21e8eb3681f09cad",
+    "VennDiagram2019-01-07_00-02-03.log": "210e6e6524604ed09b5d1a7c2626cafe5727a779f82ad9ff9969af231494d8bb",
+    "VennDiagram2019-01-07_00-03-56.log": "551d907a36b32f1ba77d3afa8cd117d6902d5468d62555930109d11124ec090c",
+    "VennDiagram2019-01-07_00-08-49.log": "eb3f341682279e955f29c6f59c0f69508c16ed0e4f2d27627ea1c099133dd680",
+    "VennDiagram2019-01-07_00-10-41.log": "47aca975332b28eba165e1c32c99b2cb97c7398bede0ed6f7b58208dbcdde688"
+  },
+  "excluded": [
+    "FigureYa65SVM.html"
+  ],
+  "copied_at": "2026-11-04T10:42:09+00:00"
+}

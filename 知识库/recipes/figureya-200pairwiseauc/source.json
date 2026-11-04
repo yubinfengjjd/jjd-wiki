@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa200pairwiseAUC",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "combined pairwise auc.pdf": "90b17c39b0b9ca5c3d5ee129fdb577453e54309d378921fd24fa7c88009e5c17",
+    "differential expressed gene.txt": "2cc20715c412011de65c143649cf390f3f6ea19e2f76784c4d96b6ecfeff90a8",
+    "example.png": "d579509328e197b8a4486d62921a7f016bac8d2f4d5edb5b785cc7cef62b4cb1",
+    "explain picture.png": "8982aa19ea7388b0b0b0fcd80a56af0b656d94f0f06d7a3e77efdc97bb767ae3",
+    "FigureYa200pairwiseAUC.Rmd": "745930fc0c7ee167b8d162c4ab61c679c0730387dd6282cb59bb10fb59213a00",
+    "GSE10186.expr.txt": "dd20fc1d80ed95da3092518abc770ecae4303d102f12e2e6b7b7abdc318d3c78",
+    "GSE10186.sinfo.txt": "c83fce28d34b39a4b4e6501b51f6ba5988f879055d2334b44737c59ae7837dea",
+    "GSE364.expr.txt": "0ff3e67e4121d8e7994efb1f2524781ed8110fc7f6f9fe70f2879dc91c4e98bf",
+    "GSE364.sinfo.txt": "383e7c3a0931849cf4fda6e79c83ef9ad6ec3697e8d54e153211ae0a4c14758e",
+    "heatmap.pdf": "a6b3f2d2d73fb351e00be491621e1bd2df577401ea89cf01c781a86a7fe62324",
+    "install.log": "f99cae33d33f10a3fda92b77d894d8aede2f41501522172afb1279068d2c4cb3",
+    "install_dependencies.R": "077171c75086ce970f2b5aa9fa4f2b4d2240c45b4accbab307329efdde494b87",
+    "LIHC.expr.txt": "3c9b22014ea022bbd368641686428f0d772fcbbdbf4de5a6a9e621a64554cd30",
+    "LIHC.sinfo.txt": "38148896905b580c6bd4f171cd072376410634d84b5142e81d31234849b8dd34"
+  },
+  "excluded": [
+    "FigureYa200pairwiseAUC.html"
+  ],
+  "copied_at": "2026-11-04T10:41:24+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa114ternaryCluster",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.csv": "5d998874eeb0d2128dac4dc0c656e3b1da684ef747b16a6fce061b74d1acbe03",
+    "easy_input_signatures.csv": "20eb55097fc93025a80103199eda99e633169405203966e2d83ee6b5149c1bbb",
+    "example.png": "00a9481a9c12ea26928e89fd367f253ac0e0f3a5388df3541d4f462a3ed77fc1",
+    "FigureYa114ternaryCluster.Rmd": "9fbe437d05c197b29f960ad17de0412322b3332d4f4ede30fb36c9351e7e27b0",
+    "Heatmap_TernaryCluster.pdf": "fc8bf66a1041aeb334b4ee7daa63bc0336eab89ad634725894afad57c90fda15",
+    "install.log": "22ab24b7487988f02beb66d93bfef74f47b51ffccc0b62169040365c1c90be98",
+    "install_dependencies.R": "b0f055e062f030c8f55d1b65b4b64989af865d1f1dd8ab0050ef1bcc2c0d96a5",
+    "Ternary.csv": "b3c333a70f0a79d915d3ea7e19a18271dc41493380c5df01b97a166f46abce06"
+  },
+  "excluded": [
+    "FigureYa114ternaryCluster.html"
+  ],
+  "copied_at": "2026-11-04T10:41:09+00:00"
+}

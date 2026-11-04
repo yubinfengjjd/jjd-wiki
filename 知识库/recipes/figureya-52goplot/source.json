@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa52GOplot",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "clusterProfiler_circle.pdf": "7bfd52e7ee20a7ebe581ac4d2d5d99770203b3e8cc3bc037f7f8fa03ed83dfd7",
+    "clusterProfiler_not_circle.pdf": "5ca6eb82786e0c020d4ab2f697099f975a866b6e66e7e69414c437e434863cb4",
+    "easy_input_Mm.csv": "15048110e318e2896d6d020a7c4cb5d2a366cf2b0c12f7ee9335fcf98d5ee2ac",
+    "easy_input_Zm.csv": "2d2d1b6952ce69259ad95547d05cd392f25e766e1155af4e4074a644df030618",
+    "enrichGO_output.csv": "2bf7fc3c38d8d90fcdbb88d22f93ad5dd64632f65c3f70ea0e87f3759e2f074d",
+    "example.png": "56b0af7bab6c818c0632160b6f007130fbd3296649a520d3b4d8472cf0d4106a",
+    "FigureYa52GOplot.Rmd": "e512b308aeae660701cf502461b94793ada26ddbfdc55ceb09125e1bef3071ae",
+    "GOChord.pdf": "612ccc9bd123db4046d2871a2ecb1a1009fe8ddaaea15a8b8ed6fd7ec11ca512",
+    "GOCluster.pdf": "44fff62f6f9ca1bc4aaf10deb25b1b4eddb3412682812e8d4b8e15fc9f868fe5",
+    "install.log": "e344da6ebe0a745db3297704f1d163966cdb1194d84c0cd3034d379f6585a2d4",
+    "install_dependencies.R": "8177f87b94e188558bb46159d9b6086fcaba7681e0d284aa51e7f41d1bfedbc5",
+    "very_easy_input_Mm.csv": "82a636de78aaaef2a8520495198d9344c4d86c1aaad3fefda5510d2b4890115c",
+    "very_easy_input_Zm.csv": "f2b4a26f9f35aab95c73592a5b3ad8ebfb378876f95b81a068b112fce838ef8d"
+  },
+  "excluded": [
+    "FigureYa52GOplot.html"
+  ],
+  "copied_at": "2026-11-04T10:42:01+00:00"
+}

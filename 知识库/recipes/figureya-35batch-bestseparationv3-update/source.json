@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa35batch_bestSeparationV3_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "AKAP12 event.pdf": "96631af2d183c706e66c6e299ed79648e15a3625d3859aaad35e9036c11d0661",
+    "AKAP12.pdf": "cdb00537309fcd3d6a78a93acbcf980946e91ceaf4c5ce4ab0294c9c1cf3037f",
+    "ANKRD33B event.pdf": "1bce8a9a07a978fb95001e7ec5dac35fbac0c7eaf37fe1b6a4845285aef55f97",
+    "ANKRD33B.pdf": "cad3c873536d3f2bd833da3dbe99022ef4f610be317aba00a4568caecbeafea8",
+    "bestSurvPlot.pdf": "5c11a9a49a1a9c313d94b4029cc5629d424616e0af304a212a67c8f99a554655",
+    "bestSurvPlot_event.pdf": "d22d667b291b50168595e99a10acd24d6c8f09710c09477a49658ee67882abf6",
+    "CCNB1 event.pdf": "6d2afe9b4b621c81b81f4e8d661da02a6a17b9b3eeb3960fbce16b8a6f782a48",
+    "CCNB1.pdf": "98e12b57a92076fde5647c87da149b8ac7e51646ec06aa5b78897abd36544aa4",
+    "CCNE1 event.pdf": "ea280c80640e2bea28a1de502882a641e8ed079e84755679967cfd5437bb02b4",
+    "CCNE1.pdf": "17ab10d394c185de9cc55b706485e7a50bcc1063ee67fad3d9ea946def7a468e",
+    "CLSPN event.pdf": "51353161f1834443a713b86fef9c8f5718f92ccacf9998cb4fe0011be56c6d3c",
+    "CLSPN.pdf": "4bafbe4661d77d86b7033641201b1a8583e1cae94aed6a9fa220965dfc5d8906",
+    "easy_input.csv": "86cad7dd1c33bba391b37b8d03f7919b7006a33b20a74591ee249dc0c2a78bf4",
+    "example.png": "e2b38689d7ad98bf0d0e04c9f32a4c8e505ab1ed4d3a30b404db2c2602d96111",
+    "FigureYa35batch_bestSeparationV3_update.Rmd": "493afff93a9db721ca0607cbdbfe8de5cd85f52bf44f6220cc597d6d8db971ad",
+    "FLI1 event.pdf": "cc2d8545fb98c38b17a4605946bfb13ad6c96c4f47f26c4719120193b599d9e1",
+    "FLI1.pdf": "30325d5258052933ef137ade7e32bedca86ef39633c70d8c52c50d3aa0a9420a",
+    "HMGB3 event.pdf": "4edd583a4ddcfeae615fca83fcaa9000241b18e7302ed8c07a56b63de2d20cde",
+    "HMGB3.pdf": "38a16051ce96b8753007018eb0732a49b7a8415e2c4a15009a45e2f4daa0ef0f",
+    "install.log": "ca820170aaf74fd7acddf7c134462c8508c8ea08ec8d6fd45882871e1b74032b",
+    "install_dependencies.R": "6f0ca60d37bbc5cbb8ee30cafa70513c937a04a3f88eec792d562d4126c5a63e",
+    "MAP2K6 event.pdf": "70e66065a2e9d1fa20963b20ebfb9be314075dd2012b3c9ee984fd9104fc3672",
+    "MAP2K6.pdf": "66a83971b4df91ed995f54255facf7cfcdc093cb9b8248c953716d9bf5d336e7",
+    "NR3C1 event.pdf": "aabbf59c9062c590fd504731e88563bc3b6177cdac13f41d3dafe987e78e105d",
+    "NR3C1.pdf": "38de46a8b8d0c4ddd1251ae752bfd2d770e35c8cd2b6b1674a076b8487ac8692",
+    "pvalue_output.csv": "6bd9483cb81e17e6a3c9cbb49e48d2944f089677231950c8e7821cf3820026b3",
+    "ZFPM2 event.pdf": "3fd159b36e024c92554d2d0ba2657d65154574c64df92912f1889bbfc55efd9c",
+    "ZFPM2.pdf": "3db6dff780162767b9b85c4a7d8bfe491fc48a333d44d1441548e413b8086317"
+  },
+  "excluded": [
+    "FigureYa35batch_bestSeparationV3_update.html"
+  ],
+  "copied_at": "2026-11-04T10:41:54+00:00"
+}

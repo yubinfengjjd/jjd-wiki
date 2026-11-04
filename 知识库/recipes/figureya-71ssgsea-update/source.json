@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa71ssGSEA_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.csv": "1da0a3d0d4fd763d827f1aa2af27e5dcca99be7dabfaea092fce26ae776a9636",
+    "easy_input_immunity.rdata": "ac867391a3d56d96c7962d2b4ffb4bed97b621801ff34d1f060f596fb8490fff",
+    "example.png": "36c31c68435a25d16989260a5fbe2075091062b9200d9622afac1c74c283c815",
+    "FigureYa71ssGSEA_update.Rmd": "d96019b3a7992239bfe1a4cbd5dbe0d56dfe6651b3b42bd0fab65aeb209880f1",
+    "gtf_v22.csv": "7c122405bbcad7bebd3bcede8d79007855987e50530989ca3437a4ff6df9d47f",
+    "heatmapinput.csv": "a0faf7ba114a1f7170ee8a9d56da1da32f4a587fedb78a992fbf78b02eda654a",
+    "immunitygene.csv": "5433daf2154c416898a5ae5b85ce51e0a62fa01de69fa70c40751bf63eec6281",
+    "Immunother.png": "6f4b1a649f2115754dbf1ab07079857650dc6821bbdd9bb1bb40e03179f8dda0",
+    "install.log": "48f77c46050f248c464680043645b57a6760c8c0cc43140d1ab7ecae76615926",
+    "install_dependencies.R": "7883f3a909b4c51c47d72051d15b722973d5568c70431e9b805349e061faee6e",
+    "MANIFEST.txt": "f033580aac1ab16967bbdafdb1e60f98bfa0032e6d514ba63614d586066f3304",
+    "not_easy_input_expr.csv.zip": "ef6c7a8f5e42630742ac68f9cb8bdf9c57578164c050f94d7464d047207cb543",
+    "ssGSEA.pdf": "2c6aa81910fdeb347f6c67b26118c3942ddc9bfd641873ba908740698a92a78b",
+    "ssGSEA_output.csv": "5a321d7a6d5fb9dfaaec6315a7569d22836f97981fd3af95b66c959822e50361",
+    "TCGA-COAD.somaticmutation_wxs.tsv.gz": "0e20c3ac94a0c79eb4f36b4566f84f0d551aac8b700521dc27f8ddf2efbe4836",
+    "TCGA-READ.somaticmutation_wxs.tsv.gz": "314bfb15dbc01091ab14ffaf04143163f31bd3adee8788b4c86f816f0ac2bdfe",
+    "TCGA.COADREAD.sampleMap_COADREAD_clinicalMatrix": "69715627cedc3d7a97c02b8f23d4528e824031e08d45133f497ba4764199d78f",
+    "Thu_May_22_21_46_51_2025.tar.gz": "5b8c08901d5725575813db290fd9c2960605e960753ee1d44f22a7789588dda4",
+    "Variant_Classification.png": "5e638c74e1f5ae8c89e9b47d5c6eba2e0dc41332f411a30360af122c3cc90d6e"
+  },
+  "excluded": [
+    "FigureYa71ssGSEA_update.html"
+  ],
+  "copied_at": "2026-11-04T10:42:13+00:00"
+}

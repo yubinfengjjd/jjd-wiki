@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa229PCOA",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "basic scatter plot.pdf": "a593d88ad1e754ac19d2417f978cb22da428f71b13e3b33ea446665ef4940485",
+    "easy_input_expr.txt": "aa1e32036242889c8bc95460237660ce1c266e89008271a6dfcc9c294f43dea9",
+    "easy_input_sinfo.txt": "75719d5c1214cbd0be18ea263233c71d3c8412ccac87f036a0585eadc4319d46",
+    "example.png": "35fa0b72fd0fd5cff5b18486b6421cd3c47baf9d34f37be95466af5c2c9f7dfd",
+    "FigureYa229PCOA.Rmd": "5f8e1d1897994d908b00959f53e9a6eff01e5c550204665f756d82d2cae436f5",
+    "install.log": "de3d21202012602286cc8f61f821332f8ca772a9ba46363c2b28e1271081ad32",
+    "install_dependencies.R": "d740f8566126edefecd15bf1098bc281464c59752f66996560b712e37650d64f",
+    "output_av_sd.csv": "047744a9bdb0d002c540f73a3abcf5c8aac0189c2e023f4d99d373ef2081953d",
+    "output_PCoA1_PCoA2.csv": "75d5f074161b7e0c13529b55df88d9ee00757e0b5fb416f75c9236ed91cd8898",
+    "PCoA.pdf": "2b2b83df99dd3e0c3c97084c84fa58c0f4bca2e524cb363eca846c19733b7d9c"
+  },
+  "excluded": [
+    "FigureYa229PCOA.html"
+  ],
+  "copied_at": "2026-11-04T10:41:33+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa95pairwise",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "correlation plot between two distance factors.pdf": "fef403070c22d0a0c6511c05d588e662e10fc3fbfa92c001a1a0a5a4369e3c23",
+    "easy_input_expr1.csv": "1b404e3677a0860c65b1383d579282143a6084834b50d53bf0cf9da6b48c5c72",
+    "easy_input_expr2.csv": "b9843c60a9dbe38ac1b9dfb1bf822a386829d29f76fb11fab2c1c09b42453c93",
+    "easy_input_maf1.txt": "39f28d1c8bdb6a360a1293fa5747178c67df1b0b2a707016e922612b0f9d45d5",
+    "easy_input_maf2.txt": "983737d9290de978c33fea2b2e9659e5a0e12643d62c6ccf1aa3e160807fde32",
+    "easy_input_mut1.txt": "f4352bfbd492e53a8bf394bc9e3c48d7043dcf305423510c8f1b57105a99513a",
+    "easy_input_mut2.txt": "4db2ca44e913b92e3e18338ea09dd798871042752141b28877b7cfc383ae355e",
+    "example.png": "4f9b54798056e268bd7eb26bfe29d35aa9ab3ba5d05fa915ee1d0839d50eb804",
+    "FigureYa95pairwise.Rmd": "824a21fb1d47473b1040741b60925a72bef5d39e237a3340d858a61e9dc9bea4",
+    "immunitygene.csv": "5433daf2154c416898a5ae5b85ce51e0a62fa01de69fa70c40751bf63eec6281",
+    "install.log": "144b9f115587e88f5d59218eb0e9b3d9f82fa1e853368f9455f60787876d5e7f",
+    "install_dependencies.R": "db38077e0a13db81d2713328760e1fd77b31e80576c54922ed266edfe1d4a5a6"
+  },
+  "excluded": [
+    "FigureYa95pairwise.html"
+  ],
+  "copied_at": "2026-11-04T10:42:21+00:00"
+}

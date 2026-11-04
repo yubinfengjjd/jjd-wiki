@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa58lncRNAreannotation",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "Affy_GPL3921.png": "c1d1681b410245a33a047a40eb6815191db590551bf04b8652beef1adbf4363a",
+    "Affy_GPL5188.png": "c84fcb44ea9283c0f7120fb67db256ccd3c24c4597875ca38179cae15141061e",
+    "easy_input.csv": "d5661a7cfba0cb49aa8955dbb281314c7b09893288d490bf7c10b5e1e0abf447",
+    "example.png": "2d28f8d6d53174a03de2ea933d6c94f7319e6960cb9f43e13537be8855254d0b",
+    "FigureYa58lncRNAreannotation.jpg": "94591b205768fa1e2c34fe2f750c3f83a909c7dc1cde34badd1df315045a3052",
+    "FigureYa58lncRNAreannotation.Rmd": "739b8db558ecaa27000df5b9964dfead44d41ee9f16567cd290692d99523a287",
+    "GPL.fasta": "ed82673556aebcb7a1cec54042b9642f12f81fa8cfd47c56d287684bd8eb4f1f",
+    "GPL15314.soft": "599180ba1efd8c3e4149b322c46a33f04545404e5054bd5680586dee36f8b638",
+    "gplTOgene.csv": "ae1c6a9a38cbfb1a06f072eeb61d21bb8c12b70d1dcac16e06d99e3af083d46c",
+    "install.log": "bb19c1dcf1a45306b4ca8dfd96cefe835f983b1ab00b73e99ba52a2ec40fa036",
+    "install_dependencies.R": "4bab7842086adb88cce208b47de8bda13553f4fb5a899911db7d3872eab887c1",
+    "lncRNA.probes.txt": "6e42a7db9a2e6e27c6c8d115092b2dfd0cd0acc941425605c34665dae5d63c0a",
+    "lncRNA_expr.csv": "e0428ebd5d28435f6339da321c4b3760249c9c6a29434c28c2ce05536d6ca7f0",
+    "manual4windows.docx": "62f56531d352e18e683c7d4e0b3befa3bad1c770cc4bf4de5dc2ecccd093fe0c",
+    "seqmap": "66c97d27bbcd2690b3b295e7833abb904cadb03f08444be89fbabcc75dd5e398",
+    "seqmap_gene.tmp": "5ede054ccf0beb8b076ddbf8cd1922cfdcef7393cd1fb36ae014da40d2d0dcb4"
+  },
+  "excluded": [
+    "FigureYa58lncRNAreannotation.html"
+  ],
+  "copied_at": "2026-11-04T10:42:05+00:00"
+}

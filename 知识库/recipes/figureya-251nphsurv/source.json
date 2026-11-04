@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa251NPHSurv",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_annCol.txt": "d4c9f5de56717f06c6602920f2dad80755d142244ff9405642eff7a09ae28b9c",
+    "easy_input_surv.txt": "4ca638be5e79893e414b89d3c0eefe55563f2f06cebfbd3fda8b0ab29ca496cf",
+    "example.jpg": "a8b2e59c6bf15662d51ecd37fca35d11df125eb77b543cbaa6a8df047e9606ee",
+    "explain picture.png": "8121cd02c064f82ef34cf698647b721cbe55690ffc9105ef4fea9d963d2d5140",
+    "FigureYa251NPHSurv.Rmd": "0acaf5397d2f088ff14a76e5da0e41a6d211d2dfc4a1c257da903c971ff184d7",
+    "install.log": "6b93d5869e1ec33a3f76712f5f783ddf1fefc23dbd89991e0fbe5fee08617e76",
+    "install_dependencies.R": "a4e9afad1eb8c9cac1883c334f144d3705aa6d3c3e4551a7d474571f9a320473",
+    "kaplan meier curve1.pdf": "5129303ec8e62f9f0ef8ba125811000a477feb3dcf6aa31768fedbe36fe5cc40",
+    "kaplan meier curve2.pdf": "6d7e0e4f79a8fbd1de40747e407ee0d48fda793fd5149c29bd21ce9213e4c2be",
+    "output_long term survival p value matrix after 90 delayed effect.txt": "787742a6b1749a1ff603f4a3ace67be127e50ff224b62ce6c3de76227c9bcc89",
+    "output_restricted mean survival p value matrix at 180 cutoff.txt": "51167bd1700edb71d0ac798d5c02300f13b32516430269430b6e4e4c0f035733",
+    "output_restricted mean survival p value matrix at 365 cutoff.txt": "b0ce5c794ace2ba6466a745bc4d0df00c5ee159697eb28467d5ed531abb298f5"
+  },
+  "excluded": [
+    "FigureYa251NPHSurv.html"
+  ],
+  "copied_at": "2026-11-04T10:41:37+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa315SingleRFraction",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "example.png": "2edb62585497c19b52da95cd41ccc4489dd72d2f4e3edb08b424c23958f39d6b",
+    "explain_picture.png": "3cfdf763af9b7df56bb917921b85bd3ab083b2d43366e1ca05f9212cde793768",
+    "FigureYa315SingleRFraction.Rmd": "f59e601b6adb260e23080585d352aeb25bf5d86934d0001beb3f9c87cc815d29",
+    "InputData/file": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "InputData.png": "d09f0b3f814137f61c7bdecc6e96eb9d553e0d1c955b1cf99f5149d90aedc5c0",
+    "install_dependencies.R": "671e375e67fbf46c2802af296d79bec164c1284a47dfc7ba37cfea80fb14fbbf",
+    "method.png": "2fbdc2b030a805e4df493a135270a49952af5bcc7a93105df105ba764ecb15a0",
+    "Proption.pdf": "9a8042c42e80dbfc285840caf5eabcae6913e5a618a75e7500f6529de0d1e005",
+    "Proption_plus.pdf": "990ddbaa817b38bd65155058cc76702e3661f0b224c002ed11754412e452bb09"
+  },
+  "excluded": [
+    "FigureYa315SingleRFraction.html"
+  ],
+  "copied_at": "2026-11-04T10:41:50+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa7PSM",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.txt": "25a91ec67b21e9c3c9ccc94c9ce7b20fdc0d7b63d4d9a4336f422ba49a15db1a",
+    "FigureYa7PSM.jpg": "2190f2fce6c0abc73cb5540a549d8880e86674f086f98212f8249e146d16413a",
+    "FigureYa7PSM.Rmd": "4d8a6b1cdbf99c0d6a812c74b4ff8fabe4ce493bdb4a685ab55c68097ce7556c",
+    "getvn.pdf": "2b754b2ee62f89a0dadbf2f326e4793685072b55f0b74edc379450e91379bcee",
+    "install.log": "2379cf92dcec2eb8da83ac69fcc6e782973545c09da304216263e07641ab6fae",
+    "install_dependencies.R": "6f68caf52a396564633beb3d86137f031b470ea358ec8cc71bcada5f49584062",
+    "pair_ID.txt": "8c8858a74b8e0c74496d0f6769582606fb7b920e9b0fb5a09fbda63bd4e8e914",
+    "pair_info.txt": "a77a70221fb801c0f77426117cde05fde97c838162abf44b4676abde7c069c45"
+  },
+  "excluded": [
+    "FigureYa7PSM.html"
+  ],
+  "copied_at": "2026-11-04T10:42:17+00:00"
+}
