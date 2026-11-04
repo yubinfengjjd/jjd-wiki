@@ -1,0 +1,74 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-307cnvheatmap",
+  "run_id": "20261104T141606Z",
+  "scope": "as-is",
+  "state": "not_run",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa307CNVHeatmap.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T14:16:06+00:00",
+  "duration_s": 1.6,
+  "exit_code": 1,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "lifecycle": "1.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pillar": "1.11.1",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "vctrs": "0.7.3",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "CNVheatmap.pdf": "0f7f812e2b0065a019843d7a8b6ad2f9ad4dae1b4df68f6204b4119891f5d650",
+    "example.png": "0218dfc633d36ae4fc07f13ae54890ea1605c32691d249d56eee0dc060b919a8",
+    "explain_picture.png": "45554a1d8fbec4ac8ba03e974ca0ea4a7e80c2325f5c81d8d0825c5c5a54a6fd",
+    "FigureYa307CNVHeatmap.Rmd": "e3a0889b2a695d5133ea793136558e0882e32808ef2389120002c1b7b138883b",
+    "install.log": "7750d8ce83b22d9b986dc950915967e4e331a8e9ccab29065abb0858751a92f2",
+    "install_dependencies.R": "0b99b2e4ab452f26c35249abdc568e380cfda3d746d352c77d1240ae57c65a82",
+    "TCGA_BLCA.all_thresholded.by_genes.txt": "9bc90740906e40d343dbebaa902add490d50b27fe1226976074859c2f99de53c"
+  },
+  "outputs": {},
+  "expected_outputs": [
+    "CNVheatmap.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [
+    "TCGAbiolinks"
+  ],
+  "error": "缺包: TCGAbiolinks",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 1",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-307cnvheatmap/20261104T141606393502Z"
+}

@@ -1261,3 +1261,5 @@
 ## [2026-11-04 12:43 UTC] run figureya-119multiclasslimma=pass, figureya-151pathifier=pass, figureya-215dnaage=fail, figureya-219gmm=pass, figureya-275scaucell=fail, figureya-28color=pass, figureya-2ggtree-pheatmap-msa=fail, figureya-304magic=fail, figureya-305pmapscore=fail, figureya-308ihs=pass, figureya-310cpdbchordgramv2
 
 ## [2026-11-04 13:47 UTC] run figureya-215dnaage=fail, figureya-305pmapscore=fail, figureya-195panpaire=fail, figureya-206scheatmap=fail, figureya-231scscore=fail, figureya-294hccdrug=fail, figureya-318genesetdedotplot=fail, figureya-41geo2lncrna-update=fail, figureya-53ppimodule=fail, figureya-55pancancer-violinv2=fail, fig
+
+## [2026-11-04 14:27 UTC] run figureya-307cnvheatmap=not_run, figureya-3genomeview=not_run
