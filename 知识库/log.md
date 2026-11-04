@@ -1223,3 +1223,5 @@
 ## [2026-11-04 06:10 UTC] acceptance check doublet-detection
 
 ## [2026-11-04 06:14 UTC] acceptance check rna-velocity
+
+## [2026-11-04 06:23 UTC] verify 2026-10-22-scp-example__fig02-ring--ring
