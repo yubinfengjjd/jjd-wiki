@@ -1235,3 +1235,5 @@
 ## [2026-11-04 06:41 UTC] verify 2026-10-22-scp-example__fig09-bar--bar
 
 ## [2026-11-04 06:47 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
+
+## [2026-11-04 06:51 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
