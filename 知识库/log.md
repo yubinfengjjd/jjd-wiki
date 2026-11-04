@@ -1237,3 +1237,5 @@
 ## [2026-11-04 06:47 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
 
 ## [2026-11-04 06:51 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
+
+## [2026-11-04 06:56 UTC] acceptance check 2026-10-22-scp-example__fig05-trend--trend
