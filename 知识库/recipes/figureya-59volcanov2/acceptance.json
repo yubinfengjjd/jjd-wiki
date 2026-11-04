@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.795796+00:00",
+  "checked_at": "2026-11-04T05:52:44.200426+00:00",
   "page": "recipes/figureya-59volcanov2.md",
-  "snapshot": "3e7c7692833fa0209ff3c186416896935940279000dd3e37dc59d6f89c24640e",
+  "snapshot": "c50610c9ea8725916fcc303a676a57346663005413cf8a6998ead89c33ac4a68",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
