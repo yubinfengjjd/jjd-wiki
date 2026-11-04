@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa318GenesetDEDotplot",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "example.png": "2a43da3efc079ee4e68f83e9fec5ead6061ef4a774dae87aa421bdffc24d02f8",
+    "explain_picture.png": "21e7a3e1ae2413738aed4aae32e290f516e32b64b45030f89b12e09057867ed8",
+    "FigureYa318GenesetDEDotplot.Rmd": "bea8a90f1ef3e228483f55c6aeecb85489f9a458da96e6608a4613354eeceb97",
+    "GenesetInfo.txt": "66814d3f8366908859cfb050337a4815ccb306a31febbb8166ae3018016a6441",
+    "h.all.v7.5.1.symbols.gmt": "c4bf359efb63429208c6babbb9d5c8f4e135d65b26d7b8792319114b9b4ccd9c",
+    "hallmark.pdf": "fb7b5f84c30d9476d6fd06fa2240b724493faf331e6471d7208b5392cfce4407",
+    "InputData.png": "e773ab1f294469a02944b5037da810cb6d1dac0ab5bb0c1fea19d709244b3473",
+    "install_dependencies.R": "e1661cd40adf2d627e3d64af28d9b9f5c1d1a9d238a10b6f1ce1a59b84e08fea",
+    "marker.xlsx": "dbc57067ff2561e79338029888d23049aea0a46ba043bbdde3a76743377cb1df",
+    "output_hallmark.txt": "3021b83bbed7ea59448eca83bdbb25a63c63174c2c134b603ba577a525898ae3"
+  },
+  "excluded": [
+    "FigureYa318GenesetDEDotplot.html"
+  ],
+  "copied_at": "2026-11-04T09:30:06+00:00"
+}

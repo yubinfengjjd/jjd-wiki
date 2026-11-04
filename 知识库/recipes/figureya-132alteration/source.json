@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa132alteration",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "alteration.pdf": "e9e8898828f4e87e68ca2bdf7436fd53a28120e678a50e282fbd879772be0db3",
+    "example.png": "c556a3b72b4b41fd06053debd3ac645b283fa67975cde3ba5eaedffffa5941e3",
+    "FigureYa132alteration.Rmd": "e4439ea4f5f5f7135fb4199ea1301ae49ceb20f5c7803df008265cd0d8a83e4a",
+    "install.log": "9a281a09fb65b1044620b2f590fddcd9a040331a3058a435669bb074284d60ef",
+    "install_dependencies.R": "9f39c26bc2452ff5b7f6de3d1d74d9e8c80d0574d0eb31f3de183abe8e5a3d09",
+    "method.png": "19529d9b3de1ff0a528fcda03853d1eceae515367a92d7358f6f1db8ea44485f",
+    "NIHMS957693-supplement-5.xlsx": "35071f5cf78b28adefe42ce9c1fcb61d35d3a6118ed0c4b4363b20a69eb31c70",
+    "NIHMS957693-supplement-7.xlsx": "35fe8cbb97ea55fd654c9da5ada32602808c1924bd3f524957e89c9ac8acc81b",
+    "NIHMS957693-supplement-8.xlsx": "58ae2fed5a987c1bcd3c88f41e89a3d0248dbc9bb1bfe87e505d82caa1fed154",
+    "Readme.png": "25da14c64c17fa0fe2a5ddbca2852cd3ca7390f0b47913cb1d1916f0955d1f7d"
+  },
+  "excluded": [
+    "FigureYa132alteration.html"
+  ],
+  "copied_at": "2026-11-04T09:29:47+00:00"
+}

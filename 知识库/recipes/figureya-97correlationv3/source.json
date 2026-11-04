@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa97correlationV3",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "correlation.csv": "c9cea5989c4fdfe0d0439e70c58a993b2074d5c3c4d225e3f5f1c7d7b83723ac",
+    "correlation.pdf": "2ad0d6df3a5e79ba2b66218dee36f0f6bb96e62d720eb4c97014ce39648d6cf4",
+    "easy_input_expr.csv": "2717c9a9fc4908b8b8166860f2ccd280d8a77c82e282c3cef54ee8633016ce30",
+    "example.png": "f25b56f87de3229a223556147e2e2112b9229218b063bd670532a2c89be3b4ca",
+    "FigureYa97correlationV3.Rmd": "3cf7691584f4cabde858c528b2e3ee21b5cb08102e4badc3ae11bbe5ad2cc8fb",
+    "genelist.txt": "0516280a7b95235473e05705da63537a0db870a9be53004ada25cb0b55b07b4a",
+    "install.log": "c28c3d62464f663a52512b2c6da9fedd7d12214d96955dca11aee6159aaffc49",
+    "install_dependencies.R": "0be12b060c79a3f8f7fa3f47917f01e510d551eeb9f472d068486110d867c5b1",
+    "ssGSEA_output.csv": "2e4dd1d677cb196455242105d39a73ce1cecdc4aec80b98f24d7c9dec6a27f79"
+  },
+  "excluded": [
+    "FigureYa97correlationV3.html"
+  ],
+  "copied_at": "2026-11-04T09:30:20+00:00"
+}

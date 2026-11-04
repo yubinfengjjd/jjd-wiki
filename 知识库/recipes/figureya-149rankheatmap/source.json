@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa149rankHeatmap",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_logFc.csv": "c569e67c55cb53b6d0d272a3837f1b3bb301e93f5c93d7823d5e104a0020e744",
+    "easy_input_PVal.csv": "f23d0f916132078f5ce30306c7ea59fbaa1cab0285cdd563ff333d9450b390d9",
+    "example.png": "31d2c080b01a2e257c4000613be6ba6c06ef3d9235df0cff884111a2edbca6c0",
+    "FigureYa149rankHeatmap.Rmd": "2ae4c9b5375888cb4aa23b65b2b519a60df2f1910b290878074c4531c41ae238",
+    "genetype.csv": "788e16c011b0e79a912493bd63251922c960354379c3e47a4aa366a836c010a6",
+    "install.log": "45cb51aded8478534f3348732f020b534f75899c8020a94b5c30f3c633dbcabf",
+    "install_dependencies.R": "abc8e9df2854098f08e4ca6e9f0ad409cd6eb578798dac489ad0f6e47487c74c",
+    "rankHeatmap.pdf": "8bd3ff764beb0bdc643056d3ec600de39f25483d08d36b7a97084f9b5f824e91",
+    "Readme.png": "8017abcdca31c07116fc84e74a557f4c346e92747106525f2fc40e811fcf1bb8"
+  },
+  "excluded": [
+    "FigureYa149rankHeatmap.html"
+  ],
+  "copied_at": "2026-11-04T09:29:49+00:00"
+}

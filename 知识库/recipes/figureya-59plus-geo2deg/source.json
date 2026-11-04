@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa59Plus_GEO2DEG",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.csv": "d7af0d83abb4919c4ec030d512b6e45fe82d16f57b59119a0c6c64224ebed483",
+    "easy_input_limma.csv": "fb49a9cb3946662805e479cdc7998f0889250bddfe610ac2ea0b6ffe92eb9815",
+    "easy_input_pheno.txt": "66720dafba4b21a81e94e14a54d00591a1521984feafd5f79f7bf03c1a15f3c8",
+    "FigureYa59Plus_GEO2DEG.jpg": "a861ffc1cafa8499aa29ea94601bf78ac7bc6015ce2333cd0cb874ebf872dfa6",
+    "FigureYa59Plus_GEO2DEG.Rmd": "2088c7b6ae9c620c0a90e1875de88cf4254c7f316dd5b36d57e1c19cb7efb2d3",
+    "gplTOgene.csv": "7e39ee32d1b86537a65b06269e3b6bcb1f8eaf2707cdfa120fb8a0d71498a908",
+    "GSE17215.RData": "46910a43e8eab1f1a7212d86cd8f217e93c2093896546492b5ce2b1517ef8324",
+    "install.log": "423167cf7e60b1d9452359700327ecd0144bc12b1c5aca8b0072873517d4711a",
+    "install_dependencies.R": "1287cb3a548e55cf074a3d59dfdb39c48a8848a08a9f8d92c36416259268c669"
+  },
+  "excluded": [
+    "FigureYa59Plus_GEO2DEG.html"
+  ],
+  "copied_at": "2026-11-04T09:30:13+00:00"
+}

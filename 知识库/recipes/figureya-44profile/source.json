@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa44profile",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "control.bw": "ba5c98a56a4d22eb6673aac9d580548579100f4683d58e2477652eff39295e2c",
+    "corelib.R": "1684fd6b8168d3071ce9b5544b2bc0eb8fd39eccb185d9e37cd03c6218f6f044",
+    "cxxc1.bw": "28594cb99a3aea001f7baff02c4853693fbe1c2a4811015da866ef9f24f737ca",
+    "easy_input.txt": "f7ac7b14f1cea3b390df905b7f7a376730032f853fec1d06d963669a956cca4c",
+    "example.png": "aaae85c76a7dd0ff8caded23c61ebc4eed6d27de14f1c95a3fb3608a0a5007d0",
+    "FigureYa44profile.jpg": "156ca2fa985fc82fafae43d45274d00c38fa5298139d0e980204dc790f5716d9",
+    "FigureYa44profile.Rmd": "eba6bf598618ed9c6bb34f824381ecb63bcf9e0d41c2729b3f33fd38ed530aab",
+    "gene_average_signal.txt": "77cf48fe586d19c88ad0aaf809f9341a6307232de39394814b0033e0aa20a499",
+    "geneBodyProfiler_example.pdf": "47546b7c789db85d065a606abbf9c1777ef2f7f1af4926a5bbc6214cd49aa1ae",
+    "install_dependencies.R": "22c73e503b2ec2c837bffb2c608d74209557a6d61a3b1cae48d5bff338e7e808",
+    "refGene.gz": "cf377bb5f153e1568833075d74e89e8d60d89c3c848018ac4a5217e14ec2dd72",
+    "site_average_signal.txt": "93a05c32817494d2266da8a975aa7818211016b9a4ad9071cb12abf8c5fd74ef",
+    "sitepro_example.pdf": "3b9571565053a75f6ad1b0045c79b9dc40d6d3fe5aab22f7ff394c2425f3c573",
+    "zv9_CpG_islands.bed": "a9092c92a4948fd00117dad7f32599bf6a5bc27fcbb25d1c00aa6aec3e0044e2"
+  },
+  "excluded": [
+    "FigureYa44profile.html"
+  ],
+  "copied_at": "2026-11-04T09:30:10+00:00"
+}

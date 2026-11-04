@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa202consensusGene",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "consensus heatmap.pdf": "af49c3ee3cd1a1f40d9eca6ba1953959c77b4fe8266b7e0eb247c7d9b98481fe",
+    "ConsensusCluster/consensus.pdf": "20dafac26874bb411d835eb6ef9d551e16675c1847e20a5f19871fcb1b77a2be",
+    "example.png": "eb1a23bf3615e9a6146da5851dc9bfc28e2f931e9286e423515a38d554b65c1f",
+    "explain picture.png": "38229f0c263ba241e1cd20bbdf1f838d90a5bb24d30f36153c53658958c5c92b",
+    "FigureYa202consensusGene.Rmd": "5f827af765c984256daf4c69772a799c33f080be2a033c6c65c4d2f50da62ea3",
+    "install.log": "5bd1d9f5cc468e261e753cbd638a717459431f79c137a6a63388f386a960e034",
+    "install_dependencies.R": "0f3c23b4d4a1ae86d3f80c7de30a45cb6c6a9ccbb601a24ac0d165ca8b43339d",
+    "median classification heatmap.pdf": "0c8cffaea32706ccaa10be1f720046ee13c146e29c57d4d29be5d5d415aa3cc8",
+    "median classification.pdf": "f53670fe6c8e88b633bb4ea6cb5518f80ebfb675f3acc3e3a62cd6c0f4203de9",
+    "output_subgroup.txt": "dc3255118dcd9bad4cf8d7f08e9fcb39037a0e94af2e95e9afc2d3b246ad6e5d",
+    "REACTOME_CHOLESTEROL_BIOSYNTHESIS.txt": "1ed5747ea5a1d09557b5497bf4057b258e44be869e58e38a9c8bc437fe63950a",
+    "REACTOME_GLYCOLYSIS.txt": "b2bcb9e151cd5f7dc8f9196d8b534312b127d54cd209989fe1d1364da3fbe093",
+    "tcga.expr.simplified.txt": "bd450c8ac402ff5b8364ea18fdfca56ddc8f0ecb42ed8492de9ed4e102e7c24b"
+  },
+  "excluded": [
+    "FigureYa202consensusGene.html"
+  ],
+  "copied_at": "2026-11-04T09:29:53+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa293Plus_BinaryClassificationML",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "FigureYa293Plus_BinaryClassificationML.Rmd": "b1121b0362b5a7d6579d6824b0a320f685033866f2ab8fc9f884f9524b69de56",
+    "GSE57303.txt": "7c30010449766d1cb5db096d41e762ff1de8d4b5d7e0c88d7a07b7fd20525573",
+    "GSE62254.txt.gz": "ada9d7d27c61408336b1ed951ef74aeebedc9e2436e9e51002b90dd97e2e28af",
+    "install.log": "7d731a82f0aeb36afbdd98c326b6a35917699dafc78d6a667a0aa5a672c40e42",
+    "install_dependencies.R": "99cd322e6e71ec1af8161d61b61a8f31457c214d46236c059f93f74c2e01342e",
+    "plsRcox-master.tar.gz": "eb2b5333eb93f842d0a5eef2db213c5ba17419c841b544208d113f230091fbf1",
+    "RWekajars_3.9.3-2.tar.gz": "16e6b019aab1646f89c5203f0d6fc1cb800129e5169b15aaef30fd6236f5da1a",
+    "TCGA.txt": "7c2eb13b242b8a8e7fcc1c7e83d141cd9ed1ac63272df5deb4687d72e0765840"
+  },
+  "excluded": [],
+  "copied_at": "2026-11-04T09:30:02+00:00"
+}

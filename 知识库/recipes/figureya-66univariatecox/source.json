@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa66UnivariateCox",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "cox_output.csv": "70d3e19b9f1bb6a9a176ff626f43cf51844b9b737b9afcb16cd9ba0b597a18bf",
+    "easy_input_4cox.csv": "85982f2e198701ab7d8dd634169af586574f17c0e314d4f4b446506ba1cfa285",
+    "easy_input_expr.csv": "a522ef1dbd6e76c0f89a4a8f086560bbdf81f9f248bad6ca475733fd8e8b8a9c",
+    "example.png": "2a46aaf80418723858fa3d724bc440e7f2f846b83672a3a2eac6eb7c92a352d1",
+    "FigureYa66UnivariateCox.Rmd": "9b9a470f801d8f476354d4cb186039bc386cbf975653b12c75672538877030c7",
+    "ggscatterstats.R": "617aecc740dd254fad5e839fd177ffdee0290bedd62ecdd7d7fd086130871df4",
+    "install_dependencies.R": "bc43ff7e8571698f337b412dc55eef2af3082aa53537dbede2e89fdf8d78426a",
+    "plot1.pdf": "e7abcab9ef96a80f480ece788ff28a13b16724946c9ca163adc215f328973d4b",
+    "plot2.pdf": "164b8cd49456da5228a3aa831336e51818c359f09bc8442e8b03b15a7773a302",
+    "plot3.pdf": "1b58f5e2c7438e9ddddd9cdc247b1b5dc06eb6bf519d7c93d6678922a013fff5",
+    "sameplot.pdf": "dcc77511fcb449793870236d81e9f99d504ae9e0dde43b5b0bfd064e58dc6692",
+    "samplepair.txt": "fe431f5f21bd2bc2e8dacc18c27527510965a523a3f5d348bf830539184e7f7c",
+    "suptable2LUAD.csv": "9865536f44fabfcf8361cd27b091ecffb3db1d63347957e0975c282f9bbc46c3",
+    "Survival_SupplementalTable_S1_20171025_xena_sp": "ece7e2bdf1f2b137c07be6e16ab966b414fc50d6a9db5c839d15b0ab7548cba6",
+    "TCGA_phenotype_denseDataOnlyDownload.tsv": "53db883d9509c15e7e6e75a9df8366e6a169bf54af80c748439c18f2585a4dfb",
+    "theme-ggstatsplot.R": "138105dbd354cd2c1215124fd4e9ee65a5f05f64606b77ad86eb02dac06ca84f"
+  },
+  "excluded": [
+    "FigureYa66UnivariateCox.html"
+  ],
+  "copied_at": "2026-11-04T09:30:15+00:00"
+}

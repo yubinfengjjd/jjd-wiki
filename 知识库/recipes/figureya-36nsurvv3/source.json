@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa36nSurvV3",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "1b9d14f9956bb8fa2d2d990e6408628db6a81c01ecccbc76244460ac52a87ae8",
+    "example1.jpg": "a75da823081555e8fb6db96195d7ce8b857933994b2c92de91411205255b851b",
+    "example2.png": "e04a33fd5bb875df7e22dfbd0c7f0efbdd5373199b95ef09b5de260ebb8e74f6",
+    "FigureYa36nSurvV3.jpg": "2df092f0221152acae086f6af93b85faa52656998c57a393f4a12be2cfa4a193",
+    "FigureYa36nSurvV3.Rmd": "14349ff26c974ed5c327c277e5e40321104f9dee0881f4220c2e175f8a9cc765",
+    "install.log": "6161ffce34dca8019c520f33d6780e6f9f5b58465f7a38ebd3981b821cf12feb",
+    "install_dependencies.R": "3ffa24875d77fcfe6123d12a31bc078589597bd5d97ed112df12b0146cfde4c5",
+    "nSurv.pdf": "86fc0e5fffcf00ddb43ddadd99917e35ca30aa46f5b9098b65eee7b7bf91aca1",
+    "nSurv_best.pdf": "7322b8be1046306bcbd57213590f01d976973964b5ce3d17ffa95262e4ded49e",
+    "nSurv_med.pdf": "81fc04fe4f151f89bbb798ac694c3062cbf43a41b1407ef4837de78380dbe6a3"
+  },
+  "excluded": [
+    "FigureYa36nSurvV3.html"
+  ],
+  "copied_at": "2026-11-04T09:30:07+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa214KEGG_hierarchyV2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "br08901.json": "6d04240eb39f07c42c874ce506695c9cbd767fce7aa0927c6324f7724b8b703e",
+    "CRC20210105.txt": "4155fbe3fd4f711babc3591f4efe8ef7604376b4c5a53d3502f0798f985a3317",
+    "download.png": "7f8236adb17129b1f3197e6ed63396f0d39d82baf2f439e567d4feeb9f91856a",
+    "easy_input.txt": "7ec830774c715e6713758056cb746ab5f75e70c5f911b7a264aafbdd95018144",
+    "example.png": "7ab4cbe3d6ae55c4dfbf21a40aba01399c3380138480e8ab73ffeae0aba569a5",
+    "explain picture.png": "ba3b80b7e465486f7ebf405b7d854f7d5e6fc12cc90b51446fd9793266c28a4c",
+    "FigureYa214KEGG_hierarchyV2.Rmd": "1e91575605bdb4bc3620b09f1ce7d0e0d0a3cabc21ab29568c634d37bfd411ad",
+    "install.log": "8f02480684ac6aec0110baeb5b1c433a0da2090b0c2a3b0b4bc5beef85ea5b3b",
+    "install_dependencies.R": "6f8f7a19b00b89f9ff49b0a97fa202768800e9319a5fae426a4a02b8741552dd",
+    "kegg_hierarchy.csv": "8e958a4b759e5a54dbe2f4cc592a802c696039d29cda6bd1000baa4a120519a6",
+    "KEGGhierarchy.pdf": "d1bdda24330a3b168922b325c91dc0106c2ec3831d46b13ab4e4b5dde2e2fc5c"
+  },
+  "excluded": [
+    "FigureYa214KEGG_hierarchyV2.html"
+  ],
+  "copied_at": "2026-11-04T09:29:55+00:00"
+}

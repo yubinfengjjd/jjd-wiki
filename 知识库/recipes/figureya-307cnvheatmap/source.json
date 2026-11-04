@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa307CNVHeatmap",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "CNVheatmap.pdf": "0f7f812e2b0065a019843d7a8b6ad2f9ad4dae1b4df68f6204b4119891f5d650",
+    "example.png": "0218dfc633d36ae4fc07f13ae54890ea1605c32691d249d56eee0dc060b919a8",
+    "explain_picture.png": "45554a1d8fbec4ac8ba03e974ca0ea4a7e80c2325f5c81d8d0825c5c5a54a6fd",
+    "FigureYa307CNVHeatmap.Rmd": "e3a0889b2a695d5133ea793136558e0882e32808ef2389120002c1b7b138883b",
+    "install.log": "7750d8ce83b22d9b986dc950915967e4e331a8e9ccab29065abb0858751a92f2",
+    "install_dependencies.R": "0b99b2e4ab452f26c35249abdc568e380cfda3d746d352c77d1240ae57c65a82",
+    "TCGA_BLCA.all_thresholded.by_genes.txt": "9bc90740906e40d343dbebaa902add490d50b27fe1226976074859c2f99de53c"
+  },
+  "excluded": [
+    "FigureYa307CNVHeatmap.html"
+  ],
+  "copied_at": "2026-11-04T09:30:04+00:00"
+}

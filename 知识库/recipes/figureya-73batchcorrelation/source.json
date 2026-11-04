@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa73batchCorrelation",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "b886a2345ba7628305d58fb48bf5511cb118d36189e8565c3a7c5f3444017a8b",
+    "example.png": "752da6c430a75c1cbf9c78f6ec73f87aae01de6e7d5c01fa9e4dd805d2512d54",
+    "FigureYa73batchCorrelation.Rmd": "881185eb8996ddd98ab1a63b228e328697e6f931d0700e424cb3a36a0b4b1d02",
+    "HDAC1_cor.pdf": "5e57737b30076dd61265144321a5697c91aa5ccead24c7457b348cb56def376e",
+    "HDAC1_cor_NULL.pdf": "3c8fa86e805323bbcb76282623f98827ffe91066a936ea8bddf2df9401d260ad",
+    "HDAC1_EIF3I.pdf": "179e78342ad8a21db6e882e12e8c7e24fc0cb585d7c1ec46bd45040c95fce676",
+    "HDAC1_EIF3I_NULL.pdf": "87441f06e25242efc721fd0d8fbdc41607871678569f1a7944cf2d5863220f4e",
+    "install.log": "78256e2fca9b7b8309f9cf7cf3e70b672ae0a23e3bf72ff2442efcc56baffc9b",
+    "install_dependencies.R": "22e9c91ebb8926038c6308effc6dc444d76948dc59304dc85f19e87def077864"
+  },
+  "excluded": [
+    "FigureYa73batchCorrelation.html"
+  ],
+  "copied_at": "2026-11-04T09:30:17+00:00"
+}

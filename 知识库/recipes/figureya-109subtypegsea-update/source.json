@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa109SubtypeGSEA_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "c5.all.v6.2.symbols.gmt": "c641c8d5d706c3225a52273434daabbf51aa1879fe5c21abc840abaf321328e7",
+    "easy_input_expr.csv": "5709b38a58738bac033f9d1cd519fe5cc75963f23bcf23818cdc64c8184c0bb0",
+    "easy_input_subtype.txt": "c1b6bb744fc835307058dadaae3241e4dd33a4f3ef2d8a343c3cb76b8cc03cb0",
+    "example.png": "0bab5637f004e51d8544bdab5c0ef5ba9182df9561d98b31d0f4a3e88c69d061",
+    "FigureYa109SubtypeGSEA_update.Rmd": "34ce41e59aa418fe7e6853ea36b8eaa6f12d3db9dd5409b0a44ff13b63cfcda5",
+    "immune_degs.txt": "ff29805269b3d253e77660bcfb11ae7a3e265eb938aba8e6f90634d81d657b7c",
+    "immune_degs_dn_gsea.txt": "a5d7950a9aad55daad30c762131bf3023d0f77141b067ff81e7da7aab579548d",
+    "immune_degs_up_gsea.txt": "b1624cb8db4c29936bf2ffb4abfca4b2cf8f6995403c3cf18e8543c1c6a723a1",
+    "install.log": "55e47309f302d7ee1da4150d284905d100faa10ce8975330dec3b2fb0019914d",
+    "install_dependencies.R": "df77473f072882e6d005b0f117486007e4d5d95e61a3c58380bf4e8bb5f0b762",
+    "keratin_degs.txt": "94e522955502b406f315e4b10ed88bb4554f6c9159d415e60b7dc707c62a498c",
+    "keratin_degs_dn_gsea.txt": "f89654b20eddcb4c416eefdac6fc864d3f455db358bcb7751f4fd07b99e3b932",
+    "keratin_degs_up_gsea.txt": "1baa0e7c73c620c3cda0b7e6db78a8153919e2172fda5e5cf1816e28a4e7c3d9",
+    "MITF-low_degs.txt": "1de05c12b0941314621cf7ebe8da1d677d32de1f18a50c0a548d6ad893ee9b21",
+    "MITF-low_degs_dn_gsea.txt": "92d54345ea4ad233a58934e84f21f4dd008b0cf796dc892a22e0a660f13571e2",
+    "MITF-low_degs_up_gsea.txt": "3379035a7f4d2206488c1a4a96ace5705eecf98fc326633173092b6cb9d37cd3",
+    "subtype_specific_top_dn_gsea.pdf": "d943d1d2b9b86fa2c76f8d7307d3ece16d02b7949b41627eb2f51ba64df135e4",
+    "subtype_specific_top_up_gsea.pdf": "bbb5b3c701bd103785a6b1cd5950b89c1125e75681defebfe2b6cf5b0b9c06a2"
+  },
+  "excluded": [
+    "FigureYa109SubtypeGSEA_update.html"
+  ],
+  "copied_at": "2026-11-04T09:29:43+00:00"
+}
