@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.270440+00:00",
+  "checked_at": "2026-11-04T05:35:18.694236+00:00",
   "page": "methods/local-omics-analysis-guide.md",
-  "snapshot": "d3afa8db8bf2ab6b5f5f6f0dc58c3c7230282452de5edfc40b34e78c2d6fd631",
+  "snapshot": "21f4a193d411d213f201c86d52da01d9f7a4fea1fcc89b3eb07460178e9f6b84",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
