@@ -1275,3 +1275,5 @@
 ## [2026-11-04 15:48 UTC] run figureya TCGAbiolinks group + hg38/KEGGgraph retries: final receipts and catalog
 
 ## [2026-11-04 17:49 UTC] run figureya-277immunomodulator=fail
+
+## [2026-11-04 17:59 UTC] run figureya-212drugtargetv2=not_run, figureya-293plus-binaryclassificationml=not_run
