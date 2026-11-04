@@ -1263,3 +1263,13 @@
 ## [2026-11-04 13:47 UTC] run figureya-215dnaage=fail, figureya-305pmapscore=fail, figureya-195panpaire=fail, figureya-206scheatmap=fail, figureya-231scscore=fail, figureya-294hccdrug=fail, figureya-318genesetdedotplot=fail, figureya-41geo2lncrna-update=fail, figureya-53ppimodule=fail, figureya-55pancancer-violinv2=fail, fig
 
 ## [2026-11-04 14:27 UTC] run figureya-307cnvheatmap=not_run, figureya-3genomeview=not_run
+
+## [2026-11-04 14:35 UTC] run figureya-305pmapscore=fail
+
+## [2026-11-04 14:54 UTC] run figureya-3genomeview=fail
+
+## [2026-11-04 15:31 UTC] run figureya-139tmb-titv=pass, figureya-18oncoplot-update=fail, figureya-19lollipop=fail, figureya-203combat=fail, figureya-21tcga2table=pass, figureya-23count2tpm=pass, figureya-34count2fpkmv2=pass, figureya-51tmb-update=pass, figureya-71ssgsea-update=fail, figureya-307cnvheatmap=pass
+
+## [2026-11-04 15:35 UTC] run figureya TCGAbiolinks group + hg38/KEGGgraph retries: final receipts and catalog
+
+## [2026-11-04 15:48 UTC] run figureya TCGAbiolinks group + hg38/KEGGgraph retries: final receipts and catalog

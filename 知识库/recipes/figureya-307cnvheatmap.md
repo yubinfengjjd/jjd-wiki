@@ -73,8 +73,11 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa307CNVHeatmap.Rmd`）
 - 依赖：CRAN RColorBrewer, dplyr, ggplot2；Bioconductor TxDb.Hsapiens.UCSC.hg19.knownGene, TxDb.Hsapiens.UCSC.hg38.knownGene, trackViewer, ComplexHeatmap, TCGAbiolinks, circlize, org.Hs.eg.db
-- 最近运行：not_run（as-is，2026-11-04 14:16 UTC，1.6 秒）；缺包 TCGAbiolinks
+- 最近运行：pass（as-is，2026-11-04 15:08 UTC，166.0 秒）
 - 派生模板（L2）：暂无
+- 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
+
+![[recipes/figureya-307cnvheatmap/preview.png]]
 <!-- facts:end -->
 
 ## 用途

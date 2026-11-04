@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-34count2fpkmv2",
+  "run_id": "20261104T150823Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa34count2FPKMv2.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T15:08:23+00:00",
+  "duration_s": 4.7,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "easy_input.csv": "1e498a601be4ef0f359240e806576f9b7660a1bf556c35bcda0b66937bc5f33e",
+    "FigureYa34count2FPKMv2.jpg": "1d9ea429a23be0970671d91d97ee75d37c2612e943bf89e18043f8a4ae7e5818",
+    "FigureYa34count2FPKMv2.Rmd": "116f88f56f3f33bb5006fa8172e398e3331b4c28ce392609bbc4a8e7e1e835b1",
+    "gene_length.csv": "ee9a4a1c8fa3aa565660154dff35fdbdddad9df303f92cd03f5bdde4955ef1d6",
+    "install.log": "8811314967030afc76c6b62a3cdd3118eba7b43d8bf1703315b03b79e75227dd",
+    "install_dependencies.R": "830913babe6340ff07f9755a28dbf34f406d7bb38d23877da692c42af3857d28",
+    "output_count2fpkm.txt": "4cc92bbd220789e2bc581857f9f1164160985dcba112e0aabc405f12996de8da",
+    "TCGA_FPKM.csv": "f6e0da4e7453831e0ae550bbaab0f30d79de8d217e9330430e48d0eabf856574"
+  },
+  "outputs": {
+    "output_count2fpkm.txt": "0a51a73897c80b84ef0792dfc51ef901d81002795645aafbf91ff4e0b5c0f360"
+  },
+  "expected_outputs": [],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": null,
+  "workdir": "<work_root>/runs/figureya-34count2fpkmv2/20261104T150823901423Z"
+}
