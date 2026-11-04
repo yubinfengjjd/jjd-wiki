@@ -1,0 +1,104 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-151pathifier",
+  "run_id": "20261104T121626Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa151pathifier.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T12:16:26+00:00",
+  "duration_s": 1023.1,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "bitops": "1.1.0",
+      "caTools": "1.18.4",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "data.table": "1.18.6.1",
+      "datasets": "4.5.0",
+      "dichromat": "2.0.1",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "farver": "2.1.2",
+      "fastmap": "1.2.0",
+      "glue": "1.8.1",
+      "gplots": "3.3.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "gtable": "0.3.6",
+      "gtools": "3.9.5",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "KernSmooth": "2.23.26",
+      "knitr": "1.52",
+      "lifecycle": "1.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pathifier": "1.46.0",
+      "pheatmap": "1.0.13",
+      "princurve": "2.1.6",
+      "R.methodsS3": "1.8.2",
+      "R.oo": "1.27.1",
+      "R6": "2.6.1",
+      "RColorBrewer": "1.1.3",
+      "Rcpp": "1.1.2",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "scales": "1.4.0",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "customized.gmt": "66755400ff8b113c6f9ea745470dad48367ed90b088f539364cc70051325a6c1",
+    "easy_input_expr.txt": "15b1e7216c6ecd3e7ead0f461a433d540fd780e8630b3689150560830ab4079d",
+    "easy_input_info.txt": "97df4d06ec9ff539e8cf318a4564051b710c2912656c57a1bf63a46f2a38fe01",
+    "example.png": "bbed6e8fca88405d3304e8048a7412894936101d8f75672afe1fbfa6f2394ecc",
+    "FigureYa151pathifier.Rmd": "a795c94e259ecbf5992ede94e7595eb9aae99fca5e6475188c6d5a36e627aa01",
+    "gene_paper1.txt": "ea9e3bc8c5106a5058e34e23e954d25c7ac764639de1e443bd0839ad619b2528",
+    "gene_paper2.txt": "17e8691940349d7a052fa9d6fb958203d261d7f0d29fb14a03444c175cf18530",
+    "gene_paper3.txt": "77e0142e205a3955a46ebb32a8f5d255be290996a4457a9c22c40e0256588880",
+    "install.log": "c5081e00d397f0549c5df53c4e01458459884bbd68d018cc9fee8791b94ab922",
+    "install_dependencies.R": "a4e58789c90d301bfec4d327caf8c37027059a3b3d30b59e10b68a04d8af26db",
+    "pathifier.pdf": "3e6935b4503dde1ea8ccd20f8481b140861a21dd9b6f746e8eb500385a0b95dc",
+    "pathifier_output.csv": "57d3f79eb49d8886bcf729f830896055a6446e76621eb67383b6e64018b3d5ce",
+    "Readme.png": "c360bcf29166e8b8548f67ca9dcf79da2c6defaacd9abc9162bbddbe5045de92"
+  },
+  "outputs": {
+    "pathifier_output.csv": "593c17df84034a3c5f13b95d0a329c130d89e8963e19c48ad64b68406e890c8c",
+    "rwiki-figure/unnamed-chunk-10-1.png": "09dfc5738fc0a96a13c1a706876371463c28a81aa02d16f3aedc204d3734d6ab"
+  },
+  "expected_outputs": [
+    "pathifier.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-10-1.png"
+  ],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "rwiki-figure/unnamed-chunk-10-1.png",
+    "kind": "png"
+  },
+  "workdir": "<work_root>/runs/figureya-151pathifier/20261104T121626334647Z"
+}

@@ -75,8 +75,11 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa219GMM.Rmd`）
 - 依赖：CRAN mclust, pROC；Bioconductor miRBaseVersions.db, miRBaseConverter, SimDesign
-- 最近运行：尚无当前原字节的运行收据
+- 最近运行：pass（as-is，2026-11-04 12:16 UTC，49.0 秒）
 - 派生模板（L2）：暂无
+- 运行预览（最近一次通过的原样运行，取自 `GMM cluster of all auc model combination.pdf` 第 1 页）：
+
+![[recipes/figureya-219gmm/preview.png]]
 <!-- facts:end -->
 
 ## 用途
