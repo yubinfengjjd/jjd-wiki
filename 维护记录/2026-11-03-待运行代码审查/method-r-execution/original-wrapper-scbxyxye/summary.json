@@ -1,0 +1,56 @@
+{
+  "source_identity_passed": true,
+  "source_identity_sha256": "d6cef2acbd41f467e5bb024ce09eb1c985086d3374ad30be385578e7e56262d6",
+  "algorithm_verification_state": "not_run",
+  "formal_receipts_modified": false,
+  "cases": [
+    {
+      "method": "doublet-detection",
+      "implementation": "scp-rundoublet",
+      "runs": [
+        {
+          "mode": "original",
+          "execution_state": "not_run",
+          "error": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead.",
+          "input_serialized_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+          "external_run_directory": "<ENV_ROOT>\\method-runs\\original-wrapper-scbxyxye\\doublet-detection-original"
+        },
+        {
+          "mode": "wrapper",
+          "execution_state": "executed",
+          "error": null,
+          "input_serialized_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+          "external_run_directory": "<ENV_ROOT>\\method-runs\\original-wrapper-scbxyxye\\doublet-detection-wrapper"
+        }
+      ],
+      "comparison_state": "not_run",
+      "algorithm_verification_state": "not_run",
+      "same_input_serialized_sha256": true,
+      "comparison_reason": "Both original and wrapper must complete on the same input before comparing actual output arrays."
+    },
+    {
+      "method": "cell-type-annotation",
+      "implementation": "scp-singler",
+      "runs": [
+        {
+          "mode": "original",
+          "execution_state": "not_run",
+          "error": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead.",
+          "input_serialized_sha256": "4c6a0e43e0e1315a66650c22a0780a6cb2b41ad3e9f685a3c835adc1cb09b3dc",
+          "external_run_directory": "<ENV_ROOT>\\method-runs\\original-wrapper-scbxyxye\\cell-type-annotation-original"
+        },
+        {
+          "mode": "wrapper",
+          "execution_state": "not_run",
+          "error": "No cell overlap between new meta data and Seurat object",
+          "input_serialized_sha256": "f5c8fb168eccd33716372a53f0caf48dafc12e726408c9eda6cca9853bafe0fe",
+          "external_run_directory": "<ENV_ROOT>\\method-runs\\original-wrapper-scbxyxye\\cell-type-annotation-wrapper"
+        }
+      ],
+      "comparison_state": "not_run",
+      "algorithm_verification_state": "not_run",
+      "same_input_serialized_sha256": false,
+      "comparison_reason": "Both original and wrapper must complete on the same input before comparing actual output arrays."
+    }
+  ]
+}

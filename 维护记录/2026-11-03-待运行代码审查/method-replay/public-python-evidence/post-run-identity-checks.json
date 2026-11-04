@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-11-03T11:49:08.672655+00:00",
+  "scope": "Additional read-only identity checks after actual six-branch execution; no source/receipt promotion",
+  "executed_driver_sha256": "d46dac890ed5c8e55f0e70733cd5734a9ce825a09b358023af1d432f38fd6aee",
+  "branches": [
+    {
+      "implementation": "py-eval-binary",
+      "checks": {
+        "same_frozen_input_bytes_as_reference": true,
+        "source_code_tree_unchanged_since_run": true,
+        "copied_closure_identical_to_source": true,
+        "all_recorded_outputs_match": true,
+        "comparison_file_matches_run_summary": true,
+        "same_fitted_model_bytes_as_reference": true
+      },
+      "raw_external_audit_sha256": "20cf93124347080bb2961585b4a756ccc62354cdf7b6a840623c19d82ba47b33",
+      "raw_external_comparison_sha256": "ba8084d2e4e7aeb78b29c21a1711f176dc86313292f105f539801d0d41b54d8a"
+    },
+    {
+      "implementation": "py-compute-specificity",
+      "checks": {
+        "same_frozen_input_bytes_as_reference": true,
+        "source_code_tree_unchanged_since_run": true,
+        "copied_closure_identical_to_source": true,
+        "all_recorded_outputs_match": true,
+        "comparison_file_matches_run_summary": true,
+        "same_fitted_model_bytes_as_reference": true
+      },
+      "raw_external_audit_sha256": "6062d1737d6980e11cf4ad682e92272802d61e469bb0281bef1e063a273f9578",
+      "raw_external_comparison_sha256": "a7eee086642fc292b941256124eb7807cc151b026667f849439eb56db3c16d3e"
+    },
+    {
+      "implementation": "py-youden-threshold",
+      "checks": {
+        "same_frozen_input_bytes_as_reference": true,
+        "source_code_tree_unchanged_since_run": true,
+        "copied_closure_identical_to_source": true,
+        "all_recorded_outputs_match": true,
+        "comparison_file_matches_run_summary": true,
+        "same_fitted_model_bytes_as_reference": true
+      },
+      "raw_external_audit_sha256": "6d56f337f89d6ac12e7c7f59a5c90fcf90ea74f8f5a38447f16f92c2eb0a668b",
+      "raw_external_comparison_sha256": "fdc8567fbaec5adbc487a6cca8b052a6d5272efd78433e47b72cd04e62d57fde"
+    },
+    {
+      "implementation": "py-bootstrap-ci-auc",
+      "checks": {
+        "same_frozen_input_bytes_as_reference": true,
+        "source_code_tree_unchanged_since_run": true,
+        "copied_closure_identical_to_source": true,
+        "all_recorded_outputs_match": true,
+        "comparison_file_matches_run_summary": true,
+        "same_fitted_model_bytes_as_reference": true
+      },
+      "raw_external_audit_sha256": "213093ee3f93dd8dbcc53a303f75c661f35e955245c9d9c565663a214b840cf2",
+      "raw_external_comparison_sha256": "37f3ddb1d17a1b1f0c74dd35061d304629076c84cc7e17f79b8a1d7b49188aad"
+    },
+    {
+      "implementation": "py-get-proba",
+      "checks": {
+        "same_frozen_input_bytes_as_reference": true,
+        "source_code_tree_unchanged_since_run": true,
+        "copied_closure_identical_to_source": true,
+        "all_recorded_outputs_match": true,
+        "comparison_file_matches_run_summary": true,
+        "same_fitted_model_bytes_as_reference": true
+      },
+      "raw_external_audit_sha256": "15f48329f52100339f1009fdbf335e645143746a111b8b5de4ed09991af5a2f0",
+      "raw_external_comparison_sha256": "e9639b716e0f237325c5d831605f7aa3d9e3bf4eb6a5d576c2df0c63a3690932"
+    },
+    {
+      "implementation": "py-roc-render",
+      "checks": {
+        "same_frozen_input_bytes_as_reference": true,
+        "source_code_tree_unchanged_since_run": true,
+        "copied_closure_identical_to_source": true,
+        "all_recorded_outputs_match": true,
+        "comparison_file_matches_run_summary": true
+      },
+      "raw_external_audit_sha256": "fc36ec9aeb6a51daecc69d83cd6def7b9c07062cdc56cef5318a579e3e1e490b",
+      "raw_external_comparison_sha256": "36316c975919bbe61f9498089c4194fd791bb2b1a6c362bdd5c3cead60552ba9"
+    }
+  ]
+}

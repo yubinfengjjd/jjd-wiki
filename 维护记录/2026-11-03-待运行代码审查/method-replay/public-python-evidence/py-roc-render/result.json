@@ -1,0 +1,135 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "state": "executed",
+  "implementation": "py-roc-render",
+  "result": {
+    "rgba_sha256": "5733ed55d828f8aafd3d73b970fc2df8babd41e465d98bd0855fa653ff843145",
+    "axes_count": 2,
+    "line_data": [
+      {
+        "x": [
+          0,
+          1
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "label": "_child0",
+        "color": "black"
+      },
+      {
+        "x": [
+          0.0,
+          0.0,
+          0.0,
+          0.006289308176100629,
+          0.006289308176100629,
+          0.012578616352201259,
+          0.012578616352201259,
+          0.031446540880503145,
+          0.031446540880503145,
+          1.0
+        ],
+        "y": [
+          0.0,
+          0.003745318352059925,
+          0.9288389513108615,
+          0.9288389513108615,
+          0.9400749063670412,
+          0.9400749063670412,
+          0.9962546816479401,
+          0.9962546816479401,
+          1.0,
+          1.0
+        ],
+        "label": "Train",
+        "color": "#2874C5"
+      },
+      {
+        "x": [
+          0.0,
+          0.0,
+          0.0,
+          0.018867924528301886,
+          0.018867924528301886,
+          0.03773584905660377,
+          0.03773584905660377,
+          0.05660377358490566,
+          0.05660377358490566,
+          0.07547169811320754,
+          0.07547169811320754,
+          0.11320754716981132,
+          0.11320754716981132,
+          1.0
+        ],
+        "y": [
+          0.0,
+          0.011111111111111112,
+          0.6,
+          0.6,
+          0.9,
+          0.9,
+          0.9555555555555556,
+          0.9555555555555556,
+          0.9777777777777777,
+          0.9777777777777777,
+          0.9888888888888889,
+          0.9888888888888889,
+          1.0,
+          1.0
+        ],
+        "label": "Held-out",
+        "color": "#d62728"
+      }
+    ],
+    "auc_text": [
+      "0.999",
+      "0.989"
+    ]
+  },
+  "checks": {
+    "actual_invocation": true,
+    "input_arrays_unchanged": true,
+    "model_unchanged": true,
+    "input_and_code_files_unchanged": true
+  },
+  "array_hashes": {
+    "X_train": "8213287a33cb76557dcf7901454bf5e849ee05ed5e1cf6821e21ec74232a5aac",
+    "X_test": "ac5d661815a5c9426f2e7ecce85a3d9f48803ce2708c682ab47f0bbb6b5befb1",
+    "y_train": "2d549836642e6c07b6b0118c3f0178a9edef5167569bdc4bdefd8081ce462c49",
+    "y_test": "339d192477927be2b5fb7d677b8f9954988997624092f712d6306fcaa4d24088",
+    "train_indices": "b90f1f93a5a606b2c73832ca32ca9613cbae9184d8f058d730a6972e62938c22",
+    "test_indices": "73239df8b14002f5accff82344e6ea7a8f538e29f7aa721ac5a01febeed4277e",
+    "feature_names": "5891c8ac8665e9e1e7763d1148b945795367204ff3032daaef97b10b52e20543",
+    "prob_train": "ea42319e3c549c55228cbb73d77de200ca76e463a540c5feed23c80e937f6edc",
+    "prob_test": "2512f6d83b2506bb85cbc9ee35b6a9ddcbe2d33b4efcb7f68dff514905ec4355",
+    "fpr_train": "79dbd8d60cef18d8c10f49931c41640e3e2ea5532bc6c4892c0ea75e41d0e081",
+    "tpr_train": "1d6b084da7fe64a8f64e94a32b19767140c5e7c3eec54b2f61802d341fbfbddb",
+    "fpr_test": "defe78a3afeadf4de7cabb66cfd94ec2043806ba17e2a9f999c7d672c1e56d47",
+    "tpr_test": "e5ff7e430a9a332ac5eae7b4d9f787759291f2ec0e71ddc1bca4d0450ca82ce3",
+    "auc_train": "90e37256e12e3941116daebae04ec77f2785ce654e793bca97c25ed93bdd28af",
+    "auc_test": "fcaa4b30c4bfc2fd3981704fb3409d9cd7ce8211ac5d4a43504c82938aba40e8"
+  },
+  "model_object_sha256": null,
+  "input_sha256": {
+    "<RUN_ROOT>/isolated-py-roc-render/inputs.npz": "45f272351ec015a066dd475f5be7cc8025c5791555dd3bc690cd106ca22ac7e5",
+    "<RUN_ROOT>/isolated-py-roc-render/code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "environment": {
+    "Python": "3.12.7",
+    "platform": "win32",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pillow": "13.0.0"
+    },
+    "automatic_installation": false,
+    "MPLBACKEND": "Agg"
+  },
+  "executed_at": "2026-11-03T11:46:56.502593+00:00"
+}

@@ -3,6 +3,8 @@ import argparse
 import json
 from pathlib import Path
 
+from machine_paths import resolve_dev_root
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -10,11 +12,16 @@ def main():
     parser.add_argument('--rscript-exe', required=True, type=Path)
     parser.add_argument('--env-root', type=Path)
     parser.add_argument('--output', type=Path)
+    parser.add_argument('--dev-root', type=Path)
     args = parser.parse_args()
     vault = Path(__file__).resolve().parents[1]
-    skill = vault / '开发/staged/research-wiki'
+    try:
+        dev = resolve_dev_root(vault, args.dev_root)
+    except ValueError as exc:
+        parser.error(str(exc))
+    skill = dev / 'staged/research-wiki'
     env_root = (args.env_root or vault.parent / 'research-wiki-env').resolve()
-    output = args.output or skill / 'config.json'
+    output = (args.output or skill / 'config.json').resolve()
     if output.exists():
         parser.error(f'配置已存在，先人工核对或备份，不覆盖：{output}')
     for path in (args.python_exe, args.rscript_exe, skill / 'assets/scenario_taxonomy.json'):
@@ -29,7 +36,7 @@ def main():
                env={'vars': {'TEMP': str(env_root / 'tmp'), 'TMP': str(env_root / 'tmp'),
                              'MPLCONFIGDIR': str(env_root / 'tmp/mpl')}},
                github={'owner': 'yubinfengjjd', 'dev_repo': 'jjd-wiki-dev', 'vault_repo': 'jjd-wiki',
-                       'dev_root': str(vault / '开发'), 'vault_root': str(vault),
+                       'dev_root': str(dev), 'vault_root': str(vault),
                        'worktree_root': str(env_root / 'worktrees')})
     output.parent.mkdir(parents=True, exist_ok=True)
     for relative in ('tmp/mpl', 'work/rwiki', 'sources', 'R-lib'):

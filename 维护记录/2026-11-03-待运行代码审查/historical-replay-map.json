@@ -1,0 +1,1703 @@
+{
+  "batch-integration": [
+    {
+      "id": "scp-seurat",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" batch-integration \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration/result.rds\"",
+      "case": {
+        "label": "Seurat anchor integration",
+        "parameters": {
+          "parameters": {
+            "nHVF": 300,
+            "linear_reduction_dims": 20,
+            "nonlinear_reduction_dims": 2,
+            "cluster_resolution": 0.5,
+            "IntegrateData_params": {
+              "k.weight": 30
+            },
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "scp-harmony",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" batch-integration-harmony \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration-harmony/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/batch-integration-harmony/result.rds\"",
+      "case": {
+        "label": "Harmony integration",
+        "parameters": {
+          "parameters": {
+            "batch": "batch",
+            "nHVF": 300,
+            "linear_reduction_dims": 20,
+            "nonlinear_reduction_dims": 2,
+            "cluster_resolution": 0.5,
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "cell-clustering": [
+    {
+      "id": "seurat-findclusters",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_VAULT/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_R.R $OLD_VAULT/知识库 $OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda",
+      "case": null,
+      "inputs": null
+    }
+  ],
+  "cell-quality-control": [
+    {
+      "id": "scp-runcellqc",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" cell-quality-control \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/cell-quality-control/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/cell-quality-control/result.rds\"",
+      "case": {
+        "label": "QC non-doublet",
+        "parameters": {
+          "parameters": {
+            "qc_metrics": [
+              "umi",
+              "gene",
+              "mito"
+            ],
+            "UMI_threshold": 0,
+            "gene_threshold": 0,
+            "mito_threshold": 100,
+            "return_filtered": false,
+            "assay": "RNA",
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "cell-type-annotation": [
+    {
+      "id": "scp-singler",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" cell-type-annotation \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/cell-type-annotation/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/cell-type-annotation/result.rds\"",
+      "case": {
+        "label": "SingleR annotation",
+        "parameters": {
+          "parameters": {
+            "ref_group": "CellType",
+            "query_assay": "RNA",
+            "ref_assay": "RNA"
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "differential-expression": [
+    {
+      "id": "scp-detest",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" differential-expression \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/differential-expression/result.rds\"",
+      "case": {
+        "label": "Wilcoxon DE",
+        "parameters": {
+          "parameters": {
+            "group_by": "CellType",
+            "group1": "Ductal",
+            "group2": "Endocrine",
+            "test.use": "wilcox",
+            "only.pos": false,
+            "fc.threshold": 1,
+            "min.pct": 0.1,
+            "p.adjust.method": "bonferroni",
+            "slot": "data",
+            "assay": "RNA",
+            "verbose": false,
+            "BPPARAM": "<SerialParam>",
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "dimensionality-reduction": [
+    {
+      "id": "scp-dimreduction",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" dimensionality-reduction \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/dimensionality-reduction/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/dimensionality-reduction/result.rds\"",
+      "case": {
+        "label": "PCA UMAP",
+        "parameters": {
+          "parameters": {
+            "features": [
+              "Iapp",
+              "Gcg",
+              "Nnat",
+              "Ins2",
+              "Ins1",
+              "2810417H13Rik",
+              "Ghrl",
+              "Slc38a5",
+              "Pyy",
+              "Hmgb2",
+              "Chgb",
+              "Gadd45a",
+              "Rbp4",
+              "Neurog3",
+              "Cdkn1a",
+              "Ppp1r1a",
+              "Lrpprc",
+              "Cck",
+              "Sst",
+              "Spp1",
+              "Gast",
+              "Top2a",
+              "Hhex",
+              "Ccnb1",
+              "Cdk1",
+              "Ppy",
+              "Cdc20",
+              "Fev",
+              "Npy",
+              "Clu",
+              "Sdf2l1",
+              "Cks2",
+              "Tmem27",
+              "Chga",
+              "Hes1",
+              "8430408G22Rik",
+              "Birc5",
+              "Btbd17",
+              "Dlk1",
+              "Ldha",
+              "Peg10",
+              "Scg2",
+              "Tuba1b",
+              "Ccnd1",
+              "Mt2",
+              "Dll3",
+              "Serpina1c",
+              "Cdkn1c",
+              "Ptn",
+              "Isl1",
+              "Krtap17-1",
+              "Mt1",
+              "Gmnn",
+              "Gip",
+              "Spc24",
+              "Arg1",
+              "Cdca8",
+              "Wfdc2",
+              "Cldn10",
+              "Id1",
+              "Creld2",
+              "Cyr61",
+              "Cenpf",
+              "Pcsk2",
+              "Cenpa",
+              "Mafb",
+              "Gng12",
+              "Ccnb2",
+              "Cdca3",
+              "H2afx",
+              "Pcsk1n",
+              "Ppp1r14a",
+              "Arx",
+              "Mki67",
+              "Vim",
+              "Ttr",
+              "Tk1",
+              "Dbpht2",
+              "Myl9",
+              "Tmsb4x",
+              "Sytl4",
+              "Gpx3",
+              "Tubb5",
+              "Anxa2",
+              "Id2",
+              "Zcchc18",
+              "Gadd45g",
+              "1700086L19Rik",
+              "Sox9",
+              "Stmn1",
+              "Tubb3",
+              "Irx2",
+              "Selm",
+              "Cym",
+              "Tuba1c",
+              "Dbi",
+              "C2cd4b",
+              "1700011H14Rik",
+              "Sparc",
+              "Arl6ip1"
+            ],
+            "linear_reduction": "pca",
+            "nonlinear_reduction": "umap",
+            "linear_reduction_dims": 20,
+            "reduction_use": "pca",
+            "reduction_dims": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "force_linear_reduction": true,
+            "force_nonlinear_reduction": true,
+            "verbose": false
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "doublet-detection": [
+    {
+      "id": "scp-rundoublet",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" doublet-detection \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/doublet-detection/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/doublet-detection/result.rds\"",
+      "case": {
+        "label": "doublet scDblFinder",
+        "parameters": {
+          "parameters": {
+            "assay": "RNA",
+            "db_method": "scDblFinder",
+            "db_rate": 0.01,
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "dynamic-feature-analysis": [
+    {
+      "id": "scp-dynamicfeatures",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" dynamic-feature-analysis \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/dynamic-feature-analysis/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/dynamic-feature-analysis/result.rds\"",
+      "case": {
+        "label": "GAM dynamic features",
+        "parameters": {
+          "parameters": {
+            "lineages": "fixture_time",
+            "features": [
+              "Gcg",
+              "Krt19"
+            ],
+            "slot": "data",
+            "n_candidates": {},
+            "BPPARAM": "<SerialParam>",
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "gene-set-enrichment": [
+    {
+      "id": "scp-enrichment",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" gene-set-enrichment \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-enrichment/result.rds\"",
+      "case": {
+        "label": "ORA custom TERM2GENE",
+        "parameters": {
+          "parameters": {
+            "geneID_groups": {},
+            "IDtype": "symbol",
+            "species": "Homo_sapiens",
+            "TERM2GENE": {
+              "term": [
+                "T1",
+                "T1",
+                "T1",
+                "T2",
+                "T2",
+                "T2"
+              ],
+              "gene": [
+                "Ins1",
+                "Gcg",
+                "Sst",
+                "Krt19",
+                "Krt8",
+                "Epcam"
+              ]
+            },
+            "TERM2NAME": {
+              "term": [
+                "T1",
+                "T2"
+              ],
+              "name": [
+                "Endocrine",
+                "Ductal"
+              ]
+            },
+            "minGSSize": 1,
+            "maxGSSize": 500,
+            "db_update": false,
+            "BPPARAM": "<SerialParam>",
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "gene-set-scoring": [
+    {
+      "id": "scp-cellscoring",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" gene-set-scoring \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-scoring/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/gene-set-scoring/result.rds\"",
+      "case": {
+        "label": "Seurat module score",
+        "parameters": {
+          "parameters": {
+            "features": {
+              "Endocrine": [
+                "Gcg",
+                "Sst"
+              ],
+              "Ductal": [
+                "Krt19",
+                "Krt8",
+                "Epcam"
+              ]
+            },
+            "method": "Seurat",
+            "classification": false,
+            "name": "X",
+            "slot": "data",
+            "assay": "RNA",
+            "BPPARAM": "<SerialParam>",
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "local-omics-analysis-guide": [
+    {
+      "id": "native-library",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "native-normalize",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_r.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/native-normalize-portable-config.json",
+      "case": {
+        "state": "passed",
+        "checks": [
+          "Actual real-data function call",
+          "Original/extracted equality in reference phase",
+          "Input unchanged",
+          "Search/options restored"
+        ],
+        "output_hash": "7a8ae3f28b26065c1a21405e4eb8d68127f960f63ef1e41e8844c246cdf31f27",
+        "diagnostics": {
+          "function_id": "r-3159ac3f7a9e-112",
+          "source_sha256": "3159ac3f7a9e2666428530e87966107e1a4a27810d4f210a4de495b0980c9020",
+          "resolved_symbols": [],
+          "loaded_namespaces": [],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true,
+          "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "native-gini",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_r.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/native-gini-portable-config.json",
+      "case": {
+        "state": "passed",
+        "checks": [
+          "Actual real-data function call",
+          "Original/extracted equality in reference phase",
+          "Input unchanged",
+          "Search/options restored"
+        ],
+        "output_hash": "7fe50a13dbbf4f1f02fe9141b8789646520247bef8b415a994942f848927b4ba",
+        "diagnostics": {
+          "function_id": "r-ddf2ce7f0734-16",
+          "source_sha256": "ddf2ce7f073403ee160debb1e4b681c7270685f94561061a31a0ad8ab190e535",
+          "resolved_symbols": [],
+          "loaded_namespaces": [],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true,
+          "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "native-combinations",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_r.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/native-combinations-portable-config.json",
+      "case": {
+        "state": "passed",
+        "checks": [
+          "Actual real-data function call",
+          "Original/extracted equality in reference phase",
+          "Input unchanged",
+          "Search/options restored"
+        ],
+        "output_hash": "82420499429e5df039c606e9413d141b7a89353ecaab6934089d6d596c85b658",
+        "diagnostics": {
+          "function_id": "r-51aa04641949-147",
+          "source_sha256": "51aa046419492b5eb05a237ec50014619bc930e860049d48f9e50ba3c36fdeb3",
+          "resolved_symbols": {
+            "combn": "utils"
+          },
+          "loaded_namespaces": "utils",
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true,
+          "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "native-gmt",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_r.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/native-gmt-portable-config.json",
+      "case": {
+        "state": "passed",
+        "checks": [
+          "Actual real-data function call",
+          "Original/extracted equality in reference phase",
+          "Input unchanged",
+          "Search/options restored"
+        ],
+        "output_hash": "3e6f33e40d9b7770cd787d135d2c3a0787913dc225a4cffd4074c26b957fe2bb",
+        "diagnostics": {
+          "function_id": "r-a9eb819f531a-263",
+          "source_sha256": "a9eb819f531a31591526b218dba22932d728b492b76f79cd25138e43eff3b49b",
+          "resolved_symbols": [],
+          "loaded_namespaces": [],
+          "search_restored": true,
+          "options_restored": true,
+          "library_paths_restored": true,
+          "algorithm_scope": "Only this function, explicit arguments/bindings and actual dependency versions; no family-wide validation implied."
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "native-dynamic",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "native-score-dot",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_graphics.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/score-dot-portable-config.json",
+      "case": {
+        "state": "comparison_passed_pending_process_exit",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/score-dot/native-score-dot-portable.png",
+        "output_hash": "1399964f1fee6d52c45996646b1a0e1065030ee4c843ad1ec320c124dc0200e9"
+      },
+      "inputs": null
+    },
+    {
+      "id": "native-cellchat",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "native-singscore",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "irgsea-score",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "irgsea-integrate",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "consensus-cluster",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "cellchat-create",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "gsva-call",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "py-eval-binary",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_python_portable.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/py-eval-binary evaluation $PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/portable/py-eval-binary",
+      "case": {
+        "passed": true,
+        "checks": [
+          "eval_binary",
+          "youden_threshold",
+          "bootstrap_ci_auc",
+          "compute_specificity",
+          "get_proba"
+        ],
+        "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+      },
+      "inputs": null
+    },
+    {
+      "id": "py-compute-specificity",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_python_portable.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/py-compute-specificity evaluation $PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/portable/py-compute-specificity",
+      "case": {
+        "passed": true,
+        "checks": [
+          "eval_binary",
+          "youden_threshold",
+          "bootstrap_ci_auc",
+          "compute_specificity",
+          "get_proba"
+        ],
+        "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+      },
+      "inputs": null
+    },
+    {
+      "id": "py-youden-threshold",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_python_portable.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/py-youden-threshold evaluation $PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/portable/py-youden-threshold",
+      "case": {
+        "passed": true,
+        "checks": [
+          "eval_binary",
+          "youden_threshold",
+          "bootstrap_ci_auc",
+          "compute_specificity",
+          "get_proba"
+        ],
+        "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+      },
+      "inputs": null
+    },
+    {
+      "id": "py-bootstrap-ci-auc",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_python_portable.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/py-bootstrap-ci-auc evaluation $PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/portable/py-bootstrap-ci-auc",
+      "case": {
+        "passed": true,
+        "checks": [
+          "eval_binary",
+          "youden_threshold",
+          "bootstrap_ci_auc",
+          "compute_specificity",
+          "get_proba"
+        ],
+        "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+      },
+      "inputs": null
+    },
+    {
+      "id": "py-get-proba",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_python_portable.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/py-get-proba evaluation $PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/portable/py-get-proba",
+      "case": {
+        "passed": true,
+        "checks": [
+          "eval_binary",
+          "youden_threshold",
+          "bootstrap_ci_auc",
+          "compute_specificity",
+          "get_proba"
+        ],
+        "scope": "New process, isolated declared code only; original source code never read; results compared with real-data original-function reference outputs."
+      },
+      "inputs": null
+    },
+    {
+      "id": "stacking-cli",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "native-dynamic-seurat5",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_dynamic.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/dynamic-portable-config.json",
+      "case": {
+        "cases": {
+          "raw_data": {
+            "state": "passed",
+            "output_hash": "048e94a2d2ad7d49f9f9aabc0ca88a8b2e5aa4092077c46ece9e395c1cfa831f",
+            "diagnostics": {
+              "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+              "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+              "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+              "theme_argument_bridge": false,
+              "accessor_checks": [
+                {
+                  "assay": "RNA",
+                  "source_slot": "data",
+                  "layer": "data",
+                  "legacy_matrix_equal": true
+                }
+              ],
+              "search_restored": true,
+              "options_restored": true,
+              "library_paths_restored": true
+            },
+            "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/dynamic/raw_data-portable.png",
+            "checks": [
+              "Actual 711-cell source Seurat object",
+              "Exact layer/legacy-slot matrix equality",
+              "Original-body legacy-accessor reference ggplot layer data equality",
+              "Input object unchanged",
+              "Caller search/options restored"
+            ]
+          },
+          "counts_log1p": {
+            "state": "passed",
+            "output_hash": "306b5fac28fed1bf3b092c1cb37c73efe949402bb3f1f5eef75170205382213c",
+            "diagnostics": {
+              "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+              "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+              "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+              "theme_argument_bridge": false,
+              "accessor_checks": [
+                {
+                  "assay": "RNA",
+                  "source_slot": "counts",
+                  "layer": "counts",
+                  "legacy_matrix_equal": true
+                },
+                {
+                  "assay": "RNA",
+                  "source_slot": "counts",
+                  "layer": "counts",
+                  "legacy_matrix_equal": true
+                }
+              ],
+              "search_restored": true,
+              "options_restored": true,
+              "library_paths_restored": true
+            },
+            "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/dynamic/counts_log1p-portable.png",
+            "checks": [
+              "Actual 711-cell source Seurat object",
+              "Exact layer/legacy-slot matrix equality",
+              "Original-body legacy-accessor reference ggplot layer data equality",
+              "Input object unchanged",
+              "Caller search/options restored"
+            ]
+          },
+          "default_theme": {
+            "state": "passed",
+            "output_hash": "048e94a2d2ad7d49f9f9aabc0ca88a8b2e5aa4092077c46ece9e395c1cfa831f",
+            "diagnostics": {
+              "source_declaration": "native/e003e60346ee69bd36f8f45848ddebc790bc56279d38f8f0ec891ba53f9a85ef.R",
+              "source_file_sha256": "e19bccaa972faf21e01bf7d8dcc57981bbb2df46f9e1d546f2fcb9a2ac6f1fee",
+              "compatibility": "Exactly two qualified accessor call heads bridged; Matrix generic bindings and a theme argument bridge restore source dependencies. Original model, transforms, grouping, missing handling and GAM fallback unchanged",
+              "theme_argument_bridge": true,
+              "accessor_checks": [
+                {
+                  "assay": "RNA",
+                  "source_slot": "data",
+                  "layer": "data",
+                  "legacy_matrix_equal": true
+                }
+              ],
+              "search_restored": true,
+              "options_restored": true,
+              "library_paths_restored": true
+            },
+            "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/dynamic/default_theme-portable.png",
+            "checks": [
+              "Actual 711-cell source Seurat object",
+              "Exact layer/legacy-slot matrix equality",
+              "Original-body legacy-accessor reference ggplot layer data equality",
+              "Input object unchanged",
+              "Caller search/options restored"
+            ]
+          }
+        },
+        "error_path": {
+          "reason": "Requested source slot is not one exact existing layer; no joining or partial matching performed",
+          "caller_environment_restored": true
+        },
+        "environment": {
+          "R": "4.5.0",
+          "Seurat": "5.6.0",
+          "SeuratObject": "5.4.0",
+          "PROCESSOR_ARCHITECTURE": "AMD64"
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "r-child-runner",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_runner.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/r-child-runner $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/runner-probe.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/runner-portable.json",
+      "case": {
+        "passed": true,
+        "runs": [
+          {
+            "returncode": 0,
+            "stdout": "AMD64 \n",
+            "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+            "command": [
+              "$OLD_R/bin/Rscript.exe",
+              "--vanilla",
+              "$OLD_ENV/work/rwiki/local-omics-reuse-20261102b/runner-probe.R"
+            ],
+            "environment_applied": {
+              "PROCESSOR_ARCHITECTURE": "AMD64"
+            },
+            "actual_architecture": "AMD64"
+          },
+          {
+            "returncode": 0,
+            "stdout": "AMD64 \n",
+            "stderr": "During startup - Warning messages:\n1: Setting LC_COLLATE=C.UTF-8 failed \n2: Setting LC_CTYPE=C.UTF-8 failed \n3: Setting LC_MONETARY=C.UTF-8 failed \n4: Setting LC_TIME=C.UTF-8 failed \n",
+            "command": [
+              "$OLD_R/bin/Rscript.exe",
+              "--vanilla",
+              "$OLD_ENV/work/rwiki/local-omics-reuse-20261102b/runner-probe.R"
+            ],
+            "environment_applied": {},
+            "actual_architecture": "AMD64"
+          }
+        ],
+        "parent_environment_unchanged": true,
+        "actual_architecture": "AMD64"
+      },
+      "inputs": null
+    }
+  ],
+  "local-omics-visualization-guide": [
+    {
+      "id": "py-roc-render",
+      "command": "$OLD_PYTHON -X utf8 $OLD_ENV/work/rwiki/local-omics-reuse-20261102/validate_python_portable.py $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/isolated/py-roc-render plot $PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/portable/py-roc-render",
+      "case": {
+        "passed": true,
+        "checks": [
+          "exact PNG hash equality with original source rendering"
+        ],
+        "scope": "New process, isolated declared plotting code, real precomputed ROC inputs, original source code never read."
+      },
+      "inputs": null
+    },
+    {
+      "id": "irgsea-heatmap",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "scp-cell-dim",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "scp-feature-dim",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "scp-feature-stat",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "scp-feature-heatmap",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "seurat-dim",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_seurat.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/seurat-portable-config.json",
+      "case": {
+        "state": "passed",
+        "output_hash": "cea38579a255de02ec6f0208f3e0d4f4bd315b91b07aa7452907a5258aea3e35",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-dim-portable.png",
+        "checks": [
+          "Actual source Seurat object",
+          "Native function plot layer data equality",
+          "Input unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "inputs": null
+    },
+    {
+      "id": "seurat-feature",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_seurat.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/seurat-portable-config.json",
+      "case": {
+        "state": "passed",
+        "output_hash": "3ceeb0029b8644e8c5595fc266a874b5c609b976371d4d4b493fafe2128e6429",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-feature-portable.png",
+        "checks": [
+          "Actual source Seurat object",
+          "Native function plot layer data equality",
+          "Input unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "inputs": null
+    },
+    {
+      "id": "seurat-violin",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_seurat.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/seurat-portable-config.json",
+      "case": {
+        "state": "passed",
+        "output_hash": "9ee4e8034a003bafbb2c2dcd2a4581175cf654f8a3142baa52817cd3e9380b57",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-violin-portable.png",
+        "checks": [
+          "Actual source Seurat object",
+          "Native function plot layer data equality",
+          "Input unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "inputs": null
+    },
+    {
+      "id": "seurat-dot",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_seurat.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/seurat-portable-config.json",
+      "case": {
+        "state": "passed",
+        "output_hash": "12b62fac2503b05a81574b049d97362cf4e54c9d1b25beee598976ecd7b613ad",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/seurat/seurat-dot-portable.png",
+        "checks": [
+          "Actual source Seurat object",
+          "Native function plot layer data equality",
+          "Input unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "inputs": null
+    },
+    {
+      "id": "seurat-spatial-dim",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_spatial.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/spatial-portable-config.json",
+      "case": {
+        "state": "passed",
+        "output_hash": "60efe850d986fdee74648a2ef7900356ac12243e1740d47a6d97ed0c98fc1e41",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/spatial/seurat-spatial-dim-portable.png",
+        "cells": 2378,
+        "checks": [
+          "Actual UC spatial object with stored image",
+          "Native Spatial plot layer data equality",
+          "Input unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "inputs": null
+    },
+    {
+      "id": "seurat-spatial-feature",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/validate_spatial.R $OLD_ENV/work/rwiki/local-omics-reuse-20261102b/spatial-portable-config.json",
+      "case": {
+        "state": "passed",
+        "output_hash": "908165a0edc6f9501de97486a4a9c7e32443d0be8e2452fcc730e0d94294d86b",
+        "path": "$PRIVATE_PROJECT/wiki-use/_project/reuse-verify-20261102b/spatial/seurat-spatial-feature-portable.png",
+        "cells": 2378,
+        "checks": [
+          "Actual UC spatial object with stored image",
+          "Native Spatial plot layer data equality",
+          "Input unchanged",
+          "Caller search/options restored"
+        ]
+      },
+      "inputs": null
+    },
+    {
+      "id": "cellchat-circle",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "cellchat-bubble",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "cellchat-aggregate",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "cellchat-heatmap",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "cellchat-role-heatmap",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "cellchat-role-scatter",
+      "command": "",
+      "case": null,
+      "inputs": null
+    }
+  ],
+  "reference-mapping": [
+    {
+      "id": "seurat-label-transfer",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" reference-transfer \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/reference-transfer/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/reference-transfer/result.rds\"",
+      "case": {
+        "label": "Seurat label transfer",
+        "parameters": {
+          "dims": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "k_weight": 50
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "scp-runseuratmap",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" reference-mapping \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/reference-mapping/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/reference-mapping/result.rds\"",
+      "case": {
+        "label": "RunSeuratMap projection",
+        "parameters": {
+          "parameters": {
+            "ref_pca": "PCA",
+            "ref_umap": "UMAP",
+            "ref_group": "CellType",
+            "ref_dims": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ],
+            "projection_method": "knn",
+            "k": 10,
+            "distance_metric": "cosine",
+            "vote_fun": "mean"
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "regression-resampling-evaluation": [
+    {
+      "id": "summarize-predictions",
+      "command": "$OLD_ENV/bio-python/Scripts/python.exe -X utf8 $OLD_VAULT/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_python.py $OLD_VAULT/知识库/methods",
+      "case": null,
+      "inputs": null
+    }
+  ],
+  "rna-velocity": [
+    {
+      "id": "scp-scvelo",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" rna-velocity \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result.rds\"",
+      "case": {
+        "label": "scVelo",
+        "parameters": {
+          "parameters": {
+            "assay_X": "RNA",
+            "assay_layers": [
+              "spliced",
+              "unspliced"
+            ],
+            "group_by": "CellType",
+            "linear_reduction": "PCA"
+          }
+        }
+      },
+      "inputs": null
+    }
+  ],
+  "scp-visualization-interface": [
+    {
+      "id": "scp-table-adapters",
+      "command": "$OLD_R/bin/Rscript.exe --vanilla $OLD_VAULT/知识库/methods/scp-visualization-interface/code/test_scp_tables.R",
+      "case": null,
+      "inputs": null
+    }
+  ],
+  "scp-viz-dimplots": [
+    {
+      "id": "scp-celldensityplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-celldensityplot_f_x_order_rank_1793517551_15996'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "f_x_order_rank",
+        "args": {
+          "srt": "@pancreas_sub",
+          "features": "Ins1",
+          "x_order": "rank"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-celldimplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-celldimplot_mark_circle_1793517561_14232'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "mark_circle",
+        "args": {
+          "srt": "@pancreas_sub",
+          "group.by": "CellType",
+          "reduction": "UMAP",
+          "add_mark": true,
+          "mark_type": "circle"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-celldimplot3d",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-celldimplot3d_cell_3d_1793517570_3384'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "cell_3d",
+        "args": {
+          "srt": "@pancreas_sub",
+          "group.by": "CellType",
+          "reduction": "PCA",
+          "dims": [
+            1,
+            2,
+            3
+          ],
+          "width": 900,
+          "height": 650
+        },
+        "seed": null
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-featuredimplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-featuredimplot_keep_all_1793517585_19992'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "keep_all",
+        "args": {
+          "srt": "@pancreas_sub",
+          "features": [
+            "Sox9",
+            "Anxa2"
+          ],
+          "reduction": "UMAP",
+          "keep_scale": "all",
+          "split.by": "Phase"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-featuredimplot3d",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-featuredimplot3d_feature_3d_1793517598_13780'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "feature_3d",
+        "args": {
+          "srt": "@pancreas_sub",
+          "features": "Neurog3",
+          "reduction": "PCA",
+          "dims": [
+            1,
+            2,
+            3
+          ],
+          "width": 900,
+          "height": 650
+        },
+        "seed": null
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    }
+  ],
+  "scp-viz-heatmaps": [
+    {
+      "id": "scp-cellcorheatmap",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "scp-dynamicheatmap",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-dynamicheatmap_f_exp_method_raw_1793517614_12072'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "f_exp_method_raw",
+        "args": {
+          "srt": "@traj",
+          "lineages": "Lineage1",
+          "features": [
+            "Sox9",
+            "Anxa2",
+            "Fev",
+            "Nnat",
+            "Gcg",
+            "Ins1"
+          ],
+          "use_fitted": false,
+          "split_method": "hclust",
+          "n_split": 2,
+          "show_row_names": true,
+          "cell_annotation": "SubCellType",
+          "exp_method": "raw"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "slingshot-pancreas-native.rds": {
+          "sha256": "038a3d951feef76b9678628d14b0642e553a9a7e80ee13376646f26166b02afd",
+          "path": "$OLD_ENV/work/codex-scp-native-trajectory/slingshot-pancreas-native.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-featureheatmap",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-featureheatmap_default_1793517664_19668'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "default",
+        "args": {
+          "srt": "@pancreas_sub",
+          "features": [
+            "Sst",
+            "Ppy",
+            "Gcg",
+            "Ins1",
+            "Ins2",
+            "Iapp"
+          ],
+          "group.by": "CellType"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-groupheatmap",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-groupheatmap_annotation_1793517675_6744'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "annotation",
+        "args": {
+          "srt": "@pancreas_sub",
+          "features": [
+            "Sox9",
+            "Anxa2",
+            "Bicc1",
+            "Neurog3",
+            "Hes6",
+            "Fev",
+            "Neurod1",
+            "Rbp4",
+            "Pyy",
+            "Ins1",
+            "Gcg",
+            "Sst",
+            "Ghrl"
+          ],
+          "group.by": "CellType",
+          "nlabel": 0,
+          "show_row_names": true,
+          "cell_annotation": [
+            "Phase",
+            "G2M_score"
+          ],
+          "cell_annotation_palette": [
+            "Dark2",
+            "Paired"
+          ]
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    }
+  ],
+  "scp-viz-model-overlays": [
+    {
+      "id": "scp-dynamicplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-dynamicplot_native_curve_1793517957_14040'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "native_curve",
+        "args": {
+          "srt": "@traj",
+          "lineages": "Lineage1",
+          "features": "Nnat",
+          "group.by": "SubCellType",
+          "compare_features": false
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "slingshot-pancreas-native.rds": {
+          "sha256": "038a3d951feef76b9678628d14b0642e553a9a7e80ee13376646f26166b02afd",
+          "path": "$OLD_ENV/work/codex-scp-native-trajectory/slingshot-pancreas-native.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-enrichmentplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-enrichmentplot_positive_native_material_1793517973_4256'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "positive_native_material",
+        "args": {
+          "srt": "@srt_enr",
+          "db": "custom",
+          "group_by": "CellType",
+          "group_use": "Ductal",
+          "plot_type": "bar"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        },
+        "srt-enrichment.rds": {
+          "sha256": "0c6975f72377d06ef1317dea91a2595210d51b71213984f86c780981c6837fe7",
+          "path": "$OLD_ENV/work/kiro-scp-native/v5-enrichment/prep-enrichment/srt-enrichment.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-gseaplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-gseaplot_positive_native_material_1793517988_13900'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "positive_native_material",
+        "args": {
+          "srt": "@srt_gsea",
+          "db": "custom",
+          "group_by": "CellType",
+          "group_use": "Ductal",
+          "plot_type": "line"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        },
+        "srt-gsea.rds": {
+          "sha256": "38df375ed57bbce683f1fb3e72f498ba99bf681bfdc9e1aa8b30fd65c60e3a07",
+          "path": "$OLD_ENV/work/kiro-scp-native/v6-gsea/prep-gsea/srt-gsea.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-graphplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-graphplot_real_curved_1793518006_13072'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "real_curved",
+        "args": {
+          "node": "@eval:greal$node",
+          "edge": "@eval:greal$edge",
+          "node_group": "group",
+          "edge_line": "curved"
+        },
+        "seed": null
+      },
+      "inputs": {
+        "graph-real-neighbours.rds": {
+          "sha256": "921022b6fb1eccdc3c0a758620e72acf4dbf70a8a76b0ba828d2e9966a79bd51",
+          "path": "$OLD_ENV/work/codex-scp-native-graph/graph-real-neighbours.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-lineageplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-lineageplot_positive_native_material_1793518008_8460'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "positive_native_material",
+        "args": {
+          "srt": "@srt_sling",
+          "lineages": [
+            "Lineage1",
+            "Lineage2",
+            "Lineage3"
+          ],
+          "reduction": "UMAP"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        },
+        "slingshot-pancreas-native.rds": {
+          "sha256": "038a3d951feef76b9678628d14b0642e553a9a7e80ee13376646f26166b02afd",
+          "path": "$OLD_ENV/work/codex-scp-native-trajectory/slingshot-pancreas-native.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-pagaplot",
+      "command": "",
+      "case": null,
+      "inputs": null
+    },
+    {
+      "id": "scp-projectionplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-projectionplot_self_projection_1793518022_1308'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "self_projection",
+        "args": {
+          "srt_query": "@pancreas_sub",
+          "srt_ref": "@pancreas_sub",
+          "query_group": "CellType",
+          "ref_group": "CellType",
+          "query_reduction": "UMAP",
+          "ref_reduction": "UMAP"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-velocityplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-velocityplot_velocity_umap_1793028569_26340'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "velocity_umap",
+        "args": {
+          "srt": "@pancreas_sub",
+          "reduction": "UMAP",
+          "plot_type": "raw"
+        },
+        "seed": null
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-compute-velocity-on-grid",
+      "command": "",
+      "case": null,
+      "inputs": null
+    }
+  ],
+  "scp-viz-statplots": [
+    {
+      "id": "scp-cellstatplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-cellstatplot_f_plot_type_upset_1793518030_15920'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "f_plot_type_upset",
+        "args": {
+          "srt": "@pancreas_sub",
+          "stat.by": "CellType",
+          "group.by": "orig.ident",
+          "plot_type": "upset"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-featurecorplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-featurecorplot_two_markers_1793518043_6580'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "two_markers",
+        "args": {
+          "srt": "@pancreas_sub",
+          "features": [
+            "Sox9",
+            "Anxa2"
+          ],
+          "group.by": "CellType"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-featurestatplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-featurestatplot_f_add_stat_mean_1793518051_15780'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "f_add_stat_mean",
+        "args": {
+          "srt": "@pancreas_sub",
+          "stat.by": "Sox9",
+          "group.by": "CellType",
+          "plot_type": "violin",
+          "add_stat": "mean"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        }
+      }
+    },
+    {
+      "id": "scp-statplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-statplot_f_position_dodge_1793518065_13688'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "f_position_dodge",
+        "args": {
+          "meta.data": "@meta_synth",
+          "stat.by": "grp",
+          "plot_type": "bar",
+          "stat_type": "count",
+          "position": "dodge"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "meta-synth.rds": {
+          "sha256": "29ac1a5cf7567ede2f349c4fa6aae916cb0ee5b898c81e14a6a11bf813c54bba",
+          "path": "$OLD_ENV/work/scp-full-ingest-20261025/coverage/resources/meta-synth.rds"
+        },
+        "meta-venn.rds": {
+          "sha256": "a0c6b77cc19c43047751b2ec6e7056ac6a8e715b8be73627de67918749fccca4",
+          "path": "$OLD_ENV/work/scp-full-ingest-20261025/coverage/resources/meta-venn.rds"
+        }
+      }
+    },
+    {
+      "id": "scp-volcanoplot",
+      "command": "pwsh -NoProfile -Command \". '$OLD_ENV/work/scp-runtime.ps1'; Set-Location '$OLD_ENV/tmp/iso/scp-volcanoplot_positive_native_material_1793518066_15236'; & '$OLD_R/bin/x64/Rscript.exe' --vanilla 'driver.R'\"",
+      "case": {
+        "id": "positive_native_material",
+        "args": {
+          "srt": "@positive_de",
+          "group_by": "CellType"
+        },
+        "seed": 11
+      },
+      "inputs": {
+        "pancreas_sub.rda": {
+          "sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+          "path": "$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda"
+        },
+        "pancreas-de.rds": {
+          "sha256": "69f40ec3a0dffa3092bf73e453b350b435df9908777f24ab1275a413c92eae59",
+          "path": "$OLD_ENV/work/kiro-scp-upstream/pancreas-de.rds"
+        }
+      }
+    }
+  ],
+  "shap-explanation": [
+    {
+      "id": "shap-explain-model",
+      "command": "$OLD_ENV/bio-python/Scripts/python.exe -X utf8 $OLD_VAULT/维护记录/2026-10-23-方法家族与LLM-Wiki/test_scientific_python.py $OLD_VAULT/知识库/methods",
+      "case": null,
+      "inputs": null
+    }
+  ],
+  "trajectory-inference": [
+    {
+      "id": "scp-slingshot",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" trajectory-inference \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/trajectory-inference/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/trajectory-inference/result.rds\"",
+      "case": {
+        "label": "Slingshot",
+        "parameters": {
+          "parameters": {
+            "group.by": "CellType",
+            "reduction": "UMAP",
+            "dims": [
+              1,
+              2
+            ],
+            "show_plot": false,
+            "seed": 11
+          }
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "scp-monocle2",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" monocle2 \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle2/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle2/result.rds\"",
+      "case": {
+        "label": "Monocle2 core+adapter with explicit root_state",
+        "parameters": {
+          "parameters": {
+            "seed": 11,
+            "root_state": "1"
+          }
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "scp-monocle3",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" monocle3 \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3/result.rds\"",
+      "case": {
+        "label": "Monocle3 core+adapter with explicit partition and root",
+        "parameters": {
+          "parameters": {
+            "seed": 11,
+            "use_partition": true,
+            "root_cells": "CAGCCGAAGCGATATA"
+          }
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "scp-monocle2-core",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" monocle2-core \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle2-core/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle2-core/result.rds\"",
+      "case": {
+        "label": "Monocle2 core",
+        "parameters": {
+          "features": [
+            "g1",
+            "g2",
+            "g3",
+            "g4",
+            "g5"
+          ],
+          "root_state": "1",
+          "seed": 11
+        }
+      },
+      "inputs": null
+    },
+    {
+      "id": "scp-monocle3-core",
+      "command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" monocle3-core \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3-core/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/monocle3-core/result.rds\"",
+      "case": {
+        "label": "Monocle3 core",
+        "parameters": {
+          "reduced_dim": [
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          "use_partition": true,
+          "root_cells": "c1",
+          "seed": 11
+        }
+      },
+      "inputs": null
+    }
+  ]
+}

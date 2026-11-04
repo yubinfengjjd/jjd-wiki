@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "implementation": "py-roc-render",
+  "state": "passed",
+  "scope": "New-process copied declared closure with actual real public inputs and unchanged input/model/code bytes. Approved real public breast-cancer bounded fit, original/native visual-body comparison and new-process declared-closure replay only. Does not reproduce private UC/asthma cases or validate clinical performance. Positive class is benign (1); fixed held-out threshold 0.5. Youden is exercised on training probabilities only.",
+  "command": "<ML_PYTHON> -B -X utf8 <RUN_ROOT>/public_python_replay.py --worker plot --implementation py-roc-render --module <RUN_ROOT>/isolated-py-roc-render/code/roc_render.py --data <RUN_ROOT>/isolated-py-roc-render/inputs.npz --output <RUN_ROOT>/isolated-py-roc-render",
+  "argv": [
+    "<ML_PYTHON>",
+    "-B",
+    "-X",
+    "utf8",
+    "<RUN_ROOT>/public_python_replay.py",
+    "--worker",
+    "plot",
+    "--implementation",
+    "py-roc-render",
+    "--module",
+    "<RUN_ROOT>/isolated-py-roc-render/code/roc_render.py",
+    "--data",
+    "<RUN_ROOT>/isolated-py-roc-render/inputs.npz",
+    "--output",
+    "<RUN_ROOT>/isolated-py-roc-render"
+  ],
+  "checks": [
+    "exact_result_equal",
+    "input_model_code_preserved",
+    "copied_closure_preserved",
+    "rendered_rgba_exact_equal",
+    "png_file_exact_equal",
+    "Original reference process and copied-closure production process both exited zero",
+    "Frozen real public input/model bytes agree with the reference phase",
+    "Current source code tree still matches actual execution hashes",
+    "No original-source directory supplied to the isolated production function"
+  ],
+  "environment": {
+    "Python": "3.12.7",
+    "platform": "win32",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pillow": "13.0.0"
+    },
+    "automatic_installation": false,
+    "MPLBACKEND": "Agg"
+  },
+  "files": {
+    "code/dependency_plot.R": "fb42c067a054672978311543554566613a9be2e088e98db39056e5a4650b7398",
+    "code/roc_render.py": "54693a3423786a81fff8e72b9c1d6a6e0592a1a7616f9c1d9e0fbc24962dab2a"
+  },
+  "case": {
+    "seed": 11,
+    "test_fraction": 0.25,
+    "stratified": true,
+    "train_count": 426,
+    "test_count": 143,
+    "positive_class": "1=benign",
+    "threshold": 0.5,
+    "youden_input": "training probabilities only",
+    "bootstrap_n": 1000,
+    "bootstrap_seed": 42,
+    "model": "train-only StandardScaler + LogisticRegression(max_iter=2000, random_state=11)"
+  },
+  "case_id": "breast-cancer-public-software-case",
+  "input_sha256": {
+    "inputs.npz": "45f272351ec015a066dd475f5be7cc8025c5791555dd3bc690cd106ca22ac7e5",
+    "model.joblib": "e056c5af17ef14ed0fd510725256d9561ade6cb3f0436e0c8fa9da34339e73a8",
+    "bundled_breast_cancer.csv": "ff5fc1f247213db5fd49539610bcd5a98033bbd0307524fde3127251752aa073"
+  },
+  "output_sha256": {
+    "comparison.json": "36316c975919bbe61f9498089c4194fd791bb2b1a6c362bdd5c3cead60552ba9",
+    "plot.pdf": "c8def6f1a0852f69b7de59a7349fc50e6150e6fd8e4b03dd09943962a011785c",
+    "plot.png": "7089f7a3538c40c66bd0f9be1f494a04d94a332e2e82962206176c6206e66bf1",
+    "result.json": "ff1f9f451b99549947cf09a1133e0a3c21f8f470d3d529a22e35d8d50832ab0b",
+    "rgba.npy": "5f4278b84eaf52a2e52603427f8672bd91253d4cdf41e8fb18f34a1d51bc1ff2",
+    "stderr.log": "df24f56ff9ead2e0bf89a3e5ab8c53926c3c6550831a99ab089b71202ede34e1",
+    "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "executed_at": "2026-11-03T11:46:56.963200+00:00",
+  "comparison": "verification/py-roc-render-public-breast-cancer-20261103-comparison.json",
+  "promotion": "Review-only candidate; not installed in Wiki and not checked through its official page pointer",
+  "path_redaction": "ML_PYTHON and RUN_ROOT are explicit machine-local placeholders; exact original argv retained in external actual audit.json",
+  "review_prepared_at": "2026-11-03T18:56:15.999145+00:00",
+  "closure_hash": "9802bffceab3ec8ac000a4569c0439c3907478d28bbcdef102434dc514a18234",
+  "copied_files": [
+    "code/roc_render.py"
+  ]
+}

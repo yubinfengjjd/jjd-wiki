@@ -9,6 +9,9 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from machine_paths import resolve_dev_root
+
 ROOT = Path(__file__).resolve().parents[1]
 BASE_R = {"base", "compiler", "datasets", "graphics", "grDevices", "grid", "methods", "parallel",
           "splines", "stats", "stats4", "tcltk", "tools", "utils"}
@@ -36,8 +39,9 @@ def write_tsv(path, rows, fields):
         writer.writerows(rows)
 
 
-def collect(root):
-    sys.path.insert(0, str(root / "开发/staged/research-wiki"))
+def collect(root, dev_root=None):
+    dev_root = resolve_dev_root(root, dev_root)
+    sys.path.insert(0, str(dev_root / "staged/research-wiki"))
     from rwiki.adapters import required_packages, declared_only
     from rwiki.pages import read_page
     records = defaultdict(lambda: {"refs": set(), "runtime": False, "pending": False})
@@ -100,9 +104,10 @@ def collect(root):
     return records, inputs, excluded
 
 
-def export(root):
+def export(root, dev_root=None):
+    dev_root = resolve_dev_root(root, dev_root)
     out = root / "依赖清单"
-    records, inputs, excluded = collect(root)
+    records, inputs, excluded = collect(root, dev_root)
     routes_path = out / "repository-snapshot.json"
     routes = json.loads(routes_path.read_text(encoding="utf-8"))
     inputs[routes_path.relative_to(root).as_posix()] = hashlib.sha256(routes_path.read_bytes()).hexdigest()
@@ -129,9 +134,10 @@ def export(root):
     for profile in ("runtime", "pending", "all"):
         names = [r["package"] for r in rows if r["ecosystem"] == "R" and (profile == "all" or r[profile])]
         (out / f"R/{profile}.txt").write_text("\n".join(names) + "\n", encoding="utf-8")
-    frontend = root / "开发/frontend/package-lock.json"
+    frontend = dev_root / "frontend/package-lock.json"
     data = json.loads(frontend.read_text(encoding="utf-8"))
-    inputs[frontend.relative_to(root).as_posix()] = hashlib.sha256(frontend.read_bytes()).hexdigest()
+    # Preserve the logical manifest key for both physical checkout layouts.
+    inputs["开发/frontend/package-lock.json"] = hashlib.sha256(frontend.read_bytes()).hexdigest()
     node_rows = []
     for category in ("dependencies", "devDependencies"):
         for name, spec in data["packages"][""].get(category, {}).items():
@@ -158,4 +164,9 @@ def export(root):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=ROOT)
-    export(parser.parse_args().root.resolve())
+    parser.add_argument("--dev-root", type=Path)
+    args = parser.parse_args()
+    try:
+        export(args.root.resolve(), args.dev_root)
+    except ValueError as exc:
+        parser.error(str(exc))

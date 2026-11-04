@@ -1,8 +1,5 @@
 #!/bin/sh
 # rwiki: research-wiki command entry for Git Bash (Claude Code on Windows runs Git Bash).
-# Same as rwiki.cmd: private TEMP/TMP/MPLCONFIGDIR; RWIKI_HOME defaults to the .agents install.
-export TEMP='E:\research-wiki-env\tmp'
-export TMP='E:\research-wiki-env\tmp'
-export MPLCONFIGDIR='E:\research-wiki-env\tmp\mpl'
-export RWIKI_HOME="${RWIKI_HOME:-$USERPROFILE/.agents/skills/research-wiki}"
-exec '/c/Users/86186/.codex/venvs/research-wiki/Scripts/python.exe' -X utf8 "$RWIKI_HOME/wiki.py" "$@"
+# Use the same machine config and dedicated interpreter discovery as rwiki.cmd.
+script_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd) || exit 1
+exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$(cygpath -w "$script_dir/../machine-paths.ps1")" "$@"

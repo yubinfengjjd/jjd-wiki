@@ -1,0 +1,284 @@
+{
+  "kind": "templates",
+  "cases": [
+    {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "shap-summary.md": "2c587c44f2d39b637d0ea958d55e5bb8e716f669f17937b5ec2351ad7215f380"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/panel.py": "b8a89bbdf194ee8696a97dabb077da4034c1fad25dd4e2aa8a29bd451363d520",
+        "code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+        "example/shap-summary.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3",
+        "spec.json": "e5814e984cd585171763e4cebf0d55925be7f43afce333966c17fbdb762b5e37"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar\\wiki",
+        "render",
+        "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+        "--data",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar\\wiki\\templates\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar\\example",
+        "--out",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar\\output"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T11:23:45.536636+00:00",
+      "duration_s": 22.56,
+      "log_tail": [
+        ""
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "8b3a9915b1b7472de5da5fe7a9b908cd7cea1f097195693ae91774e39447001c",
+        "figure.png": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc",
+        "figure.svg": "f47cb75e3167c9761fd8e699ce2ec69a42485ca67aefbf00d96e1b45fd73c962"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "panel.py": "b8a89bbdf194ee8696a97dabb077da4034c1fad25dd4e2aa8a29bd451363d520",
+        "render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "shap-samples.md": "f2ab0f8f0a8f8e0075077678acc9d763ebde7041be9caf828845b3c66b81c156"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/panel.py": "34e6db262f1ed75cf36d4a47878020a0fa54c2d8c7cd0c6382e9e268b322b1c9",
+        "code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+        "example/shap-samples.csv": "25c0a547383684b84854c46445dc402d5523054dffac70dfa946077821adc47c",
+        "spec.json": "7d652cfcaf1715e204ad4a49682f7b80b8e70ec4bcbe71e5f5454a3008734a4f"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm\\wiki",
+        "render",
+        "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+        "--data",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm\\wiki\\templates\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm\\example",
+        "--out",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm\\output"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T11:24:08.195143+00:00",
+      "duration_s": 8.379,
+      "log_tail": [
+        ""
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "66fbc84e40e7ead0ed828a5466887b9780f912a623dafd44540cdbaa4277e9ad",
+        "figure.png": "b933b6a6cb63eac7d5ef5847e95b1b074759e6f0b2a197d7504e8dbee4d9a10e",
+        "figure.svg": "60889e8d4016b13c2865dac9e1856a8bd88553ba9f6b62caad4fce5ef852aa4b"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "panel.py": "34e6db262f1ed75cf36d4a47878020a0fa54c2d8c7cd0c6382e9e268b322b1c9",
+        "render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "shap-summary.md": "2c587c44f2d39b637d0ea958d55e5bb8e716f669f17937b5ec2351ad7215f380"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/panel.py": "c40be32c40812e8cfdb8a98b4a709800d38a9699eee35e4e3506580f7e80e2cb",
+        "code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+        "example/shap-summary.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3",
+        "spec.json": "355df8d01b335b7db7504b28b3e29b8c87253f7577f95604f3c0cb61914891c1"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar\\wiki",
+        "render",
+        "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+        "--data",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar\\wiki\\templates\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar\\example",
+        "--out",
+        "<run>\\2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar\\output"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T11:24:16.693816+00:00",
+      "duration_s": 7.501,
+      "log_tail": [
+        ""
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "c78222596b3acb59d574b7c10c51b40d6f4d487d61c4d55946788ac00f286e1b",
+        "figure.png": "7bb863aed578306778085d41a50f0fe6575580f973bb2b2247d3637e3a5b2513",
+        "figure.svg": "daf6811077c6bf9b639cef3f3b85441d281739f51a11722a48602f46bcc19dbc"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "panel.py": "c40be32c40812e8cfdb8a98b4a709800d38a9699eee35e4e3506580f7e80e2cb",
+        "render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-marginal-bars.md": "b5c953b3672ead2c8aaba58f2b3f912dab74aed0801ad5a620fca2c56d017d0b",
+        "render-scatter-rgb.md": "169a08a666558bce673581dd0f50ba75d63ab2f4439ffaa0cbcadfd6390a6669"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.py": "a744437473d4e663f2b85cca104c5afcd21ad953b2ae84d446ce1d79a3c2eb97",
+        "code/defaults.py": "4303cf125465fabb4fb9c397d8f9d768d3d6443719eec9fc34042832afeac752",
+        "code/panel.py": "79fbbe88bee3d3d58cc95170ecb9c0abdfb0506dee3a375c06e685415b681ac2",
+        "code/render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
+        "code/sizing.py": "904f67cdc5b4b7ebe5d0d561c25e39880006a47459eabe48d7cf8cedfab90e69",
+        "example/render-marginal-bars.csv": "2d1212e9b3a10a0471e90b634f53a1d99fa6ed3184754803be55158f1ad7ab52",
+        "example/render-scatter-rgb.csv": "af6dcd1f83f7df39de0bb07c84768856ab4deb2cf0a1fa8ad7e569b58faa34e5",
+        "example/style.json": "d921697666137432b1cf963376251cc3a63e15a2753e5e48427aca47867020be",
+        "spec.json": "e0c694e5b8621847a9491f837104fa462d5df2b2087ee8e6140827cd747175b5"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\wiki",
+        "render",
+        "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+        "--data",
+        "<run>\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\wiki\\templates\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\example",
+        "--out",
+        "<run>\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\output",
+        "--style",
+        "<run>\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\wiki\\templates\\2026-10-19-regression-stability__fig03-density-panel--density-scatter\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T11:24:24.311214+00:00",
+      "duration_s": 9.556,
+      "log_tail": [
+        ""
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "f4fe77fa29a21c1eeb484f0af81b9640801786e01666633c0ee3084885555dfe",
+        "figure.png": "9042122a80aced146bc5678f1394491e09d840dd7d8bd32fd88a57be3b02995a",
+        "figure.svg": "6919b1200b81c3944df774fcb5f564487f4f39660da543f2ab3d72d14e4f2413"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.py": "a744437473d4e663f2b85cca104c5afcd21ad953b2ae84d446ce1d79a3c2eb97",
+        "defaults.py": "4303cf125465fabb4fb9c397d8f9d768d3d6443719eec9fc34042832afeac752",
+        "panel.py": "79fbbe88bee3d3d58cc95170ecb9c0abdfb0506dee3a375c06e685415b681ac2",
+        "render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
+        "sizing.py": "904f67cdc5b4b7ebe5d0d561c25e39880006a47459eabe48d7cf8cedfab90e69"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-box-summaries.md": "d8fe0b873792c66933f12afdea7d3108a12e82f6d47c9d0ccad103cfbed552b0",
+        "render-category-points.md": "69df194fee93f6404c14451b386e4c16c0e9453a61c9ceb70c81a9408b4cafed"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.py": "87e2daa687c9578052964cb570ba0a21ef4e191a886407bd4e0c0939a4d4fa94",
+        "code/defaults.py": "b593ac1e403a46eeeea7abade9b8a933f8cc28316e904aadacd634aa74ee0185",
+        "code/panel.py": "f699e8135338b1808f082fde19e73c917fc6e679b17b87acdf75fea8b451b721",
+        "code/render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
+        "code/sizing.py": "904f67cdc5b4b7ebe5d0d561c25e39880006a47459eabe48d7cf8cedfab90e69",
+        "example/render-box-summaries.csv": "72cd14a6f6d16fa36a99f19252c49d18b4a251b1f9722bbe491a6409cc0217c9",
+        "example/render-category-points.csv": "7bec557032a9a57d0e1bca903b00586b2087a19fe56b925126dfc72d3bafbcaa",
+        "example/style.json": "f1cfd5838270adaf03302d749ae4548969946145cfce0396ff8a125c7132b24c",
+        "spec.json": "aa4a55dce6b8e051e3b9bccf1cd2aa0f5d12cf70d0fcd74e8aeeca0f91b87388"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\wiki",
+        "render",
+        "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+        "--data",
+        "<run>\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\wiki\\templates\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\example",
+        "--out",
+        "<run>\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\output",
+        "--style",
+        "<run>\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\wiki\\templates\\2026-10-19-regression-stability__fig04-boxplot-panel--boxplot\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T11:24:34.028125+00:00",
+      "duration_s": 6.801,
+      "log_tail": [
+        ""
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "223582ec8c724896fdd0160f63406416d867568db0cf0cf5873bd4431c82a2be",
+        "figure.png": "fbf5fe903c724e84baa0d48687ef3123116fffe70274c4c1460b01e6d54faec2",
+        "figure.svg": "360e848c5a1ea95f487570258123946728a447f856148e8913f326d310e27bb0"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.py": "87e2daa687c9578052964cb570ba0a21ef4e191a886407bd4e0c0939a4d4fa94",
+        "defaults.py": "b593ac1e403a46eeeea7abade9b8a933f8cc28316e904aadacd634aa74ee0185",
+        "panel.py": "f699e8135338b1808f082fde19e73c917fc6e679b17b87acdf75fea8b451b721",
+        "render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
+        "sizing.py": "904f67cdc5b4b7ebe5d0d561c25e39880006a47459eabe48d7cf8cedfab90e69"
+      },
+      "original_files_unchanged": true
+    }
+  ],
+  "completed": 5,
+  "total": 5
+}

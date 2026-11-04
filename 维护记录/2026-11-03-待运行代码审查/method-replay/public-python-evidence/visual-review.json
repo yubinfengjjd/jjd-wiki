@@ -1,0 +1,19 @@
+{
+  "reviewed_at": "2026-11-03T18:58:43.864029+00:00",
+  "reviewer": "Codex actual image inspection",
+  "state": "passed",
+  "scope": "Visual readability of the actual native public software plot; not clinical/statistical validation",
+  "artifact": "py-roc-render/plot.png",
+  "artifact_sha256": "7089f7a3538c40c66bd0f9be1f494a04d94a332e2e82962206176c6206e66bf1",
+  "pixel_size": [
+    876,
+    659
+  ],
+  "checks": [
+    "Title explicitly says positive=benign and is fully visible",
+    "Training and held-out curves have distinct colors and a readable legend",
+    "Axes and right AUC strip are visible and unclipped",
+    "Original/extracted PNG and RGBA equality were independently asserted during execution"
+  ],
+  "source_warning": "Native tight_layout warning retained in both original and extracted renderings; no source drawing code changed"
+}

@@ -10,8 +10,8 @@ v2（2026-10-27）起：开源库（首个 FigureYa）经来源登记与适配�
 
 | 仓库 | 本地位置 | 内容 | 远程地址 | 默认分支 |
 |---|---|---|---|---|
-| `jjd-wiki` | `E:\research-wiki`（根仓库） | `知识库/`、`文档/`、`tools/`、`research wiki/`、本 README、`.github/` | https://github.com/yubinfengjjd/jjd-wiki | `main` |
-| `jjd-wiki-dev` | `E:\research-wiki\开发`（独立仓库，自带 `.git`） | 代码、测试、技能源 `staged/research-wiki`、前端源码、`.github/` | https://github.com/yubinfengjjd/jjd-wiki-dev | `main` |
+| `jjd-wiki` | `<vault>`（根仓库） | `知识库/`、`文档/`、`tools/`、`research wiki/`、本 README、`.github/` | https://github.com/yubinfengjjd/jjd-wiki | `main` |
+| `jjd-wiki-dev` | `<vault>\开发` 或与 `<vault>` 同级的 `jjd-wiki-dev`（独立仓库，自带 `.git`） | 代码、测试、技能源 `staged/research-wiki`、前端源码、`.github/` | https://github.com/yubinfengjjd/jjd-wiki-dev | `main` |
 
 两个仓库都是 GitHub 免费账号下的私有仓库，默认分支 `main`，没有远端分支保护（保护 API 返回 403，bootstrap 记为 `protection: local`）。`知识库\` 不是单独的 git 仓库，而是根仓库的子目录；根仓库的 `.gitignore` 忽略 `/开发/`，两者互不跟踪。bootstrap 之前本地分支叫 `master`；bootstrap 把它改名为只留本地的 `legacy/master`，并构造新的 `main`（dev 过滤重放历史，vault 为一次快照）。不要在主检出上检出 `legacy/master`：旧历史跟踪了画廊与维护记录，切过去再切回会把这些文件从磁盘删除。
 
@@ -53,9 +53,25 @@ research-wiki\                  jjd-wiki 仓库根
      qa\   spec\
 ```
 
+## 新机器配置
+
+支持旧式 `<vault>\开发` 和同级 `jjd-wiki` / `jjd-wiki-dev` 两种布局。工具先找有效的嵌套开发检出，再找同级 `jjd-wiki-dev`；有效检出必须包含 `staged/research-wiki/wiki.py` 和 `config.example.json`。无需创建空的 `开发` 目录。上面的目录树及旧文档中的 `开发/` 表示开发仓库的相对位置；依赖清单的历史输入键也保留该逻辑前缀。
+
+在根仓库运行以下命令，将占位符替换为本机已准备好的解释器完整路径：
+
+```powershell
+$env:RWIKI_PYTHON = '<Wiki专用Python路径>'
+& $env:RWIKI_PYTHON -X utf8 tools\configure-machine.py `
+    --python-exe '<科学绘图Python路径>' --rscript-exe '<Rscript路径>'
+```
+
+脚本从开发检出的 `config.example.json` 生成被忽略的 `staged/research-wiki/config.json`，写明两个仓库、解释器和资源目录的实际路径；配置已存在时拒绝覆盖。环境目录默认是 `<vault>` 同级的 `research-wiki-env`，可用 `--env-root` 指定。此步骤只生成配置及运行目录，不安装依赖、不执行分析。
+
+`configure-machine.py`、`deploy.py`、`export-dependencies.py` 均支持 `--dev-root <开发仓库>`，也可设置 `RWIKI_DEV_ROOT`；显式路径无效时直接报错。launcher 与两个 `rwiki` 入口共用配置引导：默认读所选开发检出的 `config.json`，`RWIKI_HOME` 可指定技能副本，`RWIKI_CONFIG` 可指定其他本机配置。Wiki 解释器优先使用 `RWIKI_PYTHON`，其次发现同级 `research-wiki-env/wiki-python/Scripts/python.exe` 或用户目录下 `.codex/venvs/research-wiki/Scripts/python.exe`。缺少配置或解释器时会给出修复提示。`config.python_exe` 用于科学运行器，与 Wiki CLI 解释器分别管理。
+
 ## 命令入口 rwiki
 
-`tools\bin\rwiki.cmd`（PowerShell / cmd）与 `tools\bin\rwiki`（Git Bash）加入用户 PATH 后，任意终端直接 `rwiki <命令>`；它们用 research-wiki 专用 Python 调用 `C:\Users\86186\.agents\skills\research-wiki\wiki.py`，参数与 `wiki.py` 相同。
+`tools\bin\rwiki.cmd`（PowerShell / cmd）与 `tools\bin\rwiki`（Git Bash）加入用户 PATH 后，任意终端直接 `rwiki <命令>`；它们用 research-wiki 专用 Python 调用所选技能的 `wiki.py`，参数与 `wiki.py` 相同。默认使用本地开发检出，指定部署副本时设置 `RWIKI_HOME`。
 
 ```powershell
 rwiki find 生存曲线 风险表          # 读 catalog.jsonl，场景首选排前，每条给下一步命令
@@ -82,7 +98,7 @@ rwiki run --dir <副本>              # 配方副本原地运行；模板用 rwi
 
 ## 双击打开
 
-双击项目根目录的 **`启动知识库 - 快捷方式.lnk`**（启动脚本位于 `tools/`）：
+双击 **`tools/启动知识库.vbs`**，或自行创建指向它的快捷方式（本机 `.lnk` 不入库）：
 
 - 后台起服务，打开一个独立的浏览器应用窗口；
 - 关掉这个窗口，服务会自动停止；
@@ -95,36 +111,34 @@ rwiki run --dir <副本>              # 配方副本原地运行；模板用 rwi
 ## 命令行启动
 
 ```powershell
-$env:TEMP=$env:TMP='E:\research-wiki-env\tmp'; $env:MPLCONFIGDIR='E:\research-wiki-env\tmp\mpl'
-$rw = 'C:\Users\86186\.codex\venvs\research-wiki\Scripts\python.exe'
-& $rw -X utf8 'C:\Users\86186\.claude\skills\research-wiki\wiki.py' serve
+& .\tools\bin\rwiki.cmd serve
 ```
 
 浏览器打开 http://127.0.0.1:8765 。写入任务分支检出时加全局参数 `--wiki-root <检出>\知识库`（放在 `serve` 之前）。`rwiki` 在 PATH 上时也可直接 `rwiki serve`。
 
 ## 技能安装与项目的关系
 
-技能必须放在各 agent 的固定目录才能被发现，所以这些是**部署副本**，源在 `开发\staged\research-wiki`，共 6 处：
+技能必须放在各 agent 的固定目录才能被发现，所以这些是**部署副本**，源在所选开发仓库的 `staged\research-wiki`，共 6 处（`<home>` 为当前用户目录）：
 
-- `C:\Users\86186\.agents\skills\research-wiki\`
-- `C:\Users\86186\.claude\skills\research-wiki\`
-- `C:\Users\86186\.codex\skills\research-wiki\`
-- `C:\Users\86186\.cc-switch\skills\research-wiki\`
-- `C:\Users\86186\.config\opencode\skills\research-wiki\`
-- `C:\Users\86186\.kiro\skills\research-wiki\`
+- `<home>\.agents\skills\research-wiki\`
+- `<home>\.claude\skills\research-wiki\`
+- `<home>\.codex\skills\research-wiki\`
+- `<home>\.cc-switch\skills\research-wiki\`
+- `<home>\.config\opencode\skills\research-wiki\`
+- `<home>\.kiro\skills\research-wiki\`
 - `sci-figure-replica` 另安装于 `.agents`、`.codex`、`.claude` 三处，其配置的画廊路径指向本项目的 `画廊\`。
 
-research-wiki 用 `python tools\deploy.py <维护记录目录> "<说明>" [--sync-config]` 同步 6 处（逐文件备份、清理旧文件、写 manifest 并按哈希核验）；部署只在 `开发` 工作区干净且 HEAD 等于本地 `main`、`origin/main` 或恰为已推送 tag 时进行，manifest 记录 `source_commit`、`source_ref` 与 `source_tag`。`python tools\deploy.py --verify-only` 只比较 6 处副本与 staged 的哈希，不写入。sci-figure-replica 的源不在本项目，沿用其维护记录中的部署。
+research-wiki 用 `& $env:RWIKI_PYTHON tools\deploy.py <维护记录目录> "<说明>" [--sync-config]` 同步 6 处（逐文件备份、清理旧文件、写 manifest 并按哈希核验）；部署只在所选开发仓库工作区干净且 HEAD 等于本地 `main`、`origin/main` 或恰为已推送 tag 时进行，manifest 记录 `source_commit`、`source_ref` 与 `source_tag`。`& $env:RWIKI_PYTHON tools\deploy.py --verify-only` 只比较 6 处副本与 staged 的哈希，不写入。sci-figure-replica 的源不在本项目，沿用其维护记录中的部署。
 
 技能 config.json（本机文件，不入库；模板见 `config.example.json`）里的 `wiki_root`、`gallery_root` 指向本项目的 `知识库\` 与 `画廊\`，`github` 段记录 owner、两个仓库名与本地路径；v2 新增 `sources_root`（上游快照）、`work_root`（运行副本）、`r_libs`（Wiki 专用 R 库，第一个为装包目标）与 `cran_mirror`。
 
 ## 不进项目的
 
-- Python 环境：`C:\Users\86186\.codex\venvs\research-wiki`（跑 wiki.py）、`E:\research-wiki-env\bio-python`（本机实验环境，知识库不再管理）
-- Wiki 专用 R 库：`E:\research-wiki-env\R-lib\figureya`（`deps --install` 的唯一安装目标，作者按批次批准后才装）、`E:\research-wiki-env\R-lib-scp\4.5`（只加入运行库路径，不往里装）
-- 上游来源快照：`E:\research-wiki-env\sources`（`source fetch` 的部分克隆与稀疏检出）
-- 配方运行副本与装包日志：`E:\research-wiki-env\work\rwiki`
-- 临时文件与缓存：`E:\research-wiki-env\tmp`、`E:\research-wiki-env\pip-cache`（C 盘不写）
-- 并行任务的 worktree：`E:\research-wiki-env\worktrees`（`start-task --worktree` 创建，合并后自动移除）
+- Python 环境：Wiki 专用解释器见上述发现规则；科学运行器由 `config.python_exe` 指定，课题环境由作者管理。
+- Wiki 专用 R 库：`config.r_libs` 的第一个目录为 `deps --install` 安装目标，作者按批次批准后才装；后续目录仅加入运行库路径。
+- 上游来源快照：`config.sources_root`（`source fetch` 的部分克隆与稀疏检出）。
+- 配方运行副本与装包日志：`config.work_root`。
+- 临时文件与缓存：`config.env.vars` 的 `TEMP`、`TMP`、`MPLCONFIGDIR` 指定外部目录。
+- 并行任务的 worktree：`config.github.worktree_root`（`start-task --worktree` 创建，合并后自动移除）。
 
 运行依赖与独立性口径见 `开发/staged/research-wiki/references/minimal-runtime.md`；配方、收据与装包审批见 `开发/staged/research-wiki/references/sources-and-recipes.md`。

@@ -1,0 +1,628 @@
+{
+  "summary": {
+    "methods": {
+      "pages": 43,
+      "statuses": {
+        "ready": 43
+      }
+    },
+    "templates": {
+      "pages": 30,
+      "statuses": {
+        "ready": 30
+      }
+    },
+    "recipes": {
+      "pages": 30,
+      "statuses": {
+        "ready": 27,
+        "draft": 3
+      }
+    },
+    "implementations": {
+      "total": 85,
+      "states": {
+        "passed": 51,
+        "not_run": 31,
+        "missing": 3
+      }
+    }
+  },
+  "implementations": [
+    {
+      "method": "batch-integration",
+      "implementation": "scp-seurat",
+      "entrypoint": "code/analysis.R:run_seurat_integration",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-seurat; case={\"label\": \"Seurat anchor integration\", \"parameters\": {\"parameters\": {\"nHVF\": 300, \"linear_reduction_dims\": 20, \"nonlinear_reduction_dims\": 2, \"cluster_resolution\": 0.5, \"IntegrateData_params\": {\"k.weight\": 30}, \"seed\": 11}}}"
+    },
+    {
+      "method": "batch-integration",
+      "implementation": "scp-harmony",
+      "entrypoint": "code/analysis.R:run_batch_integration",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: harmony; automatic installation is disabled"
+    },
+    {
+      "method": "cell-clustering",
+      "implementation": "seurat-findclusters",
+      "entrypoint": "code/clustering.R:run_seurat_clustering",
+      "receipt_state": "passed",
+      "scope": "显式复用 SCP Standard_SCP 中的 FindNeighbors/FindClusters 聚类分支；与相同 Seurat 调用逐标签比较，不含预处理/降维。"
+    },
+    {
+      "method": "cell-quality-control",
+      "implementation": "scp-runcellqc",
+      "entrypoint": "code/analysis.R:run_cell_quality_control",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-runcellqc; case={\"label\": \"QC non-doublet\", \"parameters\": {\"parameters\": {\"qc_metrics\": [\"umi\", \"gene\", \"mito\"], \"UMI_threshold\": 0, \"gene_threshold\": 0, \"mito_threshold\": 100, \"return_filtered\": false, \"assay\": \"RNA\", \"seed\": 11}}}"
+    },
+    {
+      "method": "cell-type-annotation",
+      "implementation": "scp-singler",
+      "entrypoint": "code/analysis.R:run_cell_type_annotation",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: SingleR; automatic installation is disabled"
+    },
+    {
+      "method": "differential-expression",
+      "implementation": "scp-detest",
+      "entrypoint": "code/analysis.R:run_differential_expression",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-detest; case={\"label\": \"Wilcoxon DE\", \"parameters\": {\"parameters\": {\"group_by\": \"CellType\", \"group1\": \"Ductal\", \"group2\": \"Endocrine\", \"test.use\": \"wilcox\", \"only.pos\": false, \"fc.threshold\": 1, \"min.pct\": 0.1, \"p.adjust.method\": \"bonferroni\", \"slot\": \"data\", \"assay\": \"RNA\", \"verbose\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}"
+    },
+    {
+      "method": "dimensionality-reduction",
+      "implementation": "scp-dimreduction",
+      "entrypoint": "code/analysis.R:run_dimensionality_reduction",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-dimreduction; case={\"label\": \"PCA UMAP\", \"parameters\": {\"parameters\": {\"features\": [\"Iapp\", \"Gcg\", \"Nnat\", \"Ins2\", \"Ins1\", \"2810417H13Rik\", \"Ghrl\", \"Slc38a5\", \"Pyy\", \"Hmgb2\", \"Chgb\", \"Gadd45a\", \"Rbp4\", \"Neurog3\", \"Cdkn1a\", \"Ppp1r1a\", \"Lrpprc\", \"Cck\", \"Sst\", \"Spp1\", \"Gast\", \"Top2a\", \"Hhex\", \"Ccnb1\", \"Cdk1\", \"Ppy\", \"Cdc20\", \"Fev\", \"Npy\", \"Clu\", \"Sdf2l1\", \"Cks2\", \"Tmem27\", \"Chga\", \"Hes1\", \"8430408G22Rik\", \"Birc5\", \"Btbd17\", \"Dlk1\", \"Ldha\", \"Peg10\", \"Scg2\", \"Tuba1b\", \"Ccnd1\", \"Mt2\", \"Dll3\", \"Serpina1c\", \"Cdkn1c\", \"Ptn\", \"Isl1\", \"Krtap17-1\", \"Mt1\", \"Gmnn\", \"Gip\", \"Spc24\", \"Arg1\", \"Cdca8\", \"Wfdc2\", \"Cldn10\", \"Id1\", \"Creld2\", \"Cyr61\", \"Cenpf\", \"Pcsk2\", \"Cenpa\", \"Mafb\", \"Gng12\", \"Ccnb2\", \"Cdca3\", \"H2afx\", \"Pcsk1n\", \"Ppp1r14a\", \"Arx\", \"Mki67\", \"Vim\", \"Ttr\", \"Tk1\", \"Dbpht2\", \"Myl9\", \"Tmsb4x\", \"Sytl4\", \"Gpx3\", \"Tubb5\", \"Anxa2\", \"Id2\", \"Zcchc18\", \"Gadd45g\", \"1700086L19Rik\", \"Sox9\", \"Stmn1\", \"Tubb3\", \"Irx2\", \"Selm\", \"Cym\", \"Tuba1c\", \"Dbi\", \"C2cd4b\", \"1700011H14Rik\", \"Sparc\", \"Arl6ip1\"], \"linear_reduction\": \"pca\", \"nonlinear_reduction\": \"umap\", \"linear_reduction_dims\": 20, \"reduction_use\": \"pca\", \"reduction_dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"force_linear_reduction\": true, \"force_nonlinear_reduction\": true, \"verbose\": false}}}"
+    },
+    {
+      "method": "doublet-detection",
+      "implementation": "scp-rundoublet",
+      "entrypoint": "code/analysis.R:run_doublet_detection",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: scDblFinder; automatic installation is disabled"
+    },
+    {
+      "method": "dynamic-feature-analysis",
+      "implementation": "scp-dynamicfeatures",
+      "entrypoint": "code/analysis.R:run_dynamic_feature_analysis",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-dynamicfeatures; case={\"label\": \"GAM dynamic features\", \"parameters\": {\"parameters\": {\"lineages\": \"fixture_time\", \"features\": [\"Gcg\", \"Krt19\"], \"slot\": \"data\", \"n_candidates\": {}, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}"
+    },
+    {
+      "method": "gene-set-enrichment",
+      "implementation": "scp-enrichment",
+      "entrypoint": "code/analysis.R:run_gene_set_enrichment",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-enrichment; case={\"label\": \"ORA custom TERM2GENE\", \"parameters\": {\"parameters\": {\"geneID_groups\": {}, \"IDtype\": \"symbol\", \"species\": \"Homo_sapiens\", \"TERM2GENE\": {\"term\": [\"T1\", \"T1\", \"T1\", \"T2\", \"T2\", \"T2\"], \"gene\": [\"Ins1\", \"Gcg\", \"Sst\", \"Krt19\", \"Krt8\", \"Epcam\"]}, \"TERM2NAME\": {\"term\": [\"T1\", \"T2\"], \"name\": [\"Endocrine\", \"Ductal\"]}, \"minGSSize\": 1, \"maxGSSize\": 500, \"db_update\": false, \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}"
+    },
+    {
+      "method": "gene-set-scoring",
+      "implementation": "scp-cellscoring",
+      "entrypoint": "code/analysis.R:run_gene_set_scoring",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-cellscoring; case={\"label\": \"Seurat module score\", \"parameters\": {\"parameters\": {\"features\": {\"Endocrine\": [\"Gcg\", \"Sst\"], \"Ductal\": [\"Krt19\", \"Krt8\", \"Epcam\"]}, \"method\": \"Seurat\", \"classification\": false, \"name\": \"X\", \"slot\": \"data\", \"assay\": \"RNA\", \"BPPARAM\": \"<SerialParam>\", \"seed\": 11}}}"
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-library",
+      "entrypoint": "code/native.R:run_local_r_function",
+      "receipt_state": "not_run",
+      "scope": "Not run: 448 selectable source occurrences organized, not a family-wide execution claim; only individually named recorded cases validated."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-normalize",
+      "entrypoint": "code/native_cases.R:native_normalize",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case native-normalize repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-gini",
+      "entrypoint": "code/native_cases.R:native_gini",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case native-gini repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-combinations",
+      "entrypoint": "code/native_cases.R:native_combinations",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case native-combinations repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-gmt",
+      "entrypoint": "code/native_cases.R:native_gmt",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case native-gmt repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-dynamic",
+      "entrypoint": "code/native_cases.R:native_dynamic",
+      "receipt_state": "not_run",
+      "scope": "Not run: Untouched source uses Seurat::GetAssayData(slot=...), defunct in installed SeuratObject 5. The separately named native-dynamic-seurat5 compatibility branch does not grant this original branch passed status."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-score-dot",
+      "entrypoint": "code/native_cases.R:native_score_dot",
+      "receipt_state": "passed",
+      "scope": "Original DotPlotScores on 711-cell source object, Retinoic_Acid_Metabolism by Monocle2_State; original/extracted layer-data equality and isolated replay. Source global pct.exp semantics retained; not Seurat DotPlot equivalence."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-cellchat",
+      "entrypoint": "code/native_cases.R:native_cellchat",
+      "receipt_state": "not_run",
+      "scope": "Not run: CellChat absent; original human DB/PPI resources also require explicit scientific selection."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-singscore",
+      "entrypoint": "code/native_cases.R:native_singscore",
+      "receipt_state": "not_run",
+      "scope": "Not run: singscore absent; source assay=null spelling and signature-direction handling preserved."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "irgsea-score",
+      "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required irGSEA package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "irgsea-integrate",
+      "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required irGSEA package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "consensus-cluster",
+      "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required ConsensusClusterPlus package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "cellchat-create",
+      "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "gsva-call",
+      "entrypoint": "code/dependency_analysis.R:run_omics_dependency_analysis",
+      "receipt_state": "not_run",
+      "scope": "Not run: No explicit native GSVA parameter object/case selected. Installed namespace is not execution evidence."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-eval-binary",
+      "entrypoint": "code/binary_evaluation.py:eval_binary",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case py-eval-binary repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-compute-specificity",
+      "entrypoint": "code/binary_evaluation.py:compute_specificity",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case py-compute-specificity repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-youden-threshold",
+      "entrypoint": "code/binary_evaluation.py:youden_threshold",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case py-youden-threshold repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-bootstrap-ci-auc",
+      "entrypoint": "code/binary_evaluation.py:bootstrap_ci_auc",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case py-bootstrap-ci-auc repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-get-proba",
+      "entrypoint": "code/binary_evaluation.py:get_proba",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case py-get-proba repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "stacking-cli",
+      "entrypoint": "code/stacking_runner.py:run_stacking_cli",
+      "receipt_state": "not_run",
+      "scope": "Not run: scikit-optimize absent; --help only. Full training, model selection, split independence and explainability not validated."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "native-dynamic-seurat5",
+      "entrypoint": "code/dynamic_monocle2_seurat5.R:run_dynamic_monocle2_seurat5",
+      "receipt_state": "passed",
+      "scope": "Three 711-cell source-data cases: raw data, library-normalized log1p counts, and default theme bridge; exact legacy-slot/layer equality, original-body legacy-accessor reference layer data equality at 1e-12, isolated replay and error-path environment restoration. No new trajectory inference or changed GAM/fallback."
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "r-child-runner",
+      "entrypoint": "code/run_r.py:run_r_script",
+      "receipt_state": "passed",
+      "scope": "Runtime utility only: actual Windows GetNativeSystemInfo architecture; isolated module launches real R/rlang/cli with exit zero for omitted and explicit architecture, preserves explicit value and parent environment. No algorithm/scientific validation claim."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "py-roc-render",
+      "entrypoint": "code/roc_render.py:render_roc_curves",
+      "receipt_state": "passed",
+      "scope": "Previously compared original/extracted real-data case py-roc-render repeated in an isolated process against the final runtime manifest. Only the recorded function case; no complete model workflow or scientific acceptance."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "irgsea-heatmap",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required irGSEA package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "scp-cell-dim",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "scp-feature-dim",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "scp-feature-stat",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "scp-feature-heatmap",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required SCP package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "seurat-dim",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "passed",
+      "scope": "Native Seurat seurat-dim forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "seurat-feature",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "passed",
+      "scope": "Native Seurat seurat-feature forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "seurat-violin",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "passed",
+      "scope": "Native Seurat seurat-violin forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "seurat-dot",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "passed",
+      "scope": "Native Seurat seurat-dot forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "seurat-spatial-dim",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "passed",
+      "scope": "Native Seurat seurat-spatial-dim forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "seurat-spatial-feature",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "passed",
+      "scope": "Native Seurat seurat-spatial-feature forwarding on the recorded actual source object: direct native-function layer data equality at 1e-12, unchanged input, restored caller search/options, isolated replay. Display only; no clustering, annotation or inference validation."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "cellchat-circle",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "cellchat-bubble",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "cellchat-aggregate",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "cellchat-heatmap",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "cellchat-role-heatmap",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "cellchat-role-scatter",
+      "entrypoint": "code/dependency_plot.R:run_omics_dependency_plot",
+      "receipt_state": "not_run",
+      "scope": "Not run: Required CellChat package absent in Wiki dedicated R libraries; no installation attempted."
+    },
+    {
+      "method": "reference-mapping",
+      "implementation": "seurat-label-transfer",
+      "entrypoint": "code/transfer.R:run_reference_label_transfer",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for seurat-label-transfer; case={\"label\": \"Seurat label transfer\", \"parameters\": {\"dims\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20], \"k_weight\": 50}}"
+    },
+    {
+      "method": "reference-mapping",
+      "implementation": "scp-runseuratmap",
+      "entrypoint": "code/analysis.R:run_reference_mapping",
+      "receipt_state": "not_run",
+      "scope": "Argument 'dim.' must be an integer vector of length two"
+    },
+    {
+      "method": "regression-resampling-evaluation",
+      "implementation": "summarize-predictions",
+      "entrypoint": "code/summarize_predictions.py:summarize",
+      "receipt_state": "passed",
+      "scope": "手算折外指标、常数预测 r 未定义、不修改输入、完整 coverage 拒绝。不包含训练或重采样。"
+    },
+    {
+      "method": "rna-velocity",
+      "implementation": "scp-scvelo",
+      "entrypoint": "code/analysis.R:run_rna_velocity",
+      "receipt_state": "not_run",
+      "scope": "Set RETICULATE_PYTHON to an existing project interpreter; installation disabled"
+    },
+    {
+      "method": "scp-visualization-interface",
+      "implementation": "scp-table-adapters",
+      "entrypoint": "code/scp_tables.R:scp_umap_groups",
+      "receipt_state": "passed",
+      "scope": "SCP/Seurat 导出表到 Wiki 绘图接口的适配层；20 个合成表检查。未验证 SCP 绘图函数视觉等价。"
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-celldensityplot",
+      "entrypoint": "code/celldensityplot/code/module.R:CellDensityPlot",
+      "receipt_state": "passed",
+      "scope": "f_x_order_rank"
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-celldimplot",
+      "entrypoint": "code/celldimplot/code/module.R:CellDimPlot",
+      "receipt_state": "passed",
+      "scope": "mark_circle"
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-celldimplot3d",
+      "entrypoint": "code/celldimplot3d/code/module.R:CellDimPlot3D",
+      "receipt_state": "passed",
+      "scope": "cell_3d"
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-featuredimplot",
+      "entrypoint": "code/featuredimplot/code/module.R:FeatureDimPlot",
+      "receipt_state": "passed",
+      "scope": "keep_all"
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-featuredimplot3d",
+      "entrypoint": "code/featuredimplot3d/code/module.R:FeatureDimPlot3D",
+      "receipt_state": "passed",
+      "scope": "feature_3d"
+    },
+    {
+      "method": "scp-viz-heatmaps",
+      "implementation": "scp-cellcorheatmap",
+      "entrypoint": "code/cellcorheatmap/code/module.R:CellCorHeatmap",
+      "receipt_state": "missing",
+      "scope": ""
+    },
+    {
+      "method": "scp-viz-heatmaps",
+      "implementation": "scp-dynamicheatmap",
+      "entrypoint": "code/dynamicheatmap/code/module.R:DynamicHeatmap",
+      "receipt_state": "passed",
+      "scope": "f_exp_method_raw"
+    },
+    {
+      "method": "scp-viz-heatmaps",
+      "implementation": "scp-featureheatmap",
+      "entrypoint": "code/featureheatmap/code/module.R:FeatureHeatmap",
+      "receipt_state": "passed",
+      "scope": "default"
+    },
+    {
+      "method": "scp-viz-heatmaps",
+      "implementation": "scp-groupheatmap",
+      "entrypoint": "code/groupheatmap/code/module.R:GroupHeatmap",
+      "receipt_state": "passed",
+      "scope": "annotation"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-dynamicplot",
+      "entrypoint": "code/dynamicplot/code/module.R:DynamicPlot",
+      "receipt_state": "passed",
+      "scope": "native_curve"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-enrichmentplot",
+      "entrypoint": "code/enrichmentplot/code/module.R:EnrichmentPlot",
+      "receipt_state": "passed",
+      "scope": "positive_native_material"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-gseaplot",
+      "entrypoint": "code/gseaplot/code/module.R:GSEAPlot",
+      "receipt_state": "passed",
+      "scope": "positive_native_material"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-graphplot",
+      "entrypoint": "code/graphplot/code/module.R:GraphPlot",
+      "receipt_state": "passed",
+      "scope": "real_curved"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-lineageplot",
+      "entrypoint": "code/lineageplot/code/module.R:LineagePlot",
+      "receipt_state": "passed",
+      "scope": "positive_native_material"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-pagaplot",
+      "entrypoint": "code/pagaplot/code/module.R:PAGAPlot",
+      "receipt_state": "missing",
+      "scope": ""
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-projectionplot",
+      "entrypoint": "code/projectionplot/code/module.R:ProjectionPlot",
+      "receipt_state": "passed",
+      "scope": "self_projection"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-velocityplot",
+      "entrypoint": "code/velocityplot/code/module.R:VelocityPlot",
+      "receipt_state": "not_run",
+      "scope": "velocity_umap"
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-compute-velocity-on-grid",
+      "entrypoint": "code/compute-velocity-on-grid/code/module.R:compute_velocity_on_grid",
+      "receipt_state": "missing",
+      "scope": ""
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-cellstatplot",
+      "entrypoint": "code/cellstatplot/code/module.R:CellStatPlot",
+      "receipt_state": "passed",
+      "scope": "f_plot_type_upset"
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-featurecorplot",
+      "entrypoint": "code/featurecorplot/code/module.R:FeatureCorPlot",
+      "receipt_state": "passed",
+      "scope": "two_markers"
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-featurestatplot",
+      "entrypoint": "code/featurestatplot/code/module.R:FeatureStatPlot",
+      "receipt_state": "passed",
+      "scope": "f_add_stat_mean"
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-statplot",
+      "entrypoint": "code/statplot/code/module.R:StatPlot",
+      "receipt_state": "passed",
+      "scope": "f_position_dodge"
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-volcanoplot",
+      "entrypoint": "code/volcanoplot/code/module.R:VolcanoPlot",
+      "receipt_state": "passed",
+      "scope": "positive_native_material"
+    },
+    {
+      "method": "shap-explanation",
+      "implementation": "shap-explain-model",
+      "entrypoint": "code/explain_model.py:explain_model",
+      "receipt_state": "passed",
+      "scope": "解析线性模型 SHAP 精确解；检查 summary/samples 表、百分比、输入与模型未变、特征顺序保护。"
+    },
+    {
+      "method": "trajectory-inference",
+      "implementation": "scp-slingshot",
+      "entrypoint": "code/analysis.R:run_trajectory_inference",
+      "receipt_state": "passed",
+      "scope": "Actual isolated run and comparison for scp-slingshot; case={\"label\": \"Slingshot\", \"parameters\": {\"parameters\": {\"group.by\": \"CellType\", \"reduction\": \"UMAP\", \"dims\": [1, 2], \"show_plot\": false, \"seed\": 11}}}"
+    },
+    {
+      "method": "trajectory-inference",
+      "implementation": "scp-monocle2",
+      "entrypoint": "code/monocle2.R:run_trajectory_monocle2",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: monocle; automatic installation is disabled"
+    },
+    {
+      "method": "trajectory-inference",
+      "implementation": "scp-monocle3",
+      "entrypoint": "code/monocle3.R:run_trajectory_monocle3",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: monocle3; automatic installation is disabled"
+    },
+    {
+      "method": "trajectory-inference",
+      "implementation": "scp-monocle2-core",
+      "entrypoint": "code/monocle2_core.R:run_monocle2_core",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: monocle; automatic installation is disabled"
+    },
+    {
+      "method": "trajectory-inference",
+      "implementation": "scp-monocle3-core",
+      "entrypoint": "code/monocle3_core.R:run_monocle3_core",
+      "receipt_state": "not_run",
+      "scope": "Missing R dependency: monocle3; automatic installation is disabled"
+    }
+  ]
+}

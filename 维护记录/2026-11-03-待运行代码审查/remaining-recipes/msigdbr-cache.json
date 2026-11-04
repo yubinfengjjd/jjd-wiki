@@ -1,0 +1,8 @@
+{
+  "url": "https://zenodo.org/records/18968178/files/msigdb.2026.1.zip?download=1",
+  "version": "2026.1",
+  "md5": "512ba99c6827141a9d471972b812d4ac",
+  "sha256": "84c8ff3270db946ced2a7a4beacf866a3d4ce138af2cbdb1dae76eacb4d4c576",
+  "bytes": 44335790,
+  "scope": "Exact current msigdbr package archive; no replacement gene sets or shipped-snapshot substitution."
+}

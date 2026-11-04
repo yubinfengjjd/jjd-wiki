@@ -1,0 +1,19 @@
+# Public R execution evidence, 2026-11-04
+
+The first sequential batch completed all 20 reviewed public pancreas cases: **17 executed, 3 not_run**. All 11 native plot cases generated nonempty output, with visual review pending. The nine analysis/adapter cases produced six successful calls and three precise failures. Nothing in this directory automatically promotes a formal algorithm-verification receipt.
+
+| Evidence | Result and boundary |
+|---|---|
+| [First-pass report](public-r-20261104-ig3shgyk/README.md) | All 20 cases; actual parameters, package versions, source/input hashes, sanitized log tails and output identities. Original and copied source/runtime/input files were preserved. |
+| [First-pass collected summary](public-r-20261104-ig3shgyk/collected-summary.json) | The three failures were SingleR missing `scrapper`, forwarded doublet `seed=11`, and reference projection with an empty feature-loading matrix. The first SingleR orchestration error is preserved and separately recovered. |
+| [Corrected doublet invocation](doublet-seed11-corrected-fad_um_1/execution-audit.json) | Same first 80 public cells; `set.seed(11)` before the call; remove only the unsupported forwarded `seed` argument. Actual scDblFinder output: 77 singlet, 3 doublet; scores 0.4008–0.759. Cell ordering, finite scores, class coverage, caller object and original files passed checks. |
+| [SingleR dependency-restored retry](cell-type-annotation-scp-singler-dg7lt3ow/execution-audit.json) | Same reviewed reference 300/query 100 case after the primary task restored `scrapper`; actual failure became `No cell overlap between new meta data and Seurat object`. Later SingleR repairs and direct numerical comparisons belong to the primary task, outside this record. |
+| [Source identity and original calls](original-wrapper-scbxyxye/summary.json) | Five function/formal/body comparisons matched archive, native extraction and installed SCP 0.5.6 at the pinned commit. Both unchanged original SCP calls failed because their SeuratObject `slot` API is defunct. No output equivalence can be claimed. The doublet input serialization matched; the independently normalized SingleR object serializations did not match, so that pair also fails the exact-input gate. |
+| [Reference input diagnosis](reference-input-root-cause.md) | The public PCA has embeddings but 0×0 loadings. The wrapper now reports this explicitly without fitting a substitute PCA. Scientific execution remains `not_run`. |
+| [Reference regression](reference-guard-identity-hj5lr7db/summary.json) | The old and guarded wrappers were checked in new processes against the same frozen, actually recorded input. The old dimension failure and new precise error were observed; cross-process input identity and per-call preservation passed. |
+
+All raw RDS outputs, full logs and exact command arguments remain under `<ENV_ROOT>/method-runs/`. Numbered JSON records here replace local machine paths with placeholders. The pinned fixture and its attribution are documented in [the replay instructions](../method-replay/README.md).
+
+`run_batch.py` and `collect_results.py` produce the first-pass evidence. `run_corrected_doublet.py` uses the separate corrected-call driver. `source_identity.R`, `comparison_case.R`, `compare_key_arrays.R` and `run_original_comparisons.py` preserve the unmodified-original comparison attempt. `reference_representation_probe.R`, `reference_loadings_guard_test.R` and `run_reference_guard_checks.py` diagnose and regress the reference input guard.
+
+No packages were installed by these scripts, no original source or historical receipt was edited, and no commit, push or `save` operation was performed. The formal reference-wrapper diff is limited to an input guard and a matching runtime provenance note. A successful reference-mapping case still requires a reference with valid fitted feature loadings selected by the author; no replacement representation has been chosen here.

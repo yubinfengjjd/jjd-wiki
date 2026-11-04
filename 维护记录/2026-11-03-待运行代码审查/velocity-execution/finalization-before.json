@@ -1,0 +1,20 @@
+{
+  "runtime_sha256": "0fa8108f08ca12541270df9abdbcd406547ce039676b50acf9dbbed792585857",
+  "page_sha256": "4ca4924ea960882bbce9b24e87f44a714e0737f9da0128a08ec763066aa51114",
+  "code_sha256": {
+    "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "code/velocity_native.R": "bd919afc80287701e3186326f3550a6d81f09e2b7c13c518a9c0c6fc9ba683e3",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "old_verification_sha256": {
+    "scp-scvelo-portability.json": "1256bb1227bc1c8a64d520e104d3a51054d76c171ce1ec6ba3aeafc4809445ce",
+    "scp-scvelo-standalone.json": "21fd3444db06dae532eaf9d449a1fb91f0cd78186284f3fbd19267e5e85de9b5",
+    "scp-scvelo.json": "4c91b840dc9b4cb5926a1f75b9936d0e3c54c8ca95458455d73d19d17ac72e19"
+  },
+  "user_blocks_sha256": [
+    "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+  ],
+  "facts_blocks_sha256": [
+    "ddcb37edc7c3d6d6b5fc48af3eb565cc8bb1949dda5ae8ce6c54dfbddf8f726b"
+  ]
+}

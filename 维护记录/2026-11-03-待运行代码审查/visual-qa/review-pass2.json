@@ -1,0 +1,565 @@
+{
+  "review_target": "pass2 existing isolated public-example template outputs",
+  "method": "Human visual inspection of 10 labeled contact sheets, each pairing existing PNG and independently rasterized PDF; full-size PNG follow-up for suspected defects.",
+  "renderer": "Pillow 12.3.0 and pypdfium2 in the bundled document runtime",
+  "case_count": 30,
+  "renderings_reviewed": 60,
+  "output_files_hash_checked": 90,
+  "all_hashes_match_replay2": true,
+  "blank_plots": 0,
+  "status_counts": {
+    "pass": 21,
+    "fail": 4,
+    "warning": 5
+  },
+  "overall_status": "needs_visual_corrections",
+  "scientific_validation": false,
+  "limitations": [
+    "No source/input changes and no analysis reruns in this QA task.",
+    "No scientific, statistical or biological validation.",
+    "SVG files were hash-bound to the replay report but were not separately rendered.",
+    "Contact sheets are downsampled review aids; suspected clipping was checked against the full-size PNG."
+  ],
+  "cases": [
+    {
+      "index": 1,
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-01.jpg",
+      "notes": "Horizontal bars, values, feature labels and color scale are complete; inverted numeric direction is displayed explicitly.",
+      "source_report": "template-python-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "8b3a9915b1b7472de5da5fe7a9b908cd7cea1f097195693ae91774e39447001c",
+        "figure.png": "eaf79164c9df90d8f611f5be257502b7ae96460d2ee14b2be4b163f5feb473fc",
+        "figure.svg": "f47cb75e3167c9761fd8e699ce2ec69a42485ca67aefbf00d96e1b45fd73c962"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 2,
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-01.jpg",
+      "notes": "Beeswarm marks, zero reference, feature labels and feature-value color scale are visible without clipping.",
+      "source_report": "template-python-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "66fbc84e40e7ead0ed828a5466887b9780f912a623dafd44540cdbaa4277e9ad",
+        "figure.png": "b933b6a6cb63eac7d5ef5847e95b1b074759e6f0b2a197d7504e8dbee4d9a10e",
+        "figure.svg": "60889e8d4016b13c2865dac9e1856a8bd88553ba9f6b62caad4fce5ef852aa4b"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 3,
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-01.jpg",
+      "notes": "Radial bars, outer feature labels and inner color scale are complete; small labels require the full-size export.",
+      "source_report": "template-python-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "c78222596b3acb59d574b7c10c51b40d6f4d487d61c4d55946788ac00f286e1b",
+        "figure.png": "7bb863aed578306778085d41a50f0fe6575580f973bb2b2247d3637e3a5b2513",
+        "figure.svg": "daf6811077c6bf9b639cef3f3b85441d281739f51a11722a48602f46bcc19dbc"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 4,
+      "id": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-02.jpg",
+      "notes": "Scatter, both marginal histograms, reference/fit lines and numeric color scale are visible. Metric annotations are example content and were not recomputed.",
+      "source_report": "template-python-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "f4fe77fa29a21c1eeb484f0af81b9640801786e01666633c0ee3084885555dfe",
+        "figure.png": "9042122a80aced146bc5678f1394491e09d840dd7d8bd32fd88a57be3b02995a",
+        "figure.svg": "6919b1200b81c3944df774fcb5f564487f4f39660da543f2ab3d72d14e4f2413"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 5,
+      "id": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-02.jpg",
+      "notes": "All six boxes, individual points, mean diamonds and model labels are visible; no obvious clipping.",
+      "source_report": "template-python-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "223582ec8c724896fdd0160f63406416d867568db0cf0cf5873bd4431c82a2be",
+        "figure.png": "fbf5fe903c724e84baa0d48687ef3123116fffe70274c4c1460b01e6d54faec2",
+        "figure.svg": "360e848c5a1ea95f487570258123946728a447f856148e8913f326d310e27bb0"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 6,
+      "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-02.jpg",
+      "notes": "UMAP point groups, region labels, coordinate arrows and legend are present; no obvious clipping.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "afa764e88660318298f3a8d5cf564b3acfbaa5c2e173efdbbad2b1717df3410b",
+        "figure.png": "2c4563641e59931e99f069e6bbb8e74868dbba35ec57c3d0e605b17a0342ed7f",
+        "figure.svg": "024f3f67bf63f01e60d5aca1119de010a82ad2f75c705d355c34100c3b75fcaa"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 7,
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+      "status": "fail",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-03.jpg",
+      "notes": "Left-column UMAP_2 text and bottom-row UMAP_1 text touch or cross the image boundary and are clipped. Point clouds have very low contrast in the full-size PNG; the PDF rendering is somewhat stronger. Not an empty plot.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "4a8cbcc75186af4d9d3926d311f08c475d433c9cbead4b69b7f0c1fb8dfb5bb5",
+        "figure.png": "fd2caa4c3f1ecfa5d369e57d4714987739fd0661685364fc3c354aa4eb2a3487",
+        "figure.svg": "b6c2b9e9d22c1123af8a37bd066ca7026e2ae74c5b464affedd58a06f028ea28"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 8,
+      "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-03.jpg",
+      "notes": "All marker rows, cell-type columns, continuous color key and size legend are present. Dense text is legible in the full-size export, not at thumbnail scale.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "7ef0e53a9301f80ee75643ad9eddd1fde53e261fad05dbe70920d76ea7ca0e37",
+        "figure.png": "3ed15f60e37929d8d608cbcf545f515ac7a67f3873937b955e3695e2be9b159b",
+        "figure.svg": "082c250f14081b621ef4db2ac9700eed813cc22fc1c0851eb454c714f407b186"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 9,
+      "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-03.jpg",
+      "notes": "Both stacked bars, connecting bands, 0..1 proportion scale and cell-type legend are complete.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "42e3a1a7abee8b3bb4571753e5dc3730fdb52b6514ce7e55632cd6c31f002896",
+        "figure.png": "6a77537360f2fcb4045f6deb117c79ddcd5ea4ff4a6b6f1892154d39d08e8f66",
+        "figure.svg": "8003e87c9f927e3c75cc4954f7bc01d136aeaa44da7b3d42e9415becea227ee7"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 10,
+      "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-04.jpg",
+      "notes": "Nine paired groups, violins, summary annotations, title and legend are present. Statistical annotations were not verified.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "dc13533c56e4425540e5ecd5c972bef50d2f7d7291bf1d4a05670d6e701f7a06",
+        "figure.png": "d5ef48e32901821917ebf3fa5cdd9d74db0da0ce77e3d80907ceb11dfc95eda5",
+        "figure.svg": "0a2ecafeb1574674fd73366d630a1fd100e30906492431777646e16b006bf1a5"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 11,
+      "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "status": "warning",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-04.jpg",
+      "notes": "Non-empty signed volcano-style plot with readable numeric axes and color key. Several gene labels in the upper-right are crowded, with different repel placement across PNG/PDF. Signed significance-axis semantics were not scientifically validated.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "7893bf1e943d5515914d3c00b518e8512e2ea1c93cc929045f420df892d1a127",
+        "figure.png": "f03fcebeb14a94e4d6d566b9fbbf342e1a4bdbad6b019d05c594480266e3adf8",
+        "figure.svg": "0fe713c7e1c0144ec72434919854d1b865baf2eda77ea396abfc2720b949105f"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 12,
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "status": "warning",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-04.jpg",
+      "notes": "Concentric proportions and phase legend are present. Small/zero proportion labels overlap near the top of the rings; the merged 0%/100% endpoint label itself is visible.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "242860c660d1b7b99a9752e1571af4f955821724db49e6abdf32bdbcd153223f",
+        "figure.png": "9ac418d3b8176a830fd4c4035a342d76216ac77842ef0527bf3ed0cf89ce352a",
+        "figure.svg": "9efad93aa92b7b68f106abeac50a2334b5d1ee781a6fa0dc1f913435efd41f27"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 13,
+      "id": "2026-10-22-scp-example__fig03-pie--pie",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-05.jpg",
+      "notes": "Concentric pie sectors, categorical labels, endpoint tick and phase legend are complete; no value-label collision because value annotations are not shown.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "df80e8d67bbdcf8fe6b87b2eb478779ef1798e9b4e936f597a25eb7f4caf83ff",
+        "figure.png": "64440fd79acd01609c9a1f959238b60207609816dd1a3e9409e2fadd95166929",
+        "figure.svg": "466d130ba8aef6f8ecb213952b5bfba17cfb58a0fb735a1ac275f13afc1109c0"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 14,
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "status": "fail",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-05.jpg",
+      "notes": "Pre-endocrine on the left and Ngn3 low EP on the right are truncated at the polar panel border. Multiple small-count annotations overlap at the center. Confirmed in full-size PNG and PDF contact sheet.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "6aa9bcaedbdaea8e84e9c82a6838a4639c70a68ea022bd603e3106dfc7107f04",
+        "figure.png": "13618afcc76224c14886859faa6078cb3d517d889abe848e0d423dd681821420",
+        "figure.svg": "6d2a15d35773416b1295097d75c9838b3b136701581a7e1340759d795c45ac0e"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 15,
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "status": "warning",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-05.jpg",
+      "notes": "Trend/stacked counts and phase legend are complete, but zero-count annotations for Pre-endocrine and Endocrine are cut by the bottom panel border.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "05ec81f9fe80d2deb10b9aca3623c229ade4b50ead790d91d72d0bab824bfd5c",
+        "figure.png": "c52529db21155ae2c2343f9540bcf2cc5e5e4dd8c0a66089264487402c63281b",
+        "figure.svg": "aab849c3cf49cf9035e86445aaeff7728764c60bacdceda92bbe9fd3aa7c5da1"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 16,
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "status": "fail",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-06.jpg",
+      "notes": "Percentage annotations at the first and final category are clipped horizontally; zero/small annotations also intersect the lower panel border. The chart is populated and the 0..100% axis itself is visible.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "806cac0cf51eb029a91dad49715a5b0a5fe8b2fa0801512b107b8aa59e88434f",
+        "figure.png": "ba5a1196eb355fac36e4cbd22d82bef07e7a79c78aeca20bcb92d4efda7c86c7",
+        "figure.svg": "f0f41230f8158dd72fbd3ab4f0fce53443dd3270cbcbc37e5f0413496ba17b6d"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 17,
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "status": "fail",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-06.jpg",
+      "notes": "The vertical tick categories are G1/S/G2M but the vertical axis title is Percentage. Percent is already encoded by point size. This is an axis-label mismatch, not a failed numerical calculation.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "93540f8d0fc4bd1a493d12ffe6e88239e8b0d5b00ebdead8be5478e4885d29a7",
+        "figure.png": "ddabf0eed555227b0a7d25848ebc3a5aa68676f570f9d2e5b6d737044e112117",
+        "figure.svg": "bf973e9bf5ff9745dffbe79c32f42cbf4fa68825effacf83dfda5c289a1161c1"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 18,
+      "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-06.jpg",
+      "notes": "Both grouped heatmaps, row labels, categorical annotation keys and numeric z-score legend are complete.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "b694768755ecebc23df8a3f51879e740fa52f0d379a9940c75e4176f26f94915",
+        "figure.png": "00b0698d08ebdd6b8840b500febaf9652d9881ccb857ed69eb0b5fdf1ec314b4",
+        "figure.svg": "14ed588ab02e981629a532909cb1e4ef5a71c1e59ff330904fc42f1e2baf5d8c"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 19,
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "status": "warning",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-07.jpg",
+      "notes": "Stacked count bars and phase legend are complete, but zero-count labels at Pre-endocrine/Endocrine are clipped by the lower panel border.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "e04a23cc843ed4d01c672b3763b21c9ef33868dacc50a32f69a270e72d5214c2",
+        "figure.png": "96b98f9d04215b30bf4816116be67c7cb6ad9cc72cbb73b96c247f6fd7d3a46f",
+        "figure.svg": "50f5ac4ae7b61268eaaf579c8e6996ccaad5c96c3394e0998958739a79006bc3"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 20,
+      "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-07.jpg",
+      "notes": "Both Sankey sides, connecting flows and both category legends are visible; no clipping or empty bands.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "3fd488999a7531f86bea449c7c2b0cfe68c46f7803b4c5a8994ebb9aaddbec05",
+        "figure.png": "70992e6234996899c83d12f6041465372ae587a83c5b726727888ca30ffa47c8",
+        "figure.svg": "5e35d7bbdc07d1019839f2179680addd4d96a8139523ecd6dd79d981aac62fd1"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 21,
+      "id": "2026-10-22-scp-example__fig11-chord--chord",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-07.jpg",
+      "notes": "Chord arcs, ribbons, category names and count ticks are visible; no obvious crop.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "b448e30636d92ad1bdc4ceb43eda46622b7709a8ba443c6dc95c2fab612be70b",
+        "figure.png": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+        "figure.svg": "291f21f08bccc58c09ac8f51b1aba026e4b99c2effa97c37c3052c0f46e2d899"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 22,
+      "id": "2026-10-22-scp-example__fig12-venn--venn",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-08.jpg",
+      "notes": "Four-set Venn sectors, set totals and intersection labels are visible. Set/intersection arithmetic was not revalidated.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "d564d0900a58f3131e774d3f0465f068a79b513468b51adf1c1bcd19c2da4d8d",
+        "figure.png": "f71770f803a57ef84d25fdb81ceabbbfc085294725d3cdab3c10dff5a18fb5fd",
+        "figure.svg": "8afa4c46f0cabf2f84e7abc859ffc8851af67182ab898a3fe657232aac096e13"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 23,
+      "id": "2026-10-22-scp-example__fig13-upset--upset",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-08.jpg",
+      "notes": "Intersection bars, counts, set matrix and category labels are complete and aligned visually.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "d65f1b175074b942d79ef45299b348d57b6ad73d5762ec1ebc6c8d79e20fef92",
+        "figure.png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+        "figure.svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 24,
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-08.jpg",
+      "notes": "Feature heatmap, row labels, cell-type annotation bar, z-score scale and legend are complete.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "b3b5b84e32e7a57c3514ed5c80e0c3d216c5c786645452a790d0e7d52d5a291d",
+        "figure.png": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518",
+        "figure.svg": "41c1932b7d5294b69595c511b371acf4644a520d9813645699de3758b87deb34"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 25,
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-09.jpg",
+      "notes": "Similarity matrix, row/column annotation bars, categorical legend and cosine-similarity color scale are complete.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "2a5ab502e836267e9942026ccdb691d5cf96d9ba1d5482e05a9b63aaafa75811",
+        "figure.png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
+        "figure.svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 26,
+      "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-09.jpg",
+      "notes": "All eight density ridges, subgroup labels, x-axis and category legend are visible; no empty plot.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "c0fe01b4295a3fb102870cb9cfaadfe1abbc133f9721f7090b25fb16c46dd273",
+        "figure.png": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+        "figure.svg": "be821e733029f39a3023714de4f9b9387ef33adb7a81c4b13867cd27f7870e59"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 27,
+      "id": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-09.jpg",
+      "notes": "Grouped dot heatmap, gene labels, categorical bar, z-score scale and percent-size key are visible.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "e1660a91f43e62356d6e391b2b301ddadceb8df08cb3fb3ab725db5dff46c9d8",
+        "figure.png": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+        "figure.svg": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 28,
+      "id": "figureya-1survivalcurve-update--km-curve",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-10.jpg",
+      "notes": "Survival curves, censor marks, interval bands, legend and all three risk-table rows are complete. Survival estimates, p value and risk-table arithmetic were not revalidated.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "6c4ed1185f224ed265d77085d30759d4afe30cebc6ae2c1c7cfee982216047cc",
+        "figure.png": "4f6deb1fc2279714bde27ab6d0f2ec50dc070ed1f2931d3e7f8068885cca145c",
+        "figure.svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 29,
+      "id": "figureya-59volcanov2--volcano",
+      "status": "warning",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-10.jpg",
+      "notes": "Volcano axes, thresholds and pathway labels are visible. Selected-gene labels in the upper-right are crowded and overlap each other/points; use the full-size vector export for review.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "d1946ccd3c898b7f7b8b4edfce13cfaf68d789cc730d5e2820aa00ea912bc82e",
+        "figure.png": "9e669eba0e9883d615134f272c4793d8ffd09c3ce00078cbbde7dab3c6c92030",
+        "figure.svg": "26525330614b692662c3c839366b2fae0a74393661663e5715665f2dd756e7ac"
+      },
+      "scientific_validation": false
+    },
+    {
+      "index": 30,
+      "id": "figureya-6rhrsv2--forest",
+      "status": "pass",
+      "png_visually_reviewed": true,
+      "pdf_render_visually_reviewed": true,
+      "svg_checked": "file SHA-256 only; not independently rendered",
+      "blank_plot": false,
+      "contact_sheet": "contact-10.jpg",
+      "notes": "Forest confidence-interval marks, reference line, subgroup table, HR/CI text, p-value column and direction labels are visible. Numerical/statistical consistency was not revalidated.",
+      "source_report": "template-r-replay2.json",
+      "source_output_hashes": {
+        "figure.pdf": "779c57be3910aebbcd612a5dbd04528da1a8c57dddc4e4402c134a086726907d",
+        "figure.png": "fc59499f911b97bc0d56f7e09a60e371e1e6105ea31d404ba35a732873a60f4e",
+        "figure.svg": "b1b75a320db036db9fae1d2149f887d91a28d976bfb3443623a63885d9f9a98c"
+      },
+      "scientific_validation": false
+    }
+  ]
+}

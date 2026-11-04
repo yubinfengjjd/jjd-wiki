@@ -1,0 +1,817 @@
+{
+  "execution_audit": {
+    "kind": "original-wrapper-case-execution",
+    "method": "doublet-detection",
+    "implementation": "scp-rundoublet",
+    "mode": "wrapper",
+    "execution_state": "executed",
+    "algorithm_verification_state": "not_run",
+    "algorithm_verification_reason": "No new independent original-versus-wrapper comparison has been performed by this replay.",
+    "checks": {
+      "actual_invocation": true,
+      "input_object_unchanged": true,
+      "cell_order_and_identifiers_preserved": true,
+      "output_assertions": true,
+      "source_and_input_files_unchanged": true
+    },
+    "returncode": 0,
+    "error": null,
+    "argv": [
+      "<ENV_ROOT>\\R-4.5.0\\bin\\x64\\Rscript.exe",
+      "--vanilla",
+      "<ENV_ROOT>\\method-runs\\original-wrapper-scbxyxye\\doublet-detection-wrapper\\comparison_case.R",
+      "<ENV_ROOT>\\method-runs\\original-wrapper-scbxyxye\\doublet-detection-wrapper\\case.json"
+    ],
+    "started_at": "2026-11-03T19:27:26.850480+00:00",
+    "executed_at": "2026-11-03T19:28:10.343499+00:00",
+    "source_sha256": {
+      "code/analysis.R": "c3c5c9f90e65ecc957b60574103b4595d68bdab97b289df1ed5d9d9d12dcf3a4",
+      "code/doublet_native.R": "b06499321a51b750667df68fe4874496bcb49ae6641a769b6f794c0a1967c71e"
+    },
+    "manifest_sha256": "f5dbe728c7f69e3a55b321406c43df3955c5c9a4d1364d507fff227299dd80a9",
+    "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+    "driver_sha256": "e792df240ad2a3aaea087ee3f19d30c8e12d0ac615239c9e29effcb9f299d17b",
+    "child": {
+      "state": "executed",
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "cell_order_and_identifiers_preserved": true,
+        "output_assertions": true
+      },
+      "error": null,
+      "error_call_symbols": [],
+      "error_calls_archive_note": "Expanded public objects omitted; raw calls retained in the external execution audit.",
+      "input_serialized_sha256": "b803683eff0999c6deceaa277d0cd3087ede61eaa96cd9907fb094b63de65575",
+      "parameters": {
+        "assay": "RNA",
+        "db_method": "scDblFinder",
+        "db_rate": 0.01
+      },
+      "parallel_backend": {
+        "class": "SnowParam",
+        "workers": 50
+      },
+      "key_arrays": {
+        "cell_ids": [
+          "CAGCCGAAGCGATATA",
+          "AGTGTCATCGCCGTGA",
+          "GATGAAAAGTTGTAGA",
+          "CACAGTACATCCGTGG",
+          "CGGAGCTCATTGGGCC",
+          "AGAGCTTGTGTGACCC",
+          "GCTCTGTAGCGTGAGT",
+          "ACCGTAACAAGGTTCT",
+          "CCACTACAGGTGGGTT",
+          "TGCGTGGGTCCCTTGT",
+          "AGGGAGTGTCTTCTCG",
+          "CCGTGGACACGAAGCA",
+          "GAACATCAGCAATATG",
+          "TTCTACACAGTCGATT",
+          "ACGGCCACACGTGAGA",
+          "CTCGTACAGAGGTTAT",
+          "CGTCTACAGATGCGAC",
+          "CTCACACGTCACACGC",
+          "AAAGCAACACGGTAAG",
+          "CATCGGGCACGTTGGC",
+          "ATCATCTGTGTTTGTG",
+          "CAAGGCCCAAGAAAGG",
+          "AGATCTGGTTCGGCAC",
+          "CTCTGGTCAAGACACG",
+          "TACAGTGTCCCTAACC",
+          "GGACAGATCAGCATGT",
+          "CACTCCACATATGGTC",
+          "GTTCATTGTTCCAACA",
+          "TAAGTGCCAATAGCAA",
+          "TACTCGCTCTTCGGTC",
+          "GCTGCTTTCCTCGCAT",
+          "GCTGGGTGTCTAGAGG",
+          "AGCTCTCAGCGTGAGT",
+          "CGAGCACTCTAACTCT",
+          "GATCGTAAGTGCAAGC",
+          "TGTCCCAGTCTCGTTC",
+          "CTTGGCTCAGCCACCA",
+          "GGGTCTGGTAAACCTC",
+          "CGGACTGTCTTGAGAC",
+          "GGTGCGTTCTGGTATG",
+          "TACCTTATCCGATATG",
+          "ACGGGTCTCTATCGCC",
+          "GTACGTACATCGATGT",
+          "TCGTAGATCTTTACGT",
+          "AAAGTAGAGAGTGAGA",
+          "AGCGTATTCTGCTGTC",
+          "GGACAAGTCATAACCG",
+          "ACATCAGTCCTTGGTC",
+          "CCAGCGACAGGCTGAA",
+          "GGACAGAAGTGGAGAA",
+          "GACTACAAGCGTGTCC",
+          "GGCAATTGTAGAGCTG",
+          "GTTCTCGCAAGTCTAC",
+          "CGAATGTTCTTCATGT",
+          "CCGTGGACATTCCTGC",
+          "CTAATGGAGCCGGTAA",
+          "AGCGGTCGTCGAATCT",
+          "GTATTCTTCACTTACT",
+          "CAGTCCTAGGTGGGTT",
+          "CGACTTCCACAACGTT",
+          "AAACGGGTCCGCGCAA",
+          "CTAGTGACATTGAGCT",
+          "CTCCTAGAGAGTGACC",
+          "GCAGTTATCTTGAGAC",
+          "CGAACATCAAGCGAGT",
+          "GGGAGATAGCGAAGGG",
+          "CATCGGGAGGCCCTTG",
+          "TGGACGCAGCTGCAAG",
+          "CAGAATCCACGCATCG",
+          "CTCGGAGGTTGGACCC",
+          "CGGACACTCTATCCTA",
+          "CGTGTAATCATTATCC",
+          "CGTGTAAGTTAAGATG",
+          "ATTTCTGTCCCTGACT",
+          "AGAGCGAGTTGGACCC",
+          "CAGATCACAACCGCCA",
+          "CGGCTAGCATTCCTCG",
+          "CCACGGACAGATGAGC",
+          "TGGCGCAAGAAGATTC",
+          "CATGACACAAAGTCAA"
+        ],
+        "metadata_cell_ids": [
+          "CAGCCGAAGCGATATA",
+          "AGTGTCATCGCCGTGA",
+          "GATGAAAAGTTGTAGA",
+          "CACAGTACATCCGTGG",
+          "CGGAGCTCATTGGGCC",
+          "AGAGCTTGTGTGACCC",
+          "GCTCTGTAGCGTGAGT",
+          "ACCGTAACAAGGTTCT",
+          "CCACTACAGGTGGGTT",
+          "TGCGTGGGTCCCTTGT",
+          "AGGGAGTGTCTTCTCG",
+          "CCGTGGACACGAAGCA",
+          "GAACATCAGCAATATG",
+          "TTCTACACAGTCGATT",
+          "ACGGCCACACGTGAGA",
+          "CTCGTACAGAGGTTAT",
+          "CGTCTACAGATGCGAC",
+          "CTCACACGTCACACGC",
+          "AAAGCAACACGGTAAG",
+          "CATCGGGCACGTTGGC",
+          "ATCATCTGTGTTTGTG",
+          "CAAGGCCCAAGAAAGG",
+          "AGATCTGGTTCGGCAC",
+          "CTCTGGTCAAGACACG",
+          "TACAGTGTCCCTAACC",
+          "GGACAGATCAGCATGT",
+          "CACTCCACATATGGTC",
+          "GTTCATTGTTCCAACA",
+          "TAAGTGCCAATAGCAA",
+          "TACTCGCTCTTCGGTC",
+          "GCTGCTTTCCTCGCAT",
+          "GCTGGGTGTCTAGAGG",
+          "AGCTCTCAGCGTGAGT",
+          "CGAGCACTCTAACTCT",
+          "GATCGTAAGTGCAAGC",
+          "TGTCCCAGTCTCGTTC",
+          "CTTGGCTCAGCCACCA",
+          "GGGTCTGGTAAACCTC",
+          "CGGACTGTCTTGAGAC",
+          "GGTGCGTTCTGGTATG",
+          "TACCTTATCCGATATG",
+          "ACGGGTCTCTATCGCC",
+          "GTACGTACATCGATGT",
+          "TCGTAGATCTTTACGT",
+          "AAAGTAGAGAGTGAGA",
+          "AGCGTATTCTGCTGTC",
+          "GGACAAGTCATAACCG",
+          "ACATCAGTCCTTGGTC",
+          "CCAGCGACAGGCTGAA",
+          "GGACAGAAGTGGAGAA",
+          "GACTACAAGCGTGTCC",
+          "GGCAATTGTAGAGCTG",
+          "GTTCTCGCAAGTCTAC",
+          "CGAATGTTCTTCATGT",
+          "CCGTGGACATTCCTGC",
+          "CTAATGGAGCCGGTAA",
+          "AGCGGTCGTCGAATCT",
+          "GTATTCTTCACTTACT",
+          "CAGTCCTAGGTGGGTT",
+          "CGACTTCCACAACGTT",
+          "AAACGGGTCCGCGCAA",
+          "CTAGTGACATTGAGCT",
+          "CTCCTAGAGAGTGACC",
+          "GCAGTTATCTTGAGAC",
+          "CGAACATCAAGCGAGT",
+          "GGGAGATAGCGAAGGG",
+          "CATCGGGAGGCCCTTG",
+          "TGGACGCAGCTGCAAG",
+          "CAGAATCCACGCATCG",
+          "CTCGGAGGTTGGACCC",
+          "CGGACACTCTATCCTA",
+          "CGTGTAATCATTATCC",
+          "CGTGTAAGTTAAGATG",
+          "ATTTCTGTCCCTGACT",
+          "AGAGCGAGTTGGACCC",
+          "CAGATCACAACCGCCA",
+          "CGGCTAGCATTCCTCG",
+          "CCACGGACAGATGAGC",
+          "TGGCGCAAGAAGATTC",
+          "CATGACACAAAGTCAA"
+        ],
+        "metadata": [
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.509063539556163,
+            "_row": "CAGCCGAAGCGATATA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.534632375328225,
+            "_row": "AGTGTCATCGCCGTGA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.562797628901547,
+            "_row": "GATGAAAAGTTGTAGA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.524144885454538,
+            "_row": "CACAGTACATCCGTGG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.472424139965876,
+            "_row": "CGGAGCTCATTGGGCC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.481640550432379,
+            "_row": "AGAGCTTGTGTGACCC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.489591356584375,
+            "_row": "GCTCTGTAGCGTGAGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.587464251821521,
+            "_row": "ACCGTAACAAGGTTCT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.535148050225843,
+            "_row": "CCACTACAGGTGGGTT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.541084192229022,
+            "_row": "TGCGTGGGTCCCTTGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.450967518299368,
+            "_row": "AGGGAGTGTCTTCTCG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.527497794055444,
+            "_row": "CCGTGGACACGAAGCA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.502384052726113,
+            "_row": "GAACATCAGCAATATG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.531090021110518,
+            "_row": "TTCTACACAGTCGATT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.428714015556974,
+            "_row": "ACGGCCACACGTGAGA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.550373707993913,
+            "_row": "CTCGTACAGAGGTTAT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.589263310449978,
+            "_row": "CGTCTACAGATGCGAC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.400751986320768,
+            "_row": "CTCACACGTCACACGC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.42,
+            "_row": "AAAGCAACACGGTAAG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.538227671490463,
+            "_row": "CATCGGGCACGTTGGC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.542185353378787,
+            "_row": "ATCATCTGTGTTTGTG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.498725413561964,
+            "_row": "CAAGGCCCAAGAAAGG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.552165412170348,
+            "_row": "AGATCTGGTTCGGCAC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.495208181038182,
+            "_row": "CTCTGGTCAAGACACG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.561297871948543,
+            "_row": "TACAGTGTCCCTAACC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.474099067951583,
+            "_row": "GGACAGATCAGCATGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.457112689217373,
+            "_row": "CACTCCACATATGGTC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.529031366175528,
+            "_row": "GTTCATTGTTCCAACA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.580042687115628,
+            "_row": "TAAGTGCCAATAGCAA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.595038798842571,
+            "_row": "TACTCGCTCTTCGGTC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.442150095907092,
+            "_row": "GCTGCTTTCCTCGCAT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.485400829646352,
+            "_row": "GCTGGGTGTCTAGAGG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.522697306929077,
+            "_row": "AGCTCTCAGCGTGAGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.461642936056086,
+            "_row": "CGAGCACTCTAACTCT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.534388804056734,
+            "_row": "GATCGTAAGTGCAAGC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.593148045912321,
+            "_row": "TGTCCCAGTCTCGTTC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.480660628749923,
+            "_row": "CTTGGCTCAGCCACCA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.430270313253331,
+            "_row": "GGGTCTGGTAAACCTC"
+          },
+          {
+            "db.scDblFinder_class": "doublet",
+            "db.scDblFinder_score": 0.662007483541979,
+            "_row": "CGGACTGTCTTGAGAC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.491549715559273,
+            "_row": "GGTGCGTTCTGGTATG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.520256030813364,
+            "_row": "TACCTTATCCGATATG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.428159710255174,
+            "_row": "ACGGGTCTCTATCGCC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.523795475367302,
+            "_row": "GTACGTACATCGATGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.480392393599408,
+            "_row": "TCGTAGATCTTTACGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.427953579240168,
+            "_row": "AAAGTAGAGAGTGAGA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.51857056280892,
+            "_row": "AGCGTATTCTGCTGTC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.579929304963419,
+            "_row": "GGACAAGTCATAACCG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.515938980777798,
+            "_row": "ACATCAGTCCTTGGTC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.560392914441175,
+            "_row": "CCAGCGACAGGCTGAA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.559086437201396,
+            "_row": "GGACAGAAGTGGAGAA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.485071642130304,
+            "_row": "GACTACAAGCGTGTCC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.469331011742391,
+            "_row": "GGCAATTGTAGAGCTG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.475138670814688,
+            "_row": "GTTCTCGCAAGTCTAC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.575362642104849,
+            "_row": "CGAATGTTCTTCATGT"
+          },
+          {
+            "db.scDblFinder_class": "doublet",
+            "db.scDblFinder_score": 0.758990964710808,
+            "_row": "CCGTGGACATTCCTGC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.429493399756775,
+            "_row": "CTAATGGAGCCGGTAA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.494656713020742,
+            "_row": "AGCGGTCGTCGAATCT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.4051741267414,
+            "_row": "GTATTCTTCACTTACT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.496650496811776,
+            "_row": "CAGTCCTAGGTGGGTT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.577127327371619,
+            "_row": "CGACTTCCACAACGTT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.503528381279103,
+            "_row": "AAACGGGTCCGCGCAA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.583042003248917,
+            "_row": "CTAGTGACATTGAGCT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.532649392667782,
+            "_row": "CTCCTAGAGAGTGACC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.482355673823046,
+            "_row": "GCAGTTATCTTGAGAC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.496008288888084,
+            "_row": "CGAACATCAAGCGAGT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.535793260175133,
+            "_row": "GGGAGATAGCGAAGGG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.494001431550048,
+            "_row": "CATCGGGAGGCCCTTG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.560673934995395,
+            "_row": "TGGACGCAGCTGCAAG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.491501880386557,
+            "_row": "CAGAATCCACGCATCG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.482024367758488,
+            "_row": "CTCGGAGGTTGGACCC"
+          },
+          {
+            "db.scDblFinder_class": "doublet",
+            "db.scDblFinder_score": 0.677742233897672,
+            "_row": "CGGACACTCTATCCTA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.444377282500013,
+            "_row": "CGTGTAATCATTATCC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.450896775892566,
+            "_row": "CGTGTAAGTTAAGATG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.507052246817728,
+            "_row": "ATTTCTGTCCCTGACT"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.452393449152712,
+            "_row": "AGAGCGAGTTGGACCC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.539000443673787,
+            "_row": "CAGATCACAACCGCCA"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.538151173847429,
+            "_row": "CGGCTAGCATTCCTCG"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.479995616212874,
+            "_row": "CCACGGACAGATGAGC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.459149344032341,
+            "_row": "TGGCGCAAGAAGATTC"
+          },
+          {
+            "db.scDblFinder_class": "singlet",
+            "db.scDblFinder_score": 0.52798171155408,
+            "_row": "CATGACACAAAGTCAA"
+          }
+        ]
+      },
+      "environment": {
+        "R": "4.5.0",
+        "platform": "x86_64-w64-mingw32",
+        "packages": {
+          "methods": "4.5.0",
+          "RcppAnnoy": "0.0.23",
+          "splines": "4.5.0",
+          "later": "1.4.8",
+          "BiocIO": "1.18.0",
+          "bitops": "1.1.0",
+          "tibble": "3.3.1",
+          "polyclip": "1.10.7",
+          "XML": "3.99.0.25",
+          "fastDummies": "1.7.6",
+          "lifecycle": "1.0.5",
+          "scDblFinder": "1.22.0",
+          "stats": "4.5.0",
+          "edgeR": "4.6.3",
+          "globals": "0.20.0",
+          "lattice": "0.22.6",
+          "MASS": "7.3.65",
+          "magrittr": "2.0.5",
+          "limma": "3.64.3",
+          "plotly": "4.12.1",
+          "utils": "4.5.0",
+          "yaml": "2.3.12",
+          "metapod": "1.16.0",
+          "httpuv": "1.6.17",
+          "otel": "0.2.0",
+          "Seurat": "5.6.0",
+          "sctransform": "0.4.3",
+          "spam": "2.11.4",
+          "sp": "2.2.4",
+          "spatstat.sparse": "3.2.0",
+          "reticulate": "1.47.0",
+          "cowplot": "1.2.0",
+          "pbapply": "1.7.5",
+          "RColorBrewer": "1.1.3",
+          "abind": "1.4.8",
+          "Rtsne": "0.17",
+          "GenomicRanges": "1.60.0",
+          "purrr": "1.2.2",
+          "BiocGenerics": "0.54.1",
+          "RCurl": "1.98.1.20",
+          "SingleR": "2.10.0",
+          "GenomeInfoDbData": "1.2.14",
+          "IRanges": "2.42.0",
+          "S4Vectors": "0.46.0",
+          "ggrepel": "0.9.8",
+          "irlba": "2.4.1",
+          "listenv": "1.1.0",
+          "spatstat.utils": "3.2.5",
+          "goftest": "1.2.3",
+          "RSpectra": "0.16.2",
+          "spatstat.random": "3.5.2",
+          "dqrng": "0.4.1",
+          "fitdistrplus": "1.2.6",
+          "parallelly": "1.48.0",
+          "DelayedMatrixStats": "1.30.0",
+          "codetools": "0.2.20",
+          "DelayedArray": "0.34.1",
+          "scuttle": "1.18.0",
+          "tidyselect": "1.2.1",
+          "UCSC.utils": "1.4.0",
+          "farver": "2.1.2",
+          "ScaledMatrix": "1.16.0",
+          "viridis": "0.6.5",
+          "matrixStats": "1.5.0",
+          "stats4": "4.5.0",
+          "spatstat.explore": "3.8.3",
+          "GenomicAlignments": "1.44.0",
+          "jsonlite": "2.0.0",
+          "BiocNeighbors": "2.2.0",
+          "progressr": "1.1.0",
+          "ggridges": "0.5.7",
+          "survival": "3.8.3",
+          "scater": "1.36.0",
+          "tools": "4.5.0",
+          "ica": "1.0.3",
+          "Rcpp": "1.1.2",
+          "glue": "1.8.1",
+          "gridExtra": "2.3.1",
+          "SparseArray": "1.8.1",
+          "MatrixGenerics": "1.20.0",
+          "GenomeInfoDb": "1.44.3",
+          "dplyr": "1.2.1",
+          "fastmap": "1.2.0",
+          "bluster": "1.17.0",
+          "digest": "0.6.39",
+          "rsvd": "1.0.5",
+          "R6": "2.6.1",
+          "mime": "0.13",
+          "scattermore": "1.2",
+          "tensor": "1.5.1",
+          "dichromat": "2.0.1",
+          "spatstat.data": "3.1.9",
+          "base": "4.5.0",
+          "tidyr": "1.3.2",
+          "generics": "0.1.4",
+          "data.table": "1.18.6.1",
+          "rtracklayer": "1.68.0",
+          "httr": "1.4.9",
+          "htmlwidgets": "1.6.4",
+          "S4Arrays": "1.8.1",
+          "uwot": "0.2.5",
+          "pkgconfig": "2.0.3",
+          "gtable": "0.3.6",
+          "lmtest": "0.9.40",
+          "S7": "0.2.2",
+          "SingleCellExperiment": "1.30.1",
+          "XVector": "0.48.0",
+          "htmltools": "0.5.9",
+          "grDevices": "4.5.0",
+          "dotCall64": "1.2",
+          "SeuratObject": "5.4.0",
+          "scales": "1.4.0",
+          "Biobase": "2.68.0",
+          "png": "0.1.9",
+          "spatstat.univar": "3.2.0",
+          "scran": "1.36.0",
+          "reshape2": "1.4.5",
+          "rjson": "0.2.23",
+          "nlme": "3.1.168",
+          "curl": "8.1.0",
+          "zoo": "1.9.1",
+          "stringr": "1.6.0",
+          "KernSmooth": "2.23.26",
+          "parallel": "4.5.0",
+          "miniUI": "0.1.2",
+          "vipor": "0.4.7",
+          "restfulr": "0.0.17",
+          "pillar": "1.11.1",
+          "grid": "4.5.0",
+          "vctrs": "0.7.3",
+          "RANN": "2.6.3",
+          "promises": "1.5.0",
+          "BiocSingular": "1.24.0",
+          "beachmat": "2.24.0",
+          "xtable": "1.8.8",
+          "cluster": "2.1.8.3",
+          "beeswarm": "0.4.0",
+          "locfit": "1.5.9.12",
+          "cli": "3.6.6",
+          "compiler": "4.5.0",
+          "Rsamtools": "2.24.0",
+          "rlang": "1.3.0",
+          "crayon": "1.5.3",
+          "future.apply": "1.21.0",
+          "plyr": "1.8.9",
+          "ggbeeswarm": "0.7.3",
+          "stringi": "1.8.9",
+          "viridisLite": "0.4.3",
+          "datasets": "4.5.0",
+          "deldir": "2.0.4",
+          "BiocParallel": "1.42.1",
+          "Biostrings": "2.76.0",
+          "graphics": "4.5.0",
+          "spatstat.geom": "3.8.3",
+          "Matrix": "1.7.3",
+          "RcppHNSW": "0.7.0",
+          "patchwork": "1.3.2",
+          "sparseMatrixStats": "1.20.0",
+          "future": "1.82.0",
+          "ggplot2": "4.0.3",
+          "statmod": "1.5.2",
+          "shiny": "1.14.0",
+          "SummarizedExperiment": "1.38.1",
+          "ROCR": "1.0.12",
+          "igraph": "2.3.4",
+          "xgboost": "3.2.1.1"
+        },
+        "automatic_installation": false
+      },
+      "mode": "wrapper",
+      "method": "doublet-detection"
+    },
+    "outputs": {
+      "child.json": "7d8d5e424d603945b1a5d1d449c3273056ff81fc8e25ac59a6c2689c687ee174",
+      "input.rds": "bced092bd3e539e785ffc005052182c7b6592e632c23a6aab5f9e5d40fb68b78",
+      "key-arrays.rds": "2bc1a18554f5604f05b7dfa53b33665db3494c55e2946377e40f31baa6ebbbdb",
+      "result.rds": "6ddcbd3f3f1927375d583d3b19338b143e74beb87fc019fe773179d597b7cdb6",
+      "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "log_tails": {
+    "stdout.log": "",
+    "stderr.log": ""
+  },
+  "raw_external_audit": {
+    "path": "..\\research-wiki-env\\method-runs\\original-wrapper-scbxyxye\\doublet-detection-wrapper\\execution-audit.json",
+    "bytes": 25580,
+    "sha256": "0dc15d8a59f3363315f970bdaf21b0fdfdf5bb220b75e240686a17add0d1dcce"
+  }
+}

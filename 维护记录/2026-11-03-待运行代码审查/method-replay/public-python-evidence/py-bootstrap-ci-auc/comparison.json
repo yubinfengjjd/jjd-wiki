@@ -1,0 +1,18 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-bootstrap-ci-auc",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true
+  },
+  "original_reference": [
+    0.9720877498286136,
+    0.9995700788045702
+  ],
+  "isolated_result": [
+    0.9720877498286136,
+    0.9995700788045702
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "scope": "Same-case diagnostic rerun; only maintenance error handling changed",
+  "python_error": {
+    "type": "ValueError",
+    "value": "setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 4) + inhomogeneous part.",
+    "traceback": [
+      "  File \"<ENV_ROOT>/R-lib-4.5-3.21/SCP/python/SCP_analysis.py\", line 167, in SCVELO\n    scv.tl.velocity_graph(adata, vkey=vkey, gene_subset=gene_subset, n_neighbors=n_neighbors, n_jobs=n_jobs)\n",
+      "  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/tools/velocity_graph.py\", line 363, in velocity_graph\n    vgraph.compute_cosines(n_jobs=n_jobs, backend=backend)\n",
+      "  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/tools/velocity_graph.py\", line 175, in compute_cosines\n    res = parallelize(\n",
+      "  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/core/_parallelize.py\", line 138, in wrapper\n    res = np.array(res) if as_array else res\n"
+    ],
+    "message": "Traceback (most recent call last):\n  File \"<ENV_ROOT>/R-lib-4.5-3.21/SCP/python/SCP_analysis.py\", line 167, in SCVELO\n    scv.tl.velocity_graph(adata, vkey=vkey, gene_subset=gene_subset, n_neighbors=n_neighbors, n_jobs=n_jobs)\n  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/tools/velocity_graph.py\", line 363, in velocity_graph\n    vgraph.compute_cosines(n_jobs=n_jobs, backend=backend)\n  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/tools/velocity_graph.py\", line 175, in compute_cosines\n    res = parallelize(\n  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/core/_parallelize.py\", line 138, in wrapper\n    res = np.array(res) if as_array else res\nValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 4) + inhomogeneous part.\n",
+    "printed": [
+      "Traceback (most recent call last):",
+      "  File \"<ENV_ROOT>/R-lib-4.5-3.21/SCP/python/SCP_analysis.py\", line 167, in SCVELO",
+      "    scv.tl.velocity_graph(adata, vkey=vkey, gene_subset=gene_subset, n_neighbors=n_neighbors, n_jobs=n_jobs)",
+      "  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/tools/velocity_graph.py\", line 363, in velocity_graph",
+      "    vgraph.compute_cosines(n_jobs=n_jobs, backend=backend)",
+      "  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/tools/velocity_graph.py\", line 175, in compute_cosines",
+      "    res = parallelize(",
+      "  File \"<ENV_ROOT>/scp-legacy/lib/site-packages/scvelo/core/_parallelize.py\", line 138, in wrapper",
+      "    res = np.array(res) if as_array else res",
+      "ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 4) + inhomogeneous part.",
+      "     ▆",
+      "  1. ├─base::tryCatch(...)",
+      "  2. │ └─base (local) tryCatchList(expr, classes, parentenv, handlers)",
+      "  3. │   └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])",
+      "  4. │     └─base (local) doTryCatch(return(expr), name, parentenv, handler)",
+      "  5. ├─base::withCallingHandlers(...)",
+      "  6. └─fn(srt, parameters = parameters)",
+      "  7.   └─run_scp(...)",
+      "  8.     ├─base::withCallingHandlers(...)",
+      "  9.     ├─base::do.call(impl[[name]], arguments)",
+      " 10.     └─`<fn>`(...)",
+      " 11.       ├─base::do.call(SCP_analysis$SCVELO, args)",
+      " 12.       └─reticulate (local) `<python.builtin.function>`(...)",
+      " 13.         └─reticulate:::py_call_impl(callable, call_args$unnamed, call_args$named)",
+      "See `reticulate::py_last_error()$r_trace$full_call` for more details."
+    ]
+  },
+  "r_condition_call": "py_call_impl(callable, call_args$unnamed, call_args$named)",
+  "r_full_calls_count": 15,
+  "full_external_child_json": {
+    "path": "<ENV_ROOT>/velocity-runs/rna-velocity-scp-scvelo-vhg9u4s0/child.json",
+    "sha256": "3f7e63f89c49a915c9fff84ba39957d3c83bd3b09fe4c9073f3eac84c7d7f87c",
+    "bytes": 12681254,
+    "note": "Full deparsed sys.calls expands public input objects; keep outside Git. The complete Python traceback and printed symbolic R stack are archived here."
+  }
+}

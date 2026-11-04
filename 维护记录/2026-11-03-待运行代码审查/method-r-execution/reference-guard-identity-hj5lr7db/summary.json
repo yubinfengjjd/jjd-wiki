@@ -1,0 +1,18 @@
+{
+  "kind": "reference-input-guard-regression",
+  "passed": true,
+  "checks": {
+    "red_failed_for_original_error": true,
+    "green_passed_with_precise_missing_loadings_error": true,
+    "same_serialized_input": true,
+    "input_object_unchanged_in_both": true,
+    "native_source_unchanged": true
+  },
+  "execution_state": "not_run",
+  "algorithm_verification_state": "not_run",
+  "refit_performed": false,
+  "root_cause": "Pinned public PCA contains cell embeddings but a 0x0 feature-loadings matrix. Seurat pcaproject selects no features and rowMeans2 receives numeric(0).",
+  "formal_wrapper_sha256": "cceada1f1afce275c8598ad1e085d2554e0c92567767655c960ec36f782d6285",
+  "formal_runtime_sha256": "6a5eaf8641279b705640a2a3021efd945141a6ba526e22877ce574bb8e5774af",
+  "scope": "Precise input validation only. No new reference representation, PCA fit or scientific parameter was chosen."
+}

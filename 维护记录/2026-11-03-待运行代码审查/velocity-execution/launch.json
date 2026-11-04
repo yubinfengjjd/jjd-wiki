@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-11-03T19:16:10.610808+00:00",
+  "case": {
+    "cells": 80,
+    "seed": 11,
+    "assay_X": "RNA",
+    "assay_layers": [
+      "spliced",
+      "unspliced"
+    ],
+    "group_by": "CellType",
+    "linear_reduction": "PCA"
+  },
+  "remaining_parameters": "unchanged native defaults; stochastic mode, min_shared_counts=30, n_pcs=30, n_neighbors=30, n_jobs=1, show_plot=TRUE",
+  "estimated_minutes": "5-15; startup/conversion may fail earlier; hard timeout 30",
+  "scope": "Actual execution of unchanged declared closure with installed undeclared SCP backend permitted; no algorithm equivalence or standalone portability verification",
+  "shared_library_installation": "Parent explicitly confirmed scrapper installation and namespace check completed before this start",
+  "argv": [
+    "<ENV_ROOT>/wiki-python/Scripts/python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "<VAULT>/维护记录/2026-11-03-待运行代码审查/method-replay/replay.py",
+    "--vault",
+    "<VAULT>",
+    "--dev",
+    "<DEV>",
+    "--method",
+    "rna-velocity",
+    "--implementation",
+    "scp-scvelo",
+    "--fixture",
+    "<ENV_ROOT>/public-data/pancreas_sub.rda",
+    "--run-root",
+    "<ENV_ROOT>/velocity-runs",
+    "--rscript",
+    "<ENV_ROOT>/R-4.5.0/bin/Rscript.exe",
+    "--r-libs",
+    "<ENV_ROOT>/R-lib-4.5-3.21",
+    "--reticulate-python",
+    "<ENV_ROOT>/scp-legacy/python.exe",
+    "--timeout",
+    "1800",
+    "--environment-restored"
+  ]
+}

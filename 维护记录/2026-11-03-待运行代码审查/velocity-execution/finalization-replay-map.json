@@ -1,0 +1,177 @@
+{
+  "implementations": [
+    {
+      "method": "rna-velocity",
+      "implementation": "scp-scvelo",
+      "language": "R",
+      "entrypoint": "code/analysis.R:run_rna_velocity",
+      "historical_state": "not_run",
+      "current_execution_state": "not_run",
+      "current_verification_pointer": "verification/scp-scvelo-standalone.json",
+      "historical_command": "\"$OLD_R/bin/x64/Rscript.exe\" --vanilla \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/scripts/portable_run.R\" rna-velocity \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/code\" \"$OLD_ENV/sources/scp-2026-10-22/data/pancreas_sub.rda\" \"$OLD_VAULT/维护记录/2026-10-23-最小依赖独立模块/portability/rna-velocity/result.rds\"",
+      "historical_case": {
+        "label": "scVelo",
+        "parameters": {
+          "parameters": {
+            "assay_X": "RNA",
+            "assay_layers": [
+              "spliced",
+              "unspliced"
+            ],
+            "group_by": "CellType",
+            "linear_reduction": "PCA"
+          }
+        }
+      },
+      "recorded_input_identities": {},
+      "runtime": {
+        "id": "scp-scvelo",
+        "entry": "code/analysis.R",
+        "entry_function": "run_rna_velocity",
+        "language": "R",
+        "runtime_mode": "standalone",
+        "files": [
+          "code/analysis.R",
+          "code/velocity_native.R",
+          "code/data/palette_list.rda"
+        ],
+        "resources": [
+          {
+            "path": "code/data/palette_list.rda",
+            "sha256": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+            "role": "SCP palette data used by optional plot helpers"
+          }
+        ],
+        "required_packages": {
+          "R": [
+            "reticulate",
+            "Seurat",
+            "SeuratObject",
+            "Matrix",
+            "rlang",
+            "SCP"
+          ],
+          "Python": [
+            "scanpy",
+            "numpy",
+            "scvelo",
+            "matplotlib"
+          ]
+        },
+        "optional_packages": {
+          "R": {
+            "ggplot2": "plot branch",
+            "patchwork": "plot branch",
+            "ggrepel": "plot branch",
+            "ggnewscale": "plot branch",
+            "circlize": "plot branch",
+            "gtable": "plot branch",
+            "plotly": "plot branch",
+            "dplyr": "plot branch",
+            "reshape2": "plot branch",
+            "scales": "plot branch",
+            "BiocParallel": "plot branch",
+            "grid": "plot branch"
+          },
+          "Python": {
+            "magic-impute": "magic imputation"
+          }
+        },
+        "source": {
+          "package": "SCP-local",
+          "version": "0.5.6",
+          "commit": "b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0",
+          "license": "GPL (>= 3)",
+          "functions": [
+            "R/SCP-analysis.R:RunSCVELO"
+          ],
+          "modifications": [
+            "SCP::palette_list replaced with the local palette_list loaded from code/data/palette_list.rda",
+            "check_R/check_Python replaced with fail-only guards",
+            "Explicit legacy Assay construction at the AnnData conversion boundary; velocity calculations unchanged",
+            "Installed SCP supplies the fixed-source SCP_analysis.py backend and is a required package"
+          ]
+        },
+        "evidence": {
+          "portability": "verification/scp-scvelo-public-pancreas-20261104-portability.json"
+        }
+      },
+      "missing_closure_files": [],
+      "category": "public_input_backend_required",
+      "blockers": [],
+      "driver": {
+        "kind": "recorded_velocity",
+        "case": {
+          "cells": 80,
+          "seed": 11,
+          "parameters": {
+            "assay_X": "RNA",
+            "assay_layers": [
+              "spliced",
+              "unspliced"
+            ],
+            "group_by": "CellType",
+            "linear_reduction": "PCA",
+            "basis": "PCA"
+          },
+          "display_note": "Use the already observed PCA coordinates explicitly; this resolves only the broken upstream default basis alias."
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "future"
+          ],
+          "Python": [
+            "scanpy",
+            "numpy",
+            "scvelo"
+          ]
+        }
+      },
+      "historical_cases": [
+        {
+          "receipt": "知识库/methods/rna-velocity/verification/scp-scvelo-portability.json",
+          "state": "not_run",
+          "case": {
+            "label": "scVelo",
+            "parameters": {
+              "parameters": {
+                "assay_X": "RNA",
+                "assay_layers": [
+                  "spliced",
+                  "unspliced"
+                ],
+                "group_by": "CellType",
+                "linear_reduction": "PCA"
+              }
+            }
+          },
+          "input_tokens": [],
+          "public_input_tokens_only": false
+        },
+        {
+          "receipt": "知识库/methods/rna-velocity/verification/scp-scvelo-standalone.json",
+          "state": "not_run",
+          "case": {
+            "label": "scVelo",
+            "parameters": {
+              "parameters": {
+                "assay_X": "RNA",
+                "assay_layers": [
+                  "spliced",
+                  "unspliced"
+                ],
+                "group_by": "CellType",
+                "linear_reduction": "PCA"
+              }
+            }
+          },
+          "input_tokens": [],
+          "public_input_tokens_only": false
+        }
+      ],
+      "historical_case_replay_state": "not_run"
+    }
+  ],
+  "scope": "Finalized declared closure with required SCP backend package; no whole-original-SCP equivalence claim."
+}

@@ -1,0 +1,175 @@
+{
+  "kind": "recipes",
+  "cases": [
+    {
+      "id": "figureya-193risktable",
+      "kind": "recipes",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "copy": {
+        "command": [
+          "<env>\\wiki-python\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "<skill>\\wiki.py",
+          "--config",
+          "<skill>\\config.json",
+          "use",
+          "figureya-193risktable",
+          "--project",
+          "<run>\\figureya-193risktable",
+          "--name",
+          "asset"
+        ],
+        "exit_code": 0,
+        "started_at": "2026-11-03T19:24:30.296579+00:00",
+        "duration_s": 2.289,
+        "log_tail": [
+          "{",
+          "  \"copy\": \"<ENV_ROOT>\\\\work\\\\remaining-193-standard-20261104-1\\\\figureya-193risktable\\\\wiki-use\\\\asset\",",
+          "  \"level\": \"L1\",",
+          "  \"license\": \"CC-BY-NC-SA-4.0\",",
+          "  \"missing_packages_in_wiki_r\": [],",
+          "  \"next\": [",
+          "    \"wiki.py run --dir \\\"<ENV_ROOT>\\\\work\\\\remaining-193-standard-20261104-1\\\\figureya-193risktable\\\\wiki-use\\\\asset\\\"\",",
+          "    \"或用课题自己的 R：在副本目录 Rscript -e \\\"knitr::knit('FigureYa193RiskTable.Rmd')\\\"（先自行处理 install_dependencies.R）\"",
+          "  ],",
+          "  \"note\": \"见副本里的 RWIKI-USE.md\"",
+          "}",
+          ""
+        ]
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "run",
+        "--dir",
+        "<run>\\figureya-193risktable\\wiki-use\\asset",
+        "--timeout",
+        "1800"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:24:32.592974+00:00",
+      "duration_s": 580.575,
+      "log_tail": [
+        "{",
+        "  \"state\": \"pass\",",
+        "  \"scope\": \"other-dir\",",
+        "  \"duration_s\": 579.2,",
+        "  \"missing_packages\": [],",
+        "  \"error\": \"\",",
+        "  \"figures\": [],",
+        "  \"changed_inputs\": []",
+        "}",
+        ""
+      ],
+      "receipt": {
+        "schema_version": 2,
+        "kind": "run",
+        "id": "figureya-193risktable",
+        "run_id": "20261103T192433Z",
+        "scope": "other-dir",
+        "state": "pass",
+        "runner": "rmd-knit",
+        "command": "Rscript --vanilla _rwiki_knit.R FigureYa193RiskTable.Rmd rwiki-knit.md",
+        "started_at": "2026-11-03T19:24:33+00:00",
+        "duration_s": 579.2,
+        "exit_code": 0,
+        "environment": {
+          "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+          "lib_paths": [
+            "<r_lib0>",
+            "<R_HOME>/library"
+          ],
+          "packages": {
+            "abind": "1.4.8",
+            "backports": "1.5.1",
+            "base": "4.5.0",
+            "checkmate": "2.3.4",
+            "cli": "3.6.6",
+            "codetools": "0.2.20",
+            "compiler": "4.5.0",
+            "datasets": "4.5.0",
+            "digest": "0.6.39",
+            "evaluate": "1.0.5",
+            "fastmap": "1.2.0",
+            "foreach": "1.5.2",
+            "forestplot": "3.2.0",
+            "glmnet": "5.2",
+            "graphics": "4.5.0",
+            "grDevices": "4.5.0",
+            "grid": "4.5.0",
+            "htmltools": "0.5.9",
+            "iterators": "1.0.14",
+            "jsonlite": "2.0.0",
+            "knitr": "1.52",
+            "lattice": "0.22.6",
+            "Matrix": "1.7.3",
+            "methods": "4.5.0",
+            "otel": "0.2.0",
+            "Rcpp": "1.1.2",
+            "rlang": "1.3.0",
+            "rmarkdown": "2.32",
+            "shape": "1.4.6.1",
+            "splines": "4.5.0",
+            "stats": "4.5.0",
+            "survival": "3.8.3",
+            "tools": "4.5.0",
+            "utils": "4.5.0",
+            "xfun": "0.62",
+            "yaml": "2.3.12"
+          }
+        },
+        "code": {
+          "example.png": "f2a6e36b378a79c7e1788580cfca03fd8a58ad870568f42f590277ea6e7f2a24",
+          "FigureYa193RiskTable.Rmd": "93ed8c74766e4d4ac2b99fa3c32560a685861ed804dd888669ddfc7fd0da095e",
+          "gse39582.expr.txt": "224a5330e7441eaf2bb38b4b3b1d898ad1ae5e0a8f52eb45c2a1705cde5a3599",
+          "gse39582.surv.txt": "a9354310248fbf627a498359de01b57b4ff92fd5abe727fafdf17ee93bf0aec9",
+          "install.log": "0b57f3006d2664197a223c875fd8f57789fd1d071f6b82a288de47c65ddc183f",
+          "Readme.png": "627b6fcbbe57a40779876440b66ede889391848f10e65abba08ad0731aa78a18",
+          "tcga.expr.txt": "ab3cb8feba9fc578c7aa0d895ed4de5a0eed9fce9d98d78a2923ace5f094d4df",
+          "tcga.surv.txt": "df9d0a6f56d6957fc42e206c6b364f3d6f6ccd2bba75f28ef241f304c9c6d0f5"
+        },
+        "outputs": {
+          "forestplot of risk table.pdf": "d74813033b15aa9d265176f97280a36a6bff4b192802ac097546f0e359820318"
+        },
+        "expected_outputs": [
+          "forestplot of risk table.pdf"
+        ],
+        "missing_outputs": [],
+        "figures": [],
+        "missing_packages": [],
+        "error": "",
+        "checks": [
+          "install_dependencies.R 以只检查不安装的桩替代",
+          "knit 退出码 0",
+          "预期输出存在 1/1"
+        ],
+        "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+        "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+        "changed_inputs": [],
+        "workdir": "<copy>"
+      },
+      "original_files_sha256": {
+        "example.png": "f2a6e36b378a79c7e1788580cfca03fd8a58ad870568f42f590277ea6e7f2a24",
+        "FigureYa193RiskTable.Rmd": "93ed8c74766e4d4ac2b99fa3c32560a685861ed804dd888669ddfc7fd0da095e",
+        "forestplot of risk table.pdf": "1f85bd2c5997aa053d0f801a28eb85747dfcd1b6bc2e01440e4baac81cc8a97d",
+        "gse39582.expr.txt": "224a5330e7441eaf2bb38b4b3b1d898ad1ae5e0a8f52eb45c2a1705cde5a3599",
+        "gse39582.surv.txt": "a9354310248fbf627a498359de01b57b4ff92fd5abe727fafdf17ee93bf0aec9",
+        "install.log": "0b57f3006d2664197a223c875fd8f57789fd1d071f6b82a288de47c65ddc183f",
+        "install_dependencies.R": "f61fa2b48876c1e6f3449d8365898183c6f288d2dc5e252fe10793cf88f6ff8f",
+        "Readme.png": "627b6fcbbe57a40779876440b66ede889391848f10e65abba08ad0731aa78a18",
+        "tcga.expr.txt": "ab3cb8feba9fc578c7aa0d895ed4de5a0eed9fce9d98d78a2923ace5f094d4df",
+        "tcga.surv.txt": "df9d0a6f56d6957fc42e206c6b364f3d6f6ccd2bba75f28ef241f304c9c6d0f5"
+      },
+      "original_files_unchanged": true
+    }
+  ],
+  "completed": 1,
+  "total": 1
+}

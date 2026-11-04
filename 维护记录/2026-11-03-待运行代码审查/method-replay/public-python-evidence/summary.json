@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "case_id": "breast-cancer-public-software-case",
+  "state": "passed",
+  "scope": "six individually called public software branches only",
+  "run_root": "<RUN_ROOT>",
+  "environment": {
+    "Python": "3.12.7",
+    "platform": "win32",
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.0",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "joblib": "1.6.0",
+      "pillow": "13.0.0"
+    },
+    "automatic_installation": false,
+    "MPLBACKEND": null
+  },
+  "source_and_input_files_unchanged": true,
+  "input_sha256": {
+    "inputs.npz": "45f272351ec015a066dd475f5be7cc8025c5791555dd3bc690cd106ca22ac7e5",
+    "model.joblib": "e056c5af17ef14ed0fd510725256d9561ade6cb3f0436e0c8fa9da34339e73a8",
+    "bundled_breast_cancer.csv": "ff5fc1f247213db5fd49539610bcd5a98033bbd0307524fde3127251752aa073"
+  },
+  "source_ast_comparison": {
+    "eval_binary": {
+      "original_ast_sha256": "e2d44bb034a25a3b7f47e515ff3ff51a0bc09d8d986b1d28de7a736b9b73279f",
+      "extracted_ast_sha256": "e2d44bb034a25a3b7f47e515ff3ff51a0bc09d8d986b1d28de7a736b9b73279f",
+      "ast_equal": true,
+      "original_line": 725
+    },
+    "compute_specificity": {
+      "original_ast_sha256": "adbc96892292b9f978fc0f7fa3d62e901b6095a7ca247d1ab7b1772bef94da53",
+      "extracted_ast_sha256": "adbc96892292b9f978fc0f7fa3d62e901b6095a7ca247d1ab7b1772bef94da53",
+      "ast_equal": true,
+      "original_line": 316
+    },
+    "youden_threshold": {
+      "original_ast_sha256": "cec710c39083115e0b6a3a433a84d15aee4961966511b4ce9e77a6308150f402",
+      "extracted_ast_sha256": "cec710c39083115e0b6a3a433a84d15aee4961966511b4ce9e77a6308150f402",
+      "ast_equal": true,
+      "original_line": 743
+    },
+    "bootstrap_ci_auc": {
+      "original_ast_sha256": "d650eabe38d5fc01adcd9c9352bae21225daacf483b9bbf28fed2f9baac79595",
+      "extracted_ast_sha256": "d650eabe38d5fc01adcd9c9352bae21225daacf483b9bbf28fed2f9baac79595",
+      "ast_equal": true,
+      "original_line": 750
+    },
+    "get_proba": {
+      "original_ast_sha256": "27850291d10dded316743c1aa59f9901482a2424fa7445cc6949429516e08698",
+      "extracted_ast_sha256": "27850291d10dded316743c1aa59f9901482a2424fa7445cc6949429516e08698",
+      "ast_equal": true,
+      "original_line": 306
+    }
+  },
+  "plot_source_comparison": {
+    "helpers": {
+      "style_axes": {
+        "ast_equal": true,
+        "original_ast_sha256": "f0d3b6c651e8496650094cb3ca52f62062da2cb51324aa62b7805609ef6862e4",
+        "original_line": 20
+      },
+      "draw_auc_strip": {
+        "ast_equal": true,
+        "original_ast_sha256": "86d87f0a1dd6e4eaf80b09a98608157f2e5b6d5f96c361ad5612f06d600cf04c",
+        "original_line": 33
+      }
+    },
+    "native_drawing_lines": [
+      160,
+      161
+    ],
+    "native_prefix_lines": [
+      127,
+      128
+    ],
+    "native_suffix_lines": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      177,
+      179
+    ],
+    "boundary": "Original visual body consumes fixed precomputed curves; source loading, label inference, score inversion and AUC fitting are excluded."
+  },
+  "results": [
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-eval-binary",
+      "state": "passed",
+      "audit": "<RUN_ROOT>/isolated-py-eval-binary/audit.json",
+      "comparison_sha256": "ba8084d2e4e7aeb78b29c21a1711f176dc86313292f105f539801d0d41b54d8a"
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-compute-specificity",
+      "state": "passed",
+      "audit": "<RUN_ROOT>/isolated-py-compute-specificity/audit.json",
+      "comparison_sha256": "a7eee086642fc292b941256124eb7807cc151b026667f849439eb56db3c16d3e"
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-youden-threshold",
+      "state": "passed",
+      "audit": "<RUN_ROOT>/isolated-py-youden-threshold/audit.json",
+      "comparison_sha256": "fdc8567fbaec5adbc487a6cca8b052a6d5272efd78433e47b72cd04e62d57fde"
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-bootstrap-ci-auc",
+      "state": "passed",
+      "audit": "<RUN_ROOT>/isolated-py-bootstrap-ci-auc/audit.json",
+      "comparison_sha256": "37f3ddb1d17a1b1f0c74dd35061d304629076c84cc7e17f79b8a1d7b49188aad"
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-get-proba",
+      "state": "passed",
+      "audit": "<RUN_ROOT>/isolated-py-get-proba/audit.json",
+      "comparison_sha256": "e9639b716e0f237325c5d831605f7aa3d9e3bf4eb6a5d576c2df0c63a3690932"
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "py-roc-render",
+      "state": "passed",
+      "audit": "<RUN_ROOT>/isolated-py-roc-render/audit.json",
+      "comparison_sha256": "36316c975919bbe61f9498089c4194fd791bb2b1a6c362bdd5c3cead60552ba9"
+    }
+  ],
+  "executed_at": "2026-11-03T11:46:57.517004+00:00"
+}

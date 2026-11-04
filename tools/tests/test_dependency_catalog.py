@@ -6,11 +6,15 @@ import json
 import os
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "tools"))
+from machine_paths import resolve_dev_root, resolve_input_path
+
 CATALOG = ROOT / "依赖清单"
 
 
@@ -37,8 +41,9 @@ def test_manifest_binds_current_declarations_and_artifacts():
     manifest = json.loads((CATALOG / "manifest.json").read_text(encoding="utf-8"))
     for field, base in (("inputs_sha256", ROOT), ("artifacts_sha256", CATALOG)):
         for name, expected in manifest[field].items():
-            assert hashlib.sha256((base / name).read_bytes()).hexdigest() == expected, name
-    assert (CATALOG / "python/wiki.requirements.lock.txt").read_bytes() == (ROOT / "开发/staged/research-wiki/requirements.lock.txt").read_bytes()
+            path = resolve_input_path(ROOT, name) if field == "inputs_sha256" else base / name
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, name
+    assert (CATALOG / "python/wiki.requirements.lock.txt").read_bytes() == (resolve_dev_root(ROOT) / "staged/research-wiki/requirements.lock.txt").read_bytes()
 
 
 def test_legacy_scp_pins_are_not_combined_with_modern_candidates():
@@ -72,7 +77,13 @@ def test_special_sources_are_pinned_and_unresolved_sources_remain_visible():
             ref = row["spec"].rsplit("@", 1)[-1]
             assert len(ref) == 40 and all(c in "0123456789abcdef" for c in ref)
     unresolved = {row["package"] for row in rows(CATALOG / "R/unresolved.tsv") if row["runtime"] == "1"}
-    assert "ggcor" in unresolved
+    assert "ggcor" not in unresolved
+    ggcor = next(row for row in plan if row["package"] == "ggcor")
+    assert ggcor["installer"] == "archive"
+    assert "/8d7a02c7d00467c45471139b63620571afebbeba/" in ggcor["spec"]
+    snapshot = json.loads((CATALOG / "repository-snapshot.json").read_text(encoding="utf-8"))
+    archive = ROOT / "知识库/recipes/figureya-228linkcor/source/ggcor-master.tar.gz"
+    assert hashlib.sha256(archive.read_bytes()).hexdigest() == snapshot["packages"]["ggcor"]["archive_sha256"]
     scp = next(row for row in plan if row["package"] == "SCP")
     assert scp["catalog_version"] == "0.5.6"
 

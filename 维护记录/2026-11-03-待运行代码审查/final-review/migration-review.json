@@ -1,0 +1,92 @@
+{
+  "verdict": "APPROVE",
+  "actionable_findings": [],
+  "scope": {
+    "vault": [
+      "README.md",
+      "tools/machine_paths.py",
+      "tools/machine-paths.ps1",
+      "tools/configure-machine.py",
+      "tools/deploy.py",
+      "tools/export-dependencies.py",
+      "tools/launcher.ps1",
+      "tools/bin/rwiki",
+      "tools/bin/rwiki.cmd",
+      "tools/tests/test_machine_migration.py",
+      "tools/tests/test_dependency_catalog.py"
+    ],
+    "dev": [
+      "staged/research-wiki/rwiki/cli.py",
+      "staged/research-wiki/tests/test_cli_lint_session.py"
+    ]
+  },
+  "snapshot": {
+    "vault": {
+      "HEAD": "96d65694bce2f4e3f0cb2e7d2eac8693b9e3ce2c",
+      "files": {
+        "README.md": "dcdcfc4a0b1a890e0d7de900af7a7f7e4056ba2ac2a8ff4328d1d0d125a23aa1",
+        "tools/machine_paths.py": "9958af3297e8727cb4b7ace1abf3aaa6da555b539d505abc2454329b9295175d",
+        "tools/machine-paths.ps1": "f791698893d67fffea335125b8e8965cf030279d39dca3ef823ccc494589711c",
+        "tools/configure-machine.py": "bcd40c073ee2c681af1c84b7a31bc39beefda3bc4a1898213a5e627e01357e72",
+        "tools/deploy.py": "726e8768fb87c23c9d4e944a51057075f20a6cdaafe8bfe4844c46fbc7d04343",
+        "tools/export-dependencies.py": "6613336b652095c67cb6ccd5f0dd575823abadf01a2c85c3a5b725e640a73a2d",
+        "tools/launcher.ps1": "c7bccf6c270c13b1e9020fedb5326c3c10c50d677cfd31ad47c4d596415b8e04",
+        "tools/bin/rwiki": "d7f7130dfa399c70565d915c021699e2c4a73ceeb257e3399f58021fbe302fa3",
+        "tools/bin/rwiki.cmd": "47219b69fcc6530ce152ccaf176bcb87f39dd62d70e15032080d9f07a6c2d42c",
+        "tools/tests/test_machine_migration.py": "1d1f1867a9ec8c12664b67105b6b16b0118fefe6981513293ca9b96b1ac9ea2e",
+        "tools/tests/test_dependency_catalog.py": "b938934d44b3597c1dec44ce19e3cde1556ef9a14548794b141c151c8456ff27"
+      }
+    },
+    "dev": {
+      "HEAD": "4d15b1ea0524212c747901e192758070448a1f2c",
+      "files": {
+        "staged/research-wiki/rwiki/cli.py": "f0b6a246377bc3efb3d4536edd6986f80bcf715908f6027a1d0bdfb5ff416ff4",
+        "staged/research-wiki/tests/test_cli_lint_session.py": "8cca83b9df89f7eee95d374a0f29698c165e82454234ac87d820f7c921291200"
+      }
+    }
+  },
+  "verification": {
+    "source_and_diff_review": true,
+    "all_scoped_Python_sources_parse": true,
+    "PowerShell_5_script_parse": true,
+    "CLI_lint_cache_probe": {
+      "four_invocations": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "same_session_reuse": true,
+      "cross_invocation_freshness": true,
+      "diagnostic_output_unchanged": true,
+      "context_reset": true
+    },
+    "PowerShell_transport_probe": {
+      "exact_arguments": [
+        "empty string",
+        "literal quotes",
+        "whitespace",
+        "trailing backslashes",
+        "metacharacters",
+        "Chinese and newline"
+      ],
+      "stdin_bytes": 300000,
+      "stderr_bytes": 70000,
+      "exit_code": 9,
+      "Chinese_interactive_line_delivered_before_upstream_EOF": true
+    }
+  },
+  "review_notes": [
+    "Only the lint call is wrapped in the existing request-local read_session; no validation logic or global persistent cache was introduced.",
+    "read_session finally resets its ContextVar; cached page/relation access continues to return defensive copies.",
+    "Nested and sibling checkout discovery, explicit invalid overrides, dedicated Wiki versus scientific interpreter separation, relative CLI path handling and logical dependency-manifest keys were reviewed.",
+    "Windows CRT argv quoting and single-task async Read/Write/Flush/Close avoid the two previously found argv and stdin regressions.",
+    "The new spaced-interpreter test uses venv --without-pip, so it does not require the test interpreter itself to be a venv.",
+    "Launcher/config changes preserve the existing pre-existing-server/window lifecycle; no service or browser was started in this review."
+  ],
+  "limits": [
+    "Windows wrappers are reviewed for Windows PowerShell/cmd/Git Bash, not native Linux shell use.",
+    "No full repository lint, full pytest suite, deployment, package installation, GitHub review or product-code edit was performed in this incremental review.",
+    "The microprobes use controlled in-memory argument/config stubs and real PowerShell/Python processes; full fixture integration test results remain the implementer/orchestrator responsibility."
+  ]
+}

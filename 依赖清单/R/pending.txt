@@ -140,6 +140,7 @@ scTenifoldKnk
 scales
 scater
 scds
+scrapper
 sctransform
 seqinr
 sf

@@ -1,0 +1,23 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-get-proba",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true,
+    "positive_probability_arrays_exact_equal": true
+  },
+  "original_reference": {
+    "array_sha256": "2512f6d83b2506bb85cbc9ee35b6a9ddcbe2d33b4efcb7f68dff514905ec4355",
+    "shape": [
+      143
+    ]
+  },
+  "isolated_result": {
+    "array_sha256": "2512f6d83b2506bb85cbc9ee35b6a9ddcbe2d33b4efcb7f68dff514905ec4355",
+    "shape": [
+      143
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "result": {
+    "method": "cell-type-annotation",
+    "implementation": "scp-singler",
+    "driver": {
+      "kind": "historical_portable",
+      "case": "cell-type-annotation",
+      "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+      "required_packages": {
+        "R": [
+          "jsonlite",
+          "digest",
+          "BiocParallel",
+          "future"
+        ]
+      }
+    },
+    "timeout_seconds_per_child": 300,
+    "duration_seconds": 45.5,
+    "replay_returncode": 1,
+    "execution_state": "not_run",
+    "algorithm_verification_state": "not_run",
+    "error": "Replay orchestration failed: list index out of range; Traceback (most recent call last):\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 207, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 203, in main\n    return run(args)\n           ^^^^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 166, in run\n    assessment = assess(returncode, child, verify_inputs_unchanged(originals))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 55, in assess\n    \"checks\": {**checks, \"source_and_input_files_unchanged\": unchanged}}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'list' object is not a mapping\n"
+  },
+  "orchestration_stdout": "",
+  "orchestration_stderr": "Traceback (most recent call last):\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 207, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 203, in main\n    return run(args)\n           ^^^^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 166, in run\n    assessment = assess(returncode, child, verify_inputs_unchanged(originals))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 55, in assess\n    \"checks\": {**checks, \"source_and_input_files_unchanged\": unchanged}}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'list' object is not a mapping\n"
+}

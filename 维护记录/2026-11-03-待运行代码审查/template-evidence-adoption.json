@@ -1,0 +1,242 @@
+[
+  {
+    "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-python-replay2.json",
+    "new_receipt_sha256": "9907acab5aa2fc7533c7602cae0148ca52aa1a26b7202c829b66b0395b3d2383",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-python-replay2.json",
+    "new_receipt_sha256": "106182d5ede0d94f421c1bad9feca833f4fe7d67dc3b39cc66dd80f166f69e94",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-python-replay2.json",
+    "new_receipt_sha256": "97a55031a66fce206547fd7acde90ed560bb4ae74573b33c787667adb5aef6e0",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-python-replay2.json",
+    "new_receipt_sha256": "6b9a2397873737b3b463a64acab3f9f54820032c7364f16919bf288e17c5067c",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-python-replay2.json",
+    "new_receipt_sha256": "d93253ebf616f7fc97f25506186e4b09b48515ac1e4bcc879acf1a42f7cf7761",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "6750aefe81984307752820b245a644afdabba107fca0dcce65f0d2510ef1394a",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass4.json",
+    "new_receipt_sha256": "8e3175a9b255a6b81d2bd6a19718d1eb896b34fcf53edded409efa5594c8546a",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "160bdc2bd163f02314098d6b3919d3d81c6f5f0b4c209c0e1df7ffddacdfd325",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "ea1237edd253409fe2e64f831c33d4d867eb9b6f450a0c724bdf0b065ab88892",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "cf21980136cd3486766239df8a962bb27d2652cd40f3b243e56d6dc30bd43871",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "72fcd2de10e34b33a94e636c4e26d0ccc9b2f1bd9d2ef2454fa2295ccfdd1390",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig02-ring--ring",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass4.json",
+    "new_receipt_sha256": "d639aa3f23c437318f602ee8f34c3b657a2ada86533d8eff22614eacf6180735",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig03-pie--pie",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "b5a7eac3bb631d9c3b759498ced179711b41744a1ee8a11b16b1f2ebe00e9beb",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig04-rose--rose",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass5.json",
+    "new_receipt_sha256": "2b7f2b34db4a3d186bc0ebf11cd2ba6c96459934f7b0152b2e30f44e2eb09e73",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig05-trend--trend",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass4.json",
+    "new_receipt_sha256": "56b8fc0a35f62c5407b9fc73dd6e7f07d8e680676eeaec4c7a81202d7fbcff19",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig06-area--area",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass6.json",
+    "new_receipt_sha256": "ef5afa11917cb811227b0966468a65cc23f2d068fd85c2eaa5129f890d7867b9",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig07-dot--dot",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass4.json",
+    "new_receipt_sha256": "ae696d863afefe649060adb9da8a6f976501b7603c7603aa9c74adac049df68a",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "2ab33fe9a3a344d61b30383c45333f0ff703cac04f4f363cc8875ca6a9e2d28e",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig09-bar--bar",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-display-fixes/replay-pass4.json",
+    "new_receipt_sha256": "5fa8007b9a5f8d0dafcb9038fdbbe32965865d122da653692c0c44cb7418cdd6",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "f81e3d29daf522dcfb043226bac07018dd4708676a7bc39d319bb715cf2c9882",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig11-chord--chord",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "bf86d4110e0cae4ce8f4cb3a71efef733be93b8f1622785e10d77c085eaa4b84",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig12-venn--venn",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "7a20ff08fbebb52cb79ee0cec09d435403601dc38dd204cd067644cd29863c32",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig13-upset--upset",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "81fd4b7e2546a0d82eb5c9c13bcc523d7a0368ad476fe69d46f2146000d58691",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "b9735206d338481d4a5b3833495155ae820d946a6eb11cdfcf99bb23a307dd9a",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "25721ab41de1148ae2a04fba947b390f820015d8256f3325ac0a36c859d829c6",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "2a04822ccf20d8e6e343bb070888abe525d9df2dfaee3bfc4c1eb970c958f806",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "b53f0df3a1273f76572e7b3128b82f781a767ae921487c686a32fc4c3575eb21",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "figureya-1survivalcurve-update--km-curve",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "3573d36d78aee13cc21c9f720a3e116884d057b10c9cb2a0ca608a855ec54ed4",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "figureya-59volcanov2--volcano",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "3895ff338393a489b28fbf6b70b2c044308143b4a782fdf57da62cffc0a2a188",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  },
+  {
+    "id": "figureya-6rhrsv2--forest",
+    "current_replay_available": true,
+    "old_receipt_preserved": true,
+    "actual_replay_report": "template-r-replay2.json",
+    "new_receipt_sha256": "26eaf9dd6753e386b5cac501574875012fa1319dcf8b7ab4bbc638aa5007932e",
+    "visual_review": "See visual-qa/review-pass2.md and template-display-fixes/review.md; warnings are preserved."
+  }
+]

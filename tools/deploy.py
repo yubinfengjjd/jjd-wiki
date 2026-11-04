@@ -20,6 +20,7 @@ is verified by SHA-256. The deployed config.json must already equal the staged o
 sci-figure-replica is not handled here (its source lives outside this project).
 """
 import hashlib
+import argparse
 import json
 import shutil
 import subprocess
@@ -27,9 +28,16 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from machine_paths import resolve_dev_root
+
 HOME = Path.home()
-SOURCE = Path(__file__).resolve().parents[1] / "开发" / "staged" / "research-wiki"
-DEV = SOURCE.parents[1]
+try:
+    DEV = resolve_dev_root(Path(__file__).resolve().parents[1])
+    SOURCE = DEV / "staged/research-wiki"
+except ValueError:
+    # Allow --dev-root to be parsed before reporting a missing default checkout.
+    DEV = SOURCE = None
 SKIP = {".git", "__pycache__", ".pytest_cache", "node_modules"}
 HOSTS = (".agents", ".codex", ".claude", ".cc-switch", ".config/opencode", ".kiro")
 MANIFEST = "installation-manifest.json"
@@ -54,7 +62,10 @@ def dev_git(*args: str, check: bool = True) -> str:
 def source_gate() -> dict:
     """只允许从本地 main、fetch 后的 origin/main 或已推送 tag 部署。"""
     head = dev_git("rev-parse", "HEAD")
-    branch = dev_git("branch", "--show-current") or "（分离 HEAD）"
+    # git < 2.22 lacks ``branch --show-current``; rev-parse covers older versions.
+    branch = dev_git("branch", "--show-current", check=False) \
+        or dev_git("rev-parse", "--abbrev-ref", "HEAD", check=False)
+    branch = "（分离 HEAD）" if branch in ("", "HEAD") else branch
     where = f"当前分支: {branch}\nHEAD: {head}"
     if dev_git("status", "--porcelain"):
         sys.exit(f"部署来源门禁未通过：开发仓库有未提交改动\n{where}")
@@ -157,19 +168,32 @@ def deploy(host: str, files: list[Path], record: Path, note: str, gate: dict) ->
 
 
 def main() -> None:
-    args = sys.argv[1:]
-    if args == ["--verify-only"]:
+    global SOURCE, DEV
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("record", nargs="?", type=Path)
+    parser.add_argument("note", nargs="?")
+    parser.add_argument("--sync-config", action="store_true")
+    parser.add_argument("--verify-only", action="store_true")
+    parser.add_argument("--dev-root", type=Path)
+    args = parser.parse_args()
+    if args.dev_root is not None or SOURCE is None:
+        try:
+            DEV = resolve_dev_root(Path(__file__).resolve().parents[1], args.dev_root)
+        except ValueError as exc:
+            parser.error(str(exc))
+        SOURCE = DEV / "staged/research-wiki"
+    if args.verify_only:
+        if args.record is not None or args.note is not None or args.sync_config:
+            parser.error("--verify-only cannot be combined with deployment arguments")
         sys.exit(verify_only())
-    sync_config = "--sync-config" in args
-    args = [arg for arg in args if arg != "--sync-config"]
-    if len(args) != 2 or any(arg.startswith("--") for arg in args):
-        sys.exit(__doc__)
+    if args.record is None or args.note is None:
+        parser.error("deployment requires a maintenance record directory and update note")
     gate = source_gate()
-    record, note = Path(args[0]).resolve(), args[1]
+    record, note = args.record.resolve(), args.note
     staged_config = (SOURCE / CONFIG).read_bytes()
     configs = [HOME / host / "skills" / "research-wiki" / CONFIG for host in HOSTS]
     differ = [str(path) for path in configs if not path.is_file() or path.read_bytes() != staged_config]
-    if differ and not sync_config:
+    if differ and not args.sync_config:
         sys.exit("部署中止：以下 config.json 与 staged 不同（或缺失）\n  " + "\n  ".join(differ)
                  + "\n核对 staged config.json 后加 --sync-config 重跑：各处原文件先备份到"
                    " <record>/backup/<host>/ 再覆盖。")

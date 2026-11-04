@@ -1,0 +1,131 @@
+{
+  "kind": "templates",
+  "cases": [
+    {
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "faf1c53571327f92d8da569fd6f1eefae36095b867f50c7cfa5f0d494aeee34f",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "ebbd83ee2f9464d5f006230634f1e64a69129d0e8d380fa53aa8b1b6fabe45c4",
+        "runtime.json": "237442d9c5b501e1bc0faaf7c2a8799a0e66a74f1833a403e9322654755a7adc",
+        "spec.json": "6382691a73626817aafa51df5ef02b9d5b9070684eb75eae5ff418a8d74f64b2"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig04-rose--rose",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-04T03:45:21.005158+00:00",
+      "duration_s": 11.958,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "3b90c1d72c87673c685eecd9bd6f0629e1f3fda55e96cd6e0366fd918a907ec6",
+        "figure.png": "ebf7dbcce26d247391f922b5fa1d5e2a0e45bde3186d879fd3c279092d5d6f9b",
+        "figure.svg": "56781c649d3b48f37e01f840fef11618b950ec10c2fec98a583d667856ac368e"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "faf1c53571327f92d8da569fd6f1eefae36095b867f50c7cfa5f0d494aeee34f"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "b2db2243b127c1c911a09274ccef520b8990c5db119f5ed7abec9a4988e2c366",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "fecb4b4215c8c55ed0a1e991eac69424c0d660ffac526489a147679ccd9537f4",
+        "runtime.json": "9a4bf42d4fe683e19e0277148ed82f304427c7f115cbac5b90c9aa9469325fbe",
+        "spec.json": "81881544a602df9b66cfd334e4ec0b749a6c156aa429994ddf9799a5a495a085"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig06-area--area",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki\\templates\\2026-10-22-scp-example__fig06-area--area\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki\\templates\\2026-10-22-scp-example__fig06-area--area\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-04T03:45:33.055372+00:00",
+      "duration_s": 11.29,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "698173ef1e48bebe9a059bebaede92841086a6e5d4af2e0909e1b7cacd3877d7",
+        "figure.png": "fa7762468eba3cb2fe7eae7bc9ce6767efe7400fe5911021cd2654fd466fce70",
+        "figure.svg": "526193a4ac74c0a7e34cb95bb578b540d00d4bdf5a068e8d2a3923c810cd056a"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "b2db2243b127c1c911a09274ccef520b8990c5db119f5ed7abec9a4988e2c366"
+      },
+      "original_files_unchanged": true
+    }
+  ],
+  "completed": 2,
+  "total": 2
+}

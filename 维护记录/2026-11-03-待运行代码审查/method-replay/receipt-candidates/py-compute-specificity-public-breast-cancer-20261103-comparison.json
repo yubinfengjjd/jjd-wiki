@@ -1,0 +1,12 @@
+{
+  "case_id": "breast-cancer-public-software-case",
+  "implementation": "py-compute-specificity",
+  "state": "passed",
+  "checks": {
+    "exact_result_equal": true,
+    "input_model_code_preserved": true,
+    "copied_closure_preserved": true
+  },
+  "original_reference": 0.9056603773584735,
+  "isolated_result": 0.9056603773584735
+}

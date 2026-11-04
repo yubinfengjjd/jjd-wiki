@@ -1,0 +1,114 @@
+{
+  "review_status": "APPROVE_WITH_RECORDED_LIMITATIONS",
+  "scope": [
+    "Seven template display corrections and all 30 adopted replay receipts",
+    "SingleR score-name metadata alignment correction",
+    "RNA-velocity legacy-Assay conversion compatibility correction"
+  ],
+  "actionable_code_findings": [],
+  "scientific_validation": false,
+  "template_checks": {
+    "count": 30,
+    "output_files_checked": 90,
+    "all_current_inputs_match_selected_replay": true,
+    "all_current_outputs_match_selected_replay": true,
+    "all_new_receipts_match_adoption_ledger": true,
+    "all_old_HEAD_receipts_retained_by_hash": true,
+    "protected_baseline_files_unchanged": 79,
+    "expected_changed_protected_files": 38,
+    "unexpected_protected_file_changes": [],
+    "selected_replays": {
+      "python": "template-python-replay2.json",
+      "unchanged_R": "template-r-replay2.json",
+      "five_display_fixes": "template-display-fixes/replay-pass4.json",
+      "rose": "template-display-fixes/replay-pass5.json",
+      "area": "template-display-fixes/replay-pass6.json"
+    }
+  },
+  "display_review": [
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+      "sheet": "display-final-01.jpg",
+      "fix": "Outer coordinate-label clipping closed in PNG/PDF.",
+      "residual_warning": "Point clouds remain very pale in PNG; PDF is more legible. This is retained as a display limitation."
+    },
+    {
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "sheet": "display-final-02.jpg",
+      "fix": "Small/zero percentage labels at the ring top are now separated and readable.",
+      "residual_warning": null
+    },
+    {
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "sheet": "display-final-03.jpg",
+      "fix": "Both outer category labels are complete. Center values are displaced by repel without changing their values.",
+      "residual_warning": "The origin remains visually dense with leader lines; PNG/PDF have different repel positions."
+    },
+    {
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "sheet": "display-final-04.jpg",
+      "fix": "Zero-count labels are inside the expanded numeric frame rather than cut by its lower border.",
+      "residual_warning": null
+    },
+    {
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "sheet": "display-final-05.jpg",
+      "fix": "First/last percentage labels and baseline small/zero labels are visible; data and percentages unchanged.",
+      "residual_warning": null
+    },
+    {
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "sheet": "display-final-06.jpg",
+      "fix": "Default/example categorical vertical-axis title is Phase; percentage remains encoded by dot size. Custom ylab getter remains unchanged.",
+      "residual_warning": null
+    },
+    {
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "sheet": "display-final-07.jpg",
+      "fix": "Zero-count labels no longer cross the lower frame border.",
+      "residual_warning": null
+    }
+  ],
+  "SingleR": {
+    "diff_scope": "Only unname around the two existing score-vector expressions, plus explanatory provenance comments. No parameter/default/signature changes.",
+    "saved_result_independent_recheck": {
+      "cells": 100,
+      "cell_order_equals_direct": true,
+      "labels_identical_direct": true,
+      "scores_identical_direct": true,
+      "pruned_cells": 2
+    },
+    "reported_reference_cells": 300,
+    "reference_check_driver_reviewed": true,
+    "cluster_branch_execution_coverage": "Not separately rerun by this review; its expression changes only by unname after existing cell-order indexing.",
+    "old_verification_JSON_unchanged": true
+  },
+  "RNA_velocity": {
+    "diff_scope": "Only explicit CreateAssayObject(counts=x) passed to CreateSeuratObject, plus explanatory comments. Inference code and parameters unchanged.",
+    "saved_result_independent_recheck": {
+      "cells": 80,
+      "finite_nonempty_assays": [
+        "stochastic",
+        "variance_stochastic",
+        "velocity",
+        "variance_velocity"
+      ]
+    },
+    "reported_run": "rna-velocity-scp-scvelo-n994oid1",
+    "explicit_basis": "PCA",
+    "old_v3_conversion_module_matches_HEAD": true,
+    "old_v3_conversion_checks_all_true": true,
+    "old_verification_JSON_unchanged": true,
+    "limits": [
+      "Actual execution in the prepared NumPy 1.23.5 environment is confirmed, not a new independent full velocity-equivalence experiment.",
+      "The installed SCP Python backend remains an external required dependency; standalone backend closure is not established.",
+      "The deprecated/default basis alias is not repaired by this change; the reviewed successful case explicitly selects the existing PCA embedding."
+    ]
+  },
+  "general_limits": [
+    "Read-only review and inspection of saved scientific outputs; no new analysis, fitting, package installation, commit or GitHub comment.",
+    "SVG was hash checked but not separately visually rendered.",
+    "The previously recorded dense gene-label warnings for the unchanged volcano templates remain in visual-qa/review-pass2.md.",
+    "The new current receipt proves execution against the bound input/code hashes; it does not confer scientific validation."
+  ]
+}

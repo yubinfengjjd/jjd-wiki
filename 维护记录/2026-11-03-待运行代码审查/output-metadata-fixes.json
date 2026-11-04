@@ -1,0 +1,41 @@
+[
+  {
+    "id": "figureya-11bubble",
+    "removed_commented_optional_outputs": [
+      "dot.png",
+      "dot.tiff"
+    ],
+    "author_block_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "author_block_unchanged": true,
+    "source_modified": false
+  },
+  {
+    "id": "figureya-13gsea-java-update",
+    "removed_commented_optional_outputs": [
+      "ppoint2.pdf"
+    ],
+    "author_block_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "author_block_unchanged": true,
+    "source_modified": false
+  },
+  {
+    "id": "figureya-59volcanov2",
+    "non_default_outputs": [
+      "volcano_classic.pdf"
+    ],
+    "reason": "上游固定示例设置 plot_mode 为 advanced，默认生成 Volcano_advanced.pdf。volcano_classic.pdf 属于 classic 模式的互斥输出，不要求同一次默认运行同时生成；切换模式需在使用副本中显式修改。",
+    "author_block_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "author_block_unchanged": true,
+    "source_modified": false
+  },
+  {
+    "id": "figureya-92immune-gene-update",
+    "non_default_outputs": [
+      "gene_1cell_ggscatterstats.pdf"
+    ],
+    "reason": "默认导出 gene_Xcell.pdf 与 gene_1cell_ggplot2.pdf。ggscatterstats 图会由 knit 输出预览，但其单独 PDF 导出语句在上游已注释，不作为默认运行必需文件。",
+    "author_block_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "author_block_unchanged": true,
+    "source_modified": false
+  }
+]

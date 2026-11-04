@@ -1,0 +1,1544 @@
+{
+  "kind": "templates",
+  "cases": [
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-umap-groups.md": "10edb8e4031705588f2582a2573204e10cd37954ac1fa6d4afe41725fac9f603"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.R": "af484db9c46cbfbe285c8c0e65f52e3e6747c968b544b8d55eac1eaaa04784e2",
+        "code/panel.R": "ac6a6de3dd47964454ad8000536935039807f48b924f302055402ace1af0d067",
+        "code/render.R": "ebe66a007345c5951b7ca6bf4a83193fc72eda3f61a096141fb63f9578247981",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/estimated_data.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+        "example/render-umap-groups.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+        "example/style.json": "2f5685120af86b20f644984f823316f1ef5322a12599ddc6e8fb10ddeac20ea2",
+        "spec.json": "d6f5f8f9e059463443e07891222f2f0d4f3692388010d53252159ec3c5b695fe"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap\\wiki",
+        "render",
+        "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+        "--data",
+        "<run>\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap\\example",
+        "--out",
+        "<run>\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap\\output",
+        "--style",
+        "<run>\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig01-cns-umap--umap\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:57:56.928622+00:00",
+      "duration_s": 9.249,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "afa764e88660318298f3a8d5cf564b3acfbaa5c2e173efdbbad2b1717df3410b",
+        "figure.png": "2c4563641e59931e99f069e6bbb8e74868dbba35ec57c3d0e605b17a0342ed7f",
+        "figure.svg": "024f3f67bf63f01e60d5aca1119de010a82ad2f75c705d355c34100c3b75fcaa"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.R": "af484db9c46cbfbe285c8c0e65f52e3e6747c968b544b8d55eac1eaaa04784e2",
+        "panel.R": "ac6a6de3dd47964454ad8000536935039807f48b924f302055402ace1af0d067",
+        "render.R": "ebe66a007345c5951b7ca6bf4a83193fc72eda3f61a096141fb63f9578247981",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-umap-feature-long.md": "6850f023e98a72e2e6726fbe985da92053f6804b81f371e01f28d61f51e253c8"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.R": "22abdf13286dbc47b1063ecc3911508c6710eac35c6d890357fb112fc1d92c03",
+        "code/panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
+        "code/render.R": "210c4e05e64904e8427e0251c3926f0dbc0dc3a1de64150b8c2663799a3f9583",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/estimated_coordinates.csv": "f0360b2bb0adea66c56fed28e765030cec273ba811bbe146b984a62d7db07fbc",
+        "example/estimated_data.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+        "example/estimated_expression.csv": "821f9a692c6990e264f4ca49932c4067419b2772c0fbc3e8c52e6b0981b23b40",
+        "example/render-umap-feature-long.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+        "example/style.json": "2db558e2959b06b62418d123b31c49f8d3eacf2760bbcbd740dde4d524dee829",
+        "spec.json": "0494a90cc98e9c252fa63d820d8641a6d8b68ade1638a12e3da7bd45e7001fad"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\wiki",
+        "render",
+        "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+        "--data",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\example",
+        "--out",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\output",
+        "--style",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:06.342878+00:00",
+      "duration_s": 16.13,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "4a8cbcc75186af4d9d3926d311f08c475d433c9cbead4b69b7f0c1fb8dfb5bb5",
+        "figure.png": "fd2caa4c3f1ecfa5d369e57d4714987739fd0661685364fc3c354aa4eb2a3487",
+        "figure.svg": "b6c2b9e9d22c1123af8a37bd066ca7026e2ae74c5b464affedd58a06f028ea28"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.R": "22abdf13286dbc47b1063ecc3911508c6710eac35c6d890357fb112fc1d92c03",
+        "panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
+        "render.R": "210c4e05e64904e8427e0251c3926f0dbc0dc3a1de64150b8c2663799a3f9583",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-dotplot-long.md": "6545dc4ab4391fe57c40ba53947dffda26d2b27028ffa11c027eeecc543a8761"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.R": "5485e5f19aec4f2b3fb406f188feb8bacf06eb9047e7db1c82d4b36e96427020",
+        "code/panel.R": "0b2c659261967ec41e22cb05ce4e97737dd7e52476618940c34a74b1af2cd3e2",
+        "code/render.R": "216772e4ee99a9503285ff2fbb3113edd051205fc352f3a64e32b42178a868be",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/estimated_data.csv": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+        "example/render-dotplot-long.csv": "a38744d2f3f47865c5853b81d417cbb8ec104e4989cebdd48bc0123683f3992a",
+        "example/style.json": "a3f98060f51ab78bd9f3d6c18a52250290013116532899d7b57d451623acf9b9",
+        "spec.json": "f7669255683478ae13cc23173fff49b6b9cd2be74d2917a4707b249444ce4478"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot\\wiki",
+        "render",
+        "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+        "--data",
+        "<run>\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot\\example",
+        "--out",
+        "<run>\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot\\output",
+        "--style",
+        "<run>\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:22.550050+00:00",
+      "duration_s": 4.856,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "7ef0e53a9301f80ee75643ad9eddd1fde53e261fad05dbe70920d76ea7ca0e37",
+        "figure.png": "3ed15f60e37929d8d608cbcf545f515ac7a67f3873937b955e3695e2be9b159b",
+        "figure.svg": "082c250f14081b621ef4db2ac9700eed813cc22fc1c0851eb454c714f407b186"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.R": "5485e5f19aec4f2b3fb406f188feb8bacf06eb9047e7db1c82d4b36e96427020",
+        "panel.R": "0b2c659261967ec41e22cb05ce4e97737dd7e52476618940c34a74b1af2cd3e2",
+        "render.R": "216772e4ee99a9503285ff2fbb3113edd051205fc352f3a64e32b42178a868be",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-proportions.md": "0ca8e7176b66055b4cc446292d893d1311ae19f7d4bbf002d1390b05361afc70"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.R": "3a2a20409d2406536ad49fc5eed0a8e6e8cf858588646a951e8c22c8a900b22d",
+        "code/panel.R": "290ef75332b103bb77bc92c8daa8805a0f7553c2e881b3363dfacbe9de220d23",
+        "code/render.R": "afc4e61cdf0d6c42945560f2ebfe876ac8aebecfbedb7877fa7f1058bdbb8505",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/estimated_data.csv": "2a6b5d9ce8ec4eb6749f3985e737cd4be823cccf8f5a5daab32a4c40cb4f5f51",
+        "example/render-cell-proportions.csv": "2a6b5d9ce8ec4eb6749f3985e737cd4be823cccf8f5a5daab32a4c40cb4f5f51",
+        "example/style.json": "57c5f3fea010149038eab0b2376176a1dfd2cd190414edb262854e93d9361c6b",
+        "spec.json": "e03057ce3395544afd3e71f64d7c5a18d0d0d721e0e9b7c1bcfb4fc88d8fece4"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow\\wiki",
+        "render",
+        "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+        "--data",
+        "<run>\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow\\example",
+        "--out",
+        "<run>\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow\\output",
+        "--style",
+        "<run>\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:27.481704+00:00",
+      "duration_s": 5.76,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "42e3a1a7abee8b3bb4571753e5dc3730fdb52b6514ce7e55632cd6c31f002896",
+        "figure.png": "6a77537360f2fcb4045f6deb117c79ddcd5ea4ff4a6b6f1892154d39d08e8f66",
+        "figure.svg": "8003e87c9f927e3c75cc4954f7bc01d136aeaa44da7b3d42e9415becea227ee7"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.R": "3a2a20409d2406536ad49fc5eed0a8e6e8cf858588646a951e8c22c8a900b22d",
+        "panel.R": "290ef75332b103bb77bc92c8daa8805a0f7553c2e881b3363dfacbe9de220d23",
+        "render.R": "afc4e61cdf0d6c42945560f2ebfe876ac8aebecfbedb7877fa7f1058bdbb8505",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-group-summaries.md": "090b6eb6d9c95570cb19e9ca49cf29bfe91dbe5776f2f2bc21a7c0dfefce182a",
+        "render-grouped-values.md": "dcb9778798876ed01708ba4726989c788deeef6083f6dc0309409f71d3e887ae"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.R": "8ae67f406c489e6882e1b64b36d4ed004d1f0dfd342a3ed22ea902fa5bcc9ef7",
+        "code/panel.R": "4f08a53989127053d4fa588675b043eb0e9c3d7fb7c0bfb5bcc1b6b9354c4132",
+        "code/render.R": "ad91d13e007fefb784d6a9ef6b4f15480b04f2412d54df23023fa8321f88b527",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/estimated_data.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+        "example/estimated_summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+        "example/render-group-summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+        "example/render-grouped-values.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+        "example/style.json": "aa6cc3fa4d8d7cb9a57c59bef09fe991aa0eca526c62dd81d37d7ef3cf333597",
+        "spec.json": "da7fab88d4eda1dd34b3c342d6fecba12222684d505ebb08b1dddf034d9845d4"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin\\wiki",
+        "render",
+        "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+        "--data",
+        "<run>\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin\\example",
+        "--out",
+        "<run>\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin\\output",
+        "--style",
+        "<run>\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:33.328117+00:00",
+      "duration_s": 9.152,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "dc13533c56e4425540e5ecd5c972bef50d2f7d7291bf1d4a05670d6e701f7a06",
+        "figure.png": "d5ef48e32901821917ebf3fa5cdd9d74db0da0ce77e3d80907ceb11dfc95eda5",
+        "figure.svg": "0a2ecafeb1574674fd73366d630a1fd100e30906492431777646e16b006bf1a5"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.R": "8ae67f406c489e6882e1b64b36d4ed004d1f0dfd342a3ed22ea902fa5bcc9ef7",
+        "panel.R": "4f08a53989127053d4fa588675b043eb0e9c3d7fb7c0bfb5bcc1b6b9354c4132",
+        "render.R": "ad91d13e007fefb784d6a9ef6b4f15480b04f2412d54df23023fa8321f88b527",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-de-results.md": "3b1b334b67b2113452f791c25230ff287d4716ef13b063942629f205dc1a984b"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "7350448637b768e1c8d0d6a09eb275818f654339c4f34900eaa8dc817e7d1f1f",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "0f60402fa7ddee2be166527be99de0988800ed8a948f5ae7c946d3f0692121de",
+        "code/render.R": "20828ca4ed49389ac61dffa8d472e7665b8e74f6024b61e93ba9db4ceb52f40b",
+        "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+        "code/scp_volcano_native.R": "9002eee52453ea7eedb5586a91f0721521283aca62a3b1ef3e2a733c339df064",
+        "example/render-de-results.csv": "fbeeee47b654e9bc7b039b4360840c109e8f09d4e45e3efa7f7a12acde613c90",
+        "example/style.json": "d4af08420c628622b6bf8f04ea1e49f3fc1774c178e10e7a2808050c4c2ee7be",
+        "runtime.json": "049e5dbc93ff01fe757576b48366ed811b81951a2e7aa1b26e14513a85b5fe1e",
+        "spec.json": "d741c1b1259d10c29230d57e30e10174eb56c1c8b24ea81a33b364cc20cdd636"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig01-volcano--volcano\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig01-volcano--volcano",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig01-volcano--volcano\\wiki\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig01-volcano--volcano\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig01-volcano--volcano\\wiki\\templates\\2026-10-22-scp-example__fig01-volcano--volcano\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:42.552899+00:00",
+      "duration_s": 10.037,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "7893bf1e943d5515914d3c00b518e8512e2ea1c93cc929045f420df892d1a127",
+        "figure.png": "f03fcebeb14a94e4d6d566b9fbbf342e1a4bdbad6b019d05c594480266e3adf8",
+        "figure.svg": "0fe713c7e1c0144ec72434919854d1b865baf2eda77ea396abfc2720b949105f"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "7350448637b768e1c8d0d6a09eb275818f654339c4f34900eaa8dc817e7d1f1f",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "0f60402fa7ddee2be166527be99de0988800ed8a948f5ae7c946d3f0692121de",
+        "render.R": "20828ca4ed49389ac61dffa8d472e7665b8e74f6024b61e93ba9db4ceb52f40b",
+        "scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+        "scp_volcano_native.R": "9002eee52453ea7eedb5586a91f0721521283aca62a3b1ef3e2a733c339df064"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-proportions.md": "0ca8e7176b66055b4cc446292d893d1311ae19f7d4bbf002d1390b05361afc70"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
+        "code/render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
+        "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+        "code/scp_ring_native.R": "0dd96b2b11f62e2103b692a160d5d448f81fe467f64949fc8777f21950ac766a",
+        "example/render-cell-proportions.csv": "2ecebe5a8db5b60d82ad79803aec6f7d021d0670c8a3d64beb40a31fa652d0c6",
+        "example/style.json": "46932a5c3f63eef9513f5877520c67864b327163821d2f7695d7ad057e2dd202",
+        "runtime.json": "0d02b925d91cffbfd7712767b6b17fd745ebf3bfeeba7e5fe4c2a86907955b90",
+        "spec.json": "6d2428d27a48b8527997b8af9cdbb08448f0fc2bc18de83d6015144992621480"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig02-ring--ring",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\wiki\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\wiki\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:52.675462+00:00",
+      "duration_s": 6.9,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "242860c660d1b7b99a9752e1571af4f955821724db49e6abdf32bdbcd153223f",
+        "figure.png": "9ac418d3b8176a830fd4c4035a342d76216ac77842ef0527bf3ed0cf89ce352a",
+        "figure.svg": "9efad93aa92b7b68f106abeac50a2334b5d1ee781a6fa0dc1f913435efd41f27"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
+        "render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
+        "scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+        "scp_ring_native.R": "0dd96b2b11f62e2103b692a160d5d448f81fe467f64949fc8777f21950ac766a"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig03-pie--pie",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "fecb4b4215c8c55ed0a1e991eac69424c0d660ffac526489a147679ccd9537f4",
+        "runtime.json": "36562c687e0e877dd75e5e6e8ec2526d3bb246df6fe4155ebfe66d711619c93b",
+        "spec.json": "fbf571c20d0c09d5bfee016784865b021825d6a4e4ce09501bad9b8a69302ff3"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig03-pie--pie\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig03-pie--pie",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig03-pie--pie\\wiki\\templates\\2026-10-22-scp-example__fig03-pie--pie\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig03-pie--pie\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig03-pie--pie\\wiki\\templates\\2026-10-22-scp-example__fig03-pie--pie\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:58:59.647356+00:00",
+      "duration_s": 6.229,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "df80e8d67bbdcf8fe6b87b2eb478779ef1798e9b4e936f597a25eb7f4caf83ff",
+        "figure.png": "64440fd79acd01609c9a1f959238b60207609816dd1a3e9409e2fadd95166929",
+        "figure.svg": "466d130ba8aef6f8ecb213952b5bfba17cfb58a0fb735a1ac275f13afc1109c0"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "ebbd83ee2f9464d5f006230634f1e64a69129d0e8d380fa53aa8b1b6fabe45c4",
+        "runtime.json": "237442d9c5b501e1bc0faaf7c2a8799a0e66a74f1833a403e9322654755a7adc",
+        "spec.json": "6382691a73626817aafa51df5ef02b9d5b9070684eb75eae5ff418a8d74f64b2"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig04-rose--rose",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:05.933935+00:00",
+      "duration_s": 6.413,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "6aa9bcaedbdaea8e84e9c82a6838a4639c70a68ea022bd603e3106dfc7107f04",
+        "figure.png": "13618afcc76224c14886859faa6078cb3d517d889abe848e0d423dd681821420",
+        "figure.svg": "6d2a15d35773416b1295097d75c9838b3b136701581a7e1340759d795c45ac0e"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "ebbd83ee2f9464d5f006230634f1e64a69129d0e8d380fa53aa8b1b6fabe45c4",
+        "runtime.json": "cf73d08a217d2cb821bdfe9033c66d54cd40af06564645e43311544f1288214d",
+        "spec.json": "2be796c920f2eef3e32c24b3e4e5da8b5f95d253e68cf9b6a88965f29eae40fb"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig05-trend--trend",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\wiki\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\wiki\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:12.406456+00:00",
+      "duration_s": 7.287,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "05ec81f9fe80d2deb10b9aca3623c229ade4b50ead790d91d72d0bab824bfd5c",
+        "figure.png": "c52529db21155ae2c2343f9540bcf2cc5e5e4dd8c0a66089264487402c63281b",
+        "figure.svg": "aab849c3cf49cf9035e86445aaeff7728764c60bacdceda92bbe9fd3aa7c5da1"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "fecb4b4215c8c55ed0a1e991eac69424c0d660ffac526489a147679ccd9537f4",
+        "runtime.json": "9a4bf42d4fe683e19e0277148ed82f304427c7f115cbac5b90c9aa9469325fbe",
+        "spec.json": "81881544a602df9b66cfd334e4ec0b749a6c156aa429994ddf9799a5a495a085"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig06-area--area",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki\\templates\\2026-10-22-scp-example__fig06-area--area\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki\\templates\\2026-10-22-scp-example__fig06-area--area\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:19.764641+00:00",
+      "duration_s": 7.239,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "806cac0cf51eb029a91dad49715a5b0a5fe8b2fa0801512b107b8aa59e88434f",
+        "figure.png": "ba5a1196eb355fac36e4cbd22d82bef07e7a79c78aeca20bcb92d4efda7c86c7",
+        "figure.svg": "f0f41230f8158dd72fbd3ab4f0fce53443dd3270cbcbc37e5f0413496ba17b6d"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "fecb4b4215c8c55ed0a1e991eac69424c0d660ffac526489a147679ccd9537f4",
+        "runtime.json": "0180ea762a0830062bd29994adfacd3936b14bbadec412cc0cd4c96c091e5bf5",
+        "spec.json": "81bf86dd267b3595aa16a267858c0ff57f99dfca8a052a2d29a97131104c1404"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig07-dot--dot",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\wiki\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\wiki\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:27.112688+00:00",
+      "duration_s": 7.37,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "93540f8d0fc4bd1a493d12ffe6e88239e8b0d5b00ebdead8be5478e4885d29a7",
+        "figure.png": "ddabf0eed555227b0a7d25848ebc3a5aa68676f570f9d2e5b6d737044e112117",
+        "figure.svg": "bf973e9bf5ff9745dffbe79c32f42cbf4fa68825effacf83dfda5c289a1161c1"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-group-heatmap.md": "1af9eb2de832458ef5354297c5c0bcbd3189243736bb370656ad82841b6faba5"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "8481c5ed54f5da9dfea568a18839815f8d2fb0f23446bf782d64d6c115094fcc",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "baab431b34919f28d4cbff05570879d3208f6bbdb48cc7a86782a43c750b501e",
+        "code/render.R": "c39eceb2dd863642a1a5e6099acf60f096d348b4ee958c1165bcbeac74c66467",
+        "code/scp_group_heatmap_native.R": "eaefd5d94a4be994aaf347ccd973d40bebe586e3d398b5ce9074485fb5314fe4",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/render-group-heatmap.csv": "8a180c4b83937a5d6d94f5590a5dfb3bee567caf630974f8344af46709c466e8",
+        "example/style.json": "11a18a568eaaaefe933eda9a2394d53dcb0f8d74b54a0dc3c9abee747eed047b",
+        "runtime.json": "f087697698c776f87e571becd829bbfa8ff030f11dcc8a355efabea999bedad8",
+        "spec.json": "0005a64c35f6e40053dbb25bbca9dfc46baa8a1b251fd07e7a606580d65ab504"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig08-group-heatmap--heatmap\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:34.565325+00:00",
+      "duration_s": 10.221,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [
+        "Rplots.pdf"
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "b694768755ecebc23df8a3f51879e740fa52f0d379a9940c75e4176f26f94915",
+        "figure.png": "00b0698d08ebdd6b8840b500febaf9652d9881ccb857ed69eb0b5fdf1ec314b4",
+        "figure.svg": "14ed588ab02e981629a532909cb1e4ef5a71c1e59ff330904fc42f1e2baf5d8c"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "8481c5ed54f5da9dfea568a18839815f8d2fb0f23446bf782d64d6c115094fcc",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "baab431b34919f28d4cbff05570879d3208f6bbdb48cc7a86782a43c750b501e",
+        "render.R": "c39eceb2dd863642a1a5e6099acf60f096d348b4ee958c1165bcbeac74c66467",
+        "scp_group_heatmap_native.R": "eaefd5d94a4be994aaf347ccd973d40bebe586e3d398b5ce9074485fb5314fe4",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
+        "code/render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
+        "code/scp_bar_native.R": "1d234184e817e6b983e819817b95fb6ccec26c9e00de9ee7fa2ceef2899c62b4",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "example/render-cell-metadata.csv": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+        "example/style.json": "7ed8130799c95cdf9d811c1af099ade92f262f252fa80c0927235fec0dca9792",
+        "runtime.json": "cb6091b8a2516bcaf73d9967b3d234ff291214ed8a1ae10c79ea0b16b13877c9",
+        "spec.json": "ec00fe01e1a94d73474694fe754392804f9bc49b0cc86ae7a1c5420f8495621e"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig09-bar--bar",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\wiki\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\wiki\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:44.883802+00:00",
+      "duration_s": 7.047,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "e04a23cc843ed4d01c672b3763b21c9ef33868dacc50a32f69a270e72d5214c2",
+        "figure.png": "96b98f9d04215b30bf4816116be67c7cb6ad9cc72cbb73b96c247f6fd7d3a46f",
+        "figure.svg": "50f5ac4ae7b61268eaaf579c8e6996ccaad5c96c3394e0998958739a79006bc3"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
+        "render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
+        "scp_bar_native.R": "1d234184e817e6b983e819817b95fb6ccec26c9e00de9ee7fa2ceef2899c62b4",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-linkage.md": "6a94f9011aac83253ec8066bb2a7fc95fd1ebe2e562c43a1bfe6428976f98e2f"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "95d8fd9a0b348f33e13e6c2ca80e22a8089437503b887f6c4b16929a3dc9abe7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "54f79b6ff58d5ea8bf989dfa84d78971480cccbf06e92c45ec2065571ba173d4",
+        "code/render.R": "2a29f1aa642085379f7070a14b672730bb3c8f2a10800f0af54da455c5049cda",
+        "code/scp_helpers.R": "8cc7bb62299c3c9476e82b0cd0cbb2b99cfceb926859dea4516383be0f83d30f",
+        "code/scp_sankey_native.R": "e3a838078ebf296234136edbf9da8ff5459e3dd380ebdf718da70d303a4c26a8",
+        "example/render-cell-linkage.csv": "809869e248caa22acc7b658d00aa28a7fd9c2dbe5cad6e97fbf90abb39259d35",
+        "example/style.json": "de87d540dbdee48428c96669dae9149f93c1995e5591e41b1038dcf448829e44",
+        "runtime.json": "c3eb50724d4d81c5b44d2b2229d75cb8bed9cd76e4242951ab59226f5ec88bdf",
+        "spec.json": "680dbc1dbace16eb628791a32053ac349d56571838797582245c807e06cfe188"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig10-sankey--sankey\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig10-sankey--sankey",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig10-sankey--sankey\\wiki\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig10-sankey--sankey\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig10-sankey--sankey\\wiki\\templates\\2026-10-22-scp-example__fig10-sankey--sankey\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:51.997560+00:00",
+      "duration_s": 7.076,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [
+        "Rplots.pdf"
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "3fd488999a7531f86bea449c7c2b0cfe68c46f7803b4c5a8994ebb9aaddbec05",
+        "figure.png": "70992e6234996899c83d12f6041465372ae587a83c5b726727888ca30ffa47c8",
+        "figure.svg": "5e35d7bbdc07d1019839f2179680addd4d96a8139523ecd6dd79d981aac62fd1"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "95d8fd9a0b348f33e13e6c2ca80e22a8089437503b887f6c4b16929a3dc9abe7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "54f79b6ff58d5ea8bf989dfa84d78971480cccbf06e92c45ec2065571ba173d4",
+        "render.R": "2a29f1aa642085379f7070a14b672730bb3c8f2a10800f0af54da455c5049cda",
+        "scp_helpers.R": "8cc7bb62299c3c9476e82b0cd0cbb2b99cfceb926859dea4516383be0f83d30f",
+        "scp_sankey_native.R": "e3a838078ebf296234136edbf9da8ff5459e3dd380ebdf718da70d303a4c26a8"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig11-chord--chord",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-linkage.md": "6a94f9011aac83253ec8066bb2a7fc95fd1ebe2e562c43a1bfe6428976f98e2f"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "f5386c52a3f80cba303c99a80d364f0917e5b09df29a0ba812a9bca5ce5853e6",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "98a111988068d1d2e9a65057f2cbe6217d48e66dfbb463ba92a2e24428fdf99b",
+        "code/render.R": "4098ea066d6854b7da0dcd77caa4c0ba0677d559932392cf4c97d4d109937d3b",
+        "code/scp_chord_native.R": "743a9442832a83de33eadf23aa57cc8a91966dc013fba7c4f3d09113b41dbbe3",
+        "code/scp_helpers.R": "f4a9e47280d2a1bd8704a619bc26434784bdda0d67365c3c3c4790e13b28bca7",
+        "example/render-cell-linkage.csv": "2b44e69e60ab7de99e768e6649ce5ce1c0a7bff65486b3bc371b853532224bc4",
+        "example/style.json": "062845d22d5de40c3fc8ff9923e199a3a6a9e933454cb80a02f4177123326fbf",
+        "runtime.json": "9b90e86e9047f251cb7a95340d39cced0a347ee644c14526db095bfd221ee3bb",
+        "spec.json": "06f4ce5b00a6268b181b34fac165cb60c08012ea38ee4a084b680ae17a414ee7"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig11-chord--chord\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig11-chord--chord",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig11-chord--chord\\wiki\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig11-chord--chord\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig11-chord--chord\\wiki\\templates\\2026-10-22-scp-example__fig11-chord--chord\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T18:59:59.197713+00:00",
+      "duration_s": 4.128,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "b448e30636d92ad1bdc4ceb43eda46622b7709a8ba443c6dc95c2fab612be70b",
+        "figure.png": "6674db75622654c4da8e7a96250d264fb0be29720f380889c2ee78e9dcd36de6",
+        "figure.svg": "291f21f08bccc58c09ac8f51b1aba026e4b99c2effa97c37c3052c0f46e2d899"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "f5386c52a3f80cba303c99a80d364f0917e5b09df29a0ba812a9bca5ce5853e6",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "98a111988068d1d2e9a65057f2cbe6217d48e66dfbb463ba92a2e24428fdf99b",
+        "render.R": "4098ea066d6854b7da0dcd77caa4c0ba0677d559932392cf4c97d4d109937d3b",
+        "scp_chord_native.R": "743a9442832a83de33eadf23aa57cc8a91966dc013fba7c4f3d09113b41dbbe3",
+        "scp_helpers.R": "f4a9e47280d2a1bd8704a619bc26434784bdda0d67365c3c3c4790e13b28bca7"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig12-venn--venn",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-membership.md": "03c131eb37166e7784ec55cbdcee6a41138e486b57b2ec652c02c55d5ee6a3ac"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "5e3bdcd1a12d0441374b2335cddbbccf1140051f8dacd7fbca242f9ab955e9dd",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "ee6b4c5be744b002c870d5c79a0e2c78b3ccefec97fd5ebcf94b4fd09d09d2f7",
+        "code/render.R": "3216273c5228e0c5b6a4b10fb168144e65a7e84cf170345a51a897491ab081e5",
+        "code/scp_helpers.R": "3e210b55d1a3e5243bcc614fbc0a269bc49ad4fbead0d490ca19c11fb15495b3",
+        "code/scp_venn_native.R": "3c83298e77b72521d5fa6fcadbc9c784b0cc96dd51efe0755307dd40c0c0e760",
+        "example/render-cell-membership.csv": "746e99513269e7cdfc4ebb7adda6dda730562c23d92f57bcd1d1eda599847cdb",
+        "example/style.json": "e67d612774a4092905bb7b9f23378ee6052d26f5325b95c1b325dd774a20d037",
+        "runtime.json": "20b10620ac5f61fb78b28342011fadce8f4a51a868ada69ea579d734fdc75682",
+        "spec.json": "3af634844b387498d7fceb33dfd52f43c7455082b3d8c9b36b8111a90a24f464"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig12-venn--venn\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig12-venn--venn",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig12-venn--venn\\wiki\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig12-venn--venn\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig12-venn--venn\\wiki\\templates\\2026-10-22-scp-example__fig12-venn--venn\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:03.406041+00:00",
+      "duration_s": 8.505,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "d564d0900a58f3131e774d3f0465f068a79b513468b51adf1c1bcd19c2da4d8d",
+        "figure.png": "f71770f803a57ef84d25fdb81ceabbbfc085294725d3cdab3c10dff5a18fb5fd",
+        "figure.svg": "8afa4c46f0cabf2f84e7abc859ffc8851af67182ab898a3fe657232aac096e13"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "5e3bdcd1a12d0441374b2335cddbbccf1140051f8dacd7fbca242f9ab955e9dd",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "ee6b4c5be744b002c870d5c79a0e2c78b3ccefec97fd5ebcf94b4fd09d09d2f7",
+        "render.R": "3216273c5228e0c5b6a4b10fb168144e65a7e84cf170345a51a897491ab081e5",
+        "scp_helpers.R": "3e210b55d1a3e5243bcc614fbc0a269bc49ad4fbead0d490ca19c11fb15495b3",
+        "scp_venn_native.R": "3c83298e77b72521d5fa6fcadbc9c784b0cc96dd51efe0755307dd40c0c0e760"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig13-upset--upset",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-membership.md": "03c131eb37166e7784ec55cbdcee6a41138e486b57b2ec652c02c55d5ee6a3ac"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "b95be47d5b7e3c3a9ba0b1cf42c027b95a361aa115ac12e58151a8c8983ba41f",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "e915f513e83ba02428eca18fedec09156c543d5d0a6688eb2bd03632e3ca8159",
+        "code/render.R": "443420cb3c0f174739b8ebf3cd45abb603e473b9c313df2468ad6e83619d91cc",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_upset_native.R": "0f62fbfac5372a1954e547e60777d92f5ef2be1b85eb9608565d9bfa85cd3a5d",
+        "example/render-cell-membership.csv": "746e99513269e7cdfc4ebb7adda6dda730562c23d92f57bcd1d1eda599847cdb",
+        "example/style.json": "0151e491ad9152cee8fc500a39b1adf5b5bffeddbb036eccdbc65b19cf91c8bc",
+        "runtime.json": "c4914eac4de051846066fad4c0139ae1547fd64352425cdef676a89e50497a6e",
+        "spec.json": "0aef4cf0a17affef6dd988e45b98b2a7bea20d5905cb5fa932ccc314b4408089"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig13-upset--upset\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig13-upset--upset",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig13-upset--upset\\wiki\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig13-upset--upset\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig13-upset--upset\\wiki\\templates\\2026-10-22-scp-example__fig13-upset--upset\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:11.975836+00:00",
+      "duration_s": 7.888,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "d65f1b175074b942d79ef45299b348d57b6ad73d5762ec1ebc6c8d79e20fef92",
+        "figure.png": "b2f0322dfa77068b0e7d5aacd72475b0a8b6ab084ca0ae0b27fe7e3f8a71190a",
+        "figure.svg": "c90a1ad4079fd7bb0639031af874b2a976466cfce47cd8270ca34c963f102ea7"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "b95be47d5b7e3c3a9ba0b1cf42c027b95a361aa115ac12e58151a8c8983ba41f",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "e915f513e83ba02428eca18fedec09156c543d5d0a6688eb2bd03632e3ca8159",
+        "render.R": "443420cb3c0f174739b8ebf3cd45abb603e473b9c313df2468ad6e83619d91cc",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_upset_native.R": "0f62fbfac5372a1954e547e60777d92f5ef2be1b85eb9608565d9bfa85cd3a5d"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-feature-heatmap.md": "5e56337c4d2fef14a692d8e8ca205342db3d024f8290c13cb5fc1b3538984a43"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "b5763a8f02b2bd61d8b63bb43b3c1d845f7b70d4da25179a7f98142edfb1111c",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "7cc1f0e93173de05000b0654efa43f2fec513d969ec0a0bc0834efe53dacb4e1",
+        "code/render.R": "10c3253cd984e3e643c7dce6109c455c662be52a31154591e52ea0ad6874385a",
+        "code/scp_feature_heatmap_native.R": "6f331665a7e97d237c17e3c76fc38a6ad1e5cc4d900c93cdc66bc45cbbe06b45",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/render-feature-heatmap.csv": "4abe211b4871dcaf6f59ed3321d1e22a45aae11ed6ee973c3f05051176b90855",
+        "example/style.json": "220fb0406f98563a949c34522ba1b3d78d5fb39dad219489007b4d8c3f739a7e",
+        "runtime.json": "65a48aad5b5584c905c9381ae4d1d93104c416e0ceaf5b8d8f8cadb0d3affcbb",
+        "spec.json": "cffdaa517ad4c0123d23dc7457e8e788167da7d5c7c2b3be1a11802fa50bc099"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig14-feature-heatmap--heatmap\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:19.987483+00:00",
+      "duration_s": 11.956,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [
+        "Rplots.pdf"
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "b3b5b84e32e7a57c3514ed5c80e0c3d216c5c786645452a790d0e7d52d5a291d",
+        "figure.png": "6a614cfd99a27c4828b7e94c682789a0f42e6bd52b2af37c8d782b479fedc518",
+        "figure.svg": "41c1932b7d5294b69595c511b371acf4644a520d9813645699de3758b87deb34"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "b5763a8f02b2bd61d8b63bb43b3c1d845f7b70d4da25179a7f98142edfb1111c",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "7cc1f0e93173de05000b0654efa43f2fec513d969ec0a0bc0834efe53dacb4e1",
+        "render.R": "10c3253cd984e3e643c7dce6109c455c662be52a31154591e52ea0ad6874385a",
+        "scp_feature_heatmap_native.R": "6f331665a7e97d237c17e3c76fc38a6ad1e5cc4d900c93cdc66bc45cbbe06b45",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-correlation-heatmap.md": "1a2f081589f0e0c99601f10a1ccb44812f3ec53f79b5fb3c775bb73113778c83"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "d10f72feb25ea7f8542ceff9eb6eada98979790570734eb8fba1098a327fc45a",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "99858de32de88b1489805a6752500528e88c532d842e41ad6ff41ae86a7f4b7b",
+        "code/render.R": "5c84422c0f495e758f32c85568998eb0301333892f716330f2ece17f5505599d",
+        "code/scp_cell-cor-heatmap_native.R": "c0aea1e936644f9e9b54e56d54aef9915ec2add0c20a3eee2c2dae007a492b05",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/render-correlation-heatmap.csv": "79e02f938007e890101255a675f090deeedc32ff374592641b22684e72a63728",
+        "example/style.json": "11a18a568eaaaefe933eda9a2394d53dcb0f8d74b54a0dc3c9abee747eed047b",
+        "runtime.json": "1beada06e9507c1a78dccd399cb498675c63faf2c0ebd7e2a346f0f0562e05c5",
+        "spec.json": "2ea2b39e8a0cf4854d875997606376b96c7aac59b017e35ebb02a4d92be42ebf"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:32.038997+00:00",
+      "duration_s": 9.54,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [
+        "Rplots.pdf"
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "2a5ab502e836267e9942026ccdb691d5cf96d9ba1d5482e05a9b63aaafa75811",
+        "figure.png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
+        "figure.svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "d10f72feb25ea7f8542ceff9eb6eada98979790570734eb8fba1098a327fc45a",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "99858de32de88b1489805a6752500528e88c532d842e41ad6ff41ae86a7f4b7b",
+        "render.R": "5c84422c0f495e758f32c85568998eb0301333892f716330f2ece17f5505599d",
+        "scp_cell-cor-heatmap_native.R": "c0aea1e936644f9e9b54e56d54aef9915ec2add0c20a3eee2c2dae007a492b05",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-cell-feature-values.md": "427a6deb7046062cd41d7ec5fb8a66eef98bfafe9170e456f3f7ff5146cc464b"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "287e17caf25c25e8179c70fe8cd32a70d2f52ff25327f702227214c92e0767ca",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "82cd2decee92015b0a788bf8882c8362c8aee688aa0e1e470def1427fc740702",
+        "code/render.R": "cc306e09d897bea9a5b2825e6907576a51cef7383e133374532d55bfb9c853f7",
+        "code/scp_cell-density_native.R": "cd99401b0165930d2f43d99431b6c62a80b8b02c04203340501fa73dd4b4e055",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "example/render-cell-feature-values.csv": "afbc3fbf148879c9311da04cfa1f67a6eee8991d57dd2156f12f811e8d8b9db3",
+        "example/style.json": "fc957307430e0af56573550003727073b72cad80f7bd2a6cd2d43c190ba6676a",
+        "runtime.json": "bf494df6e94592c8902d583fd01b55f7af8da7a60dc9e77306c4c366d0b0b57e",
+        "spec.json": "ff1924e689a9462c2d8615c8daa2a5171c68926fd201feec0a6beaf6d0dc2fb4"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig16-cell-density--ridge\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig16-cell-density--ridge",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig16-cell-density--ridge\\wiki\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig16-cell-density--ridge\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig16-cell-density--ridge\\wiki\\templates\\2026-10-22-scp-example__fig16-cell-density--ridge\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:41.667185+00:00",
+      "duration_s": 6.783,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "c0fe01b4295a3fb102870cb9cfaadfe1abbc133f9721f7090b25fb16c46dd273",
+        "figure.png": "72a7a07ac71b45fbe7f5db2e3c13aae6f1c8d166f4928af925f4d79dc3206b7e",
+        "figure.svg": "be821e733029f39a3023714de4f9b9387ef33adb7a81c4b13867cd27f7870e59"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "287e17caf25c25e8179c70fe8cd32a70d2f52ff25327f702227214c92e0767ca",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "82cd2decee92015b0a788bf8882c8362c8aee688aa0e1e470def1427fc740702",
+        "render.R": "cc306e09d897bea9a5b2825e6907576a51cef7383e133374532d55bfb9c853f7",
+        "scp_cell-density_native.R": "cd99401b0165930d2f43d99431b6c62a80b8b02c04203340501fa73dd4b4e055",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "render-group-heatmap.md": "1af9eb2de832458ef5354297c5c0bcbd3189243736bb370656ad82841b6faba5"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "12ced853a5c6ee4f053b47f743bc3507de2ebdbc9b6d96b7ee8bb8fb570f4b49",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "21c1de7db8afea2add157cb7d3734f28213a46cc6e88a718f8267b6b410d7a04",
+        "code/render.R": "7b4da19161e6d2c93316131c46f5ef2c4abf869019ebc96c6ec637039f0bcff8",
+        "code/scp_group_heatmap_dot_native.R": "53de1e26534fded1590c30413c790f6ef9882c45825f636e63c82ea79a4495a8",
+        "code/scp_helpers.R": "8e941e41530ab8b6aa8351d952917af26a04becac8195d071165ffc02df751b6",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/render-group-heatmap.csv": "6348aa04f6b5bf8eb6cda38a7e7ed9a8a7f5c0cc7c54a6e2e7cf1ed22e82fc5d",
+        "example/style.json": "4b19a5c686061561c7c6232014566ca8f7c20bd7f8ce79fe836a29c5a09522cc",
+        "runtime.json": "47eb3d7e8467a626d7a2c6b90b01a63132b9d7d32001cbb05d41c14c4fc3edb4",
+        "spec.json": "5f54594c5c393c27e62c09b03958564a5533ef72fb58fb6a191d6ee14fd375d6"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap\\wiki\\templates\\2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:48.541500+00:00",
+      "duration_s": 9.259,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [
+        "Rplots.pdf"
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "e1660a91f43e62356d6e391b2b301ddadceb8df08cb3fb3ab725db5dff46c9d8",
+        "figure.png": "7cc121e7e446d91f4fe07d07e3e7eea1a754427f7e1020bf936e7b5fd7e5bc16",
+        "figure.svg": "1803d5fc8d1785e150983ce195ffd6d33ad0c464eafb11ca02b11eb582ab280b"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "12ced853a5c6ee4f053b47f743bc3507de2ebdbc9b6d96b7ee8bb8fb570f4b49",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "21c1de7db8afea2add157cb7d3734f28213a46cc6e88a718f8267b6b410d7a04",
+        "render.R": "7b4da19161e6d2c93316131c46f5ef2c4abf869019ebc96c6ec637039f0bcff8",
+        "scp_group_heatmap_dot_native.R": "53de1e26534fded1590c30413c790f6ef9882c45825f636e63c82ea79a4495a8",
+        "scp_helpers.R": "8e941e41530ab8b6aa8351d952917af26a04becac8195d071165ffc02df751b6",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "figureya-1survivalcurve-update--km-curve",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "survival-time-event-group.md": "5f18599b938ce2b0b7ad89a4ec6b7c6e8bd9d7a908cb18287c5c175befc5381d"
+      },
+      "copied_inputs_sha256": {
+        "code/panel.R": "30cd7b5c39e67a4e0a876bfa03251d33172a6fafcf49c0d30273192bc3e7662e",
+        "code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
+        "example/survival-time-event-group.csv": "47c2cd9389ee5c7a3e30eee98a233620dcb1e3ee8a873ec6cbfbc1336d19a681",
+        "runtime.json": "238248e0e8379d50a0b11a8abb58b12c935f969df019bd2fead2969b3fd0c396",
+        "spec.json": "b30d83a95f141f6b4beff17c8c329ef03695f0f947fd7f6d013ef78b2a3d0339"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\figureya-1survivalcurve-update--km-curve\\wiki",
+        "render",
+        "figureya-1survivalcurve-update--km-curve",
+        "--data",
+        "<run>\\figureya-1survivalcurve-update--km-curve\\wiki\\templates\\figureya-1survivalcurve-update--km-curve\\example",
+        "--out",
+        "<run>\\figureya-1survivalcurve-update--km-curve\\output"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:00:57.872743+00:00",
+      "duration_s": 13.521,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "6c4ed1185f224ed265d77085d30759d4afe30cebc6ae2c1c7cfee982216047cc",
+        "figure.png": "4f6deb1fc2279714bde27ab6d0f2ec50dc070ed1f2931d3e7f8068885cca145c",
+        "figure.svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "panel.R": "30cd7b5c39e67a4e0a876bfa03251d33172a6fafcf49c0d30273192bc3e7662e",
+        "render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "figureya-59volcanov2--volcano",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "bulk-de-table.md": "ba0db68cd351910d1ef5cf9004c08a249f3df8a6c3195556608d8c4b69701904",
+        "highlight-gene-sets.md": "0653e1cec58842b789b226423bfd4dadb9c2b1f9bddd844320c74e08a78d95c9"
+      },
+      "copied_inputs_sha256": {
+        "code/panel.R": "398b878c79580fb72b076a5bcfd27aac83d8588ed7461155bc198563f6571a04",
+        "code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
+        "example/bulk-de-table.csv": "1bdcba38f4b493ee790112dea68b7eed6b680badfec15acf0ff6339e264291b9",
+        "example/highlight-gene-sets.csv": "33d9d4cee51bf2945a493c0e38edaebb1e497441c35dab5fd81329db07df21e8",
+        "example/style.json": "b04b58b90997c96bf569c02dbae398c69be00dc822c967567ff897fb7bcd3c02",
+        "runtime.json": "38ed502be1e4137e83b3ff29b05caca5fa03a59808b824d4887a592680fa109f",
+        "spec.json": "50fb97613082be1ec97b7a72a4ded92537a6683ed4bf57ca93dbc365940cf98b"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\figureya-59volcanov2--volcano\\wiki",
+        "render",
+        "figureya-59volcanov2--volcano",
+        "--data",
+        "<run>\\figureya-59volcanov2--volcano\\wiki\\templates\\figureya-59volcanov2--volcano\\example",
+        "--out",
+        "<run>\\figureya-59volcanov2--volcano\\output",
+        "--style",
+        "<run>\\figureya-59volcanov2--volcano\\wiki\\templates\\figureya-59volcanov2--volcano\\example\\style.json"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:01:11.458457+00:00",
+      "duration_s": 12.293,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {
+        "figure.pdf": "d1946ccd3c898b7f7b8b4edfce13cfaf68d789cc730d5e2820aa00ea912bc82e",
+        "figure.png": "9e669eba0e9883d615134f272c4793d8ffd09c3ce00078cbbde7dab3c6c92030",
+        "figure.svg": "26525330614b692662c3c839366b2fae0a74393661663e5715665f2dd756e7ac"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "panel.R": "398b878c79580fb72b076a5bcfd27aac83d8588ed7461155bc198563f6571a04",
+        "render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "figureya-6rhrsv2--forest",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "passed",
+      "interface_sha256": {
+        "subgroup-effect-table.md": "dc43f91c52f7fd37e36ec70da85a4528be39bfba5246cde0ca1e3aafbb505338"
+      },
+      "copied_inputs_sha256": {
+        "code/panel.R": "7759da11c9bf6aedf0c849360635524f44f9100a47a9fc8e6f7332958d38be3a",
+        "code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
+        "example/subgroup-effect-table.csv": "6092bfada9c76dda6684ff9dee124c08a8ca20e1d2241462bf423df6d7a9e42e",
+        "runtime.json": "46330a2a81636d03ebafcc58ba85757d85f56fe5a907be0772d09d815d82f68f",
+        "spec.json": "3d977018362c5a89ae6a6cc3962a1465673f0a22fb99fe0460356406623a0c61"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "<skill>\\wiki.py",
+        "--config",
+        "<skill>\\config.json",
+        "--wiki-root",
+        "<run>\\figureya-6rhrsv2--forest\\wiki",
+        "render",
+        "figureya-6rhrsv2--forest",
+        "--data",
+        "<run>\\figureya-6rhrsv2--forest\\wiki\\templates\\figureya-6rhrsv2--forest\\example",
+        "--out",
+        "<run>\\figureya-6rhrsv2--forest\\output"
+      ],
+      "exit_code": 0,
+      "started_at": "2026-11-03T19:01:23.831064+00:00",
+      "duration_s": 3.512,
+      "log_tail": [
+        ""
+      ],
+      "additional_runtime_files": [
+        "Rplots.pdf"
+      ],
+      "outputs_sha256": {
+        "figure.pdf": "779c57be3910aebbcd612a5dbd04528da1a8c57dddc4e4402c134a086726907d",
+        "figure.png": "fc59499f911b97bc0d56f7e09a60e371e1e6105ea31d404ba35a732873a60f4e",
+        "figure.svg": "b1b75a320db036db9fae1d2149f887d91a28d976bfb3443623a63885d9f9a98c"
+      },
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "panel.R": "7759da11c9bf6aedf0c849360635524f44f9100a47a9fc8e6f7332958d38be3a",
+        "render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a"
+      },
+      "original_files_unchanged": true
+    }
+  ],
+  "completed": 25,
+  "total": 25
+}

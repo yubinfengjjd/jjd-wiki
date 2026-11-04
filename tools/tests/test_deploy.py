@@ -28,11 +28,14 @@ def git(repo, *args):
 def layout(tmp_path):
     """开发仓库替身（含 staged/research-wiki）+ --bare 远端 + 6 处技能目录替身。"""
     remote = tmp_path / "dev-remote.git"
-    subprocess.run(["git", "init", "-q", "--bare", "-b", "main", str(remote)], check=True)
+    # git < 2.28 lacks ``init -b``; init + symbolic-ref is equivalent.
+    subprocess.run(["git", "init", "-q", "--bare", str(remote)], check=True)
+    subprocess.run(["git", "-C", str(remote), "symbolic-ref", "HEAD", "refs/heads/main"], check=True)
     dev = tmp_path / "开发"
     skill = dev / "staged" / "research-wiki"
     skill.mkdir(parents=True)
-    git(dev, "init", "-q", "-b", "main")
+    git(dev, "init", "-q")
+    git(dev, "symbolic-ref", "HEAD", "refs/heads/main")
     for key, value in (("user.name", "tester"), ("user.email", "t@localhost"), ("core.autocrlf", "true")):
         git(dev, "config", key, value)
     (skill / "wiki.py").write_text("print('wiki')\n", encoding="utf-8")

@@ -1,0 +1,420 @@
+{
+  "kind": "templates",
+  "cases": [
+    {
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-umap-feature-long.md": "6850f023e98a72e2e6726fbe985da92053f6804b81f371e01f28d61f51e253c8"
+      },
+      "copied_inputs_sha256": {
+        "code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "code/core.R": "2387026a0c449759356bfa296f415b132311f675fba4914c92743f004600f91e",
+        "code/panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
+        "code/render.R": "210c4e05e64904e8427e0251c3926f0dbc0dc3a1de64150b8c2663799a3f9583",
+        "code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+        "example/estimated_coordinates.csv": "f0360b2bb0adea66c56fed28e765030cec273ba811bbe146b984a62d7db07fbc",
+        "example/estimated_data.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+        "example/estimated_expression.csv": "821f9a692c6990e264f4ca49932c4067419b2772c0fbc3e8c52e6b0981b23b40",
+        "example/render-umap-feature-long.csv": "d1c67c70824fdb4c867ddfd4d0e0e5b8ead3c7d1f27aab25a67eb3cde7592390",
+        "example/style.json": "2db558e2959b06b62418d123b31c49f8d3eacf2760bbcbd740dde4d524dee829",
+        "spec.json": "0494a90cc98e9c252fa63d820d8641a6d8b68ade1638a12e3da7bd45e7001fad"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\wiki",
+        "render",
+        "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+        "--data",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\example",
+        "--out",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\output",
+        "--style",
+        "<run>\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\wiki\\templates\\2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:17.262910+00:00",
+      "duration_s": 0.102,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "core.R": "2387026a0c449759356bfa296f415b132311f675fba4914c92743f004600f91e",
+        "panel.R": "82de0ee235d2a9a21874bb68bb448fc3904caa07050c4637862de0283cef1ae7",
+        "render.R": "210c4e05e64904e8427e0251c3926f0dbc0dc3a1de64150b8c2663799a3f9583",
+        "sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-cell-proportions.md": "0ca8e7176b66055b4cc446292d893d1311ae19f7d4bbf002d1390b05361afc70"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
+        "code/render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
+        "code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+        "code/scp_ring_native.R": "8418a3d859b30f4a4aea200b20dcec32786079a96a21595772cce439cd92992f",
+        "example/render-cell-proportions.csv": "2ecebe5a8db5b60d82ad79803aec6f7d021d0670c8a3d64beb40a31fa652d0c6",
+        "example/style.json": "46932a5c3f63eef9513f5877520c67864b327163821d2f7695d7ad057e2dd202",
+        "runtime.json": "0d02b925d91cffbfd7712767b6b17fd745ebf3bfeeba7e5fe4c2a86907955b90",
+        "spec.json": "6d2428d27a48b8527997b8af9cdbb08448f0fc2bc18de83d6015144992621480"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig02-ring--ring",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\wiki\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig02-ring--ring\\wiki\\templates\\2026-10-22-scp-example__fig02-ring--ring\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:17.443890+00:00",
+      "duration_s": 0.098,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
+        "render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
+        "scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+        "scp_ring_native.R": "8418a3d859b30f4a4aea200b20dcec32786079a96a21595772cce439cd92992f"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "c15034c6a269d36911a2c722f0de35f34ccf6883d3c670200bbce73c2de6d6a4",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "ebbd83ee2f9464d5f006230634f1e64a69129d0e8d380fa53aa8b1b6fabe45c4",
+        "runtime.json": "237442d9c5b501e1bc0faaf7c2a8799a0e66a74f1833a403e9322654755a7adc",
+        "spec.json": "6382691a73626817aafa51df5ef02b9d5b9070684eb75eae5ff418a8d74f64b2"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig04-rose--rose",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig04-rose--rose\\wiki\\templates\\2026-10-22-scp-example__fig04-rose--rose\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:17.589381+00:00",
+      "duration_s": 0.095,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "c15034c6a269d36911a2c722f0de35f34ccf6883d3c670200bbce73c2de6d6a4"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "0944964e610eac4e240b2b800222558c1a4e316e69c6a817dc5a4eaef6e365ec",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "ebbd83ee2f9464d5f006230634f1e64a69129d0e8d380fa53aa8b1b6fabe45c4",
+        "runtime.json": "cf73d08a217d2cb821bdfe9033c66d54cd40af06564645e43311544f1288214d",
+        "spec.json": "2be796c920f2eef3e32c24b3e4e5da8b5f95d253e68cf9b6a88965f29eae40fb"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig05-trend--trend",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\wiki\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig05-trend--trend\\wiki\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:17.733384+00:00",
+      "duration_s": 0.095,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "0944964e610eac4e240b2b800222558c1a4e316e69c6a817dc5a4eaef6e365ec"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "4d30f7ac24a5ccccfdb1c68c085d301a9dd7f845dfc420c18f717bf5e46f0f1a",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "fecb4b4215c8c55ed0a1e991eac69424c0d660ffac526489a147679ccd9537f4",
+        "runtime.json": "9a4bf42d4fe683e19e0277148ed82f304427c7f115cbac5b90c9aa9469325fbe",
+        "spec.json": "81881544a602df9b66cfd334e4ec0b749a6c156aa429994ddf9799a5a495a085"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig06-area--area",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki\\templates\\2026-10-22-scp-example__fig06-area--area\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig06-area--area\\wiki\\templates\\2026-10-22-scp-example__fig06-area--area\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:17.878413+00:00",
+      "duration_s": 0.095,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "4d30f7ac24a5ccccfdb1c68c085d301a9dd7f845dfc420c18f717bf5e46f0f1a"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "code/scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1",
+        "example/render-cell-metadata.csv": "9185456d05cb990e02a07a09def9577018065ed58b555070acaed473ff6c5623",
+        "example/style.json": "5dab4b6479dac0d5a350ddf42298235895b476818f23c1b236d09f761b1b552f",
+        "runtime.json": "0180ea762a0830062bd29994adfacd3936b14bbadec412cc0cd4c96c091e5bf5",
+        "spec.json": "f910a73324d72fda81272b0b512acb316ae9cd2b52d684393a445f25da2fcd22"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig07-dot--dot",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\wiki\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig07-dot--dot\\wiki\\templates\\2026-10-22-scp-example__fig07-dot--dot\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:18.021463+00:00",
+      "duration_s": 0.097,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+        "render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "scp_stat_native.R": "729f67a4a8acf258f3c57b9309c890ba7fdb7d0420ce81d51c0f0869494c59b1"
+      },
+      "original_files_unchanged": true
+    },
+    {
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "kind": "templates",
+      "scope": "isolated-public-example-replay",
+      "scientific_validation": false,
+      "state": "failed",
+      "interface_sha256": {
+        "render-cell-metadata.md": "2e4202ef02fed995df113866474e1dd2e5863acb30e2216af9d579de2d7def00"
+      },
+      "copied_inputs_sha256": {
+        "code/core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
+        "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "code/panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
+        "code/render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
+        "code/scp_bar_native.R": "cc9a5d7cb6ca99f3ee5481522c5677b9de7f1caa5a93bd1772a312a50db62783",
+        "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+        "example/render-cell-metadata.csv": "012c1be6c5050c3fbbe6fd44d66021d15304cc58fd140f97fd4fa393a0236b63",
+        "example/style.json": "7ed8130799c95cdf9d811c1af099ade92f262f252fa80c0927235fec0dca9792",
+        "runtime.json": "cb6091b8a2516bcaf73d9967b3d234ff291214ed8a1ae10c79ea0b16b13877c9",
+        "spec.json": "ec00fe01e1a94d73474694fe754392804f9bc49b0cc86ae7a1c5420f8495621e"
+      },
+      "command": [
+        "<env>\\wiki-python\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\wiki.py",
+        "--config",
+        "..\\jjd-wiki-dev\\staged\\research-wiki\\config.json",
+        "--wiki-root",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\wiki",
+        "render",
+        "2026-10-22-scp-example__fig09-bar--bar",
+        "--data",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\wiki\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example",
+        "--out",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\output",
+        "--style",
+        "<run>\\2026-10-22-scp-example__fig09-bar--bar\\wiki\\templates\\2026-10-22-scp-example__fig09-bar--bar\\example\\style.json"
+      ],
+      "exit_code": 2,
+      "started_at": "2026-11-04T03:42:18.165499+00:00",
+      "duration_s": 0.095,
+      "log_tail": [
+        "",
+        "D:\\conda\\python.exe: can't open file '<ENV_ROOT>\\\\jjd-wiki-dev\\\\staged\\\\research-wiki\\\\wiki.py': [Errno 2] No such file or directory"
+      ],
+      "additional_runtime_files": [],
+      "outputs_sha256": {},
+      "copied_inputs_unchanged": true,
+      "original_files_sha256": {
+        "core.R": "0f30f8ef6b252973b5ed1cd97c05bd1e3b9468fcddc90c7d3a73afa569c9ad39",
+        "data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+        "panel.R": "87666d54e74d97621d874ce0e56e84838c9e3af11290e1bde7c2927eaaca92e0",
+        "render.R": "92ee20b617dc051a2aa4c9d801a1d466bd4edb6c18e3bafcb9280e87dfc38ef5",
+        "scp_bar_native.R": "cc9a5d7cb6ca99f3ee5481522c5677b9de7f1caa5a93bd1772a312a50db62783",
+        "scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7"
+      },
+      "original_files_unchanged": true
+    }
+  ],
+  "completed": 7,
+  "total": 7
+}

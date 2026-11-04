@@ -1,0 +1,881 @@
+{
+  "started_at": "2026-11-03T18:58:44.318603+00:00",
+  "mapping_sha256": "c8a65f6969af658f10ac7a08720bcd3c0770b8cd49ba3593d03c89561e016eed",
+  "runner_sha256": "58532e20943eca0fa8848863a41acf086c612de0ffcb7d1d54f2a419f9e9f7c7",
+  "batch_root": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk",
+  "environment_restored": true,
+  "algorithm_verification_state": "not_run",
+  "results": [
+    {
+      "method": "cell-quality-control",
+      "implementation": "scp-runcellqc",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "cell-quality-control",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 600,
+      "duration_seconds": 21.64,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "nonempty_result": true,
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\cell-quality-control-scp-runcellqc-4xeoo9jo",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "cell-type-annotation",
+      "implementation": "scp-singler",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "cell-type-annotation",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 45.5,
+      "replay_returncode": 1,
+      "execution_state": "not_run",
+      "algorithm_verification_state": "not_run",
+      "error": "there is no package called 'scrapper'",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      },
+      "orchestration_error": "Replay orchestration failed: list index out of range; Traceback (most recent call last):\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 207, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 203, in main\n    return run(args)\n           ^^^^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 166, in run\n    assessment = assess(returncode, child, verify_inputs_unchanged(originals))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<VAULT>\\维护记录\\2026-11-03-待运行代码审查\\method-replay\\replay.py\", line 55, in assess\n    \"checks\": {**checks, \"source_and_input_files_unchanged\": unchanged}}\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: 'list' object is not a mapping\n",
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\cell-type-annotation-scp-singler-8sz0na49"
+    },
+    {
+      "method": "differential-expression",
+      "implementation": "scp-detest",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "differential-expression",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 600,
+      "duration_seconds": 76.45,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "nonempty_result": true,
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\differential-expression-scp-detest-hw10l130",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "dimensionality-reduction",
+      "implementation": "scp-dimreduction",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "dimensionality-reduction",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 23.42,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "nonempty_result": true,
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\dimensionality-reduction-scp-dimreduction-9o_1k2xw",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "doublet-detection",
+      "implementation": "scp-rundoublet",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "doublet-detection",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 34.08,
+      "replay_returncode": 1,
+      "execution_state": "not_run",
+      "algorithm_verification_state": "not_run",
+      "returncode": 1,
+      "error": "Historical invocation did not complete: unused argument (seed = 11)",
+      "checks": {
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\doublet-detection-scp-rundoublet-xyt53f56",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "gene-set-scoring",
+      "implementation": "scp-cellscoring",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "gene-set-scoring",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 21.2,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "nonempty_result": true,
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\gene-set-scoring-scp-cellscoring-l2m57hvp",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "reference-mapping",
+      "implementation": "seurat-label-transfer",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "reference-transfer",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 26.42,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "nonempty_result": true,
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\reference-mapping-seurat-label-transfer-x1dpog7o",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "reference-mapping",
+      "implementation": "scp-runseuratmap",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "reference-mapping",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 23.72,
+      "replay_returncode": 1,
+      "execution_state": "not_run",
+      "algorithm_verification_state": "not_run",
+      "returncode": 1,
+      "error": "Historical invocation did not complete: Argument 'dim.' must be an integer vector of length two",
+      "checks": {
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\reference-mapping-scp-runseuratmap-2jzh7jkz",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-celldensityplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "f_x_order_rank",
+          "args": {
+            "srt": "@pancreas_sub",
+            "features": "Ins1",
+            "x_order": "rank"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 27.39,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-dimplots-scp-celldensityplot-2d_1dbpr",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-celldimplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "mark_circle",
+          "args": {
+            "srt": "@pancreas_sub",
+            "group.by": "CellType",
+            "reduction": "UMAP",
+            "add_mark": true,
+            "mark_type": "circle"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 27.72,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-dimplots-scp-celldimplot-a1m5ga79",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-celldimplot3d",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "cell_3d",
+          "args": {
+            "srt": "@pancreas_sub",
+            "group.by": "CellType",
+            "reduction": "PCA",
+            "dims": [
+              1,
+              2,
+              3
+            ],
+            "width": 900,
+            "height": 650
+          },
+          "seed": null
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 15.19,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-dimplots-scp-celldimplot3d-ldj818ed",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-featuredimplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "keep_all",
+          "args": {
+            "srt": "@pancreas_sub",
+            "features": [
+              "Sox9",
+              "Anxa2"
+            ],
+            "reduction": "UMAP",
+            "keep_scale": "all",
+            "split.by": "Phase"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 55.11,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-dimplots-scp-featuredimplot-pa8n4v5c",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-dimplots",
+      "implementation": "scp-featuredimplot3d",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "feature_3d",
+          "args": {
+            "srt": "@pancreas_sub",
+            "features": "Neurog3",
+            "reduction": "PCA",
+            "dims": [
+              1,
+              2,
+              3
+            ],
+            "width": 900,
+            "height": 650
+          },
+          "seed": null
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 15.12,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-dimplots-scp-featuredimplot3d-3o6g6ebq",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-heatmaps",
+      "implementation": "scp-featureheatmap",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "default",
+          "args": {
+            "srt": "@pancreas_sub",
+            "features": [
+              "Sst",
+              "Ppy",
+              "Gcg",
+              "Ins1",
+              "Ins2",
+              "Iapp"
+            ],
+            "group.by": "CellType"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 23.58,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-heatmaps-scp-featureheatmap-reripp7r",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-heatmaps",
+      "implementation": "scp-groupheatmap",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "annotation",
+          "args": {
+            "srt": "@pancreas_sub",
+            "features": [
+              "Sox9",
+              "Anxa2",
+              "Bicc1",
+              "Neurog3",
+              "Hes6",
+              "Fev",
+              "Neurod1",
+              "Rbp4",
+              "Pyy",
+              "Ins1",
+              "Gcg",
+              "Sst",
+              "Ghrl"
+            ],
+            "group.by": "CellType",
+            "nlabel": 0,
+            "show_row_names": true,
+            "cell_annotation": [
+              "Phase",
+              "G2M_score"
+            ],
+            "cell_annotation_palette": [
+              "Dark2",
+              "Paired"
+            ]
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 26.94,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-heatmaps-scp-groupheatmap-dw7d8_ud",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-model-overlays",
+      "implementation": "scp-projectionplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "self_projection",
+          "args": {
+            "srt_query": "@pancreas_sub",
+            "srt_ref": "@pancreas_sub",
+            "query_group": "CellType",
+            "ref_group": "CellType",
+            "query_reduction": "UMAP",
+            "ref_reduction": "UMAP"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 16.27,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-model-overlays-scp-projectionplot-_isoqeej",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-cellstatplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "f_plot_type_upset",
+          "args": {
+            "srt": "@pancreas_sub",
+            "stat.by": "CellType",
+            "group.by": "orig.ident",
+            "plot_type": "upset"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 49.11,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-statplots-scp-cellstatplot-2ldylusk",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-featurecorplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "two_markers",
+          "args": {
+            "srt": "@pancreas_sub",
+            "features": [
+              "Sox9",
+              "Anxa2"
+            ],
+            "group.by": "CellType"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 17.91,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-statplots-scp-featurecorplot-l216e94n",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "scp-viz-statplots",
+      "implementation": "scp-featurestatplot",
+      "driver": {
+        "kind": "recorded_plot",
+        "case": {
+          "id": "f_add_stat_mean",
+          "args": {
+            "srt": "@pancreas_sub",
+            "stat.by": "Sox9",
+            "group.by": "CellType",
+            "plot_type": "violin",
+            "add_stat": "mean"
+          },
+          "seed": 11
+        },
+        "required_packages": {
+          "R": [
+            "jsonlite"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 53.78,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "rendered_nonempty_plot": true,
+        "visual_review": "pending",
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\scp-viz-statplots-scp-featurestatplot-gvi_z9fa",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    },
+    {
+      "method": "trajectory-inference",
+      "implementation": "scp-slingshot",
+      "driver": {
+        "kind": "historical_portable",
+        "case": "trajectory-inference",
+        "source_sha256": "89119dfae526192011f22942816ee43d88458fe1c3302dd7610973291af85920",
+        "required_packages": {
+          "R": [
+            "jsonlite",
+            "digest",
+            "BiocParallel",
+            "future"
+          ]
+        }
+      },
+      "timeout_seconds_per_child": 300,
+      "duration_seconds": 35.22,
+      "replay_returncode": 0,
+      "execution_state": "executed",
+      "algorithm_verification_state": "not_run",
+      "returncode": 0,
+      "error": null,
+      "checks": {
+        "actual_invocation": true,
+        "input_object_unchanged": true,
+        "output_assertions": true,
+        "nonempty_result": true,
+        "source_and_input_files_unchanged": true
+      },
+      "external_run_directory": "<ENV_ROOT>\\method-runs\\public-r-20261104-ig3shgyk\\trajectory-inference-scp-slingshot-hdgoe_qy",
+      "collection_checks": {
+        "source_closure_matches_isolated_copy": true,
+        "runtime_manifest_matches_isolated_copy": true,
+        "recorded_runtime_matches_current_mapping": true,
+        "fixture_matches_pinned_sha256": true
+      }
+    }
+  ],
+  "completed_at": "2026-11-03T19:09:20.474659+00:00",
+  "counts": {
+    "completed": 20,
+    "executed": 17,
+    "not_run": 3,
+    "algorithm_verified": 0
+  },
+  "mapping_sha256_at_collection": "dfae6a48b444f2d18aed3007161282a91a75c33515d4c7187523edb583a56108",
+  "mapping_changed_during_batch": true,
+  "evidence_scope": "Actual reviewed public-data execution only; no independent original-versus-wrapper comparison. Plot visual review remains pending."
+}

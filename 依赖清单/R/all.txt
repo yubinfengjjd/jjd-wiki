@@ -391,6 +391,7 @@ scds
 scmap
 scop
 scran
+scrapper
 sctransform
 scuttle
 seqinr

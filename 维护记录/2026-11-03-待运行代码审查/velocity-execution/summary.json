@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-11-03T19:19:30.883027+00:00",
+  "scope": "Actual failed execution audit; formal source/runtime/page/old receipts were not edited",
+  "run_dir": "<ENV_ROOT>/velocity-runs/rna-velocity-scp-scvelo-616wtliu",
+  "exit_status": 1,
+  "elapsed_seconds": 89.140809,
+  "execution_state": "not_run",
+  "algorithm_verification_state": "not_run",
+  "standalone_portability_verification_state": "not_run",
+  "error": "ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 2 dimensions. The detected shape was (1, 4) + inhomogeneous part.\nRun `reticulate::py_last_error()` for details.",
+  "actual_progress": [
+    "real RNA/spliced/unspliced conversion",
+    "native shared-count gene filtering and normalization",
+    "neighbor graph",
+    "moments",
+    "stochastic velocities",
+    "failed during velocity graph"
+  ],
+  "final_result_rds_exists": false,
+  "final_velocity_object_available": false,
+  "input_file_and_code_preservation": {
+    "source_and_input_files_unchanged": true
+  },
+  "in_memory_input_object_preservation": "not_checked: existing driver records this assertion only after successful function return; no claim made for failed call",
+  "emitted_warnings_and_messages": [
+    "misc slot is not converted",
+    "tools slot is not converted",
+    "Unable to create progress bar; consider tqdm/ipywidgets or disabling progress bar"
+  ],
+  "native_warning_policy": "Installed SCP_analysis.py suppresses UserWarning/FutureWarning/DeprecationWarning; these native filters were not changed. Archived logs retain all emitted messages, not suppressed warnings.",
+  "declared_closure_files": {
+    "code/analysis.R": "c945c2d6cb7b86ae7a3bfd0f596a5c38a0b7bac5b4c524473c3eb165ebd1d761",
+    "code/velocity_native.R": "47e604b72010edd4134ad03e4b9a7fcbcb860b05428dbdfaa21b7dba1087e6c4",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b"
+  },
+  "current_original_code_matches_run": true,
+  "installed_undeclared_backend": {
+    "package": "SCP",
+    "version": "0.5.6",
+    "python_files": {
+      "harmonizomeapi.py": "9759c4fac55f2c2aa84f603c448063badcc8718f86bdd208147d082da3c3e73e",
+      "SCP_analysis.py": "68def54ee1711381d7b14330715aaee8f9ac8ad8c4f2d72dfef2e9e7b8f3e332"
+    },
+    "description_sha256": "c171a606276eedcea4acb820e72032e8902191bc7f3598e8c3b815056b2834a1",
+    "limitation": "runtime does not declare installed SCP or SCP_analysis Python file; this execution could not establish standalone closure"
+  },
+  "static_failure_location_inference": {
+    "observed_stage": "computing velocity graph",
+    "observed_shape": "(1, 4) + inhomogeneous part",
+    "candidate_call": "scvelo/tools/velocity_graph.py:175-181 -> scvelo/core/_parallelize.py:138",
+    "code": "res = np.array(res) if as_array else res",
+    "basis": "parallelize defaults as_array=True, while velocity_graph callback returns four heterogeneous lists; NumPy 1.24 rejects implicit ragged array creation",
+    "confirmation_limit": "No full Python traceback was persisted by existing driver; static location is an inference, not a captured stack"
+  },
+  "raw_external_evidence_sha256": {
+    "execution-audit.json": "18d7e84d7c2ca1690f20c36fc472d287a95e468e7ca3255d36fd173047416c86",
+    "child.json": "695f921c736b1e385a59b33f3ece2f69cf501d84c6564262e66529a5053d2dde",
+    "stdout.log": "149894585ca5d3731552828ddd9c1ce443b98d51dc55df4f7f5b66fe1f7e36d6",
+    "stderr.log": "2215d3e3ff8302b959487d74bcdd03b826c5ca1dbf56b834d3594aab4d6461b0"
+  },
+  "actual_new_output_files_sha256": {
+    "child.json": "695f921c736b1e385a59b33f3ece2f69cf501d84c6564262e66529a5053d2dde",
+    "stderr.log": "2215d3e3ff8302b959487d74bcdd03b826c5ca1dbf56b834d3594aab4d6461b0",
+    "stdout.log": "149894585ca5d3731552828ddd9c1ce443b98d51dc55df4f7f5b66fe1f7e36d6"
+  },
+  "no_scientific_result_files": true,
+  "next_step": "Investigate the captured backend compatibility failure and undeclared SCP backend separately. Do not change samples, statistical defaults, package versions, runtime declarations, or verification state to obtain a pass without review."
+}

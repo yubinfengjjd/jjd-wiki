@@ -179,6 +179,7 @@ scales
 scater
 scattermore
 scds
+scrapper
 sctransform
 seqinr
 sf

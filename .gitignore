@@ -78,3 +78,6 @@ research wiki/.obsidian/workspace*
 /维护记录/**/controlled-tags-red*/
 /维护记录/**/frontend-dist/
 /维护记录/**/node_modules/
+
+# 本地 agent 会话状态与日志（oh-my-* / hooks）：非知识内容，不入库。
+/.omx/

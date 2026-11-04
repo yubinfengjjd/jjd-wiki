@@ -1,0 +1,68 @@
+{
+  "functions": {
+    "eval_binary": {
+      "original_ast_sha256": "e2d44bb034a25a3b7f47e515ff3ff51a0bc09d8d986b1d28de7a736b9b73279f",
+      "extracted_ast_sha256": "e2d44bb034a25a3b7f47e515ff3ff51a0bc09d8d986b1d28de7a736b9b73279f",
+      "ast_equal": true,
+      "original_line": 725
+    },
+    "compute_specificity": {
+      "original_ast_sha256": "adbc96892292b9f978fc0f7fa3d62e901b6095a7ca247d1ab7b1772bef94da53",
+      "extracted_ast_sha256": "adbc96892292b9f978fc0f7fa3d62e901b6095a7ca247d1ab7b1772bef94da53",
+      "ast_equal": true,
+      "original_line": 316
+    },
+    "youden_threshold": {
+      "original_ast_sha256": "cec710c39083115e0b6a3a433a84d15aee4961966511b4ce9e77a6308150f402",
+      "extracted_ast_sha256": "cec710c39083115e0b6a3a433a84d15aee4961966511b4ce9e77a6308150f402",
+      "ast_equal": true,
+      "original_line": 743
+    },
+    "bootstrap_ci_auc": {
+      "original_ast_sha256": "d650eabe38d5fc01adcd9c9352bae21225daacf483b9bbf28fed2f9baac79595",
+      "extracted_ast_sha256": "d650eabe38d5fc01adcd9c9352bae21225daacf483b9bbf28fed2f9baac79595",
+      "ast_equal": true,
+      "original_line": 750
+    },
+    "get_proba": {
+      "original_ast_sha256": "27850291d10dded316743c1aa59f9901482a2424fa7445cc6949429516e08698",
+      "extracted_ast_sha256": "27850291d10dded316743c1aa59f9901482a2424fa7445cc6949429516e08698",
+      "ast_equal": true,
+      "original_line": 306
+    }
+  },
+  "plot": {
+    "helpers": {
+      "style_axes": {
+        "ast_equal": true,
+        "original_ast_sha256": "f0d3b6c651e8496650094cb3ca52f62062da2cb51324aa62b7805609ef6862e4",
+        "original_line": 20
+      },
+      "draw_auc_strip": {
+        "ast_equal": true,
+        "original_ast_sha256": "86d87f0a1dd6e4eaf80b09a98608157f2e5b6d5f96c361ad5612f06d600cf04c",
+        "original_line": 33
+      }
+    },
+    "native_drawing_lines": [
+      160,
+      161
+    ],
+    "native_prefix_lines": [
+      127,
+      128
+    ],
+    "native_suffix_lines": [
+      170,
+      171,
+      172,
+      173,
+      174,
+      177,
+      179
+    ],
+    "boundary": "Original visual body consumes fixed precomputed curves; source loading, label inference, score inversion and AUC fitting are excluded."
+  },
+  "original_metrics_sha256": "897ad6da08a5d2f8446a3dafa75b785bd19b687d20882888618fa423a8b97659",
+  "original_plot_sha256": "d421312f0c2a8f10c25837c95ecf085235d036db2d200dab5b4e8e32a8793fe0"
+}

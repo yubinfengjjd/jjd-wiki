@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-03T11:39:30.730640+00:00",
+  "scope": "Tooling syntax/orchestration only; no scientific method executed",
+  "python_compiled": [
+    "discover.py",
+    "replay.py",
+    "test_replay.py"
+  ],
+  "python_test_command": "<wiki-python> -B -X utf8 <method-replay>/test_replay.py",
+  "python_test_exitcode": 0,
+  "python_test_output": "test_actual_checks_required_and_file_mutation_rejected (__main__.ReplayTests.test_actual_checks_required_and_file_mutation_rejected) ... ok\ntest_manifest_rejects_duplicate_or_missing_entry (__main__.ReplayTests.test_manifest_rejects_duplicate_or_missing_entry) ... ok\ntest_manifest_rejects_path_escape (__main__.ReplayTests.test_manifest_rejects_path_escape) ... ok\ntest_mapping_covers_inventory_and_preserves_no_run_state (__main__.ReplayTests.test_mapping_covers_inventory_and_preserves_no_run_state) ... ok\ntest_plot_no_eval_or_derived_tokens (__main__.ReplayTests.test_plot_no_eval_or_derived_tokens) ... ok\ntest_real_velocity_input_is_not_misclassified_as_missing (__main__.ReplayTests.test_real_velocity_input_is_not_misclassified_as_missing) ... ok\ntest_synthetic_and_unjustified_cases_never_allowlisted (__main__.ReplayTests.test_synthetic_and_unjustified_cases_never_allowlisted) ... ok\ntest_zero_exit_does_not_grant_execution_or_algorithm_pass (__main__.ReplayTests.test_zero_exit_does_not_grant_execution_or_algorithm_pass) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.019s\n\nOK\n",
+  "r_parse_command": "<Rscript> --vanilla -e <base-R parse of driver.R supplied on stdin>",
+  "r_parse_exitcode": 0,
+  "r_parse_output": "R_PARSE_OK\r\n",
+  "r_packages_loaded_for_parse": false,
+  "mapping_summary": {
+    "pages": 43,
+    "implementations": 85,
+    "historical_states": {
+      "passed": 51,
+      "not_run": 31,
+      "missing": 3
+    },
+    "categories": {
+      "scientific_input_or_choice_required": 12,
+      "recorded_case_required": 4,
+      "public_replay_candidate": 20,
+      "catalog_only": 1,
+      "historical_artifact_or_case_required": 39,
+      "public_input_backend_required": 1,
+      "derived_input_required": 8
+    },
+    "parameterized_public_candidates": 21
+  },
+  "historical_case_receipts": 248,
+  "entrypoint_consistency_checks": 21,
+  "velocity_input_correction": "Primary task actually inspected public RNA/spliced/unspliced assays; current remaining blocker is undeclared installed SCP Python backend",
+  "public_python_case": "Proposal only; no training or threshold selection performed"
+}

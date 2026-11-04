@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-11-03T18:57:50.435145+00:00",
+  "scope": "Read-only inspection of the already fitted approved public model; no additional fit/prediction/threshold selection",
+  "train_count": 426,
+  "heldout_count": 143,
+  "train_class_counts": [
+    159,
+    267
+  ],
+  "heldout_class_counts": [
+    53,
+    90
+  ],
+  "target_encoding": {
+    "0": "malignant",
+    "1": "benign"
+  },
+  "positive_class": "benign",
+  "scaler_params": {
+    "copy": true,
+    "with_mean": true,
+    "with_std": true
+  },
+  "logistic_params": {
+    "C": 1.0,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 2000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 11,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "logistic_n_iter": [
+    16
+  ],
+  "scaler_training_mean_exact": true,
+  "indices_disjoint": true,
+  "indices_cover_569_real_samples": true,
+  "feature_order": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "train_auc": 0.999104892469319,
+  "heldout_auc": 0.9888888888888889,
+  "model_object_sha256_before": "3c635918791a7dcb9b886a3de3d44b325af1e3ab57614ae098ce0826efa7dcfb",
+  "model_object_sha256_after": "3c635918791a7dcb9b886a3de3d44b325af1e3ab57614ae098ce0826efa7dcfb"
+}

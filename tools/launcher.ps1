@@ -1,18 +1,29 @@
 # Hidden launcher for the knowledge-base UI.
 # Starts the local server, opens one browser window, and stops the server when that window closes.
-# Log: E:\research-wiki\.launcher.log
+# Log: .launcher.log in the vault checkout.
 
 $ErrorActionPreference = 'Stop'
-$root = 'E:\research-wiki'
+$root = Split-Path -Parent $PSScriptRoot
 $log = Join-Path $root '.launcher.log'
-$port = 8765
-$url = "http://127.0.0.1:$port/"
-$python = 'C:\Users\86186\.codex\venvs\research-wiki\Scripts\python.exe'
-$wiki = 'C:\Users\86186\.claude\skills\research-wiki\wiki.py'
 
 function Write-Log($message) {
     "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  $message" | Add-Content -LiteralPath $log -Encoding UTF8
 }
+
+try {
+    . (Join-Path $PSScriptRoot 'machine-paths.ps1')
+    $machine = Get-RWikiMachine
+    Set-RWikiEnvironment $machine
+    $port = if ($machine.Config.port) { [int]$machine.Config.port } else { 8765 }
+    if ($port -lt 1 -or $port -gt 65535) { throw 'Invalid machine config port; expected 1..65535.' }
+} catch {
+    Write-Log "bootstrap failed: $($_.Exception.Message)"
+    [Console]::Error.WriteLine($_.Exception.Message)
+    exit 1
+}
+$url = "http://127.0.0.1:$port/"
+$python = $machine.Python
+$wiki = $machine.Wiki
 
 function Test-Port([int]$p) {
     $client = New-Object System.Net.Sockets.TcpClient
@@ -54,12 +65,7 @@ function Stop-WikiServer {
 
 Write-Log '--- start'
 
-$env:TEMP = 'E:\research-wiki-env\tmp'
-$env:TMP = 'E:\research-wiki-env\tmp'
-$env:MPLCONFIGDIR = 'E:\research-wiki-env\tmp\mpl'
-$env:PYTHONDONTWRITEBYTECODE = '1'
-
-$serverArgs = @('-X', 'utf8', $wiki)
+$serverArgs = @('-X', 'utf8', ('"' + $wiki + '"'), '--config', ('"' + $machine.ConfigPath + '"'))
 if ($env:RWIKI_WIKI_ROOT) {
     # UI writes go to the task-branch checkout set up by `wiki.py gh start-task --worktree`.
     # Start-Process joins arguments with spaces, so quote the path (no trailing backslash before the quote).
@@ -97,7 +103,7 @@ if ($browserExe) {
     $profile = Join-Path $env:TEMP ('wiki-browser-' + [guid]::NewGuid().ToString('N').Substring(0, 8))
     $browser = Start-Process -FilePath $browserExe -PassThru -ArgumentList @(
         "--app=$url",
-        "--user-data-dir=$profile",
+        ('--user-data-dir="' + $profile + '"'),
         '--no-first-run',
         '--no-default-browser-check',
         '--disable-background-mode',

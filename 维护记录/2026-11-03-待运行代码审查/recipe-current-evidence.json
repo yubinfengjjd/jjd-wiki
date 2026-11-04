@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "id": "figureya-11bubble",
+      "state": "pass",
+      "run_id": "20261104T042049Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    },
+    {
+      "id": "figureya-13gsea-java-update",
+      "state": "pass",
+      "run_id": "20261104T042049Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    },
+    {
+      "id": "figureya-59volcanov2",
+      "state": "pass",
+      "run_id": "20261104T042049Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    },
+    {
+      "id": "figureya-92immune-gene-update",
+      "state": "pass",
+      "run_id": "20261104T042054Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    },
+    {
+      "id": "figureya-153ccgraph",
+      "state": "pass",
+      "run_id": "20261104T042057Z",
+      "profile": "recipe153"
+    },
+    {
+      "id": "figureya-61gsva",
+      "state": "pass",
+      "run_id": "20261104T042102Z",
+      "profile": "recipe61"
+    },
+    {
+      "id": "figureya-193risktable",
+      "state": "pass",
+      "run_id": "20261104T042109Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    },
+    {
+      "id": "figureya-228linkcor",
+      "state": "pass",
+      "run_id": "20261104T042118Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    },
+    {
+      "id": "figureya-236circgroup",
+      "state": "pass",
+      "run_id": "20261104T042121Z",
+      "profile": "Wiki R 4.5/Bioc3.21"
+    }
+  ],
+  "all_historical_receipts_unchanged": true
+}

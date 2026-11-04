@@ -1,0 +1,73 @@
+{
+  "scope": "Six actual public software cases; primary review required before formal adoption",
+  "contract_adjustments": [
+    "Audit kind changed to accepted method kind",
+    "Command serialized as a nonempty Windows argv string",
+    "Check mapping rendered as nonempty string assertions",
+    "Official runtime_contract.closure_hash applied to unchanged current manifest/closure",
+    "All current code files bound, executed closure listed separately"
+  ],
+  "official_pointer_validation": "not_run; no formal Wiki file was written",
+  "candidates": [
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-eval-binary",
+      "algorithm": "py-eval-binary-public-breast-cancer-20261103-algorithm.json",
+      "portability": "py-eval-binary-public-breast-cancer-20261103-portability.json",
+      "comparison": "py-eval-binary-public-breast-cancer-20261103-comparison.json",
+      "closure_hash": "cf4de9f45f4741cd372069220380c806e4be6f5f6e07abc805d7870870d67440",
+      "full_code_files_bound": 365,
+      "closure_files_executed": 1
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-compute-specificity",
+      "algorithm": "py-compute-specificity-public-breast-cancer-20261103-algorithm.json",
+      "portability": "py-compute-specificity-public-breast-cancer-20261103-portability.json",
+      "comparison": "py-compute-specificity-public-breast-cancer-20261103-comparison.json",
+      "closure_hash": "cf4de9f45f4741cd372069220380c806e4be6f5f6e07abc805d7870870d67440",
+      "full_code_files_bound": 365,
+      "closure_files_executed": 1
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-youden-threshold",
+      "algorithm": "py-youden-threshold-public-breast-cancer-20261103-algorithm.json",
+      "portability": "py-youden-threshold-public-breast-cancer-20261103-portability.json",
+      "comparison": "py-youden-threshold-public-breast-cancer-20261103-comparison.json",
+      "closure_hash": "cf4de9f45f4741cd372069220380c806e4be6f5f6e07abc805d7870870d67440",
+      "full_code_files_bound": 365,
+      "closure_files_executed": 1
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-bootstrap-ci-auc",
+      "algorithm": "py-bootstrap-ci-auc-public-breast-cancer-20261103-algorithm.json",
+      "portability": "py-bootstrap-ci-auc-public-breast-cancer-20261103-portability.json",
+      "comparison": "py-bootstrap-ci-auc-public-breast-cancer-20261103-comparison.json",
+      "closure_hash": "cf4de9f45f4741cd372069220380c806e4be6f5f6e07abc805d7870870d67440",
+      "full_code_files_bound": 365,
+      "closure_files_executed": 1
+    },
+    {
+      "method": "local-omics-analysis-guide",
+      "implementation": "py-get-proba",
+      "algorithm": "py-get-proba-public-breast-cancer-20261103-algorithm.json",
+      "portability": "py-get-proba-public-breast-cancer-20261103-portability.json",
+      "comparison": "py-get-proba-public-breast-cancer-20261103-comparison.json",
+      "closure_hash": "cf4de9f45f4741cd372069220380c806e4be6f5f6e07abc805d7870870d67440",
+      "full_code_files_bound": 365,
+      "closure_files_executed": 1
+    },
+    {
+      "method": "local-omics-visualization-guide",
+      "implementation": "py-roc-render",
+      "algorithm": "py-roc-render-public-breast-cancer-20261103-algorithm.json",
+      "portability": "py-roc-render-public-breast-cancer-20261103-portability.json",
+      "comparison": "py-roc-render-public-breast-cancer-20261103-comparison.json",
+      "closure_hash": "9802bffceab3ec8ac000a4569c0439c3907478d28bbcdef102434dc514a18234",
+      "full_code_files_bound": 2,
+      "closure_files_executed": 1
+    }
+  ]
+}

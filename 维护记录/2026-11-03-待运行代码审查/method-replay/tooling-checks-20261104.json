@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-11-03T19:00:05.338720+00:00",
+  "scope": "Continuation verification only; no passed scientific/software call or training was rerun",
+  "python_sources_compiled": [
+    "collect_public_evidence.py",
+    "discover.py",
+    "prepare_receipt_candidates.py",
+    "public_python_replay.py",
+    "replay.py",
+    "test_replay.py"
+  ],
+  "orchestration_test_count": 8,
+  "orchestration_test_exit": 0,
+  "orchestration_test_output": "test_actual_checks_required_and_file_mutation_rejected (__main__.ReplayTests.test_actual_checks_required_and_file_mutation_rejected) ... ok\ntest_manifest_rejects_duplicate_or_missing_entry (__main__.ReplayTests.test_manifest_rejects_duplicate_or_missing_entry) ... ok\ntest_manifest_rejects_path_escape (__main__.ReplayTests.test_manifest_rejects_path_escape) ... ok\ntest_mapping_covers_inventory_and_preserves_no_run_state (__main__.ReplayTests.test_mapping_covers_inventory_and_preserves_no_run_state) ... ok\ntest_plot_no_eval_or_derived_tokens (__main__.ReplayTests.test_plot_no_eval_or_derived_tokens) ... ok\ntest_real_velocity_input_is_not_misclassified_as_missing (__main__.ReplayTests.test_real_velocity_input_is_not_misclassified_as_missing) ... ok\ntest_synthetic_and_unjustified_cases_never_allowlisted (__main__.ReplayTests.test_synthetic_and_unjustified_cases_never_allowlisted) ... ok\ntest_zero_exit_does_not_grant_execution_or_algorithm_pass (__main__.ReplayTests.test_zero_exit_does_not_grant_execution_or_algorithm_pass) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.028s\n\nOK\n",
+  "public_case_passes_verified": 6,
+  "author_deferred_monocle": 4,
+  "candidate_sets_structurally_checked": 6,
+  "candidate_current_code_hashes_match": true,
+  "official_pointer_validation": "not_run; formal Wiki untouched",
+  "fit_inspection": "existing fitted model only; arrays/model state preserved"
+}

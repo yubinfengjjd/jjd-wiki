@@ -19,7 +19,6 @@ R	condsurv	0	0	unresolved	condsurv				L0-candidate:figureya:figureya:FigureYa183
 R	crosslink	0	0	unresolved	crosslink				L0-candidate:figureya:figureya:FigureYa256panelLink
 R	fishplot	0	0	unresolved	fishplot				L0-candidate:figureya:figureya:FigureYa87fish
 R	gganatogram	0	0	unresolved	gganatogram				L0-candidate:figureya:figureya:FigureYa78gganatogram
-R	ggcor	1	0	unresolved	ggcor				L0-candidate:figureya:figureya:FigureYa228linkCor;recipe-used:知识库/recipes/figureya-228linkcor.md
 R	ifnb.SeuratData	0	0	unresolved	ifnb.SeuratData				L0-candidate:figureya:figureya:FigureYa267scCellChat
 R	immunedeconv	0	0	unresolved	immunedeconv				L0-candidate:figureya:figureya:FigureYa264epiImmune
 R	lolR	0	0	unresolved	lolR				L0-candidate:figureya:figureya:FigureYa246supervisedGDSC

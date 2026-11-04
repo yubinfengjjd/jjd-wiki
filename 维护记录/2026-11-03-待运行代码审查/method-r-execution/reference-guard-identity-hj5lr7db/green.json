@@ -1,0 +1,40 @@
+{
+  "phase": "green",
+  "child_returncode": 0,
+  "argv": [
+    "<ENV_ROOT>\\R-4.5.0\\bin\\x64\\Rscript.exe",
+    "--vanilla",
+    "<ENV_ROOT>\\method-runs\\reference-guard-identity-hj5lr7db\\green\\driver.R",
+    "<ENV_ROOT>\\method-runs\\reference-guard-identity-hj5lr7db\\green\\pancreas_sub.rda",
+    "<ENV_ROOT>\\method-runs\\reference-guard-identity-hj5lr7db\\green\\module",
+    "<ENV_ROOT>\\method-runs\\reference-guard-identity-hj5lr7db\\green",
+    "<ENV_ROOT>\\method-runs\\reference-guard-identity-hj5lr7db\\green\\recorded-input.rds"
+  ],
+  "report": {
+    "kind": "missing-reference-loadings-regression",
+    "passed": true,
+    "execution_state": "not_run",
+    "algorithm_verification_state": "not_run",
+    "expected_error": "Reference reduction 'PCA' has no feature loadings; pcaproject requires a fitted reference reduction with feature loadings.",
+    "actual_error": "Reference reduction 'PCA' has no feature loadings; pcaproject requires a fitted reference reduction with feature loadings.",
+    "input_object_unchanged": true,
+    "input_serialized_sha256": "bfe07935f33e90652eb314c94e7c6e99121523367085ca4ee8d6180532984d97",
+    "reference_loadings_dim": [
+      0,
+      0
+    ],
+    "scientific_parameters_changed": false
+  },
+  "original_and_copy_files_unchanged": true,
+  "source_sha256": {
+    "analysis.R": "cceada1f1afce275c8598ad1e085d2554e0c92567767655c960ec36f782d6285",
+    "reference_native.R": "5625a4d91b09bb2fbf938810e1ecf4a2ea5a3dcc76336c2f7c51e39b30f03066"
+  },
+  "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "recorded_input_file_sha256": "bfe07935f33e90652eb314c94e7c6e99121523367085ca4ee8d6180532984d97",
+  "driver_sha256": "5e78385747d0d876201cb18b660fd86a668a6e8da2d0b9cb5e1eb1b135f98e86",
+  "log_tails": {
+    "stdout.log": "",
+    "stderr.log": "Loading required namespace: SeuratObject"
+  }
+}

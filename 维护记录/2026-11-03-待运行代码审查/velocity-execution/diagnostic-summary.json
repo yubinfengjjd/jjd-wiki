@@ -1,0 +1,21 @@
+{
+  "state": "failed",
+  "returncode": 1,
+  "elapsed_seconds": 55.394459,
+  "same_case_and_parameters_as_first_run": true,
+  "only_driver_change": "Capture Python traceback and R stack before unwinding; no method/package/fixture changes",
+  "source_and_input_files_unchanged": true,
+  "in_memory_srt_unchanged": "not_checked because call failed before existing post-return assertion",
+  "final_result_rds_exists": false,
+  "confirmed_error_location": "scvelo/core/_parallelize.py:138 np.array(res), reached from velocity_graph.py:175 via SCP_analysis.py:167",
+  "runtime_portability": "not_run; SCP Python backend is an undeclared installed dependency",
+  "algorithm_verification": "not_run",
+  "raw_external_sha256": {
+    "execution-audit.json": "2ff79a61ff07eeb0598eb97a47e68c8b2a1ebd8e379f000298ee3b770dbc28d3",
+    "child.json": "3f7e63f89c49a915c9fff84ba39957d3c83bd3b09fe4c9073f3eac84c7d7f87c",
+    "stdout.log": "0eb297c8b1cfc75a242d3a09390aea8742a864fdff7ed81b9bebdeb4c4a7213d",
+    "stderr.log": "4ebdd0ce01ef2094d64d02a5dcc05b944a59d71c96fb2ebfb9101adf98d12cc0",
+    "driver.R": "87f5febbe9382748ada7ed0143d3c273f94c9ccc47a74a1c01bfd3f0f2703a26"
+  },
+  "original_coordinator_identical": true
+}
