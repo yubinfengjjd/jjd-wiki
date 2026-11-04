@@ -66,7 +66,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa231scScore.Rmd`）
 - 依赖：CRAN RColorBrewer, Seurat, tidyverse；Bioconductor GO.db, biomaRt
-- 最近运行：fail（as-is，2026-11-04 11:05 UTC，133.4 秒）
+- 最近运行：fail（as-is，2026-11-04 13:34 UTC，87.8 秒）
 - 派生模板（L2）：暂无
 <!-- facts:end -->
 
