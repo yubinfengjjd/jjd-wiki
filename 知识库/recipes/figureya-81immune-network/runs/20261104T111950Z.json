@@ -1,0 +1,90 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-81immune-network",
+  "run_id": "20261104T111950Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa81immune_network.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:19:50+00:00",
+  "duration_s": 7.6,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "corrplot": "0.95",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.9",
+      "igraph": "2.3.4",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "lifecycle": "1.0.5",
+      "magrittr": "2.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pkgconfig": "2.0.3",
+      "plyr": "1.8.9",
+      "Rcpp": "1.1.2",
+      "reshape2": "1.4.5",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "stats": "4.5.0",
+      "stringi": "1.8.9",
+      "stringr": "1.6.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "easy_input_HR.csv": "1452649000fd2ae08176e975dc078b60d125e9cc0482906af91fa96039aa85cb",
+    "easy_input_immune.csv": "bfcd4973f3d6afd8258b64e64fffa970bd6c46697b2969b83b7d24a2fe3af1d0",
+    "example.png": "51a7ad6864168e852b6bc2e1705870a0792c042142c4c6f77a1ca0ebc7dc6be7",
+    "FigureYa81immune_network.Rmd": "d06ac220e1ad6b7e685289c086f88a60c9dae135dba6fa07747e105c400056d1",
+    "Immune_network.pdf": "17f1dba9bb87cc5be6dca656fe7624a73ce2522f0d2187a5f835c818d7bf5fbf",
+    "install.log": "4c8c4a07ff8090d1cd6297f01d774190a9497077cb7662eec00230fff2e12476",
+    "install_dependencies.R": "c42df1ea1c148ba2a358abeb9c1c8482519565f8cd34634cefc724aeabede687",
+    "output_HR_corlor.csv": "56aa7ab83269da34007e9079931ff7fdddf02f2c21012ae10ccf342d7ba3afc8",
+    "output_links.csv": "6bdf1807fb80f155708c87988db8f7f0c5fb5678f259b7663fd2ba83fa52a727"
+  },
+  "outputs": {
+    "Immune_network.pdf": "7af07b5fa1b154b9f09f70df352fc05d93f0bbd5b1b00c5a1073269596541a2b",
+    "rwiki-figure/unnamed-chunk-4-1.png": "ac881c143a99dc352dac5264073e785141aef80c9e99204eceff673c86138e00"
+  },
+  "expected_outputs": [
+    "Immune_network.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-4-1.png"
+  ],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "rwiki-figure/unnamed-chunk-4-1.png",
+    "kind": "png"
+  },
+  "workdir": "<work_root>/runs/figureya-81immune-network/20261104T111950799713Z"
+}

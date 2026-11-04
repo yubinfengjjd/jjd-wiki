@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-163twovarcor-update",
+  "run_id": "20261104T110137Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa163twoVarCor_update.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:01:37+00:00",
+  "duration_s": 11.2,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "dichromat": "2.0.1",
+      "digest": "0.6.39",
+      "dplyr": "1.2.1",
+      "evaluate": "1.0.5",
+      "farver": "2.1.2",
+      "fastmap": "1.2.0",
+      "generics": "0.1.4",
+      "ggplot2": "4.0.3",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "gtable": "0.3.6",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "lifecycle": "1.0.5",
+      "magrittr": "2.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pillar": "1.11.1",
+      "pkgconfig": "2.0.3",
+      "R6": "2.6.1",
+      "RColorBrewer": "1.1.3",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "S7": "0.2.2",
+      "scales": "1.4.0",
+      "stats": "4.5.0",
+      "tibble": "3.3.1",
+      "tidyselect": "1.2.1",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "vctrs": "0.7.3",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "easy_input.csv": "aa79d9d11657c5fb04d5c86a78e306317ef777b385fd77cd904d8af5b64a54d1",
+    "example.png": "c1476d9a830f9373346c44bd4d3836dd68fd67e202a84949d817eb763f2e70d8",
+    "FigureYa163twoVarCor_update.Rmd": "17cf78be1944b91eb60bb2751335a6c1df620233c58177faabc603a381a670f2",
+    "method.jpg": "f78d65119328b3ce24e5b4bce5b77720c8b0672d6e5b13ae415540818c1713e2",
+    "Readme.png": "0b7a40b6de80e26c22d6fef75784181770cdbbc7a0e3c04ff56a9bbc76d913ca",
+    "TwoVarCor.pdf": "fd5416f1b4f2e1a5d4181fd3f6bd37f3c54bf32fc0c56023c6439e7203abb175"
+  },
+  "outputs": {
+    "TwoVarCor.pdf": "7550cbb68700d261b36b6340cf247a5d3c1c3578a2c76a2f9394091c160e0411"
+  },
+  "expected_outputs": [
+    "TwoVarCor.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "TwoVarCor.pdf",
+    "page": 1,
+    "kind": "pdf"
+  },
+  "workdir": "<work_root>/runs/figureya-163twovarcor-update/20261104T110137473101Z"
+}

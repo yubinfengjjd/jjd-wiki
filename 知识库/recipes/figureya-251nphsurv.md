@@ -64,8 +64,11 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa251NPHSurv.Rmd`）
 - 依赖：CRAN ggplot2, ggpubr, survminer；Bioconductor ComparisonSurv, survRM2
-- 最近运行：尚无当前原字节的运行收据
+- 最近运行：pass（as-is，2026-11-04 11:08 UTC，30.9 秒）
 - 派生模板（L2）：暂无
+- 运行预览（最近一次通过的原样运行，取自 `kaplan meier curve1.pdf` 第 1 页）：
+
+![[recipes/figureya-251nphsurv/preview.png]]
 <!-- facts:end -->
 
 ## 用途

@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-32id-table",
+  "run_id": "20261104T111313Z",
+  "scope": "as-is",
+  "state": "fail",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa32ID_table.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:13:13+00:00",
+  "duration_s": 15.9,
+  "exit_code": 1,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "dplyr": "1.2.1",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "generics": "0.1.4",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "lifecycle": "1.0.5",
+      "magrittr": "2.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pillar": "1.11.1",
+      "pkgconfig": "2.0.3",
+      "purrr": "1.2.2",
+      "R6": "2.6.1",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "stats": "4.5.0",
+      "tibble": "3.3.1",
+      "tidyr": "1.3.2",
+      "tidyselect": "1.2.1",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "vctrs": "0.7.3",
+      "withr": "3.0.3",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "easy_input_expr.txt": "a5074a7ab5888b49e3d17b0ee661a60f9d4e4c33d9d39805628273a5c196a935",
+    "FigureYa32ID_table.jpg": "e3f39a4ba79faf98c792cd8bdf878f02d7b5e383b4366f6bf01c2bf056ce6685",
+    "FigureYa32ID_table.Rmd": "c9591d6162494d531248aa87f7bc04cea6895d3aca07f2df854e5f3edf52760b",
+    "guozixueshengxin.jpeg": "469f61ae846b735cd4a41c6bf862967e699ba0c6c35dc693da71a790680312cf",
+    "install.log": "982c0986a966baa0ec544588ff902a382d446a07d5aa1ac33eb995db45e38ddb",
+    "install_dependencies.R": "e48130ae7780c2b810fe873abd7e41e845e19256fe1a6bf3daf0c6bb526cad68",
+    "not_easy_input_expr.txt": "18ed7b39534eb05ebfb4a70ab327fc90a78184589ccff868493d9ba5d0c08017",
+    "not_easy_input_GO.txt": "7fe6f0d084ed4eb1906e32f99de3545fe1c34bec3b2bbf14808c8a79dcf03eec"
+  },
+  "outputs": {
+    "GO": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "expected_outputs": [],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "invalid 'description' argument",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-32id-table/20261104T111313118937Z"
+}

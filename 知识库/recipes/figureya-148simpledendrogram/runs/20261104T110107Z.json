@@ -1,0 +1,87 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-148simpledendrogram",
+  "run_id": "20261104T110107Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa148SimpleDendrogram.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:01:07+00:00",
+  "duration_s": 7.7,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "ClassDiscovery": "3.4.11",
+      "cli": "3.6.6",
+      "cluster": "2.1.8.3",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "dendsort": "0.3.4",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "mclust": "6.1.3",
+      "methods": "4.5.0",
+      "oompaBase": "3.2.12",
+      "oompaData": "3.1.7",
+      "otel": "0.2.0",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "squash": "1.0.9",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "dendrogram for validation 1.pdf": "42dfbf71b4c99b9dd9e4294367fca03ec9072d9aac989cfd27eb9054677d7001",
+    "dendrogram for validation 2.pdf": "c3d2f9ba0d971a6666a010ea4e59b14a76136c6765272bf70aa00a8a6d007ad4",
+    "easy_input_set1.txt": "2db4080b69b1685b5662c200ad6b647288808002e611e41102eb197c0938b9db",
+    "easy_input_set2.txt": "afac987d501af95c7354dca867316fa99a4ca2a8fd6eeec06a56a232e1fd9899",
+    "easy_input_set2_suv.txt": "99a1245b40b764a7409ea5b091ae826bdcd7a03db63fb2b78314e448e9c99fef",
+    "example.png": "bdc8077c2c6d98f2fa999b4080acac61f88d60ed38aa62bd1d7e71f3d726404e",
+    "FigureYa148SimpleDendrogram.Rmd": "3911a905037a344a32c1340a9c526079669904a2fecebf3e3e929c974ac6e35c",
+    "install.log": "c217657b8f522e7499b43d92ad85d3ce27ca18bb4ba9ee14bb747263f5241e57",
+    "install_dependencies.R": "f6b30afc69255f1f62cc48f2bbabbf0115c9d74579a3d2995591bc43073b9f16",
+    "Readme.png": "82eedf568ae0afc41c464683a842b677a05009d568f651e274f689720691df24"
+  },
+  "outputs": {
+    "dendrogram for validation 1.pdf": "11ba66cf9952dcb733e62c7ae8c3937da5fb153a7521d0f01814e7fc91873561",
+    "dendrogram for validation 2.pdf": "4cdbc4a86b064e5a4afa3aca559f6150dc7a0a632ad2a01d42ec6a6ccf5f186c"
+  },
+  "expected_outputs": [
+    "dendrogram for validation 1.pdf",
+    "dendrogram for validation 2.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 2/2"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "dendrogram for validation 1.pdf",
+    "page": 1,
+    "kind": "pdf"
+  },
+  "workdir": "<work_root>/runs/figureya-148simpledendrogram/20261104T110107111396Z"
+}

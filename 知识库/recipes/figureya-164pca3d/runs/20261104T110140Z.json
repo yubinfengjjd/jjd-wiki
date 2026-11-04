@@ -1,0 +1,82 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-164pca3d",
+  "run_id": "20261104T110140Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa164PCA3D.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:01:40+00:00",
+  "duration_s": 90.4,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "base64enc": "0.1.6",
+      "cli": "3.6.6",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "htmltools": "0.5.9",
+      "htmlwidgets": "1.6.4",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "magrittr": "2.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "png": "0.1.9",
+      "R6": "2.6.1",
+      "rgl": "1.3.36",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "CGGA.mRNA_array_301_clinical.20191128.txt": "ad1b4b26b66040ab19a3552df369e44d3df1d4f0e45b806f58b537b4745308dc",
+    "easy_input_expr.csv": "337cd9b8cea9aa70803acb1e6820587e8fb22afeb7d3365f2da1c5979f12378d",
+    "easy_input_expr_all.csv": "79804b5ade86cf30ca87ebfbd780fea3591f145c930b1c5e57065262e65f0fc0",
+    "easy_input_group1.txt": "94c8e5ed86a62f6e734ee42dd3c59899e163896e1e95501746cbe1abcf2d405f",
+    "easy_input_group2.txt": "839758d8455cfd0913142c97590ee08b6410b45cc67c76cfc7828957c7dc7984",
+    "example1.png": "19215f378305f364cd505a5bf75d1b05da4e26562818465831cb89ff10fe71aa",
+    "example2.png": "75e2705d34897bffceff4980b9d88429aecb03ac67bf49aeb8740d41f9b40515",
+    "FigureYa164PCA3D.Rmd": "8d214164e16b538176c0d4fef498a4602f1d9fb35eda7496baa92da6e947c8b1",
+    "IMMUNE_RESPONSE_M19817.txt": "7d606957a7da95ab81dfef19956e09aea9f1d31536b75ec1902e146c7206016c",
+    "IMMUNE_SYSTEM_PROCESS_M13664.txt": "37fc59ed4ce5e68e46fd4a8672d7f1b9326e1e48d7f40dff20036e79892c2e92",
+    "install.log": "68abd6023ffab81611806187c861e233eaf77c4f298105a45149180109915417",
+    "install_dependencies.R": "cbd977747b8197636188b447f3f093002547da82d01ec3e612086e0a453dc5b0",
+    "mypar3d.RData": "736e21a4d969dbec01ea3881905d3101bca89711497de1619c6859fdf502bdc9",
+    "PCA.png": "e4aa06b22af2459a670d842194c0a8d36d70284deb38d2ef902b79f7d50e3b36",
+    "Readme.png": "c00794eb8a4dae4dda6b74aae9b25527393bf652e21d5bcbc427de75e363a0b9"
+  },
+  "outputs": {
+    "PCA.png": "e38a7c5a44af49e6a4c393f46ad6e62ef0598aae0fd1b7bf73c70f2e88af7943"
+  },
+  "expected_outputs": [],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": null,
+  "workdir": "<work_root>/runs/figureya-164pca3d/20261104T110139998087Z"
+}

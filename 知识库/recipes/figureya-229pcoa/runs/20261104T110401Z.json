@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-229pcoa",
+  "run_id": "20261104T110401Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa229PCOA.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:04:01+00:00",
+  "duration_s": 264.4,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "ape": "5.8.1",
+      "base": "4.5.0",
+      "cli": "3.6.6",
+      "cluster": "2.1.8.3",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "lattice": "0.22.6",
+      "MASS": "7.3.65",
+      "Matrix": "1.7.3",
+      "methods": "4.5.0",
+      "mgcv": "1.9.1",
+      "nlme": "3.1.168",
+      "otel": "0.2.0",
+      "parallel": "4.5.0",
+      "permute": "0.9.10",
+      "RColorBrewer": "1.1.3",
+      "Rcpp": "1.1.2",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "splines": "4.5.0",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "usedist": "0.4.0",
+      "utils": "4.5.0",
+      "vegan": "2.7.6",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "basic scatter plot.pdf": "a593d88ad1e754ac19d2417f978cb22da428f71b13e3b33ea446665ef4940485",
+    "easy_input_expr.txt": "aa1e32036242889c8bc95460237660ce1c266e89008271a6dfcc9c294f43dea9",
+    "easy_input_sinfo.txt": "75719d5c1214cbd0be18ea263233c71d3c8412ccac87f036a0585eadc4319d46",
+    "example.png": "35fa0b72fd0fd5cff5b18486b6421cd3c47baf9d34f37be95466af5c2c9f7dfd",
+    "FigureYa229PCOA.Rmd": "5f8e1d1897994d908b00959f53e9a6eff01e5c550204665f756d82d2cae436f5",
+    "install.log": "de3d21202012602286cc8f61f821332f8ca772a9ba46363c2b28e1271081ad32",
+    "install_dependencies.R": "d740f8566126edefecd15bf1098bc281464c59752f66996560b712e37650d64f",
+    "output_av_sd.csv": "047744a9bdb0d002c540f73a3abcf5c8aac0189c2e023f4d99d373ef2081953d",
+    "output_PCoA1_PCoA2.csv": "75d5f074161b7e0c13529b55df88d9ee00757e0b5fb416f75c9236ed91cd8898",
+    "PCoA.pdf": "2b2b83df99dd3e0c3c97084c84fa58c0f4bca2e524cb363eca846c19733b7d9c"
+  },
+  "outputs": {
+    "basic scatter plot.pdf": "3c3b67d837485184cbe29cc1530911bf9d35c327aa4099f30014878840ca1a70",
+    "PCoA.pdf": "57b504407b6466c73d23d73cd294beb201ed15cab2de2daa8113e37dd8c8ba89"
+  },
+  "expected_outputs": [
+    "basic scatter plot.pdf",
+    "PCoA.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 2/2"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "basic scatter plot.pdf",
+    "page": 1,
+    "kind": "pdf"
+  },
+  "workdir": "<work_root>/runs/figureya-229pcoa/20261104T110401765811Z"
+}

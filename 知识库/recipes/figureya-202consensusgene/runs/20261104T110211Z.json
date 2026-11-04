@@ -1,0 +1,103 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-202consensusgene",
+  "run_id": "20261104T110211Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa202consensusGene.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:02:11+00:00",
+  "duration_s": 19.5,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "Biobase": "2.68.0",
+      "BiocGenerics": "0.54.1",
+      "cli": "3.6.6",
+      "cluster": "2.1.8.3",
+      "compiler": "4.5.0",
+      "ConsensusClusterPlus": "1.72.0",
+      "datasets": "4.5.0",
+      "dendsort": "0.3.4",
+      "dichromat": "2.0.1",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "farver": "2.1.2",
+      "fastmap": "1.2.0",
+      "generics": "0.1.4",
+      "glue": "1.8.1",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "gtable": "0.3.6",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "lifecycle": "1.0.5",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "pheatmap": "1.0.13",
+      "R6": "2.6.1",
+      "RColorBrewer": "1.1.3",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "scales": "1.4.0",
+      "stats": "4.5.0",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "consensus heatmap.pdf": "af49c3ee3cd1a1f40d9eca6ba1953959c77b4fe8266b7e0eb247c7d9b98481fe",
+    "ConsensusCluster/consensus.pdf": "20dafac26874bb411d835eb6ef9d551e16675c1847e20a5f19871fcb1b77a2be",
+    "example.png": "eb1a23bf3615e9a6146da5851dc9bfc28e2f931e9286e423515a38d554b65c1f",
+    "explain picture.png": "38229f0c263ba241e1cd20bbdf1f838d90a5bb24d30f36153c53658958c5c92b",
+    "FigureYa202consensusGene.Rmd": "5f827af765c984256daf4c69772a799c33f080be2a033c6c65c4d2f50da62ea3",
+    "install.log": "5bd1d9f5cc468e261e753cbd638a717459431f79c137a6a63388f386a960e034",
+    "install_dependencies.R": "0f3c23b4d4a1ae86d3f80c7de30a45cb6c6a9ccbb601a24ac0d165ca8b43339d",
+    "median classification heatmap.pdf": "0c8cffaea32706ccaa10be1f720046ee13c146e29c57d4d29be5d5d415aa3cc8",
+    "median classification.pdf": "f53670fe6c8e88b633bb4ea6cb5518f80ebfb675f3acc3e3a62cd6c0f4203de9",
+    "output_subgroup.txt": "dc3255118dcd9bad4cf8d7f08e9fcb39037a0e94af2e95e9afc2d3b246ad6e5d",
+    "REACTOME_CHOLESTEROL_BIOSYNTHESIS.txt": "1ed5747ea5a1d09557b5497bf4057b258e44be869e58e38a9c8bc437fe63950a",
+    "REACTOME_GLYCOLYSIS.txt": "b2bcb9e151cd5f7dc8f9196d8b534312b127d54cd209989fe1d1364da3fbe093",
+    "tcga.expr.simplified.txt": "bd450c8ac402ff5b8364ea18fdfca56ddc8f0ecb42ed8492de9ed4e102e7c24b"
+  },
+  "outputs": {
+    "consensus heatmap.pdf": "e2866b582e4a99f3b2444e2ca3af3f7a90cb93f886d75bd7c2a7bdbd48245b4b",
+    "ConsensusCluster/consensus.pdf": "ef344e507caa89c5c9edf7dacf4df1c5d2e4bc42b0c9a57ce8f0da3bd86d6e64",
+    "median classification heatmap.pdf": "d11d3113b94aea4b0b93384aac411bb52330b19aabf3c91e92cb52bd8dea51f6",
+    "median classification.pdf": "95a7b2f72afed647fb118658d28ceafd0825fd45d2395aa612bb58c50ab89da6",
+    "rwiki-figure/unnamed-chunk-5-1.png": "d8780e1834273dfa44d41d96e5089e43023062bb3c69b36b91805eeeda8a91ea",
+    "rwiki-figure/unnamed-chunk-6-1.png": "a36fa89d4b1592453eca9d2a472e6df0f8287bfe7c850b520ec94279ecd8844f",
+    "rwiki-figure/unnamed-chunk-7-1.png": "7429f3aef75c58550f1523e13a6e2299f49756e544d65a22487159140371aaed"
+  },
+  "expected_outputs": [],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-5-1.png",
+    "rwiki-figure/unnamed-chunk-6-1.png",
+    "rwiki-figure/unnamed-chunk-7-1.png"
+  ],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "rwiki-figure/unnamed-chunk-7-1.png",
+    "kind": "png"
+  },
+  "workdir": "<work_root>/runs/figureya-202consensusgene/20261104T110211009932Z"
+}

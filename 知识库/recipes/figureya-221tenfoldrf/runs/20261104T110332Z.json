@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-221tenfoldrf",
+  "run_id": "20261104T110332Z",
+  "scope": "as-is",
+  "state": "fail",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa221tenFoldRF.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:03:32+00:00",
+  "duration_s": 1801.1,
+  "exit_code": null,
+  "environment": {
+    "r_version": "",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {}
+  },
+  "code": {
+    "accuracy.pdf": "a6a7b7236f84f9ce671645563698d854bc745753c2652d6b1214a3dfab23fec6",
+    "easy_input_expr.txt": "da0306a7488048bf48e200e0bc68aa34a4c97986ed5820d72683fa413543955e",
+    "easy_input_gene.txt": "015416511cec416c3113e9648c13b4a68425aac26a71698d2f89ff47f2037a3a",
+    "easy_input_surv.txt": "785fbc7ad3c4ccb36dcf60e78e3ef9a7c787aaf8d2d0dd7f50c2388917bbc801",
+    "example.png": "2bd493613285f8e7630236a22a708cdfc0e9ffdec51867c9c6515557a6dea015",
+    "FigureYa221tenFoldRF.Rmd": "491eb8d623a176178536fad74883f196f7c91b01ea6e70d78025e13e4687124a",
+    "InnateDB_genes.csv": "215c44af3052af8831f9e8dce812282d601f9592998c6a6ae8c6958bafad9abb",
+    "install_dependencies.R": "4399aedf099991a94e716f554975bd6de2d06df95d541aeb806ad1b2a5717e3b",
+    "KM.pdf": "978f371018d3e79dd9aab9b886b36feae3516db5ebdc557122dc98e5770dc022",
+    "output_accuracy result.txt": "94737a7f27a99a784681db630657334568d60bf5aee91f83c6872b6973b2261f",
+    "output_selected features.txt": "ac92e37df709f8c996d979dfbf46a6be5b1abfffe937aec425709079d9bd4503"
+  },
+  "outputs": {},
+  "expected_outputs": [
+    "accuracy.pdf",
+    "KM.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "超过 1800 秒未结束，已终止",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 超时",
+    "预期输出存在 2/2"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-221tenfoldrf/20261104T110332100352Z"
+}

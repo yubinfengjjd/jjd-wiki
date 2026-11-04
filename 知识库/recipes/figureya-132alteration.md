@@ -75,8 +75,11 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa132alteration.Rmd`）
 - 依赖：CRAN BRCA_Basal, BRCA_Her2, BRCA_LumA, BRCA_LumB, BRCA_Normal, CESC_AdenoCarcinoma, CESC_SquamousCarcinoma, GBM_IDHwt, LGG_IDHwt, SARC_Other, TGCT_seminoma, Total, ggplot2, reshape2
-- 最近运行：尚无当前原字节的运行收据
+- 最近运行：pass（as-is，2026-11-04 11:00 UTC，70.3 秒）
 - 派生模板（L2）：暂无
+- 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
+
+![[recipes/figureya-132alteration/preview.png]]
 <!-- facts:end -->
 
 ## 用途

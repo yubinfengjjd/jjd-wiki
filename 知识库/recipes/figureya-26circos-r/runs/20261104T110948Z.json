@@ -1,0 +1,84 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-26circos-r",
+  "run_id": "20261104T110948Z",
+  "scope": "as-is",
+  "state": "pass",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa26circos_R.Rmd rwiki-knit.md",
+  "started_at": "2026-11-04T11:09:48+00:00",
+  "duration_s": 8.5,
+  "exit_code": 0,
+  "environment": {
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {
+      "base": "4.5.0",
+      "circlize": "0.4.18",
+      "cli": "3.6.6",
+      "colorspace": "2.1.4",
+      "compiler": "4.5.0",
+      "datasets": "4.5.0",
+      "digest": "0.6.39",
+      "evaluate": "1.0.5",
+      "fastmap": "1.2.0",
+      "GlobalOptions": "0.1.4",
+      "graphics": "4.5.0",
+      "grDevices": "4.5.0",
+      "grid": "4.5.0",
+      "htmltools": "0.5.9",
+      "jsonlite": "2.0.0",
+      "knitr": "1.52",
+      "methods": "4.5.0",
+      "otel": "0.2.0",
+      "rlang": "1.3.0",
+      "rmarkdown": "2.32",
+      "shape": "1.4.6.1",
+      "stats": "4.5.0",
+      "stringi": "1.8.9",
+      "tools": "4.5.0",
+      "utils": "4.5.0",
+      "xfun": "0.62",
+      "yaml": "2.3.12"
+    }
+  },
+  "code": {
+    "circlize.pdf": "3c34ce50873faea3edecf82966ee607e2bc5991907c5253a63ee33212997b16b",
+    "circlize_rainbow.pdf": "d0de20e2732924c2636ca73f1c233bdf86c1d734870fad3d278c03dc94d1b5bc",
+    "example.png": "98ae37b5a5e637a116ccf0ad0c3006a93e8ae626cbb39cf24f4a46f652a39216",
+    "FigureYa26circos_R.jpg": "f7cfc6147f663f7e97dcfb0f6aeed3563e113ecbf5bd231ec81d0ffd2d62b36c",
+    "FigureYa26circos_R.Rmd": "7ef378d5c0d2c76eacbff7d18d20a9b8f6b12c867457117969e6066d3d6af677",
+    "Gene_feature.txt": "eca78c87eee939273e887fcfadacde94a1e38bb9d5fcb88303e6fb788cf7c368",
+    "Gene_ID.txt": "1199c37712e516ebc3b282d01e5f1fc481a64d11df72adf9e3da43f3aceaced6",
+    "install.log": "475d214db410dc5215e421626145a06c30dcbfe93ea75f8f5a9858dab2c34acc",
+    "install_dependencies.R": "3427df32a5e0600ecd450ba323a9d8e2ddbc9264b1d935ec489a786019ea7837",
+    "Links.txt": "ee17c1f6d46bb4f715c58749e6d057d8531533e9fe4c767145c1c8c16334b33e"
+  },
+  "outputs": {
+    "circlize.pdf": "4c559bce1a61b4be69b0e031cbfae88a08a92b24dc8b12b2739f5c74e393e375"
+  },
+  "expected_outputs": [
+    "circlize.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 退出码 0",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "preview": {
+    "from": "circlize.pdf",
+    "page": 1,
+    "kind": "pdf"
+  },
+  "workdir": "<work_root>/runs/figureya-26circos-r/20261104T110948691986Z"
+}
