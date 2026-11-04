@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa147interaction",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "comppi--interactors_of_B7ZLG1.txt": "42fd2df3162d2a9f90260473e82bcd87a5b4ea1c916eb17a56a883397cff4123",
+    "comppi--interactors_of_Q0GN75.txt": "d2d2cca41bee519e8a5abc3b4549067fe9183eb9fe4f277a6e5a7bf7643226b1",
+    "easy_input.csv": "352c10d6ffecbb2e5e6e3ea7e238454e9ad4f56688764db3a4f08622b7766d9a",
+    "example1.png": "ba00b8018d321ce23dd530ea3c34c7dd51ed3bab3099bb23439abd349d8a7908",
+    "example2.png": "8bf2c2ce0fc88106121532963738ed92354e84a0559f6bd3a6f2302d26e50d76",
+    "FigureYa147interaction.Rmd": "120ac1752cf49c6521e335ac3cd22d18cfd44581f09eb386d01837a1fa778ea0",
+    "install.log": "7c84ecf9e9c80795e156f35db871c0d1d1c80e8d0a3d4db826f347dc06f87890",
+    "install_dependencies.R": "7458123f81e9c84f032227bd2326350984f84adb433b380765790c865985a3bd",
+    "interaction.pdf": "fbd381c857a82dbffdb55cbf42175572dbb58c898143ffe2458c9cfd31d83181",
+    "Readme.png": "d5cb83f80043f213f40277834ddd045917f7afd6a5c7078e71dfc4d7a9871cf2",
+    "step1.png": "5ba827ca3b1702a12f21eb577de7eb5b322b9290644130be11b8e36e494ad8cf",
+    "step2.png": "978dbb67d9fd2b7560c1571725919019c2bd82c5d91effead64d35c692a52c7c",
+    "step3.png": "85dacce21f0cd23d1bbcc578f8b2d7d39f9a3961b109e799345c79c45527eff8"
+  },
+  "excluded": [
+    "FigureYa147interaction.html"
+  ],
+  "copied_at": "2026-11-04T10:12:50+00:00"
+}

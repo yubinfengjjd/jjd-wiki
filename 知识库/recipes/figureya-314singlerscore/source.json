@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa314SingleRScore",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "explain_picture.png": "6caa67e92f12e667519b35287a08221fb333efd80f29626afc3e26679141deb6",
+    "FigureYa314SingleRScore.Rmd": "9dd79cab079384641f6a422ff02481255f1569904aa29ff1c9dc765471545c00",
+    "InputData/.DS_Store": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+    "InputData.png": "0a95983b4e3381daf10f3da4e7666c5eb0e7ad8166ac222cffaa3c1b0d2c3d44",
+    "install_dependencies.R": "c617a103d6c05299bdd8d2219cd1ddf9777fc2cac4c1641de38e088f8c01d17a",
+    "method.jpeg": "125c5c22466514efa9242a4ed069dc8687400dd20f25412ba4a31e15588c74c9",
+    "ScoreVisual.pdf": "3e96794bfdbfa10f5987e863e3064b4888912babf1ca355214f3666aad22792c"
+  },
+  "excluded": [
+    "FigureYa314SingleRScore.html"
+  ],
+  "copied_at": "2026-11-04T10:13:12+00:00"
+}

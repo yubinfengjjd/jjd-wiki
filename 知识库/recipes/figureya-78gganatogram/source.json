@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa78gganatogram",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "d28f93290753f803a1f9a69e33ff24f426b73b65031953e9d054839b4a41b14a",
+    "example.png": "204edc44ec1a2a6ae3f34f24de84e53955b9e7acdca2bbd303749600bc5f1134",
+    "FigureYa78gganatogram.Rmd": "9e8767d5cc7a16c6679c6b01422b7067aff6e35847a66027e12bd838b64f6dc8",
+    "gganatogram.pdf": "93510ea255c6717c76d7ae2f887e64257a97f3c97184f843a600046bfe346f27",
+    "install_dependencies.R": "0112566a28f6e235c8dd513f9e0ac1abc59bf5684d0b4c4184aef386b5c2924f",
+    "TCGA_organ.txt": "8fe6ba02eb31430b4d0c23312049942893c6f9405e85024c0e28a59fc5c4b56b",
+    "very_easy_input_Female.csv": "0f942bc13624d3fa362b6fc4a09fac477c7ba7a7f356c116a318c8abc3a3d4d3",
+    "very_easy_input_Male.csv": "94fbb39881c0e865ac2a8aeca9603d138bef646fa0c7670a9089932080e5e326"
+  },
+  "excluded": [
+    "FigureYa78gganatogram.html"
+  ],
+  "copied_at": "2026-11-04T10:13:29+00:00"
+}

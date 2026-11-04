@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa211multiCohortImmSubtype",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "CIBERSORT result.txt": "ec05e01fdb2c3f017f6e862af1bd713165f16ac6e3175f0400759f0ae0091c4c",
+    "CIBERSORT.R": "0d265dfb1b8663ff2bf81fc5a0e3adb4a54be76f19ee9cefa7453225fa1d50fd",
+    "ConsensusCluster/consensus.pdf": "7a3b7db98a3a1b98a45473f4e0b1058974e165ec9c122498a8150a50982b7865",
+    "example.png": "e3e9bc16d8a28ef6907d3dfe44975898f59d39c2642b1d0a9fca9ade2b611130",
+    "explain picture.png": "aef08e61ab2fd253561959286590351be303a7ffd6b852ac36e64722f0daebcd",
+    "FigureYa211multiCohortImmSubtype.Rmd": "aaf6f355bb9e360299026cbe13102ed6650eb77bf88d43129d6c687ad19aeed2",
+    "gse41613.expr.txt": "dd3a87b18c75f8b636c419be0a8cb8c6b462ec806e3cc3bd8e745a2d753095e6",
+    "gse41613.surv.txt": "72f2ca3f8d0e5345405a3430b305a86adf244c69d6d9722ab59141434ed9f991",
+    "gse65858.expr.txt": "c9b61154ae374fe4f58bdc738edce11d3e7b7d9d9bebde54d636e5d7d08e8fe9",
+    "gse65858.surv.txt": "fe759d550eb2d78c248cf8db5ba58dd556ed69b937a164d5197648c449aebd23",
+    "ICIcluster.pdf": "f85f2dc47fcae62607784e5397901f6f9b14ff09647e0ac103ce2fc246f3b5e2",
+    "install_dependencies.R": "8a86479c0eeb7411c912970ca118c976395ebbac40f52213acd4c812fe3686ad",
+    "km curve of ICIcluster.pdf": "4b8bf38dc6742fdce3e7c91601abb5aa31442ce102656f9070069c0441999415",
+    "LM22.txt": "49662c6734739572bdc9e295610d3e50bd75262a37e64d72b4df22f728ab5ec2",
+    "output_combined_expr_estimate_score.txt": "cbb2679055d102ca021876b870193fc1cb85a30d80cbff3b1040b9dff2e7a19c",
+    "tcga_hnsc.expr.txt": "014fc1c7b2a516538ecc31bab3d45a4a535d09074020f3619589f5340194afcb",
+    "tcga_hnsc.surv.txt": "9cc7a627bbcd100aeee21ade3c111077dc840073f8a47a6908d85f043627f2f5",
+    "WhatIsLM22.png": "01f1bd74a10a4df3db7b82b1e6ccdeca2b17bbd116223e734dc49bad4386debd"
+  },
+  "excluded": [
+    "FigureYa211multiCohortImmSubtype.html"
+  ],
+  "copied_at": "2026-11-04T10:12:59+00:00"
+}

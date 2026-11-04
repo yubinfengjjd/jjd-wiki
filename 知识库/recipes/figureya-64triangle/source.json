@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa64triangle",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    ".Rprofile": "df76cf885b5073aaf040593ebf2b73b44af62985ed02fb835bfbdb1f0e6749b6",
+    "easy_input.csv": "601a9a374f36bc6a610bc1c79bd6c3babf54dcc4e94c40619b0d50d39a83a8f6",
+    "example.png": "9d7f9cff2313778d0874236298b31308b390dcb9b98e5a6d489b2f816087fef0",
+    "FigureYa64triangle.Rmd": "0f0c764d9b14941d6653fe6970576210db43e6420f5819de7d5c53ff70aaca4f",
+    "install_dependencies.R": "0442e270866affb693de9b1cd1cc0011970618f0db231b9d762f8447ff1b89e2",
+    "not_easy_input.csv": "0f6c0b3452ac6c147012b658a60e833190e94951da556d4619258eeb0cf1aaea",
+    "triangle.pdf": "516dd6af1634dba6441fdeb33aa54014759e1e4e7407f31b6aadfa261440a891",
+    "triangle_directlabels.pdf": "6d81d5bc661b98ab193e7a6bb121926dd14e874507b25c5b668bd7df45d419aa",
+    "triangle_geom_text.pdf": "67ee52ac1c286713b8891a0ef731612ad6e413c2a8b99d14cf182180175010c3"
+  },
+  "excluded": [
+    "FigureYa64triangle.html"
+  ],
+  "copied_at": "2026-11-04T10:13:24+00:00"
+}

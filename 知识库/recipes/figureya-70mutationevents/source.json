@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa70mutationEvents",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "41586_2018_623_MOESM4_ESM.xlsx": "24eda885e70a886fbfd083ac67d972c45cdac068561d4b4105d3f62dfc960814",
+    "analysis.R": "3e7aed0617f379cf3f69051707556cc7eb0c5a554801b4fcc07a08158ed4fb34",
+    "data.R": "5d2c554f3d57e5eeb6c9c0e18a5cfa01de0ee1008915b14011deead586d0dbfa",
+    "easy_input.csv": "c991a76335ec7d7db12b11c5036386815777a392a4c27b3bf17ec3cfd10e637f",
+    "easy_input_mutation.csv": "2fefdce7b646e1f41cac4ca88f775e614bebc68ba588ef6b25ad93fb6eb226b1",
+    "FigureYa70mutationEvents.Rmd": "376934a036f97e8b5c954660525a37c45b9a1e6d33a8cba63065bc58b4e8b27f",
+    "GTEX_phenotype.tsv": "24c0158da99d07935c8486ed828d7252b4c067d0e3f9836b6470bfe2444d3aad",
+    "install_dependencies.R": "771cf0d1595f150f488ddbc28eae0c834c9969f4ae3d7ac25567550fa866dd62",
+    "mutationplot.pdf": "90ba02a7a17aabffe01ea61e9fdae9f7116bf714a28f12d3f9ee4e0ed032054c",
+    "samplepair.txt": "fe431f5f21bd2bc2e8dacc18c27527510965a523a3f5d348bf830539184e7f7c",
+    "Target_cancer_discover_greater.csv": "15dfc92ada55a90b25886eba90acdb3c2f96aea6fb56d74c029696db3befc5db",
+    "Target_cancer_discover_less.csv": "57e7bfc585524125e9e67f1601a58b81390f754084bcdc4712be2178a842dc18",
+    "TCGA_phenotype_denseDataOnlyDownload.tsv": "53db883d9509c15e7e6e75a9df8366e6a169bf54af80c748439c18f2585a4dfb"
+  },
+  "excluded": [
+    "FigureYa70mutationEvents.html"
+  ],
+  "copied_at": "2026-11-04T10:13:27+00:00"
+}

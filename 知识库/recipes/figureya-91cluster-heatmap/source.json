@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa91cluster_heatmap",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_annotation.csv": "53f84915e08e2f4cc6531220139ea1123019f0077eb2239b55e82b18e2637f8a",
+    "easy_input_expr.csv": "8d6fb82d4c37558559303061c35c0e2ff3d9d9f4e34549b0dd7aaaca08330b8c",
+    "example.png": "47a55dda73306f75aba42b71515b271bf253def2038a6824c596648fdb824178",
+    "FigureYa91cluster_heatmap.Rmd": "8c6fb81b0917e6e09e3c37175a3c1c995e6a22bada33b4c1ab40509440a6a575",
+    "heatmap_with_file.pdf": "fd1a441710729d7cc5ce5548eb4838010a11f08f515cc87361dbbe154523312a",
+    "heatmap_with_outside_Cluster.pdf": "d4b24520b0dd5c4ebf6c966c65f196bbada6bd5710d18a58e1fe91d982165aad",
+    "heatmap_with_outside_Cluster_discardTree.pdf": "88aeef75487a7016f20d27cbf72e21a974e21800361e4d52e0a49faaa71574c6",
+    "heatmap_with_outside_Cluster_discardTree_twoClusters.pdf": "97a6916903f0ea7125f44f5a47784e0b2a6f82b82712918380102873f5154d06",
+    "heatmap_with_outside_Cluster_discardTree_twoClusters2.pdf": "9e6bc0e910b3b1b85b4e3b224a873d11c13fbce92bc6c681495fefed042472ab",
+    "heatmap_with_outside_Cluster_noTree.pdf": "88aeef75487a7016f20d27cbf72e21a974e21800361e4d52e0a49faaa71574c6",
+    "install.log": "8703a544f89d3b46f4e55505089d926d4f3690d5542ed292e5c14f380ad14409",
+    "install_dependencies.R": "75b74e42cae3ba02f54adff4055651893a38af170b94641f9cf1781cb8fc2b27",
+    "raw_heatmap.pdf": "f704c75ddd374c6fd200cbcc4891f86f9b2393d94c4bff1a5d548a945f4473de",
+    "sample_order.csv": "ae98da58b8312d7a162ce1703a48ac179be439cc830f1b04c3b171c344e48778",
+    "sample_order_euclidean.csv": "8456d10c21111c529d90ecebd98ceee41e6e2b632016c16dab36ba0bb33e8cb8"
+  },
+  "excluded": [
+    "FigureYa91cluster_heatmap.html"
+  ],
+  "copied_at": "2026-11-04T10:13:32+00:00"
+}

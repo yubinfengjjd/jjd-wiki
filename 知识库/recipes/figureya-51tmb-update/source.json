@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa51TMB_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.csv": "0493a869f37e2ae5a88d22d8dea9d3b0c114f1a84fe2eed21de0e1602d543e26",
+    "easy_input_group.csv": "e6da4cf2a6f2c5c369c26e4b3716d6b65fbc6dd1d413d9c29e389f89bab413ba",
+    "easy_input_group_2.csv": "6362d3a35ecb46fe7b2d438dc6388a65b9fed9b74515ce0873d311f76240c2e5",
+    "easy_input_group_3.csv": "abe5d1d42588e6d7c23f8dee39642c8bd2e51d7de4e46a9af276dee0ec951cad",
+    "example.png": "d88e02318395647202380c8fd449290febfe1e5d67c99fab904bb7fbd5dc8d93",
+    "FigureYa51TMB_update.jpg": "2c88e885e7bc943fbdbe519594a72bf78ce397b365c33f8211996477a7f8a0e2",
+    "FigureYa51TMB_update.Rmd": "e54d9090380dc6164978133a05eeed541ae2f1d87239108b8fad8e6852a14709",
+    "install.log": "9b6261ac588cc71b3762b0a8d76b2abea7b1714e66d79b82d14267f92bf8c73e",
+    "install_dependencies.R": "86075bdc3be61259571ee0b77b46819be88e3ff89d99d5c7470adf734c5506fe",
+    "mutation-load.txt": "40a97dab2dbb49e780da3d3e698d6dbd158076a808c2b8af4ade8e410c26ec6d",
+    "TMB_dot.pdf": "a50d23c6d07b0cafc71aa4b2fb35248e3202400190b683715f3384c093df5177",
+    "TMB_point.pdf": "1900ce52a0413c396034d67abcb15e08339146e29ba9e5f364c00aa417a56ec9"
+  },
+  "excluded": [
+    "FigureYa51TMB_update.html"
+  ],
+  "copied_at": "2026-11-04T10:13:20+00:00"
+}

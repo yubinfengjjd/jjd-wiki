@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa164PCA3D",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "CGGA.mRNA_array_301_clinical.20191128.txt": "ad1b4b26b66040ab19a3552df369e44d3df1d4f0e45b806f58b537b4745308dc",
+    "easy_input_expr.csv": "337cd9b8cea9aa70803acb1e6820587e8fb22afeb7d3365f2da1c5979f12378d",
+    "easy_input_expr_all.csv": "79804b5ade86cf30ca87ebfbd780fea3591f145c930b1c5e57065262e65f0fc0",
+    "easy_input_group1.txt": "94c8e5ed86a62f6e734ee42dd3c59899e163896e1e95501746cbe1abcf2d405f",
+    "easy_input_group2.txt": "839758d8455cfd0913142c97590ee08b6410b45cc67c76cfc7828957c7dc7984",
+    "example1.png": "19215f378305f364cd505a5bf75d1b05da4e26562818465831cb89ff10fe71aa",
+    "example2.png": "75e2705d34897bffceff4980b9d88429aecb03ac67bf49aeb8740d41f9b40515",
+    "FigureYa164PCA3D.Rmd": "8d214164e16b538176c0d4fef498a4602f1d9fb35eda7496baa92da6e947c8b1",
+    "IMMUNE_RESPONSE_M19817.txt": "7d606957a7da95ab81dfef19956e09aea9f1d31536b75ec1902e146c7206016c",
+    "IMMUNE_SYSTEM_PROCESS_M13664.txt": "37fc59ed4ce5e68e46fd4a8672d7f1b9326e1e48d7f40dff20036e79892c2e92",
+    "install.log": "68abd6023ffab81611806187c861e233eaf77c4f298105a45149180109915417",
+    "install_dependencies.R": "cbd977747b8197636188b447f3f093002547da82d01ec3e612086e0a453dc5b0",
+    "mypar3d.RData": "736e21a4d969dbec01ea3881905d3101bca89711497de1619c6859fdf502bdc9",
+    "PCA.png": "e4aa06b22af2459a670d842194c0a8d36d70284deb38d2ef902b79f7d50e3b36",
+    "Readme.png": "c00794eb8a4dae4dda6b74aae9b25527393bf652e21d5bcbc427de75e363a0b9"
+  },
+  "excluded": [
+    "FigureYa164PCA3D.html"
+  ],
+  "copied_at": "2026-11-04T10:12:52+00:00"
+}

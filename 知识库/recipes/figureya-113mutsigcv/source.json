@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa113MutSigCV",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_local.mut.txt": "e683b1eae7df3d233ec5ac119b81f4021df0f15b4f4dd443e500e9ea9da9512a",
+    "easy_input_meta.local mutation.full.txt": "a9c22887db6210ce1c526b92fa3e9af5180b3768a0b5336e53790c0e360e8321",
+    "easy_input_meta.mut.txt": "d749f8786b32cca7c808035320c289f9f6fca458fea6e09f9b72f01f6255c1ff",
+    "example.png": "243ef7c5326f3d238b40291c971130a146df42b97a5def32ff782a732b725fa2",
+    "FigureYa113MutSigCV.Rmd": "c602eeb121c04aa0adc6672cddfb39d14f19c157f153693c2010e9361082b66d",
+    "How to run MutSigCV.pdf": "9edfd2ae955177201e1d3ee507948bbe10920e0633fe22578df2c479ea6832ad",
+    "install.log": "73315c365a66e9b5a8de9ef0ceb5ff19e2af289f8155c48adc142c54437f9912",
+    "install_dependencies.R": "358caf2ca1909cb29ed95a7b73c0783b5e56dcc3b2e41924dfc13fc7ab811b55",
+    "MATLAB R2017a安装方法.pdf": "6091e3c49eedc85035db35004693e251b2abb88f584bec914c703b67b4d22f81",
+    "matlab.png": "7e1aaf8c0d9908ec8433817e14989205fe74c41f3d2839b9befa13c975929df5",
+    "meta.local mutation.full_for_MutSig_input.txt": "164785a0c2e416096acb69063d81bc9195c726247c944ebc32cfeef953647ddb",
+    "meta.local mutation.full_MutSig_output.categs.txt": "23bdfb72cd2c490aac129e753497dc2d1c4ade31e404c4bb214f49ca1e07cce0",
+    "meta.local mutation.full_MutSig_output.coverage.txt": "aa76fa3c239148c3a84bb096a9974939eb38e0520667a48b7fdbd0b2de31e898",
+    "meta.local mutation.full_MutSig_output.mutations.txt": "66666fba466d41847fa43fde6e3c0ca4b8f5ee2b6547427fec89ed95f3962351",
+    "meta.local mutation.full_MutSig_output.sig_genes.txt": "76ba0dd05fcffc4dac6fca652697e51860b699f2b52dd6c0446f4d0b881c658c",
+    "oncoprint_mutsigcv_detailed_variationtype.pdf": "da0a3ca3758ed73f3dc38857f5471a1355c970e1859943ac391afee0772bb9fe"
+  },
+  "excluded": [
+    "FigureYa113MutSigCV.html"
+  ],
+  "copied_at": "2026-11-04T10:12:44+00:00"
+}

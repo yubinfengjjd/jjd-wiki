@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa42oncoprintV2_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "298f73529b4fdf5a5a58fec178c728b037a7cc18e2688723a6ded27303cde684",
+    "easy_input_cli.csv": "a39243a798289a0c53f7231c549996915bfd9abaacdf46568f64a79fa73555fe",
+    "easy_input_pathway.csv": "9405cd068a954d03e0207628a6320fd5b2a2eee290b183260a9ce9c772a47b5d",
+    "example1.png": "69963f4b68c4822d562b917ce9d0548275ff3860323e1f472d3d085763931b60",
+    "example2.png": "a097ef9937880cb80d6af793828ee831ec1dcb964f92aa2bb05009700af29ea0",
+    "FigureYa42oncoprintV2_update.jpg": "40c9f9c313c74390093715da20544c7c115f8a839400d69ee5fa0093c5c0ff3e",
+    "FigureYa42oncoprintV2_update.Rmd": "33b776af0d9ee8a0565b5a3d9dbc40fa6346a33749e8d47e811b2d842d004771",
+    "install.log": "45cb51aded8478534f3348732f020b534f75899c8020a94b5c30f3c633dbcabf",
+    "install_dependencies.R": "968300314f6cf756d574a7c7b9e44563d2a0146fff9814b6c8d9d75d492de516",
+    "onco_matrix.txt": "c5d0ce2ed85f23883b269d74d831474d37ed20c8a26b4d3f630705fd06cf04e6",
+    "oncoprint_cli.pdf": "ec820d481b3a6afd4724b63af7648dd8d60a4841c158411f5d5a77d37f1aa842",
+    "oncoprint_cli_multi.pdf": "090b7e93a06aae619252c0bd91775e27ae0030c8d037fe822db4aafe3b60599a",
+    "oncoprint_cli_nobar.pdf": "62155c7c0d338a4599a3cce3318d144cd3e1b8581c23f2efe6e533fd303e3710"
+  },
+  "excluded": [
+    "FigureYa42oncoprintV2_update.html"
+  ],
+  "copied_at": "2026-11-04T10:13:17+00:00"
+}

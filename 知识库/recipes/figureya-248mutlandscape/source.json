@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa248MutLandscape",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "all_lesions.conf_90.txt": "52907bf6c18864be63581ad0120e5fb8d9d7e6b29f76cf3ffafbd00eeace0c70",
+    "all_thresholded.by_genes.txt": "cc8a545eaa72ebabc3e188824eb43e7deabbc731e63c01f1bb660c355f1a868a",
+    "example.png": "3a963ff489933566a540bcf748c6209e36e3229fa44a43922032460e8bf20234",
+    "explain picture.png": "48f6f8d15bcd63866dabc5fec4517cd8a252454a34bc094adcc16c43e6b349f5",
+    "FigureYa248MutLandscape.Rmd": "b9c02a7d89b88792a71cfd2f44b0351887233b8929772dea3c403aaf92d7e7d7",
+    "install.log": "940fb8f222fc8ae9ff6136a3c32522d770dea1aaad149f08218351c22d326720",
+    "install_dependencies.R": "082d3bdc1ffb632223cf1786f040a20ac78141b8e41af0808d12eb636710376b",
+    "mutation.txt": "ff9d5654d483d1d1e06606d8b8e78efceb12c8a4ddd6b01affe67de2f7afc249",
+    "mutational landscape in TCGA.pdf": "1a4cf60944170ca1bce2b5d1c0da984bdd44928589504d00eda07acc95d04fc3",
+    "mutationsignature.cosmic2013.csv": "bee25a94a997fc578f4f49605fc90124a4d4e069439bbe9915cc8b3299cc54f8",
+    "subtype.txt": "4b0cfba2220d8a38099b1ec42a085b0ae2f91ef7547f8cd3b7d57d37e7a6b590",
+    "TMB.txt": "e36cb28afef0bf1f0fb4bea7d5ad3618311f52edf20f8bcead09444a2e17f552"
+  },
+  "excluded": [
+    "FigureYa248MutLandscape.html"
+  ],
+  "copied_at": "2026-11-04T10:13:04+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa34count2FPKMv2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "1e498a601be4ef0f359240e806576f9b7660a1bf556c35bcda0b66937bc5f33e",
+    "FigureYa34count2FPKMv2.jpg": "1d9ea429a23be0970671d91d97ee75d37c2612e943bf89e18043f8a4ae7e5818",
+    "FigureYa34count2FPKMv2.Rmd": "116f88f56f3f33bb5006fa8172e398e3331b4c28ce392609bbc4a8e7e1e835b1",
+    "gene_length.csv": "ee9a4a1c8fa3aa565660154dff35fdbdddad9df303f92cd03f5bdde4955ef1d6",
+    "install.log": "8811314967030afc76c6b62a3cdd3118eba7b43d8bf1703315b03b79e75227dd",
+    "install_dependencies.R": "830913babe6340ff07f9755a28dbf34f406d7bb38d23877da692c42af3857d28",
+    "output_count2fpkm.txt": "4cc92bbd220789e2bc581857f9f1164160985dcba112e0aabc405f12996de8da",
+    "TCGA_FPKM.csv": "f6e0da4e7453831e0ae550bbaab0f30d79de8d217e9330430e48d0eabf856574"
+  },
+  "excluded": [
+    "FigureYa34count2FPKMv2.html"
+  ],
+  "copied_at": "2026-11-04T10:13:14+00:00"
+}
