@@ -1197,3 +1197,5 @@
 ## [2026-11-04 05:12 UTC] acceptance check 2026-10-22-scp-example__fig02-ring--ring
 
 ## [2026-11-04 05:17 UTC] acceptance check 2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+
+## [2026-11-04 05:21 UTC] acceptance check 2026-10-22-scp-example__fig04-rose--rose
