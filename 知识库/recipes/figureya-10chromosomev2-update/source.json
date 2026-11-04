@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa10chromosomeV2_update",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "chromosome.pdf": "20cc9120dd57b3ac1196f740c5148ec53cb5b2a80de460c2caf93efbcf3af2e0",
+    "chromosome.png": "1046fe0c3da2eef82149c8f46a89685c63651f9d9cdfd19f9ec42b496b737e87",
+    "chromosome.svg": "7e5f5fbdaa66776dd22de7f8c9a8b8e03f75591b7392b520658a6bcba2ae604c",
+    "easy_input_heatmap.csv": "fb206a3bb7fc2c209ed80b0b1b7c839aff61897b84401584bb5df8870a720be8",
+    "easy_input_mark.csv": "eb078bda71f29dbf3ed84dbd66bd130c3d293e0428431a3a997dc729060901ec",
+    "example.png": "4c5f482bdf86d433a781b0c6ad8af13f12ca5ef318534415999232690e0fa3a7",
+    "FigureYa10chromosomeV2_update.jpg": "04fcae985584bc2be5d1906ce780adb7d551f14902fae09f5f88ee605f35e50c",
+    "FigureYa10chromosomeV2_update.Rmd": "261cbfbbbe0a062d8a612ceb232323985135e9db1b0a8bb600dd7c00593c4059",
+    "install.log": "d3c59a8e825ca63edf1c3e1afba6536213f3e403ecb7117a2879996fe05505d7",
+    "install_dependencies.R": "1428f292357d4cd5678295b0d0117f354997f22529207d1ab9718fb1f96dcdfb",
+    "karyotype.csv": "bba5ec0c97d4b0bdab099a9977705f07d2529d68b7ce6b012a89a7ddfe399bd9"
+  },
+  "excluded": [
+    "FigureYa10chromosomeV2_update.html"
+  ],
+  "copied_at": "2026-11-04T09:39:38+00:00"
+}

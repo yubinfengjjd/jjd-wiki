@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa74OmicCircos",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "eee58ffe8fc99597938d0616df188fcbe202f946a6a60e59eb27d0e236b71dee",
+    "example.png": "87579e7fd1645a109b598baf428eccb193606d477cd58b64082c40ac8427ca79",
+    "FigureYa74OmicCircos.Rmd": "e1b8a1d2050438aa2a21272dc995edcc943214358aac4b78cf8e234199e30b7d",
+    "gene.location.csv": "ddec3b66812dadbf64e6c5b896eee73daef953cf64cb9b1b435f25cbffe43e11",
+    "hg19.chrom.sizes.txt": "5c1e7d7f0bc29c57d99fefdd08237bb00e751ea9656a00a699e177b6d61552e6",
+    "install.log": "9562041bf9120d90650c88e6c8db4413638df19c84937ad74c8cb61bd715460c",
+    "install_dependencies.R": "ea7dfe5fc1a39bd7ded6e3d5dfc41951d3d740e458fc9ce36f29af087c4755ff",
+    "OmicCircos.pdf": "680283dfdf9b5da9e9e91fde6daed0200b8af58ffd609f6953443cd685ac60b7",
+    "OmicCircos_plus.pdf": "856f88fdba9089f004018287b06c27224d1dd14543a5bc65c9b55fd9c4a79eb3",
+    "Omiccircos_plus.R": "43957ff3f829f3d6194918b484ddfa95e1edbe55f3980e17e768e69f30f8b31f",
+    "signal.csv": "a5a3373bb4a3d0d9c115ebbaf76359166895677260252f8f21a420bf9f18160b"
+  },
+  "excluded": [
+    "FigureYa74OmicCircos.html"
+  ],
+  "copied_at": "2026-11-04T09:40:15+00:00"
+}

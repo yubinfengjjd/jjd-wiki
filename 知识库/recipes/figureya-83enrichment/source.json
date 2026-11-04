@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa83enrichment",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "2_3_ggplot2.R": "0abcd91f711803fea8786cd6ebe4b436836f9df013c1469113435caf36994194",
+    "easy_input_bg.csv": "6cc0715e5e7c86249bf5fa162eca5993d694d2a0737b7f44a209666bbfc3e95a",
+    "easy_input_TF.csv": "544525e00e3288873d68892cff95bce8784e8c5c20dafe60eabd737f436dcf6f",
+    "Enrichment_baseplot.pdf": "71ffdbd059b078b4baa954f9f749e40602609b9543382e71c7a7c55256a537d7",
+    "example.png": "b406723f0fae34ae0c43c01169cebc6d43f4e1b5c8bac0178b60b7d2e279ac45",
+    "FigureYa83enrichment.Rmd": "ffcf7c0162d7280fc00c43d81ed5ba1539795a1561a89caca179cdde2f2a64ad",
+    "install.log": "378520b0364f76b88295d54dab235639b2eb3fbb587be2512d0cac2f80077aa5",
+    "install_dependencies.R": "04a9bd9aa443e810bca92c9ec7fb925e04858e6eb610c84e09f5234e5256b414",
+    "Interactions.RData": "26ef0c84473d3f72ae38f0a0b2512a275052df5aa6ddb104fa7feab30a2bea51",
+    "my_function.R": "d08c946e66026eaf99a83e925793b0124a73176a3608e20399c4019689d4b201"
+  },
+  "excluded": [
+    "FigureYa83enrichment.html"
+  ],
+  "copied_at": "2026-11-04T09:40:17+00:00"
+}

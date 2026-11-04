@@ -1,0 +1,61 @@
+Starting R package installation...
+===========================================
+
+Installing CRAN packages...
+Package already installed: R.utils 
+Package already installed: viridis 
+Package already installed: gplots 
+Package already installed: data.table 
+Installing CRAN package: tidyestimate 
+Installing package into ‘/home/runner/work/_temp/Library’
+(as ‘lib’ is unspecified)
+trying URL 'https://cloud.r-project.org/src/contrib/tidyestimate_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 936616 bytes (914 KB)
+==================================================
+downloaded 914 KB
+
+* installing *source* package ‘tidyestimate’ ...
+** this is package ‘tidyestimate’ version ‘1.1.1’
+** package ‘tidyestimate’ successfully unpacked and MD5 sums checked
+** using staged installation
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* DONE (tidyestimate)
+
+The downloaded source packages are in
+	‘/tmp/RtmptMEj1E/downloaded_packages’
+Successfully installed: tidyestimate 
+
+Installing Bioconductor packages...
+Package already installed: GSVA 
+Package already installed: ComplexHeatmap 
+Package already installed: circlize 
+
+Checking ComplexHeatmap version...
+ComplexHeatmap version: 2.26.0 
+ComplexHeatmap version is sufficient (>= 2.8.0)
+
+===========================================
+Package installation completed!
+
+Verifying package installation:
+✓ viridis is installed
+✓ gplots is installed
+✓ data.table is installed
+✓ GSVA is installed
+✓ ComplexHeatmap is installed
+✓ circlize is installed
+✓ tidyestimate is installed
+
+You can now run your R scripts in this directory.

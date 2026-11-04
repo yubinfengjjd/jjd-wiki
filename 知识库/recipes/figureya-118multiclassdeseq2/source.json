@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa118MulticlassDESeq2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_counts.txt": "d59ae0a8007c217816f17ea8ac93ab5349a3e636cd1f77353709f08c8a4e52c6",
+    "easy_input_subtype.txt": "6f5872359fe1bbfd540e55428033cee622e103181c8cdf54d21a36a52d07f565",
+    "FigureYa118MulticlassDESeq2.Rmd": "9834c57271d7ebee120f304c0f433b73b56d9655a8185384acd5ba14ae26e224",
+    "install.log": "e100f7e22e8de58f443cabc42631a54d141eb66739816fd6a28462a4705dcfc8",
+    "install_dependencies.R": "daa4a35faf80422117867e77ddcdfb7c42c3801e09ef7a674cea666d53e1accb",
+    "SKCM_deseq2_test_result.immune_vs_Others.txt": "f553c21a6657314003beb427e8280da2c4ee131527015e24624b829b3f4ebb82",
+    "SKCM_deseq2_test_result.keratin_vs_Others.txt": "1b3594fdb64166b39b3a4afdff0a78357a170fc78cb6cad02223836a4a8db7b5",
+    "SKCM_deseq2_test_result.MITF-low_vs_Others.txt": "158f651ae8d0fdbc229d4199a7ed0ad5656f3443fdcc0e2a58ffee3927fece4a"
+  },
+  "excluded": [
+    "FigureYa118MulticlassDESeq2.html"
+  ],
+  "copied_at": "2026-11-04T09:39:40+00:00"
+}

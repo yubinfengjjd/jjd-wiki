@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa255TIME",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "annTrackScale.R": "359d3b69bbd262e96139f5426cf326121b5a641f2053e444cf677634c40dfd55",
+    "Curated_Immune_Cell_Signature.txt": "217033116910d44a5f3de0d5c7aba8f988458df24b5e8a4097cf88921e818d7a",
+    "example.png": "7ead01354a47a36c0221b78db5efd19d2e2c6a9ff38d8b5821cacc586e93d8b9",
+    "FigureYa255TIME.Rmd": "90fd9429cbbc3b69238f0e173bc32dd6651e98d22ec2b1b44aa0826606c2dcba",
+    "install.log": "93090e251fda8f382a7985b15192ece9afd9d527542116543cffc764c2725bb9",
+    "install_dependencies.R": "1879de3d0a707a3bef3a5abf92da8435209b6be081af5075854e4689b3f08275",
+    "TCGA-BLCA.methylation450.tsv.gz": "3d5f4114a7b27f07ff97c2d245bd6b7d87efdb0fc5b77b3cc885e39250554635",
+    "tcga.mibc.anno.txt": "a0129ab8093681783d91ed4cad85fbe285bf1cabadcbbcdc8e6bf1ef639ac996",
+    "tcga.mibc.tpm.txt": "dca53e6b5e7f29f1e7c698d652a7998ccb4e8443c159d7b03182fce6aa4e8694",
+    "TIME.pdf": "21fbe7bb0a7ad9269b0bbddfd00b2dc30ce31f88362ee2bc5215e5a599be7a8c"
+  },
+  "excluded": [
+    "FigureYa255TIME.html"
+  ],
+  "copied_at": "2026-11-04T09:39:55+00:00"
+}

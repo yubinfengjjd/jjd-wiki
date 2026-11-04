@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa215DNAage",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "barplot for DNA methylation acceleration.pdf": "49c65388948a7832e8d13e21b2d465d80a74b5f1fd312a063fc01780dc2cacbe",
+    "DNA methylation age and clinical age.txt": "f2d2074ad73b936bcbeee69ca25402c2469a890da27195d8f5b7bee0db7e6427",
+    "easy_input_age.txt": "41ed0e33aab319560496228d74b92a96399294cd5ba49eadc6d6b7dc56ea4a3d",
+    "example.png": "9475ceb3ef9e6a37685be0d6a96def8ebb0baf94915dcecaa1ee468740b50d31",
+    "FigureYa215DNAage.Rmd": "e13cac5e7e9cc128e36435069771a9da2b831695658074508ce3cc309c234735",
+    "install_dependencies.R": "2d3215cd451f8d729967dc8906aba06e6dd6d0c35c7fb1569d43448b35891acf",
+    "method.png": "c8b8bf22b6ff9e02a14ed19b58ce3affc9b3cd840551a09cb0a4002e5dc4a9e0"
+  },
+  "excluded": [
+    "FigureYa215DNAage.html"
+  ],
+  "copied_at": "2026-11-04T09:39:51+00:00"
+}

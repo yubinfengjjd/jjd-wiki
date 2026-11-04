@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa14circos",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "cellcycle1.png": "31d4fe2b691be3b0b54a25e6142c174cb9331afc31ae09e762541deac1773ae1",
+    "circos.png": "2e0eacf095b248d0048b6fe85fbfb0629e3f0d23f59295951cc40d24f770a349",
+    "demo.png": "b56aab2c3136a8baac188acfe1a7d52d5b38d7ab856ae9d2c24d953cde131517",
+    "FigureYa14circos.Rmd": "d2d134b9321b1dcf222e9d4fc6d646c0088a35e0d358d30994628ed2cc1a99a3",
+    "ideogram.png": "34a3a521d74595a3516287c82094b35960c8ec48b0b4d2b366d81559343c0a6a",
+    "install_module.png": "328370541fc974c3cbde7604b5ff024940ccf1bb745ba13abc2e23c716a77860",
+    "karyotype.species.txt": "674c2d2b90720590c2a67242120df71222b86a1fd80dab5d41aede526167d551",
+    "missing_module.png": "87128127d5335cb053f957286fca303ab5eb2126b82841fe9ffaca51c20905cd",
+    "Mydata/circos.png": "e59ceafc14671d223048bcfb649f750bda7861fe621e90c5200ea781665cf66c",
+    "Mydata/circos.svg": "1ca0c1e722bb61b7659c399616dfbf6a6546f70312c733b6b2f3a6e4be0ab9f8",
+    "Mydata/data/.Rhistory": "5a1ee784f44b5784c2e5772f44f158fa09e33b54ccaa88cb04321fae18cfcf78",
+    "Mydata/data/GC_content.txt": "82bea1ef18b9a7a27bccd8f7d0cd8d34722b5e916ddbb49a29bd213ffa4c6972",
+    "Mydata/data/gene_density_numb.txt": "639d7d1a8a3e9aa99505c04d2f2e27e9f9f626e9b22631ddaf5516f649aab64d",
+    "Mydata/data/gene_density_prop.txt": "26a2efb03e0be1559dffc55a69cdffae7f61ce6a6eacf9d9887ff16563cc0756",
+    "Mydata/data/liriodendron_link.txt": "a70a838717d890f971f1c14c3d2d23550084a8e2d335fe524fd76ca600db75da",
+    "Mydata/data/NK_heter-SNP.txt": "d5435fb78f26f4ed8e4dd89767202fb4d73d0ff0d1328a424c97a92a223af58b",
+    "Mydata/data/NK_homo-SNP.txt": "7d0d0a1b38b388c1536666064114e3d8bf4ba813b44c079ee7c50b8c71c7281d",
+    "Mydata/data/RPKM_LS.txt": "b53d0354fe6ebc56e6823da49d7a489b30b6f013db4f008dd7cdab12c0cd7684",
+    "Mydata/data/RPKM_LSNK.txt": "75b4a3c68ee70b587858bc7beb49e2c7aa26a632b356a51f10a0c543351a1e52",
+    "Mydata/data/RPKM_NK.txt": "99908849e62cd9282c33442c30a51292e73989805ea635f5a96d267c49d84ef2",
+    "Mydata/data/sample12.heter-SNP.txt": "02bf451eeb1a7217bb107db480b791b9384beaad61298337d435b5d55c59ffc9",
+    "Mydata/data/sample12.homo-SNP.txt": "e1a4934a11d6f5af40f87197054ffef907c4e2053cbef25a0fa73ad2f3d71ded",
+    "Mydata/data/TEs_density_numb.txt": "30f6b4c2fab98bf80e1b275c58313ae56a8e78e2b0ca09c2ddca7dcb380a99cd",
+    "Mydata/data/TEs_density_prop.txt": "5794f30f0316869ce5f7212ee4ab8c0f228fcb1dff6f74e3c53bb9b32d350c17",
+    "Mydata/etc/circos.conf": "ec5be823f43d3cd2907c8433930c9da5a57ec93241102c858c51c6f5eddd42be",
+    "Mydata/etc/ideogram.conf": "3a586ff8f7d47b2c63dea137dbe9b3f299a976f091ead24e5e1e9193e572c40a",
+    "Mydata/etc/ticks.conf": "d1d496f4bc4073f239e3aeaa3a538ebc9c8335ae9ff1545f557b91fd833fdbb3",
+    "ticks.png": "1adeb93d3e583e03d1552e9a037b093fdb5316ff96e8c18ea55462c625ab93c3"
+  },
+  "excluded": [
+    "FigureYa14circos.html"
+  ],
+  "copied_at": "2026-11-04T09:39:44+00:00"
+}

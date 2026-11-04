@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa203ComBat",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "batchPCA.R": "17d91fdfa74bc84daa6c297e25cfad7c40be1f03923b548fc1c1ea9374ea160f",
+    "Combat PCA for combined expression profile.pdf": "3f4b461b299d08d70c73a0b7bc3d733e4f36906d82e82e781acd9fac06064c0d",
+    "df.rds": "a1d7cc2e2301f20b5d51b4ba9925e0e27b5f4be7e0aed49c93d0ee6dea4b9be2",
+    "easy_input_GSE41613.csv": "5bf16ebafb9e7231fcab4a43315407040908b56211a2987c79a4a05ab73348e8",
+    "easy_input_GSE65858.csv": "b0f872fffb94c151bc44d444f96e2548373924640142164cca20e96e9d77f969",
+    "easy_input_TCGA.csv": "ee90e8f3370561b996ac4a4ed49fa65d5b96e0aae14d9433fbf808fe46c91d42",
+    "example.png": "560d962ba959f6595b8fea70b599ab83a01291f3d7c30fa356cc2467d98fa760",
+    "explain_picture.png": "62e238422154dd5fb55d335ca714988f8b8161849c130ebda7483e54e8b5d599",
+    "FigureYa203ComBat.Rmd": "ebe118226cd8e05905f3002220ef2a8fafccad52bd395304a986a9913294f01d",
+    "GEO_sangerbox.docx": "be1f6a7e97f36746f756bfe10d6fa8941b88f014b4d761aad3a782060d6311d5",
+    "gse41613.expr.txt": "dd3a87b18c75f8b636c419be0a8cb8c6b462ec806e3cc3bd8e745a2d753095e6",
+    "gse65858.expr.txt": "c9b61154ae374fe4f58bdc738edce11d3e7b7d9d9bebde54d636e5d7d08e8fe9",
+    "install.log": "eb6799909ed6fd579a0847d006e183b852bd76e043872cd78cfd4798dec3003e",
+    "install_dependencies.R": "9da697784efa12e3c8aff69a7ae6f62eeff17acd2b92c5bba09f0aa612f6273c",
+    "MANIFEST.txt": "2655a5a7ae858f19d2722f972123f1be9e4a8341e0aaf5ac362c5310ca212dd8",
+    "output_combined_expr.csv": "e85bee21552a073f7334de1cd250ed0bb37983a064e8b6d63395c46fa7683b25",
+    "overlapTable27.txt": "280c0d1929ef9632dc1a0655c425e793665ed7b2a03300c5c170045f4c41b959",
+    "PreprocessingOutput.png": "a4d2c2d9fc56c455ba37ac3b4032fce0166ac7089ec004f93fd6bb50a27b2a07",
+    "Raw PCA for combined expression profile.pdf": "4b6241353a7a859d611336b9db5c5fc19bdf79680e087643748979a95eec9cac",
+    "results.rds": "99e3e13b3c8d02c3d9bb50044b41ca66569aa937e0ea29e68a3fbec7fdb5fd7e"
+  },
+  "excluded": [
+    "FigureYa203ComBat.html"
+  ],
+  "copied_at": "2026-11-04T09:39:49+00:00"
+}

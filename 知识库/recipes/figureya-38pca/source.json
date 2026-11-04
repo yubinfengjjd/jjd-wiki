@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa38PCA",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input_expr.csv": "ea2b005027b49967936738b600fff58633031606b3cf42c1adbbeb1744865499",
+    "easy_input_meta.csv": "4584673659b0220d3f7714ccb0f36501f1df980642fd8347314fe41b9aa862ce",
+    "example1.png": "e1f7a6dc78e19faaec4d82c7eb61123375ae4c1d61e151cf7929283249f8e4a4",
+    "example2.png": "0035a13b65eed43799ab25dfeb860ce7e52abf56f749f75cd183fa7047e77aaf",
+    "FigureYa38PCA.png": "6ba2a0a9c9a13fd679b9e0da8d10a3a6cee314e08f732f9a6ac93efc513e0048",
+    "FigureYa38PCA.Rmd": "0a2098ba60594061d18e7bc830555e9b89b42696de0cc4f8a1008e94a987e5c4",
+    "geom_ord_ellipse.R": "8c4ddd09bfd9dd110aa2bac3d4680304ba59d4f309de9defd2bc439aa99b59a6",
+    "ggord.R": "6c0399e2a19826394235a503b1eb33c9a506f3d660521e46533984e6020f5c81",
+    "hoptop.png": "5450e5f7f4811f60bab9b843c7abc34e01fd1f6ced7073df127d71e019897ff1",
+    "install_dependencies.R": "2e5703aa27a7601003af194bb6a9c9ec171c1ae94d4f5c50c1a304dc74a152c4",
+    "PCA_allgenes_topNarrows.pdf": "75c0de113f00a41a1531199c6187216af584261c6061b046f3e44985c14c2872",
+    "PCA_classic.pdf": "b45969f3e92bc00ed9879a0b80075c64bf6814ee9b32c9b46d3c6813046e568c",
+    "PCA_DIY1.pdf": "fba1b13681612dadf22617fe311c8fb4044ea407bb2c322886b06482810904f4",
+    "PCA_DIY2.pdf": "260b7bed0e773d88b7d464b7065550c1f1a5d2a02b26e1f0a414dc64f5cf428d",
+    "小圈圈.png": "4fda039888efd9c0f14035521bebd48cbf3e90ae9ae7d1b3a44264e4e8840a50"
+  },
+  "excluded": [
+    "FigureYa38PCA.html"
+  ],
+  "copied_at": "2026-11-04T09:40:04+00:00"
+}

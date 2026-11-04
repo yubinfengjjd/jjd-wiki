@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa5bubbles",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "1k_es_peaks_motifDir/knownResults.txt": "97bacdb807ddb906dacf28da604d6348ee2f4718e58b7393c17cb92fcbfdffb9",
+    "200_es_peaks_motifDir/knownResults.txt": "962b442bdac1f54ea894b42542a7d0e7c2f4d1d788ba985260ffc427cd966c39",
+    "2cell_early_peaks_motifDir/knownResults.txt": "977afb805de78f46faef9c5136a29ff47642459666e05ede98f333feb86bf7c6",
+    "2cell_early_trx_inhibitor_peaks_motifDir/knownResults.txt": "53662505a6b2a70621424167af76208c4e77a4e78dad3627636ccf61a077f938",
+    "2cell_peaks_motifDir/knownResults.txt": "28289f6a5c9b2b743126d08e1f792891061bb30e97e6190e7a97e4683e787c85",
+    "4cell_dba_peaks_motifDir/knownResults.txt": "629f74258b6350703f5aa3e9c47ed1d8771386460075262e7126f33b0fcc8036",
+    "4cell_peaks_motifDir/knownResults.txt": "94b95f3f3bcc1697a6fcc5a503b27982e75d3c18ca27cc80c15c5dc62f2aa26a",
+    "50k_es_peaks_motifDir/knownResults.txt": "67a1e0001c9f3d0b84d3e37d4a4a9ed6cfc2a56befae909c81d4edebe01b61b3",
+    "8cell_peaks_motifDir/knownResults.txt": "50c402cd90d47afd5450e062f36dd0be702b605a74131f38e829514e504d252e",
+    "easy_input.txt": "6c5e9fd8a2b878277208e616bbfe613630e374c762272b03e747b1e089ba343d",
+    "FigureYa5bubbles-1.jpg": "f4db95bc63fe959e0b5faaa27ac58f804269b719a2d023af244b0ec7263f9327",
+    "FigureYa5bubbles-2.jpg": "76753cc0b6754673814056485a80bf154683353cec722e9ff466a2695004f7e7",
+    "FigureYa5bubbles.Rmd": "a8ea8c1131155bf23c893abfb56219c6337616caf764c4107f1159b90b9c1795",
+    "filtered_genes.pdf": "1cc97808222f059d6b95e054dff30d2ee7f47735a60ea22a9c2e544e4d192e2b",
+    "filtered_motifs.pdf": "695a6879722633cba384f034d9cf0cd26f7abb286cdcf6f3ee19b1d61dee85d6",
+    "GSE66582_stage_FPKM.txt": "532ccd054e293083caa02b91b3471a46715c8582bd92638cdf5bc1d3ddbc7700",
+    "icm_peaks_motifDir/knownResults.txt": "729e1ffb3571bfdde192a011f45ab7b565473beab92c5732dc91304de2c17af7",
+    "install.log": "038ae72ad03b62df1e83e2a2a253dde644e470f0b16b5cc9e534534898f69f26",
+    "install_dependencies.R": "fab6387a22a76685afb788f4bb60a1a632fc55c8557486d8dfd16c43832c78f3",
+    "paper_gene.pdf": "495c13af509835da4c889ee7e27255d7ce24dcdea96062396586c977c8171a48",
+    "paper_motifs.pdf": "09a63d2a28f46270f359eb28e6bbb7d77249e4579e67d8051fb71c3e8bd28655"
+  },
+  "excluded": [
+    "FigureYa5bubbles.html"
+  ],
+  "copied_at": "2026-11-04T09:40:10+00:00"
+}

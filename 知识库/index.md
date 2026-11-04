@@ -22,25 +22,45 @@
 - [[recipes/figureya-59plus-geo2deg|GEO芯片差异表达与火山图]] — getGEO下载GEO芯片表达矩阵与GPL平台注释，探针转symbol、log2+分位数标准化、去离群样本后limma差异分析，输出easy_input_lim
 - [[recipes/figureya-61gsva|GSVA 通路评分与组间差异]] — 把“样本×基因”表达矩阵用 GSVA 转成“样本×通路”评分，用 limma 找组间差异通路，结果可接 FigureYa39bar 画图。
 - [[recipes/figureya-214kegg-hierarchyv2|KEGG三层层级富集条形图]] — 把KEGG富集结果按level1/level2/level3三层归类，画Detected/Enriched对数条形图加三层级文字标注的组合图。
+- [[recipes/figureya-38pca|PCA降维置信椭圆图]] — 对表达矩阵做prcomp降维并画PCA散点，按分组着色，叠加95%/98%置信椭圆或Top贡献基因载荷箭头。
 - [[recipes/figureya-53ppimodule|PPI网络模块挖掘导出]] — 把共表达基因/蛋白列表经Uniprot idmapping映射到STRING PPI，构建0/1邻接矩阵，算TOM后层次聚类+dynamicTreeCut划模块
 - [[recipes/figureya-81immune-network|免疫细胞相关预后网络图]] — 由免疫细胞（或基因）矩阵算spearman相关与P值，聚类分4簇，igraph画圆形网络：点色=簇、点大小=logrank P、边色=相关正负、边粗=-log1
+- [[recipes/figureya-194pyscenic|单细胞转录调控网络构建]] — 以pySCENIC为主（GRNBoost2→cisTarget→AUCell）从单细胞表达矩阵推断TF-regulon活性，复现细胞类型特异regulon、re
+- [[recipes/figureya-231scscore|单细胞通路得分降维图]] — 标准Seurat流程跑t-SNE后，用Single-Cell Signature Explorer计算各细胞GO通路得分，并在降维图上按分组着色或渐变色展示通路
 - [[recipes/figureya-318genesetdedotplot|单细胞通路活性差异点图]] — 用AUCell给每个细胞算通路活性得分，在各细胞类型内做两组间limma差异分析，画“通路×细胞类型”点图（颜色=logFC、大小=FDR档），顶部拼通路分类条
 - [[recipes/figureya-36nsurvv3|双基因高低分组生存曲线]] — 按两个基因各自的高/低表达把样本分成4组，画KM生存曲线，图例标注各组HR（coxph）和两两logrank的显著P值。
 - [[recipes/figureya-202consensusgene|双通路基因共识聚类分型]] — 对两个通路的基因做基因维度共识聚类筛出共表达基因，再按两通路中位表达把样本分四类，画共识矩阵热图+四象限散点+分型表达热图。
 - [[recipes/figureya-97correlationv3|基因免疫浸润相关热图]] — 批量算基因列表中每个基因与免疫细胞矩阵的spearman相关和P值，ggplot2 geom_tile画相关热图，格内打*/**标显著性。
+- [[recipes/figureya-67phastcons|基因组区域保守性曲线]] — 提取bed区域中心±5kb的phastCons bigWig信号（调Python脚本与awk汇总），画多组区域的平均保守性profile曲线。
 - [[recipes/figureya-44profile|基因组区域平均信号曲线]] — 从bigWig提取信号，画两类profile：基因体统一缩放+TSS/TTS两侧flank的平均信号曲线，以及指定bed区域（如CpGi）中心两侧的信号曲线，支
 - [[recipes/figureya-307cnvheatmap|基因组拷贝数变异热图]] — 读GISTIC的all_thresholded.by_genes输出，按染色体位置排布基因画CNV增益/缺失热图，列按分子亚型分块、行按染色体分块，叠加临床注释
+- [[recipes/figureya-74omiccircos|基因组环状热图连线图]] — 用OmicCircos在环形染色体图上叠加多组样本信号热图轨道，并按颜色绘制基因间连线（同色互连）。
+- [[recipes/figureya-83enrichment|基因集富集耦合热图]] — 对基因集两两做Fisher精确/超几何检验算富集odds ratio与FDR，取上三角画耦合热图并用符号标显著性层级。
 - [[recipes/figureya-109subtypegsea-update|多亚型GSEA富集对角热图]] — 对每个亚型做“一组vs其余组”的差异分析，分别跑clusterProfiler的GSEA并挑各组top通路，再用GSVA打分画带亚型注释的对角式热图。
+- [[recipes/figureya-118multiclassdeseq2|多亚型差异表达分析]] — 用DESeq2对read count矩阵做"每一亚型 vs 其余样本"的配对差异表达分析，输出各亚型差异基因表供下游富集/marker分析。
 - [[recipes/figureya-18oncoplot-update|多样本基因突变瀑布图]] — 用TCGAbiolinks在线下载TCGA突变maf和临床信息，maftools::oncoplot画带临床注释的突变瀑布图，支持topN、自定义基因列表和按分
 - [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] — 在训练集上跑10种分类算法，再叠加RF/Lasso/Boruta特征选择、投票集成与参数调优共100+组合，在多个验证集上算AUC/准确率等指标并可视化，挑最优
 - [[recipes/figureya-230immunelandscape|多算法免疫浸润组合热图]] — 把多种免疫浸润算法（TIMER/CIBERSORT/xCELL等）的得分按算法分块画成热图并纵向拼接，样本按risk score排序并加分组注释；提供pheat
 - [[recipes/figureya-293machinelearning|多算法组合预后模型 C 指数比较]] — 用 10 种生存机器学习算法及其组合在训练集建模，在多个验证集计算 C 指数，画模型比较热图与条形图。
+- [[recipes/figureya-45v2|多组学整合聚类分型]] — 用iClusterBayes对突变/CNV/表达等多类型组学矩阵做联合潜变量聚类，按BIC与偏差比选K，输出样本分型与特征基因供画亚型热图。
+- [[recipes/figureya-14circos|多轨道基因组环形圈图]] — 用Circos（Perl程序）在环形基因组图上叠加GC含量、基因密度、表达量、SNP等多轨道及连线。
+- [[recipes/figureya-5bubbles|富集与表达气泡图]] — 气泡图同时编码motif/通路富集的-logP（点大小）与对应基因表达量（填充色），跨样本对比展示。
 - [[recipes/figureya-153ccgraph|层级关系同心环网络图]] — 用“圆环套圆环”的布局展示层级结构，例如基因—突变、调控因子—靶基因或物种分类丰度。
 - [[recipes/figureya-149rankheatmap|差异倍数分档注释热图]] — 把logFC（或相关系数）按阈值切成5档、P≥0.05归入第6档，用ComplexHeatmap画分类热图并在格内标数值，左侧可加分组注释。
 - [[recipes/figureya-66univariatecox|批量单基因Cox森林图]] — 对表达矩阵逐列特征跑单因素Cox回归，导出含HR/z/P/95%CI的cox_output.csv，再画HR=1虚线、点染P值的森林图（三种配色可选）。
+- [[recipes/figureya-10chromosomev2-update|染色体特征分布图]] — 用RIdeogram在直线型染色体（核型Ideogram）上叠加数值热图轨道和形状标记，展示基因组特征分布。
+- [[recipes/figureya-9heatmap|样本相关聚类热图]] — 用pheatmap画样本间相关系数热图（可加数字、分组注释色条）和基因表达双向聚类热图。
 - [[recipes/figureya-253pangsea|泛癌分组GSEA富集气泡图]] — 按基因集ssGSEA得分（或单基因表达）把每个癌种样本分高/低30%两组，limma差异分析后clusterProfiler跑GSEA，画“癌种×通路”的NES
+- [[recipes/figureya-55pancancer-violinv2|泛癌分裂小提琴图]] — 合并TCGA肿瘤与TCGA+GTEx正常组织，用分裂小提琴图对比某基因在各组织肿瘤vs正常的TPM分布。
+- [[recipes/figureya-139tmb-titv|泛癌突变负荷与碱基谱图]] — 用base plot拼图：上层按癌种中位TMB排序的逐样本突变频率散点（含中位线），下层每样本6种碱基替换（Ti/Tv）比例条。
 - [[recipes/figureya-132alteration|泛癌通路基因变异扫雷图]] — 按“基因×癌症亚型”统计各类型基因组变异（突变/扩增/缺失/融合等）的样本数，画中央色块矩阵加顶部、右侧变异类型频率条的扫雷图。
+- [[recipes/figureya-215dnaage|甲基化年龄加速分析]] — 由甲基化芯片beta值经ChAMP过滤+BMIQ标准化后用wateRmelon::agep算DNA甲基化年龄，与真实年龄求差划分加速/减速组并画双向柱图。
 - [[recipes/figureya-73batchcorrelation|目标基因批量相关散点图]] — 批量算一个目标基因与其余全部基因的pearson/spearman相关及P值，取正/负相关各topN，样本按目标基因表达排序后按bin取中位数画带回归线的散点小
+- [[recipes/figureya-320clontypeheatmap|细胞类型间共享克隆热图]] — 统计克隆型在各细胞类型间两两共享的数量，log(1+n)转换后画对称热图，区分同质与异质克隆型分布。
+- [[recipes/figureya-255time|肿瘤免疫微环境热图]] — 由5个甲基化探针PCA算MeTIL得分、tidyestimate算免疫/基质得分、GSVA算24种免疫细胞富集，拼三张注释热图展示亚型免疫景观。
+- [[recipes/figureya-294hccdrug|药物靶点相关性火山图]] — 算基因集评分（示例PPS）与临床蛋白组、细胞系CRISPR CERES得分的Spearman相关，火山图筛显著靶点加散点图展示相关细节。
+- [[recipes/figureya-308ihs|蛋白活性异质性评分图]] — 用weighted VIPER推断蛋白活性后，以nlme与层次聚类两种方法各算患者内异质性得分，几何平均得IHS并画排序点图。
+- [[recipes/figureya-203combat|跨平台表达谱批次校正]] — 合并TCGA RNA-seq与多套GEO芯片表达矩阵，log转换统一量级后用sva::ComBat去批次效应，PCA图对比校正前后。
 
 ### ready
 
@@ -219,7 +239,9 @@
 - [[chart-types/bubble|bubble]]
 - [[chart-types/calibration|calibration]]
 - [[chart-types/chord|chord]]
+- [[chart-types/circos|circos]]
 - [[chart-types/decision-curve|decision-curve]]
+- [[chart-types/deg-table|deg-table]]
 - [[chart-types/density|density]]
 - [[chart-types/density-scatter|density-scatter]]
 - [[chart-types/dot|dot]]
@@ -228,10 +250,12 @@
 - [[chart-types/forest|forest]]
 - [[chart-types/gsea-curve|gsea-curve]]
 - [[chart-types/heatmap|heatmap]]
+- [[chart-types/ideogram|ideogram]]
 - [[chart-types/km-curve|km-curve]]
 - [[chart-types/lasso-path|lasso-path]]
 - [[chart-types/network|network]]
 - [[chart-types/nomogram|nomogram]]
+- [[chart-types/pca|pca]]
 - [[chart-types/pie|pie]]
 - [[chart-types/radial|radial]]
 - [[chart-types/radial-bar|radial-bar]]

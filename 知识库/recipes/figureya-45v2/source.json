@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa45V2",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "Bayfit.RData": "215211c1ec3efdb26674b59b8b1ec86f28df4fcafdbe35745baed8a8a4373d50",
+    "example.png": "38d9516f2de078aefae6a2fe274a5b4e12979beded8c97672423a0f6aecc5767",
+    "FigureYa45iClusterV2.Rmd": "d7f8c63a353f2527ffa020d2a22a399c7c0c64ef68fa9d1d05f5fab86d474f21",
+    "gbm_exp.txt": "7671573bdf2a13b506e3ba79b657d8ac4e6c46e41a35b4e03dd150d77e5f57a4",
+    "gbm_mut.txt": "7a91b81f00ac72c62d4c2b3afc6fff67833b51f475a79df8f772c16277946c86",
+    "gbm_seg.txt": "bdb264f25b80e9c80fa366de5987fe502ddd4be597a2ddfc58f40765f8b16439",
+    "hoptop.jpg": "087a770f9e189870d09db60c812a4bf0cb7e5e35f2da90f74081596bef79983b",
+    "install_dependencies.R": "610d3007ab813869ded0fd441201f9abdbaa4e59422cb3ba1b391aee3fde98ca",
+    "output_clusterMembership.txt": "2ca19c3735208e03ff3e33125a71a27d6ec1124a0ffd4369d6347e8922e10c64",
+    "output_cn.csv": "d379707df257624f3a2bc97c525a2f21c170a3d8eeca35e99fe3a76342d58a3b",
+    "output_exp.csv": "d4e293bb5fea328d3be08ecd28781e9c850f5c06bc794daf6bfb8a87dba77b2c",
+    "output_mut2.csv": "c56e9a304b03a6b3c964b87b0c1441d94c2c3b1aed2a67e571eab55c18dc6d73"
+  },
+  "excluded": [
+    "FigureYa45iClusterV2.html"
+  ],
+  "copied_at": "2026-11-04T09:40:06+00:00"
+}

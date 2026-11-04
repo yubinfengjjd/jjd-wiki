@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa139TMB_titv",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "easy_input.csv": "f703e6737618806e774bc3e6d0ae2ea88cddbb0f83a76b2795f60469beaaa5c0",
+    "example.png": "392a8a8437090e33d9b704aa91cce039fec865b301b9f8c57144d29495fb714d",
+    "FigureYa139TMB_titv.Rmd": "aa6f911f926fc3c5805c7eb77e912b9502f5b8caa401eb62234d546dc72d324b",
+    "install.log": "265bf73c7fc94b6ed12bcd1b6b32c78ef50dcb2a24a606514678ad70fb24b814",
+    "install_dependencies.R": "d691d234fbd2cf765e5fe978194eeaae2c0f83f7c492d5a23048d74bb9567f2b",
+    "Readme.png": "c13ce53f9d04eb50c67085e6d6986fb377d416aa1b2a004704e0aba9bdacbf06",
+    "TMB_titv.pdf": "2ed5c587c96dd6cddfcd6453dec35fb05fdc6e7e11dfcffdd84b4dcb7f39d325",
+    "TMB_titv.RData": "a134522e8942642072f0dab9f11cab85a5d08d84912cb1e011bcbfa73c11d0e0",
+    "TMB_titv2.pdf": "529536ad43bf5977eb38f4a842404a8fa25605c151103b345b7a85ad3484ce71"
+  },
+  "excluded": [
+    "FigureYa139TMB_titv.html"
+  ],
+  "copied_at": "2026-11-04T09:39:42+00:00"
+}

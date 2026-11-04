@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "source": "figureya",
+  "item": "FigureYa231scScore",
+  "url": "https://github.com/ying-ge/FigureYa",
+  "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+  "license": "CC-BY-NC-SA-4.0",
+  "files": {
+    "data/metadata-ctrl-gbm.RData": "743bc7b7e1317504a154341c05358541602df49ab0a971c93e44d0e73fb5075e",
+    "data/unnormalized_counts_ctrl_gbm.RData": "a2af4af52a3c362c50f2bbb90299e0c8446e631834476491199a2396591bfb5f",
+    "example.png": "13a1bed117f1faebfd399b7e6deb2c4c7f78d93d6868f6fcabf96d0150f6f05e",
+    "explains picture.png": "4c42710e2ebeed28545fb7fc281e2d7878bca6b56f3698d30f958e6cdd696646",
+    "FigureYa231scScore.Rmd": "d705aea7c636b053adb32fb106809e00db166541fea68c36840a488973c27d62",
+    "geneset/.DS_Store": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+    "geneset/GO_0000122.txt": "f5653f1af4d596127b18bb7079667ca2b45cfd1579bc660c6d9995805da5e6cd",
+    "geneset/GO_0001525.txt": "8f9dc64f17d8cd8768cd80e00ad9fbed6efc3671a9d711b92e6eef6f83c1134c",
+    "geneset/GO_0007155.txt": "f03e7a6ef3af781135bd4bcf2ab469c188921c6a200a1151ef5ee797715b6c9c",
+    "geneset/GO_0007165.txt": "c6fdd3566db0665455167fa2fc3eb8c539fd84624dfde9e4b410e3cc6a345616",
+    "geneset/GO_0043547.txt": "662e217a303f3dc73b0fbef4e0f8ca929adff52f7bbfaf9fe7518861f1180a80",
+    "geneset/GO_0045944.txt": "7f72089623180a8ab074a4f5564e54c06782379c7dd04b18b85036fe4ea2e42e",
+    "install.log": "189fa892c4ecd60fc4a6ee5975f611dd5632b63c219ca4fb5577df2e633d3848",
+    "install_dependencies.R": "92062fb92ddff5269a783237784d78c14cb5b15b24ad74eb898a3c0d2e66f493",
+    "scorer.png": "cb109eda1a73734cf30b92f88b0bf5198879a3990b8adda7265747fc13ba63d3",
+    "scScore.pdf": "c9c9b7046c1c89591de690176c73b45b828dc261ba79f9beec2d3ef0d3c9aacb",
+    "SignatureExamples_SeuratObj.tsv": "edec9ae2fee9f32560c9ca11d816373b8d536a9dbe794d19143fc4478757939c"
+  },
+  "excluded": [
+    "FigureYa231scScore.html"
+  ],
+  "copied_at": "2026-11-04T09:39:53+00:00"
+}
