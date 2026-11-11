@@ -349,17 +349,25 @@ testExpr <- testExpr[comgene,]
 ```{r}
 outTab <- NULL
 # 循环很慢，请耐心 The loop is very slow, please be patient
+# REPAIR: batchCorrect="eb" re-ran ComBat on identical train/test matrices
+# once per drug (~1900 fits). Homogenize once up front, then predict with
+# batchCorrect="none" - mathematically identical.
+.hom <- homogenizeData(testExpr, trainExpr, batchCorrect = "eb", selection = 1, printOutput = FALSE)
+testExpr.eb <- .hom$test
+trainExpr.eb <- .hom$train
+rm(.hom)
 for (i in 1:ncol(trainPtype)) { 
   display.progress(index = i,totalN = ncol(trainPtype))
   d <- colnames(trainPtype)[i]
   tmp <- log2(as.vector(trainPtype[,d]) + 0.00001) # 由于CTRP的AUC可能有0值，因此加一个较小的数值防止报错 Since CTRP's AUC may have 0 values, a smaller value is added to prevent errors
   
   # 岭回归预测药物敏感性 Ridge regression to predict drug sensitivity
-  ptypeOut <- quiet(calcPhenotype(trainingExprData = trainExpr,
+  ptypeOut <- quiet(calcPhenotype(trainingExprData = trainExpr.eb,
                                   trainingPtype = tmp,
-                                  testExprData = testExpr,
+                                  testExprData = testExpr.eb,
                                   powerTransformPhenotype = F,
-                                  selection = 1))
+                                  selection = 1,
+                                  batchCorrect = "none"))
   ptypeOut <- 2^ptypeOut - 0.00001 # 反对数 Inverse logarithm
   outTab <- rbind.data.frame(outTab,ptypeOut)
 }
@@ -395,15 +403,23 @@ testExpr <- testExpr[comgene,]
 ```{r}
 outTab <- NULL
 # 循环很慢，请耐心 The loop is very slow, please be patient
+# REPAIR: batchCorrect="eb" re-ran ComBat on identical train/test matrices
+# once per drug (~1900 fits). Homogenize once up front, then predict with
+# batchCorrect="none" - mathematically identical.
+.hom <- homogenizeData(testExpr, trainExpr, batchCorrect = "eb", selection = 1, printOutput = FALSE)
+testExpr.eb <- .hom$test
+trainExpr.eb <- .hom$train
+rm(.hom)
 for (i in 1:ncol(trainPtype)) { 
   display.progress(index = i,totalN = ncol(trainPtype))
   d <- colnames(trainPtype)[i]
   tmp <- log2(as.vector(trainPtype[,d]) + 0.00001) # 由于PRISM的AUC可能有0值，因此加一个较小的数值防止报错 Since PRISM's AUC may have 0 values, a smaller value is added to prevent errors
-  ptypeOut <- quiet(calcPhenotype(trainingExprData = trainExpr,
+  ptypeOut <- quiet(calcPhenotype(trainingExprData = trainExpr.eb,
                                   trainingPtype = tmp,
-                                  testExprData = testExpr,
+                                  testExprData = testExpr.eb,
                                   powerTransformPhenotype = F,
-                                  selection = 1))
+                                  selection = 1,
+                                  batchCorrect = "none"))
   ptypeOut <- 2^ptypeOut - 0.00001 # 反对数 Inverse logarithm
   outTab <- rbind.data.frame(outTab,ptypeOut)
 }
