@@ -1333,3 +1333,5 @@
 ## [2026-11-11 09:14 UTC] run figureya-19lollipop=pass
 
 ## [2026-11-11 09:14 UTC] run figureya-275scaucell=fail
+
+## [2026-11-11 09:15 UTC] run figureya-2ggtree-pheatmap-msa=pass
