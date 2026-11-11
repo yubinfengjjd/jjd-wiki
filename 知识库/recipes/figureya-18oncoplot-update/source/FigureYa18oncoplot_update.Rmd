@@ -239,8 +239,10 @@ names(col) = c('Frame_Shift_Del','Missense_Mutation', 'Nonsense_Mutation', 'Fram
 
 #人种
 #race
-racecolors = RColorBrewer::brewer.pal(n = 4,name = 'Spectral')
-names(racecolors) = c("ASIAN", "WHITE", "BLACK_OR_AFRICAN_AMERICAN",  "AMERICAN_INDIAN_OR_ALASKA_NATIVE")
+racecolors = c(RColorBrewer::brewer.pal(n = 4,name = 'Spectral'), "grey85")
+# REPAIR: our clinical table also carries "Not Available" (NA/bracketed race
+# codes normalized earlier); it needs a color or the legend builder fails.
+names(racecolors) = c("ASIAN", "WHITE", "BLACK_OR_AFRICAN_AMERICAN",  "AMERICAN_INDIAN_OR_ALASKA_NATIVE", "Not Available")
 
 #病毒、肝硬化
 #virus, cirrhosis
