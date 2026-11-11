@@ -124,7 +124,7 @@ saveRDS(results, "data/gene.info.rds")
 results <- readRDS("data/gene.info.rds")
 all(results$ensembl_gene_id == rownames(seu)) # should be TRUE
 
-counts <- seu[["RNA"]]@counts
+counts <- SeuratObject::LayerData(seu, assay = "RNA", layer = "counts")
 rownames(counts) <- results$uniq.name
 
 # !important: the unexpressed genes should be removed.

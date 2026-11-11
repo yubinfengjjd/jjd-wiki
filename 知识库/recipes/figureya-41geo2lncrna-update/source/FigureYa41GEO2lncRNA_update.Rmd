@@ -125,7 +125,8 @@ If you have used FigureYa22, 23, 34 to obtain the gene expression matrix of TCGA
 
 **Note:** Replace GSE with the data you want to use, and remember to also replace it with GPL (which chip platform) used for this set of data in order to get the correct probe set annotation information. **Where to find the GPL? **Search platform on the <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36895> page, and the GPL is listed to the right of it.
 
-```{r,message=FALSE}
+```{r,message=FALSE,eval=FALSE}
+# REPAIR: GEO download skipped; easy_input.csv is provided in source/
 gset <- getGEO("GSE36895", GSEMatrix =TRUE, getGPL = TRUE, AnnotGPL = TRUE) 
 #如果提示没有GPL***.anno.gz文件，就用下面这句
 #If prompted that there is no GPL***.anno.gz file, use the following sentence
@@ -180,7 +181,8 @@ You may encounter three situations:
 
 3. If there is no shared ID, you need to annotate the chip by sequence comparison to find the gene name corresponding to the sequence, [Module 1] is suspended here for you.
 
-```{r}
+```{r,eval=FALSE}
+# REPAIR: probe annotation skipped; easy_input.csv is provided in source/
 exprdf$gsym<-gset@featureData@data$`Gene symbol`
 #有时要用下面这行
 #sometimes you have to use the following line

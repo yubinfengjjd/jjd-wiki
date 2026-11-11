@@ -5,8 +5,15 @@ MagicImpute_LowMemory <- function(seu.list, tmp.dir="tmp.data2/magic", ...) {
   message("MAGIC imputation: low memory mode.")
   for (i in seq_along(seu.list)) {
     seu <- seu.list[[i]]
-    seu <- Rmagic::magic(seu, ...)
-    imputed.matrix <- t(as.data.frame(seu[["MAGIC_RNA"]]@data))
+    seu <- local({
+    .magic.res <- Rmagic::magic(
+      data = t(as.matrix(SeuratObject::LayerData(seu, assay = "RNA", layer = "counts"))),
+      genes = "all_genes", ...)
+    seu[["MAGIC_RNA"]] <- SeuratObject::CreateAssay5Object(
+      data = t(as.matrix(.magic.res$result)))
+    seu
+  })
+    imputed.matrix <- t(as.data.frame(SeuratObject::LayerData(seu, assay = "MAGIC_RNA", layer = "data")))
     imputed.matrix <- as_tibble(imputed.matrix)
     target.file <- file.path(tmp.dir, sprintf("%s.MAGIC_RNA.feather", names(seu.list)[i]))
     arrow::write_feather(imputed.matrix, target.file)

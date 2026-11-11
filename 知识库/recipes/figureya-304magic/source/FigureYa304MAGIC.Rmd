@@ -81,7 +81,39 @@ h5seurat_file <- "SCLC_epithelial_cells.h5seurat"
 Convert(h5ad_file, dest = h5seurat_file, overwrite = TRUE)
 
 # 3. 将 .h5seurat 文件加载为 Seurat 对象
-seu <- LoadH5Seurat(h5seurat_file)
+# REPAIR: SeuratDisk::LoadH5Seurat calls the defunct slot= argument of
+# GetAssayData under SeuratObject v5. Assemble the object from the
+# h5Seurat file directly with hdf5r instead.
+library(hdf5r)
+.h5 <- H5File$new(h5seurat_file, mode = "r")
+.feats <- .h5[["assays/RNA/features"]][]
+.cells <- .h5[["cell.names"]][]
+.cg <- .h5[["assays/RNA/counts"]]
+.counts <- Matrix::sparseMatrix(
+  i = .cg[["indices"]][] + 1L,
+  p = .cg[["indptr"]][],
+  x = .cg[["data"]][],
+  dims = c(length(.feats), length(.cells)),
+  dimnames = list(.feats, .cells))
+.mg <- .h5[["meta.data"]]
+.meta <- lapply(names(.mg), function(nm) {
+  node <- .mg[[nm]]
+  if (inherits(node, "H5Group")) {
+    lvls <- node[["levels"]][]
+    factor(lvls[node[["values"]][] + 1L], levels = lvls)
+  } else {
+    node[]
+  }
+})
+names(.meta) <- names(.mg)
+.meta <- as.data.frame(.meta, stringsAsFactors = FALSE)
+.h5$close()
+if (ncol(.meta) > 0L && nrow(.meta) == length(.cells)) {
+  rownames(.meta) <- .cells
+  seu <- Seurat::CreateSeuratObject(counts = .counts, meta.data = .meta)
+} else {
+  seu <- Seurat::CreateSeuratObject(counts = .counts)
+}
 
 # 查看加载后的 Seurat 对象
 print(seu)
@@ -139,12 +171,19 @@ gc()
 # n.jobs = 20 依据自己的机器配置灵活调整
 
 # Imputation.
-seu <- Rmagic::magic(seu, knn = 30, t = 3, npca = 56, n.jobs = 20)
+# REPAIR: Rmagic::magic.Seurat calls the defunct slot= argument of
+# GetAssayData and CreateAssayObject under SeuratObject v5. Run the
+# matrix-level interface and attach the assay manually.
+.magic.res <- Rmagic::magic(
+  data = t(as.matrix(SeuratObject::LayerData(seu, assay = "RNA", layer = "counts"))),
+  genes = "all_genes", knn = 30, t = 3, npca = 56, n.jobs = 20)
+seu[["MAGIC_RNA"]] <- SeuratObject::CreateAssay5Object(
+  data = t(as.matrix(.magic.res$result)))
 
 target.file <- "tmp.data/SCLC_epithelial_cells.MAGIC_RNA.feather"
 
 if (!file.exists(target.file)) {
-  imputed.matrix <- t(as.data.frame(seu[["MAGIC_RNA"]]@data))
+  imputed.matrix <- t(as.data.frame(SeuratObject::LayerData(seu, assay = "MAGIC_RNA", layer = "data")))
   imputed.matrix <- as_tibble(imputed.matrix)
   arrow::write_feather(imputed.matrix, target.file)
   writeLines(colnames(seu), "tmp.data/SCLC_epithelial_cells.MAGIC_RNA.feather.cellnames.txt")

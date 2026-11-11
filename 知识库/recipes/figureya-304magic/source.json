@@ -9,10 +9,10 @@
     "data/gene.info.rds": "c850f630c35aabd768fe17f1aa408d2184f04e038143a20e909b59065157a5fe",
     "data/TableS12.csv": "146785e460a1c2520dc7952b4c638ffa594eb5cc924c0b7ed8d7a5b704921e81",
     "example.png": "28890814c760fe044c1dd20a55c32a0580cafa949552ec5faff3efc2a773528c",
-    "FigureYa304MAGIC.Rmd": "48cdd8685587e55e46b0cae2b0a76eff1c5723f700cbc8bfe3a2055854b79573",
-    "FigureYa304MAGIC_lowMemory.Rmd": "94fefcd3a6d8fb2f8bf8dd50eafa6008863aef2b4330cd35aa8cd93a634ebcda",
+    "FigureYa304MAGIC.Rmd": "66cbfcb1c1a53b3b46cec79464dffdd4e87ff711d6b73530fc9ab22a1f91bb36",
+    "FigureYa304MAGIC_lowMemory.Rmd": "aa6aee7c6f435abf74bcc162afb3f8d37e7c9aebf53457c59de939f92bfec4e8",
     "install_dependencies.R": "1ab8d8745459a67abe23c5c17cf5ce12a058e2bd2b01ec2c20068e4ec33391bf",
-    "R/low_memory_utils.R": "8e9eea71f02c7708edce9a86af1414f35abddc3dd94c3d9ff747718975f79994",
+    "R/low_memory_utils.R": "3d819b58e09acd3ad1b3984b09108a6a2b893243a0d0d5b29966eba1c3139d6e",
     "R/magic_utils.R": "57890f611167bdf6cfac9a44301081df123494f22b7031e81b2d6e112d8a2f82",
     "SCLC_epithelial_cells.h5ad": "5f012175f14b6e40d7b71b934e4436cb92d47abaa41459a7829a890b97214953",
     "SYNTHETIC_INPUTS.md": "8e377a1f539c71ddfa8e488bed31ce2e74724f28de1330b2e0e107b93ea845dc"
