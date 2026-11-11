@@ -2,14 +2,14 @@
   "schema_version": 2,
   "kind": "run",
   "id": "figureya-304magic",
-  "run_id": "20261111T081225Z",
+  "run_id": "20261111T144537Z",
   "scope": "as-is",
-  "state": "fail",
+  "state": "pass",
   "runner": "rmd-knit",
   "command": "Rscript --vanilla _rwiki_knit.R FigureYa304MAGIC.Rmd rwiki-knit.md",
-  "started_at": "2026-11-11T08:12:25+00:00",
-  "duration_s": 20.3,
-  "exit_code": 1,
+  "started_at": "2026-11-11T14:45:37+00:00",
+  "duration_s": 1679.7,
+  "exit_code": 0,
   "environment": {
     "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
     "lib_paths": [
@@ -19,6 +19,8 @@
     "packages": {
       "abind": "1.4.8",
       "AnnotationDbi": "1.70.0",
+      "arrow": "26.0.0",
+      "assertthat": "0.2.1",
       "base": "4.5.0",
       "Biobase": "2.68.0",
       "BiocFileCache": "2.16.2",
@@ -29,6 +31,7 @@
       "bit64": "4.8.6",
       "blob": "1.3.0",
       "cachem": "1.1.0",
+      "Cairo": "1.7.0",
       "circlize": "0.4.18",
       "cli": "3.6.6",
       "clue": "0.3.68",
@@ -45,6 +48,7 @@
       "DBI": "1.3.0",
       "dbplyr": "2.6.0",
       "deldir": "2.0.4",
+      "dendextend": "1.19.1",
       "dichromat": "2.0.1",
       "digest": "0.6.39",
       "doParallel": "1.0.17",
@@ -67,6 +71,7 @@
       "ggplot2": "4.0.3",
       "ggrepel": "0.9.8",
       "ggridges": "0.5.7",
+      "ggsci": "5.2.0",
       "GlobalOptions": "0.1.4",
       "globals": "0.20.0",
       "glue": "1.8.1",
@@ -77,6 +82,7 @@
       "gridExtra": "2.3.1",
       "gtable": "0.3.6",
       "hdf5r": "1.3.16",
+      "here": "1.0.2",
       "hms": "1.1.4",
       "htmltools": "0.5.9",
       "htmlwidgets": "1.6.4",
@@ -92,12 +98,14 @@
       "KEGGREST": "1.48.1",
       "KernSmooth": "2.23.26",
       "knitr": "1.52",
+      "labeling": "0.4.3",
       "later": "1.4.8",
       "lattice": "0.22.6",
       "lifecycle": "1.0.5",
       "listenv": "1.1.0",
       "lmtest": "0.9.40",
       "lubridate": "1.9.5",
+      "magick": "2.9.1",
       "magrittr": "2.0.5",
       "MASS": "7.3.65",
       "Matrix": "1.7.3",
@@ -135,8 +143,10 @@
       "reticulate": "1.47.0",
       "rjson": "0.2.23",
       "rlang": "1.3.0",
+      "Rmagic": "2.0.3.999",
       "rmarkdown": "2.32",
       "ROCR": "1.0.12",
+      "rprojroot": "2.1.1",
       "RSpectra": "0.16.2",
       "RSQLite": "3.53.3",
       "Rtsne": "0.17",
@@ -177,6 +187,7 @@
       "utils": "4.5.0",
       "uwot": "0.2.5",
       "vctrs": "0.7.3",
+      "viridis": "0.6.5",
       "viridisLite": "0.4.3",
       "withr": "3.0.3",
       "xfun": "0.62",
@@ -191,16 +202,24 @@
     "data/gene.info.rds": "c850f630c35aabd768fe17f1aa408d2184f04e038143a20e909b59065157a5fe",
     "data/TableS12.csv": "146785e460a1c2520dc7952b4c638ffa594eb5cc924c0b7ed8d7a5b704921e81",
     "example.png": "28890814c760fe044c1dd20a55c32a0580cafa949552ec5faff3efc2a773528c",
-    "FigureYa304MAGIC.Rmd": "ba5f09d2a760b3b07e886f55bab628faf7ec2627f3ae547f49831c3d5da2df5a",
-    "FigureYa304MAGIC_lowMemory.Rmd": "94fefcd3a6d8fb2f8bf8dd50eafa6008863aef2b4330cd35aa8cd93a634ebcda",
+    "FigureYa304MAGIC.Rmd": "e418192b5e72528af49059ecf0970dc9da068a668fa8e14610fc45101b71a113",
+    "FigureYa304MAGIC_lowMemory.Rmd": "3fbd7a0894d941335330a39a6bedb519b833536e3a390979c60a43bac5fa1858",
     "install_dependencies.R": "1ab8d8745459a67abe23c5c17cf5ce12a058e2bd2b01ec2c20068e4ec33391bf",
-    "R/low_memory_utils.R": "8e9eea71f02c7708edce9a86af1414f35abddc3dd94c3d9ff747718975f79994",
+    "R/low_memory_utils.R": "3d819b58e09acd3ad1b3984b09108a6a2b893243a0d0d5b29966eba1c3139d6e",
     "R/magic_utils.R": "57890f611167bdf6cfac9a44301081df123494f22b7031e81b2d6e112d8a2f82",
-    "SCLC_epithelial_cells.h5ad": "5f012175f14b6e40d7b71b934e4436cb92d47abaa41459a7829a890b97214953",
-    "SYNTHETIC_INPUTS.md": "8e377a1f539c71ddfa8e488bed31ce2e74724f28de1330b2e0e107b93ea845dc"
+    "SCLC_epithelial_cells.h5ad": "1d1513f9e1db92abe44381313a07ebc3ab5ef8ea74e5bb0148e9ccbfebdaacc3",
+    "SYNTHETIC_INPUTS.md": "3cac95d5267d9c2a4ce8d560ca2209cd90f424e5675de7976b7f9dc142febe38"
   },
   "outputs": {
-    "SCLC_epithelial_cells.h5seurat": "6c746047cdd14fb9b518aef85ab305da6354bc001d8a680244501b4114045163"
+    "rwiki-figure/unnamed-chunk-4-1.png": "5b14d5f7e231dc3d683199b0f0547373358a599d912d0eba045208c60985d5e2",
+    "rwiki-figure/unnamed-chunk-5-1.png": "318a1f92f119602414c86e150f81417ef5f9b49f61c37a87290258516c06db80",
+    "rwiki-figure/unnamed-chunk-7-1.png": "71362e9d57a44e0cbbf16b7b6005a654ae3fc6bbc3c247fa7e564eaf9a4268f6",
+    "rwiki-figure/unnamed-chunk-9-1.png": "2f16b130de155e82626add91f2c44de3e18fa40bd5dd62d6598abe0171c37dc2",
+    "SCLC_epithelial_cells.h5seurat": "815da380a9cacda4930d29fa120943141cad69d7fa86481e19a0f999cf38089b",
+    "tmp.data/PLCG2.DREMI.tsv": "2824b1a87fa10f1daee0e579a0bf4bdf2806c913c9906fe601318d0f182c6f2c",
+    "tmp.data/SCLC_epithelial_cells.cellmeta.rds": "fcb18d6dff98fd9981dbea3227b497b5937da45b948e15185b495917f9361b8a",
+    "tmp.data/SCLC_epithelial_cells.MAGIC_RNA.feather": "7f650b1c42ff7451291168d622fde301b030bad5df914629b1ddec03050f3a75",
+    "tmp.data/SCLC_epithelial_cells.MAGIC_RNA.feather.cellnames.txt": "1e5a6528c675cbcbb15d2b79b41832310b900583759d368fa60f509dcae78b6b"
   },
   "expected_outputs": [
     "MAGICHeatmap.pdf"
@@ -208,15 +227,24 @@
   "missing_outputs": [
     "MAGICHeatmap.pdf"
   ],
-  "figures": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-4-1.png",
+    "rwiki-figure/unnamed-chunk-5-1.png",
+    "rwiki-figure/unnamed-chunk-7-1.png",
+    "rwiki-figure/unnamed-chunk-9-1.png"
+  ],
   "missing_packages": [],
-  "error": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject",
+  "error": "",
   "checks": [
     "install_dependencies.R 以只检查不安装的桩替代",
-    "knit 退出码 1",
+    "knit 退出码 0",
     "预期输出存在 0/1"
   ],
   "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
   "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
-  "workdir": "<work_root>/runs/figureya-304magic/20261111T081224539306Z"
+  "preview": {
+    "from": "rwiki-figure/unnamed-chunk-9-1.png",
+    "kind": "png"
+  },
+  "workdir": "<work_root>/runs/figureya-304magic/20261111T144536663945Z"
 }
