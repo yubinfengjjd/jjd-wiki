@@ -86,7 +86,7 @@ Go to http://circos.ca/software/download/circos/ to download circos-0.69-6.tgz, 
 
 First, enter the following command in the terminal
 
-```{r}
+```{r eval=FALSE}
 ./bin/circos -modules
 ```
 
@@ -108,7 +108,7 @@ The result of the operation looks like this:
 
 Then enter the following command in the terminal to enter cpan
 
-```{r}
+```{r eval=FALSE}
 sudo cpan
 ```
 
@@ -135,7 +135,7 @@ Then install GD: http://www.zxzyl.com/archives/712
 
 Run the following command in the terminal, and gd is installed:
 
-```{r}
+```{r eval=FALSE}
 cd gd
 sudo ./install
 ```
@@ -144,7 +144,7 @@ sudo ./install
 
 Go to the circos-0.69-6 directory and check that it's all `ok` by typing the following command in Terminal
 
-```{r}
+```{r eval=FALSE}
 /bin/circos -modules
 ```
 
@@ -155,7 +155,7 @@ Go to the circos-0.69-6 directory and check that it's all `ok` by typing the fol
 
 Go into the circos-0.69-6/example directory and use the test data as a positive control to see if you can run the graphs
 
-```{r}
+```{r eval=FALSE}
 cd circos-0.69-6/example
 ../bin/circos -conf etc/circos.conf
 ```
@@ -185,7 +185,7 @@ Now that you have installed the system, just follow the four steps below to jump
 3. Open the circos-0.69-6/Mydata/etc/data/ folder, pick the type of data you're interested in, read the format, and replace the original data with your own.
 4. Delete the paragraphs in the circos-0.69-6/Mydata/etc/circos.conf file that correspond to the data you don't need.
 
-```{r}
+```{r eval=FALSE}
 ## track for GC content  #这是段落的开头 This is the beginning of the paragraph
 <plot>
 show   = conf(show_lines)

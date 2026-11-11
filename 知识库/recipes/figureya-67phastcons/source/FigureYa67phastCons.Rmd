@@ -277,10 +277,15 @@ signal_caputer_around_sites <- function(bigWigFile, bed, resolution=50,
              quote=FALSE, row.names=FALSE, col.names=FALSE, sep="\t")
   
   # 使用awk处理反向链信号 / Use awk to process reverse strand signals
-  system(paste0("paste temp_signal.txt temp_strand.txt | awk '{if($NF==",
-               '"',"+",'"',") {for(i=1;i<NF-1;i++) printf $i",
-               '"',"\t",'"',"; print $(NF-1)} else {for(i=NF-1;i>1;i--) printf $i",
-               '"',"\t",'"',"; print $1}}' > temp_signal_rev.txt"))
+  # [repair] Windows has no paste/awk: equivalent pure-R reverse-by-strand
+  signal_rev <- as.data.frame(as.matrix(signal))
+  # [repair] capture tool may drop edge regions: align strand to captured rows only
+  n_ok <- min(nrow(signal_rev), length(strand))
+  rev_idx <- strand[seq_len(n_ok)] != "+"
+  signal_rev <- signal_rev[seq_len(n_ok), , drop = FALSE]
+  signal_rev[rev_idx, ] <- signal_rev[rev_idx, ncol(signal_rev):1, drop = FALSE]
+  write.table(signal_rev, file="temp_signal_rev.txt",
+             quote=FALSE, row.names=FALSE, col.names=FALSE, sep="\t")
   
   # 使用data.table高效读取 / Use data.table for efficient reading
   signal_rev <- data.table::fread("temp_signal_rev.txt")

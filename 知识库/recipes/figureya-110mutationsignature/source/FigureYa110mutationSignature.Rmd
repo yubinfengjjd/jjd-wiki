@@ -74,6 +74,7 @@ Gaujoux R , Seoighe C . A flexible R package for nonnegative matrix factorizatio
 source("install_dependencies.R")
 source("mut.to.sigs.input.R") # from deconstructSigs package, https://github.com/raerose01/deconstructSigs
 source("whichSignatures.R") # from deconstructSigs package, https://github.com/raerose01/deconstructSigs
+suppressPackageStartupMessages(library(deconstructSigs)) # provides signatures.cosmic data
 
 # 加载数据分析常用工具包
 # Load commonly used data analysis toolkits

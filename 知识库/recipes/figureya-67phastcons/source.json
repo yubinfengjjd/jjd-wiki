@@ -11,7 +11,8 @@
     "captureRegion.bed": "6d5f1f3a1c911921d6569d9c19c5a2a91b9aca90f69dc2dc7581d44ebb3f04e0",
     "coverage_regionCapture_siteprof1.gz": "6fa6d5648679aa4ee31a5ffe03dd5b17cbb0af0f407f85fe828b8180915f98a6",
     "example.png": "6addbcb89a736189ea001be36be99e2eafcaedb618c881d61cb04506c4f83c8e",
-    "FigureYa67phastCons.Rmd": "868ded24fa74be06d28c01641bf6a3ea5e7db14c8c1b41d9effa1c943018baa6",
+    "FigureYa67phastCons.Rmd": "6280c25e24b357a7f8c6ec16816f85df561913a08fbc7d1daebf4fff926c6180",
+    "fish.phastCons8way.bw": "e0b3cec02b57deaa3e1479f152775e2c63f5487855892b22e6e9cf904848dcc1",
     "getBigWigValue.py": "f589d6cab3c8036b7a082cb39512b31dbac4f8b6c2ab7706694570ec5cab5dd7",
     "install.log": "43aa9f706d400e700dc64d628b80ea65d9062d9cd6cc65b2128201d23cd845b8",
     "install_dependencies.R": "a5d2d684dc0aab8aeb3d83c0c5539e6f5144b81abf21e72ebfd6c1baa3f1a54e",
@@ -23,7 +24,8 @@
     "Step3.png": "b14142d52688e8e7a6f9724e0b7856eb556e6831d02b2c67fd5bf25adfab5d48",
     "Step4.png": "d79bfdecbc11d2a2c321e24cc0820454d8654dc2757a1e0d9af85ff79256ae30",
     "Step5.png": "75d29fa417d0343cae916d82f178631dde62e36fc4758c32c3a859b9969b6ee6",
-    "Step6.png": "5d3dab1b4e0760cdef19dfcc44e796d73c8c98edb7e7f00c027bd6afbd5df619"
+    "Step6.png": "5d3dab1b4e0760cdef19dfcc44e796d73c8c98edb7e7f00c027bd6afbd5df619",
+    "SYNTHETIC_INPUTS.md": "16934968052f0ef0c51d1121747607fbc1c76779cce153ff345be5b3c77845ea"
   },
   "excluded": [
     "FigureYa67phastCons.html"

@@ -1285,3 +1285,5 @@
 ## [2026-11-11 05:42 UTC] run figureya-18oncoplot-update=fail, figureya-3genomeview=fail, figureya-195panpaire=fail, figureya-206scheatmap=fail, figureya-275scaucell=fail, figureya-277immunomodulator=fail, figureya-294hccdrug=fail, figureya-310cpdbchordgramv2=fail, figureya-318genesetdedotplot=fail, figureya-41geo2lncrna-upd
 
 ## [2026-11-11 06:23 UTC] checkpoint: figureya repair batch receipts
+
+## [2026-11-11 06:53 UTC] run figureya-320clontypeheatmap=pass, figureya-52goplot=fail, figureya-32id-table=pass, figureya-14circos=pass, figureya-67phastcons=fail, figureya-57profile-1bw=fail, figureya-212drugtargetv2=fail, figureya-215dnaage=fail, figureya-110mutationsignature=fail, figureya-314singlerscore=fail, figureya-

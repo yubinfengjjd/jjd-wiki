@@ -6,8 +6,9 @@
   "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
   "license": "CC-BY-NC-SA-4.0",
   "files": {
+    "8cell.K4me3.bw": "3c77fd89e7a78fb6ede7bf40be62f576b24e08b0b929aa22b89fcea839dfb2cb",
     "average_signal.txt": "b1175cb1294efca7b0489ce1950a8dbfaa0730fa20a0820d81dfc254aab10147",
-    "corelib.R": "4056c2a91fe46b20ff7e2c1489df756f76d511de9abc176b2dfe260aa5d144a0",
+    "corelib.R": "a966d16dddef846fec749e022db840cbc942099f9078679379c913de1831bb58",
     "example.png": "a26ca1cc0c4708907158f083da18d78ef01d5b67dc73f18eff9ea18074076a28",
     "FigureYa57profile_1bw.Rmd": "df0bc96aed65346e98acf0ce80e7e0a09a543407c3ce7d2d1292ce3fd3bc2835",
     "install_dependencies.R": "ef81d102868c50c759631259c7e5444faa258e1a13bc181b8126cf55af12b208",
@@ -15,6 +16,7 @@
     "mm9_ICP_tss.bed": "57571b5593014ebb3a1dcd3ed30f3ef1ecd697de7853ca5a4d0f03b0f8870883",
     "mm9_LCP_tss.bed": "6cbb8de13d85c5afd067f102a4894a8297355265688ee578cb05b32656e94dd7",
     "multiSitepro_example.pdf": "78d8d4020f681729cf4becd0fc9a271feb4fb7fac50843a0868e5bfe41751945",
+    "SYNTHETIC_INPUTS.md": "5c1e78046380c740a5b9ee75060ffa06522dd3e06ddfbe1ed7b71203de968459",
     "temp_signal.txt": "2d5618ff98cf428a2d52816030227866dad05d029740bbd18208056f16697936",
     "temp_signal_rev.txt": "a7ec2423db6b02768b4a104b91a1533d8be08832fa9cfb66ca4384774f83c6e3",
     "temp_strand.txt": "335a02e801328741735d86c303c99e228d2e4347f2ed0a2bc5da9da3d825b508"

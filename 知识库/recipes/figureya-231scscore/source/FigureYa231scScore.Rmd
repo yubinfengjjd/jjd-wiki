@@ -202,7 +202,8 @@ write.table(t(as.matrix(SeuratObj@assays$RNA$data)), "SeuratObj.tsv", sep="\t", 
 ### 准备基因集 Prepare the gene set
 
 ```{r}
-ensembl <- useMart("ensembl",dataset="hsapiens_gene_ensembl") #uses human ensembl annotations
+# [repair] biomaRt unreachable from this network (HTTP 403); use Bioconductor org.Hs.eg.db+GO.db
+# ensembl <- useMart("ensembl",dataset="hsapiens_gene_ensembl") #uses human ensembl annotations
 
 # 要展示的GO term
 # GO term to showcase
@@ -217,10 +218,14 @@ go_id <- c("GO:0007165",#signal transduction
 # Extract the genes in each GO term
 data <- list()
 for (i in go_id) {
-  gene.data <- getBM(attributes=c('hgnc_symbol', 'go_id'),
-                     filters = 'go', values = i, mart = ensembl)
-  gene <- unique(gene.data$hgnc_symbol)
-  data[[i]] <- gene
+  # [repair] equivalent GO->gene lookup via org.Hs.eg.db (GO.db ontology, direct children)
+  gos <- AnnotationDbi::mget(i, GO.db::GOBPOFFSPRING, ifnotfound = NA)[[1]]
+  gos <- unique(c(i, gos[!is.na(gos)]))
+  eg <- unique(unlist(AnnotationDbi::mget(gos, org.Hs.eg.db::org.Hs.egGO2ALLEGS, ifnotfound = NA)))
+  eg <- eg[!is.na(eg)]
+  gene <- unique(AnnotationDbi::mapIds(org.Hs.eg.db::org.Hs.eg.db, keys = eg,
+                                       column = "SYMBOL", keytype = "ENTREZID"))
+  data[[i]] <- gene[!is.na(gene)]
 }
 
 # saveRDS(data,"GO_genelist.rds")

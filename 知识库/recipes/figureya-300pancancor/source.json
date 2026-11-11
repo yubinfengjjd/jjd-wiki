@@ -10,6 +10,7 @@
     "correlation scatter plot of zscored Angiogenesis and NETs in pancancer.pdf": "cb063a3734bfcde60d6381815611f7ee2ea807b9b06dcd0848f944809c476d0b",
     "correlation scatter plot of zscored EMT and NETs in pancancer.pdf": "b3b7f7bd0176e624cbe7312ee64981cd3cf1b0fcd6d2820fb3b8b6f54fc4e104",
     "correlation scatter plot of zscored oncogenic and NETs in pancancer.pdf": "2b1e47b2dc404be10ad79534946b4327edd1e9304874b8d6d564ed8751dd347c",
+    "EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv": "e15a84b407e55256b9e73e11f27b3c23e0155c33a0a4a29e6d674f4b4ff1f96f",
     "example.png": "f12150301210b1390e70f6f3cbf5afb2faa755e82b794210509e73e3cae6b770",
     "explain_picture.png": "417375cc97fb06c11d05af89678ae9d4eb542f4040d0cc8de619bb931c097e47",
     "FigureYa300pancanCor.Rmd": "66e0c6274cdbf2360a9c3e31afef1e9ecf2afef32fefa0ff5e010d95a380d5bf",
@@ -20,6 +21,7 @@
     "output_oncogenic and nets score of all tumor sample across 32 tumor types.txt": "7322f6c82c36f675000e632661ac1b478844a7faf96fb8f3cd91f795d6ec9bd1",
     "output_simple_sample_annotation.txt": "094002e486b1ba9e9255dfbe2cd187958a09aac82453804318499e68022a0ebf",
     "Survival_SupplementalTable_S1_20171025_xena_sp": "ece7e2bdf1f2b137c07be6e16ab966b414fc50d6a9db5c839d15b0ab7548cba6",
+    "SYNTHETIC_INPUTS.md": "e7748d2a2139ec832f8ae7697da44ccbf9e08e1c3be45487f514d9a651fafc38",
     "table s6 risk coefficients.txt": "3baf684495eccc9a0c06a431ece80d53f68c7b630825634bbd7e83b95118d9e5"
   },
   "excluded": [

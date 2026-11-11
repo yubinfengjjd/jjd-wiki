@@ -144,7 +144,7 @@ Such matrices are typically generated through GISTIC analysis (refer to FigureYa
 - DNA methylation: <https://xenabrowser.net/datapages/?dataset=TCGA.BRCA.sampleMap%2FHumanMethylation450&host=https%3A%2F%2Ftcga.xenahubs.net&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443>
 Methylation data should be provided as a beta-value matrix with probes as rows and samples as columns. An annotation file is required to map probes to gene-level information.
 
-```{r}
+```{r eval=FALSE}
 # 设置热图颜色
 # Set heatmap color scheme
 heatmap.BlWtRd <- c("#1F66AC", "#75AFD3", "grey90", "#FAB99B", "#B2192B")

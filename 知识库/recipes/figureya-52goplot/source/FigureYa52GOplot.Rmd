@@ -349,10 +349,10 @@ names(geneList) <- id.fc$ENTREZID         # 设置基因列表的名称为ENTREZ
 cnetplot(egox, 
          foldChange = geneList,           # 显示基因表达量变化 | Show gene expression fold change
          #foldChange = NULL,             # 不展示表达量变化(注释掉) | Do not show fold change (commented out)
-         circular = TRUE,                 # 设置为环形布局 | Set circular layout
+         layout = "circular",                 # 设置为环形布局 | Set circular layout
          #node_label = FALSE,            # 如果基因太多，可关闭基因名显示(注释掉) | Hide gene names if too many (commented out)
          showCategory = 4,                # 显示富集的term数量 | Number of enriched terms to display
-         colorEdge = TRUE)                # 按关系类型着色边 | Color edges by relationship type
+         color_edge = "grey")                # 按关系类型着色边 | Color edges by relationship type
 
 # 将环形图保存为PDF文件 | Save circular plot to PDF file
 ggsave("clusterProfiler_circle.pdf", width = 8, height = 5)
@@ -361,10 +361,10 @@ ggsave("clusterProfiler_circle.pdf", width = 8, height = 5)
 cnetplot(egox, 
          foldChange = geneList,           # 显示基因表达量变化 | Show gene expression fold change
          #foldChange = NULL,             # 不展示表达量变化(注释掉) | Do not show fold change (commented out)
-         #circular = TRUE,               # 关闭环形布局(注释掉) | Disable circular layout (commented out)
+         #layout = "circular",               # 关闭环形布局(注释掉) | Disable circular layout (commented out)
          #node_label = FALSE,            # 不显示基因名(注释掉) | Hide gene names (commented out)
          showCategory = 4,                # 显示富集的term数量 | Number of enriched terms to display
-         colorEdge = TRUE)                # 按关系类型着色边 | Color edges by relationship type
+         color_edge = "grey")                # 按关系类型着色边 | Color edges by relationship type
 
 # 将非环形图保存为PDF文件 | Save non-circular plot to PDF file
 ggsave("clusterProfiler_not_circle.pdf", width = 8, height = 5)

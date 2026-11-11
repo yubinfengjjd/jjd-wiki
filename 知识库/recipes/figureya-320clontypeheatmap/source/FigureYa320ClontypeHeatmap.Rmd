@@ -94,9 +94,9 @@ cell.info <- read.table("cell.info.txt", sep = "\t", header = T)
 
 # 移除定义不明确的类
 # Remove poorly defined classes
-cell.info <- cell.info[-which(cell.info$celltype == "-1"),] 
-cell.info <- cell.info[-which(cell.info$celltype == ""),] 
-cell.info <- cell.info[-which(cell.info$celltype == "Cyto"),]
+cell.info <- cell.info[cell.info$celltype != "-1",] 
+cell.info <- cell.info[cell.info$celltype != "",] 
+cell.info <- cell.info[cell.info$celltype != "Cyto",]
 
 # 获取所有细胞类型
 # Get all cell types
