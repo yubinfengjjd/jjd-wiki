@@ -114,7 +114,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa293machineLearning.Rmd`）
 - 依赖：CRAN BART, RColorBrewer, compareC, dplyr, gbm, ggbreak, ggplot2, ggsci, miscTools, plsRcox, randomForestSRC, rlang, superpc, survivalsvm, tibble, tidyr, CoxBoost, survival, glmnet；Bioconductor ComplexHeatmap, circlize, mixOmics, survcomp；GitHub binderh/CoxBoost
-- 最近运行：fail（as-is，2026-10-27 13:23 UTC，241.5 秒）
+- 最近运行：fail（as-is，2026-11-11 09:09 UTC，298.2 秒）
 - 派生模板（L2）：暂无
 <!-- facts:end -->
 
