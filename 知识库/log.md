@@ -1281,3 +1281,5 @@
 ## [2026-11-04 18:47 UTC] run figureya-110mutationsignature=fail
 
 ## [2026-11-11 05:29 UTC] run figureya-112venn=pass
+
+## [2026-11-11 05:42 UTC] run figureya-18oncoplot-update=fail, figureya-3genomeview=fail, figureya-195panpaire=fail, figureya-206scheatmap=fail, figureya-275scaucell=fail, figureya-277immunomodulator=fail, figureya-294hccdrug=fail, figureya-310cpdbchordgramv2=fail, figureya-318genesetdedotplot=fail, figureya-41geo2lncrna-upd
