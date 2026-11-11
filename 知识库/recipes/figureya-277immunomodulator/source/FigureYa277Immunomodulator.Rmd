@@ -252,6 +252,11 @@ write.table(meth, file = "easy_input_meth.txt",sep = "\t",row.names = T,col.name
 write.table(cna, file = "easy_input_cna.txt",sep = "\t",row.names = T,col.names = NA,quote = F)
 ```
 
+```{r}
+# [repair] immunomodulator gene set still needed downstream; big TCGA.BRCA prep chunk above is eval=FALSE
+immunomodulator <- read.table("immunomodulator.txt",sep = "\t",row.names = 1,check.names = F,stringsAsFactors = F,header = T)
+```
+
 # 绘图矩阵的准备
 # Preparing Plotting Matrices
 
