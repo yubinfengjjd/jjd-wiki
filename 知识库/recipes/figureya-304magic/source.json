@@ -14,7 +14,8 @@
     "install_dependencies.R": "1ab8d8745459a67abe23c5c17cf5ce12a058e2bd2b01ec2c20068e4ec33391bf",
     "R/low_memory_utils.R": "8e9eea71f02c7708edce9a86af1414f35abddc3dd94c3d9ff747718975f79994",
     "R/magic_utils.R": "57890f611167bdf6cfac9a44301081df123494f22b7031e81b2d6e112d8a2f82",
-    "SCLC_epithelial_cells.h5ad": "611210111f79d67a062223d94a272992ec1258c38bd295c40bb1cf987d064300"
+    "SCLC_epithelial_cells.h5ad": "5f012175f14b6e40d7b71b934e4436cb92d47abaa41459a7829a890b97214953",
+    "SYNTHETIC_INPUTS.md": "8e377a1f539c71ddfa8e488bed31ce2e74724f28de1330b2e0e107b93ea845dc"
   },
   "excluded": [],
   "copied_at": "2026-11-04T10:13:09+00:00"
