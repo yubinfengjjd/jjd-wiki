@@ -338,6 +338,7 @@ result.mutex <- pairwise.discover.test(
   events[subset, ],    # 使用筛选后的基因 / Use filtered genes
   alternative = "less"  # 检验互斥性 / Test for mutual exclusivity
 )
+result.mutex$fdr.method <- "DBH" # vendored test uses discrete FDR; field needed by discover print method
 
 # 查看结果（FDR阈值设为0.05）
 # View results (FDR threshold = 0.05)
@@ -357,6 +358,7 @@ result.mutex <- pairwise.discover.test(
   events[subset, ],     # 使用相同的基因子集 / Use same gene subset
   alternative = "greater"  # 检验共现性 / Test for co-occurrence
 )
+result.mutex$fdr.method <- "DBH" # vendored test uses discrete FDR; field needed by discover print method
 
 # 查看结果（FDR阈值设为0.05）
 # View results (FDR threshold = 0.05)
