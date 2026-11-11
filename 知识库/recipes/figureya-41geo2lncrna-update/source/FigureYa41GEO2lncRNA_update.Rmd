@@ -318,24 +318,13 @@ Then use the gene biotype to distinguish lncRNA, miRNA and mRNA
 #your microarray data may not be on line 62, you need to check it specifically
 #listFilters(ensembl)
 #listAttributes(ensembl)
-listAttributes(ensembl)[62,]
-#下面的“filters = ”要用到这个name
-#the following "filters = " will use this name
+# REPAIR: biomaRt endpoints unreachable from this environment (HTTP 405/403);
+# use the upstream-provided gene_biotype.csv artifact instead of a live getBM call.
+# Original code: listAttributes(ensembl)[62,]; feature_info <- getBM(...)
+feature_info <- read.csv("gene_biotype.csv", check.names = FALSE)
+# stored as (hgnc_symbol, gene_biotype); restore original column order
+feature_info <- feature_info[, c(2, 1)]
 
-feature_info <- getBM(attributes = c("gene_biotype",
-                                     #"transcript_biotype",#还可以提取transcript_biotype transcript_biotype can also be extracted
-                                     #如果基因名是gene symbol，就运行下面这行
-                                     #if the gene name is gene symbol, run the following line
-                                     "hgnc_symbol"), 
-                                     #如果基因名是ensembl ID，就运行下面这行 if the gene name is ensembl ID, run the following line
-                                     #"ensembl_gene_id"),
-                      #如果基因名是gene symbol，就运行下面这行
-                      #if the gene name is gene symbol, run the following line
-                      filters = "hgnc_symbol", #小鼠是mgi_symbol，大鼠是mgi_symbol mouse is mgi_symbol, rat is mgi_symbol
-                      #如果基因名是ensembl ID，就运行下面这行
-                      #if the gene name is ensembl ID, run the following line
-                      #filters = "ensembl_gene_id",
-                      values = rownames(exprdf_uniq), mart = ensembl)
 
 #有些芯片注释的gene symbol跟最新版本ensembl的基因名不一致，需要返回上一步，换比较老的版本。
 #TCGA数据的ensembl ID跟最新版ensembl一致

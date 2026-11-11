@@ -1309,3 +1309,5 @@
 ## [2026-11-11 08:37 UTC] run figureya-318genesetdedotplot=pass
 
 ## [2026-11-11 08:38 UTC] run figureya-206scheatmap=pass, figureya-53ppimodule=pass
+
+## [2026-11-11 08:42 UTC] run figureya-253pangsea=fail
