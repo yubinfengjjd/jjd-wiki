@@ -160,7 +160,15 @@ TCGA Pan-Cancer (PANCAN) from UCSC xena (39 datasets)<https://xenabrowser.net/da
 
 # 读取突变信息数据（大数据文件，可能需要较长时间）
 # Read mutation information data (large file, may take time)
-mutationinfo <- read_tsv(file = "mc3.v0.2.8.PUBLIC.nonsilentGene.xena.gz")  # REPAIR: stored gzip-compressed to stay under GitHub 100MB limit
+# REPAIR: stored gzip-compressed to stay under GitHub 100MB limit;
+# vroom cannot stream .gz with lines this long, so decompress once first.
+if (!file.exists("mc3.v0.2.8.PUBLIC.nonsilentGene.xena")) {
+  .gzcon <- gzfile("mc3.v0.2.8.PUBLIC.nonsilentGene.xena.gz", "rb")
+  .outcon <- file("mc3.v0.2.8.PUBLIC.nonsilentGene.xena", "wb")
+  while (length(.buf <- readBin(.gzcon, "raw", 1e8))) writeBin(.buf, .outcon)
+  close(.gzcon); close(.outcon); rm(.gzcon, .outcon, .buf)
+}
+mutationinfo <- read_tsv(file = "mc3.v0.2.8.PUBLIC.nonsilentGene.xena")
 mutationinfo[1:5,1:5]  # 预览前5行5列数据 / Preview first 5 rows and columns
 
 # 读取样本配对信息

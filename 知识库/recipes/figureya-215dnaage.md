@@ -99,7 +99,7 @@ beta矩阵行=探针列=样本，示例按TCGA条码第14-15位（01肿瘤/11癌
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-215dnaage`
 - 用到课题：`wiki.py use figureya-215dnaage --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。
-- 运行提示：HumanMethylation450矩阵需自行从UCSC Xena下载（快照未含）；ChAMP可能需Bioconductor旧版本或GitHub安装；BMIQ标准化约30分钟。
+- 运行提示：HumanMethylation450矩阵（953MB）超出 GitHub 单文件上限，不入库、不随仓库分发；请从 UCSC Xena 下载 TCGA.CESC.sampleMap/HumanMethylation450.gz 并解压为 source/HumanMethylation450（哈希以 source.json 为准）；本仓库验证使用真实 Xena 文件运行通过；ChAMP可能需Bioconductor旧版本或GitHub安装；BMIQ标准化约30分钟。
 
 ## 输出
 

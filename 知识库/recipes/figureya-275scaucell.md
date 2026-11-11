@@ -114,7 +114,7 @@ immune.combined.rds是Seurat预处理中间结果；ISG_genelist.csv用到GeneNa
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-275scaucell`
 - 用到课题：`wiki.py use figureya-275scaucell --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。
-- 运行提示：预处理段eval=FALSE：示例ifnb数据需SeuratData联网InstallData，或自备rds直接跳到评分；AUCell默认nCores=10并行。
+- 运行提示：immune.combined.rds（192MB）超出 GitHub 单文件上限，不入库；可通过 Rmd 整合段（预处理块）对 SeuratData ifnb 数据重建获得，或自备同结构 rds 直接跳到评分；本仓库验证使用重建对象运行通过。预处理段eval=FALSE：示例ifnb数据需SeuratData联网InstallData，或自备rds直接跳到评分；AUCell默认nCores=10并行。
 
 ## 输出
 
