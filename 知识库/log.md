@@ -1343,3 +1343,7 @@
 ## [2026-11-11 09:21 UTC] run figureya-293machinelearning=fail
 
 ## [2026-11-11 09:25 UTC] run figureya-293plus-binaryclassificationml=fail
+
+## [2026-11-11 09:31 UTC] run figureya-304magic=fail
+
+## [2026-11-11 09:32 UTC] run figureya-275scaucell=fail

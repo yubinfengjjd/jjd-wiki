@@ -211,7 +211,7 @@ dremi.res <- CalculateKnnDREMI(imputed.matrix = imputed.matrix,
                                source.gene = "PLCG2", 
                                target.genes = NULL, # all genes
                                return.drevi = F,
-                               n.cores = 20)
+                               n.cores = 1  # REPAIR: mclapply not supported on Windows)
 write.table(dremi.res$dremi, "tmp.data/PLCG2.DREMI.tsv", row.names = F, sep = "\t", quote = F)
 ```
 

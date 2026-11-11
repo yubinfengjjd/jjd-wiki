@@ -367,6 +367,9 @@ gene_inter_l = length(intersect(gene,gene_st))
   }
 }
 
+# REPAIR: -log10(1-phyper(...)) yields Inf when phyper returns 1; non-finite
+# values break tidyHeatmap scaling ("'from' must be a finite number").
+p.data$p[!is.finite(p.data$p)] <- max(p.data$p[is.finite(p.data$p)], na.rm = TRUE) * 1.1
 p.data$group <- p.data$st
 
 ## 画图
@@ -623,6 +626,9 @@ for (i in unique(scRNA_marker2$cluster)) {
   }
 }
 
+# REPAIR: -log10(1-phyper(...)) yields Inf when phyper returns 1; non-finite
+# values break tidyHeatmap scaling ("'from' must be a finite number").
+p.data$p[!is.finite(p.data$p)] <- max(p.data$p[is.finite(p.data$p)], na.rm = TRUE) * 1.1
 p.data$group <- p.data$st
 
 ## 画图
