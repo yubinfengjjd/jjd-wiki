@@ -350,12 +350,15 @@ testExpr <- testExpr[comgene,]
 outTab <- NULL
 # 循环很慢，请耐心 The loop is very slow, please be patient
 # REPAIR: batchCorrect="eb" re-ran ComBat on identical train/test matrices
-# once per drug (~1900 fits). Homogenize once up front, then predict with
-# batchCorrect="none" - mathematically identical.
-.hom <- homogenizeData(testExpr, trainExpr, batchCorrect = "eb", selection = 1, printOutput = FALSE)
-testExpr.eb <- .hom$test
-trainExpr.eb <- .hom$train
-rm(.hom)
+# once per drug (~1900 fits). Homogenize once up front - same steps as the
+# vendored homogenizeData eb branch - then predict with batchCorrect="none".
+.common <- intersect(rownames(testExpr), rownames(trainExpr))
+.comb <- cbind(testExpr[.common, ], trainExpr[.common, ])
+.batch <- factor(c(rep("test", ncol(testExpr)), rep("train", ncol(trainExpr))))
+.corr <- sva::ComBat(.comb, batch = .batch)
+testExpr.eb <- .corr[, seq_len(ncol(testExpr))]
+trainExpr.eb <- .corr[, ncol(testExpr) + seq_len(ncol(trainExpr))]
+rm(.common, .comb, .batch, .corr)
 for (i in 1:ncol(trainPtype)) { 
   display.progress(index = i,totalN = ncol(trainPtype))
   d <- colnames(trainPtype)[i]
@@ -404,12 +407,15 @@ testExpr <- testExpr[comgene,]
 outTab <- NULL
 # 循环很慢，请耐心 The loop is very slow, please be patient
 # REPAIR: batchCorrect="eb" re-ran ComBat on identical train/test matrices
-# once per drug (~1900 fits). Homogenize once up front, then predict with
-# batchCorrect="none" - mathematically identical.
-.hom <- homogenizeData(testExpr, trainExpr, batchCorrect = "eb", selection = 1, printOutput = FALSE)
-testExpr.eb <- .hom$test
-trainExpr.eb <- .hom$train
-rm(.hom)
+# once per drug (~1900 fits). Homogenize once up front - same steps as the
+# vendored homogenizeData eb branch - then predict with batchCorrect="none".
+.common <- intersect(rownames(testExpr), rownames(trainExpr))
+.comb <- cbind(testExpr[.common, ], trainExpr[.common, ])
+.batch <- factor(c(rep("test", ncol(testExpr)), rep("train", ncol(trainExpr))))
+.corr <- sva::ComBat(.comb, batch = .batch)
+testExpr.eb <- .corr[, seq_len(ncol(testExpr))]
+trainExpr.eb <- .corr[, ncol(testExpr) + seq_len(ncol(trainExpr))]
+rm(.common, .comb, .batch, .corr)
 for (i in 1:ncol(trainPtype)) { 
   display.progress(index = i,totalN = ncol(trainPtype))
   d <- colnames(trainPtype)[i]

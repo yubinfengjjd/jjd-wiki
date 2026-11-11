@@ -69,8 +69,11 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa215DNAage.Rmd`）
 - 依赖：CRAN data.table, wateRmelon, minfi, ENmix, methylumi, DMRcate, limma；Bioconductor limma, impute, preprocessCore, sva, IlluminaHumanMethylation450kmanifest, IlluminaHumanMethylationEPICmanifest；GitHub YuanTian1991/ChAMP
-- 最近运行：fail（as-is，2026-11-11 09:46 UTC，1200.9 秒）
+- 最近运行：pass（as-is，2026-11-11 12:03 UTC，4225.2 秒）
 - 派生模板（L2）：暂无
+- 运行预览（最近一次通过的原样运行，取自 `barplot for DNA methylation acceleration.pdf` 第 1 页）：
+
+![[recipes/figureya-215dnaage/preview.png]]
 <!-- facts:end -->
 
 ## 用途
