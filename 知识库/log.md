@@ -1301,3 +1301,5 @@
 ## [2026-11-11 07:30 UTC] run figureya-70mutationevents=pass
 
 ## [2026-11-11 07:44 UTC] run figureya-294hccdrug=fail
+
+## [2026-11-11 07:55 UTC] run figureya-203combat=pass, figureya-253pangsea=fail

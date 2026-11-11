@@ -74,7 +74,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa300pancanCor.Rmd`）
 - 依赖：CRAN SimDesign, cowplot, data.table, ggplot2, rstatix, ggpubr, tidyr；Bioconductor GSVA
-- 最近运行：pass（as-is，2026-11-11 07:25 UTC，20.5 秒）
+- 最近运行：pass（as-is，2026-11-11 07:50 UTC，35.6 秒）
 - 派生模板（L2）：暂无
 - 运行预览（最近一次通过的原样运行，取自 `correlation scatter plot of zscored oncogenic and NETs in pancancer.pdf` 第 1 页）：
 
