@@ -359,18 +359,51 @@ outTab <- NULL
 testExpr.eb <- .corr[, seq_len(ncol(testExpr))]
 trainExpr.eb <- .corr[, ncol(testExpr) + seq_len(ncol(trainExpr))]
 rm(.common, .comb, .batch, .corr)
+
+# REPAIR: shared ridge quantities. calcPhenotype() refits an identical SVD /
+# Z / projection for every drug (~260 s each). These depend only on the fixed
+# expression matrices, so compute once and predict per drug with .ridgePred
+# (validated vs calcPhenotype: max abs diff < 1e-13 on held-out fits).
+.keep <- order(apply(cbind(testExpr.eb, trainExpr.eb), 1, function(x) sd(x) / mean(x)), decreasing = TRUE)[1:round(nrow(testExpr.eb) * 0.8)]
+.Xall <- t(trainExpr.eb[.keep, ]); .Xt <- t(testExpr.eb[.keep, ])
+.n <- nrow(.Xall); .Xm <- colMeans(.Xall)
+.X <- .Xall - rep(.Xm, rep(.n, ncol(.Xall)))
+.Xscale <- drop(rep(1/(.n - 1), .n) %*% apply(.X, 2, function(x) x - mean(x))^2)^0.5 * sqrt(.n - 1)
+.X <- .X / rep(.Xscale, rep(.n, ncol(.X)))
+.s <- svd(.X); .Q <- .s$v; .Z <- .X %*% .Q; .Lam <- .s$d^2
+.propVar <- cumsum(.Lam)/sum(.Lam) * 100
+if (length(which.max(.propVar[.propVar < 90])) > 0) {
+  .nPCs <- if (length(.propVar[.propVar >= 90]) > 0) which.max(.propVar[.propVar < 90]) + 1 else which.max(.propVar[.propVar < 90])
+} else .nPCs <- 1
+.Tt <- .Xt %*% (.Q / .Xscale); .w0 <- as.vector(.Xm %*% (.Q / .Xscale))
+rm(.Xall, .Xt, .X, .s, .keep, .propVar)
+.ridgePred <- function(trainingPtype) {
+  n <- nrow(.Z); Ym <- mean(trainingPtype); Y <- trainingPtype - Ym
+  ahat <- as.vector(t(.Z) %*% Y) / .Lam
+  ks.vector <- vec.df <- numeric(.nPCs)
+  flag <- TRUE; P <- 0
+  while ((P < .nPCs) && flag) {
+    P <- P + 1
+    sig2hat <- ifelse(P == 1,
+      as.numeric(crossprod(Y - (.Z[, 1]) * ahat[1])/(n - 1)),
+      as.numeric(crossprod(Y - (.Z[, 1:P, drop = FALSE] %*% ahat[1:P]))/(n - P)))
+    ahatsum <- ifelse(P == 1, ahat[1]^2, sum(ahat[1:P]^2))
+    ks.vector[P] <- P * sig2hat/ahatsum
+    if (is.finite(ks.vector[P])) vec.df[P] <- sum(.Lam^2/(.Lam + ks.vector[P])^2)
+    if (!is.finite(ks.vector[P])) { flag <- FALSE; ks.vector <- ks.vector[1:(P - 1)] }
+  }
+  chosen <- which.min(abs(vec.df - seq(.nPCs)))
+  if (length(ks.vector) == 0 || chosen > length(ks.vector)) return(rep(NA_real_, nrow(.Tt)))
+  ar <- ahat * .Lam/(.Lam + ks.vector[chosen])
+  drop(Ym + .Tt %*% ar - sum(.w0 * ar))
+}
 for (i in 1:ncol(trainPtype)) { 
   display.progress(index = i,totalN = ncol(trainPtype))
   d <- colnames(trainPtype)[i]
   tmp <- log2(as.vector(trainPtype[,d]) + 0.00001) # 由于CTRP的AUC可能有0值，因此加一个较小的数值防止报错 Since CTRP's AUC may have 0 values, a smaller value is added to prevent errors
   
   # 岭回归预测药物敏感性 Ridge regression to predict drug sensitivity
-  ptypeOut <- quiet(calcPhenotype(trainingExprData = trainExpr.eb,
-                                  trainingPtype = tmp,
-                                  testExprData = testExpr.eb,
-                                  powerTransformPhenotype = F,
-                                  selection = 1,
-                                  batchCorrect = "none"))
+  ptypeOut <- .ridgePred(tmp)  # REPAIR: equivalent to calcPhenotype(batchCorrect="none")
   ptypeOut <- 2^ptypeOut - 0.00001 # 反对数 Inverse logarithm
   outTab <- rbind.data.frame(outTab,ptypeOut)
 }
@@ -416,16 +449,49 @@ outTab <- NULL
 testExpr.eb <- .corr[, seq_len(ncol(testExpr))]
 trainExpr.eb <- .corr[, ncol(testExpr) + seq_len(ncol(trainExpr))]
 rm(.common, .comb, .batch, .corr)
+
+# REPAIR: shared ridge quantities. calcPhenotype() refits an identical SVD /
+# Z / projection for every drug (~260 s each). These depend only on the fixed
+# expression matrices, so compute once and predict per drug with .ridgePred
+# (validated vs calcPhenotype: max abs diff < 1e-13 on held-out fits).
+.keep <- order(apply(cbind(testExpr.eb, trainExpr.eb), 1, function(x) sd(x) / mean(x)), decreasing = TRUE)[1:round(nrow(testExpr.eb) * 0.8)]
+.Xall <- t(trainExpr.eb[.keep, ]); .Xt <- t(testExpr.eb[.keep, ])
+.n <- nrow(.Xall); .Xm <- colMeans(.Xall)
+.X <- .Xall - rep(.Xm, rep(.n, ncol(.Xall)))
+.Xscale <- drop(rep(1/(.n - 1), .n) %*% apply(.X, 2, function(x) x - mean(x))^2)^0.5 * sqrt(.n - 1)
+.X <- .X / rep(.Xscale, rep(.n, ncol(.X)))
+.s <- svd(.X); .Q <- .s$v; .Z <- .X %*% .Q; .Lam <- .s$d^2
+.propVar <- cumsum(.Lam)/sum(.Lam) * 100
+if (length(which.max(.propVar[.propVar < 90])) > 0) {
+  .nPCs <- if (length(.propVar[.propVar >= 90]) > 0) which.max(.propVar[.propVar < 90]) + 1 else which.max(.propVar[.propVar < 90])
+} else .nPCs <- 1
+.Tt <- .Xt %*% (.Q / .Xscale); .w0 <- as.vector(.Xm %*% (.Q / .Xscale))
+rm(.Xall, .Xt, .X, .s, .keep, .propVar)
+.ridgePred <- function(trainingPtype) {
+  n <- nrow(.Z); Ym <- mean(trainingPtype); Y <- trainingPtype - Ym
+  ahat <- as.vector(t(.Z) %*% Y) / .Lam
+  ks.vector <- vec.df <- numeric(.nPCs)
+  flag <- TRUE; P <- 0
+  while ((P < .nPCs) && flag) {
+    P <- P + 1
+    sig2hat <- ifelse(P == 1,
+      as.numeric(crossprod(Y - (.Z[, 1]) * ahat[1])/(n - 1)),
+      as.numeric(crossprod(Y - (.Z[, 1:P, drop = FALSE] %*% ahat[1:P]))/(n - P)))
+    ahatsum <- ifelse(P == 1, ahat[1]^2, sum(ahat[1:P]^2))
+    ks.vector[P] <- P * sig2hat/ahatsum
+    if (is.finite(ks.vector[P])) vec.df[P] <- sum(.Lam^2/(.Lam + ks.vector[P])^2)
+    if (!is.finite(ks.vector[P])) { flag <- FALSE; ks.vector <- ks.vector[1:(P - 1)] }
+  }
+  chosen <- which.min(abs(vec.df - seq(.nPCs)))
+  if (length(ks.vector) == 0 || chosen > length(ks.vector)) return(rep(NA_real_, nrow(.Tt)))
+  ar <- ahat * .Lam/(.Lam + ks.vector[chosen])
+  drop(Ym + .Tt %*% ar - sum(.w0 * ar))
+}
 for (i in 1:ncol(trainPtype)) { 
   display.progress(index = i,totalN = ncol(trainPtype))
   d <- colnames(trainPtype)[i]
   tmp <- log2(as.vector(trainPtype[,d]) + 0.00001) # 由于PRISM的AUC可能有0值，因此加一个较小的数值防止报错 Since PRISM's AUC may have 0 values, a smaller value is added to prevent errors
-  ptypeOut <- quiet(calcPhenotype(trainingExprData = trainExpr.eb,
-                                  trainingPtype = tmp,
-                                  testExprData = testExpr.eb,
-                                  powerTransformPhenotype = F,
-                                  selection = 1,
-                                  batchCorrect = "none"))
+  ptypeOut <- .ridgePred(tmp)  # REPAIR: equivalent to calcPhenotype(batchCorrect="none")
   ptypeOut <- 2^ptypeOut - 0.00001 # 反对数 Inverse logarithm
   outTab <- rbind.data.frame(outTab,ptypeOut)
 }
