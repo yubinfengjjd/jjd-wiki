@@ -1359,3 +1359,7 @@
 ## [2026-11-11 09:54 UTC] run figureya-18oncoplot-update=fail
 
 ## [2026-11-11 09:59 UTC] run figureya-18oncoplot-update=fail
+
+## [2026-11-11 10:03 UTC] run figureya-293plus-binaryclassificationml=error
+
+## [2026-11-11 10:03 UTC] run figureya-293machinelearning=error
