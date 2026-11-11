@@ -99,8 +99,22 @@ library(hdf5r)
 .meta <- lapply(names(.mg), function(nm) {
   node <- .mg[[nm]]
   if (inherits(node, "H5Group")) {
-    lvls <- node[["levels"]][]
-    factor(lvls[node[["values"]][] + 1L], levels = lvls)
+    # REPAIR: SeuratDisk writes categoricals as levels+values, but columns
+    # added post-conversion may only carry raw values; handle both layouts.
+    nm2 <- names(node)
+    if ("levels" %in% nm2 && "values" %in% nm2) {
+      lvls <- node[["levels"]][]
+      factor(lvls[node[["values"]][] + 1L], levels = lvls)
+    } else if ("categories" %in% nm2 && "codes" %in% nm2) {
+      lvls <- node[["categories"]][]
+      cd <- node[["codes"]][] + 1L
+      cd[cd == 0L] <- NA_integer_
+      factor(lvls[cd], levels = lvls)
+    } else if ("values" %in% nm2) {
+      node[["values"]][]
+    } else {
+      node[[nm2[1]]][]
+    }
   } else {
     node[]
   }
