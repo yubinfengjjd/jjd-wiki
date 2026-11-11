@@ -145,6 +145,15 @@ mm <- lapply(mm,function(x){
   x[,-c(1:3)] <- scale(x[,-c(1:3)])
   return(x)})
 
+# REPAIR: GSE62254 contains a single NA cell; predict() drops incomplete rows,
+# which later breaks cbind(Surv, RS) with "differing number of rows". Median
+# imputation matches the sibling recipe FigureYa293Plus preprocessing.
+mm <- lapply(mm, function(x){
+  x[,-c(1:3)] <- apply(x[,-c(1:3)], 2, function(col){
+    if(any(is.na(col))) col[is.na(col)] <- median(col, na.rm = TRUE)
+    col})
+  as.data.frame(x)})
+
 result <- data.frame()
 
 # TCGA作为训练集

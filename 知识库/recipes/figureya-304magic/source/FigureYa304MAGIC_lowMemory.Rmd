@@ -176,7 +176,7 @@ dremi.res <- CalculateKnnDREMI_LowMemory(data.dir = "tmp.data2/dremi/",
                                          source.gene = "PLCG2", 
                                          target.genes = NULL, 
                                          return.drevi = F,
-                                         n.cores = 1  # REPAIR: mclapply not supported on Windows)
+                                         n.cores = 1)  # REPAIR: mclapply not supported on Windows
 write.table(dremi.res$dremi, "tmp.data2/PLCG2.DREMI.tsv", row.names = F, sep = "\t", quote = F)
 ```
 

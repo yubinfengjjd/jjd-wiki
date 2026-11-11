@@ -216,9 +216,11 @@ importance_feature_selection <- function(data, method = "rf", top_n = NULL) {
   
   if(method == "rf") {
     # 随机森林变量重要性
-    rf_model <- randomForest(as.factor(label) ~ ., 
-                            data = data[,-1], 
-                            importance = TRUE, 
+    # REPAIR: formula interface overflows the protection stack at ~20k features;
+    # the matrix interface is equivalent and does not build a terms object.
+    rf_model <- randomForest(x = data[, -c(1, 2)],
+                            y = as.factor(data[[2]]),
+                            importance = TRUE,
                             ntree = 500)
     importance_scores <- importance(rf_model)[,3]  # MeanDecreaseGini
     
@@ -233,7 +235,8 @@ importance_feature_selection <- function(data, method = "rf", top_n = NULL) {
     
   } else if(method == "boruta") {
     # Boruta特征选择
-    boruta_result <- Boruta(label ~ ., data = data[,-1], doTrace = 0)
+    # REPAIR: see above - x/y interface avoids the formula terms object.
+    boruta_result <- Boruta(x = data[, -c(1, 2)], y = as.factor(data[[2]]), doTrace = 0)
     confirmed_features <- names(boruta_result$finalDecision[boruta_result$finalDecision == "Confirmed"])
     return(confirmed_features)
   }
@@ -666,9 +669,10 @@ cat("=== 开始Random Forest特征选择 + 算法组合 ===\n")
 
 # 使用Random Forest进行特征选择
 set.seed(seed)
-rf_model <- randomForest(as.factor(label) ~ ., 
-                        data = est_data[,-1], 
-                        ntree = 1000, 
+# REPAIR: x/y interface, same reason as above.
+rf_model <- randomForest(x = est_data[, -c(1, 2)],
+                        y = as.factor(est_data[[2]]),
+                        ntree = 1000,
                         importance = TRUE)
 
 # 获取变量重要性

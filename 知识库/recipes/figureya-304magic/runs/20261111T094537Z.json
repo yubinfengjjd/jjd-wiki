@@ -2,13 +2,13 @@
   "schema_version": 2,
   "kind": "run",
   "id": "figureya-304magic",
-  "run_id": "20261104T133514Z",
+  "run_id": "20261111T094537Z",
   "scope": "as-is",
   "state": "fail",
   "runner": "rmd-knit",
   "command": "Rscript --vanilla _rwiki_knit.R FigureYa304MAGIC.Rmd rwiki-knit.md",
-  "started_at": "2026-11-04T13:35:14+00:00",
-  "duration_s": 80.9,
+  "started_at": "2026-11-11T09:45:37+00:00",
+  "duration_s": 27.7,
   "exit_code": 1,
   "environment": {
     "r_version": "R version 4.5.0 (2025-04-11 ucrt)",
@@ -191,14 +191,17 @@
     "data/gene.info.rds": "c850f630c35aabd768fe17f1aa408d2184f04e038143a20e909b59065157a5fe",
     "data/TableS12.csv": "146785e460a1c2520dc7952b4c638ffa594eb5cc924c0b7ed8d7a5b704921e81",
     "example.png": "28890814c760fe044c1dd20a55c32a0580cafa949552ec5faff3efc2a773528c",
-    "FigureYa304MAGIC.Rmd": "9ec7f5b2f3e99457c198e336b2834f4c8cfa149573aa6246e8d5b31f4ca10f50",
-    "FigureYa304MAGIC_lowMemory.Rmd": "94fefcd3a6d8fb2f8bf8dd50eafa6008863aef2b4330cd35aa8cd93a634ebcda",
+    "FigureYa304MAGIC.Rmd": "a4acb5085486e6e67c38daefacb7c958b1920b96e2adae770bbd8dff3dffc197",
+    "FigureYa304MAGIC_lowMemory.Rmd": "6b179a0fe829070e8fc95f7e92dd00ea1cc47869e05d2a8bf0eb1e401b21f995",
     "install_dependencies.R": "1ab8d8745459a67abe23c5c17cf5ce12a058e2bd2b01ec2c20068e4ec33391bf",
-    "R/low_memory_utils.R": "8e9eea71f02c7708edce9a86af1414f35abddc3dd94c3d9ff747718975f79994",
-    "R/magic_utils.R": "57890f611167bdf6cfac9a44301081df123494f22b7031e81b2d6e112d8a2f82"
+    "R/low_memory_utils.R": "3d819b58e09acd3ad1b3984b09108a6a2b893243a0d0d5b29966eba1c3139d6e",
+    "R/magic_utils.R": "57890f611167bdf6cfac9a44301081df123494f22b7031e81b2d6e112d8a2f82",
+    "SCLC_epithelial_cells.h5ad": "7cd946f7eaac3f8daadcd50f5b589d34dadd8ac89596b53f46f3d7382b5c6639",
+    "SYNTHETIC_INPUTS.md": "8e377a1f539c71ddfa8e488bed31ce2e74724f28de1330b2e0e107b93ea845dc"
   },
   "outputs": {
-    "SCLC_epithelial_cells.h5ad": "f1d886d3da84150f724d5bd5364c5be7f994ebd60b5b286781ab0369d56d75c5"
+    "SCLC_epithelial_cells.h5seurat": "bdd0b626eb6266824e10d9902727707de63c61382f05a77c0b5cc4c73c1abb00",
+    "tmp.data/SCLC_epithelial_cells.cellmeta.rds": "e8e1130ba13209216fb84f47e67f9e10c770714061660e26ee1e04d6742c0baf"
   },
   "expected_outputs": [
     "MAGICHeatmap.pdf"
@@ -208,7 +211,7 @@
   ],
   "figures": [],
   "missing_packages": [],
-  "error": "download from 'https://datasets.cellxgene.cziscience.com/79f80e59-97e7-4f95-b1e9-9767a24b85b0.h5ad' failed",
+  "error": "<text>:47:1: unexpected symbol",
   "checks": [
     "install_dependencies.R 以只检查不安装的桩替代",
     "knit 退出码 1",
@@ -216,5 +219,5 @@
   ],
   "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
   "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
-  "workdir": "<work_root>/runs/figureya-304magic/20261104T133514718782Z"
+  "workdir": "<work_root>/runs/figureya-304magic/20261111T094537310247Z"
 }
