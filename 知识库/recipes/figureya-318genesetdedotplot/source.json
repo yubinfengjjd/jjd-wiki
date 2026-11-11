@@ -15,7 +15,9 @@
     "InputData.png": "e773ab1f294469a02944b5037da810cb6d1dac0ab5bb0c1fea19d709244b3473",
     "install_dependencies.R": "e1661cd40adf2d627e3d64af28d9b9f5c1d1a9d238a10b6f1ce1a59b84e08fea",
     "marker.xlsx": "dbc57067ff2561e79338029888d23049aea0a46ba043bbdde3a76743377cb1df",
-    "output_hallmark.txt": "3021b83bbed7ea59448eca83bdbb25a63c63174c2c134b603ba577a525898ae3"
+    "output_hallmark.txt": "3021b83bbed7ea59448eca83bdbb25a63c63174c2c134b603ba577a525898ae3",
+    "seu.rds": "ca8c399a5722ff1d79d25625597ff1d43c79b8853543dceeacb20c361a45cb5d",
+    "SYNTHETIC_INPUTS.md": "81c577f3453b944ac8e72aebff4c8a32e3024aa9b87dc143d2ae210049d9b17b"
   },
   "excluded": [
     "FigureYa318GenesetDEDotplot.html"

@@ -39,7 +39,20 @@ signal_caputer_around_sites <- function(bigWigFile,bed,resolution=50,span=3000,c
   
   # capture
   # IRange is 1-based
-  signal <- suppressWarnings(mcmapply(regionCapture,seqname,midpoints-span-resolution/2,midpoints+span+resolution/2,bigWigFile,datapoints,mc.cores = if (.Platform$OS.type == "windows") 1L else getOption("mc.cores",cores)))
+  # [repair] single batch import: build all per-site datapoint windows at once.
+  # Per-site per-region import was far too slow (thousands of file opens).
+  starts <- midpoints - span - as.integer(resolution/2)
+  nsite <- length(starts)
+  site <- rep(seq_len(nsite), each = datapoints)
+  allw <- GRanges(
+    seqnames = seqname[site],
+    ranges = IRanges(
+      start = rep(starts, each = datapoints) +
+        rep(as.integer(seq(0, by = resolution, length.out = datapoints)), times = nsite),
+      width = resolution))
+  covs <- import(bigWigFile, which = allw, as = "NumericList")
+  mu <- vapply(covs, function(x) if (length(x)) mean(x) else 0, numeric(1))
+  signal <- matrix(mu, nrow = datapoints)
   
   # correct orientation & get average signal
   write.table(t(signal),file="temp_signal.txt",quote=F,row.names=F,col.names=F,sep="\t")

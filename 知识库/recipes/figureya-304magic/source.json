@@ -9,7 +9,7 @@
     "data/gene.info.rds": "c850f630c35aabd768fe17f1aa408d2184f04e038143a20e909b59065157a5fe",
     "data/TableS12.csv": "146785e460a1c2520dc7952b4c638ffa594eb5cc924c0b7ed8d7a5b704921e81",
     "example.png": "28890814c760fe044c1dd20a55c32a0580cafa949552ec5faff3efc2a773528c",
-    "FigureYa304MAGIC.Rmd": "ba5f09d2a760b3b07e886f55bab628faf7ec2627f3ae547f49831c3d5da2df5a",
+    "FigureYa304MAGIC.Rmd": "48cdd8685587e55e46b0cae2b0a76eff1c5723f700cbc8bfe3a2055854b79573",
     "FigureYa304MAGIC_lowMemory.Rmd": "94fefcd3a6d8fb2f8bf8dd50eafa6008863aef2b4330cd35aa8cd93a634ebcda",
     "install_dependencies.R": "1ab8d8745459a67abe23c5c17cf5ce12a058e2bd2b01ec2c20068e4ec33391bf",
     "R/low_memory_utils.R": "8e9eea71f02c7708edce9a86af1414f35abddc3dd94c3d9ff747718975f79994",
