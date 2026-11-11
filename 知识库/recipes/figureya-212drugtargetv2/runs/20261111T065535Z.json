@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-212drugtargetv2",
+  "run_id": "20261111T065535Z",
+  "scope": "as-is",
+  "state": "fail",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa212drugTargetV2.Rmd rwiki-knit.md",
+  "started_at": "2026-11-11T06:55:35+00:00",
+  "duration_s": 1200.7,
+  "exit_code": null,
+  "environment": {
+    "r_version": "",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {}
+  },
+  "code": {
+    "17gene.txt": "25b764ae1f584ddabcfb757120672ed3f6c655961e7228dad0fa7b93670a9de9",
+    "CCLE_RNAseq_rsem_genes_tpm_20180929.txt.gz": "612d2e6087364fa89d57e22676a1429f58fa3bf001dfbbe1b16addb9102c651b",
+    "CTRP_AUC.txt": "d9af9bef6a3a19830b8a90926b17e2af620c946b37caae5aa1ed492f9ae07c70",
+    "CTRP_AUC_raw.txt": "f05b8cccb64f72ddf5e87af850ee14771f9cc1be77470d672360bab5a9d5d75d",
+    "CTRP_ccl_anno.txt": "6156776084ee58924ffde2b0c08a4483f9e2f53f509ea54fde3f7a1496cec115",
+    "CTRP_cpd_anno.txt": "294df39fadb1398a1b25acc1160459c5e5b24da1e2eaf9b1a99704d140a02412",
+    "data_mutations_mskcc.txt": "fea43a8843e01e56eb27e55c8baf2721d40b1b56691f2087b5cd9ab904e07fd4",
+    "drug target.pdf": "828fc85f62c96515ccc93a3853c344cb2ef57f256767e2c81a8b847d2635dd7d",
+    "example.png": "96542d39ee448fd2fdd4a176d10f4aa34c0e6e061c97217774d736ab352ebfb8",
+    "FigureYa212drugTargetV2.Rmd": "3361e54d5f3b98bee962a20e7d2b4aa53abc9d51a1e8cf220e4289dccac65122",
+    "install.log": "08526432d6b1e5267d8ac160b784c37dca662378138bd4a80fc7b185234304ab",
+    "install_dependencies.R": "d2e13b40da89fd668387f335fb5d856c4685d9f41a0d9c92f486269f3e06c735",
+    "LIHC.TPM.txt": "a7cda90e47663263e9dfd76e5f7f0f919c9808130a03cb3982091737a337c775",
+    "output_PPS.csv": "c01200843f512915a6111e0b93afe09d502913f643a7b7d1d125ae825892cf65",
+    "overlapTable27.txt": "280c0d1929ef9632dc1a0655c425e793665ed7b2a03300c5c170045f4c41b959",
+    "predict_from_cgp.R": "e32982015afba4ba71e4e999b60d780405e4879ac6e3a245013a6c399294cd09",
+    "PRISM_AUC.txt": "517b5e95502c9a5467f0bbc8b8c72649b592be77e86236f0f1e230bf4e1a226f"
+  },
+  "outputs": {},
+  "expected_outputs": [
+    "drug target.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [],
+  "missing_packages": [],
+  "error": "超过 1200 秒未结束，已终止",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 超时",
+    "预期输出存在 1/1"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-212drugtargetv2/20261111T065534389397Z"
+}

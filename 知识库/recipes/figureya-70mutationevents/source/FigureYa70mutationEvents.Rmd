@@ -70,6 +70,7 @@ source("install_dependencies.R")
 source("data.R") # from discover package https://ccb.nki.nl/software/discover/
 source("analysis.R") # from discover package https://ccb.nki.nl/software/discover/
 library(discover) # provides Fortran routines called by vendored data.R/analysis.R
+estimateBackground <- discover:::estimateBackground # internal discover fn used by vendored data.R
 
 # 数据重塑包：用于数据结构转换（宽表/长表）
 # Data reshaping package: for data structure transformation (wide/long format)
