@@ -353,7 +353,9 @@ for (i in unique(scRNA_marker2$cluster)) {
     sub_cluster_st = subset(stRNA_marker2,cluster==j)
     gene_st = sub_cluster_st$gene
     gene_st_l = length(gene_st)
-    gene_inter_l = length(intersect(gene_l,gene_st_l))
+    # REPAIR: upstream typo intersected the two lengths (scalars) instead of the
+# gene vectors; the constant p-values that produced broke the heatmap scaling.
+gene_inter_l = length(intersect(gene,gene_st))
     p = -log10(1-phyper(gene_inter_l,
                       gene_st_l, 
                       19738-gene_st_l, 

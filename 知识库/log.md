@@ -1319,3 +1319,5 @@
 ## [2026-11-11 08:54 UTC] run figureya-304magic=fail
 
 ## [2026-11-11 08:56 UTC] run figureya-41geo2lncrna-update=pass
+
+## [2026-11-11 08:57 UTC] run figureya-253pangsea=fail
