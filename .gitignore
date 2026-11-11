@@ -81,3 +81,8 @@ research wiki/.obsidian/workspace*
 
 # 本地 agent 会话状态与日志（oh-my-* / hooks）：非知识内容，不入库。
 /.omx/
+
+# 超过 GitHub 100MB 上限的配方输入：保留在本地磁盘供 rwiki run 复跑，不入库。
+# 获取方式见各配方页面与 source 内说明。
+/知识库/recipes/figureya-215dnaage/source/HumanMethylation450
+/知识库/recipes/figureya-275scaucell/source/immune.combined.rds

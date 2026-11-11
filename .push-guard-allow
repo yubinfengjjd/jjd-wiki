@@ -32,3 +32,19 @@ size 知识库/recipes/figureya-228linkcor/source/tcga_blca_fpkm.txt  # 已核�
 size 知识库/recipes/figureya-293machinelearning/source/GSE57303.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
 size 知识库/recipes/figureya-293machinelearning/source/GSE62254.txt.gz  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
 abs-path 依赖清单/README.md  # 新电脑部署说明中的示例路径，不含私有输入或凭据
+
+# figureya-repair 批次：超 5MB 的公开上游输入或已声明合成输入
+size 知识库/recipes/figureya-304magic/source/SCLC_epithelial_cells.h5ad  # 合成输入（页面与 SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-253pangsea/source/EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv  # 合成输入（页面与 SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-310cpdbchordgramv2/source/ifnb.rds  # 公开 SeuratData ifnb 数据集的派生对象；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-239st-pdac/source/GSE111672_RAW/*.txt  # GEO 公开补充文件 GSE111672；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-239st-pdac/source/GSE111672_*-indrop-filtered-expMat.txt  # GEO 公开补充文件 GSE111672；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-206scheatmap/source/GSE130664_merge_UMI_count.txt.gz  # GEO 公开数据 GSE130664 完整版；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-53ppimodule/source/10090.protein.actions.v11.0.txt.gz  # STRING 公开数据压缩入库；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-53ppimodule/source/MOUSE_10090_idmapping_selected.tab  # STRING/uniprot 公开映射表；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-195panpaire/source/easy_input_expr.RDS  # 合成输入（页面与 SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-231scscore/source/data/*  # sankowski-et-al 公开仓库原始数据；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-314singlerscore/source/InputData/GSE154763_*.csv.gz  # GEO 公开补充文件 GSE154763；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-315singlerfraction/source/InputData/GSE154763_*.csv.gz  # GEO 公开补充文件 GSE154763；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-3genomeview/source/*.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size 知识库/recipes/figureya-57profile-1bw/source/8cell.K4me3.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
