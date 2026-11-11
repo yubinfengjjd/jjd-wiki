@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
 from machine_paths import resolve_dev_root, resolve_input_path
 
-CATALOG = ROOT / "依赖清单"
+CATALOG = ROOT / "文档/依赖清单"
 
 
 def rows(path):

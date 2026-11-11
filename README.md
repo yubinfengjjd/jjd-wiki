@@ -10,7 +10,7 @@ v2（2026-10-27）起：开源库（首个 FigureYa）经来源登记与适配�
 
 | 仓库 | 本地位置 | 内容 | 远程地址 | 默认分支 |
 |---|---|---|---|---|
-| `jjd-wiki` | `<vault>`（根仓库） | `知识库/`、`文档/`、`tools/`、`research wiki/`、本 README、`.github/` | https://github.com/yubinfengjjd/jjd-wiki | `main` |
+| `jjd-wiki` | `<vault>`（根仓库） | `知识库/`、`文档/`、`画廊/`、`维护记录/`、`tools/`、`obsidian-vault/`、本 README、`.github/` | https://github.com/yubinfengjjd/jjd-wiki | `main` |
 | `jjd-wiki-dev` | `<vault>\开发` 或与 `<vault>` 同级的 `jjd-wiki-dev`（独立仓库，自带 `.git`） | 代码、测试、技能源 `staged/research-wiki`、前端源码、`.github/` | https://github.com/yubinfengjjd/jjd-wiki-dev | `main` |
 
 两个仓库都是 GitHub 免费账号下的私有仓库，默认分支 `main`，没有远端分支保护（保护 API 返回 403，bootstrap 记为 `protection: local`）。`知识库\` 不是单独的 git 仓库，而是根仓库的子目录；根仓库的 `.gitignore` 忽略 `/开发/`，两者互不跟踪。bootstrap 之前本地分支叫 `master`；bootstrap 把它改名为只留本地的 `legacy/master`，并构造新的 `main`（dev 过滤重放历史，vault 为一次快照）。不要在主检出上检出 `legacy/master`：旧历史跟踪了画廊与维护记录，切过去再切回会把这些文件从磁盘删除。
@@ -37,9 +37,12 @@ research-wiki\                  jjd-wiki 仓库根
      .gitignore      敏感文件与本机运行产物排除规则
      .protected-hashes.json   作者 user 块字节基准（gh protect-baseline 生成，CI 核验）
   文档\              requirements / design / handoff / session / features、决策记录、各轮计划与核查
+     specs\          历史特性规格（原 .kiro/specs）
+     agent-tasks\    历史交付与部署报告（原 .agents/tasks）
+     依赖清单\        新电脑依赖目录与批量安装入口
   tools\             launcher.ps1（双击启动）、deploy.py（部署技能副本）与其测试
      bin\            rwiki.cmd（PowerShell / cmd）与 rwiki（Git Bash）：命令入口
-  research wiki\     一个 Obsidian vault 的配置与插件（.obsidian\、.claudian\）
+  obsidian-vault\    Obsidian 阅览端配置与插件（.obsidian\、.claudian\），非正式知识本体
   画廊\              原始层，sci-figure-replica 的产物，知识库只读（知识材料默认保存 Git）
   维护记录\          本地验收与部署证据（知识材料默认保存 Git）
   开发\                         jjd-wiki-dev 仓库根（独立仓库）
@@ -94,7 +97,7 @@ rwiki run --dir <副本>              # 配方副本原地运行；模板用 rwi
 
 不推送私有数据、密码、令牌或私钥。环境、缓存、浏览器会话、重复备份与运行噪音属于非知识产物，继续排除；公开示例与知识代码不能因此漏传。单文件大小与本机路径检查继续保留，已审查的知识资源用精确豁免保存。`legacy/*` 历史仍不推送。
 
-换电脑继续见 [Windows 下载与待运行验证交接](文档/Windows迁移与验证-20261102.md)，依赖统一准备见 [依赖清单与批量安装入口](依赖清单/README.md)。
+换电脑继续见 [Windows 下载与待运行验证交接](文档/Windows迁移与验证-20261102.md)，依赖统一准备见 [依赖清单与批量安装入口](文档/依赖清单/README.md)。
 
 ## 双击打开
 

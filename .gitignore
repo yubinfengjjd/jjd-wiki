@@ -45,7 +45,7 @@ Thumbs.db
 维护记录/*/fixtures/
 维护记录/**/migration-fixture/
 # Obsidian 工作区状态（随窗口布局频繁变动）
-research wiki/.obsidian/workspace*
+obsidian-vault/.obsidian/workspace*
 
 # 私有数据与凭据禁止入 Git；公开示例数据保留。
 **/private-data/

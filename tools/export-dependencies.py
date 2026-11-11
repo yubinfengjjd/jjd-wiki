@@ -83,7 +83,7 @@ def collect(root, dev_root=None):
             item = json.loads(line)
             for package in required_packages(item.get("packages", {})):
                 add("R", package, "L0-candidate", path.parent.name + ":" + str(item.get("id", "")))
-    for path in sorted((root / "依赖清单/source-rules").glob("*.DESCRIPTION")):
+    for path in sorted((root / "文档/依赖清单/source-rules").glob("*.DESCRIPTION")):
         meta = description(read(path))
         for field in ("Depends", "Imports", "LinkingTo", "Suggests"):
             for item in meta.get(field, "").split(","):
@@ -95,7 +95,7 @@ def collect(root, dev_root=None):
         add("R", target["package"], "source-core", "scop")
     for package in ("BiocManager", "remotes", "BPCells"):
         add("R", package, "batch-bootstrap", "R installer / monocle3 prerequisite", True, True)
-    provenance = root / "依赖清单/python/source-provenance.json"
+    provenance = root / "文档/依赖清单/python/source-provenance.json"
     if provenance.is_file():
         source = json.loads(read(provenance))["scp_legacy"]
         read(root / source["source"])
@@ -106,7 +106,7 @@ def collect(root, dev_root=None):
 
 def export(root, dev_root=None):
     dev_root = resolve_dev_root(root, dev_root)
-    out = root / "依赖清单"
+    out = root / "文档/依赖清单"
     records, inputs, excluded = collect(root, dev_root)
     routes_path = out / "repository-snapshot.json"
     routes = json.loads(routes_path.read_text(encoding="utf-8"))
