@@ -98,6 +98,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `table s10 target.txt`：见 Rmd“输入文件”节
 - `table s3 pps.txt`：见 Rmd“输入文件”节
 - `LIHC-CN-TPM.subset.txt`：见 Rmd“输入文件”节

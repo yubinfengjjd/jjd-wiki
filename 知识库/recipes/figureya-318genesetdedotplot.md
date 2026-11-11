@@ -106,6 +106,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `h.all.v7.5.1.symbols.gmt`：h.all.v7.5.1.symbols.gmt，基因集文件，存放基因与通路的关联关系
 - `GenesetInfo.txt`：GenesetInfo.txt，通路信息文件，标识通路及其所属分类
 - `marker.xlsx`：见 Rmd“输入文件”节

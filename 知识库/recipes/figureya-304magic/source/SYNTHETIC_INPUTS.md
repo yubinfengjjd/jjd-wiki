@@ -11,6 +11,9 @@
   `uniq.name` rename works); `X` is a Poisson count matrix of 1,500 cells in
   which ~69% of genes are expressed in >500 cells so the
   `expr.in.cells > 500` filter retains genes.
+- `obs` additionally carries a synthetic `SCLC_major_subtype_of_sample`
+  categorical column (random SCLC-A/SCLC-N/SCLC-P labels) needed by the DREVI
+  annotation panel; labels carry no biological meaning.
 - The `download.file` call in the Rmd is guarded so the bundled file is used.
 
 Any run receipt against this input proves only that the recipe executes end to

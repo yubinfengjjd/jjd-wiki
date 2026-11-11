@@ -80,6 +80,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `8cell.K4me3.bw`：8cell.K4me3.bw：ChIP/DNase/ATAC-seq的bw文件
 - `mm9_HCP_tss.bed`：mm9_HCP_tss.bed, mm9_ICP_tss.bed, mm9_LCP_tss.bed：用来提取bw信号的指定区域。其中第1、2、3、6列必需。
 - `mm9_ICP_tss.bed`：mm9_HCP_tss.bed, mm9_ICP_tss.bed, mm9_LCP_tss.bed：用来提取bw信号的指定区域。其中第1、2、3、6列必需。

@@ -90,6 +90,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `easy_input_sample_annotation.txt`：easy_input_sample_annotation.txt，样本分组信息。整理自注释文件merged_sample_quality_annotations.tsv，下载自<http://api.gdc.cancer.gov/data/1a7d7be8-675d-4e60-a105-19d4121bdebf>。
 - `整理自注释文件merged_sample_quality_annotations.tsv`：easy_input_sample_annotation.txt，样本分组信息。整理自注释文件merged_sample_quality_annotations.tsv，下载自<http://api.gdc.cancer.gov/data/1a7d7be8-675d-4e60-a105-19d4121bdebf>。
 - `EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv`：EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv，表达矩阵，第一列是基因，之后是其在每个样本中的表达量。下载自<http://api.gdc.cancer.gov/data/3586c0da-64d0-4b74-a449-5ff4d9136611>。这里以TCGA数据为例，对于非肿瘤数据或其他物种数据，套用其格式即可，可忽略文中对筛

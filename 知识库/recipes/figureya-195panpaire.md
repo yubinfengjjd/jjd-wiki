@@ -84,6 +84,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `easy_input_gene.txt`：easy_input_gene.txt，代谢基因，来自例文补充材料41388_2019_1026_MOESM2_ESM.xlsx中Table S1。不局限于通路，还可以是某一群基因，例如前期研究筛选出的signature等。
 - `easy_input_pair.txt`：easy_input_pair.txt，配对样本信息。
 - `easy_input_expr.RDS`：easy_input_expr.RDS，配对样本的表达矩阵。

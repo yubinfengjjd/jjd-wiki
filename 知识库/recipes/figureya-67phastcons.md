@@ -82,6 +82,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `all_dsDMR.bed`：all_dsDMR.bed, non_exon_dsDMR.bed, download from <https://epigenome.wustl.edu/Zebrafish_DNAme/browse.php>
 - `non_exon_dsDMR.bed`：all_dsDMR.bed, non_exon_dsDMR.bed, download from <https://epigenome.wustl.edu/Zebrafish_DNAme/browse.php>
 - `random.bed`：random.bed, random regions generation (randomBed -l 500 -n 8225 -seed 6666 -g danRer7.chrom.sizes > random.bed)

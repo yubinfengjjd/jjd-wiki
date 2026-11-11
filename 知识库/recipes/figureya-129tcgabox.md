@@ -94,6 +94,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `HiSeqV2.gz`：gene expression RNAseq，IlluminaHiSeq (n=702) TCGA hub，下载地址：<https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/HiSeqV2.gz>
 - `mutation.gz`：somatic non-silent mutation (gene-level)，PANCAN AWG (n=461) TCGA hub，下载地址：<https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/mutation.gz>
 - `GBMLGG_clinicalMatrix.gz`：phenotype，Phenotypes (n=1,148) TCGA hub，下载地址：<https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/GBMLGG_clinicalMatrix.gz>

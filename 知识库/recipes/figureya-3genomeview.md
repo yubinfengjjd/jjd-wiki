@@ -86,6 +86,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
 - `需要展示的区域loci.bed`：需要展示的区域loci.bed
 - `bigwig文件TAL1.bw`：bigwig文件TAL1.bw，POLR2A.bw
 - `POLR2A.bw`：bigwig文件TAL1.bw，POLR2A.bw
