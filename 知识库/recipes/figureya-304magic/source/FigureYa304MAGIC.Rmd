@@ -73,7 +73,7 @@ h5ad_file <- "SCLC_epithelial_cells.h5ad"
 
 # 检查文件是否已下载，如果未下载则执行下载
 if (!file.exists(h5ad_file)) {
-  download.file(h5ad_url, destfile = h5ad_file, mode = "wb")
+  if (!file.exists(h5ad_file)) download.file(h5ad_url, destfile = h5ad_file, mode = "wb") # use pre-provided local file if present
 }
 
 # 2. 将 .h5ad 转换为 .h5seurat 格式

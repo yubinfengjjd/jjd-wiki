@@ -174,7 +174,7 @@ Here we use TGCAbiolinks to download the gene expression matrix of “TCGA-COAD�
 
 If you have already generated the gtf_v22.csv file, you can skip the following paragraph.
 
-```{r}
+```{r eval=FALSE}
 # 先获得protein_coding gene的gene_id跟gene symbol的对应关系
 gtf_v22 <- rtracklayer::import("gencode.v22.annotation.gtf")
 gtf_v22 <- as.data.frame(gtf_v22)

@@ -253,8 +253,9 @@ write.table(cna, file = "easy_input_cna.txt",sep = "\t",row.names = T,col.names 
 ```
 
 ```{r}
-# [repair] immunomodulator gene set still needed downstream; big TCGA.BRCA prep chunk above is eval=FALSE
+# [repair] immunomodulator gene set and heatmap palette still needed downstream; big TCGA.BRCA prep chunk above is eval=FALSE
 immunomodulator <- read.table("immunomodulator.txt",sep = "\t",row.names = 1,check.names = F,stringsAsFactors = F,header = T)
+heatmap.BlWtRd <- c("#1F66AC", "#75AFD3", "grey90", "#FAB99B", "#B2192B")
 ```
 
 # 绘图矩阵的准备
