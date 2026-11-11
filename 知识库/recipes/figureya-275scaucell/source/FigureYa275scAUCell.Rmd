@@ -236,7 +236,7 @@ immune.combined <- readRDS("immune.combined.rds")
 
 # 为每个细胞构建基因表达排序
 # Build gene expression rankings for each cell 
-cells_rankings <- AUCell_buildRankings(immune.combined@assays$RNA@data, nCores=10)  
+cells_rankings <- AUCell_buildRankings(SeuratObject::LayerData(immune.combined, assay = "RNA", layer = "data"), nCores=10)  
 # 关于细胞检测到的基因数量的分位数说明：
 # (未检测到的基因会在排序末尾随机排列。在选择计算AUC的阈值时请记住这一点)
 # Quantiles for the number of genes detected by cell:

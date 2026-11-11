@@ -1329,3 +1329,7 @@
 ## [2026-11-11 09:00 UTC] run figureya-253pangsea=fail
 
 ## [2026-11-11 09:04 UTC] run figureya-215dnaage=fail
+
+## [2026-11-11 09:14 UTC] run figureya-19lollipop=pass
+
+## [2026-11-11 09:14 UTC] run figureya-275scaucell=fail

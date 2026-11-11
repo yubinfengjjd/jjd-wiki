@@ -269,7 +269,7 @@ LoadData("ifnb")
 seu <- UpdateSeuratObject(ifnb)
 saveRDS(seu, "ifnb.rds")  # 保存为rds文件以便下次使用
 
-write.table(as.matrix(seu@assays$RNA@data), 'cellphonedb_count.txt', sep='\t', quote=F)
+write.table(as.matrix(SeuratObject::LayerData(seu, assay = 'RNA', layer = 'data')), 'cellphonedb_count.txt', sep='\t', quote=F)
 
 meta_data <- cbind(colnames(seu), as.character(seu$seurat_annotations))
 meta_data <- as.matrix(meta_data)

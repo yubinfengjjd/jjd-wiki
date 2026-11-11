@@ -124,7 +124,9 @@ saveRDS(seu@meta.data, "tmp.data/SCLC_epithelial_cells.cellmeta.rds")
 head(readRDS("tmp.data/SCLC_epithelial_cells.cellmeta.rds"))
 ```
 
-```{r}
+```{r,eval=FALSE}
+# REPAIR: Ensembl/biomaRt is unreachable from this environment (HTTP 405/403 on all
+# mirrors); the upstream-provided data/gene.info.rds is loaded by the next chunk.
 ensembl <- useEnsembl(biomart = "ENSEMBL_MART_ENSEMBL", version = 98)
 hg38.ens <- useDataset(dataset = "hsapiens_gene_ensembl", mart = ensembl, verbose = 98)
 

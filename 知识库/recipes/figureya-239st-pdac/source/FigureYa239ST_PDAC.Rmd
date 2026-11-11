@@ -385,7 +385,7 @@ p.data %>%
     cluster_rows = FALSE,
     cluster_columns = FALSE
   )%>%
-  add_tile(group,palette = c("#189D77",
+  annotation_tile(group,palette = c("#189D77",
                              "#666666",
                              "#E42A88",
                              "#766FB1")) %>%
@@ -641,7 +641,7 @@ p.data %>%
     cluster_rows = FALSE,
     cluster_columns = FALSE
   )%>%
-  add_tile(group,palette = c("#189D77",
+  annotation_tile(group,palette = c("#189D77",
                              "#666666",
                              "#E42A88",
                              "#766FB1")) %>%
