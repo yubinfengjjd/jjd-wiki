@@ -15,11 +15,19 @@ verify_de_session <- function(code_dir, fixture, reference_result, report) {
   temp_before <- list.files(tempdir(), pattern='^rwiki-de-')
   one <- e$run_differential_expression(srt, parameters=params)
   two <- e$run_differential_expression(srt, parameters=params)
+  bundle_warning <- FALSE
+  bundle_result <- withCallingHandlers(
+    e$run_differential_expression(srt, bundle = new('externalptr'), parameters=params),
+    warning=function(w) {
+      bundle_warning <<- grepl('bundle.*deprecated.*ignored', conditionMessage(w))
+      invokeRestart('muffleWarning')
+    })
   reference <- readRDS(reference_result)
   error <- tryCatch({e$run_differential_expression(srt, parameters=list(group_by='missing_group')); NULL},
                     error=function(e)conditionMessage(e))
   checks <- list(two_actual_calls=TRUE,
     results_identical=identical(one$result,two$result),
+    deprecated_bundle_ignored=identical(bundle_result$result, one$result) && bundle_warning,
     original_de_tools_identical=identical(one$result@tools,reference@tools),
     all_options_unchanged=identical(options(),before$options),
     search_unchanged=identical(search(),before$search),

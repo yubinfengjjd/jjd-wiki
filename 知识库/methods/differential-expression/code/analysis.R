@@ -159,6 +159,9 @@ run_differential_expression <- local({
   function(srt, bundle = NULL, parameters = list()) {
     # Keep namespace lifecycle changes in a worker instead of deleting options
     # that already-loaded namespaces may require on the next call.
+    if (!is.null(bundle)) {
+      warning('`bundle` is deprecated and ignored; this module uses only its local call closure', call. = FALSE)
+    }
     caller_options <- options()
     caller_search <- search()
     work <- tempfile('rwiki-de-')
