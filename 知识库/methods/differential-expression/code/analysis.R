@@ -170,7 +170,7 @@ run_differential_expression <- local({
     log <- file.path(work, 'worker.log')
     libs <- file.path(work, 'libraries.rds')
     saveRDS(.libPaths(), libs)
-    saveRDS(list(srt = srt, bundle = bundle, parameters = parameters,
+    saveRDS(list(srt = srt, parameters = parameters,
                  entry = file.path(.scp_dir, 'analysis.R')), input)
     writeLines(c(
       'args <- commandArgs(trailingOnly = TRUE)',
@@ -179,7 +179,7 @@ run_differential_expression <- local({
       'e <- new.env(parent = globalenv())',
       'source(job$entry, local = e)',
       'core <- environment(e$run_differential_expression)$run_in_process',
-      'result <- core(job$srt, bundle = job$bundle, parameters = job$parameters)',
+      'result <- core(job$srt, parameters = job$parameters)',
       'saveRDS(result, args[2])'
     ), driver)
     rscript <- file.path(R.home('bin'), if (.Platform$OS.type == 'windows') 'Rscript.exe' else 'Rscript')
