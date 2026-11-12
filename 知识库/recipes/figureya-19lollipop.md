@@ -69,11 +69,8 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa19Lollipop.Rmd`）
 - 依赖：CRAN RColorBrewer, ggplot2, grid, grDevices, trackViewer, TCGAbiolinks, maftools；Bioconductor trackViewer, TCGAbiolinks, maftools
-- 最近运行：pass（as-is，2026-11-11 09:06 UTC，39.5 秒）
+- 最近运行：fail（as-is，2026-11-11 06:57 UTC，182.0 秒）
 - 派生模板（L2）：暂无
-- 运行预览（最近一次通过的原样运行，取自 `test1.pdf` 第 1 页）：
-
-![[recipes/figureya-19lollipop/preview.png]]
 <!-- facts:end -->
 
 ## 用途
@@ -96,6 +93,7 @@ favorite: false
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-19lollipop`
 - 用到课题：`wiki.py use figureya-19lollipop --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。

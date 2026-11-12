@@ -73,7 +73,7 @@ h5ad_file <- "SCLC_epithelial_cells.h5ad"
 
 # 检查文件是否已下载，如果未下载则执行下载
 if (!file.exists(h5ad_file)) {
-  if (!file.exists(h5ad_file)) download.file(h5ad_url, destfile = h5ad_file, mode = "wb") # use pre-provided local file if present
+  download.file(h5ad_url, destfile = h5ad_file, mode = "wb")
 }
 
 # 2. 将 .h5ad 转换为 .h5seurat 格式
@@ -81,53 +81,7 @@ h5seurat_file <- "SCLC_epithelial_cells.h5seurat"
 Convert(h5ad_file, dest = h5seurat_file, overwrite = TRUE)
 
 # 3. 将 .h5seurat 文件加载为 Seurat 对象
-# REPAIR: SeuratDisk::LoadH5Seurat calls the defunct slot= argument of
-# GetAssayData under SeuratObject v5. Assemble the object from the
-# h5Seurat file directly with hdf5r instead.
-library(hdf5r)
-.h5 <- H5File$new(h5seurat_file, mode = "r")
-.feats <- .h5[["assays/RNA/features"]][]
-.cells <- .h5[["cell.names"]][]
-.cg <- .h5[["assays/RNA/counts"]]
-.counts <- Matrix::sparseMatrix(
-  i = .cg[["indices"]][] + 1L,
-  p = .cg[["indptr"]][],
-  x = .cg[["data"]][],
-  dims = c(length(.feats), length(.cells)),
-  dimnames = list(.feats, .cells))
-.mg <- .h5[["meta.data"]]
-.meta <- lapply(names(.mg), function(nm) {
-  node <- .mg[[nm]]
-  if (inherits(node, "H5Group")) {
-    # REPAIR: SeuratDisk writes categoricals as levels+values, but columns
-    # added post-conversion may only carry raw values; handle both layouts.
-    nm2 <- names(node)
-    if ("levels" %in% nm2 && "values" %in% nm2) {
-      lvls <- node[["levels"]][]
-      factor(lvls[node[["values"]][] + 1L], levels = lvls)
-    } else if ("categories" %in% nm2 && "codes" %in% nm2) {
-      lvls <- node[["categories"]][]
-      cd <- node[["codes"]][] + 1L
-      cd[cd == 0L] <- NA_integer_
-      factor(lvls[cd], levels = lvls)
-    } else if ("values" %in% nm2) {
-      node[["values"]][]
-    } else {
-      node[[nm2[1]]][]
-    }
-  } else {
-    node[]
-  }
-})
-names(.meta) <- names(.mg)
-.meta <- as.data.frame(.meta, stringsAsFactors = FALSE)
-.h5$close()
-if (ncol(.meta) > 0L && nrow(.meta) == length(.cells)) {
-  rownames(.meta) <- .cells
-  seu <- Seurat::CreateSeuratObject(counts = .counts, meta.data = .meta)
-} else {
-  seu <- Seurat::CreateSeuratObject(counts = .counts)
-}
+seu <- LoadH5Seurat(h5seurat_file)
 
 # 查看加载后的 Seurat 对象
 print(seu)
@@ -138,9 +92,7 @@ saveRDS(seu@meta.data, "tmp.data/SCLC_epithelial_cells.cellmeta.rds")
 head(readRDS("tmp.data/SCLC_epithelial_cells.cellmeta.rds"))
 ```
 
-```{r,eval=FALSE}
-# REPAIR: Ensembl/biomaRt is unreachable from this environment (HTTP 405/403 on all
-# mirrors); the upstream-provided data/gene.info.rds is loaded by the next chunk.
+```{r}
 ensembl <- useEnsembl(biomart = "ENSEMBL_MART_ENSEMBL", version = 98)
 hg38.ens <- useDataset(dataset = "hsapiens_gene_ensembl", mart = ensembl, verbose = 98)
 
@@ -162,7 +114,7 @@ saveRDS(results, "data/gene.info.rds")
 results <- readRDS("data/gene.info.rds")
 all(results$ensembl_gene_id == rownames(seu)) # should be TRUE
 
-counts <- LayerData(seu, assay = "RNA", layer = "counts") # Seurat v5: layer= replaces deprecated slot=/@counts
+counts <- seu[["RNA"]]@counts
 rownames(counts) <- results$uniq.name
 
 # !important: the unexpressed genes should be removed.
@@ -187,19 +139,12 @@ gc()
 # n.jobs = 20 依据自己的机器配置灵活调整
 
 # Imputation.
-# REPAIR: Rmagic::magic.Seurat calls the defunct slot= argument of
-# GetAssayData and CreateAssayObject under SeuratObject v5. Run the
-# matrix-level interface and attach the assay manually.
-.magic.res <- Rmagic::magic(
-  data = t(as.matrix(SeuratObject::LayerData(seu, assay = "RNA", layer = "counts"))),
-  genes = "all_genes", knn = 30, t = 3, npca = 56, n.jobs = 20)
-seu[["MAGIC_RNA"]] <- SeuratObject::CreateAssay5Object(
-  data = t(as.matrix(.magic.res$result)))
+seu <- Rmagic::magic(seu, knn = 30, t = 3, npca = 56, n.jobs = 20)
 
 target.file <- "tmp.data/SCLC_epithelial_cells.MAGIC_RNA.feather"
 
 if (!file.exists(target.file)) {
-  imputed.matrix <- t(as.data.frame(SeuratObject::LayerData(seu, assay = "MAGIC_RNA", layer = "data")))
+  imputed.matrix <- t(as.data.frame(seu[["MAGIC_RNA"]]@data))
   imputed.matrix <- as_tibble(imputed.matrix)
   arrow::write_feather(imputed.matrix, target.file)
   writeLines(colnames(seu), "tmp.data/SCLC_epithelial_cells.MAGIC_RNA.feather.cellnames.txt")
@@ -225,7 +170,7 @@ dremi.res <- CalculateKnnDREMI(imputed.matrix = imputed.matrix,
                                source.gene = "PLCG2", 
                                target.genes = NULL, # all genes
                                return.drevi = F,
-                               n.cores = 1)  # REPAIR: mclapply not supported on Windows
+                               n.cores = 20)
 write.table(dremi.res$dremi, "tmp.data/PLCG2.DREMI.tsv", row.names = F, sep = "\t", quote = F)
 ```
 

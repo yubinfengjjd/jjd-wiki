@@ -155,7 +155,7 @@ for (i in 1:2){
   #此处用"/"分隔基因列表，这取决于你的基因ID之间用的是哪个分隔符
   #the list of genes is separated here by “/”, depending on which separator is used between your gene ID
   genelist <- unlist(strsplit(as.character(ego_BP_df[i,]$geneID),"/")) 
-  write.table(genelist,paste0(gsub(":", "_", rownames(ego_BP_df)[i]),".txt"),row.names = F,col.names = F,quote = F)
+  write.table(genelist,paste0(rownames(ego_BP_df)[i],".txt"),row.names = F,col.names = F,quote = F)
 }
 
 #或者提取特定的几个GO term
@@ -164,7 +164,7 @@ GO_id <- c("GO:0060333","GO:0050900") #把你想要提取的GO term放在这里 
 for (i in 1:length(GO_id)){
   index <- grep(GO_id[i],ego_BP_df$ID) #在总GO term列表中的位置 position in the total GO term list
   genelist <- unlist(strsplit(as.character(ego_BP_df[index,]$geneID),"/"))
-  write.table(genelist,paste0(gsub(":", "_", GO_id[i]),".txt"),row.names = F,col.names = F,quote = F)
+  write.table(genelist,paste0(GO_id[i],".txt"),row.names = F,col.names = F,quote = F)
 }
 ```
 

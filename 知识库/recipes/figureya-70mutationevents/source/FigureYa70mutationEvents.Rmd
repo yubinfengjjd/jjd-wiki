@@ -69,8 +69,6 @@ More ways of displaying correlation by the package corrplot can be found at <htt
 source("install_dependencies.R")
 source("data.R") # from discover package https://ccb.nki.nl/software/discover/
 source("analysis.R") # from discover package https://ccb.nki.nl/software/discover/
-library(discover) # provides Fortran routines called by vendored data.R/analysis.R
-estimateBackground <- discover:::estimateBackground # internal discover fn used by vendored data.R
 
 # 数据重塑包：用于数据结构转换（宽表/长表）
 # Data reshaping package: for data structure transformation (wide/long format)
@@ -160,14 +158,6 @@ TCGA Pan-Cancer (PANCAN) from UCSC xena (39 datasets)<https://xenabrowser.net/da
 
 # 读取突变信息数据（大数据文件，可能需要较长时间）
 # Read mutation information data (large file, may take time)
-# REPAIR: stored gzip-compressed to stay under GitHub 100MB limit;
-# vroom cannot stream .gz with lines this long, so decompress once first.
-if (!file.exists("mc3.v0.2.8.PUBLIC.nonsilentGene.xena")) {
-  .gzcon <- gzfile("mc3.v0.2.8.PUBLIC.nonsilentGene.xena.gz", "rb")
-  .outcon <- file("mc3.v0.2.8.PUBLIC.nonsilentGene.xena", "wb")
-  while (length(.buf <- readBin(.gzcon, "raw", 1e8))) writeBin(.buf, .outcon)
-  close(.gzcon); close(.outcon); rm(.gzcon, .outcon, .buf)
-}
 mutationinfo <- read_tsv(file = "mc3.v0.2.8.PUBLIC.nonsilentGene.xena")
 mutationinfo[1:5,1:5]  # 预览前5行5列数据 / Preview first 5 rows and columns
 
@@ -346,7 +336,6 @@ result.mutex <- pairwise.discover.test(
   events[subset, ],    # 使用筛选后的基因 / Use filtered genes
   alternative = "less"  # 检验互斥性 / Test for mutual exclusivity
 )
-result.mutex$fdr.method <- "DBH" # vendored test uses discrete FDR; field needed by discover print method
 
 # 查看结果（FDR阈值设为0.05）
 # View results (FDR threshold = 0.05)
@@ -366,7 +355,6 @@ result.mutex <- pairwise.discover.test(
   events[subset, ],     # 使用相同的基因子集 / Use same gene subset
   alternative = "greater"  # 检验共现性 / Test for co-occurrence
 )
-result.mutex$fdr.method <- "DBH" # vendored test uses discrete FDR; field needed by discover print method
 
 # 查看结果（FDR阈值设为0.05）
 # View results (FDR threshold = 0.05)

@@ -1,0 +1,70 @@
+{
+    "schema_version":  1,
+    "kind":  "recipe-repair",
+    "id":  "figureya-275scaucell",
+    "created_at":  "2026-11-12T06:27:21+00:00",
+    "upstream":  {
+                     "schema_version":  1,
+                     "source":  "figureya",
+                     "item":  "FigureYa275scAUCell",
+                     "url":  "https://github.com/ying-ge/FigureYa",
+                     "commit":  "8d7a02c7d00467c45471139b63620571afebbeba",
+                     "license":  "CC-BY-NC-SA-4.0",
+                     "files":  {
+                                   "cells_assignment.pdf":  "e58deb63fa8c33fc49a579caa96f94bee1bb423c01bd320178ee2942153d6a93",
+                                   "example.png":  "9823c61330b9096485681afec2bebb90d84bb18058c09337cb1e7f5c6b8fb823",
+                                   "explain_picture.png":  "91544f5cd51be79ae7f0802d530af2748977e740346d2dc8eacf830e74df45b9",
+                                   "FigureYa275scAUCell.Rmd":  "9b0a8a47710382075e7cc54349c343c88330c46f79b808ad2eba865cefa208c5",
+                                   "immune.combined.ISGs.type.UMAP.pdf":  "e53910181c1f76087b4d4afffba31ae80f64cd64f0d2f56adab4e08f4553f00d",
+                                   "install_dependencies.R":  "948636624dbcb3cb06d52d142ee3291eb47a5e3bc9905b5c94844bb4cd47eff5",
+                                   "ISG_genelist.csv":  "f4f53f76a4b69a4d574f3c1877be6688c4c11622c8588dbcd5db03c2a6922727",
+                                   "output_ISGs.type.DEGs.filter.list.csv":  "e2b3b61898cec74f819534e409eb6e21817ee0f74e29994072ba7ffc81f5293c",
+                                   "UMAP_AUC_value.pdf":  "763d42cb5220a6025142d2452d21116593cc34d5e3d5bad6ebb4d8e99d7953d2",
+                                   "UMAP_AUC_value_label.pdf":  "93209125402eb7419d49abb64385c5cec2829e3678ef439a0e71c049de22f3a6"
+                               },
+                     "excluded":  [
+                                      "FigureYa275scAUCell.html"
+                                  ],
+                     "copied_at":  "2026-11-04T10:01:22+00:00"
+                 },
+    "execution_tree":  "repair/",
+    "files":  {
+                  "cells_assignment.pdf":  "e58deb63fa8c33fc49a579caa96f94bee1bb423c01bd320178ee2942153d6a93",
+                  "example.png":  "9823c61330b9096485681afec2bebb90d84bb18058c09337cb1e7f5c6b8fb823",
+                  "explain_picture.png":  "91544f5cd51be79ae7f0802d530af2748977e740346d2dc8eacf830e74df45b9",
+                  "FigureYa275scAUCell.Rmd":  "ea255ab88055a6b9eb5ec649146cf4e1b13cdd25adb2431df778073a6e949148",
+                  "immune.combined.ISGs.type.UMAP.pdf":  "e53910181c1f76087b4d4afffba31ae80f64cd64f0d2f56adab4e08f4553f00d",
+                  "immune.combined.rds":  "2b96efb50147fc874c9fdab4e4a14e26599cf8ba4d6e9f57caa958dc71b4f7cc",
+                  "install_dependencies.R":  "948636624dbcb3cb06d52d142ee3291eb47a5e3bc9905b5c94844bb4cd47eff5",
+                  "ISG_genelist.csv":  "f4f53f76a4b69a4d574f3c1877be6688c4c11622c8588dbcd5db03c2a6922727",
+                  "output_ISGs.type.DEGs.filter.list.csv":  "e2b3b61898cec74f819534e409eb6e21817ee0f74e29994072ba7ffc81f5293c",
+                  "UMAP_AUC_value.pdf":  "763d42cb5220a6025142d2452d21116593cc34d5e3d5bad6ebb4d8e99d7953d2",
+                  "UMAP_AUC_value_label.pdf":  "93209125402eb7419d49abb64385c5cec2829e3678ef439a0e71c049de22f3a6"
+              },
+    "changed_from_source":  {
+                                "added":  [
+                                              "immune.combined.rds"
+                                          ],
+                                "modified":  [
+                                                 "FigureYa275scAUCell.Rmd"
+                                             ],
+                                "removed":  [
+
+                                            ]
+                            },
+    "latest_run":  "repair-runs/20261111T094540Z.json",
+    "latest_state":  "pass",
+    "latest_scope":  "repair",
+    "latest_started_at":  "2026-11-11T09:45:40+00:00",
+    "input_note":  "包含为跑通流程所做的最小修补或补齐输入；不声称真实数据科学有效性。",
+    "scope_note":  "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。",
+    "not_in_git":  [
+                       {
+                           "path":  "immune.combined.rds",
+                           "sha256":  "2b96efb50147fc874c9fdab4e4a14e26599cf8ba4d6e9f57caa958dc71b4f7cc",
+                           "bytes":  192262925,
+                           "origin":  "运行时下载的 SeuratData immune.combined 参考数据集（public）",
+                           "reason":  "超过 GitHub 100 MB 硬上限；本机保留、.gitignore 排除、不进 Git。文件仍在 repair/ 目录内供复核。"
+                       }
+                   ]
+}

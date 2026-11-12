@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-53ppimodule",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa53PPImodule",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "demo.png": "7a44f165bdd86599ccadf92c646cee1ee48ce958bbe5deac5f8a89a7ea2ee603",
+      "FigureYa53PPImodule.jpg": "2a8878c9b1ac3c2956af757280f4683915c0ffd9fbb5382f49c37c426ec55327",
+      "FigureYa53PPImodule.rmd": "64edeab2aecc678a38f95c3b372892d0f780e03178ec2bf53f3fed97b26935d5",
+      "install_dependencies.R": "5b798972e572c0a638dc1b5b4e89217cb1ad14e5c5b9772875d8f56b3fa1d1ec",
+      "mmc2.xlsx": "82349e0f9643cb5fd195774e9278132caf1dc401636732b8ebd0d771d5201dd4",
+      "ppi_gene.csv": "e633d88a5d541f820a972c532135df4e208f959fe7f378ac319bf6c18a46d424",
+      "ppi_mat.csv": "c99b3b574e239c911f193c55e43889c5a580a8c35bbb468be302cddaff22f0d7",
+      "result_filtered_PPI_network_edge.txt": "b731b208e422379e2e55cd506fb25b3238af2e5d44d763b9b0e1ee7eb83d979e",
+      "result_filtered_PPI_network_node.txt": "c83060f7ff336c5f0ad5d7aa1953d8c7f8a911e8a0d725b5b8882a9bf901394c",
+      "result_module.csv": "7a51f2965cb66382e3436b0fedf003dbe941c4698956ec2c615a09fc98a07227",
+      "STRING.png": "2feb491fde1288b9aa3d74b91297bc1cd9b6a3a73b0c84bf6fc73153388807c3",
+      "STRINGv11-hg.png": "421635ab8615a60915627691d0bff56834bd9af0242e6caa321b5dad36401dd3",
+      "STRINGv11-mm.png": "7067967850bfd77dbf7c2b4fff65c52b51466547fc9bce6914ad04c20c926162",
+      "TOMdist1.R": "ae56427545b1175ee3b4ad774c318049411757bcbfb8384565c6e0b11e577b89"
+    },
+    "excluded": [
+      "FigureYa53PPImodule-0527更新.html"
+    ],
+    "copied_at": "2026-11-04T09:30:12+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "10090.protein.actions.v11.0.txt.gz": "aabd1b11c8642c380ae4e017ee532f465f80c04ced818112138b5d305ddcf733",
+    "demo.png": "7a44f165bdd86599ccadf92c646cee1ee48ce958bbe5deac5f8a89a7ea2ee603",
+    "FigureYa53PPImodule.jpg": "2a8878c9b1ac3c2956af757280f4683915c0ffd9fbb5382f49c37c426ec55327",
+    "FigureYa53PPImodule.rmd": "de9b7f94c16b25f40d0e5390f1be56222713cb35224c118b3ece9cf549a4822b",
+    "install_dependencies.R": "5b798972e572c0a638dc1b5b4e89217cb1ad14e5c5b9772875d8f56b3fa1d1ec",
+    "mmc2.xlsx": "82349e0f9643cb5fd195774e9278132caf1dc401636732b8ebd0d771d5201dd4",
+    "MOUSE_10090_idmapping_selected.tab": "663797fc1f4259688a992b137969d86dce3ca5195544b8b08ad2f0dbef1b41d1",
+    "ppi_gene.csv": "e633d88a5d541f820a972c532135df4e208f959fe7f378ac319bf6c18a46d424",
+    "ppi_mat.csv": "c99b3b574e239c911f193c55e43889c5a580a8c35bbb468be302cddaff22f0d7",
+    "result_filtered_PPI_network_edge.txt": "b731b208e422379e2e55cd506fb25b3238af2e5d44d763b9b0e1ee7eb83d979e",
+    "result_filtered_PPI_network_node.txt": "c83060f7ff336c5f0ad5d7aa1953d8c7f8a911e8a0d725b5b8882a9bf901394c",
+    "result_module.csv": "7a51f2965cb66382e3436b0fedf003dbe941c4698956ec2c615a09fc98a07227",
+    "STRING.png": "2feb491fde1288b9aa3d74b91297bc1cd9b6a3a73b0c84bf6fc73153388807c3",
+    "STRINGv11-hg.png": "421635ab8615a60915627691d0bff56834bd9af0242e6caa321b5dad36401dd3",
+    "STRINGv11-mm.png": "7067967850bfd77dbf7c2b4fff65c52b51466547fc9bce6914ad04c20c926162",
+    "TOMdist1.R": "ae56427545b1175ee3b4ad774c318049411757bcbfb8384565c6e0b11e577b89"
+  },
+  "changed_from_source": {
+    "added": [
+      "10090.protein.actions.v11.0.txt.gz",
+      "MOUSE_10090_idmapping_selected.tab"
+    ],
+    "modified": [
+      "FigureYa53PPImodule.rmd"
+    ],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T170615Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T17:06:15+00:00",
+  "input_note": "包含为跑通流程所做的最小修补或补齐输入；不声称真实数据科学有效性。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}

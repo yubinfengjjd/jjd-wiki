@@ -12,10 +12,7 @@
     "FigureYa3输入文件.txt": "b92f60da79e9516551f247bd63fd721707d90e72cc062114d7e4ebc7edf9b2de",
     "install_dependencies.R": "c48192b40e34e3a0c62b0a78492b55f53587ac78fb69eb6441961179a672b1cd",
     "loci.bed": "a5022297c9be18037ebc1ba470c1af140b4d3d90d39b0239ac6e5e23182d45a1",
-    "loci.pdf": "9148301f51643d72d9fc3edb18ed315b04d50e97be540690789d46b16c835f5e",
-    "POLR2A.bw": "f0b7daa9bf73c3d3c7e6ed246cbbc07ac2661460a897df9bee082a47458ec835",
-    "SYNTHETIC_INPUTS.md": "dafc07bf3fe373528ce254659becdc833df64c9364f74658a4e6d424bbfeeb89",
-    "TAL1.bw": "f0b7daa9bf73c3d3c7e6ed246cbbc07ac2661460a897df9bee082a47458ec835"
+    "loci.pdf": "9148301f51643d72d9fc3edb18ed315b04d50e97be540690789d46b16c835f5e"
   },
   "excluded": [
     "FigureYa3genomeView.html"

@@ -216,7 +216,7 @@ is.element("VARS1", rownames(expr.ccle))
 
 # 将VARS1替换为VARS
 # Replace "VARS1" with "VARS"
-if ("VARS" %in% rownames(expr.ccle)) expr.ccle <- expr.ccle[rownames(expr.ccle) != "VARS1",] else rownames(expr.ccle)[which(rownames(expr.ccle) == "VARS1")] <- "VARS" # avoid duplicate row.names when VARS already present 
+rownames(expr.ccle)[which(rownames(expr.ccle) == "VARS1")] <- "VARS" 
 
 # 此时全部匹配
 # Now all genes are matched
@@ -532,10 +532,8 @@ for (i in candidate.target) {
 
 ```{r}
 p <- 
-  plot_grid(plotlist = c(list(p.proteome),
-                       unname(scatterProteome[seq_len(min(4, length(scatterProteome)))]),
-                       list(p.ccle),
-                       unname(scatterCERES[seq_len(min(4, length(scatterCERES)))])),
+  plot_grid(p.proteome, scatterProteome[[1]], scatterProteome[[2]], scatterProteome[[3]], scatterProteome[[4]], 
+          p.ccle, scatterCERES[[1]], scatterCERES[[2]], scatterCERES[[3]], scatterCERES[[4]],
           nrow = 2)
 ggsave(filename = "combined plot.pdf", width = 12, height = 5)
 ```

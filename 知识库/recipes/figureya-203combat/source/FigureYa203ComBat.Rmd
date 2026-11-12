@@ -80,7 +80,7 @@ Here, we use one TCGA tumor dataset and two GEO microarray datasets as examples,
 
 If your expression matrices have already been formatted as easy_input_TCGA.csv and easy_input_GSE\*.csv, you can skip this step and proceed directly to "Checking Data Magnitude.
 
-```{r eval=FALSE}
+```{r}
 ## TCGA数据下载及预处理 TCGA data download and preprocessing
 # 查询TCGA头颈鳞癌RNA-seq数据(STAR比对原始计数) Query TCGA HNSC RNA-seq data (STAR-aligned raw counts)
 expquery <- GDCquery(project = "TCGA-HNSC",

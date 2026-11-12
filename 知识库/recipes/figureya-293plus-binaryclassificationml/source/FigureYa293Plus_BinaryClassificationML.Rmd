@@ -216,11 +216,9 @@ importance_feature_selection <- function(data, method = "rf", top_n = NULL) {
   
   if(method == "rf") {
     # 随机森林变量重要性
-    # REPAIR: formula interface overflows the protection stack at ~20k features;
-    # the matrix interface is equivalent and does not build a terms object.
-    rf_model <- randomForest(x = data[, -c(1, 2)],
-                            y = as.factor(data[[2]]),
-                            importance = TRUE,
+    rf_model <- randomForest(as.factor(label) ~ ., 
+                            data = data[,-1], 
+                            importance = TRUE, 
                             ntree = 500)
     importance_scores <- importance(rf_model)[,3]  # MeanDecreaseGini
     
@@ -235,8 +233,7 @@ importance_feature_selection <- function(data, method = "rf", top_n = NULL) {
     
   } else if(method == "boruta") {
     # Boruta特征选择
-    # REPAIR: see above - x/y interface avoids the formula terms object.
-    boruta_result <- Boruta(x = data[, -c(1, 2)], y = as.factor(data[[2]]), doTrace = 0)
+    boruta_result <- Boruta(label ~ ., data = data[,-1], doTrace = 0)
     confirmed_features <- names(boruta_result$finalDecision[boruta_result$finalDecision == "Confirmed"])
     return(confirmed_features)
   }
@@ -605,10 +602,8 @@ algo_names <- names(classification_algorithms)
 for(algo in algo_names) {
   cat("正在运行算法:", algo, "\n")
   
-  tryCatch({
-    result <- evaluate_model(algo, est_data, val_data_list)
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model(algo, est_data, val_data_list)
+  all_results <- rbind(all_results, result)
 }
 
 cat("单一算法评估完成，共", nrow(all_results), "个结果\n\n")
@@ -671,10 +666,9 @@ cat("=== 开始Random Forest特征选择 + 算法组合 ===\n")
 
 # 使用Random Forest进行特征选择
 set.seed(seed)
-# REPAIR: x/y interface, same reason as above.
-rf_model <- randomForest(x = est_data[, -c(1, 2)],
-                        y = as.factor(est_data[[2]]),
-                        ntree = 1000,
+rf_model <- randomForest(as.factor(label) ~ ., 
+                        data = est_data[,-1], 
+                        ntree = 1000, 
                         importance = TRUE)
 
 # 获取变量重要性
@@ -692,71 +686,55 @@ if(length(selected_features_rf) > 0) {
   
   # RF + Lasso组合
   cat("运行: RF + Lasso\n")
-  tryCatch({
-    result <- evaluate_model("Lasso", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + Lasso"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("Lasso", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + Lasso"
+  all_results <- rbind(all_results, result)
   
   # RF + Ridge组合
   cat("运行: RF + Ridge\n")
-  tryCatch({
-    result <- evaluate_model("Ridge", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + Ridge"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("Ridge", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + Ridge"
+  all_results <- rbind(all_results, result)
   
   # RF + Elastic Net组合（不同alpha值）
   for(alpha in seq(0.1, 0.9, 0.1)) {
     cat("运行: RF + Enet [α=", alpha, "]\n")
     
     param <- list(alpha = alpha)
-    tryCatch({
-      result <- evaluate_model("Enet", est_data_rf, val_data_list_rf, param)
-      result$Model <- paste0("RF + Enet [α=", alpha, "]")
-      all_results <- rbind(all_results, result)
-    }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+    result <- evaluate_model("Enet", est_data_rf, val_data_list_rf, param)
+    result$Model <- paste0("RF + Enet [α=", alpha, "]")
+    all_results <- rbind(all_results, result)
   }
   
   # RF + XGBoost组合
   cat("运行: RF + XGBoost\n")
-  tryCatch({
-    result <- evaluate_model("XGBoost", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + XGBoost"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("XGBoost", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + XGBoost"
+  all_results <- rbind(all_results, result)
   
   # RF + GBM组合
   cat("运行: RF + GBM\n")
-  tryCatch({
-    result <- evaluate_model("GBM", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + GBM"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("GBM", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + GBM"
+  all_results <- rbind(all_results, result)
   
   # RF + SVM组合
   cat("运行: RF + SVM\n")
-  tryCatch({
-    result <- evaluate_model("SVM", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + SVM"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("SVM", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + SVM"
+  all_results <- rbind(all_results, result)
   
   # RF + Neural Network组合
   cat("运行: RF + NN\n")
-  tryCatch({
-    result <- evaluate_model("NN", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + NN"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("NN", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + NN"
+  all_results <- rbind(all_results, result)
   
   # RF + Naive Bayes组合
   cat("运行: RF + NB\n")
-  tryCatch({
-    result <- evaluate_model("NB", est_data_rf, val_data_list_rf)
-    result$Model <- "RF + NB"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("NB", est_data_rf, val_data_list_rf)
+  result$Model <- "RF + NB"
+  all_results <- rbind(all_results, result)
 }
 
 cat("RF + 其他算法组合完成\n\n")
@@ -788,51 +766,39 @@ if(length(selected_features_lasso) > 0) {
   
   # Lasso + Random Forest组合
   cat("运行: Lasso + RF\n")
-  tryCatch({
-    result <- evaluate_model("RF", est_data_lasso, val_data_list_lasso)
-    result$Model <- "Lasso + RF"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("RF", est_data_lasso, val_data_list_lasso)
+  result$Model <- "Lasso + RF"
+  all_results <- rbind(all_results, result)
   
   # Lasso + XGBoost组合
   cat("运行: Lasso + XGBoost\n")
-  tryCatch({
-    result <- evaluate_model("XGBoost", est_data_lasso, val_data_list_lasso)
-    result$Model <- "Lasso + XGBoost"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("XGBoost", est_data_lasso, val_data_list_lasso)
+  result$Model <- "Lasso + XGBoost"
+  all_results <- rbind(all_results, result)
   
   # Lasso + GBM组合
   cat("运行: Lasso + GBM\n")
-  tryCatch({
-    result <- evaluate_model("GBM", est_data_lasso, val_data_list_lasso)
-    result$Model <- "Lasso + GBM"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("GBM", est_data_lasso, val_data_list_lasso)
+  result$Model <- "Lasso + GBM"
+  all_results <- rbind(all_results, result)
   
   # Lasso + SVM组合
   cat("运行: Lasso + SVM\n")
-  tryCatch({
-    result <- evaluate_model("SVM", est_data_lasso, val_data_list_lasso)
-    result$Model <- "Lasso + SVM"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("SVM", est_data_lasso, val_data_list_lasso)
+  result$Model <- "Lasso + SVM"
+  all_results <- rbind(all_results, result)
   
   # Lasso + Logistic Regression组合
   cat("运行: Lasso + LR\n")
-  tryCatch({
-    result <- evaluate_model("LR", est_data_lasso, val_data_list_lasso)
-    result$Model <- "Lasso + LR"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("LR", est_data_lasso, val_data_list_lasso)
+  result$Model <- "Lasso + LR"
+  all_results <- rbind(all_results, result)
   
   # Lasso + Neural Network组合
   cat("运行: Lasso + NN\n")
-  tryCatch({
-    result <- evaluate_model("NN", est_data_lasso, val_data_list_lasso)
-    result$Model <- "Lasso + NN"
-    all_results <- rbind(all_results, result)
-  }, error = function(e) { cat("    REPAIR-log error:", e$message, "\n") })
+  result <- evaluate_model("NN", est_data_lasso, val_data_list_lasso)
+  result$Model <- "Lasso + NN"
+  all_results <- rbind(all_results, result)
 }
 
 cat("Lasso + 其他算法组合完成\n\n")

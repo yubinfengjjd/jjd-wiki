@@ -73,11 +73,8 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa129TCGAbox.Rmd`）
 - 依赖：CRAN remotes, data.table, ggplot2, ggpubr, ggsignif, gtools, tidyverse
-- 最近运行：pass（as-is，2026-11-11 06:47 UTC，5.5 秒）
+- 最近运行：fail（as-is，2026-11-04 11:00 UTC，16.8 秒）
 - 派生模板（L2）：暂无
-- 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
-
-![[recipes/figureya-129tcgabox/preview.png]]
 <!-- facts:end -->
 
 ## 用途
@@ -94,7 +91,7 @@ favorite: false
 
 ## 输入
 
-- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `repair/SYNTHETIC_INPUTS.md`。
 - `HiSeqV2.gz`：gene expression RNAseq，IlluminaHiSeq (n=702) TCGA hub，下载地址：<https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/HiSeqV2.gz>
 - `mutation.gz`：somatic non-silent mutation (gene-level)，PANCAN AWG (n=461) TCGA hub，下载地址：<https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/mutation.gz>
 - `GBMLGG_clinicalMatrix.gz`：phenotype，Phenotypes (n=1,148) TCGA hub，下载地址：<https://tcga.xenahubs.net/download/TCGA.GBMLGG.sampleMap/GBMLGG_clinicalMatrix.gz>
@@ -104,6 +101,7 @@ favorite: false
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-129tcgabox`
 - 用到课题：`wiki.py use figureya-129tcgabox --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。

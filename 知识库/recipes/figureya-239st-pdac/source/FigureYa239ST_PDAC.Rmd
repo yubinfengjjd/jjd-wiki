@@ -353,9 +353,7 @@ for (i in unique(scRNA_marker2$cluster)) {
     sub_cluster_st = subset(stRNA_marker2,cluster==j)
     gene_st = sub_cluster_st$gene
     gene_st_l = length(gene_st)
-    # REPAIR: upstream typo intersected the two lengths (scalars) instead of the
-# gene vectors; the constant p-values that produced broke the heatmap scaling.
-gene_inter_l = length(intersect(gene,gene_st))
+    gene_inter_l = length(intersect(gene_l,gene_st_l))
     p = -log10(1-phyper(gene_inter_l,
                       gene_st_l, 
                       19738-gene_st_l, 
@@ -367,9 +365,6 @@ gene_inter_l = length(intersect(gene,gene_st))
   }
 }
 
-# REPAIR: -log10(1-phyper(...)) yields Inf when phyper returns 1; non-finite
-# values break tidyHeatmap scaling ("'from' must be a finite number").
-p.data$p[!is.finite(p.data$p)] <- max(p.data$p[is.finite(p.data$p)], na.rm = TRUE) * 1.1
 p.data$group <- p.data$st
 
 ## 画图
@@ -388,7 +383,7 @@ p.data %>%
     cluster_rows = FALSE,
     cluster_columns = FALSE
   )%>%
-  annotation_tile(group,palette = c("#189D77",
+  add_tile(group,palette = c("#189D77",
                              "#666666",
                              "#E42A88",
                              "#766FB1")) %>%
@@ -626,9 +621,6 @@ for (i in unique(scRNA_marker2$cluster)) {
   }
 }
 
-# REPAIR: -log10(1-phyper(...)) yields Inf when phyper returns 1; non-finite
-# values break tidyHeatmap scaling ("'from' must be a finite number").
-p.data$p[!is.finite(p.data$p)] <- max(p.data$p[is.finite(p.data$p)], na.rm = TRUE) * 1.1
 p.data$group <- p.data$st
 
 ## 画图
@@ -647,7 +639,7 @@ p.data %>%
     cluster_rows = FALSE,
     cluster_columns = FALSE
   )%>%
-  annotation_tile(group,palette = c("#189D77",
+  add_tile(group,palette = c("#189D77",
                              "#666666",
                              "#E42A88",
                              "#766FB1")) %>%

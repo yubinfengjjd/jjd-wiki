@@ -1,4 +1,3 @@
-interleave <- function(a, b) c(rbind(as.vector(a), as.vector(b)))
 GeomSplitViolin <- ggproto("GeomSplitViolin", GeomViolin,
                            draw_group = function(self, data, ..., draw_quantiles = NULL) {
                              # Original function by Jan Gleixner (@jan-glx)
@@ -32,12 +31,12 @@ create_quantile_segment_frame <- function(data, draw_quantiles, split = FALSE, g
   violin.xs <- (stats::approxfun(data$y, data$x))(ys)
   if (grp %% 2 == 0) {
     data.frame(
-      x = interleave(violin.xs, violin.xmaxvs),
+      x = ggplot2:::interleave(violin.xs, violin.xmaxvs),
       y = rep(ys, each = 2), group = rep(ys, each = 2)
     )
   } else {
     data.frame(
-      x = interleave(violin.xminvs, violin.xs),
+      x = ggplot2:::interleave(violin.xminvs, violin.xs),
       y = rep(ys, each = 2), group = rep(ys, each = 2)
     )
   }

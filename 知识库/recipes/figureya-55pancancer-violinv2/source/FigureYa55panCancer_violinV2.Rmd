@@ -138,7 +138,7 @@ samplepair.txt
 ### 为GTEx的sample标注组织
 ### Label tissue for GTEx's sample
 
-```{r eval=FALSE}
+```{r}
 samplepair <- read.delim("samplepair.txt",as.is = T)
 gtexpair <- samplepair[,c(1,2,5)]
 gtexpair
@@ -163,7 +163,7 @@ head(gtextable)
 ### 为TCGA的sample标注组织
 ### Label tissue for TCGA's sample
 
-```{r eval=FALSE}
+```{r}
 tissue <- gtexpair$TCGA
 names(tissue) <- gtexpair$Detail
 
@@ -179,7 +179,7 @@ head(tcgatable)
 ### 删除没有TPM的sample
 ### Delete samples without TPM
 
-```{r eval=FALSE}
+```{r}
 headgtex <- read_part("gtex_RSEM_gene_tpm.gz", rows = 1)
 gtexsample <- headgtex[1,]
 gtextable2 <- gtextable[gtextable$sample %in% gtexsample,]
@@ -194,7 +194,7 @@ tcga_gtex<-rbind(tcgatable2,gtextable2)
 ### 比较现有数据跟GEPIA收录的sample数量
 ### Compare the existing data with the number of samples included in GEPIA
 
-```{r eval=FALSE}
+```{r}
 statable<-data.frame()
 for (tissuer in sort(unique(tcga_gtex$tissue))){
   
@@ -222,7 +222,7 @@ The first 4 columns are existing data, followed by GEPIA data
 ### 找出每个基因在TPM文件中的行号
 ### Find the line number of each gene in the TPM file
 
-```{r eval=FALSE}
+```{r}
 idmap <- read.delim("gencode.v23.annotation.gene.probemap",as.is=T)
 head(idmap)
 # 读取第一列, 所有行
@@ -245,7 +245,7 @@ head(gene2id2row)
 
 Here we take the TP53 gene as an example to extract its TPM
 
-```{r eval=FALSE}
+```{r}
 generownum <- gene2id2row[gene2id2row$gene==targetGene,]$rownum + 1
 gtex_colnames <- read_part("gtex_RSEM_gene_tpm.gz", rows = 1)
 gtex_tpm <- read_part("gtex_RSEM_gene_tpm.gz", rows = generownum)

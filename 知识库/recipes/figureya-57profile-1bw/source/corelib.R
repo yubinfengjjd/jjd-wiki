@@ -39,29 +39,12 @@ signal_caputer_around_sites <- function(bigWigFile,bed,resolution=50,span=3000,c
   
   # capture
   # IRange is 1-based
-  # [repair] single batch import: build all per-site datapoint windows at once.
-  # Per-site per-region import was far too slow (thousands of file opens).
-  starts <- midpoints - span - as.integer(resolution/2)
-  nsite <- length(starts)
-  site <- rep(seq_len(nsite), each = datapoints)
-  allw <- GRanges(
-    seqnames = seqname[site],
-    ranges = IRanges(
-      start = rep(starts, each = datapoints) +
-        rep(as.integer(seq(0, by = resolution, length.out = datapoints)), times = nsite),
-      width = resolution))
-  covs <- import(bigWigFile, which = allw, as = "NumericList")
-  mu <- vapply(covs, function(x) if (length(x)) mean(x) else 0, numeric(1))
-  signal <- matrix(mu, nrow = datapoints)
+  signal <- suppressWarnings(mcmapply(regionCapture,seqname,midpoints-span-resolution/2,midpoints+span+resolution/2,bigWigFile,datapoints,mc.cores = getOption("mc.cores",cores)))
   
   # correct orientation & get average signal
   write.table(t(signal),file="temp_signal.txt",quote=F,row.names=F,col.names=F,sep="\t")
   write.table(strand,file="temp_strand.txt",quote=F,row.names=F,col.names=F,sep="\t")
-  # [repair] Windows: no paste/awk -> pure-R reverse per strand
-  signal_rev <- as.data.frame(t(signal))
-  rev_idx <- strand != "+"
-  signal_rev[rev_idx, ] <- signal_rev[rev_idx, ncol(signal_rev):1, drop = FALSE]
-  write.table(signal_rev, file="temp_signal_rev.txt", quote=F, row.names=F, col.names=F, sep="	")
+  system(paste0("paste temp_signal.txt temp_strand.txt | awk '{if($NF==",'"',"+",'"',") {for(i=1;i<NF-1;i++) printf $i",'"',"\t",'"',"; print $(NF-1)} else {for(i=NF-1;i>1;i--) printf $i",'"',"\t",'"',"; print $1}}' > temp_signal_rev.txt"))
   signal_rev <- read.table("temp_signal_rev.txt")
   delete_result <- file.remove("temp_signal.txt")
   delete_result <- file.remove("temp_strand.txt")

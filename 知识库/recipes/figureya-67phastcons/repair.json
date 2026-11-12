@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-67phastcons",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa67phastCons",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "all_dsDMR.bed": "9936fbf7da360732632578f84bd1c5ef930a51c703241791b490c81901a133ff",
+      "average_signal.csv": "832a3c8f56e7321614278e8f7a8f0ea15f0d6fa2dd195c6bae451463918169c5",
+      "captureRegion.bed": "6d5f1f3a1c911921d6569d9c19c5a2a91b9aca90f69dc2dc7581d44ebb3f04e0",
+      "coverage_regionCapture_siteprof1.gz": "6fa6d5648679aa4ee31a5ffe03dd5b17cbb0af0f407f85fe828b8180915f98a6",
+      "example.png": "6addbcb89a736189ea001be36be99e2eafcaedb618c881d61cb04506c4f83c8e",
+      "FigureYa67phastCons.Rmd": "868ded24fa74be06d28c01641bf6a3ea5e7db14c8c1b41d9effa1c943018baa6",
+      "getBigWigValue.py": "f589d6cab3c8036b7a082cb39512b31dbac4f8b6c2ab7706694570ec5cab5dd7",
+      "install.log": "43aa9f706d400e700dc64d628b80ea65d9062d9cd6cc65b2128201d23cd845b8",
+      "install_dependencies.R": "a5d2d684dc0aab8aeb3d83c0c5539e6f5144b81abf21e72ebfd6c1baa3f1a54e",
+      "non_exon_dsDMR.bed": "4894fb76db6ba434c6152e264ae4fa9ec8498138dfb0e853766d809846b43e52",
+      "random.bed": "7e634a963d42642d647036e09d13fc2f3ba36344df9fdd2e7174e2dcaadcfd36",
+      "signal_regionCapture_siteprof1.gz": "2006c5001ea06e028897b1292441d5b15e1959f5b89741305cecbd56b8436c00",
+      "Step1.png": "17599e11417a7cc537689717e1dc05f0bdbb4d11538a150fbd72e1d70b681d48",
+      "Step2.png": "b6238b6aff29ecadf24de8400d53671be379cf0de496c9085deae51c588403bc",
+      "Step3.png": "b14142d52688e8e7a6f9724e0b7856eb556e6831d02b2c67fd5bf25adfab5d48",
+      "Step4.png": "d79bfdecbc11d2a2c321e24cc0820454d8654dc2757a1e0d9af85ff79256ae30",
+      "Step5.png": "75d29fa417d0343cae916d82f178631dde62e36fc4758c32c3a859b9969b6ee6",
+      "Step6.png": "5d3dab1b4e0760cdef19dfcc44e796d73c8c98edb7e7f00c027bd6afbd5df619"
+    },
+    "excluded": [
+      "FigureYa67phastCons.html"
+    ],
+    "copied_at": "2026-11-04T09:40:12+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "all_dsDMR.bed": "9936fbf7da360732632578f84bd1c5ef930a51c703241791b490c81901a133ff",
+    "average_signal.csv": "832a3c8f56e7321614278e8f7a8f0ea15f0d6fa2dd195c6bae451463918169c5",
+    "captureRegion.bed": "6d5f1f3a1c911921d6569d9c19c5a2a91b9aca90f69dc2dc7581d44ebb3f04e0",
+    "coverage_regionCapture_siteprof1.gz": "6fa6d5648679aa4ee31a5ffe03dd5b17cbb0af0f407f85fe828b8180915f98a6",
+    "example.png": "6addbcb89a736189ea001be36be99e2eafcaedb618c881d61cb04506c4f83c8e",
+    "FigureYa67phastCons.Rmd": "6280c25e24b357a7f8c6ec16816f85df561913a08fbc7d1daebf4fff926c6180",
+    "fish.phastCons8way.bw": "e0b3cec02b57deaa3e1479f152775e2c63f5487855892b22e6e9cf904848dcc1",
+    "getBigWigValue.py": "f589d6cab3c8036b7a082cb39512b31dbac4f8b6c2ab7706694570ec5cab5dd7",
+    "install.log": "43aa9f706d400e700dc64d628b80ea65d9062d9cd6cc65b2128201d23cd845b8",
+    "install_dependencies.R": "a5d2d684dc0aab8aeb3d83c0c5539e6f5144b81abf21e72ebfd6c1baa3f1a54e",
+    "non_exon_dsDMR.bed": "4894fb76db6ba434c6152e264ae4fa9ec8498138dfb0e853766d809846b43e52",
+    "random.bed": "7e634a963d42642d647036e09d13fc2f3ba36344df9fdd2e7174e2dcaadcfd36",
+    "signal_regionCapture_siteprof1.gz": "2006c5001ea06e028897b1292441d5b15e1959f5b89741305cecbd56b8436c00",
+    "Step1.png": "17599e11417a7cc537689717e1dc05f0bdbb4d11538a150fbd72e1d70b681d48",
+    "Step2.png": "b6238b6aff29ecadf24de8400d53671be379cf0de496c9085deae51c588403bc",
+    "Step3.png": "b14142d52688e8e7a6f9724e0b7856eb556e6831d02b2c67fd5bf25adfab5d48",
+    "Step4.png": "d79bfdecbc11d2a2c321e24cc0820454d8654dc2757a1e0d9af85ff79256ae30",
+    "Step5.png": "75d29fa417d0343cae916d82f178631dde62e36fc4758c32c3a859b9969b6ee6",
+    "Step6.png": "5d3dab1b4e0760cdef19dfcc44e796d73c8c98edb7e7f00c027bd6afbd5df619",
+    "SYNTHETIC_INPUTS.md": "16934968052f0ef0c51d1121747607fbc1c76779cce153ff345be5b3c77845ea"
+  },
+  "changed_from_source": {
+    "added": [
+      "SYNTHETIC_INPUTS.md",
+      "fish.phastCons8way.bw"
+    ],
+    "modified": [
+      "FigureYa67phastCons.Rmd"
+    ],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T064717Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T06:47:17+00:00",
+  "input_note": "包含合成输入；仅用于执行验证，不构成真实数据分析结论。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}

@@ -124,7 +124,7 @@ saveRDS(results, "data/gene.info.rds")
 results <- readRDS("data/gene.info.rds")
 all(results$ensembl_gene_id == rownames(seu)) # should be TRUE
 
-counts <- SeuratObject::LayerData(seu, assay = "RNA", layer = "counts")
+counts <- seu[["RNA"]]@counts
 rownames(counts) <- results$uniq.name
 
 # !important: the unexpressed genes should be removed.
@@ -176,7 +176,7 @@ dremi.res <- CalculateKnnDREMI_LowMemory(data.dir = "tmp.data2/dremi/",
                                          source.gene = "PLCG2", 
                                          target.genes = NULL, 
                                          return.drevi = F,
-                                         n.cores = 1)  # REPAIR: mclapply not supported on Windows
+                                         n.cores = 10)
 write.table(dremi.res$dremi, "tmp.data2/PLCG2.DREMI.tsv", row.names = F, sep = "\t", quote = F)
 ```
 

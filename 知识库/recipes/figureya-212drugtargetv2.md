@@ -96,11 +96,8 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa212drugTargetV2.Rmd`）
 - 依赖：CRAN tidyverse, ISOpureR, SimDesign, cowplot, ridge, car；Bioconductor impute, sva
-- 最近运行：pass（as-is，2026-11-11 14:18 UTC，1385.8 秒）
+- 最近运行：fail（as-is，2026-11-11 10:24 UTC，9002.2 秒）
 - 派生模板（L2）：暂无
-- 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
-
-![[recipes/figureya-212drugtargetv2/preview.png]]
 <!-- facts:end -->
 
 ## 用途
@@ -132,6 +129,7 @@ LIHC.TPM.txt为表达矩阵（列名含TCGA型别码）；maf为cBioPortal格式
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-212drugtargetv2`
 - 用到课题：`wiki.py use figureya-212drugtargetv2 --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。

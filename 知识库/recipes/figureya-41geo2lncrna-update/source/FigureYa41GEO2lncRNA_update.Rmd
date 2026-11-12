@@ -125,8 +125,7 @@ If you have used FigureYa22, 23, 34 to obtain the gene expression matrix of TCGA
 
 **Note:** Replace GSE with the data you want to use, and remember to also replace it with GPL (which chip platform) used for this set of data in order to get the correct probe set annotation information. **Where to find the GPL? **Search platform on the <https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36895> page, and the GPL is listed to the right of it.
 
-```{r,message=FALSE,eval=FALSE}
-# REPAIR: GEO download skipped; easy_input.csv is provided in source/
+```{r,message=FALSE}
 gset <- getGEO("GSE36895", GSEMatrix =TRUE, getGPL = TRUE, AnnotGPL = TRUE) 
 #如果提示没有GPL***.anno.gz文件，就用下面这句
 #If prompted that there is no GPL***.anno.gz file, use the following sentence
@@ -181,8 +180,7 @@ You may encounter three situations:
 
 3. If there is no shared ID, you need to annotate the chip by sequence comparison to find the gene name corresponding to the sequence, [Module 1] is suspended here for you.
 
-```{r,eval=FALSE}
-# REPAIR: probe annotation skipped; easy_input.csv is provided in source/
+```{r}
 exprdf$gsym<-gset@featureData@data$`Gene symbol`
 #有时要用下面这行
 #sometimes you have to use the following line
@@ -320,13 +318,24 @@ Then use the gene biotype to distinguish lncRNA, miRNA and mRNA
 #your microarray data may not be on line 62, you need to check it specifically
 #listFilters(ensembl)
 #listAttributes(ensembl)
-# REPAIR: biomaRt endpoints unreachable from this environment (HTTP 405/403);
-# use the upstream-provided gene_biotype.csv artifact instead of a live getBM call.
-# Original code: listAttributes(ensembl)[62,]; feature_info <- getBM(...)
-feature_info <- read.csv("gene_biotype.csv", check.names = FALSE)
-# stored as (hgnc_symbol, gene_biotype); restore original column order
-feature_info <- feature_info[, c(2, 1)]
+listAttributes(ensembl)[62,]
+#下面的“filters = ”要用到这个name
+#the following "filters = " will use this name
 
+feature_info <- getBM(attributes = c("gene_biotype",
+                                     #"transcript_biotype",#还可以提取transcript_biotype transcript_biotype can also be extracted
+                                     #如果基因名是gene symbol，就运行下面这行
+                                     #if the gene name is gene symbol, run the following line
+                                     "hgnc_symbol"), 
+                                     #如果基因名是ensembl ID，就运行下面这行 if the gene name is ensembl ID, run the following line
+                                     #"ensembl_gene_id"),
+                      #如果基因名是gene symbol，就运行下面这行
+                      #if the gene name is gene symbol, run the following line
+                      filters = "hgnc_symbol", #小鼠是mgi_symbol，大鼠是mgi_symbol mouse is mgi_symbol, rat is mgi_symbol
+                      #如果基因名是ensembl ID，就运行下面这行
+                      #if the gene name is ensembl ID, run the following line
+                      #filters = "ensembl_gene_id",
+                      values = rownames(exprdf_uniq), mart = ensembl)
 
 #有些芯片注释的gene symbol跟最新版本ensembl的基因名不一致，需要返回上一步，换比较老的版本。
 #TCGA数据的ensembl ID跟最新版ensembl一致

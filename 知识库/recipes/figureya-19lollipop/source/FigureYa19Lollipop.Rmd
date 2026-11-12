@@ -74,9 +74,7 @@ If genetic mutation information you want to draw is already saved in a file like
 
 Download the mutation information as input data.
 
-```{r,message=FALSE,warning=FALSE,eval=FALSE}
-# REPAIR: GDC bulk download unreliable from this environment; the upstream-provided
-# easy_input.txt (TP53 MAF rows) is used directly below.
+```{r,message=FALSE,warning=FALSE}
 on.exit(unlink("GDCdata", recursive = TRUE, force = TRUE), add = TRUE)
 
 mutquery <- GDCquery(project = "TCGA-LIHC",

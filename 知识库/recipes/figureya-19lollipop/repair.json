@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-19lollipop",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa19Lollipop",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "easy_input.txt": "c0ac903aca7defa5a0327f566f83e8367bfb90a6519c76bfcfae36f8f2255289",
+      "example.png": "e99d168eb4aea008a62c8ca2f2e5094534ae2cf44582bfa2460a1e256ee271d1",
+      "FigureYa19Lollipop.jpg": "c6c690fa91f0411c5cc8b695df1a4f21b8d178a8667f68b99b8ed54cd9d132b2",
+      "FigureYa19Lollipop.Rmd": "ff4786c5656121f0b10227cb29d556a23d2a149c76537c49d40f8b6e879f1953",
+      "install.log": "721ceb43d5f7332a2cbcbb9d21173d7b28510a286dc0bdca05a8ed8ca32f5d81",
+      "install_dependencies.R": "be77aaeaab17ccf99084c29aaf5843a3275b90149f35301f73c0a8eb8b4abd9f",
+      "MANIFEST.txt": "81616f1cfd60ed545366e87d211d525ebb7f7f4cec7937339b368d58b2a29a11",
+      "test1.pdf": "ecf21c8c7f4ad719d605ef16d447c1fc1a4d55c1fa02c0dddec547146bf4e1d8",
+      "test2.pdf": "7768ad1b7213f97c55afbf1c16ebc7bc1678110074eef5f0ca3bc30d3456f9f1",
+      "test3.pdf": "885ae7190b8c342755763c12c56800018e7f4cfa0ac4038fa786b7619b155047",
+      "test4.pdf": "186a8c2c3c7e317d9680e0bff7b2c255f6b39f62662d6351d417d4e3fd72b0cf",
+      "test5.pdf": "cd7936e77ff0a25ae0a331033d234e14b1260da4ebbd30a9d05c2e30e25165c5"
+    },
+    "excluded": [
+      "FigureYa19Lollipop.html"
+    ],
+    "copied_at": "2026-11-04T10:12:55+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "easy_input.txt": "c0ac903aca7defa5a0327f566f83e8367bfb90a6519c76bfcfae36f8f2255289",
+    "example.png": "e99d168eb4aea008a62c8ca2f2e5094534ae2cf44582bfa2460a1e256ee271d1",
+    "FigureYa19Lollipop.jpg": "c6c690fa91f0411c5cc8b695df1a4f21b8d178a8667f68b99b8ed54cd9d132b2",
+    "FigureYa19Lollipop.Rmd": "a91a595ad03a5c66929c00120e458af3d00075f9b1ecd6754846898e70a57f4b",
+    "install.log": "721ceb43d5f7332a2cbcbb9d21173d7b28510a286dc0bdca05a8ed8ca32f5d81",
+    "install_dependencies.R": "be77aaeaab17ccf99084c29aaf5843a3275b90149f35301f73c0a8eb8b4abd9f",
+    "MANIFEST.txt": "81616f1cfd60ed545366e87d211d525ebb7f7f4cec7937339b368d58b2a29a11",
+    "test1.pdf": "ecf21c8c7f4ad719d605ef16d447c1fc1a4d55c1fa02c0dddec547146bf4e1d8",
+    "test2.pdf": "7768ad1b7213f97c55afbf1c16ebc7bc1678110074eef5f0ca3bc30d3456f9f1",
+    "test3.pdf": "885ae7190b8c342755763c12c56800018e7f4cfa0ac4038fa786b7619b155047",
+    "test4.pdf": "186a8c2c3c7e317d9680e0bff7b2c255f6b39f62662d6351d417d4e3fd72b0cf",
+    "test5.pdf": "cd7936e77ff0a25ae0a331033d234e14b1260da4ebbd30a9d05c2e30e25165c5"
+  },
+  "changed_from_source": {
+    "added": [],
+    "modified": [
+      "FigureYa19Lollipop.Rmd"
+    ],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T090646Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T09:06:46+00:00",
+  "input_note": "包含为跑通流程所做的最小修补或补齐输入；不声称真实数据科学有效性。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}

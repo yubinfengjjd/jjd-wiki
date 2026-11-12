@@ -132,7 +132,7 @@ wpc3$uniprot <- uniprot_wpc3
 ### Extract ENSEMBLPROT ID according to Uniprot ID
 
 ```{r}
-idmapping<-read.table("MOUSE_10090_idmapping_selected.tab",header = F,as.is=T,sep="	")
+idmapping<-read.table("MOUSE_10090_idmapping_selected.tab",header = F,as.is=T,sep="\t")
 rownames(idmapping)<-idmapping$V1
 ids_wpc3 <- idmapping[intersect(uniprot_wpc3,rownames(idmapping)),][,c(1,21)]
 dim(ids_wpc3)#由于uniprot版本问题会丢失1456-1415=41个蛋白 1456-1415=41 proteins will be lost due to the problem of uniprot version
@@ -165,8 +165,7 @@ Extract PPI of WPC3 protein from STRING database, convert protein name to gene n
 
 ```{r}
 #ppi <- read.table("10090.protein.actions.v10.5.txt",header=T,sep = "\t")
-# REPAIR: stored gzip-compressed to stay under GitHub 100MB limit
-ppi <- read.table("10090.protein.actions.v11.0.txt.gz",header=T,sep = "	")
+ppi <- read.table("10090.protein.actions.v11.0.txt",header=T,sep = "\t")
 head(ppi)
 ppi$item_id_a <- str_replace(ppi$item_id_a,"10090.","")
 ppi$item_id_b <- str_replace(ppi$item_id_b,"10090.","")

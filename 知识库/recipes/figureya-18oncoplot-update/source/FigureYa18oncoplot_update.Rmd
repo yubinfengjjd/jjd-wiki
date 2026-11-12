@@ -80,7 +80,7 @@ options(stringsAsFactors = FALSE) #禁止chr转成factor prohibit the conversion
 
 Mutation information and clinical information need to be downloaded as input data.
 
-```{r,message=FALSE,warning=FALSE,eval=FALSE}
+```{r,message=FALSE,warning=FALSE}
 #查看癌症项目名缩写
 #view cancer program name abbreviations
 cancerName <- data.frame(id = TCGAbiolinks:::getGDCprojects()$project_id, name = TCGAbiolinks:::getGDCprojects()$name)
@@ -94,7 +94,7 @@ head(cancerName)
 
 Parameter `project = ` followed by the abbreviation of the cancer name you want to view
 
-```{r,message=FALSE,eval=FALSE}
+```{r,message=FALSE}
 on.exit(unlink("GDCdata", recursive = TRUE, force = TRUE), add = TRUE)
 
 clinical <- GDCquery(project = "TCGA-LIHC", 
@@ -117,22 +117,6 @@ colnames(cliquery)[1] <- "Tumor_Sample_Barcode"
 #group <- read.table("group.txt")
 #cliquery <- merge(group, cliquery, by.x = "sample", by.y = "Tumor_Sample_Barcode")
 ```
-```{r,message=FALSE}
-# REPAIR: api.gdc.cancer.gov is unreachable from this environment (repeated SSL
-# handshake failures on both the tar bundle and per-file client endpoints).
-# cliquery.rds was rebuilt from equivalent public TCGA sources:
-#   - Xena TCGA.LIHC.sampleMap/LIHC_clinicalMatrix (gender, grade,
-#     hist_hepato_carc_fact -> history_hepato_carcinoma_risk_factors)
-#   - UCSC PanCanAtlas Survival_SupplementalTable_S1_20171025 (race -> race_list)
-# Same patient-level fields as GDCprepare_clinic() output.
-cliquery <- readRDS("cliquery.rds")
-# REPAIR: maftools' annotation legend builder errors on bracketed/NA race
-# codes ("'legend' is of length 0"); normalize them to a single level.
-cliquery$race_list[is.na(cliquery$race_list) |
-  substr(cliquery$race_list, 1, 1) == "[" |
-  cliquery$race_list == ""] <- "Not Available"
-```
-
 
 ![](group.png)
 
@@ -162,7 +146,7 @@ Later we will draw with `neoplasm_histologic_grade`, `gender`, `race_list`, `HCV
 
 Choose one of the 4 types of pipelines to find mutation: `muse`, `varscan2`, `somaticsniper`, `mutect2`, choose mutect2 here.
 
-```{r,message=FALSE,eval=FALSE}
+```{r,message=FALSE}
 query_maf <- GDCquery(
   project = "TCGA-LIHC",
   data.category = "Simple Nucleotide Variation",
@@ -174,14 +158,6 @@ maf_data <- GDCprepare(query_maf)
 mut <- as.data.frame(maf_data)
 maf <- read.maf(maf = mut, clinicalData = cliquery, isTCGA = T)
 ```
-```{r}
-# REPAIR: mut.rds contains the public MC3 v0.2.8 pan-cancer calls for the same
-# TCGA-LIHC cohort (Xena mc3.v0.2.8.PUBLIC), reformatted to MAF columns.
-# Equivalent cohort calls; field layout mirrors GDCprepare() output.
-mut <- readRDS("mut.rds")
-maf <- read.maf(maf = mut, clinicalData = cliquery, isTCGA = T)
-```
-
 
 # 开始画图 Start Drawing
 
@@ -239,10 +215,8 @@ names(col) = c('Frame_Shift_Del','Missense_Mutation', 'Nonsense_Mutation', 'Fram
 
 #人种
 #race
-racecolors = c(RColorBrewer::brewer.pal(n = 4,name = 'Spectral'), "grey85")
-# REPAIR: our clinical table also carries "Not Available" (NA/bracketed race
-# codes normalized earlier); it needs a color or the legend builder fails.
-names(racecolors) = c("ASIAN", "WHITE", "BLACK_OR_AFRICAN_AMERICAN",  "AMERICAN_INDIAN_OR_ALASKA_NATIVE", "Not Available")
+racecolors = RColorBrewer::brewer.pal(n = 4,name = 'Spectral')
+names(racecolors) = c("ASIAN", "WHITE", "BLACK_OR_AFRICAN_AMERICAN",  "AMERICAN_INDIAN_OR_ALASKA_NATIVE")
 
 #病毒、肝硬化
 #virus, cirrhosis

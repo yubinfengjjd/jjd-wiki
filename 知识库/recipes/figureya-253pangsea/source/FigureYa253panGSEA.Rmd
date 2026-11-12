@@ -206,10 +206,7 @@ for (i in tumors) {
   subt <- data.frame(condition = rep(c("high","low"),c(length(high.es),length(low.es))),
                      row.names = c(high.es, low.es),
                      stringsAsFactors = F)
-  # REPAIR: the synthetic expression matrix only covers a subset of the
-  # enrichment-score barcodes; align both objects before limma.
-  subt <- subt[rownames(subt) %in% colnames(expr), , drop = FALSE]
-  gset <- log2(na.omit(expr[, rownames(subt), drop = FALSE]) + 1)
+  gset <- log2(na.omit(expr[,rownames(subt)]) + 1)
   twoclasslimma(subtype  = subt, # 亚型信息（必须包含一列为condition） # Subtype information (must contain a column condition)
                 featmat  = gset, # 表达谱（会自动检测数据标准化与否） # Expression profile (automatically detects whether the data is normalized or not)
                 treatVar = "high", # “治疗组”的名字 # Name of "Treatment Group".
@@ -240,7 +237,7 @@ for (i in tumors) {
   gsea.df <- as.data.frame(gsea) # 数据转换为数据框 # Convert data to data frames
   write.table(gsea.df,file = "output_gsea between high and low group of enrichment score in pancancer.txt",sep = "\t",row.names = T,col.names = NA,quote = F)
   
-  if (nrow(gsea.df) > 0) gseaTab <- rbind.data.frame(gseaTab,
+  gseaTab <- rbind.data.frame(gseaTab,
                               data.frame(term = gsea.df$ID,
                                          NES = gsea.df$NES,
                                          FDR = gsea.df$p.adjust,
@@ -251,13 +248,6 @@ for (i in tumors) {
 
 # 将所有肿瘤的富集分析结果输出到文件
 # Output the results of the enrichment analysis of all tumors to a file
-# REPAIR: if every tumor produced an empty GSEA table (synthetic input),
-# fall back to the upstream-provided result table for the plotting step.
-if (is.null(gseaTab) || nrow(gseaTab) == 0) {
-  gseaTab <- read.table("output_TCGA_pancan_gsea_regarding_es_group.txt",
-                        sep = "\t", header = T, stringsAsFactors = F)
-}
-
 write.table(gseaTab, "output_TCGA_pancan_gsea_regarding_es_group.txt",sep = "\t",row.names = F,col.names = T,quote = F)
 ```
 

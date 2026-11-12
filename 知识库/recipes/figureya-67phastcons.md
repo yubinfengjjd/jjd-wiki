@@ -61,11 +61,8 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa67phastCons.Rmd`）
 - 依赖：CRAN all_dsDMR.bed, fish.phastCons8way.bw, indianred3, non_exon_dsDMR.bed, random.bed
-- 最近运行：pass（as-is，2026-11-11 06:47 UTC，28.4 秒）
+- 最近运行：fail（as-is，2026-11-04 11:19 UTC，20.1 秒）
 - 派生模板（L2）：暂无
-- 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
-
-![[recipes/figureya-67phastcons/preview.png]]
 <!-- facts:end -->
 
 ## 用途
@@ -82,7 +79,7 @@ favorite: false
 
 ## 输入
 
-- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `source/SYNTHETIC_INPUTS.md`。
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `repair/SYNTHETIC_INPUTS.md`。
 - `all_dsDMR.bed`：all_dsDMR.bed, non_exon_dsDMR.bed, download from <https://epigenome.wustl.edu/Zebrafish_DNAme/browse.php>
 - `non_exon_dsDMR.bed`：all_dsDMR.bed, non_exon_dsDMR.bed, download from <https://epigenome.wustl.edu/Zebrafish_DNAme/browse.php>
 - `random.bed`：random.bed, random regions generation (randomBed -l 500 -n 8225 -seed 6666 -g danRer7.chrom.sizes > random.bed)
@@ -92,6 +89,7 @@ favorite: false
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-67phastcons`
 - 用到课题：`wiki.py use figureya-67phastcons --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。

@@ -219,7 +219,7 @@ GBM_clinicalMatrix
 
 ## Extract samples of target cancer
 
-```{r eval=FALSE}
+```{r}
 # 读取TCGA表型数据文件（包含患者临床信息）
 # Read TCGA phenotype data file (containing patient clinical information)
 tcgacase <- read.delim(file="TCGA_phenotype_denseDataOnlyDownload.tsv",header=T,as.is = T)
@@ -249,7 +249,7 @@ dim(targetCancerCase)
 
 ## Extract the expression matrix of the target cancer
 
-```{r eval=FALSE}
+```{r}
 # 提取TCGA基因表达数据的首行（列名）到临时文件
 # Extract the first line (column names) of TCGA gene expression data to a temporary file
 system('head -1 tcga_RSEM_gene_tpm >headtcga')
@@ -311,7 +311,7 @@ Among the expression data from GDC sources, GBM has 176 samples.
 
 ### Add gene symbol to the last column
 
-```{r eval=FALSE}
+```{r}
 # 读取基因ID映射表（包含基因ID与基因符号的对应关系）
 # Read gene ID mapping table (contains correspondence between gene IDs and symbols)
 idmap <- read.delim("gencode.v23.annotation.gene.probemap",as.is=T)
@@ -341,7 +341,7 @@ write.csv(targetCancerTPM[1:1000,c(1:2,ncol(targetCancerTPM))],"easy_input_expr_
 
 ## Extract the expression level of the target gene
 
-```{r eval=FALSE}
+```{r}
 # 提取目标基因(如CD274)在所有样本中的表达量数据
 # Extract the expression data of the target gene (e.g., CD274) across all samples
 targetGeneExp0 <- targetCancerTPM[targetCancerTPM$gsym %in% targetGene,]
@@ -379,7 +379,7 @@ targetGeneExp$bcr_patient_barcode <- str_replace_all(rownames(targetGeneExp),"[.
 
 ## Extract clinical information of target cancer
 
-```{r eval=FALSE}
+```{r}
 # 读取临床信息数据（包含生存分析相关指标）
 # Read clinical information data (including survival analysis metrics)
 clinical <- read.delim("Survival_SupplementalTable_S1_20171025_xena_sp", header = T)
@@ -427,7 +427,7 @@ These pieces of information can be drawn to the end of the graph, and different 
 
 The columns for different cancers are different, and GBM has a column called GeneExp_Subtype, which is consistent with the Expression subtype in the example text.
 
-```{r eval=FALSE}
+```{r}
 # 读取GBM分子亚型数据（已注释，当前使用LGG数据）
 # Read GBM molecular subtype data (commented out, using LGG data currently)
 targetCancer_sub <- read.delim("GBM_clinicalMatrix.gz")
@@ -453,7 +453,7 @@ table(targetCancer_sub$histological_type)
 
 ## Extract mutation information of target cancer
 
-```{r eval=FALSE}
+```{r}
 # 读取TCGA全肿瘤突变数据（MAF格式）
 # Read TCGA pan-cancer mutation data (MAF format)
 mutation <- read.delim("mc3.v0.2.8.PUBLIC.xena.gz", header = T)
@@ -491,7 +491,7 @@ wildSample <- setdiff(all_mutSample, mutSample)
 
 ## Merge information from multiple levels above
 
-```{r eval=FALSE}
+```{r}
 # 以目标基因表达量数据为基础创建注释表
 # Create annotation table based on target gene expression data
 targetAnno <- targetGeneExp
@@ -566,7 +566,7 @@ requirement:
 -The gene ID is HUGO_Symbols or ENTREZ-ID.
 -Take log2, the input file here has already undergone * * log2 (x+0.001) * * conversion< https://xenabrowser.net/datapages/?dataset=tcga_RSEM_gene_tpm&host=https%3A%2F%2Ftoil.xenahubs.net&removeHub=https%3A%2F%2Fxena.treehouse.gi.ucsc.edu%3A443 >: "Data (file names: *.rsem_genes.results) are downloaded, tpm values are extracted, log2(x+0.001) transformed, and combined."
 
-```{r eval=FALSE}
+```{r}
 # 查看MCPcounter函数使用说明（已注释）
 # View documentation for MCPcounter function (commented out)
 #?MCPcounter.estimate
