@@ -39,11 +39,12 @@
           "R/SCP-analysis.R:RunDEtest"
         ],
         "modifications": [
-          "SeuratObject >= 5 Assays/GetAssayData compatibility shims"
+          "SeuratObject >= 5 Assays/GetAssayData compatibility shims",
+          "Public entry uses a fresh Rscript worker per call; native statistical code unchanged"
         ]
       },
       "evidence": {
-        "portability": "verification/scp-detest-portability.json"
+        "portability": "verification/scp-detest-session-isolation-20261112.json"
       }
     }
   ]

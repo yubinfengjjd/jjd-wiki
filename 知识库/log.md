@@ -1397,3 +1397,13 @@
 ## [2026-11-12 09:26 UTC] run figureya-57profile-1bw=fail
 
 ## [2026-11-12 11:06 UTC] Clarify GDC failure evidence without assigning an unproven cause
+
+## [2026-11-12 11:38 UTC] acceptance check differential-expression
+
+## [2026-11-12 11:41 UTC] acceptance check cell-type-annotation
+
+## [2026-11-12 11:44 UTC] acceptance check scp-viz-statplots
+
+## [2026-11-12 11:50 UTC] acceptance check scp-source-catalog
+
+## [2026-11-12 14:39 UTC] acceptance check differential-expression

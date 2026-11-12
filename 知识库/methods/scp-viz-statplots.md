@@ -225,6 +225,10 @@ keywords:
 
 相关不代表因果；细胞与生物学重复单位要区分，不能仅凭列名复用。
 
+**计算边界（2026-11-12 源码复核）**：此入口接收 Seurat 表达/元数据，并非只展示上游已算好的相关表。它始终按所选细胞、特征与 `split.by` 调用 `proxyC::simil`；默认 `cor_method="pearson"`，Spearman 分支先做秩变换。默认 `add_smooth=TRUE`、`add_r2=TRUE`、`add_pvalue=TRUE`，会拟合线性模型并计算 R²/斜率检验 p 值；图上的这项 p 值不能冒充预先给定的相关检验结果。即使把四个 `add_smooth/add_equation/add_r2/add_pvalue` 全关，也仍计算相似度矩阵，不存在完全无计算的原生模式。
+
+若课题已固定相关系数、p 值或样本层级检验，使用消费预计算表的模板，不再用本函数重算。需要本函数计算时，先显式固定细胞/生物学样本单位、assay/slot、特征、分组、相关方式和四个开关；不得把细胞数当独立生物学重复。这里仅说明真实行为，未更改算法，也未把下表 not_run 形态升级为通过。
+
 - 原始定义：`R/SCP-plot.R:5232-5624`；上游说明：`man/FeatureCorPlot.Rd`。
 - 入口：`code/featurecorplot/code/module.R:FeatureCorPlot`；当前算法状态 `verified`，范围 `two_markers`；独立性 `verified`。
 - 收据：`verification/scp-featurecorplot-two_markers-20261101T072731-6580-alg.json`。
@@ -245,6 +249,10 @@ keywords:
 ### FeatureStatPlot
 
 默认逐细胞展示；检验与汇总的统计单位、配对及多重比较需课题确认。
+
+**计算与展示边界（2026-11-12 源码复核）**：入口读取表达/元数据后转交 `ExpressionStatPlot`。`comparisons` 非空会添加 `ggpubr::stat_compare_means`，`multiplegroup_comparisons=TRUE` 也会重新做多组检验；默认方法分别为 `wilcox.test` 与 `kruskal.test`。这些是计算入口，不是显示上游 p 值的开关；`ref_group`、分组与 split 必须由课题显式给出。
+
+只要展示、不重新检验时，显式设置 `comparisons=NULL, multiplegroup_comparisons=FALSE, add_stat="none", calculate_coexp=FALSE`；小提琴、箱线、直方/点等几何仍会计算其描述性分布，不能据此宣称无汇总计算。`add_stat="mean"/"median"` 会再计算描述统计，点/柱等形式也可能按表达值汇总。若连这些汇总也由上游固定，改用消费预计算表的模板。已有收据不证明样本级推断、配对设计或未覆盖开关已被验证。
 
 - 原始定义：`R/SCP-plot.R:3524-3718`；上游说明：`man/FeatureStatPlot.Rd`。
 - 入口：`code/featurestatplot/code/module.R:FeatureStatPlot`；当前算法状态 `verified`，范围 `f_add_stat_mean`；独立性 `verified`。

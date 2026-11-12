@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-detest",
+  "state": "failed",
+  "scope": "Public pancreas Wilcoxon case: two actual isolated calls in one parent session, unchanged original output, error propagation and caller-state invariance; other test backends not run.",
+  "command": "Rscript --vanilla session regression with explicit code, public fixture and original-result paths",
+  "checks": {
+    "two_actual_calls": true,
+    "results_identical": true,
+    "original_output_identical": false,
+    "all_options_unchanged": true,
+    "search_unchanged": true,
+    "libpaths_unchanged": true,
+    "input_unchanged": true,
+    "rng_unchanged": true,
+    "worker_error_propagated": true,
+    "temp_cleanup": true,
+    "reported_restoration": true
+  },
+  "environment": {
+    "R": "R version 4.5.0 (2025-04-11 ucrt)",
+    "platform": "x86_64-w64-mingw32"
+  },
+  "files": {
+    "code/analysis.R": "03dbdc8e94f48155e036bec6f1595e345741a82b5d08eaa2c9fbc4b7d21d9194",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "executed_files": {
+    "code/analysis.R": "03dbdc8e94f48155e036bec6f1595e345741a82b5d08eaa2c9fbc4b7d21d9194",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "error_case": "Isolated DE worker failed (exit 1):\n[2026-11-12 19:06:46.009247] Start DEtest\nWorkers: 18\nError in `srt[[group_by, drop = TRUE]]`:\n! 'missing_group' not found in this Seurat object\n \nBacktrace:\n     ▆\n  1. └─core(job$srt, bundle = job$bundle, parameters = job$parameters)\n  2.   └─run_scp(...)\n  3.     ├─base::withCallingHandlers(...)\n  4.     ├─base::do.call(impl[[name]], arguments)\n  5.     └─`<fn>`(srt = `<Seurat[,1000]>`, group_by = \"missing_group\")\n  6.       ├─srt[[group_by, drop = TRUE]]\n  7.       └─SeuratObject:::`[[.Seurat`(srt, group_by, drop = TRUE)\n  8.         └─base::tryCatch(...)\n  9.           └─base (local) tryCatchList(expr, classes, parentenv, handlers)\n 10.             └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])\n 11.               └─value[[3L]](cond)\n 12.                 └─rlang::abort(...)\nWarning messages:\n1: package 'Seurat' was built under R version 4.5.3 \n2: package 'SeuratObject' was built under R version 4.5.3 \n3: package 'sp' was built under R version 4.5.3 \n4: package 'rlang' was built under R version 4.5.3 \nExecution halted",
+  "process_isolation": true,
+  "execution_time_utc": "2026-11-12 11:06:47 UTC"
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "implementation": "scp-detest",
+  "state": "passed",
+  "scope": "Public pancreas Wilcoxon case from a different working directory containing spaces; repeated calls, deprecated bundle warning/ignore, error propagation and caller-state invariance. Other test backends not run.",
+  "command": "Rscript --vanilla -e source(session_regression.R); verify_de_session(code_dir, public_fixture, original_result, report)",
+  "checks": [
+    "two_actual_calls=True",
+    "results_identical=True",
+    "deprecated_bundle_ignored=True",
+    "original_de_tools_identical=True",
+    "all_options_unchanged=True",
+    "search_unchanged=True",
+    "libpaths_unchanged=True",
+    "input_unchanged=True",
+    "rng_unchanged=True",
+    "worker_error_propagated=True",
+    "temp_cleanup=True",
+    "reported_restoration=True"
+  ],
+  "environment": {
+    "R": "R version 4.5.0 (2025-04-11 ucrt)",
+    "platform": "x86_64-w64-mingw32"
+  },
+  "files": {
+    "code/analysis.R": "622366a3dd5dd6180caf2097c7855ed2012b3f98fc3f0b476dde8d7ec4c9dfc6",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "executed_files": {
+    "code/analysis.R": "622366a3dd5dd6180caf2097c7855ed2012b3f98fc3f0b476dde8d7ec4c9dfc6",
+    "code/de_native.R": "a4eea98f3446761706acf06ae1c9a039e4e1dee2f312be15dd1a446cf1f909fd"
+  },
+  "error_case": "Isolated DE worker failed (exit 1):\n[2026-11-12 22:32:26.315073] Start DEtest\nWorkers: 18\nError in `srt[[group_by, drop = TRUE]]`:\n! 'missing_group' not found in this Seurat object\n \nBacktrace:\n     ▆\n  1. └─core(job$srt, parameters = job$parameters)\n  2.   └─run_scp(...)\n  3.     ├─base::withCallingHandlers(...)\n  4.     ├─base::do.call(impl[[name]], arguments)\n  5.     └─`<fn>`(srt = `<Seurat[,1000]>`, group_by = \"missing_group\")\n  6.       ├─srt[[group_by, drop = TRUE]]\n  7.       └─SeuratObject:::`[[.Seurat`(srt, group_by, drop = TRUE)\n  8.         └─base::tryCatch(...)\n  9.           └─base (local) tryCatchList(expr, classes, parentenv, handlers)\n 10.             └─base (local) tryCatchOne(expr, names, parentenv, handlers[[1L]])\n 11.               └─value[[3L]](cond)\n 12.                 └─rlang::abort(...)\nWarning messages:\n1: package 'Seurat' was built under R version 4.5.3 \n2: package 'SeuratObject' was built under R version 4.5.3 \n3: package 'sp' was built under R version 4.5.3 \n4: package 'rlang' was built under R version 4.5.3 \nExecution halted",
+  "process_isolation": true,
+  "fixture_sha256": "d95f56fc231378ed14e55fafdebfccb6a6bb464a1a9d988f83e7101d92649744",
+  "original_result_sha256": "87548c3b817d3594a4c305894054f424dd264bd8ddc9be5472366ab3e74fc3b4",
+  "oracle_note": "DE tools are compared exactly. Whole Seurat objects from independently normalized inputs differ in NormalizeData time.stamp; two calls on the same input are still compared as whole objects.",
+  "execution_time_utc": "2026-11-12 14:32:27 UTC",
+  "workdir": "<temporary directory containing spaces>",
+  "check_results": {
+    "two_actual_calls": true,
+    "results_identical": true,
+    "deprecated_bundle_ignored": true,
+    "original_de_tools_identical": true,
+    "all_options_unchanged": true,
+    "search_unchanged": true,
+    "libpaths_unchanged": true,
+    "input_unchanged": true,
+    "rng_unchanged": true,
+    "worker_error_propagated": true,
+    "temp_cleanup": true,
+    "reported_restoration": true
+  },
+  "closure_hash": "8baeaaba4e356e523e164778828dc29780ca40d300856fae06f11c2f6306f528",
+  "kind": "method",
+  "test_script_sha256": "4ed2b7683f9505e40a10da7b130518e514d8cf2dac54d30effc6f66a1454f79c",
+  "copied_files": [
+    "code/analysis.R",
+    "code/de_native.R"
+  ]
+}

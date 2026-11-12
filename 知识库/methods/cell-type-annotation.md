@@ -160,7 +160,7 @@ figure_relations:
 
 | 策略 / 实现 | 原始来源 | 输入与目标 | 本库状态 |
 |---|---|---|---|
-| 参考标签注释：SCP `RunSingleR`（cell/cluster level） | [[methods/scp-annotation-projection]]；`SCP-local/R/SCP-cell_annotation.R` | query/reference Seurat + ref 标签；预测标签/分数 | 已封装；SingleR 缺失，`not_run` |
+| 参考标签注释：SCP `RunSingleR`（cell/cluster level） | [[methods/scp-annotation-projection]]；`SCP-local/R/SCP-cell_annotation.R` | query/reference Seurat + ref 标签；预测标签/分数 | 2026-11-04 指定公开用例与 direct SingleR 对齐；当前本机缺包，完整原版 SCP 等价未通过 |
 | 青光眼 marker 手工注释 | [[methods/scrna-marker-annotation]]；`source/annotation.R` | 预处理对象、作者 marker 列表/`celltype_map`；手动标签 | 原脚本硬编码 marker/映射，未函数化、未验证；不是 SingleR 替代品 |
 | 参考图谱映射（Seurat 标签转移） | [[methods/reference-mapping]] | query/reference + 参考标签；预测/分数 | 属参考映射家族；本页不重复实现，也不把它当 SingleR |
 
@@ -192,13 +192,13 @@ figure_relations:
 
 本目录是所选分支的最小调用闭包：复制 `code/`（以及 `runtime.json` 列出的资源）即可在课题环境运行，不再需要完整 `SCP-local`。`bundle` 参数仅为兼容旧调用而接受，函数不会读取；必要/可选依赖、复制清单和独立性证据见 `runtime.json` 与 `verification/*-portability.json`。
 
-- 参考路线：`methods/cell-type-annotation/code/analysis.R:run_cell_type_annotation(srt_query, srt_ref, bundle = NULL, parameters)` 封装 SCP `RunSingleR`。本机 R 库没有 SingleR，实际错误为 `Missing R dependency: SingleR; automatic installation is disabled`，状态 `not_run`。
+- 参考路线：`methods/cell-type-annotation/code/analysis.R:run_cell_type_annotation(srt_query, srt_ref, bundle = NULL, parameters)`。早期缺包记录属于当时环境；`verification/scp-singler-standalone.json` 记录 2026-11-04 的 100 query / 300 reference 公开 pancreas 用例与 direct SingleR 标签、原上游分数表达式相同。完整未修改 SCP 在旧 Seurat API 失败，不声称与它整体等价。2026-11-12 当前本机 Wiki R 4.5.0 配置仍查不到 SingleR；作者选择不安装，本次没有重新运行该分支。历史执行收据、本机当前缺包与未执行分支分别解释。
 - Marker 路线：青光眼 `annotation.R` 是硬编码 marker 列表和 `celltype_map` 的课题脚本，保留在 [[methods/scrna-marker-annotation]] 的 `source/`；本轮未函数化、未验证，不提供可执行入口。
 - 参考图谱映射见 [[methods/reference-mapping]]；它是另一家族，不因本页 SingleR 未运行而自动可用。
 
 ## 输出
 
-参考路线成功时返回 SCP 上游对象/列表，含 `singler_annotation`、`singler_score` 等；marker 路线应输出 cell/cluster、label、依据 marker 和不确定标记。当前没有已验证输出；不得把参考标签或手工标签直接复制成“自动注释结果”。
+参考路线返回注释对象/列表，含 `singler_annotation`、`singler_score` 等；2026-11-04 收据只覆盖上节指定公开用例。marker 路线应输出 cell/cluster、label、依据 marker 和不确定标记，尚无本页 marker 路线验证；不得把参考标签或手工标签直接复制成“自动注释结果”。
 
 ## 知识关联检查
 

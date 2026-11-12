@@ -22,7 +22,7 @@
     "知识库/methods/batch-integration/runtime.json": "816f8d66a5cbe67772458de2ff45582082971a9c04a79d7aad1511721e0ea8a8",
     "知识库/methods/cell-quality-control/runtime.json": "b5aad2de9d1dd3b7f1bf3b6e2e6e2e6f5d0c1a72d2f9ff097a4fff1c39e26579",
     "知识库/methods/cell-type-annotation/runtime.json": "90e4f4d10f16b475405ae90e4416706b5551f1edb020a4bdbc645b0f73a5ca4e",
-    "知识库/methods/differential-expression/runtime.json": "d9600d70773a3568647a3e089b590d2c05057f8dae7ec69fdb22b70d1af380e5",
+    "知识库/methods/differential-expression/runtime.json": "fcbc23c6a0090fc03f9e9e303e889884d4e67f8b1526f3845f789bb05f893271",
     "知识库/methods/dimensionality-reduction/runtime.json": "0111663b85ce28ad84b6d14c50d623acdbeab9b1c1bceac97c150721b59d1f27",
     "知识库/methods/doublet-detection/runtime.json": "12ce1f2c0f76a75606740ab61c5951fc0294c6f0698d6a000ebb07d8e2564095",
     "知识库/methods/dynamic-feature-analysis/runtime.json": "9bdb28e2483d0fe9bbcdaef936b411b0dc8ca6703d8cc2213ce3e08cf6eaf984",
