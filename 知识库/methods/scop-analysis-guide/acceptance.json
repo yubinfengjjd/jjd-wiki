@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.412890+00:00",
+  "checked_at": "2026-11-12T14:02:12.534178+00:00",
   "page": "methods/scop-analysis-guide.md",
-  "snapshot": "ffcc8af5a5ec46869110f5dbea85e668d800bede4b3ee04507cd8c88e00a8f5f",
+  "snapshot": "7789a8806b09761e040b4016f84a36c816ac1d1fc3a42afe0b67ca361e4cb790",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

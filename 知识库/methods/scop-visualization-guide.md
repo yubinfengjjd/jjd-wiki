@@ -102,7 +102,8 @@ source:
 license: GPL-3.0-or-later
 cite:
 - Meng Xu et al. scop 0.9.2. https://github.com/mengxu98/scop/tree/2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb
-summary: 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；全部本机未运行，不继承 SCP 图样或回放。
+summary: 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；2026-11-12 执行矩阵 69 pass / 12 not_run，不继承
+  SCP 图样或回放。
 data_contract:
   input: 固定 commit 的 scop 源码、Rd、上游数据说明和工作流；本页仅编译知识，未执行分析。
   output: 来源、输入语义、方法/绘图选择与未验证边界；没有本机分析结果或可执行验证授予。
@@ -307,6 +308,8 @@ scop::SpatialCellPlot(spatial, group.by = "已有细胞分组列")
 
 本次只有入口说明与源码/文档定位，没有新图。上游引用或图片仅作来源参考，不作为本机回放，也不复制为新模板。
 
+2026-11-12 执行矩阵（上游 Rd `example()`，scop 0.9.2 装于 Wiki R 库）：81 个绘图入口中 **69 pass / 12 not_run**——11 个 Rd 无可运行示例、1 个（scTenifoldNetPlot）因已装包 lazy-load 库损坏记 not_run。逐条状态已回写 entries.json 的 `state`/`state_reason`；pass 仅证明示例可调用，不证明出图科学有效。
+
 ## 知识关联检查
 
 按研究问题与输入去重；已有 CSV 模板仍按原接口使用，不宣称与 scop 样式/计算等价。scFEA 图形消费的通量结果及附带后端许可另见来源页。
@@ -314,6 +317,8 @@ scop::SpatialCellPlot(spatial, group.by = "已有细胞分组列")
 ## 使用记录
 
 2026-11-01：81 个公开绘图入口来源整理；全部 not_run。
+
+2026-11-12：执行矩阵回写——69 pass / 12 not_run（11 无示例 + 1 损坏安装）；详见 [[methods/scop-source-catalog]] 的 execution-matrix.json。
 
 ## 资料确认记录（2026-11-02）
 

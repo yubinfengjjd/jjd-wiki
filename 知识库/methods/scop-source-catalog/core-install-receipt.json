@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "install-receipt",
+  "installed_at": "2026-11-04T00:00:00+08:00",
+  "library_scope": "config.r_libs[0], Wiki-only R library",
+  "library_path": "R-lib-4.5-3.21 (config.r_libs[0])",
+  "R": "4.5.0 (2025-04-11 ucrt) x64 Windows",
+  "installer": "pak 0.11.2 (installed first from CRAN binary) + install.packages for CRAN targets",
+  "approved_by": "author approved minimal set 2026-11-04 (core-install-plan.json)",
+  "targets": [
+    {
+      "package": "thisutils",
+      "planned": "0.5.3 mengxu98/thisutils@a9fd2d6e36599856ca550f6c2b7bb293773fc6d5",
+      "installed_version": "0.5.3",
+      "installed_commit": "a9fd2d6",
+      "source": "GitHub source build (Rtools45 portable toolchain + MSYS2 make 4.4.1)",
+      "state": "installed"
+    },
+    {
+      "package": "thisplot",
+      "planned": "0.4.6 mengxu98/thisplot@df334d3eafb1d92ca546604e9d38d0eb7a7a7d8c",
+      "installed_version": "0.4.6",
+      "installed_commit": "df334d3",
+      "source": "GitHub source build",
+      "state": "installed",
+      "note": "scop Remotes temporarily pulled thisplot 0.4.7@6fa5603 during scop dependency resolution; reinstalled pinned 0.4.6@df334d3 afterwards and re-verified scop loads"
+    },
+    {
+      "package": "scop",
+      "planned": "0.9.2 mengxu98/scop@2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb",
+      "installed_version": "0.9.2",
+      "installed_commit": "2f44f8c",
+      "source": "GitHub source build (18m43s compile)",
+      "state": "installed",
+      "load_check": "library(scop) succeeds; getNamespaceExports('scop') = 362, matches inventory.json export count"
+    },
+    {
+      "package": "geomtextpath",
+      "planned": "0.2.0 CRAN Windows 4.5 binary",
+      "installed_version": "0.2.0",
+      "source": "CRAN binary zip",
+      "state": "installed"
+    },
+    {
+      "package": "pak",
+      "planned": "0.11.1 CRAN Windows 4.5 binary",
+      "installed_version": "0.11.2",
+      "source": "CRAN binary zip",
+      "state": "installed",
+      "note": "CRAN served 0.11.2 (newer than plan's 0.11.1); recorded actual version"
+    }
+  ],
+  "toolchain_fix": "msys-tools/usr/bin/make.exe requires /usr/bin on PATH for msys-2.0.dll; rtools45-portable/x86_64-w64-mingw32.static.posix/bin provides gcc 14.3.0; pkgbuild::check_build_tools() passes",
+  "dependency_resolution": "scop Imports all previously satisfied (see core-install-plan.json dependency_edges); pak kept 141, updated 1, added 1 during scop install; Suggests NOT installed (optional, per-policy not auto-installed)",
+  "scope": "安装回执仅证明包在本机 Wiki R 库中可加载、版本与提交与计划一致；不等于任何函数级执行验证。scop Suggests（约 120 个可选包）与 Python 后端（reticulate 调用的 scvelo 等）均未安装，相关函数执行时按缺包如实记 not_run。",
+  "python_backend": "未配置；scop 的 reticulate 调用（scvelo/Palantir/CellRank 等）需独立声明的 Python 环境，不在本次安装范围"
+}

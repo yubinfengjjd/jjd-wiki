@@ -200,7 +200,8 @@ source:
 license: GPL-3.0-or-later
 cite:
 - Meng Xu et al. scop 0.9.2. https://github.com/mengxu98/scop/tree/2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb
-summary: 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；本机未运行。
+summary: 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；2026-11-12 执行矩阵 analysis-entry
+  99 pass / 45 not_run、backend 5 pass / 16 not_run。
 data_contract:
   input: 固定 commit 的 scop 源码、Rd、上游数据说明和工作流；本页仅编译知识，未执行分析。
   output: 来源、输入语义、方法/绘图选择与未验证边界；没有本机分析结果或可执行验证授予。
@@ -358,6 +359,8 @@ data_contract:
 ## 使用记录
 
 2026-11-01：来源级语义整理，全部 scop 候选未在本机执行。
+
+2026-11-12：scop 装入 Wiki R 库后完成逐导出执行矩阵。按类：analysis-entry 144 个中 99 pass / 45 not_run；analysis-backend 21 个中 5 pass / 16 not_run（多为缺可选后端）；visualization 81 个中 69 pass / 12 not_run。逐条判定见 [[methods/scop-source-catalog]] 的 execution-matrix.json；pass 仅为示例可调用性，不构成规范家族实现或科学验证。
 
 ## 资料确认记录（2026-11-02）
 

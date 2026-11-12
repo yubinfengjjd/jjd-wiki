@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.521689+00:00",
+  "checked_at": "2026-11-12T14:14:45.944756+00:00",
   "page": "methods/scop-workflows.md",
-  "snapshot": "3937db430fcd32be95f78eea174184c72c0f762265275d91ee336ea4622b7305",
+  "snapshot": "43acc98474119882fcc450c014918e2b028c8b5412c324a968052110248f432b",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

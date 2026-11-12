@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.460253+00:00",
+  "checked_at": "2026-11-12T13:41:50.997736+00:00",
   "page": "methods/scop-source-catalog.md",
-  "snapshot": "4b67e047624caeecf2c3bd9f02bfaf8190c16a61ef7bf8d4293610b775260226",
+  "snapshot": "9417148fb285bdf86638f7dc2dbc04b29a9430e9c7a8718066ba739e290ea0af",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

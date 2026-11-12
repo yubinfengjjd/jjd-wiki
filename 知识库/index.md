@@ -253,9 +253,9 @@
 - [[methods/figureya-multilanguage-assets|交互绘图与多语言工具索引]] — 登记 FigureYa 压缩包中 10 个非 Rmd 工具的原始入口、输入与未运行边界；另提示 R/Python 混合模块，不能作为可执行分析推荐。
 - [[methods/uc-ptm-source-catalog|修饰研究脚本来源索引]] — 132 份研究代码、90 个不同字节版本的来源及去重索引；只编译知识，未运行。
 - [[methods/scp-cellqc-doublet|单细胞 QC 与双细胞检测]] — SCP QC 与双细胞检测的原始脚本和作者实现记录；分析问题见质量控制与双细胞检测家族。
-- [[methods/scop-analysis-guide|单细胞与空间分析方法导航]] — 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；本机未运行。
-- [[methods/scop-source-catalog|单细胞与空间组学来源索引]] — 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；完整来源导航，本机未运行。
-- [[methods/scop-visualization-guide|单细胞与空间绘图入口导航]] — 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；全部本机未运行，不继承 SCP 图样或回放。
+- [[methods/scop-analysis-guide|单细胞与空间分析方法导航]] — 将 scop 候选实现映射到既有 13 个规范家族，并整理通信、调控、空间、ATAC、反卷积等新增领域；2026-11-12 执行矩阵 analysis-entry 99 pass / 45 not_run、backend 5 pass / 16 not_run。
+- [[methods/scop-source-catalog|单细胞与空间组学来源索引]] — 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；核心包已装 Wiki R 库，逐 Rd 示例执行矩阵 250 pass / 112 not_run / 0 fail（2026-11-12）。
+- [[methods/scop-visualization-guide|单细胞与空间绘图入口导航]] — 81 个 scop 原生绘图入口的图形类别、声明输入与上游结果边界；2026-11-12 执行矩阵 69 pass / 12 not_run，不继承 SCP 图样或回放。
 - [[methods/scp-source-catalog|单细胞全库来源与入口索引]] — 142 个导出及 238 个源码定义的逐项来源核对；链接规范家族与原生绘图入口，区分来源归档、实现运行和资料确认。
 - [[methods/scp-integration|单细胞多样本整合]] — SCP 单细胞多样本整合的原始脚本与作者实现记录；分析问题见批次整合家族。
 - [[methods/scp-de-enrichment-dynamic|单细胞差异表达、基因集富集与动态特征]] — SCP 差异表达、富集和动态特征的原始脚本与作者实现记录；分析问题见四个对应家族。
