@@ -6,11 +6,11 @@ abs-path 知识库/methods/scrna-*.md  # 方法页出处栏记录原始课题脚
 abs-path 知识库/methods/scrna-marker-annotation/source/**  # 非 GPL 原始脚本，保留原始字节
 abs-path 知识库/AGENTS.md  # 规则文档：限定 vault 与工具位置
 abs-path 文档/**  # 设计、交接与验收记录：路径即证据定位
-abs-path .kiro/specs/**  # 本特性规格：描述本机目录布局
+abs-path 文档/specs/**  # 历史特性规格：描述本机目录布局
 abs-path README.md  # 根说明：本机目录布局
 abs-path tools/**  # 本机启动与部署脚本：路径即部署目标
-abs-path research?wiki/.obsidian/plugins/**  # 第三方插件构建产物中的示例与系统路径（? 代替目录名中的空格）
-abs-path .agents/tasks/**  # 交付与部署报告：记录本机装包、运行与部署位置，路径即证据定位
+abs-path obsidian-vault/.obsidian/plugins/**  # 第三方插件构建产物中的示例与系统路径
+abs-path 文档/agent-tasks/**  # 交付与部署报告：记录本机装包、运行与部署位置，路径即证据定位
 
 abs-path 知识库/methods/**/code/**  # 已核对源码无凭据；保留原字节中的来源/运行路径，是否可迁移另由 runtime 收据判断
 abs-path 知识库/methods/**/source/**  # 原字节来源快照中的历史路径，不改变源码以规避路径检查
@@ -31,4 +31,4 @@ size 知识库/recipes/figureya-193risktable/source/tcga.expr.txt  # 已核查�
 size 知识库/recipes/figureya-228linkcor/source/tcga_blca_fpkm.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
 size 知识库/recipes/figureya-293machinelearning/source/GSE57303.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
 size 知识库/recipes/figureya-293machinelearning/source/GSE62254.txt.gz  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
-abs-path 依赖清单/README.md  # 新电脑部署说明中的示例路径，不含私有输入或凭据
+abs-path 文档/依赖清单/README.md  # 新电脑部署说明中的示例路径，不含私有输入或凭据

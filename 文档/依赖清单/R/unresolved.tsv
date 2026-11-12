@@ -1,15 +1,15 @@
 ecosystem	package	runtime	pending	installer	spec	catalog_version	source_url	depends_on	references
-R	BiocInstaller	0	0	unresolved	BiocInstaller				L0-candidate:figureya:figureya:FigureYa23count2TPM
+R	BiocInstaller	1	0	unresolved	BiocInstaller				L0-candidate:figureya:figureya:FigureYa23count2TPM;recipe-used:知识库/recipes/figureya-23count2tpm.md
 R	CMScaller	0	0	unresolved	CMScaller				L0-candidate:figureya:figureya:FigureYa292HCCsubtype;L0-candidate:figureya:figureya:FigureYa302NTPPAM
-R	CancerSubtypes	0	0	unresolved	CancerSubtypes				L0-candidate:figureya-archive-20251223:figureya-archive-20251223:FigureYa69cancerSubtype;L0-candidate:figureya:figureya:FigureYa69cancerSubtype
+R	CancerSubtypes	1	0	unresolved	CancerSubtypes				L0-candidate:figureya-archive-20251223:figureya-archive-20251223:FigureYa69cancerSubtype;L0-candidate:figureya:figureya:FigureYa69cancerSubtype;recipe-used:知识库/recipes/figureya-69cancersubtype.md
 R	DealGPL570	0	0	unresolved	DealGPL570				L0-candidate:figureya:figureya:FigureYa289TILSig
 R	EPIC	0	0	unresolved	EPIC				L0-candidate:figureya:figureya:FigureYa234panImmune
-R	ISOpureR	0	0	unresolved	ISOpureR				L0-candidate:figureya:figureya:FigureYa212drugTargetV2
+R	ISOpureR	1	0	unresolved	ISOpureR				L0-candidate:figureya:figureya:FigureYa212drugTargetV2;recipe-used:知识库/recipes/figureya-212drugtargetv2.md
 R	ImmuLncRNA	0	0	unresolved	ImmuLncRNA				L0-candidate:figureya:figureya:FigureYa170ImmuLncRNA
-R	MCPcounter	0	0	unresolved	MCPcounter				L0-candidate:figureya:figureya:FigureYa56immune_inflitrationV3
+R	MCPcounter	1	0	unresolved	MCPcounter				L0-candidate:figureya:figureya:FigureYa56immune_inflitrationV3;recipe-used:知识库/recipes/figureya-56immune-inflitrationv3.md
 R	MuSiC	0	0	unresolved	MuSiC				L0-candidate:figureya:figureya:FigureYa274MuSiCbulkProop
-R	PMAPscore	0	0	unresolved	PMAPscore				L0-candidate:figureya:figureya:FigureYa305PMAPscore
-R	Rmagic	0	0	unresolved	Rmagic				L0-candidate:figureya:figureya:FigureYa304MAGIC
+R	PMAPscore	1	0	unresolved	PMAPscore				L0-candidate:figureya:figureya:FigureYa305PMAPscore;recipe-used:知识库/recipes/figureya-305pmapscore.md
+R	Rmagic	1	0	unresolved	Rmagic				L0-candidate:figureya:figureya:FigureYa304MAGIC;recipe-used:知识库/recipes/figureya-304magic.md
 R	SNPlocs.Hsapiens.dbSNP142.GRCh37	0	0	unresolved	SNPlocs.Hsapiens.dbSNP142.GRCh37				L0-candidate:figureya:figureya:FigureYa86SNPmotif
 R	ScBulkCCCI	0	0	unresolved	ScBulkCCCI				L0-candidate:figureya:figureya:FigureYa272scBulkCCCI
 R	Sushi	0	0	unresolved	Sushi				L0-candidate:figureya:figureya:FigureYa82IGVzoom
@@ -18,11 +18,11 @@ R	classpredict	0	0	unresolved	classpredict				L0-candidate:figureya:figureya:Fig
 R	condsurv	0	0	unresolved	condsurv				L0-candidate:figureya:figureya:FigureYa183condSurv
 R	crosslink	0	0	unresolved	crosslink				L0-candidate:figureya:figureya:FigureYa256panelLink
 R	fishplot	0	0	unresolved	fishplot				L0-candidate:figureya:figureya:FigureYa87fish
-R	gganatogram	0	0	unresolved	gganatogram				L0-candidate:figureya:figureya:FigureYa78gganatogram
+R	gganatogram	1	0	unresolved	gganatogram				L0-candidate:figureya:figureya:FigureYa78gganatogram;recipe-used:知识库/recipes/figureya-78gganatogram.md
 R	ifnb.SeuratData	0	0	unresolved	ifnb.SeuratData				L0-candidate:figureya:figureya:FigureYa267scCellChat
 R	immunedeconv	0	0	unresolved	immunedeconv				L0-candidate:figureya:figureya:FigureYa264epiImmune
 R	lolR	0	0	unresolved	lolR				L0-candidate:figureya:figureya:FigureYa246supervisedGDSC
-R	mlr3extralearners	0	0	unresolved	mlr3extralearners				L0-candidate:figureya:figureya:FigureYa293Plus_BinaryClassificationML
-R	rPlotter	0	0	unresolved	rPlotter				L0-candidate:figureya:figureya:FigureYa28color
+R	mlr3extralearners	1	0	unresolved	mlr3extralearners				L0-candidate:figureya:figureya:FigureYa293Plus_BinaryClassificationML;recipe-used:知识库/recipes/figureya-293plus-binaryclassificationml.md
+R	rPlotter	1	0	unresolved	rPlotter				L0-candidate:figureya:figureya:FigureYa28color;recipe-used:知识库/recipes/figureya-28color.md
 R	randomSurvivalForest	0	0	unresolved	randomSurvivalForest				L0-candidate:figureya:figureya:FigureYa182RFSurvV2
 R	scMetabolism	0	0	unresolved	scMetabolism				L0-candidate:figureya:figureya:FigureYa269scMetabolism
