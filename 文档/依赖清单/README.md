@@ -1,6 +1,6 @@
 # 新电脑依赖目录与批量安装入口
 
-本目录汇总现有 runtime 声明、配方实际加载的包、SCP/scop 来源声明及 L0 归档候选。目标电脑可先统一准备环境、整批安装，再运行分析。2026-11-04 已在独立 Wiki R 4.5.0、Wiki Python、ML Python 和旧 SCP Python 环境完成本轮准备与逐项复跑；实际范围及缺口见[审查记录](../维护记录/2026-11-03-待运行代码审查/task_plan.md)。依赖声明和安装存在性均不等于算法验证。
+本目录汇总现有 runtime 声明、配方实际加载的包、SCP/scop 来源声明及 L0 归档候选。目标电脑可先统一准备环境、整批安装，再运行分析。2026-11-04 已在独立 Wiki R 4.5.0、Wiki Python、ML Python 和旧 SCP Python 环境完成本轮准备与逐项复跑；实际范围及缺口见[审查记录](../../维护记录/2026-11-03-待运行代码审查/task_plan.md)。依赖声明和安装存在性均不等于算法验证。
 
 ## 先用哪些文件
 
@@ -48,7 +48,7 @@ $envRoot = 'E:\research-wiki-env'
 $rs = 'D:\R-4.5.0\bin\Rscript.exe'
 New-Item -ItemType Directory -Force "$envRoot\tmp" | Out-Null
 $env:TEMP = $env:TMP = "$envRoot\tmp"
-& $rs --vanilla "$repo\依赖清单\R\install-batch.R" --lib "$envRoot\R-lib-4.5-3.21" --profile runtime --install --report "$envRoot\dependency-reports"
+& $rs --vanilla "$repo\文档\依赖清单\R\install-batch.R" --lib "$envRoot\R-lib-4.5-3.21" --profile runtime --install --report "$envRoot\dependency-reports"
 ```
 
 只准备迁移待运行分支时，把 `runtime` 改为 `pending`；要连归档候选一起尝试时改为 `all`。安装器统一准备 BiocManager/remotes，按来源安装仓库包、官方归档包和 GitHub 固定提交，并在最后输出完整缺项/来源不一致报告。首次安装可能需要 Rtools45；编译失败会集中写入报告。
@@ -74,18 +74,18 @@ $env:PIP_CACHE_DIR = "$envRoot\pip-cache"
 $env:CONDA_PKGS_DIRS = "$envRoot\conda-pkgs"
 $env:npm_config_cache = "$envRoot\npm-cache"
 & $py -X utf8 -m venv "$envRoot\wiki-python"
-& "$envRoot\wiki-python\Scripts\python.exe" -X utf8 -m pip install -r "$repo\依赖清单\python\wiki.requirements.lock.txt"
+& "$envRoot\wiki-python\Scripts\python.exe" -X utf8 -m pip install -r "$repo\文档\依赖清单\python\wiki.requirements.lock.txt"
 & $py -X utf8 -m venv "$envRoot\ml-python"
-& "$envRoot\ml-python\Scripts\python.exe" -X utf8 -m pip install -r "$repo\依赖清单\python\ml.requirements.txt"
+& "$envRoot\ml-python\Scripts\python.exe" -X utf8 -m pip install -r "$repo\文档\依赖清单\python\ml.requirements.txt"
 & $conda create --prefix "$envRoot\scp-legacy" python=3.8 pip -y
-& $conda run --prefix "$envRoot\scp-legacy" python -m pip install -r "$repo\依赖清单\python\scp-legacy-3.8-2.requirements.txt"
+& $conda run --prefix "$envRoot\scp-legacy" python -m pip install -r "$repo\文档\依赖清单\python\scp-legacy-3.8-2.requirements.txt"
 npm ci --prefix "$repo\开发\frontend"
 npm run build --prefix "$repo\开发\frontend"
 ```
 
 安装结束后对各 Python 环境统一运行 `python -m pip check` 并保存 `python -m pip freeze`。原来没有指定版本的 ML/现代单细胞清单只声明直接需求；解析失败需按环境整体处理，不要把旧 SCP 的固定版本强行放进界面环境。
 
-然后按 [Windows 迁移说明](../文档/Windows迁移与验证-20261102.md) 生成本机配置，把新 R 库写入 `config.r_libs`；需要 ML 的 `python_exe` 指向 ML 环境，界面启动仍用 Wiki Python。旧 SCP 的 reticulate 绑定旧 SCP Python；同一 R 进程绑定解释器后不要临时切换另一套后端，分进程验证。这里不传输私有课题数据。
+然后按 [Windows 迁移说明](../Windows迁移与验证-20261102.md) 生成本机配置，把新 R 库写入 `config.r_libs`；需要 ML 的 `python_exe` 指向 ML 环境，界面启动仍用 Wiki Python。旧 SCP 的 reticulate 绑定旧 SCP Python；同一 R 进程绑定解释器后不要临时切换另一套后端，分进程验证。这里不传输私有课题数据。
 
 ## 后续更新
 
