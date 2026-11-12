@@ -1285,3 +1285,5 @@
 ## [2026-11-12 14:02 UTC] acceptance check scp-source-catalog
 
 ## [2026-11-12 14:08 UTC] acceptance check scop-analysis-guide
+
+## [2026-11-12 14:14 UTC] acceptance check scop-visualization-guide
