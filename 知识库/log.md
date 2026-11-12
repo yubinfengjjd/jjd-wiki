@@ -1398,6 +1398,14 @@
 
 ## [2026-11-12 11:06 UTC] Clarify GDC failure evidence without assigning an unproven cause
 
+## [2026-11-12 11:38 UTC] acceptance check differential-expression
+
+## [2026-11-12 11:41 UTC] acceptance check cell-type-annotation
+
+## [2026-11-12 11:44 UTC] acceptance check scp-viz-statplots
+
+## [2026-11-12 11:50 UTC] acceptance check scp-source-catalog
+
 ## [2026-11-12 13:52 UTC] acceptance check scop-source-catalog
 
 ## [2026-11-12 14:02 UTC] acceptance check scp-source-catalog
@@ -1407,3 +1415,5 @@
 ## [2026-11-12 14:14 UTC] acceptance check scop-visualization-guide
 
 ## [2026-11-12 14:20 UTC] acceptance check scop-workflows
+
+## [2026-11-12 14:39 UTC] acceptance check differential-expression

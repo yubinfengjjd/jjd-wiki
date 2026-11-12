@@ -436,7 +436,9 @@ data_contract:
 
 ## 后续方法批次的依赖缺口
 
-当前 Wiki 专用 R 库的包存在性盘点：17 个候选模块有缺项，共 16 个不同的必需 R 包。这不是加载或算法验证，不推断 Python 后端环境，也不把已安装包当作已经跑通。没有执行安装。
+以下是 `dependency-gaps.json` 中 **2026-11-01 的历史包存在性探针**：17 个候选模块有缺项，共 16 个不同的必需 R 包。这不是当前所有机器的包状态，也不是加载或算法验证，不推断 Python 后端环境。原探针保留不改。
+
+2026-11-04 的 `cell-type-annotation/verification/scp-singler-standalone.json` 和 `doublet-detection/verification/scp-rundoublet-standalone.json` 已分别记录 direct SingleR、direct scDblFinder 对齐的指定公开用例；完整未修改 SCP 的等价对照未通过，不外推其他后端。2026-11-12 当前本机独立探针见 `dependency-probe-20261112.json`：上述两个包与 monocle、RcppML、harmony、batchelor、scmap 仍缺失，作者选择不安装。本次不以历史执行通过推断当前环境能重跑，也不把当前缺包覆盖成历史未执行。
 
 | 候选模块 | 缺少的必需 R 包 |
 |---|---|

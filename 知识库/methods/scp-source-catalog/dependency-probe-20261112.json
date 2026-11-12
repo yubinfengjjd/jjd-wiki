@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Package presence in current Wiki R profile only; no installation or algorithm execution",
+  "R": "R version 4.5.0 (2025-04-11 ucrt)",
+  "libraries": ["<WIKI_SCP_LIB>", "<WIKI_FIGUREYA_LIB>", "<R_HOME>/library"],
+  "packages": {
+    "scDblFinder": {
+      "present": false
+    },
+    "SingleR": {
+      "present": false
+    },
+    "monocle": {
+      "present": false
+    },
+    "RcppML": {
+      "present": false
+    },
+    "harmony": {
+      "present": false
+    },
+    "batchelor": {
+      "present": false
+    },
+    "scmap": {
+      "present": false
+    }
+  },
+  "author_decision": "Do not install; preserve historical execution receipts separately"
+}

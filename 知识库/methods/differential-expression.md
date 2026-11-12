@@ -34,7 +34,7 @@ implementations:
   - Matrix
   - BiocParallel
   - rlang
-  verification: verification/scp-detest-standalone.json
+  verification: verification/scp-detest-session-isolation-20261112.json
 keywords:
 - DE
 - FindMarkers
@@ -176,3 +176,13 @@ limma 与 Seurat FindMarkers/FindAllMarkers 的新增来源；保留样本/细�
 
 <!-- user:start -->
 <!-- user:end -->
+
+## 2026-11-12 会话隔离修复
+
+当前公开入口每次调用启动同一 R 安装的新 Rscript 进程，使用调用方 `.libPaths()` 后才反序列化输入；原生 `de_native.R` 的计算字节未改。成功返回原结构，错误保留子进程日志并向调用方抛出异常，临时输入、结果与日志在返回/失败时清理。`diagnostics` 中的 search/options 恢复标识比较父进程真实状态，worker 的原标识另存，不把 worker 的命名空间初始化称为父会话污染。
+
+**跨进程参数契约**：worker 不继承父会话 `.GlobalEnv`、options、future 或 BiocParallel 的默认配置。输入与 `parameters` 必须能跨进程序列化；`mean.fxn` 等函数应自行闭合其依赖或使用明确的包命名空间，不能依赖只存在于父全局环境的自由变量、连接或外部指针。检验方式、assay/slot、`BPPARAM`、seed 等计算/并行配置通过 `parameters` 显式传入；当前验证用 `SerialParam()` 和 seed 11。不承诺复现父会话的隐式统计配置，也不把未测试的自定义闭包视作已支持。
+
+公开 pancreas 的同一 Wilcoxon 用例完成两次实际调用，完整结果彼此相同；与修复前实现的 `DEtest_custom` tools 内容精确一致。父进程全部 options（包含新增项）、search、库路径、RNG 和原输入不变；缺失分组的子进程错误正确传播，临时目录清理通过。测试从含空格的另一个工作目录调用隔离副本；新收据仅绑定该闭包和该检验用例，不覆盖 limma、edgeR、DESeq2、pseudobulk 或真实课题推断。
+
+旧失败探针显示原入口虽两次执行成功，但留下 `future.startup.script` 新选项。另一次对独立 NormalizeData 对象的整体比较因 `time.stamp` 不同失败；已明确把原版科学结果对照限定为完整 DE tools，保留同一输入两次结果整体一致的检查，不忽略数值差异。旧算法/移植收据作为历史记录保留，新入口以 `verification/scp-detest-session-isolation-20261112.json` 为准。可复查脚本为 `tests/session_regression.R`；调用前须由课题环境提供声明依赖和公开原始输入。
