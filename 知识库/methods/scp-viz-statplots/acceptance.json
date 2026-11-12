@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.677261+00:00",
+  "checked_at": "2026-11-12T11:41:08.222837+00:00",
   "page": "methods/scp-viz-statplots.md",
-  "snapshot": "ac9f4cc7d601212e26d9521afe7cbf833b5bb7d1be3d8cd8a68a43cd396bbebc",
+  "snapshot": "8e7122b7d145e9b924f328e55fa1e7cde96d7c5a407ec8fd3aa7c9ecf7a53cc0",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

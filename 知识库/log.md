@@ -1401,3 +1401,5 @@
 ## [2026-11-12 11:38 UTC] acceptance check differential-expression
 
 ## [2026-11-12 11:41 UTC] acceptance check cell-type-annotation
+
+## [2026-11-12 11:44 UTC] acceptance check scp-viz-statplots
