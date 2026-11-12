@@ -5,7 +5,9 @@
 # Copy this code/ directory only. No SCP-local bundle is required or read.
 # Source-time side effects: function definitions and the native module source
 # only. Runtime packages are checked and attached per call; the search path
-# and options are restored before returning. Automatic installation and
+# and options of the caller are protected by a separate R process. The worker
+# may retain namespace initialization options; it exits after each call.
+# Automatic installation and
 # environment creation are disabled. The deprecated `bundle` argument is
 # accepted for compatibility and is never read.
 run_differential_expression <- local({
@@ -138,7 +140,7 @@ run_differential_expression <- local({
   if (!is.null(method) && grepl('^DESeq2', method)) features <- c(features, 'test:DESeq2')
   features
 }
-  function(srt, bundle = NULL, parameters = list()) {
+  run_in_process <- function(srt, bundle = NULL, parameters = list()) {
     if (!is.null(bundle)) {
       warning('`bundle` is deprecated and ignored; this module uses only its local call closure', call. = FALSE)
     }
@@ -153,6 +155,52 @@ run_differential_expression <- local({
       optional = list('test:limma' = c('limma'), 'test:edgeR' = c('edgeR'), 'test:DESeq2' = c('DESeq2'), 'conserved' = c('BiocParallel')),
       features = features_fn(parameters)
     )
+  }
+  function(srt, bundle = NULL, parameters = list()) {
+    # Keep namespace lifecycle changes in a worker instead of deleting options
+    # that already-loaded namespaces may require on the next call.
+    caller_options <- options()
+    caller_search <- search()
+    work <- tempfile('rwiki-de-')
+    if (!dir.create(work)) stop('Cannot create isolated DE work directory', call. = FALSE)
+    on.exit(unlink(work, recursive = TRUE), add = TRUE)
+    input <- file.path(work, 'input.rds')
+    output <- file.path(work, 'output.rds')
+    driver <- file.path(work, 'driver.R')
+    log <- file.path(work, 'worker.log')
+    libs <- file.path(work, 'libraries.rds')
+    saveRDS(.libPaths(), libs)
+    saveRDS(list(srt = srt, bundle = bundle, parameters = parameters,
+                 entry = file.path(.scp_dir, 'analysis.R')), input)
+    writeLines(c(
+      'args <- commandArgs(trailingOnly = TRUE)',
+      '.libPaths(readRDS(args[3]))',
+      'job <- readRDS(args[1])',
+      'e <- new.env(parent = globalenv())',
+      'source(job$entry, local = e)',
+      'core <- environment(e$run_differential_expression)$run_in_process',
+      'result <- core(job$srt, bundle = job$bundle, parameters = job$parameters)',
+      'saveRDS(result, args[2])'
+    ), driver)
+    rscript <- file.path(R.home('bin'), if (.Platform$OS.type == 'windows') 'Rscript.exe' else 'Rscript')
+    exit <- system2(rscript, c('--vanilla', shQuote(driver), shQuote(input), shQuote(output), shQuote(libs)),
+                    stdout = log, stderr = log)
+    if (exit != 0L || !file.exists(output)) {
+      detail <- if (file.exists(log)) paste(tail(readLines(log, warn = FALSE), 30), collapse = '\n') else ''
+      stop('Isolated DE worker failed (exit ', exit, '):\n', detail, call. = FALSE)
+    }
+    out <- readRDS(output)
+    out$diagnostics$worker_options_restored <- out$diagnostics$options_restored
+    out$diagnostics$worker_search_restored <- out$diagnostics$search_restored
+    out$diagnostics$execution <- 'isolated Rscript process per call'
+    out$diagnostics$search_restored <- identical(search(), caller_search)
+    out$diagnostics$options_restored <- identical(options(), caller_options)
+    out$diagnostics$loader_side_effects <- if (out$diagnostics$search_restored && out$diagnostics$options_restored) {
+      'worker exited; caller search path and options untouched'
+    } else {
+      'worker exited; caller state changed during serialization; inspect diagnostics'
+    }
+    out
   }
 })
 

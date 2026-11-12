@@ -1397,3 +1397,5 @@
 ## [2026-11-12 09:26 UTC] run figureya-57profile-1bw=fail
 
 ## [2026-11-12 11:06 UTC] Clarify GDC failure evidence without assigning an unproven cause
+
+## [2026-11-12 11:38 UTC] acceptance check differential-expression
