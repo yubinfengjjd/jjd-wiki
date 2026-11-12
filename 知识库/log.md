@@ -1281,3 +1281,5 @@
 ## [2026-11-04 18:47 UTC] run figureya-110mutationsignature=fail
 
 ## [2026-11-12 13:52 UTC] acceptance check scop-source-catalog
+
+## [2026-11-12 14:02 UTC] acceptance check scp-source-catalog
