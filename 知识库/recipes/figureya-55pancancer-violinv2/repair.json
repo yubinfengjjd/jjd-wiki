@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-55pancancer-violinv2",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa55panCancer_violinV2",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "easy_input.csv": "d28f93290753f803a1f9a69e33ff24f426b73b65031953e9d054839b4a41b14a",
+      "example.png": "bc132b1d61e40defb18660c6c64dbb74114912a5dc7c67288869dbd980fd010b",
+      "FigureYa55panCancer_violinV2.jpg": "8c2f8f1286a97c7057b6301f6c95ecb3f589761d938c49d0c6e0608522433e9c",
+      "FigureYa55panCancer_violinV2.Rmd": "4205fa6b5a01fa004db2bdfe15a488b66ea6cac905af1ff97e758002405111c9",
+      "GeomSplitViolin.R": "ae87897d2c766ab4ac591e3f9319b23ffa006cd0a49eff074cd5ac1c247938e4",
+      "GTEX_phenotype.gz": "dcfa8391588151c2273e36c3fe16e1103120a8d8202df2c147e9c74884dead0d",
+      "install_dependencies.R": "f82a5c27ca7790de1eae8d4fbec4e8105f83a81d8175bfcd3d3837bed22a0477",
+      "read_part.R": "2b437897a433bfd696cebee74d3c036407e71bb603c2066206e21f735d60bad8",
+      "samplepair.txt": "fe431f5f21bd2bc2e8dacc18c27527510965a523a3f5d348bf830539184e7f7c",
+      "TP53expression.pdf": "93702b6d0582ad2aa769f76f3403c086e771ed28ccf488c3d986af52f95bbcbc"
+    },
+    "excluded": [
+      "FigureYa55panCancer_violinV2.html"
+    ],
+    "copied_at": "2026-11-04T09:40:08+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "easy_input.csv": "d28f93290753f803a1f9a69e33ff24f426b73b65031953e9d054839b4a41b14a",
+    "example.png": "bc132b1d61e40defb18660c6c64dbb74114912a5dc7c67288869dbd980fd010b",
+    "FigureYa55panCancer_violinV2.jpg": "8c2f8f1286a97c7057b6301f6c95ecb3f589761d938c49d0c6e0608522433e9c",
+    "FigureYa55panCancer_violinV2.Rmd": "877dcb714fdb5760cb0394f346ab7bf2346651e1c523e892f84bf80448071cd5",
+    "GeomSplitViolin.R": "ff085aa8af1aee1c88c3311ec134e18a2177a6da28a536a92815a37d0ce8d031",
+    "GTEX_phenotype.gz": "dcfa8391588151c2273e36c3fe16e1103120a8d8202df2c147e9c74884dead0d",
+    "install_dependencies.R": "f82a5c27ca7790de1eae8d4fbec4e8105f83a81d8175bfcd3d3837bed22a0477",
+    "read_part.R": "2b437897a433bfd696cebee74d3c036407e71bb603c2066206e21f735d60bad8",
+    "samplepair.txt": "fe431f5f21bd2bc2e8dacc18c27527510965a523a3f5d348bf830539184e7f7c",
+    "TP53expression.pdf": "93702b6d0582ad2aa769f76f3403c086e771ed28ccf488c3d986af52f95bbcbc"
+  },
+  "changed_from_source": {
+    "added": [],
+    "modified": [
+      "FigureYa55panCancer_violinV2.Rmd",
+      "GeomSplitViolin.R"
+    ],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T072549Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T07:25:49+00:00",
+  "input_note": "包含为跑通流程所做的最小修补或补齐输入；不声称真实数据科学有效性。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}

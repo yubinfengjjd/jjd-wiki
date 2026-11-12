@@ -1,0 +1,76 @@
+{
+  "schema_version": 2,
+  "kind": "run",
+  "id": "figureya-293machinelearning",
+  "run_id": "20261111T101945Z",
+  "scope": "repair",
+  "state": "fail",
+  "runner": "rmd-knit",
+  "command": "Rscript --vanilla _rwiki_knit.R FigureYa293machineLearning.Rmd rwiki-knit.md",
+  "started_at": "2026-11-11T10:19:45+00:00",
+  "duration_s": 1200.6,
+  "exit_code": null,
+  "environment": {
+    "r_version": "",
+    "lib_paths": [
+      "<r_lib0>",
+      "<R_HOME>/library"
+    ],
+    "packages": {}
+  },
+  "code": {
+    "A_lasso.pdf": "c163e563010a8ccac3d8b50ca765d810dd30e2672f97b8fb7dcd10cbed1299de",
+    "B_lasso.pdf": "eaa01d701d3afd443720f3c51712a838375e4aee988451ca4ece03ce1196bfd9",
+    "ComplexHeatmap.pdf": "3491fc6d73f4936f5c9d65dbe6b94495afa6751971d384a3203207870033c37c",
+    "example.png": "8f68065071846fe82a16253d81f3c574bd52650a6bc6161ac99d0e88c67e4033",
+    "explain_picture.png": "e24880454d8410491ac32cc07aaa875a242c54fddbeae9d1e406d8dc9c85a838",
+    "FigureYa293machineLearning.Rmd": "6622f6a1ca2438b10ee1ff26f4312294f3b6c424b754f2e2afecc7781eb736f8",
+    "GSE57303.txt": "7c30010449766d1cb5db096d41e762ff1de8d4b5d7e0c88d7a07b7fd20525573",
+    "GSE57303_model_compare.pdf": "7f05cb5e1a9fe60a319e5457153c7dc26f118320d32c1ff76d714234c411c5af",
+    "GSE62254.txt.gz": "ada9d7d27c61408336b1ed951ef74aeebedc9e2436e9e51002b90dd97e2e28af",
+    "GSE62254_model_compare.pdf": "fc26a435dadc65450d19086ac130ac81a085dcfa327082226a46c27d7c2e6967",
+    "install.log": "f9f454faf9aed7eaed32194e4f066abb0e655dd7d2fc46eda0fa761069c53984",
+    "install_dependencies.R": "98ddf3b19060638d75a24fe4c790e442f243479e7cf9fa2818082980380cd8ab",
+    "output_C_index.txt": "5dd5c9caea6c626de15c8b720a813b7af17594cd95c9097ea873712166b098b6",
+    "output_feature_lasso.csv": "730ec726b560f169f9cedb90e05189b40c0c9639d7323221cba822c94821c62d",
+    "output_GSE57303_Cindex_p.txt": "52b2b7174e79c92430a6d1e228b50df2fcd174ff80a99b30868947a1e2ed2004",
+    "output_GSE62254_Cindex_p.txt": "bd02b0ec6059d6eb7d624811b590d6f5acac66e981b3771575d1ab23ecfa7e4c",
+    "output_multiCox.txt": "a3c65f9cd5dc1f6f865bba2b80c1c2ce64d11f889085ec3da288d24480b3bb6b",
+    "output_TCGA_Cindex_p.txt": "b39e8ed7ea442cfb0ad470ddaba642ea654ec3d480419e3ec355c4b6399cb81f",
+    "TCGA.txt": "7c2eb13b242b8a8e7fcc1c7e83d141cd9ed1ac63272df5deb4687d72e0765840",
+    "tcga_model_compare.pdf": "8179fc1e12153b5e1d4863b469d9fa22bc7d4c4c55660d2e1ab9372de3302531"
+  },
+  "outputs": {
+    "rwiki-figure/unnamed-chunk-3-1.png": "2209a09766d2ac26384f709a1e075d906a64224761166dde3cfb05fe2ad55e01",
+    "rwiki-figure/unnamed-chunk-5-1.png": "760338c3ef5704a744969ed861e397971498bbffe1a46b347da71bb97a7dab17",
+    "rwiki-figure/unnamed-chunk-5-2.png": "1bcc0f43de967c7edbaf0bb86dd5bb727428586d9fbea7d4711058a6b2fd3149",
+    "rwiki-figure/unnamed-chunk-5-3.png": "03bdfe1c862c479b93c6801cc944602a1d268782dd9dafc10517e91ad21d5160"
+  },
+  "expected_outputs": [
+    "A_lasso.pdf",
+    "B_lasso.pdf",
+    "ComplexHeatmap.pdf",
+    "tcga_model_compare.pdf",
+    "GSE57303_model_compare.pdf",
+    "GSE62254_model_compare.pdf"
+  ],
+  "missing_outputs": [],
+  "figures": [
+    "rwiki-figure/unnamed-chunk-3-1.png",
+    "rwiki-figure/unnamed-chunk-5-1.png",
+    "rwiki-figure/unnamed-chunk-5-2.png",
+    "rwiki-figure/unnamed-chunk-5-3.png"
+  ],
+  "missing_packages": [],
+  "error": "超过 1200 秒未结束，已终止",
+  "checks": [
+    "install_dependencies.R 以只检查不安装的桩替代",
+    "knit 超时",
+    "预期输出存在 6/6"
+  ],
+  "runner_sha256": "e6ad8ef51efb4d2fbf700bc879319c156dd451691ccc806d22d256a57a9c8fc1",
+  "scope_note": "只证明在记录的环境里跑通；不证明统计或科学有效",
+  "workdir": "<work_root>/runs/figureya-293machinelearning/20261111T101945351169Z",
+  "repair_of": "source/",
+  "provenance_note": "运行于 repair/ 修补执行副本；不证明上游 source/ 原字节可运行，也不证明科学有效。"
+}

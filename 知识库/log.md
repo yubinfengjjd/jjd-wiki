@@ -1279,3 +1279,115 @@
 ## [2026-11-04 17:59 UTC] run figureya-212drugtargetv2=not_run, figureya-293plus-binaryclassificationml=not_run
 
 ## [2026-11-04 18:47 UTC] run figureya-110mutationsignature=fail
+
+## [2026-11-11 05:29 UTC] run figureya-112venn=pass
+
+## [2026-11-11 05:42 UTC] run figureya-18oncoplot-update=fail, figureya-3genomeview=fail, figureya-195panpaire=fail, figureya-206scheatmap=fail, figureya-275scaucell=fail, figureya-277immunomodulator=fail, figureya-294hccdrug=fail, figureya-310cpdbchordgramv2=fail, figureya-318genesetdedotplot=fail, figureya-41geo2lncrna-upd
+
+## [2026-11-11 06:23 UTC] checkpoint: figureya repair batch receipts
+
+## [2026-11-11 06:53 UTC] run figureya-320clontypeheatmap=pass, figureya-52goplot=fail, figureya-32id-table=pass, figureya-14circos=pass, figureya-67phastcons=fail, figureya-57profile-1bw=fail, figureya-212drugtargetv2=fail, figureya-215dnaage=fail, figureya-110mutationsignature=fail, figureya-314singlerscore=fail, figureya-
+
+## [2026-11-11 06:54 UTC] run figureya-67phastcons=pass
+
+## [2026-11-11 07:01 UTC] run figureya-212drugtargetv2=fail, figureya-293plus-binaryclassificationml=fail, figureya-215dnaage=fail, figureya-110mutationsignature=pass, figureya-52goplot=pass, figureya-57profile-1bw=fail, figureya-67phastcons=fail, figureya-3genomeview=pass
+
+## [2026-11-11 07:10 UTC] run figureya-70mutationevents=fail
+
+## [2026-11-11 07:19 UTC] run figureya-70mutationevents=fail
+
+## [2026-11-11 07:22 UTC] run figureya-314singlerscore=pass, figureya-57profile-1bw=fail, figureya-67phastcons=fail, figureya-3genomeview=pass, figureya-110mutationsignature=pass, figureya-129tcgabox=pass, figureya-195panpaire=pass, figureya-253pangsea=fail, figureya-300pancancor=fail, figureya-294hccdrug=fail, figureya-277i
+
+## [2026-11-11 07:30 UTC] run figureya-70mutationevents=pass
+
+## [2026-11-11 07:44 UTC] run figureya-294hccdrug=fail
+
+## [2026-11-11 07:55 UTC] run figureya-203combat=pass, figureya-253pangsea=fail
+
+## [2026-11-11 08:19 UTC] run figureya-57profile-1bw=fail
+
+## [2026-11-11 08:37 UTC] run figureya-318genesetdedotplot=pass
+
+## [2026-11-11 08:38 UTC] run figureya-206scheatmap=pass, figureya-53ppimodule=pass
+
+## [2026-11-11 08:42 UTC] run figureya-253pangsea=fail
+
+## [2026-11-11 08:42 UTC] run figureya-304magic=fail
+
+## [2026-11-11 08:51 UTC] run figureya-41geo2lncrna-update=fail
+
+## [2026-11-11 08:54 UTC] run figureya-304magic=fail
+
+## [2026-11-11 08:56 UTC] run figureya-41geo2lncrna-update=pass
+
+## [2026-11-11 08:57 UTC] run figureya-253pangsea=fail
+
+## [2026-11-11 08:57 UTC] run figureya-304magic=fail
+
+## [2026-11-11 08:59 UTC] run figureya-57profile-1bw=pass
+
+## [2026-11-11 09:00 UTC] run figureya-253pangsea=fail
+
+## [2026-11-11 09:04 UTC] run figureya-215dnaage=fail
+
+## [2026-11-11 09:14 UTC] run figureya-19lollipop=pass
+
+## [2026-11-11 09:14 UTC] run figureya-275scaucell=fail
+
+## [2026-11-11 09:15 UTC] run figureya-2ggtree-pheatmap-msa=pass
+
+## [2026-11-11 09:17 UTC] run figureya-310cpdbchordgramv2=pass
+
+## [2026-11-11 09:17 UTC] run figureya-304magic=fail
+
+## [2026-11-11 09:21 UTC] run figureya-293machinelearning=fail
+
+## [2026-11-11 09:25 UTC] run figureya-293plus-binaryclassificationml=fail
+
+## [2026-11-11 09:31 UTC] run figureya-304magic=fail
+
+## [2026-11-11 09:32 UTC] run figureya-275scaucell=fail
+
+## [2026-11-11 09:34 UTC] run figureya-239st-pdac=fail
+
+## [2026-11-11 09:34 UTC] run figureya-253pangsea=pass
+
+## [2026-11-11 09:52 UTC] run figureya-293machinelearning=error
+
+## [2026-11-11 09:52 UTC] run figureya-293plus-binaryclassificationml=error
+
+## [2026-11-11 09:54 UTC] run figureya-18oncoplot-update=fail
+
+## [2026-11-11 09:59 UTC] run figureya-18oncoplot-update=fail
+
+## [2026-11-11 10:03 UTC] run figureya-293plus-binaryclassificationml=error
+
+## [2026-11-11 10:03 UTC] run figureya-293machinelearning=error
+
+## [2026-11-11 10:07 UTC] run figureya-304magic=fail
+
+## [2026-11-11 10:09 UTC] run figureya-304magic=fail
+
+## [2026-11-11 10:28 UTC] run figureya-304magic=pass
+
+## [2026-11-11 10:40 UTC] run figureya-293plus-binaryclassificationml=fail
+
+## [2026-11-11 10:46 UTC] run figureya-293machinelearning=fail
+
+## [2026-11-11 11:03 UTC] run figureya-293plus-binaryclassificationml=fail
+
+## [2026-11-11 11:45 UTC] run figureya-293machinelearning=pass
+
+## [2026-11-11 13:08 UTC] run figureya-212drugtargetv2=fail
+
+## [2026-11-11 13:26 UTC] run figureya-212drugtargetv2=fail
+
+## [2026-11-11 14:32 UTC] run figureya-212drugtargetv2=fail
+
+## [2026-11-11 14:55 UTC] run figureya-212drugtargetv2=pass
+
+## [2026-11-11 15:28 UTC] run figureya-304magic=pass
+
+## [2026-11-11 17:19 UTC] run figureya-70mutationevents=fail
+
+## [2026-11-12 07:08 UTC] FigureYa repair: separate repair copies from upstream bytes (36 recipes); record deviations, keep large local inputs untracked

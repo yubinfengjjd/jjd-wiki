@@ -69,7 +69,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa215DNAage.Rmd`）
 - 依赖：CRAN data.table, wateRmelon, minfi, ENmix, methylumi, DMRcate, limma；Bioconductor limma, impute, preprocessCore, sva, IlluminaHumanMethylation450kmanifest, IlluminaHumanMethylationEPICmanifest；GitHub YuanTian1991/ChAMP
-- 最近运行：fail（as-is，2026-11-04 13:34 UTC，25.7 秒）
+- 最近运行：fail（as-is，2026-11-11 08:57 UTC，25.6 秒）
 - 派生模板（L2）：暂无
 <!-- facts:end -->
 
@@ -93,10 +93,11 @@ beta矩阵行=探针列=样本，示例按TCGA条码第14-15位（01肿瘤/11癌
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-215dnaage`
 - 用到课题：`wiki.py use figureya-215dnaage --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。
-- 运行提示：HumanMethylation450矩阵需自行从UCSC Xena下载（快照未含）；ChAMP可能需Bioconductor旧版本或GitHub安装；BMIQ标准化约30分钟。
+- 运行提示：HumanMethylation450矩阵（953MB）超出 GitHub 单文件上限，不入库、不随仓库分发；请从 UCSC Xena 下载 TCGA.CESC.sampleMap/HumanMethylation450.gz 并解压为 source/HumanMethylation450（哈希以 source.json 为准）；本仓库验证使用真实 Xena 文件运行通过；ChAMP可能需Bioconductor旧版本或GitHub安装；BMIQ标准化约30分钟。
 
 ## 输出
 

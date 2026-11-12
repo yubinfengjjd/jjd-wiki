@@ -58,7 +58,7 @@ favorite: false
 - 许可证：CC-BY-NC-SA-4.0；引用：Lu X, et al. (2025). FigureYa: A Standardized Visualization Framework for Enhancing Biomedical Data Interpretation and Research Efficiency. iMetaMed 1: e70005. https://doi.org/10.1002/imm3.70005
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa18oncoplot_update.Rmd`）
 - 依赖：Bioconductor TCGAbiolinks, maftools
-- 最近运行：fail（as-is，2026-11-04 15:07 UTC，27.8 秒）
+- 最近运行：fail（as-is，2026-11-11 06:56 UTC，96.9 秒）
 - 派生模板（L2）：暂无
 <!-- facts:end -->
 
@@ -83,6 +83,7 @@ easy_input.txt为想画的基因列表（每行一个基因）；group.txt为可
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-18oncoplot-update`
 - 用到课题：`wiki.py use figureya-18oncoplot-update --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。

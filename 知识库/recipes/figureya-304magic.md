@@ -99,6 +99,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `repair/SYNTHETIC_INPUTS.md`。
 - `SCLC_epithelial_cells.cellmeta.rds`：见 Rmd“输入文件”节
 - `gene.info.rds`：见 Rmd“输入文件”节
 - `PLCG2.DREMI.tsv`：见 Rmd“输入文件”节
@@ -109,6 +110,7 @@ favorite: false
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-304magic`
 - 用到课题：`wiki.py use figureya-304magic --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。
