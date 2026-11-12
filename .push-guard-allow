@@ -48,3 +48,7 @@ size 知识库/recipes/figureya-314singlerscore/source/InputData/GSE154763_*.csv
 size 知识库/recipes/figureya-315singlerfraction/source/InputData/GSE154763_*.csv.gz  # GEO 公开补充文件 GSE154763；无私有数据，小于 GitHub 100 MB
 size 知识库/recipes/figureya-3genomeview/source/*.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
 size 知识库/recipes/figureya-57profile-1bw/source/8cell.K4me3.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+
+# figureya-repair 分离：repair/ 为修补执行副本，含上游字节副本、补齐的公开数据集/合成输入与运行产物；非私有数据；单项均小于 GitHub 100 MB。超过 100 MB 的本机保留文件不进 Git（见 知识库/.gitignore 与各 repair.json 的 not_in_git）。
+size 知识库/recipes/*/repair/**  # 修补执行副本的上游字节副本、公开数据集/合成输入与运行产物；非私有数据；单项均小于 GitHub 100 MB
+abs-path 知识库/recipes/*/repair/**  # 修补执行副本含本机运行日志（install.log 等）与上游原字节中的历史绝对路径；已核对，仅证据定位用途，非私有数据
