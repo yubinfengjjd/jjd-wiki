@@ -1287,3 +1287,5 @@
 ## [2026-11-12 14:08 UTC] acceptance check scop-analysis-guide
 
 ## [2026-11-12 14:14 UTC] acceptance check scop-visualization-guide
+
+## [2026-11-12 14:20 UTC] acceptance check scop-workflows
