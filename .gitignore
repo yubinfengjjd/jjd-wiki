@@ -44,8 +44,8 @@ Thumbs.db
 # 维护记录里的回放夹具：体积大、可再生，只留审计结论
 维护记录/*/fixtures/
 维护记录/**/migration-fixture/
-# Obsidian 工作区状态（随窗口布局频繁变动）
-obsidian-vault/.obsidian/workspace*
+# Obsidian 阅览端本机配置（插件、工作区状态）保留本地，不入库
+**/.obsidian/
 
 # 私有数据与凭据禁止入 Git；公开示例数据保留。
 **/private-data/
