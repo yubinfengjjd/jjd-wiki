@@ -117,6 +117,8 @@ favorite: false
 
 ## 知识关联检查
 
+2026-11-12：作者 jb 接受的结论是 repair-pass，不是 as-is pass。最新 as-is 收据 `runs/20261104T111021Z.json` 仍为 fail，原因是缺输入文件（File 'EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv' does not exist or is non-readable）。修补副本收据 `repair-runs/20261111T075039Z.json`（scope=repair）为 pass，只证明修补副本在记录环境可执行。catalog 的 `run` 保持该 as-is 收据的 fail，不改成 pass。
+
 2026-11-04：查了同图型模板与方法页。库内暂无同图型模板。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
