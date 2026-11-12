@@ -122,6 +122,8 @@ favorite: false
 
 ## 知识关联检查
 
+2026-11-12：最新 as-is 收据 `runs/20261104T133514Z.json` 的失败是已确认的外部不可用：外部下载失败：download from 'https://datasets.cellxgene.cziscience.com/79f80e59-97e7-4f95-b1e9-9767a24b85b0.h5ad' failed。cellxgene 数据集在 as-is 运行时不可得。收据 state 保持 fail；这不是 as-is pass，catalog 的 `run` 不改成 pass。
+
 2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap|分组热图（多分组注释）]] · [[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap|特征表达热图]] · [[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]] · [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录

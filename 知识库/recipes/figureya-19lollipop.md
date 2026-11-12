@@ -109,6 +109,8 @@ favorite: false
 
 ## 知识关联检查
 
+2026-11-12：最新 as-is 收据 `runs/20261111T065758Z.json` 的失败是已确认的外部不可用：GDC 查询/下载没有返回文件：I couldn't find all the files from the query. Please check if the directory parameter is right or `GDCdownload` downloaded the samples。这是 GDC 侧无文件，不是 as-is 跑通。收据 state 保持 fail；这不是 as-is pass，catalog 的 `run` 不改成 pass。
+
 2026-11-04：查了同图型模板与方法页。库内暂无同图型模板。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录

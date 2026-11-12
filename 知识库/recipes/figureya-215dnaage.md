@@ -105,6 +105,8 @@ beta矩阵行=探针列=样本，示例按TCGA条码第14-15位（01肿瘤/11癌
 
 ## 知识关联检查
 
+2026-11-12：作者 jb 接受的结论是 repair-pass，不是 as-is pass。最新 as-is 收据 `runs/20261111T085722Z.json` 仍为 fail，原因是缺输入文件（File 'HumanMethylation450' does not exist or is non-readable）。修补副本收据 `repair-runs/20261111T120344Z.json`（scope=repair）为 pass，只证明修补副本在记录环境可执行。catalog 的 `run` 保持该 as-is 收据的 fail，不改成 pass。
+
 2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]] · [[templates/2026-10-22-scp-example__fig09-bar--bar|分组计数柱图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录

@@ -101,6 +101,8 @@ favorite: false
 
 ## 知识关联检查
 
+2026-11-12：最新 as-is 收据 `runs/20261111T065621Z.json` 的失败是已确认的外部不可用：HTTP 405 Method Not Allowed。上游接口拒绝了 as-is 运行的请求方法。收据 state 保持 fail；这不是 as-is pass，catalog 的 `run` 不改成 pass。
+
 2026-11-04：查了同图型模板与方法页。库内暂无同图型模板。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
