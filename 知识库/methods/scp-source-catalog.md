@@ -239,6 +239,8 @@ data_contract:
 | `VelocityPlot` | [[methods/scp-viz-model-overlays]] | velocity_umap | not_run / ready |
 | `VolcanoPlot` | [[methods/scp-viz-statplots]] | positive_native_material | verified / ready |
 
+上表"当前算法收据范围"是 Wiki 提炼闭包（`code/` module.R）的逐形态收据口径，与 2026-11-12 新增的上游 Rd 示例执行矩阵（execution-matrix.json，包级可调用性）是两层不同证据：前者证明提炼实现某参数形态跑通，后者只证明 SCP 包本身示例可调用；两者都不互相授予状态。99 个 not_run 形态的原因绝大多数是"无收据显式覆盖该参数值"，属闭包级审计缺口，不等于函数不可用。
+
 ### 分析入口
 
 | 导出 | 原始定义/文档 | 规范页或去向 |
@@ -424,6 +426,8 @@ data_contract:
 
 本批输出：142 条唯一导出记录、238 个 R 定义核对、22 个绘图契约、4 个 draft 技术页，以及 153 条绘图参数形态的显式证据对应。以上为来源整理阶段的数量；本轮只确认资料内容，当前实现状态仍按文件与收据计算，不以这些计数宣称全库验收完成。
 
+2026-11-12 执行矩阵补充：[execution-matrix.json](/files/wiki/methods/scp-source-catalog/execution-matrix.json) 记录 SCP 0.5.6 全部 142 个 Rd topic 的 `utils::example()` 逐条执行结果（按导出计 **pass 28 / not_run 59 / fail 55**，另有 3 条初判 fail 经复核改判 not_run）。fail 主因是上游版本不兼容：SCP 0.5.6 调用的 `GetAssayData/FetchData slot=` 在 SeuratObject ≥5 已 defunct（约 34 个导出受影响），scop 0.9.2 改用 `GetAssayData5` 正是为此。另有 grid/gtable API 变化、Ensembl API 变更等逐条保留。Python 后端（scvelo 等）因 pypi 不可达记 not_run；`SCP_env` conda 环境已创建但依赖未装齐。pass 只证明上游示例在本机 R 4.5 环境可调用，不证明科学有效性。
+
 ## 知识关联检查
 
 规范家族沿用质量控制、双细胞检测、批次整合、降维、聚类、差异、富集、签名打分、注释、参考映射、轨迹、速度和动态特征。RunFR 是 Fruchterman–Reingold 图布局；RunLargeVis 使用 R uwot::lvish；PAGA/Palantir/WOT 候选归 trajectory-inference，WOT 需要真实时间字段。GeneConvert/PrepareDB 是函数，不作为包数据。
@@ -459,11 +463,13 @@ data_contract:
 
 ### scop 候选来源（未运行）
 
-关联新来源：[[methods/scop-source-catalog|scop 单细胞与空间组学]]，固定版本独立归档。89 个同名导出不证明 API 或算法等价；原 SCP 的收据和状态保持独立。
+关联新来源：[[methods/scop-source-catalog|scop 单细胞与空间组学]]，固定版本独立归档，已于 2026-11-12 完成安装与逐导出执行矩阵（250 pass / 112 not_run / 0 fail）。89 个同名导出不证明 API 或算法等价；原 SCP 的收据和状态保持独立。
 
 ## 使用记录
 
 2026-11-01：按 v2 接续来源和既有绘图闭包入库；保留旧 id、作者块、状态与原始层，未执行装包或代签核。
+
+2026-11-12：SCP 0.5.6（已装于 Wiki R 库）全量 Rd 示例执行矩阵完成并生成 execution-matrix.json；seuratobject5 slot 不兼容等失败如实记录。依赖缺口清单为盘点时点快照，此后 harmony/batchelor/scDblFinder/SingleR/monocle3 等已装入 Wiki 库，实际可用性以 execution-matrix.json 逐条判定为准。
 
 ## 资料确认记录（2026-11-02）
 

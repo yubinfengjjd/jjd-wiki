@@ -1,0 +1,1157 @@
+{
+ "schema_version": 1,
+ "kind": "execution-matrix",
+ "runner": "utils::example() per Rd topic, package SCP 0.5.6 @b9b0eb7, R 4.5.0, Wiki R lib R-lib-4.5-3.21",
+ "ran_at": "2026-11-12",
+ "topics_total": 142,
+ "exports_total": 142,
+ "export_states": {
+  "not_run": 59,
+  "pass": 28,
+  "fail": 55
+ },
+ "per_export": {
+  "%>%": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "%||%": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "AnnotateFeatures": {
+   "topic": "AnnotateFeatures",
+   "state": "not_run",
+   "reason": "requires network or external resource",
+   "secs": 13.1,
+   "raw_state": "not_run",
+   "message": "cannot open URL 'https://ftp.expasy.org/databases/enzyme/enzclass.txt'"
+  },
+  "BBKNN_integrate": {
+   "topic": "BBKNN_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "CC_GenePrefetch": {
+   "topic": "CC_GenePrefetch",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.5,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "CSS_integrate": {
+   "topic": "CSS_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "CellCorHeatmap": {
+   "topic": "CellCorHeatmap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 7.5,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "CellDensityPlot": {
+   "topic": "CellDensityPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 16.2,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "CellDimPlot": {
+   "topic": "CellDimPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 19.2,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "CellDimPlot3D": {
+   "topic": "CellDimPlot3D",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.4,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "CellScoring": {
+   "topic": "CellScoring",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 9.8,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "CellStatPlot": {
+   "topic": "CellStatPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 13.9,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "ComBat_integrate": {
+   "topic": "ComBat_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "Conos_integrate": {
+   "topic": "Conos_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "CreateDataFile": {
+   "topic": "CreateDataFile",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "CreateMetaFile": {
+   "topic": "CreateMetaFile",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "DefaultReduction": {
+   "topic": "DefaultReduction",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 2.9,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "DynamicHeatmap": {
+   "topic": "DynamicHeatmap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 13.6,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "DynamicPlot": {
+   "topic": "DynamicPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 8.8,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "EnrichmentPlot": {
+   "topic": "EnrichmentPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 2.7,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "Env_requirements": {
+   "topic": "Env_requirements",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "FeatureCorPlot": {
+   "topic": "FeatureCorPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 53.5,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "FeatureDimPlot": {
+   "topic": "FeatureDimPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 4.3,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "FeatureDimPlot3D": {
+   "topic": "FeatureDimPlot3D",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.5,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "FeatureHeatmap": {
+   "topic": "FeatureHeatmap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 2.9,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "FeatureStatPlot": {
+   "topic": "FeatureStatPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 65.9,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `FetchData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "FetchH5": {
+   "topic": "FetchH5",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "FindExpressedMarkers": {
+   "topic": "FindExpressedMarkers",
+   "state": "not_run",
+   "reason": "matrix did not reach this topic",
+   "secs": null,
+   "raw_state": null,
+   "message": ""
+  },
+  "GSEAPlot": {
+   "topic": "GSEAPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "GeneConvert": {
+   "topic": "GeneConvert",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 2.2,
+   "raw_state": "fail",
+   "message": "Ensembl_version is invalid. Must be one of current_release,GRCh37,116,115,114,113,112,111,110,109,108,107,106,105,80,77,75,54"
+  },
+  "GraphPlot": {
+   "topic": "GraphPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "GroupHeatmap": {
+   "topic": "GroupHeatmap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 9.2,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "Harmony_integrate": {
+   "topic": "Harmony_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "Integration_SCP": {
+   "topic": "Integration_SCP",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 5.7,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "LIGER_integrate": {
+   "topic": "LIGER_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "LineagePlot": {
+   "topic": "LineagePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 10.4,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "ListDB": {
+   "topic": "ListDB",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "MNN_integrate": {
+   "topic": "MNN_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "PAGAPlot": {
+   "topic": "PAGAPlot",
+   "state": "not_run",
+   "reason": "upstream example auto-installs package; install failed (env/network)",
+   "secs": 149.4,
+   "raw_state": "fail",
+   "message": "Failed to install the package(s): scanpy into the environment \"SCP_env\". Please install manually."
+  },
+  "PrepareDB": {
+   "topic": "PrepareDB",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "PrepareEnv": {
+   "topic": "PrepareEnv",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0.1,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "PrepareSCExplorer": {
+   "topic": "PrepareSCExplorer",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "ProjectionPlot": {
+   "topic": "ProjectionPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 6,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RecoverCounts": {
+   "topic": "RecoverCounts",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 11.7,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RenameClusters": {
+   "topic": "RenameClusters",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 3.3,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "RenameFeatures": {
+   "topic": "RenameFeatures",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 3.2,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "RunCSSMap": {
+   "topic": "RunCSSMap",
+   "state": "not_run",
+   "reason": "upstream example auto-installs package; install failed (env/network)",
+   "secs": 25,
+   "raw_state": "fail",
+   "message": "Failed to install the package(s): quadbiolab/simspec. Please install manually."
+  },
+  "RunCellQC": {
+   "topic": "RunCellQC",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.6,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunDEtest": {
+   "topic": "RunDEtest",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.3,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunDM": {
+   "topic": "RunDM",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 2.3,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 'as.matrix': error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead"
+  },
+  "RunDimReduction": {
+   "topic": "RunDimReduction",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "RunDoubletCalling": {
+   "topic": "RunDoubletCalling",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 6.7,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunDynamicEnrichment": {
+   "topic": "RunDynamicEnrichment",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 9.6,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "RunDynamicFeatures": {
+   "topic": "RunDynamicFeatures",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 9.6,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "RunEnrichment": {
+   "topic": "RunEnrichment",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.3,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunFR": {
+   "topic": "RunFR",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 1.8,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunGLMPCA": {
+   "topic": "RunGLMPCA",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 0.1,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunGSEA": {
+   "topic": "RunGSEA",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 6.2,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunHarmony2": {
+   "topic": "RunHarmony2",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 0.3,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunKNNMap": {
+   "topic": "RunKNNMap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 5.4,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunKNNPredict": {
+   "topic": "RunKNNPredict",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.6,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunLargeVis": {
+   "topic": "RunLargeVis",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 1.9,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 'as.matrix': error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead"
+  },
+  "RunMDS": {
+   "topic": "RunMDS",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 0.2,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunMonocle2": {
+   "topic": "RunMonocle2",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "RunMonocle3": {
+   "topic": "RunMonocle3",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "RunNMF": {
+   "topic": "RunNMF",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 0.1,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunPAGA": {
+   "topic": "RunPAGA",
+   "state": "not_run",
+   "reason": "upstream example auto-installs package; install failed (env/network)",
+   "secs": 145.3,
+   "raw_state": "fail",
+   "message": "Failed to install the package(s): scanpy into the environment \"SCP_env\". Please install manually."
+  },
+  "RunPCAMap": {
+   "topic": "RunPCAMap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 10.5,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunPHATE": {
+   "topic": "RunPHATE",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 4.9,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 'as.matrix': error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead"
+  },
+  "RunPaCMAP": {
+   "topic": "RunPaCMAP",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 1.9,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 'as.matrix': error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead"
+  },
+  "RunPalantir": {
+   "topic": "RunPalantir",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)",
+   "secs": 155.7,
+   "raw_state": "not_run",
+   "message": "Failed to install the package(s): palantir into the environment \"SCP_env\". Please install manually."
+  },
+  "RunSCExplorer": {
+   "topic": "RunSCExplorer",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "RunSCVELO": {
+   "topic": "RunSCVELO",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)",
+   "secs": 137.1,
+   "raw_state": "not_run",
+   "message": "Failed to install the package(s): scvelo into the environment \"SCP_env\". Please install manually."
+  },
+  "RunScmap": {
+   "topic": "RunScmap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 6,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunSeuratMap": {
+   "topic": "RunSeuratMap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 5.4,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunSingleR": {
+   "topic": "RunSingleR",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 10.7,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunSlingshot": {
+   "topic": "RunSlingshot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 9.4,
+   "raw_state": "fail",
+   "message": "`grobs` must be a single grob or a list of grobs, not a list matrix."
+  },
+  "RunSymphonyMap": {
+   "topic": "RunSymphonyMap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 5.2,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "RunTriMap": {
+   "topic": "RunTriMap",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 1.8,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 'as.matrix': error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead"
+  },
+  "RunUMAP2": {
+   "topic": "RunUMAP2",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 1.8,
+   "raw_state": "fail",
+   "message": "error in evaluating the argument 'x' in selecting a method for function 'as.matrix': error in evaluating the argument 'x' in selecting a method for function 't': The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead"
+  },
+  "RunWOT": {
+   "topic": "RunWOT",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "Scanorama_integrate": {
+   "topic": "Scanorama_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "Seurat_integrate": {
+   "topic": "Seurat_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "SrtAppend": {
+   "topic": "SrtAppend",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "SrtReorder": {
+   "topic": "SrtReorder",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "Standard_SCP": {
+   "topic": "Standard_SCP",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3.5,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "StatPlot": {
+   "topic": "StatPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 6,
+   "raw_state": "fail",
+   "message": "Ensembl_version is invalid. Must be one of current_release,GRCh37,116,115,114,113,112,111,110,109,108,107,106,105,80,77,75,54"
+  },
+  "Uncorrected_integrate": {
+   "topic": "Uncorrected_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "VelocityPlot": {
+   "topic": "VelocityPlot",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)",
+   "secs": 137.3,
+   "raw_state": "not_run",
+   "message": "Failed to install the package(s): scvelo into the environment \"SCP_env\". Please install manually."
+  },
+  "VolcanoPlot": {
+   "topic": "VolcanoPlot",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 7.2,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "adata_to_srt": {
+   "topic": "adata_to_srt",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)",
+   "secs": 583.8,
+   "raw_state": "not_run",
+   "message": "Failed to install the package(s): leidenalg==0.10.1,matplotlib==3.6.3,numba==0.55.2,numpy==1.21.6,palantir==1.0.1,pandas==1.3.5,python-igraph==0.10.2,scanpy==1.9.5,scikit-learn==1.3.2,scipy==1.10.1,scvelo==0.2.5,wot==1.0.8.post2,trimap==1.1.4,pacmap==0.7.0,phate==1.0.11,bbknn==1.6.0,scanorama==1.7.4"
+  },
+  "adjcolors": {
+   "topic": "adjcolors",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "arrow": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "as_matrix": {
+   "topic": "as_matrix",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 22.3,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "blendcolors": {
+   "topic": "blendcolors",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.7,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "capitalize": {
+   "topic": "capitalize",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "check_DataType": {
+   "topic": "check_DataType",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "check_Python": {
+   "topic": "check_Python",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)",
+   "secs": 142.9,
+   "raw_state": "not_run",
+   "message": "Failed to install the package(s): bbknn,scanorama into the environment \"SCP_env\". Please install manually."
+  },
+  "check_R": {
+   "topic": "check_R",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "check_srtList": {
+   "topic": "check_srtList",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "check_srtMerge": {
+   "topic": "check_srtMerge",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "compute_velocity_on_grid": {
+   "topic": "compute_velocity_on_grid",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "db_DoubletDetection": {
+   "topic": "db_DoubletDetection",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 3,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "db_Scrublet": {
+   "topic": "db_Scrublet",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 2.8,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "db_scDblFinder": {
+   "topic": "db_scDblFinder",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 5.4,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "db_scds": {
+   "topic": "db_scds",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 2.8,
+   "raw_state": "fail",
+   "message": "The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead."
+  },
+  "download": {
+   "topic": "download",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "drop_data": {
+   "topic": "drop_data",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.2,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "exist_Python_pkgs": {
+   "topic": "exist_Python_pkgs",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "fastMNN_integrate": {
+   "topic": "fastMNN_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "find_conda": {
+   "topic": "find_conda",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_alluvial": {
+   "topic": "geom_alluvial",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_alluvial_label": {
+   "topic": "geom_alluvial_label",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_alluvial_text": {
+   "topic": "geom_alluvial_label",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_sankey": {
+   "topic": "geom_sankey",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_sankey_bump": {
+   "topic": "geom_sankey_bump",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_sankey_label": {
+   "topic": "geom_sankey_label",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "geom_sankey_text": {
+   "topic": "geom_sankey_label",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "get_vars": {
+   "topic": "get_vars",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "gpar": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "installed_Python_pkgs": {
+   "topic": "installed_Python_pkgs",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "invoke": {
+   "topic": "invoke",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "isOutlier": {
+   "topic": "isOutlier",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "iterchunks": {
+   "topic": "iterchunks",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "make_long": {
+   "topic": "make_long",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "palette_scp": {
+   "topic": "palette_scp",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 1.7,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "panel_fix": {
+   "topic": "panel_fix",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 491,
+   "raw_state": "fail",
+   "message": "reached CPU time limit"
+  },
+  "panel_fix_overall": {
+   "topic": "panel_fix",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 491,
+   "raw_state": "fail",
+   "message": "reached CPU time limit"
+  },
+  "scVI_integrate": {
+   "topic": "scVI_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "segementsDf": {
+   "topic": "segementsDf",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "show_palettes": {
+   "topic": "show_palettes",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 3.3,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "slim_data": {
+   "topic": "slim_data",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "srt_to_adata": {
+   "topic": "srt_to_adata",
+   "state": "not_run",
+   "reason": "upstream example auto-installs package; install failed (env/network)",
+   "secs": 133.1,
+   "raw_state": "fail",
+   "message": "Failed to install the package(s): scanpy into the environment \"SCP_env\". Please install manually."
+  },
+  "theme_alluvial": {
+   "topic": "theme_sankey",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "theme_blank": {
+   "topic": "theme_blank",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.2,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "theme_sankey": {
+   "topic": "theme_sankey",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "theme_sankey_bump": {
+   "topic": "theme_sankey",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "theme_scp": {
+   "topic": "theme_scp",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0.1,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "tochunks": {
+   "topic": "tochunks",
+   "state": "pass",
+   "reason": "Rd example executed without error",
+   "secs": 0,
+   "raw_state": "pass",
+   "message": ""
+  },
+  "try_get": {
+   "topic": "try_get",
+   "state": "fail",
+   "reason": "Rd example raised error",
+   "secs": 0,
+   "raw_state": "fail",
+   "message": "value is smaller than 0.5"
+  },
+  "unit": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  },
+  "unnest": {
+   "topic": "unnest",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable",
+   "secs": 0,
+   "raw_state": "not_run",
+   "message": ""
+  }
+ },
+ "reclassification": "fail->not_run where missing dep/python/network; 'slot defunct' SeuratObject>=5 errors kept as fail (upstream incompatibility, 34 exports)",
+ "known_incompatibilities": {
+  "seuratobject5_slot_defunct": "SCP 0.5.6 calls GetAssayData/FetchData slot= which is defunct in SeuratObject 5.x -> ~34 exports fail; scop 0.9.2 uses GetAssayData5",
+  "python_backend": "SCP_env conda env created; scvelo install failed (pypi SSL unreachable) -> python-backed examples not_run"
+ },
+ "note": "pass=upstream Rd example executed clean; proves callability only."
+}

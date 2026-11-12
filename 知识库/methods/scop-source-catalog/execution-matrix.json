@@ -1,0 +1,1826 @@
+{
+ "schema_version": 1,
+ "kind": "execution-matrix",
+ "runner": "utils::example() per Rd topic, package scop 0.9.2 @2f44f8c, R 4.5.0, Wiki R lib R-lib-4.5-3.21",
+ "ran_at": "2026-11-12",
+ "topics_total": 357,
+ "exports_total": 362,
+ "export_states": {
+  "not_run": 112,
+  "pass": 250
+ },
+ "per_export": {
+  "%>%": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "%||%": {
+   "topic": "reexports",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "AddATACMotifs": {
+   "topic": "AddATACMotifs",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "AddFeaturesData": {
+   "topic": "AddFeaturesData",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "AddModuleScore": {
+   "topic": "AddModuleScore",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "AggregateExpression": {
+   "topic": "AggregateExpression",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "AnnotateATACPeaks": {
+   "topic": "AnnotateATACPeaks",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "AnnotateFeatures": {
+   "topic": "AnnotateFeatures",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "AverageExpression": {
+   "topic": "AverageExpression",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "BBKNN_integrate": {
+   "topic": "BBKNN_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "BranchStreamPlot": {
+   "topic": "BranchStreamPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CCA_integrate": {
+   "topic": "CCA_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CCCHeatmap": {
+   "topic": "CCCHeatmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CCCNetworkPlot": {
+   "topic": "CCCNetworkPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CCCStatPlot": {
+   "topic": "CCCStatPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CNVPlot": {
+   "topic": "CNVPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "COMMOTPlot": {
+   "topic": "COMMOTPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CSS_integrate": {
+   "topic": "CSS_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "Cell2locationPlot": {
+   "topic": "Cell2locationPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CellCorHeatmap": {
+   "topic": "CellCorHeatmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellCycleScoring": {
+   "topic": "CellCycleScoring",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CellDensityPlot": {
+   "topic": "CellDensityPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellDimPlot": {
+   "topic": "CellDimPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellDimPlot3D": {
+   "topic": "CellDimPlot3D",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellOraclePlot": {
+   "topic": "CellOraclePlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CellRankPlot": {
+   "topic": "CellRankPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellScoring": {
+   "topic": "CellScoring",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellScoringPlot": {
+   "topic": "CellScoringPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellStatPlot": {
+   "topic": "CellStatPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CellTypistModels": {
+   "topic": "CellTypistModels",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CheckATACData": {
+   "topic": "CheckATACData",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "CheckDataList": {
+   "topic": "CheckDataList",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CheckDataMerge": {
+   "topic": "CheckDataMerge",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CheckDataType": {
+   "topic": "CheckDataType",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ClusterTreePlot": {
+   "topic": "ClusterTreePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ComBat_integrate": {
+   "topic": "ComBat_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CombineATACPeaks": {
+   "topic": "CombineATACPeaks",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "Conos_integrate": {
+   "topic": "Conos_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "ConvertHomologs": {
+   "topic": "ConvertHomologs",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "Coralysis_integrate": {
+   "topic": "Coralysis_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CoverageTrackPlot": {
+   "topic": "CoverageTrackPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CreateDataFile": {
+   "topic": "CreateDataFile",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CreateMetaFile": {
+   "topic": "CreateMetaFile",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "CycGenePrefetch": {
+   "topic": "CycGenePrefetch",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "CytoTRACEPlot": {
+   "topic": "CytoTRACEPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DEtestManhattanPlot": {
+   "topic": "DEtestManhattanPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DEtestPlot": {
+   "topic": "DEtestPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DEtestRingPlot": {
+   "topic": "DEtestRingPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DeconvolutionPlot": {
+   "topic": "DeconvolutionPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DefaultReduction": {
+   "topic": "DefaultReduction",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DimsEstimatePlot": {
+   "topic": "DimsEstimatePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DorotheaPlot": {
+   "topic": "DorotheaPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DynamicHeatmap": {
+   "topic": "DynamicHeatmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "DynamicPlot": {
+   "topic": "DynamicPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "EnrichmentPlot": {
+   "topic": "EnrichmentPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "EstimateGenePlot": {
+   "topic": "EstimateGenePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "EstimateScorePlot": {
+   "topic": "EstimateScorePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ExportATACResults": {
+   "topic": "ExportATACResults",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "FeatureCorPlot": {
+   "topic": "FeatureCorPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FeatureDimPlot": {
+   "topic": "FeatureDimPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FeatureDimPlot3D": {
+   "topic": "FeatureDimPlot3D",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FeatureHeatmap": {
+   "topic": "FeatureHeatmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FeatureStatPlot": {
+   "topic": "FeatureStatPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FerrisWheelPlot": {
+   "topic": "FerrisWheelPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FetchDataZero": {
+   "topic": "FetchDataZero",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FetchH5": {
+   "topic": "FetchH5",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FilterATACPeaks": {
+   "topic": "FilterATACPeaks",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "FindAllMarkers": {
+   "topic": "FindAllMarkers",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FindClusters": {
+   "topic": "FindClusters",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FindExpressedMarkers": {
+   "topic": "FindExpressedMarkers",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FindMarkers": {
+   "topic": "FindMarkers",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FindMultiModalNeighbors": {
+   "topic": "FindMultiModalNeighbors",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FindNeighbors": {
+   "topic": "FindNeighbors",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FindVariableFeatures": {
+   "topic": "FindVariableFeatures",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "FitDevoPlot": {
+   "topic": "FitDevoPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "FoldChange": {
+   "topic": "FoldChange",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "GLUE_integrate": {
+   "topic": "GLUE_integrate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GSEAPlot": {
+   "topic": "GSEAPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GSVAPlot": {
+   "topic": "GSVAPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GeneConvert": {
+   "topic": "GeneConvert",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GeneImmuneCorPlot": {
+   "topic": "GeneImmuneCorPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "GetAssayData5": {
+   "topic": "GetAssayData5",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GetCCCObject": {
+   "topic": "GetCCCObject",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "GetFeaturesData": {
+   "topic": "GetFeaturesData",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GetSimilarFeatures": {
+   "topic": "GetSimilarFeatures",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "GetSpatialDMResult": {
+   "topic": "GetSpatialDMResult",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "GetSpatialGraph": {
+   "topic": "GetSpatialGraph",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GetSpatialResult": {
+   "topic": "GetSpatialResult",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "GroupHeatmap": {
+   "topic": "GroupHeatmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "Harmony5_integrate": {
+   "topic": "Harmony5_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "Harmony_integrate": {
+   "topic": "Harmony_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "IREAPlot": {
+   "topic": "IREAPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ImmuneAbundancePlot": {
+   "topic": "ImmuneAbundancePlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "IntegrationBenchmarkPlot": {
+   "topic": "IntegrationBenchmarkPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "LIGER_integrate": {
+   "topic": "LIGER_integrate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "LineagePlot": {
+   "topic": "LineagePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ListCCCDB": {
+   "topic": "ListCCCDB",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "ListDB": {
+   "topic": "ListDB",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ListEnv": {
+   "topic": "ListEnv",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "MNN_integrate": {
+   "topic": "MNN_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "MetaCellPlot": {
+   "topic": "MetaCellPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "MetabolismPlot": {
+   "topic": "MetabolismPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "MistyRPlot": {
+   "topic": "MistyRPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "MultiMAP_integrate": {
+   "topic": "MultiMAP_integrate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "NMFHeatmap": {
+   "topic": "NMFHeatmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "NormalizeData": {
+   "topic": "NormalizeData",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "PAGAPlot": {
+   "topic": "PAGAPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PalantirTrajectoryPlot": {
+   "topic": "PalantirTrajectoryPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PlotscPagwas": {
+   "topic": "PlotscPagwas",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "PrepareCCCDB": {
+   "topic": "PrepareCCCDB",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareCORUM": {
+   "topic": "PrepareCORUM",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareCSPA": {
+   "topic": "PrepareCSPA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareCellChat": {
+   "topic": "PrepareCellChat",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareCellTalk": {
+   "topic": "PrepareCellTalk",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareChromosome": {
+   "topic": "PrepareChromosome",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareCustomDB": {
+   "topic": "PrepareCustomDB",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareCytoTRACE2": {
+   "topic": "PrepareCytoTRACE2",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareDB": {
+   "topic": "PrepareDB",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareDO": {
+   "topic": "PrepareDO",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareENCODE": {
+   "topic": "PrepareENCODE",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareEnv": {
+   "topic": "PrepareEnv",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "PrepareEnzyme": {
+   "topic": "PrepareEnzyme",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareGO": {
+   "topic": "PrepareGO",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareGeneType": {
+   "topic": "PrepareGeneType",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareHPO": {
+   "topic": "PrepareHPO",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareHTFtarget": {
+   "topic": "PrepareHTFtarget",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareIREA": {
+   "topic": "PrepareIREA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareJASPAR": {
+   "topic": "PrepareJASPAR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareKEGG": {
+   "topic": "PrepareKEGG",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareMP": {
+   "topic": "PrepareMP",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareMSigDB": {
+   "topic": "PrepareMSigDB",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PreparePFAM": {
+   "topic": "PreparePFAM",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareReactome": {
+   "topic": "PrepareReactome",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareSCExplorer": {
+   "topic": "PrepareSCExplorer",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareSPRomeDB": {
+   "topic": "PrepareSPRomeDB",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareSurfaceome": {
+   "topic": "PrepareSurfaceome",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareTF": {
+   "topic": "PrepareTF",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareTFLink": {
+   "topic": "PrepareTFLink",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareTRRUST": {
+   "topic": "PrepareTRRUST",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareVerSeDa": {
+   "topic": "PrepareVerSeDa",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PrepareWikiPathway": {
+   "topic": "PrepareWikiPathway",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ProjectionPlot": {
+   "topic": "ProjectionPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ProportionTestPlot": {
+   "topic": "ProportionTestPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "PseudotimeProjectionPlot": {
+   "topic": "PseudotimeProjectionPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RPCA_integrate": {
+   "topic": "RPCA_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "ReadATACData": {
+   "topic": "ReadATACData",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "ReadMultiomeData": {
+   "topic": "ReadMultiomeData",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ReadSpatialData": {
+   "topic": "ReadSpatialData",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RecountATAC": {
+   "topic": "RecountATAC",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "RecoverCounts": {
+   "topic": "RecoverCounts",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RemoveEnv": {
+   "topic": "RemoveEnv",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RenameClusters": {
+   "topic": "RenameClusters",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RenameFeatures": {
+   "topic": "RenameFeatures",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunATACQC": {
+   "topic": "RunATACQC",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunAugur": {
+   "topic": "RunAugur",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunBANKSY": {
+   "topic": "RunBANKSY",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunBayesSpace": {
+   "topic": "RunBayesSpace",
+   "state": "not_run",
+   "reason": "requires xgboost<2.0.0; installed 3.2.1.1"
+  },
+  "RunCARD": {
+   "topic": "RunCARD",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCCA": {
+   "topic": "RunCCA",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunCCC": {
+   "topic": "RunCCC",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunCHOIR": {
+   "topic": "RunCHOIR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCIBERSORT": {
+   "topic": "RunCIBERSORT",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCNV": {
+   "topic": "RunCNV",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCOMMOT": {
+   "topic": "RunCOMMOT",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunCSIDE": {
+   "topic": "RunCSIDE",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCSSMap": {
+   "topic": "RunCSSMap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCell2fate": {
+   "topic": "RunCell2fate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCell2location": {
+   "topic": "RunCell2location",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunCellChat": {
+   "topic": "RunCellChat",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCellCycle": {
+   "topic": "RunCellCycle",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCellOracle": {
+   "topic": "RunCellOracle",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCellQC": {
+   "topic": "RunCellQC",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCellRank": {
+   "topic": "RunCellRank",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCellRankEnrichment": {
+   "topic": "RunCellRankEnrichment",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunCellRankTrends": {
+   "topic": "RunCellRankTrends",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunCellTypist": {
+   "topic": "RunCellTypist",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCellphoneDB": {
+   "topic": "RunCellphoneDB",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunChromVAR": {
+   "topic": "RunChromVAR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCisTarget": {
+   "topic": "RunCisTarget",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCoEmbedding": {
+   "topic": "RunCoEmbedding",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "RunCytoSPACE": {
+   "topic": "RunCytoSPACE",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunCytoTRACE": {
+   "topic": "RunCytoTRACE",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDEtest": {
+   "topic": "RunDEtest",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDM": {
+   "topic": "RunDM",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunDecontX": {
+   "topic": "RunDecontX",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDeconvolution": {
+   "topic": "RunDeconvolution",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDimsEstimate": {
+   "topic": "RunDimsEstimate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDimsReduction": {
+   "topic": "RunDimsReduction",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunDorothea": {
+   "topic": "RunDorothea",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDoubletCalling": {
+   "topic": "RunDoubletCalling",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDoubletDetection": {
+   "topic": "RunDoubletDetection",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)"
+  },
+  "RunDynamicEnrichment": {
+   "topic": "RunDynamicEnrichment",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunDynamicFeatures": {
+   "topic": "RunDynamicFeatures",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunESTIMATE": {
+   "topic": "RunESTIMATE",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunEnrichment": {
+   "topic": "RunEnrichment",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunFR": {
+   "topic": "RunFR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunFWP": {
+   "topic": "RunFWP",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunFitDevo": {
+   "topic": "RunFitDevo",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunGENIE3": {
+   "topic": "RunGENIE3",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunGLMPCA": {
+   "topic": "RunGLMPCA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunGNIPLR": {
+   "topic": "RunGNIPLR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunGRN": {
+   "topic": "RunGRN",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunGRNBoost2": {
+   "topic": "RunGRNBoost2",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunGSEA": {
+   "topic": "RunGSEA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunGSVA": {
+   "topic": "RunGSVA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunGeneActivity": {
+   "topic": "RunGeneActivity",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "RunHarmony2": {
+   "topic": "RunHarmony2",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunIREA": {
+   "topic": "RunIREA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunIntegration": {
+   "topic": "RunIntegration",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "RunIntegrationBenchmark": {
+   "topic": "RunIntegrationBenchmark",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunKNNMap": {
+   "topic": "RunKNNMap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunKNNPredict": {
+   "topic": "RunKNNPredict",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunLIANA": {
+   "topic": "RunLIANA",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunLISI": {
+   "topic": "RunLISI",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunLabelTransfer": {
+   "topic": "RunLabelTransfer",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunLargeVis": {
+   "topic": "RunLargeVis",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunLinkPeaks": {
+   "topic": "RunLinkPeaks",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "RunMDIC3": {
+   "topic": "RunMDIC3",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMDS": {
+   "topic": "RunMDS",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMERINGUE": {
+   "topic": "RunMERINGUE",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMetaCell": {
+   "topic": "RunMetaCell",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMetabolism": {
+   "topic": "RunMetabolism",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMilo": {
+   "topic": "RunMilo",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunMistyR": {
+   "topic": "RunMistyR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMonocle2": {
+   "topic": "RunMonocle2",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMonocle3": {
+   "topic": "RunMonocle3",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMotifEnrichment": {
+   "topic": "RunMotifEnrichment",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunMultiNichenetr": {
+   "topic": "RunMultiNichenetr",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunNMF": {
+   "topic": "RunNMF",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunNichenetr": {
+   "topic": "RunNichenetr",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunPAGA": {
+   "topic": "RunPAGA",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunPCA": {
+   "topic": "RunPCA",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunPCAMap": {
+   "topic": "RunPCAMap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunPHATE": {
+   "topic": "RunPHATE",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunPaCMAP": {
+   "topic": "RunPaCMAP",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunPalantir": {
+   "topic": "RunPalantir",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunPermutation": {
+   "topic": "RunPermutation",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunPropeller": {
+   "topic": "RunPropeller",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunProportionTest": {
+   "topic": "RunProportionTest",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunRCTD": {
+   "topic": "RunRCTD",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunRareQ": {
+   "topic": "RunRareQ",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunReferenceMapping": {
+   "topic": "RunReferenceMapping",
+   "state": "not_run",
+   "reason": "requires Signac (ChromatinAssay S4 methods; Suggests not installed)"
+  },
+  "RunSCENIC": {
+   "topic": "RunSCENIC",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSCENICPlus": {
+   "topic": "RunSCENICPlus",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSCExplorer": {
+   "topic": "RunSCExplorer",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSCVELO": {
+   "topic": "RunSCVELO",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSPOTlight": {
+   "topic": "RunSPOTlight",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSTdeconvolve": {
+   "topic": "RunSTdeconvolve",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSciBet": {
+   "topic": "RunSciBet",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunScissor": {
+   "topic": "RunScissor",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunScmap": {
+   "topic": "RunScmap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunScrublet": {
+   "topic": "RunScrublet",
+   "state": "not_run",
+   "reason": "requires Python backend (reticulate env not configured)"
+  },
+  "RunSecAct": {
+   "topic": "RunSecAct",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSecActCCC": {
+   "topic": "RunSecActCCC",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSecActPatternGenes": {
+   "topic": "RunSecActPatternGenes",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSecActSignalingPattern": {
+   "topic": "RunSecActSignalingPattern",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSecActVelocity": {
+   "topic": "RunSecActVelocity",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSeuratMap": {
+   "topic": "RunSeuratMap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSingleR": {
+   "topic": "RunSingleR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSlingshot": {
+   "topic": "RunSlingshot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSmoothClust": {
+   "topic": "RunSmoothClust",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpaNorm": {
+   "topic": "RunSpaNorm",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpaTalk": {
+   "topic": "RunSpaTalk",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpatialBenchmark": {
+   "topic": "RunSpatialBenchmark",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpatialCellChat": {
+   "topic": "RunSpatialCellChat",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpatialDM": {
+   "topic": "RunSpatialDM",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSpatialEcoTyper": {
+   "topic": "RunSpatialEcoTyper",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSpatialGradientFeatures": {
+   "topic": "RunSpatialGradientFeatures",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpatialIntegration": {
+   "topic": "RunSpatialIntegration",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunSpatialNeighborhood": {
+   "topic": "RunSpatialNeighborhood",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpatialNetwork": {
+   "topic": "RunSpatialNetwork",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpatialVariableFeatures": {
+   "topic": "RunSpatialVariableFeatures",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpotQC": {
+   "topic": "RunSpotQC",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSpotSweeper": {
+   "topic": "RunSpotSweeper",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunStandardWorkflow": {
+   "topic": "RunStandardWorkflow",
+   "state": "not_run",
+   "reason": "requires xgboost<2.0.0; installed 3.2.1.1"
+  },
+  "RunStatialKontextual": {
+   "topic": "RunStatialKontextual",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunSymphonyMap": {
+   "topic": "RunSymphonyMap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunTriMap": {
+   "topic": "RunTriMap",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunUMAP": {
+   "topic": "RunUMAP",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunUMAP2": {
+   "topic": "RunUMAP2",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunVECTOR": {
+   "topic": "RunVECTOR",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunWOT": {
+   "topic": "RunWOT",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunmcRigor": {
+   "topic": "RunmcRigor",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunscCODA": {
+   "topic": "RunscCODA",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunscDblFinder": {
+   "topic": "RunscDblFinder",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunscFEA": {
+   "topic": "RunscFEA",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunscMalignantFinder": {
+   "topic": "RunscMalignantFinder",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunscMalignantRegion": {
+   "topic": "RunscMalignantRegion",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunscMalignantStates": {
+   "topic": "RunscMalignantStates",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunscOMM": {
+   "topic": "RunscOMM",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunscPagwas": {
+   "topic": "RunscPagwas",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "RunscTenifoldKnk": {
+   "topic": "RunScTenifoldKnk",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RunscTenifoldNet": {
+   "topic": "RunscTenifoldNet",
+   "state": "not_run",
+   "reason": "installed package lazy-load db corrupt: scTenifoldNet"
+  },
+  "Runscds": {
+   "topic": "Runscds",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "RuntAge": {
+   "topic": "RuntAge",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SCENICPlot": {
+   "topic": "SCENICPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SCENICPlusPlot": {
+   "topic": "SCENICPlusPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "STdeconvolvePlot": {
+   "topic": "STdeconvolvePlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "ScaleData": {
+   "topic": "ScaleData",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "Scanorama_integrate": {
+   "topic": "Scanorama_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "ScissorPlot": {
+   "topic": "ScissorPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SelectIntegrationFeatures": {
+   "topic": "SelectIntegrationFeatures",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "SetSpatialImageAxes": {
+   "topic": "SetSpatialImageAxes",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "Seurat_integrate": {
+   "topic": "Seurat_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "SpaTalkPlot": {
+   "topic": "SpaTalkPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "SpatialBenchmarkPlot": {
+   "topic": "SpatialBenchmarkPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialCellChatPlot": {
+   "topic": "SpatialCellChatPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "SpatialCellPlot": {
+   "topic": "SpatialCellPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialCoordinates": {
+   "topic": "SpatialCoordinates",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialDMPlot": {
+   "topic": "SpatialDMPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialDeconvolutionPlot": {
+   "topic": "SpatialDeconvolutionPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialGradientPlot": {
+   "topic": "SpatialGradientPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialIntegrationPlot": {
+   "topic": "SpatialIntegrationPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialNeighborhoodPlot": {
+   "topic": "SpatialNeighborhoodPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialNeighborhoodProfile": {
+   "topic": "SpatialNeighborhoodProfile",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialNetworkPlot": {
+   "topic": "SpatialNetworkPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialSpotPlot": {
+   "topic": "SpatialSpotPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "SpatialVariableFeaturePlot": {
+   "topic": "SpatialVariableFeaturePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "StatialKontextualPlot": {
+   "topic": "StatialKontextualPlot",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "TACSPlot": {
+   "topic": "TACSPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "TrainCellTypist": {
+   "topic": "TrainCellTypist",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "Uncorrected_integrate": {
+   "topic": "Uncorrected_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "VECTORPlot": {
+   "topic": "VECTORPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "VelocityPlot": {
+   "topic": "VelocityPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "VolcanoPlot": {
+   "topic": "VolcanoPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "WNN_integrate": {
+   "topic": "WNN_integrate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "adata_to_srt": {
+   "topic": "adata_to_srt",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "ccc_to_adata": {
+   "topic": "ccc_to_adata",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "ccc_to_liana": {
+   "topic": "ccc_to_liana",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "check_python": {
+   "topic": "check_python",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "db_DoubletDetection": {
+   "topic": "deprecated-doublet-callers",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "db_Scrublet": {
+   "topic": "deprecated-doublet-callers",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "db_scDblFinder": {
+   "topic": "deprecated-doublet-callers",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "db_scds": {
+   "topic": "deprecated-doublet-callers",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "env_requirements": {
+   "topic": "env_requirements",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "fastMNN5_integrate": {
+   "topic": "fastMNN5_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "fastMNN_integrate": {
+   "topic": "fastMNN_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "giotto_to_srt": {
+   "topic": "giotto_to_srt",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "h5ad_to_srt": {
+   "topic": "h5ad_to_srt",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "integration_scop": {
+   "topic": "deprecated-workflows",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "loom_to_adata": {
+   "topic": "loom_to_adata",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "loom_to_srt": {
+   "topic": "loom_to_srt",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "remove_python": {
+   "topic": "remove_python",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "scFEABalanceBarPlot": {
+   "topic": "scFEABalanceBarPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "scFEAHeatmap": {
+   "topic": "scFEAHeatmap",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "scFEAVolcanoPlot": {
+   "topic": "scFEAVolcanoPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "scTenifoldKnkPlot": {
+   "topic": "scTenifoldKnkPlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "scTenifoldNetPlot": {
+   "topic": "scTenifoldNetPlot",
+   "state": "not_run",
+   "reason": "installed package lazy-load db corrupt: scTenifoldNet"
+  },
+  "scVI5_integrate": {
+   "topic": "scVI5_integrate",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "scVI_integrate": {
+   "topic": "scVI_integrate",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "scop_logo": {
+   "topic": "scop_logo",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "spe_to_srt": {
+   "topic": "spe_to_srt",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "srt_append": {
+   "topic": "srt_append",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "srt_reorder": {
+   "topic": "srt_reorder",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "srt_to_adata": {
+   "topic": "srt_to_adata",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "srt_to_giotto": {
+   "topic": "srt_to_giotto",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "srt_to_h5ad": {
+   "topic": "srt_to_h5ad",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "srt_to_spe": {
+   "topic": "srt_to_spe",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "standard_scop": {
+   "topic": "deprecated-workflows",
+   "state": "not_run",
+   "reason": "Rd has no examples section runnable"
+  },
+  "tAgePlot": {
+   "topic": "tAgePlot",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "theme_scop": {
+   "topic": "theme_scop",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  },
+  "theme_spatial": {
+   "topic": "theme_spatial",
+   "state": "pass",
+   "reason": "Rd example executed without error"
+  }
+ },
+ "reclassification": "fail->not_run applied where error is missing optional dep (Signac/xgboost-version/corrupt install/auto-install fail), not an upstream code bug",
+ "note": "pass=upstream Rd example executed clean in this env; proves callability only, not scientific validity. Python-backend examples need SCP_env/scvelo (pypi unreachable -> not_run)."
+}
