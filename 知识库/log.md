@@ -1395,3 +1395,5 @@
 ## [2026-11-12 09:24 UTC] record accepted as-is conclusions for missing inputs and external unavailability
 
 ## [2026-11-12 09:26 UTC] run figureya-57profile-1bw=fail
+
+## [2026-11-12 11:06 UTC] Clarify GDC failure evidence without assigning an unproven cause
