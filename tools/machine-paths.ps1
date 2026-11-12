@@ -97,6 +97,13 @@ if ($MyInvocation.InvocationName -ne '.') {
         $startInfo.UseShellExecute = $false
         $startInfo.CreateNoWindow = $true
         $startInfo.RedirectStandardInput = $true
+        # The child StandardInput StreamWriter is built from Console.InputEncoding and
+        # AutoFlush writes its BOM into the child stdin on UTF-8 consoles (chcp 65001).
+        # Switch to BOM-less UTF-8 so forwarded stdin stays byte-exact.
+        try {
+            [Console]::InputEncoding = New-Object System.Text.UTF8Encoding($false)
+        } catch {
+        }
         # Keep stdout/stderr handles intact and forward stdin without buffering it.
         if (-not ('ResearchWiki.InputBridge' -as [type])) {
             Add-Type -TypeDefinition @'

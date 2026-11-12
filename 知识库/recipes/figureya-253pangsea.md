@@ -87,6 +87,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `repair/SYNTHETIC_INPUTS.md`。
 - `easy_input_sample_annotation.txt`：easy_input_sample_annotation.txt，样本分组信息。整理自注释文件merged_sample_quality_annotations.tsv，下载自<http://api.gdc.cancer.gov/data/1a7d7be8-675d-4e60-a105-19d4121bdebf>。
 - `整理自注释文件merged_sample_quality_annotations.tsv`：easy_input_sample_annotation.txt，样本分组信息。整理自注释文件merged_sample_quality_annotations.tsv，下载自<http://api.gdc.cancer.gov/data/1a7d7be8-675d-4e60-a105-19d4121bdebf>。
 - `EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv`：EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv，表达矩阵，第一列是基因，之后是其在每个样本中的表达量。下载自<http://api.gdc.cancer.gov/data/3586c0da-64d0-4b74-a449-5ff4d9136611>。这里以TCGA数据为例，对于非肿瘤数据或其他物种数据，套用其格式即可，可忽略文中对筛
@@ -99,6 +100,7 @@ favorite: false
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-253pangsea`
 - 用到课题：`wiki.py use figureya-253pangsea --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。
@@ -109,6 +111,8 @@ favorite: false
 - `GSEA regarding enrichment score group in pancancer.pdf`
 
 ## 知识关联检查
+
+2026-11-12：作者 jb 接受的结论是 repair-pass，不是 as-is pass。最新 as-is 收据 `runs/20261104T110834Z.json` 仍为 fail，原因是缺输入文件（File 'EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv' does not exist or is non-readable）。修补副本收据 `repair-runs/20261111T091709Z.json`（scope=repair）为 pass，只证明修补副本在记录环境可执行。catalog 的 `run` 保持该 as-is 收据的 fail，不改成 pass。
 
 2026-11-04：查了同图型模板与方法页。库内暂无同图型模板。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 

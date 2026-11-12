@@ -1,5 +1,10 @@
 **/__pycache__/
 .obsidian/
 
+# Repair-run downloaded inputs over GitHub's 100 MB hard limit stay local-only;
+# names, sizes and sha256 are recorded in each recipe's repair.json.
+/recipes/figureya-215dnaage/repair/HumanMethylation450
+/recipes/figureya-275scaucell/repair/immune.combined.rds
+
 # Preserve upstream bytes required by source.json, including recorded OS metadata.
 !/recipes/**/source/**/.DS_Store

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-129tcgabox",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa129TCGAbox",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "__MACOSX/._HiSeqV2": "e6c9ae79f951a30032685137c4cb3c19e4fee317f4b43f757d5db47db7bcaefb",
+      "example.png": "f27af461b102791130d286c8b262683c5e9ee9b8e1aa59bbcabf508fd89d1c91",
+      "FigureYa129TCGAbox.Rmd": "17d9a362605795ae034a6129a5a0f9a891d3c204e1f7977c99e73e3a79782610",
+      "GBMLGG_clinicalMatrix": "873dc95ba064a051079b40a739d325817feac27cf8d5b4acdd15a9035befd49a",
+      "HiSeqV2": "8bc0de0a80673bd2dac26c1c6547cd67a020faa2b2b8496dbca2123550b8e305",
+      "HiSeqV2.zip": "562c9c6b787a9f7041347645ae151b49a77855da494389107b148f1c44b1fbdf",
+      "install_dependencies.R": "75c90de0193b8c275f2f8b9cc884b0e863a9cb8fd61b9e25d48a6b98a6863cd8",
+      "LGG_clinicalMatrix": "dd716f38aac05cb0e8cef4c1392802546e903eaa5d7f83bbf167f60bda1ddefe",
+      "PD-L1.pdf": "2179741077f770a94e112fcb54448703a5a8c7479a2e594d1d86baa71ddba145"
+    },
+    "excluded": [
+      "FigureYa129TCGAbox.html"
+    ],
+    "copied_at": "2026-11-04T10:12:47+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "__MACOSX/._HiSeqV2": "e6c9ae79f951a30032685137c4cb3c19e4fee317f4b43f757d5db47db7bcaefb",
+    "example.png": "f27af461b102791130d286c8b262683c5e9ee9b8e1aa59bbcabf508fd89d1c91",
+    "FigureYa129TCGAbox.Rmd": "17d9a362605795ae034a6129a5a0f9a891d3c204e1f7977c99e73e3a79782610",
+    "GBMLGG_clinicalMatrix": "873dc95ba064a051079b40a739d325817feac27cf8d5b4acdd15a9035befd49a",
+    "HiSeqV2": "8bc0de0a80673bd2dac26c1c6547cd67a020faa2b2b8496dbca2123550b8e305",
+    "HiSeqV2.zip": "562c9c6b787a9f7041347645ae151b49a77855da494389107b148f1c44b1fbdf",
+    "install_dependencies.R": "75c90de0193b8c275f2f8b9cc884b0e863a9cb8fd61b9e25d48a6b98a6863cd8",
+    "LGG_clinicalMatrix": "dd716f38aac05cb0e8cef4c1392802546e903eaa5d7f83bbf167f60bda1ddefe",
+    "mutation": "c9c50688ca66f2098c543a3808acae18e529f3f6218c28e92c396c33c77b1f38",
+    "PD-L1.pdf": "2179741077f770a94e112fcb54448703a5a8c7479a2e594d1d86baa71ddba145",
+    "SYNTHETIC_INPUTS.md": "75bbb82c7fe09601ef32cf68db362cf1281e6abff4651c9b1f044f30d551d907"
+  },
+  "changed_from_source": {
+    "added": [
+      "SYNTHETIC_INPUTS.md",
+      "mutation"
+    ],
+    "modified": [],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T064730Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T06:47:30+00:00",
+  "input_note": "包含合成输入；仅用于执行验证，不构成真实数据分析结论。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}

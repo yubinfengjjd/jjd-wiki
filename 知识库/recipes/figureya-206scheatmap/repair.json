@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-206scheatmap",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa206scHeatmap",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "1-s2.0-S0092867420300568-mmc1.xlsx": "b4043c63a9c509d3cffb02bea8dab90cbf5b45d2fde696b7918f857c945e6ba4",
+      "download.png": "a1879560943c9a1eef9a49eb7efdb50b684514f7d9ac280e08722ae7cf7df1e2",
+      "example.png": "858c0b4b457537df1ef4c8944c54f3fa0c7c1d7c1d312c3bbb77da846b0887e1",
+      "explain_picture.png": "cce2d1c7746c65dfbad57279e661253aa32d2255d161c98224141aa66b320ed0",
+      "FigureYa206scHeatmap.Rmd": "e0c17007d0676be51763989e7ed8e2c9a1bf65baafd8e0a3efd3b732f34df59f",
+      "install_dependencies.R": "7707ff25c91f475cf895eea8cedc0c342630158ea329f4f82db7b9657a58d44d",
+      "output_deg_EC.txt": "c83c1ff8234a7b2288aa8dd69b9d1e22bfdd4396e5b712a89bc27348ae920c48",
+      "output_deg_GC.txt": "f9ebeb3c1dc7fb7ef67badc4e798ce255a22a3c59d818b89908ee8a91f3ce0a5",
+      "output_deg_M.txt": "fa40d113cb85cda99e46490dac716178d424b1f616748ab9230e89eeae3de3f8",
+      "output_deg_NKT.txt": "d1291b8373d384ee109a99246b0e48ff1f1df2a3217fd1c884fd3e926854ce64",
+      "output_deg_OO.txt": "1a7075f8eab3239d26036479fb30a0d42da20f7c9095808a56feeca392bb723d",
+      "output_deg_SC.txt": "688f65ea2fefa5564d5435198b7c862e504768bd58b3fc58134c46343bc583f0",
+      "output_deg_SMC.txt": "8e486703f1b7e4e075b540a9d0097b763a08513e51f0401687006d74686fab1c",
+      "output_degs_sig.csv": "723fdebb6d101b000227a73929a1f7e5439b36b1fb71ca167494fb73a0b9122d",
+      "scHeatmap.pdf": "83e0562f5f6c43244669eefd5815576a4a74ce100af33ae0362484bae610e8a5",
+      "step1.png": "579f119c644e4ee9aa678ade2e76aacc562fb26b0fbac69bc56b8849eec452b5",
+      "step2.png": "e3072ecb63036539fa9c1b6c333c80636a9e91a953b035af403d446300de7b4a",
+      "step3.png": "110fa59a2fb8a57dcb2de0eb98dae095a83add7f4c354fb403a317faf1f4f5eb"
+    },
+    "excluded": [
+      "FigureYa206scHeatmap.html"
+    ],
+    "copied_at": "2026-11-04T10:01:15+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "1-s2.0-S0092867420300568-mmc1.xlsx": "b4043c63a9c509d3cffb02bea8dab90cbf5b45d2fde696b7918f857c945e6ba4",
+    "download.png": "a1879560943c9a1eef9a49eb7efdb50b684514f7d9ac280e08722ae7cf7df1e2",
+    "example.png": "858c0b4b457537df1ef4c8944c54f3fa0c7c1d7c1d312c3bbb77da846b0887e1",
+    "explain_picture.png": "cce2d1c7746c65dfbad57279e661253aa32d2255d161c98224141aa66b320ed0",
+    "FigureYa206scHeatmap.Rmd": "e0c17007d0676be51763989e7ed8e2c9a1bf65baafd8e0a3efd3b732f34df59f",
+    "GSE130664_merge_UMI_count.txt.gz": "a39445e1f97e4a28d2758d943d9bd0a624b4cffb5ab37f22f7cd5839b580fc7f",
+    "install_dependencies.R": "7707ff25c91f475cf895eea8cedc0c342630158ea329f4f82db7b9657a58d44d",
+    "output_deg_EC.txt": "c83c1ff8234a7b2288aa8dd69b9d1e22bfdd4396e5b712a89bc27348ae920c48",
+    "output_deg_GC.txt": "f9ebeb3c1dc7fb7ef67badc4e798ce255a22a3c59d818b89908ee8a91f3ce0a5",
+    "output_deg_M.txt": "fa40d113cb85cda99e46490dac716178d424b1f616748ab9230e89eeae3de3f8",
+    "output_deg_NKT.txt": "d1291b8373d384ee109a99246b0e48ff1f1df2a3217fd1c884fd3e926854ce64",
+    "output_deg_OO.txt": "1a7075f8eab3239d26036479fb30a0d42da20f7c9095808a56feeca392bb723d",
+    "output_deg_SC.txt": "688f65ea2fefa5564d5435198b7c862e504768bd58b3fc58134c46343bc583f0",
+    "output_deg_SMC.txt": "8e486703f1b7e4e075b540a9d0097b763a08513e51f0401687006d74686fab1c",
+    "output_degs_sig.csv": "723fdebb6d101b000227a73929a1f7e5439b36b1fb71ca167494fb73a0b9122d",
+    "scHeatmap.pdf": "83e0562f5f6c43244669eefd5815576a4a74ce100af33ae0362484bae610e8a5",
+    "step1.png": "579f119c644e4ee9aa678ade2e76aacc562fb26b0fbac69bc56b8849eec452b5",
+    "step2.png": "e3072ecb63036539fa9c1b6c333c80636a9e91a953b035af403d446300de7b4a",
+    "step3.png": "110fa59a2fb8a57dcb2de0eb98dae095a83add7f4c354fb403a317faf1f4f5eb"
+  },
+  "changed_from_source": {
+    "added": [
+      "GSE130664_merge_UMI_count.txt.gz"
+    ],
+    "modified": [],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T082815Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T08:28:15+00:00",
+  "input_note": "包含为跑通流程所做的最小修补或补齐输入；不声称真实数据科学有效性。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}

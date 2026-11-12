@@ -79,6 +79,7 @@ favorite: false
 
 ## 输入
 
+- ⚠️ 本配方部分输入为**合成输入**（格式相符的构造数据），仅用于执行验证，不构成真实数据分析结论；明细见 `repair/SYNTHETIC_INPUTS.md`。
 - `all_dsDMR.bed`：all_dsDMR.bed, non_exon_dsDMR.bed, download from <https://epigenome.wustl.edu/Zebrafish_DNAme/browse.php>
 - `non_exon_dsDMR.bed`：all_dsDMR.bed, non_exon_dsDMR.bed, download from <https://epigenome.wustl.edu/Zebrafish_DNAme/browse.php>
 - `random.bed`：random.bed, random regions generation (randomBed -l 500 -n 8225 -seed 6666 -g danRer7.chrom.sizes > random.bed)
@@ -88,6 +89,7 @@ favorite: false
 
 ## 怎么用
 
+- 修补执行副本：`repair/`（保留本轮最小修补与补齐输入；偏离与文件哈希见 `repair.json`，运行收据在 `repair-runs/`）。该副本不是上游原字节；标注的合成输入仅用于执行验证，不构成真实数据结论。预览图：`repair-preview.png`。
 - 原样运行（Wiki 专用环境）：`wiki.py run figureya-67phastcons`
 - 用到课题：`wiki.py use figureya-67phastcons --project <课题目录>`，按“输入”替换同名文件（列格式保持一致），参数在 Rmd 的“参数设置”段改；然后 `wiki.py run --dir <副本目录>`。
 - 改统计逻辑、阈值含义或分组定义前先问作者。
@@ -98,6 +100,8 @@ favorite: false
 - 见 Rmd（适配器未识别出输出文件名）。
 
 ## 知识关联检查
+
+2026-11-12：作者 jb 接受的结论是 repair-pass，不是 as-is pass。最新 as-is 收据 `runs/20261104T111903Z.json` 仍为 fail，原因是缺输入文件（File 'temp_signal_rev.txt' does not exist or is non-readable）。修补副本收据 `repair-runs/20261111T064717Z.json`（scope=repair）为 pass，只证明修补副本在记录环境可执行。catalog 的 `run` 保持该 as-is 收据的 fail，不改成 pass。
 
 2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/2026-10-22-scp-example__fig05-trend--trend|分组构成趋势图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 

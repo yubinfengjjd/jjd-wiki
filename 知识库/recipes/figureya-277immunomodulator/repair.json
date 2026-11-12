@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "kind": "recipe-repair",
+  "id": "figureya-277immunomodulator",
+  "created_at": "2026-11-12T06:27:21+00:00",
+  "upstream": {
+    "schema_version": 1,
+    "source": "figureya",
+    "item": "FigureYa277Immunomodulator",
+    "url": "https://github.com/ying-ge/FigureYa",
+    "commit": "8d7a02c7d00467c45471139b63620571afebbeba",
+    "license": "CC-BY-NC-SA-4.0",
+    "files": {
+      "ampFreq.txt": "17735220128e532d3364fff348bd86dd7f388a08d08e305842a564ac25552903",
+      "complexheatmap of immunomodulator.pdf": "a272bfc03f078d8c7f939003a24e13a99132b9820e8d49bc7813ae836aed63af",
+      "corExpMeth.txt": "81d717fca50f63777941ee598049bfb0db32944be7823dbdbfd584de61ab02e1",
+      "delFreq.txt": "ddbb516f3c6c799ed44016b4801409581bdf5f1500b85660d9689904731d4c93",
+      "easy_input_cna.txt": "f6a293cde3d9a653ea216442961853f338227ff5fa63dcb62aeef9ea4cdd7916",
+      "easy_input_expr.txt": "6c0ef7104bc9e445f4f054852f48eb608c1bbadb946ee2b5dd9b035835eebba4",
+      "easy_input_meth.txt": "e65c454b4e25e1005b2b2719a18c07a0da1243a14aabebcf88f47b7c36e37f29",
+      "easy_input_subtype.txt": "06c51714ef15f02bd61b11cdec240cf37da47cd909b9ee8a1077551310c87bfe",
+      "example.png": "8fe1f9820fe7d02245fe8fb8269cc8d434dc82bb5f34c72d55fcb77719386baf",
+      "explain_picture.png": "94db19fb3349cc7b292730046779ef8cf2e56a38633e279754251af8d65b253c",
+      "expMat.txt": "a028fc064432208fa03c9923cbda6eb342a721818b4c29794928af35e7008938",
+      "FigureYa277Immunomodulator.Rmd": "b1073a823a9523b3d6131e7405bdba92c28a7d6c42187b6adea5d779a79ed0d1",
+      "immunomodulator.txt": "b69d01d0f6a258a72e16f4ef46684251d9f39297831ad4e8dda36cb827a2703a",
+      "install.log": "bf4909cff7d955e4fae56d989d900bcaa10cc6e43186d501f3008131c13c0c03",
+      "install_dependencies.R": "f217a29497c2320a6f8cc2eddb45c3233ddfc5d62c5e9a512ef9683db7036f3a"
+    },
+    "excluded": [
+      "FigureYa277Immunomodulator.html"
+    ],
+    "copied_at": "2026-11-04T10:13:07+00:00"
+  },
+  "execution_tree": "repair/",
+  "files": {
+    "ampFreq.txt": "17735220128e532d3364fff348bd86dd7f388a08d08e305842a564ac25552903",
+    "complexheatmap of immunomodulator.pdf": "a272bfc03f078d8c7f939003a24e13a99132b9820e8d49bc7813ae836aed63af",
+    "corExpMeth.txt": "81d717fca50f63777941ee598049bfb0db32944be7823dbdbfd584de61ab02e1",
+    "delFreq.txt": "ddbb516f3c6c799ed44016b4801409581bdf5f1500b85660d9689904731d4c93",
+    "easy_input_cna.txt": "f6a293cde3d9a653ea216442961853f338227ff5fa63dcb62aeef9ea4cdd7916",
+    "easy_input_expr.txt": "6c0ef7104bc9e445f4f054852f48eb608c1bbadb946ee2b5dd9b035835eebba4",
+    "easy_input_meth.txt": "e65c454b4e25e1005b2b2719a18c07a0da1243a14aabebcf88f47b7c36e37f29",
+    "easy_input_subtype.txt": "06c51714ef15f02bd61b11cdec240cf37da47cd909b9ee8a1077551310c87bfe",
+    "example.png": "8fe1f9820fe7d02245fe8fb8269cc8d434dc82bb5f34c72d55fcb77719386baf",
+    "explain_picture.png": "94db19fb3349cc7b292730046779ef8cf2e56a38633e279754251af8d65b253c",
+    "expMat.txt": "a028fc064432208fa03c9923cbda6eb342a721818b4c29794928af35e7008938",
+    "FigureYa277Immunomodulator.Rmd": "bbc310c78ab7affbec955f2c06826273d1ca946c6201fb79fb25abf1e5ea8f68",
+    "immunomodulator.txt": "b69d01d0f6a258a72e16f4ef46684251d9f39297831ad4e8dda36cb827a2703a",
+    "install.log": "bf4909cff7d955e4fae56d989d900bcaa10cc6e43186d501f3008131c13c0c03",
+    "install_dependencies.R": "f217a29497c2320a6f8cc2eddb45c3233ddfc5d62c5e9a512ef9683db7036f3a"
+  },
+  "changed_from_source": {
+    "added": [],
+    "modified": [
+      "FigureYa277Immunomodulator.Rmd"
+    ],
+    "removed": []
+  },
+  "latest_run": "repair-runs/20261111T073633Z.json",
+  "latest_state": "pass",
+  "latest_scope": "repair",
+  "latest_started_at": "2026-11-11T07:36:33+00:00",
+  "input_note": "包含为跑通流程所做的最小修补或补齐输入；不声称真实数据科学有效性。",
+  "scope_note": "repair/ 与 source/ 分离；source/ 已恢复上游原字节。运行收据仅证明修补副本在记录环境可执行。"
+}
