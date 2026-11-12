@@ -1417,3 +1417,5 @@
 ## [2026-11-12 14:20 UTC] acceptance check scop-workflows
 
 ## [2026-11-12 14:39 UTC] acceptance check differential-expression
+
+## [2026-11-12 15:12 UTC] acceptance check scp-source-catalog
