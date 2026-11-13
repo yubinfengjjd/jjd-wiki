@@ -1,0 +1,106 @@
+[
+  {
+    "query": "我想做差异表达分析",
+    "cli": [
+      "figureya-119multiclasslimma",
+      "figureya-118multiclassdeseq2",
+      "differential-expression",
+      "figureya-120multiclassedger",
+      "figureya-149rankheatmap"
+    ],
+    "api": [
+      "figureya-119multiclasslimma",
+      "figureya-118multiclassdeseq2",
+      "differential-expression",
+      "figureya-120multiclassedger",
+      "figureya-149rankheatmap"
+    ],
+    "static": [
+      "figureya-119multiclasslimma",
+      "figureya-118multiclassdeseq2",
+      "differential-expression",
+      "figureya-120multiclassedger",
+      "figureya-149rankheatmap"
+    ],
+    "equal": true,
+    "index_version": 5
+  },
+  {
+    "query": "我想给细胞做注释",
+    "cli": [
+      "dimension-reduction-single-cell",
+      "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+      "cell-type-annotation",
+      "scrna-marker-annotation",
+      "figureya-194pyscenic"
+    ],
+    "api": [
+      "dimension-reduction-single-cell",
+      "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+      "cell-type-annotation",
+      "scrna-marker-annotation",
+      "figureya-194pyscenic"
+    ],
+    "static": [
+      "dimension-reduction-single-cell",
+      "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+      "cell-type-annotation",
+      "scrna-marker-annotation",
+      "figureya-194pyscenic"
+    ],
+    "equal": true,
+    "index_version": 5
+  },
+  {
+    "query": "判断每个细胞属于什么类型",
+    "cli": [
+      "cell-type-annotation",
+      "scrna-marker-annotation",
+      "scp-annotation-projection",
+      "2026-10-22-scp-example__fig08-group-heatmap",
+      "2026-10-22-scp-example__fig14-feature-heatmap"
+    ],
+    "api": [
+      "cell-type-annotation",
+      "scrna-marker-annotation",
+      "scp-annotation-projection",
+      "2026-10-22-scp-example__fig08-group-heatmap",
+      "2026-10-22-scp-example__fig14-feature-heatmap"
+    ],
+    "static": [
+      "cell-type-annotation",
+      "scrna-marker-annotation",
+      "scp-annotation-projection",
+      "2026-10-22-scp-example__fig08-group-heatmap",
+      "2026-10-22-scp-example__fig14-feature-heatmap"
+    ],
+    "equal": true,
+    "index_version": 5
+  },
+  {
+    "query": "coexpression",
+    "cli": [
+      "figureya-53ppimodule",
+      "correlation",
+      "figureya-202consensusgene",
+      "figureya-37correlationv2-update",
+      "scp-viz-dimplots"
+    ],
+    "api": [
+      "figureya-53ppimodule",
+      "correlation",
+      "figureya-202consensusgene",
+      "figureya-37correlationv2-update",
+      "scp-viz-dimplots"
+    ],
+    "static": [
+      "figureya-53ppimodule",
+      "correlation",
+      "figureya-202consensusgene",
+      "figureya-37correlationv2-update",
+      "scp-viz-dimplots"
+    ],
+    "equal": true,
+    "index_version": 5
+  }
+]

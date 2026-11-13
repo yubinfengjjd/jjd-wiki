@@ -1,4 +1,4 @@
-"""Deploy the research-wiki skill from 开发/staged to all six local installs.
+"""Deploy skills/research-wiki from the resolved dev checkout to six installs.
 
 Single entry point replacing the per-record copies under 维护记录/. Usage:
 

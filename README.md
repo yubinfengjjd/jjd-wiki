@@ -17,6 +17,8 @@
 
 ## 使用
 
+首次获取可选择轻量 `light` 或完整 `full` 配置，见 [快速开始](docs/getting-started.md)。`tools/get-wiki.ps1 -Destination <父目录> -Profile light` 获取两个同级仓库；按需补齐资产，正式维护前切换完整配置。既有完整检出保持完整。
+
 先按场景检索，再查看输入定义、单位与分组，最后复制进课题目录运行：
 
 ```text

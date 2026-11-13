@@ -2,7 +2,7 @@
 
 需求权威：作者本 chat 中逐项确认并要求实施的完整计划；需求、设计、交接视图见本目录其他文件。
 
-## 当前阶段
+## 开始实施时的记录
 
 - 当前分支：两库 codex/retrieval-layout-v3；保留当前检出，不另复制大型知识资产。
 - 前置基线：vault 3360f0e4；dev 76d4bd7。详细字节基线保存在现有环境 work/modernization-v3，不包含私有科研数据。
@@ -23,3 +23,13 @@ Ruling: 保留现有本机检出根，在命名分支开发；不另复制 4 GiB
 Ruling: 当前 Anaconda 缺 FastAPI，但既有 Wiki 环境中已经安装。测试使用 Anaconda 解释器并将既有 site-packages 加入 PYTHONPATH；没有安装或升级依赖。
 
 Ruling: 当前没有 ego-browser 命令。浏览器验收采用仓库现有 Chrome CDP 驱动；不为验证安装新浏览器或包。
+
+## 收尾结果（2026-11-13）
+
+检索核心 index v5、CLI/API/静态入口、网页全库搜索、按需资产和轻量维护边界已实现。开发库目录及主库 gallery/archive/integrations 已迁移并保留仅本地的旧路径联接。原跟踪材料和用户/收据哈希未改变，当前文档 41 个相对链接无断链。需求、设计与结果见 [验收报告](acceptance.md)。
+
+40 问 Recall@5 85%→97.5%。最终后端针对性 110 passed/2 skipped/1 local deselected，工具 76 passed，前端 26 项 Node 检索与路径测试和既有 SSR 检查通过，生产构建通过。独立复核允许继续本地部署；全库长跑原生异常及既有规则模板差异均在报告中单列，没有改知识状态消除问题。
+
+开发库提交 `c0b983b` 已快进本地 main；六处副本各 365 文件与来源完全一致，配置已备份同步。GitHub 尚未推送，原仓库历史未改写。本轮 QA 服务已停止，没有结束 Codex 或其他用户应用。
+
+**剩余一项：** `知识库 → wiki` 的物理目录改名仍受 Codex app-server 的 methods 目录句柄影响。关闭 Codex 后执行验收报告中的 `tools/finish-layout.py`，它会复用同一迁移、字节校验、提交和六处配置同步流程。成功会写后继 `layout-completion.json`；此前不将整轮迁移标为已完成。
