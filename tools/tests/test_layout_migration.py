@@ -158,3 +158,28 @@ def test_ignored_nested_git_and_obsidian_preserved(tmp_path):
     m.rollback(record)
     assert m.snapshot(root / '维护记录') == before_audit
     assert m.snapshot(root / '知识库') == before_wiki
+
+
+def test_config_rewrite_normalizes_repeated_windows_separators():
+    m = load()
+    result = m.rewrite_config({'wiki_root': r'E:\\research-wiki\\知识库'},
+                              [('E:/research-wiki/知识库', 'E:/research-wiki/wiki')])
+    assert result['wiki_root'] == 'E:/research-wiki/wiki'
+
+
+def test_interrupted_after_atomic_move_before_after_hash_can_rollback(tmp_path, monkeypatch):
+    m = load()
+    root = fixture_repo(tmp_path / 'vault')
+    original = m.snapshot(root / '知识库')
+    real_snapshot = m.snapshot
+    def interrupted(path):
+        if Path(path) == root / 'wiki':
+            raise OSError('interrupted after rename')
+        return real_snapshot(path)
+    monkeypatch.setattr(m, 'snapshot', interrupted)
+    record = tmp_path / 'record'
+    with pytest.raises(OSError, match='interrupted'):
+        m.apply([(root, 'vault')], record, aliases=False)
+    monkeypatch.setattr(m, 'snapshot', real_snapshot)
+    m.rollback(record)
+    assert m.snapshot(root / '知识库') == original

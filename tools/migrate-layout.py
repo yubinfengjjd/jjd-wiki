@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import stat
@@ -104,6 +105,10 @@ def rewrite_config(value, replacements):
         for old, new in sorted(replacements, key=lambda item: -len(item[0])):
             # Only path prefixes; no content/search-and-replace in user strings.
             normalized = value.replace('\\', '/')
+            unc = normalized.startswith('//')
+            normalized = re.sub('/+', '/', normalized)
+            if unc:
+                normalized = '/' + normalized
             if normalized.casefold() == old.casefold() or normalized.casefold().startswith(old.casefold() + '/'):
                 return new + normalized[len(old):]
     return value
@@ -155,6 +160,8 @@ def apply(repos, record, aliases=True):
         for m in moves:
             source, target = Path(m['root']) / m['old'], Path(m['root']) / m['new']
             target.parent.mkdir(parents=True, exist_ok=True)
+            m['move_intent'] = True
+            save(record, data)
             source.rename(target)
             m['moved'] = True
             m['after'] = snapshot(target)
@@ -243,6 +250,11 @@ def rollback(record):
             raise ValueError('invalid migration record path')
         # The old path may be our alias; validate its identity separately below.
         safe(root, m['new'])
+        old, target = root / m['old'], root / m['new']
+        if m.get('move_intent') and not m.get('moved') and target.exists() and not old.exists():
+            # Atomic rename may have completed just before the process stopped.
+            # The full before-hash comparison below must still pass.
+            m['moved'] = True
         if Path(m['old']).parent != Path('.'):
             safe(root, str(Path(m['old']).parent))
         aliases_allowed.add((str(root / m['old']), str(root / m['new'])))
@@ -275,7 +287,7 @@ def rollback(record):
         if m['moved']:
             target = Path(m['root']) / m['new']
             actual = snapshot(target) if target.exists() else None
-            expected = dict(m['after'])
+            expected = dict(m.get('after', m['before']))
             # An interrupted config write may precede the final tree snapshot.
             # Accept only the explicitly journaled old/new config hashes.
             if actual is not None and data['state'] != 'applied':
