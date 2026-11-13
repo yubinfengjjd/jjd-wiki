@@ -383,10 +383,11 @@ source:
 license: GPL-3.0-or-later
 cite:
 - Meng Xu et al. scop 0.9.2. https://github.com/mengxu98/scop/tree/2f44f8c52c247c5a5b42a8a2cb3a7c9800ae24cb
-summary: 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；完整来源导航，本机未运行。
+summary: 固定 scop 0.9.2：362 个导出、81 个绘图入口与 12 个上游流程；核心包已装 Wiki R 库，逐 Rd 示例执行矩阵 250 pass
+  / 112 not_run / 0 fail（2026-11-12）。
 data_contract:
-  input: 固定 commit 的 scop 源码、Rd、上游数据说明和工作流；本页仅编译知识，未执行分析。
-  output: 来源、输入语义、方法/绘图选择与未验证边界；没有本机分析结果或可执行验证授予。
+  input: 固定 commit 的 scop 源码、Rd、上游数据说明和工作流；另含上游 Rd 示例在本机 Wiki R 库的逐条执行收据。
+  output: 来源、输入语义、方法/绘图选择与逐导出执行状态；收据只证明示例可调用，不授予科学有效性。
 ---
 # 单细胞与空间组学来源索引
 
@@ -417,7 +418,7 @@ data_contract:
 
 ## 不适用
 
-本机没有运行 scop，也没有已验证 scop 实现。上游 README、vignette、单元测试和 CI 的存在不等于本机后端或科学有效性已验收；本页不作可执行分析推荐。
+scop 0.9.2 已按批准计划装入 Wiki 专用 R 库并完成逐 Rd 示例执行矩阵（[execution-matrix.json](/files/wiki/methods/scop-source-catalog/execution-matrix.json)：250 pass / 112 not_run / 0 fail）。pass 只证明上游示例在本机可调用；约 120 个 Suggests 可选包未装、Python 后端未配置，仍无已验证的科学分析实现。上游 README、vignette、单元测试和 CI 的存在不等于本机后端或科学有效性已验收；本页不作可执行分析推荐。
 
 ## 输入
 
@@ -445,11 +446,11 @@ data_contract:
 
 ## 依赖与运行边界
 
-当前 Wiki 专用 R 库没有安装 scop；Imports/LinkingTo 中缺 `thisplot >= 0.4.3`、`thisutils >= 0.5.3`。已按声明检查核心包的依赖与版本存在性，尚未做加载、编译或后端验证。[依赖存在性清单](/files/wiki/methods/scop-source-catalog/dependency-presence.json) 单列声明与本机状态；可选 R/Python 后端不因主包可加载而获验证。
+核心运行验收已按批准批次完成：[core-install-receipt.json](/files/wiki/methods/scop-source-catalog/core-install-receipt.json) 记录 scop 0.9.2（GitHub `2f44f8c` 源码编译）、thisplot 0.4.6（`df334d3`）、thisutils 0.5.3（`a9fd2d6`）、geomtextpath 0.2.0、pak 0.11.2（计划写 0.11.1，实装 0.11.2 已如实记录），全部进入 Wiki 专用库 `R-lib-4.5-3.21`；`library(scop)` 加载成功、362 个导出可见。pak 依赖解析曾将 thisplot 升至 0.4.7，已回装固定提交 0.4.6 并复验。[依赖存在性清单](/files/wiki/methods/scop-source-catalog/dependency-presence.json) 单列声明与本机状态。
 
-核心运行验收的待批准批次已整理为 [core-install-plan.json](/files/wiki/methods/scop-source-catalog/core-install-plan.json)：scop 0.9.2、thisplot 0.4.6、thisutils 0.5.3、geomtextpath 0.2.0、pak 0.11.1。GitHub 核心包固定源码提交；CRAN 包记录当前 Windows 4.5 仓库版本。只针对核心加载与代表用例，不包含可选 R/Python 后端。
+执行矩阵（2026-11-12）：对全部 357 个 Rd topic 逐条运行 `utils::example()`，按导出回写 [inventory.json](/files/wiki/methods/scop-source-catalog/inventory.json) 的 `state`/`reason` 并生成 [execution-matrix.json](/files/wiki/methods/scop-source-catalog/execution-matrix.json)。初判 15 个 fail 经复核全部改判 not_run——均为缺可选依赖而非上游代码缺陷：ATAC 系列缺 Signac（ChromatinAssay S4 方法）、RunBayesSpace/RunStandardWorkflow 受 xgboost 3.2.1.1 与 <2.0.0 版本约束、scTenifoldNet 系因已装包 lazy-load 库损坏。not_run 主因：无可运行 Rd 示例、约 120 个 Suggests 未装、Python 后端未配置、需联网数据库。**pass 只证明上游示例在本机可调用，不证明算法正确性或科学有效性。**
 
-`PrepareEnv()` 可自动下载/安装环境管理器与依赖，故本次没有调用。装包须作者按批次批准后只进 Wiki 专用库；不改作者课题环境。
+Python 后端（scvelo/scTenifoldNet 等）未配置：pypi 连接失败，相关示例全部记 not_run；`PrepareEnv()` 会自动下载/安装环境，本次未调用。可选 R 后端（BBKNN/conos/rliger/scmap 等 Suggests）未装，按依赖缺口记录，不影响已登记的 pass 判定。
 
 ## 许可与原始层
 
@@ -463,7 +464,7 @@ Windows 检出有 985 个文件仅行尾 CRLF/LF 与 Git blob 不同，实际文
 
 ## 输出
 
-本批编译 362 个唯一导出、2503 个 R 顶层定义、84 个 S3 注册、81 个绘图入口和 12 个工作流。各执行状态均为 not_run；没有新图或运行通过收据。
+本批编译 362 个唯一导出、2503 个 R 顶层定义、84 个 S3 注册、81 个绘图入口和 12 个工作流。2026-11-12 执行矩阵回写后：**pass 250 / not_run 112 / fail 0**（按导出计；Rd topic 口径 357 条）。逐条判定与原始消息见 [execution-matrix.json](/files/wiki/methods/scop-source-catalog/execution-matrix.json)；来源分层见 [inventory.json](/files/wiki/methods/scop-source-catalog/inventory.json)。这些是可调用性收据，不是新图产物或科学有效性验收。
 
 ## 知识关联检查
 
@@ -471,7 +472,9 @@ Windows 检出有 985 个文件仅行尾 CRLF/LF 与 Git blob 不同，实际文
 
 ## 使用记录
 
-2026-11-01：作者指定该仓库入库。固定版本、完整来源归档和知识编译；没有装包、执行上游代码、代签核或记录课题使用。
+2026-11-01：作者指定该仓库入库。固定版本、完整来源归档和知识编译。
+
+2026-11-12：作者批准最小包集装入 Wiki R 库（core-install-receipt.json），执行全量 Rd 示例矩阵并回写逐导出状态；可选后端与 Python 环境仍未配置，pass 仅为可调用性证据。
 
 ## 资料确认记录（2026-11-02）
 
