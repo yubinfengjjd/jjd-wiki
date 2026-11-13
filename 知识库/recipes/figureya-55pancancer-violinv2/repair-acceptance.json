@@ -1,0 +1,25 @@
+{
+  "id": "figureya-55pancancer-violinv2",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "easy_input.csv": "d28f93290753f803a1f9a69e33ff24f426b73b65031953e9d054839b4a41b14a",
+    "example.png": "bc132b1d61e40defb18660c6c64dbb74114912a5dc7c67288869dbd980fd010b",
+    "FigureYa55panCancer_violinV2.jpg": "8c2f8f1286a97c7057b6301f6c95ecb3f589761d938c49d0c6e0608522433e9c",
+    "FigureYa55panCancer_violinV2.Rmd": "877dcb714fdb5760cb0394f346ab7bf2346651e1c523e892f84bf80448071cd5",
+    "GeomSplitViolin.R": "ff085aa8af1aee1c88c3311ec134e18a2177a6da28a536a92815a37d0ce8d031",
+    "GTEX_phenotype.gz": "dcfa8391588151c2273e36c3fe16e1103120a8d8202df2c147e9c74884dead0d",
+    "install_dependencies.R": "f82a5c27ca7790de1eae8d4fbec4e8105f83a81d8175bfcd3d3837bed22a0477",
+    "read_part.R": "2b437897a433bfd696cebee74d3c036407e71bb603c2066206e21f735d60bad8",
+    "samplepair.txt": "fe431f5f21bd2bc2e8dacc18c27527510965a523a3f5d348bf830539184e7f7c",
+    "TP53expression.pdf": "93702b6d0582ad2aa769f76f3403c086e771ed28ccf488c3d986af52f95bbcbc"
+  },
+  "manifest_sha256": "250e7f4120d1468a89f03be0ec4a9d3246a44f68d27a9c71340e64351231df19",
+  "receipt": "repair-runs/20261111T072549Z.json",
+  "receipt_sha256": "2cb2be4b56d666f778f230e0822f64360b1dbc6860cdf905d38032df7c37aa4f",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:22.749214+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}

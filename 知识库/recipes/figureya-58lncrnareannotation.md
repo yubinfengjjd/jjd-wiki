@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-58lncrnareannotation
 title: 芯片探针lncRNA重注释
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa58lncRNAreannotation

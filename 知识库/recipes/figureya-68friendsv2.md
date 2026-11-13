@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-68friendsv2
 title: GO语义相似度箱线云雨图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa68friendsV2

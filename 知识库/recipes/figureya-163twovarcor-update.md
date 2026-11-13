@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-163twovarcor-update
 title: 分组相关性散点与系数差异检验
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa163twoVarCor_update

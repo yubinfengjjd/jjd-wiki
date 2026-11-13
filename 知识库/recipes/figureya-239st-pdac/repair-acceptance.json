@@ -1,0 +1,31 @@
+{
+  "id": "figureya-239st-pdac",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "download.png": "2758c7d6fee1e5a8b3c877422e39b89389238a380ae56bde03cc540f26ee061d",
+    "example.png": "6f2fef20e05f3fe931745b58f33da1410d8a94ab59459bff4ab429c4eda48ab1",
+    "explain picture.png": "5ae876d95fc93d550a99d58f131e03ef0d7c03d890a8d5408b60369455c5cd14",
+    "FigureYa239ST_PDAC.Rmd": "9c87e3c356dd1cd605d03a741e8f1641e04c822daeee27f39bec2c6ab8fab192",
+    "GSE111672_PDAC-A-indrop-filtered-expMat.txt": "f4a49f23afdb3ce6fc3a8c9a85efff3b9341a53b0c483e31b034290ba439930a",
+    "GSE111672_PDAC-B-indrop-filtered-expMat.txt": "41eefb027877c5cad4a55e86858a8090306244b0a8d1db108603479bb1e387b6",
+    "GSE111672_RAW/GSM3036911_PDAC-A-ST1-filtered.txt": "aa0c462f93ebf54bbe6a67f12ca90aa4c76edae3a7d7526ac43a4f1dfd128016",
+    "GSE111672_RAW/GSM3405534_PDAC-B-ST1-filtered.txt": "9b9c8d34779cc07b42432f6c2475cdc530fb04c5a4afa63e7e176ecd1f5ba543",
+    "install_dependencies.R": "3036d133b6d77c7768fa545a6bebebd537a61b2745ca656ad38209a155cda852",
+    "MIA.png": "38f85942b9bb2ab368ce770bbd49e86fd90f75702b929dc6a8e5582ff8a60b33",
+    "MIA_A.pdf": "5a4c9ae5a88db81578e6a94f03ac95f34c207e16e70025c5f758350a40420e05",
+    "MIA_B.pdf": "a0d8feac1d2716325f4c96ca15fe7f4e2e341adf5ea54c78ef7b02dc5e21fd18",
+    "MUC4_B.pdf": "e959ad0f130fa6f0ae7f5fadb5b87da496e27c2eb63255c59192809d4f9a9740",
+    "PRSS1_A.pdf": "6e3b4b20f68e072751bb60026c977b53abfe2816354ca01534014d5c0c11bf55",
+    "region_A.pdf": "46d4251a266cbf41a2c12a97d36367d21dad0d773eeb1ed647a234725b42f7f5",
+    "region_B.pdf": "dd944fc0ab7f963228c2dafebbbd89ce106fe51297a11cf8fe5c1d1755d41d02"
+  },
+  "manifest_sha256": "0c2c503de066bfcf813715b729908c002e795edd6fd0b24fa32267a578c23ecd",
+  "receipt": "repair-runs/20261111T094539Z.json",
+  "receipt_sha256": "51c7e2f723e972b25f62f068f4895efa6df711006666433538207672c6705e70",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:13.798309+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}

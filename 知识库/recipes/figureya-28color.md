@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-28color
 title: 论文图片配色提取色卡
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa28color

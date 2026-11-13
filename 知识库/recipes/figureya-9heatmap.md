@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-9heatmap
 title: 样本相关聚类热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa9heatmap

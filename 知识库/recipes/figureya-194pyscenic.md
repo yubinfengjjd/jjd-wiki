@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-194pyscenic
 title: 单细胞转录调控网络构建
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa194pySCENIC

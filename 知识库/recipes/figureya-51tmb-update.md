@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-51tmb-update
 title: 基因表达分组的TMB箱图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa51TMB_update

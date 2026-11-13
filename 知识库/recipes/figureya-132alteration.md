@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-132alteration
 title: 泛癌通路基因变异扫雷图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa132alteration

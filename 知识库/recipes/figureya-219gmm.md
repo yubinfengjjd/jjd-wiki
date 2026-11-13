@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-219gmm
 title: 高斯混合模型筛选最优分类模型
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa219GMM

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-75bubble-volcano
 title: 分组气泡火山图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa75bubble_volcano

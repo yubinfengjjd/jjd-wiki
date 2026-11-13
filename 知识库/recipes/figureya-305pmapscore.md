@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-305pmapscore
 title: KEGG通路突变预后评分图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa305PMAPscore

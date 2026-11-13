@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-13T12:40:30.833459+00:00",
+  "page": "recipes/figureya-61gsva.md",
+  "snapshot": "653184dc89d2724723622a35908c63c64e1a99b6e6f865f18c455b89b99a3ad3",
+  "checks": {
+    "用途": "present_nonplaceholder",
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "输入": "present_nonplaceholder",
+    "怎么用": "present_nonplaceholder",
+    "输出": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "not_required",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

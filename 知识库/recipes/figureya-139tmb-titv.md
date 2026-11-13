@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-139tmb-titv
 title: 泛癌突变负荷与碱基谱图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa139TMB_titv

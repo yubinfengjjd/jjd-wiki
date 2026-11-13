@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-61gsva
 title: GSVA 通路评分与组间差异
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa61GSVA

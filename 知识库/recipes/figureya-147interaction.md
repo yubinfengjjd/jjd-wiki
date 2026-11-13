@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-147interaction
 title: 带证据评分的放射互作网络图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa147interaction

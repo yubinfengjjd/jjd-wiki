@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-34count2fpkmv2
 title: RNA-seq读数转FPKM换算
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa34count2FPKMv2

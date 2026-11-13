@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-73batchcorrelation
 title: 目标基因批量相关散点图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa73batchCorrelation

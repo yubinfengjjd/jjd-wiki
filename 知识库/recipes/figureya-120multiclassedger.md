@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-120multiclassedger
 title: 多组edgeR配对差异分析
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa120MulticlassedgeR

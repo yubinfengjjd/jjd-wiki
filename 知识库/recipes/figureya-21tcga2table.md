@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-21tcga2table
 title: TCGA临床特征三线表
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa21TCGA2table

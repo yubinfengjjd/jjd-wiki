@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-114ternarycluster
 title: 通路基因三态表达聚类热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa114ternaryCluster

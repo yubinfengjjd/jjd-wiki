@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-97correlationv3
 title: 基因免疫浸润相关热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa97correlationV3

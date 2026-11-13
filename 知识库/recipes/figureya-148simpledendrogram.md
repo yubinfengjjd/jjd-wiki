@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-148simpledendrogram
 title: 带注释的样本聚类树状图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa148SimpleDendrogram

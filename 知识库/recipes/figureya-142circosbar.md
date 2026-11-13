@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-142circosbar
 title: 环状热图连线柱图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa142circosBar

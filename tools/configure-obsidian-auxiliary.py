@@ -4,13 +4,14 @@ import hashlib
 import json
 import shutil
 from datetime import datetime
+from machine_paths import resolve_input_path, resolve_dev_root, resolve_skill_root
 
-BASE = Path(r'E:\research-wiki')
-VAULT = BASE / '知识库'
-RECORD = BASE / '维护记录' / '2026-10-22-Obsidian辅助与神经图谱'
+BASE = Path(__file__).resolve().parents[1]
+VAULT = resolve_input_path(BASE, '知识库')
+RECORD = resolve_input_path(BASE, '维护记录') / '2026-10-22-Obsidian辅助与神经图谱'
 SKILLS = [Path(r'C:\Users\86186') / relative for relative in
           ('.codex/skills/research-wiki', '.agents/skills/research-wiki', '.claude/skills/research-wiki')]
-STAGED = BASE / '开发/staged/research-wiki'
+STAGED = resolve_skill_root(resolve_dev_root(BASE))
 PLUGIN = 'research-wiki-neural-view'
 
 RULES = '''

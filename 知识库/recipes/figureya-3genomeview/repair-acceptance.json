@@ -1,0 +1,25 @@
+{
+  "id": "figureya-3genomeview",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "easy_input.txt": "2e3c7ba9a00a24f95c3cc1c474feba24618c978244cc63d67df17d57c39e63b4",
+    "FigureYa3genomeView.jpg": "c56e734ed38588a677a0179f6668e5015d28e35b8fee9c6bd909558e1b33bc83",
+    "FigureYa3genomeView.Rmd": "f6b0092f4f849723fe8ed0dc162fc9ec3c3f57a745f33f9c7727e0e70853ba97",
+    "FigureYa3输入文件.txt": "b92f60da79e9516551f247bd63fd721707d90e72cc062114d7e4ebc7edf9b2de",
+    "install_dependencies.R": "c48192b40e34e3a0c62b0a78492b55f53587ac78fb69eb6441961179a672b1cd",
+    "loci.bed": "a5022297c9be18037ebc1ba470c1af140b4d3d90d39b0239ac6e5e23182d45a1",
+    "loci.pdf": "9148301f51643d72d9fc3edb18ed315b04d50e97be540690789d46b16c835f5e",
+    "POLR2A.bw": "f0b7daa9bf73c3d3c7e6ed246cbbc07ac2661460a897df9bee082a47458ec835",
+    "SYNTHETIC_INPUTS.md": "dafc07bf3fe373528ce254659becdc833df64c9364f74658a4e6d424bbfeeb89",
+    "TAL1.bw": "f0b7daa9bf73c3d3c7e6ed246cbbc07ac2661460a897df9bee082a47458ec835"
+  },
+  "manifest_sha256": "98167f786fb3a5b0ab66f2b911cfc0cb077dc4c94193ecf631b4495917a58ddc",
+  "receipt": "repair-runs/20261111T064434Z.json",
+  "receipt_sha256": "57971372f5c0467bd4230f40d6d982278aeec6e74a61cdcdd10bbce55a96e666",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:21.182367+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}

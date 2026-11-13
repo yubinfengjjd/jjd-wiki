@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-42oncoprintv2-update
 title: 按通路分组的突变瀑布图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa42oncoprintV2_update

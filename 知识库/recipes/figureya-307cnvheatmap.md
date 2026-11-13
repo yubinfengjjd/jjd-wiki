@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-307cnvheatmap
 title: 基因组拷贝数变异热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa307CNVHeatmap

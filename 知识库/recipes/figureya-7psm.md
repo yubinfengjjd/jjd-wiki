@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-7psm
 title: 病例对照倾向得分匹配
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa7PSM

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-13T12:40:29.911926+00:00",
+  "page": "recipes/figureya-43manhattanv2.md",
+  "snapshot": "4a88325c521c1de0181241ec1b1fc05fa550cd1052a1e38cb1ff590e48d6f2e8",
+  "checks": {
+    "用途": "present_nonplaceholder",
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "输入": "present_nonplaceholder",
+    "怎么用": "present_nonplaceholder",
+    "输出": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "not_required",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

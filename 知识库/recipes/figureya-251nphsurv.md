@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-251nphsurv
 title: 非比例风险亚组生存图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa251NPHSurv

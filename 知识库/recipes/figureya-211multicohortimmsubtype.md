@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-211multicohortimmsubtype
 title: 多队列免疫分型热图与生存曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa211multiCohortImmSubtype

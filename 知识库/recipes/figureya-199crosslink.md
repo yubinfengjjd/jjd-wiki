@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-199crosslink
 title: 分组节点跨列连线图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa199crosslink

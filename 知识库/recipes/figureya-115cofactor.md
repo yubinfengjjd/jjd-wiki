@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-115cofactor
 title: ChIP-seq样本相关性聚类热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa115cofactor

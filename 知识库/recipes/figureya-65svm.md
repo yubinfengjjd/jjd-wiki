@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-65svm
 title: LASSO与SVM-RFE特征筛选图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa65SVM

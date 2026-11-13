@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-26circos-r
 title: 分组环形连线关系图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa26circos_R

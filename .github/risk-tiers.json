@@ -9,11 +9,16 @@
     "tools/deploy.py",
     "tools/launcher.ps1",
     "知识库/AGENTS.md",
-    "知识库/.protected-hashes.json"
+    "知识库/.protected-hashes.json",
+    "wiki/AGENTS.md",
+    "wiki/.protected-hashes.json"
   ],
   "low": [
     "知识库/log.md",
     "文档/**/*.md",
-    "*.md"
+    "*.md",
+    "wiki/log.md",
+    "archive/docs/**/*.md",
+    "docs/**/*.md"
   ]
 }

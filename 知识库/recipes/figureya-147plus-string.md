@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-147plus-string
 title: STRING互作证据打分网络图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa147Plus_STRING

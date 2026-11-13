@@ -1,10 +1,17 @@
 # Shared configuration bootstrap for the UI launcher and command wrappers.
 # Dot-source to resolve settings without starting a server or browser.
 
+function Get-RWikiSkillRoot([string]$DevRoot) {
+    foreach ($relative in @('skills/research-wiki', 'staged/research-wiki')) {
+        $skill = Join-Path $DevRoot $relative
+        if ((Test-Path -LiteralPath (Join-Path $skill 'wiki.py') -PathType Leaf) -and
+            (Test-Path -LiteralPath (Join-Path $skill 'config.example.json') -PathType Leaf)) { return $skill }
+    }
+    return $null
+}
+
 function Test-RWikiCheckout([string]$DevRoot) {
-    $skill = Join-Path $DevRoot 'staged/research-wiki'
-    return ((Test-Path -LiteralPath (Join-Path $skill 'wiki.py') -PathType Leaf) -and
-            (Test-Path -LiteralPath (Join-Path $skill 'config.example.json') -PathType Leaf))
+    return [bool](Get-RWikiSkillRoot $DevRoot)
 }
 
 function Get-RWikiMachine {
@@ -27,7 +34,7 @@ function Get-RWikiMachine {
         if (-not $dev) {
             throw "Invalid development checkout: $($candidates -join ', '). Set RWIKI_DEV_ROOT to a checkout containing staged/research-wiki/wiki.py and config.example.json."
         }
-        $skill = [System.IO.Path]::GetFullPath((Join-Path $dev 'staged/research-wiki'))
+        $skill = [System.IO.Path]::GetFullPath((Get-RWikiSkillRoot $dev))
     }
     $wiki = Join-Path $skill 'wiki.py'
     if (-not (Test-Path -LiteralPath $wiki -PathType Leaf)) {

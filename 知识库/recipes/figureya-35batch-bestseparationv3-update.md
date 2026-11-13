@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-35batch-bestseparationv3-update
 title: 批量最佳切点生存曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa35batch_bestSeparationV3_update

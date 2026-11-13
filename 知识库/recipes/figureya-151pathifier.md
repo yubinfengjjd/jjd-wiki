@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-151pathifier
 title: Pathifier通路失调得分热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa151pathifier

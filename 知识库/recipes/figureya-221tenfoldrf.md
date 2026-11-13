@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-221tenfoldrf
 title: 随机森林十折交叉验证筛基因
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa221tenFoldRF

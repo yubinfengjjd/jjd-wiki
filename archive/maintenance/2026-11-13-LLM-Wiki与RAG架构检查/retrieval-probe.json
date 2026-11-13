@@ -1,0 +1,50 @@
+{
+  "alias_collision": {
+    "query": "coexpression",
+    "charts": [],
+    "tags": [
+      "diagnostic-roc"
+    ],
+    "matches": [
+      {
+        "tag": "diagnostic-roc",
+        "alias": "PR",
+        "term": "coexpression"
+      }
+    ]
+  },
+  "known_page_ranks": [
+    {
+      "query": "differential expression",
+      "target": "differential-expression",
+      "rank": 1,
+      "returned": 25
+    },
+    {
+      "query": "比较两组细胞哪些基因表达不同",
+      "target": "differential-expression",
+      "rank": 6,
+      "returned": 195
+    },
+    {
+      "query": "cell annotation",
+      "target": "cell-type-annotation",
+      "rank": 1,
+      "returned": 71
+    },
+    {
+      "query": "判断每个细胞属于什么类型",
+      "target": "cell-type-annotation",
+      "rank": 20,
+      "returned": 95
+    }
+  ],
+  "catalog_page_types": [
+    "item",
+    "method",
+    "recipe",
+    "scenario",
+    "template"
+  ],
+  "interpretation": "diagnostic probes, not a labelled benchmark or a comparison against an implemented RAG system"
+}

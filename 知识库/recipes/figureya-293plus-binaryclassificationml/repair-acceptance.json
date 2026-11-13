@@ -1,0 +1,23 @@
+{
+  "id": "figureya-293plus-binaryclassificationml",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "FigureYa293Plus_BinaryClassificationML.Rmd": "238463ff1f782b394c71dd1f3267650cee1a229f41f2286957ada19d1e17e661",
+    "GSE57303.txt": "7c30010449766d1cb5db096d41e762ff1de8d4b5d7e0c88d7a07b7fd20525573",
+    "GSE62254.txt.gz": "ada9d7d27c61408336b1ed951ef74aeebedc9e2436e9e51002b90dd97e2e28af",
+    "install.log": "7d731a82f0aeb36afbdd98c326b6a35917699dafc78d6a667a0aa5a672c40e42",
+    "install_dependencies.R": "99cd322e6e71ec1af8161d61b61a8f31457c214d46236c059f93f74c2e01342e",
+    "plsRcox-master.tar.gz": "eb2b5333eb93f842d0a5eef2db213c5ba17419c841b544208d113f230091fbf1",
+    "RWekajars_3.9.3-2.tar.gz": "16e6b019aab1646f89c5203f0d6fc1cb800129e5169b15aaef30fd6236f5da1a",
+    "TCGA.txt": "7c2eb13b242b8a8e7fcc1c7e83d141cd9ed1ac63272df5deb4687d72e0765840"
+  },
+  "manifest_sha256": "8eae75ee3eb6245920681fb9a3a8b2cad2e34c9241338f5c4443118bb70fda9b",
+  "receipt": "repair-runs/20261111T111217Z.json",
+  "receipt_sha256": "824c52077d7f6ad7e4f50175ab0187d2e081db48394a9d8accb71fc5fbd123b8",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:16.484867+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}

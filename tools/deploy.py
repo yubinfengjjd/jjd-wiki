@@ -1,4 +1,4 @@
-"""Deploy the research-wiki skill from 开发/staged to all six local installs.
+"""Deploy skills/research-wiki from the resolved dev checkout to six installs.
 
 Single entry point replacing the per-record copies under 维护记录/. Usage:
 
@@ -29,12 +29,12 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from machine_paths import resolve_dev_root
+from machine_paths import resolve_dev_root, resolve_skill_root
 
 HOME = Path.home()
 try:
     DEV = resolve_dev_root(Path(__file__).resolve().parents[1])
-    SOURCE = DEV / "staged/research-wiki"
+    SOURCE = resolve_skill_root(DEV)
 except ValueError:
     # Allow --dev-root to be parsed before reporting a missing default checkout.
     DEV = SOURCE = None
@@ -181,7 +181,7 @@ def main() -> None:
             DEV = resolve_dev_root(Path(__file__).resolve().parents[1], args.dev_root)
         except ValueError as exc:
             parser.error(str(exc))
-        SOURCE = DEV / "staged/research-wiki"
+        SOURCE = resolve_skill_root(DEV)
     if args.verify_only:
         if args.record is not None or args.note is not None or args.sync_config:
             parser.error("--verify-only cannot be combined with deployment arguments")

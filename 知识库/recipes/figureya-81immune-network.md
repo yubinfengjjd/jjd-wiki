@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-81immune-network
 title: 免疫细胞相关预后网络图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa81immune_network

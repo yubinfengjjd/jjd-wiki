@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-90subgroup
 title: 亚组生存风险森林图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa90subgroup

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-229pcoa
 title: PCoA分组均值误差线图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa229PCOA

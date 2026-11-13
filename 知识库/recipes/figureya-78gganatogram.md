@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-78gganatogram
 title: 基因表达器官解剖着色图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa78gganatogram

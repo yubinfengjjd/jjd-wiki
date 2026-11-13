@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-8radar
 title: 组分比例花瓣雷达图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa8radar

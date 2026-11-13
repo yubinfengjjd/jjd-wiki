@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-109subtypegsea-update
 title: 多亚型GSEA富集对角热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa109SubtypeGSEA_update

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-64triangle
 title: 三组频率三元散点图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa64triangle

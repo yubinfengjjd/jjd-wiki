@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-164pca3d
 title: 三维PCA分组散点图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa164PCA3D
