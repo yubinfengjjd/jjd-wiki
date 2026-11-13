@@ -1,0 +1,27 @@
+{
+  "id": "figureya-318genesetdedotplot",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "example.png": "2a43da3efc079ee4e68f83e9fec5ead6061ef4a774dae87aa421bdffc24d02f8",
+    "explain_picture.png": "21e7a3e1ae2413738aed4aae32e290f516e32b64b45030f89b12e09057867ed8",
+    "FigureYa318GenesetDEDotplot.Rmd": "bea8a90f1ef3e228483f55c6aeecb85489f9a458da96e6608a4613354eeceb97",
+    "GenesetInfo.txt": "66814d3f8366908859cfb050337a4815ccb306a31febbb8166ae3018016a6441",
+    "h.all.v7.5.1.symbols.gmt": "c4bf359efb63429208c6babbb9d5c8f4e135d65b26d7b8792319114b9b4ccd9c",
+    "hallmark.pdf": "fb7b5f84c30d9476d6fd06fa2240b724493faf331e6471d7208b5392cfce4407",
+    "InputData.png": "e773ab1f294469a02944b5037da810cb6d1dac0ab5bb0c1fea19d709244b3473",
+    "install_dependencies.R": "e1661cd40adf2d627e3d64af28d9b9f5c1d1a9d238a10b6f1ce1a59b84e08fea",
+    "marker.xlsx": "dbc57067ff2561e79338029888d23049aea0a46ba043bbdde3a76743377cb1df",
+    "output_hallmark.txt": "3021b83bbed7ea59448eca83bdbb25a63c63174c2c134b603ba577a525898ae3",
+    "seu.rds": "ca8c399a5722ff1d79d25625597ff1d43c79b8853543dceeacb20c361a45cb5d",
+    "SYNTHETIC_INPUTS.md": "81c577f3453b944ac8e72aebff4c8a32e3024aa9b87dc143d2ae210049d9b17b"
+  },
+  "manifest_sha256": "a804b41c37dd30e8325cc93490177c1baeb9bff3a9a89ffa9924ce73b5b21b2e",
+  "receipt": "repair-runs/20261111T082959Z.json",
+  "receipt_sha256": "100b46ec2c32ffbbd00afb4c8d5209675ae26b01d076f7a35e838c0666e00cf2",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:20.402115+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}

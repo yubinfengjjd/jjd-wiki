@@ -1,0 +1,31 @@
+{
+  "id": "figureya-18oncoplot-update",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "cliquery.rds": "7c317b30936caf203458e955d38a50502f5dfb1d41a5f011133f0f1d69b11bee",
+    "easy_input.txt": "16b82381bef18b7f629970d604f8bf100d6baf54cf6a67455755e2373a19aa66",
+    "example.png": "a00eb7023443768a35e77f1b13b0256c74e20ccd7ddb3ae09fd4788f2e7bba70",
+    "FigureYa18oncoplot_update.jpg": "f369cc9c8f77732d1b1fab6e894b4908afdbc30c098b61a2f073dcfaf29d845e",
+    "FigureYa18oncoplot_update.Rmd": "718d51ef417c778539827aee5a701895e9684460561db0dfc5ad5b849e6e798c",
+    "group.png": "60c9b7a521e5146c8287ecdb7220e3fe19c3a455209c77b20be09de0b5aac572",
+    "install.log": "0c536f3e0211420484bf9f1a1f6c3f7e685a4ed287783d7de73209fa178a5c4f",
+    "install_dependencies.R": "5e68d5969c2f7d768aad8b92a4a025d8f2a1cc1a6ae2abb85f63259ce2821bda",
+    "MANIFEST.txt": "81616f1cfd60ed545366e87d211d525ebb7f7f4cec7937339b368d58b2a29a11",
+    "mut.rds": "6fb3dc766ccde71ffe7f4863f84c7427c6bb8c3cfb4bc8eed18509348c7367b8",
+    "onco_matrix.txt": "0d4b0d84479c967e9b0ed3ff235c3082e0a2014afde1ec695773cbd77a892120",
+    "oncoplotGroup.pdf": "1ef2910252cf091f2efe3ba470997285ca24ed177db752ad63a4e86d63e8f371",
+    "oncoplotGroup.png": "26b7c1cfe07a548d0f5885c1fe68b43301d7ed0bdda82b28d309aa7b2d79f279",
+    "oncoplotLIST.pdf": "e1fd3d51471e1e99df640f853a5b0de8370e6dd825b4dcb9cf522addc67baa43",
+    "oncoplotTop20.pdf": "39bd2fc4a7f1d504ae3c5649ac820a1e4dad2bacf9d411d87b340a6bdde1b56d",
+    "oncoplotTop20_col.pdf": "0be3f01992b1f718131813488198a3d83365500993f1b45f6700e0250e8d995c"
+  },
+  "manifest_sha256": "5a4240e2854b683f44b543e832506d98e3d6bd1ff4865fcef1c3579f81ecb4bb",
+  "receipt": "repair-runs/20261111T095638Z.json",
+  "receipt_sha256": "26549f51a7634f7f723122153c498288a2c0d23f4bdf60e4ebf1f0be016ec97d",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:08.000283+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}

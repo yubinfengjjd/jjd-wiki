@@ -1,0 +1,28 @@
+{
+  "id": "figureya-195panpaire",
+  "scope": "repair",
+  "execution_tree": "repair/",
+  "files": {
+    "41388_2019_1026_MOESM2_ESM.xlsx": "0ace6c28c404a4dfcdebec128e743f01bdea512d4b4dd3e17dcde43857196db2",
+    "easy_input_expr.RDS": "9dd6ae01efcbb271c04c8a03ff3b071251c84ecd07942b2d7c69f58a8a746b5b",
+    "easy_input_gene.txt": "48a2202a5a71d4b08df612b7e14d1169f4d81d4d670fe82e96e1232fea91a4a7",
+    "easy_input_pair.txt": "ccdf625a4cf65c39ba8be4d33715864db9b5631eeb5d91ae7536becb234d64b5",
+    "example.png": "8f359bb7e025dd5a4ee787d8a546472db6900e4ac6b85159916c218ff17a5d2d",
+    "explain_picture.png": "8f942d6508fe19bfa8fb32b6ee8fd075d03a2de631e2d14b2b5fff45e31f8598",
+    "FigureYa195PanPaire.Rmd": "dce9454404e8abc82430b45fec8c1075a9bc9218ce38a62f354eafa9121c0fef",
+    "GDC-PANCAN.basic_phenotype.tsv": "6b57e25d630cf83f176e4487b943117fc6f828470292cc48831c79ea857bb5b8",
+    "h.all.v7.1.symbols.gmt": "a5a86b1250b473340c8cc74b24d77554f00b1bc205a068976c873f93046b2749",
+    "install_dependencies.R": "f6231b6fe2435bf9501056f8ed304e24c27f1374c1b66e0d09c62ed74bd26552",
+    "Metabolic landscape of tcga paired sample.pdf": "0d11b87d8a3f1200fdaad7c1e504f8bec80ea51e37925899820ef55afb27b818",
+    "Readme.png": "df3e5f881dfdd934e9eafb4c3678d4f428c24135916e41372ad8fa1fe0ed7381",
+    "SYNTHETIC_INPUTS.md": "5c18e918f070e01bb4ad4dfcb2ef272f3a044b4dd9d45451e047d5a09bb76e9c"
+  },
+  "manifest_sha256": "d192a3a73bf9a5dc8e859aa10ff6e6e4966968b37eeccdd39eee4d145cadc3b8",
+  "receipt": "repair-runs/20261111T064736Z.json",
+  "receipt_sha256": "9eccfe0c4a813ab9a7c1e8c8e6a44d0c9f1aeeb03057498f6e85c60b4a462a47",
+  "schema_version": 1,
+  "kind": "recipe-repair-acceptance",
+  "checked_at": "2026-11-13T12:48:08.339253+00:00",
+  "owner_confirmed": true,
+  "owner_instruction": "全部改为通过"
+}
