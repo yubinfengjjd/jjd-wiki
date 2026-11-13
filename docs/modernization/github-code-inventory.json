@@ -1,0 +1,2614 @@
+{
+  "checked_at": "2026-11-13T12:35:14.326Z",
+  "repository": "yubinfengjjd/jjd-wiki",
+  "ref": "main",
+  "tree_sha": "b86feb608fd1f35d02d24894bf314bc5bb419921",
+  "truncated": false,
+  "summary": {
+    "recipes": 146,
+    "templates": 30,
+    "recipe_and_template_entries": 176,
+    "recipe_and_template_code_files": 493,
+    "missing_recipe_or_template_code": 0,
+    "methods": 43,
+    "methods_with_code": 32,
+    "method_code_files": 1057
+  },
+  "entries": [
+    {
+      "kind": "recipes",
+      "id": "figureya-102multipanelroc",
+      "page": "知识库/recipes/figureya-102multipanelroc.md",
+      "page_sha": "a69fa33fa4e090cfbb5d96cf1dd9f84fc975d2c2",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-102multipanelroc/source/FigureYa102multipanelROC.Rmd",
+        "sha": "2b7fe7f36f3e16e24419953b432fb402ebb26a3e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-109subtypegsea-update",
+      "page": "知识库/recipes/figureya-109subtypegsea-update.md",
+      "page_sha": "74b092b69ad8ec904e9318ef7b9765afc11b8e11",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-109subtypegsea-update/source/FigureYa109SubtypeGSEA_update.Rmd",
+        "sha": "18b8165cad38ffba0182ea764f3aadcb70c28ee2"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-10chromosomev2-update",
+      "page": "知识库/recipes/figureya-10chromosomev2-update.md",
+      "page_sha": "42fe916b1029c2df0e6a80896b608baa64193e7d",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-10chromosomev2-update/source/FigureYa10chromosomeV2_update.Rmd",
+        "sha": "24bc37667f73554a3192617597bd488cc3e127df"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-110mutationsignature",
+      "page": "知识库/recipes/figureya-110mutationsignature.md",
+      "page_sha": "0330c9a4a423e322c42e8b7f9663dd4f7ff2a024",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-110mutationsignature/source/FigureYa110mutationSignature.Rmd",
+        "sha": "aca206b926573b1f2b868670eea4f26667bc522e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-112venn",
+      "page": "知识库/recipes/figureya-112venn.md",
+      "page_sha": "45c7396a2efc2513eb23c938eb58e7de99bceab3",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-112venn/source/FigureYa112venn.Rmd",
+        "sha": "7f03f84993e248bd1246952ccb2cf82dec851242"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-113mutsigcv",
+      "page": "知识库/recipes/figureya-113mutsigcv.md",
+      "page_sha": "2595a443e69d3dc930e0d2b94da1aa680066f864",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-113mutsigcv/source/FigureYa113MutSigCV.Rmd",
+        "sha": "42d987638c71746e905ac033be81636b5f3f7e92"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-114ternarycluster",
+      "page": "知识库/recipes/figureya-114ternarycluster.md",
+      "page_sha": "2ad8a7d8d5811d53d58c6b94f4e02788ff964601",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-114ternarycluster/source/FigureYa114ternaryCluster.Rmd",
+        "sha": "83d7252987f713dfe56f85281ab9f28453658164"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-115cofactor",
+      "page": "知识库/recipes/figureya-115cofactor.md",
+      "page_sha": "91aa8452100abab3c03a4b420fd23bdb2e2b3809",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-115cofactor/source/FigureYa115cofactor.Rmd",
+        "sha": "83bf4b26be783c0b380d3e11bcb8af8a04ba95ad"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-118multiclassdeseq2",
+      "page": "知识库/recipes/figureya-118multiclassdeseq2.md",
+      "page_sha": "0ae10a01c11f3a0cda19c076b353bdccf839908c",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-118multiclassdeseq2/source/FigureYa118MulticlassDESeq2.Rmd",
+        "sha": "4721117395d95f0de1316c32f1f26d74a51043af"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-119multiclasslimma",
+      "page": "知识库/recipes/figureya-119multiclasslimma.md",
+      "page_sha": "6a2cbcf7a5dc1c7d5543933a8abba0add96be6c1",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-119multiclasslimma/source/FigureYa119Multiclasslimma.Rmd",
+        "sha": "ae011db43f3ab363cfcb0a6085574e978655df90"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-11bubble",
+      "page": "知识库/recipes/figureya-11bubble.md",
+      "page_sha": "c34d119a94d0ee167918215c6d251cf63769968f",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-11bubble/source/FigureYa11bubbles.Rmd",
+        "sha": "1674b3a175977bb893bc1b54c0d108d879d69bfc"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-120multiclassedger",
+      "page": "知识库/recipes/figureya-120multiclassedger.md",
+      "page_sha": "d9c757240e4512ace552d382cb6a608dc0f04db6",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-120multiclassedger/source/FigureYa120MulticlassedgeR.Rmd",
+        "sha": "25bc3f43d6ab86167e811bd72233d5f392bcd9bd"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-129tcgabox",
+      "page": "知识库/recipes/figureya-129tcgabox.md",
+      "page_sha": "97109e80e6a6e4ab2f1dd4d7b719444c71d55df7",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-129tcgabox/source/FigureYa129TCGAbox.Rmd",
+        "sha": "97961232f803dcf63eea7168bcab80a6fd2a4cf4"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-131cmap-update",
+      "page": "知识库/recipes/figureya-131cmap-update.md",
+      "page_sha": "5d211caf2747254bad294b17c23f90165a73c9b4",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-131cmap-update/source/FigureYa131CMap_update.Rmd",
+        "sha": "53825e9f926c92bb2d3b0c55ef42fb7bc0d8e345"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-132alteration",
+      "page": "知识库/recipes/figureya-132alteration.md",
+      "page_sha": "fae5b6a568558044727e78a4aee0fd6ff3c2c8d5",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-132alteration/source/FigureYa132alteration.Rmd",
+        "sha": "0eee52a81cbc6df426bacb0bfae91cd8385cf60f"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-138nicecalibration",
+      "page": "知识库/recipes/figureya-138nicecalibration.md",
+      "page_sha": "41287223858f73c63fa25cf717f16960c997446c",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-138nicecalibration/source/FigureYa138NiceCalibration.Rmd",
+        "sha": "e26fdf76ee22da8cea725ddef3a638d4f268b7b2"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-139tmb-titv",
+      "page": "知识库/recipes/figureya-139tmb-titv.md",
+      "page_sha": "7c577e30c5d8875e0ef6c95f89a607e55c9859ca",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-139tmb-titv/source/FigureYa139TMB_titv.Rmd",
+        "sha": "63ae0387018cb76ae2b7a5e648069b4681deaa90"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-13gsea-java-update",
+      "page": "知识库/recipes/figureya-13gsea-java-update.md",
+      "page_sha": "6981539cba02f91fd0bd86043f038f6df276ecc5",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-13gsea-java-update/source/FigureYa13GSEA_Java_update.Rmd",
+        "sha": "dd29a39e5fd0fcf4bcc2c59afb2f91a370ef8421"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-141risk",
+      "page": "知识库/recipes/figureya-141risk.md",
+      "page_sha": "89273af25d596877c38f1e552748fa4854ef0946",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-141risk/source/FigureYa141risk.Rmd",
+        "sha": "ecfd664af55e20b1cec986a66ca8b2001f83fe7c"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-142circosbar",
+      "page": "知识库/recipes/figureya-142circosbar.md",
+      "page_sha": "3edea147540fd05ccb82cbf763251d6ea58421bf",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-142circosbar/source/FigureYa142circosBar.Rmd",
+        "sha": "67a89c0a80356e594e8cffbfbccb37df69068362"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-143survcor-update",
+      "page": "知识库/recipes/figureya-143survcor-update.md",
+      "page_sha": "b2253ca647bed4c2ae8ab2da8bf6eb5f1898d89d",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-143survcor-update/source/FigureYa143survCor_update.Rmd",
+        "sha": "d8c2c86150ab7607fdcec0cd086d65b477357e03"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-147interaction",
+      "page": "知识库/recipes/figureya-147interaction.md",
+      "page_sha": "ac902a89fc6da4448e771ddbd0fec93cb24c377b",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-147interaction/source/FigureYa147interaction.Rmd",
+        "sha": "9113f8986112a04a7b6e50ce744fcf1956a30772"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-147plus-string",
+      "page": "知识库/recipes/figureya-147plus-string.md",
+      "page_sha": "9fd1a46703eda57d087a1a53c466270ab92e6f35",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-147plus-string/source/FigureYa147Plus_STRING.Rmd",
+        "sha": "fc8091aabe5973210211e1607b54f1cd78e1871d"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-148simpledendrogram",
+      "page": "知识库/recipes/figureya-148simpledendrogram.md",
+      "page_sha": "021e20788de3f248380166a719dbc99b4bb82e18",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-148simpledendrogram/source/FigureYa148SimpleDendrogram.Rmd",
+        "sha": "802ca13d713ab6b500679eed42fa98301a0fd226"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-149rankheatmap",
+      "page": "知识库/recipes/figureya-149rankheatmap.md",
+      "page_sha": "2c563e0d7f0a6a61c3f4d5dce1f429774414e6ec",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-149rankheatmap/source/FigureYa149rankHeatmap.Rmd",
+        "sha": "4602d192da0a2190f9ca30f3138f9e08668842b5"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-14circos",
+      "page": "知识库/recipes/figureya-14circos.md",
+      "page_sha": "83e28536a8b8d087f3f54f146bca8fd4541e69ee",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-14circos/source/FigureYa14circos.Rmd",
+        "sha": "6cc6de6a381cd5d9f71d003f2e556994b358797d"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-151pathifier",
+      "page": "知识库/recipes/figureya-151pathifier.md",
+      "page_sha": "6df76204d5ad218b83f4c458afc37fe454886500",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-151pathifier/source/FigureYa151pathifier.Rmd",
+        "sha": "83e7e6aad513e9981b50c3aad8525d02fcd4b608"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-153ccgraph",
+      "page": "知识库/recipes/figureya-153ccgraph.md",
+      "page_sha": "1ec6f4923094380d72604d4abf2bdc71069ee422",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-153ccgraph/source/FigureYa153ccgraph.Rmd",
+        "sha": "16a0afecf4c4087d3dc4c913b9a88262a5649ac9"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-162boxviolin",
+      "page": "知识库/recipes/figureya-162boxviolin.md",
+      "page_sha": "3204c8018206491fcaa12aa9e05bcbb1329c6fc8",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-162boxviolin/source/FigureYa162boxViolin.Rmd",
+        "sha": "4a15ca46ce57f2800115942f92a78403ebaad1de"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-163twovarcor-update",
+      "page": "知识库/recipes/figureya-163twovarcor-update.md",
+      "page_sha": "e9be6f306b76b2ae860538f1d3394c37982b5ca4",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-163twovarcor-update/source/FigureYa163twoVarCor_update.Rmd",
+        "sha": "76b45e0ac16552c4820602b46cdf5603d2291e1d"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-164pca3d",
+      "page": "知识库/recipes/figureya-164pca3d.md",
+      "page_sha": "3a2082da36e5b77657cc075d22bf03d8e7244f24",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-164pca3d/source/FigureYa164PCA3D.Rmd",
+        "sha": "fd701ab9ff9d626706058f99c3caa2a89372375b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-173fancybar",
+      "page": "知识库/recipes/figureya-173fancybar.md",
+      "page_sha": "8ede062bee5bdf6eba6a2f82084f29e1846d17ab",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-173fancybar/source/FigureYa173fancybar.Rmd",
+        "sha": "bce243422fcec309af7a5eee1ea11362fd958eb4"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-17wgcna-heatmap",
+      "page": "知识库/recipes/figureya-17wgcna-heatmap.md",
+      "page_sha": "b36470e877739d1b9bb7aa50f6328d2e130b9607",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-17wgcna-heatmap/source/FigureYa17WGCNA_heatmap.Rmd",
+        "sha": "281feb89a6ffe54e3a33878caa1a37a28e36cff2"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-18oncoplot-update",
+      "page": "知识库/recipes/figureya-18oncoplot-update.md",
+      "page_sha": "4f556e7c963e24da285b6e6cd3434819d0412299",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-18oncoplot-update/source/FigureYa18oncoplot_update.Rmd",
+        "sha": "ad3c8ec08823d4b570a2377d13010b9017082c2e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-193risktable",
+      "page": "知识库/recipes/figureya-193risktable.md",
+      "page_sha": "ea2ebe61ee4c5afc0afb772e219da75de6c90c2d",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-193risktable/source/FigureYa193RiskTable.Rmd",
+        "sha": "979a7b441185bd6a5d2f8d4fcd38481ae1a7a41e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-194pyscenic",
+      "page": "知识库/recipes/figureya-194pyscenic.md",
+      "page_sha": "0dfa495409c957596bd11a9e4abd60b4f163bcf1",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-194pyscenic/source/FigureYa194pySCENIC.Rmd",
+        "sha": "964915f7cd0a3f6e8f870b8e0173467ad467c21b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-195panpaire",
+      "page": "知识库/recipes/figureya-195panpaire.md",
+      "page_sha": "dcbfa1bfb278bbe5cb59f1b99d34ed1cab57a26d",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-195panpaire/source/FigureYa195PanPaire.Rmd",
+        "sha": "eca45c79acd087202f684d06337a14851106ea46"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-196panpie",
+      "page": "知识库/recipes/figureya-196panpie.md",
+      "page_sha": "a00022835bf9316d205f80e3e4f3f73b38d7512d",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-196panpie/source/FigureYa196PanPie.Rmd",
+        "sha": "7d0f3a30fef72f236303b395c60d13b5ede9b7e9"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-199crosslink",
+      "page": "知识库/recipes/figureya-199crosslink.md",
+      "page_sha": "59727c07bf3d48be803ed136dfe500596ce4aed5",
+      "code_files": 7,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-199crosslink/source/FigureYa199crosslink.Rmd",
+        "sha": "80cf9ce703b0f24de660a46e1bf00a3c82be68ef"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-19lollipop",
+      "page": "知识库/recipes/figureya-19lollipop.md",
+      "page_sha": "051bddd7a24511d99a113fb2c50e476ceabaeabc",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-19lollipop/source/FigureYa19Lollipop.Rmd",
+        "sha": "69af29c9f94e53d12bb26a9018e1c4d6dd2782f4"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-1survivalcurve-update",
+      "page": "知识库/recipes/figureya-1survivalcurve-update.md",
+      "page_sha": "9bcc45c459068d345fccec4d304e5a3fa0043a7c",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-1survivalcurve-update/source/FigureYa1survivalCurve_update.Rmd",
+        "sha": "b5699d191586f1060575769ec71df601e4a4224a"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-200pairwiseauc",
+      "page": "知识库/recipes/figureya-200pairwiseauc.md",
+      "page_sha": "2c84ea146bb6a687288b1c84a3795e87656f1b4f",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-200pairwiseauc/source/FigureYa200pairwiseAUC.Rmd",
+        "sha": "f1aa4e4da285fe1f105d3eb3378833d6d45bba26"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-202consensusgene",
+      "page": "知识库/recipes/figureya-202consensusgene.md",
+      "page_sha": "f1f830da189f35e0958c326aa6eeb5fbee979ce0",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-202consensusgene/source/FigureYa202consensusGene.Rmd",
+        "sha": "a4656bd155c4352638a4426c87794b105761cdf2"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-203combat",
+      "page": "知识库/recipes/figureya-203combat.md",
+      "page_sha": "f0cfcbeb8d27ddc319e6426b562f2c4347ad3724",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-203combat/source/FigureYa203ComBat.Rmd",
+        "sha": "7c0c45cd5ffd77eb422f007452c1d9e45522c987"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-204pcascore",
+      "page": "知识库/recipes/figureya-204pcascore.md",
+      "page_sha": "177f5d2f85ec7266d915993b0f5f99de35176962",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-204pcascore/source/FigureYa204PCAscore.Rmd",
+        "sha": "44bfdbfd8bc96b18e08924c5dd57128a67bba8da"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-206scheatmap",
+      "page": "知识库/recipes/figureya-206scheatmap.md",
+      "page_sha": "466f42f1f78d0f50039ed33a75e71fefcf617972",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-206scheatmap/source/FigureYa206scHeatmap.Rmd",
+        "sha": "9aeb89b8bf713131c018ad03d57557aca5b4bb78"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-211multicohortimmsubtype",
+      "page": "知识库/recipes/figureya-211multicohortimmsubtype.md",
+      "page_sha": "23b2bec3847fb61a5b245e1d2be38fab0b05eed1",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-211multicohortimmsubtype/source/CIBERSORT.R",
+        "sha": "f906fc2ff77754065cccf0f5de995702e206f0b7"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-212drugtargetv2",
+      "page": "知识库/recipes/figureya-212drugtargetv2.md",
+      "page_sha": "9095c4034a0deaadeef13b341f71f8eff953d7de",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-212drugtargetv2/source/FigureYa212drugTargetV2.Rmd",
+        "sha": "ad59e4a2bcd874b5d6e8717b15820b93d73a4fad"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-214kegg-hierarchyv2",
+      "page": "知识库/recipes/figureya-214kegg-hierarchyv2.md",
+      "page_sha": "ed7d28effde5fe986aca9cfb74747860eeb68cf5",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-214kegg-hierarchyv2/source/FigureYa214KEGG_hierarchyV2.Rmd",
+        "sha": "3d0802aedd9209cba1929a071fe57350712ca331"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-215dnaage",
+      "page": "知识库/recipes/figureya-215dnaage.md",
+      "page_sha": "8c4e1d73b500877fbb084c0464f86c243ccb2c99",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-215dnaage/source/FigureYa215DNAage.Rmd",
+        "sha": "aa5695838e59a0cbb0c2aaa0453dc9cd6a17ccce"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-219gmm",
+      "page": "知识库/recipes/figureya-219gmm.md",
+      "page_sha": "a68ac49b0b7cd0662c14026e4f6368ba7e5fee07",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-219gmm/source/FigureYa219GMM.Rmd",
+        "sha": "89835f9267ea4d798761375879ced145589a9322"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-21tcga2table",
+      "page": "知识库/recipes/figureya-21tcga2table.md",
+      "page_sha": "1dd2e2116edbf7cd14fd83a9c8f132c519ef5d4b",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-21tcga2table/source/FigureYa21TCGA2table.Rmd",
+        "sha": "38021fb46b0c700ef747636f8b2142fd4819c08d"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-221tenfoldrf",
+      "page": "知识库/recipes/figureya-221tenfoldrf.md",
+      "page_sha": "a3d872998b329b372ebca13ce179b68267e44861",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-221tenfoldrf/source/FigureYa221tenFoldRF.Rmd",
+        "sha": "eb3ca0121cf93b3700961979d5017169d3d54869"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-227boxdensity",
+      "page": "知识库/recipes/figureya-227boxdensity.md",
+      "page_sha": "c9888dc6e02410e255b85bd8e8d80d16ad5d71f6",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-227boxdensity/source/FigureYa227boxdensity.Rmd",
+        "sha": "4dffcaa0225f9cd11fdaac18ff0e65cfa5f96dbc"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-228linkcor",
+      "page": "知识库/recipes/figureya-228linkcor.md",
+      "page_sha": "b61ea6c61fc2e62fe85794874b1f7e40842ac6e4",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-228linkcor/source/FigureYa228linkCor.Rmd",
+        "sha": "79ca33ef6a257439ef3cbfaa664a918a36e31e22"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-229pcoa",
+      "page": "知识库/recipes/figureya-229pcoa.md",
+      "page_sha": "01f070f85745d156a903ef58c0e520763898cad1",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-229pcoa/source/FigureYa229PCOA.Rmd",
+        "sha": "4ffc7b20dad8f342ab406dc7ef7be53d35df5efc"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-230immunelandscape",
+      "page": "知识库/recipes/figureya-230immunelandscape.md",
+      "page_sha": "0a05a000324d725511864b310919392b6d96e29f",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-230immunelandscape/source/FigureYa230immunelandscape.Rmd",
+        "sha": "6f2920c1d345ca6dd1bde39ee1f4fa7992dcf4e3"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-231scscore",
+      "page": "知识库/recipes/figureya-231scscore.md",
+      "page_sha": "e4d68302342ae2ed7bb4942e1222f3ac218078f7",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-231scscore/source/FigureYa231scScore.Rmd",
+        "sha": "11118c4cf4c13f8db90cbd9f01d86a00aea74f12"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-236circgroup",
+      "page": "知识库/recipes/figureya-236circgroup.md",
+      "page_sha": "3fb7bec0968738ed711397c1916594a213202123",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-236circgroup/source/FigureYa236circGroup.Rmd",
+        "sha": "e54fa43e322d8383067a434381e9ce7e02e8e3f2"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-239st-pdac",
+      "page": "知识库/recipes/figureya-239st-pdac.md",
+      "page_sha": "79951d43e5b902be2a0ff325cd3f59f1cc8fbaac",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-239st-pdac/source/FigureYa239ST_PDAC.Rmd",
+        "sha": "7dc7e57527aa0da2bbef4ffa2b45c3159fed952b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-23count2tpm",
+      "page": "知识库/recipes/figureya-23count2tpm.md",
+      "page_sha": "818555ff772d18f0ea36d060813babddd554cbb1",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-23count2tpm/source/FigureYa23count2TPMv2.Rmd",
+        "sha": "c3fa6c06d9886ed78091777c3cce189b2f88aa13"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-248mutlandscape",
+      "page": "知识库/recipes/figureya-248mutlandscape.md",
+      "page_sha": "30fb7fdbdfe008e0c95b177643fb2e35baba4a94",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-248mutlandscape/source/FigureYa248MutLandscape.Rmd",
+        "sha": "b2d9542a25b96ac37ff5c35cc31cc3c119aa70cd"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-251nphsurv",
+      "page": "知识库/recipes/figureya-251nphsurv.md",
+      "page_sha": "4c5a015fc8a8fb947d0abf82a557df83810c7ef1",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-251nphsurv/source/FigureYa251NPHSurv.Rmd",
+        "sha": "2a1373607d0c0df9fe322c0cd0ea0a170da24ef1"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-253pangsea",
+      "page": "知识库/recipes/figureya-253pangsea.md",
+      "page_sha": "9d704938e8ef52c23bce00f76bf9b31c2a6dbdee",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-253pangsea/source/FigureYa253panGSEA.Rmd",
+        "sha": "047abd6d26ed76895902090f1369ac81372f976d"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-255time",
+      "page": "知识库/recipes/figureya-255time.md",
+      "page_sha": "ae67e5402b5596eee499265d9a2d51dab133c5b5",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-255time/source/FigureYa255TIME.Rmd",
+        "sha": "cd1722df9e011dd9a13c57242e1ee4b0acd70b4e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-25sankey-update",
+      "page": "知识库/recipes/figureya-25sankey-update.md",
+      "page_sha": "922a386e1ba13edb84c306b6425596a5ca5e8495",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-25sankey-update/source/FigureYa25Sankey_update.Rmd",
+        "sha": "6e3305124fae71675e32f7873ba809bd71efead2"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-26circos-r",
+      "page": "知识库/recipes/figureya-26circos-r.md",
+      "page_sha": "e4ce16897ca279a9805f12d8f73a5e1175798484",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-26circos-r/source/FigureYa26circos_R.Rmd",
+        "sha": "38ea5fa04c94fa14f5acf9dcdd659ab6ce723e85"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-275scaucell",
+      "page": "知识库/recipes/figureya-275scaucell.md",
+      "page_sha": "c921fe402dfcba79493600ab0de87398bcc37187",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-275scaucell/source/FigureYa275scAUCell.Rmd",
+        "sha": "9a5b8d7c6021ba62367047c529c5407f8314ac74"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-277immunomodulator",
+      "page": "知识库/recipes/figureya-277immunomodulator.md",
+      "page_sha": "5283246a27118e38bb2052db0982653c0b8d48f3",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-277immunomodulator/source/FigureYa277Immunomodulator.Rmd",
+        "sha": "14b5d8ba01dac2b270d3f8e754c1afe38af23585"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-284pairwiselogrank",
+      "page": "知识库/recipes/figureya-284pairwiselogrank.md",
+      "page_sha": "72efaa742e5c57f3dd0aa2a055321e6d67470df6",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-284pairwiselogrank/source/FigureYa284pairwiseLogrank.Rmd",
+        "sha": "a7b722c1e5f495652bc11d26b617326d1883784b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-28color",
+      "page": "知识库/recipes/figureya-28color.md",
+      "page_sha": "65bca2c0acdaa8cdd08edf76f492fde0f95b5251",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-28color/source/FigureYa28color.Rmd",
+        "sha": "ff4f7068fbb5469ddbb1217c21e50079f760e0ab"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-293machinelearning",
+      "page": "知识库/recipes/figureya-293machinelearning.md",
+      "page_sha": "9d7c8b22597a32dcf41bbbb99b112d77305c6d39",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-293machinelearning/source/FigureYa293machineLearning.Rmd",
+        "sha": "782701f016c5f2c98a074247e881efd501677270"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-293plus-binaryclassificationml",
+      "page": "知识库/recipes/figureya-293plus-binaryclassificationml.md",
+      "page_sha": "f26666dd6edcf2d831731303d267055c214b7e8f",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-293plus-binaryclassificationml/source/FigureYa293Plus_BinaryClassificationML.Rmd",
+        "sha": "eb0d13e732a9a5bf5f22f465adcae5ba8d70c715"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-294hccdrug",
+      "page": "知识库/recipes/figureya-294hccdrug.md",
+      "page_sha": "f8f6f12457d6156a84dbb3be7194fccff5535a09",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-294hccdrug/source/FigureYa294HCCdrug.Rmd",
+        "sha": "a752ae2fe4f04c6c1ee1365bd6b75a4cfd7e3967"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-2ggtree-pheatmap-msa",
+      "page": "知识库/recipes/figureya-2ggtree-pheatmap-msa.md",
+      "page_sha": "5663e78f0458a754164ed07d688e6dc886f5dbd2",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-2ggtree-pheatmap-msa/source/FigureYa2ggtree+pheatmap+msa.Rmd",
+        "sha": "4b1f3ff244a08b75e7cafd7586c26189a32dfc07"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-300pancancor",
+      "page": "知识库/recipes/figureya-300pancancor.md",
+      "page_sha": "71a4a36f1ab05be1c1af54e3772335799a7190fe",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-300pancancor/source/FigureYa300pancanCor.Rmd",
+        "sha": "d3bf6786ad2b6b5f1892bb75ae244943ffe442de"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-304magic",
+      "page": "知识库/recipes/figureya-304magic.md",
+      "page_sha": "5630a16b8d6caa34f0fd915bb2bf9bcf3c124718",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-304magic/source/FigureYa304MAGIC.Rmd",
+        "sha": "7e8951f7c30521b2f4ba08da1d90453ba2e5d60f"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-305pmapscore",
+      "page": "知识库/recipes/figureya-305pmapscore.md",
+      "page_sha": "d1b9b37646c60b46aa4bfd199aa86960217eb318",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-305pmapscore/source/FigureYa305PMAPscore.Rmd",
+        "sha": "25ae6b1a74ddaaf5d56cb652cec89e65bb2af097"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-307cnvheatmap",
+      "page": "知识库/recipes/figureya-307cnvheatmap.md",
+      "page_sha": "82f24c96100b5425589ad34bc894377a554f5550",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-307cnvheatmap/source/FigureYa307CNVHeatmap.Rmd",
+        "sha": "2cd194048862fd34d8df2970e14cfb6bc472bade"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-308ihs",
+      "page": "知识库/recipes/figureya-308ihs.md",
+      "page_sha": "d8abe497a3ced5a60f607e8aaa3d52508e38ae39",
+      "code_files": 9,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-308ihs/source/FigureYa308IHS.Rmd",
+        "sha": "2526baf2a08f8823bdbdbfe3652bbc49ab6daba9"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-30nomogram-update",
+      "page": "知识库/recipes/figureya-30nomogram-update.md",
+      "page_sha": "fb3746391b01093be663d817ca3787a47dfb9e18",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-30nomogram-update/source/FigureYa30nomogram_update.Rmd",
+        "sha": "1caf1809345142fddf559ad7331eccf367472ff5"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-310cpdbchordgramv2",
+      "page": "知识库/recipes/figureya-310cpdbchordgramv2.md",
+      "page_sha": "367dcaf945399f797088cd0f2beb1cdc3b98058e",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-310cpdbchordgramv2/source/FigureYa310CPDBChordGramV2.Rmd",
+        "sha": "e3018b757a5493ae35ca297f3c4285774387a133"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-311pam50heatmap",
+      "page": "知识库/recipes/figureya-311pam50heatmap.md",
+      "page_sha": "febbd925f3640fd549f143a5ad81b8a74904bdcb",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-311pam50heatmap/source/FigureYa311PAM50Heatmap.Rmd",
+        "sha": "e550bdf3a319d12858db2ed48e4d46c087fd2388"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-314singlerscore",
+      "page": "知识库/recipes/figureya-314singlerscore.md",
+      "page_sha": "f6fb1c75f4301dcb304518ce980366bafddc297c",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-314singlerscore/source/FigureYa314SingleRScore.Rmd",
+        "sha": "40842c86b42742aca82e8b134899320f9f9294ac"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-315singlerfraction",
+      "page": "知识库/recipes/figureya-315singlerfraction.md",
+      "page_sha": "66013edda16e2270ac38ae7c6261acd4b1ad8a82",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-315singlerfraction/source/FigureYa315SingleRFraction.Rmd",
+        "sha": "c42464ed561de12abca4feaf85fe3de3c772cc0e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-318genesetdedotplot",
+      "page": "知识库/recipes/figureya-318genesetdedotplot.md",
+      "page_sha": "2778de6fa30d5c52b9dfbfd171586f0425ac0e6b",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-318genesetdedotplot/source/FigureYa318GenesetDEDotplot.Rmd",
+        "sha": "b8ae5a2c49a522fab5111c45df59ce8652b2b1f9"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-31lasso-update",
+      "page": "知识库/recipes/figureya-31lasso-update.md",
+      "page_sha": "3d3d86c561504af736248aece3a0bdc2721c6a07",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-31lasso-update/source/FigureYa31lasso_update.Rmd",
+        "sha": "bf9c5413018be5fba3dbbd2f208e94f266228b94"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-320clontypeheatmap",
+      "page": "知识库/recipes/figureya-320clontypeheatmap.md",
+      "page_sha": "0bd3216ad754f87f952cbc4dcbdd4eeaf9daf2f6",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-320clontypeheatmap/source/FigureYa320ClontypeHeatmap.Rmd",
+        "sha": "6422de49678ecf4de2163d60c3b892f3688ff83b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-323stpathseq",
+      "page": "知识库/recipes/figureya-323stpathseq.md",
+      "page_sha": "09203d6782d7adf986e833457a5957b117156e46",
+      "code_files": 9,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-323stpathseq/source/FigureYa323STpathseq.Rmd",
+        "sha": "7f7cb85724ba789516d5558bea45a5dc44d7d8e1"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-32id-table",
+      "page": "知识库/recipes/figureya-32id-table.md",
+      "page_sha": "af794a28f66468abf9b46aeaf1d9027c10d954ed",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-32id-table/source/FigureYa32ID_table.Rmd",
+        "sha": "c5cb2d41b7db01b3bb5b5a268e7e755e7013d066"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-33dca-update",
+      "page": "知识库/recipes/figureya-33dca-update.md",
+      "page_sha": "e5a8bef042bf41be5f00e4f7119cc6a4ba9b1c2d",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-33dca-update/source/FigureYa33DCA_update.Rmd",
+        "sha": "39d79ae34e7c1aa54842f077a98ba0495b5ddc14"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-34count2fpkmv2",
+      "page": "知识库/recipes/figureya-34count2fpkmv2.md",
+      "page_sha": "b019952839041e0e3ea31f15f3537f4a81a1fdfe",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-34count2fpkmv2/source/FigureYa34count2FPKMv2.Rmd",
+        "sha": "e448486d5d56dd33e2f2a2299b65c7324ce0de14"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-35batch-bestseparationv3-update",
+      "page": "知识库/recipes/figureya-35batch-bestseparationv3-update.md",
+      "page_sha": "547a9caa2d56decada37cd94151c4bda11572d19",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-35batch-bestseparationv3-update/source/FigureYa35batch_bestSeparationV3_update.Rmd",
+        "sha": "d8cb1ee18b70cc1d888b6740c6559a022c5be450"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-36nsurvv3",
+      "page": "知识库/recipes/figureya-36nsurvv3.md",
+      "page_sha": "46f1252c1483b3f32e6ad03758751a8fad595fbf",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-36nsurvv3/source/FigureYa36nSurvV3.Rmd",
+        "sha": "fafae6509435f243887b5268d5becaa87140f059"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-37correlationv2-update",
+      "page": "知识库/recipes/figureya-37correlationv2-update.md",
+      "page_sha": "3238ba2c2a52a6349eff8d66299a9724d88188b3",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-37correlationv2-update/source/FigureYa37correlationV2_update.Rmd",
+        "sha": "ee3b9e41d3e536ee814bc089d75950f5b3a0bd39"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-38pca",
+      "page": "知识库/recipes/figureya-38pca.md",
+      "page_sha": "c38b3acde696a2e7d1e054c0ae78bcdf31a77a9b",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-38pca/source/FigureYa38PCA.Rmd",
+        "sha": "8be37e018bdcc76cbc0649ef066bf28db3060d4c"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-39bar",
+      "page": "知识库/recipes/figureya-39bar.md",
+      "page_sha": "0b869506641219ee00ec4c1fa51e9ef1db23a86f",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-39bar/source/FigureYa39bar.Rmd",
+        "sha": "e405e5b1d605651d71528444ad23407ed19e8b05"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-3genomeview",
+      "page": "知识库/recipes/figureya-3genomeview.md",
+      "page_sha": "fb242bd5b6c60e35eda2fd6e184faba5c80d7d6e",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-3genomeview/source/FigureYa3genomeView.Rmd",
+        "sha": "1b1403ee95f89e2acac34db75880584aa87b7f07"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-41geo2lncrna-update",
+      "page": "知识库/recipes/figureya-41geo2lncrna-update.md",
+      "page_sha": "8e502cc1a3d68dc1772d38362991a9854d567d10",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-41geo2lncrna-update/source/FigureYa41GEO2lncRNA_update.Rmd",
+        "sha": "b3da84ad7b75e90605173d92588212e3ec18d299"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-42oncoprintv2-update",
+      "page": "知识库/recipes/figureya-42oncoprintv2-update.md",
+      "page_sha": "017ab25efe59ebad0ab84911e75fcb2372f13cfb",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-42oncoprintv2-update/source/FigureYa42oncoprintV2_update.Rmd",
+        "sha": "b25946daa81ef58a2f341db1811208f6196d071f"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-43manhattanv2",
+      "page": "知识库/recipes/figureya-43manhattanv2.md",
+      "page_sha": "5b812c266157336270b09bb967954c8b13be1dc3",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-43manhattanv2/source/FigureYa43ManhattanV2.Rmd",
+        "sha": "e89574b059b53429af991d650ce1cec9e9d65ce0"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-44profile",
+      "page": "知识库/recipes/figureya-44profile.md",
+      "page_sha": "879d25a31d19d6ee565cca6a35123cbe1ccf3feb",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-44profile/source/FigureYa44profile.Rmd",
+        "sha": "2129795c18bb07090c7b1d295b3d6a12236caa72"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-45v2",
+      "page": "知识库/recipes/figureya-45v2.md",
+      "page_sha": "fd3c1396ed46acfa38c1e868d2eb81a83c81a647",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-45v2/source/FigureYa45iClusterV2.Rmd",
+        "sha": "002200de06365081c197fb14f1dc7b21545cc70e"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-47hrtable",
+      "page": "知识库/recipes/figureya-47hrtable.md",
+      "page_sha": "f575e96b6f13e232791247c86a4eaa34d3996b1e",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-47hrtable/source/FigureYa47HRtable.Rmd",
+        "sha": "455ad433c2eb23d87f0be6f5680c827aec52dc8f"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-48adonis",
+      "page": "知识库/recipes/figureya-48adonis.md",
+      "page_sha": "0f95f29d5007c79ed2d031df5ed454f37685b5b6",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-48adonis/source/FigureYa48Adonis.Rmd",
+        "sha": "e84cab60d37583d89e6dd770401744353e8e79f3"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-51tmb-update",
+      "page": "知识库/recipes/figureya-51tmb-update.md",
+      "page_sha": "94495bcab1d3f2dc544beac2d2fd2031850be7f3",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-51tmb-update/source/FigureYa51TMB_update.Rmd",
+        "sha": "bee37254c5f4450226cda1ad2d6670447e9c38ec"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-52goplot",
+      "page": "知识库/recipes/figureya-52goplot.md",
+      "page_sha": "cb324bd61f01dcdbddcd841892bf633fe475a8b9",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-52goplot/source/FigureYa52GOplot.Rmd",
+        "sha": "fad56f3d363590019591f132f01c56c98daa8262"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-53ppimodule",
+      "page": "知识库/recipes/figureya-53ppimodule.md",
+      "page_sha": "b7f28ac2e2a1213797827ed6ff8d2becf3ad2bd6",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-53ppimodule/source/FigureYa53PPImodule.rmd",
+        "sha": "a22f7aa819bbef6a859544e90b303e5ab67f6f79"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-55pancancer-violinv2",
+      "page": "知识库/recipes/figureya-55pancancer-violinv2.md",
+      "page_sha": "17367ea1b81e4e1f664d2b48f694d465ced67ab8",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-55pancancer-violinv2/source/FigureYa55panCancer_violinV2.Rmd",
+        "sha": "863ce2d8cc61c8ec4f1f422f6f614e0fdce8d986"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-55plus-pancancer-boxplot",
+      "page": "知识库/recipes/figureya-55plus-pancancer-boxplot.md",
+      "page_sha": "aad311d1334d7a2c288c490b029700618c2a06ce",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-55plus-pancancer-boxplot/source/FigureYa55plus_pancancer_boxplot.Rmd",
+        "sha": "413d4d5b32600e78a503cab23696eb6527f98a80"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-56immune-inflitrationv3",
+      "page": "知识库/recipes/figureya-56immune-inflitrationv3.md",
+      "page_sha": "a6b5c8b04c578145266ffc0f42d609495fc241f9",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-56immune-inflitrationv3/source/FigureYa56immune_inflitrationV3.Rmd",
+        "sha": "4c0e25f6c8f3b6de3b3bc024a752b56b20142e1c"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-57profile-1bw",
+      "page": "知识库/recipes/figureya-57profile-1bw.md",
+      "page_sha": "1d7261e58ae2d3012acb0013b3298483e6064785",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-57profile-1bw/source/FigureYa57profile_1bw.Rmd",
+        "sha": "2058b9a07343720f50d9925687a9b2670ef6aa0b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-58lncrnareannotation",
+      "page": "知识库/recipes/figureya-58lncrnareannotation.md",
+      "page_sha": "af20ef9a63ceadd4eda92087db8ad9dccf523afd",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-58lncrnareannotation/source/FigureYa58lncRNAreannotation.Rmd",
+        "sha": "e1a635f423e6f118be9abd04993d1eb5168ace50"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-59plus-geo2deg",
+      "page": "知识库/recipes/figureya-59plus-geo2deg.md",
+      "page_sha": "52a542fa885fc37198375b42f75514659e7c10e7",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-59plus-geo2deg/source/FigureYa59Plus_GEO2DEG.Rmd",
+        "sha": "464f0804daf83e8e83c126d40745f0cae205aba7"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-59volcanov2",
+      "page": "知识库/recipes/figureya-59volcanov2.md",
+      "page_sha": "3c13b429fba92296e339d72e37e9e6e76be4735b",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-59volcanov2/source/FigureYa59volcanoV2.Rmd",
+        "sha": "93a0a96b9f45f0a88370948cf395104777125faf"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-5bubbles",
+      "page": "知识库/recipes/figureya-5bubbles.md",
+      "page_sha": "7c429fd992b791595e099208c17cc2fbcdfae145",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-5bubbles/source/FigureYa5bubbles.Rmd",
+        "sha": "ab8bd46b59986195e9626fa042e7f138758f736a"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-60gsea-clusterprofilerv2",
+      "page": "知识库/recipes/figureya-60gsea-clusterprofilerv2.md",
+      "page_sha": "c3e67a9f64630450aecb15c21a40423f23986232",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-60gsea-clusterprofilerv2/source/FigureYa60GSEA_clusterProfilerV2.Rmd",
+        "sha": "6d9067b957c254fb6fc08e035afd18c3075791af"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-61gsva",
+      "page": "知识库/recipes/figureya-61gsva.md",
+      "page_sha": "b431c5de48195e3324b0b9c745d6a6a8e206c1c4",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-61gsva/source/FigureYa61GSVA.Rmd",
+        "sha": "ec77b1fc67cc0fb59ea0ac33e4c80af7d62bf881"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-63pubmedminingv2",
+      "page": "知识库/recipes/figureya-63pubmedminingv2.md",
+      "page_sha": "054e00f5c87af0ea7f504646e6029a736d4adc17",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-63pubmedminingv2/source/FigureYa63pubmedMiningV2.Rmd",
+        "sha": "be33000fc77e595a6376f0aa204b2c5285b38b7d"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-64triangle",
+      "page": "知识库/recipes/figureya-64triangle.md",
+      "page_sha": "cc8d14e4b56353b527b4570e64238090467f1959",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-64triangle/source/FigureYa64triangle.Rmd",
+        "sha": "0476113270f9bda5e7188db45f5047cd6d791232"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-65svm",
+      "page": "知识库/recipes/figureya-65svm.md",
+      "page_sha": "c3482ecb56ceee10dca9e197a04173f1c423b8e6",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-65svm/source/FigureYa65SVM.Rmd",
+        "sha": "28e67fb6200510a94dc0e07ee17b846d885cbe14"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-66univariatecox",
+      "page": "知识库/recipes/figureya-66univariatecox.md",
+      "page_sha": "099c97c4779648257afc9d00569b5801bcfba214",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-66univariatecox/source/FigureYa66UnivariateCox.Rmd",
+        "sha": "ba8c3fbcb5ee4796f6fee5d179436dbd1504b3cf"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-67phastcons",
+      "page": "知识库/recipes/figureya-67phastcons.md",
+      "page_sha": "c101ef3191ce31bfc4bb4aeb6a6cf4da8f1ea75c",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-67phastcons/source/FigureYa67phastCons.Rmd",
+        "sha": "3c41e77c0026642f91dc87d6c155f7fd42945aad"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-68friendsv2",
+      "page": "知识库/recipes/figureya-68friendsv2.md",
+      "page_sha": "d28a0ac3dcd8fee4c1762a64fa11241631574521",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-68friendsv2/source/FigureYa68friendsV2.Rmd",
+        "sha": "0d9d21bbdcb4ae2492d66aa3b697b20d33a0041c"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-69cancersubtype",
+      "page": "知识库/recipes/figureya-69cancersubtype.md",
+      "page_sha": "d2436b0888e69429184cb99be0735adf8dbb8571",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-69cancersubtype/source/ExcuteCNMF.R",
+        "sha": "593526a64c42355ca44f14ccddbf50e1c936ec96"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-6rhrsv2",
+      "page": "知识库/recipes/figureya-6rhrsv2.md",
+      "page_sha": "af41b7a0c5ffac6b5e2302b41d10a0f06f32fed6",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-6rhrsv2/source/FigureYa6rHRsV2.Rmd",
+        "sha": "07b600c4cc6fd6976be2abd701eda6f4eb42e9ca"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-70mutationevents",
+      "page": "知识库/recipes/figureya-70mutationevents.md",
+      "page_sha": "6994c37976c475c458e70ee958d7452f63314886",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-70mutationevents/source/FigureYa70mutationEvents.Rmd",
+        "sha": "53a004a36132e370778f145a1b89d875aab59269"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-71ssgsea-update",
+      "page": "知识库/recipes/figureya-71ssgsea-update.md",
+      "page_sha": "3176076441eb2b0c126a4ede7783e9d6b8a7c0e9",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-71ssgsea-update/source/FigureYa71ssGSEA_update.Rmd",
+        "sha": "79f187ad601a4604bb6aecf8f731f626800bd8e7"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-73batchcorrelation",
+      "page": "知识库/recipes/figureya-73batchcorrelation.md",
+      "page_sha": "74a31208b3caf66d4b56b61cddc663374c51c9b7",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-73batchcorrelation/source/FigureYa73batchCorrelation.Rmd",
+        "sha": "1ad56980334993ccca63d70f89e00cbac372c8b0"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-74omiccircos",
+      "page": "知识库/recipes/figureya-74omiccircos.md",
+      "page_sha": "d1cae0787cedbe907bedc9b77de5980e2cf22e2e",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-74omiccircos/source/FigureYa74OmicCircos.Rmd",
+        "sha": "02f20c26c544e4354f16fef023d72b73022db0a1"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-75bubble-volcano",
+      "page": "知识库/recipes/figureya-75bubble-volcano.md",
+      "page_sha": "22f4224f049851a2f1a8c2ae076a1c77be38fb1d",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-75bubble-volcano/source/FigureYa75bubble_volcano.Rmd",
+        "sha": "d9dfdde9ca51b5001ad4016ca2faae09796e21da"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-76corrgram",
+      "page": "知识库/recipes/figureya-76corrgram.md",
+      "page_sha": "ba6574cf726e1d75e6bce916974ae93c9bc87d17",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-76corrgram/source/FigureYa76corrgram.Rmd",
+        "sha": "48094ad8b513a062f717a99f000aa5ce5fdcc8bf"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-77basezoom",
+      "page": "知识库/recipes/figureya-77basezoom.md",
+      "page_sha": "9238a99600e07c44e5115bc173ab6797d883e1e5",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-77basezoom/source/FigureYa77baseZoom.Rmd",
+        "sha": "c932a09d9e42f0f90086d705c58fda6bd5076581"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-78gganatogram",
+      "page": "知识库/recipes/figureya-78gganatogram.md",
+      "page_sha": "a6fbe35a43283e8276138d490d6430e6fb86f16a",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-78gganatogram/source/FigureYa78gganatogram.Rmd",
+        "sha": "ae6b9ee937f1c178e862c5e780bb4250cfd0db03"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-7psm",
+      "page": "知识库/recipes/figureya-7psm.md",
+      "page_sha": "01ba2a70a94288520e2a8ce09a42c34b5ab531c0",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-7psm/source/FigureYa7PSM.Rmd",
+        "sha": "7561966c1705908fcdf834671f86975bd468e7fe"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-81immune-network",
+      "page": "知识库/recipes/figureya-81immune-network.md",
+      "page_sha": "de51762eeddbf2ec80723dd564695dbeb562649c",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-81immune-network/source/FigureYa81immune_network.Rmd",
+        "sha": "8bf21305bd504cf6c3b348d0cee8105bfe906a96"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-83enrichment",
+      "page": "知识库/recipes/figureya-83enrichment.md",
+      "page_sha": "be8746bf6dc0cf9f1e9284fdd176c62c10d11eb9",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-83enrichment/source/2_3_ggplot2.R",
+        "sha": "7507245518c6a5595a577e3cccd9e3f22db05934"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-85timeroc",
+      "page": "知识库/recipes/figureya-85timeroc.md",
+      "page_sha": "de34bdc2221c61b54bd13edcb142c6ef104ab2f8",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-85timeroc/source/FigureYa85timeROC.Rmd",
+        "sha": "ce8899b2b71bdd057baa978d0f0885c41197fe49"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-8radar",
+      "page": "知识库/recipes/figureya-8radar.md",
+      "page_sha": "dd74f5c9d41936158a78e4e447675895c09c42ee",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-8radar/source/FigureYa8radarChart.Rmd",
+        "sha": "66e5f87d0f28ed8c54597d444e24cd6f040e9ad9"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-90subgroup",
+      "page": "知识库/recipes/figureya-90subgroup.md",
+      "page_sha": "90974d4255ace9cb8fcb404dc69fad8b7983db46",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-90subgroup/source/FigureYa90subgroup.Rmd",
+        "sha": "c54eae075c054710692711891f5b1abc133fd0bc"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-91cluster-heatmap",
+      "page": "知识库/recipes/figureya-91cluster-heatmap.md",
+      "page_sha": "7f5d0fa19a65f944cbf8148eea0385a20335fcd7",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-91cluster-heatmap/source/FigureYa91cluster_heatmap.Rmd",
+        "sha": "cf532e4c5bf4f4eab669418c1a9792d1a881e355"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-92immune-gene-update",
+      "page": "知识库/recipes/figureya-92immune-gene-update.md",
+      "page_sha": "2d00c95e981266c770fd43c80cc9d63a029cc6dc",
+      "code_files": 4,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-92immune-gene-update/source/FigureYa92immune_gene_update.Rmd",
+        "sha": "da64a276da178c57264f7512cd00be63880ae024"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-95pairwise",
+      "page": "知识库/recipes/figureya-95pairwise.md",
+      "page_sha": "e3d586172e3a0116f817402dd2a999122b6a2c62",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-95pairwise/source/FigureYa95pairwise.Rmd",
+        "sha": "fd9d48896f453dbfbd730d0a8cd0b9d8ca1a6445"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-97correlationv3",
+      "page": "知识库/recipes/figureya-97correlationv3.md",
+      "page_sha": "7e1eb8ac09088154059dc608f24df1196c8a76fc",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-97correlationv3/source/FigureYa97correlationV3.Rmd",
+        "sha": "820d61a0c104b0221a7e1b3fc2fe83ebeff76f1a"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-99smoothhrv2",
+      "page": "知识库/recipes/figureya-99smoothhrv2.md",
+      "page_sha": "a87b547482b91a2e2ff677328a5d65223f841610",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-99smoothhrv2/source/FigureYa99smoothHRv2.Rmd",
+        "sha": "fd9e37e17c65d3b8838c3dedb97cabe0d997730b"
+      }
+    },
+    {
+      "kind": "recipes",
+      "id": "figureya-9heatmap",
+      "page": "知识库/recipes/figureya-9heatmap.md",
+      "page_sha": "f3b80067d0f290a72494dd2ca67f1f314c234e5b",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/recipes/figureya-9heatmap/source/FigureYa9heatmap.Rmd",
+        "sha": "7b35a4b23d3e1695b0f4a1e2199058dc68341e9b"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "page": "知识库/templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md",
+      "page_sha": "ff17ce6dcbc0d1b85cd4319e03bd4a9fcab8e560",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+      "page": "知识库/templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md",
+      "page_sha": "740cb6df22a2bac94f161aa48a44fbec29644f95",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+      "page": "知识库/templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md",
+      "page_sha": "7a31935550ee4e3779b14572957f8b68779abd71",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-19-regression-stability__fig03-density-panel--density-scatter",
+      "page": "知识库/templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md",
+      "page_sha": "27c83ec4de440d6c12525cf99b120d35100abc12",
+      "code_files": 7,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-19-regression-stability__fig04-boxplot-panel--boxplot",
+      "page": "知识库/templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md",
+      "page_sha": "20687e7110ea6de6acb9578bb4faf9d6b1ebd755",
+      "code_files": 7,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+      "page": "知识库/templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md",
+      "page_sha": "21ebe3ba939ef6b928cdd07ca6e4e3a9d5d2d485",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+      "page": "知识库/templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md",
+      "page_sha": "5d92eab0c42404a2e31761f6fbee562ec3b7eeec",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+      "page": "知识库/templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md",
+      "page_sha": "ca3cb21de9d01f9759a3f4f82ef41abac3680f71",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+      "page": "知识库/templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md",
+      "page_sha": "2ec2812222477de6a1369ce9005817819bd85265",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+      "page": "知识库/templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md",
+      "page_sha": "e1e99be225d4a8847307e982d760ead66b163c6e",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/code/__init__.py",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+      "page": "知识库/templates/2026-10-22-scp-example__fig01-volcano--volcano.md",
+      "page_sha": "00e41a942123231bdf9355e572b9f9c4de0a3097",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig01-volcano--volcano/code/core.R",
+        "sha": "327d8518a9e4a4e8caafa2a893a0550b3d0f753a"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig02-ring--ring",
+      "page": "知识库/templates/2026-10-22-scp-example__fig02-ring--ring.md",
+      "page_sha": "35f7905e53f7430830ffc75daa431b2f48545436",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig02-ring--ring/code/core.R",
+        "sha": "b70fe0b535b08242b4f4b63d3e59966dda8cc719"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig03-pie--pie",
+      "page": "知识库/templates/2026-10-22-scp-example__fig03-pie--pie.md",
+      "page_sha": "636765c5d98b9e3c50f9326e5ae035ddb69d7afa",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig03-pie--pie/code/core.R",
+        "sha": "c95a01647629d4cceed1c61ae5c16308d14d2c7d"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig04-rose--rose",
+      "page": "知识库/templates/2026-10-22-scp-example__fig04-rose--rose.md",
+      "page_sha": "8528366bdf2e3116bd36cceda024fc2e8a841dc1",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig04-rose--rose/code/core.R",
+        "sha": "c95a01647629d4cceed1c61ae5c16308d14d2c7d"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig05-trend--trend",
+      "page": "知识库/templates/2026-10-22-scp-example__fig05-trend--trend.md",
+      "page_sha": "6d8ea517a31b6694295fb0d9182f829988ac3c05",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig05-trend--trend/code/core.R",
+        "sha": "c95a01647629d4cceed1c61ae5c16308d14d2c7d"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig06-area--area",
+      "page": "知识库/templates/2026-10-22-scp-example__fig06-area--area.md",
+      "page_sha": "11f07d769d855eb9746f676fd7793f127b6cf0d3",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig06-area--area/code/core.R",
+        "sha": "c95a01647629d4cceed1c61ae5c16308d14d2c7d"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig07-dot--dot",
+      "page": "知识库/templates/2026-10-22-scp-example__fig07-dot--dot.md",
+      "page_sha": "c4ce483b76603eee8ab7e1b143e2689971843468",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig07-dot--dot/code/core.R",
+        "sha": "c95a01647629d4cceed1c61ae5c16308d14d2c7d"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+      "page": "知识库/templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md",
+      "page_sha": "f1e8bcbd34119c6889fc40ab5c1fef8cc532025d",
+      "code_files": 6,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap/code/core.R",
+        "sha": "b9e8133eca602f4f86c2122d139953ccada82c6a"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig09-bar--bar",
+      "page": "知识库/templates/2026-10-22-scp-example__fig09-bar--bar.md",
+      "page_sha": "8b74426221e27ebac49403d8587dd62f69d0f9e9",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig09-bar--bar/code/core.R",
+        "sha": "ce7b1086b7414c5d876634a110deed1de5277139"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig10-sankey--sankey",
+      "page": "知识库/templates/2026-10-22-scp-example__fig10-sankey--sankey.md",
+      "page_sha": "ffad26b295bde76eceae432b6d2b7cb839b2f519",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig10-sankey--sankey/code/core.R",
+        "sha": "d14257bd13d50fa8571880f1d160599b7985e108"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig11-chord--chord",
+      "page": "知识库/templates/2026-10-22-scp-example__fig11-chord--chord.md",
+      "page_sha": "cec239e96649a5ad41f8f7f1f1d5872c4c60bfb9",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig11-chord--chord/code/core.R",
+        "sha": "d7b6c80abe1c298a82136d325ff732e2b27df96a"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig12-venn--venn",
+      "page": "知识库/templates/2026-10-22-scp-example__fig12-venn--venn.md",
+      "page_sha": "0f81f4fc8aee4db1e8f55487716c27a5c8ab1914",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig12-venn--venn/code/core.R",
+        "sha": "e3c24b6faacb41199ba5ead7fc409c49bc2f0406"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig13-upset--upset",
+      "page": "知识库/templates/2026-10-22-scp-example__fig13-upset--upset.md",
+      "page_sha": "f6a705ca78a34419cbb28dc17799dde13db5cc18",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig13-upset--upset/code/core.R",
+        "sha": "f923f6f61a313c7dc870af5d4db367d23438026a"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+      "page": "知识库/templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md",
+      "page_sha": "2b17b8187dfc517091f501c0d85c3422b3478f02",
+      "code_files": 6,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap/code/core.R",
+        "sha": "c54c275d6f93bba1d364480f6c102e375ee3df5c"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+      "page": "知识库/templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md",
+      "page_sha": "6db838bc3e4520f2960b10714617212993621ba4",
+      "code_files": 6,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap/code/core.R",
+        "sha": "b260c95b04a10d693dc2119365769b4f8e2343c0"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig16-cell-density--ridge",
+      "page": "知识库/templates/2026-10-22-scp-example__fig16-cell-density--ridge.md",
+      "page_sha": "e022b887243080d44e6bd86e9fddb72445a21539",
+      "code_files": 5,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig16-cell-density--ridge/code/core.R",
+        "sha": "4e4f19a372b97a82e739afeae407cf3cc08b9219"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap",
+      "page": "知识库/templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap.md",
+      "page_sha": "27348ecc74b866196a7dfa0167c47341e9145abe",
+      "code_files": 6,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap/code/core.R",
+        "sha": "1c28310ee2b77d6129133fb9152ef4f5f1812efa"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "figureya-1survivalcurve-update--km-curve",
+      "page": "知识库/templates/figureya-1survivalcurve-update--km-curve.md",
+      "page_sha": "34b3a75d1cd6936e304a2b208607c880a4d09f38",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/figureya-1survivalcurve-update--km-curve/code/panel.R",
+        "sha": "bb65b8a57eeb00d6bb378f0ed02e9616a211451f"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "figureya-59volcanov2--volcano",
+      "page": "知识库/templates/figureya-59volcanov2--volcano.md",
+      "page_sha": "a5c2ca54817bc56a2cdc42b980d7ed8450866a78",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/figureya-59volcanov2--volcano/code/panel.R",
+        "sha": "e4dccbab39987261ffbe865e711f457767474709"
+      }
+    },
+    {
+      "kind": "templates",
+      "id": "figureya-6rhrsv2--forest",
+      "page": "知识库/templates/figureya-6rhrsv2--forest.md",
+      "page_sha": "9a66b189ed77cc78af0e71932927a22688d33c53",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/templates/figureya-6rhrsv2--forest/code/panel.R",
+        "sha": "81e59f39639f1c03d140f1445dea097891661c33"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "asthma-lactylation-source-catalog",
+      "page": "知识库/methods/asthma-lactylation-source-catalog.md",
+      "page_sha": "3b709669771442da4d370bc543af9d251fe6ec85",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "asthma-lactylation-workflow",
+      "page": "知识库/methods/asthma-lactylation-workflow.md",
+      "page_sha": "2f49092b6e0b002582b1172e6408fa72974055d0",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "batch-integration",
+      "page": "知识库/methods/batch-integration.md",
+      "page_sha": "8029b6d748b2ec08724d1e41718a1dfab57ce774",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/batch-integration/code/analysis.R",
+        "sha": "40b42283214bd3455d64be9961b0ccda8333223a"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "cell-clustering",
+      "page": "知识库/methods/cell-clustering.md",
+      "page_sha": "a5da9eaa466c57d811f2473ec1744d22d513fadd",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/cell-clustering/code/clustering.R",
+        "sha": "5a3534448ffdd224712dee6a60a067eca6f83043"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "cell-quality-control",
+      "page": "知识库/methods/cell-quality-control.md",
+      "page_sha": "0d545b2237f4809003bb3484c21394c5646f15f4",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/cell-quality-control/code/analysis.R",
+        "sha": "9c55259dcb64485e315e93b6824cd9bfa3c5f324"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "cell-type-annotation",
+      "page": "知识库/methods/cell-type-annotation.md",
+      "page_sha": "fa96c11f729d870d7f410f109630dfb8ed1ee09b",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/cell-type-annotation/code/analysis.R",
+        "sha": "59de2cfb6086e3d1957bf144b6f577bb1998d98f"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "differential-expression",
+      "page": "知识库/methods/differential-expression.md",
+      "page_sha": "02a0713d05c6745aa6bdb22ad1f2c4ac618342c8",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/differential-expression/code/analysis.R",
+        "sha": "aaae1ebba188a2e7350eb42b186fa8a39e1551d1"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "dimensionality-reduction",
+      "page": "知识库/methods/dimensionality-reduction.md",
+      "page_sha": "601b2436986353210b1058629b8b03c62bb50fd1",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/dimensionality-reduction/code/analysis.R",
+        "sha": "0ceb29700b4182d35a1c8ff43475c159f6ec121a"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "doublet-detection",
+      "page": "知识库/methods/doublet-detection.md",
+      "page_sha": "52504b4b715477dd37a0316c4e77b57663e2ba81",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/doublet-detection/code/analysis.R",
+        "sha": "8063c644ef9c751fd06051180e40aefdeaca8832"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "dynamic-feature-analysis",
+      "page": "知识库/methods/dynamic-feature-analysis.md",
+      "page_sha": "07cf961f590f5f07670262852d435aeb2c823600",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/dynamic-feature-analysis/code/analysis.R",
+        "sha": "85a4ce9fd1e0bb48e587c0f880f51abcf6818341"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "figureya-multilanguage-assets",
+      "page": "知识库/methods/figureya-multilanguage-assets.md",
+      "page_sha": "f7aae97cb597473737cf5ae4598f6312e922447b",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "gene-set-enrichment",
+      "page": "知识库/methods/gene-set-enrichment.md",
+      "page_sha": "3dfc905989eefd77135bc549cdc935e281f33ea7",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/gene-set-enrichment/code/analysis.R",
+        "sha": "3c88702303f2ebb85e912bfb29b171ef6701e572"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "gene-set-scoring",
+      "page": "知识库/methods/gene-set-scoring.md",
+      "page_sha": "c3fd04a461d0673cede151b33b9cc87e6f72de6a",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/gene-set-scoring/code/analysis.R",
+        "sha": "72a27339f299ace8c39c890358d0aeda1d0d0ce4"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "local-omics-analysis-guide",
+      "page": "知识库/methods/local-omics-analysis-guide.md",
+      "page_sha": "dbe271790a0e1030fb5c640e20be004932e73f93",
+      "code_files": 441,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/local-omics-analysis-guide/code/binary_evaluation.py",
+        "sha": "e21165224664c2772aaf715f53a9c9b9fba22c7f"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "local-omics-visualization-guide",
+      "page": "知识库/methods/local-omics-visualization-guide.md",
+      "page_sha": "eca3eaf7d1cbf2e028dee6a4856d5185f9d89b56",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/local-omics-visualization-guide/code/dependency_plot.R",
+        "sha": "0fdba362b652d1f9b8ecf569a6e1e24758e7a3dc"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "reference-mapping",
+      "page": "知识库/methods/reference-mapping.md",
+      "page_sha": "9401baf8d7b4be942dd7cc5807ccc9e55362c7e6",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/reference-mapping/code/analysis.R",
+        "sha": "65548944b136a247a51e8584423972f1b52cdd98"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "regression-resampling-evaluation",
+      "page": "知识库/methods/regression-resampling-evaluation.md",
+      "page_sha": "d101f0951878a48fc2ca48ea6a3ce959717ff187",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/regression-resampling-evaluation/code/summarize_predictions.py",
+        "sha": "ee0b2c527b01175ad4ee473cf67e994bebb68495"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "rna-velocity",
+      "page": "知识库/methods/rna-velocity.md",
+      "page_sha": "1758a0f1f46e23676ecd9e0c54322b82d1271138",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/rna-velocity/code/analysis.R",
+        "sha": "f930562cea6343a3b4484723428a71bc5a7d0197"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scop-analysis-guide",
+      "page": "知识库/methods/scop-analysis-guide.md",
+      "page_sha": "89e701389f33262e59e98f8e5fe1927d29fe47c1",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "scop-source-catalog",
+      "page": "知识库/methods/scop-source-catalog.md",
+      "page_sha": "6672935fcb69315e497570ccab597a3811c792b6",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "scop-visualization-guide",
+      "page": "知识库/methods/scop-visualization-guide.md",
+      "page_sha": "e7eb80d04808ae86bb0651c54f6e122518175ffa",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "scop-workflows",
+      "page": "知识库/methods/scop-workflows.md",
+      "page_sha": "b54028482c0bf7ae228a32099b89bf956ae926cd",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "scp-annotation-projection",
+      "page": "知识库/methods/scp-annotation-projection.md",
+      "page_sha": "a4fac50957665032d92fa6f0b9a37aa930b59c7d",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-annotation-projection/source/SCP-cell_annotation.R",
+        "sha": "f3bfc4286e99897feae75746903341a4a4d1a443"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-cellqc-doublet",
+      "page": "知识库/methods/scp-cellqc-doublet.md",
+      "page_sha": "54a4ce6aa110394e5dcca5eeb7e0cfc87f055274",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-cellqc-doublet/source/SCP-cellqc.R",
+        "sha": "d3f8d0ef862cbf393655dfd931452c85d2cc808d"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-de-enrichment-dynamic",
+      "page": "知识库/methods/scp-de-enrichment-dynamic.md",
+      "page_sha": "bd081176340c02683bcebf576ff4a3f1c4a6ec3e",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-de-enrichment-dynamic/source/SCP-analysis.R",
+        "sha": "754824c004d4efffea5ca5c574459b54541c072b"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-integration",
+      "page": "知识库/methods/scp-integration.md",
+      "page_sha": "33c278ab3e636def0fea41e4e15b2d4550498673",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-integration/source/SCP-workflow.R",
+        "sha": "ac1de403ec38ea01eefcb57cc785e00f13a359dc"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-local-source",
+      "page": "知识库/methods/scp-local-source.md",
+      "page_sha": "56547b655c3a165bb66ff73ca23c673b309b6a1d",
+      "code_files": 34,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-local-source/code/SCP-local/R/SCP-analysis.R",
+        "sha": "a32ffc4c3d02eb0655a3a025379c0bfa98f0e44a"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-source-catalog",
+      "page": "知识库/methods/scp-source-catalog.md",
+      "page_sha": "919f5fd30d13d39233dcd4ee8d8b05ea780cf9cb",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "scp-standard-workflow",
+      "page": "知识库/methods/scp-standard-workflow.md",
+      "page_sha": "c04a63062db5e12568f9d60e1e7ccb037d43086f",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-standard-workflow/source/SCP-workflow.R",
+        "sha": "ac1de403ec38ea01eefcb57cc785e00f13a359dc"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-trajectory-velocity",
+      "page": "知识库/methods/scp-trajectory-velocity.md",
+      "page_sha": "e173a40818df70031aef7b854baefc0d15d7537e",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-trajectory-velocity/source/SCP-analysis.R",
+        "sha": "754824c004d4efffea5ca5c574459b54541c072b"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-visualization-interface",
+      "page": "知识库/methods/scp-visualization-interface.md",
+      "page_sha": "3fa5ea2232b1531c89a956515b007a8404b7d2a5",
+      "code_files": 3,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-visualization-interface/code/scp_tables.R",
+        "sha": "359c13c780c4743327150fcfa116d3724c44aa61"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-viz-dimplots",
+      "page": "知识库/methods/scp-viz-dimplots.md",
+      "page_sha": "bce865781098a9bd4b808eaba7c5bf122ac58f91",
+      "code_files": 91,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-viz-dimplots/code/celldensityplot/code/fns/CellDensityPlot.R",
+        "sha": "d0307e02cfad3f7fada8b1505862b12e80148828"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-viz-heatmaps",
+      "page": "知识库/methods/scp-viz-heatmaps.md",
+      "page_sha": "8f910809b4f215d6315429ccbe826579cd1b6150",
+      "code_files": 204,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-viz-heatmaps/code/cellcorheatmap/code/fns/Blend2Color.R",
+        "sha": "62454db2506ce41ab26accf5407ae7336a91311f"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-viz-model-overlays",
+      "page": "知识库/methods/scp-viz-model-overlays.md",
+      "page_sha": "938d0f3983e375dc340eda699b8bbfb35310310a",
+      "code_files": 130,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-viz-model-overlays/code/compute-velocity-on-grid/code/fns/asMatrix.R",
+        "sha": "53dfa5291a1967ec4323174a089c02a13f321fa5"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scp-viz-statplots",
+      "page": "知识库/methods/scp-viz-statplots.md",
+      "page_sha": "1913910a6b2c0cdfbd2f2e7818290e983c69fe9b",
+      "code_files": 107,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scp-viz-statplots/code/cellstatplot/code/fns/Blend2Color.R",
+        "sha": "62454db2506ce41ab26accf5407ae7336a91311f"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scrna-marker-annotation",
+      "page": "知识库/methods/scrna-marker-annotation.md",
+      "page_sha": "fea6287a8b46ebb9dd586a1e0f6db3c583be0154",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scrna-marker-annotation/source/annotation.R",
+        "sha": "139f923c2937ff361fe8ef0d5c3f33e872478dd5"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scrna-pathway-signature-ensemble",
+      "page": "知识库/methods/scrna-pathway-signature-ensemble.md",
+      "page_sha": "e9662364937e528dcab842f4313c9f858ea2dc7f",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scrna-pathway-signature-ensemble/source/score_pathway_signatures.R",
+        "sha": "4fe9558e5aa145e8d4d0717b2062696a8f5f7d6f"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "scrna-preprocess-doublet-qc-harmony",
+      "page": "知识库/methods/scrna-preprocess-doublet-qc-harmony.md",
+      "page_sha": "afd507c2807dddf4b7f0825fb3c7755de78256b0",
+      "code_files": 1,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/scrna-preprocess-doublet-qc-harmony/source/preprocess.R",
+        "sha": "4eb48f64e94908e5e5eddb5efb9ee944970c4e43"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "shap-explanation",
+      "page": "知识库/methods/shap-explanation.md",
+      "page_sha": "bb96d41128c75c932c72eebb4bc70dc959c58c1c",
+      "code_files": 2,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/shap-explanation/code/explain_model.py",
+        "sha": "9373ea81f2486c7b3696ef61c1a6024ea231433b"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "trajectory-inference",
+      "page": "知识库/methods/trajectory-inference.md",
+      "page_sha": "1c29b3201474fa7a91871d36b5c3f58d98d73ce9",
+      "code_files": 7,
+      "code_present": true,
+      "first_code": {
+        "path": "知识库/methods/trajectory-inference/code/analysis.R",
+        "sha": "3e0880a4c6298a4c0aa13ec8a423393c672d2bb2"
+      }
+    },
+    {
+      "kind": "methods",
+      "id": "uc-ptm-source-catalog",
+      "page": "知识库/methods/uc-ptm-source-catalog.md",
+      "page_sha": "905a4e55cac9fd925580531a9efd5e872d0aadb9",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "uc-ptm-workflow",
+      "page": "知识库/methods/uc-ptm-workflow.md",
+      "page_sha": "86474cc3533b713afff681e259797fcf622f2882",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    },
+    {
+      "kind": "methods",
+      "id": "uc-spatial-workflows",
+      "page": "知识库/methods/uc-spatial-workflows.md",
+      "page_sha": "4e618acab81dab42744fb2070c6068ca15b4e21a",
+      "code_files": 0,
+      "code_present": false,
+      "first_code": null
+    }
+  ]
+}

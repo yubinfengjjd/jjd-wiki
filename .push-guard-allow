@@ -100,3 +100,5 @@ size wiki/recipes/figureya-3genomeview/source/*.bw  # 合成 bigWig（SYNTHETIC_
 size wiki/recipes/figureya-57profile-1bw/source/8cell.K4me3.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
 size wiki/recipes/*/repair/**  # 修补执行副本的上游字节副本、公开数据集/合成输入与运行产物；非私有数据；单项均小于 GitHub 100 MB
 abs-path wiki/recipes/*/repair/**  # 修补执行副本含本机运行日志（install.log 等）与上游原字节中的历史绝对路径；已核对，仅证据定位用途，非私有数据
+abs-path docs/getting-started.md  # 作者指定的公开 Windows Python 调用示例，不含身份凭据
+abs-path docs/modernization/acceptance.md  # 本轮验收命令与外部审计目录，仅本机路径定位，不含科研私有数据或凭据
