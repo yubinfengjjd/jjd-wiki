@@ -12,7 +12,9 @@ from pathlib import Path
 import shutil
 import stat
 import subprocess
+import sys
 from datetime import datetime, timezone
+from concurrent.futures import ThreadPoolExecutor
 
 from machine_paths import VAULT_LAYOUT, DEV_LAYOUT, resolve_dev_root
 
@@ -36,7 +38,7 @@ def snapshot(path):
         raise ValueError(f'reparse point inside move: {path}')
     if path.is_file():
         return {'.': digest(path)}
-    result = {}
+    paths = []
     for folder, dirs, files in os.walk(path):
         for name in dirs + files:
             p = Path(folder) / name
@@ -44,8 +46,10 @@ def snapshot(path):
                 raise ValueError(f'reparse point inside move: {p}')
         for name in files:
             p = Path(folder) / name
-            result[p.relative_to(path).as_posix()] = digest(p)
-    return result
+            paths.append(p)
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        hashes = pool.map(digest, paths)
+        return {p.relative_to(path).as_posix(): value for p, value in zip(paths, hashes)}
 
 
 def safe(root, name):
@@ -60,7 +64,7 @@ def safe(root, name):
     return path
 
 
-def preflight(repos):
+def preflight(repos, hash_files=True):
     moves = []
     for root, kind in repos:
         root = Path(root).resolve()
@@ -86,7 +90,9 @@ def preflight(repos):
             raise ValueError(f'dirty migration paths in {root}:\n{status.stdout}')
     # Dirty/conflict rejection must be cheap, even with a large ignored node_modules tree.
     for m in moves:
-        m['before'] = snapshot(Path(m['root']) / m['old'])
+        if hash_files:
+            print('Hashing before: ' + m['old'], file=sys.stderr, flush=True)
+        m['before'] = snapshot(Path(m['root']) / m['old']) if hash_files else {}
     return moves
 
 
@@ -164,6 +170,7 @@ def apply(repos, record, aliases=True):
             save(record, data)
             source.rename(target)
             m['moved'] = True
+            print('Verifying move: ' + m['old'] + ' -> ' + m['new'], file=sys.stderr, flush=True)
             m['after'] = snapshot(target)
             save(record, data)
             if m['after'] != m['before']:
@@ -192,9 +199,17 @@ def apply(repos, record, aliases=True):
             save(record, data)
             cfg.write_bytes(after_bytes)
             save(record, data)
-        # Rehash after the sole permitted local-config rewrite.
+        # Only config bytes were modified after the verified atomic moves.
+        # Check those exact files; rereading every immutable input is redundant.
         for m in moves:
-            m['after'] = snapshot(Path(m['root']) / m['new'])
+            target = Path(m['root']) / m['new']
+            for entry in data['configs']:
+                cfg = Path(entry['path'])
+                if cfg.is_relative_to(target):
+                    value = digest(cfg)
+                    if value != entry['after']:
+                        raise ValueError('configuration changed during migration')
+                    m['after'][cfg.relative_to(target).as_posix()] = value
         save(record, data)
         if aliases:
             # Ignore aliases only AFTER clean-source preflight. Repository-wide
@@ -355,9 +370,9 @@ def main():
                       'moves': len(data['moves']), 'files': sum(len(m['after']) for m in data['moves']),
                       'aliases': len(data['aliases']), 'configs': len(data['configs'])}
         else:
-            moves = preflight(repos)
+            moves = preflight(repos, hash_files=False)
             result = {'check_only': True, 'moves': [{k: m[k] for k in ('root', 'old', 'new')} |
-                                                   {'files': len(m['before'])} for m in moves]}
+                                                   {'hashes_checked': False} for m in moves]}
         print(json.dumps(result, ensure_ascii=False, indent=2))
     except (ValueError, OSError, subprocess.CalledProcessError) as exc:
         parser.exit(1, str(exc) + '\n')
