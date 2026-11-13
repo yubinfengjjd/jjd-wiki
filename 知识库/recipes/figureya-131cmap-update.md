@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-131cmap-update
 title: 泛癌CMap化合物富集与机制图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa131CMap_update

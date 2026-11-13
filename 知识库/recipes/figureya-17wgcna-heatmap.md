@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-17wgcna-heatmap
 title: WGCNA模块基因表达热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa17WGCNA_heatmap

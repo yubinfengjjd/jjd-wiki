@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-112venn
 title: 四组韦恩图占比渐变填色
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa112venn

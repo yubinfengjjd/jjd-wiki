@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-118multiclassdeseq2
 title: 多亚型差异表达分析
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa118MulticlassDESeq2

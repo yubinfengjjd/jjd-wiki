@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-23count2tpm
 title: RNA-seq计数转TPM换算
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa23count2TPM

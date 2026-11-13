@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-255time
 title: 肿瘤免疫微环境热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa255TIME

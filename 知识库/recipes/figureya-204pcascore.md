@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-204pcascore
 title: Boruta筛选与PC1签名评分
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa204PCAscore

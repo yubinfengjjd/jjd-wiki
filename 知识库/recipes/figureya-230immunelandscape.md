@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-230immunelandscape
 title: 多算法免疫浸润组合热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa230immunelandscape

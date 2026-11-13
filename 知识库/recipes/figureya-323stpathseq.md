@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-323stpathseq
 title: 空间转录组微生物分布图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa323STpathseq

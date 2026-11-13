@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-63pubmedminingv2
 title: PubMed批量检索与词频挖掘
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa63pubmedMiningV2

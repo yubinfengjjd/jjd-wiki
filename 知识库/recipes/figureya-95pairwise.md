@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-95pairwise
 title: 配对样本距离相关散点图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa95pairwise

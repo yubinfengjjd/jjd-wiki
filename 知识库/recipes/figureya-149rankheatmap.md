@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-149rankheatmap
 title: 差异倍数分档注释热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa149rankHeatmap

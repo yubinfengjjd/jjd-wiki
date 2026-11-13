@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-69cancersubtype
 title: 多组学共识聚类分子分型
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa69cancerSubtype

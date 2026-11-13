@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-47hrtable
 title: 单多因素Cox回归三线表
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa47HRtable

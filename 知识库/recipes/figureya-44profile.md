@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-44profile
 title: 基因组区域平均信号曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa44profile

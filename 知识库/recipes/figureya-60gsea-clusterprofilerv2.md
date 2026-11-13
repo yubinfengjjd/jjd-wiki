@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-60gsea-clusterprofilerv2
 title: 多通路GSEA富集曲线组图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa60GSEA_clusterProfilerV2

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-214kegg-hierarchyv2
 title: KEGG三层层级富集条形图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa214KEGG_hierarchyV2

@@ -56,7 +56,7 @@ summary: 两组或多组的差异基因展示（火山图）与通路层面的�
 | [[templates/2026-10-22-scp-example__fig01-volcano--volcano|差异表达火山图]] | L2 | ready · 可用 | 已确认可换数据的火山图模板（L2） |
 | [[recipes/figureya-59volcanov2|差异表达火山图（经典与进阶）]] | L1 | ready · 运行 pass | FigureYa 经典与进阶火山图 |
 | [[recipes/figureya-13gsea-java-update|Java GSEA 结果多通路美化图]] | L1 | ready · 运行 pass | Java GSEA 输出的多通路美化图 |
-| [[recipes/figureya-61gsva|GSVA 通路评分与组间差异]] | L1 | draft · 运行 pass | GSVA 通路评分 + limma 差异 |
+| [[recipes/figureya-61gsva|GSVA 通路评分与组间差异]] | L1 | ready · 运行 pass | GSVA 通路评分 + limma 差异 |
 | [[recipes/figureya-39bar|分组着色柱图与正负富集柱图]] | L1 | ready · 运行 pass | 正负方向发散柱图（接 GSVA 结果） |
 | [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | 差异表达方法页 |
 | [[methods/gene-set-enrichment|基因集富集分析]] | L2 | ready · 可用 | 基因集富集方法页 |

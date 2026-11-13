@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-66univariatecox
 title: 批量单基因Cox森林图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa66UnivariateCox

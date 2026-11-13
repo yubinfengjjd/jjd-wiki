@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-48adonis
 title: Adonis因子解释度条形图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa48Adonis

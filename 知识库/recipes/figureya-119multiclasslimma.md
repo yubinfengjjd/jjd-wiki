@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-119multiclasslimma
 title: 多亚型limma差异表达分析
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa119Multiclasslimma

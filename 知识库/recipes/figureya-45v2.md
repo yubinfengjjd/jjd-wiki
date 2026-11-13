@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-45v2
 title: 多组学整合聚类分型
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa45V2

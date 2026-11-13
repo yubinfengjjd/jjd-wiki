@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-91cluster-heatmap
 title: 聚类热图与样本顺序导出
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa91cluster_heatmap

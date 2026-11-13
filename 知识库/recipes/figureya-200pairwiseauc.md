@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-200pairwiseauc
 title: 双队列基因预后AUC散点图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa200pairwiseAUC

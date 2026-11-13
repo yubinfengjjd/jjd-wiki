@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-59plus-geo2deg
 title: GEO芯片差异表达与火山图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa59Plus_GEO2DEG

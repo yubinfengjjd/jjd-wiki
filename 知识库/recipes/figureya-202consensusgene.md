@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-202consensusgene
 title: 双通路基因共识聚类分型
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa202consensusGene

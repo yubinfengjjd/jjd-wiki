@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-2ggtree-pheatmap-msa
 title: 进化树表达热图与序列比对
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa2ggtree+pheatmap+msa

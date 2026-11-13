@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-5bubbles
 title: 富集与表达气泡图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa5bubbles

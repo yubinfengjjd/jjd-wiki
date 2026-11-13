@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-83enrichment
 title: 基因集富集耦合热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa83enrichment

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-55plus-pancancer-boxplot
 title: 泛癌肿瘤对照分组箱线图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa55plus_pancancer_boxplot

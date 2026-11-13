@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-74omiccircos
 title: 基因组环状热图连线图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa74OmicCircos

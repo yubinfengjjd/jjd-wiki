@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-308ihs
 title: 蛋白活性异质性评分图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa308IHS

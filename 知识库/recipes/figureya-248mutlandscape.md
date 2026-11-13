@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-248mutlandscape
 title: 多组学突变景观组合热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa248MutLandscape

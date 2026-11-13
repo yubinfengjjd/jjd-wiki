@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-43manhattanv2
 title: 带基因标注的曼哈顿图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa43ManhattanV2

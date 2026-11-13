@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-10chromosomev2-update
 title: 染色体特征分布图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa10chromosomeV2_update

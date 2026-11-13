@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-36nsurvv3
 title: 双基因高低分组生存曲线
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa36nSurvV3

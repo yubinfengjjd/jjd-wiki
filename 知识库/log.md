@@ -1419,3 +1419,5 @@
 ## [2026-11-12 14:39 UTC] acceptance check differential-expression
 
 ## [2026-11-12 15:12 UTC] acceptance check scp-source-catalog
+
+## [2026-11-13 12:46 UTC] ready 82: figureya-109subtypegsea-update, figureya-10chromosomev2-update, figureya-112venn, figureya-113mutsigcv, figureya-114ternarycluster, figureya-115cofactor, figureya-118multiclassdeseq2, figureya-119multiclasslimma, figureya-120multiclassedger, figureya-131cmap-update, figureya-132alteration,

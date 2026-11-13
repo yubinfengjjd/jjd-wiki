@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-113mutsigcv
 title: MutSigCV显著突变基因瀑布图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa113MutSigCV

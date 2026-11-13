@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-38pca
 title: PCA降维置信椭圆图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa38PCA

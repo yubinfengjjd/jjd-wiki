@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-77basezoom
 title: 局部放大气泡散点图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa77baseZoom

@@ -2,7 +2,7 @@
 type: recipe
 id: figureya-311pam50heatmap
 title: PAM50分型签名注释热图
-status: draft
+status: ready
 source:
   id: figureya
   item: FigureYa311PAM50Heatmap
