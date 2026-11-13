@@ -29,12 +29,21 @@ jobs:
           python-version: "3.12"
       - name: 安装依赖
         run: pip install -r 开发/skills/research-wiki/requirements.lock.txt
+      - name: 确定知识目录
+        id: wiki_root
+        shell: bash
+        run: |
+          if [[ -d wiki ]]; then
+            echo "path=wiki" >> "$GITHUB_OUTPUT"
+          else
+            echo "path=知识库" >> "$GITHUB_OUTPUT"
+          fi
       - name: lint --ci
-        run: python -X utf8 开发/skills/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root wiki lint --ci
+        run: python -X utf8 开发/skills/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root "${{ steps.wiki_root.outputs.path }}" lint --ci
       - name: 推送防泄漏检查
         if: github.event_name == 'pull_request'
-        run: python -X utf8 开发/skills/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root wiki gh guard --range origin/${{ github.base_ref }}..HEAD
+        run: python -X utf8 开发/skills/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root "${{ steps.wiki_root.outputs.path }}" gh guard --range origin/${{ github.base_ref }}..HEAD
       - name: 受保护字节核验
-        run: python -X utf8 开发/skills/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root wiki gh protect-baseline --check
+        run: python -X utf8 开发/skills/research-wiki/wiki.py --config 开发/ci/config.ci.json --wiki-root "${{ steps.wiki_root.outputs.path }}" gh protect-baseline --check
       - name: 部署门禁测试
         run: python -X utf8 -m pytest -m "not local" tools/tests
