@@ -102,3 +102,75 @@ size wiki/recipes/*/repair/**  # 修补执行副本的上游字节副本、公�
 abs-path wiki/recipes/*/repair/**  # 修补执行副本含本机运行日志（install.log 等）与上游原字节中的历史绝对路径；已核对，仅证据定位用途，非私有数据
 abs-path docs/getting-started.md  # 作者指定的公开 Windows Python 调用示例，不含身份凭据
 abs-path docs/modernization/acceptance.md  # 本轮验收命令与外部审计目录，仅本机路径定位，不含科研私有数据或凭据
+
+# Canonical Wiki migration: exact public-source assets already tracked in the base.
+# Byte/source-manifest audit: docs/modernization/layout-size-allowances.json; no secret/private-data exemptions.
+size wiki/recipes/figureya-109subtypegsea-update/source/easy_input_expr.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-110mutationsignature/source/blca.mut.maf.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-110mutationsignature/source/deconstructSigs.tar.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-113mutsigcv/source/easy_input_meta.local mutation.full.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-113mutsigcv/source/meta.local mutation.full_MutSig_output.mutations.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-114ternarycluster/source/easy_input_expr.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-118multiclassdeseq2/source/easy_input_counts.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-119multiclasslimma/source/easy_input_FPKM.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-120multiclassedger/source/easy_input_counts.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-129tcgabox/source/HiSeqV2  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-129tcgabox/source/HiSeqV2.zip  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-131cmap-update/source/GPL96.soft  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-131cmap-update/source/GPL96.soft.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-131cmap-update/source/pandif_mRNAsi.xlsx  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-132alteration/source/NIHMS957693-supplement-8.xlsx  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-14circos/source/Mydata/circos.svg  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-151pathifier/source/easy_input_expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-164pca3d/source/easy_input_expr_all.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-200pairwiseauc/source/GSE10186.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-200pairwiseauc/source/LIHC.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-203combat/source/easy_input_GSE41613.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-203combat/source/easy_input_GSE65858.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-203combat/source/easy_input_TCGA.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-203combat/source/gse41613.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-203combat/source/gse65858.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-211multicohortimmsubtype/source/gse41613.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-211multicohortimmsubtype/source/gse65858.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-211multicohortimmsubtype/source/tcga_hnsc.expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-212drugtargetv2/source/CCLE_RNAseq_rsem_genes_tpm_20180929.txt.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-212drugtargetv2/source/CTRP_AUC_raw.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-212drugtargetv2/source/LIHC.TPM.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-212drugtargetv2/source/PRISM_AUC.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-212drugtargetv2/source/data_mutations_mskcc.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-219gmm/source/BRCA-miRNA.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-221tenfoldrf/source/InnateDB_genes.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-221tenfoldrf/source/easy_input_expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-229pcoa/source/easy_input_expr.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-230immunelandscape/source/easy_input.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-231scscore/source/install.log  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-248mutlandscape/source/all_thresholded.by_genes.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-255time/source/tcga.mibc.tpm.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-293plus-binaryclassificationml/source/GSE57303.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-293plus-binaryclassificationml/source/GSE62254.txt.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-293plus-binaryclassificationml/source/RWekajars_3.9.3-2.tar.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-293plus-binaryclassificationml/source/install.log  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-293plus-binaryclassificationml/source/plsRcox-master.tar.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-300pancancor/source/merged_sample_quality_annotations.tsv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-307cnvheatmap/source/TCGA_BLCA.all_thresholded.by_genes.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-308ihs/source/Renji_cohort_MR_exp.matrix  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-308ihs/source/Results/expr.rds  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-308ihs/source/Results/out_unPruned.rds  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-311pam50heatmap/source/data_mrna_seq_fpkm_polya.txt.zip  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-323stpathseq/source/STpathseq/Results/CRC_16/outs/ST.seu.rds  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-44profile/source/control.bw  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-44profile/source/cxxc1.bw  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-45v2/source/Bayfit.RData  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-53ppimodule/source/mmc2.xlsx  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-58lncrnareannotation/source/GPL15314.soft  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-58lncrnareannotation/source/seqmap_gene.tmp  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-59plus-geo2deg/source/GSE17215.RData  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-69cancersubtype/source/GeneExp.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-71ssgsea-update/source/TCGA-COAD.somaticmutation_wxs.tsv.gz  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-71ssgsea-update/source/easy_input_expr.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-71ssgsea-update/source/not_easy_input_expr.csv.zip  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-7psm/source/install.log  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-95pairwise/source/easy_input_expr1.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-95pairwise/source/easy_input_expr2.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-97correlationv3/source/easy_input_expr.csv  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
+size wiki/recipes/figureya-9heatmap/source/mRNA.txt  # 原有公开 FigureYa 来源文件；迁移前后 blob 与 source.json SHA-256 一致，保留原字节；小于 GitHub 100 MiB
