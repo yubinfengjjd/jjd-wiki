@@ -64,7 +64,10 @@ def safe(root, name):
     return path
 
 
-def preflight(repos, hash_files=True):
+def preflight(repos, hash_files=True, skip_paths=()):
+    valid = set(VAULT_LAYOUT) | set(DEV_LAYOUT)
+    if set(skip_paths) - valid:
+        raise ValueError('unknown skipped migration path')
     moves = []
     for root, kind in repos:
         root = Path(root).resolve()
@@ -74,6 +77,8 @@ def preflight(repos, hash_files=True):
             raise ValueError(f'not a repository root: {root}')
         mapping = VAULT_LAYOUT if kind == 'vault' else DEV_LAYOUT
         for old, new in mapping.items():
+            if old in skip_paths:
+                continue
             existing_alias = root / old
             if linked(existing_alias) and (root / new).exists() and existing_alias.resolve() == (root / new).resolve():
                 continue
@@ -83,7 +88,7 @@ def preflight(repos, hash_files=True):
             if source.exists():
                 moves.append({'root': str(root), 'old': old, 'new': new,
                               'moved': False})
-        paths = [p for pair in mapping.items() for p in pair]
+        paths = [p for old, new in mapping.items() if old not in skip_paths for p in (old, new)]
         status = subprocess.run(['git', '-C', str(root), 'status', '--porcelain', '--untracked-files=all', '--', *paths],
                                 capture_output=True, text=True, encoding='utf-8', check=True)
         if status.stdout.strip():
@@ -130,8 +135,8 @@ def junction(alias, target):
         alias.symlink_to(target, target_is_directory=True)
 
 
-def apply(repos, record, aliases=True):
-    moves = preflight(repos)
+def apply(repos, record, aliases=True, skip_paths=()):
+    moves = preflight(repos, skip_paths=skip_paths)
     # Parse and validate ignored configs before the first filesystem mutation.
     for root, kind in repos:
         if kind == 'dev':
@@ -352,6 +357,8 @@ def main():
     parser.add_argument('--vault-root', type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument('--dev-root', type=Path)
     parser.add_argument('--record', type=Path)
+    parser.add_argument('--skip-path', action='append', default=[],
+                        help='explicitly defer one fixed legacy path while migrating the others')
     args = parser.parse_args()
     try:
         if args.rollback:
@@ -365,12 +372,12 @@ def main():
         if args.apply:
             if not args.record:
                 parser.error('--apply requires --record (a new local audit directory)')
-            data = apply(repos, args.record)
+            data = apply(repos, args.record, skip_paths=args.skip_path)
             result = {'state': data['state'], 'record': str(args.record.resolve()),
                       'moves': len(data['moves']), 'files': sum(len(m['after']) for m in data['moves']),
                       'aliases': len(data['aliases']), 'configs': len(data['configs'])}
         else:
-            moves = preflight(repos, hash_files=False)
+            moves = preflight(repos, hash_files=False, skip_paths=args.skip_path)
             result = {'check_only': True, 'moves': [{k: m[k] for k in ('root', 'old', 'new')} |
                                                    {'hashes_checked': False} for m in moves]}
         print(json.dumps(result, ensure_ascii=False, indent=2))

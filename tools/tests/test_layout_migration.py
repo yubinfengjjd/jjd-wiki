@@ -183,3 +183,14 @@ def test_interrupted_after_atomic_move_before_after_hash_can_rollback(tmp_path, 
     monkeypatch.setattr(m, 'snapshot', real_snapshot)
     m.rollback(record)
     assert m.snapshot(root / '知识库') == original
+
+
+def test_explicitly_deferred_locked_tree_is_untouched(tmp_path):
+    m = load()
+    root = fixture_repo(tmp_path / 'vault')
+    before = m.snapshot(root / '知识库')
+    result = m.apply([(root, 'vault')], tmp_path / 'record', aliases=False,
+                     skip_paths=['知识库'])
+    assert not any(item['old'] == '知识库' for item in result['moves'])
+    assert m.snapshot(root / '知识库') == before
+    assert not (root / 'wiki').exists()
