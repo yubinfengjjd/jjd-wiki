@@ -1,0 +1,1715 @@
+{
+  "audit_date": "2026-11-13",
+  "scope": "local checked-out source, current pages/catalog and read-only lint; no scientific validation",
+  "page_count": 334,
+  "page_types": {
+    "chart-type": 53,
+    "interface": 26,
+    "layout": 27,
+    "method": 43,
+    "recipe": 146,
+    "scenario": 7,
+    "source": 2,
+    "template": 30
+  },
+  "page_statuses": {
+    "chart-type:-": 53,
+    "interface:-": 26,
+    "layout:archived": 3,
+    "layout:pending_template": 24,
+    "method:ready": 43,
+    "recipe:ready": 27,
+    "recipe:draft": 119,
+    "scenario:-": 7,
+    "source:-": 2,
+    "template:ready": 30
+  },
+  "catalog_count": 244,
+  "catalog_kinds": {
+    "scenario": 7,
+    "template": 30,
+    "recipe": 131,
+    "method": 43,
+    "item": 33
+  },
+  "catalog_usable": {
+    "template": 30,
+    "recipe": 14,
+    "method": 14
+  },
+  "catalog_run_states": {
+    "-": 80,
+    "pass": 96,
+    "fail": 35,
+    "none": 33
+  },
+  "body_wikilink_graph": {
+    "edges_undirected": 999,
+    "connected_nodes": 305,
+    "isolated_nodes": [
+      "chart-types/anatogram.md",
+      "chart-types/bubble.md",
+      "chart-types/calibration.md",
+      "chart-types/circos.md",
+      "chart-types/decision-curve.md",
+      "chart-types/deg-table.md",
+      "chart-types/dendrogram.md",
+      "chart-types/density.md",
+      "chart-types/errorbar.md",
+      "chart-types/genome-track.md",
+      "chart-types/gsea-curve.md",
+      "chart-types/ideogram.md",
+      "chart-types/lasso-path.md",
+      "chart-types/lollipop.md",
+      "chart-types/manhattan.md",
+      "chart-types/network.md",
+      "chart-types/nomogram.md",
+      "chart-types/oncoprint.md",
+      "chart-types/palette.md",
+      "chart-types/pca.md",
+      "chart-types/radial.md",
+      "chart-types/risk-plot.md",
+      "chart-types/roc.md",
+      "chart-types/scatter.md",
+      "chart-types/spatial-map.md",
+      "chart-types/spline-hr.md",
+      "chart-types/table.md",
+      "chart-types/ternary.md",
+      "chart-types/waterfall.md"
+    ],
+    "scope": "body wikilinks only; excludes metadata relations, asset links and curation filtering"
+  },
+  "methods": [
+    {
+      "id": "asthma-lactylation-source-catalog",
+      "title": "乳酸化研究脚本来源索引",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "asthma-lactylation-workflow",
+      "title": "乳酸化与代谢研究分析流程",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "batch-integration",
+      "title": "单细胞批次整合",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 2
+    },
+    {
+      "id": "cell-clustering",
+      "title": "单细胞聚类分析",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "cell-quality-control",
+      "title": "单细胞质量控制",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "cell-type-annotation",
+      "title": "细胞类型注释",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "differential-expression",
+      "title": "差异表达分析",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "dimensionality-reduction",
+      "title": "单细胞降维分析",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "doublet-detection",
+      "title": "双细胞检测",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "dynamic-feature-analysis",
+      "title": "拟时序动态特征分析",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "figureya-multilanguage-assets",
+      "title": "交互绘图与多语言工具索引",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "gene-set-enrichment",
+      "title": "基因集富集分析",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "gene-set-scoring",
+      "title": "基因集与通路签名打分",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "local-omics-analysis-guide",
+      "title": "组学课题方法去重与选择",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 22
+    },
+    {
+      "id": "local-omics-visualization-guide",
+      "title": "课题绘图依赖与自定义改造",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 18
+    },
+    {
+      "id": "reference-mapping",
+      "title": "参考图谱映射",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 2
+    },
+    {
+      "id": "regression-resampling-evaluation",
+      "title": "回归模型的重采样评估与折外预测",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "rna-velocity",
+      "title": "RNA 速度分析",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "scop-analysis-guide",
+      "title": "单细胞与空间分析方法导航",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scop-source-catalog",
+      "title": "单细胞与空间组学来源索引",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scop-visualization-guide",
+      "title": "单细胞与空间绘图入口导航",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scop-workflows",
+      "title": "单细胞与空间组学工作流",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-annotation-projection",
+      "title": "单细胞自动注释与参考投影",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-cellqc-doublet",
+      "title": "单细胞 QC 与双细胞检测",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-de-enrichment-dynamic",
+      "title": "单细胞差异表达、基因集富集与动态特征",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-integration",
+      "title": "单细胞多样本整合",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-local-source",
+      "title": "SCP 源码本地化",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-source-catalog",
+      "title": "单细胞全库来源与入口索引",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-standard-workflow",
+      "title": "单细胞标准预处理、降维与聚类",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-trajectory-velocity",
+      "title": "单细胞轨迹推断与 RNA 速度",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scp-visualization-interface",
+      "title": "SCP 绘图函数与图接口映射",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "scp-viz-dimplots",
+      "title": "单细胞降维与表达绘图入口",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 5
+    },
+    {
+      "id": "scp-viz-heatmaps",
+      "title": "单细胞表达与动态热图入口",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 4
+    },
+    {
+      "id": "scp-viz-model-overlays",
+      "title": "轨迹富集与网络绘图入口",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 9
+    },
+    {
+      "id": "scp-viz-statplots",
+      "title": "单细胞统计与相关绘图入口",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 5
+    },
+    {
+      "id": "scrna-marker-annotation",
+      "title": "单细胞标记基因注释与聚类检查",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scrna-pathway-signature-ensemble",
+      "title": "单细胞通路签名打分与组间比较",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "scrna-preprocess-doublet-qc-harmony",
+      "title": "单细胞预处理、批次校正与聚类",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "shap-explanation",
+      "title": "基于 SHAP 的模型解释",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 1
+    },
+    {
+      "id": "trajectory-inference",
+      "title": "拟时序与轨迹推断",
+      "kind": "analysis",
+      "status": "ready",
+      "implementations": 5
+    },
+    {
+      "id": "uc-ptm-source-catalog",
+      "title": "修饰研究脚本来源索引",
+      "kind": "technical",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "uc-ptm-workflow",
+      "title": "修饰分型与模型分析流程",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": 0
+    },
+    {
+      "id": "uc-spatial-workflows",
+      "title": "空间转录组分支与推断边界",
+      "kind": "workflow",
+      "status": "ready",
+      "implementations": 0
+    }
+  ],
+  "queries": [
+    {
+      "query": "共表达",
+      "seconds": 0.6527,
+      "top5": [
+        {
+          "id": "figureya-37correlationv2-update",
+          "kind": "recipe",
+          "title": "圆形布局基因相关连线图",
+          "score": 5.0,
+          "why": [
+            "部分匹配“共表达”",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-202consensusgene",
+          "kind": "recipe",
+          "title": "双通路基因共识聚类分型",
+          "score": 3.0,
+          "why": [
+            "用途/场景含“共表达”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+          "kind": "template",
+          "title": "SHAP 环形贡献图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“共表达”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+          "kind": "template",
+          "title": "marker 特征 UMAP 小多图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“共表达”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+          "kind": "template",
+          "title": "差异表达火山图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“共表达”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "coexpression",
+      "seconds": 0.0046,
+      "top5": [
+        {
+          "id": "figureya-138nicecalibration",
+          "kind": "recipe",
+          "title": "Logistic 模型校准曲线与 HL 检验",
+          "score": 6.0,
+          "why": [
+            "领域 diagnostic-roc",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-30nomogram-update",
+          "kind": "recipe",
+          "title": "Cox/Logistic 列线图与校准曲线",
+          "score": 6.0,
+          "why": [
+            "领域 diagnostic-roc",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-33dca-update",
+          "kind": "recipe",
+          "title": "决策曲线与净获益分析",
+          "score": 6.0,
+          "why": [
+            "领域 diagnostic-roc",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-200pairwiseauc",
+          "kind": "recipe",
+          "title": "双队列基因预后AUC散点图",
+          "score": 2.5,
+          "why": [
+            "领域 diagnostic-roc"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-219gmm",
+          "kind": "recipe",
+          "title": "高斯混合模型筛选最优分类模型",
+          "score": 2.5,
+          "why": [
+            "领域 diagnostic-roc"
+          ],
+          "usable": false,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "WGCNA",
+      "seconds": 0.0046,
+      "top5": [
+        {
+          "id": "figureya-17wgcna-heatmap",
+          "kind": "recipe",
+          "title": "WGCNA模块基因表达热图",
+          "score": 4.0,
+          "why": [
+            "标题含“wgcna”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-230immunelandscape",
+          "kind": "recipe",
+          "title": "多算法免疫浸润组合热图",
+          "score": 3.0,
+          "why": [
+            "用途/场景含“wgcna”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-53ppimodule",
+          "kind": "recipe",
+          "title": "PPI网络模块挖掘导出",
+          "score": 1.0,
+          "why": [
+            "关键词含“wgcna”"
+          ],
+          "usable": false,
+          "run": "fail"
+        },
+        {
+          "id": "asthma-lactylation-workflow",
+          "kind": "method",
+          "title": "乳酸化与代谢研究分析流程",
+          "score": 1.0,
+          "why": [
+            "关键词含“wgcna”"
+          ],
+          "usable": false,
+          "run": null
+        },
+        {
+          "id": "local-omics-analysis-guide",
+          "kind": "method",
+          "title": "组学课题方法去重与选择",
+          "score": 1.0,
+          "why": [
+            "关键词含“wgcna”"
+          ],
+          "usable": false,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "找出一起变化的基因模块",
+      "seconds": 0.0055,
+      "top5": [
+        {
+          "id": "figureya-202consensusgene",
+          "kind": "recipe",
+          "title": "双通路基因共识聚类分型",
+          "score": 2.5,
+          "why": [
+            "部分匹配“找出一起变化的基因模块”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap",
+          "kind": "template",
+          "title": "marker 特征 UMAP 小多图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“找出一起变化的基因模块”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+          "kind": "template",
+          "title": "细胞类型 × 基因气泡点图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“找出一起变化的基因模块”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+          "kind": "template",
+          "title": "差异表达火山图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“找出一起变化的基因模块”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+          "kind": "template",
+          "title": "分组热图（多分组注释）",
+          "score": 2.0,
+          "why": [
+            "部分匹配“找出一起变化的基因模块”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "差异表达",
+      "seconds": 0.0054,
+      "top5": [
+        {
+          "id": "figureya-59volcanov2",
+          "kind": "recipe",
+          "title": "差异表达火山图（经典与进阶）",
+          "score": 9.0,
+          "why": [
+            "标题含“差异表达”",
+            "领域 transcriptomics",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+          "kind": "template",
+          "title": "差异表达火山图",
+          "score": 7.5,
+          "why": [
+            "标题含“差异表达”",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "differential-expression",
+          "kind": "method",
+          "title": "差异表达分析",
+          "score": 7.5,
+          "why": [
+            "标题含“差异表达”",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-37correlationv2-update",
+          "kind": "recipe",
+          "title": "圆形布局基因相关连线图",
+          "score": 6.5,
+          "why": [
+            "部分匹配“差异表达”",
+            "领域 transcriptomics",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-61gsva",
+          "kind": "recipe",
+          "title": "GSVA 通路评分与组间差异",
+          "score": 6.5,
+          "why": [
+            "部分匹配“差异表达”",
+            "领域 transcriptomics",
+            "场景首选"
+          ],
+          "usable": false,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "differential expression",
+      "seconds": 0.0051,
+      "top5": [
+        {
+          "id": "differential-expression",
+          "kind": "method",
+          "title": "差异表达分析",
+          "score": 7.5,
+          "why": [
+            "标题含“differential”",
+            "标题含“expression”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-138nicecalibration",
+          "kind": "recipe",
+          "title": "Logistic 模型校准曲线与 HL 检验",
+          "score": 6.0,
+          "why": [
+            "领域 diagnostic-roc",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-30nomogram-update",
+          "kind": "recipe",
+          "title": "Cox/Logistic 列线图与校准曲线",
+          "score": 6.0,
+          "why": [
+            "领域 diagnostic-roc",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-33dca-update",
+          "kind": "recipe",
+          "title": "决策曲线与净获益分析",
+          "score": 6.0,
+          "why": [
+            "领域 diagnostic-roc",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+          "kind": "template",
+          "title": "细胞类型 × 基因气泡点图",
+          "score": 3.5,
+          "why": [
+            "用途/场景含“expression”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "比较两组细胞哪些基因表达不同",
+      "seconds": 0.0062,
+      "top5": [
+        {
+          "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+          "kind": "template",
+          "title": "分组热图（多分组注释）",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组细胞哪些基因表达不同”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-59volcanov2--volcano",
+          "kind": "template",
+          "title": "bulk 差异火山图（分级着色）",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组细胞哪些基因表达不同”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-162boxviolin",
+          "kind": "recipe",
+          "title": "半小提琴箱线散点组合图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组细胞哪些基因表达不同”"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-227boxdensity",
+          "kind": "recipe",
+          "title": "箱线图叠加密度分布图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组细胞哪些基因表达不同”"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-59volcanov2",
+          "kind": "recipe",
+          "title": "差异表达火山图（经典与进阶）",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组细胞哪些基因表达不同”"
+          ],
+          "usable": true,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "细胞注释",
+      "seconds": 0.0058,
+      "top5": [
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+          "kind": "template",
+          "title": "CNS 细胞类型 UMAP",
+          "score": 5.0,
+          "why": [
+            "部分匹配“细胞注释”",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+          "kind": "template",
+          "title": "细胞类型 × 基因气泡点图",
+          "score": 5.0,
+          "why": [
+            "部分匹配“细胞注释”",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "scp-standard-workflow",
+          "kind": "method",
+          "title": "单细胞标准预处理、降维与聚类",
+          "score": 3.5,
+          "why": [
+            "部分匹配“细胞注释”",
+            "场景首选"
+          ],
+          "usable": false,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig08-group-heatmap--heatmap",
+          "kind": "template",
+          "title": "分组热图（多分组注释）",
+          "score": 2.5,
+          "why": [
+            "部分匹配“细胞注释”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig14-feature-heatmap--heatmap",
+          "kind": "template",
+          "title": "特征表达热图",
+          "score": 2.5,
+          "why": [
+            "部分匹配“细胞注释”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "cell annotation",
+      "seconds": 0.0059,
+      "top5": [
+        {
+          "id": "cell-type-annotation",
+          "kind": "method",
+          "title": "细胞类型注释",
+          "score": 7.5,
+          "why": [
+            "标题含“cell”",
+            "标题含“annotation”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+          "kind": "template",
+          "title": "CNS 细胞类型 UMAP",
+          "score": 6.5,
+          "why": [
+            "用途/场景含“cell”",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "dimension-reduction-single-cell",
+          "kind": "scenario",
+          "title": "降维与单细胞",
+          "score": 4.5,
+          "why": [
+            "标题含“cell”",
+            "领域 single-cell"
+          ],
+          "usable": null,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+          "kind": "template",
+          "title": "细胞比例堆叠流带图",
+          "score": 4.5,
+          "why": [
+            "标题含“cell”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap",
+          "kind": "template",
+          "title": "细胞相似度热图",
+          "score": 4.5,
+          "why": [
+            "标题含“cell”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "判断每个细胞属于什么类型",
+      "seconds": 0.0063,
+      "top5": [
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin",
+          "kind": "template",
+          "title": "分组小提琴图（含统计标注）",
+          "score": 3.0,
+          "why": [
+            "部分匹配“判断每个细胞属于什么类型”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig03-pie--pie",
+          "kind": "template",
+          "title": "分组构成饼图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“判断每个细胞属于什么类型”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig04-rose--rose",
+          "kind": "template",
+          "title": "分组构成玫瑰图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“判断每个细胞属于什么类型”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig05-trend--trend",
+          "kind": "template",
+          "title": "分组构成趋势图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“判断每个细胞属于什么类型”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig06-area--area",
+          "kind": "template",
+          "title": "分组构成面积图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“判断每个细胞属于什么类型”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "生存曲线",
+      "seconds": 0.0056,
+      "top5": [
+        {
+          "id": "figureya-1survivalcurve-update",
+          "kind": "recipe",
+          "title": "多组 KM 生存曲线与风险表",
+          "score": 11.0,
+          "why": [
+            "标题含“生存曲线”",
+            "图型 km-curve",
+            "领域 survival-analysis",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-284pairwiselogrank",
+          "kind": "recipe",
+          "title": "三组以上 KM 曲线与两两比较表",
+          "score": 8.5,
+          "why": [
+            "部分匹配“生存曲线”",
+            "图型 km-curve",
+            "领域 survival-analysis",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-1survivalcurve-update--km-curve",
+          "kind": "template",
+          "title": "KM 生存曲线与风险表",
+          "score": 8.0,
+          "why": [
+            "标题含“生存曲线”",
+            "图型 km-curve",
+            "领域 survival-analysis"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-211multicohortimmsubtype",
+          "kind": "recipe",
+          "title": "多队列免疫分型热图与生存曲线",
+          "score": 7.5,
+          "why": [
+            "标题含“生存曲线”",
+            "图型 km-curve",
+            "领域 survival-analysis"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-35batch-bestseparationv3-update",
+          "kind": "recipe",
+          "title": "批量最佳切点生存曲线",
+          "score": 7.5,
+          "why": [
+            "标题含“生存曲线”",
+            "图型 km-curve",
+            "领域 survival-analysis"
+          ],
+          "usable": false,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "survival",
+      "seconds": 0.0086,
+      "top5": [
+        {
+          "id": "figureya-1survivalcurve-update",
+          "kind": "recipe",
+          "title": "多组 KM 生存曲线与风险表",
+          "score": 11.0,
+          "why": [
+            "标题含“survival”",
+            "图型 km-curve",
+            "领域 survival-analysis",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-284pairwiselogrank",
+          "kind": "recipe",
+          "title": "三组以上 KM 曲线与两两比较表",
+          "score": 9.0,
+          "why": [
+            "关键词含“survival”",
+            "图型 km-curve",
+            "领域 survival-analysis",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-1survivalcurve-update--km-curve",
+          "kind": "template",
+          "title": "KM 生存曲线与风险表",
+          "score": 8.0,
+          "why": [
+            "标题含“survival”",
+            "图型 km-curve",
+            "领域 survival-analysis"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-30nomogram-update",
+          "kind": "recipe",
+          "title": "Cox/Logistic 列线图与校准曲线",
+          "score": 7.0,
+          "why": [
+            "关键词含“survival”",
+            "领域 survival-analysis",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-33dca-update",
+          "kind": "recipe",
+          "title": "决策曲线与净获益分析",
+          "score": 7.0,
+          "why": [
+            "关键词含“survival”",
+            "领域 survival-analysis",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "比较两组患者的随访结局",
+      "seconds": 0.0057,
+      "top5": [
+        {
+          "id": "figureya-162boxviolin",
+          "kind": "recipe",
+          "title": "半小提琴箱线散点组合图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组患者的随访结局”"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-1survivalcurve-update",
+          "kind": "recipe",
+          "title": "多组 KM 生存曲线与风险表",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组患者的随访结局”"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-227boxdensity",
+          "kind": "recipe",
+          "title": "箱线图叠加密度分布图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“比较两组患者的随访结局”"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-59volcanov2--volcano",
+          "kind": "template",
+          "title": "bulk 差异火山图（分级着色）",
+          "score": 2.5,
+          "why": [
+            "部分匹配“比较两组患者的随访结局”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-163twovarcor-update",
+          "kind": "recipe",
+          "title": "分组相关性散点与系数差异检验",
+          "score": 2.5,
+          "why": [
+            "部分匹配“比较两组患者的随访结局”"
+          ],
+          "usable": false,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "批次效应",
+      "seconds": 0.0047,
+      "top5": [
+        {
+          "id": "figureya-38pca",
+          "kind": "recipe",
+          "title": "PCA降维置信椭圆图",
+          "score": 3.0,
+          "why": [
+            "用途/场景含“批次效应”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-6rhrsv2--forest",
+          "kind": "template",
+          "title": "亚组分析森林图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“批次效应”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-203combat",
+          "kind": "recipe",
+          "title": "跨平台表达谱批次校正",
+          "score": 2.0,
+          "why": [
+            "用途/场景含“批次效应”"
+          ],
+          "usable": false,
+          "run": "fail"
+        },
+        {
+          "id": "batch-integration",
+          "kind": "method",
+          "title": "单细胞批次整合",
+          "score": 2.0,
+          "why": [
+            "部分匹配“批次效应”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "differential-expression",
+          "kind": "method",
+          "title": "差异表达分析",
+          "score": 2.0,
+          "why": [
+            "部分匹配“批次效应”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "batch correction",
+      "seconds": 0.0049,
+      "top5": [
+        {
+          "id": "batch-integration",
+          "kind": "method",
+          "title": "单细胞批次整合",
+          "score": 4.5,
+          "why": [
+            "标题含“batch”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-35batch-bestseparationv3-update",
+          "kind": "recipe",
+          "title": "批量最佳切点生存曲线",
+          "score": 4.0,
+          "why": [
+            "标题含“batch”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-73batchcorrelation",
+          "kind": "recipe",
+          "title": "目标基因批量相关散点图",
+          "score": 4.0,
+          "why": [
+            "标题含“batch”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-194pyscenic",
+          "kind": "recipe",
+          "title": "单细胞转录调控网络构建",
+          "score": 2.0,
+          "why": [
+            "关键词含“batch”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-archive-20251223:FigureYa250ImmGenePair",
+          "kind": "item",
+          "title": "FigureYa250ImmGenePair",
+          "score": 2.0,
+          "why": [
+            "用途/场景含“batch”"
+          ],
+          "usable": false,
+          "run": "none"
+        }
+      ]
+    },
+    {
+      "query": "不同批次测出来的数据怎么整合",
+      "seconds": 0.0057,
+      "top5": [
+        {
+          "id": "figureya-211multicohortimmsubtype",
+          "kind": "recipe",
+          "title": "多队列免疫分型热图与生存曲线",
+          "score": 2.5,
+          "why": [
+            "部分匹配“不同批次测出来的数据怎么整合”"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "batch-integration",
+          "kind": "method",
+          "title": "单细胞批次整合",
+          "score": 2.5,
+          "why": [
+            "部分匹配“不同批次测出来的数据怎么整合”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig01-cns-umap--umap",
+          "kind": "template",
+          "title": "CNS 细胞类型 UMAP",
+          "score": 2.0,
+          "why": [
+            "部分匹配“不同批次测出来的数据怎么整合”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow",
+          "kind": "template",
+          "title": "细胞比例堆叠流带图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“不同批次测出来的数据怎么整合”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-scp-example__fig02-ring--ring",
+          "kind": "template",
+          "title": "分组构成同心环图",
+          "score": 2.0,
+          "why": [
+            "部分匹配“不同批次测出来的数据怎么整合”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    },
+    {
+      "query": "火山图",
+      "seconds": 0.0051,
+      "top5": [
+        {
+          "id": "figureya-59volcanov2",
+          "kind": "recipe",
+          "title": "差异表达火山图（经典与进阶）",
+          "score": 11.0,
+          "why": [
+            "标题含“火山图”",
+            "图型 volcano",
+            "领域 transcriptomics",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+          "kind": "template",
+          "title": "差异表达火山图",
+          "score": 9.5,
+          "why": [
+            "标题含“火山图”",
+            "图型 volcano",
+            "场景首选"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-59volcanov2--volcano",
+          "kind": "template",
+          "title": "bulk 差异火山图（分级着色）",
+          "score": 8.0,
+          "why": [
+            "标题含“火山图”",
+            "图型 volcano",
+            "领域 transcriptomics"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-59plus-geo2deg",
+          "kind": "recipe",
+          "title": "GEO芯片差异表达与火山图",
+          "score": 7.5,
+          "why": [
+            "标题含“火山图”",
+            "图型 volcano",
+            "领域 transcriptomics"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-75bubble-volcano",
+          "kind": "recipe",
+          "title": "分组气泡火山图",
+          "score": 7.5,
+          "why": [
+            "标题含“火山图”",
+            "图型 volcano",
+            "领域 transcriptomics"
+          ],
+          "usable": false,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "volcano",
+      "seconds": 0.0048,
+      "top5": [
+        {
+          "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+          "kind": "template",
+          "title": "差异表达火山图",
+          "score": 6.5,
+          "why": [
+            "标题含“volcano”",
+            "图型 volcano"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-59volcanov2--volcano",
+          "kind": "template",
+          "title": "bulk 差异火山图（分级着色）",
+          "score": 6.5,
+          "why": [
+            "标题含“volcano”",
+            "图型 volcano"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-59volcanov2",
+          "kind": "recipe",
+          "title": "差异表达火山图（经典与进阶）",
+          "score": 6.5,
+          "why": [
+            "标题含“volcano”",
+            "图型 volcano"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-75bubble-volcano",
+          "kind": "recipe",
+          "title": "分组气泡火山图",
+          "score": 6.0,
+          "why": [
+            "标题含“volcano”",
+            "图型 volcano"
+          ],
+          "usable": false,
+          "run": "pass"
+        },
+        {
+          "id": "figureya-59plus-geo2deg",
+          "kind": "recipe",
+          "title": "GEO芯片差异表达与火山图",
+          "score": 4.0,
+          "why": [
+            "关键词含“volcano”",
+            "图型 volcano"
+          ],
+          "usable": false,
+          "run": "pass"
+        }
+      ]
+    },
+    {
+      "query": "展示差异基因的变化幅度和显著性",
+      "seconds": 0.0059,
+      "top5": [
+        {
+          "id": "2026-10-22-scp-example__fig01-volcano--volcano",
+          "kind": "template",
+          "title": "差异表达火山图",
+          "score": 3.0,
+          "why": [
+            "部分匹配“展示差异基因的变化幅度和显著性”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "figureya-59volcanov2",
+          "kind": "recipe",
+          "title": "差异表达火山图（经典与进阶）",
+          "score": 3.0,
+          "why": [
+            "部分匹配“展示差异基因的变化幅度和显著性”"
+          ],
+          "usable": true,
+          "run": "pass"
+        },
+        {
+          "id": "dynamic-feature-analysis",
+          "kind": "method",
+          "title": "拟时序动态特征分析",
+          "score": 3.0,
+          "why": [
+            "部分匹配“展示差异基因的变化幅度和显著性”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "gene-set-scoring",
+          "kind": "method",
+          "title": "基因集与通路签名打分",
+          "score": 3.0,
+          "why": [
+            "部分匹配“展示差异基因的变化幅度和显著性”"
+          ],
+          "usable": true,
+          "run": null
+        },
+        {
+          "id": "2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot",
+          "kind": "template",
+          "title": "细胞类型 × 基因气泡点图",
+          "score": 2.5,
+          "why": [
+            "部分匹配“展示差异基因的变化幅度和显著性”"
+          ],
+          "usable": true,
+          "run": null
+        }
+      ]
+    }
+  ],
+  "lint": {
+    "seconds": 74.8,
+    "counts": {
+      "WARN": 99
+    },
+    "diagnostics": [
+      "WARN methods/batch-integration.md: 实现 scp-harmony：not_run；当前不能推荐执行",
+      "WARN methods/batch-integration.md: method batch-integration / scp-harmony: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: 实现 native-library：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 native-dynamic：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 native-cellchat：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 native-singscore：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 irgsea-score：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 irgsea-integrate：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 consensus-cluster：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 cellchat-create：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 gsva-call：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: 实现 stacking-cli：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / native-library: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / native-dynamic: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / native-cellchat: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / native-singscore: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / irgsea-score: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / irgsea-integrate: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / consensus-cluster: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / cellchat-create: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / gsva-call: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-analysis-guide.md: method local-omics-analysis-guide / stacking-cli: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: 实现 irgsea-heatmap：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 scp-cell-dim：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 scp-feature-dim：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 scp-feature-stat：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 scp-feature-heatmap：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 cellchat-circle：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 cellchat-bubble：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 cellchat-aggregate：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 cellchat-heatmap：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 cellchat-role-heatmap：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: 实现 cellchat-role-scatter：not_run；当前不能推荐执行",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / irgsea-heatmap: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / scp-cell-dim: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / scp-feature-dim: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / scp-feature-stat: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / scp-feature-heatmap: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / cellchat-circle: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / cellchat-bubble: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / cellchat-aggregate: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / cellchat-heatmap: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / cellchat-role-heatmap: 独立声明未运行（not_run）",
+      "WARN methods/local-omics-visualization-guide.md: method local-omics-visualization-guide / cellchat-role-scatter: 独立声明未运行（not_run）",
+      "WARN methods/reference-mapping.md: 实现 scp-runseuratmap：not_run；当前不能推荐执行",
+      "WARN methods/reference-mapping.md: method reference-mapping / scp-runseuratmap: 独立声明未运行（not_run）",
+      "WARN methods/rna-velocity.md: 实现 scp-scvelo：not_run；当前不能推荐执行",
+      "WARN methods/scp-viz-heatmaps.md: 实现 scp-cellcorheatmap：not_run；当前不能推荐执行",
+      "WARN methods/scp-viz-heatmaps.md: method scp-viz-heatmaps / scp-cellcorheatmap: 独立声明尚无独立性证据",
+      "WARN methods/scp-viz-model-overlays.md: 实现 scp-pagaplot：not_run；当前不能推荐执行",
+      "WARN methods/scp-viz-model-overlays.md: 实现 scp-velocityplot：not_run；当前不能推荐执行",
+      "WARN methods/scp-viz-model-overlays.md: 实现 scp-compute-velocity-on-grid：not_run；当前不能推荐执行",
+      "WARN methods/scp-viz-model-overlays.md: method scp-viz-model-overlays / scp-pagaplot: 独立声明尚无独立性证据",
+      "WARN methods/scp-viz-model-overlays.md: method scp-viz-model-overlays / scp-velocityplot: 独立声明尚无独立性证据",
+      "WARN methods/scp-viz-model-overlays.md: method scp-viz-model-overlays / scp-compute-velocity-on-grid: 独立声明尚无独立性证据",
+      "WARN methods/trajectory-inference.md: 实现 scp-monocle2：not_run；当前不能推荐执行",
+      "WARN methods/trajectory-inference.md: 实现 scp-monocle3：not_run；当前不能推荐执行",
+      "WARN methods/trajectory-inference.md: 实现 scp-monocle2-core：not_run；当前不能推荐执行",
+      "WARN methods/trajectory-inference.md: 实现 scp-monocle3-core：not_run；当前不能推荐执行",
+      "WARN methods/trajectory-inference.md: method trajectory-inference / scp-monocle2-core: 独立声明未运行（not_run）",
+      "WARN methods/trajectory-inference.md: method trajectory-inference / scp-monocle2: 独立声明未运行（not_run）",
+      "WARN methods/trajectory-inference.md: method trajectory-inference / scp-monocle3-core: 独立声明未运行（not_run）",
+      "WARN methods/trajectory-inference.md: method trajectory-inference / scp-monocle3: 独立声明未运行（not_run）",
+      "WARN recipes/figureya-110mutationsignature.md: 入库验收: 最近运行为 fail：error in evaluating the argument 'x' in selecting a method for function 'ncol': object 'signatures.cosmic' not found",
+      "WARN recipes/figureya-129tcgabox.md: 入库验收: 最近运行为 fail：File 'mutation' does not exist or is non-readable. getwd()=='<workdir>'",
+      "WARN recipes/figureya-14circos.md: 入库验收: 最近运行为 fail：object '.' not found",
+      "WARN recipes/figureya-18oncoplot-update.md: 入库验收: 最近运行为 fail：I couldn't find all the files from the query.Please check directory parameter right",
+      "WARN recipes/figureya-195panpaire.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-19lollipop.md: 入库验收: 最近运行为 fail：I couldn't find all the files from the query. Please check if the directory parameter is right or `GDCdownload` downloaded the samples.",
+      "WARN recipes/figureya-203combat.md: 入库验收: 最近运行为 fail：argument is of length zero",
+      "WARN recipes/figureya-206scheatmap.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-212drugtargetv2.md: 入库验收: 最近运行为 fail：超过 9000 秒未结束，已终止",
+      "WARN recipes/figureya-215dnaage.md: 入库验收: 最近运行为 fail：File 'HumanMethylation450' does not exist or is non-readable. getwd()=='<workdir>'",
+      "WARN recipes/figureya-231scscore.md: 入库验收: 最近运行为 fail：HTTP 403 Forbidden.",
+      "WARN recipes/figureya-239st-pdac.md: 入库验收: 最近运行为 fail：File 'GSE111672_RAW/GSM3036911_PDAC-A-ST1-filtered.txt' does not exist or is non-readable. getwd()=='<workdir>'",
+      "WARN recipes/figureya-253pangsea.md: 入库验收: 最近运行为 fail：File 'EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv' does not exist or is non-readable. getwd()=='<workdir>'",
+      "WARN recipes/figureya-275scaucell.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-277immunomodulator.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-293machinelearning.md: 入库验收: 最近运行为 fail：arguments imply differing number of rows: 269, 268",
+      "WARN recipes/figureya-293plus-binaryclassificationml.md: 入库验收: 最近运行为 fail：protect(): protection stack overflow",
+      "WARN recipes/figureya-294hccdrug.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-300pancancor.md: 入库验收: 最近运行为 fail：File 'EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv' does not exist or is non-readable. getwd()=='<workdir>'",
+      "WARN recipes/figureya-304magic.md: 入库验收: 最近运行为 fail：download from 'https://datasets.cellxgene.cziscience.com/79f80e59-97e7-4f95-b1e9-9767a24b85b0.h5ad' failed",
+      "WARN recipes/figureya-310cpdbchordgramv2.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-314singlerscore.md: 入库验收: 最近运行为 fail：subscript out of bounds",
+      "WARN recipes/figureya-315singlerfraction.md: 入库验收: 最近运行为 fail：error in evaluating the argument 'x' in selecting a method for function 'merge': subscript out of bounds",
+      "WARN recipes/figureya-318genesetdedotplot.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-320clontypeheatmap.md: 入库验收: 最近运行为 fail：attempt to set 'colnames' on an object with less than two dimensions",
+      "WARN recipes/figureya-32id-table.md: 入库验收: 最近运行为 fail：invalid 'description' argument",
+      "WARN recipes/figureya-3genomeview.md: 入库验收: 最近运行为 fail：invalid class \"ReferenceDataTrack\" object: The referenced file 'POLR2A.bw' does not exist",
+      "WARN recipes/figureya-41geo2lncrna-update.md: 入库验收: 最近运行为 fail：HTTP 405 Method Not Allowed.",
+      "WARN recipes/figureya-52goplot.md: 入库验收: 最近运行为 fail：unused arguments (circular = TRUE, colorEdge = TRUE)",
+      "WARN recipes/figureya-53ppimodule.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-55pancancer-violinv2.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-56immune-inflitrationv3.md: 入库验收: 最近运行为 fail：cannot open the connection",
+      "WARN recipes/figureya-57profile-1bw.md: 入库验收: 最近运行为 fail：line 1 did not have 18 elements",
+      "WARN recipes/figureya-67phastcons.md: 入库验收: 最近运行为 fail：File 'temp_signal_rev.txt' does not exist or is non-readable. getwd()=='<workdir>'",
+      "WARN recipes/figureya-70mutationevents.md: 入库验收: 最近运行为 fail：'mc3.v0.2.8.PUBLIC.nonsilentGene.xena' does not exist in current working",
+      "WARN recipes/figureya-71ssgsea-update.md: 入库验收: 最近运行为 fail：cannot open the connection"
+    ]
+  }
+}

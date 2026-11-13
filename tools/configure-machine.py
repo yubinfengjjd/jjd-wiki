@@ -3,7 +3,7 @@ import argparse
 import json
 from pathlib import Path
 
-from machine_paths import resolve_dev_root
+from machine_paths import resolve_dev_root, resolve_skill_root, resolve_input_path
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
         dev = resolve_dev_root(vault, args.dev_root)
     except ValueError as exc:
         parser.error(str(exc))
-    skill = dev / 'staged/research-wiki'
+    skill = resolve_skill_root(dev)
     env_root = (args.env_root or vault.parent / 'research-wiki-env').resolve()
     output = (args.output or skill / 'config.json').resolve()
     if output.exists():
@@ -28,7 +28,7 @@ def main():
         if not path.is_file():
             parser.error(f'文件不存在：{path}')
     cfg = json.loads((skill / 'config.example.json').read_text(encoding='utf-8'))
-    cfg.update(wiki_root=str(vault / '知识库'), gallery_root=str(vault / '画廊'),
+    cfg.update(wiki_root=str(resolve_input_path(vault, '知识库')), gallery_root=str(resolve_input_path(vault, '画廊')),
                taxonomy=str(skill / 'assets/scenario_taxonomy.json'),
                python_exe=str(args.python_exe.resolve()), rscript_exe=str(args.rscript_exe.resolve()),
                sources_root=str(env_root / 'sources'), work_root=str(env_root / 'work/rwiki'),

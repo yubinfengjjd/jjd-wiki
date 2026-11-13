@@ -13,9 +13,9 @@ import pytest
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "tools"))
-from machine_paths import resolve_dev_root, resolve_input_path
+from machine_paths import resolve_dev_root, resolve_input_path, resolve_skill_root
 
-CATALOG = ROOT / "文档/依赖清单"
+CATALOG = resolve_input_path(ROOT, "文档/依赖清单")
 
 
 def rows(path):
@@ -27,7 +27,7 @@ def test_every_runtime_declaration_is_accounted_for():
     actual = {(r["ecosystem"], r["package"]) for r in rows(CATALOG / "packages.tsv")}
     excluded = {r["package"] for r in rows(CATALOG / "excluded-or-built-in.tsv")}
     assert len(actual) == len(rows(CATALOG / "packages.tsv"))
-    for path in (ROOT / "知识库").glob("*/*/runtime.json"):
+    for path in (resolve_input_path(ROOT, "知识库")).glob("*/*/runtime.json"):
         record = json.loads(path.read_text(encoding="utf-8"))
         for branch in record.get("implementations", [record]):
             for field in ("required_packages", "optional_packages"):
@@ -43,7 +43,7 @@ def test_manifest_binds_current_declarations_and_artifacts():
         for name, expected in manifest[field].items():
             path = resolve_input_path(ROOT, name) if field == "inputs_sha256" else base / name
             assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, name
-    assert (CATALOG / "python/wiki.requirements.lock.txt").read_bytes() == (resolve_dev_root(ROOT) / "staged/research-wiki/requirements.lock.txt").read_bytes()
+    assert (CATALOG / "python/wiki.requirements.lock.txt").read_bytes() == (resolve_skill_root(resolve_dev_root(ROOT)) / "requirements.lock.txt").read_bytes()
 
 
 def test_legacy_scp_pins_are_not_combined_with_modern_candidates():
@@ -82,7 +82,7 @@ def test_special_sources_are_pinned_and_unresolved_sources_remain_visible():
     assert ggcor["installer"] == "archive"
     assert "/8d7a02c7d00467c45471139b63620571afebbeba/" in ggcor["spec"]
     snapshot = json.loads((CATALOG / "repository-snapshot.json").read_text(encoding="utf-8"))
-    archive = ROOT / "知识库/recipes/figureya-228linkcor/source/ggcor-master.tar.gz"
+    archive = resolve_input_path(ROOT, "知识库/recipes/figureya-228linkcor/source/ggcor-master.tar.gz")
     assert hashlib.sha256(archive.read_bytes()).hexdigest() == snapshot["packages"]["ggcor"]["archive_sha256"]
     scp = next(row for row in plan if row["package"] == "SCP")
     assert scp["catalog_version"] == "0.5.6"
@@ -103,7 +103,7 @@ def test_r_presence_check_does_not_install_into_missing_library(tmp_path):
     if not rscript.is_file():
         pytest.skip("Local Rscript is not available")
     library, report = tmp_path / "not-created", tmp_path / "report"
-    helper_path = ROOT / "知识库/methods/local-omics-analysis-guide/code/run_r.py"
+    helper_path = resolve_input_path(ROOT, "知识库/methods/local-omics-analysis-guide/code/run_r.py")
     helper_spec = importlib.util.spec_from_file_location("existing_r_child_helper", helper_path)
     helper = importlib.util.module_from_spec(helper_spec)
     helper_spec.loader.exec_module(helper)

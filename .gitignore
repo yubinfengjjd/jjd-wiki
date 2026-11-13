@@ -86,3 +86,49 @@ Thumbs.db
 # 获取方式见各配方页面与 source 内说明。
 /知识库/recipes/figureya-215dnaage/source/HumanMethylation450
 /知识库/recipes/figureya-275scaucell/source/immune.combined.rds
+
+# Canonical layout generated/local exclusions.
+/archive/maintenance/**
+!/archive/maintenance/**/
+!/archive/maintenance/**/*.md
+!/archive/maintenance/**/*.json
+!/archive/maintenance/**/*.py
+!/archive/maintenance/**/*.ps1
+!/archive/maintenance/**/*.mjs
+!/archive/maintenance/**/*.R
+!/archive/maintenance/**/*.r
+!/archive/maintenance/**/*.js
+!/archive/maintenance/**/*.cjs
+!/archive/maintenance/**/*.diff
+!/archive/maintenance/**/*.yaml
+!/archive/maintenance/**/*.yml
+/archive/maintenance/**/browser/
+/archive/maintenance/**/backup/
+/archive/maintenance/**/before/
+/archive/maintenance/**/baseline/
+/archive/maintenance/**/deployment/
+/archive/maintenance/**/*-before/
+/archive/maintenance/**/logs/
+/archive/maintenance/**/.git/
+/archive/maintenance/**/fixtures/
+/archive/maintenance/**/migration-fixture/
+/archive/maintenance/**/修改前/
+archive/maintenance/*/fixtures/
+archive/maintenance/**/migration-fixture/
+/gallery/**/*.log
+/gallery/**/stdout.txt
+/gallery/**/stderr.txt
+/archive/maintenance/**/controlled-tags-red*/
+/archive/maintenance/**/frontend-dist/
+/archive/maintenance/**/node_modules/
+/wiki/recipes/figureya-215dnaage/source/HumanMethylation450
+/wiki/recipes/figureya-275scaucell/source/immune.combined.rds
+
+# Local migration journals contain machine paths and Git metadata backups.
+/.layout-migrations/
+
+
+
+# Disposable audit test repositories remain local; migration preserves their bytes.
+/维护记录/**/pytest-tmp/
+/archive/maintenance/**/pytest-tmp/

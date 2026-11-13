@@ -10,7 +10,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from machine_paths import resolve_dev_root
+from machine_paths import resolve_dev_root, resolve_skill_root, resolve_input_path
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_R = {"base", "compiler", "datasets", "graphics", "grDevices", "grid", "methods", "parallel",
@@ -41,7 +41,7 @@ def write_tsv(path, rows, fields):
 
 def collect(root, dev_root=None):
     dev_root = resolve_dev_root(root, dev_root)
-    sys.path.insert(0, str(dev_root / "staged/research-wiki"))
+    sys.path.insert(0, str(resolve_skill_root(dev_root)))
     from rwiki.adapters import required_packages, declared_only
     from rwiki.pages import read_page
     records = defaultdict(lambda: {"refs": set(), "runtime": False, "pending": False})
@@ -52,7 +52,7 @@ def collect(root, dev_root=None):
         inputs[path.relative_to(root).as_posix()] = hashlib.sha256(data).hexdigest()
         return data.decode("utf-8")
 
-    pending_file = root / "文档/迁移验证清单-20261102/unverified-branches.json"
+    pending_file = resolve_input_path(root, "文档/迁移验证清单-20261102/unverified-branches.json", dev_root)
     pending = {(r["method_id"], r["implementation"]) for r in json.loads(read(pending_file))}
 
     def add(language, package, scope, reference, runtime=False, waiting=False):
@@ -61,7 +61,7 @@ def collect(root, dev_root=None):
         row["runtime"] |= runtime
         row["pending"] |= waiting
 
-    for path in sorted((root / "知识库").glob("*/*/runtime.json")):
+    for path in sorted((resolve_input_path(root, "知识库", dev_root)).glob("*/*/runtime.json")):
         runtime = json.loads(read(path))
         for branch in runtime.get("implementations", [runtime]):
             reference = path.relative_to(root).as_posix() + "#" + branch.get("id", runtime["id"])
@@ -70,7 +70,7 @@ def collect(root, dev_root=None):
                 for language, packages in branch.get(scope, {}).items():
                     for package in packages:
                         add(language, package, scope, reference, True, waiting)
-    for path in sorted((root / "知识库/recipes").glob("*.md")):
+    for path in sorted((resolve_input_path(root, "知识库/recipes", dev_root)).glob("*.md")):
         read(path)
         meta, _ = read_page(path)
         for package in required_packages(meta.get("packages", {})):
@@ -78,35 +78,35 @@ def collect(root, dev_root=None):
         for package in declared_only(meta.get("packages", {})):
             excluded.append({"package": package, "reference": path.relative_to(root).as_posix(),
                              "reason": "Install-script declaration unused by recipe code; not required here."})
-    for path in sorted((root / "知识库/sources").glob("*/items.jsonl")):
+    for path in sorted((resolve_input_path(root, "知识库/sources", dev_root)).glob("*/items.jsonl")):
         for line in read(path).splitlines():
             item = json.loads(line)
             for package in required_packages(item.get("packages", {})):
                 add("R", package, "L0-candidate", path.parent.name + ":" + str(item.get("id", "")))
-    for path in sorted((root / "文档/依赖清单/source-rules").glob("*.DESCRIPTION")):
+    for path in sorted((resolve_input_path(root, "文档/依赖清单/source-rules", dev_root)).glob("*.DESCRIPTION")):
         meta = description(read(path))
         for field in ("Depends", "Imports", "LinkingTo", "Suggests"):
             for item in meta.get(field, "").split(","):
                 package = re.sub(r"\s*\(.*?\)", "", item).strip()
                 if package and package != "R":
                     add("R", package, "source-" + field, meta["Package"])
-    path = root / "知识库/methods/scop-source-catalog/core-install-plan.json"
+    path = resolve_input_path(root, "知识库/methods/scop-source-catalog/core-install-plan.json", dev_root)
     for target in json.loads(read(path))["targets"]:
         add("R", target["package"], "source-core", "scop")
     for package in ("BiocManager", "remotes", "BPCells"):
         add("R", package, "batch-bootstrap", "R installer / monocle3 prerequisite", True, True)
-    provenance = root / "文档/依赖清单/python/source-provenance.json"
+    provenance = resolve_input_path(root, "文档/依赖清单/python/source-provenance.json", dev_root)
     if provenance.is_file():
         source = json.loads(read(provenance))["scp_legacy"]
-        read(root / source["source"])
-        if inputs[source["source"]] != source["sha256"]:
+        read(resolve_input_path(root, source["source"], dev_root))
+        if hashlib.sha256(resolve_input_path(root, source["source"], dev_root).read_bytes()).hexdigest() != source["sha256"]:
             raise ValueError("SCP source changed: refresh the Python profiles before exporting")
     return records, inputs, excluded
 
 
 def export(root, dev_root=None):
     dev_root = resolve_dev_root(root, dev_root)
-    out = root / "文档/依赖清单"
+    out = resolve_input_path(root, "文档/依赖清单", dev_root)
     records, inputs, excluded = collect(root, dev_root)
     routes_path = out / "repository-snapshot.json"
     routes = json.loads(routes_path.read_text(encoding="utf-8"))
@@ -134,7 +134,7 @@ def export(root, dev_root=None):
     for profile in ("runtime", "pending", "all"):
         names = [r["package"] for r in rows if r["ecosystem"] == "R" and (profile == "all" or r[profile])]
         (out / f"R/{profile}.txt").write_text("\n".join(names) + "\n", encoding="utf-8")
-    frontend = dev_root / "frontend/package-lock.json"
+    frontend = resolve_input_path(root, "开发/frontend/package-lock.json", dev_root)
     data = json.loads(frontend.read_text(encoding="utf-8"))
     # Preserve the logical manifest key for both physical checkout layouts.
     inputs["开发/frontend/package-lock.json"] = hashlib.sha256(frontend.read_bytes()).hexdigest()

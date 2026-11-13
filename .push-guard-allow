@@ -52,3 +52,51 @@ size 知识库/recipes/figureya-57profile-1bw/source/8cell.K4me3.bw  # 合成 bi
 # figureya-repair 分离：repair/ 为修补执行副本，含上游字节副本、补齐的公开数据集/合成输入与运行产物；非私有数据；单项均小于 GitHub 100 MB。超过 100 MB 的本机保留文件不进 Git（见 知识库/.gitignore 与各 repair.json 的 not_in_git）。
 size 知识库/recipes/*/repair/**  # 修补执行副本的上游字节副本、公开数据集/合成输入与运行产物；非私有数据；单项均小于 GitHub 100 MB
 abs-path 知识库/recipes/*/repair/**  # 修补执行副本含本机运行日志（install.log 等）与上游原字节中的历史绝对路径；已核对，仅证据定位用途，非私有数据
+
+# Canonical layout equivalents; historical rules above remain for history checks.
+abs-path wiki/**/verification/**  # 本地复核回执，路径即证据定位
+abs-path wiki/templates/**/verify/**  # 模板复核回执与历史，记录本机运行环境
+abs-path wiki/templates/**/provenance/**  # 模板出处记录，路径即来源定位
+abs-path wiki/methods/scrna-*.md  # 方法页出处栏记录原始课题脚本位置（作者内容，不改写）
+abs-path wiki/methods/scrna-marker-annotation/source/**  # 非 GPL 原始脚本，保留原始字节
+abs-path wiki/AGENTS.md  # 规则文档：限定 vault 与工具位置
+abs-path archive/docs/**  # 设计、交接与验收记录：路径即证据定位
+abs-path archive/docs/specs/**  # 历史特性规格：描述本机目录布局
+abs-path integrations/obsidian/.obsidian/plugins/**  # 第三方插件构建产物中的示例与系统路径
+abs-path archive/docs/agent-tasks/**  # 交付与部署报告：记录本机装包、运行与部署位置，路径即证据定位
+abs-path wiki/methods/**/code/**  # 已核对源码无凭据；保留原字节中的来源/运行路径，是否可迁移另由 runtime 收据判断
+abs-path wiki/methods/**/source/**  # 原字节来源快照中的历史路径，不改变源码以规避路径检查
+abs-path wiki/recipes/**/source/**  # 已公开上游配方的原字节与样例说明，保留出处路径
+abs-path wiki/templates/**/code/**  # 已核对的模板实现，保留原有路径与原字节
+abs-path wiki/templates/**/example/**  # 公开示例资料中的来源路径，不含私有课题输入
+abs-path gallery/**  # 画廊知识材料，记录复刻来源、输入和产物的定位路径；私有数据不随附
+abs-path archive/maintenance/**  # 经排除浏览器会话/备份/原始课题数据后的知识维护记录，路径为证据定位
+abs-path wiki/methods/local-omics-visualization-guide/scp-project-integration-20261102b.json  # 既有集成回执记录原始项目路径，不含项目数据
+size gallery/2026-08-17-shap-feature-mechanism/figures/fig01-shap-a-f/compare/side_by_side.png  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size gallery/2026-10-19-regression-stability/figures/fig01-density-grid/compare/side_by_side.png  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size gallery/2026-10-19-regression-stability/figures/fig01-density-grid/iterations/round-01/compare/side_by_side.png  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-141risk/source/easy_input_risk.csv  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-143survcor-update/source/TCGA.COADREAD.sampleMap_HiSeqV2_PANCAN.gz  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-143survcor-update/source/TCGA.SKCM.sampleMap_HiSeqV2_PANCAN.gz  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-193risktable/source/gse39582.expr.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-193risktable/source/tcga.expr.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-228linkcor/source/tcga_blca_fpkm.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-293machinelearning/source/GSE57303.txt  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+size wiki/recipes/figureya-293machinelearning/source/GSE62254.txt.gz  # 已核查的公开上游样例或画廊对照图；无私有数据，单文件小于 GitHub 100 MB
+abs-path archive/docs/依赖清单/README.md  # 新电脑部署说明中的示例路径，不含私有输入或凭据
+size wiki/recipes/figureya-304magic/source/SCLC_epithelial_cells.h5ad  # 合成输入（页面与 SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-253pangsea/source/EBPlusPlusAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.tsv  # 合成输入（页面与 SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-310cpdbchordgramv2/source/ifnb.rds  # 公开 SeuratData ifnb 数据集的派生对象；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-239st-pdac/source/GSE111672_RAW/*.txt  # GEO 公开补充文件 GSE111672；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-239st-pdac/source/GSE111672_*-indrop-filtered-expMat.txt  # GEO 公开补充文件 GSE111672；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-206scheatmap/source/GSE130664_merge_UMI_count.txt.gz  # GEO 公开数据 GSE130664 完整版；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-53ppimodule/source/10090.protein.actions.v11.0.txt.gz  # STRING 公开数据压缩入库；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-53ppimodule/source/MOUSE_10090_idmapping_selected.tab  # STRING/uniprot 公开映射表；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-195panpaire/source/easy_input_expr.RDS  # 合成输入（页面与 SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-231scscore/source/data/*  # sankowski-et-al 公开仓库原始数据；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-314singlerscore/source/InputData/GSE154763_*.csv.gz  # GEO 公开补充文件 GSE154763；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-315singlerfraction/source/InputData/GSE154763_*.csv.gz  # GEO 公开补充文件 GSE154763；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-3genomeview/source/*.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/figureya-57profile-1bw/source/8cell.K4me3.bw  # 合成 bigWig（SYNTHETIC_INPUTS 已声明）；无私有数据，小于 GitHub 100 MB
+size wiki/recipes/*/repair/**  # 修补执行副本的上游字节副本、公开数据集/合成输入与运行产物；非私有数据；单项均小于 GitHub 100 MB
+abs-path wiki/recipes/*/repair/**  # 修补执行副本含本机运行日志（install.log 等）与上游原字节中的历史绝对路径；已核对，仅证据定位用途，非私有数据
