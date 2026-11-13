@@ -5,6 +5,7 @@ from pathlib import Path
 VAULT_LAYOUT = {'知识库': 'wiki', '画廊': 'gallery', '文档': 'archive/docs',
                 '维护记录': 'archive/maintenance', 'obsidian-vault': 'integrations/obsidian'}
 DEV_LAYOUT = {'staged/research-wiki': 'skills/research-wiki', 'frontend': 'apps/web',
+              'staged/integration-patches.md': 'archive/staged/integration-patches.md',
               'obsidian-neural-view': 'plugins/obsidian-neural-view', 'review': 'archive/review',
               'operations': 'archive/operations', 'spec/api.md': 'docs/api.md',
               'spec/scenario_taxonomy.yaml': 'docs/scenario_taxonomy.yaml',
