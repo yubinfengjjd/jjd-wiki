@@ -446,6 +446,7 @@
 ### pending_signoff
 
 - [[layouts/2026-11-19-hdwgcna-network__fig01|hdWGCNA 共表达模块球体网络图]]
+- [[layouts/2026-11-19-hdwgcna-network__fig02|hdWGCNA 模块 GO 富集分面条图]]
 
 ### pending_template
 
