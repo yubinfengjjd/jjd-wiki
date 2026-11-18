@@ -95,8 +95,8 @@ prepare_circos_data <- function(interactions, expression = NULL, style = list())
   rownames(node_df) <- NULL
   max_bar <- max(node_df$raw_bar, na.rm = TRUE)
   if (max_bar <= 0) max_bar <- 1
-  # Scale to 15..98 so bars match the 0..100 track cleanly
-  node_df$bar_val <- pmin(100, (node_df$raw_bar / max_bar) * 95 + 5)
+  # Power-scale to 25..96 so gene bars read clearly across the 0..100 track
+  node_df$bar_val <- pmin(98, 22 + 74 * ((node_df$raw_bar / max_bar) ^ 0.55))
 
   # Build expression matrix (rows = rev(ordered_cells), cols = all sector gene slots)
   active_cells <- names(sector_list)
@@ -171,26 +171,26 @@ draw_ks_circos <- function(prep, style = list()) {
 
   # Reserve right-side margin for stacked legends
   grid::grid.newpage()
-  vp_main <- grid::viewport(x = 0.42, y = 0.5, width = 0.80, height = 0.94)
+  vp_main <- grid::viewport(x = 0.41, y = 0.49, width = 0.79, height = 0.96)
   grid::pushViewport(vp_main)
 
   # Base graphics inside grid viewport
   par_old <- graphics::par(no.readonly = TRUE)
   on.exit(graphics::par(par_old), add = TRUE)
-  graphics::par(new = TRUE, fig = gridBase::gridFIG(), mar = c(0.5, 0.5, if (nzchar(style$title %||% "")) 2.0 else 0.5, 0.5))
+  graphics::par(new = TRUE, fig = gridBase::gridFIG(), mar = c(0.4, 0.4, if (nzchar(style$title %||% "")) 2.0 else 0.4, 0.4))
 
   circlize::circos.clear()
   # Make the gap before the first sector (Men -> ECs at 12 o'clock) slightly wider for row & y-axis labels
   gaps <- rep(gap_deg, length(sectors))
-  gaps[length(gaps)] <- max(gap_deg * 2.3, 10.5)
+  gaps[length(gaps)] <- max(gap_deg * 2.8, 13.0)
 
   circlize::circos.par(
     start.degree = start_deg,
     gap.after = gaps,
-    track.margin = c(0.015, 0.015),
+    track.margin = c(0.012, 0.012),
     cell.padding = c(0, 0, 0, 0),
-    canvas.xlim = c(-1.38, 1.38),
-    canvas.ylim = c(-1.38, 1.38)
+    canvas.xlim = c(-1.16, 1.16),
+    canvas.ylim = c(-1.16, 1.16)
   )
 
   xlim_mat <- t(vapply(sectors, function(ct) {
@@ -199,29 +199,29 @@ draw_ks_circos <- function(prep, style = list()) {
 
   circlize::circos.initialize(factors = factor(sectors, levels = sectors), xlim = xlim_mat)
 
-  # Track 0 (outermost): Colored sector arc bar + Cell Type title + Gene labels (ligand mint / receptor magenta)
+  # Track 0 (outermost): Colored sector arc bar + Cell Type title
   circlize::circos.trackPlotRegion(
     ylim = c(0, 1),
-    track.height = 0.024,
+    track.height = 0.022,
     bg.border = NA,
     panel.fun = function(x, y) {
       sec <- circlize::CELL_META$sector.index
       xlim <- circlize::CELL_META$xlim
       # Draw thin outer colored arc with black outline
-      circlize::circos.rect(xlim[1], 0.45, xlim[2], 0.90, col = cell_cols[[sec]], border = "black", lwd = 0.7)
+      circlize::circos.rect(xlim[1], 0.45, xlim[2], 0.88, col = cell_cols[[sec]], border = "black", lwd = 0.7)
       # Sector title outside arc
       circlize::circos.text(
         mean(xlim), 1.65, labels = sec,
         facing = "bending.inside", niceFacing = TRUE,
-        cex = max(0.75, font_pt / 9.5), font = 2, col = "black", adj = c(0.5, 0)
+        cex = max(0.82, font_pt / 9.2), font = 2, col = "black", adj = c(0.5, 0)
       )
     }
   )
 
-  # Gene label track (ligand = #5AC394, receptor = #E7298A)
+  # Gene label track (ligand = #5AC394, receptor = #E7298A) with generous clearance from outer arc
   circlize::circos.trackPlotRegion(
     ylim = c(0, 1),
-    track.height = 0.17,
+    track.height = 0.215,
     bg.border = NA,
     panel.fun = function(x, y) {
       sec <- circlize::CELL_META$sector.index
@@ -229,10 +229,10 @@ draw_ks_circos <- function(prep, style = list()) {
       g_cols <- ifelse(sub$role == "ligand", "#5AC394", "#E7298A")
       for (k in seq_len(nrow(sub))) {
         circlize::circos.text(
-          sub$x[k], 0.05, labels = sub$gene[k],
+          sub$x[k], 0.04, labels = sub$gene[k],
           facing = "clockwise", niceFacing = TRUE,
           adj = c(0, 0.5),
-          cex = max(0.45, (font_pt / 13.5)),
+          cex = max(0.45, (font_pt / 15.8)),
           font = 3, col = g_cols[k]
         )
       }
@@ -247,7 +247,7 @@ draw_ks_circos <- function(prep, style = list()) {
   n_rows <- nrow(expr_mat)
   circlize::circos.trackPlotRegion(
     ylim = c(0, n_rows),
-    track.height = 0.21,
+    track.height = 0.225,
     bg.border = "black",
     bg.lwd = 0.9,
     panel.fun = function(x, y) {
@@ -271,8 +271,8 @@ draw_ks_circos <- function(prep, style = list()) {
         for (r in seq_len(n_rows)) {
           circlize::circos.text(
             -0.25, r - 0.5, labels = rownames(expr_mat)[r],
-            facing = "bending.inside", niceFacing = TRUE,
-            adj = c(1, 0.5), cex = max(0.45, font_pt / 15.5), col = "black"
+            facing = "inside", niceFacing = TRUE,
+            adj = c(1, 0.5), cex = max(0.42, font_pt / 18.5), col = "black"
           )
         }
       }
@@ -299,7 +299,7 @@ draw_ks_circos <- function(prep, style = list()) {
           circlize::circos.yaxis(
             side = "left", at = c(0, 50, 100),
             labels = c("0", "50", "100"),
-            labels.cex = max(0.45, font_pt / 16.0),
+            labels.cex = max(0.42, font_pt / 17.5),
             tick.length = circlize::convert_x(1.2, "mm")
           )
         }
@@ -353,6 +353,7 @@ draw_ks_circos <- function(prep, style = list()) {
   lgd_role <- ComplexHeatmap::Legend(
     labels = c("ligand", "receptor"),
     type = "lines",
+    background = NA,
     legend_gp = grid::gpar(col = c("#5AC394", "#E7298A"), lwd = 3.5),
     labels_gp = grid::gpar(fontsize = font_pt),
     grid_width = grid::unit(6, "mm"),

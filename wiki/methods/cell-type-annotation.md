@@ -165,6 +165,7 @@ next_steps:
   - recipes/figureya-310cpdbchordgramv2
   intermediate_interface: cellchat-lr-table
   viz_templates:
+  - templates/ks-cellchat-circos-multi--circos
   - templates/2026-10-22-scp-example__fig11-chord--chord
   - templates/2026-10-22-scp-example__fig10-sankey--sankey
 - direction: 方向 6：关键亚群 Marker 投射 Bulk 临床队列与机器学习建模
