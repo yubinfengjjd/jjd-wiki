@@ -1,0 +1,15 @@
+panel,module,annotation,color_hex,synthetic_nodes,data_provenance,synthetic_visual_approximation,uncertain_reason
+A,Agrp_M1,TIM22 Mitochondrial Import Inner Membrane Insertion Complex,#b92d2d,65,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M2,Postsynaptic Density,#87c3eb,45,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M3,Glutamatergic Synapse,#f5e155,80,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M4,Clathrin-dependent Endocytosis,#2d692d,75,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M5,Regulation of Neuron Projection Development,#af4b9b,70,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M6,Cytosolic Small Ribosomal Subunit,#95be4d,28,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M7,Neuromuscular Junction Development,#4173af,55,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M8,Postsynaptic Density Membrane,#230f73,75,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M9,Clathrin Vesicle Coat,#cd732d,22,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M10,Lamellipodium Organization,#4b0f05,36,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M11,Neuron Projection,#e16969,38,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M12,Positive Regulation of Anoikis,#d7c373,42,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M13,Ribosomal Small Subunit Binding,#4b9169,18,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。
+A,Agrp_M14,Endosome Transport via Multivesicular Body Sorting Pathway,#7d3787,26,synthetic,true,原帖 Agrp_hdWGCNA_obj.rds 与自定义绘图函数未随公开文章发布；模块名、注释文本与配色来自原图视觉转录，节点数与 TOM 连边为固定种子 42 合成近似。

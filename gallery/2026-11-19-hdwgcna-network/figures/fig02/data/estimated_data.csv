@@ -1,0 +1,71 @@
+panel,module,term,log10p_estimated,color_hex,data_provenance,uncertain_reason
+B,Agrp_M1,TIM22 Mitochondrial Import Inner Membrane Insertion Complex,3.55,#b92d2d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M1,Double-stranded RNA Binding (GO:0003725),3.05,#b92d2d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M1,Protein Localization to Vacuole (GO:0072665),3.0,#b92d2d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M1,Ubiquitin Binding (GO:0043130),3.0,#b92d2d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M1,Response to Unfolded Protein (GO:0006986),2.85,#b92d2d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M10,Lamellipodium Organization (GO:0097581),3.25,#4b0f05,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M10,Protein Acylation (GO:0043543),2.75,#4b0f05,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M10,Protein Kinase A Regulatory Subunit Binding (GO:0034237),2.5,#4b0f05,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M10,Axon Extension (GO:0048675),2.4,#4b0f05,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M10,N-glycan Processing (GO:0006491),2.35,#4b0f05,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M11,Neuron Projection (GO:0043005),4.85,#e16969,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M11,Neuron Migration (GO:0001764),4.55,#e16969,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M11,Nervous System Development (GO:0007399),4.3,#e16969,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M11,Postsynaptic Density (GO:0014069),4.1,#e16969,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M11,Signal Release From Synapse (GO:0099643),3.95,#e16969,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M12,Response to Vasopressin (GO:1904116),2.35,#d7c373,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M12,Positive Regulation of Anoikis (GO:2000210),2.35,#d7c373,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M12,Glycine Import Across Plasma Membrane (GO:1903801),2.25,#d7c373,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M12,Cellular Response to Vasopressin (GO:1904117),2.15,#d7c373,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M12,Adenylate Cyclase-Activating Serotonin Receptor Signaling,2.15,#d7c373,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M13,Ribosomal Small Subunit Binding (GO:0043024),3.95,#4b9169,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M13,Pre-mRNA Binding (GO:0036002),3.65,#4b9169,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M13,Lysosomal Membrane (GO:0005765),3.55,#4b9169,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M13,Pre-mRNA Intronic Binding (GO:0097157),3.5,#4b9169,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M13,Regulation of Primary Metabolic Process (GO:0080090),3.4,#4b9169,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M14,Endosome Transport via Multivesicular Body Sorting,4.2,#7d3787,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M14,Late Endosome (GO:0005770),3.25,#7d3787,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M14,Commissural Neuron Axon Guidance (GO:0071679),3.0,#7d3787,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M14,Exit From Mitosis (GO:0010458),2.95,#7d3787,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M14,Learning (GO:0007612),2.95,#7d3787,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M2,Dendrite (GO:0030425),4.75,#87c3eb,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M2,Asymmetric Synapse (GO:0032279),4.05,#87c3eb,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M2,Glycoprotein Biosynthetic Process (GO:0009101),3.95,#87c3eb,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M2,Regulation of Neuron Projection Development (GO:0010975),3.8,#87c3eb,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M2,Postsynaptic Density (GO:0014069),3.75,#87c3eb,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M3,Glutamatergic Synapse (GO:0098978),8.05,#f5e155,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M3,Voltage-gated Potassium Channel Complex (GO:0008076),5.9,#f5e155,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M3,Potassium Channel Complex (GO:0034705),5.75,#f5e155,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M3,Voltage-gated Monoatomic Cation Channel Activity,5.75,#f5e155,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M3,Positive Regulation of Protein Localization to Cell Periphery,5.1,#f5e155,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M4,Clathrin-dependent Endocytosis (GO:0072583),4.25,#2d692d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M4,Negative Regulation of Transforming Growth Factor Beta,4.05,#2d692d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M4,Receptor-mediated Endocytosis (GO:0006898),3.9,#2d692d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M4,Negative Regulation of ERK1 and ERK2 Cascade,3.7,#2d692d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M4,Long-chain fatty-acyl-CoA Metabolic Process,3.65,#2d692d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M5,Regulation of Neuron Projection Development (GO:0010975),6.55,#af4b9b,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M5,Regulation of Postsynapse Organization (GO:0099175),6.1,#af4b9b,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M5,Negative Regulation of Multicellular Organismal Process,4.9,#af4b9b,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M5,Dendrite (GO:0030425),4.3,#af4b9b,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M5,Neuron Projection (GO:0043005),3.95,#af4b9b,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M6,Cytosolic Small Ribosomal Subunit (GO:0022627),3.6,#95be4d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M6,Maintenance of Translational Fidelity (GO:1990145),3.55,#95be4d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M6,Small Ribosomal Subunit (GO:0015935),3.5,#95be4d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M6,Gamma-delta T Cell Activation (GO:0046629),3.45,#95be4d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M6,Negative Regulation of Calcium Ion Transmembrane Transport,3.4,#95be4d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M7,Neuromuscular Junction Development (GO:0007528),4.55,#4173af,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M7,Protein Localization to Axon (GO:0099612),4.1,#4173af,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M7,Presynaptic Active Zone Organization (GO:1990709),3.85,#4173af,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M7,Guanyl Nucleotide Exchange Factor Activator Activity,3.7,#4173af,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M7,Positive Regulation of Monoatomic Ion Transport,3.35,#4173af,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M8,Postsynaptic Density Membrane (GO:0098839),6.3,#230f73,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M8,Postsynaptic Specialization Membrane (GO:0099634),5.9,#230f73,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M8,Ligand-gated Monoatomic Ion Chnl Act Inv in Reg,5.1,#230f73,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M8,Homophilic Cell-Cell Adhesion (GO:0007156),4.8,#230f73,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M8,Glutamatergic Synapse (GO:0098978),4.5,#230f73,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M9,Enoyl-CoA Hydratase Activity (GO:0004300),2.9,#cd732d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M9,Clathrin Vesicle Coat (GO:0030125),2.75,#cd732d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M9,Clathrin-cargo Adaptor Activity (GO:0035615),2.5,#cd732d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M9,Glycosaminoglycan Metabolic Process (GO:0030203),2.5,#cd732d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。
+B,Agrp_M9,Positive Regulation of Stem Cell Population Maintenance,2.4,#cd732d,estimated,数值来自 0-8 线性刻度条长估读（精度约 ±0.15），部分超宽 GO 全称右端在原图分面框边缘被截断。

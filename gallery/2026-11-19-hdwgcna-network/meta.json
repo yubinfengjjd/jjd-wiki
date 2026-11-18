@@ -1,0 +1,81 @@
+{
+  "title": "WGCNA：单细胞转录组+bulk RNA/蛋白组共表达网络分析",
+  "account": "KS生信科研课",
+  "author": "TS的美梦",
+  "publish_time": "2026年8月10日 10:03",
+  "url": "https://mp.weixin.qq.com/s/LOpSnqiK3nfG-wVU8urzVw",
+  "source_html": "article.html",
+  "code_blocks": [],
+  "image_urls": [
+    "https://res.wx.qq.com/t/wx_fed/we-emoji/res/v1.3.10/assets/newemoji/2_04.png?wxfrom=5&wx_lazy=1&wx_co=1&tp=webp",
+    "http://mmbiz.qpic.cn/mmbiz_png/0nG6iazO80N1ibsAlloTuN4oBtDqHSpTu1376a0FgsWXDLtVF49qCrLqNDvfNImSQEH9WRBmbtPzfdNbxWTVRibsQ/300?wx_fmt=png&wxfrom=19",
+    "https://mmbiz.qpic.cn/mmbiz_gif/ZPtdzESiawhdMHyNfDvj0a36SiaN499NjK0BKean9ibV1T8rYe2gLG8OTSjeCB1NesY09JLKujB7DqpO8DGu4HFxw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&randomid=1j2b0m1x&tp=wxpic",
+    "https://mmbiz.qpic.cn/sz_mmbiz_png/MDNWBvGxqewibjcmFN8DBS4lswkzVrNVpLyuK1icDbUHALJvicEdsxmgFHZD7s488QyG8EZ5MicVhGvgHseQ2uibS9JyuJwYx2rF7WzcsEu5sDUI/640?wx_fmt=png&from=appmsg&wxfrom=5&watermark=1&wx_lazy=1&tp=wxpic",
+    "https://mmbiz.qpic.cn/sz_mmbiz_png/0nG6iazO80N2bLlnMQhIvh5uEw6APdWtyDUy7awXtCsbJMOGs52LZJUmcsLmZVlbgms8UYZ8rECYfnMiaaxAINjQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1",
+    "https://mmbiz.qpic.cn/mmbiz_png/MDNWBvGxqexyMicQGbanUQLBwuGicB0ER6gQzufqYosB5lvibpMgRnb75LKaP6JJ6juxSPfENlolMGqmYgV8FJtk4biboWYP7GfYCcBia7EsEJJ8/640?wx_fmt=png&from=appmsg&watermark=1",
+    "https://mmbiz.qpic.cn/mmbiz_png/MDNWBvGxqewicPILuPiaQROfuicKkqiaaoU8Bibic2u5yJJUbHbHJUr5mZpO14yuJeVAvic5S88LtUvtujxS2rLWJ9a0AiavVticZSbD79OKdW19DOJM/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1",
+    "https://mmbiz.qpic.cn/sz_mmbiz_png/MDNWBvGxqexzctWgEAFrPHLMp8sUfYlflM5W3n6dNmzNAXSF42jcDInO9iaEPFlZ36RwhE5CZu02HlP9ajQibpQwm5BFwAnUXmsO76ibpcmqos/640?wx_fmt=png&from=appmsg&watermark=1",
+    "https://mmbiz.qpic.cn/sz_mmbiz_png/MDNWBvGxqexEdD6ucicHc3hKVB9hOf0vtk41PTaYiaeDMGoj9icFgLiaxolAcgEWI6wiahbPh4QyF1TRflrTDXs2hBEYyicJkMlMQ7UQeoNB6GaOo/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1",
+    "https://mmbiz.qpic.cn/mmbiz_gif/ZPtdzESiawhdMHyNfDvj0a36SiaN499NjK0BKean9ibV1T8rYe2gLG8OTSjeCB1NesY09JLKujB7DqpO8DGu4HFxw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&randomid=nxzc1t3p&tp=webp",
+    "https://mmbiz.qpic.cn/sz_mmbiz/0nG6iazO80N3a2QMiaAQkY4k1IBGb8VAAqRlqoiaco0FRkYFw760eNqUbdTH9E7ePfpmyuTBicdgjrlh6iaticYiapyJQ/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&randomid=7ek5thn5&tp=webp"
+  ],
+  "figure_candidates": [
+    {
+      "index": 1,
+      "url": "https://res.wx.qq.com/t/wx_fed/we-emoji/res/v1.3.10/assets/newemoji/2_04.png?wxfrom=5&wx_lazy=1&wx_co=1&tp=webp",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 2,
+      "url": "http://mmbiz.qpic.cn/mmbiz_png/0nG6iazO80N1ibsAlloTuN4oBtDqHSpTu1376a0FgsWXDLtVF49qCrLqNDvfNImSQEH9WRBmbtPzfdNbxWTVRibsQ/300?wx_fmt=png&wxfrom=19",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 3,
+      "url": "https://mmbiz.qpic.cn/mmbiz_gif/ZPtdzESiawhdMHyNfDvj0a36SiaN499NjK0BKean9ibV1T8rYe2gLG8OTSjeCB1NesY09JLKujB7DqpO8DGu4HFxw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&randomid=1j2b0m1x&tp=wxpic",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 4,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/MDNWBvGxqewibjcmFN8DBS4lswkzVrNVpLyuK1icDbUHALJvicEdsxmgFHZD7s488QyG8EZ5MicVhGvgHseQ2uibS9JyuJwYx2rF7WzcsEu5sDUI/640?wx_fmt=png&from=appmsg&wxfrom=5&watermark=1&wx_lazy=1&tp=wxpic",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 5,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/0nG6iazO80N2bLlnMQhIvh5uEw6APdWtyDUy7awXtCsbJMOGs52LZJUmcsLmZVlbgms8UYZ8rECYfnMiaaxAINjQ/640?wx_fmt=png&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 6,
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/MDNWBvGxqexyMicQGbanUQLBwuGicB0ER6gQzufqYosB5lvibpMgRnb75LKaP6JJ6juxSPfENlolMGqmYgV8FJtk4biboWYP7GfYCcBia7EsEJJ8/640?wx_fmt=png&from=appmsg&watermark=1",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 7,
+      "url": "https://mmbiz.qpic.cn/mmbiz_png/MDNWBvGxqewicPILuPiaQROfuicKkqiaaoU8Bibic2u5yJJUbHbHJUr5mZpO14yuJeVAvic5S88LtUvtujxS2rLWJ9a0AiavVticZSbD79OKdW19DOJM/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 8,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/MDNWBvGxqexzctWgEAFrPHLMp8sUfYlflM5W3n6dNmzNAXSF42jcDInO9iaEPFlZ36RwhE5CZu02HlP9ajQibpQwm5BFwAnUXmsO76ibpcmqos/640?wx_fmt=png&from=appmsg&watermark=1",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 9,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz_png/MDNWBvGxqexEdD6ucicHc3hKVB9hOf0vtk41PTaYiaeDMGoj9icFgLiaxolAcgEWI6wiahbPh4QyF1TRflrTDXs2hBEYyicJkMlMQ7UQeoNB6GaOo/640?wx_fmt=png&from=appmsg&watermark=1&tp=webp&wxfrom=5&wx_lazy=1",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 10,
+      "url": "https://mmbiz.qpic.cn/mmbiz_gif/ZPtdzESiawhdMHyNfDvj0a36SiaN499NjK0BKean9ibV1T8rYe2gLG8OTSjeCB1NesY09JLKujB7DqpO8DGu4HFxw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1&randomid=nxzc1t3p&tp=webp",
+      "classification": "unconfirmed"
+    },
+    {
+      "index": 11,
+      "url": "https://mmbiz.qpic.cn/sz_mmbiz/0nG6iazO80N3a2QMiaAQkY4k1IBGb8VAAqRlqoiaco0FRkYFw760eNqUbdTH9E7ePfpmyuTBicdgjrlh6iaticYiapyJQ/640?wx_fmt=other&from=appmsg&wxfrom=5&wx_lazy=1&wx_co=1&randomid=7ek5thn5&tp=webp",
+      "classification": "unconfirmed"
+    }
+  ],
+  "local_figures": [],
+  "pairing_status": "needs_author_confirmation"
+}

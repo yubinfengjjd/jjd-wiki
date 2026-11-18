@@ -1,0 +1,68 @@
+{
+  "id": "2026-11-19-hdwgcna-network__fig01",
+  "post": {
+    "title": "scRNA-hdWGCNA共表达网络分析【2】:富集分析及大型球体网络图构建可视化",
+    "account": "KS生信科研课",
+    "author": "TS的美梦",
+    "publish_date": "2026-08-10",
+    "url": "https://mp.weixin.qq.com/s/LOpSnqiK3nfG-wVU8urzVw"
+  },
+  "figure": {
+    "index": 1,
+    "label": "hdWGCNA 共表达模块球体网络图",
+    "caption": "单细胞 Agrp 数据集 14 个 hdWGCNA 共表达模块拓扑球体网络与代表 GO 富集注释（左 Panel A）",
+    "panels": [
+      "A=network"
+    ],
+    "panel_map": {
+      "A": "network"
+    },
+    "chart_types": [
+      "network"
+    ],
+    "canvas_px": [
+      692,
+      660
+    ]
+  },
+  "scenarios": {
+    "primary": [
+      "single-cell"
+    ],
+    "secondary": [
+      "transcriptomics"
+    ],
+    "free": [
+      "hdWGCNA",
+      "coexpression-network"
+    ]
+  },
+  "language": "r",
+  "data_provenance": "synthetic",
+  "code_provenance": "reconstructed",
+  "original_code_provenance": "archived_only",
+  "files": {
+    "source_image": "source/fig01.png",
+    "full_original": "source/full_original.png",
+    "source_text": "source/source.md",
+    "code": "code/replica.R",
+    "data": "data/gene_module.csv",
+    "edges": "data/edge_file.csv",
+    "spec": "data/figure_spec.json",
+    "replica_png": "output/replica.png",
+    "replica_pdf": "output/replica.pdf",
+    "replica_svg": "output/replica.svg",
+    "compare_side_by_side": "compare/side_by_side.png",
+    "compare_overlay": "compare/overlay.png",
+    "thumb": "thumb.png",
+    "qa_report": "qa_report.md",
+    "run_log": "run.log",
+    "readme": "README.md"
+  },
+  "status": "approved",
+  "approved_version": 1,
+  "version": 1,
+  "source_image_sha256": "8e3c5d63cad8b2e670a69c21d862188219ee3ad0464cb939f1a25442bec6d7bd",
+  "created_at": "2026-11-18T16:50:04.015112Z",
+  "updated_at": "2026-11-18T16:50:04.015112Z"
+}

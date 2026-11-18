@@ -1,0 +1,115 @@
+{
+  "entry_id": "2026-11-19-hdwgcna-network__fig01",
+  "panel": "A",
+  "chart_type": "network",
+  "original_full_image": "source/full_original.png",
+  "original_full_size_px": [
+    1080,
+    725
+  ],
+  "original_full_sha256": "bcff089d113f65e38619f43a8ae373d8eb63149ad5400a31f2c8bd136249c73e",
+  "crop_image": "source/fig01.png",
+  "crop_bbox_in_full": [
+    0,
+    0,
+    692,
+    660
+  ],
+  "crop_size_px": [
+    692,
+    660
+  ],
+  "crop_sha256": "8e3c5d63cad8b2e670a69c21d862188219ee3ad0464cb939f1a25442bec6d7bd",
+  "quality_flags": [
+    "watermark"
+  ],
+  "watermark_note": "原图底部/右下角存在公众号水印“公众号·KS生信科研课”，复刻中已去除；原图 Agrp_M1/M10 与 M11/M8 局部文字有重叠，复刻改用自动避让标签解决。",
+  "data_provenance": "synthetic",
+  "data_note": "synthetic visual approximation: 原帖 Agrp_hdWGCNA_obj.rds 未公开，依据图面 14 模块名称、功能注释、hex 配色及集群相对密度以固定随机种子 42 合成 gene_module.csv (675 nodes) 与 edge_file.csv，不可替代原始 TOM 统计推断。",
+  "modules": [
+    {
+      "module": "Agrp_M1",
+      "color": "#b92d2d",
+      "annotation": "TIM22 Mitochondrial Import Inner Membrane Insertion Complex",
+      "synthetic_gene_count": 65
+    },
+    {
+      "module": "Agrp_M2",
+      "color": "#87c3eb",
+      "annotation": "Postsynaptic Density",
+      "synthetic_gene_count": 45
+    },
+    {
+      "module": "Agrp_M3",
+      "color": "#f5e155",
+      "annotation": "Glutamatergic Synapse",
+      "synthetic_gene_count": 80
+    },
+    {
+      "module": "Agrp_M4",
+      "color": "#2d692d",
+      "annotation": "Clathrin-dependent Endocytosis",
+      "synthetic_gene_count": 75
+    },
+    {
+      "module": "Agrp_M5",
+      "color": "#af4b9b",
+      "annotation": "Regulation of Neuron Projection Development",
+      "synthetic_gene_count": 70
+    },
+    {
+      "module": "Agrp_M6",
+      "color": "#95be4d",
+      "annotation": "Cytosolic Small Ribosomal Subunit",
+      "synthetic_gene_count": 28
+    },
+    {
+      "module": "Agrp_M7",
+      "color": "#4173af",
+      "annotation": "Neuromuscular Junction Development",
+      "synthetic_gene_count": 55
+    },
+    {
+      "module": "Agrp_M8",
+      "color": "#230f73",
+      "annotation": "Postsynaptic Density Membrane",
+      "synthetic_gene_count": 75
+    },
+    {
+      "module": "Agrp_M9",
+      "color": "#cd732d",
+      "annotation": "Clathrin Vesicle Coat",
+      "synthetic_gene_count": 22
+    },
+    {
+      "module": "Agrp_M10",
+      "color": "#4b0f05",
+      "annotation": "Lamellipodium Organization",
+      "synthetic_gene_count": 36
+    },
+    {
+      "module": "Agrp_M11",
+      "color": "#e16969",
+      "annotation": "Neuron Projection",
+      "synthetic_gene_count": 38
+    },
+    {
+      "module": "Agrp_M12",
+      "color": "#d7c373",
+      "annotation": "Positive Regulation of Anoikis",
+      "synthetic_gene_count": 42
+    },
+    {
+      "module": "Agrp_M13",
+      "color": "#4b9169",
+      "annotation": "Ribosomal Small Subunit Binding",
+      "synthetic_gene_count": 18
+    },
+    {
+      "module": "Agrp_M14",
+      "color": "#7d3787",
+      "annotation": "Endosome Transport via Multivesicular Body Sorting Pathway",
+      "synthetic_gene_count": 26
+    }
+  ]
+}

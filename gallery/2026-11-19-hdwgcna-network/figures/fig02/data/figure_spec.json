@@ -1,0 +1,38 @@
+{
+  "entry_id": "2026-11-19-hdwgcna-network__fig02",
+  "panel": "B",
+  "chart_type": "bar",
+  "original_full_image": "source/full_original.png",
+  "original_full_size_px": [
+    1080,
+    725
+  ],
+  "crop_image": "source/fig02.png",
+  "crop_bbox_in_full": [
+    715,
+    0,
+    1080,
+    722
+  ],
+  "crop_sha256": "c49a402d29ae5996c3f06a2f638acd096ed99d70f8b479c0cff115e25c5d4496",
+  "quality_flags": [
+    "watermark"
+  ],
+  "axis": {
+    "name": "-log10(P-value)",
+    "type": "linear",
+    "limits": [
+      0,
+      8.5
+    ],
+    "ticks": [
+      0,
+      2,
+      4,
+      6,
+      8
+    ]
+  },
+  "data_provenance": "estimated",
+  "data_note": "70 条 GO 富集词条与 -log10(P-value) 按 Panel B 原图线性刻度估读；原图条带颜色与分面标题颜色错位的问题在复刻中统一修正为模块自身配色。"
+}
