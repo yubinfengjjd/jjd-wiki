@@ -179,7 +179,6 @@
 
 ### draft
 
-- [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]
 
 ### ready
 
@@ -213,6 +212,7 @@
 - [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]]
 - [[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]]
 - [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]]
+- [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]
 
 ### archived
 

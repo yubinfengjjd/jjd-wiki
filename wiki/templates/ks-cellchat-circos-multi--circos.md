@@ -2,7 +2,7 @@
 type: template
 id: ks-cellchat-circos-multi--circos
 title: 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
-status: draft
+status: ready
 sources:
 - sources/ks-wechat
 layouts: []
@@ -25,6 +25,8 @@ keywords:
 favorite: false
 ---
 # 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
+
+![[templates/ks-cellchat-circos-multi--circos/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[sources/ks-wechat|KS生信科研课（公众号 / KS-account-codes）]]
@@ -61,7 +63,53 @@ favorite: false
 
 ## 数据要求
 
-模板化后生成。
+### interactions（cellchat-lr-table.csv）：细胞通讯配受体互作表（source, target, ligand, receptor, pathway_name, prob, pval） [[interfaces/cellchat-lr-table|细胞通讯配受体互作表]]
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| source | str | 必需 | 信号发出细胞类型（Sender） |
+| target | str | 必需 | 信号接收细胞类型（Receiver） |
+| ligand | str | 必需 | 配体基因或复合物名称 |
+| receptor | str | 必需 | 受体基因或复合物名称 |
+| pathway_name | str | 必需 | 所属信号通路名称 |
+| prob | float | 必需 | 通讯互作概率或强度值 |
+| pval | float | 必需 | 置换检验 P 值 |
+| group | str | 可选 | 比较条件或分组（多组 CellChat 比较时必填） |
+
+### expression（celltype-gene-expression.csv）（可选表）：配受体基因在各细胞类型中的 Z-score 表达矩阵长表（gene, cell_type, expression） [[interfaces/celltype-gene-expression|细胞类型×基因平均表达表]]
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| gene | str | 必需 | 基因名称（如配体或受体基因符号） |
+| cell_type | str | 必需 | 细胞类型或亚群名称 |
+| expression | float | 必需 | 该基因在该细胞类型中的标准化平均表达值（如 Z-score） |
+| role | str | 可选 | 可选基因功能角色标注（如 ligand 或 receptor） |
+
+### 可覆盖的 style
+
+- `source_col`：`"source"`
+- `target_col`：`"target"`
+- `ligand_col`：`"ligand"`
+- `receptor_col`：`"receptor"`
+- `prob_col`：`"prob"`
+- `pval_col`：`"pval"`
+- `pathway_col`：`"pathway_name"`
+- `gene_col`：`"gene"`
+- `cell_type_col`：`"cell_type"`
+- `expression_col`：`"expression"`
+- `palette`：`"NPG"`
+- `width_in`：`9.8`
+- `height_in`：`7.6`
+- `dpi`：`200`
+- `title`：`""`
+- `font_size`：`10.0`
+- `score_threshold`：`0.05`
+- `pval_threshold`：`0.05`
+- `expr_limit`：`2.5`
+- `show_bar_track`：`true`
+- `highlight_top_n`：`2`
+- `sector_gap`：`4.5`
+- `start_degree`：`88`
 
 ## 使用记录
 
