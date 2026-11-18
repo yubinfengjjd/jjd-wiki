@@ -180,6 +180,7 @@
 ### draft
 
 - [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
+- [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]
 
 ### ready
 
