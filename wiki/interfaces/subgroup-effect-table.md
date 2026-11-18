@@ -41,7 +41,7 @@ columns:
 | percent | float | 可选 | 该行样本占比（0–100），可选；给出时用于方块大小 |
 | p | str | 可选 | P 值文本（如交互作用 P），可选，原样显示 |
 
-- 产出方法：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]
+- 产出方法：[[methods/drug-sensitivity-repositioning|药物敏感性预测、CMap 重定位与靶点关联分析]] · [[methods/molecular-subtyping-clustering|表达谱无监督聚类、分子分型与降维排序]] · [[methods/survival-prognosis-analysis|生存分析与临床预后建模]]
 - 读取方法：无
 - 使用的模板：[[templates/subgroup-hazard-forest|亚组分析森林图]]
 <!-- facts:end -->

@@ -1,0 +1,139 @@
+---
+type: method
+id: spatial-transcriptomics-microenvironment
+title: 空间转录组空间域识别、微生态定位与微环境解析
+status: ready
+tags:
+- single-cell
+- transcriptomics
+data_domains:
+- spatial-omics
+inputs:
+- scrna-annotated-cells
+outputs:
+- cell-proportion-stats
+render_bridges: []
+source:
+  kind: written
+license: none
+cite:
+- 'Palla G, et al. Squidpy: a scalable framework for spatial omics analysis. Nature
+  Methods, 2022.'
+- Cable DM, et al. Robust decomposition of cell type mixtures in spatial transcriptomics
+  (RCTD). Nature Biotechnology, 2022.
+- Galeano Niño JL, et al. Effect of the intratumoral microbiota on spatial and cellular
+  heterogeneity in cancer. Nature, 2022.
+favorite: false
+method_kind: analysis
+purposes:
+- 细胞通讯与微环境
+- 注释与参考映射
+summary: 面向 Visium 等空间转录组切片执行空间位置对齐、单细胞参考去卷积（RCTD/cell2location）、空间域聚类与组织内细胞/微生物共定位格局分析，输出空间生态位与组成统计；本库尚未封装独立可执行实现。
+data_contract:
+  input: 空间转录组 Spot/Cell 表达矩阵及对应切片二维像素坐标、高分辨率组织图像，配合配对单细胞参考对象 scrna-annotated-cells。
+  output: cell-proportion-stats（各 Spot/空间生态位的细胞类型比例、微生物载量或空间富集统计）。
+keywords:
+- spatial transcriptomics
+- Visium
+- RCTD
+- cell2location
+- Squidpy
+- spatial domain
+- intratumoral microbiota
+- 空间转录组
+- 空间微环境
+figure_relations: []
+next_steps:
+- direction: 方向 1：空间邻域细胞通讯与信号互作轴解析
+  when: 在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时
+  analysis_templates:
+  - methods/cell-cell-communication
+  intermediate_interface: cellchat-lr-table
+  viz_templates:
+  - templates/cellchat-circos-multi
+- direction: 方向 2：对比不同空间域或组织区域的细胞亚群组成偏好
+  when: 量化肿瘤核心区、浸润前沿与正常边界区的细胞比例差异时
+  analysis_templates:
+  - methods/cell-proportion-composition
+  intermediate_interface: cell-proportion-stats
+  viz_templates:
+  - templates/cell-prop-flow-bar
+- direction: 方向 3：空间域标记基因与通路空间活性打分
+  when: 检验局部微环境特异基因集或免疫/代谢通路在切片上的空间梯度变化时
+  analysis_templates:
+  - methods/gene-set-scoring
+  intermediate_interface: pathway-score-table
+  viz_templates: []
+---
+# 空间转录组空间域识别、微生态定位与微环境解析
+
+<!-- facts:start -->
+- 来源：依据文献 / 官方文档编写
+- 许可证：仅供个人研究参考
+- 引用：Palla G, et al. Squidpy: a scalable framework for spatial omics analysis. Nature Methods, 2022.；Cable DM, et al. Robust decomposition of cell type mixtures in spatial transcriptomics (RCTD). Nature Biotechnology, 2022.；Galeano Niño JL, et al. Effect of the intratumoral microbiota on spatial and cellular heterogeneity in cancer. Nature, 2022.
+- 标签：single-cell、transcriptomics
+- 分析用途：细胞通讯与微环境、注释与参考映射
+- 输入接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
+- 输出接口：[[interfaces/cell-proportion-stats|细胞亚群比例与 Ro/e 偏好统计表]]
+- 接口结构匹配的图（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 代码模板：无
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：空间邻域细胞通讯与信号互作轴解析**（触发条件：在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi）
+  - **方向 2：对比不同空间域或组织区域的细胞亚群组成偏好**（触发条件：量化肿瘤核心区、浸润前沿与正常边界区的细胞比例差异时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar）
+  - **方向 3：空间域标记基因与通路空间活性打分**（触发条件：检验局部微环境特异基因集或免疫/代谢通路在切片上的空间梯度变化时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring；可视化模版：无）
+
+- 方法配图关系（语义审查）：
+  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+<!-- facts:end -->
+
+## 用途
+
+在保留组织切片原始空间二维坐标的前提下，解析细胞亚群、病理生态位与肿瘤内微生物信号的空间分布格局，衔接配对单细胞参考图谱进行 Spot 细胞成分去卷积与空间邻域相关性分析。
+
+## 适用
+
+- 具备空间捕获点坐标、组织染色切片与表达计数矩阵的空间转录组数据（如 10x Visium）。
+- 需结合配对单细胞转录组先验完成 spot-level 细胞比例解卷积，或在切片坐标上刻画外源微生物读段/微环境局部富集。
+
+## 不适用
+
+- **忽略测序污染对照分析肿瘤低丰度微生物信号**：必须设置空白/非组织区域质控以排除环境背景污染。
+- **直接将 Spot 原始捕获信号当作单细胞分辨率细胞计数**。
+- **跨切片直接拼接坐标而未对切片批次与比例尺校正**。
+
+## 输入
+
+空间 Spot 表达矩阵、二维坐标表及可选配对参考单细胞对象 [[interfaces/scrna-annotated-cells|已注释单细胞数据对象]]。
+
+## 怎么做
+
+1. **切片质控与组织前景对齐**：过滤组织外部 Spot 及极低捕获量区域，并与 H&E 组织病理分区对齐。
+2. **去卷积或空间信号映射**：若为低分辨率 Spot 数据，引入高质量 scRNA-seq 参考执行 RCTD/cell2location 细胞组成估计；若检测外源特征（如细菌 UMI），需先统计空白背景 Spot 本底分布。
+3. **空间统计与邻域比较**：基于空间邻接图计算自相关（Moran's I）与不同空间区域（肿瘤区/基质区/微生物富集区）的细胞比例及功能特征差异。
+
+## 代码
+
+本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块。请参考配套 FigureYa L1 源码配方 `figureya-323stpathseq`（空间转录组微生物分布与组织共定位分析）。
+
+## 输出
+
+输出各空间区域或 Spot 的 [[interfaces/cell-proportion-stats|细胞/微生态组成统计表]]，支持下游空间通讯、比例流向与通路空间打分。
+
+## 参数
+
+- `spot_min_counts` / `in_tissue_only`：切片组织掩膜与低质量捕获点过滤。
+- `spatial_radius` / `n_neighbors`：空间邻接图构建的邻域半径或邻居数量。
+
+## 上一步 / 下一步
+
+- 上一步通常衔接 [[methods/reference-mapping]] 或 [[methods/cell-type-annotation]]；下游推荐跳转到 [[methods/cell-cell-communication]]、[[methods/cell-proportion-composition]] 或 [[methods/gene-set-scoring]]。
+
+## 知识关联检查
+
+已核对本方法接入 [[interfaces/scrna-annotated-cells]] 与输出 [[interfaces/cell-proportion-stats]] 的语义定义，并与 [[methods/cell-cell-communication]]、[[methods/cell-proportion-composition]] 共同覆盖空间组学域分析路径。
+
+## 使用记录
+
+<!-- user:start -->
+<!-- user:end -->

@@ -50,7 +50,7 @@ columns:
 | score_ssgsea | float | 可选 | ssGSEA 富集得分 |
 | padj | float | 可选 | 富集检验或组间打分差异校正后 P 值 |
 
-- 产出方法：[[methods/gene-set-enrichment|基因集富集分析]] · [[methods/gene-set-scoring|基因集与通路签名打分]] · [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]
+- 产出方法：[[methods/gene-set-enrichment|基因集富集分析]] · [[methods/gene-set-scoring|基因集与通路签名打分]] · [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] · [[methods/molecular-subtyping-clustering|表达谱无监督聚类、分子分型与降维排序]]
 - 读取方法：无
 - 使用的模板：无
 <!-- facts:end -->

@@ -45,7 +45,7 @@ columns:
 | roe_value | float | 可选 | 组织或分组富集偏好比值 Ro/e（观测数/期望数） |
 | p_adj | float | 可选 | 样本级组间比例差异检验校正后 P 值 |
 
-- 产出方法：[[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]
+- 产出方法：[[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] · [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]
 - 读取方法：无
 - 使用的模板：无
 <!-- facts:end -->

@@ -35,7 +35,7 @@ primary_method: survival-prognosis-analysis
 - 标签：survival-analysis
 - 图型：[[chart-types/forest]]
 - 输入接口：[[interfaces/subgroup-effect-table|亚组效应量汇总表]]
-- 接口结构匹配的分析方法（仅结构候选，未核实语义）：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）
+- 接口结构匹配的分析方法（仅结构候选，未核实语义）：[[methods/drug-sensitivity-repositioning|药物敏感性预测、CMap 重定位与靶点关联分析]]（ready） · [[methods/molecular-subtyping-clustering|表达谱无监督聚类、分子分型与降维排序]]（ready） · [[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）
 
 - 方法配图关系（语义审查）：
   - [[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）：直接可接（direct）；调用验证：not_run；范围：仅核对 subgroup-effect-table 输出接口与森林图模板 spec.json 契约，尚未执行真实队列分析→出图端到端联调。

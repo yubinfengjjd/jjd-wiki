@@ -1459,3 +1459,5 @@
 ## [2026-11-18 09:50 UTC] refactor(wiki): simplify 31 template IDs to short slugs with aliases
 
 ## [2026-11-18 10:36 UTC] feat(wiki): complete v4.1 method anchors, domains, primary_method and recipe map
+
+## [2026-11-18 12:11 UTC] acceptance check methods/bulk-expression-preprocessing.md

@@ -23,7 +23,7 @@ columns:
 | pvalue | float | 必需 | 原始 P 值，(0,1] |
 
 - 产出方法：无
-- 读取方法：[[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]
+- 读取方法：[[methods/drug-sensitivity-repositioning|药物敏感性预测、CMap 重定位与靶点关联分析]] · [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]
 - 使用的模板：[[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]
 <!-- facts:end -->
 

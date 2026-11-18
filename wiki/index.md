@@ -221,7 +221,9 @@
 
 ### ready
 
+- [[methods/bulk-expression-preprocessing|Bulk 转录组表达定量、探针重注释与批次校正]] — 完成 Bulk RNA-seq 原始 Counts 向 TPM/FPKM 的标化换算、芯片探针向 Gene Symbol/lncRNA 的重注释、子集表达矩阵提取与多队列 ComBat 批次效应校正；本库当前作为分析规范锚点与 L1 参考配方索引，尚未封装独立可执行实现。
 - [[methods/rna-velocity|RNA 速度分析]] — 利用 spliced/unspliced 计数推断转录动态方向；scVelo 分支在批准的隔离 NumPy 1.23.5 环境完成真实推断，全量 SCP 算法等价未验证。
+- [[methods/coexpression-ppi-network|共表达网络（WGCNA）与分子互作网络分析]] — 基于标准化表达谱构建加权基因共表达网络（WGCNA）识别性状关联模块，并结合 STRING/PPI 蛋白互作证据挖掘核心模块与 Hub 候选基因集合，输出候选生物标志物列表与高亮基因集；本库尚未封装独立可执行实现。
 - [[methods/batch-integration|单细胞批次整合]] — 在保留生物差异的前提下对齐样本/技术批次，产出整合嵌入与聚类，供跨样本比较。
 - [[methods/cell-clustering|单细胞聚类分析]] — 在低维嵌入上构建邻居图并划分 cluster；cluster 是分析单位，不是细胞类型。
 - [[methods/cell-quality-control|单细胞质量控制]] — 按显式阈值计算逐细胞 UMI、基因数与线粒体/核糖体比例，标记 Pass/Fail，不把 QC 指标当生物学分组。
@@ -237,10 +239,13 @@
 - [[methods/trajectory-inference|拟时序与轨迹推断]] — 在低维嵌入上连接细胞群，推断 lineage 与 pseudotime；轨迹是模型假设，不是真实时间。
 - [[methods/dynamic-feature-analysis|拟时序动态特征分析]] — 沿 pseudotime 拟合每个特征的平滑趋势，输出变化显著性、解释度和峰/谷时间。
 - [[methods/survival-prognosis-analysis|生存分析与临床预后建模]] — 面向临床随访队列开展 Kaplan-Meier 生存分层、单/多因素 Cox 比例风险回归、LASSO/机器学习预后特征筛选、亚组异质性评估以及 Time-ROC/列线图/DCA 验证；本库尚未封装统一可运行分析模块。
+- [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] — 面向 Visium 等空间转录组切片执行空间位置对齐、单细胞参考去卷积（RCTD/cell2location）、空间域聚类与组织内细胞/微生物共定位格局分析，输出空间生态位与组成统计；本库尚未封装独立可执行实现。
 - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] — 统计各样本或临床分组的细胞亚群计数、相对占比、Ro/e 组织偏好与样本级比例差异检验；严格区分描述性细胞汇总与以样本为独立单位的成分统计推断，并通过显式渲染桥接对接 10 类组成/流向模板。
 - [[methods/cell-type-annotation|细胞类型注释]] — 综合参考标签与 marker 集合给细胞分配类型；SingleR 分支在批准公开用例与直接 SingleR 结果一致（非全量 SCP 等价），青光眼 marker 手工注释尚未函数化。
 - [[methods/cell-cell-communication|细胞通讯与配受体网络分析]] — 基于已注释单细胞或空间转录组数据推断细胞亚群间的配体-受体互作概率、信号通路层级强度及发送/接收角色，输出标准配受体互作表与平均表达表；本库尚未封装独立可执行实现。
 - [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] — 基于 Bulk 转录组标准化表达矩阵，采用 CIBERSORT、ssGSEA、MCP-counter、xCell 与 ESTIMATE 等算法估计肿瘤微环境免疫/基质细胞浸润丰度与纯度评分，并与关键基因、分子分型或预后风险关联分析。
+- [[methods/drug-sensitivity-repositioning|药物敏感性预测、CMap 重定位与靶点关联分析]] — 基于临床/分子亚型表达谱与体外细胞系药敏数据（GDSC/CTRP/PRISM）预测患者亚组药物敏感性（IC50/AUC 估计），或基于疾病上下调特征基因对接 Connectivity Map (CMap) 筛选潜在小分子重定位化合物与靶点关联；本库尚未封装独立可执行实现。
+- [[methods/molecular-subtyping-clustering|表达谱无监督聚类、分子分型与降维排序]] — 面向 Bulk 转录组或多组学矩阵执行无监督分层聚类、共识聚类（ConsensusClusterPlus / MOVICS 等分子分型）以及 PCA/PCoA/PERMANOVA(Adonis) 群落与亚型方差解释分析，输出分组效应与通路/主成分得分表；本库尚未封装独立可执行实现。
 - [[methods/set-intersection-and-group-stats|集合交集与通用组间统计分析]] — 提供多集合交集定量（Venn / UpSet）、多变量两两相关性与距离检验、组间分布假设检验（Wilcoxon / Kruskal-Wallis / PERMANOVA）及探索性降维排序（PCA / PCoA）的通用分析规范与模板桥接。
 
 ## 组合流程

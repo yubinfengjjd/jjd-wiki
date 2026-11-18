@@ -18,7 +18,7 @@ columns:
 | gene | str | 必需 | 要圈出并标注的基因，须在差异表中 |
 | set | str | 必需 | 所属基因集/通路，用于标注颜色与图例 |
 
-- 产出方法：无
+- 产出方法：[[methods/coexpression-ppi-network|共表达网络（WGCNA）与分子互作网络分析]]
 - 读取方法：无
 - 使用的模板：[[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]
 <!-- facts:end -->

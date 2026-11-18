@@ -46,7 +46,7 @@ columns:
 | umap_2 | float | 必需 | UMAP 第二维坐标 |
 
 - 产出方法：[[methods/batch-integration|单细胞批次整合]] · [[methods/cell-type-annotation|细胞类型注释]]
-- 读取方法：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]] · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] · [[methods/differential-expression|差异表达分析]] · [[methods/gene-set-scoring|基因集与通路签名打分]] · [[methods/rna-velocity|RNA 速度分析]] · [[methods/trajectory-inference|拟时序与轨迹推断]]
+- 读取方法：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]] · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] · [[methods/differential-expression|差异表达分析]] · [[methods/gene-set-scoring|基因集与通路签名打分]] · [[methods/rna-velocity|RNA 速度分析]] · [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] · [[methods/trajectory-inference|拟时序与轨迹推断]]
 - 使用的模板：无
 <!-- facts:end -->
 
