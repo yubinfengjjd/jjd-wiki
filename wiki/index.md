@@ -179,6 +179,7 @@
 
 ### draft
 
+- [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
 
 ### ready
 
@@ -444,6 +445,7 @@
 
 ### pending_signoff
 
+- [[layouts/2026-11-19-hdwgcna-network__fig01|hdWGCNA 共表达模块球体网络图]]
 
 ### pending_template
 
