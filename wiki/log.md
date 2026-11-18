@@ -1443,3 +1443,5 @@
 ## [2026-11-18 07:24 UTC] acceptance check asthma-lactylation-source-catalog
 
 ## [2026-11-18 07:25 UTC] acceptance check asthma-lactylation-workflow
+
+## [2026-11-18 07:25 UTC] acceptance check scp-local-source

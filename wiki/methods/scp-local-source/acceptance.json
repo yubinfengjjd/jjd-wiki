@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T12:27:51.210057+00:00",
+  "checked_at": "2026-11-18T07:25:12.665746+00:00",
   "page": "methods/scp-local-source.md",
-  "snapshot": "ce8f884a8f94a359b403e7216fa5a175810fe5f4e7843a3d9f13aa577a356484",
+  "snapshot": "d7935f434e35eaf5761b55d1dc907c3c93a5cef69d5c67e5059d18a2c63d2ba7",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
