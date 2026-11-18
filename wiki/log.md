@@ -1425,3 +1425,5 @@
 ## [2026-11-13 12:54 UTC] confirm FigureYa as-is passes and record evidenced repair passes
 
 ## [2026-11-18 06:10 UTC] feat: complete parameters schema across all 30 L2 templates
+
+## [2026-11-18 06:12 UTC] chore: sync portability spec.json hash
