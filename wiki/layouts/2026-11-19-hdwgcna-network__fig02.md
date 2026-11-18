@@ -2,10 +2,10 @@
 type: layout
 id: 2026-11-19-hdwgcna-network__fig02
 title: hdWGCNA 模块 GO 富集分面条图
-status: pending_signoff
+status: pending_template
 gallery_entry: 2026-11-19-hdwgcna-network/figures/fig02
 gallery_version: 1
-signedoff_version: null
+signedoff_version: 1
 language: r
 tags:
 - 单细胞分析

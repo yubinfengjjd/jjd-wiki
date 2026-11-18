@@ -446,13 +446,13 @@
 
 ### pending_signoff
 
-- [[layouts/2026-11-19-hdwgcna-network__fig02|hdWGCNA 模块 GO 富集分面条图]]
 
 ### pending_template
 
 - [[layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap|CNS 细胞类型 UMAP（GSE251716）]]
 - [[layouts/2026-10-22-scp-example__fig08-group-heatmap|GroupHeatmap (CellType / SubCellType)]]
 - [[layouts/2026-11-19-hdwgcna-network__fig01|hdWGCNA 共表达模块球体网络图]]
+- [[layouts/2026-11-19-hdwgcna-network__fig02|hdWGCNA 模块 GO 富集分面条图]]
 - [[layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap|marker 特征 UMAP 小多图（GSE251716）]]
 - [[layouts/2026-10-19-regression-stability__fig03-density-panel|六模型验证预测：密度散点与边缘分布]]
 - [[layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin|分组小提琴与统计标注（GSE251716）]]
