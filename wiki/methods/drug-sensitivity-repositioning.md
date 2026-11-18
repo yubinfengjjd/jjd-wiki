@@ -20,15 +20,20 @@ source:
   kind: written
 license: none
 cite:
-- Subramanian A, et al. A Next Generation Connectivity Map (CMap) L1000 Platform and the First 1,000,000 Profiles. Cell, 2017.
-- Maeser D, Gruener RF, Huang RS. oncoPredict: an R package for predicting in vivo or cancer patient drug response and biomarkers from cell line screening data. Briefings in Bioinformatics, 2021.
+- Subramanian A, et al. A Next Generation Connectivity Map (CMap) L1000 Platform and
+  the First 1,000,000 Profiles. Cell, 2017.
+- 'Maeser D, Gruener RF, Huang RS. oncoPredict: an R package for predicting in vivo
+  or cancer patient drug response and biomarkers from cell line screening data. Briefings
+  in Bioinformatics, 2021.'
 favorite: false
 method_kind: analysis
 purposes:
 - 差异与功能分析
-summary: 基于临床/分子亚型表达谱与体外细胞系药敏数据（GDSC/CTRP/PRISM）预测患者亚组药物敏感性（IC50/AUC 估计），或基于疾病上下调特征基因对接 Connectivity Map (CMap) 筛选潜在小分子重定位化合物与靶点关联；本库尚未封装独立可执行实现。
+summary: 基于临床/分子亚型表达谱与体外细胞系药敏数据（GDSC/CTRP/PRISM）预测患者亚组药物敏感性（IC50/AUC 估计），或基于疾病上下调特征基因对接
+  Connectivity Map (CMap) 筛选潜在小分子重定位化合物与靶点关联；本库尚未封装独立可执行实现。
 data_contract:
-  input: 组间差异基因表达特征 bulk-de-table（供 CMap 富集）、临床队列标准化表达谱（供 pRRophetic/oncoPredict 药敏预测）及候选靶点基因 list candidate-biomarker-list。
+  input: 组间差异基因表达特征 bulk-de-table（供 CMap 富集）、临床队列标准化表达谱（供 pRRophetic/oncoPredict 药敏预测）及候选靶点基因
+    list candidate-biomarker-list。
   output: subgroup-effect-table（各亚组/高风险组预测药物反应差异统计量，或 CMap 化合物逆转富集评分与机制 MoA）。
 keywords:
 - CMap
@@ -61,6 +66,22 @@ next_steps:
 # 药物敏感性预测、CMap 重定位与靶点关联分析
 
 <!-- facts:start -->
+- 来源：依据文献 / 官方文档编写
+- 许可证：仅供个人研究参考
+- 引用：Subramanian A, et al. A Next Generation Connectivity Map (CMap) L1000 Platform and the First 1,000,000 Profiles. Cell, 2017.；Maeser D, Gruener RF, Huang RS. oncoPredict: an R package for predicting in vivo or cancer patient drug response and biomarkers from cell line screening data. Briefings in Bioinformatics, 2021.
+- 标签：computational-drug-design、network-pharmacology、transcriptomics
+- 分析用途：差异与功能分析
+- 输入接口：[[interfaces/bulk-de-table|bulk 差异表达结果表]] · [[interfaces/candidate-biomarker-list|多算法筛选候选特征基因表]]
+- 输出接口：[[interfaces/subgroup-effect-table|亚组效应量汇总表]]
+- 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/subgroup-hazard-forest|亚组分析森林图]]（ready）
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 代码模板：无
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：联合高风险亚组生存特征筛选获益人群**（触发条件：验证候选药物敏感组或目标基因抑制表型与患者临床预后的关系时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
+  - **方向 2：探索候选药物靶点在共表达/PPI 网络中的拓扑位置**（触发条件：进一步分析敏感药物对应靶蛋白在核心互作模块或信号通路中的协同调控角色时；中间表：highlight-gene-sets；分析模版：methods/coexpression-ppi-network、methods/gene-set-enrichment；可视化模版：无）
+
+- 方法配图关系（语义审查）：
+  - 暂无已记录关系；接口或标签相同不代表语义已核实。
 <!-- facts:end -->
 
 ## 用途

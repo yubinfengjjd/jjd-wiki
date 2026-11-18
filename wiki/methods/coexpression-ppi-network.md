@@ -18,8 +18,10 @@ source:
   kind: written
 license: none
 cite:
-- Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 2008.
-- Szklarczyk D, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses. Nucleic Acids Research, 2023.
+- 'Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis.
+  BMC Bioinformatics, 2008.'
+- 'Szklarczyk D, et al. The STRING database in 2023: protein-protein association networks
+  and functional enrichment analyses. Nucleic Acids Research, 2023.'
 favorite: false
 method_kind: analysis
 purposes:
@@ -66,6 +68,23 @@ next_steps:
 # 共表达网络（WGCNA）与分子互作网络分析
 
 <!-- facts:start -->
+- 来源：依据文献 / 官方文档编写
+- 许可证：仅供个人研究参考
+- 引用：Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics, 2008.；Szklarczyk D, et al. The STRING database in 2023: protein-protein association networks and functional enrichment analyses. Nucleic Acids Research, 2023.
+- 标签：transcriptomics、network-pharmacology
+- 分析用途：降维与聚类、细胞通讯与微环境
+- 输入接口：未声明
+- 输出接口：[[interfaces/candidate-biomarker-list|多算法筛选候选特征基因表]] · [[interfaces/highlight-gene-sets|待标注基因与所属基因集]]
+- 接口结构匹配的图（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 代码模板：无
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：对核心模块基因做通路富集与功能注释**（触发条件：识别出与关键临床性状显著相关的 WGCNA 模块或高连通度 PPI 子模块时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment；可视化模版：templates/pathway-stat-violin）
+  - **方向 2：检验模块枢纽基因的预后价值与风险建模**（触发条件：将网络筛选出的核心候选基因纳入单/多因素 Cox 生存分析或预后列线图评估时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis、methods/regression-resampling-evaluation；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
+  - **方向 3：关联药物靶点与 CMap 候选化合物重定位**（触发条件：围绕核心基因模块或调控网络检索潜在靶向药物或小分子逆转特征时；中间表：subgroup-effect-table；分析模版：methods/drug-sensitivity-repositioning；可视化模版：无）
+
+- 方法配图关系（语义审查）：
+  - 暂无已记录关系；接口或标签相同不代表语义已核实。
 <!-- facts:end -->
 
 ## 用途
