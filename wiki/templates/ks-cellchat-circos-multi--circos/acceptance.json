@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T07:13:24.432407+00:00",
+  "checked_at": "2026-11-18T07:27:45.186939+00:00",
   "page": "templates/ks-cellchat-circos-multi--circos.md",
-  "snapshot": "328561ede530cd082d3a62f7f445cd852f87f5d6aa5336d23e227065be8a9910",
+  "snapshot": "3edbe6fae092093a6627db4fd663c437d482abeee98d2daaf74b19010a175f4f",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

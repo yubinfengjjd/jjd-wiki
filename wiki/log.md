@@ -1451,3 +1451,5 @@
 ## [2026-11-18 07:25 UTC] acceptance check uc-ptm-source-catalog
 
 ## [2026-11-18 07:26 UTC] acceptance check uc-spatial-workflows
+
+## [2026-11-18 07:28 UTC] acceptance check ks-cellchat-circos-multi--circos
