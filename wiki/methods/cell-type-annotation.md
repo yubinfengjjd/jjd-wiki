@@ -123,6 +123,7 @@ next_steps:
 - direction: 方向 1：细胞组成比例与 Ro/e 组织偏好分析
   when: 比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时
   analysis_templates:
+  - methods/cell-proportion-composition
   - recipes/figureya-315singlerfraction
   intermediate_interface: cell-proportion-stats
   viz_templates:
@@ -159,18 +160,20 @@ next_steps:
   viz_templates:
   - templates/scrna-celltype-umap
   - templates/scrna-feature-umap-grid
-- direction: 方向 5：细胞通讯配受体网络分析（CellChat）
+- direction: 方向 5：细胞通讯配受体网络分析（CellChat / CellPhoneDB）
   when: 解析目标亚群与免疫/基质微环境之间的旁分泌或接触式信号通路重塑时
   analysis_templates:
+  - methods/cell-cell-communication
   - recipes/figureya-310cpdbchordgramv2
   intermediate_interface: cellchat-lr-table
   viz_templates:
   - templates/cellchat-circos-multi
   - templates/scp-flow-chord
   - templates/scp-flow-sankey
-- direction: 方向 6：关键亚群 Marker 投射 Bulk 临床队列与机器学习建模
+- direction: 方向 6：关键亚群 Marker 投射 Bulk 临床队列与预后建模
   when: 将单细胞核心靶基因带入 TCGA/GEO Bulk 队列构建诊断/预后模型与 SHAP 解释时
   analysis_templates:
+  - methods/survival-prognosis-analysis
   - recipes/figureya-293plus-binaryclassificationml
   - methods/regression-resampling-evaluation
   - methods/shap-explanation
@@ -179,6 +182,24 @@ next_steps:
   - templates/km-survival-curve
   - templates/subgroup-hazard-forest
   - templates/shap-beeswarm
+data_domains:
+- single-cell
+render_bridges:
+- interface: render-dotplot-long
+  from_output: scrna-annotated-cells
+  extractor_note: 按注释后的 cell_type 分组计算经典 marker 基因平均表达（avg_expression）与阳性细胞比例（pct_expressed），整理为
+    group、feature、avg_expression、pct_expressed、target_group 长表。
+  unit: 细胞类型 × Marker 基因
+- interface: render-umap-feature-long
+  from_output: scrna-annotated-cells
+  extractor_note: 从已注释对象抽取每个细胞的 UMAP 坐标（umap_1, umap_2）、所属细胞类型 group 与目标 marker 基因表达值，输出
+    cell_id、umap_1、umap_2、group、feature、value 长表。
+  unit: 细胞 × Marker 基因
+- interface: render-umap-groups
+  from_output: scrna-annotated-cells
+  extractor_note: 导出每个细胞的 UMAP 坐标与预测/手工注释细胞类型标签（cell_id, umap_1, umap_2, group），显式固定
+    group_levels 顺序。
+  unit: 单细胞
 ---
 # 细胞类型注释
 
@@ -191,15 +212,15 @@ next_steps:
 - 输入接口：未声明
 - 输出接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready） · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready） · [[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/cell-type-annotation/code/analysis.R](/files/wiki/methods/cell-type-annotation/code/analysis.R) · [methods/cell-type-annotation/code/annotation_native.R](/files/wiki/methods/cell-type-annotation/code/annotation_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：recipes/figureya-315singlerfraction；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring、templates/scp-comp-pie）
+  - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition、recipes/figureya-315singlerfraction；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring、templates/scp-comp-pie）
   - **方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）**（触发条件：筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时；中间表：deg-result-table；分析模版：methods/differential-expression、recipes/figureya-318genesetdedotplot；可视化模版：templates/scp-de-volcano、templates/marker-bubble-dotplot、templates/scp-group-heatmap）
   - **方向 3：主题基因集多算法打分（AUCell / UCell / ssGSEA）**（触发条件：评估乳酸化、PTM 修饰、铁死亡或代谢等自定义基因集在各亚群中的活性分布时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-275scaucell；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/scp-feature-heatmap）
   - **方向 4：关键亚群拟时序轨迹与 RNA 速率演化**（触发条件：提取目标谱系亚群做精细亚聚类，追踪细胞状态分化路径与动态驱动基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/rna-velocity、methods/dynamic-feature-analysis；可视化模版：templates/scrna-celltype-umap、templates/scrna-feature-umap-grid）
-  - **方向 5：细胞通讯配受体网络分析（CellChat）**（触发条件：解析目标亚群与免疫/基质微环境之间的旁分泌或接触式信号通路重塑时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord、templates/scp-flow-sankey）
-  - **方向 6：关键亚群 Marker 投射 Bulk 临床队列与机器学习建模**（触发条件：将单细胞核心靶基因带入 TCGA/GEO Bulk 队列构建诊断/预后模型与 SHAP 解释时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-293plus-binaryclassificationml、methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest、templates/shap-beeswarm）
+  - **方向 5：细胞通讯配受体网络分析（CellChat / CellPhoneDB）**（触发条件：解析目标亚群与免疫/基质微环境之间的旁分泌或接触式信号通路重塑时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication、recipes/figureya-310cpdbchordgramv2；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord、templates/scp-flow-sankey）
+  - **方向 6：关键亚群 Marker 投射 Bulk 临床队列与预后建模**（触发条件：将单细胞核心靶基因带入 TCGA/GEO Bulk 队列构建诊断/预后模型与 SHAP 解释时；中间表：candidate-biomarker-list；分析模版：methods/survival-prognosis-analysis、recipes/figureya-293plus-binaryclassificationml、methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest、templates/shap-beeswarm）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

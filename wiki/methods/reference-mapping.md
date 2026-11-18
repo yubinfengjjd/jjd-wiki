@@ -88,6 +88,27 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+data_domains:
+- single-cell
+next_steps:
+- direction: 方向 1：按样本统计映射后细胞亚群组成比例
+  when: 核对预测细胞类型在不同临床分组或样本中的占比变化及映射置信度分布时
+  analysis_templates:
+  - methods/cell-proportion-composition
+  - recipes/figureya-315singlerfraction
+  intermediate_interface: cell-proportion-stats
+  viz_templates:
+  - templates/cell-prop-flow-bar
+  - templates/scp-flow-sankey
+- direction: 方向 2：映射亚群内疾病 vs 对照差异表达与通路打分
+  when: 在对齐后的参考注释亚群内比较条件间差异基因与关键基因集活性时
+  analysis_templates:
+  - methods/differential-expression
+  - methods/gene-set-scoring
+  intermediate_interface: deg-result-table
+  viz_templates:
+  - templates/marker-bubble-dotplot
+  - templates/pathway-stat-violin
 ---
 # 参考图谱映射
 
@@ -102,6 +123,9 @@ figure_relations:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/reference-mapping/code/analysis.R](/files/wiki/methods/reference-mapping/code/analysis.R) · [methods/reference-mapping/code/reference_native.R](/files/wiki/methods/reference-mapping/code/reference_native.R) · [methods/reference-mapping/code/transfer.R](/files/wiki/methods/reference-mapping/code/transfer.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：按样本统计映射后细胞亚群组成比例**（触发条件：核对预测细胞类型在不同临床分组或样本中的占比变化及映射置信度分布时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition、recipes/figureya-315singlerfraction；可视化模版：templates/cell-prop-flow-bar、templates/scp-flow-sankey）
+  - **方向 2：映射亚群内疾病 vs 对照差异表达与通路打分**（触发条件：在对齐后的参考注释亚群内比较条件间差异基因与关键基因集活性时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-scoring；可视化模版：templates/marker-bubble-dotplot、templates/pathway-stat-violin）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

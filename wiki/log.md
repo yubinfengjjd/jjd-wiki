@@ -1457,3 +1457,5 @@
 ## [2026-11-18 09:49 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
 
 ## [2026-11-18 09:50 UTC] refactor(wiki): simplify 31 template IDs to short slugs with aliases
+
+## [2026-11-18 10:36 UTC] feat(wiki): complete v4.1 method anchors, domains, primary_method and recipe map

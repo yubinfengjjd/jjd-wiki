@@ -26,6 +26,7 @@ columns:
 - 产出方法：无
 - 读取方法：无
 - 使用的模板：[[templates/scp-comp-area|分组构成面积图]] · [[templates/scp-comp-dot|分组构成点图]] · [[templates/scp-comp-pie|分组构成饼图]] · [[templates/scp-comp-rose|分组构成玫瑰图]] · [[templates/scp-comp-trend|分组构成趋势图]] · [[templates/scp-count-bar|分组计数柱图]]
+- 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（adaptable）
 <!-- facts:end -->
 
 ## 含义

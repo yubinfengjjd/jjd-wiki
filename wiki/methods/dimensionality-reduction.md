@@ -79,6 +79,32 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+data_domains:
+- single-cell
+next_steps:
+- direction: 方向 1：基于低维嵌入构建 SNN 图与无监督聚类
+  when: PCA/UMAP 嵌入稳定后，划分离散细胞 cluster 作为注释和比较单位时
+  analysis_templates:
+  - methods/cell-clustering
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/scrna-celltype-umap
+- direction: 方向 2：结合 Marker 表达与参考图谱开展细胞类型注释
+  when: 在降维嵌入上叠加经典 marker 分布、SingleR 或 Seurat 锚点标签转移完成细胞注释时
+  analysis_templates:
+  - methods/cell-type-annotation
+  - methods/reference-mapping
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/scrna-feature-umap-grid
+  - templates/marker-bubble-dotplot
+- direction: 方向 3：在降维流形上推断细胞拟时序分化轨迹
+  when: 已锁定连续发育或激活谱系亚群，准备基于 PCA/UMAP 坐标构建 lineage 与 pseudotime 时
+  analysis_templates:
+  - methods/trajectory-inference
+  intermediate_interface: pseudotime-trajectory-table
+  viz_templates:
+  - templates/scrna-celltype-umap
 ---
 # 单细胞降维分析
 
@@ -93,6 +119,10 @@ figure_relations:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/dimensionality-reduction/code/analysis.R](/files/wiki/methods/dimensionality-reduction/code/analysis.R) · [methods/dimensionality-reduction/code/dimreduction_native.R](/files/wiki/methods/dimensionality-reduction/code/dimreduction_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：基于低维嵌入构建 SNN 图与无监督聚类**（触发条件：PCA/UMAP 嵌入稳定后，划分离散细胞 cluster 作为注释和比较单位时；中间表：scrna-annotated-cells；分析模版：methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
+  - **方向 2：结合 Marker 表达与参考图谱开展细胞类型注释**（触发条件：在降维嵌入上叠加经典 marker 分布、SingleR 或 Seurat 锚点标签转移完成细胞注释时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/scrna-feature-umap-grid、templates/marker-bubble-dotplot）
+  - **方向 3：在降维流形上推断细胞拟时序分化轨迹**（触发条件：已锁定连续发育或激活谱系亚群，准备基于 PCA/UMAP 坐标构建 lineage 与 pseudotime 时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference；可视化模版：templates/scrna-celltype-umap）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

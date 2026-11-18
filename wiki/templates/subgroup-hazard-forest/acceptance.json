@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.138254+00:00",
+  "checked_at": "2026-11-18T10:35:44.986130+00:00",
   "page": "templates/subgroup-hazard-forest.md",
-  "snapshot": "3e408674038bb4179c66c5a7e1c629cfcf4636d03145fcd216f4df26773ccb63",
+  "snapshot": "937054963a0d677ce35e321906ef23052d1f0f918fab2fe3ef7a0d4353a9ad5a",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

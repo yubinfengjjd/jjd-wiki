@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.506468+00:00",
+  "checked_at": "2026-11-18T10:35:43.461272+00:00",
   "page": "templates/scp-comp-ring.md",
-  "snapshot": "32b03038e2573c0331e7f6aaf33b903d8723fc504614193261b4b9adf104e254",
+  "snapshot": "b8533283374b8de5d7b20492bdca4f838cc989039a46006b3fc9f84e0d5659be",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

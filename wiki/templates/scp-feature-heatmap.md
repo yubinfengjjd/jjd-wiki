@@ -15,6 +15,7 @@ tags:
 chart_types:
 - heatmap
 favorite: false
+primary_method: dynamic-feature-analysis
 ---
 # 特征表达热图
 

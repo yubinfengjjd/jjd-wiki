@@ -15,6 +15,7 @@ tags:
 chart_types:
 - ridge
 favorite: false
+primary_method: gene-set-scoring
 ---
 # 分组表达密度图
 

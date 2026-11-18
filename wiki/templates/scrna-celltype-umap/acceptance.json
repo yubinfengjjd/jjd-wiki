@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.924063+00:00",
+  "checked_at": "2026-11-18T10:35:44.191901+00:00",
   "page": "templates/scrna-celltype-umap.md",
-  "snapshot": "422c0859c045fa67bf908c3b2841199b8290366aaf10adf3d9b5ba94f09c2873",
+  "snapshot": "caa9c20220402748a73f382c4f56962f09f9b3815d602d68bf5edc4216194b89",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.557501+00:00",
+  "checked_at": "2026-11-18T10:35:43.513849+00:00",
   "page": "templates/scp-comp-rose.md",
-  "snapshot": "197fc13bda113009db0c2669816135916011a8d72600d6339d76cf4ecec3c560",
+  "snapshot": "1e5ade1baea0b7ea950d31a5fe7c40fd6150d672a291e2cf06554145bf453f61",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

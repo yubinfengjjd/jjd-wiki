@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.807307+00:00",
+  "checked_at": "2026-11-18T10:35:43.875946+00:00",
   "page": "templates/scp-flow-sankey.md",
-  "snapshot": "69af9570524f32413b513d4b6bab2511182ed8d6da99629ada4898f4a458c26f",
+  "snapshot": "d2597641806c51c955dc99298e47e9b23ea96acf11c873c8aa6870da0486d07f",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

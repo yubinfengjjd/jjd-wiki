@@ -7,7 +7,31 @@
     "interfaces/bulk-de-table.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "interfaces/candidate-biomarker-list.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/cell-proportion-stats.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/cellchat-lr-table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/celltype-gene-expression.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/deg-result-table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "interfaces/highlight-gene-sets.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/model-prediction-shap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/pathway-score-table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/pseudotime-trajectory-table.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "interfaces/regression-fold-metrics.md": [
@@ -68,6 +92,9 @@
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "interfaces/render-umap-groups.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "interfaces/scrna-annotated-cells.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "interfaces/shap-samples.md": [
@@ -163,6 +190,12 @@
     "layouts/2026-10-22-scp-example__fig17-group-heatmap-dot.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
+    "methods/asthma-lactylation-source-catalog.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/asthma-lactylation-workflow.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "methods/batch-integration.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
@@ -173,7 +206,7 @@
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/cell-type-annotation.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/differential-expression.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
@@ -187,10 +220,19 @@
     "methods/dynamic-feature-analysis.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "methods/figureya-multilanguage-assets.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "methods/gene-set-enrichment.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/gene-set-scoring.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/local-omics-analysis-guide.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/local-omics-visualization-guide.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/reference-mapping.md": [
@@ -200,6 +242,18 @@
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/rna-velocity.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scop-analysis-guide.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scop-source-catalog.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scop-visualization-guide.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scop-workflows.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/scp-annotation-projection.md": [
@@ -217,6 +271,9 @@
     "methods/scp-local-source.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
+    "methods/scp-source-catalog.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "methods/scp-standard-workflow.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
@@ -224,6 +281,18 @@
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
     "methods/scp-visualization-interface.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scp-viz-dimplots.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scp-viz-heatmaps.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scp-viz-model-overlays.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/scp-viz-statplots.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/scrna-marker-annotation.md": [
@@ -241,13 +310,64 @@
     "methods/trajectory-inference.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "methods/uc-ptm-source-catalog.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/uc-ptm-workflow.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/uc-spatial-workflows.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-102multipanelroc.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-109subtypegsea-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-10chromosomev2-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-110mutationsignature.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-112venn.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-113mutsigcv.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-114ternarycluster.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-115cofactor.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-118multiclassdeseq2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-119multiclasslimma.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-11bubble.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-120multiclassedger.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-129tcgabox.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-131cmap-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-132alteration.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-138nicecalibration.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-139tmb-titv.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-13gsea-java-update.md": [
@@ -256,7 +376,28 @@
     "recipes/figureya-141risk.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-142circosbar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-143survcor-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-147interaction.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-147plus-string.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-148simpledendrogram.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-149rankheatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-14circos.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-151pathifier.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-153ccgraph.md": [
@@ -265,16 +406,76 @@
     "recipes/figureya-162boxviolin.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-163twovarcor-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-164pca3d.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-173fancybar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-17wgcna-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-18oncoplot-update.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-193risktable.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-194pyscenic.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-195panpaire.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-196panpie.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-199crosslink.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-19lollipop.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-1survivalcurve-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-200pairwiseauc.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-202consensusgene.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-203combat.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-204pcascore.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-206scheatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-211multicohortimmsubtype.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-212drugtargetv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-214kegg-hierarchyv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-215dnaage.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-219gmm.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-21tcga2table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-221tenfoldrf.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-227boxdensity.md": [
@@ -283,52 +484,280 @@
     "recipes/figureya-228linkcor.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-229pcoa.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-230immunelandscape.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-231scscore.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-236circgroup.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-239st-pdac.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-23count2tpm.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-248mutlandscape.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-251nphsurv.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-253pangsea.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-255time.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-25sankey-update.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-26circos-r.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-275scaucell.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-277immunomodulator.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-284pairwiselogrank.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-28color.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-293machinelearning.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-293plus-binaryclassificationml.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-294hccdrug.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-2ggtree-pheatmap-msa.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-300pancancor.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-304magic.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-305pmapscore.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-307cnvheatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-308ihs.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-30nomogram-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-310cpdbchordgramv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-311pam50heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-314singlerscore.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-315singlerfraction.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-318genesetdedotplot.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-31lasso-update.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-320clontypeheatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-323stpathseq.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-32id-table.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-33dca-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-34count2fpkmv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-35batch-bestseparationv3-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-36nsurvv3.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-37correlationv2-update.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-38pca.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-39bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-3genomeview.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-41geo2lncrna-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-42oncoprintv2-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-43manhattanv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-44profile.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-45v2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-47hrtable.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-48adonis.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-51tmb-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-52goplot.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-53ppimodule.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-55pancancer-violinv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-55plus-pancancer-boxplot.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-56immune-inflitrationv3.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-57profile-1bw.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-58lncrnareannotation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-59plus-geo2deg.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-59volcanov2.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-5bubbles.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-60gsea-clusterprofilerv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-61gsva.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-63pubmedminingv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-64triangle.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-65svm.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-66univariatecox.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-67phastcons.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-68friendsv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-69cancersubtype.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-6rhrsv2.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-70mutationevents.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-71ssgsea-update.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-73batchcorrelation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-74omiccircos.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-75bubble-volcano.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-76corrgram.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-77basezoom.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-78gganatogram.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-7psm.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-81immune-network.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-83enrichment.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "recipes/figureya-85timeroc.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-8radar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-90subgroup.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-91cluster-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-92immune-gene-update.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "recipes/figureya-95pairwise.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-97correlationv3.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "recipes/figureya-99smoothhrv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "recipes/figureya-9heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/bulk-ml-biomarker-playbook.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "scenarios/clinical-prediction-survival.md": [
@@ -346,23 +775,47 @@
     "scenarios/dimension-reduction-single-cell.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "scenarios/geneset-theme-playbook.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "scenarios/group-comparison.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "scenarios/model-explanation.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "scenarios/sc-bulk-integration-playbook.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "scenarios/scrna-stepwise-playbook.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "sources/figureya-archive-20251223.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "sources/figureya.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/shap-importance-bar.md": [
+    "sources/ks-wechat.md": [
+      "8e07b73471d37a3d20c8385db60ec8fa4e4b42e880ac05314bfa658498caf437"
+    ],
+    "templates/bulk-de-volcano.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/shap-beeswarm.md": [
+    "templates/cell-prop-flow-bar.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/cellchat-circos-multi.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/shap-radial-bar.md": [
+    "templates/km-survival-curve.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/marker-bubble-dotplot.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/pathway-stat-violin.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
     "templates/pred-density-scatter.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
@@ -370,28 +823,19 @@
     "templates/resampling-metric-box.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/scrna-celltype-umap.md": [
+    "templates/scp-cell-cor-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/scp-comp-area.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/scrna-feature-umap-grid.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/marker-bubble-dotplot.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/cell-prop-flow-bar.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/pathway-stat-violin.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/scp-de-volcano.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/scp-comp-ring.md": [
+    "templates/scp-comp-dot.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
     "templates/scp-comp-pie.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/scp-comp-ring.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
     "templates/scp-comp-rose.md": [
@@ -400,46 +844,49 @@
     "templates/scp-comp-trend.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/scp-comp-area.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/scp-comp-dot.md": [
-      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
-    ],
-    "templates/scp-group-heatmap.md": [
-      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
-    ],
     "templates/scp-count-bar.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/scp-flow-sankey.md": [
-      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    "templates/scp-de-volcano.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/scp-flow-chord.md": [
-      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
-    ],
-    "templates/set-venn.md": [
-      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
-    ],
-    "templates/set-upset.md": [
+    "templates/scp-expr-ridge.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "templates/scp-feature-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/scp-cell-cor-heatmap.md": [
+    "templates/scp-flow-chord.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/scp-expr-ridge.md": [
+    "templates/scp-flow-sankey.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "templates/scp-group-dot-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/km-survival-curve.md": [
+    "templates/scp-group-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/bulk-de-volcano.md": [
+    "templates/scrna-celltype-umap.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/scrna-feature-umap-grid.md": [
+      "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
+    ],
+    "templates/set-upset.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/set-venn.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/shap-beeswarm.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/shap-importance-bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/shap-radial-bar.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "templates/subgroup-hazard-forest.md": [

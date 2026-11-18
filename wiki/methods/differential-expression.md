@@ -101,9 +101,11 @@ next_steps:
   - templates/scp-de-volcano
   - templates/bulk-de-volcano
   - templates/marker-bubble-dotplot
-- direction: 方向 3：多组学交集与机器学习候选标志物筛选
-  when: 将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时
+- direction: 方向 3：多集合交集筛选与生存/机器学习预后建模
+  when: 将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入生存分析或 LASSO/SVM/RF 特征筛选时
   analysis_templates:
+  - methods/set-intersection-and-group-stats
+  - methods/survival-prognosis-analysis
   - recipes/figureya-112venn
   - recipes/figureya-31lasso-update
   - recipes/figureya-293plus-binaryclassificationml
@@ -111,6 +113,34 @@ next_steps:
   viz_templates:
   - templates/set-venn
   - templates/set-upset
+  - templates/km-survival-curve
+- direction: 方向 4：差异基因关联免疫微环境浸润或细胞通讯信号轴
+  when: 进一步评估核心差异基因与 Bulk 免疫细胞浸润或单细胞配受体互作网络的关联时
+  analysis_templates:
+  - methods/immune-infiltration-tme
+  - methods/cell-cell-communication
+  intermediate_interface: pathway-score-table
+  viz_templates:
+  - templates/cellchat-circos-multi
+data_domains:
+- single-cell
+- bulk-transcriptomics
+render_bridges:
+- interface: render-de-results
+  from_output: deg-result-table
+  extractor_note: 筛选单一 group1 对比后的 AllMarkers 表，映射并保留 gene、group1、group2、avg_log2FC、pct_1、pct_2、p_val、p_val_adj
+    列供火山图模板读取。
+  unit: 基因 × 对比组
+- interface: render-group-heatmap
+  from_output: deg-result-table
+  extractor_note: 针对 DE 选出的显著特征基因，按细胞群计算各分组平均/标准化表达与阳性比例并附上矩阵/分组/基因排序，导出 render-group-heatmap
+    长表。
+  unit: 基因 × 细胞分组
+- interface: render-dotplot-long
+  from_output: deg-result-table
+  extractor_note: 基于 DE 选出的候选 marker 基因，回表统计各细胞分组的平均表达与阳性比例，导出 render-dotplot-long
+    长表（不能用 avg_log2FC 替代 avg_expression）。
+  unit: 分组 × 差异基因
 ---
 # 差异表达分析
 
@@ -128,7 +158,8 @@ next_steps:
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/marker-bubble-dotplot）
   - **方向 2：火山图、气泡图与分组表达热图渲染**（触发条件：需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时；中间表：deg-result-table；分析模版：recipes/figureya-59volcanov2；可视化模版：templates/scp-de-volcano、templates/bulk-de-volcano、templates/marker-bubble-dotplot）
-  - **方向 3：多组学交集与机器学习候选标志物筛选**（触发条件：将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-112venn、recipes/figureya-31lasso-update、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/set-venn、templates/set-upset）
+  - **方向 3：多集合交集筛选与生存/机器学习预后建模**（触发条件：将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入生存分析或 LASSO/SVM/RF 特征筛选时；中间表：candidate-biomarker-list；分析模版：methods/set-intersection-and-group-stats、methods/survival-prognosis-analysis、recipes/figureya-112venn、recipes/figureya-31lasso-update、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/set-venn、templates/set-upset、templates/km-survival-curve）
+  - **方向 4：差异基因关联免疫微环境浸润或细胞通讯信号轴**（触发条件：进一步评估核心差异基因与 Bulk 免疫细胞浸润或单细胞配受体互作网络的关联时；中间表：pathway-score-table；分析模版：methods/immune-infiltration-tme、methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi）
 
 - 方法配图关系（语义审查）：
   - [[templates/marker-bubble-dotplot|细胞类型 × 基因气泡点图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

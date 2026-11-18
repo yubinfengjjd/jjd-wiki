@@ -1,0 +1,1067 @@
+{
+  "schema_version": 1,
+  "notes": "FigureYa 146 篇源码配方到 21 个核心分析方法的多对多映射表。独立维护于 method-map.json 以保持 recipes/*.md 原字节与验收收据稳定；暂未建专项分析方法页的药物重定位/药敏、蛋白组 PPI、系统发育、空间微生物及纯数据处理/配色工具显式保留 methods: []。",
+  "unmapped": [
+    "figureya-131cmap-update",
+    "figureya-147interaction",
+    "figureya-147plus-string",
+    "figureya-212drugtargetv2",
+    "figureya-23count2tpm",
+    "figureya-28color",
+    "figureya-294hccdrug",
+    "figureya-2ggtree-pheatmap-msa",
+    "figureya-323stpathseq",
+    "figureya-32id-table",
+    "figureya-34count2fpkmv2",
+    "figureya-41geo2lncrna-update",
+    "figureya-53ppimodule",
+    "figureya-58lncrnareannotation",
+    "figureya-63pubmedminingv2",
+    "figureya-78gganatogram"
+  ],
+  "mappings": {
+    "figureya-102multipanelroc": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "多变量 Logistic 训练/测试集 ROC 判别评估（临床诊断/预后与模型评价）。"
+    },
+    "figureya-109subtypegsea-update": {
+      "methods": [
+        "differential-expression",
+        "gene-set-enrichment",
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "多亚型一对多差异分析、clusterProfiler GSEA 富集与 GSVA 打分对角热图。"
+    },
+    "figureya-10chromosomev2-update": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "基于 RIdeogram 的染色体核型特征分布与数值轨道展示。"
+    },
+    "figureya-110mutationsignature": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "MAF 三核苷酸突变谱分解 COSMIC 签名与 NMF 亚型聚类。"
+    },
+    "figureya-112venn": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "四组基因集合交集计数与占比渐变填充韦恩图。"
+    },
+    "figureya-113mutsigcv": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "MutSigCV 显著突变基因推断与分组突变瀑布图。"
+    },
+    "figureya-114ternarycluster": {
+      "methods": [
+        "gene-set-scoring",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "通路基因三态表达聚类与 GSVA 得分亚组 Kruskal-Wallis 检验。"
+    },
+    "figureya-115cofactor": {
+      "methods": [
+        "genomic-epigenomic-landscape",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "ChIP-seq peak 重叠矩阵相关性计算与聚类热图。"
+    },
+    "figureya-118multiclassdeseq2": {
+      "methods": [
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "DESeq2 多亚型一对多 Bulk 差异表达分析。"
+    },
+    "figureya-119multiclasslimma": {
+      "methods": [
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "limma 多亚型一对多 Bulk 差异表达分析。"
+    },
+    "figureya-11bubble": {
+      "methods": [
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "多组 GO/KEGG 富集分析对角气泡图展示。"
+    },
+    "figureya-120multiclassedger": {
+      "methods": [
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "edgeR 多亚型一对多差异表达分析。"
+    },
+    "figureya-129tcgabox": {
+      "methods": [
+        "genomic-epigenomic-landscape",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "整合 TCGA 表达、突变与病理分期的分组 Wilcoxon 箱线散点图。"
+    },
+    "figureya-131cmap-update": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "CMap 药物重定位与化合物 MoA 分析，当前库内暂无计算药物设计/药敏专项分析方法页。"
+    },
+    "figureya-132alteration": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "泛癌通路基因突变/扩增/缺失/融合变异频率扫雷图。"
+    },
+    "figureya-138nicecalibration": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "二分类诊断模型校准曲线与 Hosmer-Lemeshow 拟合优度检验。"
+    },
+    "figureya-139tmb-titv": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "泛癌肿瘤突变负荷（TMB）与碱基替换 Ti/Tv 谱分布图。"
+    },
+    "figureya-13gsea-java-update": {
+      "methods": [
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "Java 版 GSEA 多通路结果可视化。"
+    },
+    "figureya-141risk": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "预后风险评分分布、生存状态与签名基因表达联合图。"
+    },
+    "figureya-142circosbar": {
+      "methods": [
+        "gene-set-enrichment",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "KEGG 通路层级归属与丰度环状热图连线柱图。"
+    },
+    "figureya-143survcor-update": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "双基因表达相关性叠加最佳 log-rank 截断生存四象限分布。"
+    },
+    "figureya-147interaction": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "通用分子互作辐射网络可视化工具，暂无专项互作网络分析方法页。"
+    },
+    "figureya-147plus-string": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "STRING 蛋白互作证据网络可视化（蛋白组/互作网络暂无专项分析方法页）。"
+    },
+    "figureya-148simpledendrogram": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "基于 Pearson 距离与 ward.D 的样本层次聚类树状图。"
+    },
+    "figureya-149rankheatmap": {
+      "methods": [
+        "differential-expression",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "差异倍数/相关系数分档注释热图。"
+    },
+    "figureya-14circos": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "多轨道基因组环形圈图（GC、基因密度、SNP 与连线）。"
+    },
+    "figureya-151pathifier": {
+      "methods": [
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "Pathifier 算法计算单样本通路失调得分（PDS）。"
+    },
+    "figureya-153ccgraph": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "通用层级关系同心环网络图展示。"
+    },
+    "figureya-162boxviolin": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多组连续变量半小提琴箱线散点组间比较图。"
+    },
+    "figureya-163twovarcor-update": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "分组双变量相关性散点及 Fisher r-to-z 组间相关系数差异检验。"
+    },
+    "figureya-164pca3d": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "表达矩阵三维 PCA 降维分组散点图。"
+    },
+    "figureya-173fancybar": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "含亚组的多组均值±标准误柱状图及组间比较。"
+    },
+    "figureya-17wgcna-heatmap": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "WGCNA 共表达模块基因表达热图展示。"
+    },
+    "figureya-18oncoplot-update": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "TCGA MAF 体细胞突变瀑布图（maftools::oncoplot）。"
+    },
+    "figureya-193risktable": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "训练/验证队列 riskscore 构建与多因素 Cox 独立预后森林表。"
+    },
+    "figureya-194pyscenic": {
+      "methods": [
+        "gene-set-scoring",
+        "cell-type-annotation"
+      ],
+      "confidence": "curated",
+      "note": "pySCENIC 单细胞转录调控网络推断与细胞类型特异 regulon 活性打分（AUCell）。"
+    },
+    "figureya-195panpaire": {
+      "methods": [
+        "gene-set-scoring",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "泛癌配对肿瘤/癌旁样本 ssGSEA 通路得分连线与配对 Wilcoxon 检验。"
+    },
+    "figureya-196panpie": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多分组临床分期构成差异扇形矩阵图。"
+    },
+    "figureya-199crosslink": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多列分组节点跨列连线属性网络图。"
+    },
+    "figureya-19lollipop": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "蛋白结构域体细胞突变氨基酸位点棒棒糖图。"
+    },
+    "figureya-1survivalcurve-update": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "经典多组 Kaplan-Meier 生存曲线与 number-at-risk 风险表。"
+    },
+    "figureya-200pairwiseauc": {
+      "methods": [
+        "differential-expression",
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "limma 差异基因筛选结合双独立队列预后事件 AUC 判别评估。"
+    },
+    "figureya-202consensusgene": {
+      "methods": [
+        "gene-set-scoring",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "双通路共表达基因共识聚类与样本四象限分子分型。"
+    },
+    "figureya-203combat": {
+      "methods": [
+        "batch-integration",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "跨平台 RNA-seq/GEO 表达谱 ComBat 批次校正与 PCA 验证（注意 batch-integration 方法当前偏单细胞，Bulk 批次校正可参考此配方）。"
+    },
+    "figureya-204pcascore": {
+      "methods": [
+        "gene-set-scoring",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "Boruta 特征筛选与 PCA 第一主成分签名评分及组间比较。"
+    },
+    "figureya-206scheatmap": {
+      "methods": [
+        "cell-quality-control",
+        "cell-clustering",
+        "differential-expression",
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "Seurat 单细胞 QC、分群、FindAllMarkers 差异基因热图与 GO 富集联图。"
+    },
+    "figureya-211multicohortimmsubtype": {
+      "methods": [
+        "immune-infiltration-tme",
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "多队列合并、ESTIMATE/CIBERSORT 免疫浸润共识分型与亚型生存分析。"
+    },
+    "figureya-212drugtargetv2": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "CCLE/CTRP/PRISM 药敏预测与药物靶点筛选（属计算药物设计/药敏域，暂未建专项分析方法页）。"
+    },
+    "figureya-214kegg-hierarchyv2": {
+      "methods": [
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "KEGG 三层层级富集结果条形图。"
+    },
+    "figureya-215dnaage": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "ChAMP 甲基化芯片标准化与 DNA 甲基化年龄加速分析。"
+    },
+    "figureya-219gmm": {
+      "methods": [
+        "regression-resampling-evaluation",
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "逻辑回归组合 AUC 评估与高斯混合模型筛选最优分类/风险签名。"
+    },
+    "figureya-21tcga2table": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "TCGA 临床基线特征分组统计与卡方检验三线表。"
+    },
+    "figureya-221tenfoldrf": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "单因素 Cox 筛选结合十折交叉验证随机森林 RFE 特征选择与 KM 评估。"
+    },
+    "figureya-227boxdensity": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "两组连续指标箱线叠加密度分布比较图。"
+    },
+    "figureya-228linkcor": {
+      "methods": [
+        "gene-set-scoring",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "双组通路自相关三角热图与单基因相关性连线蝴蝶图。"
+    },
+    "figureya-229pcoa": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "基于距离矩阵的 PCoA 降维均值误差线图与 PERMANOVA 检验。"
+    },
+    "figureya-230immunelandscape": {
+      "methods": [
+        "immune-infiltration-tme"
+      ],
+      "confidence": "curated",
+      "note": "TIMER/CIBERSORT/xCELL 等多算法免疫浸润组合景观热图。"
+    },
+    "figureya-231scscore": {
+      "methods": [
+        "dimensionality-reduction",
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "Seurat 单细胞降维与 Single-Cell Signature Explorer 通路得分映射。"
+    },
+    "figureya-236circgroup": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多分类分型间对应关系环形热图。"
+    },
+    "figureya-239st-pdac": {
+      "methods": [
+        "cell-type-annotation",
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "空间转录组与单细胞标志基因超几何检验（MIA）整合定位。"
+    },
+    "figureya-23count2tpm": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "RNA-seq read counts 转 TPM 的基础数据预处理工具脚本。"
+    },
+    "figureya-248mutlandscape": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "体细胞突变、TMB、COSMIC 签名与拷贝数变异多组学景观图。"
+    },
+    "figureya-251nphsurv": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "非比例风险多亚组 RMST 检验与长期生存率比较 KM 图。"
+    },
+    "figureya-253pangsea": {
+      "methods": [
+        "gene-set-scoring",
+        "differential-expression",
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "泛癌按 ssGSEA 得分分层后的 limma 差异分析与 GSEA NES 气泡图。"
+    },
+    "figureya-255time": {
+      "methods": [
+        "immune-infiltration-tme",
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "甲基化 MeTIL 得分、ESTIMATE 与 GSVA 24 种免疫细胞微环境热图。"
+    },
+    "figureya-25sankey-update": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多层分类属性交叉与流向桑基图展示。"
+    },
+    "figureya-26circos-r": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "组-亚组层级间正负关联环形连线图。"
+    },
+    "figureya-275scaucell": {
+      "methods": [
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "单细胞 AUCell 基因集逐细胞打分与 UMAP 活性映射。"
+    },
+    "figureya-277immunomodulator": {
+      "methods": [
+        "genomic-epigenomic-landscape",
+        "immune-infiltration-tme"
+      ],
+      "confidence": "curated",
+      "note": "免疫调节因子表达、甲基化相关及 CNV 扩增/缺失频率四联热图。"
+    },
+    "figureya-284pairwiselogrank": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "三组及以上亚组 KM 曲线与两两 log-rank P 值比较表。"
+    },
+    "figureya-28color": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "论文图片配色提取与色卡生成纯绘图辅助工具。"
+    },
+    "figureya-293machinelearning": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "10 种生存机器学习算法及百余种组合构建与多验证集 C-index 比较。"
+    },
+    "figureya-293plus-binaryclassificationml": {
+      "methods": [
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "多算法二分类机器学习特征选择、调优与多队列 AUC/准确率评估。"
+    },
+    "figureya-294hccdrug": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "蛋白组与 CRISPR CERES 药敏靶点筛选（属蛋白组/药敏方向，暂无专项分析方法页）。"
+    },
+    "figureya-2ggtree-pheatmap-msa": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "基因家族多序列比对、进化树与表达热图绘制（系统发育分析暂无专项方法页）。"
+    },
+    "figureya-300pancancor": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "gene-set-scoring",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "32 癌种 Cox 签名得分排序与 GSVA 通路相关性泛癌散点图。"
+    },
+    "figureya-304magic": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "单细胞 MAGIC 插补后基于 knnDREMI 筛选协同表达基因模块。"
+    },
+    "figureya-305pmapscore": {
+      "methods": [
+        "genomic-epigenomic-landscape",
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "KEGG 通路体细胞突变加权预后评分（iPMP/PMAPscore）与 KM/ROC/瀑布图。"
+    },
+    "figureya-307cnvheatmap": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "GISTIC 拷贝数增/缺阈值矩阵染色体分区热图。"
+    },
+    "figureya-308ihs": {
+      "methods": [
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "VIPER 蛋白活性推断及患者内转录异质性评分（IHS）计算。"
+    },
+    "figureya-30nomogram-update": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "Cox/Logistic 临床列线图（Nomogram）及多年期校准曲线。"
+    },
+    "figureya-310cpdbchordgramv2": {
+      "methods": [
+        "cell-cell-communication"
+      ],
+      "confidence": "curated",
+      "note": "CellPhoneDB 配受体互作结果结合分组差异的环形捆绑弦图。"
+    },
+    "figureya-311pam50heatmap": {
+      "methods": [
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "PAM50 分子亚型预测与 GSVA 多通路签名注释热图。"
+    },
+    "figureya-314singlerscore": {
+      "methods": [
+        "differential-expression",
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "单细胞 FindAllMarkers 提取亚群签名并逐细胞打分分层散点图。"
+    },
+    "figureya-315singlerfraction": {
+      "methods": [
+        "cell-type-annotation",
+        "cell-proportion-composition"
+      ],
+      "confidence": "curated",
+      "note": "SingleR 亚群来源注释并按队列×患者统计细胞占比及 Kruskal-Wallis 检验。"
+    },
+    "figureya-318genesetdedotplot": {
+      "methods": [
+        "gene-set-scoring",
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "AUCell 逐细胞通路打分后在各细胞类型内做 limma 组间差异点图。"
+    },
+    "figureya-31lasso-update": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "LASSO Cox 回归预后基因筛选、系数路径与交叉验证曲线。"
+    },
+    "figureya-320clontypeheatmap": {
+      "methods": [
+        "cell-proportion-composition",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "单细胞 TCR/BCR 克隆型在细胞类型间共享数量矩阵热图。"
+    },
+    "figureya-323stpathseq": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "Space Ranger + GATK PathSeq 空间微生物组预处理流程（微生物宏基因组暂无专项分析方法页）。"
+    },
+    "figureya-32id-table": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "按 GO term 基因列表批量抽取表达子矩阵的纯数据处理工具。"
+    },
+    "figureya-33dca-update": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "二分类或生存结局临床决策曲线（DCA）与净获益分析。"
+    },
+    "figureya-34count2fpkmv2": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "RNA-seq read counts 转 FPKM 标准化换算工具脚本。"
+    },
+    "figureya-35batch-bestseparationv3-update": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "批量基因最佳切点（surv_cutpoint）生存分析与 KM 拼图。"
+    },
+    "figureya-36nsurvv3": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "双基因高低表达四分组 KM 生存曲线与 Cox HR 比较。"
+    },
+    "figureya-37correlationv2-update": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多基因两两相关系数圆形连线布局图。"
+    },
+    "figureya-38pca": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "表达矩阵 PCA 降维散点、置信椭圆与载荷箭头图。"
+    },
+    "figureya-39bar": {
+      "methods": [
+        "gene-set-enrichment",
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "肿瘤瀑布柱图及 GO/KEGG/GSVA 正负发散富集柱图。"
+    },
+    "figureya-3genomeview": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "Gviz 基因组区域基因结构与多条 bigWig 信号轨迹图。"
+    },
+    "figureya-41geo2lncrna-update": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "GEO 芯片下载与 biomaRt lncRNA/mRNA 注释提取的数据预处理脚本。"
+    },
+    "figureya-42oncoprintv2-update": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "按通路分块的突变瀑布图（ComplexHeatmap oncoPrint）。"
+    },
+    "figureya-43manhattanv2": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "GWAS 全基因组关联分析曼哈顿图与显著位点基因标注。"
+    },
+    "figureya-44profile": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "bigWig 信号在基因体及 TSS/TTS/CpGi 区域平均信号曲线。"
+    },
+    "figureya-45v2": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "iClusterBayes 多组学（突变/CNV/表达）整合潜变量聚类分型。"
+    },
+    "figureya-47hrtable": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "批量单因素与多因素 Cox 回归 HR(95%CI) 临床三线表。"
+    },
+    "figureya-48adonis": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "vegan::adonis2 PERMANOVA 多因子解释度 R2 条形图。"
+    },
+    "figureya-51tmb-update": {
+      "methods": [
+        "genomic-epigenomic-landscape",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "按基因表达分组的肿瘤突变负荷（TMB）箱线散点检验图。"
+    },
+    "figureya-52goplot": {
+      "methods": [
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "clusterProfiler GO 富集结果转 GOplot 弦图与圈图。"
+    },
+    "figureya-53ppimodule": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "STRING 蛋白互作网络 TOM 模块划分（属蛋白组/PPI 方向，暂无专项分析方法页）。"
+    },
+    "figureya-55pancancer-violinv2": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "TCGA 与 GTEx 泛癌肿瘤/正常组织基因表达分裂小提琴比较图。"
+    },
+    "figureya-55plus-pancancer-boxplot": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "泛癌各组织肿瘤 vs 对照表达分组箱线图与 Wilcoxon 检验。"
+    },
+    "figureya-56immune-inflitrationv3": {
+      "methods": [
+        "immune-infiltration-tme"
+      ],
+      "confidence": "curated",
+      "note": "MCPcounter 免疫/基质浸润丰度估计与临床突变注释热图。"
+    },
+    "figureya-57profile-1bw": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "单个 bigWig 跨多类基因组启动子区域的信号谱线对比图。"
+    },
+    "figureya-58lncrnareannotation": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "芯片探针 BLAST/seqmap 比对 GENCODE lncRNA 重注释预处理脚本。"
+    },
+    "figureya-59plus-geo2deg": {
+      "methods": [
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "GEO 芯片表达矩阵标准化、去离群与 limma 差异分析全流程。"
+    },
+    "figureya-59volcanov2": {
+      "methods": [
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "Bulk 差异表达分级着色与基因标注火山图。"
+    },
+    "figureya-5bubbles": {
+      "methods": [
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "同时编码通路/motif 富集显著性与基因表达量的气泡图。"
+    },
+    "figureya-60gsea-clusterprofilerv2": {
+      "methods": [
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "clusterProfiler 多通路及多对比 GSEA 富集曲线组图。"
+    },
+    "figureya-61gsva": {
+      "methods": [
+        "gene-set-scoring",
+        "differential-expression"
+      ],
+      "confidence": "curated",
+      "note": "GSVA 样本×通路打分结合 limma 组间差异通路检验。"
+    },
+    "figureya-63pubmedminingv2": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "PubMed 文献检索与摘要词频挖掘辅助工具，非组学统计方法。"
+    },
+    "figureya-64triangle": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "三组占比/频率关系的三元散点图。"
+    },
+    "figureya-65svm": {
+      "methods": [
+        "regression-resampling-evaluation",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "LASSO 与 SVM-RFE 双算法特征筛选及交集韦恩图。"
+    },
+    "figureya-66univariatecox": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "批量单基因单因素 Cox 回归与森林图。"
+    },
+    "figureya-67phastcons": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "基因组区间 phastCons 序列保守性平均曲线提取与绘图。"
+    },
+    "figureya-68friendsv2": {
+      "methods": [
+        "gene-set-enrichment",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "GOSemSim 基因 GO 语义相似度排序（Friends 分析）箱线云雨图。"
+    },
+    "figureya-69cancersubtype": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "CancerSubtypes 多组学共识聚类分子分型与生存预后评估。"
+    },
+    "figureya-6rhrsv2": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "临床亚组分析风险比（HR）森林图。"
+    },
+    "figureya-70mutationevents": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "DISCOVER 体细胞突变共现与互斥检验气泡矩阵图。"
+    },
+    "figureya-71ssgsea-update": {
+      "methods": [
+        "immune-infiltration-tme",
+        "gene-set-scoring"
+      ],
+      "confidence": "curated",
+      "note": "ssGSEA 免疫细胞浸润打分及临床突变注释热图。"
+    },
+    "figureya-73batchcorrelation": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "目标基因与全转录组批量 Pearson/Spearman 相关性检验与分箱回归图。"
+    },
+    "figureya-74omiccircos": {
+      "methods": [
+        "genomic-epigenomic-landscape"
+      ],
+      "confidence": "curated",
+      "note": "OmicCircos 基因组染色体多组热图轨道与基因间连线图。"
+    },
+    "figureya-75bubble-volcano": {
+      "methods": [
+        "differential-expression",
+        "gene-set-enrichment"
+      ],
+      "confidence": "curated",
+      "note": "带分组颜色与点大小的显著性火山/气泡图。"
+    },
+    "figureya-76corrgram": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "多变量两两相关性散点与热图矩阵（corrgram）。"
+    },
+    "figureya-77basezoom": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "双组占比与显著性局部放大气泡散点图。"
+    },
+    "figureya-78gganatogram": {
+      "methods": [],
+      "confidence": "curated",
+      "note": "基因中位表达映射到人体器官解剖图的纯解剖可视化展示工具。"
+    },
+    "figureya-7psm": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "MatchIt 病例对照协变量 1:1 倾向得分匹配（PSM）及诊断图。"
+    },
+    "figureya-81immune-network": {
+      "methods": [
+        "immune-infiltration-tme",
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "免疫细胞相关性聚类与 log-rank 预后网络图。"
+    },
+    "figureya-83enrichment": {
+      "methods": [
+        "gene-set-enrichment",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "基因集两两 Fisher 精确/超几何富集耦合热图。"
+    },
+    "figureya-85timeroc": {
+      "methods": [
+        "survival-prognosis-analysis",
+        "regression-resampling-evaluation"
+      ],
+      "confidence": "curated",
+      "note": "多模型时间依赖 ROC（Time-ROC）曲线与 AUC 比较。"
+    },
+    "figureya-8radar": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "组分比例花瓣雷达图纯 SVG 绘图实现。"
+    },
+    "figureya-90subgroup": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "各临床亚组内 Cox 回归 HR/CI 计算与森林图绘制。"
+    },
+    "figureya-91cluster-heatmap": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "表达矩阵层次聚类切群注释热图及样本顺序导出。"
+    },
+    "figureya-92immune-gene-update": {
+      "methods": [
+        "immune-infiltration-tme",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "单基因与各免疫细胞浸润评分的 Spearman 相关性汇总点图与散点图。"
+    },
+    "figureya-95pairwise": {
+      "methods": [
+        "genomic-epigenomic-landscape",
+        "immune-infiltration-tme",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "样本间体细胞突变 Jaccard 距离与 ssGSEA 免疫浸润欧氏距离相关性分析。"
+    },
+    "figureya-97correlationv3": {
+      "methods": [
+        "immune-infiltration-tme",
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "候选基因列表与免疫浸润评分矩阵批量 Spearman 相关热图。"
+    },
+    "figureya-99smoothhrv2": {
+      "methods": [
+        "survival-prognosis-analysis"
+      ],
+      "confidence": "curated",
+      "note": "限制性立方样条（RCS）连续变量非线性风险比 HR 曲线。"
+    },
+    "figureya-9heatmap": {
+      "methods": [
+        "set-intersection-and-group-stats"
+      ],
+      "confidence": "curated",
+      "note": "样本相关系数热图与基因表达双向聚类热图。"
+    }
+  }
+}

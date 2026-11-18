@@ -22,6 +22,7 @@ keywords:
 - 回归评估
 - 模型比较
 - 折外预测
+primary_method: regression-resampling-evaluation
 ---
 # 密度散点与边缘分布
 

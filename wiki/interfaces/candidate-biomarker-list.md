@@ -30,7 +30,7 @@ columns:
 | selection_methods | str | 必需 | 命中的特征筛选算法组合（如 LASSO+SVM-RFE+Boruta） |
 | importance_score | float | 必需 | 综合重要性得分或重采样选中频率（0-1 或模型权重） |
 
-- 产出方法：无
+- 产出方法：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]
 - 读取方法：无
 - 使用的模板：无
 <!-- facts:end -->

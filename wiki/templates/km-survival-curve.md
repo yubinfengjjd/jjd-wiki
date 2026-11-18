@@ -22,6 +22,7 @@ keywords:
 - number at risk
 - survival
 favorite: false
+primary_method: survival-prognosis-analysis
 ---
 # KM 生存曲线与风险表
 
@@ -39,7 +40,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：仅核对 survival-time-event-group 接口契约与 KM 模板 spec.json，尚未执行真实队列分析→出图端到端联调。
+    - 依据：KM 曲线模板直接消费 survival-time-event-group（本方法的输入/分层队列契约表），不在模板内重做 Cox 建模或最佳切点搜索。；前提：event 必须规范编码为 0（删失）与 1（发生结局）；time 单位统一且非负。；若使用最佳切点（如 surv_cutpoint）分组，必须在统计解释中声明多重检验偏差并在独立队列验证。；适配：将建模分层或分组后的随访队列导出为 survival-time-event-group.csv（time, event, group），并在模板 style 中显式固定 levels、labels 与风险表参数。
+    - 关系证据：methods/survival-prognosis-analysis.md#输入；templates/km-survival-curve/spec.json；templates/km-survival-curve/verify/verify.json；interfaces/survival-time-event-group.md；运行证据：无
 <!-- facts:end -->
 
 ## 适用

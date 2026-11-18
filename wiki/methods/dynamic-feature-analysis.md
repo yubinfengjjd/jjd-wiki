@@ -88,14 +88,18 @@ next_steps:
   intermediate_interface: pathway-score-table
   viz_templates:
   - templates/marker-bubble-dotplot
-- direction: 方向 2：核心动态驱动基因筛选与临床验证
-  when: 提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时
+- direction: 方向 2：核心动态驱动基因筛选与临床预后验证
+  when: 提取沿疾病演化单调变化的关键基因作为候选标志物进入生存分析与机器学习建模时
   analysis_templates:
+  - methods/survival-prognosis-analysis
   - recipes/figureya-31lasso-update
   - methods/shap-explanation
   intermediate_interface: candidate-biomarker-list
   viz_templates:
   - templates/pathway-stat-violin
+  - templates/km-survival-curve
+data_domains:
+- single-cell
 ---
 # 拟时序动态特征分析
 
@@ -112,7 +116,7 @@ next_steps:
 - 代码模板：[methods/dynamic-feature-analysis/code/analysis.R](/files/wiki/methods/dynamic-feature-analysis/code/analysis.R) · [methods/dynamic-feature-analysis/code/dynamic_native.R](/files/wiki/methods/dynamic-feature-analysis/code/dynamic_native.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：动态表达基因簇的通路富集注释**（触发条件：对拟时序早/中/晚期波峰基因簇分别做 GO/KEGG 功能富集时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment；可视化模版：templates/marker-bubble-dotplot）
-  - **方向 2：核心动态驱动基因筛选与临床验证**（触发条件：提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/pathway-stat-violin）
+  - **方向 2：核心动态驱动基因筛选与临床预后验证**（触发条件：提取沿疾病演化单调变化的关键基因作为候选标志物进入生存分析与机器学习建模时；中间表：candidate-biomarker-list；分析模版：methods/survival-prognosis-analysis、recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/pathway-stat-violin、templates/km-survival-curve）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

@@ -25,6 +25,7 @@ columns:
 - 产出方法：无
 - 读取方法：无
 - 使用的模板：[[templates/set-upset|多集合交集 UpSet 图]] · [[templates/set-venn|多集合交集维恩图]]
+- 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/set-intersection-and-group-stats|集合交集与通用组间统计分析]]（adaptable）
 <!-- facts:end -->
 
 ## 含义

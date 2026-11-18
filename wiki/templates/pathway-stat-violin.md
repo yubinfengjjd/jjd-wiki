@@ -19,6 +19,7 @@ favorite: false
 keywords:
 - GSE251716
 - pathway
+primary_method: gene-set-scoring
 ---
 # 分组小提琴图（含统计标注）
 

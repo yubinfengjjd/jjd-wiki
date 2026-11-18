@@ -24,6 +24,7 @@ keywords:
 - 受配体
 - 环形热图
 favorite: false
+primary_method: cell-cell-communication
 ---
 # 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
 
@@ -36,10 +37,12 @@ favorite: false
 - 标签：单细胞分析
 - 图型：[[chart-types/circos]]
 - 输入接口：[[interfaces/cellchat-lr-table|细胞通讯配受体互作表]] · [[interfaces/celltype-gene-expression|细胞类型×基因平均表达表]]
-- 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的分析方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready）
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready）：直接可接（direct）；调用验证：not_run；范围：仅核对 cellchat-lr-table 与 celltype-gene-expression 接口契约及模板 spec.json，尚未执行真实分析→出图端到端联调。
+    - 依据：方法输出的 cellchat-lr-table 与 celltype-gene-expression 直接对应多轨环形图模板接口契约；模板仅负责多轨渲染，不重算通讯概率或置换检验。；前提：source、target 与 cell_type 标签跨表一致；建议按 prob 与 pval 筛选核心显著通路后控制基因总数。；多条件比较须显式保留 group 列，不能将未分层的合并强度直接等同于组间统计差异。；适配：无格式适配声明
+    - 关系证据：methods/cell-cell-communication.md#输出；templates/cellchat-circos-multi/spec.json；templates/cellchat-circos-multi/verify/verify.json；interfaces/cellchat-lr-table.md；interfaces/celltype-gene-expression.md；运行证据：无
 <!-- facts:end -->
 
 ## 适用

@@ -15,6 +15,7 @@ tags:
 chart_types:
 - venn
 favorite: false
+primary_method: set-intersection-and-group-stats
 ---
 # 多集合交集维恩图
 
@@ -30,7 +31,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/set-intersection-and-group-stats|集合交集与通用组间统计分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：仅核对 render-cell-membership 接口契约与维恩图模板 spec.json，尚未执行真实课题分析→出图端到端联调。
+    - 依据：2–7 个集合（推荐 2–4 个）的 0/1 成员关系可整理为 render-cell-membership 驱动维恩图模板；模板仅统计重叠区域并着色，不做超几何富集检验。；前提：所有集合必须基于同一实体全集并先做唯一性去重，缺失实体×集合组合行会导致计数失真。；圆/椭圆面积不与集合大小成比例，解读须依据区域标注计数；超过 5 个集合改用 UpSet 图。；适配：将各集合的 0/1 成员表展开为完整长表 render-cell-membership.csv（cell, set, member）。
+    - 关系证据：methods/set-intersection-and-group-stats.md#输出；templates/set-venn/spec.json；templates/set-venn/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

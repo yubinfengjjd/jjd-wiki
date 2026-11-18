@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.340927+00:00",
+  "checked_at": "2026-11-18T10:35:43.189203+00:00",
   "page": "templates/resampling-metric-box.md",
-  "snapshot": "1d2a88851e28f9f75ee71995813157740d279584352ae451c78a7ee6dd139832",
+  "snapshot": "7fc6415d1d719ee2601f52fe6ba96542295f4c71f075c823e6d1d2ecea46f2fa",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

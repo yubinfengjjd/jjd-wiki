@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.144904+00:00",
+  "checked_at": "2026-11-18T10:35:42.904620+00:00",
   "page": "templates/cell-prop-flow-bar.md",
-  "snapshot": "ddc54bf70ce13095edd1adead51ac7ae79b146bfb670a7618d3d461a85e5ed80",
+  "snapshot": "a704e674ab5a4e8ce54d489ce497fc6fc11367d823d5daece88cf9a79432fe1c",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

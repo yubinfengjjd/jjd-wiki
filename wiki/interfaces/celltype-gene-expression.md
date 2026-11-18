@@ -30,7 +30,7 @@ columns:
 | expression | float | 必需 | 该基因在该细胞类型中的标准化平均表达值（如 Z-score） |
 | role | str | 可选 | 可选基因功能角色标注（如 ligand 或 receptor） |
 
-- 产出方法：无
+- 产出方法：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]
 - 读取方法：无
 - 使用的模板：[[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]
 <!-- facts:end -->

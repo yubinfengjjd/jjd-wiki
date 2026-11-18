@@ -25,6 +25,7 @@ keywords:
 - pLC50
 - AR-DBP
 - QSAR
+primary_method: shap-explanation
 ---
 # SHAP 条形图（含环形 inset）
 

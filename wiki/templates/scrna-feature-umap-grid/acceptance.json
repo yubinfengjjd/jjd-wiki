@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.968297+00:00",
+  "checked_at": "2026-11-18T10:35:44.376082+00:00",
   "page": "templates/scrna-feature-umap-grid.md",
-  "snapshot": "d1616789facab1db10a1ad103b9a70692cd9885b58b242f745ad4246c51f507e",
+  "snapshot": "1ed4e245aa2fd50d80b415d7cf1860818656b7fdec0eda5fd0d446c327f16494",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

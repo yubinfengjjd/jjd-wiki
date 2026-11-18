@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.085163+00:00",
+  "checked_at": "2026-11-18T10:35:44.815798+00:00",
   "page": "templates/shap-importance-bar.md",
-  "snapshot": "fce7b5be95774b6cfd581a021c765e4ea18da76bda4e610ecd49f8ef3ba91b1b",
+  "snapshot": "df84ffa86cd79a2ed86051c9f8035d7715f32482d8b1511f2dd142ae39d503ee",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

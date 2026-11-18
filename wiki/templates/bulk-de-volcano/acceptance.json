@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.119076+00:00",
+  "checked_at": "2026-11-18T10:35:42.845772+00:00",
   "page": "templates/bulk-de-volcano.md",
-  "snapshot": "7e45ca53bfe57e9e1b3d29e9890d54e83a1da3a3dc8b3bd81463d0cb054e0847",
+  "snapshot": "2c0fb24e8a7b83e6f1eb8bc1f7d8a38ee8dd0cbb03b9a32dc570829660edf5c9",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

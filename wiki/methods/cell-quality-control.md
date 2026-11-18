@@ -117,6 +117,16 @@ next_steps:
   intermediate_interface: scrna-annotated-cells
   viz_templates:
   - templates/scrna-celltype-umap
+- direction: 方向 4：样本级 QC 通过率与保留细胞组成核查
+  when: 过滤后需对比各样本 QC Pass/Fail 比例与保留细胞数是否失衡时
+  analysis_templates:
+  - methods/cell-proportion-composition
+  intermediate_interface: cell-proportion-stats
+  viz_templates:
+  - templates/cell-prop-flow-bar
+  - templates/pathway-stat-violin
+data_domains:
+- single-cell
 ---
 # 单细胞质量控制
 
@@ -135,6 +145,7 @@ next_steps:
   - **方向 1：双细胞检测与样本级过滤**（触发条件：多样本高上样量（>5,000 细胞/样本）需排除异型双细胞干扰时；中间表：scrna-annotated-cells；分析模版：methods/doublet-detection；可视化模版：templates/scp-count-bar）
   - **方向 2：多样本去批次整合（Harmony / Seurat Anchor）**（触发条件：存在多供体、多批次或跨研究合并的技术混杂效应时；中间表：scrna-annotated-cells；分析模版：methods/batch-integration；可视化模版：templates/scrna-celltype-umap）
   - **方向 3：标准化、PCA 与 UMAP 降维聚类**（触发条件：单批次或去批次后，准备计算低维嵌入与细胞分群时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
+  - **方向 4：样本级 QC 通过率与保留细胞组成核查**（触发条件：过滤后需对比各样本 QC Pass/Fail 比例与保留细胞数是否失衡时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar、templates/pathway-stat-violin）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

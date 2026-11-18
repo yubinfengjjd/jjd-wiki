@@ -64,6 +64,9 @@ next_steps:
   intermediate_interface: candidate-biomarker-list
   viz_templates:
   - templates/scp-flow-chord
+data_domains:
+- single-cell
+- bulk-transcriptomics
 ---
 # 基因集富集分析
 

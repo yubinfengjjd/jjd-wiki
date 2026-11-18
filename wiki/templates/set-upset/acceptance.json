@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.998332+00:00",
+  "checked_at": "2026-11-18T10:35:44.518988+00:00",
   "page": "templates/set-upset.md",
-  "snapshot": "b4e4251b8babfc5562eebae0f892fbdb2a059fce8d77e86d8fc0462d62e09c7a",
+  "snapshot": "e29d7e6444b241d180d6138054c1256eead881541275e8820d294309cdc6beb8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

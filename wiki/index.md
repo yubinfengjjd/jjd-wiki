@@ -230,12 +230,18 @@
 - [[methods/doublet-detection|双细胞检测]] — 按样本识别双细胞；scDblFinder 分支在批准公开用例与直接 scDblFinder 结果一致（非全量 SCP 等价），DoubletFinder 等其他分支未运行。
 - [[methods/regression-resampling-evaluation|回归模型的重采样评估与折外预测]] — 汇总已有折外回归预测，计算逐折 RMSE/MAE/R2/r；不训练模型、不生成重采样。
 - [[methods/shap-explanation|基于 SHAP 的模型解释]] — 对既定模型输出作 SHAP 归因，输出汇总表和逐样本贡献表；不训练、不划分数据。
+- [[methods/genomic-epigenomic-landscape|基因组突变、CNV 与表观遗传图谱]] — 涵盖体细胞突变景观（oncoplot / TMB / TiTv / 共现互斥 / COSMIC 突变签名）、拷贝数变异（GISTIC CNV）、DNA 甲基化年龄/差异及 ChIP-seq/bigWig 信号轨迹分析；本库当前以参考配方形式组织，未封装独立可执行方法闭包。
 - [[methods/gene-set-scoring|基因集与通路签名打分]] — 按命名基因集给每个细胞打相对签名分数，用于描述状态差异；分数不是通路活性或富集显著性。
 - [[methods/gene-set-enrichment|基因集富集分析]] — 用显式基因列表和背景检验基因集过代表（ORA），GO/KEGG 是资源，GSEA 是另一种策略且本页未实现。
 - [[methods/differential-expression|差异表达分析]] — 在明确对比组之间检验基因表达差异，输出效应量、p 值与阳性比例；细胞级 p 值不等于样本级推断。
 - [[methods/trajectory-inference|拟时序与轨迹推断]] — 在低维嵌入上连接细胞群，推断 lineage 与 pseudotime；轨迹是模型假设，不是真实时间。
 - [[methods/dynamic-feature-analysis|拟时序动态特征分析]] — 沿 pseudotime 拟合每个特征的平滑趋势，输出变化显著性、解释度和峰/谷时间。
+- [[methods/survival-prognosis-analysis|生存分析与临床预后建模]] — 面向临床随访队列开展 Kaplan-Meier 生存分层、单/多因素 Cox 比例风险回归、LASSO/机器学习预后特征筛选、亚组异质性评估以及 Time-ROC/列线图/DCA 验证；本库尚未封装统一可运行分析模块。
+- [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] — 统计各样本或临床分组的细胞亚群计数、相对占比、Ro/e 组织偏好与样本级比例差异检验；严格区分描述性细胞汇总与以样本为独立单位的成分统计推断，并通过显式渲染桥接对接 10 类组成/流向模板。
 - [[methods/cell-type-annotation|细胞类型注释]] — 综合参考标签与 marker 集合给细胞分配类型；SingleR 分支在批准公开用例与直接 SingleR 结果一致（非全量 SCP 等价），青光眼 marker 手工注释尚未函数化。
+- [[methods/cell-cell-communication|细胞通讯与配受体网络分析]] — 基于已注释单细胞或空间转录组数据推断细胞亚群间的配体-受体互作概率、信号通路层级强度及发送/接收角色，输出标准配受体互作表与平均表达表；本库尚未封装独立可执行实现。
+- [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] — 基于 Bulk 转录组标准化表达矩阵，采用 CIBERSORT、ssGSEA、MCP-counter、xCell 与 ESTIMATE 等算法估计肿瘤微环境免疫/基质细胞浸润丰度与纯度评分，并与关键基因、分子分型或预后风险关联分析。
+- [[methods/set-intersection-and-group-stats|集合交集与通用组间统计分析]] — 提供多集合交集定量（Venn / UpSet）、多变量两两相关性与距离检验、组间分布假设检验（Wilcoxon / Kruskal-Wallis / PERMANOVA）及探索性降维排序（PCA / PCoA）的通用分析规范与模板桥接。
 
 ## 组合流程
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.745346+00:00",
+  "checked_at": "2026-11-18T10:35:43.775790+00:00",
   "page": "templates/scp-feature-heatmap.md",
-  "snapshot": "d65427cd26cb52e0588d25cc3a1037a6232d10f1121ade90588c81ff7d0d171d",
+  "snapshot": "85c1271992642ae3ef4968fda36fd33b59ad0f9cf6d6b32fdeb52a108ee27fb8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

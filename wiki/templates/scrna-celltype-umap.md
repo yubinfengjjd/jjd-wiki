@@ -17,6 +17,7 @@ chart_types:
 favorite: false
 keywords:
 - GSE251716
+primary_method: dimensionality-reduction
 ---
 # CNS 细胞类型 UMAP
 

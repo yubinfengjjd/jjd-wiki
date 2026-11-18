@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.271320+00:00",
+  "checked_at": "2026-11-18T10:35:43.098668+00:00",
   "page": "templates/pathway-stat-violin.md",
-  "snapshot": "e8fd9364259d51229eaaa4233397b42b01d26de145fd98550e2e6fde82325c4c",
+  "snapshot": "619d8eb636d39458c8cdc0a5a43cbc5799f531fbc9eae1670f51f728b94510b8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

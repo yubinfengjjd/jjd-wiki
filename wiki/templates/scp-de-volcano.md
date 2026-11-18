@@ -20,6 +20,7 @@ keywords:
 chart_types:
 - volcano
 favorite: false
+primary_method: differential-expression
 ---
 # 差异表达火山图
 

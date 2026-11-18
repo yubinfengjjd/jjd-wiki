@@ -18,6 +18,7 @@ favorite: false
 keywords:
 - GSE251716
 - proportion
+primary_method: cell-proportion-composition
 ---
 # 细胞比例堆叠流带图
 
@@ -39,6 +40,9 @@ keywords:
   - [[methods/cell-clustering|单细胞聚类分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计 cluster 比例，检查组成；模板不做聚类或检验。；前提：每个 group 的比例归一化到 1；group/celltype 完整，无缺组。；流带仅作视觉插值，不是统计估计或细胞轨迹。；适配：导出 render-cell-proportions.csv（group=样本, celltype=cluster, proportion）。
     - 关系证据：methods/cell-clustering.md#输出；methods/scrna-marker-annotation.md#知识关联检查；methods/scrna-marker-annotation.md#输出；layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md#适用；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
+  - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：仅核对组成统计输出与渲染桥接接口契约，尚未执行真实课题分析→出图端到端联调。
+    - 依据：按样本或临床分组汇总细胞类型占比后，可导出 render-cell-proportions 绘制堆叠流带柱图；流带仅作视觉连接。；前提：明确分析单位：描述性绘图可汇总分组比例，但显著性检验必须以样本（sample_id）为独立重复，避免细胞级假重复。；成分比例之和恒为 1 存在负相关约束；多维度流向连线仅为视觉映射，不代表细胞发育轨迹或因果转移。；适配：从 cell-proportion-stats 汇总并归一化每组占比为 1，导出 render-cell-proportions.csv（group, celltype, proportion）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
   - [[methods/cell-quality-control|单细胞质量控制]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计 QC Pass/Fail 比例，可复用比例堆叠与流带模板；模板不做统计检验。；前提：每个 group 的 celltype 比例归一化到 1；group 为样本或条件，celltype 为 CellQC。；组间比较只作描述，不能当样本级推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）；比例只作描述。
     - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无

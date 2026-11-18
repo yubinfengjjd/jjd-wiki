@@ -75,6 +75,35 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+data_domains:
+- single-cell
+next_steps:
+- direction: 方向 1：cluster 标记基因检查与细胞类型注释
+  when: 完成多分辨率聚类敏感性核查后，利用 FindAllMarkers 或参考图谱赋予生物学细胞身份时
+  analysis_templates:
+  - methods/cell-type-annotation
+  - methods/reference-mapping
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/marker-bubble-dotplot
+  - templates/scrna-feature-umap-grid
+- direction: 方向 2：比较不同样本/条件下的 cluster 组成比例
+  when: 评估各聚类簇在不同实验组或样本间的分布占比及组织偏好时
+  analysis_templates:
+  - methods/cell-proportion-composition
+  intermediate_interface: cell-proportion-stats
+  viz_templates:
+  - templates/cell-prop-flow-bar
+  - templates/scp-count-bar
+- direction: 方向 3：聚类簇间差异表达与功能富集初探
+  when: 计算各 cluster 相对于其他细胞的差异基因以辅助人工判读亚群功能时
+  analysis_templates:
+  - methods/differential-expression
+  - methods/gene-set-enrichment
+  intermediate_interface: deg-result-table
+  viz_templates:
+  - templates/scp-de-volcano
+  - templates/scp-group-heatmap
 ---
 # 单细胞聚类分析
 
@@ -89,6 +118,10 @@ figure_relations:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/cell-clustering/code/clustering.R](/files/wiki/methods/cell-clustering/code/clustering.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：cluster 标记基因检查与细胞类型注释**（触发条件：完成多分辨率聚类敏感性核查后，利用 FindAllMarkers 或参考图谱赋予生物学细胞身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/marker-bubble-dotplot、templates/scrna-feature-umap-grid）
+  - **方向 2：比较不同样本/条件下的 cluster 组成比例**（触发条件：评估各聚类簇在不同实验组或样本间的分布占比及组织偏好时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar、templates/scp-count-bar）
+  - **方向 3：聚类簇间差异表达与功能富集初探**（触发条件：计算各 cluster 相对于其他细胞的差异基因以辅助人工判读亚群功能时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/scp-de-volcano、templates/scp-group-heatmap）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

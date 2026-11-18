@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.294766+00:00",
+  "checked_at": "2026-11-18T10:35:42.131839+00:00",
   "page": "methods/cell-quality-control.md",
-  "snapshot": "c27fdf2d472281e078a9fa9fa624dcd8880bf27ab06bf7e182d9f3e486667ef4",
+  "snapshot": "a60e45ebd7dae4695dc4127b3e1edb70ff8ec009c4ec83357978792c1e7060f3",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

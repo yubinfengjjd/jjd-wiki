@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.908537+00:00",
+  "checked_at": "2026-11-18T10:35:42.785407+00:00",
   "page": "methods/shap-explanation.md",
-  "snapshot": "5a81a7fa98770aa300b8a2d015d0cafc3b71707b2abf6ccffa529bf65de64f31",
+  "snapshot": "43626fa11b94a2ae89f7e46a33fec82bfc68de7c1fc745c327a851a339422beb",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

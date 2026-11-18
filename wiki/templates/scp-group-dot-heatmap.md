@@ -15,6 +15,7 @@ tags:
 chart_types:
 - heatmap
 favorite: false
+primary_method: differential-expression
 ---
 # 分组表达点阵热图
 

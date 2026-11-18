@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.702305+00:00",
+  "checked_at": "2026-11-18T10:35:43.716356+00:00",
   "page": "templates/scp-expr-ridge.md",
-  "snapshot": "bffee5bd303c004983b5528776724b90c2ba22b3b65a430f42539c529ecc6ec1",
+  "snapshot": "ccda6ed4d41c6b357fd951777ead10fabac9fde7e04428db986ee7423e66cd01",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

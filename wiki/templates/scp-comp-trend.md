@@ -20,6 +20,7 @@ keywords:
 chart_types:
 - trend
 favorite: false
+primary_method: cell-proportion-composition
 ---
 # 分组构成趋势图
 
@@ -35,7 +36,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：仅核对组成统计输出与渲染桥接接口契约，尚未执行真实课题分析→出图端到端联调。
+    - 依据：按样本/时间阶段排序的细胞构成可整理为 render-cell-metadata 绘制趋势连线图。；前提：明确分析单位：描述性绘图可汇总分组比例，但显著性检验必须以样本（sample_id）为独立重复，避免细胞级假重复。；成分比例之和恒为 1 存在负相关约束；多维度流向连线仅为视觉映射，不代表细胞发育轨迹或因果转移。；适配：整理有序分组与类别到 render-cell-metadata.csv（cell, group, stat）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/scp-comp-trend/spec.json；templates/scp-comp-trend/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

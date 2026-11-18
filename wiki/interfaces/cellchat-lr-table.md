@@ -50,7 +50,7 @@ columns:
 | pval | float | 必需 | 置换检验 P 值 |
 | group | str | 可选 | 比较条件或分组（多组 CellChat 比较时必填） |
 
-- 产出方法：无
+- 产出方法：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]
 - 读取方法：无
 - 使用的模板：[[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]
 <!-- facts:end -->

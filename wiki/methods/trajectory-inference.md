@@ -155,28 +155,40 @@ figure_relations:
     evidence: []
 next_steps:
 - direction: 方向 1：拟时序动态特征基因识别与热图
-  when: 已获得 pseudotime 排序，需识别随拟时序显著变化的驱动基因与波峰时间聚类时
+  when: 沿推断 pseudotime 拟合 GAM 平滑曲线，筛选分支分化关键动态表达基因时
   analysis_templates:
   - methods/dynamic-feature-analysis
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
-  - templates/scrna-feature-umap-grid
   - templates/scp-feature-heatmap
+  - templates/scrna-feature-umap-grid
 - direction: 方向 2：RNA 速率方向性交叉验证
-  when: 需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时
+  when: 拥有 spliced/unspliced 计数层，需要独立检验拟时序起止方向合理性时
   analysis_templates:
   - methods/rna-velocity
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
   - templates/scrna-celltype-umap
-- direction: 方向 3：分支关键基因进入候选标志物筛选
-  when: 将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时
+- direction: 方向 3：分支关键基因进入候选标志物与临床预后筛选
+  when: 提取特定终末或分支转换状态的核心基因进入生存建模或机器学习特征筛选时
   analysis_templates:
-  - methods/differential-expression
-  - recipes/figureya-293plus-binaryclassificationml
+  - methods/survival-prognosis-analysis
+  - recipes/figureya-31lasso-update
+  - methods/shap-explanation
   intermediate_interface: candidate-biomarker-list
   viz_templates:
-  - templates/scp-de-volcano
+  - templates/km-survival-curve
+  - templates/pathway-stat-violin
+- direction: 方向 4：分化终末亚群与微环境细胞通讯互作演化
+  when: 对比轨迹起点与终末分化状态亚群对外信号发送/接收网络的切换时
+  analysis_templates:
+  - methods/cell-cell-communication
+  intermediate_interface: cellchat-lr-table
+  viz_templates:
+  - templates/cellchat-circos-multi
+  - templates/scp-flow-chord
+data_domains:
+- single-cell
 ---
 # 拟时序与轨迹推断
 
@@ -192,9 +204,10 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/trajectory-inference/code/analysis.R](/files/wiki/methods/trajectory-inference/code/analysis.R) · [methods/trajectory-inference/code/data/palette_list.rda](/files/wiki/methods/trajectory-inference/code/data/palette_list.rda) · [methods/trajectory-inference/code/monocle2.R](/files/wiki/methods/trajectory-inference/code/monocle2.R) · [methods/trajectory-inference/code/monocle2_core.R](/files/wiki/methods/trajectory-inference/code/monocle2_core.R) · [methods/trajectory-inference/code/monocle2_core_helpers.R](/files/wiki/methods/trajectory-inference/code/monocle2_core_helpers.R) · [methods/trajectory-inference/code/monocle3.R](/files/wiki/methods/trajectory-inference/code/monocle3.R) · [methods/trajectory-inference/code/monocle3_core.R](/files/wiki/methods/trajectory-inference/code/monocle3_core.R) · [methods/trajectory-inference/code/slingshot_native.R](/files/wiki/methods/trajectory-inference/code/slingshot_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：已获得 pseudotime 排序，需识别随拟时序显著变化的驱动基因与波峰时间聚类时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/scrna-feature-umap-grid、templates/scp-feature-heatmap）
-  - **方向 2：RNA 速率方向性交叉验证**（触发条件：需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时；中间表：pseudotime-trajectory-table；分析模版：methods/rna-velocity；可视化模版：templates/scrna-celltype-umap）
-  - **方向 3：分支关键基因进入候选标志物筛选**（触发条件：将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时；中间表：candidate-biomarker-list；分析模版：methods/differential-expression、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/scp-de-volcano）
+  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：沿推断 pseudotime 拟合 GAM 平滑曲线，筛选分支分化关键动态表达基因时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/scp-feature-heatmap、templates/scrna-feature-umap-grid）
+  - **方向 2：RNA 速率方向性交叉验证**（触发条件：拥有 spliced/unspliced 计数层，需要独立检验拟时序起止方向合理性时；中间表：pseudotime-trajectory-table；分析模版：methods/rna-velocity；可视化模版：templates/scrna-celltype-umap）
+  - **方向 3：分支关键基因进入候选标志物与临床预后筛选**（触发条件：提取特定终末或分支转换状态的核心基因进入生存建模或机器学习特征筛选时；中间表：candidate-biomarker-list；分析模版：methods/survival-prognosis-analysis、recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/pathway-stat-violin）
+  - **方向 4：分化终末亚群与微环境细胞通讯互作演化**（触发条件：对比轨迹起点与终末分化状态亚群对外信号发送/接收网络的切换时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

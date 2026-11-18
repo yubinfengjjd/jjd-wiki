@@ -23,8 +23,9 @@ columns:
 | group | str | 必需 | 分组标签；因子顺序由 style.levels 显式给出，否则按出现顺序 |
 
 - 产出方法：无
-- 读取方法：无
+- 读取方法：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]
 - 使用的模板：[[templates/km-survival-curve|KM 生存曲线与风险表]]
+- 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（adaptable）
 <!-- facts:end -->
 
 ## 含义

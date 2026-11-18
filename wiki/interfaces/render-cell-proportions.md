@@ -25,7 +25,7 @@ columns:
 - 产出方法：无
 - 读取方法：无
 - 使用的模板：[[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] · [[templates/scp-comp-ring|分组构成同心环图]]
-- 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/batch-integration|单细胞批次整合]]（adaptable） · [[methods/cell-clustering|单细胞聚类分析]]（adaptable） · [[methods/cell-quality-control|单细胞质量控制]]（adaptable） · [[methods/cell-type-annotation|细胞类型注释]]（adaptable） · [[methods/doublet-detection|双细胞检测]]（adaptable） · [[methods/reference-mapping|参考图谱映射]]（adaptable）
+- 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/batch-integration|单细胞批次整合]]（adaptable） · [[methods/cell-clustering|单细胞聚类分析]]（adaptable） · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（adaptable） · [[methods/cell-quality-control|单细胞质量控制]]（adaptable） · [[methods/cell-type-annotation|细胞类型注释]]（adaptable） · [[methods/doublet-detection|双细胞检测]]（adaptable） · [[methods/reference-mapping|参考图谱映射]]（adaptable）
 <!-- facts:end -->
 
 ## 含义

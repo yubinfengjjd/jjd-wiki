@@ -41,7 +41,7 @@ columns:
 | percent | float | 可选 | 该行样本占比（0–100），可选；给出时用于方块大小 |
 | p | str | 可选 | P 值文本（如交互作用 P），可选，原样显示 |
 
-- 产出方法：无
+- 产出方法：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]
 - 读取方法：无
 - 使用的模板：[[templates/subgroup-hazard-forest|亚组分析森林图]]
 <!-- facts:end -->

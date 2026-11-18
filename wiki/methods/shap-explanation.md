@@ -106,6 +106,7 @@ next_steps:
 - direction: 方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证
   when: 需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时
   analysis_templates:
+  - methods/survival-prognosis-analysis
   - recipes/figureya-1survivalcurve-update
   - recipes/figureya-85timeroc
   - recipes/figureya-30nomogram-update
@@ -114,6 +115,9 @@ next_steps:
   viz_templates:
   - templates/km-survival-curve
   - templates/subgroup-hazard-forest
+data_domains:
+- clinical-prognosis
+- general-viz-stats
 ---
 # 基于 SHAP 的模型解释
 
@@ -130,7 +134,7 @@ next_steps:
 - 代码模板：[methods/shap-explanation/code/explain_model.py](/files/wiki/methods/shap-explanation/code/explain_model.py) · [methods/shap-explanation/code/shap_explain.py](/files/wiki/methods/shap-explanation/code/shap_explain.py)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：SHAP 蜂群图、重要度条形图与环形图渲染**（触发条件：已计算出训练集/验证集 SHAP 矩阵，准备输出论文级可解释性图表时；中间表：shap-samples；分析模版：methods/regression-resampling-evaluation；可视化模版：templates/shap-beeswarm、templates/shap-importance-bar、templates/shap-radial-bar）
-  - **方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证**（触发条件：需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时；中间表：model-prediction-shap；分析模版：recipes/figureya-1survivalcurve-update、recipes/figureya-85timeroc、recipes/figureya-30nomogram-update、recipes/figureya-33dca-update；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
+  - **方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证**（触发条件：需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时；中间表：model-prediction-shap；分析模版：methods/survival-prognosis-analysis、recipes/figureya-1survivalcurve-update、recipes/figureya-85timeroc、recipes/figureya-30nomogram-update、recipes/figureya-33dca-update；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
 
 - 方法配图关系（语义审查）：
   - [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。

@@ -15,6 +15,7 @@ tags:
 chart_types:
 - heatmap
 favorite: false
+primary_method: set-intersection-and-group-stats
 ---
 # 细胞相似度热图
 
@@ -30,7 +31,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/set-intersection-and-group-stats|集合交集与通用组间统计分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：仅核对 render-correlation-heatmap 接口契约与相似度热图模板 spec.json，尚未执行真实课题分析→出图端到端联调。
+    - 依据：计算好的两两相关性或余弦相似度矩阵可展平为 render-correlation-heatmap 驱动聚类热图模板；模板不重算相关系数或距离。；前提：输入必须为完整的 row × column 笛卡尔积；不同相似度度量（Pearson/Spearman/Cosine）不能混入同一色标。；相关热图只展示线性/单调关联程度，不构成细胞类型相同或因果机制的证明。；适配：将完整相似度/相关性矩阵展平并附带分组与排序信息，导出 render-correlation-heatmap.csv。
+    - 关系证据：methods/set-intersection-and-group-stats.md#输出；templates/scp-cell-cor-heatmap/spec.json；templates/scp-cell-cor-heatmap/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

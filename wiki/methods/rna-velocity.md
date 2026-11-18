@@ -60,6 +60,8 @@ next_steps:
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
   - templates/scrna-celltype-umap
+data_domains:
+- single-cell
 ---
 # RNA 速度分析
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.305774+00:00",
+  "checked_at": "2026-11-18T10:35:43.142883+00:00",
   "page": "templates/pred-density-scatter.md",
-  "snapshot": "2f0215f935bc4552b3c7049224e8078c39eb8167d327992bbf7e71daa169d435",
+  "snapshot": "9a9d748b2ac977a24eede5ded0790a885dabd050214d3432c3b311f86420edde",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

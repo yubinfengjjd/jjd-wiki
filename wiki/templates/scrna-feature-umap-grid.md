@@ -18,6 +18,7 @@ favorite: false
 keywords:
 - GSE251716
 - marker
+primary_method: cell-type-annotation
 ---
 # marker 特征 UMAP 小多图
 

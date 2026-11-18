@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.029904+00:00",
+  "checked_at": "2026-11-18T10:35:44.655201+00:00",
   "page": "templates/set-venn.md",
-  "snapshot": "2efaab5d7ebc5717099a50a6e82dc4feecd99de8929e9781f6cd59df9e7fe743",
+  "snapshot": "efc8744d75f2ac9725cdadc299d04683240c018b7b4d0e007568860525a1b2d8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

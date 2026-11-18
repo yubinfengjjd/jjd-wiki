@@ -78,6 +78,25 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+data_domains:
+- single-cell
+next_steps:
+- direction: 方向 1：剔除高置信双细胞后进行多样本批次整合
+  when: 按样本剔除 doublet 后，合并多样本并消除技术批次差异时
+  analysis_templates:
+  - methods/batch-integration
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/scrna-celltype-umap
+- direction: 方向 2：降维、聚类并核查双细胞标签空间聚集情况
+  when: 在 UMAP 嵌入上检查双细胞是否聚集于特定过渡态或混合 marker 簇时
+  analysis_templates:
+  - methods/dimensionality-reduction
+  - methods/cell-clustering
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/scrna-celltype-umap
+  - templates/cell-prop-flow-bar
 ---
 # 双细胞检测
 
@@ -92,6 +111,9 @@ figure_relations:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/doublet-detection/code/analysis.R](/files/wiki/methods/doublet-detection/code/analysis.R) · [methods/doublet-detection/code/doublet_native.R](/files/wiki/methods/doublet-detection/code/doublet_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：剔除高置信双细胞后进行多样本批次整合**（触发条件：按样本剔除 doublet 后，合并多样本并消除技术批次差异时；中间表：scrna-annotated-cells；分析模版：methods/batch-integration；可视化模版：templates/scrna-celltype-umap）
+  - **方向 2：降维、聚类并核查双细胞标签空间聚集情况**（触发条件：在 UMAP 嵌入上检查双细胞是否聚集于特定过渡态或混合 marker 簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap、templates/cell-prop-flow-bar）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

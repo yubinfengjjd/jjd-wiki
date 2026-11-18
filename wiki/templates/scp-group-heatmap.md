@@ -15,6 +15,7 @@ tags:
 chart_types:
 - heatmap
 favorite: false
+primary_method: differential-expression
 ---
 # 分组热图（多分组注释）
 

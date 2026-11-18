@@ -76,6 +76,38 @@ implementations:
   - numpy
   - pandas
   verification: verification/summarize-predictions.json
+data_domains:
+- clinical-prognosis
+- general-viz-stats
+render_bridges:
+- interface: render-category-points
+  from_output: regression-fold-metrics
+  extractor_note: 从逐折评估指标表选定单一指标（如 RMSE 或 R2）及验证模型类别，整理为 category、value、jitter 散点表（需与箱线摘要同源）。
+  unit: 模型 × 验证折
+- interface: render-box-summaries
+  from_output: regression-fold-metrics
+  extractor_note: 依据课题确认的箱体/须/均值统计规则汇总各模型逐折指标（category, q1, median, q3, low, high,
+    mean），与散点表保持同源。
+  unit: 模型
+next_steps:
+- direction: 方向 1：最优预测模型的 SHAP 可解释性归因
+  when: 通过折外重采样评估锁定稳健回归/预测模型后，解析核心特征对预测输出的局部与全局贡献时
+  analysis_templates:
+  - methods/shap-explanation
+  intermediate_interface: model-prediction-shap
+  viz_templates:
+  - templates/shap-beeswarm
+  - templates/shap-importance-bar
+  - templates/shap-radial-bar
+- direction: 方向 2：临床队列预后分层与净获益外推验证
+  when: 将预测风险评分投射至随访队列进行 KM 生存分层、亚组森林图及临床决策曲线验证时
+  analysis_templates:
+  - methods/survival-prognosis-analysis
+  - recipes/figureya-33dca-update
+  intermediate_interface: survival-time-event-group
+  viz_templates:
+  - templates/km-survival-curve
+  - templates/subgroup-hazard-forest
 ---
 # 回归模型的重采样评估与折外预测
 
@@ -90,6 +122,9 @@ implementations:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/regression-resampling-evaluation/code/summarize_predictions.py](/files/wiki/methods/regression-resampling-evaluation/code/summarize_predictions.py)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：最优预测模型的 SHAP 可解释性归因**（触发条件：通过折外重采样评估锁定稳健回归/预测模型后，解析核心特征对预测输出的局部与全局贡献时；中间表：model-prediction-shap；分析模版：methods/shap-explanation；可视化模版：templates/shap-beeswarm、templates/shap-importance-bar、templates/shap-radial-bar）
+  - **方向 2：临床队列预后分层与净获益外推验证**（触发条件：将预测风险评分投射至随访队列进行 KM 生存分层、亚组森林图及临床决策曲线验证时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis、recipes/figureya-33dca-update；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
 
 - 方法配图关系（语义审查）：
   - [[templates/pred-density-scatter|密度散点与边缘分布]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。

@@ -29,6 +29,7 @@ columns:
 - 产出方法：无
 - 读取方法：无
 - 使用的模板：[[templates/scp-flow-chord|分组流向和弦图]] · [[templates/scp-flow-sankey|分组流向桑基图]]
+- 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（adaptable）
 <!-- facts:end -->
 
 ## 含义

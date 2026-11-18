@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.113862+00:00",
+  "checked_at": "2026-11-18T10:35:44.898214+00:00",
   "page": "templates/shap-radial-bar.md",
-  "snapshot": "4f76c92644b64c3e0636b0c86456d12d106a40423382c1f4c754d62f508f82fd",
+  "snapshot": "2aaa9c2843fa01744f3a15d98db3dbf356c709ea187cc5632613f97fcc531026",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

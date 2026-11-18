@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:54.441395+00:00",
+  "checked_at": "2026-11-18T10:35:43.359088+00:00",
   "page": "templates/scp-comp-dot.md",
-  "snapshot": "24547139935d12d916812f2eba6d7ffb044f82334a3e4aa950c7dc8ddbfdba4d",
+  "snapshot": "734d0f3dd0dfc40c8c1a2f77ba3000ce871c0cc658f88edb4e386c6a2933e79a",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

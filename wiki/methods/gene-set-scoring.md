@@ -79,21 +79,43 @@ next_steps:
 - direction: 方向 2：高/低活性亚群间 CellChat 细胞通讯比较
   when: 探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时
   analysis_templates:
+  - methods/cell-cell-communication
   - recipes/figureya-310cpdbchordgramv2
   intermediate_interface: cellchat-lr-table
   viz_templates:
+  - templates/cellchat-circos-multi
   - templates/scp-flow-chord
   - templates/scp-flow-sankey
-- direction: 方向 3：主题基因集投射 Bulk 队列分型与预后模型
+- direction: 方向 3：主题基因集投射 Bulk 队列分型与预后建模
   when: 将主题基因集用于 Bulk 队列分子分型、生存分层与机器学习建模时
   analysis_templates:
+  - methods/survival-prognosis-analysis
   - recipes/figureya-69cancersubtype
   - recipes/figureya-293plus-binaryclassificationml
   - methods/shap-explanation
   intermediate_interface: model-prediction-shap
   viz_templates:
   - templates/km-survival-curve
+  - templates/subgroup-hazard-forest
   - templates/shap-beeswarm
+data_domains:
+- single-cell
+- bulk-transcriptomics
+render_bridges:
+- interface: render-feature-heatmap
+  from_output: pathway-score-table
+  extractor_note: 将逐细胞通路打分或特征基因矩阵按细胞群排序展开为长表（matrix, feature, cell, group, value,
+    matrix_order, feature_order, cell_order, group_order）。
+  unit: 通路/特征 × 单细胞
+- interface: render-cell-feature-values
+  from_output: pathway-score-table
+  extractor_note: 提取每个细胞在目标基因集或关键特征上的评分值及分组排序（cell, feature, value, group, feature_order,
+    group_order），供分组山脊密度图渲染。
+  unit: 单细胞 × 通路/特征
+- interface: render-grouped-values
+  from_output: pathway-score-table
+  extractor_note: 按 celltype 与实验条件 group 导出逐细胞通路评分（celltype, group, value），供分组小提琴图展示（细胞级统计不替代样本级推断）。
+  unit: 单细胞 × 通路
 ---
 # 基因集与通路签名打分
 
@@ -110,8 +132,8 @@ next_steps:
 - 代码模板：[methods/gene-set-scoring/code/analysis.R](/files/wiki/methods/gene-set-scoring/code/analysis.R) · [methods/gene-set-scoring/code/scoring_native.R](/files/wiki/methods/gene-set-scoring/code/scoring_native.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：按高/低活性得分分组深挖差异与轨迹**（触发条件：识别出高活性细胞亚群（如 High-Lactylation 亚群）后，比较高低分组差异或拟时序动态时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/trajectory-inference；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/scp-feature-heatmap）
-  - **方向 2：高/低活性亚群间 CellChat 细胞通讯比较**（触发条件：探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/scp-flow-chord、templates/scp-flow-sankey）
-  - **方向 3：主题基因集投射 Bulk 队列分型与预后模型**（触发条件：将主题基因集用于 Bulk 队列分子分型、生存分层与机器学习建模时；中间表：model-prediction-shap；分析模版：recipes/figureya-69cancersubtype、recipes/figureya-293plus-binaryclassificationml、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/shap-beeswarm）
+  - **方向 2：高/低活性亚群间 CellChat 细胞通讯比较**（触发条件：探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication、recipes/figureya-310cpdbchordgramv2；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord、templates/scp-flow-sankey）
+  - **方向 3：主题基因集投射 Bulk 队列分型与预后建模**（触发条件：将主题基因集用于 Bulk 队列分子分型、生存分层与机器学习建模时；中间表：model-prediction-shap；分析模版：methods/survival-prognosis-analysis、recipes/figureya-69cancersubtype、recipes/figureya-293plus-binaryclassificationml、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest、templates/shap-beeswarm）
 
 - 方法配图关系（语义审查）：
   - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

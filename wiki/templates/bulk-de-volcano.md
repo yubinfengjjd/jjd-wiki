@@ -23,6 +23,7 @@ keywords:
 - ggthemes
 - gridExtra
 favorite: false
+primary_method: differential-expression
 ---
 # bulk 差异火山图（分级着色）
 

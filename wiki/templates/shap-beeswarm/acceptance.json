@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T09:49:55.057709+00:00",
+  "checked_at": "2026-11-18T10:35:44.723279+00:00",
   "page": "templates/shap-beeswarm.md",
-  "snapshot": "1a3f2d9b61cd5fba23cd5d1c75756e661de087dc8a218ae81597452caadcf761",
+  "snapshot": "129fd8ae9eba49a6dbe21a91e5d7d50a4c829aa301503e982ba55105d805b2a8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

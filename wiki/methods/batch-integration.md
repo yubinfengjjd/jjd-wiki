@@ -91,8 +91,8 @@ figure_relations:
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
 next_steps:
-- direction: 方向 1：降维嵌入与无监督聚类
-  when: 批次对齐后需在整合空间重新计算 UMAP 坐标与聚类簇时
+- direction: 方向 1：在整合空间重新计算 UMAP 嵌入与无监督聚类
+  when: 批次对齐后需在整合降维空间构建邻居图、生成 UMAP 坐标与聚类簇时
   analysis_templates:
   - methods/dimensionality-reduction
   - methods/cell-clustering
@@ -100,7 +100,7 @@ next_steps:
   viz_templates:
   - templates/scrna-celltype-umap
 - direction: 方向 2：细胞类型注释（Marker / SingleR / 参考映射）
-  when: 已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时
+  when: 已有整合聚类结果，准备结合先验 Marker 或参考图谱赋予细胞类型身份时
   analysis_templates:
   - methods/cell-type-annotation
   - methods/reference-mapping
@@ -108,6 +108,16 @@ next_steps:
   viz_templates:
   - templates/marker-bubble-dotplot
   - templates/scrna-feature-umap-grid
+- direction: 方向 3：检查批次整合前后的样本/批次组成比例
+  when: 核对各样本或批次在各 cluster/亚群中的混合程度与细胞占比，避免过度整合抹除真实生物学差异时
+  analysis_templates:
+  - methods/cell-proportion-composition
+  intermediate_interface: cell-proportion-stats
+  viz_templates:
+  - templates/cell-prop-flow-bar
+  - templates/scp-comp-ring
+data_domains:
+- single-cell
 ---
 # 单细胞批次整合
 
@@ -120,11 +130,12 @@ next_steps:
 - 输入接口：未声明
 - 输出接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready） · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready） · [[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/batch-integration/code/analysis.R](/files/wiki/methods/batch-integration/code/analysis.R) · [methods/batch-integration/code/integration_native.R](/files/wiki/methods/batch-integration/code/integration_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：降维嵌入与无监督聚类**（触发条件：批次对齐后需在整合空间重新计算 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
-  - **方向 2：细胞类型注释（Marker / SingleR / 参考映射）**（触发条件：已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/marker-bubble-dotplot、templates/scrna-feature-umap-grid）
+  - **方向 1：在整合空间重新计算 UMAP 嵌入与无监督聚类**（触发条件：批次对齐后需在整合降维空间构建邻居图、生成 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
+  - **方向 2：细胞类型注释（Marker / SingleR / 参考映射）**（触发条件：已有整合聚类结果，准备结合先验 Marker 或参考图谱赋予细胞类型身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/marker-bubble-dotplot、templates/scrna-feature-umap-grid）
+  - **方向 3：检查批次整合前后的样本/批次组成比例**（触发条件：核对各样本或批次在各 cluster/亚群中的混合程度与细胞占比，避免过度整合抹除真实生物学差异时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring）
 
 - 方法配图关系（语义审查）：
   - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

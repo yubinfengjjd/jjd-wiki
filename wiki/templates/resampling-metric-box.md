@@ -22,6 +22,7 @@ keywords:
 - 回归评估
 - 模型比较
 - 折外预测
+primary_method: regression-resampling-evaluation
 ---
 # 箱线、散点与均值
 

@@ -20,6 +20,7 @@ keywords:
 - forestplot
 - hazard ratio
 favorite: false
+primary_method: survival-prognosis-analysis
 ---
 # 亚组分析森林图
 
@@ -34,10 +35,12 @@ favorite: false
 - 标签：survival-analysis
 - 图型：[[chart-types/forest]]
 - 输入接口：[[interfaces/subgroup-effect-table|亚组效应量汇总表]]
-- 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的分析方法（仅结构候选，未核实语义）：[[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）：直接可接（direct）；调用验证：not_run；范围：仅核对 subgroup-effect-table 输出接口与森林图模板 spec.json 契约，尚未执行真实队列分析→出图端到端联调。
+    - 依据：方法输出 subgroup-effect-table 直接对齐临床亚组森林图模板契约（label, estimate, lower, upper, n, percent, p）；模板仅做可视化渲染，不拟合 Cox 模型。；前提：所有亚组效应量（HR 与 95% CI）须由同一预后模型/分组定义在各临床亚组内分别拟合得到。；交互作用 P 值（p 列）需明确为交互项检验或组内趋势检验，避免混淆。；适配：无格式适配声明
+    - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/subgroup-hazard-forest/spec.json；templates/subgroup-hazard-forest/verify/verify.json；interfaces/subgroup-effect-table.md；运行证据：无
 <!-- facts:end -->
 
 ## 适用
