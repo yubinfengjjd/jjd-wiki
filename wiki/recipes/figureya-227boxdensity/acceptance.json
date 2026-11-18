@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.577874+00:00",
+  "checked_at": "2026-11-18T09:49:59.378022+00:00",
   "page": "recipes/figureya-227boxdensity.md",
-  "snapshot": "0888ecdb394e90801cb26cb9f6b72bc08b02b1a5014804229602d96b769144be",
+  "snapshot": "4135901f7098e8c48cf1d6e8649cec1ca9460cb589a541320ddb84c2f40deeea",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

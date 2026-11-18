@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:26.067715+00:00",
+  "checked_at": "2026-11-18T09:49:58.558243+00:00",
   "page": "recipes/figureya-202consensusgene.md",
-  "snapshot": "d3f0dd16410d2ea8dfd5a6adbeceda3de9c47f2789e443da5bfdeaa56202d2c3",
+  "snapshot": "5932abbeccb02bc8a42a4cd980533d2f0e146e08a04ee38f774a9b5fb572bdc7",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:26.117632+00:00",
+  "checked_at": "2026-11-18T09:49:58.615327+00:00",
   "page": "recipes/figureya-204pcascore.md",
-  "snapshot": "6a54a4c850ad8c6f45f37396b3f0429ae3cb042d0c30a57bc2652e9322746eab",
+  "snapshot": "e69ba561d28a487c02c50aeb8e05b9f9cc546bd7849a2a8e8f70660c034d2a97",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

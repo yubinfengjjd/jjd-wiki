@@ -45,7 +45,7 @@ summary: 变量两两相关、基因与免疫浸润/通路的相关，以及相�
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[recipes/figureya-37correlationv2-update|圆形布局基因相关连线图]] | L1 | ready · 运行 pass | 圆形布局基因相关连线 |
-| [[templates/pred-density-scatter|密度散点与边缘分布]] | L2 | ready | 密度散点与边缘分布（L2） |
+| [[templates/pred-density-scatter|密度散点与边缘分布]] | L2 | ready · 可用 | 密度散点与边缘分布（L2） |
 <!-- facts:end -->
 
 ## 注意

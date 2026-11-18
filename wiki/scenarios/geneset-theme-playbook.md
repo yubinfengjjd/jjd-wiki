@@ -114,10 +114,10 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分 |
+| [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分 |
 | [[recipes/figureya-275scaucell|单细胞AUCell基因集评分]] | L1 | draft · 运行 fail | 单细胞 AUCell 活性打分与阈值划分 |
-| [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]] | L2 | ready | 分组/亚群主题打分小提琴箱线图（L2） |
-| [[templates/scp-expr-ridge|分组表达密度图]] | L2 | ready | 基因集得分山脊密度分布图（L2） |
+| [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]] | L2 | ready · 可用 | 分组/亚群主题打分小提琴箱线图（L2） |
+| [[templates/scp-expr-ridge|分组表达密度图]] | L2 | ready · 可用 | 基因集得分山脊密度分布图（L2） |
 | [[recipes/figureya-318genesetdedotplot|单细胞通路活性差异点图]] | L1 | draft · 运行 fail | Step 3：高/低活性亚群差异表达与通路富集气泡图 |
 | [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]] | L1 | draft · 运行 fail | 高/低活性亚群 CellChat 通讯差异 |
 | [[recipes/figureya-69cancersubtype|多组学共识聚类分子分型]] | L1 | ready · 运行 pass | Step 4：Bulk 队列主题基因集无监督共识分型 |

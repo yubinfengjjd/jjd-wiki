@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T12:27:51.183318+00:00",
+  "checked_at": "2026-11-18T09:49:55.643167+00:00",
   "page": "methods/reference-mapping.md",
-  "snapshot": "f39abca5bf253c31800f3b6a57a73c79dfd1a32f97d6a4983477823bb6eced0f",
+  "snapshot": "d0bb8815d456cdba5e808f9528146057ba99a2a14f4f94eef56757e6347137d0",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

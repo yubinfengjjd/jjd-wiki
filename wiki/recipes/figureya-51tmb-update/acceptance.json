@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:30.283309+00:00",
+  "checked_at": "2026-11-18T09:50:02.637454+00:00",
   "page": "recipes/figureya-51tmb-update.md",
-  "snapshot": "c52fc4a58aac461be5d01205194d43583e2bf6fd7c65974fb4e68bc799116669",
+  "snapshot": "84c3e5ded85a2968ea62a561a5a4819d626369a05d774651fb15ed362255e1b6",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

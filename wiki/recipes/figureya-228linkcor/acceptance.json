@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.597441+00:00",
+  "checked_at": "2026-11-18T09:49:59.504056+00:00",
   "page": "recipes/figureya-228linkcor.md",
-  "snapshot": "17aeb803cc6345c48a67db5cf53e4d3d325b19f42d884733e7d4023f858ea2bc",
+  "snapshot": "616d64a92117e493ecffab9bdb37ea1b84a17d941455eb1bdbccd77ba7c31dfd",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

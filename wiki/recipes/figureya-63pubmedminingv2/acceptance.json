@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:30.907359+00:00",
+  "checked_at": "2026-11-18T09:50:02.963240+00:00",
   "page": "recipes/figureya-63pubmedminingv2.md",
-  "snapshot": "1b846086d09db604645d53e0d1389da059340d85e67698e84c6a50ab5e2bfb97",
+  "snapshot": "d932419f4681e9c4a4bc68d0b81240422d746400fc95af0c9f9ce003786eea35",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

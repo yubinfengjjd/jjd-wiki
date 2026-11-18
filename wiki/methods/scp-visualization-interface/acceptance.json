@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-01T07:33:05.123171+00:00",
+  "checked_at": "2026-11-18T09:49:55.808447+00:00",
   "page": "methods/scp-visualization-interface.md",
-  "snapshot": "322f35db23196c4b8f3a72905b218a11bdf2d7bdde1e6eef21a9d54da0150103",
+  "snapshot": "36b83a1f5d213bfff68b9c5d8ae69bbbc1e5bbceb457619b5f277f2cfbc9af30",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

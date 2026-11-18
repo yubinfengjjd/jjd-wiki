@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.236302+00:00",
+  "checked_at": "2026-11-18T09:49:57.466232+00:00",
   "page": "recipes/figureya-141risk.md",
-  "snapshot": "e5039f02c3bcc548ed152cd1bfd14d27e70e999b5e7491d126e0781a293d382e",
+  "snapshot": "8b90d31684826e2bc577dfacd863b1fecf589112e526490961272a554f4e6054",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

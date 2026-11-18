@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:29.083681+00:00",
+  "checked_at": "2026-11-18T09:50:01.511627+00:00",
   "page": "recipes/figureya-308ihs.md",
-  "snapshot": "5759ed57bb0ce8eb4cef8a74f89ea5456f3e29cfc0d27de1fac2e23a9d75b1cd",
+  "snapshot": "cbaf484c92051c872e2743a357bdf29bda99388306367659175aa38cffaaf2ed",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

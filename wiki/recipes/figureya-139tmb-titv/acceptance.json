@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:24.816673+00:00",
+  "checked_at": "2026-11-18T09:49:57.238532+00:00",
   "page": "recipes/figureya-139tmb-titv.md",
-  "snapshot": "639141cbcaf93c17a82dfbcec582fad9ca650adf1c38376a2974fca88c5f60e6",
+  "snapshot": "c082875969066cfac5d6c044558db67ddd5006cc19382624859eed49624788ef",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:24.696389+00:00",
+  "checked_at": "2026-11-18T09:49:57.165755+00:00",
   "page": "recipes/figureya-132alteration.md",
-  "snapshot": "7add4f0d37b7393dbab9c77563d56721cb2d9d21dbd94b5759299f9476632cc9",
+  "snapshot": "a33f3b668ad113310ae8acaf91e05a230cc15af0b093b9732a5c91081d5b3808",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

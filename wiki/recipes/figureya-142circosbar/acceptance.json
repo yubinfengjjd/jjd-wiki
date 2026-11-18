@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:24.923039+00:00",
+  "checked_at": "2026-11-18T09:49:57.658140+00:00",
   "page": "recipes/figureya-142circosbar.md",
-  "snapshot": "074f778996d77bf84b3f39c7eab0b3a7e47ef40f3e14057945df137c59b09017",
+  "snapshot": "673452854f8b0b7514cee5c01b9b3c5df9b6c36fcf25cd3b54a09601eca7a582",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

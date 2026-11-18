@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:23.834272+00:00",
+  "checked_at": "2026-11-18T09:49:56.356870+00:00",
   "page": "recipes/figureya-114ternarycluster.md",
-  "snapshot": "f06b0fc420d61cb939b17e9e42b73291c020acae297873e8a97d492fec921945",
+  "snapshot": "c63fd0bc484a07f4dd1a7b91222a3f4a595ec3b3765e8403d2b885af1f511ad3",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

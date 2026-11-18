@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T05:33:47.498976+00:00",
+  "checked_at": "2026-11-18T09:49:55.715867+00:00",
   "page": "methods/rna-velocity.md",
-  "snapshot": "0c35d238cccafc83f973f6443eda8d2b31b5ca49cc5ba2864067087e379890f2",
+  "snapshot": "a242926e36c73951027546ea7f35e4d1ddca7c06a388b73bd2ce5e81df21eb6c",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

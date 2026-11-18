@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.825409+00:00",
+  "checked_at": "2026-11-18T09:50:03.417889+00:00",
   "page": "recipes/figureya-76corrgram.md",
-  "snapshot": "2842469210c201e9319930ec7bfea32e243f7dfc30242fdb5c2fbc0c308eaf15",
+  "snapshot": "c07e3b249ff57cad83102c62788cea95d943ffc8b34dfacc952ab0cd5522eae4",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

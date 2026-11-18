@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.395506+00:00",
+  "checked_at": "2026-11-18T09:49:57.966467+00:00",
   "page": "recipes/figureya-162boxviolin.md",
-  "snapshot": "02cfbd3c4f6f831be8c5e44981af9341c636e34c374a6bd045d877a046c1cf25",
+  "snapshot": "5cd86003554a6fc7a1162bf24694563e2f9aedad15025cdf80e074d1d1098092",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

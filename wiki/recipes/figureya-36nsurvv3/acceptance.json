@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:29.766038+00:00",
+  "checked_at": "2026-11-18T09:50:01.987830+00:00",
   "page": "recipes/figureya-36nsurvv3.md",
-  "snapshot": "4f5ae324d5b1b103b7fecaa96e7e391e2f20e0c6a099e3c1ea7881f74ef0f315",
+  "snapshot": "f9b171e2909af7b746ecf6b82b70da7996328a421a07dafe44a90a13ea235da7",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

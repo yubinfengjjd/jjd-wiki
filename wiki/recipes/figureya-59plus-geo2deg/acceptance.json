@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:30.600190+00:00",
+  "checked_at": "2026-11-18T09:50:02.802321+00:00",
   "page": "recipes/figureya-59plus-geo2deg.md",
-  "snapshot": "40e247710da3fbd22aae4f7531e3ff0a914d53761bf27a3f036d29efff51d77c",
+  "snapshot": "f52f0d4a293c3cb42f3707c1d1019f1d90122c29d47ed9f2bbf7325ea068a18c",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

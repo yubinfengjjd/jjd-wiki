@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T05:33:47.380608+00:00",
+  "checked_at": "2026-11-18T09:49:55.422655+00:00",
   "page": "methods/differential-expression.md",
-  "snapshot": "7910233bc30cbc52142be12471d1024df6da9312bfd4525d78778e862301510f",
+  "snapshot": "1433204871059178169ea9b36090bca5bb58473c88a626f1f19891a3821df2ba",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

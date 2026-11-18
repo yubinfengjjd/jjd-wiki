@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T05:33:47.417967+00:00",
+  "checked_at": "2026-11-18T09:49:55.605032+00:00",
   "page": "methods/gene-set-scoring.md",
-  "snapshot": "820c5d57162f26094684bc8450f754d0e4b1419b5ac232c17f85e43184f3c80f",
+  "snapshot": "3d2e8add31599598f4ae5bd6ab75f9040698f3d00a67380cf3d7c76b460f9f16",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

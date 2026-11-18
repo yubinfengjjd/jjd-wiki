@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:29.706795+00:00",
+  "checked_at": "2026-11-18T09:50:01.936897+00:00",
   "page": "recipes/figureya-35batch-bestseparationv3-update.md",
-  "snapshot": "55bd605fac238f0131663a00c98407d1c435eaf4e62f30a5c5314c973e43420a",
+  "snapshot": "d7409058ba78b4b88165118836d56af27aaade5b3ee567ac449416e85a01fcde",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

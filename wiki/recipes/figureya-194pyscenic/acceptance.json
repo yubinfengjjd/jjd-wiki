@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:25.727938+00:00",
+  "checked_at": "2026-11-18T09:49:58.250664+00:00",
   "page": "recipes/figureya-194pyscenic.md",
-  "snapshot": "efafbe6fceed7ba0e83324f383ba29a234700be528fcffc6e7860707bed56207",
+  "snapshot": "deb4d24e9bf01d3ef154ffe1213b4586bbadb5698431964459e2ba3ed6689188",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

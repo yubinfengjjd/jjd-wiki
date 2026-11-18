@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:31.391998+00:00",
+  "checked_at": "2026-11-18T09:50:03.307019+00:00",
   "page": "recipes/figureya-69cancersubtype.md",
-  "snapshot": "42581f0f4573b3174ac250befc52ac7530625dbabbccec35d06f64a806bd5566",
+  "snapshot": "073e7ee30673494819f93b096d476e33d1213684aa22bbbd0f36133197cebf22",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

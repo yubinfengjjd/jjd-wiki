@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:31.313168+00:00",
+  "checked_at": "2026-11-18T09:50:03.192185+00:00",
   "page": "recipes/figureya-68friendsv2.md",
-  "snapshot": "d04344934000d134ad576ac5a51bf46ae87d2c2de44098a310fe5591b4f52121",
+  "snapshot": "98882fe63b74faac8ff5b2e8bd41e3dad342a706d3c185976ee9ac93b62c72b4",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

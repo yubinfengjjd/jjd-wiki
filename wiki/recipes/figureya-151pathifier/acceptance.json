@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:25.321453+00:00",
+  "checked_at": "2026-11-18T09:49:57.901044+00:00",
   "page": "recipes/figureya-151pathifier.md",
-  "snapshot": "8ec09f462aae0557daea899d58aab339afa9a06753f296f22b9f017693abf272",
+  "snapshot": "1e8219ef590f6c13a46409e88e546427fbad8829a6b8b20eb6dfed4251afdecb",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

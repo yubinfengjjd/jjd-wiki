@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:28.890888+00:00",
+  "checked_at": "2026-11-18T09:50:01.185265+00:00",
   "page": "recipes/figureya-307cnvheatmap.md",
-  "snapshot": "35b2ec2f52cfdd2901bada1cfedbccdaa5efa002834a08109825034f2aa14e92",
+  "snapshot": "f24337e35647c9a9268680882503f21a789be7412e31e6e75b297fe9dfb78403",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

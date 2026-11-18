@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T06:51:42.087711+00:00",
+  "checked_at": "2026-11-18T09:49:54.596040+00:00",
   "page": "templates/scp-comp-trend.md",
-  "snapshot": "1a46548d174aea909073af90e38cee7e57612c2edd8b753c765154c4a9c5799f",
+  "snapshot": "281cbeb94975fd2d44628dbb1b808ff7d2cff9180f581b746e9e9c31dc585a73",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

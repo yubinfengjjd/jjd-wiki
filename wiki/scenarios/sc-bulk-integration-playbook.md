@@ -121,12 +121,12 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Step 1：单细胞注释与关键病变亚群锁定 |
-| [[methods/differential-expression|差异表达分析]] | note | ready | Step 2：提取关键亚群特异 Marker 与拟时序分支基因 |
+| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Step 1：单细胞注释与关键病变亚群锁定 |
+| [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | Step 2：提取关键亚群特异 Marker 与拟时序分支基因 |
 | [[recipes/figureya-112venn|四组韦恩图占比渐变填色]] | L1 | ready · 运行 pass | Step 3：单细胞亚群 Marker × Bulk DEG/WGCNA 交集筛选 |
 | [[recipes/figureya-71ssgsea-update|免疫浸润ssGSEA注释热图]] | L1 | draft · 运行 fail | Step 4A：ssGSEA / 反卷积将单细胞亚群丰度投射至 Bulk 队列 |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | Step 4B：联合核心基因构建临床诊断/预后机器学习模型 |
-| [[templates/km-survival-curve|KM 生存曲线与风险表]] | L2 | ready | Step 5：投射亚群评分/风险得分的 KM 生存分层（L2） |
+| [[templates/km-survival-curve|KM 生存曲线与风险表]] | L2 | ready · 可用 | Step 5：投射亚群评分/风险得分的 KM 生存分层（L2） |
 | [[recipes/figureya-300pancancor|泛癌签名得分相关散点图]] | L1 | draft · 运行 fail | Step 6：关键靶基因泛癌/免疫微环境相关性验证 |
 <!-- facts:end -->
 

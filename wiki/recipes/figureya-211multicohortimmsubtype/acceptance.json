@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:26.208953+00:00",
+  "checked_at": "2026-11-18T09:49:58.920082+00:00",
   "page": "recipes/figureya-211multicohortimmsubtype.md",
-  "snapshot": "f60936d37afa730e73ccc7305a6d022686921dd4474a041f9eb862b8a2528744",
+  "snapshot": "2eb18b65e7f4a0d958c781072fc973b14b8e43e250d17c75c80b29934b60633a",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

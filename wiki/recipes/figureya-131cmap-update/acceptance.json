@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:24.416325+00:00",
+  "checked_at": "2026-11-18T09:49:56.977733+00:00",
   "page": "recipes/figureya-131cmap-update.md",
-  "snapshot": "dd68fb98652a0972f49b5c6271044453d349d72e81926d6e362eeefeac8fd53a",
+  "snapshot": "a2f04b0992d318fa65e4c18bf4408076d445a9df7d3c386d7521de432d83ce48",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

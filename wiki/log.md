@@ -1455,3 +1455,5 @@
 ## [2026-11-18 07:28 UTC] acceptance check ks-cellchat-circos-multi--circos
 
 ## [2026-11-18 09:49 UTC] verify 2026-08-17-shap-feature-mechanism__fig01-shap-a-f
+
+## [2026-11-18 09:50 UTC] refactor(wiki): simplify 31 template IDs to short slugs with aliases

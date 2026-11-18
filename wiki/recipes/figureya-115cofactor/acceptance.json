@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:24.025054+00:00",
+  "checked_at": "2026-11-18T09:49:56.514729+00:00",
   "page": "recipes/figureya-115cofactor.md",
-  "snapshot": "17ac9415b03fc4f0bb99e7f015f378181f4fa9ee2e5cf7e52201d80c2043913f",
+  "snapshot": "b9d2f52689e3a2156923337d23663e5c5a7dd15f54319898853afa1b51bc57a9",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

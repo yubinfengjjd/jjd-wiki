@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:28.252453+00:00",
+  "checked_at": "2026-11-18T09:50:00.927629+00:00",
   "page": "recipes/figureya-305pmapscore.md",
-  "snapshot": "4b73e59979ad162d21f777a2c7469de694a8fad510c149822ed559c9ac03c8cd",
+  "snapshot": "fa93d76cfcee428cfebf2156ffa24ea6dfd1d21a621e797dbec2c96a224e25da",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

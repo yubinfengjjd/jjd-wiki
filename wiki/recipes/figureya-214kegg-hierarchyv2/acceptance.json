@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:26.451837+00:00",
+  "checked_at": "2026-11-18T09:49:59.082441+00:00",
   "page": "recipes/figureya-214kegg-hierarchyv2.md",
-  "snapshot": "aaf173932da5b25de62cd8a1eca3bb48ff7168517200cf706d8e0636a0be5fc3",
+  "snapshot": "f70f517e6fb600bb7a35db84f09f6ff9810a9eac8b75729ae9228f09a891593b",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

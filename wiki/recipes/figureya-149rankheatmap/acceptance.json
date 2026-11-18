@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:25.252561+00:00",
+  "checked_at": "2026-11-18T09:49:57.811013+00:00",
   "page": "recipes/figureya-149rankheatmap.md",
-  "snapshot": "fee1f5ae74cb554712261d1807d16ac96e6b8263106d729b730ddc602d072911",
+  "snapshot": "3ea9f8b428ed666a0ffa76c7a58e104583fd2e6e0d18c8325d63522fce40b067",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

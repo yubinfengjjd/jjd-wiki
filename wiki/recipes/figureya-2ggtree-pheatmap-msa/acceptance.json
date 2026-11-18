@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:27.595382+00:00",
+  "checked_at": "2026-11-18T09:50:00.129536+00:00",
   "page": "recipes/figureya-2ggtree-pheatmap-msa.md",
-  "snapshot": "d072ac4c13c84728896b64552feb62ddab17f232f9577951d1efa0e54fc08aeb",
+  "snapshot": "f445231d2e9664b626649610ee64fc6911c582c62f7f417755e7b2644101f2c4",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

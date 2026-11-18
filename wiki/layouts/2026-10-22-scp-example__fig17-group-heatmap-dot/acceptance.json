@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-25T13:38:23.689891+00:00",
+  "checked_at": "2026-11-18T09:49:55.155757+00:00",
   "page": "layouts/2026-10-22-scp-example__fig17-group-heatmap-dot.md",
-  "snapshot": "f49b660310839bfa371b7fbf9a9845b76621c600dd637c0f1e92b60240749b57",
+  "snapshot": "aa5000e26c04be8d47f3fb175529a0704ab304e06ff20599768f66d8ef68a3a7",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

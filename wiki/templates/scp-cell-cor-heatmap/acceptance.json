@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T09:03:45.829890+00:00",
+  "checked_at": "2026-11-18T09:49:54.376751+00:00",
   "page": "templates/scp-cell-cor-heatmap.md",
-  "snapshot": "2044cffcf0d52fa4b2edbf3b483115c0fe62b575dc7d7512e9bf8d8dd9abd987",
+  "snapshot": "3176af43adc10daeed50176d1ec3a2952e7ccb158f751940189dd7fb113e2afa",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

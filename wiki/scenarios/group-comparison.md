@@ -43,8 +43,8 @@ summary: 两组或多组连续指标的分布与差异展示：箱线、小提�
 |---|---|---|---|
 | [[recipes/figureya-162boxviolin|半小提琴箱线散点组合图]] | L1 | ready · 运行 pass | 半小提琴 + 箱线 + 散点 |
 | [[recipes/figureya-227boxdensity|箱线图叠加密度分布图]] | L1 | ready · 运行 pass | 箱线叠加密度（两组） |
-| [[templates/resampling-metric-box|箱线、散点与均值]] | L2 | ready | 箱线、散点与均值（L2） |
-| [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]] | L2 | ready | 分组小提琴含统计标注（L2） |
+| [[templates/resampling-metric-box|箱线、散点与均值]] | L2 | ready · 可用 | 箱线、散点与均值（L2） |
+| [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]] | L2 | ready · 可用 | 分组小提琴含统计标注（L2） |
 <!-- facts:end -->
 
 ## 注意

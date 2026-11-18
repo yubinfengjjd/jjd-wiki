@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T05:44:01.759636+00:00",
+  "checked_at": "2026-11-18T09:49:56.611249+00:00",
   "page": "recipes/figureya-11bubble.md",
-  "snapshot": "9db86d6cfc417501f936d18577e219cc7a7034a84c52b3b09cbeff118c458c62",
+  "snapshot": "e921b646370a6afa89522dba1233bcc31ab4972a39ddcec3f8cccf478c65ddf3",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

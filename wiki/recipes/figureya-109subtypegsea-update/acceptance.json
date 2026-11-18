@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:23.385459+00:00",
+  "checked_at": "2026-11-18T09:49:56.134994+00:00",
   "page": "recipes/figureya-109subtypegsea-update.md",
-  "snapshot": "403a123cadc5d48f32a876fe79b203913f630ee4c3f7753568995268c6ef37f3",
+  "snapshot": "8c585ab02132888007652610d89dea9565761b3a7c5cf0bb8dd3a9bcf97d9604",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

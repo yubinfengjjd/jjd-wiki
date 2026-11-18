@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:30.362513+00:00",
+  "checked_at": "2026-11-18T09:50:02.682942+00:00",
   "page": "recipes/figureya-55plus-pancancer-boxplot.md",
-  "snapshot": "3091985732d231ce39ee4f0c5695b66f8d14b62be1003808eb18d30e15fd87d5",
+  "snapshot": "72b1c5729a62bf665ca0e72060864dfc4478ac35e47d5f7ab758850ab32f12d5",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

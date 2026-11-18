@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.669205+00:00",
+  "checked_at": "2026-11-18T09:50:00.019722+00:00",
   "page": "recipes/figureya-25sankey-update.md",
-  "snapshot": "a7c7e5a67d816ba05117b5a950512c3a118061559f748e0fcc8b614e407a87c4",
+  "snapshot": "4404d4f68b3bbc06aeb38efb3b401e88e4589569f266da090b66bf06e7aa1821",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

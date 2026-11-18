@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:26.648874+00:00",
+  "checked_at": "2026-11-18T09:49:59.281621+00:00",
   "page": "recipes/figureya-221tenfoldrf.md",
-  "snapshot": "b0092383168bc705bf37950261b71ba0b361b182621791bc405874178f4f9842",
+  "snapshot": "32cabd3e9fba3fbee3d33a2390f47b2423c00211478d2049b2518cd5e2f33ccd",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

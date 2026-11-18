@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:30.226772+00:00",
+  "checked_at": "2026-11-18T09:50:02.584965+00:00",
   "page": "recipes/figureya-48adonis.md",
-  "snapshot": "4dc4ad6ed43bf5e70f081e98cc01f6b80e2fdcb10d134cadb0dad4414b8dfe34",
+  "snapshot": "33f0fd3b2260f0748ffb3534d111fa4c2b0a6e99af35810eb2b30fce531fbb51",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

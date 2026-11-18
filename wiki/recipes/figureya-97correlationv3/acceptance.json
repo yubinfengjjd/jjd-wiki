@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:32.163931+00:00",
+  "checked_at": "2026-11-18T09:50:03.840414+00:00",
   "page": "recipes/figureya-97correlationv3.md",
-  "snapshot": "94799afb14b3df98c3d2aec562f9ae1e5464bdccae3162d657f4b52171dba0bf",
+  "snapshot": "e1ac7aed5711142ff7a083f4e7570256af683ddfb6f259a139760efe3164f57c",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:31.888860+00:00",
+  "checked_at": "2026-11-18T09:50:03.493858+00:00",
   "page": "recipes/figureya-83enrichment.md",
-  "snapshot": "bb9e10809e9788217b337e3a8e911a94e6410ecd44097370023845ada1a6ac70",
+  "snapshot": "134839e3a8689d1b06c49c464ed579886cbbde2e225f17921f79ec7c2bef5907",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

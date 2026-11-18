@@ -41,9 +41,9 @@ summary: 机器学习模型的特征重要性与 SHAP 解释图，以及特征�
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[templates/shap-beeswarm|SHAP 蜂群图]] | L2 | ready | SHAP 蜂群图（L2） |
-| [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]] | L2 | ready | SHAP 条形图（L2） |
-| [[methods/shap-explanation|基于 SHAP 的模型解释]] | note | ready | SHAP 模型解释方法页 |
+| [[templates/shap-beeswarm|SHAP 蜂群图]] | L2 | ready · 可用 | SHAP 蜂群图（L2） |
+| [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]] | L2 | ready · 可用 | SHAP 条形图（L2） |
+| [[methods/shap-explanation|基于 SHAP 的模型解释]] | L2 | ready · 可用 | SHAP 模型解释方法页 |
 <!-- facts:end -->
 
 ## 注意

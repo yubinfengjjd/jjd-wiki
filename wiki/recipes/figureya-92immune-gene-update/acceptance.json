@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T05:57:05.558187+00:00",
+  "checked_at": "2026-11-18T09:50:03.662857+00:00",
   "page": "recipes/figureya-92immune-gene-update.md",
-  "snapshot": "363b613717ddaa24a9484b7587da3f8e4e3931e64cae5d99fc8f45e1b634a458",
+  "snapshot": "bd2930f3d6498e7a88c6929af780801edc4a52ca60f5111cd60007e141dcb174",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

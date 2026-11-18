@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:29.315235+00:00",
+  "checked_at": "2026-11-18T09:50:01.708520+00:00",
   "page": "recipes/figureya-311pam50heatmap.md",
-  "snapshot": "3484fa53b40481d495b86960fb8dbc49a241c18d7d99628463d4a3f197561256",
+  "snapshot": "bcb05dc2b6ef09721eae157571ee82d8b206b5f1cce30b2c74cce94a1554cff2",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

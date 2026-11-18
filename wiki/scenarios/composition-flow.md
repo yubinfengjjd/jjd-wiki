@@ -47,9 +47,9 @@ summary: 分类变量的构成比例、层级之间的流向与分型对应关�
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[recipes/figureya-25sankey-update|多层分类流向桑基图]] | L1 | ready · 运行 pass | 多层分类流向桑基图 |
-| [[templates/scp-flow-sankey|分组流向桑基图]] | L2 | ready | 分组流向桑基图（L2） |
-| [[templates/scp-comp-ring|分组构成同心环图]] | L2 | ready | 分组构成同心环（L2） |
-| [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready | 细胞比例堆叠流带（L2） |
+| [[templates/scp-flow-sankey|分组流向桑基图]] | L2 | ready · 可用 | 分组流向桑基图（L2） |
+| [[templates/scp-comp-ring|分组构成同心环图]] | L2 | ready · 可用 | 分组构成同心环（L2） |
+| [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 细胞比例堆叠流带（L2） |
 <!-- facts:end -->
 
 ## 注意

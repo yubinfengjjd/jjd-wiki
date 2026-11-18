@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:32.027023+00:00",
+  "checked_at": "2026-11-18T09:50:03.604086+00:00",
   "page": "recipes/figureya-91cluster-heatmap.md",
-  "snapshot": "93820fb8e12ac40be2a97672798478de74bcb65f678c6a975bf3085c52aebc2e",
+  "snapshot": "ae152e20ad706b4e44cd09eb91c38c1f50824e87b3b41b1ed0ddcbf4ddabab34",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:27.440194+00:00",
+  "checked_at": "2026-11-18T09:50:00.065149+00:00",
   "page": "recipes/figureya-26circos-r.md",
-  "snapshot": "f1f8f4c2236e2fe4530d2a41bde5af5c407ff41b33d4f75bda8ecfbb6e110a7e",
+  "snapshot": "37f60d20f78e7eab4b0fc8a9a7d63fc3533c204c7b952efb873d7612ffece6f2",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

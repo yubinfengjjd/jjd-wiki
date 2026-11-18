@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:23.637091+00:00",
+  "checked_at": "2026-11-18T09:49:56.239663+00:00",
   "page": "recipes/figureya-112venn.md",
-  "snapshot": "a7df08c58f183e893150aa8a6496559d91fccb88726d5ad6611da21e03b0a35f",
+  "snapshot": "8a0ffafccc20e30b9e093aa1b301d9eba7c4b138eac43198d16e6aea6eca1a8e",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

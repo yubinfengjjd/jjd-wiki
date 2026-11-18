@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:31.240157+00:00",
+  "checked_at": "2026-11-18T09:50:03.136100+00:00",
   "page": "recipes/figureya-66univariatecox.md",
-  "snapshot": "e29acf798e65fa0b26f2e8589a5a8bf7b61ecec351ff62dede9c0ac9235c83a2",
+  "snapshot": "e4c699ef85036d660fd6ca60b945f786b75b706ac2fd9e56ab3b694576998c23",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

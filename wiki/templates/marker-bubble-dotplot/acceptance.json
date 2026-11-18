@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T03:53:31.308670+00:00",
+  "checked_at": "2026-11-18T09:49:54.235748+00:00",
   "page": "templates/marker-bubble-dotplot.md",
-  "snapshot": "6da1efff6ab9e535a1561ea9bf1d1ba87dc6ce462f5c7fda03814ac076b4bbd2",
+  "snapshot": "b5036ce017a0190c94d5d73a33a1e81ccce9e90cb2bb3db2a6b66907f647a2c8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-13T12:40:26.904795+00:00",
+  "checked_at": "2026-11-18T09:49:59.653819+00:00",
   "page": "recipes/figureya-230immunelandscape.md",
-  "snapshot": "553e27dc15a4096be25e93a45978d7d0ed7bc94c7f363715ad863d00865790a1",
+  "snapshot": "ce771db11b99526ffd65427f68dd0ff5f0177e7226ea1929fb5ae5ac529d015d",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-23T09:03:45.701286+00:00",
+  "checked_at": "2026-11-18T09:49:54.775796+00:00",
   "page": "templates/scp-flow-chord.md",
-  "snapshot": "eace425f6a43ad24330761e2ff9896cc35bc1e1f1cf5768dea14df77cfb174c1",
+  "snapshot": "b09819a1e6d61a0b019d3fbb6c96542429310c57e4ea1a46eb3f0041a01c2a59",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

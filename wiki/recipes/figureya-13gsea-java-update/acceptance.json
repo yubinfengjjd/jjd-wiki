@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-04T05:48:23.447619+00:00",
+  "checked_at": "2026-11-18T09:49:57.290653+00:00",
   "page": "recipes/figureya-13gsea-java-update.md",
-  "snapshot": "ea3168536253fe0a72c333616b2de1fb69fd081b7897072369f667323d921b13",
+  "snapshot": "a6bbdad27089d4abdc54b3a7a083a58adfb84666bb2526339f4c5e0d23392d64",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-27T13:09:55.543932+00:00",
+  "checked_at": "2026-11-18T09:49:58.277283+00:00",
   "page": "recipes/figureya-196panpie.md",
-  "snapshot": "10ffb9acd4d64f074a7adc47ba0d730d5c44aeda49aa015bb6550c5f2fd1067f",
+  "snapshot": "7ec965fdff44b606148440f025947ed9d37b25c47d20fb4af9019c906c120463",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
