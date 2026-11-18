@@ -6,9 +6,13 @@
 
 ## 场景
 
+- [[scenarios/bulk-ml-biomarker-playbook|Bulk 转录组与机器学习临床标志物决策树（Playbook）]] — Bulk 转录组与临床队列标志物全流程决策树：从多队列批次校正、DEG/WGCNA 交集筛选、101 种机器学习组合建模到 SHAP 解释、预后验证与免疫药敏分析。
 - [[scenarios/clinical-prediction-survival|临床预测与生存分析]] — 队列随访或二分类结局：生存曲线、HR 森林图、预后模型构建与评价（区分度、校准、临床获益）。
+- [[scenarios/sc-bulk-integration-playbook|单细胞 × Bulk 多组学联合决策树（Playbook）]] — 连接单细胞机制发现与大样本 Bulk 临床队列验证的联合决策树：从单细胞关键亚群 Marker/轨迹基因出发，经交集收敛、Bulk 投射/反卷积与机器学习建模完成临床转化验证。
+- [[scenarios/scrna-stepwise-playbook|单细胞转录组步进决策树（Playbook）]] — 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 6 大下游科研探索分支，并用标准中间表衔接可视化模版。
 - [[scenarios/differential-enrichment|差异表达与富集分析]] — 两组或多组的差异基因展示（火山图）与通路层面的结果（GSEA、GSVA、富集气泡/柱图）。
 - [[scenarios/model-explanation|模型解释与特征重要性]] — 机器学习模型的特征重要性与 SHAP 解释图，以及特征筛选。
+- [[scenarios/geneset-theme-playbook|特定修饰与主题基因集挖掘决策树（Playbook）]] — 面向乳酸化、泛素化/乙酰化等 PTM 修饰、铁死亡及代谢主题基因集的专病挖掘决策树：从基因集定义、多算法打分到单细胞高活亚群深挖与 Bulk 分子分型闭环。
 - [[scenarios/correlation|相关性分析]] — 变量两两相关、基因与免疫浸润/通路的相关，以及相关结果的热图、连线、散点展示。
 - [[scenarios/composition-flow|组成与流向]] — 分类变量的构成比例、层级之间的流向与分型对应关系。
 - [[scenarios/group-comparison|组间比较]] — 两组或多组连续指标的分布与差异展示：箱线、小提琴、密度、均值柱。
@@ -266,9 +270,12 @@
 - [[methods/scp-trajectory-velocity|单细胞轨迹推断与 RNA 速度]] — SCP 轨迹与 RNA 速度的原始脚本和作者实现记录；分析问题见轨迹、速度和动态特征家族。
 - [[methods/scrna-pathway-signature-ensemble|单细胞通路签名打分与组间比较]] — 青光眼课题的通路签名打分与组间比较实现记录；五种分数相加是课题特定组合，不是通用标准。
 - [[methods/scp-viz-dimplots|单细胞降维与表达绘图入口]] — SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
-- [[methods/local-omics-analysis-guide|组学课题方法去重与选择]] — 按方法理论关联原语言复用代码：自定义 DotPlotScores/动态曲线、模型评价和依赖适配；验证限定到具体分支。
-- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造]] — 依赖原生图、自定义函数与预计算 ROC 分流；复用已有 SCP 闭包，逐分支保留依赖和验证边界。
 - [[methods/scp-viz-model-overlays|轨迹富集与网络绘图入口]] — SCP 原生绘图实现的对象输入、上游链路、独立闭包及逐形态证据；资料确认不授予额外分支验证，不作为新分析家族。
+
+### archived
+
+- [[methods/local-omics-analysis-guide|组学课题方法去重与选择（已归档摘要）]] — 原本地课题 SHA-256 冗余脚本已移至 pending-curation 归档；请直接使用规范方法家族与步进决策树。
+- [[methods/local-omics-visualization-guide|课题绘图依赖与自定义改造（已归档摘要）]] — 原本地课题依赖绘图脚本已移至 pending-curation 归档；请直接使用 L2 可视化模板与 Template Studio。
 
 ## 待分类方法
 
@@ -285,22 +292,30 @@
 - [[interfaces/render-umap-feature-long|UMAP 坐标与特征长表]]
 - [[interfaces/bulk-de-table|bulk 差异表达结果表]]
 - [[interfaces/survival-time-event-group|个体随访生存表]]
+- [[interfaces/model-prediction-shap|临床模型预测风险与 SHAP 贡献表]]
 - [[interfaces/subgroup-effect-table|亚组效应量汇总表]]
 - [[interfaces/render-category-points|分组数值与显式抖动表]]
 - [[interfaces/render-group-heatmap|分组热图长表]]
 - [[interfaces/render-grouped-values|分组细胞级数值表]]
 - [[interfaces/regression-fold-metrics|回归模型逐折评估指标表]]
 - [[interfaces/regression-predictions|回归模型逐样本验证预测表]]
+- [[interfaces/candidate-biomarker-list|多算法筛选候选特征基因表]]
+- [[interfaces/deg-result-table|差异表达标准结果表]]
 - [[interfaces/render-de-results|差异表达结果表]]
+- [[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
 - [[interfaces/highlight-gene-sets|待标注基因与所属基因集]]
+- [[interfaces/pseudotime-trajectory-table|拟时序细胞坐标与分支动态基因表]]
 - [[interfaces/render-feature-heatmap|特征×细胞表达矩阵长表]]
 - [[interfaces/render-correlation-heatmap|相似度矩阵长表]]
+- [[interfaces/cell-proportion-stats|细胞亚群比例与 Ro/e 偏好统计表]]
 - [[interfaces/render-dotplot-long|细胞类型 × 基因点图表]]
 - [[interfaces/render-cell-proportions|细胞类型比例表]]
 - [[interfaces/render-cell-metadata|细胞级分组元数据表]]
 - [[interfaces/render-cell-linkage|细胞级多维流向长表]]
 - [[interfaces/render-cell-feature-values|细胞级特征值长表]]
 - [[interfaces/render-cell-membership|细胞级集合成员表]]
+- [[interfaces/cellchat-lr-table|细胞通讯配受体互作表]]
+- [[interfaces/pathway-score-table|通路富集与多算法基因集打分表]]
 - [[interfaces/render-scatter-rgb|配对数值散点的预设颜色表]]
 - [[interfaces/render-group-summaries|预计算分组分布摘要表]]
 - [[interfaces/render-box-summaries|预计算分组箱线与均值表]]
@@ -364,6 +379,9 @@
 
 ## 课题
 
+- [[projects/2026-asthma-lactylation-scrna|哮喘气道上皮与巨噬细胞乳酸化单细胞挖掘]] — 哮喘气道单细胞数据集的乳酸化基因集多算法打分、巨噬细胞高活亚群筛选、拟时序轨迹与细胞通讯验证记录。
+- [[projects/2026-uc-ptm-multiomics|溃疡性结肠炎 20 种翻译后修饰（PTM）多组学挖掘]] — 溃疡性结肠炎（UC）单细胞与 Bulk 队列联合的 20 种 PTM 修饰基因集筛选、101 种机器学习诊断建模与 SHAP 可解释性记录。
+- [[projects/_template|课题步进记录卡模板]] — 新建科研课题的极简 3 行式步进追踪卡模板，记录每一步所用模版、观察现象与触发的下一步决策方向。
 
 ## 版式
 

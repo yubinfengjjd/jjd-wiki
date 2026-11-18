@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-04T04:20:46.880461+00:00",
+  "timestamp": "2026-11-18T05:34:26.766192+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-22-scp-example__fig10-sankey--sankey/spec.json": "680dbc1dbace16eb628791a32053ac349d56571838797582245c807e06cfe188",
+    "templates/2026-10-22-scp-example__fig10-sankey--sankey/spec.json": "bff65f45df9203e69f96a2f917b8b939b04accaa08fec939753f3e7246d9da97",
     "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/render.R": "2a29f1aa642085379f7070a14b672730bb3c8f2a10800f0af54da455c5049cda",
     "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/core.R": "95d8fd9a0b348f33e13e6c2ca80e22a8089437503b887f6c4b16929a3dc9abe7",
     "templates/2026-10-22-scp-example__fig10-sankey--sankey/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
@@ -16,11 +16,11 @@
   },
   "outputs": {
     "png": "70992e6234996899c83d12f6041465372ae587a83c5b726727888ca30ffa47c8",
-    "pdf": "3fd488999a7531f86bea449c7c2b0cfe68c46f7803b4c5a8994ebb9aaddbec05",
+    "pdf": "e16961d93c9cd7d128f1f9c36dfde579b506da51f0e1032a3761b765245ded0e",
     "svg": "5e35d7bbdc07d1019839f2179680addd4d96a8139523ecd6dd79d981aac62fd1"
   },
   "environment": {
-    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

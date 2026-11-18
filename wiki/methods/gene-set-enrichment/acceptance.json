@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T05:44:57.168765+00:00",
+  "checked_at": "2026-11-18T05:33:47.392712+00:00",
   "page": "methods/gene-set-enrichment.md",
-  "snapshot": "47fd98e9409ad4c71941c4a4b66ff39c1447219bc480a36baa4d60d1510087eb",
+  "snapshot": "d671d6c66321d15dc698dd451cc7909c5bbf1479cd464a20e6800d2acb79b93d",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

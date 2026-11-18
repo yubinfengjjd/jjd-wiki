@@ -48,5 +48,66 @@
     "feature_label_size": 7.5,
     "zero_line_width": 1.0,
     "grid_line_width": 0.5
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 等顶刊离散配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 4.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 3.5,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    },
+    "font_size": {
+      "type": "number",
+      "label": "字号 (pt)",
+      "default": 12.0,
+      "min": 4.0,
+      "max": 24.0,
+      "step": 0.5
+    },
+    "show_feature_labels": {
+      "type": "boolean",
+      "label": "显示特征名称",
+      "default": true
+    },
+    "cmap": {
+      "type": "select",
+      "label": "特征值渐变色带",
+      "default": "RdBu_r",
+      "choices": [
+        "RdBu_r",
+        "viridis",
+        "coolwarm",
+        "Plasma"
+      ]
+    }
   }
 }

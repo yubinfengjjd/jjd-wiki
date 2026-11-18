@@ -6,8 +6,10 @@ status: ready
 tags:
 - 单细胞分析
 - 转录组
-inputs: []
-outputs: []
+inputs:
+- pseudotime-trajectory-table
+outputs:
+- pseudotime-trajectory-table
 source:
   kind: repo
   url: https://github.com/zhanghao-njmu/scp
@@ -78,6 +80,22 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+next_steps:
+- direction: 方向 1：动态表达基因簇的通路富集注释
+  when: 对拟时序早/中/晚期波峰基因簇分别做 GO/KEGG 功能富集时
+  analysis_templates:
+  - methods/gene-set-enrichment
+  intermediate_interface: pathway-score-table
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- direction: 方向 2：核心动态驱动基因筛选与临床验证
+  when: 提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时
+  analysis_templates:
+  - recipes/figureya-31lasso-update
+  - methods/shap-explanation
+  intermediate_interface: candidate-biomarker-list
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
 ---
 # 拟时序动态特征分析
 
@@ -87,11 +105,14 @@ figure_relations:
 - 引用：SCP: https://github.com/zhanghao-njmu/scp (commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0)
 - 标签：单细胞分析、转录组
 - 分析用途：轨迹与动态分析
-- 输入接口：未声明
-- 输出接口：未声明
+- 输入接口：[[interfaces/pseudotime-trajectory-table|拟时序细胞坐标与分支动态基因表]]
+- 输出接口：[[interfaces/pseudotime-trajectory-table|拟时序细胞坐标与分支动态基因表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/dynamic-feature-analysis/code/analysis.R](/files/wiki/methods/dynamic-feature-analysis/code/analysis.R) · [methods/dynamic-feature-analysis/code/dynamic_native.R](/files/wiki/methods/dynamic-feature-analysis/code/dynamic_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：动态表达基因簇的通路富集注释**（触发条件：对拟时序早/中/晚期波峰基因簇分别做 GO/KEGG 功能富集时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment；可视化模版：templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot）
+  - **方向 2：核心动态驱动基因筛选与临床验证**（触发条件：提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin）
 
 - 方法配图关系（语义审查）：
   - [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

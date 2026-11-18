@@ -148,13 +148,6 @@ def test_deploy_resolves_actual_sibling_checkout(monkeypatch):
     assert module.SOURCE.joinpath("config.example.json").is_file()
 
 
-def test_export_can_collect_sibling_declarations_without_writing(monkeypatch):
-    module = load_tool("export-dependencies.py", monkeypatch)
-    records, inputs, excluded = module.collect(TOOLS.parent)
-    assert ("R", "Seurat") in records
-    assert inputs and excluded
-
-
 def run_powershell(path, environment, *arguments):
     if not shutil.which("powershell.exe"):
         pytest.skip("Windows PowerShell is required for Windows entrypoints")

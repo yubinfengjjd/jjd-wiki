@@ -5,8 +5,10 @@ title: RNA 速度分析
 status: ready
 tags:
 - 单细胞分析
-inputs: []
-outputs: []
+inputs:
+- scrna-annotated-cells
+outputs:
+- pseudotime-trajectory-table
 source:
   kind: repo
   url: https://github.com/zhanghao-njmu/scp
@@ -49,6 +51,15 @@ keywords:
 - latent time
 - SCP
 figure_relations: []
+next_steps:
+- direction: 方向 1：结合拟时序（Slingshot / Monocle）提取分支动态基因
+  when: 依据速度向量场锁定分化起点后，正式构建拟时序轨迹并拟合动态基因时
+  analysis_templates:
+  - methods/trajectory-inference
+  - methods/dynamic-feature-analysis
+  intermediate_interface: pseudotime-trajectory-table
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
 ---
 # RNA 速度分析
 
@@ -58,11 +69,13 @@ figure_relations: []
 - 引用：SCP: https://github.com/zhanghao-njmu/scp (commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0)
 - 标签：单细胞分析
 - 分析用途：轨迹与动态分析
-- 输入接口：未声明
-- 输出接口：未声明
+- 输入接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
+- 输出接口：[[interfaces/pseudotime-trajectory-table|拟时序细胞坐标与分支动态基因表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/rna-velocity/code/analysis.R](/files/wiki/methods/rna-velocity/code/analysis.R) · [methods/rna-velocity/code/data/palette_list.rda](/files/wiki/methods/rna-velocity/code/data/palette_list.rda) · [methods/rna-velocity/code/velocity_native.R](/files/wiki/methods/rna-velocity/code/velocity_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：结合拟时序（Slingshot / Monocle）提取分支动态基因**（触发条件：依据速度向量场锁定分化起点后，正式构建拟时序轨迹并拟合动态基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/dynamic-feature-analysis；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

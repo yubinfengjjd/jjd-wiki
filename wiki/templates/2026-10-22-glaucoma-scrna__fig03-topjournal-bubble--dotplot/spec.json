@@ -27,17 +27,110 @@
       "max_height_in": null
     },
     "x_levels": [
-      "Muller_Glia", "Rod_Photoreceptor", "Bipolar", "Cone_Photoreceptor",
-      "RGC_like", "RPE", "Vascular_Pericyte", "Amacrine", "Amacrine_Horizontal_like"
+      "Muller_Glia",
+      "Rod_Photoreceptor",
+      "Bipolar",
+      "Cone_Photoreceptor",
+      "RGC_like",
+      "RPE",
+      "Vascular_Pericyte",
+      "Amacrine",
+      "Amacrine_Horizontal_like"
     ],
-    "expr_limits": [0, 1],
-    "expr_breaks": [0, 0.25, 0.5, 0.75, 1],
-    "size_limits": [0, 100],
-    "size_breaks": [25, 50, 75],
-    "size_range": [1.2, 7.0],
+    "expr_limits": [
+      0,
+      1
+    ],
+    "expr_breaks": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "size_limits": [
+      0,
+      100
+    ],
+    "size_breaks": [
+      25,
+      50,
+      75
+    ],
+    "size_range": [
+      1.2,
+      7.0
+    ],
     "panel_fill": "#F2F2F2",
     "italic_y": true,
-    "expr_palette": ["#083B6F", "#3B8FC2", "#D9EEF4", "#F6F3EA", "#F07C56", "#8A001F"],
-    "x_colors": ["#F2A000", "#37B7AE", "#13A25B", "#F0DB35", "#1C9AD6", "#D65F00", "#AEB0B4", "#C98CB7", "#E64B35"]
+    "expr_palette": [
+      "#083B6F",
+      "#3B8FC2",
+      "#D9EEF4",
+      "#F6F3EA",
+      "#F07C56",
+      "#8A001F"
+    ],
+    "x_colors": [
+      "#F2A000",
+      "#37B7AE",
+      "#13A25B",
+      "#F0DB35",
+      "#1C9AD6",
+      "#D65F00",
+      "#AEB0B4",
+      "#C98CB7",
+      "#E64B35"
+    ]
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 等顶刊离散配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 12.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    },
+    "font_size": {
+      "type": "number",
+      "label": "字号 (pt)",
+      "default": 11.0,
+      "min": 4.0,
+      "max": 24.0,
+      "step": 0.5
+    },
+    "italic_y": {
+      "type": "boolean",
+      "label": "基因名斜体",
+      "default": true
+    }
   }
 }

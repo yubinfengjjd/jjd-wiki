@@ -1,1 +1,0 @@
-Round 1 exit=0, mechanical failures=0. Visual review found smaller annotation type and mean diamonds than the source. Round 2 increases their sizes; restores leading zero in decimals; ET RMSE diamond adjusted to source annotation 9.89. Data uncertainty retained.

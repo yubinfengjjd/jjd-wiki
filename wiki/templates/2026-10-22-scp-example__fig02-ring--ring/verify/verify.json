@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-04T06:19:23.623781+00:00",
+  "timestamp": "2026-11-18T05:34:15.233931+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-22-scp-example__fig02-ring--ring/spec.json": "6d2428d27a48b8527997b8af9cdbb08448f0fc2bc18de83d6015144992621480",
+    "templates/2026-10-22-scp-example__fig02-ring--ring/spec.json": "0c099969f86f2eecb182b75414f16d4a411bd4605b1f03f3b9463d31a126e630",
     "templates/2026-10-22-scp-example__fig02-ring--ring/code/render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
     "templates/2026-10-22-scp-example__fig02-ring--ring/code/core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
     "templates/2026-10-22-scp-example__fig02-ring--ring/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
@@ -16,11 +16,11 @@
   },
   "outputs": {
     "png": "118a7f5a1c8cc55d7270a028681d2e7874a05a3def568cd1c2be0d4aa15df0ff",
-    "pdf": "ed6efc824ed0e311b6312a45f2ea04e65d68b4a399f9cb8cde5ee537c2d14929",
+    "pdf": "48d691275974afe6690a1fc7f19e78d0ec67cb2eadf75b962b3c57fdc3a5b94f",
     "svg": "c9ca20b81fe5a66a94aa9dabc54147122d9ff47729a5b4d295f8fa1da79e9209"
   },
   "environment": {
-    "executable": "D:\\Users\\admin\\GitHub\\research-wiki-env\\R-4.5.0\\bin\\x64\\Rscript.exe",
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

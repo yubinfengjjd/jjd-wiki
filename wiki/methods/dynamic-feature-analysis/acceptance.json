@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T05:44:57.126099+00:00",
+  "checked_at": "2026-11-18T05:33:47.483267+00:00",
   "page": "methods/dynamic-feature-analysis.md",
-  "snapshot": "b7528f48ed7659245f53539e2357ff9c44503a9eba74c1f43f0999597d7c1627",
+  "snapshot": "52a3c1790a2039cd35a7f617be902ea196325a020f6cf2f61ddc227b5f3f720c",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

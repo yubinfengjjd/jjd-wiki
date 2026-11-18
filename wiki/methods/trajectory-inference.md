@@ -5,8 +5,10 @@ title: 拟时序与轨迹推断
 status: ready
 tags:
 - 单细胞分析
-inputs: []
-outputs: []
+inputs:
+- scrna-annotated-cells
+outputs:
+- pseudotime-trajectory-table
 source:
   kind: repo
   url: https://github.com/zhanghao-njmu/scp
@@ -151,6 +153,30 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+next_steps:
+- direction: 方向 1：拟时序动态特征基因识别与热图
+  when: 已获得 pseudotime 排序，需识别随拟时序显著变化的驱动基因与波峰时间聚类时
+  analysis_templates:
+  - methods/dynamic-feature-analysis
+  intermediate_interface: pseudotime-trajectory-table
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+  - templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+- direction: 方向 2：RNA 速率方向性交叉验证
+  when: 需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时
+  analysis_templates:
+  - methods/rna-velocity
+  intermediate_interface: pseudotime-trajectory-table
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- direction: 方向 3：分支关键基因进入候选标志物筛选
+  when: 将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时
+  analysis_templates:
+  - methods/differential-expression
+  - recipes/figureya-293plus-binaryclassificationml
+  intermediate_interface: candidate-biomarker-list
+  viz_templates:
+  - templates/2026-10-22-scp-example__fig01-volcano--volcano
 ---
 # 拟时序与轨迹推断
 
@@ -160,11 +186,15 @@ figure_relations:
 - 引用：SCP: https://github.com/zhanghao-njmu/scp (commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0)
 - 标签：单细胞分析
 - 分析用途：轨迹与动态分析
-- 输入接口：未声明
-- 输出接口：未声明
+- 输入接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
+- 输出接口：[[interfaces/pseudotime-trajectory-table|拟时序细胞坐标与分支动态基因表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/trajectory-inference/code/analysis.R](/files/wiki/methods/trajectory-inference/code/analysis.R) · [methods/trajectory-inference/code/data/palette_list.rda](/files/wiki/methods/trajectory-inference/code/data/palette_list.rda) · [methods/trajectory-inference/code/monocle2.R](/files/wiki/methods/trajectory-inference/code/monocle2.R) · [methods/trajectory-inference/code/monocle2_core.R](/files/wiki/methods/trajectory-inference/code/monocle2_core.R) · [methods/trajectory-inference/code/monocle2_core_helpers.R](/files/wiki/methods/trajectory-inference/code/monocle2_core_helpers.R) · [methods/trajectory-inference/code/monocle3.R](/files/wiki/methods/trajectory-inference/code/monocle3.R) · [methods/trajectory-inference/code/monocle3_core.R](/files/wiki/methods/trajectory-inference/code/monocle3_core.R) · [methods/trajectory-inference/code/slingshot_native.R](/files/wiki/methods/trajectory-inference/code/slingshot_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：已获得 pseudotime 排序，需识别随拟时序显著变化的驱动基因与波峰时间聚类时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap、templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap）
+  - **方向 2：RNA 速率方向性交叉验证**（触发条件：需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时；中间表：pseudotime-trajectory-table；分析模版：methods/rna-velocity；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
+  - **方向 3：分支关键基因进入候选标志物筛选**（触发条件：将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时；中间表：candidate-biomarker-list；分析模版：methods/differential-expression、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/2026-10-22-scp-example__fig01-volcano--volcano）
 
 - 方法配图关系（语义审查）：
   - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

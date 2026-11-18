@@ -94,6 +94,29 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+next_steps:
+- direction: 方向 1：双细胞检测与样本级过滤
+  when: 多样本高上样量（>5,000 细胞/样本）需排除异型双细胞干扰时
+  analysis_templates:
+  - methods/doublet-detection
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/2026-10-22-scp-example__fig09-bar--bar
+- direction: 方向 2：多样本去批次整合（Harmony / Seurat Anchor）
+  when: 存在多供体、多批次或跨研究合并的技术混杂效应时
+  analysis_templates:
+  - methods/batch-integration
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- direction: 方向 3：标准化、PCA 与 UMAP 降维聚类
+  when: 单批次或去批次后，准备计算低维嵌入与细胞分群时
+  analysis_templates:
+  - methods/dimensionality-reduction
+  - methods/cell-clustering
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
 ---
 # 单细胞质量控制
 
@@ -108,6 +131,10 @@ figure_relations:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/cell-quality-control/code/analysis.R](/files/wiki/methods/cell-quality-control/code/analysis.R) · [methods/cell-quality-control/code/cellqc_native.R](/files/wiki/methods/cell-quality-control/code/cellqc_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：双细胞检测与样本级过滤**（触发条件：多样本高上样量（>5,000 细胞/样本）需排除异型双细胞干扰时；中间表：scrna-annotated-cells；分析模版：methods/doublet-detection；可视化模版：templates/2026-10-22-scp-example__fig09-bar--bar）
+  - **方向 2：多样本去批次整合（Harmony / Seurat Anchor）**（触发条件：存在多供体、多批次或跨研究合并的技术混杂效应时；中间表：scrna-annotated-cells；分析模版：methods/batch-integration；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
+  - **方向 3：标准化、PCA 与 UMAP 降维聚类**（触发条件：单批次或去批次后，准备计算低维嵌入与细胞分群时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
 
 - 方法配图关系（语义审查）：
   - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

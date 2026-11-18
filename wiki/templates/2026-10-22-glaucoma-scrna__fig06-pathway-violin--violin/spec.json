@@ -32,16 +32,90 @@
       "max_height_in": null
     },
     "celltype_levels": [
-      "Muller_Glia", "Rod_Photoreceptor", "Bipolar", "Cone_Photoreceptor",
-      "RGC_like", "RPE", "Vascular_Pericyte", "Amacrine", "Amacrine_Horizontal_like"
+      "Muller_Glia",
+      "Rod_Photoreceptor",
+      "Bipolar",
+      "Cone_Photoreceptor",
+      "RGC_like",
+      "RPE",
+      "Vascular_Pericyte",
+      "Amacrine",
+      "Amacrine_Horizontal_like"
     ],
-    "group_levels": ["Control", "Glaucoma"],
-    "color_scheme": ["#FF7F0E", "#1F77B4"],
+    "group_levels": [
+      "Control",
+      "Glaucoma"
+    ],
+    "color_scheme": [
+      "#FF7F0E",
+      "#1F77B4"
+    ],
     "title": "Complement Pathway Score Comparison",
     "ylab": "Pathway Score",
     "dodge_width": 0.8,
     "violin_width": 0.7,
     "box_width": 0.18,
     "jitter_width": 0.18
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 等顶刊离散配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 12.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.5,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": "Complement Pathway Score Comparison"
+    },
+    "font_size": {
+      "type": "number",
+      "label": "字号 (pt)",
+      "default": 11.0,
+      "min": 4.0,
+      "max": 24.0,
+      "step": 0.5
+    },
+    "violin_width": {
+      "type": "number",
+      "label": "小提琴宽度",
+      "default": 0.7,
+      "min": 0.2,
+      "max": 1.5,
+      "step": 0.05
+    },
+    "box_width": {
+      "type": "number",
+      "label": "内嵌箱线宽度",
+      "default": 0.18,
+      "min": 0.05,
+      "max": 0.6,
+      "step": 0.02
+    }
   }
 }

@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-04T04:20:44.834132+00:00",
+  "timestamp": "2026-11-18T05:34:02.774077+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/spec.json": "7d652cfcaf1715e204ad4a49682f7b80b8e70ec4bcbe71e5f5454a3008734a4f",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/spec.json": "20154535d4a7260e9767fc2b69b2e985605ca670819533b2098d254b4db718d2",
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/code/panel.py": "34e6db262f1ed75cf36d4a47878020a0fa54c2d8c7cd0c6382e9e268b322b1c9",
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -11,12 +11,12 @@
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/example/shap-samples.csv": "25c0a547383684b84854c46445dc402d5523054dffac70dfa946077821adc47c"
   },
   "outputs": {
-    "png": "b933b6a6cb63eac7d5ef5847e95b1b074759e6f0b2a197d7504e8dbee4d9a10e",
-    "pdf": "66fbc84e40e7ead0ed828a5466887b9780f912a623dafd44540cdbaa4277e9ad",
-    "svg": "60889e8d4016b13c2865dac9e1856a8bd88553ba9f6b62caad4fce5ef852aa4b"
+    "png": "6c82832b85099e6dc365cea6d88ae377477e1c408470aacd5e45a6fe3dcf8d86",
+    "pdf": "9309c215e9bcec62466dc254b1c8802a4cce972b5f8936bc1741f16daf06f5d5",
+    "svg": "f572bc82f81e58f58ef1c89b8333bd6caaa6e75d64b4dc39057f540a77264255"
   },
   "environment": {
-    "executable": "<ENV_ROOT>/ml-python/Scripts/python.exe",
+    "executable": "D:\\anaconda\\python.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

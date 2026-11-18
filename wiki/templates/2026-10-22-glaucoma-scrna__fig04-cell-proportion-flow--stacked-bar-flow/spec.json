@@ -26,16 +26,43 @@
       "max_width_in": null,
       "max_height_in": null
     },
-    "x_levels": ["Control", "Glaucoma"],
+    "x_levels": [
+      "Control",
+      "Glaucoma"
+    ],
     "stack_levels": [
-      "Muller_Glia", "Rod_Photoreceptor", "Bipolar", "Cone_Photoreceptor",
-      "RGC_like", "RPE", "Vascular_Pericyte", "Amacrine", "Amacrine_Horizontal_like"
+      "Muller_Glia",
+      "Rod_Photoreceptor",
+      "Bipolar",
+      "Cone_Photoreceptor",
+      "RGC_like",
+      "RPE",
+      "Vascular_Pericyte",
+      "Amacrine",
+      "Amacrine_Horizontal_like"
     ],
     "legend_levels": [
-      "Amacrine_Horizontal_like", "Amacrine", "Vascular_Pericyte", "RPE",
-      "RGC_like", "Cone_Photoreceptor", "Bipolar", "Rod_Photoreceptor", "Muller_Glia"
+      "Amacrine_Horizontal_like",
+      "Amacrine",
+      "Vascular_Pericyte",
+      "RPE",
+      "RGC_like",
+      "Cone_Photoreceptor",
+      "Bipolar",
+      "Rod_Photoreceptor",
+      "Muller_Glia"
     ],
-    "palette": ["#E64B35", "#4DBBD5", "#00A087", "#3C5488", "#F39B7F", "#8491B4", "#91D1C2", "#DC0000", "#7E6148"],
+    "palette": [
+      "#E64B35",
+      "#4DBBD5",
+      "#00A087",
+      "#3C5488",
+      "#F39B7F",
+      "#8491B4",
+      "#91D1C2",
+      "#DC0000",
+      "#7E6148"
+    ],
     "normalize": true,
     "bar_width": 0.36,
     "flow_alpha": 0.22,
@@ -43,5 +70,71 @@
     "flow_n": 120,
     "y_lab": "Cell proportion",
     "legend_title": "Cell type"
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 等顶刊离散配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 5.5,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 4.5,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    },
+    "font_size": {
+      "type": "number",
+      "label": "字号 (pt)",
+      "default": 11.0,
+      "min": 4.0,
+      "max": 24.0,
+      "step": 0.5
+    },
+    "normalize": {
+      "type": "boolean",
+      "label": "按组重新归一化到 1",
+      "default": true
+    },
+    "bar_width": {
+      "type": "number",
+      "label": "柱宽",
+      "default": 0.36,
+      "min": 0.1,
+      "max": 0.9,
+      "step": 0.02
+    },
+    "flow_alpha": {
+      "type": "number",
+      "label": "连接流带透明度",
+      "default": 0.22,
+      "min": 0.0,
+      "max": 0.9,
+      "step": 0.02
+    }
   }
 }

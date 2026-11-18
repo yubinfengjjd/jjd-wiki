@@ -1,31 +1,5 @@
 # 独立工具仓库：自行持有 .git，外层不跟踪
 /开发/
-# 知识与画廊默认保存；维护记录仅排除重复备份、会话与运行产物。
-/维护记录/**
-!/维护记录/**/
-!/维护记录/**/*.md
-!/维护记录/**/*.json
-!/维护记录/**/*.py
-!/维护记录/**/*.ps1
-!/维护记录/**/*.mjs
-!/维护记录/**/*.R
-!/维护记录/**/*.r
-!/维护记录/**/*.js
-!/维护记录/**/*.cjs
-!/维护记录/**/*.diff
-!/维护记录/**/*.yaml
-!/维护记录/**/*.yml
-/维护记录/**/browser/
-/维护记录/**/backup/
-/维护记录/**/before/
-/维护记录/**/baseline/
-/维护记录/**/deployment/
-/维护记录/**/*-before/
-/维护记录/**/logs/
-/维护记录/**/.git/
-/维护记录/**/fixtures/
-/维护记录/**/migration-fixture/
-/维护记录/**/修改前/
 
 # 内嵌本机绝对路径或本机生成的产物
 *.lnk
@@ -41,11 +15,6 @@ __pycache__/
 *.pyc
 Thumbs.db
 .DS_Store
-# 维护记录里的回放夹具：体积大、可再生，只留审计结论
-维护记录/*/fixtures/
-维护记录/**/migration-fixture/
-# Obsidian 阅览端本机配置（插件、工作区状态）保留本地，不入库
-**/.obsidian/
 
 # 私有数据与凭据禁止入 Git；公开示例数据保留。
 **/private-data/
@@ -69,66 +38,15 @@ Thumbs.db
 *.p12
 *.key
 
-# 运行日志不作为知识原件；配方原字节中的日志按 source.json 保留。
-/画廊/**/*.log
-/画廊/**/stdout.txt
-/画廊/**/stderr.txt
-
-# 维护用嵌套试验仓库与重复构建产物不属于知识原件。
-/维护记录/**/controlled-tags-red*/
-/维护记录/**/frontend-dist/
-/维护记录/**/node_modules/
-
 # 本地 agent 会话状态与日志（oh-my-* / hooks）：非知识内容，不入库。
 /.omx/
 
-# 超过 GitHub 100MB 上限的配方输入：保留在本地磁盘供 rwiki run 复跑，不入库。
-# 获取方式见各配方页面与 source 内说明。
-/知识库/recipes/figureya-215dnaage/source/HumanMethylation450
-/知识库/recipes/figureya-275scaucell/source/immune.combined.rds
-
-# Canonical layout generated/local exclusions.
-/archive/maintenance/**
-!/archive/maintenance/**/
-!/archive/maintenance/**/*.md
-!/archive/maintenance/**/*.json
-!/archive/maintenance/**/*.py
-!/archive/maintenance/**/*.ps1
-!/archive/maintenance/**/*.mjs
-!/archive/maintenance/**/*.R
-!/archive/maintenance/**/*.r
-!/archive/maintenance/**/*.js
-!/archive/maintenance/**/*.cjs
-!/archive/maintenance/**/*.diff
-!/archive/maintenance/**/*.yaml
-!/archive/maintenance/**/*.yml
-/archive/maintenance/**/browser/
-/archive/maintenance/**/backup/
-/archive/maintenance/**/before/
-/archive/maintenance/**/baseline/
-/archive/maintenance/**/deployment/
-/archive/maintenance/**/*-before/
-/archive/maintenance/**/logs/
-/archive/maintenance/**/.git/
-/archive/maintenance/**/fixtures/
-/archive/maintenance/**/migration-fixture/
-/archive/maintenance/**/修改前/
-archive/maintenance/*/fixtures/
-archive/maintenance/**/migration-fixture/
+# 运行日志不作为知识原件
 /gallery/**/*.log
 /gallery/**/stdout.txt
 /gallery/**/stderr.txt
-/archive/maintenance/**/controlled-tags-red*/
-/archive/maintenance/**/frontend-dist/
-/archive/maintenance/**/node_modules/
+
+# 超过 GitHub 100MB 上限的配方输入：保留在本地磁盘供 rwiki run 复跑，不入库。
+# 获取方式见各配方页面与 source 内说明。
 /wiki/recipes/figureya-215dnaage/source/HumanMethylation450
 /wiki/recipes/figureya-275scaucell/source/immune.combined.rds
-
-# Local migration journals contain machine paths and Git metadata backups.
-/.layout-migrations/
-
-
-
-# Disposable audit test repositories remain local; migration preserves their bytes.
-/维护记录/**/pytest-tmp/
-/archive/maintenance/**/pytest-tmp/

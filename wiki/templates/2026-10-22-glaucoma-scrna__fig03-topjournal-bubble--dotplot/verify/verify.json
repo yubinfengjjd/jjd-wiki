@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-04T04:20:45.530449+00:00",
+  "timestamp": "2026-11-18T05:34:05.189297+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json": "f7669255683478ae13cc23173fff49b6b9cd2be74d2917a4707b249444ce4478",
+    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json": "e888e44e8aeebf61955fb8bac7c9dd66e8432bed081f0f11def8ecc9c4094cb9",
     "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/render.R": "216772e4ee99a9503285ff2fbb3113edd051205fc352f3a64e32b42178a868be",
     "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/code/core.R": "5485e5f19aec4f2b3fb406f188feb8bacf06eb9047e7db1c82d4b36e96427020",
@@ -16,11 +16,11 @@
   },
   "outputs": {
     "png": "3ed15f60e37929d8d608cbcf545f515ac7a67f3873937b955e3695e2be9b159b",
-    "pdf": "7ef0e53a9301f80ee75643ad9eddd1fde53e261fad05dbe70920d76ea7ca0e37",
+    "pdf": "661963d70342504c56c3f7a7142da0f5f96cd2739a407bf3ac928b625f29b1ad",
     "svg": "082c250f14081b621ef4db2ac9700eed813cc22fc1c0851eb454c714f407b186"
   },
   "environment": {
-    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
     "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }

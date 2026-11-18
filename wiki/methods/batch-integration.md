@@ -6,7 +6,8 @@ status: ready
 tags:
 - 单细胞分析
 inputs: []
-outputs: []
+outputs:
+- scrna-annotated-cells
 source:
   kind: repo
   url: https://github.com/zhanghao-njmu/scp
@@ -89,6 +90,24 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+next_steps:
+- direction: 方向 1：降维嵌入与无监督聚类
+  when: 批次对齐后需在整合空间重新计算 UMAP 坐标与聚类簇时
+  analysis_templates:
+  - methods/dimensionality-reduction
+  - methods/cell-clustering
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- direction: 方向 2：细胞类型注释（Marker / SingleR / 参考映射）
+  when: 已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时
+  analysis_templates:
+  - methods/cell-type-annotation
+  - methods/reference-mapping
+  intermediate_interface: scrna-annotated-cells
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
 ---
 # 单细胞批次整合
 
@@ -99,10 +118,13 @@ figure_relations:
 - 标签：单细胞分析
 - 分析用途：整合与批次校正
 - 输入接口：未声明
-- 输出接口：未声明
+- 输出接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/batch-integration/code/analysis.R](/files/wiki/methods/batch-integration/code/analysis.R) · [methods/batch-integration/code/integration_native.R](/files/wiki/methods/batch-integration/code/integration_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：降维嵌入与无监督聚类**（触发条件：批次对齐后需在整合空间重新计算 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
+  - **方向 2：细胞类型注释（Marker / SingleR / 参考映射）**（触发条件：已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot、templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap）
 
 - 方法配图关系（语义审查）：
   - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

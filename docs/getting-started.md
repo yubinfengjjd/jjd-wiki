@@ -19,18 +19,18 @@
 & 'D:\anaconda\python.exe' -X utf8 tools/configure-machine.py --python-exe '<科学运行器>' --rscript-exe '<Rscript>'
 ```
 
-本机配置包含路径，保持 Git 忽略。已有配置不覆盖；迁移现有机器应使用 migrate-layout.py，不重复 configure。新增依赖需先列出清单并得到作者批准。
+本机配置包含路径，保持 Git 忽略。已有配置不覆盖。新增依赖需先列出清单并得到作者批准。
 
 ## 查找与复用
 
 ```text
 rwiki find 判断每个细胞属于什么类型
 rwiki find 差异表达 --kind method
-rwiki find RunDEtest --scope source
+rwiki next cell-type-annotation
 rwiki show differential-expression
 rwiki use differential-expression --project <课题目录>
 ```
 
-浏览器内使用“全局搜索”，可按类型筛选并进入命中章节。检索结果是发现线索；核对研究问题、输入单位、分组和验证范围后再执行。
+浏览器内使用独立 Web 工作台（Playbook Flow 与 Template Studio），可按生信步进决策树选择下一步分支、嗅探本地数据表头映射列名、表单调参、实时预览/编辑代码并一键派发或试跑。检索结果是发现线索；核对研究问题、输入单位、分组和验证范围后再执行。
 
 正式入库、确认与全库保存使用完整检出。课题数据与成图留在课题目录。

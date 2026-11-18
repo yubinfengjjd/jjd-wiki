@@ -6,8 +6,10 @@ status: ready
 tags:
 - 单细胞分析
 - 转录组
-inputs: []
-outputs: []
+inputs:
+- scrna-annotated-cells
+outputs:
+- deg-result-table
 source:
   kind: repo
   url: https://github.com/zhanghao-njmu/scp
@@ -80,6 +82,35 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+next_steps:
+- direction: 方向 1：功能富集分析（ORA / GSEA 通路定位）
+  when: 已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时
+  analysis_templates:
+  - methods/gene-set-enrichment
+  - recipes/figureya-60gsea-clusterprofilerv2
+  - recipes/figureya-52goplot
+  intermediate_interface: pathway-score-table
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- direction: 方向 2：火山图、气泡图与分组表达热图渲染
+  when: 需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时
+  analysis_templates:
+  - recipes/figureya-59volcanov2
+  intermediate_interface: deg-result-table
+  viz_templates:
+  - templates/2026-10-22-scp-example__fig01-volcano--volcano
+  - templates/figureya-59volcanov2--volcano
+  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- direction: 方向 3：多组学交集与机器学习候选标志物筛选
+  when: 将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时
+  analysis_templates:
+  - recipes/figureya-112venn
+  - recipes/figureya-31lasso-update
+  - recipes/figureya-293plus-binaryclassificationml
+  intermediate_interface: candidate-biomarker-list
+  viz_templates:
+  - templates/2026-10-22-scp-example__fig12-venn--venn
+  - templates/2026-10-22-scp-example__fig13-upset--upset
 ---
 # 差异表达分析
 
@@ -89,11 +120,15 @@ figure_relations:
 - 引用：SCP: https://github.com/zhanghao-njmu/scp (commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0)
 - 标签：单细胞分析、转录组
 - 分析用途：差异与功能分析
-- 输入接口：未声明
-- 输出接口：未声明
+- 输入接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
+- 输出接口：[[interfaces/deg-result-table|差异表达标准结果表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
-- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/gene-set-enrichment|基因集富集分析]]（ready）
 - 代码模板：[methods/differential-expression/code/analysis.R](/files/wiki/methods/differential-expression/code/analysis.R) · [methods/differential-expression/code/de_native.R](/files/wiki/methods/differential-expression/code/de_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot）
+  - **方向 2：火山图、气泡图与分组表达热图渲染**（触发条件：需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时；中间表：deg-result-table；分析模版：recipes/figureya-59volcanov2；可视化模版：templates/2026-10-22-scp-example__fig01-volcano--volcano、templates/figureya-59volcanov2--volcano、templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot）
+  - **方向 3：多组学交集与机器学习候选标志物筛选**（触发条件：将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-112venn、recipes/figureya-31lasso-update、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/2026-10-22-scp-example__fig12-venn--venn、templates/2026-10-22-scp-example__fig13-upset--upset）
 
 - 方法配图关系（语义审查）：
   - [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

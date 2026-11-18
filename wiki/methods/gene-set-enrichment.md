@@ -6,8 +6,10 @@ status: ready
 tags:
 - 单细胞分析
 - 转录组
-inputs: []
-outputs: []
+inputs:
+- deg-result-table
+outputs:
+- pathway-score-table
 source:
   kind: repo
   url: https://github.com/zhanghao-njmu/scp
@@ -43,6 +45,25 @@ keywords:
 - 基因集
 - SCP
 figure_relations: []
+next_steps:
+- direction: 方向 1：锁定关键基因集做逐细胞/逐样本活性打分
+  when: 从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时
+  analysis_templates:
+  - methods/gene-set-scoring
+  - recipes/figureya-61gsva
+  - recipes/figureya-71ssgsea-update
+  intermediate_interface: pathway-score-table
+  viz_templates:
+  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+  - templates/2026-10-22-scp-example__fig16-cell-density--ridge
+- direction: 方向 2：PPI 互作网络与 Hub 候选基因挖掘
+  when: 需要围绕富集通路核心基因构建蛋白互作模块并筛选关键枢纽基因时
+  analysis_templates:
+  - recipes/figureya-53ppimodule
+  - recipes/figureya-147plus-string
+  intermediate_interface: candidate-biomarker-list
+  viz_templates:
+  - templates/2026-10-22-scp-example__fig11-chord--chord
 ---
 # 基因集富集分析
 
@@ -52,11 +73,14 @@ figure_relations: []
 - 引用：SCP: https://github.com/zhanghao-njmu/scp (commit b9b0eb7a7bf2c2c4b2262e73e09d7ebd515c7da0)
 - 标签：单细胞分析、转录组
 - 分析用途：差异与功能分析
-- 输入接口：未声明
-- 输出接口：未声明
+- 输入接口：[[interfaces/deg-result-table|差异表达标准结果表]]
+- 输出接口：[[interfaces/pathway-score-table|通路富集与多算法基因集打分表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/gene-set-enrichment/code/analysis.R](/files/wiki/methods/gene-set-enrichment/code/analysis.R) · [methods/gene-set-enrichment/code/enrichment_native.R](/files/wiki/methods/gene-set-enrichment/code/enrichment_native.R)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：锁定关键基因集做逐细胞/逐样本活性打分**（触发条件：从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-61gsva、recipes/figureya-71ssgsea-update；可视化模版：templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin、templates/2026-10-22-scp-example__fig16-cell-density--ridge）
+  - **方向 2：PPI 互作网络与 Hub 候选基因挖掘**（触发条件：需要围绕富集通路核心基因构建蛋白互作模块并筛选关键枢纽基因时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-53ppimodule、recipes/figureya-147plus-string；可视化模版：templates/2026-10-22-scp-example__fig11-chord--chord）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

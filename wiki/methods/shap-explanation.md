@@ -6,7 +6,8 @@ status: ready
 tags:
 - 机器学习
 - 模型解释与特征重要性
-inputs: []
+inputs:
+- model-prediction-shap
 outputs:
 - shap-summary
 - shap-samples
@@ -92,6 +93,27 @@ implementations:
   - numpy
   - pandas
   verification: verification/shap-explain-model.json
+next_steps:
+- direction: 方向 1：SHAP 蜂群图、重要度条形图与环形图渲染
+  when: 已计算出训练集/验证集 SHAP 矩阵，准备输出论文级可解释性图表时
+  analysis_templates:
+  - methods/regression-resampling-evaluation
+  intermediate_interface: shap-samples
+  viz_templates:
+  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+- direction: 方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证
+  when: 需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时
+  analysis_templates:
+  - recipes/figureya-1survivalcurve-update
+  - recipes/figureya-85timeroc
+  - recipes/figureya-30nomogram-update
+  - recipes/figureya-33dca-update
+  intermediate_interface: model-prediction-shap
+  viz_templates:
+  - templates/figureya-1survivalcurve-update--km-curve
+  - templates/figureya-6rhrsv2--forest
 ---
 # 基于 SHAP 的模型解释
 
@@ -101,11 +123,14 @@ implementations:
 - 引用：Lundberg & Lee. A Unified Approach to Interpreting Model Predictions. NeurIPS, 2017.；Lundberg et al. From local explanations to global understanding with explainable AI for trees. Nature Machine Intelligence, 2020.；SHAP TreeExplainer official documentation. https://shap.readthedocs.io/en/latest/generated/shap.TreeExplainer.html；SHAP LinearExplainer official documentation. https://shap.readthedocs.io/en/latest/generated/shap.LinearExplainer.html；SHAP Explainer official documentation. https://shap.readthedocs.io/en/latest/generated/shap.Explainer.html
 - 标签：机器学习、模型解释与特征重要性
 - 分析用途：模型解释
-- 输入接口：未声明
+- 输入接口：[[interfaces/model-prediction-shap|临床模型预测风险与 SHAP 贡献表]]
 - 输出接口：[[interfaces/shap-summary|SHAP 特征贡献汇总表]] · [[interfaces/shap-samples|SHAP 逐样本值表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]（ready） · [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]]（ready） · [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar|SHAP 环形贡献图]]（ready）
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/shap-explanation/code/explain_model.py](/files/wiki/methods/shap-explanation/code/explain_model.py) · [methods/shap-explanation/code/shap_explain.py](/files/wiki/methods/shap-explanation/code/shap_explain.py)
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：SHAP 蜂群图、重要度条形图与环形图渲染**（触发条件：已计算出训练集/验证集 SHAP 矩阵，准备输出论文级可解释性图表时；中间表：shap-samples；分析模版：methods/regression-resampling-evaluation；可视化模版：templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm、templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar、templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar）
+  - **方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证**（触发条件：需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时；中间表：model-prediction-shap；分析模版：recipes/figureya-1survivalcurve-update、recipes/figureya-85timeroc、recipes/figureya-30nomogram-update、recipes/figureya-33dca-update；可视化模版：templates/figureya-1survivalcurve-update--km-curve、templates/figureya-6rhrsv2--forest）
 
 - 方法配图关系（语义审查）：
   - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
