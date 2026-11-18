@@ -2,7 +2,7 @@
 type: template
 id: coexpr-module-enrich-bars
 title: 共表达模块功能富集分面条图
-status: draft
+status: ready
 layouts: []
 sources:
 - layouts/2026-11-19-hdwgcna-network__fig02
@@ -25,6 +25,8 @@ keywords:
 favorite: false
 ---
 # 共表达模块功能富集分面条图
+
+![[templates/coexpr-module-enrich-bars/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[layouts/2026-11-19-hdwgcna-network__fig02|hdWGCNA 模块 GO 富集分面条图]]
@@ -53,7 +55,27 @@ favorite: false
 
 ## 数据要求
 
-待填写 spec.json。
+### enrich（enrich_plot_dat.csv）：模块富集分析整理表（每个模块 Top N 显著通路：module、Term、log10p、可选 color） （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| module | str | 必需 | 共表达模块名（如 Agrp_M1、ME1） |
+| Term | str | 必需 | 富集通路或 GO Term 名称 |
+| log10p | float | 必需 | -log10(P-value) 显著性数值 |
+| color | str | 可选 | 模块十六进制配色（与网络图保持一致；缺省自动配色） |
+
+### 可覆盖的 style
+
+- `width_in`：`6.0`
+- `height_in`：`11.8`
+- `dpi`：`300`
+- `ncol`：`2`
+- `bar_alpha`：`0.52`
+- `bar_width`：`0.72`
+- `term_size`：`2.45`
+- `strip_text_size`：`8.2`
+- `max_term_chars`：`46`
+- `x_lab`：`"-log10(P-value)"`
 
 ## 使用记录
 

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-18T17:15:33.032581+00:00",
+  "page": "templates/coexpr-sphere-network.md",
+  "snapshot": "3d0f03698dc2112e2f5e205694dd4481140a5194a7abf3c78b4de40a8063bab2",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

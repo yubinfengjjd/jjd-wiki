@@ -179,8 +179,6 @@
 
 ### draft
 
-- [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
-- [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]
 
 ### ready
 
@@ -197,12 +195,14 @@
 - [[templates/fy-string-plus|STRING互作证据打分网络图]]
 - [[templates/fy-wgcna-heatmap|WGCNA模块基因表达热图]]
 - [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]
+- [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
 - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]
 - [[templates/fy-pairwiselogrank|三组以上 KM 曲线与两两比较表]]
 - [[templates/fy-pca3d|三维PCA分组散点图]]
 - [[templates/subgroup-hazard-forest|亚组分析森林图]]
 - [[templates/fy-subgroup|亚组生存风险森林图]]
 - [[templates/fy-immune-network|免疫细胞相关预后网络图]]
+- [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]
 - [[templates/fy-dca|决策曲线与净获益分析]]
 - [[templates/fy-circgroup|分型对应关系圈状热图]]
 - [[templates/fy-panpie|分组临床分期扇形矩阵图]]

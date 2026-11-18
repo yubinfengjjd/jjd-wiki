@@ -2,7 +2,7 @@
 type: template
 id: coexpr-sphere-network
 title: hdWGCNA 共表达模块球体网络图
-status: draft
+status: ready
 layouts: []
 sources:
 - layouts/2026-11-19-hdwgcna-network__fig01
@@ -25,6 +25,8 @@ keywords:
 favorite: false
 ---
 # hdWGCNA 共表达模块球体网络图
+
+![[templates/coexpr-sphere-network/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[layouts/2026-11-19-hdwgcna-network__fig01|hdWGCNA 共表达模块球体网络图]]
@@ -54,7 +56,39 @@ favorite: false
 
 ## 数据要求
 
-待填写 spec.json。
+### nodes（gene_module.csv）：模块基因表（每行一个 hub 基因：gene_name、module、可选 color 与 annotation 模块功能注释） （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| gene_name | str | 必需 | 基因名或特征名（须与 edge_file 中的节点名一致） |
+| module | str | 必需 | 所属共表达模块名称（如 Agrp_M1 或 ME1） |
+| color | str | 可选 | 模块十六进制配色（如 #b92d2d；缺省时按模块数自动生成调色板） |
+| annotation | str | 可选 | 模块代表功能注释（如 GO/KEGG 最显著富集通路名；缺省只显示模块名） |
+
+### edges（edge_file.csv）：共表达网络连边表（由 TOM > 阈值筛选得到的基因对 from、to 与可选 tom 权重） （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| from | str | 必需 | 起点基因名 |
+| to | str | 必需 | 终点基因名 |
+| tom | float | 可选 | 拓扑重叠矩阵权重或相关性强度（可选，默认 0.1） |
+
+### 可覆盖的 style
+
+- `width_in`：`8.4`
+- `height_in`：`8.0`
+- `dpi`：`300`
+- `point_size`：`1.95`
+- `point_alpha`：`0.95`
+- `edge_color`：`"#a8a8a8"`
+- `edge_alpha`：`0.18`
+- `edge_width`：`0.22`
+- `label_size`：`3.15`
+- `wrap_width`：`28`
+- `segment_color`：`"#2f2f2f"`
+- `segment_size`：`0.42`
+- `seed`：`42`
+- `title`：`""`
 
 ## 使用记录
 
