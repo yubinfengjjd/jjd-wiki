@@ -199,13 +199,25 @@
     "methods/batch-integration.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "methods/bulk-expression-preprocessing.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/cell-cell-communication.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "methods/cell-clustering.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/cell-proportion-composition.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/cell-quality-control.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/cell-type-annotation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/coexpression-ppi-network.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/differential-expression.md": [
@@ -215,6 +227,9 @@
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/doublet-detection.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/drug-sensitivity-repositioning.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/dynamic-feature-analysis.md": [
@@ -229,10 +244,19 @@
     "methods/gene-set-scoring.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "methods/genomic-epigenomic-landscape.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/immune-infiltration-tme.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "methods/local-omics-analysis-guide.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/local-omics-visualization-guide.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/molecular-subtyping-clustering.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/reference-mapping.md": [
@@ -304,7 +328,16 @@
     "methods/scrna-preprocess-doublet-qc-harmony.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
+    "methods/set-intersection-and-group-stats.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "methods/shap-explanation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/spatial-transcriptomics-microenvironment.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "methods/survival-prognosis-analysis.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
     "methods/trajectory-inference.md": [

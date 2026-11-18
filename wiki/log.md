@@ -1469,3 +1469,5 @@
 ## [2026-11-18 12:13 UTC] acceptance check methods/molecular-subtyping-clustering.md
 
 ## [2026-11-18 12:13 UTC] acceptance check methods/drug-sensitivity-repositioning.md
+
+## [2026-11-18 12:13 UTC] acceptance check methods/spatial-transcriptomics-microenvironment.md
