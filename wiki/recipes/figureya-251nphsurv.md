@@ -103,7 +103,7 @@ annCol与surv行名均为样本ID且需对应；surv需含os（单位月）与ce
 
 ## 知识关联检查
 
-2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
+2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/km-survival-curve|KM 生存曲线与风险表]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
 

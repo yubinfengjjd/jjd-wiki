@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:02.774077+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/shap-beeswarm/spec.json": "20154535d4a7260e9767fc2b69b2e985605ca670819533b2098d254b4db718d2",
+    "templates/shap-beeswarm/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/shap-beeswarm/code/panel.py": "34e6db262f1ed75cf36d4a47878020a0fa54c2d8c7cd0c6382e9e268b322b1c9",
+    "templates/shap-beeswarm/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-samples#columns": "c6b2561ecf55cabd0e31196df8d6dc94c7e84894f283cd111e67ed0e453631e4",
+    "templates/shap-beeswarm/example/shap-samples.csv": "25c0a547383684b84854c46445dc402d5523054dffac70dfa946077821adc47c"
+  },
+  "outputs": {
+    "png": "6c82832b85099e6dc365cea6d88ae377477e1c408470aacd5e45a6fe3dcf8d86",
+    "pdf": "9309c215e9bcec62466dc254b1c8802a4cce972b5f8936bc1741f16daf06f5d5",
+    "svg": "f572bc82f81e58f58ef1c89b8333bd6caaa6e75d64b4dc39057f540a77264255"
+  },
+  "environment": {
+    "executable": "D:\\anaconda\\python.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

@@ -25,7 +25,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig03-pie--pie|分组构成饼图]] · [[templates/2026-10-22-scp-example__fig04-rose--rose|分组构成玫瑰图]] · [[templates/2026-10-22-scp-example__fig05-trend--trend|分组构成趋势图]] · [[templates/2026-10-22-scp-example__fig06-area--area|分组构成面积图]] · [[templates/2026-10-22-scp-example__fig07-dot--dot|分组构成点图]] · [[templates/2026-10-22-scp-example__fig09-bar--bar|分组计数柱图]]
+- 使用的模板：[[templates/scp-comp-area|分组构成面积图]] · [[templates/scp-comp-dot|分组构成点图]] · [[templates/scp-comp-pie|分组构成饼图]] · [[templates/scp-comp-rose|分组构成玫瑰图]] · [[templates/scp-comp-trend|分组构成趋势图]] · [[templates/scp-count-bar|分组计数柱图]]
 <!-- facts:end -->
 
 ## 含义

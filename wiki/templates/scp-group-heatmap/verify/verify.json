@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:21.832982+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/scp-group-heatmap/spec.json": "77142a9ad80418fed6f15c1e424ded6accc315ad2a0745d5db6c0a0ffb8a6522",
+    "templates/scp-group-heatmap/code/render.R": "c39eceb2dd863642a1a5e6099acf60f096d348b4ee958c1165bcbeac74c66467",
+    "templates/scp-group-heatmap/code/core.R": "8481c5ed54f5da9dfea568a18839815f8d2fb0f23446bf782d64d6c115094fcc",
+    "templates/scp-group-heatmap/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/scp-group-heatmap/code/panel.R": "baab431b34919f28d4cbff05570879d3208f6bbdb48cc7a86782a43c750b501e",
+    "templates/scp-group-heatmap/code/scp_group_heatmap_native.R": "eaefd5d94a4be994aaf347ccd973d40bebe586e3d398b5ce9074485fb5314fe4",
+    "templates/scp-group-heatmap/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "templates/scp-group-heatmap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-group-heatmap#columns": "fb0dccc6d77454f55d1f29cda83aa005fae4063b2cc88a4055994f4e90259ffe",
+    "templates/scp-group-heatmap/example/render-group-heatmap.csv": "8a180c4b83937a5d6d94f5590a5dfb3bee567caf630974f8344af46709c466e8",
+    "templates/scp-group-heatmap/example/style.json": "11a18a568eaaaefe933eda9a2394d53dcb0f8d74b54a0dc3c9abee747eed047b"
+  },
+  "outputs": {
+    "png": "00b0698d08ebdd6b8840b500febaf9652d9881ccb857ed69eb0b5fdf1ec314b4",
+    "pdf": "47598222873fe4c2dcc7480f7e92d38733c26d0aba62ec1ce14f821b50caa571",
+    "svg": "14ed588ab02e981629a532909cb1e4ef5a71c1e59ff330904fc42f1e2baf5d8c"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

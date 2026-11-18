@@ -43,7 +43,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/figureya-6rhrsv2--forest|亚组分析森林图]]
+- 使用的模板：[[templates/subgroup-hazard-forest|亚组分析森林图]]
 <!-- facts:end -->
 
 ## 含义

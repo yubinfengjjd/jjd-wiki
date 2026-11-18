@@ -49,7 +49,7 @@ keywords:
 - SCP
 - GSE251716
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- figure: templates/scrna-celltype-umap
   compatibility: adaptable
   reason: 预测细胞类型可作为 UMAP 着色变量；模板不执行注释。
   prerequisites:
@@ -60,13 +60,13 @@ figure_relations:
   - methods/cell-type-annotation.md#输出
   - methods/scp-annotation-projection.md#知识关联检查
   - methods/scp-annotation-projection.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json
+  - templates/scrna-celltype-umap/spec.json
+  - templates/scrna-celltype-umap/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+- figure: templates/scrna-feature-umap-grid
   compatibility: adaptable
   reason: 用 marker 表达检查预测标签是否落在对应群，可复用特征 UMAP 网格；模板不做注释或检验。
   prerequisites:
@@ -78,13 +78,13 @@ figure_relations:
   - methods/cell-type-annotation.md#输出
   - methods/scp-annotation-projection.md#知识关联检查
   - methods/scp-annotation-projection.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json
+  - templates/scrna-feature-umap-grid/spec.json
+  - templates/scrna-feature-umap-grid/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- figure: templates/marker-bubble-dotplot
   compatibility: adaptable
   reason: 预测类型的 marker 平均表达/阳性比例可整理成点图，检查注释是否合理；模板不重算统计。
   prerequisites:
@@ -96,13 +96,13 @@ figure_relations:
   - methods/cell-type-annotation.md#输出
   - methods/scp-annotation-projection.md#知识关联检查
   - methods/scp-annotation-projection.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/verify/verify.json
+  - templates/marker-bubble-dotplot/spec.json
+  - templates/marker-bubble-dotplot/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+- figure: templates/cell-prop-flow-bar
   compatibility: adaptable
   reason: 按样本/条件统计预测类型比例，检查注释组成；模板不做统计检验。
   prerequisites:
@@ -113,8 +113,8 @@ figure_relations:
   - methods/cell-type-annotation.md#输出
   - methods/scp-annotation-projection.md#知识关联检查
   - methods/scp-annotation-projection.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json
+  - templates/cell-prop-flow-bar/spec.json
+  - templates/cell-prop-flow-bar/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -126,9 +126,9 @@ next_steps:
   - recipes/figureya-315singlerfraction
   intermediate_interface: cell-proportion-stats
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
-  - templates/2026-10-22-scp-example__fig02-ring--ring
-  - templates/2026-10-22-scp-example__fig03-pie--pie
+  - templates/cell-prop-flow-bar
+  - templates/scp-comp-ring
+  - templates/scp-comp-pie
 - direction: 方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）
   when: 筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时
   analysis_templates:
@@ -136,9 +136,9 @@ next_steps:
   - recipes/figureya-318genesetdedotplot
   intermediate_interface: deg-result-table
   viz_templates:
-  - templates/2026-10-22-scp-example__fig01-volcano--volcano
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
-  - templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap
+  - templates/scp-de-volcano
+  - templates/marker-bubble-dotplot
+  - templates/scp-group-heatmap
 - direction: 方向 3：主题基因集多算法打分（AUCell / UCell / ssGSEA）
   when: 评估乳酸化、PTM 修饰、铁死亡或代谢等自定义基因集在各亚群中的活性分布时
   analysis_templates:
@@ -146,9 +146,9 @@ next_steps:
   - recipes/figureya-275scaucell
   intermediate_interface: pathway-score-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
-  - templates/2026-10-22-scp-example__fig16-cell-density--ridge
-  - templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+  - templates/pathway-stat-violin
+  - templates/scp-expr-ridge
+  - templates/scp-feature-heatmap
 - direction: 方向 4：关键亚群拟时序轨迹与 RNA 速率演化
   when: 提取目标谱系亚群做精细亚聚类，追踪细胞状态分化路径与动态驱动基因时
   analysis_templates:
@@ -157,17 +157,17 @@ next_steps:
   - methods/dynamic-feature-analysis
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+  - templates/scrna-celltype-umap
+  - templates/scrna-feature-umap-grid
 - direction: 方向 5：细胞通讯配受体网络分析（CellChat）
   when: 解析目标亚群与免疫/基质微环境之间的旁分泌或接触式信号通路重塑时
   analysis_templates:
   - recipes/figureya-310cpdbchordgramv2
   intermediate_interface: cellchat-lr-table
   viz_templates:
-  - templates/ks-cellchat-circos-multi--circos
-  - templates/2026-10-22-scp-example__fig11-chord--chord
-  - templates/2026-10-22-scp-example__fig10-sankey--sankey
+  - templates/cellchat-circos-multi
+  - templates/scp-flow-chord
+  - templates/scp-flow-sankey
 - direction: 方向 6：关键亚群 Marker 投射 Bulk 临床队列与机器学习建模
   when: 将单细胞核心靶基因带入 TCGA/GEO Bulk 队列构建诊断/预后模型与 SHAP 解释时
   analysis_templates:
@@ -176,9 +176,9 @@ next_steps:
   - methods/shap-explanation
   intermediate_interface: candidate-biomarker-list
   viz_templates:
-  - templates/figureya-1survivalcurve-update--km-curve
-  - templates/figureya-6rhrsv2--forest
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+  - templates/km-survival-curve
+  - templates/subgroup-hazard-forest
+  - templates/shap-beeswarm
 ---
 # 细胞类型注释
 
@@ -194,26 +194,26 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/cell-type-annotation/code/analysis.R](/files/wiki/methods/cell-type-annotation/code/analysis.R) · [methods/cell-type-annotation/code/annotation_native.R](/files/wiki/methods/cell-type-annotation/code/annotation_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：recipes/figureya-315singlerfraction；可视化模版：templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow、templates/2026-10-22-scp-example__fig02-ring--ring、templates/2026-10-22-scp-example__fig03-pie--pie）
-  - **方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）**（触发条件：筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时；中间表：deg-result-table；分析模版：methods/differential-expression、recipes/figureya-318genesetdedotplot；可视化模版：templates/2026-10-22-scp-example__fig01-volcano--volcano、templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot、templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap）
-  - **方向 3：主题基因集多算法打分（AUCell / UCell / ssGSEA）**（触发条件：评估乳酸化、PTM 修饰、铁死亡或代谢等自定义基因集在各亚群中的活性分布时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-275scaucell；可视化模版：templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin、templates/2026-10-22-scp-example__fig16-cell-density--ridge、templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap）
-  - **方向 4：关键亚群拟时序轨迹与 RNA 速率演化**（触发条件：提取目标谱系亚群做精细亚聚类，追踪细胞状态分化路径与动态驱动基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/rna-velocity、methods/dynamic-feature-analysis；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap、templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap）
-  - **方向 5：细胞通讯配受体网络分析（CellChat）**（触发条件：解析目标亚群与免疫/基质微环境之间的旁分泌或接触式信号通路重塑时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/ks-cellchat-circos-multi--circos、templates/2026-10-22-scp-example__fig11-chord--chord、templates/2026-10-22-scp-example__fig10-sankey--sankey）
-  - **方向 6：关键亚群 Marker 投射 Bulk 临床队列与机器学习建模**（触发条件：将单细胞核心靶基因带入 TCGA/GEO Bulk 队列构建诊断/预后模型与 SHAP 解释时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-293plus-binaryclassificationml、methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/figureya-1survivalcurve-update--km-curve、templates/figureya-6rhrsv2--forest、templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm）
+  - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：recipes/figureya-315singlerfraction；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring、templates/scp-comp-pie）
+  - **方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）**（触发条件：筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时；中间表：deg-result-table；分析模版：methods/differential-expression、recipes/figureya-318genesetdedotplot；可视化模版：templates/scp-de-volcano、templates/marker-bubble-dotplot、templates/scp-group-heatmap）
+  - **方向 3：主题基因集多算法打分（AUCell / UCell / ssGSEA）**（触发条件：评估乳酸化、PTM 修饰、铁死亡或代谢等自定义基因集在各亚群中的活性分布时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-275scaucell；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/scp-feature-heatmap）
+  - **方向 4：关键亚群拟时序轨迹与 RNA 速率演化**（触发条件：提取目标谱系亚群做精细亚聚类，追踪细胞状态分化路径与动态驱动基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/rna-velocity、methods/dynamic-feature-analysis；可视化模版：templates/scrna-celltype-umap、templates/scrna-feature-umap-grid）
+  - **方向 5：细胞通讯配受体网络分析（CellChat）**（触发条件：解析目标亚群与免疫/基质微环境之间的旁分泌或接触式信号通路重塑时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord、templates/scp-flow-sankey）
+  - **方向 6：关键亚群 Marker 投射 Bulk 临床队列与机器学习建模**（触发条件：将单细胞核心靶基因带入 TCGA/GEO Bulk 队列构建诊断/预后模型与 SHAP 解释时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-293plus-binaryclassificationml、methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest、templates/shap-beeswarm）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：预测细胞类型可作为 UMAP 着色变量；模板不执行注释。；前提：预测标签与 UMAP 坐标来自同一查询对象；cell_id 一致。；标签不是 cluster 编号；group_levels 按注释顺序给出。；适配：导出 render-umap-groups.csv（group=predicted celltype）。
-    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
+  - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：用 marker 表达检查预测标签是否落在对应群，可复用特征 UMAP 网格；模板不做注释或检验。；前提：marker 表达长表与 UMAP 坐标同源；cell_id 一致。；每个 feature 至少有一个正表达细胞；目标类型在 group 中存在。；适配：导出 render-umap-feature-long.csv（cell_id, umap_1, umap_2, group, feature, value）。
-    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无
+  - [[templates/marker-bubble-dotplot|细胞类型 × 基因气泡点图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：预测类型的 marker 平均表达/阳性比例可整理成点图，检查注释是否合理；模板不重算统计。；前提：avg_expression 与 pct_expressed 由表达矩阵按预测标签计算；缩放方式说明。；group/feature 顺序由课题给出；target_group 只用于排序。；适配：导出 render-dotplot-long.csv（group, feature, avg_expression, pct_expressed, target_group）。
-    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json；templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/marker-bubble-dotplot/spec.json；templates/marker-bubble-dotplot/verify/verify.json；运行证据：无
+  - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计预测类型比例，检查注释组成；模板不做统计检验。；前提：每个 group 的比例归一化到 1；group 为样本/条件，celltype 为预测标签。；比例是描述性；组间差异不能由该图直接推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）。
-    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json；运行证据：无
+    - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

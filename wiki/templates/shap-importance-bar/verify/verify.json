@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:35:37.423906+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/shap-importance-bar/spec.json": "b80409b27a51604fb06468162c58647b2c312707d03cbef1aba79f79b59da64d",
+    "templates/shap-importance-bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/shap-importance-bar/code/panel.py": "b8a89bbdf194ee8696a97dabb077da4034c1fad25dd4e2aa8a29bd451363d520",
+    "templates/shap-importance-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-summary#columns": "39cb558e8dd3bc60c859c06ce104289a49996e07d1ce14a12731499526cc5424",
+    "templates/shap-importance-bar/example/shap-summary.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3"
+  },
+  "outputs": {
+    "png": "c0dc4344b1a2255c80fad4332cf6fe21526886c285911f8831f568e5ea4c5828",
+    "pdf": "ee87e0d5823c9ea58fb5dd663e9efb39c10b3ceab915a587bf440b3bffe7a147",
+    "svg": "4429915e11c0b56fbab7fc061d0eab975dd3fc2c7c9b9072e9af88519c9b78bf"
+  },
+  "environment": {
+    "executable": "D:\\anaconda\\python.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

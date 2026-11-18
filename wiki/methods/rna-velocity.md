@@ -59,7 +59,7 @@ next_steps:
   - methods/dynamic-feature-analysis
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+  - templates/scrna-celltype-umap
 ---
 # RNA 速度分析
 
@@ -75,7 +75,7 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/rna-velocity/code/analysis.R](/files/wiki/methods/rna-velocity/code/analysis.R) · [methods/rna-velocity/code/data/palette_list.rda](/files/wiki/methods/rna-velocity/code/data/palette_list.rda) · [methods/rna-velocity/code/velocity_native.R](/files/wiki/methods/rna-velocity/code/velocity_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：结合拟时序（Slingshot / Monocle）提取分支动态基因**（触发条件：依据速度向量场锁定分化起点后，正式构建拟时序轨迹并拟合动态基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/dynamic-feature-analysis；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
+  - **方向 1：结合拟时序（Slingshot / Monocle）提取分支动态基因**（触发条件：依据速度向量场锁定分化起点后，正式构建拟时序轨迹并拟合动态基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/dynamic-feature-analysis；可视化模版：templates/scrna-celltype-umap）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

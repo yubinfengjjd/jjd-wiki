@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-04T04:20:45.230536+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/scrna-celltype-umap/spec.json": "eec04f55b6a827d34ff734a79cb61727d1c7bb0182af5c53512aca9f4b2f92ae",
+    "templates/scrna-celltype-umap/code/render.R": "ebe66a007345c5951b7ca6bf4a83193fc72eda3f61a096141fb63f9578247981",
+    "templates/scrna-celltype-umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/scrna-celltype-umap/code/core.R": "af484db9c46cbfbe285c8c0e65f52e3e6747c968b544b8d55eac1eaaa04784e2",
+    "templates/scrna-celltype-umap/code/panel.R": "ac6a6de3dd47964454ad8000536935039807f48b924f302055402ace1af0d067",
+    "templates/scrna-celltype-umap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-umap-groups#columns": "cf1987a23260380478ab2ab2c122bbe1723a19182d057af1a701a70ca3a34a7f",
+    "templates/scrna-celltype-umap/example/estimated_data.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+    "templates/scrna-celltype-umap/example/render-umap-groups.csv": "6b7b44ffa48c4e6a2e85153128104b997ed8888e6a79784ed8cd3ba068f4207a",
+    "templates/scrna-celltype-umap/example/style.json": "2f5685120af86b20f644984f823316f1ef5322a12599ddc6e8fb10ddeac20ea2"
+  },
+  "outputs": {
+    "png": "2c4563641e59931e99f069e6bbb8e74868dbba35ec57c3d0e605b17a0342ed7f",
+    "pdf": "afa764e88660318298f3a8d5cf564b3acfbaa5c2e173efdbbad2b1717df3410b",
+    "svg": "024f3f67bf63f01e60d5aca1119de010a82ad2f75c705d355c34100c3b75fcaa"
+  },
+  "environment": {
+    "executable": "<ENV_ROOT>/R-4.5.0/bin/x64/Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

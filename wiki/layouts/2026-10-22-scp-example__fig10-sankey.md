@@ -14,9 +14,9 @@ panels:
 chart_types:
 - sankey
 templates:
-- 2026-10-22-scp-example__fig10-sankey--sankey
+- scp-flow-sankey
 template_panels:
-  2026-10-22-scp-example__fig10-sankey--sankey:
+  scp-flow-sankey:
   - A
 favorite: false
 keywords:
@@ -41,7 +41,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、sankey、composition
 - 图型：[[chart-types/sankey]]
-- 面板：[[templates/2026-10-22-scp-example__fig10-sankey--sankey|分组流向桑基图]]（A）
+- 面板：[[templates/scp-flow-sankey|分组流向桑基图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -66,14 +66,14 @@ keywords:
 
 日期 2026-10-22；查过 [[methods/scp-visualization-interface]]、[[methods/scp-standard-workflow]]、[[methods/scp-annotation-projection]]、[[methods/scp-de-enrichment-dynamic]] 与 sankey 图型页。
 
-- 模板：[[templates/2026-10-22-scp-example__fig10-sankey--sankey|分组流向桑基图]] 从本页 A panel 拆出；读取 `render-cell-linkage`，固定示例与来源逐字节一致。
+- 模板：[[templates/scp-flow-sankey|分组流向桑基图]] 从本页 A panel 拆出；读取 `render-cell-linkage`，固定示例与来源逐字节一致。
 - 方法关系：[[methods/scp-visualization-interface]] 的 `CellStatPlot(plot_type="sankey")` 是同一原生实现，已登记 adaptable；CellType/Phase 由标准流程/注释/细胞周期方法产生，需在课题内导出长表，模板不重算。
 - 一图多方法：任何产生两个以上互斥分类维度的细胞级标签的方法都可驱动模板。
 - 验证范围：表半与上游 `make_long()` 一致；固定 8×6@150 与来源逐字节一致；adaptive 与非法输入已测；未验证多 split、NA 类别与真实课题流水线。
 
 ## 使用记录
 
-2026-10-22 从 SCP v0.5.6 `CellStatPlot(plot_type="sankey")` 的原生输出入库；A panel 单 panel；模板 `2026-10-22-scp-example__fig10-sankey--sankey` 已建，固定回放与来源逐字节一致（SHA256 `7b16c620…`）。
+2026-10-22 从 SCP v0.5.6 `CellStatPlot(plot_type="sankey")` 的原生输出入库；A panel 单 panel；模板 `scp-flow-sankey` 已建，固定回放与来源逐字节一致（SHA256 `7b16c620…`）。
 
 <!-- user:start -->
 <!-- user:end -->

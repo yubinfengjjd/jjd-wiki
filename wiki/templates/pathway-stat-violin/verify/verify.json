@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:09.972327+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/pathway-stat-violin/spec.json": "4bc39614ce4ba43a9c42262fe005e342baef95145905e7fa49cdd0a787457c3d",
+    "templates/pathway-stat-violin/code/render.R": "ad91d13e007fefb784d6a9ef6b4f15480b04f2412d54df23023fa8321f88b527",
+    "templates/pathway-stat-violin/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "templates/pathway-stat-violin/code/core.R": "8ae67f406c489e6882e1b64b36d4ed004d1f0dfd342a3ed22ea902fa5bcc9ef7",
+    "templates/pathway-stat-violin/code/panel.R": "4f08a53989127053d4fa588675b043eb0e9c3d7fb7c0bfb5bcc1b6b9354c4132",
+    "templates/pathway-stat-violin/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-grouped-values#columns": "a6c4f9415f7187efd79577cc42833d9ec5302dce9a62cc09aa4a67a54d073fe3",
+    "interfaces/render-group-summaries#columns": "19fcd1ae1563ca2c73a76719210064984106ec405b49c220f533ebbe8d54cb85",
+    "templates/pathway-stat-violin/example/estimated_data.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+    "templates/pathway-stat-violin/example/estimated_summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+    "templates/pathway-stat-violin/example/render-group-summaries.csv": "50e81c6da4743a902dec007b829077439389a22732c179d8c8d490a313418957",
+    "templates/pathway-stat-violin/example/render-grouped-values.csv": "9bf3f568af2a5bdffdb5f3a01a223af929ebba82dd483da3bbf86c649b78acca",
+    "templates/pathway-stat-violin/example/style.json": "aa6cc3fa4d8d7cb9a57c59bef09fe991aa0eca526c62dd81d37d7ef3cf333597"
+  },
+  "outputs": {
+    "png": "d5ef48e32901821917ebf3fa5cdd9d74db0da0ce77e3d80907ceb11dfc95eda5",
+    "pdf": "f32c36783b5c32e469ac46e0240fdcaf4a23331074067ac2269baf75c4373092",
+    "svg": "0a2ecafeb1574674fd73366d630a1fd100e30906492431777646e16b006bf1a5"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

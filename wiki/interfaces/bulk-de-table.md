@@ -24,7 +24,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]
+- 使用的模板：[[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]
 <!-- facts:end -->
 
 ## 含义

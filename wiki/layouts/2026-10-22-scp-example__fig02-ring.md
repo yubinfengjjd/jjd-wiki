@@ -19,9 +19,9 @@ panels:
 chart_types:
 - ring
 templates:
-- 2026-10-22-scp-example__fig02-ring--ring
+- scp-comp-ring
 template_panels:
-  2026-10-22-scp-example__fig02-ring--ring:
+  scp-comp-ring:
   - A
 favorite: false
 ---
@@ -41,7 +41,7 @@ favorite: false
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、ring、composition
 - 图型：[[chart-types/ring]]
-- 面板：[[templates/2026-10-22-scp-example__fig02-ring--ring|分组构成同心环图]]（A）
+- 面板：[[templates/scp-comp-ring|分组构成同心环图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

@@ -19,9 +19,9 @@ panels:
 chart_types:
 - volcano
 templates:
-- 2026-10-22-scp-example__fig01-volcano--volcano
+- scp-de-volcano
 template_panels:
-  2026-10-22-scp-example__fig01-volcano--volcano:
+  scp-de-volcano:
   - A
 favorite: false
 ---
@@ -41,7 +41,7 @@ favorite: false
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、volcano、DE
 - 图型：[[chart-types/volcano]]
-- 面板：[[templates/2026-10-22-scp-example__fig01-volcano--volcano|差异表达火山图]]（A）
+- 面板：[[templates/scp-de-volcano|差异表达火山图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

@@ -21,7 +21,7 @@ cite:
 - 'scikit-learn: Common pitfalls and recommended practices. https://scikit-learn.org/stable/common_pitfalls.html'
 favorite: false
 figure_relations:
-- figure: templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter
+- figure: templates/pred-density-scatter
   compatibility: adaptable
   reason: 可用本绘图模板表达真实预测的配对分布，但需上游明确准备RGB/边缘表。
   prerequisites:
@@ -31,13 +31,13 @@ figure_relations:
   evidence:
   - methods/regression-resampling-evaluation.md#输入
   - layouts/2026-10-19-regression-stability__fig03-density-panel.md#适用
-  - templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/spec.json
-  - templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json
+  - templates/pred-density-scatter/spec.json
+  - templates/pred-density-scatter/verify/function-verification.json
   verification:
     state: not_run
     scope: 本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。
     evidence: []
-- figure: templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+- figure: templates/resampling-metric-box
   compatibility: adaptable
   reason: 逐折指标可用于该单指标分组分布，需上游按已确认规则准备同源点与箱线摘要。
   prerequisites:
@@ -47,8 +47,8 @@ figure_relations:
   evidence:
   - methods/regression-resampling-evaluation.md#输出
   - layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md#适用
-  - templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/spec.json
-  - templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/verify/function-verification.json
+  - templates/resampling-metric-box/spec.json
+  - templates/resampling-metric-box/verify/function-verification.json
   verification:
     state: not_run
     scope: 本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。
@@ -92,12 +92,12 @@ implementations:
 - 代码模板：[methods/regression-resampling-evaluation/code/summarize_predictions.py](/files/wiki/methods/regression-resampling-evaluation/code/summarize_predictions.py)
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter|密度散点与边缘分布]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。
+  - [[templates/pred-density-scatter|密度散点与边缘分布]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。
     - 依据：可用本绘图模板表达真实预测的配对分布，但需上游明确准备RGB/边缘表。；前提：连续结局且同一原始量纲；明确样本、模型、重复/折身份。；需先确定密度/边缘分布策略与注释统计，不用估读颜色倒推真实频数。；适配：课题内准备坐标/RGB/边缘条及真实注释；不从估读点重建频数，密度算法仍需确认。
-    - 关系证据：methods/regression-resampling-evaluation.md#输入；layouts/2026-10-19-regression-stability__fig03-density-panel.md#适用；templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/spec.json；templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/verify/function-verification.json；运行证据：无
-  - [[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。
+    - 关系证据：methods/regression-resampling-evaluation.md#输入；layouts/2026-10-19-regression-stability__fig03-density-panel.md#适用；templates/pred-density-scatter/spec.json；templates/pred-density-scatter/verify/function-verification.json；运行证据：无
+  - [[templates/resampling-metric-box|箱线、散点与均值]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：本轮只验证模板绘图与合成规模；未验证真实方法→准备表→出图流水线。
     - 依据：逐折指标可用于该单指标分组分布，需上游按已确认规则准备同源点与箱线摘要。；前提：同一验证方案、指标定义与单位；明确折间相关性。；按已确认的箱体/须/均值规则产生一致结果，横向抖动仅作展示。；适配：课题内选定指标、明确采样单位/须规则、整理同源points/summaries；不自动新写统计算法。
-    - 关系证据：methods/regression-resampling-evaluation.md#输出；layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md#适用；templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/spec.json；templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/verify/function-verification.json；运行证据：无
+    - 关系证据：methods/regression-resampling-evaluation.md#输出；layouts/2026-10-19-regression-stability__fig04-boxplot-panel.md#适用；templates/resampling-metric-box/spec.json；templates/resampling-metric-box/verify/function-verification.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
@@ -179,8 +179,8 @@ implementations:
 
 | 图模板 | 模板读取接口 | 对应数据 | 仍需适配 |
 |---|---|---|---|
-| [[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter|密度散点与边缘分布]] | `render-scatter-rgb`、`render-marginal-bars` | 方法输入中的逐样本真实值/验证预测 | 明确颜色密度含义与算法、边缘分布及真实注释后准备绘图表；不得沿用估读颜色推断真实频数。 |
-| [[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值]] | `render-category-points`、`render-box-summaries` | 方法输出中的逐折指标，选择一个实际指标 | 核对验证单位和折间相关性；明确箱体/须规则，准备同源点和摘要，抖动只作展示。 |
+| [[templates/pred-density-scatter|密度散点与边缘分布]] | `render-scatter-rgb`、`render-marginal-bars` | 方法输入中的逐样本真实值/验证预测 | 明确颜色密度含义与算法、边缘分布及真实注释后准备绘图表；不得沿用估读颜色推断真实频数。 |
+| [[templates/resampling-metric-box|箱线、散点与均值]] | `render-category-points`、`render-box-summaries` | 方法输出中的逐折指标，选择一个实际指标 | 核对验证单位和折间相关性；明确箱体/须规则，准备同源点和摘要，抖动只作展示。 |
 
 两张绘图模板已由作者确认可用，估读/合成示例仅说明画法；真实方法→准备表→绘图的课题流水线尚未联调。可查看模板代码并复制到课题，缺上游算法仍需先与作者确认，不能以格式适配名义补写。
 

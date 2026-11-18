@@ -82,7 +82,7 @@ favorite: false
 
 ## 知识关联检查
 
-2026-10-27：查了同图型模板与方法页。同图型模板：[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]] · [[templates/2026-10-22-scp-example__fig09-bar--bar|分组计数柱图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
+2026-10-27：查了同图型模板与方法页。同图型模板：[[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]] · [[templates/scp-count-bar|分组计数柱图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
 

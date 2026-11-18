@@ -39,7 +39,7 @@ keywords:
 - cluster
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- figure: templates/scrna-celltype-umap
   compatibility: adaptable
   reason: cluster 标签可作为 UMAP 着色变量；模板不聚类。
   prerequisites:
@@ -51,13 +51,13 @@ figure_relations:
   - methods/scrna-marker-annotation.md#知识关联检查
   - methods/scrna-marker-annotation.md#输出
   - layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md#适用
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json
+  - templates/scrna-celltype-umap/spec.json
+  - templates/scrna-celltype-umap/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+- figure: templates/cell-prop-flow-bar
   compatibility: adaptable
   reason: 按样本/条件统计 cluster 比例，检查组成；模板不做聚类或检验。
   prerequisites:
@@ -69,8 +69,8 @@ figure_relations:
   - methods/scrna-marker-annotation.md#知识关联检查
   - methods/scrna-marker-annotation.md#输出
   - layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md#适用
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json
+  - templates/cell-prop-flow-bar/spec.json
+  - templates/cell-prop-flow-bar/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -91,12 +91,12 @@ figure_relations:
 - 代码模板：[methods/cell-clustering/code/clustering.R](/files/wiki/methods/cell-clustering/code/clustering.R)
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：cluster 标签可作为 UMAP 着色变量；模板不聚类。；前提：celltype 标签与 UMAP 坐标来自同一 Seurat 对象；cell_id 一致。；group_levels 按注释顺序给出；不得把 cluster 编号直接当 celltype。；适配：导出 render-umap-groups.csv（group=cluster）；cluster 编号不是细胞类型。
-    - 关系证据：methods/cell-clustering.md#输出；methods/scrna-marker-annotation.md#知识关联检查；methods/scrna-marker-annotation.md#输出；layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md#适用；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/cell-clustering.md#输出；methods/scrna-marker-annotation.md#知识关联检查；methods/scrna-marker-annotation.md#输出；layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md#适用；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
+  - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计 cluster 比例，检查组成；模板不做聚类或检验。；前提：每个 group 的比例归一化到 1；group/celltype 完整，无缺组。；流带仅作视觉插值，不是统计估计或细胞轨迹。；适配：导出 render-cell-proportions.csv（group=样本, celltype=cluster, proportion）。
-    - 关系证据：methods/cell-clustering.md#输出；methods/scrna-marker-annotation.md#知识关联检查；methods/scrna-marker-annotation.md#输出；layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md#适用；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json；运行证据：无
+    - 关系证据：methods/cell-clustering.md#输出；methods/scrna-marker-annotation.md#知识关联检查；methods/scrna-marker-annotation.md#输出；layouts/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow.md#适用；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

@@ -19,9 +19,9 @@ panels:
 chart_types:
 - pie
 templates:
-- 2026-10-22-scp-example__fig03-pie--pie
+- scp-comp-pie
 template_panels:
-  2026-10-22-scp-example__fig03-pie--pie:
+  scp-comp-pie:
   - A
 favorite: false
 ---
@@ -41,7 +41,7 @@ favorite: false
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、pie、composition
 - 图型：[[chart-types/pie]]
-- 面板：[[templates/2026-10-22-scp-example__fig03-pie--pie|分组构成饼图]]（A）
+- 面板：[[templates/scp-comp-pie|分组构成饼图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -58,7 +58,7 @@ CellStatPlot(pancreas_sub, stat.by = "Phase", group.by = "CellType", plot_type =
 # ggsave 8 x 6 in, 150 dpi
 ```
 
-模板 [[templates/2026-10-22-scp-example__fig03-pie--pie|饼图]] 使用同一原生分支；固定 8×6 输出与 `source/fig03.png` 逐字节一致。本条目只覆盖一个逻辑 panel；SCP 原函数的多图组合不进入 Wiki。
+模板 [[templates/scp-comp-pie|饼图]] 使用同一原生分支；固定 8×6 输出与 `source/fig03.png` 逐字节一致。本条目只覆盖一个逻辑 panel；SCP 原函数的多图组合不进入 Wiki。
 
 ## 不适用
 
@@ -76,7 +76,7 @@ CellStatPlot(pancreas_sub, stat.by = "Phase", group.by = "CellType", plot_type =
 - 候选方法：[[methods/scp-standard-workflow]] / [[methods/scp-annotation-projection]] 产出 celltype/cluster；[[methods/scp-cellqc-doublet]] 可用 QC Pass/Fail 作为 stat；[[methods/scp-de-enrichment-dynamic]] 产出分组/富集结果，但本图只做组成展示。它们都需要在课题内整理成 `render-cell-metadata`（cell, group, stat），模板不重算分析。
 - 一方法多图：同一份细胞级元数据可驱动 pie/rose/trend/area/dot 五种结构编码；它们不互相替代，也不替代 fig04 的堆叠/流带。
 - 一图多方法：任何产生 `group × stat` 细胞级标签的方法都可驱动本图，不限于 SCP。
-- 结构关系：模板 [[templates/2026-10-22-scp-example__fig03-pie--pie|饼图]] 已从 A panel 拆出；固定示例逐字节一致；方法页 [[methods/scp-visualization-interface]] 已登记 `adaptable` 关系，验证状态 example。来源 layout 只作 evidence。
+- 结构关系：模板 [[templates/scp-comp-pie|饼图]] 已从 A panel 拆出；固定示例逐字节一致；方法页 [[methods/scp-visualization-interface]] 已登记 `adaptable` 关系，验证状态 example。来源 layout 只作 evidence。
 - 验证范围：source 由上游函数生成；复刻/模板固定 8×6 输出逐字节一致；机械 QA 0 failure；agent 目视与哈希记录见条目 `qa_report.md`。不证明任意课题数据或统计有效。
 - 边界：不复刻多图整组；不改变计数/比例计算或分组定义；不把示例数据当真实结论。
 

@@ -14,9 +14,9 @@ panels:
 chart_types:
 - boxplot
 templates:
-- 2026-10-19-regression-stability__fig04-boxplot-panel--boxplot
+- resampling-metric-box
 template_panels:
-  2026-10-19-regression-stability__fig04-boxplot-panel--boxplot:
+  resampling-metric-box:
   - A
 favorite: false
 signedoff_version: 1
@@ -43,7 +43,7 @@ keywords:
 - 标签：机器学习、实验统计
 - 关键词：regression、cross-validation、回归评估、模型比较、折外预测
 - 图型：[[chart-types/boxplot]]
-- 面板：[[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值]]（A）
+- 面板：[[templates/resampling-metric-box|箱线、散点与均值]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -72,7 +72,7 @@ keywords:
 选定范围为一个逻辑panel。关联 [[methods/regression-resampling-evaluation]]；历史重复指标整图已归档，模型/指标变化由单 panel 函数参数表达。本轮已建箱线单panel模板并回放，作者已确认模板为ready；来源与模板阶段分别记录。
 
 
-本轮待办：[[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot]] 已完成绘图代码、接口、回放及复用检查，作者已确认并标为ready。来源状态保留pending_template，完整模板覆盖已完成，不再列agent待办；无整图交付。
+本轮待办：[[templates/resampling-metric-box]] 已完成绘图代码、接口、回放及复用检查，作者已确认并标为ready。来源状态保留pending_template，完整模板覆盖已完成，不再列agent待办；无整图交付。
 
 <!-- user:start -->
 <!-- user:end -->

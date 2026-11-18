@@ -46,7 +46,7 @@ keywords:
 - RunDynamicFeatures
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+- figure: templates/scrna-feature-umap-grid
   compatibility: adaptable
   reason: 动态特征值可作为 feature 长表画在 UMAP 上；模板只画值，不拟合 GAM。
   prerequisites:
@@ -57,13 +57,13 @@ figure_relations:
   - methods/dynamic-feature-analysis.md#输出
   - methods/scp-de-enrichment-dynamic.md#知识关联检查
   - methods/scp-de-enrichment-dynamic.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json
+  - templates/scrna-feature-umap-grid/spec.json
+  - templates/scrna-feature-umap-grid/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+- figure: templates/pathway-stat-violin
   compatibility: adaptable
   reason: 动态特征或 pseudotime 按 cluster/lineage 分组的分布可用分组小提琴展示；模板不做轨迹或检验。
   prerequisites:
@@ -74,8 +74,8 @@ figure_relations:
   - methods/dynamic-feature-analysis.md#输出
   - methods/scp-trajectory-velocity.md#知识关联检查
   - methods/scp-trajectory-velocity.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json
+  - templates/pathway-stat-violin/spec.json
+  - templates/pathway-stat-violin/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -87,7 +87,7 @@ next_steps:
   - methods/gene-set-enrichment
   intermediate_interface: pathway-score-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+  - templates/marker-bubble-dotplot
 - direction: 方向 2：核心动态驱动基因筛选与临床验证
   when: 提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时
   analysis_templates:
@@ -95,7 +95,7 @@ next_steps:
   - methods/shap-explanation
   intermediate_interface: candidate-biomarker-list
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+  - templates/pathway-stat-violin
 ---
 # 拟时序动态特征分析
 
@@ -111,16 +111,16 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/dynamic-feature-analysis/code/analysis.R](/files/wiki/methods/dynamic-feature-analysis/code/analysis.R) · [methods/dynamic-feature-analysis/code/dynamic_native.R](/files/wiki/methods/dynamic-feature-analysis/code/dynamic_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：动态表达基因簇的通路富集注释**（触发条件：对拟时序早/中/晚期波峰基因簇分别做 GO/KEGG 功能富集时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment；可视化模版：templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot）
-  - **方向 2：核心动态驱动基因筛选与临床验证**（触发条件：提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin）
+  - **方向 1：动态表达基因簇的通路富集注释**（触发条件：对拟时序早/中/晚期波峰基因簇分别做 GO/KEGG 功能富集时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment；可视化模版：templates/marker-bubble-dotplot）
+  - **方向 2：核心动态驱动基因筛选与临床验证**（触发条件：提取沿疾病演化单调变化的关键基因作为候选标志物进入临床建模时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/pathway-stat-violin）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：动态特征值可作为 feature 长表画在 UMAP 上；模板只画值，不拟合 GAM。；前提：值与 UMAP 坐标来自同一细胞集合；cell_id 一致。；value 的含义/单位明确；无 NA。；适配：导出 render-umap-feature-long.csv（feature=基因/特征, value=表达或拟合值）。
-    - 关系证据：methods/dynamic-feature-analysis.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/dynamic-feature-analysis.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无
+  - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：动态特征或 pseudotime 按 cluster/lineage 分组的分布可用分组小提琴展示；模板不做轨迹或检验。；前提：同一 pseudotime/lineage 定义；celltype/group 标签一致。；p/mean/SD 若展示，由分析阶段预计算；细胞级 p 不能当样本级推断。；适配：导出 render-grouped-values.csv（group=cluster/lineage, value=特征值/pseudotime）。
-    - 关系证据：methods/dynamic-feature-analysis.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json；运行证据：无
+    - 关系证据：methods/dynamic-feature-analysis.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/pathway-stat-violin/spec.json；templates/pathway-stat-violin/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

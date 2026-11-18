@@ -9,17 +9,17 @@ picks:
   note: Step 2A：Bulk 差异表达分析（limma/DESeq2）
 - id: recipes/figureya-17wgcna-heatmap
   note: Step 2B：WGCNA 共表达模块筛选
-- id: templates/figureya-59volcanov2--volcano
+- id: templates/bulk-de-volcano
   note: Bulk 分级着色火山图（L2）
-- id: templates/2026-10-22-scp-example__fig12-venn--venn
+- id: templates/set-venn
   note: Step 3：DEG × WGCNA × 主题基因集 Venn 交集（L2）
 - id: recipes/figureya-293plus-binaryclassificationml
   note: Step 4：101 种机器学习算法组合筛选与多队列评估
 - id: methods/shap-explanation
   note: Step 5：SHAP 全局与个体可解释性分析
-- id: templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+- id: templates/shap-beeswarm
   note: SHAP 蜂群图（L2）
-- id: templates/figureya-1survivalcurve-update--km-curve
+- id: templates/km-survival-curve
   note: Step 6：高低风险组 KM 生存曲线（L2）
 - id: recipes/figureya-30nomogram-update
   note: 临床列线图、校准曲线与 DCA 净获益
@@ -65,7 +65,7 @@ steps:
   templates:
   - recipes/figureya-59plus-geo2deg
   - recipes/figureya-17wgcna-heatmap
-  - templates/figureya-59volcanov2--volcano
+  - templates/bulk-de-volcano
   - recipes/figureya-60gsea-clusterprofilerv2
   next_steps:
   - bulk-step-3-intersection
@@ -81,8 +81,8 @@ steps:
   templates:
   - recipes/figureya-112venn
   - recipes/figureya-53ppimodule
-  - templates/2026-10-22-scp-example__fig12-venn--venn
-  - templates/2026-10-22-scp-example__fig13-upset--upset
+  - templates/set-venn
+  - templates/set-upset
   next_steps:
   - bulk-step-4-ml
 - id: bulk-step-4-ml
@@ -115,9 +115,9 @@ steps:
   interface: shap-samples
   templates:
   - methods/shap-explanation
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+  - templates/shap-beeswarm
+  - templates/shap-importance-bar
+  - templates/shap-radial-bar
   next_steps:
   - bulk-step-6-clinical-eval
 - id: bulk-step-6-clinical-eval
@@ -130,8 +130,8 @@ steps:
   - model-prediction-shap
   interface: model-prediction-shap
   templates:
-  - templates/figureya-1survivalcurve-update--km-curve
-  - templates/figureya-6rhrsv2--forest
+  - templates/km-survival-curve
+  - templates/subgroup-hazard-forest
   - recipes/figureya-85timeroc
   - recipes/figureya-30nomogram-update
   - recipes/figureya-33dca-update
@@ -155,12 +155,12 @@ steps:
 | [[recipes/figureya-203combat|跨平台表达谱批次校正]] | L1 | draft · 运行 fail | Step 1：多队列去批次（ComBat）与 PCA 检查 |
 | [[recipes/figureya-59plus-geo2deg|GEO芯片差异表达与火山图]] | L1 | ready · 运行 pass | Step 2A：Bulk 差异表达分析（limma/DESeq2） |
 | [[recipes/figureya-17wgcna-heatmap|WGCNA模块基因表达热图]] | L1 | ready · 运行 pass | Step 2B：WGCNA 共表达模块筛选 |
-| [[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]] | L2 | ready · 可用 | Bulk 分级着色火山图（L2） |
-| [[templates/2026-10-22-scp-example__fig12-venn--venn|多集合交集维恩图]] | L2 | ready · 可用 | Step 3：DEG × WGCNA × 主题基因集 Venn 交集（L2） |
+| [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]] | L2 | ready | Bulk 分级着色火山图（L2） |
+| [[templates/set-venn|多集合交集维恩图]] | L2 | ready | Step 3：DEG × WGCNA × 主题基因集 Venn 交集（L2） |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | Step 4：101 种机器学习算法组合筛选与多队列评估 |
-| [[methods/shap-explanation|基于 SHAP 的模型解释]] | L2 | ready · 可用 | Step 5：SHAP 全局与个体可解释性分析 |
-| [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]] | L2 | ready · 可用 | SHAP 蜂群图（L2） |
-| [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]] | L2 | ready · 可用 | Step 6：高低风险组 KM 生存曲线（L2） |
+| [[methods/shap-explanation|基于 SHAP 的模型解释]] | note | ready | Step 5：SHAP 全局与个体可解释性分析 |
+| [[templates/shap-beeswarm|SHAP 蜂群图]] | L2 | ready | SHAP 蜂群图（L2） |
+| [[templates/km-survival-curve|KM 生存曲线与风险表]] | L2 | ready | Step 6：高低风险组 KM 生存曲线（L2） |
 | [[recipes/figureya-30nomogram-update|Cox/Logistic 列线图与校准曲线]] | L1 | ready · 运行 pass | 临床列线图、校准曲线与 DCA 净获益 |
 <!-- facts:end -->
 
@@ -169,11 +169,11 @@ steps:
 | 阶段 | 当前目标 | 关键决策依据（When） | 标准中间表 | 推荐模版与配方 |
 |---|---|---|---|---|
 | **Step 1** | 表达标准化与多队列去批次 | 跨平台/跨批次表达量分布存在偏移 | — | [[recipes/figureya-203combat]] · [[recipes/figureya-23count2tpm]] |
-| **Step 2** | 差异表达与共表达网络 | 筛选显著 DEG 并用 WGCNA 锁定关键临床表型模块 | `deg-result-table` | [[recipes/figureya-59plus-geo2deg]] · [[recipes/figureya-17wgcna-heatmap]] · [[templates/figureya-59volcanov2--volcano]] |
-| **Step 3** | 多来源交集收敛 | 对 DEG、WGCNA 模块基因及专题基因集取交集 | `candidate-biomarker-list` | [[templates/2026-10-22-scp-example__fig12-venn--venn]] · [[templates/2026-10-22-scp-example__fig13-upset--upset]] · [[recipes/figureya-53ppimodule]] |
+| **Step 2** | 差异表达与共表达网络 | 筛选显著 DEG 并用 WGCNA 锁定关键临床表型模块 | `deg-result-table` | [[recipes/figureya-59plus-geo2deg]] · [[recipes/figureya-17wgcna-heatmap]] · [[templates/bulk-de-volcano]] |
+| **Step 3** | 多来源交集收敛 | 对 DEG、WGCNA 模块基因及专题基因集取交集 | `candidate-biomarker-list` | [[templates/set-venn]] · [[templates/set-upset]] · [[recipes/figureya-53ppimodule]] |
 | **Step 4** | 机器学习特征筛选与建模 | 仅在训练集内执行 LASSO/RF/SVM/101 种组合并冻结模型 | `model-prediction-shap` | [[recipes/figureya-293plus-binaryclassificationml]] · [[recipes/figureya-293machinelearning]] · [[recipes/figureya-31lasso-update]] |
-| **Step 5** | 模型可解释性拆解 | 展示特征全局重要性及高/低表达对预测风险的方向 | `shap-samples` | [[methods/shap-explanation]] · [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm]] · [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar]] |
-| **Step 6** | 临床效用与机制延展 | 外部队列 KM/Time-ROC/Nomogram/DCA + 免疫浸润与药物敏感性 | `model-prediction-shap` | [[templates/figureya-1survivalcurve-update--km-curve]] · [[templates/figureya-6rhrsv2--forest]] · [[recipes/figureya-30nomogram-update]] · [[recipes/figureya-56immune-inflitrationv3]] |
+| **Step 5** | 模型可解释性拆解 | 展示特征全局重要性及高/低表达对预测风险的方向 | `shap-samples` | [[methods/shap-explanation]] · [[templates/shap-beeswarm]] · [[templates/shap-importance-bar]] |
+| **Step 6** | 临床效用与机制延展 | 外部队列 KM/Time-ROC/Nomogram/DCA + 免疫浸润与药物敏感性 | `model-prediction-shap` | [[templates/km-survival-curve]] · [[templates/subgroup-hazard-forest]] · [[recipes/figureya-30nomogram-update]] · [[recipes/figureya-56immune-inflitrationv3]] |
 
 ## 注意
 

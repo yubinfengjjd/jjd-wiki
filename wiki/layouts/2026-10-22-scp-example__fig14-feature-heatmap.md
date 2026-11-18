@@ -14,9 +14,9 @@ panels:
 chart_types:
 - heatmap
 templates:
-- 2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+- scp-feature-heatmap
 template_panels:
-  2026-10-22-scp-example__fig14-feature-heatmap--heatmap:
+  scp-feature-heatmap:
   - A
 favorite: false
 keywords:
@@ -41,7 +41,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、heatmap、feature
 - 图型：[[chart-types/heatmap]]
-- 面板：[[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap|特征表达热图]]（A）
+- 面板：[[templates/scp-feature-heatmap|特征表达热图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -65,14 +65,14 @@ keywords:
 
 日期 2026-10-22；查过 [[methods/scp-visualization-interface]]、[[methods/scp-de-enrichment-dynamic]]、[[methods/scp-standard-workflow]]、[[methods/scp-annotation-projection]] 与 heatmap 图型页。
 
-- 模板：[[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap|特征表达热图]] 从本页 A panel 拆出；读取 `render-feature-heatmap`，固定示例与来源逐字节一致。
+- 模板：[[templates/scp-feature-heatmap|特征表达热图]] 从本页 A panel 拆出；读取 `render-feature-heatmap`，固定示例与来源逐字节一致。
 - 方法关系：[[methods/scp-visualization-interface]] 的 `FeatureHeatmap()` 是同一原生实现，已登记 adaptable；DE 基因由 `RunDEtest`/marker 方法产生，CellType 由标准流程/注释方法产生，需在课题内导出长表，模板不重算。
 - 一图多方法：任何产生 feature×cell 表达矩阵与分组注释的方法都可驱动模板。
 - 验证范围：表半矩阵/注释与上游一致；固定 8×6@150 与来源逐字节一致；adaptive 与非法输入已测；未验证 split/add_dot 等分支、完整基因集与真实课题流水线。
 
 ## 使用记录
 
-2026-10-22 从 SCP v0.5.6 `FeatureHeatmap()` 的原生输出入库；A panel 单 panel；模板 `2026-10-22-scp-example__fig14-feature-heatmap--heatmap` 已建，固定回放与来源逐字节一致（SHA256 `6a614cfd…`）。
+2026-10-22 从 SCP v0.5.6 `FeatureHeatmap()` 的原生输出入库；A panel 单 panel；模板 `scp-feature-heatmap` 已建，固定回放与来源逐字节一致（SHA256 `6a614cfd…`）。
 
 <!-- user:start -->
 <!-- user:end -->

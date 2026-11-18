@@ -27,4 +27,4 @@ title: volcano
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig01-volcano--volcano|volcano · 单panel：Volcano SCP v0.5.6 示例数据图型]]
+- [[templates/scp-de-volcano|volcano · 单panel：Volcano SCP v0.5.6 示例数据图型]]

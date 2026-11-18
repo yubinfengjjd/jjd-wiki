@@ -46,7 +46,7 @@ keywords:
 - 差异基因
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- figure: templates/marker-bubble-dotplot
   compatibility: adaptable
   reason: DE 选出的 marker 可整理成 group/feature/avg_expression/pct_expressed，复用气泡点图；模板不重算
     DE。
@@ -59,13 +59,13 @@ figure_relations:
   - methods/differential-expression.md#输出
   - methods/scp-de-enrichment-dynamic.md#知识关联检查
   - methods/scp-de-enrichment-dynamic.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/verify/verify.json
+  - templates/marker-bubble-dotplot/spec.json
+  - templates/marker-bubble-dotplot/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-scp-example__fig01-volcano--volcano
+- figure: templates/scp-de-volcano
   compatibility: adaptable
   reason: DE 表可整理成 render-de-results，火山图模板消费该表；模板不重跑检验。
   prerequisites:
@@ -76,8 +76,8 @@ figure_relations:
   - methods/differential-expression.md#输出
   - methods/scp-de-enrichment-dynamic.md#知识关联检查
   - methods/scp-de-enrichment-dynamic.md#输出
-  - templates/2026-10-22-scp-example__fig01-volcano--volcano/spec.json
-  - templates/2026-10-22-scp-example__fig01-volcano--volcano/verify/verify.json
+  - templates/scp-de-volcano/spec.json
+  - templates/scp-de-volcano/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -91,16 +91,16 @@ next_steps:
   - recipes/figureya-52goplot
   intermediate_interface: pathway-score-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+  - templates/marker-bubble-dotplot
 - direction: 方向 2：火山图、气泡图与分组表达热图渲染
   when: 需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时
   analysis_templates:
   - recipes/figureya-59volcanov2
   intermediate_interface: deg-result-table
   viz_templates:
-  - templates/2026-10-22-scp-example__fig01-volcano--volcano
-  - templates/figureya-59volcanov2--volcano
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+  - templates/scp-de-volcano
+  - templates/bulk-de-volcano
+  - templates/marker-bubble-dotplot
 - direction: 方向 3：多组学交集与机器学习候选标志物筛选
   when: 将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时
   analysis_templates:
@@ -109,8 +109,8 @@ next_steps:
   - recipes/figureya-293plus-binaryclassificationml
   intermediate_interface: candidate-biomarker-list
   viz_templates:
-  - templates/2026-10-22-scp-example__fig12-venn--venn
-  - templates/2026-10-22-scp-example__fig13-upset--upset
+  - templates/set-venn
+  - templates/set-upset
 ---
 # 差异表达分析
 
@@ -126,17 +126,17 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/gene-set-enrichment|基因集富集分析]]（ready）
 - 代码模板：[methods/differential-expression/code/analysis.R](/files/wiki/methods/differential-expression/code/analysis.R) · [methods/differential-expression/code/de_native.R](/files/wiki/methods/differential-expression/code/de_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot）
-  - **方向 2：火山图、气泡图与分组表达热图渲染**（触发条件：需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时；中间表：deg-result-table；分析模版：recipes/figureya-59volcanov2；可视化模版：templates/2026-10-22-scp-example__fig01-volcano--volcano、templates/figureya-59volcanov2--volcano、templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot）
-  - **方向 3：多组学交集与机器学习候选标志物筛选**（触发条件：将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-112venn、recipes/figureya-31lasso-update、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/2026-10-22-scp-example__fig12-venn--venn、templates/2026-10-22-scp-example__fig13-upset--upset）
+  - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/marker-bubble-dotplot）
+  - **方向 2：火山图、气泡图与分组表达热图渲染**（触发条件：需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时；中间表：deg-result-table；分析模版：recipes/figureya-59volcanov2；可视化模版：templates/scp-de-volcano、templates/bulk-de-volcano、templates/marker-bubble-dotplot）
+  - **方向 3：多组学交集与机器学习候选标志物筛选**（触发条件：将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入 LASSO/SVM/RF 特征筛选时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-112venn、recipes/figureya-31lasso-update、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/set-venn、templates/set-upset）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/marker-bubble-dotplot|细胞类型 × 基因气泡点图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：DE 选出的 marker 可整理成 group/feature/avg_expression/pct_expressed，复用气泡点图；模板不重算 DE。；前提：avg_expression 与 pct_expressed 由表达矩阵按组计算，不能用 avg_log2FC 代替。；group/feature 顺序由课题给出；target_group 只用于排序。；适配：导出 render-dotplot-long.csv（group, feature, avg_expression, pct_expressed, target_group）。
-    - 关系证据：methods/differential-expression.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/spec.json；templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-scp-example__fig01-volcano--volcano|差异表达火山图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/differential-expression.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/marker-bubble-dotplot/spec.json；templates/marker-bubble-dotplot/verify/verify.json；运行证据：无
+  - [[templates/scp-de-volcano|差异表达火山图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：DE 表可整理成 render-de-results，火山图模板消费该表；模板不重跑检验。；前提：group1 单一；pct_1/pct_2 为 0–1；p_val_adj >0；gene 组内唯一。；模板不重跑 DE 或 p 值校正；阈值由 style 显式给出。；适配：从 AllMarkers 表导出 gene、avg_log2FC、p_val_adj 等字段到 render-de-results。
-    - 关系证据：methods/differential-expression.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/2026-10-22-scp-example__fig01-volcano--volcano/spec.json；templates/2026-10-22-scp-example__fig01-volcano--volcano/verify/verify.json；运行证据：无
+    - 关系证据：methods/differential-expression.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/scp-de-volcano/spec.json；templates/scp-de-volcano/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

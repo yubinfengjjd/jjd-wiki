@@ -124,7 +124,7 @@ immune.combined.rds是Seurat预处理中间结果；ISG_genelist.csv用到GeneNa
 
 ## 知识关联检查
 
-2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]] · [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
+2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] · [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
 

@@ -27,5 +27,5 @@ ridge（山脊线/密度脊）回答的是：一个连续变量在多个有序�
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig16-cell-density--ridge|分组表达密度图]]：SCP `CellDensityPlot` 原生单 panel，读取 `render-cell-feature-values` 长表（cell, feature, value, group + 顺序）；按组计算密度脊线，支持多 feature 与 adaptive sizing。固定示例 8×6@150 与来源逐字节一致。
+- [[templates/scp-expr-ridge|分组表达密度图]]：SCP `CellDensityPlot` 原生单 panel，读取 `render-cell-feature-values` 长表（cell, feature, value, group + 顺序）；按组计算密度脊线，支持多 feature 与 adaptive sizing。固定示例 8×6@150 与来源逐字节一致。
 - 只覆盖单 split、默认带宽；不替代统计检验；组内观测很少时不要用密度。

@@ -27,5 +27,5 @@ venn 回答的是：2–4 个（最多 7 个）集合之间哪些元素共享、
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig12-venn--venn|多集合交集维恩图]]：SCP `CellStatPlot(plot_type="venn")` 原生单 panel，读取 `render-cell-membership` 长表（cell, set, member）；2–7 个集合，区域标注计数与百分比，支持 adaptive sizing。固定示例 8×6@150 与来源逐字节一致。
+- [[templates/set-venn|多集合交集维恩图]]：SCP `CellStatPlot(plot_type="venn")` 原生单 panel，读取 `render-cell-membership` 长表（cell, set, member）；2–7 个集合，区域标注计数与百分比，支持 adaptive sizing。固定示例 8×6@150 与来源逐字节一致。
 - 面积不与集合大小成比例；只覆盖单 split；未与旧版 ggVennDiagram 逐字节交叉验证；5 个以上集合优先改用 UpSet。

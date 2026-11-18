@@ -93,7 +93,7 @@ favorite: false
 
 ## 知识关联检查
 
-2026-10-27：查了同图型模板与方法页。同图型模板：[[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值]] · [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
+2026-10-27：查了同图型模板与方法页。同图型模板：[[templates/resampling-metric-box|箱线、散点与均值]] · [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
 

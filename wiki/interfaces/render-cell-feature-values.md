@@ -36,7 +36,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig16-cell-density--ridge|分组表达密度图]]
+- 使用的模板：[[templates/scp-expr-ridge|分组表达密度图]]
 <!-- facts:end -->
 
 ## 含义

@@ -27,4 +27,4 @@ title: radial-bar
 
 ## 本库模板
 
-- [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar|SHAP 环形贡献图]]
+- [[templates/shap-radial-bar|SHAP 环形贡献图]]

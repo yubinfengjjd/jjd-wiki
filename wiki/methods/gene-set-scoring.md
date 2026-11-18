@@ -47,7 +47,7 @@ keywords:
 - pathway score
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+- figure: templates/pathway-stat-violin
   compatibility: adaptable
   reason: 通路签名分数按细胞类型/组展示分布，可复用小提琴模板；模板不重算分数或检验。
   prerequisites:
@@ -59,8 +59,8 @@ figure_relations:
   - methods/scrna-pathway-signature-ensemble.md#知识关联检查
   - methods/scrna-pathway-signature-ensemble.md#输出
   - layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md#适用
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json
+  - templates/pathway-stat-violin/spec.json
+  - templates/pathway-stat-violin/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -73,17 +73,17 @@ next_steps:
   - methods/trajectory-inference
   intermediate_interface: deg-result-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
-  - templates/2026-10-22-scp-example__fig16-cell-density--ridge
-  - templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+  - templates/pathway-stat-violin
+  - templates/scp-expr-ridge
+  - templates/scp-feature-heatmap
 - direction: 方向 2：高/低活性亚群间 CellChat 细胞通讯比较
   when: 探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时
   analysis_templates:
   - recipes/figureya-310cpdbchordgramv2
   intermediate_interface: cellchat-lr-table
   viz_templates:
-  - templates/2026-10-22-scp-example__fig11-chord--chord
-  - templates/2026-10-22-scp-example__fig10-sankey--sankey
+  - templates/scp-flow-chord
+  - templates/scp-flow-sankey
 - direction: 方向 3：主题基因集投射 Bulk 队列分型与预后模型
   when: 将主题基因集用于 Bulk 队列分子分型、生存分层与机器学习建模时
   analysis_templates:
@@ -92,8 +92,8 @@ next_steps:
   - methods/shap-explanation
   intermediate_interface: model-prediction-shap
   viz_templates:
-  - templates/figureya-1survivalcurve-update--km-curve
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+  - templates/km-survival-curve
+  - templates/shap-beeswarm
 ---
 # 基因集与通路签名打分
 
@@ -109,14 +109,14 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/gene-set-scoring/code/analysis.R](/files/wiki/methods/gene-set-scoring/code/analysis.R) · [methods/gene-set-scoring/code/scoring_native.R](/files/wiki/methods/gene-set-scoring/code/scoring_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：按高/低活性得分分组深挖差异与轨迹**（触发条件：识别出高活性细胞亚群（如 High-Lactylation 亚群）后，比较高低分组差异或拟时序动态时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/trajectory-inference；可视化模版：templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin、templates/2026-10-22-scp-example__fig16-cell-density--ridge、templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap）
-  - **方向 2：高/低活性亚群间 CellChat 细胞通讯比较**（触发条件：探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/2026-10-22-scp-example__fig11-chord--chord、templates/2026-10-22-scp-example__fig10-sankey--sankey）
-  - **方向 3：主题基因集投射 Bulk 队列分型与预后模型**（触发条件：将主题基因集用于 Bulk 队列分子分型、生存分层与机器学习建模时；中间表：model-prediction-shap；分析模版：recipes/figureya-69cancersubtype、recipes/figureya-293plus-binaryclassificationml、methods/shap-explanation；可视化模版：templates/figureya-1survivalcurve-update--km-curve、templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm）
+  - **方向 1：按高/低活性得分分组深挖差异与轨迹**（触发条件：识别出高活性细胞亚群（如 High-Lactylation 亚群）后，比较高低分组差异或拟时序动态时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/trajectory-inference；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/scp-feature-heatmap）
+  - **方向 2：高/低活性亚群间 CellChat 细胞通讯比较**（触发条件：探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/scp-flow-chord、templates/scp-flow-sankey）
+  - **方向 3：主题基因集投射 Bulk 队列分型与预后模型**（触发条件：将主题基因集用于 Bulk 队列分子分型、生存分层与机器学习建模时；中间表：model-prediction-shap；分析模版：recipes/figureya-69cancersubtype、recipes/figureya-293plus-binaryclassificationml、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/shap-beeswarm）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：通路签名分数按细胞类型/组展示分布，可复用小提琴模板；模板不重算分数或检验。；前提：同一 pathway 定义和单位；celltype/group 标签一致。；p/mean/SD 由分析阶段预计算并说明来源；细胞水平 p 仅作描述，不能当样本级推断。；适配：导出 render-grouped-values.csv 和可选的 render-group-summaries.csv；细胞级 p 只作描述。
-    - 关系证据：methods/gene-set-scoring.md#输出；methods/scrna-pathway-signature-ensemble.md#知识关联检查；methods/scrna-pathway-signature-ensemble.md#输出；layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md#适用；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json；运行证据：无
+    - 关系证据：methods/gene-set-scoring.md#输出；methods/scrna-pathway-signature-ensemble.md#知识关联检查；methods/scrna-pathway-signature-ensemble.md#输出；layouts/2026-10-22-glaucoma-scrna__fig06-pathway-violin.md#适用；templates/pathway-stat-violin/spec.json；templates/pathway-stat-violin/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

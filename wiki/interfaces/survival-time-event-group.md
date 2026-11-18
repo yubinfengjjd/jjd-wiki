@@ -24,7 +24,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]
+- 使用的模板：[[templates/km-survival-curve|KM 生存曲线与风险表]]
 <!-- facts:end -->
 
 ## 含义

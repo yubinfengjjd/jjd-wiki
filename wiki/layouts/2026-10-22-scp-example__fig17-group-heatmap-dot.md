@@ -14,9 +14,9 @@ panels:
 chart_types:
 - heatmap
 templates:
-- 2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap
+- scp-group-dot-heatmap
 template_panels:
-  2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap:
+  scp-group-dot-heatmap:
   - A
 favorite: false
 keywords:
@@ -42,7 +42,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、GroupHeatmap、add_dot、percent-size
 - 图型：[[chart-types/heatmap]]
-- 面板：[[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]]（A）
+- 面板：[[templates/scp-group-dot-heatmap|分组表达点阵热图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -64,7 +64,7 @@ keywords:
 
 ## 知识关联检查
 
-2026-10-25已核对原生GroupHeatmap点阵与ht1：点颜色表示聚合变换表达、点直径表示逐细胞阈值比例，保留不同结构来源。可调用入口现为[[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]]；原生代码与来源panel仍在画廊，只读溯源。本来源不代替分析方法，也不自动授予其他GroupHeatmap分支可用。
+2026-10-25已核对原生GroupHeatmap点阵与ht1：点颜色表示聚合变换表达、点直径表示逐细胞阈值比例，保留不同结构来源。可调用入口现为[[templates/scp-group-dot-heatmap|分组表达点阵热图]]；原生代码与来源panel仍在画廊，只读溯源。本来源不代替分析方法，也不自动授予其他GroupHeatmap分支可用。
 
 ## 使用记录
 

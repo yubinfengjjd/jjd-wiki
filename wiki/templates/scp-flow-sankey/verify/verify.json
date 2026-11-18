@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:26.766192+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/scp-flow-sankey/spec.json": "bff65f45df9203e69f96a2f917b8b939b04accaa08fec939753f3e7246d9da97",
+    "templates/scp-flow-sankey/code/render.R": "2a29f1aa642085379f7070a14b672730bb3c8f2a10800f0af54da455c5049cda",
+    "templates/scp-flow-sankey/code/core.R": "95d8fd9a0b348f33e13e6c2ca80e22a8089437503b887f6c4b16929a3dc9abe7",
+    "templates/scp-flow-sankey/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/scp-flow-sankey/code/panel.R": "54f79b6ff58d5ea8bf989dfa84d78971480cccbf06e92c45ec2065571ba173d4",
+    "templates/scp-flow-sankey/code/scp_helpers.R": "8cc7bb62299c3c9476e82b0cd0cbb2b99cfceb926859dea4516383be0f83d30f",
+    "templates/scp-flow-sankey/code/scp_sankey_native.R": "e3a838078ebf296234136edbf9da8ff5459e3dd380ebdf718da70d303a4c26a8",
+    "interfaces/render-cell-linkage#columns": "20ceed4deba3e781a6fc7d732da4bd58f6569671010ba15bcfd34eb4d39c9cd3",
+    "templates/scp-flow-sankey/example/render-cell-linkage.csv": "809869e248caa22acc7b658d00aa28a7fd9c2dbe5cad6e97fbf90abb39259d35",
+    "templates/scp-flow-sankey/example/style.json": "de87d540dbdee48428c96669dae9149f93c1995e5591e41b1038dcf448829e44"
+  },
+  "outputs": {
+    "png": "70992e6234996899c83d12f6041465372ae587a83c5b726727888ca30ffa47c8",
+    "pdf": "e16961d93c9cd7d128f1f9c36dfde579b506da51f0e1032a3761b765245ded0e",
+    "svg": "5e35d7bbdc07d1019839f2179680addd4d96a8139523ecd6dd79d981aac62fd1"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

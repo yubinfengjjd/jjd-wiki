@@ -44,7 +44,7 @@ keywords:
 - 降维
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- figure: templates/scrna-celltype-umap
   compatibility: adaptable
   reason: Standard_SCP 产出 StandardUMAP2D，可作为 UMAP 分组着色；模板只画表，不降维。
   prerequisites:
@@ -55,13 +55,13 @@ figure_relations:
   - methods/dimensionality-reduction.md#输出
   - methods/scp-standard-workflow.md#知识关联检查
   - methods/scp-standard-workflow.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json
+  - templates/scrna-celltype-umap/spec.json
+  - templates/scrna-celltype-umap/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+- figure: templates/scrna-feature-umap-grid
   compatibility: adaptable
   reason: 降维嵌入可与 marker 表达长表拼成特征 UMAP 网格；模板不重做降维或表达。
   prerequisites:
@@ -73,8 +73,8 @@ figure_relations:
   - methods/dimensionality-reduction.md#输出
   - methods/scp-standard-workflow.md#知识关联检查
   - methods/scp-standard-workflow.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json
+  - templates/scrna-feature-umap-grid/spec.json
+  - templates/scrna-feature-umap-grid/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -95,12 +95,12 @@ figure_relations:
 - 代码模板：[methods/dimensionality-reduction/code/analysis.R](/files/wiki/methods/dimensionality-reduction/code/analysis.R) · [methods/dimensionality-reduction/code/dimreduction_native.R](/files/wiki/methods/dimensionality-reduction/code/dimreduction_native.R)
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：Standard_SCP 产出 StandardUMAP2D，可作为 UMAP 分组着色；模板只画表，不降维。；前提：坐标与 group 来自同一嵌入；cell_id 唯一；坐标无 NA。；group 明确为 cluster 或 celltype；group_levels 由课题给出。；适配：导出 render-umap-groups.csv（cell_id, umap_1, umap_2, group）。
-    - 关系证据：methods/dimensionality-reduction.md#输出；methods/scp-standard-workflow.md#知识关联检查；methods/scp-standard-workflow.md#输出；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/dimensionality-reduction.md#输出；methods/scp-standard-workflow.md#知识关联检查；methods/scp-standard-workflow.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
+  - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：降维嵌入可与 marker 表达长表拼成特征 UMAP 网格；模板不重做降维或表达。；前提：UMAP 坐标与表达来自同一 Seurat 对象；cell_id 一致。；目标细胞类型映射由注释步骤给出；每个 feature 至少有一个正表达细胞。；适配：导出 render-umap-feature-long.csv（cell_id, umap_1, umap_2, group, feature, value）。
-    - 关系证据：methods/dimensionality-reduction.md#输出；methods/scp-standard-workflow.md#知识关联检查；methods/scp-standard-workflow.md#输出；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json；运行证据：无
+    - 关系证据：methods/dimensionality-reduction.md#输出；methods/scp-standard-workflow.md#知识关联检查；methods/scp-standard-workflow.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

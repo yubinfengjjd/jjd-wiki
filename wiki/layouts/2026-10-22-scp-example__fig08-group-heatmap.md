@@ -20,9 +20,9 @@ panels:
 chart_types:
 - heatmap
 templates:
-- 2026-10-22-scp-example__fig08-group-heatmap--heatmap
+- scp-group-heatmap
 template_panels:
-  2026-10-22-scp-example__fig08-group-heatmap--heatmap:
+  scp-group-heatmap:
   - A
 favorite: false
 ---
@@ -42,7 +42,7 @@ favorite: false
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、GroupHeatmap、heatmap、marker
 - 图型：[[chart-types/heatmap]]
-- 面板：[[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap|分组热图（多分组注释）]]（A）
+- 面板：[[templates/scp-group-heatmap|分组热图（多分组注释）]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -66,14 +66,14 @@ favorite: false
 
 日期 2026-10-22；查过 [[methods/scp-visualization-interface]]、[[methods/scp-de-enrichment-dynamic]]、[[methods/scp-standard-workflow]]、[[methods/scp-annotation-projection]] 与 heatmap 图型页。
 
-- 模板：[[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap|分组热图（多分组注释）]] 从本页 A panel 拆出；读取 `render-group-heatmap`，固定示例与来源逐字节一致。
+- 模板：[[templates/scp-group-heatmap|分组热图（多分组注释）]] 从本页 A panel 拆出；读取 `render-group-heatmap`，固定示例与来源逐字节一致。
 - 方法关系：[[methods/scp-visualization-interface]] 的 `GroupHeatmap()` 是同一原生实现，已登记 adaptable；marker/DE 与 celltype 分组方法需在课题内导出聚合长表，模板不重算。
 - 一图多方法：任何产生 feature×group 聚合值的方法都可驱动模板，不限于 SCP。
 - 验证范围：表半 matrix_list 与原生 identical；绘图半固定输出与 source 逐字节一致；未验证真实课题流水线与 add_dot 等分支。
 
 ## 使用记录
 
-2026-10-22 从 SCP v0.5.6 `GroupHeatmap()` 的原生 ht1 输出入库；A panel 单 panel；模板 `2026-10-22-scp-example__fig08-group-heatmap--heatmap` 已建，固定回放与来源逐字节一致。
+2026-10-22 从 SCP v0.5.6 `GroupHeatmap()` 的原生 ht1 输出入库；A panel 单 panel；模板 `scp-group-heatmap` 已建，固定回放与来源逐字节一致。
 
 <!-- user:start -->
 <!-- user:end -->

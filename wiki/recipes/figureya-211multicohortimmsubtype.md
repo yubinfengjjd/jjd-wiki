@@ -140,7 +140,7 @@ favorite: false
 
 ## 知识关联检查
 
-2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap|分组热图（多分组注释）]] · [[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap|特征表达热图]] · [[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]] · [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]] · [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
+2026-11-04：查了同图型模板与方法页。同图型模板：[[templates/scp-group-heatmap|分组热图（多分组注释）]] · [[templates/scp-feature-heatmap|特征表达热图]] · [[templates/scp-cell-cor-heatmap|细胞相似度热图]] · [[templates/scp-group-dot-heatmap|分组表达点阵热图]] · [[templates/km-survival-curve|KM 生存曲线与风险表]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
 

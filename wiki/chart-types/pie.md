@@ -27,4 +27,4 @@ title: pie
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig03-pie--pie|pie · 单panel：Pie composition SCP v0.5.6 示例数据图型]]
+- [[templates/scp-comp-pie|pie · 单panel：Pie composition SCP v0.5.6 示例数据图型]]

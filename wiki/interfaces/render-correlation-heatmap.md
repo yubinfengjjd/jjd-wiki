@@ -40,7 +40,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]]
+- 使用的模板：[[templates/scp-cell-cor-heatmap|细胞相似度热图]]
 <!-- facts:end -->
 
 ## 含义

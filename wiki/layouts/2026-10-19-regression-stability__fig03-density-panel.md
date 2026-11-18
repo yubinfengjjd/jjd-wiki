@@ -14,9 +14,9 @@ panels:
 chart_types:
 - density-scatter
 templates:
-- 2026-10-19-regression-stability__fig03-density-panel--density-scatter
+- pred-density-scatter
 template_panels:
-  2026-10-19-regression-stability__fig03-density-panel--density-scatter:
+  pred-density-scatter:
   - A
 favorite: false
 signedoff_version: 1
@@ -43,7 +43,7 @@ keywords:
 - 标签：机器学习、实验统计
 - 关键词：regression、cross-validation、回归评估、模型比较、折外预测
 - 图型：[[chart-types/density-scatter]]
-- 面板：[[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter|密度散点与边缘分布]]（A）
+- 面板：[[templates/pred-density-scatter|密度散点与边缘分布]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -72,7 +72,7 @@ keywords:
 选定范围为一个逻辑panel，边缘分布与色标随主图。关联 [[methods/regression-resampling-evaluation]]；历史重复模型整图已归档，仅保留在画廊作溯源。已查既有SHAP模板，图形编码与接口不同，未作为密度图模板复用。
 
 
-本轮待办：[[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter]] 已完成绘图代码、接口、回放及复用检查，作者已确认并标为ready。来源状态保留pending_template，完整模板覆盖已完成，不再列agent待办；无整图交付。
+本轮待办：[[templates/pred-density-scatter]] 已完成绘图代码、接口、回放及复用检查，作者已确认并标为ready。来源状态保留pending_template，完整模板覆盖已完成，不再列agent待办；无整图交付。
 
 <!-- user:start -->
 <!-- user:end -->

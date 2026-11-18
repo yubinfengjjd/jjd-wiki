@@ -102,7 +102,7 @@ keywords:
 - 轨迹
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- figure: templates/scrna-celltype-umap
   compatibility: adaptable
   reason: 轨迹分组/lineage 标签可作为 UMAP 着色变量；现有模板不画 lineage 曲线。
   prerequisites:
@@ -113,13 +113,13 @@ figure_relations:
   - methods/trajectory-inference.md#输出
   - methods/scp-trajectory-velocity.md#知识关联检查
   - methods/scp-trajectory-velocity.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json
+  - templates/scrna-celltype-umap/spec.json
+  - templates/scrna-celltype-umap/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+- figure: templates/scrna-feature-umap-grid
   compatibility: adaptable
   reason: pseudotime 可作为 feature 长表画在 UMAP 上；模板不拟合轨迹。
   prerequisites:
@@ -130,13 +130,13 @@ figure_relations:
   - methods/trajectory-inference.md#输出
   - methods/scp-trajectory-velocity.md#知识关联检查
   - methods/scp-trajectory-velocity.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json
+  - templates/scrna-feature-umap-grid/spec.json
+  - templates/scrna-feature-umap-grid/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+- figure: templates/pathway-stat-violin
   compatibility: adaptable
   reason: pseudotime 按 cluster/lineage 分组的分布可用分组小提琴展示；模板不做轨迹或检验。
   prerequisites:
@@ -147,8 +147,8 @@ figure_relations:
   - methods/trajectory-inference.md#输出
   - methods/scp-trajectory-velocity.md#知识关联检查
   - methods/scp-trajectory-velocity.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json
+  - templates/pathway-stat-violin/spec.json
+  - templates/pathway-stat-violin/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -160,15 +160,15 @@ next_steps:
   - methods/dynamic-feature-analysis
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
-  - templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+  - templates/scrna-feature-umap-grid
+  - templates/scp-feature-heatmap
 - direction: 方向 2：RNA 速率方向性交叉验证
   when: 需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时
   analysis_templates:
   - methods/rna-velocity
   intermediate_interface: pseudotime-trajectory-table
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+  - templates/scrna-celltype-umap
 - direction: 方向 3：分支关键基因进入候选标志物筛选
   when: 将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时
   analysis_templates:
@@ -176,7 +176,7 @@ next_steps:
   - recipes/figureya-293plus-binaryclassificationml
   intermediate_interface: candidate-biomarker-list
   viz_templates:
-  - templates/2026-10-22-scp-example__fig01-volcano--volcano
+  - templates/scp-de-volcano
 ---
 # 拟时序与轨迹推断
 
@@ -192,20 +192,20 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/trajectory-inference/code/analysis.R](/files/wiki/methods/trajectory-inference/code/analysis.R) · [methods/trajectory-inference/code/data/palette_list.rda](/files/wiki/methods/trajectory-inference/code/data/palette_list.rda) · [methods/trajectory-inference/code/monocle2.R](/files/wiki/methods/trajectory-inference/code/monocle2.R) · [methods/trajectory-inference/code/monocle2_core.R](/files/wiki/methods/trajectory-inference/code/monocle2_core.R) · [methods/trajectory-inference/code/monocle2_core_helpers.R](/files/wiki/methods/trajectory-inference/code/monocle2_core_helpers.R) · [methods/trajectory-inference/code/monocle3.R](/files/wiki/methods/trajectory-inference/code/monocle3.R) · [methods/trajectory-inference/code/monocle3_core.R](/files/wiki/methods/trajectory-inference/code/monocle3_core.R) · [methods/trajectory-inference/code/slingshot_native.R](/files/wiki/methods/trajectory-inference/code/slingshot_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：已获得 pseudotime 排序，需识别随拟时序显著变化的驱动基因与波峰时间聚类时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap、templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap）
-  - **方向 2：RNA 速率方向性交叉验证**（触发条件：需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时；中间表：pseudotime-trajectory-table；分析模版：methods/rna-velocity；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
-  - **方向 3：分支关键基因进入候选标志物筛选**（触发条件：将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时；中间表：candidate-biomarker-list；分析模版：methods/differential-expression、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/2026-10-22-scp-example__fig01-volcano--volcano）
+  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：已获得 pseudotime 排序，需识别随拟时序显著变化的驱动基因与波峰时间聚类时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/scrna-feature-umap-grid、templates/scp-feature-heatmap）
+  - **方向 2：RNA 速率方向性交叉验证**（触发条件：需要用 spliced/unspliced 速度场验证拟时序起点与分支方向是否可靠时；中间表：pseudotime-trajectory-table；分析模版：methods/rna-velocity；可视化模版：templates/scrna-celltype-umap）
+  - **方向 3：分支关键基因进入候选标志物筛选**（触发条件：将分化终末或分支决策基因纳入候选标志物池并对接 Bulk 临床验证时；中间表：candidate-biomarker-list；分析模版：methods/differential-expression、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/scp-de-volcano）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：轨迹分组/lineage 标签可作为 UMAP 着色变量；现有模板不画 lineage 曲线。；前提：UMAP 坐标与 group 来自同一对象；cell_id 一致。；group 为 cluster/lineage 分组；group_levels 由课题给出。；适配：导出 render-umap-groups.csv（group=cluster/lineage）；曲线需另建模板。
-    - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
+  - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：pseudotime 可作为 feature 长表画在 UMAP 上；模板不拟合轨迹。；前提：值与 UMAP 坐标来自同一细胞集合；cell_id 一致。；value 的含义/单位明确；无 NA。；适配：导出 render-umap-feature-long.csv（feature=pseudotime, value=Lineage1）。
-    - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无
+  - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：pseudotime 按 cluster/lineage 分组的分布可用分组小提琴展示；模板不做轨迹或检验。；前提：同一 pseudotime/lineage 定义；celltype/group 标签一致。；p/mean/SD 若展示，由分析阶段预计算；细胞级 p 不能当样本级推断。；适配：导出 render-grouped-values.csv（celltype/group, value=pseudotime）。
-    - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json；运行证据：无
+    - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/pathway-stat-violin/spec.json；templates/pathway-stat-violin/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

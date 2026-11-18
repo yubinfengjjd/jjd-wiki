@@ -40,7 +40,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值]]
+- 使用的模板：[[templates/resampling-metric-box|箱线、散点与均值]]
 - 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/regression-resampling-evaluation|回归模型的重采样评估与折外预测]]（adaptable）
 <!-- facts:end -->
 

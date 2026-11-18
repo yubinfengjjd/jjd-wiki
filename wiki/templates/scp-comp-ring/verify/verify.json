@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:15.233931+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/scp-comp-ring/spec.json": "0c099969f86f2eecb182b75414f16d4a411bd4605b1f03f3b9463d31a126e630",
+    "templates/scp-comp-ring/code/render.R": "491f44db2f62e64825122f08619fea033a570f8b17db6b2f2b78487f7a70f8de",
+    "templates/scp-comp-ring/code/core.R": "0bce2d59bf511f4409fb22ef121990ee0704120bfe8a4f7b041d8510bdbc611f",
+    "templates/scp-comp-ring/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/scp-comp-ring/code/panel.R": "5bc4a1b771213b7a231042cc588d8d0c94657e69210635aa27e26407537426ea",
+    "templates/scp-comp-ring/code/scp_helpers.R": "4c2c001d0d83d85cde317aaef950ad4cd32c46419105d2277b16641128486cfd",
+    "templates/scp-comp-ring/code/scp_ring_native.R": "8418a3d859b30f4a4aea200b20dcec32786079a96a21595772cce439cd92992f",
+    "interfaces/render-cell-proportions#columns": "0b4224dc426796ee7350f028c6efcaad60b78c3c629714b3366d08d3a6ca51f1",
+    "templates/scp-comp-ring/example/render-cell-proportions.csv": "2ecebe5a8db5b60d82ad79803aec6f7d021d0670c8a3d64beb40a31fa652d0c6",
+    "templates/scp-comp-ring/example/style.json": "46932a5c3f63eef9513f5877520c67864b327163821d2f7695d7ad057e2dd202"
+  },
+  "outputs": {
+    "png": "118a7f5a1c8cc55d7270a028681d2e7874a05a3def568cd1c2be0d4aa15df0ff",
+    "pdf": "48d691275974afe6690a1fc7f19e78d0ec67cb2eadf75b962b3c57fdc3a5b94f",
+    "svg": "c9ca20b81fe5a66a94aa9dabc54147122d9ff47729a5b4d295f8fa1da79e9209"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

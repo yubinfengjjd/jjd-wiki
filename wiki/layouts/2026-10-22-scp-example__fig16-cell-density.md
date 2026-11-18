@@ -14,9 +14,9 @@ panels:
 chart_types:
 - ridge
 templates:
-- 2026-10-22-scp-example__fig16-cell-density--ridge
+- scp-expr-ridge
 template_panels:
-  2026-10-22-scp-example__fig16-cell-density--ridge:
+  scp-expr-ridge:
   - A
 favorite: false
 keywords:
@@ -41,7 +41,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、ridge、density
 - 图型：[[chart-types/ridge]]
-- 面板：[[templates/2026-10-22-scp-example__fig16-cell-density--ridge|分组表达密度图]]（A）
+- 面板：[[templates/scp-expr-ridge|分组表达密度图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -66,14 +66,14 @@ keywords:
 
 日期 2026-10-22；查过 [[methods/scp-visualization-interface]]、[[methods/scp-standard-workflow]]、[[methods/scp-annotation-projection]]、[[methods/scp-cellqc-doublet]] 与 ridge 图型页。
 
-- 模板：[[templates/2026-10-22-scp-example__fig16-cell-density--ridge|分组表达密度图]] 从本页 A panel 拆出；读取 `render-cell-feature-values`，固定示例与来源逐字节一致。
+- 模板：[[templates/scp-expr-ridge|分组表达密度图]] 从本页 A panel 拆出；读取 `render-cell-feature-values`，固定示例与来源逐字节一致。
 - 方法关系：[[methods/scp-visualization-interface]] 的 `CellDensityPlot()` 是同一原生实现，已登记 adaptable；细胞类型/QC/表达值由标准流程、注释或 QC 方法产生，需在课题内导出长表，模板不重算。
 - 一图多方法：任何产生同一细胞全集连续特征值与分组的方法都可驱动模板。
 - 验证范围：表半与上游 ggplot_build 数据一致；固定 8×6@150 与来源逐字节一致；adaptive 2/12 组、3 特征、长标签与 max 拒绝已测；未验证真实课题流水线、非默认参数与 CJK 标签。
 
 ## 使用记录
 
-2026-10-22 从 SCP v0.5.6 `CellDensityPlot()` 的原生输出入库；A panel 单 panel；模板 `2026-10-22-scp-example__fig16-cell-density--ridge` 已建，固定回放与来源逐字节一致（SHA256 `72a7a07a…`）。
+2026-10-22 从 SCP v0.5.6 `CellDensityPlot()` 的原生输出入库；A panel 单 panel；模板 `scp-expr-ridge` 已建，固定回放与来源逐字节一致（SHA256 `72a7a07a…`）。
 
 <!-- user:start -->
 <!-- user:end -->

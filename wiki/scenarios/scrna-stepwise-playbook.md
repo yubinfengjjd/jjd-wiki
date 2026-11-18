@@ -9,9 +9,9 @@ picks:
   note: Step 2：多样本/多批次对齐整合与聚类
 - id: methods/cell-type-annotation
   note: Step 3：细胞类型注释与 Marker 复核（核心分叉点）
-- id: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- id: templates/scrna-celltype-umap
   note: 细胞类型注释 UMAP 主图（L2）
-- id: templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+- id: templates/cell-prop-flow-bar
   note: 分支 1：细胞组成比例堆叠流带图（L2）
 - id: methods/differential-expression
   note: 分支 2：亚群间/组间差异表达与 Marker 分析
@@ -21,7 +21,7 @@ picks:
   note: 分支 4：关键亚群拟时序轨迹与动态基因
 - id: recipes/figureya-310cpdbchordgramv2
   note: 分支 5：CellChat 细胞通讯配受体互作弦图
-- id: templates/ks-cellchat-circos-multi--circos
+- id: templates/cellchat-circos-multi
   note: 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2）
 - id: recipes/figureya-293plus-binaryclassificationml
   note: 分支 6：投射 Bulk 临床队列验证与机器学习建模
@@ -50,7 +50,7 @@ steps:
   templates:
   - methods/cell-quality-control
   - methods/doublet-detection
-  - templates/2026-10-22-scp-example__fig09-bar--bar
+  - templates/scp-count-bar
   next_steps:
   - step-2-integration
 - id: step-2-integration
@@ -65,7 +65,7 @@ steps:
   - methods/batch-integration
   - methods/dimensionality-reduction
   - methods/cell-clustering
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+  - templates/scrna-celltype-umap
   next_steps:
   - step-3-annotation
 - id: step-3-annotation
@@ -79,9 +79,9 @@ steps:
   templates:
   - methods/cell-type-annotation
   - methods/reference-mapping
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+  - templates/scrna-celltype-umap
+  - templates/scrna-feature-umap-grid
+  - templates/marker-bubble-dotplot
   next_steps:
   - branch-1-proportion
   - branch-2-deg-enrichment
@@ -100,9 +100,9 @@ steps:
   interface: cell-proportion-stats
   templates:
   - recipes/figureya-315singlerfraction
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
-  - templates/2026-10-22-scp-example__fig02-ring--ring
-  - templates/2026-10-22-scp-example__fig03-pie--pie
+  - templates/cell-prop-flow-bar
+  - templates/scp-comp-ring
+  - templates/scp-comp-pie
   next_steps:
   - branch-2-deg-enrichment
 - id: branch-2-deg-enrichment
@@ -118,8 +118,8 @@ steps:
   templates:
   - methods/differential-expression
   - methods/gene-set-enrichment
-  - templates/2026-10-22-scp-example__fig01-volcano--volcano
-  - templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap
+  - templates/scp-de-volcano
+  - templates/scp-group-heatmap
   next_steps:
   - branch-3-geneset-scoring
 - id: branch-3-geneset-scoring
@@ -135,8 +135,8 @@ steps:
   templates:
   - methods/gene-set-scoring
   - recipes/figureya-275scaucell
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
-  - templates/2026-10-22-scp-example__fig16-cell-density--ridge
+  - templates/pathway-stat-violin
+  - templates/scp-expr-ridge
   next_steps:
   - branch-4-trajectory
   - branch-5-cellchat
@@ -154,7 +154,7 @@ steps:
   - methods/trajectory-inference
   - methods/rna-velocity
   - methods/dynamic-feature-analysis
-  - templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap
+  - templates/scp-feature-heatmap
   next_steps:
   - branch-6-bulk-projection
 - id: branch-5-cellchat
@@ -167,10 +167,10 @@ steps:
   - cellchat-lr-table
   interface: cellchat-lr-table
   templates:
-  - templates/ks-cellchat-circos-multi--circos
+  - templates/cellchat-circos-multi
   - recipes/figureya-310cpdbchordgramv2
-  - templates/2026-10-22-scp-example__fig11-chord--chord
-  - templates/2026-10-22-scp-example__fig10-sankey--sankey
+  - templates/scp-flow-chord
+  - templates/scp-flow-sankey
   next_steps: []
 - id: branch-6-bulk-projection
   step: 5
@@ -185,8 +185,8 @@ steps:
   templates:
   - recipes/figureya-293plus-binaryclassificationml
   - methods/shap-explanation
-  - templates/figureya-1survivalcurve-update--km-curve
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+  - templates/km-survival-curve
+  - templates/shap-beeswarm
   next_steps: []
 ---
 
@@ -202,16 +202,16 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/cell-quality-control|单细胞质量控制]] | L2 | ready · 可用 | Step 1：按 UMI/基因数/线粒体比例过滤低质量细胞 |
-| [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Step 2：多样本/多批次对齐整合与聚类 |
-| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
-| [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 细胞类型注释 UMAP 主图（L2） |
-| [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]] | L2 | ready · 可用 | 分支 1：细胞组成比例堆叠流带图（L2） |
-| [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | 分支 2：亚群间/组间差异表达与 Marker 分析 |
-| [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | 分支 3：主题基因集多算法活性打分（AUCell/UCell/ssGSEA） |
-| [[methods/trajectory-inference|拟时序与轨迹推断]] | L2 | ready · 可用 | 分支 4：关键亚群拟时序轨迹与动态基因 |
+| [[methods/cell-quality-control|单细胞质量控制]] | note | ready | Step 1：按 UMI/基因数/线粒体比例过滤低质量细胞 |
+| [[methods/batch-integration|单细胞批次整合]] | note | ready | Step 2：多样本/多批次对齐整合与聚类 |
+| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
+| [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready | 细胞类型注释 UMAP 主图（L2） |
+| [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready | 分支 1：细胞组成比例堆叠流带图（L2） |
+| [[methods/differential-expression|差异表达分析]] | note | ready | 分支 2：亚群间/组间差异表达与 Marker 分析 |
+| [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | 分支 3：主题基因集多算法活性打分（AUCell/UCell/ssGSEA） |
+| [[methods/trajectory-inference|拟时序与轨迹推断]] | note | ready | 分支 4：关键亚群拟时序轨迹与动态基因 |
 | [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]] | L1 | draft · 运行 fail | 分支 5：CellChat 细胞通讯配受体互作弦图 |
-| [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]] | L2 | ready · 可用 | 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2） |
+| [[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]] | L2 | ready | 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2） |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | 分支 6：投射 Bulk 临床队列验证与机器学习建模 |
 <!-- facts:end -->
 
@@ -221,13 +221,13 @@ steps:
 |---|---|---|---|---|
 | **Step 1** | 原始 counts 导入 | 线粒体比例偏高或高上样量多样本 | `scrna-annotated-cells` | [[methods/cell-quality-control]] · [[methods/doublet-detection]] |
 | **Step 2** | 质控完成 | 多供体/多批次存在明显分离偏移 | `scrna-annotated-cells` | [[methods/batch-integration]] · [[methods/cell-clustering]] |
-| **Step 3** | 聚类完成 | 结合 Marker 气泡图与 SingleR/参考映射注释 | `scrna-annotated-cells` | [[methods/cell-type-annotation]] · [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap]] · [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot]] |
-| **Step 4.1** | 注释完成 → 看比例 | 某类免疫/上皮细胞在疾病组明显增多 | `cell-proportion-stats` | [[recipes/figureya-315singlerfraction]] · [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow]] · [[templates/2026-10-22-scp-example__fig02-ring--ring]] |
-| **Step 4.2** | 注释完成 → 看差异 | 找出目标亚群疾病 vs 对照 DEG 与通路 | `deg-result-table` | [[methods/differential-expression]] · [[methods/gene-set-enrichment]] · [[templates/2026-10-22-scp-example__fig01-volcano--volcano]] |
-| **Step 4.3** | 注释完成 → 看主题活性 | 关注乳酸化/铁死亡/PTM 等特定基因集得分 | `pathway-score-table` | [[methods/gene-set-scoring]] · [[recipes/figureya-275scaucell]] · [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin]] · [[templates/2026-10-22-scp-example__fig16-cell-density--ridge]] |
+| **Step 3** | 聚类完成 | 结合 Marker 气泡图与 SingleR/参考映射注释 | `scrna-annotated-cells` | [[methods/cell-type-annotation]] · [[templates/scrna-celltype-umap]] · [[templates/marker-bubble-dotplot]] |
+| **Step 4.1** | 注释完成 → 看比例 | 某类免疫/上皮细胞在疾病组明显增多 | `cell-proportion-stats` | [[recipes/figureya-315singlerfraction]] · [[templates/cell-prop-flow-bar]] · [[templates/scp-comp-ring]] |
+| **Step 4.2** | 注释完成 → 看差异 | 找出目标亚群疾病 vs 对照 DEG 与通路 | `deg-result-table` | [[methods/differential-expression]] · [[methods/gene-set-enrichment]] · [[templates/scp-de-volcano]] |
+| **Step 4.3** | 注释完成 → 看主题活性 | 关注乳酸化/铁死亡/PTM 等特定基因集得分 | `pathway-score-table` | [[methods/gene-set-scoring]] · [[recipes/figureya-275scaucell]] · [[templates/pathway-stat-violin]] · [[templates/scp-expr-ridge]] |
 | **Step 4.4** | 聚焦核心谱系 → 看演化 | 探索高活亚群的分化起点、分支与驱动基因 | `pseudotime-trajectory-table` | [[methods/trajectory-inference]] · [[methods/rna-velocity]] · [[methods/dynamic-feature-analysis]] |
-| **Step 4.5** | 聚焦核心谱系 → 看互作 | 分析高活亚群与其他细胞的配受体通讯 | `cellchat-lr-table` | [[templates/ks-cellchat-circos-multi--circos]] · [[recipes/figureya-310cpdbchordgramv2]] · [[templates/2026-10-22-scp-example__fig11-chord--chord]] · [[templates/2026-10-22-scp-example__fig10-sankey--sankey]] |
-| **Step 5** | 锁定候选靶基因 → 临床验证 | 投射至 TCGA/GEO Bulk 队列验证诊断与预后 | `candidate-biomarker-list` → `model-prediction-shap` | [[recipes/figureya-293plus-binaryclassificationml]] · [[methods/shap-explanation]] · [[templates/figureya-1survivalcurve-update--km-curve]] |
+| **Step 4.5** | 聚焦核心谱系 → 看互作 | 分析高活亚群与其他细胞的配受体通讯 | `cellchat-lr-table` | [[templates/cellchat-circos-multi]] · [[recipes/figureya-310cpdbchordgramv2]] · [[templates/scp-flow-chord]] · [[templates/scp-flow-sankey]] |
+| **Step 5** | 锁定候选靶基因 → 临床验证 | 投射至 TCGA/GEO Bulk 队列验证诊断与预后 | `candidate-biomarker-list` → `model-prediction-shap` | [[recipes/figureya-293plus-binaryclassificationml]] · [[methods/shap-explanation]] · [[templates/km-survival-curve]] |
 
 ## 注意
 

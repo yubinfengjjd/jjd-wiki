@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:35:44.618185+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/scp-cell-cor-heatmap/spec.json": "7867676d4ec168cd08b2e6ad1255088f4d9156f672115050593034bd4333af75",
+    "templates/scp-cell-cor-heatmap/code/render.R": "5c84422c0f495e758f32c85568998eb0301333892f716330f2ece17f5505599d",
+    "templates/scp-cell-cor-heatmap/code/core.R": "d10f72feb25ea7f8542ceff9eb6eada98979790570734eb8fba1098a327fc45a",
+    "templates/scp-cell-cor-heatmap/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "templates/scp-cell-cor-heatmap/code/panel.R": "99858de32de88b1489805a6752500528e88c532d842e41ad6ff41ae86a7f4b7b",
+    "templates/scp-cell-cor-heatmap/code/scp_cell-cor-heatmap_native.R": "c0aea1e936644f9e9b54e56d54aef9915ec2add0c20a3eee2c2dae007a492b05",
+    "templates/scp-cell-cor-heatmap/code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "templates/scp-cell-cor-heatmap/code/sizing.R": "93eae341ed0c366cff206d57171341d5a8dfcb724a38902cf7f8994bb8e1c6ee",
+    "interfaces/render-correlation-heatmap#columns": "228316fc60f708597b47329ca36a4e4507aa2340d882bb6fdce755d6dbe0626d",
+    "templates/scp-cell-cor-heatmap/example/render-correlation-heatmap.csv": "79e02f938007e890101255a675f090deeedc32ff374592641b22684e72a63728",
+    "templates/scp-cell-cor-heatmap/example/style.json": "11a18a568eaaaefe933eda9a2394d53dcb0f8d74b54a0dc3c9abee747eed047b"
+  },
+  "outputs": {
+    "png": "6f96f3c2d6d42e8e7e1cbe916ee335db8b04a9f9ecee307948eaa779e53f6bf7",
+    "pdf": "9482ff4d2761fb23e7d940e631ac1c342efcd592b74449f4c26ba4be17c5d88a",
+    "svg": "503406a4a5fa17432ff3a8f3d7c9c2af7c21f2a63932c1ac8c23097eb5a4f43e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

@@ -45,7 +45,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap|分组热图（多分组注释）]] · [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]]
+- 使用的模板：[[templates/scp-group-dot-heatmap|分组表达点阵热图]] · [[templates/scp-group-heatmap|分组热图（多分组注释）]]
 <!-- facts:end -->
 
 ## 含义

@@ -56,7 +56,7 @@ keywords:
 - 批次校正
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- figure: templates/scrna-celltype-umap
   compatibility: adaptable
   reason: 整合后的嵌入可按 batch 或 celltype 着色，复用现有 UMAP 单 panel；模板不做整合。
   prerequisites:
@@ -67,13 +67,13 @@ figure_relations:
   - methods/batch-integration.md#输出
   - methods/scp-integration.md#知识关联检查
   - methods/scp-integration.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json
+  - templates/scrna-celltype-umap/spec.json
+  - templates/scrna-celltype-umap/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+- figure: templates/cell-prop-flow-bar
   compatibility: adaptable
   reason: 按 batch/样本统计细胞类型比例，可检查整合前后组成是否被过度改变；模板不做统计检验。
   prerequisites:
@@ -84,8 +84,8 @@ figure_relations:
   - methods/batch-integration.md#输出
   - methods/scp-integration.md#知识关联检查
   - methods/scp-integration.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json
+  - templates/cell-prop-flow-bar/spec.json
+  - templates/cell-prop-flow-bar/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -98,7 +98,7 @@ next_steps:
   - methods/cell-clustering
   intermediate_interface: scrna-annotated-cells
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+  - templates/scrna-celltype-umap
 - direction: 方向 2：细胞类型注释（Marker / SingleR / 参考映射）
   when: 已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时
   analysis_templates:
@@ -106,8 +106,8 @@ next_steps:
   - methods/reference-mapping
   intermediate_interface: scrna-annotated-cells
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
-  - templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap
+  - templates/marker-bubble-dotplot
+  - templates/scrna-feature-umap-grid
 ---
 # 单细胞批次整合
 
@@ -123,16 +123,16 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/batch-integration/code/analysis.R](/files/wiki/methods/batch-integration/code/analysis.R) · [methods/batch-integration/code/integration_native.R](/files/wiki/methods/batch-integration/code/integration_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：降维嵌入与无监督聚类**（触发条件：批次对齐后需在整合空间重新计算 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
-  - **方向 2：细胞类型注释（Marker / SingleR / 参考映射）**（触发条件：已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot、templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap）
+  - **方向 1：降维嵌入与无监督聚类**（触发条件：批次对齐后需在整合空间重新计算 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
+  - **方向 2：细胞类型注释（Marker / SingleR / 参考映射）**（触发条件：已有整合聚类结果，准备结合先验 Marker 或参考数据集赋予细胞类型身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/marker-bubble-dotplot、templates/scrna-feature-umap-grid）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：整合后的嵌入可按 batch 或 celltype 着色，复用现有 UMAP 单 panel；模板不做整合。；前提：坐标与 group 来自同一整合嵌入；cell_id 唯一；坐标无 NA。；group 明确为 batch 或 celltype；group_levels 由课题给出。；适配：导出 render-umap-groups.csv（cell_id, umap_1, umap_2, group）；模板不读 RDS。
-    - 关系证据：methods/batch-integration.md#输出；methods/scp-integration.md#知识关联检查；methods/scp-integration.md#输出；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/batch-integration.md#输出；methods/scp-integration.md#知识关联检查；methods/scp-integration.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
+  - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按 batch/样本统计细胞类型比例，可检查整合前后组成是否被过度改变；模板不做统计检验。；前提：每个 group 的比例归一化到 1；group 为 batch/样本，celltype 为注释类型。；比例是描述性；组间差异不能由该图直接推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）；比例只作描述。
-    - 关系证据：methods/batch-integration.md#输出；methods/scp-integration.md#知识关联检查；methods/scp-integration.md#输出；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json；运行证据：无
+    - 关系证据：methods/batch-integration.md#输出；methods/scp-integration.md#知识关联检查；methods/scp-integration.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

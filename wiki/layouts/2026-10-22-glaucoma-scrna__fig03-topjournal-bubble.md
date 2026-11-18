@@ -14,9 +14,9 @@ panels:
 chart_types:
 - dotplot
 templates:
-- 2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- marker-bubble-dotplot
 template_panels:
-  2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot:
+  marker-bubble-dotplot:
   - A
 favorite: false
 keywords:
@@ -38,7 +38,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：GSE251716、dotplot
 - 图型：[[chart-types/dotplot]]
-- 面板：[[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]]（A）
+- 面板：[[templates/marker-bubble-dotplot|细胞类型 × 基因气泡点图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

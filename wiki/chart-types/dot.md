@@ -27,4 +27,4 @@ title: dot
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig07-dot--dot|dot · 单panel：Dot composition SCP v0.5.6 示例数据图型]]
+- [[templates/scp-comp-dot|dot · 单panel：Dot composition SCP v0.5.6 示例数据图型]]

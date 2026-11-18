@@ -27,4 +27,4 @@ title: dotplot
 
 ## 本库模板
 
-- [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|dotplot · 单panel：顶刊气泡点图 青光眼单细胞项目（GSE251716）图表复刻]]
+- [[templates/marker-bubble-dotplot|dotplot · 单panel：顶刊气泡点图 青光眼单细胞项目（GSE251716）图表复刻]]

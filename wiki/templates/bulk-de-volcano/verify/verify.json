@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:52.188120+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/bulk-de-volcano/spec.json": "e75e086c7911e79fef78f5842ae9c14031da09b9609f8c1ee281c7a8b8679ab5",
+    "templates/bulk-de-volcano/code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
+    "templates/bulk-de-volcano/code/panel.R": "398b878c79580fb72b076a5bcfd27aac83d8588ed7461155bc198563f6571a04",
+    "interfaces/bulk-de-table#columns": "f0619331383bd3e3a95732ce22079eff4cf1ea7ed7c3780f61cf51eb50907810",
+    "interfaces/highlight-gene-sets#columns": "e9d052e4acb483329ec6fcd604a4161c634047a1863283c8e60660ff53d9577b",
+    "templates/bulk-de-volcano/example/bulk-de-table.csv": "1bdcba38f4b493ee790112dea68b7eed6b680badfec15acf0ff6339e264291b9",
+    "templates/bulk-de-volcano/example/highlight-gene-sets.csv": "33d9d4cee51bf2945a493c0e38edaebb1e497441c35dab5fd81329db07df21e8",
+    "templates/bulk-de-volcano/example/style.json": "b04b58b90997c96bf569c02dbae398c69be00dc822c967567ff897fb7bcd3c02"
+  },
+  "outputs": {
+    "png": "341381b2dbe23e327aa30e667cce68539e5c50bc74bd7729db37b5591746c277",
+    "pdf": "ff2c341668b6e72a515d2d90d25475af40544708cf280b0aae6c78a24bb54894",
+    "svg": "26525330614b692662c3c839366b2fae0a74393661663e5715665f2dd756e7ac"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

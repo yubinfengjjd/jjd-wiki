@@ -13,7 +13,7 @@ picks:
   note: Step 4A：ssGSEA / 反卷积将单细胞亚群丰度投射至 Bulk 队列
 - id: recipes/figureya-293plus-binaryclassificationml
   note: Step 4B：联合核心基因构建临床诊断/预后机器学习模型
-- id: templates/figureya-1survivalcurve-update--km-curve
+- id: templates/km-survival-curve
   note: Step 5：投射亚群评分/风险得分的 KM 生存分层（L2）
 - id: recipes/figureya-300pancancor
   note: Step 6：关键靶基因泛癌/免疫微环境相关性验证
@@ -41,7 +41,7 @@ steps:
   interface: scrna-annotated-cells
   templates:
   - methods/cell-type-annotation
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+  - templates/cell-prop-flow-bar
   next_steps:
   - scbulk-step-2-signature
 - id: scbulk-step-2-signature
@@ -57,7 +57,7 @@ steps:
   templates:
   - methods/differential-expression
   - methods/dynamic-feature-analysis
-  - templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+  - templates/marker-bubble-dotplot
   next_steps:
   - scbulk-step-3-converge
 - id: scbulk-step-3-converge
@@ -71,8 +71,8 @@ steps:
   interface: candidate-biomarker-list
   templates:
   - recipes/figureya-112venn
-  - templates/2026-10-22-scp-example__fig12-venn--venn
-  - templates/2026-10-22-scp-example__fig13-upset--upset
+  - templates/set-venn
+  - templates/set-upset
   next_steps:
   - scbulk-step-4-project
 - id: scbulk-step-4-project
@@ -102,8 +102,8 @@ steps:
   - model-prediction-shap
   interface: model-prediction-shap
   templates:
-  - templates/figureya-1survivalcurve-update--km-curve
-  - templates/figureya-6rhrsv2--forest
+  - templates/km-survival-curve
+  - templates/subgroup-hazard-forest
   - recipes/figureya-85timeroc
   - recipes/figureya-228linkcor
   next_steps: []
@@ -121,12 +121,12 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Step 1：单细胞注释与关键病变亚群锁定 |
-| [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | Step 2：提取关键亚群特异 Marker 与拟时序分支基因 |
+| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Step 1：单细胞注释与关键病变亚群锁定 |
+| [[methods/differential-expression|差异表达分析]] | note | ready | Step 2：提取关键亚群特异 Marker 与拟时序分支基因 |
 | [[recipes/figureya-112venn|四组韦恩图占比渐变填色]] | L1 | ready · 运行 pass | Step 3：单细胞亚群 Marker × Bulk DEG/WGCNA 交集筛选 |
 | [[recipes/figureya-71ssgsea-update|免疫浸润ssGSEA注释热图]] | L1 | draft · 运行 fail | Step 4A：ssGSEA / 反卷积将单细胞亚群丰度投射至 Bulk 队列 |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | Step 4B：联合核心基因构建临床诊断/预后机器学习模型 |
-| [[templates/figureya-1survivalcurve-update--km-curve|KM 生存曲线与风险表]] | L2 | ready · 可用 | Step 5：投射亚群评分/风险得分的 KM 生存分层（L2） |
+| [[templates/km-survival-curve|KM 生存曲线与风险表]] | L2 | ready | Step 5：投射亚群评分/风险得分的 KM 生存分层（L2） |
 | [[recipes/figureya-300pancancor|泛癌签名得分相关散点图]] | L1 | draft · 运行 fail | Step 6：关键靶基因泛癌/免疫微环境相关性验证 |
 <!-- facts:end -->
 
@@ -134,11 +134,11 @@ steps:
 
 | 阶段 | 跨组学桥接动作 | 判断依据 | 标准中间表 | 推荐模版与配方 |
 |---|---|---|---|---|
-| **Step 1** | 单细胞锁定靶亚群 | 疾病组比例显著升高（Ro/e > 1）或主题打分最高 | `scrna-annotated-cells` | [[methods/cell-type-annotation]] · [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow]] |
+| **Step 1** | 单细胞锁定靶亚群 | 疾病组比例显著升高（Ro/e > 1）或主题打分最高 | `scrna-annotated-cells` | [[methods/cell-type-annotation]] · [[templates/cell-prop-flow-bar]] |
 | **Step 2** | 提取亚群分子特征 | 筛选亚群高特异 Marker（`pct.1` 高、`pct.2` 低）或轨迹基因 | `deg-result-table` | [[methods/differential-expression]] · [[methods/dynamic-feature-analysis]] |
-| **Step 3** | 跨组学交集收敛 | 单细胞核心基因 ∩ Bulk DEG/WGCNA 关键模块 | `candidate-biomarker-list` | [[templates/2026-10-22-scp-example__fig12-venn--venn]] · [[recipes/figureya-112venn]] |
+| **Step 3** | 跨组学交集收敛 | 单细胞核心基因 ∩ Bulk DEG/WGCNA 关键模块 | `candidate-biomarker-list` | [[templates/set-venn]] · [[recipes/figureya-112venn]] |
 | **Step 4** | Bulk 投射与建模 | ssGSEA 量化 Bulk 中该亚群特征丰度，或构建 ML 风险模型 | `model-prediction-shap` | [[recipes/figureya-71ssgsea-update]] · [[recipes/figureya-293plus-binaryclassificationml]] · [[methods/shap-explanation]] |
-| **Step 5** | 外部队列临床验证 | 验证高/低亚群丰度或风险组生存差异（KM/Time-ROC/相关性） | `model-prediction-shap` | [[templates/figureya-1survivalcurve-update--km-curve]] · [[templates/figureya-6rhrsv2--forest]] · [[recipes/figureya-85timeroc]] |
+| **Step 5** | 外部队列临床验证 | 验证高/低亚群丰度或风险组生存差异（KM/Time-ROC/相关性） | `model-prediction-shap` | [[templates/km-survival-curve]] · [[templates/subgroup-hazard-forest]] · [[recipes/figureya-85timeroc]] |
 
 ## 注意
 

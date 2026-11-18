@@ -44,7 +44,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig01-volcano--volcano|差异表达火山图]]
+- 使用的模板：[[templates/scp-de-volcano|差异表达火山图]]
 - 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/differential-expression|差异表达分析]]（adaptable）
 <!-- facts:end -->
 

@@ -48,7 +48,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap|特征表达热图]]
+- 使用的模板：[[templates/scp-feature-heatmap|特征表达热图]]
 <!-- facts:end -->
 
 ## 含义

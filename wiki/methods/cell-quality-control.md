@@ -42,7 +42,7 @@ keywords:
 - 低质量细胞
 - SCP
 figure_relations:
-- figure: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- figure: templates/scrna-celltype-umap
   compatibility: adaptable
   reason: QC 的 Pass/Fail 或指标可作为 UMAP 着色变量；模板只画表，不计算 QC。
   prerequisites:
@@ -54,13 +54,13 @@ figure_relations:
   - methods/cell-quality-control.md#输出
   - methods/scp-cellqc-doublet.md#知识关联检查
   - methods/scp-cellqc-doublet.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json
+  - templates/scrna-celltype-umap/spec.json
+  - templates/scrna-celltype-umap/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+- figure: templates/cell-prop-flow-bar
   compatibility: adaptable
   reason: 按样本/条件统计 QC Pass/Fail 比例，可复用比例堆叠与流带模板；模板不做统计检验。
   prerequisites:
@@ -71,13 +71,13 @@ figure_relations:
   - methods/cell-quality-control.md#输出
   - methods/scp-cellqc-doublet.md#知识关联检查
   - methods/scp-cellqc-doublet.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json
+  - templates/cell-prop-flow-bar/spec.json
+  - templates/cell-prop-flow-bar/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
-- figure: templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+- figure: templates/pathway-stat-violin
   compatibility: adaptable
   reason: QC 指标按样本或细胞类型分组的分布可用分组小提琴展示；模板不重算阈值。
   prerequisites:
@@ -88,8 +88,8 @@ figure_relations:
   - methods/cell-quality-control.md#输出
   - methods/scp-cellqc-doublet.md#知识关联检查
   - methods/scp-cellqc-doublet.md#输出
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json
+  - templates/pathway-stat-violin/spec.json
+  - templates/pathway-stat-violin/verify/verify.json
   verification:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
@@ -101,14 +101,14 @@ next_steps:
   - methods/doublet-detection
   intermediate_interface: scrna-annotated-cells
   viz_templates:
-  - templates/2026-10-22-scp-example__fig09-bar--bar
+  - templates/scp-count-bar
 - direction: 方向 2：多样本去批次整合（Harmony / Seurat Anchor）
   when: 存在多供体、多批次或跨研究合并的技术混杂效应时
   analysis_templates:
   - methods/batch-integration
   intermediate_interface: scrna-annotated-cells
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+  - templates/scrna-celltype-umap
 - direction: 方向 3：标准化、PCA 与 UMAP 降维聚类
   when: 单批次或去批次后，准备计算低维嵌入与细胞分群时
   analysis_templates:
@@ -116,7 +116,7 @@ next_steps:
   - methods/cell-clustering
   intermediate_interface: scrna-annotated-cells
   viz_templates:
-  - templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+  - templates/scrna-celltype-umap
 ---
 # 单细胞质量控制
 
@@ -132,20 +132,20 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/cell-quality-control/code/analysis.R](/files/wiki/methods/cell-quality-control/code/analysis.R) · [methods/cell-quality-control/code/cellqc_native.R](/files/wiki/methods/cell-quality-control/code/cellqc_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：双细胞检测与样本级过滤**（触发条件：多样本高上样量（>5,000 细胞/样本）需排除异型双细胞干扰时；中间表：scrna-annotated-cells；分析模版：methods/doublet-detection；可视化模版：templates/2026-10-22-scp-example__fig09-bar--bar）
-  - **方向 2：多样本去批次整合（Harmony / Seurat Anchor）**（触发条件：存在多供体、多批次或跨研究合并的技术混杂效应时；中间表：scrna-annotated-cells；分析模版：methods/batch-integration；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
-  - **方向 3：标准化、PCA 与 UMAP 降维聚类**（触发条件：单批次或去批次后，准备计算低维嵌入与细胞分群时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap）
+  - **方向 1：双细胞检测与样本级过滤**（触发条件：多样本高上样量（>5,000 细胞/样本）需排除异型双细胞干扰时；中间表：scrna-annotated-cells；分析模版：methods/doublet-detection；可视化模版：templates/scp-count-bar）
+  - **方向 2：多样本去批次整合（Harmony / Seurat Anchor）**（触发条件：存在多供体、多批次或跨研究合并的技术混杂效应时；中间表：scrna-annotated-cells；分析模版：methods/batch-integration；可视化模版：templates/scrna-celltype-umap）
+  - **方向 3：标准化、PCA 与 UMAP 降维聚类**（触发条件：单批次或去批次后，准备计算低维嵌入与细胞分群时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：QC 的 Pass/Fail 或指标可作为 UMAP 着色变量；模板只画表，不计算 QC。；前提：UMAP 坐标与 QC 标签来自同一 Seurat 对象；cell_id 一致。；group_levels 显式给出；Pass/Fail 顺序固定。；适配：导出 render-umap-groups.csv（cell_id, umap_1, umap_2, group=CellQC 或样本）；模板不读 RDS。
-    - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/spec.json；templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
+  - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计 QC Pass/Fail 比例，可复用比例堆叠与流带模板；模板不做统计检验。；前提：每个 group 的 celltype 比例归一化到 1；group 为样本或条件，celltype 为 CellQC。；组间比较只作描述，不能当样本级推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）；比例只作描述。
-    - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/spec.json；templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow/verify/verify.json；运行证据：无
-  - [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+    - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
+  - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：QC 指标按样本或细胞类型分组的分布可用分组小提琴展示；模板不重算阈值。；前提：每个值有明确的采样单位（细胞或样本）；细胞级分布不能当样本级推断。；p/mean/SD 若展示，必须由分析阶段预计算并说明来源。；适配：导出 render-grouped-values.csv 和可选的 render-group-summaries.csv。
-    - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/spec.json；templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin/verify/verify.json；运行证据：无
+    - 关系证据：methods/cell-quality-control.md#输出；methods/scp-cellqc-doublet.md#知识关联检查；methods/scp-cellqc-doublet.md#输出；templates/pathway-stat-violin/spec.json；templates/pathway-stat-violin/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
@@ -202,7 +202,7 @@ Seurat 对象（`RNA` assay 的 `counts`），或能转为同样基因×细胞�
 
 ## 知识关联检查
 
-2026-10-23 检查了 `templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap`、`fig04-cell-proportion-flow--stacked-bar-flow`、`fig06-pathway-violin--violin`。QC Pass/Fail 或指标可作为 UMAP 着色、样本比例、分组分布；模板不计算 QC，关系为 adaptable。没有 direct：模板不读 Seurat 对象，需先导出 `render-umap-groups`、`render-cell-proportions`、`render-grouped-values` 等接口。双细胞图不在此页直连，见 [[methods/doublet-detection]]。
+2026-10-23 检查了 `templates/scrna-celltype-umap`、`fig04-cell-proportion-flow--stacked-bar-flow`、`fig06-pathway-violin--violin`。QC Pass/Fail 或指标可作为 UMAP 着色、样本比例、分组分布；模板不计算 QC，关系为 adaptable。没有 direct：模板不读 Seurat 对象，需先导出 `render-umap-groups`、`render-cell-proportions`、`render-grouped-values` 等接口。双细胞图不在此页直连，见 [[methods/doublet-detection]]。
 
 
 ### scop 候选来源（未运行）

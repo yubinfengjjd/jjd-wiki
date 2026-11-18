@@ -27,5 +27,5 @@ title: umap
 
 ## 本库模板
 
-- [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|umap · 单panel：CNS UMAP 青光眼单细胞项目（GSE251716）图表复刻]]
-- [[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|umap · 单panel：marker 特征 UMAP 网格 青光眼单细胞项目（GSE251716）图表复刻]]
+- [[templates/scrna-celltype-umap|umap · 单panel：CNS UMAP 青光眼单细胞项目（GSE251716）图表复刻]]
+- [[templates/scrna-feature-umap-grid|umap · 单panel：marker 特征 UMAP 网格 青光眼单细胞项目（GSE251716）图表复刻]]

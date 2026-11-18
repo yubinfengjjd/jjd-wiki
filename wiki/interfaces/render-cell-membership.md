@@ -24,7 +24,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig12-venn--venn|多集合交集维恩图]] · [[templates/2026-10-22-scp-example__fig13-upset--upset|多集合交集 UpSet 图]]
+- 使用的模板：[[templates/set-upset|多集合交集 UpSet 图]] · [[templates/set-venn|多集合交集维恩图]]
 <!-- facts:end -->
 
 ## 含义

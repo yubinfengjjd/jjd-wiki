@@ -24,7 +24,7 @@ columns:
 
 - 产出方法：[[methods/shap-explanation|基于 SHAP 的模型解释]]
 - 读取方法：无
-- 使用的模板：[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]]
+- 使用的模板：[[templates/shap-beeswarm|SHAP 蜂群图]]
 <!-- facts:end -->
 
 ## 含义

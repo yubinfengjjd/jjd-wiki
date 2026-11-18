@@ -18,17 +18,17 @@ chart_types:
 - beeswarm
 - radial-bar
 templates:
-- 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
-- 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
-- 2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+- shap-importance-bar
+- shap-beeswarm
+- shap-radial-bar
 template_panels:
-  2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar:
+  shap-importance-bar:
   - A
   - D
-  2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm:
+  shap-beeswarm:
   - B
   - E
-  2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar:
+  shap-radial-bar:
   - C
   - F
 favorite: false
@@ -61,7 +61,7 @@ keywords:
 - 标签：机器学习、模型解释与特征重要性、化学信息与QSAR
 - 关键词：SHAP、LightGBM、CatBoost、pLC50、AR-DBP、QSAR
 - 图型：[[chart-types/bar]] · [[chart-types/beeswarm]] · [[chart-types/radial-bar]]
-- 面板：[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]（A、D）；[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]]（B、E）；[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar|SHAP 环形贡献图]]（C、F）
+- 面板：[[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]]（A、D）；[[templates/shap-beeswarm|SHAP 蜂群图]]（B、E）；[[templates/shap-radial-bar|SHAP 环形贡献图]]（C、F）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

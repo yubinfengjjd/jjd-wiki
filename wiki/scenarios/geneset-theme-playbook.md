@@ -7,9 +7,9 @@ picks:
   note: Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分
 - id: recipes/figureya-275scaucell
   note: 单细胞 AUCell 活性打分与阈值划分
-- id: templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+- id: templates/pathway-stat-violin
   note: 分组/亚群主题打分小提琴箱线图（L2）
-- id: templates/2026-10-22-scp-example__fig16-cell-density--ridge
+- id: templates/scp-expr-ridge
   note: 基因集得分山脊密度分布图（L2）
 - id: recipes/figureya-318genesetdedotplot
   note: Step 3：高/低活性亚群差异表达与通路富集气泡图
@@ -61,8 +61,8 @@ steps:
   - methods/gene-set-scoring
   - recipes/figureya-275scaucell
   - recipes/figureya-71ssgsea-update
-  - templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
-  - templates/2026-10-22-scp-example__fig16-cell-density--ridge
+  - templates/pathway-stat-violin
+  - templates/scp-expr-ridge
   next_steps:
   - theme-step-3-sc-deepdive
   - theme-step-4-bulk-subtyping
@@ -81,7 +81,7 @@ steps:
   - recipes/figureya-318genesetdedotplot
   - recipes/figureya-310cpdbchordgramv2
   - methods/trajectory-inference
-  - templates/2026-10-22-scp-example__fig11-chord--chord
+  - templates/scp-flow-chord
   next_steps:
   - theme-step-4-bulk-subtyping
 - id: theme-step-4-bulk-subtyping
@@ -97,7 +97,7 @@ steps:
   templates:
   - recipes/figureya-69cancersubtype
   - recipes/figureya-293plus-binaryclassificationml
-  - templates/figureya-1survivalcurve-update--km-curve
+  - templates/km-survival-curve
   - recipes/figureya-56immune-inflitrationv3
   next_steps: []
 ---
@@ -114,10 +114,10 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分 |
+| [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分 |
 | [[recipes/figureya-275scaucell|单细胞AUCell基因集评分]] | L1 | draft · 运行 fail | 单细胞 AUCell 活性打分与阈值划分 |
-| [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]] | L2 | ready · 可用 | 分组/亚群主题打分小提琴箱线图（L2） |
-| [[templates/2026-10-22-scp-example__fig16-cell-density--ridge|分组表达密度图]] | L2 | ready · 可用 | 基因集得分山脊密度分布图（L2） |
+| [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]] | L2 | ready | 分组/亚群主题打分小提琴箱线图（L2） |
+| [[templates/scp-expr-ridge|分组表达密度图]] | L2 | ready | 基因集得分山脊密度分布图（L2） |
 | [[recipes/figureya-318genesetdedotplot|单细胞通路活性差异点图]] | L1 | draft · 运行 fail | Step 3：高/低活性亚群差异表达与通路富集气泡图 |
 | [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]] | L1 | draft · 运行 fail | 高/低活性亚群 CellChat 通讯差异 |
 | [[recipes/figureya-69cancersubtype|多组学共识聚类分子分型]] | L1 | ready · 运行 pass | Step 4：Bulk 队列主题基因集无监督共识分型 |
@@ -129,9 +129,9 @@ steps:
 | 阶段 | 核心问题 | 操作与判断依据 | 标准中间表 | 推荐模版与配方 |
 |---|---|---|---|---|
 | **Step 1** | 基因集可靠吗？ | 明确物种映射（人/鼠大小写）与基因集覆盖度 | — | [[recipes/figureya-32id-table]] · [[methods/gene-set-enrichment]] |
-| **Step 2** | 哪个细胞/分组活性最高？ | 联合 AUCell / UCell / ssGSEA 多算法打分，规避单算法偏差 | `pathway-score-table` | [[methods/gene-set-scoring]] · [[recipes/figureya-275scaucell]] · [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin]] · [[templates/2026-10-22-scp-example__fig16-cell-density--ridge]] |
+| **Step 2** | 哪个细胞/分组活性最高？ | 联合 AUCell / UCell / ssGSEA 多算法打分，规避单算法偏差 | `pathway-score-table` | [[methods/gene-set-scoring]] · [[recipes/figureya-275scaucell]] · [[templates/pathway-stat-violin]] · [[templates/scp-expr-ridge]] |
 | **Step 3** | 高活亚群有什么生物学行为？ | 在靶细胞内划分 High/Low 组，做 DEG、拟时序与 CellChat 通讯差异 | `deg-result-table` / `cellchat-lr-table` | [[recipes/figureya-318genesetdedotplot]] · [[recipes/figureya-310cpdbchordgramv2]] · [[methods/trajectory-inference]] |
-| **Step 4** | 能否区分患者临床亚型与预后？ | 提取核心修饰基因在 Bulk 做共识分型、KM 预后与免疫浸润 | `model-prediction-shap` | [[recipes/figureya-69cancersubtype]] · [[templates/figureya-1survivalcurve-update--km-curve]] · [[recipes/figureya-56immune-inflitrationv3]] |
+| **Step 4** | 能否区分患者临床亚型与预后？ | 提取核心修饰基因在 Bulk 做共识分型、KM 预后与免疫浸润 | `model-prediction-shap` | [[recipes/figureya-69cancersubtype]] · [[templates/km-survival-curve]] · [[recipes/figureya-56immune-inflitrationv3]] |
 
 ## 注意
 

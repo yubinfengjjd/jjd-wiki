@@ -27,4 +27,4 @@ title: trend
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig05-trend--trend|trend · 单panel：Trend composition (count) SCP v0.5.6 示例数据图型]]
+- [[templates/scp-comp-trend|trend · 单panel：Trend composition (count) SCP v0.5.6 示例数据图型]]

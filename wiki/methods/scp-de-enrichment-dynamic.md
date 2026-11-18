@@ -148,7 +148,7 @@ Seurat `tools`/`meta.data` 中新增（列名以运行结果为准）：
 - `CellScoring()`：按 `name` 生成 metadata 分数列；`new_assay=TRUE` 时写入新 assay。
 - 下游表：
   - `render-dotplot-long.csv`：`group, feature, avg_expression, pct_expressed, target_group`。`avg_expression`/`pct_expressed` 必须从表达矩阵按组计算；DE 表只用于选基因和分组，不能把 `avg_log2FC` 当平均表达。适配函数 `scp_dotplot_long()`（`pct_scale` 必须显式给 `percent` 或 `fraction`）。
-  - `render-de-results.csv`：`gene, group1, group2, avg_log2FC, pct_1, pct_2, p_val, p_val_adj`（`pct_1`/`pct_2` 为 0–1；`group1` 单一），供 volcano 模板 [[templates/2026-10-22-scp-example__fig01-volcano--volcano|volcano · 单panel]]。从 `AllMarkers_<test.use>` 导出，把 `pct.1/pct.2` 改名为 `pct_1/pct_2`；模板不重跑 DE 或校正。
+  - `render-de-results.csv`：`gene, group1, group2, avg_log2FC, pct_1, pct_2, p_val, p_val_adj`（`pct_1`/`pct_2` 为 0–1；`group1` 单一），供 volcano 模板 [[templates/scp-de-volcano|volcano · 单panel]]。从 `AllMarkers_<test.use>` 导出，把 `pct.1/pct.2` 改名为 `pct_1/pct_2`；模板不重跑 DE 或校正。
   - `render-grouped-values.csv`：`celltype, group, value`（每个通路/动态特征一个文件；value 为得分或表达，单位要说明）；适配函数 `scp_grouped_values()`。
   - `render-group-summaries.csv`：`celltype, group, mean, sd, p_value, p_label` 等，由分析阶段预计算；模板不重算检验。
   - `render-umap-feature-long.csv`：`cell_id, umap_1, umap_2, group, feature, value`（拟时序/动态特征值）；适配函数 `scp_umap_feature_long()`。

@@ -7,7 +7,7 @@
   "panels": [
     {
       "letter": "A",
-      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "template": "shap-importance-bar",
       "rect": [
         0.123,
         0.5640000000000001,
@@ -99,7 +99,7 @@
     },
     {
       "letter": "B",
-      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+      "template": "shap-beeswarm",
       "rect": [
         0.527,
         0.5640000000000001,
@@ -115,7 +115,7 @@
     },
     {
       "letter": "C",
-      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+      "template": "shap-radial-bar",
       "rect": [
         0.714,
         0.5398333333333334,
@@ -131,7 +131,7 @@
     },
     {
       "letter": "D",
-      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar",
+      "template": "shap-importance-bar",
       "rect": [
         0.123,
         0.069,
@@ -223,7 +223,7 @@
     },
     {
       "letter": "E",
-      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm",
+      "template": "shap-beeswarm",
       "rect": [
         0.527,
         0.069,
@@ -239,7 +239,7 @@
     },
     {
       "letter": "F",
-      "template": "2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar",
+      "template": "shap-radial-bar",
       "rect": [
         0.714,
         0.04483333333333335,

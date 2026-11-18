@@ -107,7 +107,7 @@ implementations:
 
 - 不能把 SCP 绘图函数直接当成 Wiki 模板：模板入口是 `spec.json` + `code/render.*` + CSV 接口；SCP 函数读 Seurat 对象，二者契约不同。
 - v2 的图模板可来自开源配方或画廊复刻；ready 仍表示作者确认。S1–S3有16个SCP示例模板，另加作者已确认的点阵分支共17个；历史收据只证明各自示例，不覆盖整个函数。全库入库仍在继续，未覆盖分支单列。
-- 不能把“画法相似”当成“语义直连”：CellDensityPlot 与密度散点不是同一图。GroupHeatmap 的 ht1 已有 fig08；新增 [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]] 为已确认的原生结构分支，不拿普通气泡图替代。
+- 不能把“画法相似”当成“语义直连”：CellDensityPlot 与密度散点不是同一图。GroupHeatmap 的 ht1 已有 fig08；新增 [[templates/scp-group-dot-heatmap|分组表达点阵热图]] 为已确认的原生结构分支，不拿普通气泡图替代。
 - 不能保证全家族视觉等价：本批独立重跑GroupHeatmap add_dot的单矩阵、reticle及双矩阵；其余模板仍按各自已有证据解释，未在本批全量重跑。add_violin、split、annotation等未实现，S4+其余绘图入口仍有缺口。
 - 不能把 SCP 的默认配色/主题当期刊规范；模板样式以 spec 为准。
 - 不能在没有数据的情况下用 SCP 函数“估读”出一张图；缺数据要说明。
@@ -192,7 +192,7 @@ implementations:
 | `FeatureStatPlot` violin | fig06（`render-grouped-values` + summaries） | 可适配 |
 | `FeatureStatPlot` box | 回归 fig04（`render-category-points` + summaries） | 可适配 |
 | `FeatureStatPlot(dot)` | fig03（`render-dotplot-long`） | 仅接口适配线索，不能保证SCP原生几何/主题等价 |
-| `GroupHeatmap(add_dot)` | [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]]；`render-group-heatmap` | 原生正式模板，作者已确认；点颜色为变换表达，点直径为逐细胞阈值比例，不从均值反推 |
+| `GroupHeatmap(add_dot)` | [[templates/scp-group-dot-heatmap|分组表达点阵热图]]；`render-group-heatmap` | 原生正式模板，作者已确认；点颜色为变换表达，点直径为逐细胞阈值比例，不从均值反推 |
 | `CellDimPlot` lineage 曲线/箭头 | 无 | 需新模板或直接用 SCP 图 |
 | `CellStatPlot` ring | fig02-ring（`render-cell-proportions`） | 原生模板已就绪；固定示例同哈希 |
 | `CellStatPlot` pie/rose/trend/area/dot/bar | fig03–fig07、fig09 原生模板（`render-cell-metadata`） | 原生模板已就绪；固定示例逐字节一致 |

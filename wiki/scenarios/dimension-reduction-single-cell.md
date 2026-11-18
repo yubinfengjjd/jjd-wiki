@@ -3,9 +3,9 @@ type: scenario
 id: dimension-reduction-single-cell
 title: 降维与单细胞
 picks:
-- id: templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
+- id: templates/scrna-celltype-umap
   note: 细胞类型 UMAP（L2）
-- id: templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot
+- id: templates/marker-bubble-dotplot
   note: 细胞类型 × 基因气泡点图（L2）
 - id: methods/scp-standard-workflow
   note: 单细胞标准预处理、降维与聚类
@@ -48,8 +48,8 @@ summary: 样本或细胞的降维展示、单细胞注释与 marker、细胞通�
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 细胞类型 UMAP（L2） |
-| [[templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot|细胞类型 × 基因气泡点图]] | L2 | ready · 可用 | 细胞类型 × 基因气泡点图（L2） |
+| [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready | 细胞类型 UMAP（L2） |
+| [[templates/marker-bubble-dotplot|细胞类型 × 基因气泡点图]] | L2 | ready | 细胞类型 × 基因气泡点图（L2） |
 | [[methods/scp-standard-workflow|单细胞标准预处理、降维与聚类]] | note | ready | 单细胞标准预处理、降维与聚类 |
 | `figureya:FigureYa229PCOA` | L0 | catalog | PCoA 图（L0） |
 <!-- facts:end -->

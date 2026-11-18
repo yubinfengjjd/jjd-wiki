@@ -14,9 +14,9 @@ panels:
 chart_types:
 - heatmap
 templates:
-- 2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap
+- scp-cell-cor-heatmap
 template_panels:
-  2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap:
+  scp-cell-cor-heatmap:
   - A
 favorite: false
 keywords:
@@ -41,7 +41,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：SCP、pancreas_sub、heatmap、similarity
 - 图型：[[chart-types/heatmap]]
-- 面板：[[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]]（A）
+- 面板：[[templates/scp-cell-cor-heatmap|细胞相似度热图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。
@@ -65,14 +65,14 @@ keywords:
 
 日期 2026-10-22；查过 [[methods/scp-visualization-interface]]、[[methods/scp-integration]]、[[methods/scp-standard-workflow]]、[[methods/scp-annotation-projection]] 与 heatmap 图型页。
 
-- 模板：[[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]] 从本页 A panel 拆出；读取 `render-correlation-heatmap`，固定示例与来源逐字节一致。
+- 模板：[[templates/scp-cell-cor-heatmap|细胞相似度热图]] 从本页 A panel 拆出；读取 `render-correlation-heatmap`，固定示例与来源逐字节一致。
 - 方法关系：[[methods/scp-visualization-interface]] 的 `CellCorHeatmap()` 是同一原生实现，已登记 adaptable；相似度矩阵由整合/标准流程/参考投影方法在课题内算好并导出，模板不重算。
 - 一图多方法：任何产生完整 row×column 相似度矩阵的方法都可驱动模板。
 - 验证范围：表半 `simil_matrix` 与上游 identical；固定 8×6@150 与来源逐字节一致；adaptive 与非法输入已测；未验证参考数据集、细胞级不折叠、nlabel/annotation、flip/cluster 与真实课题流水线。
 
 ## 使用记录
 
-2026-10-22 从 SCP v0.5.6 `CellCorHeatmap()` 的原生输出入库；A panel 单 panel；模板 `2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap` 已建，固定回放与来源逐字节一致（SHA256 `6f96f3c2…`）。
+2026-10-22 从 SCP v0.5.6 `CellCorHeatmap()` 的原生输出入库；A panel 单 panel；模板 `scp-cell-cor-heatmap` 已建，固定回放与来源逐字节一致（SHA256 `6f96f3c2…`）。
 
 <!-- user:start -->
 <!-- user:end -->

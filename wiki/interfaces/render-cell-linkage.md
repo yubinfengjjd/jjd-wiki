@@ -28,7 +28,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-scp-example__fig10-sankey--sankey|分组流向桑基图]] · [[templates/2026-10-22-scp-example__fig11-chord--chord|分组流向和弦图]]
+- 使用的模板：[[templates/scp-flow-chord|分组流向和弦图]] · [[templates/scp-flow-sankey|分组流向桑基图]]
 <!-- facts:end -->
 
 ## 含义

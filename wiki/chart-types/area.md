@@ -27,4 +27,4 @@ x 轴无序（如细胞类型、器官、模型名）时不要用面积，相邻
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig06-area--area|area · 单panel：Area composition (percent) SCP v0.5.6 示例数据图型]]
+- [[templates/scp-comp-area|area · 单panel：Area composition (percent) SCP v0.5.6 示例数据图型]]

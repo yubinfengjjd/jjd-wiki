@@ -355,94 +355,94 @@
     "sources/figureya.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar.md": [
+    "templates/shap-importance-bar.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm.md": [
+    "templates/shap-beeswarm.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar.md": [
+    "templates/shap-radial-bar.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter.md": [
+    "templates/pred-density-scatter.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot.md": [
+    "templates/resampling-metric-box.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-glaucoma-scrna__fig01-cns-umap--umap.md": [
+    "templates/scrna-celltype-umap.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap.md": [
+    "templates/scrna-feature-umap-grid.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble--dotplot.md": [
+    "templates/marker-bubble-dotplot.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow.md": [
+    "templates/cell-prop-flow-bar.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin.md": [
+    "templates/pathway-stat-violin.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig01-volcano--volcano.md": [
+    "templates/scp-de-volcano.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig02-ring--ring.md": [
+    "templates/scp-comp-ring.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig03-pie--pie.md": [
+    "templates/scp-comp-pie.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig04-rose--rose.md": [
+    "templates/scp-comp-rose.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig05-trend--trend.md": [
+    "templates/scp-comp-trend.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig06-area--area.md": [
+    "templates/scp-comp-area.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig07-dot--dot.md": [
+    "templates/scp-comp-dot.md": [
       "f2a87a5a2bc91d68199e333b1dc36a709134742c93947dc1e7224d1f3b145a40"
     ],
-    "templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap.md": [
+    "templates/scp-group-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig09-bar--bar.md": [
+    "templates/scp-count-bar.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig10-sankey--sankey.md": [
+    "templates/scp-flow-sankey.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig11-chord--chord.md": [
+    "templates/scp-flow-chord.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig12-venn--venn.md": [
+    "templates/set-venn.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig13-upset--upset.md": [
+    "templates/set-upset.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap.md": [
+    "templates/scp-feature-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap.md": [
+    "templates/scp-cell-cor-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig16-cell-density--ridge.md": [
+    "templates/scp-expr-ridge.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap.md": [
+    "templates/scp-group-dot-heatmap.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/figureya-1survivalcurve-update--km-curve.md": [
+    "templates/km-survival-curve.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/figureya-59volcanov2--volcano.md": [
+    "templates/bulk-de-volcano.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
-    "templates/figureya-6rhrsv2--forest.md": [
+    "templates/subgroup-hazard-forest.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ]
   }

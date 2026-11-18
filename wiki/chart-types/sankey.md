@@ -27,5 +27,5 @@ sankey 回答的是：同一批细胞（或其他单位）在两个及以上有�
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig10-sankey--sankey|分组流向桑基图]]：SCP `CellStatPlot(plot_type="sankey")` 原生单 panel，读取 `render-cell-linkage` 长表（cell, dimension, category, dimension_order）；支持两个以上维度、每个维度单独图例、计数流量与 adaptive sizing。固定示例 8×6@150 与来源逐字节一致；不画比例、不表达方向或因果。
+- [[templates/scp-flow-sankey|分组流向桑基图]]：SCP `CellStatPlot(plot_type="sankey")` 原生单 panel，读取 `render-cell-linkage` 长表（cell, dimension, category, dimension_order）；支持两个以上维度、每个维度单独图例、计数流量与 adaptive sizing。固定示例 8×6@150 与来源逐字节一致；不画比例、不表达方向或因果。
 - 只覆盖默认单 split；`group.by` 被忽略，`stat_type` 强制为 count；NA 类别、>100 水平与多 split 未实现。

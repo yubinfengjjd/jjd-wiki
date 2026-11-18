@@ -27,4 +27,4 @@ title: violin
 
 ## 本库模板
 
-- [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|violin · 单panel：分组小提琴与统计标注 青光眼单细胞项目（GSE251716）图表复刻]]
+- [[templates/pathway-stat-violin|violin · 单panel：分组小提琴与统计标注 青光眼单细胞项目（GSE251716）图表复刻]]

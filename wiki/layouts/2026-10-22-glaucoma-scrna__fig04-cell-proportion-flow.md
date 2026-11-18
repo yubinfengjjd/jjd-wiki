@@ -14,9 +14,9 @@ panels:
 chart_types:
 - stacked-bar-flow
 templates:
-- 2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow
+- cell-prop-flow-bar
 template_panels:
-  2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow:
+  cell-prop-flow-bar:
   - A
 favorite: false
 keywords:
@@ -38,7 +38,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：GSE251716、proportion
 - 图型：[[chart-types/stacked-bar-flow]]
-- 面板：[[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|细胞比例堆叠流带图]]（A）
+- 面板：[[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

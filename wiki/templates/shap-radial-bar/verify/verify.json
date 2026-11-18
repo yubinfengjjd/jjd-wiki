@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-04T04:20:44.916094+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/shap-radial-bar/spec.json": "5661cba311137089641b6adcd9a788fd9bf6431c67cc4d0a6ab8b151dc942924",
+    "templates/shap-radial-bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/shap-radial-bar/code/panel.py": "c40be32c40812e8cfdb8a98b4a709800d38a9699eee35e4e3506580f7e80e2cb",
+    "templates/shap-radial-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-summary#columns": "39cb558e8dd3bc60c859c06ce104289a49996e07d1ce14a12731499526cc5424",
+    "templates/shap-radial-bar/example/shap-summary.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3"
+  },
+  "outputs": {
+    "png": "7bb863aed578306778085d41a50f0fe6575580f973bb2b2247d3637e3a5b2513",
+    "pdf": "c78222596b3acb59d574b7c10c51b40d6f4d487d61c4d55946788ac00f286e1b",
+    "svg": "daf6811077c6bf9b639cef3f3b85441d281739f51a11722a48602f46bcc19dbc"
+  },
+  "environment": {
+    "executable": "<ENV_ROOT>/ml-python/Scripts/python.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

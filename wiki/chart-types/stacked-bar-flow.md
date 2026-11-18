@@ -27,4 +27,4 @@ title: stacked-bar-flow
 
 ## 本库模板
 
-- [[templates/2026-10-22-glaucoma-scrna__fig04-cell-proportion-flow--stacked-bar-flow|stacked-bar-flow · 单panel：细胞比例堆叠与流带 青光眼单细胞项目（GSE251716）图表复刻]]
+- [[templates/cell-prop-flow-bar|stacked-bar-flow · 单panel：细胞比例堆叠与流带 青光眼单细胞项目（GSE251716）图表复刻]]

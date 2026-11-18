@@ -27,4 +27,4 @@ title: boxplot
 
 ## 本库模板
 
-- [[templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot|箱线、散点与均值（单 panel）]]
+- [[templates/resampling-metric-box|箱线、散点与均值（单 panel）]]

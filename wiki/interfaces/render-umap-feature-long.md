@@ -36,7 +36,7 @@ columns:
 
 - 产出方法：无
 - 读取方法：无
-- 使用的模板：[[templates/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap--umap|marker 特征 UMAP 小多图]]
+- 使用的模板：[[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]
 - 经模板关联的方法（经读取该接口的模板；不是 direct，按方法页准备数据）：[[methods/cell-type-annotation|细胞类型注释]]（adaptable） · [[methods/dimensionality-reduction|单细胞降维分析]]（adaptable） · [[methods/dynamic-feature-analysis|拟时序动态特征分析]]（adaptable） · [[methods/trajectory-inference|拟时序与轨迹推断]]（adaptable）
 <!-- facts:end -->
 

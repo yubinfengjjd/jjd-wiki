@@ -27,4 +27,4 @@ title: density-scatter
 
 ## 本库模板
 
-- [[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter|密度散点与边缘分布（单 panel）]]
+- [[templates/pred-density-scatter|密度散点与边缘分布（单 panel）]]

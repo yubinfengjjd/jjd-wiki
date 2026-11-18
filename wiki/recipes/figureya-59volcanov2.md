@@ -61,7 +61,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa59volcanoV2.Rmd`）
 - 依赖：CRAN ggplot2, ggrepel, ggthemes, gridExtra
 - 最近运行：pass（as-is，2026-11-04 04:20 UTC，18.9 秒）
-- 派生模板（L2）：[[templates/figureya-59volcanov2--volcano|bulk 差异火山图（分级着色）]]（ready）
+- 派生模板（L2）：[[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-59volcanov2/preview.png]]
@@ -98,7 +98,7 @@ favorite: false
 
 ## 知识关联检查
 
-2026-10-27：查了同图型模板与方法页。同图型模板：[[templates/2026-10-22-scp-example__fig01-volcano--volcano|差异表达火山图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
+2026-10-27：查了同图型模板与方法页。同图型模板：[[templates/scp-de-volcano|差异表达火山图]]；画法与输入是否相同未核对，不建立直连关系。L1 配方按整模块原样运行，figure_relations 在升级为 L2 模板/方法时再核对。
 
 ## 使用记录
 

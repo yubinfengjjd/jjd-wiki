@@ -27,7 +27,7 @@ heatmap 回答的是：在一个特征×样本（或基因×细胞类型、通�
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig08-group-heatmap--heatmap|分组热图（多分组注释）]]：SCP `GroupHeatmap()` 原生单 panel，读取 `render-group-heatmap` 长表；支持多个分组矩阵并排、zscore 色标、列注释和行标签。固定示例 8×6@150 与来源逐字节一致。
-- [[templates/2026-10-22-scp-example__fig14-feature-heatmap--heatmap|特征表达热图]]：SCP `FeatureHeatmap()` 原生单 panel，读取 `render-feature-heatmap` 的 matrix×feature×cell 长表；cell-level zscore 热图、列分组注释与显式顺序。示例为 20 个 DE 基因 × CellType；`split.by`/`add_dot`/`add_violin`/annotation 未实现。
-- [[templates/2026-10-22-scp-example__fig15-cell-cor-heatmap--heatmap|细胞相似度热图]]：SCP `CellCorHeatmap()` 原生单 panel，读取 `render-correlation-heatmap` 相似度长表；模板只重建矩阵并绘制，不重算相似度。示例为 8×8 query-query cosine 相似度；参考数据集/细胞级不折叠/nlabel 未验证。
-- GroupHeatmap正式模板现覆盖ht1及 [[templates/2026-10-22-scp-example__fig17-group-heatmap-dot--heatmap|分组表达点阵热图]]：后者白色单元格内，圆点颜色编码聚合变换表达，圆点直径编码逐细胞阈值阳性比例，顶部色条编码分组身份；原生大小公式不是点面积正比。需要同时展示表达强度和普及度时可考虑此变体，不能将普通气泡图的编码方式直接替换它。add_violin、feature_split/row_split、cell/feature annotation、enrichment注释仍未实现；FeatureHeatmap也只覆盖默认单panel。该确认只覆盖点阵分支。
+- [[templates/scp-group-heatmap|分组热图（多分组注释）]]：SCP `GroupHeatmap()` 原生单 panel，读取 `render-group-heatmap` 长表；支持多个分组矩阵并排、zscore 色标、列注释和行标签。固定示例 8×6@150 与来源逐字节一致。
+- [[templates/scp-feature-heatmap|特征表达热图]]：SCP `FeatureHeatmap()` 原生单 panel，读取 `render-feature-heatmap` 的 matrix×feature×cell 长表；cell-level zscore 热图、列分组注释与显式顺序。示例为 20 个 DE 基因 × CellType；`split.by`/`add_dot`/`add_violin`/annotation 未实现。
+- [[templates/scp-cell-cor-heatmap|细胞相似度热图]]：SCP `CellCorHeatmap()` 原生单 panel，读取 `render-correlation-heatmap` 相似度长表；模板只重建矩阵并绘制，不重算相似度。示例为 8×8 query-query cosine 相似度；参考数据集/细胞级不折叠/nlabel 未验证。
+- GroupHeatmap正式模板现覆盖ht1及 [[templates/scp-group-dot-heatmap|分组表达点阵热图]]：后者白色单元格内，圆点颜色编码聚合变换表达，圆点直径编码逐细胞阈值阳性比例，顶部色条编码分组身份；原生大小公式不是点面积正比。需要同时展示表达强度和普及度时可考虑此变体，不能将普通气泡图的编码方式直接替换它。add_violin、feature_split/row_split、cell/feature annotation、enrichment注释仍未实现；FeatureHeatmap也只覆盖默认单panel。该确认只覆盖点阵分支。

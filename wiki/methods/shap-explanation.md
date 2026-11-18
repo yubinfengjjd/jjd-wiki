@@ -24,7 +24,7 @@ cite:
 - SHAP Explainer official documentation. https://shap.readthedocs.io/en/latest/generated/shap.Explainer.html
 favorite: false
 figure_relations:
-- figure: templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
+- figure: templates/shap-importance-bar
   compatibility: direct
   reason: 特征级平均绝对 SHAP 及其占比对应汇总图契约。
   prerequisites:
@@ -34,13 +34,13 @@ figure_relations:
   adaptation: ''
   evidence:
   - methods/shap-explanation.md#输出
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/spec.json
+  - templates/shap-importance-bar/spec.json
   - interfaces/shap-summary.md
   verification:
     state: not_run
     scope: 本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
     evidence: []
-- figure: templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
+- figure: templates/shap-beeswarm
   compatibility: direct
   reason: 逐样本×特征的带符号 SHAP 和着色特征值对应蜂群图契约。
   prerequisites:
@@ -50,13 +50,13 @@ figure_relations:
   adaptation: ''
   evidence:
   - methods/shap-explanation.md#输出
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/spec.json
+  - templates/shap-beeswarm/spec.json
   - interfaces/shap-samples.md
   verification:
     state: not_run
     scope: 本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
     evidence: []
-- figure: templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+- figure: templates/shap-radial-bar
   compatibility: direct
   reason: 特征级平均绝对 SHAP 及其占比对应汇总图契约。
   prerequisites:
@@ -66,7 +66,7 @@ figure_relations:
   adaptation: ''
   evidence:
   - methods/shap-explanation.md#输出
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json
+  - templates/shap-radial-bar/spec.json
   - interfaces/shap-summary.md
   verification:
     state: not_run
@@ -100,9 +100,9 @@ next_steps:
   - methods/regression-resampling-evaluation
   intermediate_interface: shap-samples
   viz_templates:
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar
-  - templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar
+  - templates/shap-beeswarm
+  - templates/shap-importance-bar
+  - templates/shap-radial-bar
 - direction: 方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证
   when: 需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时
   analysis_templates:
@@ -112,8 +112,8 @@ next_steps:
   - recipes/figureya-33dca-update
   intermediate_interface: model-prediction-shap
   viz_templates:
-  - templates/figureya-1survivalcurve-update--km-curve
-  - templates/figureya-6rhrsv2--forest
+  - templates/km-survival-curve
+  - templates/subgroup-hazard-forest
 ---
 # 基于 SHAP 的模型解释
 
@@ -125,23 +125,23 @@ next_steps:
 - 分析用途：模型解释
 - 输入接口：[[interfaces/model-prediction-shap|临床模型预测风险与 SHAP 贡献表]]
 - 输出接口：[[interfaces/shap-summary|SHAP 特征贡献汇总表]] · [[interfaces/shap-samples|SHAP 逐样本值表]]
-- 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]（ready） · [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]]（ready） · [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar|SHAP 环形贡献图]]（ready）
+- 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/shap-beeswarm|SHAP 蜂群图]]（ready） · [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]]（ready） · [[templates/shap-radial-bar|SHAP 环形贡献图]]（ready）
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/shap-explanation/code/explain_model.py](/files/wiki/methods/shap-explanation/code/explain_model.py) · [methods/shap-explanation/code/shap_explain.py](/files/wiki/methods/shap-explanation/code/shap_explain.py)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：SHAP 蜂群图、重要度条形图与环形图渲染**（触发条件：已计算出训练集/验证集 SHAP 矩阵，准备输出论文级可解释性图表时；中间表：shap-samples；分析模版：methods/regression-resampling-evaluation；可视化模版：templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm、templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar、templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar）
-  - **方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证**（触发条件：需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时；中间表：model-prediction-shap；分析模版：recipes/figureya-1survivalcurve-update、recipes/figureya-85timeroc、recipes/figureya-30nomogram-update、recipes/figureya-33dca-update；可视化模版：templates/figureya-1survivalcurve-update--km-curve、templates/figureya-6rhrsv2--forest）
+  - **方向 1：SHAP 蜂群图、重要度条形图与环形图渲染**（触发条件：已计算出训练集/验证集 SHAP 矩阵，准备输出论文级可解释性图表时；中间表：shap-samples；分析模版：methods/regression-resampling-evaluation；可视化模版：templates/shap-beeswarm、templates/shap-importance-bar、templates/shap-radial-bar）
+  - **方向 2：临床预后 KM、Time-ROC、列线图与 DCA 净获益验证**（触发条件：需要将经 SHAP 筛选解释的核心模型在外部队列评估生存分层与临床效用时；中间表：model-prediction-shap；分析模版：recipes/figureya-1survivalcurve-update、recipes/figureya-85timeroc、recipes/figureya-30nomogram-update、recipes/figureya-33dca-update；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
 
 - 方法配图关系（语义审查）：
-  - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
+  - [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
     - 依据：特征级平均绝对 SHAP 及其占比对应汇总图契约。；前提：同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。；使用真实 SHAP 表；示例估读/合成数据仅作画法参考。；模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。；适配：无格式适配声明
-    - 关系证据：methods/shap-explanation.md#输出；templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar/spec.json；interfaces/shap-summary.md；运行证据：无
-  - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm|SHAP 蜂群图]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
+    - 关系证据：methods/shap-explanation.md#输出；templates/shap-importance-bar/spec.json；interfaces/shap-summary.md；运行证据：无
+  - [[templates/shap-beeswarm|SHAP 蜂群图]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
     - 依据：逐样本×特征的带符号 SHAP 和着色特征值对应蜂群图契约。；前提：同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。；使用真实 SHAP 表；示例估读/合成数据仅作画法参考。；模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。；适配：无格式适配声明
-    - 关系证据：methods/shap-explanation.md#输出；templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--beeswarm/spec.json；interfaces/shap-samples.md；运行证据：无
-  - [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar|SHAP 环形贡献图]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
+    - 关系证据：methods/shap-explanation.md#输出；templates/shap-beeswarm/spec.json；interfaces/shap-samples.md；运行证据：无
+  - [[templates/shap-radial-bar|SHAP 环形贡献图]]（ready）：直接可接（direct）；调用验证：not_run；范围：本轮仅核对知识含义与现存契约，未做实际课题分析→出图联调。
     - 依据：特征级平均绝对 SHAP 及其占比对应汇总图契约。；前提：同一已明确模型输出、解释对象和背景定义；不可混合不同输出单位。；使用真实 SHAP 表；示例估读/合成数据仅作画法参考。；模板为历史固定尺寸实现；任意 n、长标签与配色须另查可读性，尚未迁移为自适应模板。；适配：无格式适配声明
-    - 关系证据：methods/shap-explanation.md#输出；templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json；interfaces/shap-summary.md；运行证据：无
+    - 关系证据：methods/shap-explanation.md#输出；templates/shap-radial-bar/spec.json；interfaces/shap-summary.md；运行证据：无
 <!-- facts:end -->
 
 ## 用途

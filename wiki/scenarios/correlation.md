@@ -13,7 +13,7 @@ picks:
   note: 圆形布局基因相关连线
 - id: recipes/figureya-143survcor-update
   note: 相关散点叠加最佳截断四象限（重）
-- id: templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter
+- id: templates/pred-density-scatter
   note: 密度散点与边缘分布（L2）
 tags:
 - transcriptomics
@@ -45,7 +45,7 @@ summary: 变量两两相关、基因与免疫浸润/通路的相关，以及相�
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[recipes/figureya-37correlationv2-update|圆形布局基因相关连线图]] | L1 | ready · 运行 pass | 圆形布局基因相关连线 |
-| [[templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter|密度散点与边缘分布]] | L2 | ready · 可用 | 密度散点与边缘分布（L2） |
+| [[templates/pred-density-scatter|密度散点与边缘分布]] | L2 | ready | 密度散点与边缘分布（L2） |
 <!-- facts:end -->
 
 ## 注意

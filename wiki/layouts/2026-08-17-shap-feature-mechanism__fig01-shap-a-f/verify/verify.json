@@ -1,5 +1,40 @@
 {
-  "timestamp": "2026-10-21T04:53:30.954119+00:00",
+  "schema_version": 2,
+  "timestamp": "2026-11-18T09:48:59.176948+00:00",
   "exit_code": 0,
-  "mean_absolute_difference": 0.0
+  "inputs": {
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/layout.json": "bc0e80507042b74aa543d3018db330d049ac7b60f652456e683de6a66ec8d17b",
+    "templates/shap-beeswarm/spec.json": "20154535d4a7260e9767fc2b69b2e985605ca670819533b2098d254b4db718d2",
+    "templates/shap-beeswarm/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/shap-beeswarm/code/panel.py": "34e6db262f1ed75cf36d4a47878020a0fa54c2d8c7cd0c6382e9e268b322b1c9",
+    "templates/shap-beeswarm/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-samples#columns": "c6b2561ecf55cabd0e31196df8d6dc94c7e84894f283cd111e67ed0e453631e4",
+    "templates/shap-importance-bar/spec.json": "b80409b27a51604fb06468162c58647b2c312707d03cbef1aba79f79b59da64d",
+    "templates/shap-importance-bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/shap-importance-bar/code/panel.py": "b8a89bbdf194ee8696a97dabb077da4034c1fad25dd4e2aa8a29bd451363d520",
+    "templates/shap-importance-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "interfaces/shap-summary#columns": "39cb558e8dd3bc60c859c06ce104289a49996e07d1ce14a12731499526cc5424",
+    "templates/shap-radial-bar/spec.json": "5661cba311137089641b6adcd9a788fd9bf6431c67cc4d0a6ab8b151dc942924",
+    "templates/shap-radial-bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
+    "templates/shap-radial-bar/code/panel.py": "c40be32c40812e8cfdb8a98b4a709800d38a9699eee35e4e3506580f7e80e2cb",
+    "templates/shap-radial-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/A.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/B.csv": "25c0a547383684b84854c46445dc402d5523054dffac70dfa946077821adc47c",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/C.csv": "9b6962e49be19b879213930b42f1de30f02be96699e2e49a3cdace78fde199d3",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/D.csv": "54ae6f2908dc159b5b463842bb27f404195310f9fd365384748e8ec1b4e1ddc1",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/E.csv": "4cce1981706845654869d12595b4c03d4aad61e9d1596218434edbb0643e7d30",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/F.csv": "54ae6f2908dc159b5b463842bb27f404195310f9fd365384748e8ec1b4e1ddc1",
+    "layouts/2026-08-17-shap-feature-mechanism__fig01-shap-a-f/example/style.json": "c3911d1ddb943a70fef56599ead76e8a9937c09fb0e565e70575cdd5b8339d8c"
+  },
+  "outputs": {
+    "png": "94634f78b0fd01d3d933e7a51fb64e43995fca6ba4a91cde5905863cc0cc7d07",
+    "pdf": "d89e31fc6089c778da009ef01f33f622650921a6209d3644567e2806c82eb56e",
+    "svg": "18a3096b95e3338268f3a1e1f46458d1013c7835064ef85fe2250df80f50d1e6"
+  },
+  "environment": {
+    "executable": "D:\\anaconda\\python.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  },
+  "mean_absolute_difference": 1.875099643076312
 }

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "implementation": "scp-comp-trend",
+  "state": "passed",
+  "scope": "Isolated copy of the template (spec, code, example); new R process; no SCP-local path; render.R invoked from an unrelated working directory",
+  "closure_hash": "82f4b5677b5b62320ec358cf2203b60fb2a0c098456b43f603a4ca60dc29a934",
+  "files": {
+    "code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
+    "code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",
+    "code/panel.R": "34cd73cc13df3f39de08158c930e6789faea23fa2393148d9a32cd0b9e78de53",
+    "code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
+    "code/scp_helpers.R": "2a3a2c8c1744b16df5fb6726657fd50a4b5b035a5ee6c91f5ed0f2849f671af7",
+    "code/scp_stat_native.R": "0944964e610eac4e240b2b800222558c1a4e316e69c6a817dc5a4eaef6e365ec"
+  },
+  "copied_files": [
+    "code/core.R",
+    "code/data/palette_list.rda",
+    "code/panel.R",
+    "code/render.R",
+    "code/scp_helpers.R",
+    "code/scp_stat_native.R"
+  ],
+  "command": "D:\\Users\\admin\\GitHub\\research-wiki-env\\R-4.5.0\\bin\\x64\\Rscript.exe --vanilla D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\code\\render.R --data D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example --out D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\out --style D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example\\style.json",
+  "isolated_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend",
+  "code_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\code",
+  "example_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\example",
+  "out_dir": "D:\\Users\\admin\\GitHub\\research-wiki-env\\tmp\\portability\\templates\\2026-10-22-scp-example__fig05-trend--trend\\out",
+  "environment": {
+    "R": "4.5.0",
+    "Rscript": "D:/Users/admin/GitHub/research-wiki-env/R-4.5.0/bin/x64/Rscript.exe",
+    "R_LIBS_USER": "D:/Users/admin/GitHub/research-wiki-env/R-lib-4.5-3.21",
+    "working_directory": "D:/Users/admin/GitHub/research-wiki-env/tmp"
+  },
+  "checks": [
+    "Template copied to an isolated directory without the SCP-local bundle",
+    "New R process; render.R resolved spec.json and code locally",
+    "No SCP-local path passed; package installation disabled",
+    "PNG compared pixel-wise with the existing verify/figure.png",
+    "PNG pixel-identical to the existing verify output (MAD=0)"
+  ],
+  "outputs": {
+    "figure.png": "bec746f4bce6d6cd1b432d9416b95a0ec65b6ddffc008b80d32562911d3cb94c",
+    "figure.pdf": "26a3ab029a81b75e8fff437d37fa2444cafaf7e097cbc9c10c7b3a1943b12f82",
+    "figure.svg": "e7305da22df6ae4d589b9f8e302a6bacd3f938510656687f9554e683919523be",
+    "sizing.json": "78ec65c5c2afd5080d3557cffc4fd1b6aed3f9a864b138d20e2bd2ef6bb45c80"
+  },
+  "started_at": "2026-11-04T06:42:34.572958+00:00",
+  "executed_at": "2026-11-04T06:42:39.198463+00:00",
+  "previous_outputs": {
+    "png": "bec746f4bce6d6cd1b432d9416b95a0ec65b6ddffc008b80d32562911d3cb94c",
+    "pdf": "1bd96c09a1d23936b603fd2beaed6b96693bc6edc39adc025bc02635b6f884b0",
+    "svg": "e7305da22df6ae4d589b9f8e302a6bacd3f938510656687f9554e683919523be"
+  },
+  "same_as_previous": {
+    "png": true,
+    "pdf": false,
+    "svg": true
+  }
+}

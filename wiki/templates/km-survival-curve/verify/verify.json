@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T05:34:48.146646+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/km-survival-curve/spec.json": "1bc38aa47552ad26fc99274b64d3e1c759d2bf360ed2df0f42c50f45b3725fd2",
+    "templates/km-survival-curve/code/render.R": "2de3af23c869ee4c5164d056e9717f9ec4761682ef29301e8db34a11c6594a0a",
+    "templates/km-survival-curve/code/panel.R": "30cd7b5c39e67a4e0a876bfa03251d33172a6fafcf49c0d30273192bc3e7662e",
+    "interfaces/survival-time-event-group#columns": "c7584fb69688c591a9ace36643212a341b9f84b711b337f7b287a020ca41db30",
+    "templates/km-survival-curve/example/survival-time-event-group.csv": "47c2cd9389ee5c7a3e30eee98a233620dcb1e3ee8a873ec6cbfbc1336d19a681"
+  },
+  "outputs": {
+    "png": "71615ce631b8846a30c1a3c50d6ca2f415c86bca2fc03fb06a81eeaf8ce9c680",
+    "pdf": "ba2f87c284492e474db44a5e41f2eb011516fafb47b28a452b0cd04a5d331614",
+    "svg": "d37d654d29d9ee334d0be18898585328dbc7fba739655bc2805e012846ebe422"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "当前代码与示例的执行证据；不证明科学有效或任意数据适用"
+  }
+}

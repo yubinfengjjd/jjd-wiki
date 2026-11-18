@@ -27,4 +27,4 @@ title: rose
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig04-rose--rose|rose · 单panel：Rose composition (dodge, count) SCP v0.5.6 示例数据图型]]
+- [[templates/scp-comp-rose|rose · 单panel：Rose composition (dodge, count) SCP v0.5.6 示例数据图型]]

@@ -27,5 +27,5 @@ title: bar
 
 ## 本库模板
 
-- [[templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--bar|SHAP 条形图（含环形 inset）]]：历史固定尺寸 4.8×3.5 in，只画平均绝对 SHAP 的横向排序，特征多或标签长需自行检查可读性。
-- [[templates/2026-10-22-scp-example__fig09-bar--bar|分组计数柱图]]：SCP `CellStatPlot(plot_type="bar")` 原生单 panel，读取 `render-cell-metadata` 逐细胞元数据；支持 stack/dodge、count/percent、柱内标签、显式类别顺序与 adaptive sizing。固定示例 8×6@150 与来源逐字节一致；只覆盖单 split，不替代统计检验。
+- [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]]：历史固定尺寸 4.8×3.5 in，只画平均绝对 SHAP 的横向排序，特征多或标签长需自行检查可读性。
+- [[templates/scp-count-bar|分组计数柱图]]：SCP `CellStatPlot(plot_type="bar")` 原生单 panel，读取 `render-cell-metadata` 逐细胞元数据；支持 stack/dodge、count/percent、柱内标签、显式类别顺序与 adaptive sizing。固定示例 8×6@150 与来源逐字节一致；只覆盖单 split，不替代统计检验。

@@ -27,5 +27,5 @@ chord 回答的是：两个分类维度之间「谁与谁相连、相对流量�
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig11-chord--chord|分组流向和弦图]]：SCP `CellStatPlot(plot_type="chord")` 原生单 panel，读取 `render-cell-linkage` 长表；恰两个维度，`circlize::chordDiagram()` 绘制，弦宽为计数。固定示例 8×6@150 与来源逐字节一致；返回 `recordedplot`，不使用 ggplot 图例。
+- [[templates/scp-flow-chord|分组流向和弦图]]：SCP `CellStatPlot(plot_type="chord")` 原生单 panel，读取 `render-cell-linkage` 长表；恰两个维度，`circlize::chordDiagram()` 绘制，弦宽为计数。固定示例 8×6@150 与来源逐字节一致；返回 `recordedplot`，不使用 ggplot 图例。
 - 只覆盖单 split；第三个维度、多面板、方向/时间与比例均不支持；同一类别名会合并扇区。

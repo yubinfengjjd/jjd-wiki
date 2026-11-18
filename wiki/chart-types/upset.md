@@ -27,5 +27,5 @@ UpSet 图回答的是：多个集合之间各交集有多大，哪些交集组�
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig13-upset--upset|多集合交集 UpSet 图]]：SCP `CellStatPlot(plot_type="upset")` 原生单 panel，读取 `render-cell-membership` 长表（cell, set, member）；按交集大小排序，`n_intersections = 20`，组合矩阵显示集合成员，支持 adaptive sizing。固定示例 8×6@150 与来源逐字节一致。
+- [[templates/set-upset|多集合交集 UpSet 图]]：SCP `CellStatPlot(plot_type="upset")` 原生单 panel，读取 `render-cell-membership` 长表（cell, set, member）；按交集大小排序，`n_intersections = 20`，组合矩阵显示集合成员，支持 adaptive sizing。固定示例 8×6@150 与来源逐字节一致。
 - 只覆盖单 split；条形高度是交集大小而非集合大小；超过 20 个交集会截断；不替代富集检验。

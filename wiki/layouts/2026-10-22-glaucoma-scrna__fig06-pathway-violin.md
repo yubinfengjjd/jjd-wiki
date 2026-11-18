@@ -15,9 +15,9 @@ panels:
 chart_types:
 - violin
 templates:
-- 2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin
+- pathway-stat-violin
 template_panels:
-  2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin:
+  pathway-stat-violin:
   - A
 favorite: false
 keywords:
@@ -39,7 +39,7 @@ keywords:
 - 标签：单细胞分析、实验统计
 - 关键词：GSE251716、pathway
 - 图型：[[chart-types/violin]]
-- 面板：[[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin|分组小提琴图（含统计标注）]]（A）
+- 面板：[[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

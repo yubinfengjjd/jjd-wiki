@@ -27,4 +27,4 @@ title: ring
 
 ## 本库模板
 
-- [[templates/2026-10-22-scp-example__fig02-ring--ring|ring · 单panel：Ring composition SCP v0.5.6 示例数据图型]]
+- [[templates/scp-comp-ring|ring · 单panel：Ring composition SCP v0.5.6 示例数据图型]]
