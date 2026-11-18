@@ -1447,3 +1447,5 @@
 ## [2026-11-18 07:25 UTC] acceptance check scp-local-source
 
 ## [2026-11-18 07:25 UTC] acceptance check scp-source-catalog
+
+## [2026-11-18 07:25 UTC] acceptance check uc-ptm-source-catalog

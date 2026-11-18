@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.693627+00:00",
+  "checked_at": "2026-11-18T07:25:42.563702+00:00",
   "page": "methods/uc-ptm-source-catalog.md",
-  "snapshot": "0300d980532f136d7eec7083f3fb37f210581a2dad19b8e0c85d7725ffd25d1e",
+  "snapshot": "82f9b372b16403a343f808c88cee5a6cfaf2817db0fa571cae52fe797b87cf05",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
