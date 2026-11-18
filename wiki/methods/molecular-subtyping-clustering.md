@@ -18,13 +18,16 @@ source:
   kind: written
 license: none
 cite:
-- Wilkerson MD, Hayes DN. ConsensusClusterPlus: a class discovery tool with confidence assessments and item tracking. Bioinformatics, 2010.
-- Anderson MJ. A new method for non-parametric multivariate analysis of variance (PERMANOVA/Adonis). Austral Ecology, 2001.
+- 'Wilkerson MD, Hayes DN. ConsensusClusterPlus: a class discovery tool with confidence
+  assessments and item tracking. Bioinformatics, 2010.'
+- Anderson MJ. A new method for non-parametric multivariate analysis of variance (PERMANOVA/Adonis).
+  Austral Ecology, 2001.
 favorite: false
 method_kind: analysis
 purposes:
 - 降维与聚类
-summary: 面向 Bulk 转录组或多组学矩阵执行无监督分层聚类、共识聚类（ConsensusClusterPlus / MOVICS 等分子分型）以及 PCA/PCoA/PERMANOVA(Adonis) 群落与亚型方差解释分析，输出分组效应与通路/主成分得分表；本库尚未封装独立可执行实现。
+summary: 面向 Bulk 转录组或多组学矩阵执行无监督分层聚类、共识聚类（ConsensusClusterPlus / MOVICS 等分子分型）以及 PCA/PCoA/PERMANOVA(Adonis)
+  群落与亚型方差解释分析，输出分组效应与通路/主成分得分表；本库尚未封装独立可执行实现。
 data_contract:
   input: 标准化且经批次核查的样本×特征矩阵（单组学高变基因/通路谱，或多组学对齐特征列表），含待检验的样本元信息表。
   output: subgroup-effect-table（样本分子亚型归属与组间效应汇总）与 pathway-score-table（含 PC1/签名得分或组间方差解释度）。
@@ -66,6 +69,23 @@ next_steps:
 # 表达谱无监督聚类、分子分型与降维排序
 
 <!-- facts:start -->
+- 来源：依据文献 / 官方文档编写
+- 许可证：仅供个人研究参考
+- 引用：Wilkerson MD, Hayes DN. ConsensusClusterPlus: a class discovery tool with confidence assessments and item tracking. Bioinformatics, 2010.；Anderson MJ. A new method for non-parametric multivariate analysis of variance (PERMANOVA/Adonis). Austral Ecology, 2001.
+- 标签：transcriptomics、multi-omics
+- 分析用途：降维与聚类
+- 输入接口：未声明
+- 输出接口：[[interfaces/subgroup-effect-table|亚组效应量汇总表]] · [[interfaces/pathway-score-table|通路富集与多算法基因集打分表]]
+- 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/subgroup-hazard-forest|亚组分析森林图]]（ready）
+- 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
+- 代码模板：无
+- 下一步分析导航（Step N → Step N+1）：
+  - **方向 1：检验分子亚型之间的临床生存预后差异**（触发条件：基于共识聚类确定稳健分子亚型后，比较不同亚型的生存曲线与预后风险比时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
+  - **方向 2：对比不同分子亚型间的肿瘤微环境与免疫浸润特征**（触发条件：刻画各分子亚型在免疫细胞丰度、免疫检查点与免疫分型上的异质性时；中间表：pathway-score-table；分析模版：methods/immune-infiltration-tme；可视化模版：无）
+  - **方向 3：识别各分子亚型的特异性标记基因与差异通路**（触发条件：通过一对多差异分析与功能富集解释各分型的分子生物学特征时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/bulk-de-volcano）
+
+- 方法配图关系（语义审查）：
+  - 暂无已记录关系；接口或标签相同不代表语义已核实。
 <!-- facts:end -->
 
 ## 用途
