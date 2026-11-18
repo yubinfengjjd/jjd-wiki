@@ -3,7 +3,7 @@
   "timestamp": "2026-11-04T06:32:51.375003+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-22-scp-example__fig06-area--area/spec.json": "81881544a602df9b66cfd334e4ec0b749a6c156aa429994ddf9799a5a495a085",
+    "templates/2026-10-22-scp-example__fig06-area--area/spec.json": "7bbc7b09b4ac7a6165ae88614f2757b2eef407c0c19bb7fedfe177acc7850e2b",
     "templates/2026-10-22-scp-example__fig06-area--area/code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
     "templates/2026-10-22-scp-example__fig06-area--area/code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
     "templates/2026-10-22-scp-example__fig06-area--area/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",

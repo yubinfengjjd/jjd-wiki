@@ -3,7 +3,7 @@
   "timestamp": "2026-11-04T06:28:20.134371+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-22-scp-example__fig05-trend--trend/spec.json": "2be796c920f2eef3e32c24b3e4e5da8b5f95d253e68cf9b6a88965f29eae40fb",
+    "templates/2026-10-22-scp-example__fig05-trend--trend/spec.json": "e72355e94bca75590644fd83fce5ec484683dee1c474d6fb5cf2ac6584e3d232",
     "templates/2026-10-22-scp-example__fig05-trend--trend/code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
     "templates/2026-10-22-scp-example__fig05-trend--trend/code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
     "templates/2026-10-22-scp-example__fig05-trend--trend/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",

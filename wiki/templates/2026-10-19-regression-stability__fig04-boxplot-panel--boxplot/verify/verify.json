@@ -3,7 +3,7 @@
   "timestamp": "2026-11-04T04:20:45.129746+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/spec.json": "aa4a55dce6b8e051e3b9bccf1cd2aa0f5d12cf70d0fcd74e8aeeca0f91b87388",
+    "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/spec.json": "31686c829c934e321a6962fa8208bc5cdfef6a53a2a1f8469b6fe2680b196c02",
     "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/code/render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
     "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/code/panel.py": "f699e8135338b1808f082fde19e73c917fc6e679b17b87acdf75fea8b451b721",
     "templates/2026-10-19-regression-stability__fig04-boxplot-panel--boxplot/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

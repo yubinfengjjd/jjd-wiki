@@ -3,7 +3,7 @@
   "timestamp": "2026-11-04T06:23:53.589508+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-22-scp-example__fig04-rose--rose/spec.json": "6382691a73626817aafa51df5ef02b9d5b9070684eb75eae5ff418a8d74f64b2",
+    "templates/2026-10-22-scp-example__fig04-rose--rose/spec.json": "8a77644cd7043e363a1ea486e2cfd8b1317d5c39c4d99b80b54989d8f10f6af3",
     "templates/2026-10-22-scp-example__fig04-rose--rose/code/render.R": "3d8dac1ddaccaecf1f8826fb31d6288e089ab53a2fca496d6d4cac9c6a708b9c",
     "templates/2026-10-22-scp-example__fig04-rose--rose/code/core.R": "eb269b5bf6d931cf7692cfc745ed2b6d095883223945c4a7c07f7736ff22a9b7",
     "templates/2026-10-22-scp-example__fig04-rose--rose/code/data/palette_list.rda": "4ab688fdf3f62371be423212fb18a5430e58a0d95025af8a23694c4f0f78184b",

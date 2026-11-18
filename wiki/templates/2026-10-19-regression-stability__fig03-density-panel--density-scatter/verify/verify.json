@@ -3,7 +3,7 @@
   "timestamp": "2026-11-04T04:20:45.020020+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/spec.json": "e0c694e5b8621847a9491f837104fa462d5df2b2087ee8e6140827cd747175b5",
+    "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/spec.json": "f7cc3f33dda178e7395e5804e5a1b0f8546781ecaedb5c41c5a044349942293d",
     "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/render.py": "9fedfc97840bfd5f1eb8e9b124f71ef4c17b0cce77156f94baccc1a8afc3a88b",
     "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/panel.py": "79fbbe88bee3d3d58cc95170ecb9c0abdfb0506dee3a375c06e685415b681ac2",
     "templates/2026-10-19-regression-stability__fig03-density-panel--density-scatter/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",

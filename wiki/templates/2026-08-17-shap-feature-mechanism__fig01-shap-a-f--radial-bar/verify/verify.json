@@ -3,7 +3,7 @@
   "timestamp": "2026-11-04T04:20:44.916094+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json": "355df8d01b335b7db7504b28b3e29b8c87253f7577f95604f3c0cb61914891c1",
+    "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/spec.json": "5661cba311137089641b6adcd9a788fd9bf6431c67cc4d0a6ab8b151dc942924",
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/render.py": "945397cfe2005aada9a454cc2f788afbad0bf3d8c12bb93272fbb358981b520d",
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/panel.py": "c40be32c40812e8cfdb8a98b4a709800d38a9699eee35e4e3506580f7e80e2cb",
     "templates/2026-08-17-shap-feature-mechanism__fig01-shap-a-f--radial-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
