@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.715302+00:00",
+  "checked_at": "2026-11-18T07:25:57.348234+00:00",
   "page": "methods/uc-spatial-workflows.md",
-  "snapshot": "d8d15e3dcbdcc5f6ba92f478bd607f93250659520802073e14bf8219b1b7b847",
+  "snapshot": "fe598e0ba96aafe1b3693595044b9f3494ce88e8bebe567b7eee0847f04fc3d9",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
