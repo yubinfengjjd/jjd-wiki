@@ -1,6 +1,88 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "enrich": {
+      "interface": "",
+      "filename": "enrich_plot_dat.csv",
+      "description": "模块富集分析整理表（每个模块 Top N 显著通路：module、Term、log10p、可选 color）",
+      "required": true,
+      "columns": {
+        "module": {
+          "type": "str",
+          "description": "共表达模块名（如 Agrp_M1、ME1）",
+          "required": true
+        },
+        "Term": {
+          "type": "str",
+          "description": "富集通路或 GO Term 名称",
+          "required": true
+        },
+        "log10p": {
+          "type": "float",
+          "description": "-log10(P-value) 显著性数值",
+          "required": true
+        },
+        "color": {
+          "type": "str",
+          "description": "模块十六进制配色（与网络图保持一致；缺省自动配色）",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "width_in": 6.0,
+    "height_in": 11.8,
+    "dpi": 300,
+    "ncol": 2,
+    "bar_alpha": 0.52,
+    "bar_width": 0.72,
+    "term_size": 2.45,
+    "strip_text_size": 8.2,
+    "max_term_chars": 46,
+    "x_lab": "-log10(P-value)"
+  },
+  "parameters": {
+    "ncol": {
+      "type": "number",
+      "label": "分面列数",
+      "default": 2,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    },
+    "bar_alpha": {
+      "type": "number",
+      "label": "柱体透明度",
+      "default": 0.52,
+      "min": 0.2,
+      "max": 1.0,
+      "step": 0.04
+    },
+    "term_size": {
+      "type": "number",
+      "label": "条内通路文字字号",
+      "default": 2.45,
+      "min": 1.5,
+      "max": 5.0,
+      "step": 0.1
+    },
+    "width_in": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 6.0,
+      "min": 4.0,
+      "max": 16.0,
+      "step": 0.2
+    },
+    "height_in": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 11.8,
+      "min": 4.0,
+      "max": 24.0,
+      "step": 0.2
+    }
+  }
 }

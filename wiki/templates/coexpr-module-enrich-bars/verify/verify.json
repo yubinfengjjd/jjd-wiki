@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T17:09:28.803104+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/coexpr-module-enrich-bars/spec.json": "d5698906df5383451f7d3540f58d32d808f6ad6af835387884265a3b6691f4fa",
+    "templates/coexpr-module-enrich-bars/code/render.R": "823af1cc3cfd3b3119d4b24f987fde8ccdff51c355f7d035168c5d608b05213a",
+    "inline/enrich#columns": "19376ed419b3b199abf4dc8113cb10c4dc72ed16fdbaae7ea50ec233daafe860",
+    "templates/coexpr-module-enrich-bars/example/enrich_plot_dat.csv": "d9a6475d4e38f4aa3bf0a49463104745b4128e5cd82ee18892e02e290e25474d"
+  },
+  "outputs": {
+    "png": "113cf4f7df6a212f766637a0e4f3b5245376bcce5bb69dc03dc443710a19e863",
+    "pdf": "aa2d626daf5f5052d0d09f2ed54830f691a0afe51cad44028e022dcde4861d0a",
+    "svg": "5f571802370add08772f6134d1e88169e31d4e4a096f0de3a6e234023a374d42"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
