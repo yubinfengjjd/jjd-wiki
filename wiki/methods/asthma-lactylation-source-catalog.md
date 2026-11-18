@@ -20,9 +20,6 @@ method_kind: technical
 summary: 159 份研究代码、154 个不同字节版本的来源及去重索引；只编译知识，未运行。
 keywords:
 - asthma-lactylation
-- 哮喘乳酸化单细胞开篇
-- 原字节
-- 来源索引
 - 去重
 - SCP
 - irGSEA

@@ -21,7 +21,6 @@ keywords:
 - 细胞通讯
 - 受配体
 - 环形热图
-- KS科研
 favorite: false
 ---
 # 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
@@ -29,7 +28,7 @@ favorite: false
 ![[templates/ks-cellchat-circos-multi--circos/preview.png]]
 
 <!-- facts:start -->
-- 来源：[[sources/ks-wechat|KS生信科研课（公众号 / KS-account-codes）]]
+- 来源：[[sources/ks-wechat|单细胞与顶刊多轨可视化代码库 (KS-account-codes)]]
 - 语言：r
 - 许可证：MIT
 - 标签：单细胞分析
@@ -43,7 +42,7 @@ favorite: false
 
 ## 适用
 
-参考微信公众号《KS科研分享与服务》（`https://mp.weixin.qq.com/s/bF8f_hoVPwbCdKGPCGJ5Ng`，作者 TS的美梦）推文展示的多轨单细胞通讯环形图，基于 R `circlize` + `ComplexHeatmap` 独立复刻并参数化为单 panel 可调用模板。一张图同时呈现四层信息：
+参考单细胞多轨可视化公开实现（`https://mp.weixin.qq.com/s/bF8f_hoVPwbCdKGPCGJ5Ng`），基于 R `circlize` + `ComplexHeatmap` 独立复刻并参数化为单 panel 可调用模板。一张图同时呈现四层信息：
 
 1. **外圈扇区弧与基因角色标签**：按细胞亚群（如 `ECs`、`Tcell`、`SMCs`、`Mon`、`Kers`、`Fibs`、`Mast`、`lang`、`Men`）分扇区；基因标签斜体展示并按功能区分颜色（绿色 `ligand` 配体 vs 粉红色 `receptor` 受体）。
 2. **外环表达量热图轨（Track 1）**：展示每个配体/受体基因在所有细胞亚群中的标准化表达强弱（蓝-白-红 Z-score 色阶）。
@@ -113,7 +112,7 @@ favorite: false
 
 ## 使用记录
 
-2026-11-18：根据《KS科研分享与服务》公众号文章（`https://mp.weixin.qq.com/s/bF8f_hoVPwbCdKGPCGJ5Ng`）与作者提供的目标效果图，在本地 R 4.5.0（`circlize` + `ComplexHeatmap`）中完成多轨环形图复刻与参数 Schema 接入。
+2026-11-18：在本地 R 4.5.0（`circlize` + `ComplexHeatmap`）中完成细胞通讯多轨环形图独立复刻、示例数据构建与参数 Schema 接入。
 
 <!-- user:start -->
 <!-- user:end -->

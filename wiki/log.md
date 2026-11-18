@@ -1439,3 +1439,5 @@
 ## [2026-11-18 07:15 UTC] chore: record acceptance for ks-wechat and cell-type-annotation
 
 ## [2026-11-18 07:16 UTC] acceptance check cell-type-annotation
+
+## [2026-11-18 07:24 UTC] acceptance check asthma-lactylation-source-catalog

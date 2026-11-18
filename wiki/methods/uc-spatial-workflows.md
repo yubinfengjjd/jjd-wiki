@@ -31,8 +31,6 @@ keywords:
 - SPARK-X
 - cell2location
 - UBE2L6
-- '9.20'
-- '9.25'
 data_contract:
   input: 来源脚本、静态调用、对象/表结构与来源版本；数据和图片留在课题目录。
   output: 来源去重、规范方法映射、依赖绘图/自定义实现与工作流导航；不提供已验证可执行实现。

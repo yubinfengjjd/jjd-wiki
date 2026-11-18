@@ -8,7 +8,6 @@ tags:
 keywords:
 - SCP
 - SingleCellPipeline
-- 源码本地化
 - Seurat
 - reticulate
 - Rcpp

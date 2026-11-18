@@ -211,7 +211,7 @@ steps:
 | [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | 分支 3：主题基因集多算法活性打分（AUCell/UCell/ssGSEA） |
 | [[methods/trajectory-inference|拟时序与轨迹推断]] | L2 | ready · 可用 | 分支 4：关键亚群拟时序轨迹与动态基因 |
 | [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]] | L1 | draft · 运行 fail | 分支 5：CellChat 细胞通讯配受体互作弦图 |
-| [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]] | L2 | ready · 可用 | 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2） |
+| [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]] | L2 | ready | 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2） |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | 分支 6：投射 Bulk 临床队列验证与机器学习建模 |
 <!-- facts:end -->
 

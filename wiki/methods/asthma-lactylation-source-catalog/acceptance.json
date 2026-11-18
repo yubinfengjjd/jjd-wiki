@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-02T11:18:13.174596+00:00",
+  "checked_at": "2026-11-18T07:24:39.372666+00:00",
   "page": "methods/asthma-lactylation-source-catalog.md",
-  "snapshot": "0fc5e7437a0481b9c046be2377703a521b1e5568075cb0f4fb9fb761428feb19",
+  "snapshot": "5962ab99f603b61f1f0b61c1cb12d3c7d5f4ac90273265bd6397b2f249cdc683",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

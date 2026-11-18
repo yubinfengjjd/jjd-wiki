@@ -10,9 +10,6 @@ tags:
 - transcriptomics
 keywords:
 - SCP
-- 全库
-- 入库
-- 来源
 - 原生绘图
 - '%>%'
 - '%||%'

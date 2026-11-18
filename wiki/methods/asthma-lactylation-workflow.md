@@ -20,7 +20,6 @@ method_kind: workflow
 summary: 保留来源步骤、参数与分组差异的研究流程；共同分析引用现有家族，所有来源分支未重跑。
 keywords:
 - asthma-lactylation
-- 哮喘乳酸化单细胞开篇
 - 流程
 - GMM-LR
 - WGCNA

@@ -21,8 +21,6 @@ summary: 132 份研究代码、90 个不同字节版本的来源及去重索引�
 keywords:
 - uc-ptm
 - UC-20种修饰
-- 原字节
-- 来源索引
 - 去重
 - SCP
 - irGSEA
