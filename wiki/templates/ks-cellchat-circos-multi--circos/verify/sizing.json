@@ -1,0 +1,13 @@
+{
+  "mode": "fixed",
+  "profile": "circos-multi",
+  "n_sectors": 9,
+  "n_nodes": 89,
+  "n_links": 73,
+  "width_in": 9.8,
+  "height_in": 7.6,
+  "dpi": 200,
+  "width_px": 1960,
+  "height_px": 1520,
+  "svg_device": "svglite"
+}

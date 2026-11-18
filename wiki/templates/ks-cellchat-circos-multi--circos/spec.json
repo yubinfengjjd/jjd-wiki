@@ -1,0 +1,108 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "interactions": {
+      "interface": "cellchat-lr-table",
+      "description": "细胞通讯配受体互作表（source, target, ligand, receptor, pathway_name, prob, pval）",
+      "required": true
+    },
+    "expression": {
+      "interface": "celltype-gene-expression",
+      "description": "配受体基因在各细胞类型中的 Z-score 表达矩阵长表（gene, cell_type, expression）",
+      "required": false
+    }
+  },
+  "style": {
+    "source_col": "source",
+    "target_col": "target",
+    "ligand_col": "ligand",
+    "receptor_col": "receptor",
+    "prob_col": "prob",
+    "pval_col": "pval",
+    "pathway_col": "pathway_name",
+    "gene_col": "gene",
+    "cell_type_col": "cell_type",
+    "expression_col": "expression",
+    "palette": "NPG",
+    "width_in": 9.8,
+    "height_in": 7.6,
+    "dpi": 200,
+    "title": "",
+    "font_size": 10.0,
+    "score_threshold": 0.05,
+    "pval_threshold": 0.05,
+    "expr_limit": 2.5,
+    "show_bar_track": true,
+    "highlight_top_n": 2,
+    "sector_gap": 4.5,
+    "start_degree": 88
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": ["NPG", "Nature", "Lancet", "NEJM", "JAMA", "Cell"],
+      "description": "外圈细胞亚群与柱状图配色主题"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 9.8,
+      "min": 6.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 7.6,
+      "min": 5.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    },
+    "font_size": {
+      "type": "number",
+      "label": "标签字号 (pt)",
+      "default": 10.0,
+      "min": 6.0,
+      "max": 18.0,
+      "step": 0.5
+    },
+    "score_threshold": {
+      "type": "number",
+      "label": "互作得分过滤阈值 (prob >=)",
+      "default": 0.05,
+      "min": 0.0,
+      "max": 0.5,
+      "step": 0.01
+    },
+    "expr_limit": {
+      "type": "number",
+      "label": "表达量热图色阶上限 (±)",
+      "default": 2.5,
+      "min": 1.0,
+      "max": 5.0,
+      "step": 0.5
+    },
+    "show_bar_track": {
+      "type": "boolean",
+      "label": "显示基因互作强度柱状轨",
+      "default": true
+    },
+    "highlight_top_n": {
+      "type": "int",
+      "label": "高亮最显著互作连线数",
+      "default": 2,
+      "min": 0,
+      "max": 10,
+      "step": 1
+    }
+  }
+}

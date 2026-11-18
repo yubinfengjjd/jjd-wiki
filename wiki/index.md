@@ -179,6 +179,7 @@
 
 ### draft
 
+- [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]
 
 ### ready
 
@@ -309,6 +310,7 @@
 - [[interfaces/render-correlation-heatmap|相似度矩阵长表]]
 - [[interfaces/cell-proportion-stats|细胞亚群比例与 Ro/e 偏好统计表]]
 - [[interfaces/render-dotplot-long|细胞类型 × 基因点图表]]
+- [[interfaces/celltype-gene-expression|细胞类型×基因平均表达表]]
 - [[interfaces/render-cell-proportions|细胞类型比例表]]
 - [[interfaces/render-cell-metadata|细胞级分组元数据表]]
 - [[interfaces/render-cell-linkage|细胞级多维流向长表]]
