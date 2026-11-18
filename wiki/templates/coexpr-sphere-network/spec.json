@@ -1,6 +1,120 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "nodes": {
+      "interface": "",
+      "filename": "gene_module.csv",
+      "description": "模块基因表（每行一个 hub 基因：gene_name、module、可选 color 与 annotation 模块功能注释）",
+      "required": true,
+      "columns": {
+        "gene_name": {
+          "type": "str",
+          "description": "基因名或特征名（须与 edge_file 中的节点名一致）",
+          "required": true
+        },
+        "module": {
+          "type": "str",
+          "description": "所属共表达模块名称（如 Agrp_M1 或 ME1）",
+          "required": true
+        },
+        "color": {
+          "type": "str",
+          "description": "模块十六进制配色（如 #b92d2d；缺省时按模块数自动生成调色板）",
+          "required": false
+        },
+        "annotation": {
+          "type": "str",
+          "description": "模块代表功能注释（如 GO/KEGG 最显著富集通路名；缺省只显示模块名）",
+          "required": false
+        }
+      }
+    },
+    "edges": {
+      "interface": "",
+      "filename": "edge_file.csv",
+      "description": "共表达网络连边表（由 TOM > 阈值筛选得到的基因对 from、to 与可选 tom 权重）",
+      "required": true,
+      "columns": {
+        "from": {
+          "type": "str",
+          "description": "起点基因名",
+          "required": true
+        },
+        "to": {
+          "type": "str",
+          "description": "终点基因名",
+          "required": true
+        },
+        "tom": {
+          "type": "float",
+          "description": "拓扑重叠矩阵权重或相关性强度（可选，默认 0.1）",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "width_in": 8.4,
+    "height_in": 8.0,
+    "dpi": 300,
+    "point_size": 1.95,
+    "point_alpha": 0.95,
+    "edge_color": "#a8a8a8",
+    "edge_alpha": 0.18,
+    "edge_width": 0.22,
+    "label_size": 3.15,
+    "wrap_width": 28,
+    "segment_color": "#2f2f2f",
+    "segment_size": 0.42,
+    "seed": 42,
+    "title": ""
+  },
+  "parameters": {
+    "point_size": {
+      "type": "number",
+      "label": "节点大小",
+      "default": 1.95,
+      "min": 0.5,
+      "max": 5.0,
+      "step": 0.1
+    },
+    "edge_alpha": {
+      "type": "number",
+      "label": "连边透明度",
+      "default": 0.18,
+      "min": 0.02,
+      "max": 0.8,
+      "step": 0.02
+    },
+    "label_size": {
+      "type": "number",
+      "label": "模块标签字号",
+      "default": 3.15,
+      "min": 1.8,
+      "max": 6.0,
+      "step": 0.1
+    },
+    "width_in": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.4,
+      "min": 5.0,
+      "max": 18.0,
+      "step": 0.2
+    },
+    "height_in": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 8.0,
+      "min": 5.0,
+      "max": 18.0,
+      "step": 0.2
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T16:59:27.042781+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/coexpr-sphere-network/spec.json": "d0065a81b64dbac2fa87ad98d80895b2c244c7fa0f819b57121e0d1b658157e4",
+    "templates/coexpr-sphere-network/code/render.R": "0fcb2bbdfe612c640960fbf6f76fbf3cabf6d40280ada5880e01d0b38f53aed9",
+    "inline/nodes#columns": "594be290c0736a61f6d55424c403c84e34fd637c9cfe9cc4c856ab5135df36eb",
+    "inline/edges#columns": "b96f0996dca479f4500ae0a5c1c51e23061c228372e1d906c34f6e264d076c5b",
+    "templates/coexpr-sphere-network/example/edge_file.csv": "d93abfe6418bc72c476faad4b6a7ebc064a0d485198cf4e7fe23b3e5a1c47adc",
+    "templates/coexpr-sphere-network/example/gene_module.csv": "cb9cb7688f2b2492c1079949f521ebd6b5e5463c6d094fa8c3a5bdb3129290f0"
+  },
+  "outputs": {
+    "png": "d6df573d78228f0edb27ba1576aa40f5e1d32e8cb74ea40970266db3bfcb5891",
+    "pdf": "0ee87f10338dbb50f232d003a8b02ae4d392412c8995e116087a2ebe41b6590a",
+    "svg": "ebaa0ec17a5bb5f5187a18e365023cb651ce15cb24a3bd0a83067cc0ba485769"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
