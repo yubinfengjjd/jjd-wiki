@@ -45,9 +45,15 @@ keywords:
 
 ## 适用
 
+`hdWGCNA` / `WGCNA` 多模块 Top N 通路富集对比分面条图；可调用模板已函数化为 [[templates/coexpr-module-enrich-bars]]。
+
 ## 不适用
 
+不执行线上富集检验，需上游传入 `P < 0.05` 筛选后的 `-log10(P-value)` 整理表。
+
 ## 知识关联检查
+
+2026-11-19：对应可调用 R 原生模板 [[templates/coexpr-module-enrich-bars]] 已 `ready` 并挂载于 [[methods/coexpression-ppi-network]]，本版式作面板 B 溯源记录（面板 A 见 [[layouts/2026-11-19-hdwgcna-network__fig01]]）。
 
 ## 使用记录
 

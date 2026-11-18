@@ -1489,3 +1489,5 @@
 ## [2026-11-18 17:15 UTC] ingest 2026-11-19-hdwgcna-network__fig02
 
 ## [2026-11-18 17:16 UTC] ready 2: coexpr-sphere-network, coexpr-module-enrich-bars
+
+## [2026-11-18 17:18 UTC] complete hdWGCNA sphere network & enrichment layout notes

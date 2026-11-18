@@ -45,9 +45,15 @@ keywords:
 
 ## 适用
 
+单细胞 `hdWGCNA` 或 bulk WGCNA 多模块共表达拓扑球体网络与注释展示；可调用模板已函数化为 [[templates/coexpr-sphere-network]]。
+
 ## 不适用
 
+不替代真实 `TOM` 共表达矩阵聚类计算；仅用于展示上游筛选后的模块节点与连边。
+
 ## 知识关联检查
+
+2026-11-19：对应可调用 R 原生模板 [[templates/coexpr-sphere-network]] 已 `ready` 并挂载于 [[methods/coexpression-ppi-network]]，本版式仅作单 panel 溯源记录（面板 B 见 [[layouts/2026-11-19-hdwgcna-network__fig02]]）。
 
 ## 使用记录
 
