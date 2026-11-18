@@ -21,6 +21,8 @@ picks:
   note: 分支 4：关键亚群拟时序轨迹与动态基因
 - id: recipes/figureya-310cpdbchordgramv2
   note: 分支 5：CellChat 细胞通讯配受体互作弦图
+- id: templates/ks-cellchat-circos-multi--circos
+  note: 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2）
 - id: recipes/figureya-293plus-binaryclassificationml
   note: 分支 6：投射 Bulk 临床队列验证与机器学习建模
 tags:
@@ -165,6 +167,7 @@ steps:
   - cellchat-lr-table
   interface: cellchat-lr-table
   templates:
+  - templates/ks-cellchat-circos-multi--circos
   - recipes/figureya-310cpdbchordgramv2
   - templates/2026-10-22-scp-example__fig11-chord--chord
   - templates/2026-10-22-scp-example__fig10-sankey--sankey
@@ -208,6 +211,7 @@ steps:
 | [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | 分支 3：主题基因集多算法活性打分（AUCell/UCell/ssGSEA） |
 | [[methods/trajectory-inference|拟时序与轨迹推断]] | L2 | ready · 可用 | 分支 4：关键亚群拟时序轨迹与动态基因 |
 | [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]] | L1 | draft · 运行 fail | 分支 5：CellChat 细胞通讯配受体互作弦图 |
+| [[templates/ks-cellchat-circos-multi--circos|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]] | L2 | draft | 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨，L2） |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | 分支 6：投射 Bulk 临床队列验证与机器学习建模 |
 <!-- facts:end -->
 
@@ -222,7 +226,7 @@ steps:
 | **Step 4.2** | 注释完成 → 看差异 | 找出目标亚群疾病 vs 对照 DEG 与通路 | `deg-result-table` | [[methods/differential-expression]] · [[methods/gene-set-enrichment]] · [[templates/2026-10-22-scp-example__fig01-volcano--volcano]] |
 | **Step 4.3** | 注释完成 → 看主题活性 | 关注乳酸化/铁死亡/PTM 等特定基因集得分 | `pathway-score-table` | [[methods/gene-set-scoring]] · [[recipes/figureya-275scaucell]] · [[templates/2026-10-22-glaucoma-scrna__fig06-pathway-violin--violin]] · [[templates/2026-10-22-scp-example__fig16-cell-density--ridge]] |
 | **Step 4.4** | 聚焦核心谱系 → 看演化 | 探索高活亚群的分化起点、分支与驱动基因 | `pseudotime-trajectory-table` | [[methods/trajectory-inference]] · [[methods/rna-velocity]] · [[methods/dynamic-feature-analysis]] |
-| **Step 4.5** | 聚焦核心谱系 → 看互作 | 分析高活亚群与其他细胞的配受体通讯 | `cellchat-lr-table` | [[recipes/figureya-310cpdbchordgramv2]] · [[templates/2026-10-22-scp-example__fig11-chord--chord]] · [[templates/2026-10-22-scp-example__fig10-sankey--sankey]] |
+| **Step 4.5** | 聚焦核心谱系 → 看互作 | 分析高活亚群与其他细胞的配受体通讯 | `cellchat-lr-table` | [[templates/ks-cellchat-circos-multi--circos]] · [[recipes/figureya-310cpdbchordgramv2]] · [[templates/2026-10-22-scp-example__fig11-chord--chord]] · [[templates/2026-10-22-scp-example__fig10-sankey--sankey]] |
 | **Step 5** | 锁定候选靶基因 → 临床验证 | 投射至 TCGA/GEO Bulk 队列验证诊断与预后 | `candidate-biomarker-list` → `model-prediction-shap` | [[recipes/figureya-293plus-binaryclassificationml]] · [[methods/shap-explanation]] · [[templates/figureya-1survivalcurve-update--km-curve]] |
 
 ## 注意

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-18T07:10:17.693365+00:00",
+  "timestamp": "2026-11-18T07:12:57.798825+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/ks-cellchat-circos-multi--circos/spec.json": "9a441407ed7f6559e734112114c0c066ba0a31699963da785a29d008fd46ba4a",
@@ -13,7 +13,7 @@
   },
   "outputs": {
     "png": "de2b7ff5a0e3894a437ec1b5c55fe59e6786ad641107cfdc24ec19e86289be27",
-    "pdf": "76b095d226caef99a921800f5ec979bfc95fae460452f19e558b6ba2d68dc81f",
+    "pdf": "9ca3a2a5c4e35ce53245394b073051db21b0336d015f8dc0703a2d86f84f3098",
     "svg": "2f04d0e27d9c5da85b3f7ab62060ae12cff5e9090e7ae1ac25300b28920c0d97"
   },
   "environment": {

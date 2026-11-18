@@ -3,6 +3,8 @@ type: template
 id: ks-cellchat-circos-multi--circos
 title: 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
 status: draft
+sources:
+- sources/ks-wechat
 layouts: []
 panels: []
 language: r
@@ -25,7 +27,7 @@ favorite: false
 # 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
 
 <!-- facts:start -->
-- 来源：
+- 来源：[[sources/ks-wechat|KS生信科研课（公众号 / KS-account-codes）]]
 - 语言：r
 - 许可证：MIT
 - 标签：单细胞分析

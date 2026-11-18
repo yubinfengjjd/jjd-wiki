@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T07:10:17.693365+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/ks-cellchat-circos-multi--circos/spec.json": "9a441407ed7f6559e734112114c0c066ba0a31699963da785a29d008fd46ba4a",
+    "templates/ks-cellchat-circos-multi--circos/code/render.R": "dc18dae913e5659c3770231f01b940481c86b1e0334c3da3f7e12d85442789b6",
+    "templates/ks-cellchat-circos-multi--circos/code/core.R": "16e671205189f1fb1d132747d46aa7d66987952e10ac7286234b841a6651f2b1",
+    "interfaces/cellchat-lr-table#columns": "99e23a5e9bfc719a09c953253c155cc0a0d7bf7042b02f0acadbc74af8d62a9f",
+    "interfaces/celltype-gene-expression#columns": "16812bc08a19ac198bfd4c1aee19ddab699aacb5f5146a2cc96cbe44a1e9c720",
+    "templates/ks-cellchat-circos-multi--circos/example/cellchat-lr-table.csv": "af1eeb3f92a7cacb16f899b3f6254ad5b2273789dbd8d2076d04197f03513fe1",
+    "templates/ks-cellchat-circos-multi--circos/example/celltype-gene-expression.csv": "d5b022c4c3c90a45c7a8aea4d4420aa5a219ceaa87f451d5f8c5611604c85d1e"
+  },
+  "outputs": {
+    "png": "de2b7ff5a0e3894a437ec1b5c55fe59e6786ad641107cfdc24ec19e86289be27",
+    "pdf": "76b095d226caef99a921800f5ec979bfc95fae460452f19e558b6ba2d68dc81f",
+    "svg": "2f04d0e27d9c5da85b3f7ab62060ae12cff5e9090e7ae1ac25300b28920c0d97"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

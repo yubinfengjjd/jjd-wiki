@@ -283,6 +283,7 @@
 ## 来源
 
 - [[sources/figureya|FigureYa 医学科研绘图模块库]]
+- [[sources/ks-wechat|KS生信科研课（公众号 / KS-account-codes）]] — 收录自公众号“KS生信科研课”（KS科研分享与服务）复现的高颜值单细胞及生信顶刊多轨可视化模版。
 - [[sources/figureya-archive-20251223|压缩包可视化模块增量来源]] — 本地压缩包330项盘点：286项复用旧入口，33项新增或差异Rmd，10项多语言工具，1项贡献模板。
 
 ## 接口
