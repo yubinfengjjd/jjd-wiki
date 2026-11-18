@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:09:38.757245+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-multipanelroc/spec.json": "9301954cdf3d22ec4bab6dc55ea150acc9aa4fa84c95bb3a7f88390917aeb5b9",
+    "templates/fy-multipanelroc/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-multipanelroc/code/plot_figureya.R": "260e4ac5e681d4e265c24c19aa22ff4dee4ee3468a618cf27571fb3b97cc99ac",
+    "inline/easy_input_test#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input_train#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-multipanelroc/example/easy_input_test.txt": "5ae4ba83c6f5fcc06e721eb468adea1900dc7f59a73fcfef41162ee06116f9f9",
+    "templates/fy-multipanelroc/example/easy_input_train.txt": "445a8932fdc9247a419c94a1e402f3c69a88215672fc80e8c8c45e1e814dfc5a"
+  },
+  "outputs": {
+    "png": "4530f2e773ad16bb97077309f131012bdc2da13cdea33a093d8f3a8db44562bb",
+    "pdf": "fdf12acbff7b51839b3a3a35c80cb6cc5d36166ab36f353e2dce1c5de3e82550",
+    "svg": "7d7069109bdd4333eeaa5018cb164bb6a848aa37aa7a9bea63bbd92f5eca6a36"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

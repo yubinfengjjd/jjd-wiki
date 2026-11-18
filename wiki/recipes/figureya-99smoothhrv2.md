@@ -59,7 +59,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa99smoothHRv2.Rmd`）
 - 依赖：CRAN Hmisc, rms, smoothHR, survival
 - 最近运行：pass（as-is，2026-10-27 15:02 UTC，1.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-smoothhrv2|限制性立方样条 HR 曲线]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `smooth HR with RCS.pdf` 第 1 页）：
 
 ![[recipes/figureya-99smoothhrv2/preview.png]]

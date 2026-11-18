@@ -1,0 +1,99 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "easy_input": {
+      "interface": "",
+      "filename": "easy_input.csv",
+      "description": "按通路分组的突变瀑布图输入数据表（easy_input.csv）",
+      "required": true,
+      "columns": {}
+    },
+    "easy_input_cli": {
+      "interface": "",
+      "filename": "easy_input_cli.csv",
+      "description": "按通路分组的突变瀑布图输入数据表（easy_input_cli.csv）",
+      "required": true,
+      "columns": {
+        "sample": {
+          "type": "str",
+          "description": "示例列 sample",
+          "required": true
+        },
+        "type_A": {
+          "type": "str",
+          "description": "示例列 type_A",
+          "required": true
+        },
+        "type_B": {
+          "type": "str",
+          "description": "示例列 type_B",
+          "required": true
+        },
+        "type_C": {
+          "type": "str",
+          "description": "示例列 type_C",
+          "required": true
+        }
+      }
+    },
+    "easy_input_pathway": {
+      "interface": "",
+      "filename": "easy_input_pathway.csv",
+      "description": "按通路分组的突变瀑布图输入数据表（easy_input_pathway.csv）",
+      "required": true,
+      "columns": {}
+    },
+    "onco_matrix": {
+      "interface": "",
+      "filename": "onco_matrix.txt",
+      "description": "按通路分组的突变瀑布图输入数据表（onco_matrix.txt）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

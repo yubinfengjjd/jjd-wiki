@@ -49,7 +49,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa76corrgram.Rmd`）
 - 依赖：未声明（见 Rmd library 调用）
 - 最近运行：pass（as-is，2026-10-27 15:02 UTC，0.6 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-corrgram|多变量相关矩阵散点热图]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `corrgram.pdf` 第 1 页）：
 
 ![[recipes/figureya-76corrgram/preview.png]]

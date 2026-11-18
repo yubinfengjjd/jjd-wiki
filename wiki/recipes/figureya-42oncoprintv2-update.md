@@ -59,7 +59,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa42oncoprintV2_update.Rmd`）
 - 依赖：Bioconductor ComplexHeatmap
 - 最近运行：pass（as-is，2026-11-04 11:14 UTC，30.6 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-oncoprintv2|按通路分组的突变瀑布图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-42oncoprintv2-update/preview.png]]

@@ -64,7 +64,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa33DCA_update.Rmd`）
 - 依赖：CRAN cmprsk, cowplot, ggplotify, magick, survival
 - 最近运行：pass（as-is，2026-10-27 12:37 UTC，3.0 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-dca|决策曲线与净获益分析]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-33dca-update/preview.png]]

@@ -74,7 +74,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa228linkCor.Rmd`）
 - 依赖：CRAN ade4, data.table, ggnewscale；Bioconductor GSVA
 - 最近运行：pass（as-is，2026-11-04 04:21 UTC，41.9 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-linkcor|相关热图与连线蝴蝶图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-228linkcor/preview.png]]

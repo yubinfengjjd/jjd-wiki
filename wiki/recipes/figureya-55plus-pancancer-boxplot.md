@@ -59,7 +59,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa55plus_pancancer_boxplot.Rmd`）
 - 依赖：CRAN ggplot2, ggpubr
 - 最近运行：pass（as-is，2026-11-04 11:15 UTC，337.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-pancancer-boxplot-plus|泛癌肿瘤对照分组箱线图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-55plus-pancancer-boxplot/preview.png]]

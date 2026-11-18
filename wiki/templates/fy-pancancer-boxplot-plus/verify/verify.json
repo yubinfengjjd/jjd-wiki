@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:17:03.675996+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-pancancer-boxplot-plus/spec.json": "df3ec361f24716cc141cafc01f01a9656bd1336c2efac5d9d0bc9365b5720ca3",
+    "templates/fy-pancancer-boxplot-plus/code/render.R": "6e24fb15b837cb2287cbe6f55118a5fd36c4281fb2fb21102cf1a3c849301712",
+    "templates/fy-pancancer-boxplot-plus/code/plot_figureya.R": "0a57448a283211e56c0cb99ae81e4a8b4d9cae355c70a61caff29086d0314124",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-pancancer-boxplot-plus/example/easy_input.csv": "39f099f35defdfbc919506f37f1e5878353b7dce691a45c80907dbb58ec31bb7"
+  },
+  "outputs": {
+    "png": "33274bb9855548d34897f6411359247089ec7c8cbecdbd585f49c0d7d3e58235",
+    "pdf": "1066133aaa98c668729ddf39472ceefc6c58d11c9f448e624229df6cd55b4f64",
+    "svg": "973ae8e0ef4f4343bf8f7cead5041225d07c0daf79a1a76c70aea32c56d44b41"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:10:04.840950+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-nicecalibration/spec.json": "6cce823e04f969a5d15dd37951d7e88bd77b68f49b2d07a69e3f6f3733065b48",
+    "templates/fy-nicecalibration/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-nicecalibration/code/plot_figureya.R": "d198a6a8ee5975752b81d6a782178219aa41d157fefbcd02766e40aa93aae2f4",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-nicecalibration/example/easy_input.txt": "24be20113bf8af1535d4c5fd8c225c0cddca25b1d1e63a28d790ee9d058b3264"
+  },
+  "outputs": {
+    "png": "c12af25522d7cd89d55925c89a513bca88273bd384c24003dc6c346809c78db2",
+    "pdf": "d9ec3820037ab46108562834f6821ec30826cddd10a5bad742971aee1bacd1a7",
+    "svg": "a583ff4105b357d853d4dbc18b87444b01b176be0258b293a34315d36ce81a8c"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:08:12.376219+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-timeroc/spec.json": "51093df8f67796d5908f53084ff9292d992990e014849ef3d2b72216a37c7e55",
+    "templates/fy-timeroc/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-timeroc/code/plot_figureya.R": "6db73de5ec8dd1de6613b966f983beffa89c099eb8c1970d854cffa7390b54e2",
+    "inline/easy_input#columns": "5b62d5a198777efc242c2209b030fee7ba2b08ed013b5386ae439ab5d0f1b63c",
+    "templates/fy-timeroc/example/easy_input.csv": "c4e175334c628e552a36276e1fb02d5a1f925ef3773e0d6faf1ed75d6cbe767a"
+  },
+  "outputs": {
+    "png": "07f680d23353b0eea1d0c87cb8a046d5fd6e779e668e566eebfca6ef8b169930",
+    "pdf": "bab10ddd63e0c536338a60b627460792fc4d9a89fe341b2bed873071b1cd26dc",
+    "svg": "b9a8b08c5e9f0079575cfbc9d2630beb9d0066b3e35342c6daf9a573ed3ed60e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

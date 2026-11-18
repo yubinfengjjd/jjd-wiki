@@ -1,0 +1,78 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "gse39582_expr": {
+      "interface": "",
+      "filename": "gse39582.expr.txt",
+      "description": "训练与验证集风险评分多因素森林表输入数据表（gse39582.expr.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "gse39582_surv": {
+      "interface": "",
+      "filename": "gse39582.surv.txt",
+      "description": "训练与验证集风险评分多因素森林表输入数据表（gse39582.surv.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "tcga_expr": {
+      "interface": "",
+      "filename": "tcga.expr.txt",
+      "description": "训练与验证集风险评分多因素森林表输入数据表（tcga.expr.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "tcga_surv": {
+      "interface": "",
+      "filename": "tcga.surv.txt",
+      "description": "训练与验证集风险评分多因素森林表输入数据表（tcga.surv.txt）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

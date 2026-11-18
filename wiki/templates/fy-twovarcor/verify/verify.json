@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:06:44.294736+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-twovarcor/spec.json": "b07897fdfb7725e121791b21b07e4b24fe85a79ac96b474a9b6e9e09b3af4d40",
+    "templates/fy-twovarcor/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-twovarcor/code/plot_figureya.R": "c5ef272d84e504a8dbbebaf9b9c9f7a5dbb0dadea9bb7fdb76c81ffed92fff8c",
+    "inline/easy_input#columns": "37eb82cc403f17fd0ac137b74a1200892ea7946fbcc8dfe39211024030e9da92",
+    "templates/fy-twovarcor/example/easy_input.csv": "ff09fa98acb62441f227fcf5b3693c255d07f328a57e181cee7056c4150baa8b"
+  },
+  "outputs": {
+    "png": "909cff7a06c8da57627f760a3719a14748276ed9a3fdac1f8dc97c7f0b5b6a90",
+    "pdf": "d82fb14c78d959889a8188dd042b3190256d755575ef8b592dfbac5e57bc3f14",
+    "svg": "52e735c1fd48c282965f2e6d4fb5a0161d220a146a1be78af0c81dbd90858768"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

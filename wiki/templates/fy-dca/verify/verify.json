@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:15:50.424727+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-dca/spec.json": "2675589c98124c9ab6a90dd512a79645b3c408b355d44262e43ce2431469891b",
+    "templates/fy-dca/code/render.R": "6e24fb15b837cb2287cbe6f55118a5fd36c4281fb2fb21102cf1a3c849301712",
+    "templates/fy-dca/code/plot_figureya.R": "18e0497ce52c69641e49a80d2d87ce2071b9e28a379f5580fdb70d5993c1b2ab",
+    "templates/fy-dca/code/stdca.R": "426fb4f94b5e23b382b782afa372b65ccce162c55ba15c704d0e87639cb42b6b",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-dca/example/easy_input.txt": "ea0acbf4046aa14ca97ef68c9fe8d500239fc5b6f82ae3f2d5507529029329d8"
+  },
+  "outputs": {
+    "png": "e7b80bf70bc4a5b73c7c41d84dde779057477a6b445f2f11b16d369dbac730b6",
+    "pdf": "9b2e77bb849a1cdc3373a4d54543264371d8f72681d22fd954a4f7566c8f5179",
+    "svg": "6ad5780f29328a5512d70090ab2d957e022cff4f6d9d9de876441f45f6d309f8"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

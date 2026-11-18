@@ -1,0 +1,98 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "easy_input": {
+      "interface": "",
+      "filename": "easy_input.csv",
+      "description": "多模型时间依赖 ROC 曲线输入数据表（easy_input.csv）",
+      "required": true,
+      "columns": {
+        "id": {
+          "type": "int",
+          "description": "示例列 id",
+          "required": true
+        },
+        "time": {
+          "type": "int",
+          "description": "示例列 time",
+          "required": true
+        },
+        "status": {
+          "type": "int",
+          "description": "示例列 status",
+          "required": true
+        },
+        "age": {
+          "type": "float",
+          "description": "示例列 age",
+          "required": true
+        },
+        "sex": {
+          "type": "int",
+          "description": "示例列 sex",
+          "required": true
+        },
+        "a": {
+          "type": "float",
+          "description": "示例列 a",
+          "required": true
+        },
+        "b": {
+          "type": "float",
+          "description": "示例列 b",
+          "required": true
+        },
+        "c": {
+          "type": "float",
+          "description": "示例列 c",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

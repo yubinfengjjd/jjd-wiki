@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-18T14:06:52.088982+00:00",
+  "page": "templates/fy-panpie.md",
+  "snapshot": "236f6365bc4ce9ae9762d33b1e4217fd06fe0a96a72967fde426855d567b61f1",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:16:01.645945+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-oncoprintv2/spec.json": "45eb53eb60df4d328b7662d383d8bc5363a7b4ce181f09099b185d73d5742db5",
+    "templates/fy-oncoprintv2/code/render.R": "6e24fb15b837cb2287cbe6f55118a5fd36c4281fb2fb21102cf1a3c849301712",
+    "templates/fy-oncoprintv2/code/plot_figureya.R": "55366cb595285ba402c0f52f3c3876e6c45a52124740765d56f87decdcb6851c",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input_cli#columns": "71c31b7edf70090bb23de90427c3e5f78b71f1948542c4aa6d0bbfd346fad0ca",
+    "inline/easy_input_pathway#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/onco_matrix#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-oncoprintv2/example/easy_input.csv": "052900c3752fe4b33c6273311af1dae2825b6bf1dfc9a9bf46bdd3c71961fdee",
+    "templates/fy-oncoprintv2/example/easy_input_cli.csv": "5f0d4636365448423695f964cb3b4271fab6c14af6efa6c08b7ae6ac1852c258",
+    "templates/fy-oncoprintv2/example/easy_input_pathway.csv": "61b6064c7d176b98e628328374160e76e3afc69a30678fa5bccf7ee5c584e20e",
+    "templates/fy-oncoprintv2/example/onco_matrix.txt": "7c1f80363a6114f594984a22b99953bb4b437daccdc60f6f2a67619db1d330e8"
+  },
+  "outputs": {
+    "png": "6f1e76d83074c5cafb24700f8e16ee5ea5533e0a92c5d7665ab5f47bd0308dc9",
+    "pdf": "3af56eb3ddf82e099ce5dff15718d1034a0b52bf1e40e8ed170901705ed49114",
+    "svg": "9acedf757945918a8410b3f223c1c7368ddc6e4644f1206d381f303afd62c1b5"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

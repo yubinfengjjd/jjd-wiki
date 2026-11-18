@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:19:08.232075+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-risktable/spec.json": "b6b690b5c164aa219c7ad4b2464f987c5944ce2cf48d284085a7b54e8f232b24",
+    "templates/fy-risktable/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-risktable/code/plot_figureya.R": "d45c75ea5218634b2c5b205631c9ca8cacde90e9d915cfe287f059a8e5838d15",
+    "inline/gse39582_expr#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/gse39582_surv#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/tcga_expr#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/tcga_surv#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-risktable/example/gse39582.expr.txt": "292af0d4de826877d173b16bd5eab5ea6978cb360f700fc8c4de8e626d6ee3be",
+    "templates/fy-risktable/example/gse39582.surv.txt": "b2eb9cd9e6b7fb82294f61ee029d11f27e640f275389ab90fe260d12089949d2",
+    "templates/fy-risktable/example/tcga.expr.txt": "7030d6b762c19136ed4f8d581561be806d20e0cd2803d29ca65a14e60d9df076",
+    "templates/fy-risktable/example/tcga.surv.txt": "c0ae73d016fb28752d884337f951df40f529ddcfcd12bfcc9dc72afaac05f216"
+  },
+  "outputs": {
+    "png": "9c44a26f2d0813b2f302eec2a94e6d0291fb8c1af17451d4c3f64361edb66623",
+    "pdf": "2a92d48c01ce2e54e6d595dd083afad0d71086080553e64e79c934e601dec46e",
+    "svg": "b8051f1cbc072e32679219e48a3082456b9b7c47c7a9c1afb7f3434d23da574a"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

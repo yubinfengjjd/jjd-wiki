@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-18T14:17:28.257333+00:00",
+  "page": "templates/fy-corrgram.md",
+  "snapshot": "a81c253a521f5f8f8c26adc5c0dce3af87a858871ba7647cfed2a06805cc3e4e",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

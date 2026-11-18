@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:21:18.841015+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-basezoom/spec.json": "98b9b1439588d4224af151bd78b3303ba097fa13db34fe6039a3d692485ccb85",
+    "templates/fy-basezoom/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-basezoom/code/plot_figureya.R": "8dd21e56d65de8431e124fb789062477d52b49b436d643bb043d1984b8e35d2c",
+    "inline/easy_input#columns": "fbc40bf639ec11778a24d15b584d9aa613042a228079f35addaf630d24ea7ec2",
+    "templates/fy-basezoom/example/easy_input.csv": "055bd2ea0b669958eb7a61c17b7cd92bc420fdc69a41c910aa97b892dd585315"
+  },
+  "outputs": {
+    "png": "932f42f33c6332f985a3ca3b7dde2f63241480407c7258f363f0bc9c39847fa5",
+    "pdf": "023c8bd3c13bda6d696114e0a6ee110b45ddf531a16417d4bd6db5a4b928ee45",
+    "svg": "324fd36b679cd211cd6afc9443d6723e5498bc772d297b8dcae317b090c47b0a"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

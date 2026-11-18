@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:07:39.581705+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-bar/spec.json": "758f40d3baa4ad4eb2412f6e5e377d0849697f88fc181d2ec06085360c643a6e",
+    "templates/fy-bar/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-bar/code/plot_figureya.R": "cf37691e2deda37daa4c8ec73339c884d07dc6df0f8bf69ee337ea301594059b",
+    "inline/easy_input1#columns": "429189175bf9cf0122c037218b01b950518a9d40252b20d3206cce3dbc170efa",
+    "inline/easy_input2#columns": "429189175bf9cf0122c037218b01b950518a9d40252b20d3206cce3dbc170efa",
+    "inline/easy_input3#columns": "e8e2b625bbbd999c856c448411acdcb35eb1c306e60948544c087c1e0777c5fa",
+    "templates/fy-bar/example/easy_input1.csv": "07a7766348120f637c1aa76d6a64a05e6c76b9d7e6c6c630c5ab2dba6aeaa16e",
+    "templates/fy-bar/example/easy_input2.csv": "8a2c16ac37eeeae7405a44ef8f99c4bcbb4dc4b2193a1c2d5933c827f7b98fd1",
+    "templates/fy-bar/example/easy_input3.csv": "438dbdcdc5199a8d3bf9f0797625d540353b9ed37c55fee36e9632ab92aa3d7c"
+  },
+  "outputs": {
+    "png": "0c4005c7ffd1bd7ebb9d76a9f7e220d23b020b98187ef83736de5bad1654fe44",
+    "pdf": "13267e7f8f19d6b9a2cfa378043e0d2fef7d009bc272c0d39fb96b1141e0f94c",
+    "svg": "309c7c503a7f67d770b2ea99b7542c3141881b39a869d9b9f71ce08bd58f12fd"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

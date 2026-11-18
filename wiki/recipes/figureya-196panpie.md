@@ -50,7 +50,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa196PanPie.Rmd`）
 - 依赖：CRAN dplyr
 - 最近运行：pass（as-is，2026-10-27 15:01 UTC，0.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-panpie|分组临床分期扇形矩阵图]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `pieTable.pdf` 第 1 页）：
 
 ![[recipes/figureya-196panpie/preview.png]]

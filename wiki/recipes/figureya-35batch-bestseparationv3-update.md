@@ -55,7 +55,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa35batch_bestSeparationV3_update.Rmd`）
 - 依赖：CRAN KMsurv, survival, survminer
 - 最近运行：pass（as-is，2026-11-04 11:13 UTC，57.0 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-batch-bestseparationv3|批量最佳切点生存曲线]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-35batch-bestseparationv3-update/preview.png]]

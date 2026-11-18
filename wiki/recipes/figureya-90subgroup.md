@@ -59,7 +59,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa90subgroup.Rmd`）
 - 依赖：CRAN forestplot, survival, tidyverse
 - 最近运行：pass（as-is，2026-11-04 11:20 UTC，9.3 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-subgroup|亚组生存风险森林图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-90subgroup/preview.png]]

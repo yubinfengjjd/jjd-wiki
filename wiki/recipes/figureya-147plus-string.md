@@ -65,7 +65,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa147Plus_STRING.Rmd`）
 - 依赖：CRAN ggplot2, igraph, magrittr, reshape2, tidyr
 - 最近运行：pass（as-is，2026-11-04 11:00 UTC，13.9 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-string-plus|STRING互作证据打分网络图]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `interaction.pdf` 第 1 页）：
 
 ![[recipes/figureya-147plus-string/preview.png]]

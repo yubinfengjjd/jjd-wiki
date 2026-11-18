@@ -1,0 +1,46 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:10:18.171807+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-wgcna-heatmap/spec.json": "0e894b90d1296c053a73a6f8fec67b394f621a3f56af66e762766fcf0196531f",
+    "templates/fy-wgcna-heatmap/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-wgcna-heatmap/code/plot_figureya.R": "2f688a664238aec671cb99ca6f74c0334e80990c4eb76d105b155961e8a695b0",
+    "inline/black#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/blue#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/brown#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/cyan#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/green#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/magenta#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/pink#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/purple#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/red#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/salmon#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/tan#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/turquoise#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-wgcna-heatmap/example/black.csv": "bfcb211305fc69fec7c7d69d15b0939c66b323edc8764ebbd6f1db4a4db2be51",
+    "templates/fy-wgcna-heatmap/example/blue.csv": "beb568dbbdc9c09cc7a3f6ff9a4174e0f2e8025a029947265a634893789212fc",
+    "templates/fy-wgcna-heatmap/example/brown.csv": "9e6750f3193bf838d7e5b8d4d5da4d94d5a3144264ca6d9f0ae8c2438c1ffcc7",
+    "templates/fy-wgcna-heatmap/example/cyan.csv": "dd5a9710cf69a6f1356b9771bf787a51eba67889a3dd53e118b211cb9c71d9c1",
+    "templates/fy-wgcna-heatmap/example/easy_input.txt": "7e00512aad2e6ab3eb3e0ee4ffa3fe00122bceb99d9bf3a213d67938f422e479",
+    "templates/fy-wgcna-heatmap/example/green.csv": "15ffd33f1a7665b31f7db21867cdceee3177a34122d367765412e07d46680230",
+    "templates/fy-wgcna-heatmap/example/magenta.csv": "7a4ab3e209ceb577811e0bc74332d97def804fbe532193602885076dd2c6fdf5",
+    "templates/fy-wgcna-heatmap/example/pink.csv": "a4b33a0dc3d70d1e253f0b579e80cbd7a56ca1c6ef0f3a034f70ba54f794ff66",
+    "templates/fy-wgcna-heatmap/example/purple.csv": "2a9d80fe991234225b13f3430932d6aff565761617fae4cfee3fa213b75eb320",
+    "templates/fy-wgcna-heatmap/example/red.csv": "247aedfa105d13f4e8a40a4c4db14d831f65080fd6eaf28e44e8bb12c2140ef8",
+    "templates/fy-wgcna-heatmap/example/salmon.csv": "7f543cd3b9d222184a004f6c809216c4a07fd7bbe85b28846d3e8195349f62b9",
+    "templates/fy-wgcna-heatmap/example/tan.csv": "232b8fccf9d9b7338c2ed763a6d4b51a42d9757c465b981690ad9b0bf1e36510",
+    "templates/fy-wgcna-heatmap/example/turquoise.csv": "47246504320da6df8b56f2829d3ce4189aa1124c11e640a697a3e7f1ac147925"
+  },
+  "outputs": {
+    "png": "e8d9fccb083dc57c8add4e8074d5fedfc161638e6d2c7daebe643872ea79a676",
+    "pdf": "a3e0be74c20e9202bf71965339d0514f592430406ff350ef28e0f2195aec0539",
+    "svg": "d5c3001b0d21cfaa95696b975925eefe8df244b0ebcb20c26ca3265cc9cd7e6f"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

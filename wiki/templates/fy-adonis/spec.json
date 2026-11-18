@@ -1,0 +1,89 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "easy_input_factor_group": {
+      "interface": "",
+      "filename": "easy_input_factor.group.txt",
+      "description": "Adonis因子解释度条形图输入数据表（easy_input_factor.group.txt）",
+      "required": true,
+      "columns": {
+        "A1": {
+          "type": "str",
+          "description": "示例列 A1",
+          "required": true
+        },
+        "Num": {
+          "type": "str",
+          "description": "示例列 Num",
+          "required": true
+        }
+      }
+    },
+    "easy_input_factors": {
+      "interface": "",
+      "filename": "easy_input_factors.txt",
+      "description": "Adonis因子解释度条形图输入数据表（easy_input_factors.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "easy_input_meta": {
+      "interface": "",
+      "filename": "easy_input_meta.txt",
+      "description": "Adonis因子解释度条形图输入数据表（easy_input_meta.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "output_adonis": {
+      "interface": "",
+      "filename": "output_Adonis.csv",
+      "description": "Adonis因子解释度条形图输入数据表（output_Adonis.csv）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

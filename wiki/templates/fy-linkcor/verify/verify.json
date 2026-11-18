@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:19:34.430614+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-linkcor/spec.json": "c14b9e267009b4a1640ad4518313ca3b0885da19f5f2524a3721bc265855e1e7",
+    "templates/fy-linkcor/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-linkcor/code/plot_figureya.R": "6cea1a65d90100dc1c3b6f0f26d2440f24b0e2f337bedb2447ac6d16bfce601a",
+    "templates/fy-linkcor/code/Table S9.xlsx": "cf4287909e052ffba23d06554b7660d2761617eda64cfeaf9e9aef54e4744bed",
+    "inline/bladder_cancer_signature#columns": "10e7884e74ec1f617898a8a7c76ab409d7d8d29e882fbb6e26c578a836107d6c",
+    "inline/easy_input_blcapath#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input_gene#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input_immpath#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/immunotherapy_predicted_pathways#columns": "10e7884e74ec1f617898a8a7c76ab409d7d8d29e882fbb6e26c578a836107d6c",
+    "inline/tcga_blca_fpkm#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-linkcor/example/bladder cancer signature.txt": "c78e0c27b8f380a5b152e1100c7175cef1ba2c1288e0b39288f89c6c74c095eb",
+    "templates/fy-linkcor/example/easy_input_blcaPath.txt": "78f9d76e0e05a106ff3fa2a54f2818657708bca87d3cd3ebb7667e1110e226d6",
+    "templates/fy-linkcor/example/easy_input_gene.csv": "ec72f33d2915a9c53ffa3747fe14515433b4c6a38c4112d89edfa2d17be92526",
+    "templates/fy-linkcor/example/easy_input_immPath.txt": "b8fb04984bb9d8f6dbfe098a3118d8367db1bbdf3ce6ea32b3d5ff9c48649ae1",
+    "templates/fy-linkcor/example/immunotherapy predicted pathways.txt": "f78522fc3810c2998e6857ba96c01e03cdf9bba6ed0a3da73b9fc4205a03def6",
+    "templates/fy-linkcor/example/tcga_blca_fpkm.txt": "024c10385e4477f1e4e54110d8de5bc36c5bcf6c49cf915e67ca321e12610ef9"
+  },
+  "outputs": {
+    "png": "924b76a60e456270dbd42debdcf54b78eabba7b4dabbd909c7fd0d39ef823cfc",
+    "pdf": "e5f405180588cf21104e19007a3010c080b27aa223cdb5f26144684a03199d53",
+    "svg": "77290fc6123bd560feae59c6811fffa6fe833114e97002b893e44099c03ea091"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

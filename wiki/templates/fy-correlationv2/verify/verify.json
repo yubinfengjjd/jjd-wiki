@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:11:20.566495+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-correlationv2/spec.json": "b628131996f742a6e64b26b0c5acf504449377ea3ba640609bdbf6ca41161af9",
+    "templates/fy-correlationv2/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-correlationv2/code/plot_figureya.R": "d6d42aa0032f0d95fc754a45cd90f308c596ab3852c8008e836fd87d5ae68077",
+    "inline/easy_input#columns": "03d324f00821b5527f6765c79e5d3f9b19f4ee74de06f2354a0ed86fcb7e6b9e",
+    "inline/easy_input_v2#columns": "a5a959997ce70258b089dc3023522a609fa9d7d35b8cea7dd6f2e99043422dee",
+    "inline/not_easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-correlationv2/example/easy_input.txt": "c65e894f0a080687b5e72babea5622a4410bcb08ed75f1648f324f7b7e3a1a1c",
+    "templates/fy-correlationv2/example/easy_input_V2.txt": "4190f0919aa5f733485e9eb7e5fc4bead9b72ce776810262c43002b7469e931e",
+    "templates/fy-correlationv2/example/not_easy_input.csv": "de5b37ef312a35b5953bcd68818196a41ed76c29164820aacbd124cf2f67821f"
+  },
+  "outputs": {
+    "png": "85d4c30441536fb323e4e15730722bec7d064faf13ef0f2a0a3188989a855fb1",
+    "pdf": "fcde68348e02f4b3f7d91f788ef44297cb17e7461e43c200f1caa0244b2b6310",
+    "svg": "35f5ab869b55b7ece308627122dbcded98d25c4018b62e06151c22d41a86fa11"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

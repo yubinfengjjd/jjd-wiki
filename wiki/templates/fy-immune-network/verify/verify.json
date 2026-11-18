@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:12:03.375898+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-immune-network/spec.json": "cd021788c5270ec63f0fadd710fe74a4a19ae9cd6d29c66fc83ad4299b02041f",
+    "templates/fy-immune-network/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-immune-network/code/plot_figureya.R": "6fa0970f2048fbf5c2c3fc4eec179f87907664c57696e0e845e220dfba5079e6",
+    "inline/easy_input_hr#columns": "e1b452a7ae2a2473f07c5c4b869253f4d06081b2ecc04bf95ac53e2a06fe2870",
+    "inline/easy_input_immune#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/output_hr_corlor#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/output_links#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-immune-network/example/easy_input_HR.csv": "9275a70a7379dcaa0f169c348b96e64ff70f8cc9d5f8724fba9e0e2f210d53a9",
+    "templates/fy-immune-network/example/easy_input_immune.csv": "d561fe46219ffe85f3f2cde620747d39be7bb21f152900281b73e31f80ff1875",
+    "templates/fy-immune-network/example/output_HR_corlor.csv": "99f2d4ed63d5050f76ccd50da37223e2544ad66238b5481d20f4402472c5424e",
+    "templates/fy-immune-network/example/output_links.csv": "0fb4e972d722ea61491cf732e59a2b862a64a616e0fdb3ef1aec37aa3bcfadc5"
+  },
+  "outputs": {
+    "png": "c280b61a784f8b0e02eda649c414148743dcaad28be45feb095957d6893e8f47",
+    "pdf": "fe0fe5807e9d050e1bce4ad56fd8e674f5b50da6b823809d4bd6b1a370114267",
+    "svg": "86013eeb851fa732617c4e9d31756dcc2506d604ddf87cb54e4c1c6fa04a10c3"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:06:50.739711+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-panpie/spec.json": "519bc3e36c74b74f873ea1fb9fcbbfb0045511c8afa0dc50dd0c4dd0264e23d1",
+    "templates/fy-panpie/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-panpie/code/plot_figureya.R": "1642e20de8de795671cd86f04c62f896dddb1660a3e6f168c011686a774efed4",
+    "inline/easy_input#columns": "b79723fe6d593136376dafc0a169bd98c720840e97c96ef7c148babbc48c4073",
+    "templates/fy-panpie/example/easy_input.txt": "94505ea5b75d2d7dd9891d22a2c8d1266269f4efb51eb16c2b4f6c0210aa41bd"
+  },
+  "outputs": {
+    "png": "5dc3f1b3c350dadae0dc499e908ba2a02c7271cb8ac6bcb4cabcc6bcb3282098",
+    "pdf": "f6e2848969fe846cb273ba87dcd6808cd0dd1bd55a20057f0b7fc31a8bf2ed60",
+    "svg": "d9bfecfdadb4aabc8f74bee1eb555f5dd0407821489403a98435c0d67487d834"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

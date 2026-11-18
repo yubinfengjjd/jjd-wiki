@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:11:15.303192+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-nsurvv3/spec.json": "75a4805384eea92631f750cb02b5cec982e2f195c83a691036386db22c24e5d8",
+    "templates/fy-nsurvv3/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-nsurvv3/code/plot_figureya.R": "47cf0bc4643d9a99df6b870b5b4e52a36a18725d701b5511b87b61464f5e5dcb",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-nsurvv3/example/easy_input.csv": "0061c20d01de46f5951ea66d5c0e82fedb808b95cda4875d1d8612900b9b0049"
+  },
+  "outputs": {
+    "png": "02c298755ee1fa42a51d8264f8b65ce29ddf175310f74e4e2a5697fa1d0a873a",
+    "pdf": "100aa0dbc3e981bb0a8d9e71b7727b51ac398e070fecfe5374ecb119ff9e5679",
+    "svg": "933c832470b50c4295b7f925d7e55fb921b02af4f454dc17e2e4157c379edb14"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

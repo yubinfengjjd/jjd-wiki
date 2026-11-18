@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:14:52.930876+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-rankheatmap/spec.json": "adec494d3f2c65e3f4bdd476fb8fcdff7894f4034178cdfe651decee77e64cd5",
+    "templates/fy-rankheatmap/code/render.R": "6e24fb15b837cb2287cbe6f55118a5fd36c4281fb2fb21102cf1a3c849301712",
+    "templates/fy-rankheatmap/code/plot_figureya.R": "675b09d20f0e17f65f01f4b0f42069b240e98987ce1f3e1ab2640e39392b5c6e",
+    "inline/easy_input_logfc#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input_pval#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/genetype#columns": "b7da5f2a892fe7eac060b9af4c32f4ea60a861ac5764b3d9f0e7c8ccfe6c438c",
+    "templates/fy-rankheatmap/example/easy_input_logFc.csv": "3b9c56151ecf4c28091681dff175b49badcbab65907ad9d407eec438183dfd6c",
+    "templates/fy-rankheatmap/example/easy_input_PVal.csv": "95c6b2f95a54cb047bc8a1352d7a81907ed468637bac8d907a101f23a6466bf7",
+    "templates/fy-rankheatmap/example/genetype.csv": "69d573cd306b6a815bdf871d361d3d56da7bc241b435deb7cbdfaa58d85e0e1e"
+  },
+  "outputs": {
+    "png": "10b14ecd1f056c94cb12514a76bdc332dd461c55fc6ac264946a43c4aba6bbff",
+    "pdf": "ffda3520031851df6791677d6287bc0aeff0e1b9803e987cf9b75dc282c261ba",
+    "svg": "2a70eb6b08f2deb3dca9cf393c66dfd54e65703b618f10fc8851ccd1df00aa3e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

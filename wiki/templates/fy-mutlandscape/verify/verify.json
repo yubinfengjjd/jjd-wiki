@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:19:54.718596+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-mutlandscape/spec.json": "5aa597d0479f5ca470c71c79eda84fa015eab5f2f2ae2e63c05775839d5b4b68",
+    "templates/fy-mutlandscape/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-mutlandscape/code/plot_figureya.R": "71c301091fc870b7fb98ba9210b5b52670ae9bca777ac64b1bf642d2e2a7f997",
+    "inline/all_lesions_conf_90#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/all_thresholded_by_genes#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/mutation#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/mutationsignature_cosmic2013#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/subtype#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/tmb#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-mutlandscape/example/all_lesions.conf_90.txt": "ce47763da106eeecffebd6f5e3b23f2f66b1fd40b21bf058ddf7b5240c80b84c",
+    "templates/fy-mutlandscape/example/all_thresholded.by_genes.txt": "515f6c4b70cf8f8bd99b51fbd5f1ac01db0a9569c39ac1e2058b29f9d25622e4",
+    "templates/fy-mutlandscape/example/mutation.txt": "d0f7381de7ca1b50e1a5ac98b9aab3ac4f9a010e804bfdf704cc2ac525756908",
+    "templates/fy-mutlandscape/example/mutationsignature.cosmic2013.csv": "8fa8978ba955b0032ba40deff993ca72cfae3ccf18178f9b6ccc03869a4f5abb",
+    "templates/fy-mutlandscape/example/subtype.txt": "c5be8ed055176023870fb8a14c1905a3f8667907f934e7c375cb12a0d2fd1180",
+    "templates/fy-mutlandscape/example/TMB.txt": "499f95aee65f979894c8347b6d4ea9a2dd1d244357df9f83042ac5bc0a4c101f"
+  },
+  "outputs": {
+    "png": "2d9d912ee27f2fa67ebdfebb6ccb006cef82cf1a40393870447e5469089de940",
+    "pdf": "f8540ede2a48934f1ac732e9df136f2022da5e79fd59f2594d7963c09909d1cd",
+    "svg": "6862774ca2689372209a2b49eed832383a16250f2929cfe7129e2df7a76a5a65"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

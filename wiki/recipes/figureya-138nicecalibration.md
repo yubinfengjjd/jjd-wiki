@@ -57,7 +57,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa138NiceCalibration.Rmd`）
 - 依赖：CRAN ResourceSelection, rms, scales
 - 最近运行：pass（as-is，2026-10-27 15:01 UTC，2.3 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-nicecalibration|Logistic 模型校准曲线与 HL 检验]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `calibration_for full model.pdf` 第 1 页）：
 
 ![[recipes/figureya-138nicecalibration/preview.png]]

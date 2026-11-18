@@ -1,0 +1,93 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "easy_input": {
+      "interface": "",
+      "filename": "easy_input.csv",
+      "description": "局部放大气泡散点图输入数据表（easy_input.csv）",
+      "required": true,
+      "columns": {
+        "Gene": {
+          "type": "str",
+          "description": "示例列 Gene",
+          "required": true
+        },
+        "group": {
+          "type": "str",
+          "description": "示例列 group",
+          "required": true
+        },
+        "n_ILC": {
+          "type": "int",
+          "description": "示例列 n_ILC",
+          "required": true
+        },
+        "total_ILC": {
+          "type": "int",
+          "description": "示例列 total_ILC",
+          "required": true
+        },
+        "n_IDC": {
+          "type": "int",
+          "description": "示例列 n_IDC",
+          "required": true
+        },
+        "total_IDC": {
+          "type": "int",
+          "description": "示例列 total_IDC",
+          "required": true
+        },
+        "pvalue": {
+          "type": "float",
+          "description": "示例列 pvalue",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

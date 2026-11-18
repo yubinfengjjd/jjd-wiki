@@ -1471,3 +1471,5 @@
 ## [2026-11-18 12:13 UTC] acceptance check methods/drug-sensitivity-repositioning.md
 
 ## [2026-11-18 12:13 UTC] acceptance check methods/spatial-transcriptomics-microenvironment.md
+
+## [2026-11-18 14:22 UTC] feat(wiki): convert 37 verified FigureYa recipes into native templates with synthetic test inputs

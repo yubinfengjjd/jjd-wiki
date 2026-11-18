@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:08:07.628587+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-bubble-volcano/spec.json": "048bab4a0761e521d5f6e62948ce79be9b8887187423ff7bafc79d2f19fef973",
+    "templates/fy-bubble-volcano/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-bubble-volcano/code/plot_figureya.R": "ba866f7d7c54e1be7b3a8cfe763274ac90c5bab19081b652c485c2c6ec3c2a20",
+    "inline/easy_input#columns": "d5eee47b316c53061d756b5f84f8d863ba48b55bbad50a0038cbe6612db97bcb",
+    "templates/fy-bubble-volcano/example/easy_input.csv": "a3fdeaaa985d74ea1b8d83c641357c4d07459021e75e1ae952605224bca65f6f"
+  },
+  "outputs": {
+    "png": "ffc46ac54e2cdbe0fb806c6f92456d177011c7be9261bc4058b8cf4b5a21ba41",
+    "pdf": "96629b2cfefef40678e1095af256c816da65b2fc9ba614e0e1b78e9379a3938b",
+    "svg": "c1ab87ba45ee10e99de6c5c04e48923e7d7317b3b033b6a42f727864b7142ac7"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:20:43.551611+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-batch-bestseparationv3/spec.json": "f4e6b4e5ee130cc2005e0567445faab96082c8badb238445107a808243eec7d3",
+    "templates/fy-batch-bestseparationv3/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-batch-bestseparationv3/code/plot_figureya.R": "357fc60fdae8d66927c7d8d1380ce740f76180df908a06ad62ffae6e86d89e91",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/pvalue_output#columns": "0e2fece7cc8b661ac3ca3adfca46fddbe77020939ac1c1d66367dcddd7fe3557",
+    "templates/fy-batch-bestseparationv3/example/easy_input.csv": "68b12f8159880716fdfda9479f28ef891ccd39526156a4650f1e95cde51806e6",
+    "templates/fy-batch-bestseparationv3/example/pvalue_output.csv": "20db46a25285df0d05fbeb224d0728900346f5bfcdffe5e553ec2e2463dc8ac9"
+  },
+  "outputs": {
+    "png": "343589e2baa9cdc70da06f327af0fe4a4c5a16b7176013641b89822ed0b5a289",
+    "pdf": "055c9a654ee48ac474556ddc33f0920c693f01074c2b835ed426ec4af70a423d",
+    "svg": "c6f6c318126a8c2123e96287ad9514f9cdd2992903d265c8b226f92f06f4c054"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

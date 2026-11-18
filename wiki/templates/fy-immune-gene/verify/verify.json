@@ -1,0 +1,28 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:12:13.292481+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-immune-gene/spec.json": "c2d8be981aed52e020fe92a24f8a443e5d82e456294ee8678a28fff25477b2bc",
+    "templates/fy-immune-gene/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-immune-gene/code/ggscatterstats.R": "e5d5678acccb6f777ace7f9cfee3e98e3a8b38b488762e6c7c0134433514c82f",
+    "templates/fy-immune-gene/code/pick1gene.R": "0ebc43ee7727454e3e1b3395c8c1be95e7005a7a8c4df581c72880e6cde7ac2a",
+    "templates/fy-immune-gene/code/plot_figureya.R": "3fadb4dbe01b7c0d2bc8d9d79862383ccde593c70b0ae62d3d9b6baeb94394e4",
+    "inline/easy_input_expr#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/output_cor#columns": "6920c89c8c75001a118326b63778f94f54222a38609859de1b4b1ac2fd2e67a4",
+    "inline/ssgsea_output#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-immune-gene/example/easy_input_expr.txt": "9b7b38ddc80972cb92f5122daa19f463cdd542f4eb8c2a8f9a90687e6c955739",
+    "templates/fy-immune-gene/example/output_cor.txt": "2d195fc5e3a99d5e7354fb8181c624d13b952b9cd3d7fdfb09decc00da8437a1",
+    "templates/fy-immune-gene/example/ssGSEA_output.csv": "15bc4b7c6fd727d8a340d180e872d5c826f8bdd0dd087e64d57d036d3c73a4a5"
+  },
+  "outputs": {
+    "png": "21f0b1e859405f9b011a3ffc48872c9504d2d811d237bb84a571604d2e15a39c",
+    "pdf": "f3c4de83a9eebec48a1ef523ce27a22b715ae2de7fd7ea75af69b55b1e75de54",
+    "svg": "2556ca27699f8af416759079f78d7415ab21580d96326fd16208997611f677c5"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

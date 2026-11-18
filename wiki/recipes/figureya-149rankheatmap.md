@@ -54,7 +54,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa149rankHeatmap.Rmd`）
 - 依赖：Bioconductor ComplexHeatmap
 - 最近运行：pass（as-is，2026-11-04 11:01 UTC，15.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-rankheatmap|差异倍数分档注释热图]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `rankHeatmap.pdf` 第 1 页）：
 
 ![[recipes/figureya-149rankheatmap/preview.png]]

@@ -48,7 +48,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa173fancybar.Rmd`）
 - 依赖：未声明（见 Rmd library 调用）
 - 最近运行：pass（as-is，2026-10-27 15:01 UTC，1.0 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-fancybar|含亚组的多组均值柱图与比较]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `fancybar.pdf` 第 1 页）：
 
 ![[recipes/figureya-173fancybar/preview.png]]

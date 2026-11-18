@@ -55,7 +55,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa36nSurvV3.Rmd`）
 - 依赖：CRAN survival, survminer
 - 最近运行：pass（as-is，2026-11-04 11:13 UTC，14.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-nsurvv3|双基因高低分组生存曲线]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `nSurv.pdf` 第 1 页）：
 
 ![[recipes/figureya-36nsurvv3/preview.png]]

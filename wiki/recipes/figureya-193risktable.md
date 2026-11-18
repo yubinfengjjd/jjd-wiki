@@ -65,7 +65,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa193RiskTable.Rmd`）
 - 依赖：CRAN forestplot, glmnet, survival
 - 最近运行：pass（as-is，2026-11-04 04:21 UTC，631.1 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-risktable|训练与验证集风险评分多因素森林表]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `forestplot of risk table.pdf` 第 1 页）：
 
 ![[recipes/figureya-193risktable/preview.png]]

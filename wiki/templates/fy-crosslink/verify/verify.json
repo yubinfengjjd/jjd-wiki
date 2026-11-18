@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:06:54.719205+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-crosslink/spec.json": "5888157827cb3006a6334ec29c78b0570aae112a37d2ba70c0956e48f1b7c9cf",
+    "templates/fy-crosslink/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-crosslink/code/crosslink.R": "14d25cc8c72f770fd9debb4c4f64b709f8ad2c6cf30524284f224ed6e79460a3",
+    "templates/fy-crosslink/code/crosslinks-master.tar.gz": "3fe1da81758c83b414642e94c17830825154ba9fb12fe63f28c4585ab3aa2585",
+    "templates/fy-crosslink/code/crossplot.R": "a3e10648209a6c97991a54a97f33b78dc287a48dfc7cbacb4c76ef958621d09c",
+    "templates/fy-crosslink/code/layout.R": "e3103e211619c9c4dff3fcfb3f000318d79f0432439bc7d97be594589e5f3456",
+    "templates/fy-crosslink/code/plot_figureya.R": "b4044b91746cc1e415ad41efb0fbe7e12d04f1fb33c726bf470ccf17c1d75f17",
+    "templates/fy-crosslink/code/transfromation.R": "d9aecce6b533388c0d859e068fbae91f3f0d012004c62ae3652b122f3f56a1ce",
+    "templates/fy-crosslink/code/utils.R": "2602f09b5fe2ac5a6b742f79535392215d67ff2374f8e2a4dc19020957d9cb9a",
+    "inline/easy_input2_edges#columns": "45ab15042af00ae9b9b8467b14252a643198381895eb581b1dc21db4543a3e60",
+    "inline/easy_input2_nodes#columns": "0c2867aaa04ad1ab7fb16e4c2bd3e55a7eca5b78b1d7dc39e609afb006ad5bff",
+    "inline/easy_input_edges#columns": "df61c985bb88270d7ccf6cf4b20cc8ac247c993aa93723f4edff7ca1264f70f2",
+    "inline/easy_input_nodes#columns": "0c2867aaa04ad1ab7fb16e4c2bd3e55a7eca5b78b1d7dc39e609afb006ad5bff",
+    "templates/fy-crosslink/example/easy_input2_edges.csv": "186bf47d402a86a719157ebb1faf23d708b9451697b44990dd607a1a6397ac66",
+    "templates/fy-crosslink/example/easy_input2_nodes.csv": "fd4e6adff31b8e18506f9dbb1c21f5a8efb05e5104f0e56c1dea23ba753f167a",
+    "templates/fy-crosslink/example/easy_input_edges.csv": "6bbf50525b7fad793685fc8edbc6a44117fb2bb783ec30f59480635727fba84b",
+    "templates/fy-crosslink/example/easy_input_nodes.csv": "b4dc0deede1695224c845c46d93da252ea06cd2a5638254daf31b4050382bdba"
+  },
+  "outputs": {
+    "png": "f90d1bb25b298625675e4980af3160cc1efd6c1b0b1ce82916c882a6539e0889",
+    "pdf": "7f017ed17f1cdc2313d03139db6697f42c1e578761393379f22e67be3fe3fad1",
+    "svg": "14307ee96109cf4c5d793dcdaab184bfe8b99a4784b70d7ca02a61f012b10cfd"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

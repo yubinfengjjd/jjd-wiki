@@ -66,7 +66,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa248MutLandscape.Rmd`）
 - 依赖：CRAN RColorBrewer；Bioconductor ComplexHeatmap
 - 最近运行：pass（as-is，2026-11-04 11:08 UTC，103.3 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-mutlandscape|多组学突变景观组合热图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-248mutlandscape/preview.png]]

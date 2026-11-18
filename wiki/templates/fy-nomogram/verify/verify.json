@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:20:28.854340+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-nomogram/spec.json": "e2ab80e085eb7954c9bfe5feb1f45f2eff1033e3b6ec42c450962f0aa13743fe",
+    "templates/fy-nomogram/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-nomogram/code/plot_figureya.R": "a1d3edbc036cd5284a85ccbe0fe113880634c1f64297c8a98bbd84b9e63eacd5",
+    "templates/fy-nomogram/code/regplot_functions_modified.R": "ca0e8d7ec215c8b88db1d8da003ad21a89afcd3f28bff17ee1bde50f72c60d9c",
+    "templates/fy-nomogram/code/regplot_modified.R": "de34fe92a3b6a756a3d4481cae292ba8bd3b3ceb9e835af82e9c787f60fb8a52",
+    "inline/easy_input#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-nomogram/example/easy_input.txt": "2c034ecc2693d541bf6bfd4e48ea175f224a42eb0c3d445a8f4f24d2f0b79081"
+  },
+  "outputs": {
+    "png": "e26ff3e64839684fce4e2eee6cd2b966b690432262ed9e7e63a01ea5563f339d",
+    "pdf": "d13957606a59ff9865aae8f83fa51dccb509f8b235ca3eb6714e1eda9a21ee23",
+    "svg": "d06c2dd7a9c66d0a4e382bde086b5bf273d0240ce17df847b5dcb345c20c9276"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

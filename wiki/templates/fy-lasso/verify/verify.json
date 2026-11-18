@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:11:08.722021+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-lasso/spec.json": "ebe00a459e3c158e4f43eeb109d5728ef6485663c194e2d10d5250053653eca2",
+    "templates/fy-lasso/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-lasso/code/nonzeroCoef.R": "62eb57d11e97fc8c0a5cf3f60fba702bab0084b450e383f3ea64c87f581f8b64",
+    "templates/fy-lasso/code/plot_figureya.R": "cc1a772fa237b592cfac77fb55ff902a71c8e8c1c8e01967695de199e0ebee75",
+    "inline/easy_input_exp#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/easy_input_suv#columns": "c4ebc9df3ba3ff943798882cc5235080f248b116260f2603c772063d2418d139",
+    "inline/gene_index#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/lasso_output#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-lasso/example/easy_input_exp.csv": "78caef1d8e925fdf18c04cde73b6ddb0ba94f83bed6b8517d3ffe6d959a2c412",
+    "templates/fy-lasso/example/easy_input_suv.csv": "03fb024e7338c5beb9a50a9c1ffe4d30fb4a38cf7f6dd78406aa5d1ebbdc574a",
+    "templates/fy-lasso/example/gene_index.csv": "d6c574ccf553a2f8a12376d99f4b475896321ee1502acefea14de5bc1c3341bd",
+    "templates/fy-lasso/example/lasso_output.txt": "f8554e6ab0a21b3d3b5ab24ea7e7ad85badf2cf0a5269da6ad333a5735b4e2ae"
+  },
+  "outputs": {
+    "png": "da2aa98115be88757cd5f2cb68da131f2b213748ec82386f89c659058701b02e",
+    "pdf": "e412fcef71d2cfd69a90a3ccab3e6b679f435b9e10778b49fa1b2f69e82a4b05",
+    "svg": "0c8e3ecabbf589c122b9de8f94a32cd5cdd0eb2239834637be3fde191025e74e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

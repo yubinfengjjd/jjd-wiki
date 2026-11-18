@@ -1,0 +1,180 @@
+library(survival) # 生存分析 survival analysis
+library(survminer) # 生存曲线绘图 survival curve plotting
+Sys.setenv(LANGUAGE = "en") #显示英文报错信息 display English error messages
+options(stringsAsFactors = FALSE) #禁止chr转成factor prohibit the conversion of chr to factor
+
+svdata <- read.csv("easy_input.csv",header = T,row.names = 1)
+
+dim(svdata)
+head(svdata[1:3,1:6])
+
+pct = 0.1
+# 1. 提取出表达谱
+# 1. extract expression profiles
+expr <- svdata[,3:ncol(svdata)]
+
+# 2. 根据情况对表达谱做对数转换
+# 2. logarithmic conversion of expression spectra as appropriate
+expr <- log2(expr + 1)
+
+# 3. 取方差大于1的基因
+# 3. take genes with variance greater than 1
+expr <- expr[,apply(expr, 2, sd) > 0]
+
+# 针对报错stat(scores, x, weights = weights, pmethod, minprop, maxprop, : no data between minprop, maxprop
+# 4. (关键) 取表达量为0的样本数目小于总样本数pct%的样本，这里pct默认为0.1，即10%
+# in response to the error stat(scores, x, weights = weights, pmethod, minprop, maxprop, : no data between minprop, maxprop
+# 4. (Key) take the number of samples where the number of samples with an expression of 0 is less than pct% of the total number of samples, where pct defaults to 0.1, i.e., 10%
+expr <- expr[,apply(expr, 2, function(x) sum(x == 0) < pct * nrow(expr))]
+
+# 针对报错Error in survdiff.fit(y, groups, strata.keep, rho) : There is only 1 group
+# 5. (关键) 基因名出错会导致出现只有一个组的情况
+# in response to the error Error in survdiff.fit(y, groups, strata.keep, rho) : There is only 1 group
+# 5. (Key) An error in the gene name can lead to a situation where there is only 1 group
+colnames(expr) <- make.names(colnames(expr))
+
+# 6. 数据合并
+# 6. data merge
+svdata <- cbind.data.frame(svdata[,1:2],expr)
+
+##对数据集的基因进行bestSeparation统计
+##bestSeparation statistics for genes in a dataset
+res.cut <- surv_cutpoint(svdata, time = "futime", 
+                         event = "fustat", 
+                         variables = names(svdata)[3:ncol(svdata)], 
+                         minprop = 0.3) #默认组内sample不能低于30% the default group sample can't be less than 30%
+
+##按照bestSeparation分高低表达
+##expressions according to bestSeparation in high and low levels
+res.cat <- surv_categorize(res.cut)
+
+my.surv <- Surv(res.cat$futime, res.cat$fustat)
+pl <- pl2 <- list() # 初始化生存曲线和事件发生率曲线的列表 initialize the list of survival curves and event rate curves
+
+# 建一个空的dataframe，用来存放统计量
+# build an empty dataframe to hold the statistic
+ptable <- data.frame(matrix(NA,ncol(svdata)-2,5))
+colnames(ptable) <- c("ID", "pvalue", "HR", "CIlow", "CIup")
+
+n = 0
+for (i in colnames(res.cat)[3:ncol(svdata)]) {
+  group <- res.cat[,i] 
+  survival_dat <- data.frame(group = group)
+  fit <- survfit(my.surv ~ group)
+  
+  ##计算HR以及95%CI
+  ##修改分组参照
+  ##calculate HR and 95% CI
+  ##modify subgroup references
+  group <- factor(group, levels = c("low", "high"))
+  data.survdiff <- survdiff(my.surv ~ group)
+  p.val = 1 - pchisq(data.survdiff$chisq, length(data.survdiff$n) - 1)
+  HR = (data.survdiff$obs[2]/data.survdiff$exp[2])/(data.survdiff$obs[1]/data.survdiff$exp[1])
+  up95 = exp(log(HR) + qnorm(0.975)*sqrt(1/data.survdiff$exp[2]+1/data.survdiff$exp[1]))
+  low95 = exp(log(HR) - qnorm(0.975)*sqrt(1/data.survdiff$exp[2]+1/data.survdiff$exp[1]))
+  
+  #如果只想输出p value<=0.05的基因，就把下面这6行放到if (p.val>0.05) next那句的后面
+  #if you only want to output genes with p value <= 0.05, put the following 6 lines after the if (p.val>0.05) next sentence
+  n = n + 1
+  ptable$ID[n] <- i
+  ptable$pvalue[n] <- p.val
+  ptable$HR[n] <- HR
+  ptable$CIlow[n] <- low95
+  ptable$CIup[n] <- up95
+  
+  #只画出p value<=0.05的基因，如果不想筛选，就删掉下面这行
+  #plot only the genes with p value <= 0.05, if you don't want to screen, delete the following line
+  if (p.val>0.05) next
+  
+  HR <- paste("Hazard Ratio = ", round(HR,2), sep = "")
+  CI <- paste("95% CI: ", paste(round(low95,2), round(up95,2), sep = " - "), sep = "")
+  
+  #按照基因表达量从低到高排序，便于取出分界表达量
+  #sort by gene expression from low to high, easy to take out the cut-off expression
+  svsort <- svdata[order(svdata[,i]),]
+  
+  # 传统生存曲线
+  # traditional survival curves
+  pl[[i]]<-ggsurvplot(fit, data = survival_dat ,
+           #ggtheme = theme_bw(), #想要网格就运行这行 run this line if you want the grid
+           conf.int = F, #不画置信区间，想画置信区间就把F改成T do not draw confidence intervals, if you want to draw confidence intervals, change F to T
+           #conf.int.style = "step",#置信区间的类型，还可改为ribbon the type of confidence interval, which can also be changed to ribbon
+           censor = F, #不显示观察值所在的位置 do not show the location of the observation
+           palette = c("#D95F02","#1B9E77"), #线的颜色对应高、低 color of the line corresponds to high and low
+           
+           legend.title = i,#基因名写在图例题目的位置 the gene name is written in the location of the legend caption
+           font.legend = 11,#图例的字体大小 legend font size
+           #font.title = 12,font.x = 10,font.y = 10,#设置其他字体大小 set other font sizes
+
+           #在图例上标出高低分界点的表达量，和组内sample数量
+           #mark the expression of the high and low cutoffs on the legend, and the number of samples in the group
+           legend.labs=c(paste0(">",round(svsort[fit$n[2],i],2),"(",fit$n[1],")"),
+                           paste0("<",round(svsort[fit$n[2],i],2),"(",fit$n[2],")")),
+           
+           #标出pvalue、HR、95% CI
+           #太小的p value标为p < 0.001
+           #label pvalue, HR, 95% CI
+           #too small p value labeled as p < 0.001
+           pval = paste(pval = ifelse(p.val < 0.001, "p < 0.001", 
+                                             paste("p = ",round(p.val,3), sep = "")),
+                        HR, CI, sep = "\n"))
+    
+  #每一个图保存为一个pdf文件
+  #save each diagram as a pdf file
+  ggsave(paste0(i,".pdf"),width = 4,height = 4)
+  
+  # 同样绘制event曲线
+  # plot event curves similarly
+  pl2[[i]]<-ggsurvplot(fit, data = survival_dat , 
+                       fun = "event", # 曲线类型设置为event curve type is set to event
+           #ggtheme = theme_bw(), 
+           conf.int = F, 
+           #conf.int.style = "step",
+           censor = F, 
+           palette = c("#D95F02","#1B9E77"), 
+           
+           legend.title = i,
+           font.legend = 11,
+           #font.title = 12,font.x = 10,font.y = 10,
+
+           #在图例上标出高低分界点的表达量，和组内sample数量
+           #mark the expression of the high and low cutoffs on the legend, and the number of samples in the group
+           legend.labs=c(paste0(">",round(svsort[fit$n[2],i],2),"(",fit$n[1],")"),
+                           paste0("<",round(svsort[fit$n[2],i],2),"(",fit$n[2],")")),
+           
+           #标出pvalue、HR、95% CI
+           #太小的p value标为p < 0.001
+           #label pvalue, HR, 95% CI
+           #too small p value labeled as p < 0.001
+           pval = paste(pval = ifelse(p.val < 0.001, "p < 0.001", 
+                                             paste("p = ",round(p.val,3), sep = "")),
+                        HR, CI, sep = "\n"))
+  #每一个图保存为一个pdf文件
+  #save each diagram as a pdf file
+  ggsave(paste0(i," event.pdf"),width = 4,height = 4)
+}
+
+length(pl)
+# 保存到文件
+# save to file
+write.csv(ptable, "pvalue_output.csv", quote = F, row.names = F)
+
+# 传统生存曲线
+# traditional survival curve
+res <- arrange_ggsurvplots(pl, 
+                           print = T,
+                           ncol = 3, nrow = 4)#每页纸画几列几行 how many columns and rows per page
+
+#保存到pdf文件
+#save to pdf file
+ggsave("bestSurvPlot.pdf",res,width = 12,height = 16)
+
+# 事件发生率曲线
+# incidence rate curve
+res <- arrange_ggsurvplots(pl2, 
+                           print = T,
+                           ncol = 3, nrow = 4)#每页纸画几列几行 how many columns and rows per page
+
+#保存到pdf文件
+#save to pdf file
+ggsave("bestSurvPlot_event.pdf",res,width = 12,height = 16)

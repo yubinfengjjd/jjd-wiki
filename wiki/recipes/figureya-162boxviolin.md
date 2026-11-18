@@ -57,7 +57,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa162boxViolin.Rmd`）
 - 依赖：CRAN ggplot2, ggpubr
 - 最近运行：pass（as-is，2026-10-27 12:17 UTC，3.0 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-boxviolin|半小提琴箱线散点组合图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-162boxviolin/preview.png]]

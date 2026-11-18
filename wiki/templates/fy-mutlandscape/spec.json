@@ -1,0 +1,92 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "all_lesions_conf_90": {
+      "interface": "",
+      "filename": "all_lesions.conf_90.txt",
+      "description": "多组学突变景观组合热图输入数据表（all_lesions.conf_90.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "all_thresholded_by_genes": {
+      "interface": "",
+      "filename": "all_thresholded.by_genes.txt",
+      "description": "多组学突变景观组合热图输入数据表（all_thresholded.by_genes.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "mutation": {
+      "interface": "",
+      "filename": "mutation.txt",
+      "description": "多组学突变景观组合热图输入数据表（mutation.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "mutationsignature_cosmic2013": {
+      "interface": "",
+      "filename": "mutationsignature.cosmic2013.csv",
+      "description": "多组学突变景观组合热图输入数据表（mutationsignature.cosmic2013.csv）",
+      "required": true,
+      "columns": {}
+    },
+    "subtype": {
+      "interface": "",
+      "filename": "subtype.txt",
+      "description": "多组学突变景观组合热图输入数据表（subtype.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "tmb": {
+      "interface": "",
+      "filename": "TMB.txt",
+      "description": "多组学突变景观组合热图输入数据表（TMB.txt）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

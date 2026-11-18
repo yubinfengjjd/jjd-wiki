@@ -60,7 +60,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa26circos_R.Rmd`）
 - 依赖：CRAN graphics, stringi, GlobalOptions；Bioconductor circlize
 - 最近运行：pass（as-is，2026-11-04 11:09 UTC，8.5 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-circos-r|分组环形连线关系图]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `circlize.pdf` 第 1 页）：
 
 ![[recipes/figureya-26circos-r/preview.png]]

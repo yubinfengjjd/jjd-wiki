@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:21:32.135677+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-heatmap/spec.json": "e0849e406b52c7dffda4b4b3ae6c4b0d6567458b6e1ff2d7f498d496b1ba6175",
+    "templates/fy-heatmap/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-heatmap/code/plot_figureya.R": "76cfce717f1c416c603394896a32b3fecb9152dea0004c01e166e5fe28c49c0e",
+    "inline/mrna#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "templates/fy-heatmap/example/mRNA.txt": "36a4f91050c0ff1f5c8459521fd51fe38175d22e7f550f509a495599710c159c"
+  },
+  "outputs": {
+    "png": "dcc7935bd5e7a91619b01708823027dd2941db9f2473735d2f30762468cb940c",
+    "pdf": "8d8aaac6e0002b4602c25d9e54d4a0e697bcd1666addf9b8051e969b7aec3fa4",
+    "svg": "69b72d469d4d455876e0888c304a15023eb77ca5566f591a0e1f737bc431a24f"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

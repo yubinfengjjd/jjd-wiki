@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:19:44.471824+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-circgroup/spec.json": "5a45b7f960cdbfa53c30d34e9904290330b7376b3dedb8e7d38fdcec7bbb9ca6",
+    "templates/fy-circgroup/code/render.R": "7f884a51ac550c980871e027fa13c55e40d55838f7a22c7684606e0bc2cb5926",
+    "templates/fy-circgroup/code/plot_figureya.R": "9c146bf22723ef69fda737ffff45ef7ad45eb6cf21eb1ed4c2008c51c1e45260",
+    "inline/easy_input#columns": "6a1b080bd321f5acfd6c72164c0f2f2e6fed95abbd788d3aa767d75d1e999524",
+    "templates/fy-circgroup/example/easy_input.txt": "8170eea1e2d2ec5b6d69aaa5fbc6a99b2ffb139f5d10332e8226769497456ba4"
+  },
+  "outputs": {
+    "png": "31b5cbba1998e6e261450e4bf9143d073ba662ab4e947fb11a0275c4650debda",
+    "pdf": "a4fbd938cdc42b560f6af2dbc80ec3742a1877e24d2dffb11fa986c54bcf30e4",
+    "svg": "cd2ef1ae40eef4ade800c5e20c7acc62ef8b22b73752fad28ce38801063807cd"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

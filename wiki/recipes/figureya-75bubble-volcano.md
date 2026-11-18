@@ -49,7 +49,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa75bubble_volcano.Rmd`）
 - 依赖：未声明（见 Rmd library 调用）
 - 最近运行：pass（as-is，2026-11-04 11:19 UTC，4.6 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-bubble-volcano|分组气泡火山图]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `base_volcano.pdf` 第 1 页）：
 
 ![[recipes/figureya-75bubble-volcano/preview.png]]

@@ -55,7 +55,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa11bubbles.Rmd`）
 - 依赖：CRAN cowplot, ggplot2
 - 最近运行：pass（as-is，2026-11-04 04:20 UTC，4.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-bubble|富集分析对角排列气泡图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-11bubble/preview.png]]

@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:10:15.286985+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-fancybar/spec.json": "aa789a0746f63c187acfac69a21639931009fe3b07be2c40c6c37532df4e0406",
+    "templates/fy-fancybar/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-fancybar/code/plot_figureya.R": "71a9974d7a88b8a909a43e7438b8e2da4b403115c71fcf6c5affcd5d8e18fe0d",
+    "inline/multicenter_validation_full_njdth_ui#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "inline/multicenter_validation_manual_gcph_toshiba#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_manual_jspph_siemens#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_manual_njdth_ge#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_manual_njdth_philips#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_manual_njdth_ui#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_semi_njdth_ui#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_semi_pzth_ui#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "inline/multicenter_validation_semi_syccyhc_ui#columns": "732cf5b5216c8c4a0a42c557d27be61092d74e073d5a679231fc6e1cca522121",
+    "templates/fy-fancybar/example/multicenter_validation_full_NJDTH_UI.txt": "84d0dff5d051ed134728257b5778121252b9977e4be547149c1df1b9f790fe23",
+    "templates/fy-fancybar/example/multicenter_validation_manual_GCPH_Toshiba.txt": "3f6492fff2c9a764543a53e528da2c4986bdef0c83b079ed8beb799607aaa499",
+    "templates/fy-fancybar/example/multicenter_validation_manual_JSPPH_Siemens.txt": "7b6230d3407d39030d6f90019220e47172c1076316052796b3a85dfafa295b20",
+    "templates/fy-fancybar/example/multicenter_validation_manual_NJDTH_GE.txt": "c463df5066f7990bda05ddbe04dbff4f36164ae002b07948697871a5b0b5bf70",
+    "templates/fy-fancybar/example/multicenter_validation_manual_NJDTH_Philips.txt": "8c9a8b8e235228612f5f082ff3e919fb8979415f9d0a0312b544967d262e8829",
+    "templates/fy-fancybar/example/multicenter_validation_manual_NJDTH_UI.txt": "8f1c4c60ca451077a58018acfee5fd9cbd63e9c894815d44010f396be6a89f62",
+    "templates/fy-fancybar/example/multicenter_validation_semi_NJDTH_UI.txt": "5eba45a644a562b6149f044d5f672047e2913806c802216aa90d17cef5e6fcb2",
+    "templates/fy-fancybar/example/multicenter_validation_semi_PZTH_UI.txt": "d56360bea60b7c7605c9708a085d494f7be0bc56069f51b27a400d30bc6c63d2",
+    "templates/fy-fancybar/example/multicenter_validation_semi_SYCCYHC_UI.txt": "5e3bf6e834f2f5a011109d3d815aa5acb55f586ea2351485c4ba3559941d1b91"
+  },
+  "outputs": {
+    "png": "b3c3a73144e13837fa781592a90bfde4d3a57a958f03331040f2df46f8b47101",
+    "pdf": "86eb786ee324d43f6f7c79735e8e85936080d7517dd6a78880a291d520c2d0ca",
+    "svg": "d00a73d3b85d51f4f730ba5ffd6c280f82628f17895ee0ca744062874537f046"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

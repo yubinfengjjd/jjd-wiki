@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:15:13.243274+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-boxdensity/spec.json": "b03c0b78cbc4f88a02105f7921bf9859500e48e9996b6c8b099d88875c40ff55",
+    "templates/fy-boxdensity/code/render.R": "6e24fb15b837cb2287cbe6f55118a5fd36c4281fb2fb21102cf1a3c849301712",
+    "templates/fy-boxdensity/code/plot_figureya.R": "f31942b32a54fb6e33c13c65dc198edf8a58882595f5c62b57c91e9d373e5e2e",
+    "inline/easy_input#columns": "bc6c6ff2242fc1b1ae243afaee6f403a8c50750693be7c8c5e924675698192f9",
+    "templates/fy-boxdensity/example/easy_input.txt": "619743078446b5793d1559cd06e0664c6c48c3046cd78ab3de71cbc31a1fa6dc"
+  },
+  "outputs": {
+    "png": "54cf51726edf0d7933d15ebe5226aaa7735fa2bc121b4e69e70f786554dbc8a8",
+    "pdf": "2d42d7c3f486b78cdf234eac7ecd36508f40a8ec8213585bbe67a29ca3bd1707",
+    "svg": "81a659d8eaffa2daa146bdbd5b020728bb98af0fa7e13f4dabf41c7a7579c13e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

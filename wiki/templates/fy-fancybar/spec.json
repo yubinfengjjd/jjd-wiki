@@ -1,0 +1,241 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "multicenter_validation_full_njdth_ui": {
+      "interface": "",
+      "filename": "multicenter_validation_full_NJDTH_UI.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_full_NJDTH_UI.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "multicenter_validation_manual_gcph_toshiba": {
+      "interface": "",
+      "filename": "multicenter_validation_manual_GCPH_Toshiba.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_manual_GCPH_Toshiba.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_manual_jspph_siemens": {
+      "interface": "",
+      "filename": "multicenter_validation_manual_JSPPH_Siemens.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_manual_JSPPH_Siemens.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_manual_njdth_ge": {
+      "interface": "",
+      "filename": "multicenter_validation_manual_NJDTH_GE.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_manual_NJDTH_GE.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_manual_njdth_philips": {
+      "interface": "",
+      "filename": "multicenter_validation_manual_NJDTH_Philips.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_manual_NJDTH_Philips.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_manual_njdth_ui": {
+      "interface": "",
+      "filename": "multicenter_validation_manual_NJDTH_UI.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_manual_NJDTH_UI.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_semi_njdth_ui": {
+      "interface": "",
+      "filename": "multicenter_validation_semi_NJDTH_UI.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_semi_NJDTH_UI.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_semi_pzth_ui": {
+      "interface": "",
+      "filename": "multicenter_validation_semi_PZTH_UI.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_semi_PZTH_UI.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    },
+    "multicenter_validation_semi_syccyhc_ui": {
+      "interface": "",
+      "filename": "multicenter_validation_semi_SYCCYHC_UI.txt",
+      "description": "含亚组的多组均值柱图与比较输入数据表（multicenter_validation_semi_SYCCYHC_UI.txt）",
+      "required": true,
+      "columns": {
+        "total": {
+          "type": "int",
+          "description": "示例列 total",
+          "required": true
+        },
+        "actual": {
+          "type": "int",
+          "description": "示例列 actual",
+          "required": true
+        },
+        "diff": {
+          "type": "int",
+          "description": "示例列 diff",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

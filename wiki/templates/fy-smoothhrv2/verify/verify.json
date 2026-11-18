@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:08:24.439903+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-smoothhrv2/spec.json": "223b43ab32912c7f693050dd265ccf02712bb541f06d96b27a19a9170a0240e4",
+    "templates/fy-smoothhrv2/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-smoothhrv2/code/plot_figureya.R": "1b59ae8aa819cd711d396be12df57db43df161aae15bb0cb33b9244ad1f870b4",
+    "inline/easy_input#columns": "2a9c013ef789f92dfca349c7ae4add952376905d00ab0d74c06b2f546bc203b4",
+    "templates/fy-smoothhrv2/example/easy_input.csv": "94adb04c6d94ec53d1d56dacf10f52fb5f38d03235124e3ae316fab3d84ef1d1"
+  },
+  "outputs": {
+    "png": "7658166c44c5acccfe6696481acbebd84a4f49c3812b38b008cf2033799b2dfc",
+    "pdf": "4f053ab54e18f9ab33d0943d4e01359991b8487f78f6c16a137527a0cca916c3",
+    "svg": "9453e859deb794a6f5e6fd40bea38c34a55d84ccaa6f894aaf406c3fd7cd43ab"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

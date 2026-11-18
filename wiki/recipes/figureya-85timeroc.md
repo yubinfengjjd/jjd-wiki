@@ -53,7 +53,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa85timeROC.Rmd`）
 - 依赖：CRAN survival, timeROC
 - 最近运行：pass（as-is，2026-10-27 15:02 UTC，1.4 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-timeroc|多模型时间依赖 ROC 曲线]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `timeROC.pdf` 第 1 页）：
 
 ![[recipes/figureya-85timeroc/preview.png]]

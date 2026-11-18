@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-18T14:04:33.429950+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/fy-pca/spec.json": "37db7067c7d0ce7cb096bd772372d14e85839b06490a2fe4c9b7ef8cc230e6e9",
+    "templates/fy-pca/code/render.R": "f48c75b4a7480916443aa4601eac46bd4ddd548ef08960a23b104756d9f5d318",
+    "templates/fy-pca/code/geom_ord_ellipse.R": "8c4ddd09bfd9dd110aa2bac3d4680304ba59d4f309de9defd2bc439aa99b59a6",
+    "templates/fy-pca/code/ggord.R": "6c0399e2a19826394235a503b1eb33c9a506f3d660521e46533984e6020f5c81",
+    "templates/fy-pca/code/plot_figureya.R": "be06d93bd75b1fb9b6941b8cf9cac32d472e16d9ef953c1c0339e105171e763c",
+    "inline/easy_input_expr#columns": "7d70e5557e9d09af118980ca439ef02f6ac393afa63dc732afc743fc3d4414a0",
+    "inline/easy_input_meta#columns": "96ac0058f772cfb373be45a9f76a39d06e7c3859c1eb2cb16fa07eee4af35db8",
+    "templates/fy-pca/example/easy_input_expr.csv": "9eb5f1e1e83600e5dce688e5da262e93b88309ba1a8fcb24f087bf679bb3ba86",
+    "templates/fy-pca/example/easy_input_meta.csv": "555dce849209a3b58cebb99c09606f8f67ac7d0eb74f8bbf0e7cb5a50baa614b"
+  },
+  "outputs": {
+    "png": "f53c267f7b9bb1ab175fe5cce208869629224e3ccb68f721bf03062d5dcec09d",
+    "pdf": "c29815be4db773830115eace6cd2aec764e7717b5ac4df5d9c65cbad8ca8bf34",
+    "svg": "6dddb78d91fec0c669db9802d962aa78f47e4ca9399b6da845e593faf597ad14"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

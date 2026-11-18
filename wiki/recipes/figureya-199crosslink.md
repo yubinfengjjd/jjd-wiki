@@ -63,7 +63,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa199crosslink.Rmd`）
 - 依赖：未声明（见 Rmd library 调用）
 - 最近运行：pass（as-is，2026-11-04 11:01 UTC，19.0 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-crosslink|分组节点跨列连线图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-199crosslink/preview.png]]

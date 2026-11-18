@@ -52,7 +52,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa120MulticlassedgeR.Rmd`）
 - 依赖：CRAN pheatmap, RColorBrewer, gplots；Bioconductor edgeR
 - 最近运行：pass（as-is，2026-11-04 10:59 UTC，18.8 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-multiclassedger|多组edgeR配对差异分析]]（ready）
 <!-- facts:end -->
 
 ## 用途

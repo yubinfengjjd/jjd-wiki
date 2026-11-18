@@ -50,7 +50,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa77baseZoom.Rmd`）
 - 依赖：未声明（见 Rmd library 调用）
 - 最近运行：pass（as-is，2026-11-04 11:19 UTC，4.7 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-basezoom|局部放大气泡散点图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-77basezoom/preview.png]]

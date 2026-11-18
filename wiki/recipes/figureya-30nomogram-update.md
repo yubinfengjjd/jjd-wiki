@@ -66,7 +66,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa30nomogram_update.Rmd`）
 - 依赖：CRAN nomogramEx, regplot, rms, survival
 - 最近运行：pass（as-is，2026-10-27 15:01 UTC，25.7 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-nomogram|Cox/Logistic 列线图与校准曲线]]（ready）
 - 运行预览（最近一次通过的原样运行，取自 `nomogram_classical.pdf` 第 1 页）：
 
 ![[recipes/figureya-30nomogram-update/preview.png]]

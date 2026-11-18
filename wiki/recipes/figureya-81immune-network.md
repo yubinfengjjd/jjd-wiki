@@ -64,7 +64,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa81immune_network.Rmd`）
 - 依赖：CRAN corrplot, igraph, plyr, reshape2
 - 最近运行：pass（as-is，2026-11-04 11:19 UTC，7.6 秒）
-- 派生模板（L2）：暂无
+- 派生模板（L2）：[[templates/fy-immune-network|免疫细胞相关预后网络图]]（ready）
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-81immune-network/preview.png]]

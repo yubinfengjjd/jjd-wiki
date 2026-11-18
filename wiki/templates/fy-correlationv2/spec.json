@@ -1,0 +1,103 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "easy_input": {
+      "interface": "",
+      "filename": "easy_input.txt",
+      "description": "圆形布局基因相关连线图输入数据表（easy_input.txt）",
+      "required": true,
+      "columns": {
+        "Gene_1": {
+          "type": "str",
+          "description": "示例列 Gene_1",
+          "required": true
+        },
+        "Gene_2": {
+          "type": "str",
+          "description": "示例列 Gene_2",
+          "required": true
+        },
+        "cor": {
+          "type": "float",
+          "description": "示例列 cor",
+          "required": true
+        }
+      }
+    },
+    "easy_input_v2": {
+      "interface": "",
+      "filename": "easy_input_V2.txt",
+      "description": "圆形布局基因相关连线图输入数据表（easy_input_V2.txt）",
+      "required": true,
+      "columns": {
+        "Gene_1": {
+          "type": "str",
+          "description": "示例列 Gene_1",
+          "required": true
+        },
+        "Gene_2": {
+          "type": "str",
+          "description": "示例列 Gene_2",
+          "required": true
+        },
+        "Correlation": {
+          "type": "float",
+          "description": "示例列 Correlation",
+          "required": true
+        }
+      }
+    },
+    "not_easy_input": {
+      "interface": "",
+      "filename": "not_easy_input.csv",
+      "description": "圆形布局基因相关连线图输入数据表（not_easy_input.csv）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}

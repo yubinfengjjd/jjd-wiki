@@ -1,0 +1,114 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "bladder_cancer_signature": {
+      "interface": "",
+      "filename": "bladder cancer signature.txt",
+      "description": "相关热图与连线蝴蝶图输入数据表（bladder cancer signature.txt）",
+      "required": true,
+      "columns": {
+        "Signature": {
+          "type": "str",
+          "description": "示例列 Signature",
+          "required": true
+        },
+        "Genes": {
+          "type": "str",
+          "description": "示例列 Genes",
+          "required": true
+        }
+      }
+    },
+    "easy_input_blcapath": {
+      "interface": "",
+      "filename": "easy_input_blcaPath.txt",
+      "description": "相关热图与连线蝴蝶图输入数据表（easy_input_blcaPath.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "easy_input_gene": {
+      "interface": "",
+      "filename": "easy_input_gene.csv",
+      "description": "相关热图与连线蝴蝶图输入数据表（easy_input_gene.csv）",
+      "required": true,
+      "columns": {}
+    },
+    "easy_input_immpath": {
+      "interface": "",
+      "filename": "easy_input_immPath.txt",
+      "description": "相关热图与连线蝴蝶图输入数据表（easy_input_immPath.txt）",
+      "required": true,
+      "columns": {}
+    },
+    "immunotherapy_predicted_pathways": {
+      "interface": "",
+      "filename": "immunotherapy predicted pathways.txt",
+      "description": "相关热图与连线蝴蝶图输入数据表（immunotherapy predicted pathways.txt）",
+      "required": true,
+      "columns": {
+        "Signature": {
+          "type": "str",
+          "description": "示例列 Signature",
+          "required": true
+        },
+        "Genes": {
+          "type": "str",
+          "description": "示例列 Genes",
+          "required": true
+        }
+      }
+    },
+    "tcga_blca_fpkm": {
+      "interface": "",
+      "filename": "tcga_blca_fpkm.txt",
+      "description": "相关热图与连线蝴蝶图输入数据表（tcga_blca_fpkm.txt）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "dpi": 200,
+    "width_in": 8.0,
+    "height_in": 6.0,
+    "palette": "NPG",
+    "title": ""
+  },
+  "parameters": {
+    "palette": {
+      "type": "select",
+      "label": "顶刊配色主题 (ggsci)",
+      "default": "NPG",
+      "choices": [
+        "NPG",
+        "Nature",
+        "Lancet",
+        "NEJM",
+        "JAMA",
+        "Cell"
+      ],
+      "description": "选择 Nature/Lancet/NEJM/JAMA/Cell 配色方案"
+    },
+    "width": {
+      "type": "number",
+      "label": "画布宽度 (inch)",
+      "default": 8.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "height": {
+      "type": "number",
+      "label": "画布高度 (inch)",
+      "default": 6.0,
+      "min": 3.0,
+      "max": 20.0,
+      "step": 0.5
+    },
+    "title": {
+      "type": "string",
+      "label": "图标题",
+      "default": ""
+    }
+  }
+}
