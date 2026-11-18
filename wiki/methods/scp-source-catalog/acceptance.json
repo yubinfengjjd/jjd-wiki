@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-12T15:07:17.932978+00:00",
+  "checked_at": "2026-11-18T07:25:27.539778+00:00",
   "page": "methods/scp-source-catalog.md",
-  "snapshot": "31de9044370d7abe2df78de554463e2566c8772257cea26dc3c7297fa463e1a5",
+  "snapshot": "f446f724ec7a689a267b074d63366f9de769bcfcc9148d5c0eee093e8ec49b24",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
