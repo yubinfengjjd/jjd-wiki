@@ -841,6 +841,135 @@
     "templates/cellchat-circos-multi.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
+    "templates/fy-adonis.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-bar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-basezoom.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-batch-bestseparationv3.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-batchcorrelation.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-boxdensity.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-boxviolin.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-bubble-volcano.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-bubble.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-bubbles.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-circgroup.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-circos-r.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-correlationv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-corrgram.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-crosslink.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-dca.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-fancybar.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-immune-gene.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-immune-network.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-lasso.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-linkcor.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-multiclassedger.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-multipanelroc.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-mutlandscape.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-nicecalibration.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-nomogram.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-nsurvv3.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-oncoprintv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-pairwiselogrank.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-pancancer-boxplot-plus.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-panpie.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-pca.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-pca3d.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-rankheatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-risktable.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-sankey.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-smoothhrv2.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-string-plus.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-subgroup.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-timeroc.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-twovarcor.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
+    "templates/fy-wgcna-heatmap.md": [
+      "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
+    ],
     "templates/km-survival-curve.md": [
       "d70f2be79594edf933f0d00a91f7f1e11bb55838c0e28aefb06f0e4cd43445db"
     ],
