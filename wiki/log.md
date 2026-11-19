@@ -1491,3 +1491,5 @@
 ## [2026-11-18 17:16 UTC] ready 2: coexpr-sphere-network, coexpr-module-enrich-bars
 
 ## [2026-11-18 17:18 UTC] complete hdWGCNA sphere network & enrichment layout notes
+
+## [2026-11-19 06:08 UTC] scaffold native template spatial-feature-grid
