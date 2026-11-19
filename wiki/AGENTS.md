@@ -137,6 +137,7 @@
 
 - **Wiki 正式存档（入 Git，受 5 MB 门禁约束）**：`rwiki paper publish` 在 `wiki/methods/<workflow-id>.md`（`method_kind: workflow`）下固定保存两套可读源码：`methods/<workflow-id>/source/`（作者原版核心脚本快照 + `source-manifest.json` 记仓库 URL、commit、SPDX 许可与 sha256）与 `methods/<workflow-id>/code/`（同步自 `<paper_id>/src/` 的分步复刻源码 + `runtime.json`），`verification/` 存小规模验证收据。共用算法补分支到既有规范 `methods/<canonical-id>/`；可复用单面板图模板入 `templates/<short-slug>/`；整图拼图对比归入 `gallery/`。
 - **附加材料与全图覆盖**：`fetch --supp` 统一纳管 Supplementary PDF/DOCX/XLSX/CSV，`parse` 生成 `step_supp_map.json` 捋顺「正文步骤 ↔ 附加材料 ↔ 开源脚本 ↔ 图面板」对照；`plan` 默认包含全部可复刻 Main Figures 与生信 Supplementary Figures，仅剔除动物/细胞/WB/镜检类湿实验面板。
+- **1:1 视觉忠实度硬门禁**：禁止脱离原图与作者源码“各自画一张能出图的版本”。每张复刻图必须满足五项硬边界方可验收：① **精确采样原图/作者源码十六进制配色**（禁止随意替换调色板）；② **1:1 匹配原图整图高宽比与各 Panel 面积占比**；③ **图元类型、坐标形式（如带框相关性矩阵、双轴连线、无轴箭头 UMAP）与图例位置严格对齐原图**；④ **逐张人工看图比对 `side_by_side.png`**，凡出现比例失调、散点呈孤立针孔点、配色偏差或标签裁剪，**必须原地打回重修，禁止带瑕疵进入下一张或入库**；⑤ **单进程串行执行**（一步一跑、跑完即释放内存，严禁并发多进程挤爆本机内存）。
 
 ## 历史临时产物与过期脚本清理规定（2026-11-19）
 
