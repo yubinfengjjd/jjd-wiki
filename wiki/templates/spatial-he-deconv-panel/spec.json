@@ -1,6 +1,50 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "spots": {
+      "interface": "",
+      "filename": "spatial_deconv_spots.csv",
+      "description": "空间反卷积得分与对齐坐标长表（spot_id、x、y、feature、score，可选 region、he_intensity）",
+      "required": true,
+      "columns": {
+        "spot_id": { "type": "str", "description": "空间 Spot 唯一标识", "required": true },
+        "x": { "type": "float", "description": "配准坐标横轴（对应 H&E 图像列像素）", "required": true },
+        "y": { "type": "float", "description": "配准坐标纵轴（对应 H&E 图像行像素）", "required": true },
+        "feature": { "type": "str", "description": "反卷积细胞类型或签名名称", "required": true },
+        "score": { "type": "float", "description": "反卷积权重或签名密度", "required": true },
+        "region": { "type": "str", "description": "可选分区标识（如 Quadrant 1–4）", "required": false },
+        "he_intensity": { "type": "float", "description": "可选组织染色密度代理（无 H&E PNG 时自动绘制组织轮廓）", "required": false }
+      }
+    }
+  },
+  "style": {
+    "he_image": "he_image.png",
+    "palette": ["#46468A", "#5CB874", "#F7DC6F", "#C0392B"],
+    "invert_y": true,
+    "quantile_cap": 0.995,
+    "gamma": 1.4,
+    "point_size": 1.15,
+    "dpi": 300,
+    "width_in": 9.4,
+    "height_in": 5.8
+  },
+  "parameters": {
+    "gamma": {
+      "type": "number",
+      "label": "高值对比度伽马幂次",
+      "default": 1.4,
+      "min": 0.5,
+      "max": 3.0,
+      "step": 0.1
+    },
+    "point_size": {
+      "type": "number",
+      "label": "Spot 散点大小",
+      "default": 1.15,
+      "min": 0.5,
+      "max": 2.5,
+      "step": 0.05
+    }
+  }
 }

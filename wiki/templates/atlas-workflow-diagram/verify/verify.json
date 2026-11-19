@@ -1,19 +1,19 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T12:22:30.998194+00:00",
+  "timestamp": "2026-11-19T12:26:47.219368+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/atlas-workflow-diagram/spec.json": "c7c301c3ce79e9482edc2076e0b08f8e31dddc8f74006b00228e80b00242dd4c",
-    "templates/atlas-workflow-diagram/code/render.R": "3c0df6e79eee7adbb21525046c8c44c51b845963d6e16df7b777f8169decbca6",
+    "templates/atlas-workflow-diagram/code/render.R": "a57913c0a3b2a3e70c755d6da51554433fbda5499634438f61ba4c12d6abbc84",
     "inline/steps#columns": "54756d26cda4812d6524753f9270c197b318d31dffb074ba0ae9840249b7520a",
     "inline/cohorts#columns": "61293aa8868f30d34b6ecd702c784b34f56669fc5dfc55cac9b99154845b29a8",
     "templates/atlas-workflow-diagram/example/workflow_cohorts.csv": "ddc1706068172a671e62fe24c3fc8b6dd4c771f839e211abfdae2e9bdc4fef58",
     "templates/atlas-workflow-diagram/example/workflow_steps.csv": "f4006de023b8263bd079b87df11a20e705435f48e6c587e49095b2a591dae8b0"
   },
   "outputs": {
-    "png": "92eb36b2f8bf710d6cb3bec71bb013ecbb4f2c78fd15ca9f8c06953aa66729a1",
-    "pdf": "dd0d5e39ee706efbbd208c029fa4d5f27520382d32ba64243cadfd5d9a6b2bba",
-    "svg": "9754dd4a4365acd32f8aaba4160bc7032a3912160bc5b8843de75cd90c291ef4"
+    "png": "354f806ba73079fa6d251eb7b97f670213cc17fc646f603a44c075cd53a8452f",
+    "pdf": "e3de68e8a5e8993dd9207a1aac139ec21cc595b7186584433201580988648965",
+    "svg": "417c29704215f00b57adf5ab7f9e8302adde03b7abd3f16f259800024b53fd7c"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

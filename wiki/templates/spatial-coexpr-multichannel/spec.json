@@ -1,6 +1,56 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "spots": {
+      "interface": "",
+      "filename": "spatial_coexpr_spots.csv",
+      "description": "多通道空间共表达 Spot 长表（spot_id、x、y、channel、value，可选 region、highlight_zone）",
+      "required": true,
+      "columns": {
+        "spot_id": { "type": "str", "description": "空间 Spot 唯一标识", "required": true },
+        "x": { "type": "float", "description": "组织切片 Spot 横坐标（如 imagecol）", "required": true },
+        "y": { "type": "float", "description": "组织切片 Spot 纵坐标（如 imagerow）", "required": true },
+        "channel": { "type": "str", "description": "通道基因或标志物名称（2 至 4 个通道）", "required": true },
+        "value": { "type": "float", "description": "对应通道的表达量或强度", "required": true },
+        "region": { "type": "str", "description": "可选分面区域标识（如 Area 1–Area 4）", "required": false },
+        "highlight_zone": { "type": "int", "description": "可选重点共定位高亮区标记（1 为高亮圈注，0 为常规）", "required": false }
+      }
+    }
+  },
+  "style": {
+    "channel_mode": "auto",
+    "channel_colors": ["#D73027", "#31A354", "#3B7EB6", "#8856A7"],
+    "invert_y": true,
+    "ncol": 2,
+    "point_size": 0.95,
+    "quantile_cap": 0.99,
+    "dpi": 300,
+    "width_in": 7.6,
+    "height_in": 6.2
+  },
+  "parameters": {
+    "channel_mode": {
+      "type": "select",
+      "label": "通道叠加模式",
+      "default": "auto",
+      "options": ["auto", "offset", "concentric"]
+    },
+    "ncol": {
+      "type": "number",
+      "label": "区域分面列数",
+      "default": 2,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    },
+    "point_size": {
+      "type": "number",
+      "label": "通道微点大小",
+      "default": 0.95,
+      "min": 0.4,
+      "max": 2.5,
+      "step": 0.05
+    }
+  }
 }
