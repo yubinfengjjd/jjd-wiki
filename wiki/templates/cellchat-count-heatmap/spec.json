@@ -1,6 +1,23 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "counts": {
+      "interface": "",
+      "filename": "interaction_counts.csv",
+      "description": "细胞间配受体互作计数表（SOURCE、TARGET、count）",
+      "required": true,
+      "columns": {
+        "SOURCE": { "type": "str", "description": "发送细胞类型/亚群", "required": true },
+        "TARGET": { "type": "str", "description": "接收细胞类型/亚群", "required": true },
+        "count":  { "type": "float", "description": "显著配受体互作总数", "required": true }
+      }
+    }
+  },
+  "style": {
+    "dpi": 300,
+    "width_in": 9.2,
+    "height_in": 6.4
+  },
+  "parameters": {}
 }

@@ -87,8 +87,8 @@ p_cox <- ggplot(cox_df, aes(x = subcluster, y = cohort, fill = status)) +
     panel.grid = element_blank(),
     axis.text.y.right = element_text(color = "#111111", size = 8.5),
     legend.position = "right",
-    legend.key.size = unit(0.16, "in"),
-    plot.margin = margin(2, 4, 1, 4)
+    legend.key.size = unit(0.14, "in"),
+    plot.margin = margin(10, 6, 1, 4)
   )
 
 # Panel 2: Subtype Ro/e

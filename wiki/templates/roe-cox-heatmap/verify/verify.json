@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T06:25:59.945460+00:00",
+  "timestamp": "2026-11-19T06:28:37.997140+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/roe-cox-heatmap/spec.json": "95ef716d3685c4d94fce5326f318be95d851bbeb0dec929d997bca3f5b3230bf",
-    "templates/roe-cox-heatmap/code/render.R": "ae975c6a5e1c2fe39f5407a75b5b4529bab87180f3661cef705285c37d786f90",
+    "templates/roe-cox-heatmap/code/render.R": "4d369a08d39cf339cc0e2dfa4714aefc90975ddd2900ada0d2dc39b08e3b5ff4",
     "inline/roe_cox#columns": "dd36b5d51b241df5df207df624279b3068098e8f1921dba7a2f679786c265e2d",
     "templates/roe-cox-heatmap/example/roe_cox_input.csv": "6ca87070b7e3b628b917734cf680a3593c9cec4855d608a5fc64e0f8efdb7337"
   },
   "outputs": {
-    "png": "9aea548fe23f0f192e9928ad795cfcfae03041fa8bce6baeb8f1973c5057a702",
-    "pdf": "382efd82a928a2e0277650150af7782294d872053809d3d3b841de6f7bc98a5d",
-    "svg": "4483ea153165444cc938f36ff7a1640046eefd202dc333dd770171279f8ef123"
+    "png": "3c157a630fc3c08ca827f0f1c3aebb1225d70e2c0ea6e8d8df61d5791133bc4d",
+    "pdf": "81782806232395eabc19eb9cadf1cf2be8ad2bfdf64856e4e662e684b47c2078",
+    "svg": "47d57ce76f6ae0809a219746530e3b75ed6771ab70171ddde5d1080197649916"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

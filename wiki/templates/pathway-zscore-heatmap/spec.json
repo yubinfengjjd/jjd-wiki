@@ -1,6 +1,38 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "matrix": {
+      "interface": "",
+      "filename": "zscore_matrix.csv",
+      "description": "首列为标识列（feature 或 canonical_subcluster），其余数值列为Z-score表达或PROGENy通路活性矩阵",
+      "required": true,
+      "columns": {
+        "feature": {
+          "type": "str",
+          "description": "行名标识（若首列为 canonical_subcluster 则自动转置以匹配横轴亚群）",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "z_cap": 2.0,
+    "cluster_rows": true,
+    "cluster_cols": true,
+    "transpose_subcluster_cols": true,
+    "dpi": 300,
+    "width_in": 6.4,
+    "height_in": 5.2
+  },
+  "parameters": {
+    "z_cap": {
+      "type": "number",
+      "label": "Z-score 截断上限",
+      "default": 2.0,
+      "min": 1.0,
+      "max": 4.0,
+      "step": 0.2
+    }
+  }
 }
