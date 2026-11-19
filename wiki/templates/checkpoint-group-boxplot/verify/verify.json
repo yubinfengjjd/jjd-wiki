@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:24:41.008261+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/checkpoint-group-boxplot/spec.json": "aa0c3c28824195159a1bf5be2d69bfb17a8733942654433db894e66f20121511",
+    "templates/checkpoint-group-boxplot/code/render.R": "1e0ade271df5f79b4e839e3df6b9336a935bd8e51c5fe90fa371cc0b6b389a6e",
+    "inline/expr#columns": "a140f33f372fe06bac6967272fac5d5ffb312f781980e0b53ad304c649fd4762",
+    "templates/checkpoint-group-boxplot/example/checkpoint_expr.csv": "911251fe3fdedf740b3693f12dc27721a2a4b442ef6b076b22305c439bb74d71"
+  },
+  "outputs": {
+    "png": "e47ca2886bb86a14e298119a25cf8e115a15ead0fecb57f3aa4d3205d5650740",
+    "pdf": "2e212d77da10456fcd0eb84876517bd8bd072262ddead9d0beddc3ff13ccd3d9",
+    "svg": "85ee328df18a10dd6f9d532b0ae6ef56dc25e4e71d50de9cfb6d46ff1ca1b8aa"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

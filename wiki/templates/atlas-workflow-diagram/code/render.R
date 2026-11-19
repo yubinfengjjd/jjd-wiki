@@ -97,19 +97,19 @@ if (show_pie) {
     th1 <- seq(0, frac * 2 * pi, length.out = 60)
     th2 <- seq(frac * 2 * pi, 2 * pi, length.out = 120)
     p <- p +
-      geom_polygon(data = data.frame(x = 15.2 + c(0, 4.8 * sin(th2)), y = 5.4 + c(0, 4.8 * cos(th2))),
+      geom_polygon(data = data.frame(x = 13.5 + c(0, 3.8 * sin(th2)), y = 4.8 + c(0, 3.8 * cos(th2))),
                    aes(x, y), fill = public_col, colour = "#65615C", linewidth = 0.22) +
-      geom_polygon(data = data.frame(x = 15.2 + c(0, 4.8 * sin(th1)), y = 5.4 + c(0, 4.8 * cos(th1))),
+      geom_polygon(data = data.frame(x = 13.5 + c(0, 3.8 * sin(th1)), y = 4.8 + c(0, 3.8 * cos(th1))),
                    aes(x, y), fill = inhouse_col, colour = "#65615C", linewidth = 0.22) +
-      annotate("text", x = c(19.5, 9.8), y = c(9.4, 3.0),
-               label = c(sprintf("In-house\n%.1f%%", 100 * frac), "Public data"),
-               size = 2.4, hjust = c(0, 1), fontface = "bold", colour = "#222222")
+      annotate("text", x = c(17.8, 9.0), y = c(6.6, 3.2),
+               label = c(sprintf("In-house\n%.1f%%", 100 * frac), "Public\ndata"),
+               size = 2.25, hjust = c(0, 1), fontface = "bold", colour = "#222222")
   }
 }
 
 # Middle workflow branches
 max_steps <- max(as.integer(tapply(steps$step_order, steps$branch, length)), 1L)
-x_start <- 26.0
+x_start <- 28.0
 x_end <- 62.5
 step_xs <- if (max_steps == 1L) (x_start + x_end) / 2 else seq(x_start, x_end, length.out = max_steps)
 
