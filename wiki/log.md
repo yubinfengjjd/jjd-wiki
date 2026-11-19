@@ -1553,3 +1553,5 @@
 ## [2026-11-19 12:27 UTC] verify atlas-workflow-diagram
 
 ## [2026-11-19 12:29 UTC] verify clustered-corr-boxes
+
+## [2026-11-19 12:30 UTC] verify diffusion-trajectory-overlay
