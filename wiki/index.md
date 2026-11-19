@@ -182,6 +182,7 @@
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
 - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
+- [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
 - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]
 - [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]

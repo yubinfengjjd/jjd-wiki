@@ -1505,3 +1505,5 @@
 ## [2026-11-19 06:11 UTC] scaffold native template lr-bipartite-bubble
 
 ## [2026-11-19 06:12 UTC] scaffold native template metabolism-lollipop-dotplot
+
+## [2026-11-19 06:13 UTC] scaffold native template pseudotime-branch-curves
