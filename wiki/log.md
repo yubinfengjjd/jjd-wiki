@@ -1497,3 +1497,5 @@
 ## [2026-11-19 06:09 UTC] scaffold native template roe-cox-heatmap
 
 ## [2026-11-19 06:10 UTC] scaffold native template pathway-zscore-heatmap
+
+## [2026-11-19 06:10 UTC] scaffold native template cellchat-count-heatmap

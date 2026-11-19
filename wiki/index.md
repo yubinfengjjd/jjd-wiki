@@ -182,6 +182,7 @@
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
+- [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]
 
 ### ready
 
