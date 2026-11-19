@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T16:27:16.196038+00:00",
+  "checked_at": "2026-11-19T16:41:48.752932+00:00",
   "page": "templates/lr-bubble-matrix.md",
-  "snapshot": "99a38e3a84395e50bcc321232a6361d6ac8d4362348f89570853a03889fe9841",
+  "snapshot": "f3228eda998a7acb8486ea8f06df0fa1149d2ed8d0030d0b3b8725d6c472e522",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
