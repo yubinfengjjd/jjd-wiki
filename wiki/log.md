@@ -1593,3 +1593,5 @@
 ## [2026-11-19 14:50 UTC] verify spatial-feature-grid
 
 ## [2026-11-19 14:50 UTC] verify roe-cox-heatmap
+
+## [2026-11-19 14:50 UTC] verify pathway-zscore-heatmap

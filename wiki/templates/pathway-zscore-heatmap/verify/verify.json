@@ -1,1 +1,21 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-19T10:33:00.843556+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T14:50:48.517008+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/pathway-zscore-heatmap/spec.json": "3ce02168fd4c861dd7c6ef677f98a7659db69d08f2179808e7f970b328085566",
+    "templates/pathway-zscore-heatmap/code/render.R": "a7ad5ec52c1912cf4ccedc8a35f0595b0d6ccb8eb940ddcb6d25d2a516becf1e",
+    "inline/matrix#columns": "e8302247c0462c37045d9d0c7e6396b37ffe26b475d789ff8e8e37638175d460",
+    "templates/pathway-zscore-heatmap/example/zscore_matrix.csv": "aa48124ab1a9378df63e75066d6e463eeb3e940072ae464998b7f2a0673fd876"
+  },
+  "outputs": {
+    "png": "b072056ea26a651adbf4952982c11a20c68a2599257629ce09da92104f1750d1",
+    "pdf": "9c1647bbb15f71867ef72318d02903b5ee7732dda0370953a53224528cfcae23",
+    "svg": "c177d613edbd492711b574eb00653fb68755ea52b5d48193b70aa40f5fdabe9e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
