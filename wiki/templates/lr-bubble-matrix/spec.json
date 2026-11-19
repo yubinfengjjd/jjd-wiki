@@ -1,6 +1,25 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "lr": {
+      "interface": "",
+      "filename": "lr_bubble_matrix.csv",
+      "description": "配受体互作矩阵表（pair_label 或 source+target、interaction、prob、pval）",
+      "required": true,
+      "columns": {
+        "interaction": { "type": "str", "description": "配受体对名称（如 COL1A1_CD44）", "required": true },
+        "prob": { "type": "float", "description": "通讯概率或平均互作强度", "required": true },
+        "pval": { "type": "float", "description": "置换检验 p 值", "required": false }
+      }
+    }
+  },
+  "style": {
+    "max_interactions": 18,
+    "max_pairs": 22,
+    "dpi": 300,
+    "width_in": 7.6,
+    "height_in": 6.0
+  },
+  "parameters": {}
 }

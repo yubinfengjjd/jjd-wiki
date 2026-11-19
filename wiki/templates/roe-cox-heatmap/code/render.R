@@ -169,7 +169,8 @@ h_in <- if (!is.null(style$height_in)) as.numeric(style$height_in) else max(4.2,
 dpi_val <- if (is.null(style$dpi)) 300 else as.integer(style$dpi)
 
 combined <- p_cox / p_sub / p_tis +
-  patchwork::plot_layout(heights = c(length(levels(cox_df$cohort)), n_sub, n_tis), guides = "collect")
+  patchwork::plot_layout(heights = c(length(levels(cox_df$cohort)), n_sub, n_tis), guides = "collect") +
+  patchwork::plot_annotation(theme = theme(plot.margin = margin(12, 6, 4, 4)))
 
 ggsave(file.path(out_dir, "figure.png"), combined, width = w_in, height = h_in, dpi = dpi_val, bg = "white")
 ggsave(file.path(out_dir, "figure.pdf"), combined, width = w_in, height = h_in, device = grDevices::cairo_pdf, bg = "white")

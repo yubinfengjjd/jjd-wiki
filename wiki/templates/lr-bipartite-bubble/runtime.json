@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "id": "lr-bipartite-bubble",
+  "entry": "code/render.R",
+  "language": "r",
+  "runtime_mode": "standalone",
+  "files": ["code/render.R", "spec.json"],
+  "required_packages": {
+    "R": ["ggplot2", "dplyr", "readr", "jsonlite"]
+  }
+}

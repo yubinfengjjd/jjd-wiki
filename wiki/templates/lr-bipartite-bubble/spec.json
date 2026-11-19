@@ -1,6 +1,26 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "pairs": {
+      "interface": "",
+      "filename": "lr_bipartite_pairs.csv",
+      "description": "配体-受体双轴连线气泡表（ligand、receptor、ligand_expr、ligand_pct、receptor_expr、receptor_pct）",
+      "required": true,
+      "columns": {
+        "ligand": { "type": "str", "description": "配体基因/细胞端标签", "required": true },
+        "receptor": { "type": "str", "description": "受体基因/靶细胞端标签", "required": true },
+        "ligand_expr": { "type": "float", "description": "配体平均表达量", "required": true },
+        "ligand_pct": { "type": "float", "description": "配体表达占比 (0-100)", "required": true },
+        "receptor_expr": { "type": "float", "description": "受体平均表达量", "required": true },
+        "receptor_pct": { "type": "float", "description": "受体表达占比 (0-100)", "required": true }
+      }
+    }
+  },
+  "style": {
+    "dpi": 300,
+    "width_in": 7.6,
+    "height_in": 3.4
+  },
+  "parameters": {}
 }
