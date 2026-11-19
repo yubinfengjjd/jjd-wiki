@@ -1589,3 +1589,5 @@
 ## [2026-11-19 13:11 UTC] acceptance check methods/trajectory-inference
 
 ## [2026-11-19 13:47 UTC] v5 Codex review P1/P2 fixes: unique style_tier defaults, clean playbook DAG, honest Cai2026 case card
+
+## [2026-11-19 14:50 UTC] verify spatial-feature-grid
