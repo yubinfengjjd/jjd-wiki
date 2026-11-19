@@ -1567,3 +1567,5 @@
 ## [2026-11-19 12:57 UTC] map method for atlas-workflow-diagram
 
 ## [2026-11-19 13:07 UTC] acceptance check methods/batch-integration
+
+## [2026-11-19 13:07 UTC] acceptance check methods/cell-cell-communication
