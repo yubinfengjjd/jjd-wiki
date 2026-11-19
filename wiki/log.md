@@ -1559,3 +1559,5 @@
 ## [2026-11-19 12:30 UTC] verify spatial-coexpr-multichannel
 
 ## [2026-11-19 12:31 UTC] verify spatial-he-deconv-panel
+
+## [2026-11-19 12:31 UTC] verify tissue-ratio-prop-combo

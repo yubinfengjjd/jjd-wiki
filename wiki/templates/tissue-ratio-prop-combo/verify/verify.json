@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:31:21.770748+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/tissue-ratio-prop-combo/spec.json": "07a7048936a706f54f080470857f15c66026f113597ceef61cddb80418ab02f4",
+    "templates/tissue-ratio-prop-combo/code/render.R": "7de52c6749536e4ff9acbb8f8caecf14b80fdd20f0c8cfa63db0b688018f02c7",
+    "inline/prop#columns": "a19d53ee86129a9b426908aa0e8da090f3e8d112c915c7f5150707d42b0f0f5b",
+    "templates/tissue-ratio-prop-combo/example/tissue_ratio_prop.csv": "f0a3c3fc27d3d42a783e541811c2fa17f6ae029c074c6c079381923e2f350c68"
+  },
+  "outputs": {
+    "png": "2e06a2ad83740b5c2cd4e7896f204c68b1fb44a4521ea46e018168490ce3c2b8",
+    "pdf": "47dbfd78b2d1344166f7b246337dffce5c25d8791443edc85990702a2853cb3c",
+    "svg": "7eea19b0d99bfc938f41535dfe1fc296476392c6af6db375ab2a785ea2fb3f12"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
