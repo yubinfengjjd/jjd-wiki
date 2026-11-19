@@ -1,0 +1,46 @@
+cluster,pathway,p_adjust,count
+C1_ArtEC_SEMA3G,Fluid shear stress and atherosclerosis,1.2e-07,18
+C1_ArtEC_SEMA3G,Focal adhesion,3.4e-06,21
+C1_ArtEC_SEMA3G,Rap1 signaling pathway,1.8e-05,16
+C1_ArtEC_SEMA3G,MAPK signaling pathway,4.5e-05,19
+C1_ArtEC_SEMA3G,ECM-receptor interaction,9.1e-05,11
+C2_ArtEC_DLL4,Notch signaling pathway,2.5e-08,14
+C2_ArtEC_DLL4,Axon guidance,1.1e-06,17
+C2_ArtEC_DLL4,VEGF signaling pathway,4.2e-06,12
+C2_ArtEC_DLL4,Focal adhesion,2.8e-05,18
+C2_ArtEC_DLL4,PI3K-Akt signaling pathway,6.3e-05,22
+C3_CapEC_CD36,PPAR signaling pathway,8.4e-08,15
+C3_CapEC_CD36,Fatty acid metabolism,5.2e-06,13
+C3_CapEC_CD36,Regulation of lipolysis,2.1e-05,11
+C3_CapEC_CD36,AMPK signaling pathway,6.7e-05,14
+C3_CapEC_CD36,Insulin signaling pathway,1.4e-04,13
+C4_TipEC_PGF,ECM-receptor interaction,1.9e-09,24
+C4_TipEC_PGF,PI3K-Akt signaling pathway,7.5e-08,31
+C4_TipEC_PGF,Focal adhesion,2.3e-07,26
+C4_TipEC_PGF,VEGF signaling pathway,1.4e-06,15
+C4_TipEC_PGF,HIF-1 signaling pathway,8.9e-06,17
+C5_VenEC_HIF1A,HIF-1 signaling pathway,3.1e-07,19
+C5_VenEC_HIF1A,Glycolysis / Gluconeogenesis,1.5e-06,14
+C5_VenEC_HIF1A,TNF signaling pathway,9.8e-06,16
+C5_VenEC_HIF1A,NF-kappa B signaling pathway,3.3e-05,15
+C5_VenEC_HIF1A,Leukocyte transendothelial migration,7.2e-05,13
+C6_VenEC_CD74,Antigen processing and presentation,4.6e-09,20
+C6_VenEC_CD74,Cell adhesion molecules,2.9e-07,22
+C6_VenEC_CD74,Th17 cell differentiation,3.7e-06,15
+C6_VenEC_CD74,Phagosome,1.6e-05,16
+C6_VenEC_CD74,Allograft rejection,5.4e-05,11
+C10_nEC_IL6,IL-17 signaling pathway,1.1e-08,19
+C10_nEC_IL6,TNF signaling pathway,4.8e-07,21
+C10_nEC_IL6,Cytokine-cytokine receptor interaction,2.4e-06,27
+C10_nEC_IL6,NF-kappa B signaling pathway,8.6e-06,16
+C10_nEC_IL6,NOD-like receptor signaling pathway,3.9e-05,18
+C11_nEC_HMOX1,Ferroptosis,5.5e-07,12
+C11_nEC_HMOX1,Fluid shear stress and atherosclerosis,2.7e-06,16
+C11_nEC_HMOX1,Glutathione metabolism,1.4e-05,11
+C11_nEC_HMOX1,Mineral absorption,4.1e-05,10
+C11_nEC_HMOX1,MAPK signaling pathway,8.8e-05,17
+C12_LEC_CCL21,Chemokine signaling pathway,3.3e-07,18
+C12_LEC_CCL21,Cytokine-cytokine receptor interaction,1.9e-06,22
+C12_LEC_CCL21,Cell adhesion molecules,1.2e-05,16
+C12_LEC_CCL21,Rap1 signaling pathway,4.4e-05,15
+C12_LEC_CCL21,Focal adhesion,9.6e-05,17

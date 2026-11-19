@@ -1,6 +1,51 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "kegg": {
+      "interface": "",
+      "filename": "kegg_cluster_bars.csv",
+      "description": "多亚群 KEGG 富集条形图输入表（cluster、pathway、p_adjust、count）",
+      "required": true,
+      "columns": {
+        "cluster": { "type": "str", "description": "细胞亚群或对比分组名称", "required": true },
+        "pathway": { "type": "str", "description": "富集通路名称（Description）", "required": true },
+        "p_adjust": { "type": "float", "description": "多重检验校正后 p 值（如 BH p.adjust）", "required": true },
+        "count": { "type": "int", "description": "通路命中基因数（打印于条柱末端）", "required": true }
+      }
+    }
+  },
+  "style": {
+    "bar_fill": "#8E1D41",
+    "top_n": 5,
+    "ncol": 3,
+    "wrap_width": 34,
+    "base_size": 7.5,
+    "dpi": 300,
+    "width_in": 9.8,
+    "height_in": 6.4
+  },
+  "parameters": {
+    "top_n": {
+      "type": "number",
+      "label": "每亚群展示通路数",
+      "default": 5,
+      "min": 2,
+      "max": 15,
+      "step": 1
+    },
+    "ncol": {
+      "type": "number",
+      "label": "分面列数",
+      "default": 3,
+      "min": 1,
+      "max": 6,
+      "step": 1
+    },
+    "bar_fill": {
+      "type": "color",
+      "label": "条柱填充色",
+      "default": "#8E1D41"
+    }
+  }
 }

@@ -1,6 +1,48 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "corr": {
+      "interface": "",
+      "filename": "corr_matrix.csv",
+      "description": "对称相关性矩阵（wide 格式首列 feature 加 N 列数值，或 tidy 格式 row、col、r）",
+      "required": true,
+      "columns": {}
+    }
+  },
+  "style": {
+    "n_clusters": 5,
+    "cluster_method": "ward.D2",
+    "preserve_order": false,
+    "palette": ["#67001F", "#B2182B", "#F7F7F7", "#2166AC", "#053061"],
+    "box_color": "#202020",
+    "box_linewidth": 0.55,
+    "label_size": 2.3,
+    "dpi": 300,
+    "width_in": 8.2,
+    "height_in": 6.4
+  },
+  "parameters": {
+    "n_clusters": {
+      "type": "number",
+      "label": "对角聚类黑框数量",
+      "default": 5,
+      "min": 1,
+      "max": 12,
+      "step": 1
+    },
+    "preserve_order": {
+      "type": "boolean",
+      "label": "保留输入行列顺序（不重聚类）",
+      "default": false
+    },
+    "label_size": {
+      "type": "number",
+      "label": "右侧标签字号",
+      "default": 2.3,
+      "min": 1.2,
+      "max": 4.0,
+      "step": 0.1
+    }
+  }
 }
