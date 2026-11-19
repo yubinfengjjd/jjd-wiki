@@ -1,0 +1,8 @@
+from_cluster,to_cluster
+C1_mFib_ACTA2,C9_mFib_COL12A1
+C9_mFib_COL12A1,C4_iFib_BNC2
+C9_mFib_COL12A1,C2_ifnFib_HSPA6
+C4_iFib_BNC2,C8_iFib_CCL19
+C8_iFib_CCL19,C5_iFib_CXCL8
+C4_iFib_BNC2,C7_lpFib_APOD
+C7_lpFib_APOD,C10_lpFib_ABCA8

@@ -1,6 +1,79 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "diffusion_trajectory_cells.csv",
+      "description": "降维轨迹细胞坐标、亚群标签与可选拟时序值（cell_id、dim1、dim2、cluster、可选 pseudotime）",
+      "required": true,
+      "columns": {
+        "cell_id": { "type": "str", "description": "细胞唯一标识", "required": true },
+        "dim1": { "type": "float", "description": "降维坐标第一轴（如 DC_1 或 UMAP_1）", "required": true },
+        "dim2": { "type": "float", "description": "降维坐标第二轴（如 DC_2 或 UMAP_2）", "required": true },
+        "cluster": { "type": "str", "description": "细胞亚群或谱系状态名称", "required": true },
+        "pseudotime": { "type": "float", "description": "可选 DPT 或 Slingshot 拟时序值", "required": false }
+      }
+    },
+    "scores": {
+      "interface": "",
+      "filename": "diffusion_module_scores.csv",
+      "description": "可选多模块功能得分长表（cell_id、module、score），用于主导模块着色叠图",
+      "required": false,
+      "columns": {
+        "cell_id": { "type": "str", "description": "细胞标识（匹配 cells.cell_id）", "required": true },
+        "module": { "type": "str", "description": "功能模块名称（如 mCAF、ifnCAF、iCAF、lpCAF）", "required": true },
+        "score": { "type": "float", "description": "模块基因集得分", "required": true }
+      }
+    },
+    "edges": {
+      "interface": "",
+      "filename": "trajectory_edges.csv",
+      "description": "可选有向拟时序分支连接边（from_cluster、to_cluster）",
+      "required": false,
+      "columns": {
+        "from_cluster": { "type": "str", "description": "起点亚群名称", "required": true },
+        "to_cluster": { "type": "str", "description": "终点亚群名称", "required": true }
+      }
+    }
+  },
+  "style": {
+    "color_mode": "module_overlay",
+    "x_label": "DC_1",
+    "y_label": "DC_2",
+    "dot_size": 0.95,
+    "show_centroids": true,
+    "show_trajectory": true,
+    "module_colors": ["#BF3347", "#328D40", "#397BB9", "#825097", "#E68A00", "#1B9E77"],
+    "pseudotime_palette": ["#2B5C8F", "#66C2A5", "#FFFFBF", "#FDAE61", "#D53E4F"],
+    "dpi": 300,
+    "width_in": 6.4,
+    "height_in": 5.8
+  },
+  "parameters": {
+    "color_mode": {
+      "type": "select",
+      "label": "着色模式",
+      "default": "module_overlay",
+      "options": ["module_overlay", "pseudotime", "cluster"]
+    },
+    "dot_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 0.95,
+      "min": 0.3,
+      "max": 2.5,
+      "step": 0.05
+    },
+    "show_centroids": {
+      "type": "boolean",
+      "label": "显示亚群编号中心",
+      "default": true
+    },
+    "show_trajectory": {
+      "type": "boolean",
+      "label": "显示有向轨迹箭头",
+      "default": true
+    }
+  }
 }

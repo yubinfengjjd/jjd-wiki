@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:25:45.075461+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/cluster-kegg-bars/spec.json": "620b035b608360c947be694668b606f41bc0f764c3b9336997e7ad3ce11f8a29",
+    "templates/cluster-kegg-bars/code/render.R": "af6a45444b2879387320dcea116a2efb79ef6956d438ff80076462150aaf8d2d",
+    "inline/kegg#columns": "353752cb13fae7d9fdbdb2309098b686148334d9646a4382d54a9ec93cf31d2d",
+    "templates/cluster-kegg-bars/example/kegg_cluster_bars.csv": "c4910532c8c753ca3fd098e70012708d44945e90a4a7a82a4d6d8c28259306d8"
+  },
+  "outputs": {
+    "png": "7b7e59569cf5839f554bab8180a11bd457e9b0fac8d3457656b9765e6175581a",
+    "pdf": "2e4a949e0e4f53e654add3142b20ca6b8956631941cafd710095da0e3c02f9e6",
+    "svg": "194d6607945adb2475d8f750da5a5d631d5af853fc56d778ce6972215b9aa33b"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
