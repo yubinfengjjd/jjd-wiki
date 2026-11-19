@@ -1603,3 +1603,5 @@
 ## [2026-11-19 14:51 UTC] verify lr-bipartite-bubble
 
 ## [2026-11-19 14:51 UTC] verify metabolism-lollipop-dotplot
+
+## [2026-11-19 14:52 UTC] verify pseudotime-branch-curves

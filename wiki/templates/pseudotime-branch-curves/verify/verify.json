@@ -1,1 +1,21 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-19T10:31:38.878456+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T14:51:57.213215+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/pseudotime-branch-curves/spec.json": "913c3ec8fbe714cb4404bd7f7fdab6f12b1c6a541b49a46288b201f323c88236",
+    "templates/pseudotime-branch-curves/code/render.R": "4b60274bc336ee3407e6c2a248517bdd127e76d1443d88701a4b08486c3a5216",
+    "inline/curves#columns": "7712f59db2e97db7a82d7959e2125a6f5ed883d5108dcef2633d07599932df32",
+    "templates/pseudotime-branch-curves/example/pseudotime_branch_genes.csv": "6f2a90199884186b402283c1cd086e9d79abd2d96ac4b64d5c4bb57bb4db3c8a"
+  },
+  "outputs": {
+    "png": "436b081d0c365b40ddab40c0da75b44e246fa2dcf2214b463ff5256a4414ddcc",
+    "pdf": "279ede773d34dc8ee89b0b7ed109fcdec567c12dc7639322342c00a11a514deb",
+    "svg": "9b3e04fa47d125072c9dce23549a457c5192216c589afeb3c5b23ef7e343d22c"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
