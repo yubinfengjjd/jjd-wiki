@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:30:20.392172+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/spatial-coexpr-multichannel/spec.json": "3b8ad2e67c975d6330fad8980ec343154bd27b3a50bb06002a42e42e87426f09",
+    "templates/spatial-coexpr-multichannel/code/render.R": "484863862115f21677a8de4152c94f51ce66544bcf928ffccd7c4b5c3f38bae1",
+    "inline/spots#columns": "5527a1eadff52ee788c9cffa7eb7580143ea1de7450f8c526b4d47397c6e6233",
+    "templates/spatial-coexpr-multichannel/example/spatial_coexpr_spots.csv": "5966569fc73c0818ee8127822b8fb3c3465e3a9ddd2b1a018e8a98c11737b0ac"
+  },
+  "outputs": {
+    "png": "00b1ba6efa6434cd24c4f18080e39ea76a63b14e06947a190c0feffca4d87aaa",
+    "pdf": "ff812a20dec1cf127b3ba33ed6d25c39ca9ad1a09888a5ee9b0bd2a3e763e40b",
+    "svg": "f89178f610efb309a56a156858480d0b039353d4afe80ffba39f0db7864ff725"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
