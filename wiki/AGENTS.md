@@ -28,7 +28,8 @@
 
 - 所有 `template`、`method`（以及只读历史 `recipe`）的状态统一为 `draft` / `ready` / `archived`，`ready` 表示作者已确认。`layout` 只来自画廊（`ingest-figure`），其 `pending_signoff` / `pending_template` 是历史状态，只读保留；开源库与新模板不再新建 `layout`。
 - **能否执行看收据，不看 status**：绘图模板须经 `verify-template` 生成 `verify/` 回放收据；分析方法每个实现分支须有独立的 `verification/*.json`；没有当前版本的成功运行收据，就不能声称为已验证可运行。
-- **一类图允许多套顶刊风格模板并存**：同一分析方法或图型下可并存多个可切换画风模板；新建模板应标注 `style_tier`（`default` \| `variant`）与 `journal_style`（历史旧模板可渐进补齐），`rwiki lint` 强制校验同一 `primary_method` 下至多存在 1 个 `style_tier: default` 主推默认模板，其余记为 `variant` 变体。`check-dup` 用于拦截同方法/同图型/同接口下的重复克隆，若为有明确顶刊风格差异的 `variant` 变体须显式说明差异并标定 `journal_style`（按 `style_tier` 优化检索排序与风格感知去重规划在后续版本迭代）。
+- **一类图允许多套顶刊风格模板并存**：同一分析方法或图型下可并存多个可切换画风模板；新建模板应标注 `style_tier`（`default` \| `variant`）与 `journal_style`（历史旧模板可渐进补齐），`rwiki lint` 强制校验同一 `(primary_method, primary_chart_type)` 组合下至多存在 1 个 `style_tier: default` 主推默认模板，其余记为 `variant` 变体。`check-dup` 支持期刊画风感知：同方法/同图型/同接口但 `journal_style` 不同且标题不完全相同的变体自动降级为 `medium` 建议提示而不硬拦截；检索排序与前端展示默认优先呈现 `ready` 且 `style_tier: default` 的模板，折叠其余变体防选择瘫痪。
+- **分支树拓扑与覆盖清单自动化校验**：`rwiki lint` 对所有 `scenario.steps` 执行悬空 `next_steps`、失效 `subtree` 与有向环检测；`studio.py` 自动标注不属于本树上游产出的 `external_requires` 外部数据前提供前端「我手里有哪些数据？」就绪过滤；复刻流程可选附带 `panel-manifest.yaml` 由 `rwiki lint` 校验并由 `rwiki save` 自动汇总覆盖与证据分层事实。
 - **单 panel 约束**：每个 `templates/<slug>/` 对应一个逻辑 panel（inset、色标、边际分布或配对对照小图随主 panel 一并封装），严禁把整篇论文多 Panel 拼图直接当单个通用模板。
 
 ## 收录与复利流程（「三查一记」）

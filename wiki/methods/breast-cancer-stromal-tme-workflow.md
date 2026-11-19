@@ -104,7 +104,7 @@ MOESM1 含 Supplementary Data 1–7 索引和附图 1–6 图注。MOESM2–8 �
 
 ## 12 张主附图 × 全部面板 → 绘图模板 100% 覆盖矩阵
 
-下表将全篇 **12 张计算图（Main Fig. 1–6［剔除湿实验 3F–H］+ Supp. Fig. 1–6）** 的全部独立面板拆解并映射至 `wiki/templates/<slug>`（共引用 **25 套模板**：**19 套** Cai 2026 原生/升级模板 + **6 套**库内既有复用模板，按 `style_tier: default | variant` 区分主推默认与可切换变体；当前 19 套新建/升级模板为 `draft` 待作者确认状态）：
+下表将全篇 **12 张计算图（Main Fig. 1–6［剔除湿实验 3F–H］+ Supp. Fig. 1–6）** 的全部独立面板拆解并映射至 `wiki/templates/<slug>`（共引用 **25 套模板**：**19 套** Cai 2026 原生/升级模板［均已通过 `verify-template` 并批量确认升级为 `status: ready`］+ **6 套**库内既有复用模板，按 `style_tier: default | variant` 区分主推默认与可切换变体；结构化覆盖与证据分层清单见 `methods/breast-cancer-stromal-tme-workflow/panel-manifest.yaml`）：
 
 | 原文献图号 | 面板范围 | 生物学展示内容 | 所属规范方法（`methods/`） | 对应绘图模板（`templates/`） |
 |---|---|---|---|---|
