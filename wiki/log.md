@@ -1577,3 +1577,5 @@
 ## [2026-11-19 13:09 UTC] acceptance check methods/differential-expression
 
 ## [2026-11-19 13:09 UTC] acceptance check methods/gene-set-enrichment
+
+## [2026-11-19 13:09 UTC] acceptance check methods/gene-set-scoring
