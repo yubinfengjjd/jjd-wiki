@@ -138,6 +138,11 @@
 - **Wiki 正式存档（入 Git，受 5 MB 门禁约束）**：`rwiki paper publish` 在 `wiki/methods/<workflow-id>.md`（`method_kind: workflow`）下固定保存两套可读源码：`methods/<workflow-id>/source/`（作者原版核心脚本快照 + `source-manifest.json` 记仓库 URL、commit、SPDX 许可与 sha256）与 `methods/<workflow-id>/code/`（同步自 `<paper_id>/src/` 的分步复刻源码 + `runtime.json`），`verification/` 存小规模验证收据。共用算法补分支到既有规范 `methods/<canonical-id>/`；可复用单面板图模板入 `templates/<short-slug>/`；整图拼图对比归入 `gallery/`。
 - **附加材料与全图覆盖**：`fetch --supp` 统一纳管 Supplementary PDF/DOCX/XLSX/CSV，`parse` 生成 `step_supp_map.json` 捋顺「正文步骤 ↔ 附加材料 ↔ 开源脚本 ↔ 图面板」对照；`plan` 默认包含全部可复刻 Main Figures 与生信 Supplementary Figures，仅剔除动物/细胞/WB/镜检类湿实验面板。
 - **1:1 视觉忠实度硬门禁**：禁止脱离原图与作者源码“各自画一张能出图的版本”。每张复刻图必须满足五项硬边界方可验收：① **精确采样原图/作者源码十六进制配色**（禁止随意替换调色板）；② **1:1 匹配原图整图高宽比与各 Panel 面积占比**；③ **图元类型、坐标形式（如带框相关性矩阵、双轴连线、无轴箭头 UMAP）与图例位置严格对齐原图**；④ **逐张人工看图比对 `side_by_side.png`**，凡出现比例失调、散点呈孤立针孔点、配色偏差或标签裁剪，**必须原地打回重修，禁止带瑕疵进入下一张或入库**；⑤ **单进程串行执行**（一步一跑、跑完即释放内存，严禁并发多进程挤爆本机内存）。
+- **模板统一归类（不区分 L1/L2 配方）、全图型覆盖与方法–可视化–课题思路闭环**：
+  1. **不区分 L1 配方与 L2 模板，一律归类为 `wiki/templates/<slug>/`**：文献复刻产出的所有可复用可视化代码统一入 `templates/`，不再新建 `recipes/` 区分 L1/L2；
+  2. **100% 面板图型全覆盖**：必须逐张盘点全篇 Main + Supp Figure 的每一类独立图元——先 `check-dup` 复用既有 `templates/`，凡缺口图型全部补建为 `wiki/templates/<slug>/`，确保每一类面板均在模板库有明确归属；
+  3. **方法 ↔ 可视化语义关系显式入库**：必须按研究推进顺序，把每个分析方法与对应单图模板写入规范方法页的 `figure_relations`、`next_steps` 及 `method-map.json`（`rwiki map-method`），严禁停留在“暂无已记录关系”；
+  4. **课题研究思路沉淀入知识库**：每篇文献复刻收口前，必须同步沉淀：① 通用可复用领域决策树 `wiki/scenarios/<domain>-playbook.md`（若已有同域 Playbook 则补全分支）；② 本课题步进思路卡 `wiki/projects/<paper_id>.md`（逐阶段记录「科学问题/假设 → 方法 → 模板 → 观察发现 → 下一步分叉」）。
 
 ## 历史临时产物与过期脚本清理规定（2026-11-19）
 
