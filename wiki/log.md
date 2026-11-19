@@ -1581,3 +1581,5 @@
 ## [2026-11-19 13:09 UTC] acceptance check methods/gene-set-scoring
 
 ## [2026-11-19 13:10 UTC] acceptance check methods/immune-infiltration-tme
+
+## [2026-11-19 13:10 UTC] acceptance check methods/spatial-transcriptomics-microenvironment
