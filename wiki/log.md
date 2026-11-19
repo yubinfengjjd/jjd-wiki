@@ -1597,3 +1597,5 @@
 ## [2026-11-19 14:50 UTC] verify pathway-zscore-heatmap
 
 ## [2026-11-19 14:51 UTC] verify cellchat-count-heatmap
+
+## [2026-11-19 14:51 UTC] verify lr-bubble-matrix
