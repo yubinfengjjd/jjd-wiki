@@ -181,6 +181,7 @@
 
 - [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
+- [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]
 - [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]
 - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]

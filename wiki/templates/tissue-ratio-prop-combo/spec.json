@@ -1,6 +1,41 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "prop": {
+      "interface": "",
+      "filename": "tissue_ratio_prop.csv",
+      "description": "亚群跨组织构成与样本比例长表（cluster、tissue、sample_id、proportion，可选 n_cells、pval）",
+      "required": true,
+      "columns": {
+        "cluster": { "type": "str", "description": "细胞亚群名称（纵轴条目）", "required": true },
+        "tissue": { "type": "str", "description": "组织来源标签（如 ANT、T、LM）", "required": true },
+        "sample_id": { "type": "str", "description": "样本或批次标识（用于配对/独立检验与散点）", "required": true },
+        "proportion": { "type": "float", "description": "该样本内亚群所占比例（0–1 小数）", "required": true },
+        "n_cells": { "type": "int", "description": "可选各组织合并细胞数（用于左侧总体构成堆叠条）", "required": false },
+        "pval": { "type": "float", "description": "可选预计算检验 p 值（前两组比较）", "required": false }
+      }
+    }
+  },
+  "style": {
+    "tissue_colors": ["#2B9E77", "#D95F02", "#7570B3", "#E7298A"],
+    "show_ylabels": true,
+    "paired_test": true,
+    "prop_unit": "percent",
+    "dpi": 300,
+    "width_in": 6.2,
+    "height_in": 5.4
+  },
+  "parameters": {
+    "show_ylabels": {
+      "type": "boolean",
+      "label": "显示左侧亚群名称",
+      "default": true
+    },
+    "paired_test": {
+      "type": "boolean",
+      "label": "按样本配对 Wilcoxon 检验",
+      "default": true
+    }
+  }
 }

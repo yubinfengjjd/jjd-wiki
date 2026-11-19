@@ -1,0 +1,58 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "stromal_umap_cells.csv",
+      "description": "细胞亚群降维坐标与高阶功能群表（cell_id、umap_1、umap_2、subcluster，可选 functional_group）",
+      "required": true,
+      "columns": {
+        "cell_id": { "type": "str", "description": "细胞唯一标识", "required": true },
+        "umap_1": { "type": "float", "description": "UMAP 横坐标", "required": true },
+        "umap_2": { "type": "float", "description": "UMAP 纵坐标", "required": true },
+        "subcluster": { "type": "str", "description": "细胞精细亚群标签（自动按顺序编号）", "required": true },
+        "functional_group": { "type": "str", "description": "可选高阶功能群标签（绘制红色虚线包络轮廓）", "required": false }
+      }
+    }
+  },
+  "style": {
+    "hull_color": "#D63A2F",
+    "hull_linewidth": 0.48,
+    "dot_size": 0.85,
+    "legend_cols": 3,
+    "show_hulls": true,
+    "show_centroids": true,
+    "dpi": 300,
+    "width_in": 6.6,
+    "height_in": 7.6
+  },
+  "parameters": {
+    "show_hulls": {
+      "type": "boolean",
+      "label": "绘制红色功能群虚线包络",
+      "default": true
+    },
+    "show_centroids": {
+      "type": "boolean",
+      "label": "绘制白色描边编号质心",
+      "default": true
+    },
+    "legend_cols": {
+      "type": "number",
+      "label": "底部彩点图例列数",
+      "default": 3,
+      "min": 1,
+      "max": 5,
+      "step": 1
+    },
+    "dot_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 0.85,
+      "min": 0.3,
+      "max": 2.0,
+      "step": 0.05
+    }
+  }
+}

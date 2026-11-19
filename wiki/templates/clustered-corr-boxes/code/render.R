@@ -64,7 +64,9 @@ n_clusters <- if (is.null(style$n_clusters)) min(5L, max(1L, floor(n / 4))) else
 clust_method <- if (is.null(style$cluster_method)) "ward.D2" else as.character(style$cluster_method)
 
 if (!preserve_order && n >= 3L) {
-  dmat <- stats::as.dist(pmax(0, 1 - mat))
+  d_raw <- 1 - mat
+  d_raw[d_raw < 0] <- 0
+  dmat <- stats::as.dist(d_raw)
   hc <- stats::hclust(dmat, method = clust_method)
   ord <- hc$order
   mat <- mat[ord, ord, drop = FALSE]
