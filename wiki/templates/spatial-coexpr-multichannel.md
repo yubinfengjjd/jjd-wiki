@@ -33,7 +33,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：2 至 4 个配受体或 TLS 淋巴细胞标志基因在同一切片/多区域上的通道共定位与高亮区域可切换为 variant 多通道图。；前提：同一切片内各通道共享 Spot 坐标系；高分位数截断阈值（如 P99）须一致说明。；适配：导出 spatial_coexpr_spots.csv（spot_id, x, y, channel, value, 可选 region, highlight_zone）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-coexpr-multichannel/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

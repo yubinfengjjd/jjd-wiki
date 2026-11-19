@@ -119,6 +119,19 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+- figure: templates/stromal-hull-umap
+  compatibility: adaptable
+  reason: 注释后的精细细胞亚群与高阶功能群（如 mFib/lpFib/iFib）可切换为 variant 红色虚线包络 + 编号质心 UMAP 画风；模板不执行注释。
+  prerequisites:
+  - umap_1/umap_2 与 subcluster 标签来自同一已注释对象；cell_id 唯一。
+  adaptation: 导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, functional_group）。
+  evidence:
+  - methods/cell-type-annotation.md#输出
+  - templates/stromal-hull-umap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：细胞组成比例与 Ro/e 组织偏好分析
   when: 比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时
@@ -130,6 +143,7 @@ next_steps:
   - templates/cell-prop-flow-bar
   - templates/scp-comp-ring
   - templates/scp-comp-pie
+  - templates/stromal-hull-umap
 - direction: 方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）
   when: 筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时
   analysis_templates:
@@ -215,7 +229,7 @@ render_bridges:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready） · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready） · [[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/cell-type-annotation/code/analysis.R](/files/wiki/methods/cell-type-annotation/code/analysis.R) · [methods/cell-type-annotation/code/annotation_native.R](/files/wiki/methods/cell-type-annotation/code/annotation_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition、recipes/figureya-315singlerfraction；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring、templates/scp-comp-pie）
+  - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition、recipes/figureya-315singlerfraction；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring、templates/scp-comp-pie、templates/stromal-hull-umap）
   - **方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）**（触发条件：筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时；中间表：deg-result-table；分析模版：methods/differential-expression、recipes/figureya-318genesetdedotplot；可视化模版：templates/scp-de-volcano、templates/marker-bubble-dotplot、templates/scp-group-heatmap）
   - **方向 3：主题基因集多算法打分（AUCell / UCell / ssGSEA）**（触发条件：评估乳酸化、PTM 修饰、铁死亡或代谢等自定义基因集在各亚群中的活性分布时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-275scaucell；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/scp-feature-heatmap）
   - **方向 4：关键亚群拟时序轨迹与 RNA 速率演化**（触发条件：提取目标谱系亚群做精细亚聚类，追踪细胞状态分化路径与动态驱动基因时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference、methods/rna-velocity、methods/dynamic-feature-analysis；可视化模版：templates/scrna-celltype-umap、templates/scrna-feature-umap-grid）
@@ -235,6 +249,9 @@ render_bridges:
   - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计预测类型比例，检查注释组成；模板不做统计检验。；前提：每个 group 的比例归一化到 1；group 为样本/条件，celltype 为预测标签。；比例是描述性；组间差异不能由该图直接推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）。
     - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
+  - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：注释后的精细细胞亚群与高阶功能群（如 mFib/lpFib/iFib）可切换为 variant 红色虚线包络 + 编号质心 UMAP 画风；模板不执行注释。；前提：umap_1/umap_2 与 subcluster 标签来自同一已注释对象；cell_id 唯一。；适配：导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, functional_group）。
+    - 关系证据：methods/cell-type-annotation.md#输出；templates/stromal-hull-umap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

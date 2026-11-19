@@ -33,7 +33,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/gene-set-enrichment|基因集富集分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各细胞亚群各自 Top N 显著 KEGG 通路及命中基因数可切换为 variant 分面深酒红横向条形图，保留亚群独立排序。；前提：每个亚群内按 p_adjust 升序排序；count 为非负整数命中基因数。；适配：导出 kegg_cluster_bars.csv（cluster, pathway, p_adjust, count）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/cluster-kegg-bars/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

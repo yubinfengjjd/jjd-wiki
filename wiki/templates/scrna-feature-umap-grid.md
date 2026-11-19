@@ -43,6 +43,9 @@ primary_method: cell-type-annotation
   - [[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：动态特征值可作为 feature 长表画在 UMAP 上；模板只画值，不拟合 GAM。；前提：值与 UMAP 坐标来自同一细胞集合；cell_id 一致。；value 的含义/单位明确；无 NA。；适配：导出 render-umap-feature-long.csv（feature=基因/特征, value=表达或拟合值）。
     - 关系证据：methods/dynamic-feature-analysis.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无
+  - [[methods/gene-set-scoring|基因集与通路签名打分]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多条基因集打分结果可按特征展开为单细胞 UMAP 网格（default 主推连续分布画风）；模板不重算打分。；前提：同一细胞集与同源 UMAP 坐标；各特征得分尺度与截取上限说明。；适配：导出 render-umap-feature-long.csv（cell_id, umap_1, umap_2, group, feature, value）。
+    - 关系证据：methods/gene-set-scoring.md#输出；templates/scrna-feature-umap-grid/spec.json；运行证据：无
   - [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：pseudotime 可作为 feature 长表画在 UMAP 上；模板不拟合轨迹。；前提：值与 UMAP 坐标来自同一细胞集合；cell_id 一致。；value 的含义/单位明确；无 NA。；适配：导出 render-umap-feature-long.csv（feature=pseudotime, value=Lineage1）。
     - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无

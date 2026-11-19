@@ -29,7 +29,9 @@ journal_style: Cai2026-npjPO
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：沿多分支拟时序平滑拟合的动态基因表达趋势可切换为 variant 分面曲线网格；模板不执行 GAM 拟合。；前提：pseudotime_norm 已归一化至同一 [0, 1] 区间；各基因纵轴独立缩放需在图注说明。；适配：导出 pseudotime_branch_genes.csv（gene, branch, pseudotime_norm, smoothed_expr）。
+    - 关系证据：methods/trajectory-inference.md#输出；templates/pseudotime-branch-curves/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

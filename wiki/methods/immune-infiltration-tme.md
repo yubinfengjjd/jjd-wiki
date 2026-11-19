@@ -43,7 +43,46 @@ keywords:
 - immune infiltration
 - 免疫浸润
 - 肿瘤微环境
-figure_relations: []
+figure_relations:
+- figure: templates/clustered-corr-boxes
+  compatibility: adaptable
+  reason: Bulk 队列免疫/基质反卷积丰度与细胞亚群特征间的对称层次聚类相关矩阵及对角黑框可作为 default 主推共现相关矩阵。
+  prerequisites:
+  - 相关系数矩阵须来自同一标准化队列，对称且主对角线为 1；样本量须满足相关检验。
+  adaptation: 导出 corr_matrix.csv（首列 feature + N 列对称相关系数，或 tidy 格式 row, col, r）。
+  evidence:
+  - methods/immune-infiltration-tme.md#输出
+  - templates/clustered-corr-boxes/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/checkpoint-group-boxplot
+  compatibility: adaptable
+  reason: 按高/低免疫基质评分或关键标志物四分位分组的多免疫检查点表达分布及 Wilcoxon 检验可切换为 variant 分组箱线图。
+  prerequisites:
+  - 分组定义与检验方法（Wilcoxon）在上游明确；展示截断分位数须在图注说明。
+  adaptation: 导出 checkpoint_expr.csv（sample_id, gene, group, expression, 可选 pval）。
+  evidence:
+  - methods/immune-infiltration-tme.md#输出
+  - templates/checkpoint-group-boxplot/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/lr-bipartite-bubble
+  compatibility: adaptable
+  reason: 关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。
+  prerequisites:
+  - 明确展示的配体-受体对来源与检出率计算分母（tested pairs）。
+  adaptation: 导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
+  evidence:
+  - methods/immune-infiltration-tme.md#输出
+  - templates/lr-bipartite-bubble/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：免疫浸润亚型与临床生存预后关联
   when: 按免疫浸润模式或 ESTIMATE 评分划分微环境亚型后，检验其总生存或无进展生存差异时
@@ -54,6 +93,9 @@ next_steps:
   viz_templates:
   - templates/km-survival-curve
   - templates/subgroup-hazard-forest
+  - templates/clustered-corr-boxes
+  - templates/checkpoint-group-boxplot
+  - templates/lr-bipartite-bubble
 - direction: 方向 2：高/低免疫浸润组间差异表达与功能富集
   when: 对比高浸润（热肿瘤）与低浸润（冷肿瘤）亚群的差异基因、免疫检查点与富集通路时
   analysis_templates:
@@ -85,12 +127,20 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：无
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：免疫浸润亚型与临床生存预后关联**（触发条件：按免疫浸润模式或 ESTIMATE 评分划分微环境亚型后，检验其总生存或无进展生存差异时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis、recipes/figureya-211multicohortimmsubtype；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
+  - **方向 1：免疫浸润亚型与临床生存预后关联**（触发条件：按免疫浸润模式或 ESTIMATE 评分划分微环境亚型后，检验其总生存或无进展生存差异时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis、recipes/figureya-211multicohortimmsubtype；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest、templates/clustered-corr-boxes、templates/checkpoint-group-boxplot、templates/lr-bipartite-bubble）
   - **方向 2：高/低免疫浸润组间差异表达与功能富集**（触发条件：对比高浸润（热肿瘤）与低浸润（冷肿瘤）亚群的差异基因、免疫检查点与富集通路时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/bulk-de-volcano）
   - **方向 3：回溯单细胞水平解析细胞间通讯与组成重塑**（触发条件：在单细胞转录组数据中进一步定位 Bulk 推断出的关键免疫细胞亚群及其配受体通讯轴时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication、methods/cell-proportion-composition；可视化模版：templates/cellchat-circos-multi）
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：Bulk 队列免疫/基质反卷积丰度与细胞亚群特征间的对称层次聚类相关矩阵及对角黑框可作为 default 主推共现相关矩阵。；前提：相关系数矩阵须来自同一标准化队列，对称且主对角线为 1；样本量须满足相关检验。；适配：导出 corr_matrix.csv（首列 feature + N 列对称相关系数，或 tidy 格式 row, col, r）。
+    - 关系证据：methods/immune-infiltration-tme.md#输出；templates/clustered-corr-boxes/spec.json；运行证据：无
+  - [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：按高/低免疫基质评分或关键标志物四分位分组的多免疫检查点表达分布及 Wilcoxon 检验可切换为 variant 分组箱线图。；前提：分组定义与检验方法（Wilcoxon）在上游明确；展示截断分位数须在图注说明。；适配：导出 checkpoint_expr.csv（sample_id, gene, group, expression, 可选 pval）。
+    - 关系证据：methods/immune-infiltration-tme.md#输出；templates/checkpoint-group-boxplot/spec.json；运行证据：无
+  - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：明确展示的配体-受体对来源与检出率计算分母（tested pairs）。；适配：导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
+    - 关系证据：methods/immune-infiltration-tme.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
@@ -133,7 +183,7 @@ next_steps:
 
 ## 知识关联检查
 
-无图原因：Bulk 免疫浸润得分矩阵（如 CIBERSORT/ssGSEA/ESTIMATE）为样本×免疫细胞丰度表，库内现存 `pathway-stat-violin` 等模板主要面向单细胞分组长表（`render-grouped-values`），因此暂不强制建立直接模板关系；实际出图建议参照 [[recipes/figureya-230immunelandscape]] 与 [[recipes/figureya-71ssgsea-update]] 组织多算法注释热图，或后续补充样本级多算法热图模板。
+2026-11-19 更新：已接入 Bulk 共现相关矩阵 [[templates/clustered-corr-boxes]]（default）、检查点分组箱线图 [[templates/checkpoint-group-boxplot]] 与双轴配受体气泡图 [[templates/lr-bipartite-bubble]]（均为 adaptable，模板不重算检验）；多算法注释热图仍可参考历史归档模板 [[recipes/figureya-230immunelandscape]] 与 [[recipes/figureya-71ssgsea-update]]。
 
 ## 使用记录
 

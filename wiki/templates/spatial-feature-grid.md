@@ -30,7 +30,9 @@ journal_style: Cai2026-npjPO
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：Visium 空间 Spot 上的连续基因表达、签名密度或 RCTD 反卷积权重可作为 default 主推网格图展示；模板不执行反卷积。；前提：Spot 坐标（x, y）对齐同一切片；各特征独立着色，色深仅在同一特征内比较。；适配：导出 spatial_spots_long.csv（x, y, feature, value, 可选 sample）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-feature-grid/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

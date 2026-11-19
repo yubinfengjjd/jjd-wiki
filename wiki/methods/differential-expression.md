@@ -82,6 +82,20 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+- figure: templates/pathway-zscore-heatmap
+  compatibility: adaptable
+  reason: 差异基因（如趋化因子、MHC-I/II）在各亚群的 Z-score 标准化表达可与 DE 显著圆圈标记联合绘制为 variant 分组热图；模板不重算
+    DE。
+  prerequisites:
+  - Z-score 为跨亚群行标准化均值；DE 圆圈标记须显式注明筛选阈值与对比口径。
+  adaptation: 导出 pathway_zscore_heatmap.csv（cluster, feature, block, zscore, is_deg）。
+  evidence:
+  - methods/differential-expression.md#输出
+  - templates/pathway-zscore-heatmap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：功能富集分析（ORA / GSEA 通路定位）
   when: 已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时
@@ -92,6 +106,7 @@ next_steps:
   intermediate_interface: pathway-score-table
   viz_templates:
   - templates/marker-bubble-dotplot
+  - templates/pathway-zscore-heatmap
 - direction: 方向 2：火山图、气泡图与分组表达热图渲染
   when: 需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时
   analysis_templates:
@@ -156,7 +171,7 @@ render_bridges:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/gene-set-enrichment|基因集富集分析]]（ready）
 - 代码模板：[methods/differential-expression/code/analysis.R](/files/wiki/methods/differential-expression/code/analysis.R) · [methods/differential-expression/code/de_native.R](/files/wiki/methods/differential-expression/code/de_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/marker-bubble-dotplot）
+  - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/marker-bubble-dotplot、templates/pathway-zscore-heatmap）
   - **方向 2：火山图、气泡图与分组表达热图渲染**（触发条件：需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时；中间表：deg-result-table；分析模版：recipes/figureya-59volcanov2；可视化模版：templates/scp-de-volcano、templates/bulk-de-volcano、templates/marker-bubble-dotplot）
   - **方向 3：多集合交集筛选与生存/机器学习预后建模**（触发条件：将 DEG 与 WGCNA 模块或单细胞靶基因取交集，进入生存分析或 LASSO/SVM/RF 特征筛选时；中间表：candidate-biomarker-list；分析模版：methods/set-intersection-and-group-stats、methods/survival-prognosis-analysis、recipes/figureya-112venn、recipes/figureya-31lasso-update、recipes/figureya-293plus-binaryclassificationml；可视化模版：templates/set-venn、templates/set-upset、templates/km-survival-curve）
   - **方向 4：差异基因关联免疫微环境浸润或细胞通讯信号轴**（触发条件：进一步评估核心差异基因与 Bulk 免疫细胞浸润或单细胞配受体互作网络的关联时；中间表：pathway-score-table；分析模版：methods/immune-infiltration-tme、methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi）
@@ -168,6 +183,9 @@ render_bridges:
   - [[templates/scp-de-volcano|差异表达火山图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：DE 表可整理成 render-de-results，火山图模板消费该表；模板不重跑检验。；前提：group1 单一；pct_1/pct_2 为 0–1；p_val_adj >0；gene 组内唯一。；模板不重跑 DE 或 p 值校正；阈值由 style 显式给出。；适配：从 AllMarkers 表导出 gene、avg_log2FC、p_val_adj 等字段到 render-de-results。
     - 关系证据：methods/differential-expression.md#输出；methods/scp-de-enrichment-dynamic.md#知识关联检查；methods/scp-de-enrichment-dynamic.md#输出；templates/scp-de-volcano/spec.json；templates/scp-de-volcano/verify/verify.json；运行证据：无
+  - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：差异基因（如趋化因子、MHC-I/II）在各亚群的 Z-score 标准化表达可与 DE 显著圆圈标记联合绘制为 variant 分组热图；模板不重算 DE。；前提：Z-score 为跨亚群行标准化均值；DE 圆圈标记须显式注明筛选阈值与对比口径。；适配：导出 pathway_zscore_heatmap.csv（cluster, feature, block, zscore, is_deg）。
+    - 关系证据：methods/differential-expression.md#输出；templates/pathway-zscore-heatmap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

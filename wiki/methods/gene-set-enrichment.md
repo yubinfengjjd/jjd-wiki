@@ -44,7 +44,59 @@ keywords:
 - enrichment
 - 基因集
 - SCP
-figure_relations: []
+figure_relations:
+- figure: templates/kegg-cluster-bubble
+  compatibility: adaptable
+  reason: 多亚群 KEGG/GO 通路富集结果可整理为气泡矩阵（default 主推跨亚群对比画风）；模板不执行富集检验。
+  prerequisites:
+  - 所有亚群须采用一致的背景基因集、显著性阈值与多重检验校正规则。
+  adaptation: 导出 kegg_cluster_bubble.csv（pathway, cluster, count, logp）。
+  evidence:
+  - methods/gene-set-enrichment.md#输出
+  - templates/kegg-cluster-bubble/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/cluster-kegg-bars
+  compatibility: adaptable
+  reason: 各细胞亚群各自 Top N 显著 KEGG 通路及命中基因数可切换为 variant 分面深酒红横向条形图，保留亚群独立排序。
+  prerequisites:
+  - 每个亚群内按 p_adjust 升序排序；count 为非负整数命中基因数。
+  adaptation: 导出 kegg_cluster_bars.csv（cluster, pathway, p_adjust, count）。
+  evidence:
+  - methods/gene-set-enrichment.md#输出
+  - templates/cluster-kegg-bars/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/coexpr-module-enrich-bars
+  compatibility: adaptable
+  reason: WGCNA 或共表达模块富集条形图可切换为 variant 模块配色条形图；模板不执行富集检验。
+  prerequisites:
+  - 明确模块归属与统一校正口径（FDR / p.adjust）。
+  adaptation: 导出模块富集 CSV（module, term, count, p_adjust）。
+  evidence:
+  - methods/gene-set-enrichment.md#输出
+  - templates/coexpr-module-enrich-bars/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/metabolism-lollipop-dotplot
+  compatibility: adaptable
+  reason: 代谢通路富集结果（Fold enrichment + -log10(P) + 亚群彩点）可切换为 variant 棒棒糖点图展示；模板不执行富集检验。
+  prerequisites:
+  - GeneRatio 与 BgRatio 比值计算透明一致，不混用原始 P 与校正 P。
+  adaptation: 导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
+  evidence:
+  - methods/gene-set-enrichment.md#输出
+  - templates/metabolism-lollipop-dotplot/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：锁定关键基因集做逐细胞/逐样本活性打分
   when: 从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时
@@ -56,6 +108,10 @@ next_steps:
   viz_templates:
   - templates/pathway-stat-violin
   - templates/scp-expr-ridge
+  - templates/kegg-cluster-bubble
+  - templates/cluster-kegg-bars
+  - templates/coexpr-module-enrich-bars
+  - templates/metabolism-lollipop-dotplot
 - direction: 方向 2：PPI 互作网络与 Hub 候选基因挖掘
   when: 需要围绕富集通路核心基因构建蛋白互作模块并筛选关键枢纽基因时
   analysis_templates:
@@ -82,11 +138,22 @@ data_domains:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/gene-set-enrichment/code/analysis.R](/files/wiki/methods/gene-set-enrichment/code/analysis.R) · [methods/gene-set-enrichment/code/enrichment_native.R](/files/wiki/methods/gene-set-enrichment/code/enrichment_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：锁定关键基因集做逐细胞/逐样本活性打分**（触发条件：从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-61gsva、recipes/figureya-71ssgsea-update；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge）
+  - **方向 1：锁定关键基因集做逐细胞/逐样本活性打分**（触发条件：从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-61gsva、recipes/figureya-71ssgsea-update；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/kegg-cluster-bubble、templates/cluster-kegg-bars、templates/coexpr-module-enrich-bars、templates/metabolism-lollipop-dotplot）
   - **方向 2：PPI 互作网络与 Hub 候选基因挖掘**（触发条件：需要围绕富集通路核心基因构建蛋白互作模块并筛选关键枢纽基因时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-53ppimodule、recipes/figureya-147plus-string；可视化模版：templates/scp-flow-chord）
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多亚群 KEGG/GO 通路富集结果可整理为气泡矩阵（default 主推跨亚群对比画风）；模板不执行富集检验。；前提：所有亚群须采用一致的背景基因集、显著性阈值与多重检验校正规则。；适配：导出 kegg_cluster_bubble.csv（pathway, cluster, count, logp）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/kegg-cluster-bubble/spec.json；运行证据：无
+  - [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各细胞亚群各自 Top N 显著 KEGG 通路及命中基因数可切换为 variant 分面深酒红横向条形图，保留亚群独立排序。；前提：每个亚群内按 p_adjust 升序排序；count 为非负整数命中基因数。；适配：导出 kegg_cluster_bars.csv（cluster, pathway, p_adjust, count）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/cluster-kegg-bars/spec.json；运行证据：无
+  - [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：WGCNA 或共表达模块富集条形图可切换为 variant 模块配色条形图；模板不执行富集检验。；前提：明确模块归属与统一校正口径（FDR / p.adjust）。；适配：导出模块富集 CSV（module, term, count, p_adjust）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/coexpr-module-enrich-bars/spec.json；运行证据：无
+  - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：代谢通路富集结果（Fold enrichment + -log10(P) + 亚群彩点）可切换为 variant 棒棒糖点图展示；模板不执行富集检验。；前提：GeneRatio 与 BgRatio 比值计算透明一致，不混用原始 P 与校正 P。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
@@ -144,7 +211,7 @@ ORA 用超几何/富集检验比较列表内外的基因集命中；GSEA 则使�
 
 ## 知识关联检查
 
-2026-10-23 检查了现有单 panel 模板。ORA 结果是 gene-set×ontology 表，现有 dotplot 的 group×feature 语义不匹配，分组小提琴也不表达富集比例；本库暂无 ORA/GSEA 专用模板，因此不建立 figure_relations。无图原因：缺少语义匹配的富集图模板，不用“结构像”强行直连。
+2026-10-23 检查了现有单 panel 模板。ORA 结果是 gene-set×ontology 表，现有 dotplot 的 group×feature 语义不匹配，分组小提琴也不表达富集比例；本库暂无 ORA/GSEA 专用模板，因此不建立 figure_relations。2026-11-19 更新：已补齐专用富集可视化模板 [[templates/kegg-cluster-bubble]]（default）、[[templates/cluster-kegg-bars]]、[[templates/coexpr-module-enrich-bars]] 与 [[templates/metabolism-lollipop-dotplot]]（adaptable），并按统一背景集与多重校正口径接入。
 
 
 ### scop 候选来源（未运行）

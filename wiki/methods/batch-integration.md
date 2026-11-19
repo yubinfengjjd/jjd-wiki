@@ -90,6 +90,33 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+- figure: templates/stromal-hull-umap
+  compatibility: adaptable
+  reason: 整合后精细亚群降维流形可导出坐标与功能群标签切换至 variant 包络画风；模板不做整合。
+  prerequisites:
+  - 坐标与 subcluster 来自同一整合嵌入；cell_id 唯一；坐标无 NA。
+  adaptation: 导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, 可选 functional_group）。
+  evidence:
+  - methods/batch-integration.md#输出
+  - templates/stromal-hull-umap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/atlas-workflow-diagram
+  compatibility: adaptable
+  reason: 多队列单细胞与空间整合研究的采样路径与队列样本量汇总可用 variant 流程示意图展示；不替代批次混合评估。
+  prerequisites:
+  - 队列名称、来源类型（in-house/public）与样本数如实汇总，不遗漏或虚构样本。
+  adaptation: 整理 workflow_steps.csv 与 workflow_cohorts.csv（branch, cohort, n_samples,
+    origin）。
+  evidence:
+  - methods/batch-integration.md#输出
+  - templates/atlas-workflow-diagram/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：在整合空间重新计算 UMAP 嵌入与无监督聚类
   when: 批次对齐后需在整合降维空间构建邻居图、生成 UMAP 坐标与聚类簇时
@@ -99,6 +126,8 @@ next_steps:
   intermediate_interface: scrna-annotated-cells
   viz_templates:
   - templates/scrna-celltype-umap
+  - templates/stromal-hull-umap
+  - templates/atlas-workflow-diagram
 - direction: 方向 2：细胞类型注释（Marker / SingleR / 参考映射）
   when: 已有整合聚类结果，准备结合先验 Marker 或参考图谱赋予细胞类型身份时
   analysis_templates:
@@ -133,7 +162,7 @@ data_domains:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready） · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready） · [[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
 - 代码模板：[methods/batch-integration/code/analysis.R](/files/wiki/methods/batch-integration/code/analysis.R) · [methods/batch-integration/code/integration_native.R](/files/wiki/methods/batch-integration/code/integration_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：在整合空间重新计算 UMAP 嵌入与无监督聚类**（触发条件：批次对齐后需在整合降维空间构建邻居图、生成 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
+  - **方向 1：在整合空间重新计算 UMAP 嵌入与无监督聚类**（触发条件：批次对齐后需在整合降维空间构建邻居图、生成 UMAP 坐标与聚类簇时；中间表：scrna-annotated-cells；分析模版：methods/dimensionality-reduction、methods/cell-clustering；可视化模版：templates/scrna-celltype-umap、templates/stromal-hull-umap、templates/atlas-workflow-diagram）
   - **方向 2：细胞类型注释（Marker / SingleR / 参考映射）**（触发条件：已有整合聚类结果，准备结合先验 Marker 或参考图谱赋予细胞类型身份时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/marker-bubble-dotplot、templates/scrna-feature-umap-grid）
   - **方向 3：检查批次整合前后的样本/批次组成比例**（触发条件：核对各样本或批次在各 cluster/亚群中的混合程度与细胞占比，避免过度整合抹除真实生物学差异时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar、templates/scp-comp-ring）
 
@@ -144,6 +173,12 @@ data_domains:
   - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按 batch/样本统计细胞类型比例，可检查整合前后组成是否被过度改变；模板不做统计检验。；前提：每个 group 的比例归一化到 1；group 为 batch/样本，celltype 为注释类型。；比例是描述性；组间差异不能由该图直接推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）；比例只作描述。
     - 关系证据：methods/batch-integration.md#输出；methods/scp-integration.md#知识关联检查；methods/scp-integration.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
+  - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：整合后精细亚群降维流形可导出坐标与功能群标签切换至 variant 包络画风；模板不做整合。；前提：坐标与 subcluster 来自同一整合嵌入；cell_id 唯一；坐标无 NA。；适配：导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, 可选 functional_group）。
+    - 关系证据：methods/batch-integration.md#输出；templates/stromal-hull-umap/spec.json；运行证据：无
+  - [[templates/atlas-workflow-diagram|多源图谱构建流程示意图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多队列单细胞与空间整合研究的采样路径与队列样本量汇总可用 variant 流程示意图展示；不替代批次混合评估。；前提：队列名称、来源类型（in-house/public）与样本数如实汇总，不遗漏或虚构样本。；适配：整理 workflow_steps.csv 与 workflow_cohorts.csv（branch, cohort, n_samples, origin）。
+    - 关系证据：methods/batch-integration.md#输出；templates/atlas-workflow-diagram/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

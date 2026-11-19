@@ -30,7 +30,12 @@ journal_style: Cai2026-npjPO
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各细胞亚群的跨组织/分子亚型 Ro/e 偏好可与外部临床 Cox HR 联合整理为 variant 复合热图展示；模板不拟合 Cox 模型。；前提：Ro/e 与 Cox HR/p 值分别由独立分析步骤严格输出，不能混同样本级与细胞级单位。；适配：整理 roe_cox_heatmap.csv（cluster, cohort/subtype Ro/e 列及可选 tcga/inhouse HR 与 p_value）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/roe-cox-heatmap/spec.json；运行证据：无
+  - [[methods/survival-prognosis-analysis|生存分析与临床预后建模]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为 variant 热图；模板不做生存回归。；前提：各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。；适配：整理 roe_cox_heatmap.csv（cluster, tcga_HR, tcga_p_value, inhouse_HR, inhouse_p_value 及 Ro/e 列）。
+    - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/roe-cox-heatmap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

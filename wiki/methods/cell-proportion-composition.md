@@ -211,6 +211,34 @@ figure_relations:
     state: not_run
     scope: 仅核对组成统计输出与渲染桥接接口契约，尚未执行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/roe-cox-heatmap
+  compatibility: adaptable
+  reason: 各细胞亚群的跨组织/分子亚型 Ro/e 偏好可与外部临床 Cox HR 联合整理为 variant 复合热图展示；模板不拟合 Cox 模型。
+  prerequisites:
+  - Ro/e 与 Cox HR/p 值分别由独立分析步骤严格输出，不能混同样本级与细胞级单位。
+  adaptation: 整理 roe_cox_heatmap.csv（cluster, cohort/subtype Ro/e 列及可选 tcga/inhouse
+    HR 与 p_value）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/roe-cox-heatmap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/tissue-ratio-prop-combo
+  compatibility: adaptable
+  reason: 亚群跨组织构成堆叠比例与逐样本比例箱线图及 BH 校正 Wilcoxon 检验可切换至 variant 组合画风；检验以样本为重复单位。
+  prerequisites:
+  - proportion 为各样本内亚群相对比例（0–1）；配对/独立检验以 sample_id 为独立单位。
+  adaptation: 导出 tissue_ratio_prop.csv（cluster, tissue, sample_id, proportion, 可选
+    n_cells, pval）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/tissue-ratio-prop-combo/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：异常富集亚群的差异表达与功能打分深挖
   when: 通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时
@@ -221,6 +249,8 @@ next_steps:
   viz_templates:
   - templates/scp-de-volcano
   - templates/pathway-stat-violin
+  - templates/roe-cox-heatmap
+  - templates/tissue-ratio-prop-combo
 - direction: 方向 2：组成变化亚群的微环境配受体通讯分析
   when: 探索比例升高或降低的关键细胞亚群与其他微环境细胞之间的信号交互重塑时
   analysis_templates:
@@ -253,7 +283,7 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：无
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：异常富集亚群的差异表达与功能打分深挖**（触发条件：通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-scoring；可视化模版：templates/scp-de-volcano、templates/pathway-stat-violin）
+  - **方向 1：异常富集亚群的差异表达与功能打分深挖**（触发条件：通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-scoring；可视化模版：templates/scp-de-volcano、templates/pathway-stat-violin、templates/roe-cox-heatmap、templates/tissue-ratio-prop-combo）
   - **方向 2：组成变化亚群的微环境配受体通讯分析**（触发条件：探索比例升高或降低的关键细胞亚群与其他微环境细胞之间的信号交互重塑时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord）
   - **方向 3：关键亚群特征在 Bulk 队列免疫浸润与临床预后中的验证**（触发条件：将单细胞中鉴定的关键浸润亚群特征（Marker 集）推广至 TCGA/GEO Bulk 队列验证其免疫浸润与预后关联时；中间表：survival-time-event-group；分析模版：methods/immune-infiltration-tme、methods/survival-prognosis-analysis；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
 
@@ -288,6 +318,12 @@ next_steps:
   - [[templates/scp-flow-chord|分组流向和弦图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：仅核对组成统计输出与渲染桥接接口契约，尚未执行真实课题分析→出图端到端联调。
     - 依据：跨维度或组间细胞类别关联计数可导出 render-cell-linkage 绘制流向和弦图。；前提：明确分析单位：描述性绘图可汇总分组比例，但显著性检验必须以样本（sample_id）为独立重复，避免细胞级假重复。；成分比例之和恒为 1 存在负相关约束；多维度流向连线仅为视觉映射，不代表细胞发育轨迹或因果转移。；适配：将二维或跨维度分类映射导出为 render-cell-linkage.csv（cell, dimension, category, dimension_order）。
     - 关系证据：methods/cell-proportion-composition.md#输出；templates/scp-flow-chord/spec.json；templates/scp-flow-chord/verify/verify.json；运行证据：无
+  - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各细胞亚群的跨组织/分子亚型 Ro/e 偏好可与外部临床 Cox HR 联合整理为 variant 复合热图展示；模板不拟合 Cox 模型。；前提：Ro/e 与 Cox HR/p 值分别由独立分析步骤严格输出，不能混同样本级与细胞级单位。；适配：整理 roe_cox_heatmap.csv（cluster, cohort/subtype Ro/e 列及可选 tcga/inhouse HR 与 p_value）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/roe-cox-heatmap/spec.json；运行证据：无
+  - [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：亚群跨组织构成堆叠比例与逐样本比例箱线图及 BH 校正 Wilcoxon 检验可切换至 variant 组合画风；检验以样本为重复单位。；前提：proportion 为各样本内亚群相对比例（0–1）；配对/独立检验以 sample_id 为独立单位。；适配：导出 tissue_ratio_prop.csv（cluster, tissue, sample_id, proportion, 可选 n_cells, pval）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/tissue-ratio-prop-combo/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

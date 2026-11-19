@@ -34,7 +34,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：亚群跨组织构成堆叠比例与逐样本比例箱线图及 BH 校正 Wilcoxon 检验可切换至 variant 组合画风；检验以样本为重复单位。；前提：proportion 为各样本内亚群相对比例（0–1）；配对/独立检验以 sample_id 为独立单位。；适配：导出 tissue_ratio_prop.csv（cluster, tissue, sample_id, proportion, 可选 n_cells, pval）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/tissue-ratio-prop-combo/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

@@ -153,6 +153,32 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+- figure: templates/diffusion-trajectory-overlay
+  compatibility: adaptable
+  reason: Diffusion Map 或 Slingshot 降维流形、有向分化轨迹箭头与多模块主导活性叠色可作为 default 主推轨迹图；模板不推断拟时序。
+  prerequisites:
+  - 坐标（dim1, dim2）、cluster 与 pseudotime 来自同一细胞轨迹对象；有向边须有起点依据。
+  adaptation: 导出 diffusion_trajectory_cells.csv、可选 diffusion_module_scores.csv 与 trajectory_edges.csv。
+  evidence:
+  - methods/trajectory-inference.md#输出
+  - templates/diffusion-trajectory-overlay/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/pseudotime-branch-curves
+  compatibility: adaptable
+  reason: 沿多分支拟时序平滑拟合的动态基因表达趋势可切换为 variant 分面曲线网格；模板不执行 GAM 拟合。
+  prerequisites:
+  - pseudotime_norm 已归一化至同一 [0, 1] 区间；各基因纵轴独立缩放需在图注说明。
+  adaptation: 导出 pseudotime_branch_genes.csv（gene, branch, pseudotime_norm, smoothed_expr）。
+  evidence:
+  - methods/trajectory-inference.md#输出
+  - templates/pseudotime-branch-curves/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：拟时序动态特征基因识别与热图
   when: 沿推断 pseudotime 拟合 GAM 平滑曲线，筛选分支分化关键动态表达基因时
@@ -162,6 +188,8 @@ next_steps:
   viz_templates:
   - templates/scp-feature-heatmap
   - templates/scrna-feature-umap-grid
+  - templates/diffusion-trajectory-overlay
+  - templates/pseudotime-branch-curves
 - direction: 方向 2：RNA 速率方向性交叉验证
   when: 拥有 spliced/unspliced 计数层，需要独立检验拟时序起止方向合理性时
   analysis_templates:
@@ -204,7 +232,7 @@ data_domains:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/dynamic-feature-analysis|拟时序动态特征分析]]（ready）
 - 代码模板：[methods/trajectory-inference/code/analysis.R](/files/wiki/methods/trajectory-inference/code/analysis.R) · [methods/trajectory-inference/code/data/palette_list.rda](/files/wiki/methods/trajectory-inference/code/data/palette_list.rda) · [methods/trajectory-inference/code/monocle2.R](/files/wiki/methods/trajectory-inference/code/monocle2.R) · [methods/trajectory-inference/code/monocle2_core.R](/files/wiki/methods/trajectory-inference/code/monocle2_core.R) · [methods/trajectory-inference/code/monocle2_core_helpers.R](/files/wiki/methods/trajectory-inference/code/monocle2_core_helpers.R) · [methods/trajectory-inference/code/monocle3.R](/files/wiki/methods/trajectory-inference/code/monocle3.R) · [methods/trajectory-inference/code/monocle3_core.R](/files/wiki/methods/trajectory-inference/code/monocle3_core.R) · [methods/trajectory-inference/code/slingshot_native.R](/files/wiki/methods/trajectory-inference/code/slingshot_native.R)
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：沿推断 pseudotime 拟合 GAM 平滑曲线，筛选分支分化关键动态表达基因时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/scp-feature-heatmap、templates/scrna-feature-umap-grid）
+  - **方向 1：拟时序动态特征基因识别与热图**（触发条件：沿推断 pseudotime 拟合 GAM 平滑曲线，筛选分支分化关键动态表达基因时；中间表：pseudotime-trajectory-table；分析模版：methods/dynamic-feature-analysis；可视化模版：templates/scp-feature-heatmap、templates/scrna-feature-umap-grid、templates/diffusion-trajectory-overlay、templates/pseudotime-branch-curves）
   - **方向 2：RNA 速率方向性交叉验证**（触发条件：拥有 spliced/unspliced 计数层，需要独立检验拟时序起止方向合理性时；中间表：pseudotime-trajectory-table；分析模版：methods/rna-velocity；可视化模版：templates/scrna-celltype-umap）
   - **方向 3：分支关键基因进入候选标志物与临床预后筛选**（触发条件：提取特定终末或分支转换状态的核心基因进入生存建模或机器学习特征筛选时；中间表：candidate-biomarker-list；分析模版：methods/survival-prognosis-analysis、recipes/figureya-31lasso-update、methods/shap-explanation；可视化模版：templates/km-survival-curve、templates/pathway-stat-violin）
   - **方向 4：分化终末亚群与微环境细胞通讯互作演化**（触发条件：对比轨迹起点与终末分化状态亚群对外信号发送/接收网络的切换时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord）
@@ -219,6 +247,12 @@ data_domains:
   - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：pseudotime 按 cluster/lineage 分组的分布可用分组小提琴展示；模板不做轨迹或检验。；前提：同一 pseudotime/lineage 定义；celltype/group 标签一致。；p/mean/SD 若展示，由分析阶段预计算；细胞级 p 不能当样本级推断。；适配：导出 render-grouped-values.csv（celltype/group, value=pseudotime）。
     - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/pathway-stat-violin/spec.json；templates/pathway-stat-violin/verify/verify.json；运行证据：无
+  - [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：Diffusion Map 或 Slingshot 降维流形、有向分化轨迹箭头与多模块主导活性叠色可作为 default 主推轨迹图；模板不推断拟时序。；前提：坐标（dim1, dim2）、cluster 与 pseudotime 来自同一细胞轨迹对象；有向边须有起点依据。；适配：导出 diffusion_trajectory_cells.csv、可选 diffusion_module_scores.csv 与 trajectory_edges.csv。
+    - 关系证据：methods/trajectory-inference.md#输出；templates/diffusion-trajectory-overlay/spec.json；运行证据：无
+  - [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：沿多分支拟时序平滑拟合的动态基因表达趋势可切换为 variant 分面曲线网格；模板不执行 GAM 拟合。；前提：pseudotime_norm 已归一化至同一 [0, 1] 区间；各基因纵轴独立缩放需在图注说明。；适配：导出 pseudotime_branch_genes.csv（gene, branch, pseudotime_norm, smoothed_expr）。
+    - 关系证据：methods/trajectory-inference.md#输出；templates/pseudotime-branch-curves/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
@@ -237,6 +271,7 @@ Slingshot 在嵌入空间对 cluster 建最小生成树，再拟合 lineage 曲�
 |---|---|---|---|
 | SCP `RunSlingshot` | [[methods/scp-trajectory-velocity]]；`SCP-local/R/SCP-analysis.R` | 嵌入 + cluster + 起点/终点；lineage/pseudotime | 已封装并 verified（80 细胞，CellType 分组） |
 | Monocle2 / Monocle3 / PAGA / Palantir / WOT | 同上 | 不同轨迹模型与输入 | Monocle2/3 已从固定源码提取核心与 Seurat 适配入口，本机缺包 `not_run`；PAGA/Palantir/WOT 未实现。不能与 Slingshot 互换 |
+| Diffusion Map + Slingshot 组合参考 | [[methods/breast-cancer-stromal-tme-workflow]]；`code/04_trajectory_pseudotime.R` | 降维流形 + 拟时序 + 模块得分 | 已在工作流中跑通并对接可切换模板 |
 | 青光眼课题 | `source/` 中未发现独立轨迹脚本 | — | 不声称有独立课题实现 |
 ## 适用
 
@@ -276,7 +311,7 @@ Slingshot：Seurat metadata 增加 `Lineage1`（pseudotime）和 `BranchID`，`r
 
 ## 知识关联检查
 
-2026-10-23 检查了 UMAP 分组、特征 UMAP 和分组小提琴模板。cluster/lineage 可着色 UMAP，pseudotime 可作 feature 或分组分布；均为 adaptable。现有模板不画 lineage 曲线/箭头，不能把普通 UMAP 分组图当作轨迹图。动态特征分析见 [[methods/dynamic-feature-analysis]]。
+2026-10-23 检查了 UMAP 分组、特征 UMAP 和分组小提琴模板。cluster/lineage 可着色 UMAP，pseudotime 可作 feature 或分组分布；均为 adaptable。2026-11-19 更新：已补充专用轨迹模板 [[templates/diffusion-trajectory-overlay]]（default，含 Diffusion Map/Slingshot 轨迹箭头与多模块叠色）与 [[templates/pseudotime-branch-curves]]（variant，分支动态基因曲线网格），均登记为 adaptable。动态特征分析见 [[methods/dynamic-feature-analysis]]。
 
 复用分组小提琴模板时，当前 spec 要求同时提供 [[interfaces/render-grouped-values]] 与 [[interfaces/render-group-summaries]]。摘要表的均值、SD、p 标签及标注位置须由课题上游明确提供，并核对同源数据、分组及推断层级；本方法不自动生成这些统计或补值。缺少合法摘要时，当前模板不能直接调用；关系仍为 adaptable，未验证真实课题分析到绘图。
 

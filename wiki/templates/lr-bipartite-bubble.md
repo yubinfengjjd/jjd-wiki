@@ -29,7 +29,12 @@ journal_style: Cai2026-npjPO
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：两类细胞群间的多对配体-受体双轴连线与检验检出率气泡可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。；前提：连线仅表示数据库配对与统计支持，不代表物理结合或因果调控。；适配：导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
+    - 关系证据：methods/cell-cell-communication.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
+  - [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：明确展示的配体-受体对来源与检出率计算分母（tested pairs）。；适配：导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
+    - 关系证据：methods/immune-infiltration-tme.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

@@ -30,7 +30,12 @@ journal_style: Cai2026-npjPO
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/differential-expression|差异表达分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：差异基因（如趋化因子、MHC-I/II）在各亚群的 Z-score 标准化表达可与 DE 显著圆圈标记联合绘制为 variant 分组热图；模板不重算 DE。；前提：Z-score 为跨亚群行标准化均值；DE 圆圈标记须显式注明筛选阈值与对比口径。；适配：导出 pathway_zscore_heatmap.csv（cluster, feature, block, zscore, is_deg）。
+    - 关系证据：methods/differential-expression.md#输出；templates/pathway-zscore-heatmap/spec.json；运行证据：无
+  - [[methods/gene-set-scoring|基因集与通路签名打分]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：PROGENy 等通路活性或功能模块基因集跨亚群 Z-score 均值可切换为 variant 分块矩阵热图；模板不重算打分。；前提：Z-score 按亚群聚合后跨群标准化；不同打分算法的分数不可直接混在同一标尺。；适配：导出 pathway_zscore_heatmap.csv（cluster, feature, block, zscore, 可选 is_deg）。
+    - 关系证据：methods/gene-set-scoring.md#输出；templates/pathway-zscore-heatmap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

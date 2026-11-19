@@ -82,6 +82,20 @@ figure_relations:
     state: not_run
     scope: 仅核对 subgroup-effect-table 输出接口与森林图模板 spec.json 契约，尚未执行真实队列分析→出图端到端联调。
     evidence: []
+- figure: templates/roe-cox-heatmap
+  compatibility: adaptable
+  reason: 多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为 variant 热图；模板不做生存回归。
+  prerequisites:
+  - 各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。
+  adaptation: 整理 roe_cox_heatmap.csv（cluster, tcga_HR, tcga_p_value, inhouse_HR, inhouse_p_value
+    及 Ro/e 列）。
+  evidence:
+  - methods/survival-prognosis-analysis.md#输出
+  - templates/roe-cox-heatmap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：预后模型重采样评估与 SHAP 可解释性归因
   when: 已构建连续风险评分或机器学习预后模型，需评估交叉验证稳定性及核心特征 SHAP 贡献时
@@ -93,6 +107,7 @@ next_steps:
   - templates/shap-beeswarm
   - templates/shap-importance-bar
   - templates/resampling-metric-box
+  - templates/roe-cox-heatmap
 - direction: 方向 2：高低风险组间差异表达与生物学通路机制解析
   when: 按预后风险评分划分高低风险组后，解析两组间的差异驱动基因与富集信号通路时
   analysis_templates:
@@ -134,7 +149,7 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：无
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：预后模型重采样评估与 SHAP 可解释性归因**（触发条件：已构建连续风险评分或机器学习预后模型，需评估交叉验证稳定性及核心特征 SHAP 贡献时；中间表：model-prediction-shap；分析模版：methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/shap-beeswarm、templates/shap-importance-bar、templates/resampling-metric-box）
+  - **方向 1：预后模型重采样评估与 SHAP 可解释性归因**（触发条件：已构建连续风险评分或机器学习预后模型，需评估交叉验证稳定性及核心特征 SHAP 贡献时；中间表：model-prediction-shap；分析模版：methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/shap-beeswarm、templates/shap-importance-bar、templates/resampling-metric-box、templates/roe-cox-heatmap）
   - **方向 2：高低风险组间差异表达与生物学通路机制解析**（触发条件：按预后风险评分划分高低风险组后，解析两组间的差异驱动基因与富集信号通路时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/bulk-de-volcano）
   - **方向 3：风险分层与肿瘤免疫微环境浸润关联**（触发条件：评估高/低风险患者在免疫细胞浸润、免疫检查点或肿瘤微环境评分上的差异时；中间表：pathway-score-table；分析模版：methods/immune-infiltration-tme、recipes/figureya-230immunelandscape；可视化模版：templates/pathway-stat-violin）
   - **方向 4：Time-ROC、列线图校准与临床决策曲线（DCA）参考配方**（触发条件：需要补充多时间点 AUC、诺莫图校准曲线或净临床获益曲线以支撑临床转化评估时；中间表：subgroup-effect-table；分析模版：recipes/figureya-85timeroc、recipes/figureya-30nomogram-update、recipes/figureya-33dca-update；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
@@ -146,6 +161,9 @@ next_steps:
   - [[templates/subgroup-hazard-forest|亚组分析森林图]]（ready）：直接可接（direct）；调用验证：not_run；范围：仅核对 subgroup-effect-table 输出接口与森林图模板 spec.json 契约，尚未执行真实队列分析→出图端到端联调。
     - 依据：方法输出 subgroup-effect-table 直接对齐临床亚组森林图模板契约（label, estimate, lower, upper, n, percent, p）；模板仅做可视化渲染，不拟合 Cox 模型。；前提：所有亚组效应量（HR 与 95% CI）须由同一预后模型/分组定义在各临床亚组内分别拟合得到。；交互作用 P 值（p 列）需明确为交互项检验或组内趋势检验，避免混淆。；适配：无格式适配声明
     - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/subgroup-hazard-forest/spec.json；templates/subgroup-hazard-forest/verify/verify.json；interfaces/subgroup-effect-table.md；运行证据：无
+  - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为 variant 热图；模板不做生存回归。；前提：各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。；适配：整理 roe_cox_heatmap.csv（cluster, tcga_HR, tcga_p_value, inhouse_HR, inhouse_p_value 及 Ro/e 列）。
+    - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/roe-cox-heatmap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

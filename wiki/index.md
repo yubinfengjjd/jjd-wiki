@@ -9,6 +9,7 @@
 - [[scenarios/bulk-ml-biomarker-playbook|Bulk 转录组与机器学习临床标志物决策树（Playbook）]] — Bulk 转录组与临床队列标志物全流程决策树：从多队列批次校正、DEG/WGCNA 交集筛选、101 种机器学习组合建模到 SHAP 解释、预后验证与免疫药敏分析。
 - [[scenarios/clinical-prediction-survival|临床预测与生存分析]] — 队列随访或二分类结局：生存曲线、HR 森林图、预后模型构建与评价（区分度、校准、临床获益）。
 - [[scenarios/sc-bulk-integration-playbook|单细胞 × Bulk 多组学联合决策树（Playbook）]] — 连接单细胞机制发现与大样本 Bulk 临床队列验证的联合决策树：从单细胞关键亚群 Marker/轨迹基因出发，经交集收敛、Bulk 投射/反卷积与机器学习建模完成临床转化验证。
+- [[scenarios/stromal-tme-scrna-st-playbook|单细胞与空转肿瘤基质微环境思路分支树（Playbook）]] — 面向「单细胞转录组 + Visium 空间转录组 + 临床 Bulk 队列」的肿瘤基质微环境专题思路分支树（7 阶段 DAG 子树），支持双上游汇合节点（requires）与多套顶刊风格模板按需切换。
 - [[scenarios/scrna-stepwise-playbook|单细胞转录组步进决策树（Playbook）]] — 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 6 大下游科研探索分支，并用标准中间表衔接可视化模版。
 - [[scenarios/differential-enrichment|差异表达与富集分析]] — 两组或多组的差异基因展示（火山图）与通路层面的结果（GSEA、GSVA、富集气泡/柱图）。
 - [[scenarios/model-explanation|模型解释与特征重要性]] — 机器学习模型的特征重要性与 SHAP 解释图，以及特征筛选。
@@ -461,6 +462,7 @@
 
 ## 课题
 
+- [[projects/2026-cai-stromal-tme|乳腺癌基质微环境单细胞与空转联合解析（Cai et al., 2026）]] — Cai et al. (npj Precision Oncology, 2026) 乳腺癌基质单细胞 + Visium 空转 + Bulk 队列 6 阶段走线实录：从多队列基质图谱注释、Ro/e 与 Cox 预后筛选到 ABCA8+ lpFib 免疫排斥与 CCL19+ iFib / PGF+ TipEC 空间通讯验证（已剔除 Fig. 3F–H 湿实验）。
 - [[projects/2026-asthma-lactylation-scrna|哮喘气道上皮与巨噬细胞乳酸化单细胞挖掘]] — 哮喘气道单细胞数据集的乳酸化基因集多算法打分、巨噬细胞高活亚群筛选、拟时序轨迹与细胞通讯验证记录。
 - [[projects/2026-uc-ptm-multiomics|溃疡性结肠炎 20 种翻译后修饰（PTM）多组学挖掘]] — 溃疡性结肠炎（UC）单细胞与 Bulk 队列联合的 20 种 PTM 修饰基因集筛选、101 种机器学习诊断建模与 SHAP 可解释性记录。
 - [[projects/_template|课题步进记录卡模板]] — 新建科研课题的极简 3 行式步进追踪卡模板，记录每一步所用模版、观察现象与触发的下一步决策方向。

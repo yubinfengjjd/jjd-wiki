@@ -37,7 +37,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/gene-set-enrichment|基因集富集分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：WGCNA 或共表达模块富集条形图可切换为 variant 模块配色条形图；模板不执行富集检验。；前提：明确模块归属与统一校正口径（FDR / p.adjust）。；适配：导出模块富集 CSV（module, term, count, p_adjust）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/coexpr-module-enrich-bars/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

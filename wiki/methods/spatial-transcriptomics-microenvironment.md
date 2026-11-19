@@ -42,7 +42,48 @@ keywords:
 - intratumoral microbiota
 - 空间转录组
 - 空间微环境
-figure_relations: []
+figure_relations:
+- figure: templates/spatial-feature-grid
+  compatibility: adaptable
+  reason: Visium 空间 Spot 上的连续基因表达、签名密度或 RCTD 反卷积权重可作为 default 主推网格图展示；模板不执行反卷积。
+  prerequisites:
+  - Spot 坐标（x, y）对齐同一切片；各特征独立着色，色深仅在同一特征内比较。
+  adaptation: 导出 spatial_spots_long.csv（x, y, feature, value, 可选 sample）。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/spatial-feature-grid/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/spatial-coexpr-multichannel
+  compatibility: adaptable
+  reason: 2 至 4 个配受体或 TLS 淋巴细胞标志基因在同一切片/多区域上的通道共定位与高亮区域可切换为 variant 多通道图。
+  prerequisites:
+  - 同一切片内各通道共享 Spot 坐标系；高分位数截断阈值（如 P99）须一致说明。
+  adaptation: 导出 spatial_coexpr_spots.csv（spot_id, x, y, channel, value, 可选 region,
+    highlight_zone）。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/spatial-coexpr-multichannel/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/spatial-he-deconv-panel
+  compatibility: adaptable
+  reason: 配准 H&E 组织切片裁剪图像与 Visium 空间反卷积权重图并排对照可切换为 variant 组织配准面板。
+  prerequisites:
+  - Spot (x, y) 像素坐标须与 H&E 图像分辨率严格对齐（误差 < 1 像素）。
+  adaptation: 导出 spatial_deconv_spots.csv（spot_id, x, y, feature, score, 可选 region）并附对齐
+    he_image.png。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/spatial-he-deconv-panel/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：空间邻域细胞通讯与信号互作轴解析
   when: 在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时
@@ -51,6 +92,9 @@ next_steps:
   intermediate_interface: cellchat-lr-table
   viz_templates:
   - templates/cellchat-circos-multi
+  - templates/spatial-feature-grid
+  - templates/spatial-coexpr-multichannel
+  - templates/spatial-he-deconv-panel
 - direction: 方向 2：对比不同空间域或组织区域的细胞亚群组成偏好
   when: 量化肿瘤核心区、浸润前沿与正常边界区的细胞比例差异时
   analysis_templates:
@@ -79,12 +123,20 @@ next_steps:
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：无
 - 下一步分析导航（Step N → Step N+1）：
-  - **方向 1：空间邻域细胞通讯与信号互作轴解析**（触发条件：在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi）
+  - **方向 1：空间邻域细胞通讯与信号互作轴解析**（触发条件：在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi、templates/spatial-feature-grid、templates/spatial-coexpr-multichannel、templates/spatial-he-deconv-panel）
   - **方向 2：对比不同空间域或组织区域的细胞亚群组成偏好**（触发条件：量化肿瘤核心区、浸润前沿与正常边界区的细胞比例差异时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar）
   - **方向 3：空间域标记基因与通路空间活性打分**（触发条件：检验局部微环境特异基因集或免疫/代谢通路在切片上的空间梯度变化时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring；可视化模版：无）
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[templates/spatial-feature-grid|空间转录组特征分布网格]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：Visium 空间 Spot 上的连续基因表达、签名密度或 RCTD 反卷积权重可作为 default 主推网格图展示；模板不执行反卷积。；前提：Spot 坐标（x, y）对齐同一切片；各特征独立着色，色深仅在同一特征内比较。；适配：导出 spatial_spots_long.csv（x, y, feature, value, 可选 sample）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-feature-grid/spec.json；运行证据：无
+  - [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：2 至 4 个配受体或 TLS 淋巴细胞标志基因在同一切片/多区域上的通道共定位与高亮区域可切换为 variant 多通道图。；前提：同一切片内各通道共享 Spot 坐标系；高分位数截断阈值（如 P99）须一致说明。；适配：导出 spatial_coexpr_spots.csv（spot_id, x, y, channel, value, 可选 region, highlight_zone）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-coexpr-multichannel/spec.json；运行证据：无
+  - [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：配准 H&E 组织切片裁剪图像与 Visium 空间反卷积权重图并排对照可切换为 variant 组织配准面板。；前提：Spot (x, y) 像素坐标须与 H&E 图像分辨率严格对齐（误差 < 1 像素）。；适配：导出 spatial_deconv_spots.csv（spot_id, x, y, feature, score, 可选 region）并附对齐 he_image.png。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-he-deconv-panel/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
@@ -114,7 +166,7 @@ next_steps:
 
 ## 代码
 
-本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块。请参考配套 FigureYa L1 源码配方 `figureya-323stpathseq`（空间转录组微生物分布与组织共定位分析）。
+本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块。请参考配套 历史归档模板 [[recipes/figureya-323stpathseq]]（空间转录组微生物分布与组织共定位分析）。
 
 ## 输出
 
@@ -131,7 +183,7 @@ next_steps:
 
 ## 知识关联检查
 
-已核对本方法接入 [[interfaces/scrna-annotated-cells]] 与输出 [[interfaces/cell-proportion-stats]] 的语义定义，并与 [[methods/cell-cell-communication]]、[[methods/cell-proportion-composition]] 共同覆盖空间组学域分析路径。
+已核对本方法接入 [[interfaces/scrna-annotated-cells]] 与输出 [[interfaces/cell-proportion-stats]] 的语义定义，并绑定三大可切换空间可视化模板：[[templates/spatial-feature-grid]]（default 特征网格）、[[templates/spatial-coexpr-multichannel]]（variant 多通道共定位）与 [[templates/spatial-he-deconv-panel]]（variant H&E 配准反卷积对照），均为 adaptable。
 
 ## 使用记录
 

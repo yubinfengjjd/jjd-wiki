@@ -33,7 +33,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/batch-integration|单细胞批次整合]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多队列单细胞与空间整合研究的采样路径与队列样本量汇总可用 variant 流程示意图展示；不替代批次混合评估。；前提：队列名称、来源类型（in-house/public）与样本数如实汇总，不遗漏或虚构样本。；适配：整理 workflow_steps.csv 与 workflow_cohorts.csv（branch, cohort, n_samples, origin）。
+    - 关系证据：methods/batch-integration.md#输出；templates/atlas-workflow-diagram/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

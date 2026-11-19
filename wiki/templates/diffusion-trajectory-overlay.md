@@ -33,7 +33,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：Diffusion Map 或 Slingshot 降维流形、有向分化轨迹箭头与多模块主导活性叠色可作为 default 主推轨迹图；模板不推断拟时序。；前提：坐标（dim1, dim2）、cluster 与 pseudotime 来自同一细胞轨迹对象；有向边须有起点依据。；适配：导出 diffusion_trajectory_cells.csv、可选 diffusion_module_scores.csv 与 trajectory_edges.csv。
+    - 关系证据：methods/trajectory-inference.md#输出；templates/diffusion-trajectory-overlay/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

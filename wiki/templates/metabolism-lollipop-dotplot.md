@@ -30,7 +30,12 @@ journal_style: Cai2026-npjPO
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/gene-set-enrichment|基因集富集分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：代谢通路富集结果（Fold enrichment + -log10(P) + 亚群彩点）可切换为 variant 棒棒糖点图展示；模板不执行富集检验。；前提：GeneRatio 与 BgRatio 比值计算透明一致，不混用原始 P 与校正 P。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
+  - [[methods/gene-set-scoring|基因集与通路签名打分]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各亚群 Top 代谢通路富集/打分强度与倍数变化可切换为 variant 棒棒糖点图；模板不重算打分。；前提：统一背景与归一化口径；相同通路跨亚群横向比较须保持同一评分标准。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
+    - 关系证据：methods/gene-set-scoring.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用
