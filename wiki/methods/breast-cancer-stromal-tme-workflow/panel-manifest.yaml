@@ -193,11 +193,17 @@ panels:
     methods: ["spatial-transcriptomics-microenvironment"]
     note: "CAA_ST whole-slide and right-hemisphere TLS 8-signature spatial grid."
   - figure: "Fig. 6"
-    panel: "6F-G"
+    panel: "6F"
     evidence_tier: "original_table"
     template_id: "lr-bubble-matrix"
-    methods: ["cell-cell-communication", "spatial-transcriptomics-microenvironment"]
-    note: "MOESM8 C4_TipEC_PGF to M1/M2 L-R matrix paired with CAA_ST spatial maps."
+    methods: ["cell-cell-communication"]
+    note: "MOESM8 C4_TipEC_PGF to M1/M2 CellChat L-R probability bubble matrix."
+  - figure: "Fig. 6"
+    panel: "6G"
+    evidence_tier: "proxy"
+    template_id: "spatial-feature-grid"
+    methods: ["spatial-transcriptomics-microenvironment"]
+    note: "CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF / M1 / M2."
   - figure: "Fig. 6"
     panel: "6H"
     evidence_tier: "local_recompute"
