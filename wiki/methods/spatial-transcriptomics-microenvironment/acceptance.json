@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T12:13:45.520339+00:00",
+  "checked_at": "2026-11-19T13:06:23.718738+00:00",
   "page": "methods/spatial-transcriptomics-microenvironment.md",
-  "snapshot": "aeb4b373236a234ea96696086b4202741767a2ed417c9bbb1d90272449e8317b",
+  "snapshot": "d81b5c4e87ff80c28b37749a844e74311cded4183b500cc1f5e730d6a17dd53f",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
