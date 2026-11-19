@@ -8,7 +8,7 @@ sources:
 - methods/gene-set-enrichment
 panels: []
 language: r
-primary_method: gene-set-enrichment
+primary_method: gene-set-scoring
 tags:
 - single-cell
 - transcriptomics

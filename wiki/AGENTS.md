@@ -28,7 +28,7 @@
 
 - 所有 `template`、`method`（以及只读历史 `recipe`）的状态统一为 `draft` / `ready` / `archived`，`ready` 表示作者已确认。`layout` 只来自画廊（`ingest-figure`），其 `pending_signoff` / `pending_template` 是历史状态，只读保留；开源库与新模板不再新建 `layout`。
 - **能否执行看收据，不看 status**：绘图模板须经 `verify-template` 生成 `verify/` 回放收据；分析方法每个实现分支须有独立的 `verification/*.json`；没有当前版本的成功运行收据，就不能声称为已验证可运行。
-- **一类图允许多套顶刊风格模板并存**：同一分析方法或图型下可并存多个可切换画风模板，但每个模板须标注 `style_tier`（每个方法下 1 个主推 `default` + 若干特定期刊/高级 `variant`）及 `journal_style`；`check-dup` 只拦截代码与样式完全冗余的克隆，不阻挡不同期刊画风变体。
+- **一类图允许多套顶刊风格模板并存**：同一分析方法或图型下可并存多个可切换画风模板；新建模板应标注 `style_tier`（`default` \| `variant`）与 `journal_style`（历史旧模板可渐进补齐），`rwiki lint` 强制校验同一 `primary_method` 下至多存在 1 个 `style_tier: default` 主推默认模板，其余记为 `variant` 变体。`check-dup` 用于拦截同方法/同图型/同接口下的重复克隆，若为有明确顶刊风格差异的 `variant` 变体须显式说明差异并标定 `journal_style`（按 `style_tier` 优化检索排序与风格感知去重规划在后续版本迭代）。
 - **单 panel 约束**：每个 `templates/<slug>/` 对应一个逻辑 panel（inset、色标、边际分布或配对对照小图随主 panel 一并封装），严禁把整篇论文多 Panel 拼图直接当单个通用模板。
 
 ## 收录与复利流程（「三查一记」）

@@ -47,7 +47,7 @@ keywords:
 - 基因集打分
 - 拟时序
 - CellChat
-summary: 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 6 大下游科研探索分支，并用标准中间表衔接可视化模版。
+summary: 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 7 大下游科研探索分支（含 Branch 7 单细胞 × 空转基质微环境子树），并用标准中间表衔接可视化模板。
 steps:
 - id: step-1-qc
   step: 1
@@ -55,8 +55,7 @@ steps:
   method_id: cell-quality-control
   when: 拿到 CellRanger/原始 counts 矩阵，发现高线粒体或双细胞噪音时
   inputs: []
-  outputs:
-  - scrna-annotated-cells
+  outputs: []
   templates:
   - methods/cell-quality-control
   - methods/doublet-detection
@@ -69,8 +68,7 @@ steps:
   method_id: batch-integration
   when: 多样本合并存在供体/批次偏移，需对齐嵌入并生成 cluster 时
   inputs: []
-  outputs:
-  - scrna-annotated-cells
+  outputs: []
   templates:
   - methods/batch-integration
   - methods/dimensionality-reduction
@@ -105,6 +103,7 @@ steps:
 - id: branch-1-proportion
   step: 4
   title: 分支 1：细胞亚群组成比例与 Ro/e 组织偏好
+  method_id: cell-proportion-composition
   when: 观察哪类细胞在疾病组显著扩增或萎缩，并检验样本级统计差异时
   inputs:
   - scrna-annotated-cells

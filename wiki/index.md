@@ -10,7 +10,7 @@
 - [[scenarios/clinical-prediction-survival|临床预测与生存分析]] — 队列随访或二分类结局：生存曲线、HR 森林图、预后模型构建与评价（区分度、校准、临床获益）。
 - [[scenarios/sc-bulk-integration-playbook|单细胞 × Bulk 多组学联合决策树（Playbook）]] — 连接单细胞机制发现与大样本 Bulk 临床队列验证的联合决策树：从单细胞关键亚群 Marker/轨迹基因出发，经交集收敛、Bulk 投射/反卷积与机器学习建模完成临床转化验证。
 - [[scenarios/stromal-tme-scrna-st-playbook|单细胞与空转肿瘤基质微环境思路分支树（Playbook）]] — 面向「单细胞转录组 + Visium 空间转录组 + 临床 Bulk 队列」的肿瘤基质微环境专题思路分支树（7 阶段 DAG 子树），支持双上游汇合节点（requires）与多套顶刊风格模板按需切换。
-- [[scenarios/scrna-stepwise-playbook|单细胞转录组步进决策树（Playbook）]] — 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 6 大下游科研探索分支，并用标准中间表衔接可视化模版。
+- [[scenarios/scrna-stepwise-playbook|单细胞转录组步进决策树（Playbook）]] — 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 7 大下游科研探索分支（含 Branch 7 单细胞 × 空转基质微环境子树），并用标准中间表衔接可视化模板。
 - [[scenarios/differential-enrichment|差异表达与富集分析]] — 两组或多组的差异基因展示（火山图）与通路层面的结果（GSEA、GSVA、富集气泡/柱图）。
 - [[scenarios/model-explanation|模型解释与特征重要性]] — 机器学习模型的特征重要性与 SHAP 解释图，以及特征筛选。
 - [[scenarios/geneset-theme-playbook|特定修饰与主题基因集挖掘决策树（Playbook）]] — 面向乳酸化、泛素化/乙酰化等 PTM 修饰、铁死亡及代谢主题基因集的专病挖掘决策树：从基因集定义、多算法打分到单细胞高活亚群深挖与 Bulk 分子分型闭环。
