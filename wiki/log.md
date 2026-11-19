@@ -1617,3 +1617,5 @@
 ## [2026-11-19 15:46 UTC] acceptance check methods/cell-type-annotation
 
 ## [2026-11-19 15:46 UTC] acceptance check methods/cell-proportion-composition
+
+## [2026-11-19 15:46 UTC] acceptance check methods/survival-prognosis-analysis
