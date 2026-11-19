@@ -184,6 +184,7 @@
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
 - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]
 - [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]
+- [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]
 
 ### ready
 
