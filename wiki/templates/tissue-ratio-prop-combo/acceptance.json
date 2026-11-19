@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-19T14:52:40.497181+00:00",
+  "page": "templates/tissue-ratio-prop-combo.md",
+  "snapshot": "69b345e088abab233aa67f1d360289e62418e6c0d47029e27e382d7d5343ca55",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

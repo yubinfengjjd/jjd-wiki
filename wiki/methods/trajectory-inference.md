@@ -247,10 +247,10 @@ data_domains:
   - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：pseudotime 按 cluster/lineage 分组的分布可用分组小提琴展示；模板不做轨迹或检验。；前提：同一 pseudotime/lineage 定义；celltype/group 标签一致。；p/mean/SD 若展示，由分析阶段预计算；细胞级 p 不能当样本级推断。；适配：导出 render-grouped-values.csv（celltype/group, value=pseudotime）。
     - 关系证据：methods/trajectory-inference.md#输出；methods/scp-trajectory-velocity.md#知识关联检查；methods/scp-trajectory-velocity.md#输出；templates/pathway-stat-violin/spec.json；templates/pathway-stat-violin/verify/verify.json；运行证据：无
-  - [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：Diffusion Map 或 Slingshot 降维流形、有向分化轨迹箭头与多模块主导活性叠色可作为 default 主推轨迹图；模板不推断拟时序。；前提：坐标（dim1, dim2）、cluster 与 pseudotime 来自同一细胞轨迹对象；有向边须有起点依据。；适配：导出 diffusion_trajectory_cells.csv、可选 diffusion_module_scores.csv 与 trajectory_edges.csv。
     - 关系证据：methods/trajectory-inference.md#输出；templates/diffusion-trajectory-overlay/spec.json；运行证据：无
-  - [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：沿多分支拟时序平滑拟合的动态基因表达趋势可切换为 variant 分面曲线网格；模板不执行 GAM 拟合。；前提：pseudotime_norm 已归一化至同一 [0, 1] 区间；各基因纵轴独立缩放需在图注说明。；适配：导出 pseudotime_branch_genes.csv（gene, branch, pseudotime_norm, smoothed_expr）。
     - 关系证据：methods/trajectory-inference.md#输出；templates/pseudotime-branch-curves/spec.json；运行证据：无
 <!-- facts:end -->

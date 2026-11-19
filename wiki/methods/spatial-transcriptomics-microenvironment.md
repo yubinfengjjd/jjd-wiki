@@ -128,13 +128,13 @@ next_steps:
   - **方向 3：空间域标记基因与通路空间活性打分**（触发条件：检验局部微环境特异基因集或免疫/代谢通路在切片上的空间梯度变化时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring；可视化模版：无）
 
 - 方法配图关系（语义审查）：
-  - [[templates/spatial-feature-grid|空间转录组特征分布网格]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/spatial-feature-grid|空间转录组特征分布网格]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：Visium 空间 Spot 上的连续基因表达、签名密度或 RCTD 反卷积权重可作为 default 主推网格图展示；模板不执行反卷积。；前提：Spot 坐标（x, y）对齐同一切片；各特征独立着色，色深仅在同一特征内比较。；适配：导出 spatial_spots_long.csv（x, y, feature, value, 可选 sample）。
     - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-feature-grid/spec.json；运行证据：无
-  - [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：2 至 4 个配受体或 TLS 淋巴细胞标志基因在同一切片/多区域上的通道共定位与高亮区域可切换为 variant 多通道图。；前提：同一切片内各通道共享 Spot 坐标系；高分位数截断阈值（如 P99）须一致说明。；适配：导出 spatial_coexpr_spots.csv（spot_id, x, y, channel, value, 可选 region, highlight_zone）。
     - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-coexpr-multichannel/spec.json；运行证据：无
-  - [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：配准 H&E 组织切片裁剪图像与 Visium 空间反卷积权重图并排对照可切换为 variant 组织配准面板。；前提：Spot (x, y) 像素坐标须与 H&E 图像分辨率严格对齐（误差 < 1 像素）。；适配：导出 spatial_deconv_spots.csv（spot_id, x, y, feature, score, 可选 region）并附对齐 he_image.png。
     - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-he-deconv-panel/spec.json；运行证据：无
 <!-- facts:end -->

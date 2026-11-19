@@ -2,7 +2,7 @@
 type: template
 id: lr-bubble-matrix
 title: 配受体互作概率气泡矩阵
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-cell-communication
@@ -19,6 +19,8 @@ style_tier: default
 journal_style: Cai2026-npjPO
 ---
 # 配受体互作概率气泡矩阵
+
+![[templates/lr-bubble-matrix/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]
@@ -48,7 +50,21 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`lr_bubble_matrix.csv` 提供有向 `pair_label`（或 `source` 和 `target`）、配体–受体标识 `interaction` 及非负互作强度 `prob`。可附 `pval`，成图按强度决定填色、点径与显示顺序。
+### lr（lr_bubble_matrix.csv）：配受体互作矩阵表（pair_label 或 source+target、interaction、prob、pval） （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| interaction | str | 必需 | 配受体对名称（如 COL1A1_CD44） |
+| prob | float | 必需 | 通讯概率或平均互作强度 |
+| pval | float | 可选 | 置换检验 p 值 |
+
+### 可覆盖的 style
+
+- `max_interactions`：`18`
+- `max_pairs`：`22`
+- `dpi`：`300`
+- `width_in`：`7.6`
+- `height_in`：`6.0`
 
 ## 使用记录
 

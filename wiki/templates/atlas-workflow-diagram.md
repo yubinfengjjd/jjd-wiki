@@ -2,7 +2,7 @@
 type: template
 id: atlas-workflow-diagram
 title: 多源图谱构建流程示意图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/batch-integration
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # 多源图谱构建流程示意图
+
+![[templates/atlas-workflow-diagram/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/batch-integration|单细胞批次整合]]
@@ -58,7 +60,7 @@ favorite: false
 |---|---|---|---|
 | branch | str | 必需 | 流程分支或组学轨道名称 |
 | step_order | int | 必需 | 分支内步骤顺序（从左到右） |
-| label | str | 必需 | 步骤框显示标签（可用 `\n` 换行） |
+| label | str | 必需 | 步骤框显示标签（可用 \n 换行） |
 | arrow_style | str | 可选 | 进入该步骤的箭头线型（solid 或 dashed） |
 | box_fill | str | 可选 | 可选步骤节点填充色（十六进制） |
 

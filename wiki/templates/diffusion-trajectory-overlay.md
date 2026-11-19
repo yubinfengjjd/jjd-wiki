@@ -2,7 +2,7 @@
 type: template
 id: diffusion-trajectory-overlay
 title: 降维轨迹与功能模块叠图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/trajectory-inference
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # 降维轨迹与功能模块叠图
+
+![[templates/diffusion-trajectory-overlay/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/trajectory-inference|拟时序与轨迹推断]]

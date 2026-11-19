@@ -1607,3 +1607,5 @@
 ## [2026-11-19 14:52 UTC] verify pseudotime-branch-curves
 
 ## [2026-11-19 14:52 UTC] verify kegg-cluster-bubble
+
+## [2026-11-19 14:52 UTC] ready 19: atlas-workflow-diagram, cellchat-signaling-ring, checkpoint-group-boxplot, cluster-kegg-bars, clustered-corr-boxes, diffusion-trajectory-overlay, spatial-coexpr-multichannel, spatial-he-deconv-panel, tissue-ratio-prop-combo, stromal-hull-umap, spatial-feature-grid, roe-cox-heatmap, pathway

@@ -2,7 +2,7 @@
 type: template
 id: kegg-cluster-bubble
 title: 多亚群KEGG通路气泡矩阵
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-enrichment
@@ -20,6 +20,8 @@ style_tier: default
 journal_style: Cai2026-npjPO
 ---
 # 多亚群KEGG通路气泡矩阵
+
+![[templates/kegg-cluster-bubble/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
@@ -49,7 +51,20 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`kegg_cluster_bubble.csv` 每行一个 `pathway` × `cluster` 组合，含 `count`（命中基因数）及 `logp`（−log10(P) 或 −log10(校正 P)，全表二选一）。缺失的组合留空。
+### kegg（kegg_cluster_bubble.csv）：多亚群KEGG通路气泡表（pathway、cluster、count、logp） （模板内联表结构）
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| pathway | str | KEGG通路名称 |
+| cluster | str | 细胞亚群名 |
+| count | float | 富集基因数 |
+| logp | float | -log10(P/padj)显著性 |
+
+### 可覆盖的 style
+
+- `dpi`：`300`
+- `width_in`：`9.2`
+- `height_in`：`9.8`
 
 ## 使用记录
 

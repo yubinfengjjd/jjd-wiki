@@ -173,10 +173,10 @@ data_domains:
   - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按 batch/样本统计细胞类型比例，可检查整合前后组成是否被过度改变；模板不做统计检验。；前提：每个 group 的比例归一化到 1；group 为 batch/样本，celltype 为注释类型。；比例是描述性；组间差异不能由该图直接推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）；比例只作描述。
     - 关系证据：methods/batch-integration.md#输出；methods/scp-integration.md#知识关联检查；methods/scp-integration.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
-  - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：整合后精细亚群降维流形可导出坐标与功能群标签切换至 variant 包络画风；模板不做整合。；前提：坐标与 subcluster 来自同一整合嵌入；cell_id 唯一；坐标无 NA。；适配：导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, 可选 functional_group）。
     - 关系证据：methods/batch-integration.md#输出；templates/stromal-hull-umap/spec.json；运行证据：无
-  - [[templates/atlas-workflow-diagram|多源图谱构建流程示意图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/atlas-workflow-diagram|多源图谱构建流程示意图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：多队列单细胞与空间整合研究的采样路径与队列样本量汇总可用 variant 流程示意图展示；不替代批次混合评估。；前提：队列名称、来源类型（in-house/public）与样本数如实汇总，不遗漏或虚构样本。；适配：整理 workflow_steps.csv 与 workflow_cohorts.csv（branch, cohort, n_samples, origin）。
     - 关系证据：methods/batch-integration.md#输出；templates/atlas-workflow-diagram/spec.json；运行证据：无
 <!-- facts:end -->

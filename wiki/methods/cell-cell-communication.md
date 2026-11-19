@@ -171,16 +171,16 @@ next_steps:
   - [[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]（ready）：直接可接（direct）；调用验证：not_run；范围：仅核对 cellchat-lr-table 与 celltype-gene-expression 接口契约及模板 spec.json，尚未执行真实分析→出图端到端联调。
     - 依据：方法输出的 cellchat-lr-table 与 celltype-gene-expression 直接对应多轨环形图模板接口契约；模板仅负责多轨渲染，不重算通讯概率或置换检验。；前提：source、target 与 cell_type 标签跨表一致；建议按 prob 与 pval 筛选核心显著通路后控制基因总数。；多条件比较须显式保留 group 列，不能将未分层的合并强度直接等同于组间统计差异。；适配：无格式适配声明
     - 关系证据：methods/cell-cell-communication.md#输出；templates/cellchat-circos-multi/spec.json；templates/cellchat-circos-multi/verify/verify.json；interfaces/cellchat-lr-table.md；interfaces/celltype-gene-expression.md；运行证据：无
-  - [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：有向细胞对（source->target）与配体-受体对的 CellChat/CellPhoneDB 互作概率可作为 default 主推气泡矩阵展示；模板不重算概率。；前提：同一统计阈值筛出的有向细胞对与 LR 对；缺失组合保持空位而不填零。；适配：导出 lr_bubble_matrix.csv（pair_label 或 source+target, interaction, prob, 可选 pval）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/lr-bubble-matrix/spec.json；运行证据：无
-  - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：全部有向发送者×接收者亚群间显著互作计数矩阵及边际总和柱图可切换为 variant 计数热图；模板不做置换检验。；前提：所有细胞对采用同一置换检验显著性阈值统计 count；未测组合保留 NA。；适配：导出 interaction_counts.csv（SOURCE, TARGET, count）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/cellchat-count-heatmap/spec.json；运行证据：无
-  - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：两类细胞群间的多对配体-受体双轴连线与检验检出率气泡可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。；前提：连线仅表示数据库配对与统计支持，不代表物理结合或因果调控。；适配：导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
-  - [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：特定信号通路（如 VEGF）在全图谱亚群环形目录间的有向通讯弧线（含孤立目录节点）可切换为 variant 环形网络图。；前提：环形目录节点需包含全图谱所有比较亚群，避免因孤立节点被过滤而改变拓扑外观。；适配：导出 ring_nodes.csv（node, compartment, color, is_hub）与 ring_edges.csv（from, to, weight）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/cellchat-signaling-ring/spec.json；运行证据：无
 <!-- facts:end -->

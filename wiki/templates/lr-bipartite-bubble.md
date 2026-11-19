@@ -2,7 +2,7 @@
 type: template
 id: lr-bipartite-bubble
 title: 配受体双轴连线气泡图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-cell-communication
@@ -19,6 +19,8 @@ style_tier: variant
 journal_style: Cai2026-npjPO
 ---
 # 配受体双轴连线气泡图
+
+![[templates/lr-bipartite-bubble/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]
@@ -51,7 +53,22 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`lr_bipartite_pairs.csv` 每行一组 `ligand`、`receptor`，两端分别提供 `ligand_expr`、`receptor_expr` 和 `ligand_pct`、`receptor_pct`（0–100）。表达强度使用同一标度，同一端节点重复出现时保持统计值一致。
+### pairs（lr_bipartite_pairs.csv）：配体-受体双轴连线气泡表（ligand、receptor、ligand_expr、ligand_pct、receptor_expr、receptor_pct） （模板内联表结构）
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| ligand | str | 配体基因/细胞端标签 |
+| receptor | str | 受体基因/靶细胞端标签 |
+| ligand_expr | float | 配体平均表达量 |
+| ligand_pct | float | 配体表达占比 (0-100) |
+| receptor_expr | float | 受体平均表达量 |
+| receptor_pct | float | 受体表达占比 (0-100) |
+
+### 可覆盖的 style
+
+- `dpi`：`300`
+- `width_in`：`7.6`
+- `height_in`：`3.4`
 
 ## 使用记录
 

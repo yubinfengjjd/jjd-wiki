@@ -185,10 +185,10 @@ render_bridges:
   - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：多条基因集打分结果可按特征展开为单细胞 UMAP 网格（default 主推连续分布画风）；模板不重算打分。；前提：同一细胞集与同源 UMAP 坐标；各特征得分尺度与截取上限说明。；适配：导出 render-umap-feature-long.csv（cell_id, umap_1, umap_2, group, feature, value）。
     - 关系证据：methods/gene-set-scoring.md#输出；templates/scrna-feature-umap-grid/spec.json；运行证据：无
-  - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：PROGENy 等通路活性或功能模块基因集跨亚群 Z-score 均值可切换为 variant 分块矩阵热图；模板不重算打分。；前提：Z-score 按亚群聚合后跨群标准化；不同打分算法的分数不可直接混在同一标尺。；适配：导出 pathway_zscore_heatmap.csv（cluster, feature, block, zscore, 可选 is_deg）。
     - 关系证据：methods/gene-set-scoring.md#输出；templates/pathway-zscore-heatmap/spec.json；运行证据：无
-  - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：各亚群 Top 代谢通路富集/打分强度与倍数变化可切换为 variant 棒棒糖点图；模板不重算打分。；前提：统一背景与归一化口径；相同通路跨亚群横向比较须保持同一评分标准。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
     - 关系证据：methods/gene-set-scoring.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
 <!-- facts:end -->

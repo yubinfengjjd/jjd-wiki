@@ -2,7 +2,7 @@
 type: template
 id: cellchat-signaling-ring
 title: 通路定向细胞通讯弦图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-cell-communication
@@ -22,6 +22,8 @@ keywords:
 favorite: false
 ---
 # 通路定向细胞通讯弦图
+
+![[templates/cellchat-signaling-ring/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]
@@ -62,11 +64,11 @@ favorite: false
 
 ### edges（ring_edges.csv）：有向细胞间通讯边列表（from、to、weight） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| from | str | 必需 | 发送者细胞亚群（对应 nodes.node） |
-| to | str | 必需 | 接收者细胞亚群（对应 nodes.node） |
-| weight | float | 必需 | 通路通讯概率或汇总强度 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| from | str | 发送者细胞亚群（对应 nodes.node） |
+| to | str | 接收者细胞亚群（对应 nodes.node） |
+| weight | float | 通路通讯概率或汇总强度 |
 
 ### 可覆盖的 style
 

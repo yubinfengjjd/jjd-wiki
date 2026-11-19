@@ -2,7 +2,7 @@
 type: template
 id: stromal-hull-umap
 title: 基质亚群功能包络UMAP
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-type-annotation
@@ -22,6 +22,8 @@ keywords:
 favorite: false
 ---
 # 基质亚群功能包络UMAP
+
+![[templates/stromal-hull-umap/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-type-annotation|细胞类型注释]]

@@ -2,7 +2,7 @@
 type: template
 id: pathway-zscore-heatmap
 title: 功能基因与通路Zscore热图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-enrichment
@@ -20,6 +20,8 @@ style_tier: default
 journal_style: Cai2026-npjPO
 ---
 # 功能基因与通路Zscore热图
+
+![[templates/pathway-zscore-heatmap/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
@@ -52,7 +54,23 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`zscore_matrix.csv` 的首列为唯一行标识，其余为数值矩阵。首列为 `canonical_subcluster` 时默认转置，使亚群位于横轴。可在样式中用 `column_groups` 提供横轴列名到分组标签的完整映射，组序按映射中的首次出现排列。默认采用功能基因配色，`palette: "progeny"` 可选 PROGENy 配色。
+### matrix（zscore_matrix.csv）：首列为标识列（feature 或 canonical_subcluster），其余数值列为Z-score表达或PROGENy通路活性矩阵 （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| feature | str | 可选 | 行名标识（若首列为 canonical_subcluster 则自动转置以匹配横轴亚群） |
+
+### 可覆盖的 style
+
+- `z_cap`：`2.0`
+- `palette`：`"functional"`
+- `column_groups`：`{}`
+- `cluster_rows`：`true`
+- `cluster_cols`：`true`
+- `transpose_subcluster_cols`：`true`
+- `dpi`：`300`
+- `width_in`：`6.4`
+- `height_in`：`5.2`
 
 ## 使用记录
 

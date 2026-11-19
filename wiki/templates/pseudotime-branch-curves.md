@@ -2,7 +2,7 @@
 type: template
 id: pseudotime-branch-curves
 title: 拟时序多分支基因曲线网格
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/trajectory-inference
@@ -19,6 +19,8 @@ style_tier: variant
 journal_style: Cai2026-npjPO
 ---
 # 拟时序多分支基因曲线网格
+
+![[templates/pseudotime-branch-curves/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/trajectory-inference|拟时序与轨迹推断]]
@@ -48,7 +50,21 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`pseudotime_branch_genes.csv` 每行是一个基因 × 分支 × 拟时序位置的拟合值，含 `gene`、`branch`、归一化 `pseudotime_norm`、已有平滑值 `smoothed_expr`。各基因有独立纵轴尺度。
+### curves（pseudotime_branch_genes.csv）：拟时序多分支平滑表达表（gene、pseudotime_norm、smoothed_expr、branch） （模板内联表结构）
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| gene | str | 基因名（分面） |
+| pseudotime_norm | float | 归一化拟时间 |
+| smoothed_expr | float | 平滑表达量 |
+| branch | str | 分支/谱系名称 |
+
+### 可覆盖的 style
+
+- `ncol`：`2`
+- `dpi`：`300`
+- `width_in`：`5.6`
+- `height_in`：`6.4`
 
 ## 使用记录
 

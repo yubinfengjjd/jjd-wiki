@@ -2,7 +2,7 @@
 type: template
 id: roe-cox-heatmap
 title: 多因素Cox与Ro/e热图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition
@@ -20,6 +20,8 @@ style_tier: default
 journal_style: Cai2026-npjPO
 ---
 # 多因素Cox与Ro/e热图
+
+![[templates/roe-cox-heatmap/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]
@@ -52,7 +54,21 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`roe_cox_input.csv` 每行一个唯一 `canonical_subcluster`，至少各有一列 `roe_subtype_*` 和 `roe_tissue_*` 非负数值。提供可用队列的 `tcga_HR` 或 `inhouse_HR` 及可选同队列 `*_p_value`（0–1）。HR 缺失保留未检验色，Ro/e 标签显示一位小数，色阶上限可调。
+### roe_cox（roe_cox_input.csv）：细胞亚群多因素Cox风险结果（tcga_HR/tcga_p_value、inhouse_HR/inhouse_p_value）与roe_subtype_*、roe_tissue_*宽表 （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| canonical_subcluster | str | 必需 | 规范亚群名称（横轴） |
+| tcga_HR | float | 可选 | TCGA队列多因素Cox HR（>1危险因素，<=1保护因素） |
+| inhouse_HR | float | 可选 | 内部队列多因素Cox HR |
+
+### 可覆盖的 style
+
+- `roe_cap`：`2.2`
+- `text_size`：`2.7`
+- `dpi`：`300`
+- `width_in`：`8.2`
+- `height_in`：`5.4`
 
 ## 使用记录
 

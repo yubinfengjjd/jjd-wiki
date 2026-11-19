@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-19T14:52:40.688005+00:00",
+  "page": "templates/lr-bubble-matrix.md",
+  "snapshot": "99a38e3a84395e50bcc321232a6361d6ac8d4362348f89570853a03889fe9841",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

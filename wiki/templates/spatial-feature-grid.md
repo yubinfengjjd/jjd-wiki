@@ -2,7 +2,7 @@
 type: template
 id: spatial-feature-grid
 title: 空间转录组特征分布网格
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment
@@ -20,6 +20,8 @@ style_tier: default
 journal_style: Cai2026-npjPO
 ---
 # 空间转录组特征分布网格
+
+![[templates/spatial-feature-grid/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]
@@ -49,7 +51,26 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`spatial_spots_long.csv` 每行是一个 spot × 特征观测，含同一切片坐标系的数值列 `x`、`y`、特征名 `feature` 和连续值 `value`。可选 `sample` 用于记录切片，当前渲染按特征分图，多切片须先分开调用。各特征独立着色，色深仅供同一特征内比较。
+### spots（spatial_spots_long.csv）：空间转录组 Spot 坐标与特征/基因强度长表（x、y、feature、value、可选 sample） （模板内联表结构）
+
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| x | float | 必需 | 组织切片 Spot 横坐标（如 imagecol） |
+| y | float | 必需 | 组织切片 Spot 纵坐标（如 imagerow，渲染时按显微图像习惯倒置或正置） |
+| feature | str | 必需 | 展示的细胞类型分数、签名密度或基因名 |
+| value | float | 必需 | 对应 Spot 的表达值或反卷积/签名强度 |
+| sample | str | 可选 | 可选样本切片标识（多切片分面时使用） |
+
+### 可覆盖的 style
+
+- `ncol`：`4`
+- `point_size`：`0.9`
+- `point_alpha`：`0.95`
+- `palette`：`"spectral"`
+- `invert_y`：`true`
+- `dpi`：`300`
+- `width_in`：`9.6`
+- `height_in`：`3.0`
 
 ## 使用记录
 

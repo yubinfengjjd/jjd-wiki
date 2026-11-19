@@ -2,7 +2,7 @@
 type: template
 id: checkpoint-group-boxplot
 title: 检查点分组表达箱线图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/immune-infiltration-tme
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # 检查点分组表达箱线图
+
+![[templates/checkpoint-group-boxplot/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]

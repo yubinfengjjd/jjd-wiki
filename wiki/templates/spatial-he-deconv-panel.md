@@ -2,7 +2,7 @@
 type: template
 id: spatial-he-deconv-panel
 title: 配准组织图与反卷积对照
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment
@@ -24,6 +24,8 @@ keywords:
 favorite: false
 ---
 # 配准组织图与反卷积对照
+
+![[templates/spatial-he-deconv-panel/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]

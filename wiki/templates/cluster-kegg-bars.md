@@ -2,7 +2,7 @@
 type: template
 id: cluster-kegg-bars
 title: 亚群富集条形图与命中数
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-enrichment
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # 亚群富集条形图与命中数
+
+![[templates/cluster-kegg-bars/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
@@ -54,12 +56,12 @@ favorite: false
 
 ### kegg（kegg_cluster_bars.csv）：多亚群 KEGG 富集条形图输入表（cluster、pathway、p_adjust、count） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| cluster | str | 必需 | 细胞亚群或对比分组名称 |
-| pathway | str | 必需 | 富集通路名称（Description） |
-| p_adjust | float | 必需 | 多重检验校正后 p 值（如 BH p.adjust） |
-| count | int | 必需 | 通路命中基因数（打印于条柱末端） |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| cluster | str | 细胞亚群或对比分组名称 |
+| pathway | str | 富集通路名称（Description） |
+| p_adjust | float | 多重检验校正后 p 值（如 BH p.adjust） |
+| count | int | 通路命中基因数（打印于条柱末端） |
 
 ### 可覆盖的 style
 

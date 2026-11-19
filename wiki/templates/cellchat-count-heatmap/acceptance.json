@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-19T14:52:40.655944+00:00",
+  "page": "templates/cellchat-count-heatmap.md",
+  "snapshot": "0576a9bd23afe3ed4c237d5a42740b4f139a7c3770a2a3f8f6b8c0e47fe0e2fa",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

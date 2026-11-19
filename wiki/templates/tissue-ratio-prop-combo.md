@@ -2,7 +2,7 @@
 type: template
 id: tissue-ratio-prop-combo
 title: 组织构成与样本比例组合图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition
@@ -24,6 +24,8 @@ keywords:
 favorite: false
 ---
 # 组织构成与样本比例组合图
+
+![[templates/tissue-ratio-prop-combo/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]

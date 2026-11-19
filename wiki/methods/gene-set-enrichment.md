@@ -142,16 +142,16 @@ data_domains:
   - **方向 2：PPI 互作网络与 Hub 候选基因挖掘**（触发条件：需要围绕富集通路核心基因构建蛋白互作模块并筛选关键枢纽基因时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-53ppimodule、recipes/figureya-147plus-string；可视化模版：templates/scp-flow-chord）
 
 - 方法配图关系（语义审查）：
-  - [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：多亚群 KEGG/GO 通路富集结果可整理为气泡矩阵（default 主推跨亚群对比画风）；模板不执行富集检验。；前提：所有亚群须采用一致的背景基因集、显著性阈值与多重检验校正规则。；适配：导出 kegg_cluster_bubble.csv（pathway, cluster, count, logp）。
     - 关系证据：methods/gene-set-enrichment.md#输出；templates/kegg-cluster-bubble/spec.json；运行证据：无
-  - [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：各细胞亚群各自 Top N 显著 KEGG 通路及命中基因数可切换为 variant 分面深酒红横向条形图，保留亚群独立排序。；前提：每个亚群内按 p_adjust 升序排序；count 为非负整数命中基因数。；适配：导出 kegg_cluster_bars.csv（cluster, pathway, p_adjust, count）。
     - 关系证据：methods/gene-set-enrichment.md#输出；templates/cluster-kegg-bars/spec.json；运行证据：无
   - [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：WGCNA 或共表达模块富集条形图可切换为 variant 模块配色条形图；模板不执行富集检验。；前提：明确模块归属与统一校正口径（FDR / p.adjust）。；适配：导出模块富集 CSV（module, term, count, p_adjust）。
     - 关系证据：methods/gene-set-enrichment.md#输出；templates/coexpr-module-enrich-bars/spec.json；运行证据：无
-  - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：代谢通路富集结果（Fold enrichment + -log10(P) + 亚群彩点）可切换为 variant 棒棒糖点图展示；模板不执行富集检验。；前提：GeneRatio 与 BgRatio 比值计算透明一致，不混用原始 P 与校正 P。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
     - 关系证据：methods/gene-set-enrichment.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
 <!-- facts:end -->

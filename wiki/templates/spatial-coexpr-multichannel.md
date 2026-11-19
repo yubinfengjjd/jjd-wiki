@@ -2,7 +2,7 @@
 type: template
 id: spatial-coexpr-multichannel
 title: 多通道空间表达与重点区域
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # 多通道空间表达与重点区域
+
+![[templates/spatial-coexpr-multichannel/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]

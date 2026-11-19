@@ -2,7 +2,7 @@
 type: template
 id: metabolism-lollipop-dotplot
 title: 多亚群代谢通路棒棒糖图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-enrichment
@@ -20,6 +20,8 @@ style_tier: variant
 journal_style: Cai2026-npjPO
 ---
 # 多亚群代谢通路棒棒糖图
+
+![[templates/metabolism-lollipop-dotplot/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
@@ -52,7 +54,21 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`metabolism_lollipop.csv` 每行一个 `pathway` × `cluster` 组合，含 `neg_log10_p`（同一来源 P 值的 −log10）和非负 `score`（如统一定义的富集倍数）。颜色表示亚群。
+### metab（metabolism_lollipop.csv）：多亚群代谢通路棒棒糖表（pathway、cluster、neg_log10_p、score） （模板内联表结构）
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| pathway | str | 代谢通路名称 |
+| cluster | str | 细胞亚群名 |
+| neg_log10_p | float | -log10(P-value) 或 logp |
+| score | float | 点大小数值（如 FoldEnrichment / logFC） |
+
+### 可覆盖的 style
+
+- `top_n`：`18`
+- `dpi`：`300`
+- `width_in`：`8.4`
+- `height_in`：`5.8`
 
 ## 使用记录
 

@@ -2,7 +2,7 @@
 type: template
 id: cellchat-count-heatmap
 title: 细胞通讯计数柱状热图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-cell-communication
@@ -19,6 +19,8 @@ style_tier: variant
 journal_style: Cai2026-npjPO
 ---
 # 细胞通讯计数柱状热图
+
+![[templates/cellchat-count-heatmap/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]
@@ -48,7 +50,19 @@ journal_style: Cai2026-npjPO
 
 ## 数据要求
 
-`interaction_counts.csv` 每行一个唯一的有向 `SOURCE` × `TARGET` 组合。`count` 为同一阈值下筛出的非负显著互作对数，已确认的零以 0 表示。边际柱为已提供计数的合计，轴以千计。
+### counts（interaction_counts.csv）：细胞间配受体互作计数表（SOURCE、TARGET、count） （模板内联表结构）
+
+| 列 | 类型 | 含义 |
+|---|---|---|
+| SOURCE | str | 发送细胞类型/亚群 |
+| TARGET | str | 接收细胞类型/亚群 |
+| count | float | 显著配受体互作总数 |
+
+### 可覆盖的 style
+
+- `dpi`：`300`
+- `width_in`：`9.2`
+- `height_in`：`6.4`
 
 ## 使用记录
 

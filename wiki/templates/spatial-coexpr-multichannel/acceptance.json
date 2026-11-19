@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-19T14:52:40.438080+00:00",
+  "page": "templates/spatial-coexpr-multichannel.md",
+  "snapshot": "cf55272684158d55ddf5fb066dc4279417c6a75abb8cbcba0b4d9d84f3be1b70",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

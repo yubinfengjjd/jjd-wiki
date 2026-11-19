@@ -2,7 +2,7 @@
 type: template
 id: clustered-corr-boxes
 title: 带聚类框与引线的相关矩阵
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/immune-infiltration-tme
@@ -23,6 +23,8 @@ keywords:
 favorite: false
 ---
 # 带聚类框与引线的相关矩阵
+
+![[templates/clustered-corr-boxes/preview.png]]
 
 <!-- facts:start -->
 - 来源：[[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]

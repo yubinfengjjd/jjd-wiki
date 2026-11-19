@@ -132,13 +132,13 @@ next_steps:
   - **方向 3：回溯单细胞水平解析细胞间通讯与组成重塑**（触发条件：在单细胞转录组数据中进一步定位 Bulk 推断出的关键免疫细胞亚群及其配受体通讯轴时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication、methods/cell-proportion-composition；可视化模版：templates/cellchat-circos-multi）
 
 - 方法配图关系（语义审查）：
-  - [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：Bulk 队列免疫/基质反卷积丰度与细胞亚群特征间的对称层次聚类相关矩阵及对角黑框可作为 default 主推共现相关矩阵。；前提：相关系数矩阵须来自同一标准化队列，对称且主对角线为 1；样本量须满足相关检验。；适配：导出 corr_matrix.csv（首列 feature + N 列对称相关系数，或 tidy 格式 row, col, r）。
     - 关系证据：methods/immune-infiltration-tme.md#输出；templates/clustered-corr-boxes/spec.json；运行证据：无
-  - [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：按高/低免疫基质评分或关键标志物四分位分组的多免疫检查点表达分布及 Wilcoxon 检验可切换为 variant 分组箱线图。；前提：分组定义与检验方法（Wilcoxon）在上游明确；展示截断分位数须在图注说明。；适配：导出 checkpoint_expr.csv（sample_id, gene, group, expression, 可选 pval）。
     - 关系证据：methods/immune-infiltration-tme.md#输出；templates/checkpoint-group-boxplot/spec.json；运行证据：无
-  - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：明确展示的配体-受体对来源与检出率计算分母（tested pairs）。；适配：导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
     - 关系证据：methods/immune-infiltration-tme.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
 <!-- facts:end -->

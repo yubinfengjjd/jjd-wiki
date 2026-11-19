@@ -249,7 +249,7 @@ render_bridges:
   - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：按样本/条件统计预测类型比例，检查注释组成；模板不做统计检验。；前提：每个 group 的比例归一化到 1；group 为样本/条件，celltype 为预测标签。；比例是描述性；组间差异不能由该图直接推断。；适配：导出 render-cell-proportions.csv（group, celltype, proportion）。
     - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/cell-prop-flow-bar/spec.json；templates/cell-prop-flow-bar/verify/verify.json；运行证据：无
-  - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：注释后的精细细胞亚群与高阶功能群（如 mFib/lpFib/iFib）可切换为 variant 红色虚线包络 + 编号质心 UMAP 画风；模板不执行注释。；前提：umap_1/umap_2 与 subcluster 标签来自同一已注释对象；cell_id 唯一。；适配：导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, functional_group）。
     - 关系证据：methods/cell-type-annotation.md#输出；templates/stromal-hull-umap/spec.json；运行证据：无
 <!-- facts:end -->
