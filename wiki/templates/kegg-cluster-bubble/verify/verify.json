@@ -1,1 +1,21 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-19T10:31:41.430489+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T14:52:10.777729+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/kegg-cluster-bubble/spec.json": "615d9e76441966808aad5d258407721bbfffc704cd91315687cbf31413668e6f",
+    "templates/kegg-cluster-bubble/code/render.R": "383d7a511f479a2ef8f5540fea9881a97491e7b58e228874e76816bbdcbbbf50",
+    "inline/kegg#columns": "01e0276d23ed08c8eed5c0a8c80d785331e4b22341c662af85543e3387764696",
+    "templates/kegg-cluster-bubble/example/kegg_cluster_bubble.csv": "d3ab2409bc7a32abed792c963ec01d47474dbe12c21863306f0ca173fc3463af"
+  },
+  "outputs": {
+    "png": "52a4cbceeff9fa80959df6b64831d5a683984458928aff544dc83d4009cba870",
+    "pdf": "074f5dec845a35eabcb237a7f6a1e6680d0be58d3fa8bc4a12f077b12d461bb7",
+    "svg": "6721d61f7e24c6461dff20708a97fca9147bf5f4d523ddfb59bb349db5736664"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
