@@ -1599,3 +1599,5 @@
 ## [2026-11-19 14:51 UTC] verify cellchat-count-heatmap
 
 ## [2026-11-19 14:51 UTC] verify lr-bubble-matrix
+
+## [2026-11-19 14:51 UTC] verify lr-bipartite-bubble

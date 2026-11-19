@@ -1,1 +1,21 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-19T10:31:34.457681+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T14:51:29.217341+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/lr-bipartite-bubble/spec.json": "05d90c9fa05ed1467be497a5f6ab194f83af6dc423061becde126c2e5f935fcb",
+    "templates/lr-bipartite-bubble/code/render.R": "17fd01140b7c0b8a684bf64dfe49cddf7a5a2d90912e8b5363237f1afd050cb4",
+    "inline/pairs#columns": "5c786ac92a10b003dbc0243e9d8e45f861b33f246320dcceaa15fc5255fb55b9",
+    "templates/lr-bipartite-bubble/example/lr_bipartite_pairs.csv": "32495c4713a8fc0f8e5c11432bf7269f23c0caa4051e7f64688fb16aae6689d8"
+  },
+  "outputs": {
+    "png": "290070f32da79b5aa9f71e172b7c793244d2e3987931ea9437c0ded425423f26",
+    "pdf": "e60070f2ad41f22313914c0e57f747a6a14f34b72128505ca9ca3187aa858d1f",
+    "svg": "62a59608efbc0f81c39243b47975ffcda7448c672a072c87166c5d3914a2f8cf"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
