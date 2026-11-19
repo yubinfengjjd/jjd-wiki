@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T06:22:14.777030+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/spatial-feature-grid/spec.json": "8290add881bdee4978ffbde38cf7a59074f90173d5f96e7d58a8ff60ece58f3d",
+    "templates/spatial-feature-grid/code/render.R": "dc0d3de0f69390a7701c104cb6d769c23621bd3d49cb1769ddff8ebbb7ba0a1e",
+    "inline/spots#columns": "aea1ac9e12233751d552a1c0d3a2cbb7475a7383eabed5de334e52e2e12b34d6",
+    "templates/spatial-feature-grid/example/spatial_spots_long.csv": "18e521198e7d2867d0cc0ccc063d5a68dd4b60ae8366279acb9b3bccec076620"
+  },
+  "outputs": {
+    "png": "765e59d0a10297d650a4fcadf8d18870f68d2462e508aef749891665c3408fe8",
+    "pdf": "d53a73db990906992dc6dea368346b043fe27d47026e448b66056bfe158f828d",
+    "svg": "cc4098dfaae3972b5b5d77a50001e6d17b3b740c1a4dad136cc1c17c68d07f02"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
