@@ -1557,3 +1557,5 @@
 ## [2026-11-19 12:30 UTC] verify diffusion-trajectory-overlay
 
 ## [2026-11-19 12:30 UTC] verify spatial-coexpr-multichannel
+
+## [2026-11-19 12:31 UTC] verify spatial-he-deconv-panel

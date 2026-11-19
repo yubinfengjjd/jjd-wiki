@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:30:53.306877+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/spatial-he-deconv-panel/spec.json": "fea47c778ec1fd91ce51ce937021034e867fe85b43cb41f997d62c3972b91d6e",
+    "templates/spatial-he-deconv-panel/code/render.R": "85351c2d53f2d2ed2d3198f8c948f2ac2597721102ca3831504b63bf1066fa64",
+    "inline/spots#columns": "b79aabafd5d47cac27956de98634d995c09d207d5ca5ef7f6ca019d3df7b6074",
+    "templates/spatial-he-deconv-panel/example/he_image.png": "93f17bf8796563e85d9d09859fe66c1278e6686ac41c2129fcc9bcb4123ce948",
+    "templates/spatial-he-deconv-panel/example/spatial_deconv_spots.csv": "57d41f045298f337860252f241e3deda0f9e77b6c2f91c09912abd60de889995"
+  },
+  "outputs": {
+    "png": "eb7484fb59e4c1761dbf8ad15fb6fc6e2f80042d7ef0a833a3b5a699b8f7b4cc",
+    "pdf": "6c63cfd8b82b768c32ba7666a2f1a23f97827d404276a899e174d778ead92ee5",
+    "svg": "b9bc966287d288dec22c50aaa2766caa5761ffbf35b734f098f4794cc7dd10d0"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
