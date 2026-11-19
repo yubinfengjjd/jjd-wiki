@@ -180,6 +180,7 @@
 ### draft
 
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
+- [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]
 - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
 - [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]
