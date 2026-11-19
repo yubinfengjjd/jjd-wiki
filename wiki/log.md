@@ -1585,3 +1585,5 @@
 ## [2026-11-19 13:10 UTC] acceptance check methods/spatial-transcriptomics-microenvironment
 
 ## [2026-11-19 13:11 UTC] acceptance check methods/survival-prognosis-analysis
+
+## [2026-11-19 13:11 UTC] acceptance check methods/trajectory-inference
