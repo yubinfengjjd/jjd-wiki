@@ -72,7 +72,7 @@ data_contract:
 
 ## 不适用
 
-- 小规模复现基于官方MOESM1-8附加表、Zenodo-19562239单张真实Visium切片(2241spots×17922genes含H
+- 小规模复现基于官方MOESM1-8附加表、Zenodo 19562239单张真实Visium切片(2241 spots x 17922 genes含H&E)及36亚群1800细胞抽样scRNA；12张计算图(Main 1-6剔除湿实验3F-H + Supp 1-6)经Orca/Codex串行1:1视觉复刻并通过6维终审；monocle3/CellChat/scMetabolism未装分支已如实记录。
 
 ## 输入
 
@@ -105,7 +105,7 @@ data_contract:
 
 ## 知识关联检查
 
-workflow 页仅记录跨方法串联流程，不声明 `figure_relations` 主记录；已挂载衍生方法：[[methods/batch-integration]]、[[methods/differential-expression]]、[[methods/gene-set-scoring]]、[[methods/gene-set-enrichment]]、[[methods/cell-proportion-composition]]、[[methods/survival-prognosis-analysis]]、[[methods/trajectory-inference]]、[[methods/spatial-transcriptomics-microenvironment]]、[[methods/cell-cell-communication]]、[[methods/immune-infiltration-tme]]；衍生模板：[[templates/spatial-feature-grid]]、[[templates/roe-cox-heatmap]]、[[templates/pathway-zscore-heatmap]]、[[templates/cellchat-count-heatmap]]、[[templates/lr-bubble-matrix]]、[[templates/lr-bipartite-bubble]]、[[templates/metabolism-lollipop-dotplot]]、[[templates/pseudotime-branch-curves]]、[[templates/kegg-cluster-bubble]]。
+查重说明：10项通用分析方法均复用规范家族，仅新增本篇专属workflow总览页及9个通过check-dup查重的原生单面板模板。 workflow 页仅记录跨方法串联流程，不声明 `figure_relations` 主记录；已挂载衍生方法：[[methods/batch-integration]]、[[methods/differential-expression]]、[[methods/gene-set-scoring]]、[[methods/gene-set-enrichment]]、[[methods/cell-proportion-composition]]、[[methods/survival-prognosis-analysis]]、[[methods/trajectory-inference]]、[[methods/spatial-transcriptomics-microenvironment]]、[[methods/cell-cell-communication]]、[[methods/immune-infiltration-tme]]；衍生模板：[[templates/spatial-feature-grid]]、[[templates/roe-cox-heatmap]]、[[templates/pathway-zscore-heatmap]]、[[templates/cellchat-count-heatmap]]、[[templates/lr-bubble-matrix]]、[[templates/lr-bipartite-bubble]]、[[templates/metabolism-lollipop-dotplot]]、[[templates/pseudotime-branch-curves]]、[[templates/kegg-cluster-bubble]]。
 
 ## 使用记录
 
