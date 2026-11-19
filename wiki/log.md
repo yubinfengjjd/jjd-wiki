@@ -1573,3 +1573,5 @@
 ## [2026-11-19 13:08 UTC] acceptance check methods/cell-proportion-composition
 
 ## [2026-11-19 13:08 UTC] acceptance check methods/cell-type-annotation
+
+## [2026-11-19 13:09 UTC] acceptance check methods/differential-expression
