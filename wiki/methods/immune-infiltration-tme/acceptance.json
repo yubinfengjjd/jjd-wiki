@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T16:27:41.433290+00:00",
+  "checked_at": "2026-11-19T16:42:49.206042+00:00",
   "page": "methods/immune-infiltration-tme.md",
-  "snapshot": "1c96056bb60a7bf0424666e391279d771c7a908a4b6f9b0fdd75ccaf4712d9c3",
+  "snapshot": "07339c6500a4c49d0e74a43a2973bfd80fe901f4326ef7e32dfcbba51629b02e",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
