@@ -112,6 +112,38 @@
 - 作者 2026-11-02 修订：知识默认入 Git，取消按 GPL/CC 许可排除源码的旧规则；save 移除旧 `push-guard gpl` 托管块。仅敏感内容与非知识运行产物（环境、缓存、浏览器会话、重复备份）排除；大文件按内容核查后用 Git LFS 或精确 size 豁免保存，不能只留页面而漏掉代码。`restore` 仍可修复缺失或损坏的来源原字节。
 - 不要在主检出检出 `legacy/master`：它跟踪过画廊与维护记录，切过去再切回会把这些文件从磁盘删除，远端没有副本。看旧历史用 `git log legacy/master` 或另建 worktree。
 
+## 文献复刻源码目录与双份归档（2026-11-19）
+
+文献纯生信复刻严禁在桌面、仓库根目录或 `tmp/` 散落脚本；必须同时保持**本机完整工程目录**与**Wiki 受控代码存档**两份清晰对齐，且在 Wiki Markdown 中用逻辑占位符 `<sources_root>`（不写本机绝对路径）：
+
+```text
+<sources_root>/papers/<paper_id>/         # 本机复刻工程全集（非 Git）
+├── paper.json                            # 元数据、DOI/PMID、步骤↔附件↔图映射状态机
+├── plan.md                               # 复刻计划：湿实验剔除、小规模降维、查重与全图目标
+├── intake/                               # 只读入口资料：post.html/txt、paper.pdf、supp/*、manifest.json
+├── extracted/                            # 解析产物：full_text.md、methods_computational.md、excluded_wet_lab.md、
+│                                         #   supp_index.md、supp_full_text.md、step_supp_map.json、captions.json、pages/
+├── upstream_repo/<repo_name>/            # 作者开源仓库稀疏浅克隆（含 LICENSE 与 commit）
+├── src/                                  # ★ 本机复现源码固定位置（按编号分模块）
+│   ├── README.md                         #   运行顺序与和 upstream_repo 差异说明
+│   ├── runtime.json                      #   本机运行依赖清单
+│   ├── 00_sample_data.R / .py            #   小规模抽样/子集构建脚本（固定 seed=42）
+│   ├── 01_<step_slug>.R / .py …          #   分步计算脚本（严禁无编号散落调试脚本）
+│   └── figures/                          #   单面板复刻（figXX_panelY.*）与整图拼图（compose_figXX.*）
+├── data_small/                           # 抽样后的小规模输入子集（禁存 GB 级原始大库）
+├── runs/                                 # 分步运行日志、中间 RDS/CSV 与实测收据
+└── review/                               # 主协调者自审：side_by_side.png、参数核查表、QA 报告
+```
+
+- **Wiki 正式存档（入 Git，受 5 MB 门禁约束）**：`rwiki paper publish` 在 `wiki/methods/<workflow-id>.md`（`method_kind: workflow`）下固定保存两套可读源码：`methods/<workflow-id>/source/`（作者原版核心脚本快照 + `source-manifest.json` 记仓库 URL、commit、SPDX 许可与 sha256）与 `methods/<workflow-id>/code/`（同步自 `<paper_id>/src/` 的分步复刻源码 + `runtime.json`），`verification/` 存小规模验证收据。共用算法补分支到既有规范 `methods/<canonical-id>/`；可复用单面板图模板入 `templates/<short-slug>/`；整图拼图对比归入 `gallery/`。
+- **附加材料与全图覆盖**：`fetch --supp` 统一纳管 Supplementary PDF/DOCX/XLSX/CSV，`parse` 生成 `step_supp_map.json` 捋顺「正文步骤 ↔ 附加材料 ↔ 开源脚本 ↔ 图面板」对照；`plan` 默认包含全部可复刻 Main Figures 与生信 Supplementary Figures，仅剔除动物/细胞/WB/镜检类湿实验面板。
+
+## 历史临时产物与过期脚本清理规定（2026-11-19）
+
+- **禁止散落临时脚本**：临时探针脚本（如 `chk.R`、`a.py`、`audit_*.py`）、`Rplots.pdf`、浏览器测试 profile（`t06-ui-*`）与 `.pytest_cache` 严禁留在仓库根目录或持久目录；临时运行统一使用系统临时区，任务结束前清理。
+- **长期测试与一次性方案分离**：自动化测试（`tests/`）随源码入 Git 维护；已完成的一次性迁移脚本与过期方案文档（如历史版本迁移文档）应移入 `docs/archive/` 或按历史保留后从活跃目录撤出，不与现行设计文档混放。
+- **统一安全清理（`rwiki clean`）**：`rwiki clean` 默认只读预览（`--dry-run`），`--apply` 仅清理 `env/tmp/*`、`t06-ui-*`、已退役探索探针与失效符号链接/接点；`R-lib*`、`bio-python`、`pip-cache`、`sources/`、`projects/`、`papers/`、`worktrees/` 与 `work/rwiki/{runs,search,studio_*}` 列入硬白名单永不自动删除。每次功能开发或文献复刻收口前须运行核对。
+
 ## 体检
 
 `lint` 只查结构：frontmatter、断链、状态、收据结构、必需节是否空白、`index.md` 与 `catalog.jsonl` 是否过期。lint 通过不代表语义正确，跨来源同义与科学适用性由 agent 审查；逐条修复后 `save`。处理待办用 `pending --json`，确认前用 `check-entry <id>` 查缺项。
