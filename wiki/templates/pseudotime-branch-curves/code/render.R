@@ -46,8 +46,10 @@ df <- raw %>%
   dplyr::filter(!is.na(gene), !is.na(branch), !is.na(pseudotime_norm), !is.na(smoothed_expr))
 
 br_levels <- unique(df$branch)
-pal <- c("#1B9E77", "#66A61E", "#7570B3", "#E7298A", "#D95F02")[seq_len(min(5, length(br_levels)))]
-if (length(br_levels) > 5) pal <- grDevices::hcl.colors(length(br_levels), palette = "Dark 3")
+pal <- c("#529E73", "#66A61E", "#7570B3", "#E7298A", "#D95F02")[seq_len(min(5, length(br_levels)))]
+if (length(br_levels) > 5) {
+  pal <- c("#529E73", grDevices::hcl.colors(length(br_levels) - 1, palette = "Dark 3"))
+}
 names(pal) <- br_levels
 
 ncol_val <- if (is.null(style$ncol)) 2L else as.integer(style$ncol)
@@ -60,6 +62,8 @@ p <- ggplot(df, aes(x = pseudotime_norm, y = smoothed_expr, color = branch)) +
   labs(x = "Pseudotime", y = NULL) +
   theme_classic(base_size = 9.2) +
   theme(
+    axis.line = element_blank(),
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 0.6),
     strip.background = element_blank(),
     strip.text = element_text(face = "bold", size = 9.5),
     legend.position = "bottom",

@@ -66,6 +66,11 @@ if ("inhouse_HR" %in% names(df)) {
     stringsAsFactors = FALSE
   )
 }
+if (!length(cox_rows)) {
+  cox_rows[[1]] <- data.frame(
+    subcluster = df$canonical_subcluster, cohort = "Cox", status = "Not tested", sig = ""
+  )
+}
 cox_df <- dplyr::bind_rows(cox_rows)
 cox_df$cohort <- factor(cox_df$cohort, levels = rev(unique(cox_df$cohort)))
 cox_df$status <- factor(cox_df$status, levels = c("Risk factor", "Protective factor", "Not tested"))
@@ -74,7 +79,7 @@ p_cox <- ggplot(cox_df, aes(x = subcluster, y = cohort, fill = status)) +
   geom_tile(color = "white", linewidth = 0.6) +
   geom_text(aes(label = sig), color = "white", size = 3.6, fontface = "bold", vjust = 0.72) +
   scale_fill_manual(
-    values = c("Risk factor" = "#C83E31", "Protective factor" = "#29699E", "Not tested" = "#E5E7EB"),
+    values = c("Risk factor" = "#B83020", "Protective factor" = "#4868A0", "Not tested" = "#E5E7EB"),
     drop = FALSE,
     name = NULL
   ) +
@@ -100,7 +105,7 @@ sub_df <- df %>%
     subtype = sub("^roe_subtype_", "", subtype),
     subtype = factor(subtype, levels = rev(unique(subtype))),
     roe_fill = pmin(as.numeric(roe), roe_cap),
-    lbl = sprintf("%.1f", as.numeric(roe))
+    lbl = ifelse(is.na(roe), "", sprintf("%.1f", as.numeric(roe)))
   )
 
 p_sub <- ggplot(sub_df, aes(x = canonical_subcluster, y = subtype, fill = roe_fill)) +
@@ -108,7 +113,7 @@ p_sub <- ggplot(sub_df, aes(x = canonical_subcluster, y = subtype, fill = roe_fi
   geom_text(aes(label = lbl, color = roe_fill > (roe_cap * 0.6)), size = txt_sz, show.legend = FALSE) +
   scale_color_manual(values = c("FALSE" = "#111111", "TRUE" = "white")) +
   scale_fill_gradientn(
-    colours = c("#FFF7EC", "#FDD49E", "#FC8D59", "#D7301F", "#7F0000"),
+    colours = c("#FDF6EC", "#B83020"),
     limits = c(0, roe_cap),
     name = "Ro/e (Subtype)"
   ) +
@@ -135,7 +140,7 @@ tis_df <- df %>%
     tissue = sub("^roe_tissue_", "", tissue),
     tissue = factor(tissue, levels = rev(unique(tissue))),
     roe_fill = pmin(as.numeric(roe), roe_cap),
-    lbl = sprintf("%.1f", as.numeric(roe))
+    lbl = ifelse(is.na(roe), "", sprintf("%.1f", as.numeric(roe)))
   )
 
 p_tis <- ggplot(tis_df, aes(x = canonical_subcluster, y = tissue, fill = roe_fill)) +
@@ -143,7 +148,7 @@ p_tis <- ggplot(tis_df, aes(x = canonical_subcluster, y = tissue, fill = roe_fil
   geom_text(aes(label = lbl, color = roe_fill > (roe_cap * 0.6)), size = txt_sz, show.legend = FALSE) +
   scale_color_manual(values = c("FALSE" = "#111111", "TRUE" = "white")) +
   scale_fill_gradientn(
-    colours = c("#FCFBFD", "#DADAEB", "#9E9AC8", "#6A51A3", "#3F007D"),
+    colours = c("#F9F7FC", "#5A3D94"),
     limits = c(0, roe_cap),
     name = "Ro/e (Tissue)"
   ) +

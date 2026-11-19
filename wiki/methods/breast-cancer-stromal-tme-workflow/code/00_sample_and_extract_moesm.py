@@ -6,10 +6,11 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 from pathlib import Path
 import openpyxl
 
-PAPER_DIR = Path(r"E:\research-wiki-env\sources\papers\2026-cai-stromal-tme")
+PAPER_DIR = Path(os.environ.get("PAPER_ROOT", "."))
 SUPP_DIR = PAPER_DIR / "intake" / "supp"
 OUT_DIR = PAPER_DIR / "data_small" / "moesm"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

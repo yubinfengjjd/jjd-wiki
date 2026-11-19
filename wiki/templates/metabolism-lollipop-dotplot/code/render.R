@@ -59,7 +59,7 @@ names(pal) <- cl_levels
 
 p <- ggplot() +
   geom_segment(data = bars_df, aes(x = 0, xend = max_p, y = pathway, yend = pathway),
-               color = "#DCDFE4", linewidth = 3.2) +
+               color = "#D9DCE0", linewidth = 3.2) +
   geom_point(data = df, aes(x = neg_log10_p, y = pathway, color = cluster, size = score), alpha = 0.92) +
   scale_color_manual(values = pal, name = "celltype") +
   scale_size_continuous(range = c(1.8, 5.2), name = "Enrichment / logFC") +

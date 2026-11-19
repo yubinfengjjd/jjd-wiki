@@ -25,7 +25,11 @@
 #   - metab_sfig2e_fib.csv
 #   - receipt.json
 
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
+r_libs <- strsplit(Sys.getenv("RWIKI_R_LIBS", ""), .Platform$path.sep)[[1]]
+r_libs <- r_libs[nzchar(r_libs)]
+if (length(r_libs)) {
+  .libPaths(unique(c(r_libs, .libPaths())))
+}
 suppressPackageStartupMessages({
   library(Seurat)
   library(qs)
@@ -40,7 +44,8 @@ suppressPackageStartupMessages({
 t0 <- proc.time()[["elapsed"]]
 set.seed(42)
 
-paper_dir <- "E:/research-wiki-env/sources/papers/2026-cai-stromal-tme"
+paper_root <- Sys.getenv("PAPER_ROOT", ".")
+paper_dir <- paper_root
 moesm_dir <- file.path(paper_dir, "data_small", "moesm")
 st_csv_path <- file.path(paper_dir, "data_small", "st", "caa_st_spots_scores.csv")
 st_qs_path  <- file.path(paper_dir, "data_small", "st", "caa_st_scored.qs")

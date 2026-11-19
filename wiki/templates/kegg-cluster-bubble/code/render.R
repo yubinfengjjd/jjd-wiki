@@ -52,11 +52,12 @@ df <- df %>% dplyr::mutate(
 
 p <- ggplot(df, aes(x = cluster, y = pathway)) +
   geom_point(aes(size = count, color = logp), alpha = 0.92) +
-  scale_color_gradientn(colours = c("#F48A72", "#C44E82", "#7C2D8C", "#4A1270"), name = "logp") +
+  scale_color_gradientn(colours = c("#F4A582", "#DF65B0", "#88419D", "#4D004B"), name = "logp") +
   scale_size_continuous(range = c(2.0, 5.8), name = "Count") +
   theme_bw(base_size = 8.5) +
   theme(
     axis.title = element_blank(),
+    panel.grid.minor = element_blank(),
     panel.grid.major = element_line(color = "#EAEAEA", linewidth = 0.3),
     axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 7.8, color = "#111111"),
     axis.text.y = element_text(size = 7.2, color = "#111111"),

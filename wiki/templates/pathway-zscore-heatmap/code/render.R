@@ -64,10 +64,27 @@ long_df <- as.data.frame(mat) %>%
     z_clamped = pmax(pmin(as.numeric(z), z_cap), -z_cap)
   )
 
+palette <- if (identical(style$palette, "progeny")) {
+  c("#2B3B8C", "#FFFFFF", "#B2182B")
+} else {
+  c("#2060A0", "#F8F4F2", "#A81828")
+}
+
+column_groups <- unlist(style$column_groups)
+if (length(column_groups)) {
+  if (anyDuplicated(names(column_groups)) || !setequal(names(column_groups), colnames(mat)) ||
+      anyNA(column_groups) || any(!nzchar(column_groups))) {
+    stop("style.column_groups must give one nonempty group for each plotted column.")
+  }
+  long_df$column_group <- factor(
+    unname(column_groups[as.character(long_df$col_id)]), levels = unique(column_groups)
+  )
+}
+
 p <- ggplot(long_df, aes(x = col_id, y = row_id, fill = z_clamped)) +
   geom_tile(color = "white", linewidth = 0.35) +
   scale_fill_gradientn(
-    colours = c("#264B96", "#6D94CE", "#F7F7F7", "#E67B67", "#B81D24"),
+    colours = palette,
     limits = c(-z_cap, z_cap),
     name = "Z-scale"
   ) +
@@ -83,6 +100,10 @@ p <- ggplot(long_df, aes(x = col_id, y = row_id, fill = z_clamped)) +
     legend.key.height = unit(0.4, "in"),
     plot.margin = margin(6, 6, 6, 6)
   )
+
+if (length(column_groups)) {
+  p <- p + facet_grid(cols = vars(column_group), scales = "free_x", space = "free_x")
+}
 
 w_in <- if (!is.null(style$width_in)) as.numeric(style$width_in) else max(4.8, min(14, ncol(mat) * 0.36 + 2.4))
 h_in <- if (!is.null(style$height_in)) as.numeric(style$height_in) else max(3.6, min(12, nrow(mat) * 0.28 + 2.0))

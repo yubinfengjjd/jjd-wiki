@@ -18,6 +18,8 @@
   },
   "style": {
     "z_cap": 2.0,
+    "palette": "functional",
+    "column_groups": {},
     "cluster_rows": true,
     "cluster_cols": true,
     "transpose_subcluster_cols": true,

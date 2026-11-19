@@ -9,7 +9,9 @@ sources:
 panels: []
 language: r
 primary_method: gene-set-enrichment
-tags: []
+tags:
+- single-cell
+- transcriptomics
 chart_types:
 - lollipop
 keywords: []
@@ -20,7 +22,7 @@ favorite: false
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
 - 语言：r
-- 标签：
+- 标签：single-cell、transcriptomics
 - 图型：[[chart-types/lollipop]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
@@ -31,7 +33,11 @@ favorite: false
 
 ## 适用
 
+按亚群比较代谢通路富集的显著性及效应量，横轨显示该通路最强的显著性位置。参考 Cai 等主图 4K、5K 和附图 2E 的版式。
+
 ## 不适用
+
+不要把 KEGG 富集代理解释为代谢通量或 scMetabolism 活性。不同检验或不同含义的点径值应分开绘制。
 
 ## 知识关联检查
 
@@ -39,7 +45,7 @@ favorite: false
 
 ## 数据要求
 
-待填写 spec.json。
+`metabolism_lollipop.csv` 每行一个 `pathway` × `cluster` 组合，含 `neg_log10_p`（同一来源 P 值的 −log10）和非负 `score`（如统一定义的富集倍数）。颜色表示亚群。
 
 ## 使用记录
 

@@ -9,7 +9,8 @@ sources:
 panels: []
 language: r
 primary_method: trajectory-inference
-tags: []
+tags:
+- single-cell
 chart_types:
 - trend
 keywords: []
@@ -20,7 +21,7 @@ favorite: false
 <!-- facts:start -->
 - 来源：[[methods/trajectory-inference|拟时序与轨迹推断]]
 - 语言：r
-- 标签：
+- 标签：single-cell
 - 图型：[[chart-types/trend]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
@@ -31,7 +32,11 @@ favorite: false
 
 ## 适用
 
+在已确定的细胞谱系内查看基因的平滑表达趋势，按基因分面。对应 Cai 等主图 5I 的 mural 细胞轨迹展示。
+
 ## 不适用
+
+原始计数、未拟合的观测和缺乏共同归一化尺度的分支须先处理。拟时序是模型推断的相对顺序，不能解释为实测时间或因果关系。
 
 ## 知识关联检查
 
@@ -39,7 +44,7 @@ favorite: false
 
 ## 数据要求
 
-待填写 spec.json。
+`pseudotime_branch_genes.csv` 每行是一个基因 × 分支 × 拟时序位置的拟合值，含 `gene`、`branch`、归一化 `pseudotime_norm`、已有平滑值 `smoothed_expr`。各基因有独立纵轴尺度。
 
 ## 使用记录
 

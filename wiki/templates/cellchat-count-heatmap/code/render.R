@@ -63,7 +63,7 @@ p_top <- ggplot(src_totals, aes(x = SOURCE, y = tot / 1000)) +
 p_heat <- ggplot(df, aes(x = SOURCE, y = TARGET, fill = count)) +
   geom_tile(color = "white", linewidth = 0.25) +
   scale_fill_gradientn(
-    colours = c("#F7F5EE", "#CFD7E8", "#7B8CC4", "#3E4C8A", "#9E3B33"),
+    colours = c("#7570B3", "#FFFFFF", "#D95F02"),
     name = "interactions"
   ) +
   theme_minimal(base_size = 8.5) +

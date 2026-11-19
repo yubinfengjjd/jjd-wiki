@@ -1,0 +1,156 @@
+{
+  "step": "step05_crosstalk",
+  "script": "src/05_crosstalk_metabolism.R",
+  "seed": 42,
+  "status": "completed",
+  "scMetabolism_status": "not_run (scMetabolism not installed)",
+  "aucell_status": "not_run (AUCell not installed)",
+  "scale_down_boundary": "MOESM6/7/8/9 tables use official full-cohort supplementary results (68,419 CellChat edges; 3,249 CellPhoneDB counts; 1,370 CellPhoneDB p-value rows; 41,750 EC & 27,769 Mural & 70 Fib enrichment rows; 57 bulk & 56 ST correlations). Fig 3C checkpoint expression quartiles use real CAA_ST Visium spots (n = 2,241) instead of TCGA-BRCA bulk RNA-seq. Metabolism outputs combine MOESM6 KEGG metabolic pathway enrichment with mean normalized expression in scrna_stromal_small.qs (n = 1,800 cells, 289 genes) because scMetabolism is not installed.",
+  "clinical_cohort_n": 40,
+  "fig3c_checkpoint_wilcox": [
+    {
+      "gene": "CD274",
+      "wilcox_p_quartile": 4.1452e-09,
+      "wilcox_p_median": 0,
+      "mean_high_q": 0.1303,
+      "mean_low_q": 0.1339
+    },
+    {
+      "gene": "CD276",
+      "wilcox_p_quartile": 0.0147,
+      "wilcox_p_median": 0.0003,
+      "mean_high_q": 0.6838,
+      "mean_low_q": 0.7332
+    },
+    {
+      "gene": "CTLA4",
+      "wilcox_p_quartile": 0.1656,
+      "wilcox_p_median": 0.0015,
+      "mean_high_q": 0.2567,
+      "mean_low_q": 0.1562
+    },
+    {
+      "gene": "HAVCR2",
+      "wilcox_p_quartile": 0.4369,
+      "wilcox_p_median": 0.0236,
+      "mean_high_q": 0.2494,
+      "mean_low_q": 0.1711
+    },
+    {
+      "gene": "ICOS",
+      "wilcox_p_quartile": 0.0715,
+      "wilcox_p_median": 0.76,
+      "mean_high_q": 0.1641,
+      "mean_low_q": 0.1099
+    },
+    {
+      "gene": "PDCD1",
+      "wilcox_p_quartile": 3.7554e-08,
+      "wilcox_p_median": 0,
+      "mean_high_q": 0.0804,
+      "mean_low_q": 0.0863
+    },
+    {
+      "gene": "TIGIT",
+      "wilcox_p_quartile": 0.0196,
+      "wilcox_p_median": 0.0004,
+      "mean_high_q": 0.38,
+      "mean_low_q": 0.2739
+    },
+    {
+      "gene": "TNFRSF4",
+      "wilcox_p_quartile": 0.0027,
+      "wilcox_p_median": 0.3968,
+      "mean_high_q": 0.1815,
+      "mean_low_q": 0.1592
+    }
+  ],
+  "outputs": {
+    "fig2k_fib_malignant_lr.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig2k_fib_malignant_lr.csv",
+      "rows": 359,
+      "cols": 11
+    },
+    "fig3a_bulk_corr_matrix.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig3a_bulk_corr_matrix.csv",
+      "rows": 57,
+      "cols": 8
+    },
+    "fig3c_checkpoint_box.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig3c_checkpoint_box.csv",
+      "rows": 17928,
+      "cols": 10
+    },
+    "fig3d_lr_bipartite.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig3d_lr_bipartite.csv",
+      "rows": 5251,
+      "cols": 9
+    },
+    "fig4i_ec_stromal_counts.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig4i_ec_stromal_counts.csv",
+      "rows": 720,
+      "cols": 5
+    },
+    "fig5j_mural_ec_lr.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig5j_mural_ec_lr.csv",
+      "rows": 124,
+      "cols": 11
+    },
+    "fig6b_tme_stromal_counts.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig6b_tme_stromal_counts.csv",
+      "rows": 3249,
+      "cols": 5
+    },
+    "fig6c_ccl19_lr.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig6c_ccl19_lr.csv",
+      "rows": 660,
+      "cols": 11
+    },
+    "fig6f_pgf_tam_lr.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/fig6f_pgf_tam_lr.csv",
+      "rows": 101,
+      "cols": 11
+    },
+    "sfig5d_chord_edges.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/sfig5d_chord_edges.csv",
+      "rows": 382,
+      "cols": 14
+    },
+    "sfig6d_pgf_tme_lr.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/sfig6d_pgf_tme_lr.csv",
+      "rows": 542,
+      "cols": 12
+    },
+    "sfig2d_kegg_fib.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/sfig2d_kegg_fib.csv",
+      "rows": 70,
+      "cols": 15
+    },
+    "sfig4d_kegg_ec.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/sfig4d_kegg_ec.csv",
+      "rows": 120,
+      "cols": 14
+    },
+    "sfig5c_kegg_mural.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/sfig5c_kegg_mural.csv",
+      "rows": 100,
+      "cols": 11
+    },
+    "metab_fig4k_ec.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/metab_fig4k_ec.csv",
+      "rows": 60,
+      "cols": 18
+    },
+    "metab_fig5k_mural.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/metab_fig5k_mural.csv",
+      "rows": 47,
+      "cols": 15
+    },
+    "metab_sfig2e_fib.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step05_crosstalk/metab_sfig2e_fib.csv",
+      "rows": 18,
+      "cols": 20
+    }
+  },
+  "elapsed_seconds": 51.22
+}

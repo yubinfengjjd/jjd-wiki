@@ -10,7 +10,11 @@
 #   - traj_mural_branch_genes.csv
 #   - receipt.json
 
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
+r_libs <- strsplit(Sys.getenv("RWIKI_R_LIBS", ""), .Platform$path.sep)[[1]]
+r_libs <- r_libs[nzchar(r_libs)]
+if (length(r_libs)) {
+  .libPaths(unique(c(r_libs, .libPaths())))
+}
 suppressPackageStartupMessages({
   library(Seurat)
   library(harmony)
@@ -28,7 +32,8 @@ suppressPackageStartupMessages({
 t0 <- proc.time()[["elapsed"]]
 set.seed(42)
 
-paper_dir <- "E:/research-wiki-env/sources/papers/2026-cai-stromal-tme"
+paper_root <- Sys.getenv("PAPER_ROOT", ".")
+paper_dir <- paper_root
 sc_path   <- file.path(paper_dir, "data_small", "scrna_stromal_small.qs")
 step01_dir <- file.path(paper_dir, "runs", "step01_harmony_de")
 out_dir   <- file.path(paper_dir, "runs", "step04_trajectory")

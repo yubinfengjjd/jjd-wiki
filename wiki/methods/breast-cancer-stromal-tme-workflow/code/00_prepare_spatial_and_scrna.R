@@ -6,7 +6,11 @@
 #    seed = 42) seeded from real MOESM3 DEG markers across Fib (14), EC (12), and Mural (10)
 #    subclusters + 3 batch cohorts, for end-to-end Harmony / PROGENy / Trajectory verification.
 
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
+r_libs <- strsplit(Sys.getenv("RWIKI_R_LIBS", ""), .Platform$path.sep)[[1]]
+r_libs <- r_libs[nzchar(r_libs)]
+if (length(r_libs)) {
+  .libPaths(unique(c(r_libs, .libPaths())))
+}
 suppressPackageStartupMessages({
   library(Seurat)
   library(qs)
@@ -15,7 +19,8 @@ suppressPackageStartupMessages({
 })
 
 set.seed(42)
-paper_dir <- "E:/research-wiki-env/sources/papers/2026-cai-stromal-tme"
+paper_root <- Sys.getenv("PAPER_ROOT", ".")
+paper_dir <- paper_root
 st_out <- file.path(paper_dir, "data_small", "st")
 dir.create(st_out, recursive = TRUE, showWarnings = FALSE)
 

@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T06:35:00.194724+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/lr-bubble-matrix/spec.json": "e0135ad09f28d0718ed2b3459031c9e3b262c63368445fd3e5511cd206bb0b88",
+    "templates/lr-bubble-matrix/code/render.R": "5e98bde147717d9847cf17e95866ee417a74406f9c532c741d98df03da1ed1c1",
+    "inline/lr#columns": "827adcea103beed42506f3f1543178e17b3a92a24a3911a9c075f6fe75a04fc4",
+    "templates/lr-bubble-matrix/example/lr_bubble_matrix.csv": "9dc54e0adcc79ac5ba910d12642994daa11ffdb5e94cc888bc8f85e812d5b7e5"
+  },
+  "outputs": {
+    "png": "7df6a7d7c277a723b0b466b6f8a7fee3192eb25f06ae9e990fbf5d67c7d9520c",
+    "pdf": "2989c9cd3a68aa49e559d375dab64e3866600dbc3dab686037bfb3027d2d7cbd",
+    "svg": "6a97d8b1f7954062d3f5328a60b50bf9da25b37b3e1ca58dd57893acbf84872e"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

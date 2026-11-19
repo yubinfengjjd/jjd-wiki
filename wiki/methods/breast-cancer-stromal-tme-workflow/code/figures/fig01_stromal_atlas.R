@@ -1,5 +1,9 @@
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
-source("E:/research-wiki-env/sources/papers/2026-cai-stromal-tme/src/00c_style_and_manifold.R")
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) != 1L) {
+  stop("Run this figure with Rscript --vanilla <figure-script.R>.")
+}
+script_dir <- dirname(sub("^--file=", "", script_arg))
+source(file.path(script_dir, "..", "00c_style_and_manifold.R"))
 
 manifolds <- make_manifolds(c("all","fib","ec","mural"))
 st <- read_input("data_small","st","caa_st_spots_scores.csv")

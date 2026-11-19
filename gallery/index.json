@@ -2523,5 +2523,471 @@
       "readme": "2026-11-19-hdwgcna-network/figures/fig02/README.md"
     },
     "pending": []
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__fig01",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 1,
+      "label": "Fig. 1",
+      "caption": "Construction of a breast cancer single-cell atlas of stromal cells",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "chart_types": [
+        "workflow",
+        "umap",
+        "feature_plot"
+      ],
+      "canvas_px": [
+        2880,
+        3660
+      ],
+      "source_px": [
+        2061,
+        1338
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/fig01_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/fig01_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__fig02",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 2,
+      "label": "Fig. 2",
+      "caption": "Characterization of Fibs in breast cancer",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "chart_types": [
+        "umap",
+        "heatmap",
+        "trajectory",
+        "spatial",
+        "bubble"
+      ],
+      "canvas_px": [
+        2880,
+        3660
+      ],
+      "source_px": [
+        1961,
+        1338
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/fig02_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/fig02_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__fig03",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 3,
+      "label": "Fig. 3 (A-E; F-H wet-lab excluded)",
+      "caption": "ABCA8+ lpFibs are associated with T-cell exclusion and exhaustion-associated T-cell phenotypes",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "chart_types": [
+        "corrplot",
+        "spatial",
+        "boxplot",
+        "bipartite_bubble"
+      ],
+      "canvas_px": [
+        2880,
+        2700
+      ],
+      "source_px": [
+        2847,
+        1338
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/fig03_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/fig03_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__fig04",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 4,
+      "label": "Fig. 4",
+      "caption": "Characterization of ECs in breast cancer",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "chart_types": [
+        "umap",
+        "heatmap",
+        "trajectory",
+        "spatial",
+        "lollipop"
+      ],
+      "canvas_px": [
+        2880,
+        3660
+      ],
+      "source_px": [
+        1947,
+        1338
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/fig04_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/fig04_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__fig05",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 5,
+      "label": "Fig. 5",
+      "caption": "Characterization of mural cells in breast cancer",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "chart_types": [
+        "umap",
+        "heatmap",
+        "trajectory",
+        "line_curve",
+        "bubble",
+        "lollipop"
+      ],
+      "canvas_px": [
+        2880,
+        3660
+      ],
+      "source_px": [
+        1949,
+        1338
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/fig05_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/fig05_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__fig06",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 6,
+      "label": "Fig. 6",
+      "caption": "Crosstalk between stromal cells and TME cells",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "chart_types": [
+        "umap",
+        "heatmap",
+        "bubble",
+        "spatial"
+      ],
+      "canvas_px": [
+        2880,
+        3660
+      ],
+      "source_px": [
+        2010,
+        1338
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/fig06_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/fig06_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__sfig01",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 7,
+      "label": "Supp. Fig. 1",
+      "caption": "Batch integration and major stromal marker expression",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "chart_types": [
+        "umap",
+        "dotplot"
+      ],
+      "canvas_px": [
+        3660,
+        1500
+      ],
+      "source_px": [
+        5272,
+        1118
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/sfig01_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/sfig01_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__sfig02",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 8,
+      "label": "Supp. Fig. 2",
+      "caption": "Fibroblast cohort distribution, markers, KEGG, and metabolism",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "chart_types": [
+        "umap",
+        "stacked_bar",
+        "dotplot",
+        "kegg_bubble",
+        "lollipop"
+      ],
+      "canvas_px": [
+        3420,
+        3180
+      ],
+      "source_px": [
+        2716,
+        1300
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/sfig02_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/sfig02_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__sfig03",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 9,
+      "label": "Supp. Fig. 3",
+      "caption": "Spatial fibroblast markers and ABCA8+ lpFib / CD8+ T deconvolution with H&E",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "chart_types": [
+        "spatial",
+        "histology"
+      ],
+      "canvas_px": [
+        3240,
+        3300
+      ],
+      "source_px": [
+        2479,
+        1300
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/sfig03_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/sfig03_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__sfig04",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 10,
+      "label": "Supp. Fig. 4",
+      "caption": "Endothelial cohort distribution, markers, angiogenic score, and KEGG barplots",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "chart_types": [
+        "umap",
+        "stacked_bar",
+        "dotplot",
+        "barplot"
+      ],
+      "canvas_px": [
+        3750,
+        2850
+      ],
+      "source_px": [
+        3324,
+        1300
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/sfig04_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/sfig04_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__sfig05",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 11,
+      "label": "Supp. Fig. 5",
+      "caption": "Mural cohort distribution, markers, KEGG barplots, and VEGF chord network",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "chart_types": [
+        "umap",
+        "stacked_bar",
+        "dotplot",
+        "barplot",
+        "chord"
+      ],
+      "canvas_px": [
+        2880,
+        4080
+      ],
+      "source_px": [
+        1784,
+        1300
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/sfig05_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/sfig05_side_by_side.png"
+    }
+  },
+  {
+    "id": "2026-11-19-cai-stromal-tme__sfig06",
+    "post": {
+      "title": "Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer (Cai et al., npj Precision Oncology 2026)",
+      "account": "npj Precision Oncology",
+      "author": "Cai et al.",
+      "publish_date": "2026-11-19",
+      "url": "https://doi.org/10.1038/s41698-026-01718-1"
+    },
+    "figure": {
+      "index": 12,
+      "label": "Supp. Fig. 6",
+      "caption": "Spatial TME density, CCL19-CCR7 / TLS markers, and TipEC-TME CellChat L-R pairs",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "chart_types": [
+        "spatial",
+        "bubble"
+      ],
+      "canvas_px": [
+        3600,
+        3360
+      ],
+      "source_px": [
+        2708,
+        1300
+      ],
+      "replica_path": "2026-11-19-cai-stromal-tme/figures/sfig06_replica.png",
+      "side_by_side_path": "2026-11-19-cai-stromal-tme/figures/sfig06_side_by_side.png"
+    }
   }
 ]

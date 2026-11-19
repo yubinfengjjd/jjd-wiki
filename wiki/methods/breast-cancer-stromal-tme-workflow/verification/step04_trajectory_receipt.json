@@ -1,0 +1,44 @@
+{
+  "step": "step04_trajectory",
+  "script": "src/04_trajectory_pseudotime.R",
+  "seed": 42,
+  "status": "completed",
+  "monocle3_status": "not_run (monocle3 not installed)",
+  "trajectory_methods": ["Harmony", "destiny::DiffusionMap", "destiny::DPT", "slingshot::slingshot"],
+  "scale_down_boundary": "Computed on stratified scrna_stromal_small.qs (n = 1,800 cells, 289 genes: 700 Fib, 600 EC, 500 Mural). Fig 5I gene COL6A3 is absent in the 289-gene subset (recorded as NA in traj_mural.csv; 7/8 present genes modeled in traj_mural_branch_genes.csv).",
+  "umap_sources": {
+    "fib": "standalone_harmony_umap",
+    "ec": "standalone_harmony_umap",
+    "mural": "standalone_harmony_umap"
+  },
+  "fig5i_genes_present": ["MUSTN1", "SORBS2", "CCL21", "NET1", "THY1", "RERGL", "MYH11"],
+  "fig5i_genes_missing": "COL6A3",
+  "lineages_detected": {
+    "fib": ["slingshot_Lineage1", "slingshot_Lineage2", "slingshot_Lineage3", "slingshot_Lineage4", "slingshot_Lineage5", "slingshot_Lineage6", "slingshot_Lineage7", "slingshot_Lineage8", "slingshot_Lineage9", "slingshot_Lineage10", "slingshot_Lineage11"],
+    "ec": ["slingshot_Lineage1", "slingshot_Lineage2", "slingshot_Lineage3", "slingshot_Lineage4", "slingshot_Lineage5", "slingshot_Lineage6", "slingshot_Lineage7", "slingshot_Lineage8", "slingshot_Lineage9"],
+    "mural": ["slingshot_Lineage1", "slingshot_Lineage2", "slingshot_Lineage3", "slingshot_Lineage4", "slingshot_Lineage5", "slingshot_Lineage6", "slingshot_Lineage7", "slingshot_Lineage8"]
+  },
+  "outputs": {
+    "traj_fib.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step04_trajectory/traj_fib.csv",
+      "rows": 700,
+      "cols": 33
+    },
+    "traj_ec.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step04_trajectory/traj_ec.csv",
+      "rows": 600,
+      "cols": 24
+    },
+    "traj_mural.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step04_trajectory/traj_mural.csv",
+      "rows": 500,
+      "cols": 31
+    },
+    "traj_mural_branch_genes.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step04_trajectory/traj_mural_branch_genes.csv",
+      "rows": 2800,
+      "cols": 6
+    }
+  },
+  "elapsed_seconds": 66.29
+}

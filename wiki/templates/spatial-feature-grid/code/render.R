@@ -51,9 +51,9 @@ pt_alpha <- if (is.null(style$point_alpha)) 0.95 else as.numeric(style$point_alp
 pal_name <- if (is.null(style$palette)) "spectral" else as.character(style$palette)
 
 pal_cols <- switch(pal_name,
-  "viridis" = c("#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"),
-  "bwr"     = c("#3B4CC0", "#7092F3", "#F7F7F7", "#F0705B", "#B40426"),
-  c("#3288BD", "#66C2A5", "#E6F598", "#FEE08B", "#F46D43", "#9E0142")
+  "viridis" = c("#46468A", "#5CB874", "#F7DC6F", "#C0392B"),
+  "bwr"     = c("#3B4CC0", "#74ADD1", "#FFFFBF", "#F46D43", "#B40426"),
+  c("#3B4CC0", "#74ADD1", "#FFFFBF", "#F46D43", "#B40426")
 )
 
 feat_levels <- levels(df$feature)
@@ -61,6 +61,9 @@ panels <- lapply(feat_levels, function(ft) {
   sub_df <- df %>% dplyr::filter(feature == ft)
   rng <- range(sub_df$value, na.rm = TRUE)
   if (diff(rng) == 0) rng <- c(rng[1], rng[1] + 1e-4)
+  x_range <- range(sub_df$x)
+  y_range <- range(sub_df$y_plot)
+  half_span <- max(diff(x_range), diff(y_range), 1e-4) * 0.52
   ggplot(sub_df, aes(x = x, y = y_plot, color = value)) +
     geom_point(size = pt_sz, alpha = pt_alpha, shape = 16) +
     scale_color_gradientn(
@@ -70,7 +73,10 @@ panels <- lapply(feat_levels, function(ft) {
       labels = c("Min", "Max"),
       name = NULL
     ) +
-    coord_fixed() +
+    coord_fixed(
+      xlim = mean(x_range) + c(-half_span, half_span),
+      ylim = mean(y_range) + c(-half_span, half_span), expand = FALSE
+    ) +
     labs(title = ft) +
     theme_void(base_size = 9.5) +
     theme(
@@ -80,7 +86,7 @@ panels <- lapply(feat_levels, function(ft) {
       legend.key.height = unit(0.07, "in"),
       legend.text = element_text(size = 7.0),
       legend.margin = margin(b = -2),
-      panel.border = element_rect(color = "#222222", fill = NA, linewidth = 0.5),
+      panel.border = element_rect(color = "black", fill = NA, linewidth = 0.5),
       plot.margin = margin(4, 10, 4, 10)
     )
 })

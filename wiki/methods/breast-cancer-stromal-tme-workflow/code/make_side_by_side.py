@@ -1,10 +1,11 @@
 """Compose figure graphics only, using page coordinates recorded after inspection."""
 from pathlib import Path
 import argparse
+import os
 
 from PIL import Image, ImageDraw, ImageFont
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(os.environ.get("PAPER_ROOT", "."))
 CROPS = {
     1: (3, (124, 96, 1128, 1357)),
     2: (4, (175, 88, 1080, 1346)),
@@ -51,7 +52,11 @@ def build(figure):
     draw = ImageDraw.Draw(output)
     draw.rectangle((0, 0, output.width, header - 1), fill="#f0f0f0")
     draw.rectangle((panels[0].width, 0, panels[0].width + 2, output.height), fill="#c5c5c5")
-    font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 15)
+    font_path = os.environ.get("RWIKI_COMPARE_FONT", "arial.ttf")
+    try:
+        font = ImageFont.truetype(font_path, 15)
+    except OSError:
+        font = ImageFont.load_default()
     for x, panel, title in zip((0, panels[0].width + 3), panels, ("Original (Cai et al., 2026)", "1:1 Replica")):
         output.paste(panel, (x, header))
         draw.text((x + panel.width / 2, header / 2), title, font=font, fill="#222222", anchor="mm")

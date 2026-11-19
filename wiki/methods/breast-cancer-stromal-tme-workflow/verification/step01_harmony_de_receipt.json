@@ -1,0 +1,90 @@
+{
+  "step": "step01_harmony_de",
+  "script": "src/01_scrna_harmony_de.R",
+  "seed": 42,
+  "elapsed_seconds": 20.52,
+  "input_object": "data_small/scrna_stromal_small.qs",
+  "scale_down_boundary": "Stratified small-scale verification dataset: 1,800 cells (50 cells/subcluster x 36 subclusters: 14 Fib = 700 cells, 12 EC = 600 cells, 10 Mural = 500 cells) x 289 MOESM3-seeded marker/pathway genes across 4 simulated batch cohorts (GSE161529, GSE176078, GSE195861, in_house), vs. the full paper atlas of >200,000 stromal cells and >20,000 genes.",
+  "counts": {
+    "all": {
+      "cells": 1800,
+      "genes": 289,
+      "annotated_subclusters": 36,
+      "harmony_louvain_clusters": 25
+    },
+    "fib": {
+      "cells": 700,
+      "genes": 289,
+      "annotated_subclusters": 14,
+      "harmony_louvain_clusters": 14
+    },
+    "ec": {
+      "cells": 600,
+      "genes": 289,
+      "annotated_subclusters": 12,
+      "harmony_louvain_clusters": 11
+    },
+    "mural": {
+      "cells": 500,
+      "genes": 289,
+      "annotated_subclusters": 10,
+      "harmony_louvain_clusters": 8
+    }
+  },
+  "outputs": {
+    "umap_all": {
+      "rows": 1800,
+      "cols": 10
+    },
+    "umap_fib": {
+      "rows": 700,
+      "cols": 15
+    },
+    "umap_ec": {
+      "rows": 600,
+      "cols": 10
+    },
+    "umap_mural": {
+      "rows": 500,
+      "cols": 10
+    },
+    "dotplot_major": {
+      "rows": 39,
+      "cols": 10,
+      "genes": 13
+    },
+    "dotplot_fib": {
+      "rows": 868,
+      "cols": 15,
+      "genes": 62,
+      "moesm_matched_rows": 87
+    },
+    "dotplot_ec": {
+      "rows": 708,
+      "cols": 15,
+      "genes": 59,
+      "moesm_matched_rows": 77
+    },
+    "dotplot_mural": {
+      "rows": 390,
+      "cols": 15,
+      "genes": 39,
+      "moesm_matched_rows": 47
+    }
+  },
+  "parameters": {
+    "normalization": "LogNormalize (scale.factor = 10000)",
+    "scale_vars_to_regress": "nCount_RNA",
+    "pca_npcs": 30,
+    "harmony_group_by": "batch",
+    "harmony_dims": "1:20",
+    "umap_dims": "1:20",
+    "neighbor_k": 30,
+    "resolutions": {
+      "all": 0.9,
+      "fib": 0.6,
+      "ec": 0.6,
+      "mural": 0.3
+    }
+  }
+}

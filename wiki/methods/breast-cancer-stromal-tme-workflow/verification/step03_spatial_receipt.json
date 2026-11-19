@@ -1,0 +1,51 @@
+{
+  "step": "step03_spatial",
+  "script": "src/03_spatial_scores_deconv.R",
+  "seed": 42,
+  "status": "completed",
+  "rctd_status": "not_run (spacexr not compiled)",
+  "fallback_method": "Non-negative 5th-percentile-shifted L1-normalized signature weighting across 16 cell types on real Visium Spatial normalized data",
+  "scale_down_boundary": "Single real Visium sample (CAA_ST, n = 2,241 spots from Zenodo 19562239) used instead of 8 in-house ST slides; LGALS9 and FLT1 absent in CAA_ST-umap.qs gene matrix (recorded as NA).",
+  "n_spots": 2241,
+  "spatial_genes_present": ["COL1A1", "COL1A2", "DCN", "ABCA8", "CCL19", "CXCL13", "CD8A", "CD79A", "CD19", "CD3E", "HAVCR2", "CD86", "CTLA4", "CCL14", "CCR1", "PGF", "CCR7"],
+  "spatial_genes_missing": ["LGALS9", "FLT1"],
+  "fig3e_zone_counts": {
+    "ABCA8_lpFib_high_only": 472,
+    "ABCA8_lpFib_Tcell_joint_high": 89,
+    "Other_low": 1208,
+    "Tcell_high_only": 472
+  },
+  "outputs": {
+    "st_spots_fig2j.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step03_spatial/st_spots_fig2j.csv",
+      "rows": 2241,
+      "cols": 19
+    },
+    "st_spots_fig3be.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step03_spatial/st_spots_fig3be.csv",
+      "rows": 2241,
+      "cols": 26
+    },
+    "st_spots_fig4j.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step03_spatial/st_spots_fig4j.csv",
+      "rows": 2241,
+      "cols": 11
+    },
+    "st_spots_fig6degh.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step03_spatial/st_spots_fig6degh.csv",
+      "rows": 2241,
+      "cols": 28
+    },
+    "st_spots_sfig3.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step03_spatial/st_spots_sfig3.csv",
+      "rows": 2241,
+      "cols": 14
+    },
+    "st_spots_sfig6abc.csv": {
+      "path": "<sources_root>/papers/2026-cai-stromal-tme/runs/step03_spatial/st_spots_sfig6abc.csv",
+      "rows": 2241,
+      "cols": 20
+    }
+  },
+  "elapsed_seconds": 7.87
+}

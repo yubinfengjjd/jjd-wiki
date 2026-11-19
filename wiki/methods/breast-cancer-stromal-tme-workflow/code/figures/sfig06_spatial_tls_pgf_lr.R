@@ -1,5 +1,9 @@
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
-source("E:/research-wiki-env/sources/papers/2026-cai-stromal-tme/src/00c_style_and_manifold.R")
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) != 1L) {
+  stop("Run this figure with Rscript --vanilla <figure-script.R>.")
+}
+script_dir <- dirname(sub("^--file=", "", script_arg))
+source(file.path(script_dir, "..", "00c_style_and_manifold.R"))
 
 st <- read_step("step03_spatial","st_spots_sfig6abc")
 features <- c("C8_iFib_CCL19","C4_TipEC_PGF","M1","M2","CD4_Effector_T","CD4_Exhausted_T",

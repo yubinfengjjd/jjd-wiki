@@ -9,7 +9,9 @@ sources:
 panels: []
 language: r
 primary_method: gene-set-enrichment
-tags: []
+tags:
+- single-cell
+- transcriptomics
 chart_types:
 - heatmap
 keywords: []
@@ -20,7 +22,7 @@ favorite: false
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
 - 语言：r
-- 标签：
+- 标签：single-cell、transcriptomics
 - 图型：[[chart-types/heatmap]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
@@ -31,7 +33,11 @@ favorite: false
 
 ## 适用
 
+对齐不同亚群的功能基因 Z 分数或 PROGENy 通路活性，展示相对偏高与偏低的模式。对应 Cai 等主图 2、4、5 的功能矩阵。
+
 ## 不适用
+
+原始计数、富集 P 值及不同标度的分数应在上游整理。缺失值过多时不要进行层次聚类，Z 分数也不能解释为绝对表达量。
 
 ## 知识关联检查
 
@@ -39,7 +45,7 @@ favorite: false
 
 ## 数据要求
 
-待填写 spec.json。
+`zscore_matrix.csv` 的首列为唯一行标识，其余为数值矩阵。首列为 `canonical_subcluster` 时默认转置，使亚群位于横轴。可在样式中用 `column_groups` 提供横轴列名到分组标签的完整映射，组序按映射中的首次出现排列。默认采用功能基因配色，`palette: "progeny"` 可选 PROGENy 配色。
 
 ## 使用记录
 

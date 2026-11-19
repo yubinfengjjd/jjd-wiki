@@ -1,0 +1,303 @@
+{
+  "slug": "2026-11-19-cai-stromal-tme",
+  "paper_id": "2026-cai-stromal-tme",
+  "doi": "10.1038/s41698-026-01718-1",
+  "upstream_repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+  "upstream_commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+  "local_workspace": "<sources_root>/papers/2026-cai-stromal-tme/",
+  "workflow_id": "breast-cancer-stromal-tme-workflow",
+  "excluded_wet_lab": [
+    "Fig. 3F",
+    "Fig. 3G",
+    "Fig. 3H"
+  ],
+  "figures": [
+    {
+      "slug": "fig01",
+      "label": "Fig. 1",
+      "caption": "Construction of a breast cancer single-cell atlas of stromal cells",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "replica": "figures/fig01_replica.png",
+      "side_by_side": "figures/fig01_side_by_side.png",
+      "replica_px": [
+        2880,
+        3660
+      ],
+      "side_by_side_px": [
+        2061,
+        1338
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig02",
+      "label": "Fig. 2",
+      "caption": "Characterization of Fibs in breast cancer",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "replica": "figures/fig02_replica.png",
+      "side_by_side": "figures/fig02_side_by_side.png",
+      "replica_px": [
+        2880,
+        3660
+      ],
+      "side_by_side_px": [
+        1961,
+        1338
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig03",
+      "label": "Fig. 3 (A-E; F-H wet-lab excluded)",
+      "caption": "ABCA8+ lpFibs are associated with T-cell exclusion and exhaustion-associated T-cell phenotypes",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "replica": "figures/fig03_replica.png",
+      "side_by_side": "figures/fig03_side_by_side.png",
+      "replica_px": [
+        2880,
+        2700
+      ],
+      "side_by_side_px": [
+        2847,
+        1338
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig04",
+      "label": "Fig. 4",
+      "caption": "Characterization of ECs in breast cancer",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "replica": "figures/fig04_replica.png",
+      "side_by_side": "figures/fig04_side_by_side.png",
+      "replica_px": [
+        2880,
+        3660
+      ],
+      "side_by_side_px": [
+        1947,
+        1338
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig05",
+      "label": "Fig. 5",
+      "caption": "Characterization of mural cells in breast cancer",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K"
+      ],
+      "replica": "figures/fig05_replica.png",
+      "side_by_side": "figures/fig05_side_by_side.png",
+      "replica_px": [
+        2880,
+        3660
+      ],
+      "side_by_side_px": [
+        1949,
+        1338
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig06",
+      "label": "Fig. 6",
+      "caption": "Crosstalk between stromal cells and TME cells",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "replica": "figures/fig06_replica.png",
+      "side_by_side": "figures/fig06_side_by_side.png",
+      "replica_px": [
+        2880,
+        3660
+      ],
+      "side_by_side_px": [
+        2010,
+        1338
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig01",
+      "label": "Supp. Fig. 1",
+      "caption": "Batch integration and major stromal marker expression",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "replica": "figures/sfig01_replica.png",
+      "side_by_side": "figures/sfig01_side_by_side.png",
+      "replica_px": [
+        3660,
+        1500
+      ],
+      "side_by_side_px": [
+        5272,
+        1118
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig02",
+      "label": "Supp. Fig. 2",
+      "caption": "Fibroblast cohort distribution, markers, KEGG, and metabolism",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "replica": "figures/sfig02_replica.png",
+      "side_by_side": "figures/sfig02_side_by_side.png",
+      "replica_px": [
+        3420,
+        3180
+      ],
+      "side_by_side_px": [
+        2716,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig03",
+      "label": "Supp. Fig. 3",
+      "caption": "Spatial fibroblast markers and ABCA8+ lpFib / CD8+ T deconvolution with H&E",
+      "panels": [
+        "A",
+        "B"
+      ],
+      "replica": "figures/sfig03_replica.png",
+      "side_by_side": "figures/sfig03_side_by_side.png",
+      "replica_px": [
+        3240,
+        3300
+      ],
+      "side_by_side_px": [
+        2479,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig04",
+      "label": "Supp. Fig. 4",
+      "caption": "Endothelial cohort distribution, markers, angiogenic score, and KEGG barplots",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "replica": "figures/sfig04_replica.png",
+      "side_by_side": "figures/sfig04_side_by_side.png",
+      "replica_px": [
+        3750,
+        2850
+      ],
+      "side_by_side_px": [
+        3324,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig05",
+      "label": "Supp. Fig. 5",
+      "caption": "Mural cohort distribution, markers, KEGG barplots, and VEGF chord network",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "replica": "figures/sfig05_replica.png",
+      "side_by_side": "figures/sfig05_side_by_side.png",
+      "replica_px": [
+        2880,
+        4080
+      ],
+      "side_by_side_px": [
+        1784,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig06",
+      "label": "Supp. Fig. 6",
+      "caption": "Spatial TME density, CCL19-CCR7 / TLS markers, and TipEC-TME CellChat L-R pairs",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "replica": "figures/sfig06_replica.png",
+      "side_by_side": "figures/sfig06_side_by_side.png",
+      "replica_px": [
+        3600,
+        3360
+      ],
+      "side_by_side_px": [
+        2708,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    }
+  ]
+}

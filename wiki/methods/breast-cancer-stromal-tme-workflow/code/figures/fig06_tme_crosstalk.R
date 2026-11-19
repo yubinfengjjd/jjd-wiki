@@ -1,5 +1,9 @@
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
-source("E:/research-wiki-env/sources/papers/2026-cai-stromal-tme/src/00c_style_and_manifold.R")
+script_arg <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_arg) != 1L) {
+  stop("Run this figure with Rscript --vanilla <figure-script.R>.")
+}
+script_dir <- dirname(sub("^--file=", "", script_arg))
+source(file.path(script_dir, "..", "00c_style_and_manifold.R"))
 
 cell_order <- c("M2","M1","DC_CD1C","DC_LAMP3","Regulatory_T","DC_CLEC9A",
   "Neutrophil","pDC","CD4_Exhausted_T","NK","Epi","CD8_Cytotoxic_T",

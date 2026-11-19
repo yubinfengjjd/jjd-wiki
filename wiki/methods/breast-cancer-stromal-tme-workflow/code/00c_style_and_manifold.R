@@ -1,9 +1,14 @@
-.libPaths(unique(c("E:/research-wiki-env/R-lib/figureya", "E:/research-wiki-env/R-lib-scp/4.5", .libPaths())))
+r_libs <- strsplit(Sys.getenv("RWIKI_R_LIBS", ""), .Platform$path.sep)[[1]]
+r_libs <- r_libs[nzchar(r_libs)]
+if (length(r_libs)) {
+  .libPaths(unique(c(r_libs, .libPaths())))
+}
 suppressPackageStartupMessages({
   library(ggplot2)
   library(patchwork)
 })
-paper_dir <- "E:/research-wiki-env/sources/papers/2026-cai-stromal-tme"
+paper_root <- Sys.getenv("PAPER_ROOT", ".")
+paper_dir <- paper_root
 rev_dir <- file.path(paper_dir, "review")
 
 major_cols <- setNames(c("#A6CEE3", "#1F78B4", "#A9D18E"), c("Mural cell", "EC", "Fib"))

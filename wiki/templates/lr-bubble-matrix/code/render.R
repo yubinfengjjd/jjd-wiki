@@ -48,7 +48,7 @@ if (!"interaction" %in% names(raw)) {
     raw$interaction <- paste0(raw$ligand, "_", raw$receptor)
   }
 }
-if (!"pval" %in% names(raw)) raw$pval <- 0.01
+if (!"pval" %in% names(raw)) raw$pval <- NA_real_
 
 df <- raw %>%
   dplyr::mutate(
@@ -59,7 +59,7 @@ df <- raw %>%
   ) %>%
   dplyr::filter(!is.na(pair_label), !is.na(interaction), !is.na(prob)) %>%
   dplyr::group_by(pair_label, interaction) %>%
-  dplyr::summarise(prob = max(prob, na.rm = TRUE), pval = min(pval, na.rm = TRUE), .groups = "drop")
+  dplyr::summarise(prob = max(prob, na.rm = TRUE), pval = if (all(is.na(pval))) NA_real_ else min(pval, na.rm = TRUE), .groups = "drop")
 
 max_int <- if (is.null(style$max_interactions)) 18L else as.integer(style$max_interactions)
 max_pairs <- if (is.null(style$max_pairs)) 22L else as.integer(style$max_pairs)
@@ -77,9 +77,9 @@ df <- df %>%
   )
 
 p <- ggplot(df, aes(x = interaction, y = pair_label)) +
-  geom_point(aes(size = prob, fill = prob), shape = 21, color = "#1A1A1A", stroke = 0.45) +
+  geom_point(aes(size = prob, fill = prob), shape = 21, color = "black", stroke = 0.45) +
   scale_fill_gradientn(
-    colours = c("#E8F5E9", "#8CC084", "#4D8B9B", "#6D3B96", "#4A146E"),
+    colours = rev(RColorBrewer::brewer.pal(9, "PRGn")),
     name = "Communication\nProbability"
   ) +
   scale_size_continuous(range = c(2.0, 6.2), name = "prob") +
@@ -88,6 +88,7 @@ p <- ggplot(df, aes(x = interaction, y = pair_label)) +
     axis.title = element_blank(),
     panel.grid.major = element_line(color = "#ECECEC", linewidth = 0.35),
     panel.grid.minor = element_blank(),
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 0.6),
     axis.text.x = element_text(angle = 90, hjust = 1, vjust = 0.5, size = 8.0, color = "#111111"),
     axis.text.y = element_text(size = 8.0, color = "#111111"),
     legend.position = "bottom",

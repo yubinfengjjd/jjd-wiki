@@ -1,0 +1,122 @@
+{
+  "step": "step02_progeny_roe_cox",
+  "script": "src/02_progeny_roe_cox.R",
+  "seed": 42,
+  "elapsed_seconds": 2.75,
+  "scale_down_boundary": "Computed on the 1,800-cell x 289-gene stratified small scRNA object (Fib=700, EC=600, Mural=500; 50 cells/subcluster across 36 subclusters) merged with real MOESM5 Cox tables (cox_tcga.csv, cox_inhouse.csv).",
+  "progeny_details": {
+    "organism": "Human",
+    "top": 100,
+    "perm": 1,
+    "scale": false,
+    "post_scale": "Seurat::ScaleData(assay='progeny')",
+    "model_genes_total": 1301,
+    "overlap_genes_count": 55,
+    "overlap_genes": ["COL1A1", "MCAM", "ABCA8", "PGF", "CXCL12", "ABCA6", "GAPDH", "BNIP3", "NRN1", "CA9", "PGK1", "ENO1", "ALDOA", "HILPDA", "AZGP1", "SERPINA3", "CTHRC1", "TPM1", "SOCS3", "RORA", "KIF26B", "CXCL8", "CXCL3", "CXCL1", "MMP10", "FOSL1", "IL6", "NFKB1", "CXCL2", "REL", "IGF1", "SELENOP", "IGFBP4", "CXCL11", "BST2", "CSF3", "PDPN", "FBLN5", "COL4A1", "COL4A2", "ZNF385D", "CCL2", "PRSS23", "IFI27", "CLDN4", "PLN", "HTR1F", "CCL20", "SOD2", "ELL2", "PNP", "NFKBIA", "VEGFA", "STAT1", "ESR1"],
+    "methods_used": {
+      "fib": "progeny_matrix_fallback (The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead.)",
+      "ec": "progeny_matrix_fallback (The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead.)",
+      "mural": "progeny_matrix_fallback (The `slot` argument of `GetAssayData()` was deprecated in SeuratObject\n5.0.0 and is now defunct.\nℹ Please use the `layer` argument instead.)"
+    }
+  },
+  "chi2_tests": {
+    "fib": {
+      "tissue": {
+        "statistic": 33.867,
+        "df": 26,
+        "p_value": 0.1384,
+        "warning": {}
+      },
+      "subtype": {
+        "statistic": 43.2746,
+        "df": 52,
+        "p_value": 0.8002,
+        "warning": {}
+      }
+    },
+    "ec": {
+      "tissue": {
+        "statistic": 32.3534,
+        "df": 22,
+        "p_value": 0.0716,
+        "warning": {}
+      },
+      "subtype": {
+        "statistic": 37.8858,
+        "df": 44,
+        "p_value": 0.73,
+        "warning": {}
+      }
+    },
+    "mural": {
+      "tissue": {
+        "statistic": 17.7639,
+        "df": 18,
+        "p_value": 0.4713,
+        "warning": {}
+      },
+      "subtype": {
+        "statistic": 32.7091,
+        "df": 36,
+        "p_value": 0.6259,
+        "warning": {}
+      }
+    }
+  },
+  "outputs": {
+    "progeny_fib.csv": {
+      "rows": 14,
+      "cols": 15
+    },
+    "roe_cox_fib.csv": {
+      "rows": 14,
+      "cols": 18,
+      "tcga_matched": 13,
+      "inhouse_matched": 14
+    },
+    "chemokine_zscore_fib.csv": {
+      "rows": 20,
+      "cols": 16
+    },
+    "tissue_prop_fib.csv": {
+      "rows": 560,
+      "cols": 9
+    },
+    "progeny_ec.csv": {
+      "rows": 12,
+      "cols": 15
+    },
+    "roe_cox_ec.csv": {
+      "rows": 12,
+      "cols": 18,
+      "tcga_matched": 0,
+      "inhouse_matched": 12
+    },
+    "chemokine_zscore_ec.csv": {
+      "rows": 23,
+      "cols": 14
+    },
+    "tissue_prop_ec.csv": {
+      "rows": 480,
+      "cols": 9
+    },
+    "progeny_mural.csv": {
+      "rows": 10,
+      "cols": 15
+    },
+    "roe_cox_mural.csv": {
+      "rows": 10,
+      "cols": 18,
+      "tcga_matched": 0,
+      "inhouse_matched": 10
+    },
+    "chemokine_zscore_mural.csv": {
+      "rows": 20,
+      "cols": 12
+    },
+    "tissue_prop_mural.csv": {
+      "rows": 400,
+      "cols": 9
+    }
+  }
+}
