@@ -73,7 +73,8 @@ p <- ggplot() +
     axis.ticks.y = element_blank(),
     legend.position = "bottom",
     legend.box = "vertical",
-    plot.margin = margin(8, 12, 6, 8)
+    legend.text = element_text(size = 8.0),
+    plot.margin = margin(8, 22, 6, 8)
   ) +
   guides(color = guide_legend(ncol = 3, override.aes = list(size = 3)))
 

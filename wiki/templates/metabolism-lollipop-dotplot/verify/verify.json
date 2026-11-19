@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T06:40:44.395773+00:00",
+  "timestamp": "2026-11-19T06:46:23.628637+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/metabolism-lollipop-dotplot/spec.json": "969d0d2408861daf6b1062d000be1d815ae47a19e4ad152b0c66eabe164d9ec5",
-    "templates/metabolism-lollipop-dotplot/code/render.R": "e32d2bb98a0d522469e5a8823ee0a201ed202eb5a956976dff747f30f745f02b",
+    "templates/metabolism-lollipop-dotplot/code/render.R": "79228d23ebb56861006bcfd98e8194e1c4104e5bd3709b697ab7f95f59628c88",
     "inline/metab#columns": "a8b0282e26a9a3c6d215fb181701e2813c9db4fd059b15f9aca529078790b99f",
     "templates/metabolism-lollipop-dotplot/example/metabolism_lollipop.csv": "ca564893002ad3074447fccb130c9ae49e0ea04b018968d890b6b427a8ff3744"
   },
   "outputs": {
-    "png": "76e25e6a3ed666d9c81928348339fde2019d6c01a0f3023f5b6da9a40ac665ce",
-    "pdf": "86d96468b012256979a62b95fd239248de7481f704c71f94e3c7b09351f282ed",
-    "svg": "5b2165e2ffdd5cac873019464e94fa796dd2aba9e04b86de290b9effa3848760"
+    "png": "047608a65d1efc70b7b8d9cc70e40701ba272e522e9042344d30b8ec0417be2e",
+    "pdf": "fa6e0dbc42d0a0cefa6889cb21cc042566e1f3a1cc210884494012c47f40afd7",
+    "svg": "3d251e378072e7b059208c120204d5bab194b0c5736342ea311ea986b0f6a5cc"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

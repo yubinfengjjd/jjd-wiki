@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T06:40:44.395773+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/metabolism-lollipop-dotplot/spec.json": "969d0d2408861daf6b1062d000be1d815ae47a19e4ad152b0c66eabe164d9ec5",
+    "templates/metabolism-lollipop-dotplot/code/render.R": "e32d2bb98a0d522469e5a8823ee0a201ed202eb5a956976dff747f30f745f02b",
+    "inline/metab#columns": "a8b0282e26a9a3c6d215fb181701e2813c9db4fd059b15f9aca529078790b99f",
+    "templates/metabolism-lollipop-dotplot/example/metabolism_lollipop.csv": "ca564893002ad3074447fccb130c9ae49e0ea04b018968d890b6b427a8ff3744"
+  },
+  "outputs": {
+    "png": "76e25e6a3ed666d9c81928348339fde2019d6c01a0f3023f5b6da9a40ac665ce",
+    "pdf": "86d96468b012256979a62b95fd239248de7481f704c71f94e3c7b09351f282ed",
+    "svg": "5b2165e2ffdd5cac873019464e94fa796dd2aba9e04b86de290b9effa3848760"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
