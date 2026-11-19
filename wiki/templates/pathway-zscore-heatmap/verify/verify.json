@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T06:29:45.248992+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/pathway-zscore-heatmap/spec.json": "1a8249759196315ded15ab64460ed57a3f7290e91a65b3c101a21a38de7b9fff",
+    "templates/pathway-zscore-heatmap/code/render.R": "10ae41ded2468eae8b8e87768fefa05c0b3ae93353cc01d0e3e7237e67f2d78d",
+    "inline/matrix#columns": "e8302247c0462c37045d9d0c7e6396b37ffe26b475d789ff8e8e37638175d460",
+    "templates/pathway-zscore-heatmap/example/zscore_matrix.csv": "aa48124ab1a9378df63e75066d6e463eeb3e940072ae464998b7f2a0673fd876"
+  },
+  "outputs": {
+    "png": "235d6486f83472740259a1cb8e286fbee25d4bf220e69715b65430ea9ddbb3fe",
+    "pdf": "8f70c06618f738ed2cc23287da442e4389a1888698b909edede764294c341b8e",
+    "svg": "27a1923f20741339c991d6722afa8585d2fe3527024ef9ec90a8fcfea8ebd780"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
