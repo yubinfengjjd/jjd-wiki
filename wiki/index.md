@@ -183,6 +183,7 @@
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
 - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]
+- [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]
 
 ### ready
 
