@@ -8,6 +8,9 @@
       "description": "配受体互作矩阵表（pair_label 或 source+target、interaction、prob、pval）",
       "required": true,
       "columns": {
+        "pair_label": { "type": "str", "description": "有向细胞对标签（如 Source->Target；与 source+target 二选一必填）", "required": false },
+        "source": { "type": "str", "description": "发送者细胞类型（缺 pair_label 时与 target 联合必填）", "required": false },
+        "target": { "type": "str", "description": "接收者细胞类型（缺 pair_label 时与 source 联合必填）", "required": false },
         "interaction": { "type": "str", "description": "配受体对名称（如 COL1A1_CD44）", "required": true },
         "prob": { "type": "float", "description": "通讯概率或平均互作强度", "required": true },
         "pval": { "type": "float", "description": "置换检验 p 值", "required": false }

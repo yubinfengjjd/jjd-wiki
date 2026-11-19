@@ -94,7 +94,8 @@ figure_relations:
   reason: 两类细胞群间的多对配体-受体双轴连线与检验检出率气泡可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。
   prerequisites:
   - 连线仅表示数据库配对与统计支持，不代表物理结合或因果调控。
-  adaptation: 导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
+  adaptation: 导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct,
+    receptor_expr, receptor_pct）。
   evidence:
   - methods/cell-cell-communication.md#输出
   - templates/lr-bipartite-bubble/spec.json
@@ -178,7 +179,7 @@ next_steps:
     - 依据：全部有向发送者×接收者亚群间显著互作计数矩阵及边际总和柱图可切换为 variant 计数热图；模板不做置换检验。；前提：所有细胞对采用同一置换检验显著性阈值统计 count；未测组合保留 NA。；适配：导出 interaction_counts.csv（SOURCE, TARGET, count）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/cellchat-count-heatmap/spec.json；运行证据：无
   - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
-    - 依据：两类细胞群间的多对配体-受体双轴连线与检验检出率气泡可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。；前提：连线仅表示数据库配对与统计支持，不代表物理结合或因果调控。；适配：导出 lr_bipartite_edges.csv（ligand, receptor, support, rate）。
+    - 依据：两类细胞群间的多对配体-受体双轴连线与检验检出率气泡可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。；前提：连线仅表示数据库配对与统计支持，不代表物理结合或因果调控。；适配：导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
   - [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：特定信号通路（如 VEGF）在全图谱亚群环形目录间的有向通讯弧线（含孤立目录节点）可切换为 variant 环形网络图。；前提：环形目录节点需包含全图谱所有比较亚群，避免因孤立节点被过滤而改变拓扑外观。；适配：导出 ring_nodes.csv（node, compartment, color, is_hub）与 ring_edges.csv（from, to, weight）。

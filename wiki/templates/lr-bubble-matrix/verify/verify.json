@@ -1,16 +1,16 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T14:51:15.888880+00:00",
+  "timestamp": "2026-11-19T16:26:59.453675+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/lr-bubble-matrix/spec.json": "e0135ad09f28d0718ed2b3459031c9e3b262c63368445fd3e5511cd206bb0b88",
+    "templates/lr-bubble-matrix/spec.json": "9d9858314ddfac370a54cd037132b5d2e6ccc8e727a8470564a5cef0d7b80dfc",
     "templates/lr-bubble-matrix/code/render.R": "14e17891adaaf2757bb24255aaa52a7e463343af3ef0a74c8ff2717f402d2807",
-    "inline/lr#columns": "827adcea103beed42506f3f1543178e17b3a92a24a3911a9c075f6fe75a04fc4",
+    "inline/lr#columns": "95552100de2b9dce66f9edf00df78af1bd3f1f429eb1518ff8d460229310babe",
     "templates/lr-bubble-matrix/example/lr_bubble_matrix.csv": "9dc54e0adcc79ac5ba910d12642994daa11ffdb5e94cc888bc8f85e812d5b7e5"
   },
   "outputs": {
     "png": "946f1ae1e9c2b9c83defeb77903bada1b4eb85fcf3421bcb6b7d9deb6907938b",
-    "pdf": "b1b315d08af34a72fb0bd182c12b04ae56f4ce49b6806e3685460f66ceb568cc",
+    "pdf": "0975bc389105aeaa31003853003e89bbc186253334a2dbe431d9231cfa73b570",
     "svg": "b0053603a3f95e0226584855b7a2c06e64be8ddef61046a3bf0d4d082bfa45ff"
   },
   "environment": {
