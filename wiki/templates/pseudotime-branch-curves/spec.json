@@ -1,6 +1,25 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "curves": {
+      "interface": "",
+      "filename": "pseudotime_branch_genes.csv",
+      "description": "拟时序多分支平滑表达表（gene、pseudotime_norm、smoothed_expr、branch）",
+      "required": true,
+      "columns": {
+        "gene": { "type": "str", "description": "基因名（分面）", "required": true },
+        "pseudotime_norm": { "type": "float", "description": "归一化拟时间", "required": true },
+        "smoothed_expr": { "type": "float", "description": "平滑表达量", "required": true },
+        "branch": { "type": "str", "description": "分支/谱系名称", "required": true }
+      }
+    }
+  },
+  "style": {
+    "ncol": 2,
+    "dpi": 300,
+    "width_in": 5.6,
+    "height_in": 6.4
+  },
+  "parameters": {}
 }

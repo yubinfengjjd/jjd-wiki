@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T06:36:20.702580+00:00",
+  "timestamp": "2026-11-19T06:39:22.913321+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/lr-bipartite-bubble/spec.json": "05d90c9fa05ed1467be497a5f6ab194f83af6dc423061becde126c2e5f935fcb",
-    "templates/lr-bipartite-bubble/code/render.R": "b5cd47d791020a1872af1b0425324c5a117006fada1d5d2727c1a5949fd055df",
+    "templates/lr-bipartite-bubble/code/render.R": "cf4162dd0de7f1beed4d33539b1b6a53e56c3b521076a19f5b434659309c6c57",
     "inline/pairs#columns": "5c786ac92a10b003dbc0243e9d8e45f861b33f246320dcceaa15fc5255fb55b9",
     "templates/lr-bipartite-bubble/example/lr_bipartite_pairs.csv": "32495c4713a8fc0f8e5c11432bf7269f23c0caa4051e7f64688fb16aae6689d8"
   },
   "outputs": {
-    "png": "650df7bef11a90b888e01ddc973f48e576345d8d734e0816c65068d68a102356",
-    "pdf": "fad0493f780a1803109213ba38943d57b80389bde2ab29e107f157e23c8cc0e9",
-    "svg": "365b5cb322a65506011bbd2c1ab0c9d99c910b90449bd4560fcf7939d26de068"
+    "png": "6e43924a15a0751819dbbd4c2a2c735f85f1b0e27494d9c109497d14d114e130",
+    "pdf": "fafc950b626807eeecaed5a69fa29847870b788541a5b1ff519c1cd92ddf790b",
+    "svg": "e2a586f9fd81ed19da8d13c77203ae8ae9afd9cc7913eec82c667a653aef4e2b"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

@@ -1,6 +1,25 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "metab": {
+      "interface": "",
+      "filename": "metabolism_lollipop.csv",
+      "description": "多亚群代谢通路棒棒糖表（pathway、cluster、neg_log10_p、score）",
+      "required": true,
+      "columns": {
+        "pathway": { "type": "str", "description": "代谢通路名称", "required": true },
+        "cluster": { "type": "str", "description": "细胞亚群名", "required": true },
+        "neg_log10_p": { "type": "float", "description": "-log10(P-value) 或 logp", "required": true },
+        "score": { "type": "float", "description": "点大小数值（如 FoldEnrichment / logFC）", "required": true }
+      }
+    }
+  },
+  "style": {
+    "top_n": 18,
+    "dpi": 300,
+    "width_in": 8.4,
+    "height_in": 5.8
+  },
+  "parameters": {}
 }

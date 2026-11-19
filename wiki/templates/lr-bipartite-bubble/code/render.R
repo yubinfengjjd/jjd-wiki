@@ -44,22 +44,23 @@ df <- readr::read_csv(file.path(data_dir, fname), show_col_types = FALSE) %>%
 
 lig_levels <- unique(df$ligand)
 rec_levels <- unique(df$receptor)
-df$x_lig <- seq(1, length(lig_levels), length.out = length(lig_levels))[match(df$ligand, lig_levels)]
-df$x_rec <- seq(1, max(length(lig_levels), length(rec_levels)), length.out = length(rec_levels))[match(df$receptor, rec_levels)]
+span_x <- max(length(lig_levels), length(rec_levels), 2)
+df$x_lig <- seq(1, span_x, length.out = length(lig_levels))[match(df$ligand, lig_levels)]
+df$x_rec <- seq(1, span_x, length.out = length(rec_levels))[match(df$receptor, rec_levels)]
 
 lig_pts <- df %>% dplyr::distinct(ligand, x_lig, ligand_expr, ligand_pct)
 rec_pts <- df %>% dplyr::distinct(receptor, x_rec, receptor_expr, receptor_pct)
 
 p <- ggplot() +
-  geom_segment(data = df, aes(x = x_lig, y = 1.9, xend = x_rec, yend = 1.1),
+  geom_segment(data = df, aes(x = x_lig, y = 1.62, xend = x_rec, yend = 1.38),
                color = "#222222", linewidth = 0.65, alpha = 0.85) +
-  geom_point(data = lig_pts, aes(x = x_lig, y = 2.02, size = ligand_pct, color = ligand_expr)) +
+  geom_point(data = lig_pts, aes(x = x_lig, y = 2.08, size = ligand_pct, color = ligand_expr)) +
   scale_color_gradientn(colours = c("#FDE0DD", "#FB6A4A", "#CB181D"), name = "Average\nExpression") +
-  geom_point(data = rec_pts, aes(x = x_rec, y = 0.98, size = receptor_pct), color = "#1B7837") +
-  geom_text(data = lig_pts, aes(x = x_lig, y = 1.88, label = ligand), angle = 90, hjust = 1, vjust = 0.5, size = 2.7) +
-  geom_text(data = rec_pts, aes(x = x_rec, y = 1.12, label = receptor), angle = 90, hjust = 0, vjust = 0.5, size = 2.7) +
-  scale_size_continuous(range = c(2.5, 6.8), name = "Percent\nExpressed") +
-  scale_y_continuous(breaks = c(0.98, 2.02), labels = c("Receptors", "Ligands"), limits = c(0.75, 2.25)) +
+  geom_point(data = rec_pts, aes(x = x_rec, y = 0.92, size = receptor_pct), color = "#1B7837") +
+  geom_text(data = lig_pts, aes(x = x_lig, y = 1.95, label = ligand), angle = 90, hjust = 1, vjust = 0.5, size = 2.75) +
+  geom_text(data = rec_pts, aes(x = x_rec, y = 1.05, label = receptor), angle = 90, hjust = 0, vjust = 0.5, size = 2.75) +
+  scale_size_continuous(range = c(2.4, 6.4), name = "Percent\nExpressed") +
+  scale_y_continuous(breaks = c(0.92, 2.08), labels = c("Receptors", "Ligands"), limits = c(0.76, 2.24)) +
   theme_classic(base_size = 9.5) +
   theme(
     axis.title = element_blank(),
@@ -71,8 +72,8 @@ p <- ggplot() +
     plot.margin = margin(8, 8, 8, 8)
   )
 
-w_in <- if (!is.null(style$width_in)) as.numeric(style$width_in) else max(5.8, min(12, max(length(lig_levels), length(rec_levels)) * 0.58 + 2.4))
-h_in <- if (!is.null(style$height_in)) as.numeric(style$height_in) else 3.4
+w_in <- if (!is.null(style$width_in)) as.numeric(style$width_in) else max(5.8, min(12, span_x * 0.58 + 2.4))
+h_in <- if (!is.null(style$height_in)) as.numeric(style$height_in) else 3.8
 dpi_val <- if (is.null(style$dpi)) 300 else as.integer(style$dpi)
 
 ggsave(file.path(out_dir, "figure.png"), p, width = w_in, height = h_in, dpi = dpi_val, bg = "white")

@@ -1,6 +1,24 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "kegg": {
+      "interface": "",
+      "filename": "kegg_cluster_bubble.csv",
+      "description": "多亚群KEGG通路气泡表（pathway、cluster、count、logp）",
+      "required": true,
+      "columns": {
+        "pathway": { "type": "str", "description": "KEGG通路名称", "required": true },
+        "cluster": { "type": "str", "description": "细胞亚群名", "required": true },
+        "count": { "type": "float", "description": "富集基因数", "required": true },
+        "logp": { "type": "float", "description": "-log10(P/padj)显著性", "required": true }
+      }
+    }
+  },
+  "style": {
+    "dpi": 300,
+    "width_in": 9.2,
+    "height_in": 9.8
+  },
+  "parameters": {}
 }
