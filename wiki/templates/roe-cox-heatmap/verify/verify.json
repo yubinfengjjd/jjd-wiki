@@ -1,1 +1,21 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-19T10:31:24.429084+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T14:50:34.535191+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/roe-cox-heatmap/spec.json": "95ef716d3685c4d94fce5326f318be95d851bbeb0dec929d997bca3f5b3230bf",
+    "templates/roe-cox-heatmap/code/render.R": "986f244732e3ae87611827bf830b6a67dc0a67fecbeb717e1b2255723c4a5ff3",
+    "inline/roe_cox#columns": "dd36b5d51b241df5df207df624279b3068098e8f1921dba7a2f679786c265e2d",
+    "templates/roe-cox-heatmap/example/roe_cox_input.csv": "6ca87070b7e3b628b917734cf680a3593c9cec4855d608a5fc64e0f8efdb7337"
+  },
+  "outputs": {
+    "png": "dda795abfdd94a0e0cc4fc5e62e5d311a033eb42b5206263369b14884b21293a",
+    "pdf": "911af2bc85a2f1d45c00e8455eb70f82fa41c1c1c4a17571fe081c91d3d474c0",
+    "svg": "9b72d226f1a6e25fb1f805fa91f32e1eab7abe185ae7e732704c68ba7620e921"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
