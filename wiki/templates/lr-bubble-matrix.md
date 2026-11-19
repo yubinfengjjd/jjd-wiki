@@ -54,9 +54,14 @@ journal_style: Cai2026-npjPO
 
 | 列 | 类型 | 必需 | 含义 |
 |---|---|---|---|
+| pair_label | str | 可选 | 有向细胞对标签（如 Source->Target；与 source+target 二选一必填） |
+| source | str | 可选 | 发送者细胞类型（缺 pair_label 时与 target 联合必填） |
+| target | str | 可选 | 接收者细胞类型（缺 pair_label 时与 source 联合必填） |
 | interaction | str | 必需 | 配受体对名称（如 COL1A1_CD44） |
 | prob | float | 必需 | 通讯概率或平均互作强度 |
 | pval | float | 可选 | 置换检验 p 值 |
+
+- 必选列组（需满足其一）：`pair_label` 或 `source + target`
 
 ### 可覆盖的 style
 

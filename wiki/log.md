@@ -1627,3 +1627,5 @@
 ## [2026-11-19 16:27 UTC] acceptance check methods/cell-cell-communication
 
 ## [2026-11-19 16:27 UTC] acceptance check methods/immune-infiltration-tme
+
+## [2026-11-19 16:41 UTC] verify lr-bubble-matrix

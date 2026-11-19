@@ -7,6 +7,10 @@
       "filename": "lr_bubble_matrix.csv",
       "description": "配受体互作矩阵表（pair_label 或 source+target、interaction、prob、pval）",
       "required": true,
+      "required_any_of": [
+        ["pair_label"],
+        ["source", "target"]
+      ],
       "columns": {
         "pair_label": { "type": "str", "description": "有向细胞对标签（如 Source->Target；与 source+target 二选一必填）", "required": false },
         "source": { "type": "str", "description": "发送者细胞类型（缺 pair_label 时与 target 联合必填）", "required": false },

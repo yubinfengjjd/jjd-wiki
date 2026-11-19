@@ -72,11 +72,12 @@ figure_relations:
     evidence: []
 - figure: templates/lr-bipartite-bubble
   compatibility: adaptable
-  reason: 关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。
+  reason: 关键免疫抑制基质亚群（发送群）与耗竭 T 细胞（接收群）间的配受体连线及两端平均表达量（着色）/0–100% 阳性细胞比例（尺寸）可切换为 variant
+    双轴连线气泡图；模板不重算检验。
   prerequisites:
-  - 明确展示的配体-受体对来源与检出率计算分母（tested pairs）。
-  adaptation: 导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct,
-    receptor_expr, receptor_pct）。
+  - 须明确发送群与接收群定义，并从单细胞表达矩阵额外汇总两群内配体/受体的平均表达量及 0–100% 阳性细胞比例（分母为各自定义细胞群总细胞数）。
+  adaptation: 从配受体清单结合单细胞表达矩阵导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr,
+    ligand_pct, receptor_expr, receptor_pct）。
   evidence:
   - methods/immune-infiltration-tme.md#输出
   - templates/lr-bipartite-bubble/spec.json
@@ -140,7 +141,7 @@ next_steps:
     - 依据：按高/低免疫基质评分或关键标志物四分位分组的多免疫检查点表达分布及 Wilcoxon 检验可切换为 variant 分组箱线图。；前提：分组定义与检验方法（Wilcoxon）在上游明确；展示截断分位数须在图注说明。；适配：导出 checkpoint_expr.csv（sample_id, gene, group, expression, 可选 pval）。
     - 关系证据：methods/immune-infiltration-tme.md#输出；templates/checkpoint-group-boxplot/spec.json；运行证据：无
   - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
-    - 依据：关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：明确展示的配体-受体对来源与检出率计算分母（tested pairs）。；适配：导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
+    - 依据：关键免疫抑制基质亚群（发送群）与耗竭 T 细胞（接收群）间的配受体连线及两端平均表达量（着色）/0–100% 阳性细胞比例（尺寸）可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：须明确发送群与接收群定义，并从单细胞表达矩阵额外汇总两群内配体/受体的平均表达量及 0–100% 阳性细胞比例（分母为各自定义细胞群总细胞数）。；适配：从配受体清单结合单细胞表达矩阵导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
     - 关系证据：methods/immune-infiltration-tme.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
 <!-- facts:end -->
 

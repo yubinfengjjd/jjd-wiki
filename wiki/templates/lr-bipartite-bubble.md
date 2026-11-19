@@ -32,10 +32,10 @@ journal_style: Cai2026-npjPO
 
 - 方法配图关系（语义审查）：
   - [[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
-    - 依据：两类细胞群间的多对配体-受体双轴连线与检验检出率气泡可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。；前提：连线仅表示数据库配对与统计支持，不代表物理结合或因果调控。；适配：导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
+    - 依据：两类细胞群间的多对配体-受体双轴连线与两端平均表达量（着色）/表达阳性细胞比例 0–100%（气泡尺寸）可切换为 variant 双轴连线图；模板不重算 CellPhoneDB p 值。；前提：须明确发送群（配体端）与接收群（受体端），并从同一单细胞表达矩阵分别汇总两群内各基因的平均表达量及 0–100% 阳性细胞比例（分母为对应细胞群总细胞数）。；连线仅表示数据库配对与表达汇总，不代表物理结合或因果调控。；适配：从配受体结果结合单细胞表达矩阵导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
     - 关系证据：methods/cell-cell-communication.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
   - [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
-    - 依据：关键免疫抑制基质亚群与耗竭 T 细胞间的检查点配受体支持度可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：明确展示的配体-受体对来源与检出率计算分母（tested pairs）。；适配：导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
+    - 依据：关键免疫抑制基质亚群（发送群）与耗竭 T 细胞（接收群）间的配受体连线及两端平均表达量（着色）/0–100% 阳性细胞比例（尺寸）可切换为 variant 双轴连线气泡图；模板不重算检验。；前提：须明确发送群与接收群定义，并从单细胞表达矩阵额外汇总两群内配体/受体的平均表达量及 0–100% 阳性细胞比例（分母为各自定义细胞群总细胞数）。；适配：从配受体清单结合单细胞表达矩阵导出 lr_bipartite_pairs.csv（ligand, receptor, ligand_expr, ligand_pct, receptor_expr, receptor_pct）。
     - 关系证据：methods/immune-infiltration-tme.md#输出；templates/lr-bipartite-bubble/spec.json；运行证据：无
 <!-- facts:end -->
 
