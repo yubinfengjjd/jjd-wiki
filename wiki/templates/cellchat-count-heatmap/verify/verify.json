@@ -1,1 +1,21 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-19T10:31:29.560128+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T14:51:02.373934+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/cellchat-count-heatmap/spec.json": "05e2f390c794a585b4a8de85100f77e8306881ad0b8fa3dd29c443757caf290b",
+    "templates/cellchat-count-heatmap/code/render.R": "f1ffc18bf588632a10893b706b702fff5066a4de3edcac0d32b0bcee96b4890c",
+    "inline/counts#columns": "43fb7c901b34824488dfa531b0c403998092f9be9c579146bcf39a5c029ca17d",
+    "templates/cellchat-count-heatmap/example/interaction_counts.csv": "10fb1235db35a1559db715beb13f4d75dbc82f58c904c8cbd119488f3880400c"
+  },
+  "outputs": {
+    "png": "ca2dc26cef93e398dccb454ec6db4d67e2b9b3447de9c338f42790576dd92de8",
+    "pdf": "0c1aa821f8558ea199cca75a7761f26fe4d2874dab4401faf60b8f52201a4638",
+    "svg": "86b7de94c30663d4f8aa003f29c51773d353cf6ab253e440d6fe1b8015c5a9af"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
