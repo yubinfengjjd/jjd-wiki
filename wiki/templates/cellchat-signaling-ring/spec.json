@@ -1,0 +1,56 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "nodes": {
+      "interface": "",
+      "filename": "ring_nodes.csv",
+      "description": "圆形通讯环全部目录节点（含孤立节点）、分组着色与枢纽高亮标记",
+      "required": true,
+      "columns": {
+        "node": { "type": "str", "description": "细胞亚群或节点名称", "required": true },
+        "compartment": { "type": "str", "description": "所属大类分区（用于默认离散着色）", "required": false },
+        "color": { "type": "str", "description": "可选自定义十六进制节点色", "required": false },
+        "is_hub": { "type": "int", "description": "是否为重点高亮枢纽节点（1 为高亮红标，0 为常规）", "required": false }
+      }
+    },
+    "edges": {
+      "interface": "",
+      "filename": "ring_edges.csv",
+      "description": "有向细胞间通讯边列表（from、to、weight）",
+      "required": true,
+      "columns": {
+        "from": { "type": "str", "description": "发送者细胞亚群（对应 nodes.node）", "required": true },
+        "to": { "type": "str", "description": "接收者细胞亚群（对应 nodes.node）", "required": true },
+        "weight": { "type": "float", "description": "通路通讯概率或汇总强度", "required": true }
+      }
+    }
+  },
+  "style": {
+    "node_size": 4.2,
+    "label_size": 2.25,
+    "hub_label_color": "#D7191C",
+    "default_label_color": "#252229",
+    "dpi": 300,
+    "width_in": 7.6,
+    "height_in": 7.4
+  },
+  "parameters": {
+    "node_size": {
+      "type": "number",
+      "label": "节点圆点大小",
+      "default": 4.2,
+      "min": 2.0,
+      "max": 8.0,
+      "step": 0.2
+    },
+    "label_size": {
+      "type": "number",
+      "label": "放射标签字号",
+      "default": 2.25,
+      "min": 1.2,
+      "max": 4.0,
+      "step": 0.1
+    }
+  }
+}

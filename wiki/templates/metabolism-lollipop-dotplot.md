@@ -16,6 +16,8 @@ chart_types:
 - lollipop
 keywords: []
 favorite: false
+style_tier: default
+journal_style: Cai2026-npjPO
 ---
 # 多亚群代谢通路棒棒糖图
 

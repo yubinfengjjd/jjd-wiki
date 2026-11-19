@@ -15,6 +15,8 @@ chart_types:
 - bubble
 keywords: []
 favorite: false
+style_tier: variant
+journal_style: Cai2026-npjPO
 ---
 # 配受体双轴连线气泡图
 

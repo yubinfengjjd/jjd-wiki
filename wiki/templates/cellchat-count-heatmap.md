@@ -15,6 +15,8 @@ chart_types:
 - heatmap
 keywords: []
 favorite: false
+style_tier: variant
+journal_style: Cai2026-npjPO
 ---
 # 细胞通讯计数柱状热图
 

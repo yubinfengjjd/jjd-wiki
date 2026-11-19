@@ -1,0 +1,54 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "expr": {
+      "interface": "",
+      "filename": "checkpoint_expr.csv",
+      "description": "多基因分组表达长表（sample_id、gene、group、expression，可选 pval）",
+      "required": true,
+      "columns": {
+        "sample_id": { "type": "str", "description": "样本或 Spot 唯一标识", "required": true },
+        "gene": { "type": "str", "description": "免疫检查点或目标基因名称", "required": true },
+        "group": { "type": "str", "description": "比较分组标签（如 low 与 high）", "required": true },
+        "expression": { "type": "float", "description": "归一化表达值或签名分数", "required": true },
+        "pval": { "type": "float", "description": "可选预计算组间检验 p 值（若提供则优先使用）", "required": false }
+      }
+    }
+  },
+  "style": {
+    "ncol": 4,
+    "group_colors": ["#1D8A68", "#D05810", "#3B7EB6", "#8856A7"],
+    "y_transform": "sqrt",
+    "cap_quantile": 0.97,
+    "show_outliers": true,
+    "show_bracket": true,
+    "dpi": 300,
+    "width_in": 7.6,
+    "height_in": 4.2
+  },
+  "parameters": {
+    "ncol": {
+      "type": "number",
+      "label": "分面列数",
+      "default": 4,
+      "min": 1,
+      "max": 8,
+      "step": 1
+    },
+    "y_transform": {
+      "type": "select",
+      "label": "纵轴变换",
+      "default": "sqrt",
+      "options": ["sqrt", "identity"]
+    },
+    "cap_quantile": {
+      "type": "number",
+      "label": "显示上限分位数",
+      "default": 0.97,
+      "min": 0.9,
+      "max": 1.0,
+      "step": 0.01
+    }
+  }
+}

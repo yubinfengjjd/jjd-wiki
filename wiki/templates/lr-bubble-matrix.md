@@ -15,6 +15,8 @@ chart_types:
 - bubble
 keywords: []
 favorite: false
+style_tier: default
+journal_style: Cai2026-npjPO
 ---
 # 配受体互作概率气泡矩阵
 

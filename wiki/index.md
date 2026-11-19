@@ -179,15 +179,24 @@
 
 ### draft
 
+- [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
 - [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]
 - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
+- [[templates/atlas-workflow-diagram|多源图谱构建流程示意图]]
+- [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]]
+- [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]]
 - [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]
+- [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
+- [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]]
 - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]
+- [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]]
+- [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]]
 - [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]
 - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]
+- [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]]
 
 ### ready
 

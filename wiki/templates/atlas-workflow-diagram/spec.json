@@ -1,0 +1,50 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "steps": {
+      "interface": "",
+      "filename": "workflow_steps.csv",
+      "description": "多源队列研究流程各分支的步骤节点与连线样式",
+      "required": true,
+      "columns": {
+        "branch": { "type": "str", "description": "流程分支或组学轨道名称", "required": true },
+        "step_order": { "type": "int", "description": "分支内步骤顺序（从左到右）", "required": true },
+        "label": { "type": "str", "description": "步骤框显示标签（可用 \\n 换行）", "required": true },
+        "arrow_style": { "type": "str", "description": "进入该步骤的箭头线型（solid 或 dashed）", "required": false },
+        "box_fill": { "type": "str", "description": "可选步骤节点填充色（十六进制）", "required": false }
+      }
+    },
+    "cohorts": {
+      "interface": "",
+      "filename": "workflow_cohorts.csv",
+      "description": "各研究分支汇总的队列名称、样本数及数据来源类型",
+      "required": true,
+      "columns": {
+        "branch": { "type": "str", "description": "所属流程分支名称", "required": true },
+        "cohort": { "type": "str", "description": "队列或数据集编号", "required": true },
+        "n_samples": { "type": "int", "description": "该队列纳入样本数", "required": true },
+        "origin": { "type": "str", "description": "数据来源（in-house 或 public）", "required": false }
+      }
+    }
+  },
+  "style": {
+    "inhouse_color": "#4FB3C8",
+    "public_color": "#B5B2AF",
+    "tissue_fill": "#F6E5BB",
+    "tissue_border": "#B18470",
+    "nodule_fill": "#AB5141",
+    "nodule_border": "#982723",
+    "show_source_pie": true,
+    "dpi": 300,
+    "width_in": 9.8,
+    "height_in": 4.2
+  },
+  "parameters": {
+    "show_source_pie": {
+      "type": "boolean",
+      "label": "显示自采/公共比例饼图",
+      "default": true
+    }
+  }
+}

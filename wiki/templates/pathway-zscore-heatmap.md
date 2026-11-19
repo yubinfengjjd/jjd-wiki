@@ -16,6 +16,8 @@ chart_types:
 - heatmap
 keywords: []
 favorite: false
+style_tier: default
+journal_style: Cai2026-npjPO
 ---
 # 功能基因与通路Zscore热图
 

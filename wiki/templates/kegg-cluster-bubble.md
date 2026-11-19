@@ -16,6 +16,8 @@ chart_types:
 - dotplot
 keywords: []
 favorite: false
+style_tier: default
+journal_style: Cai2026-npjPO
 ---
 # 多亚群KEGG通路气泡矩阵
 

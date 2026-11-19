@@ -16,6 +16,8 @@ chart_types:
 - heatmap
 keywords: []
 favorite: false
+style_tier: default
+journal_style: Cai2026-npjPO
 ---
 # 多因素Cox与Ro/e热图
 

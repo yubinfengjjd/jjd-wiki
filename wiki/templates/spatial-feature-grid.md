@@ -16,6 +16,8 @@ chart_types:
 - spatial-map
 keywords: []
 favorite: false
+style_tier: default
+journal_style: Cai2026-npjPO
 ---
 # 空间转录组特征分布网格
 
