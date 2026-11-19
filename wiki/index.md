@@ -179,6 +179,7 @@
 
 ### draft
 
+- [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
 
 ### ready

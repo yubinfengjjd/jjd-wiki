@@ -1493,3 +1493,5 @@
 ## [2026-11-18 17:18 UTC] complete hdWGCNA sphere network & enrichment layout notes
 
 ## [2026-11-19 06:08 UTC] scaffold native template spatial-feature-grid
+
+## [2026-11-19 06:09 UTC] scaffold native template roe-cox-heatmap
