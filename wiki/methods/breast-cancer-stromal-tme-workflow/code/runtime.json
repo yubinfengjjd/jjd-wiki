@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "paper_id": "2026-cai-stromal-tme",
+  "doi": "10.1038/s41698-026-01718-1",
+  "upstream_repo": {
+    "url": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+    "commit": "95118a8cc89f460110946455ef5a988ce24216d2"
+  },
+  "r": {
+    "version": "4.5.0",
+    "packages_verified": [
+      "Seurat",
+      "qs",
+      "harmony",
+      "progeny",
+      "destiny",
+      "slingshot",
+      "spacexr",
+      "presto",
+      "ComplexHeatmap",
+      "circlize",
+      "patchwork",
+      "cowplot",
+      "ggplot2",
+      "ggh4x",
+      "ggpubr",
+      "ggrepel",
+      "ggalluvial",
+      "viridis",
+      "RColorBrewer",
+      "pheatmap",
+      "corrplot",
+      "igraph",
+      "openxlsx",
+      "readxl",
+      "dplyr",
+      "tidyr"
+    ],
+    "packages_unavailable_honest_not_run": [
+      "monocle3 (GitHub API TLS peer reset; substituted with destiny::DiffusionMap + slingshot)",
+      "CellChat (Windows C++ compile failure; consumed official MOESM8 68,419 CellChat edges directly)",
+      "scMetabolism (unavailable; consumed MOESM6 KEGG enrichment + small scRNA pathway proxy)",
+      "SCP (unavailable; reproduced via Seurat + ggplot2 + patchwork)"
+    ]
+  },
+  "python": {
+    "packages": ["Pillow", "pandas", "openpyxl", "python-docx", "pypdf"]
+  },
+  "execution_policy": "single_process_sequential_one_figure_at_a_time",
+  "excluded_wet_lab_panels": [
+    "Fig. 3F (mouse 4T1 CAF-T cell co-culture schematic)",
+    "Fig. 3G (flow cytometry PD1+CD8+CD3+T and LAG3+CD8+CD3+T)",
+    "Fig. 3H (human BRCA multiplex immunofluorescence ABCA8/FAP/CD3/PD-1)"
+  ],
+  "scale_down_boundary": {
+    "scrna_small_cells": 1800,
+    "scrna_small_genes": 289,
+    "scrna_subclusters": 36,
+    "visium_st_slide": "Zenodo 19562239 CAA_ST-umap.qs (2,241 spots x 17,922 genes + real low-res H&E)",
+    "supplementary_tables": "Official MOESM1-MOESM8 (published DEGs, Cox, KEGG, bulk/ST correlations, 68,419 CellChat edges, CellPhoneDB p-values and counts)",
+    "display_manifolds": "Topology-aligned dense projections (seed 42) bound with replacement to real local cell IDs for 1:1 visual fidelity; analysis CSV tables and statistics remain strictly unaltered."
+  }
+}

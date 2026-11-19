@@ -304,6 +304,10 @@
 
 ## 组合流程
 
+### draft
+
+- [[methods/breast-cancer-stromal-tme-workflow|乳腺癌基质单细胞与空转微环境复刻流程]] — 文献《Integration of single-cell and spatial t》纯生信方法拆解与复刻组合流程（已剔除湿实验，含正文-附加材料映射与双份代码存档）。
+
 ### ready
 
 - [[methods/asthma-lactylation-workflow|乳酸化与代谢研究分析流程]] — 保留来源步骤、参数与分组差异的研究流程；共同分析引用现有家族，所有来源分支未重跑。

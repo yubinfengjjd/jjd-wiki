@@ -1537,3 +1537,5 @@
 ## [2026-11-19 06:44 UTC] verify kegg-cluster-bubble
 
 ## [2026-11-19 06:47 UTC] verify metabolism-lollipop-dotplot
+
+## [2026-11-19 10:18 UTC] publish paper workflow breast-cancer-stromal-tme-workflow from 2026-cai-stromal-tme

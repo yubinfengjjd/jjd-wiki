@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "paper_id": "2026-cai-stromal-tme",
+  "local_workspace": "<sources_root>/papers/2026-cai-stromal-tme",
+  "upstream_repos": [
+    {
+      "url": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "license_files": []
+    }
+  ],
+  "archived_upstream_files": [
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/CAF_PVL_Endo_pseudotime.R",
+      "bytes": 4489,
+      "sha256": "b7e0081e4014d6422531f22caf5d9af419e4de84b0d366fcaeceadcb2f7ef297"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/CAF_scRNA_integration_annotation_pipeline.R",
+      "bytes": 9478,
+      "sha256": "cd27219957b331468da027ea52e21a858c6b67772a2858227fc9a913568dc580"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/Cross-talk.R",
+      "bytes": 7323,
+      "sha256": "f898c6d42f2dd328ee75ac4b2c7abafbaa863f8e615edb3fcd64b9faf2ea1735"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/Endo_Analysis_FullPipeline_Complete.R",
+      "bytes": 12006,
+      "sha256": "9415399b505025f8a1517601b1d319326bb1a899c30c9c084d4f099d2796df6b"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/Fig1_stromal_annotation_and_subset.R",
+      "bytes": 6467,
+      "sha256": "1bc782bba88ac2fddfe4b8aa4a56952a98b3994cf19d27a87e3cd9e9d8314c77"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/Fig2_CAF_program_distribution_progeny.R",
+      "bytes": 15519,
+      "sha256": "8139ad3e8cca6b8e040561b6b251e1ea7d8e01c0741148b2cf72d7b2b77ec9f9"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/PVL_Analysis_Final.R",
+      "bytes": 9739,
+      "sha256": "0f7e29c1f8aeae33c7d7803420a41cb232013db47d6f448dedd2295d88c1face"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/README.md",
+      "bytes": 22283,
+      "sha256": "53822312867c00fe85f11d9aeeac6a7d592d8e4379381df1dcb8ecd287ea84a4"
+    },
+    {
+      "repo": "https://github.com/qingyaolab/breastcancer-Stromal-Cell",
+      "commit": "95118a8cc89f460110946455ef5a988ce24216d2",
+      "file": "breastcancer-stromal-cell/ST_RCTD_CAF_multiSample.R",
+      "bytes": 2979,
+      "sha256": "cd540eff4ca48c8498511c611ad26f10ae29a7e66b178ac5c2b41e671d1e821a"
+    }
+  ],
+  "skipped_upstream_files": [],
+  "archived_code_files": [
+    "00_prepare_spatial_and_scrna.R",
+    "00_sample_and_extract_moesm.py",
+    "00c_style_and_manifold.R",
+    "01_scrna_harmony_de.R",
+    "02_progeny_roe_cox.R",
+    "03_spatial_scores_deconv.R",
+    "04_trajectory_pseudotime.R",
+    "05_crosstalk_metabolism.R",
+    "figures/fig01_stromal_atlas.R",
+    "figures/fig02_fib_characterization.R",
+    "figures/fig03_abca8_lpfib_tcell.R",
+    "figures/fig04_ec_characterization.R",
+    "figures/fig05_mural_characterization.R",
+    "figures/fig06_tme_crosstalk.R",
+    "figures/sfig01_stromal_batch_markers.R",
+    "figures/sfig02_fib_supp.R",
+    "figures/sfig03_spatial_markers_deconv.R",
+    "figures/sfig04_ec_supp.R",
+    "figures/sfig05_mural_supp_chord.R",
+    "figures/sfig06_spatial_tls_pgf_lr.R",
+    "make_side_by_side.py",
+    "README.md",
+    "runtime.json"
+  ]
+}
