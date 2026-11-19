@@ -1,6 +1,46 @@
 {
   "entry": "code/render.R",
   "language": "r",
-  "tables": {},
-  "style": {}
+  "tables": {
+    "roe_cox": {
+      "interface": "",
+      "filename": "roe_cox_input.csv",
+      "description": "细胞亚群多因素Cox风险结果（tcga_HR/tcga_p_value、inhouse_HR/inhouse_p_value）与roe_subtype_*、roe_tissue_*宽表",
+      "required": true,
+      "columns": {
+        "canonical_subcluster": {
+          "type": "str",
+          "description": "规范亚群名称（横轴）",
+          "required": true
+        },
+        "tcga_HR": {
+          "type": "float",
+          "description": "TCGA队列多因素Cox HR（>1危险因素，<=1保护因素）",
+          "required": false
+        },
+        "inhouse_HR": {
+          "type": "float",
+          "description": "内部队列多因素Cox HR",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "roe_cap": 2.2,
+    "text_size": 2.7,
+    "dpi": 300,
+    "width_in": 8.2,
+    "height_in": 5.4
+  },
+  "parameters": {
+    "roe_cap": {
+      "type": "number",
+      "label": "Ro/e 色标上限",
+      "default": 2.2,
+      "min": 1.5,
+      "max": 5.0,
+      "step": 0.2
+    }
+  }
 }

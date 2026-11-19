@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T06:22:14.777030+00:00",
+  "timestamp": "2026-11-19T06:24:48.816143+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/spatial-feature-grid/spec.json": "8290add881bdee4978ffbde38cf7a59074f90173d5f96e7d58a8ff60ece58f3d",
-    "templates/spatial-feature-grid/code/render.R": "dc0d3de0f69390a7701c104cb6d769c23621bd3d49cb1769ddff8ebbb7ba0a1e",
+    "templates/spatial-feature-grid/code/render.R": "e84dcceb83e8ecd13e646d1dc157bb03c228155d386d32c18f7e4bcb2456d347",
     "inline/spots#columns": "aea1ac9e12233751d552a1c0d3a2cbb7475a7383eabed5de334e52e2e12b34d6",
     "templates/spatial-feature-grid/example/spatial_spots_long.csv": "18e521198e7d2867d0cc0ccc063d5a68dd4b60ae8366279acb9b3bccec076620"
   },
   "outputs": {
-    "png": "765e59d0a10297d650a4fcadf8d18870f68d2462e508aef749891665c3408fe8",
-    "pdf": "d53a73db990906992dc6dea368346b043fe27d47026e448b66056bfe158f828d",
-    "svg": "cc4098dfaae3972b5b5d77a50001e6d17b3b740c1a4dad136cc1c17c68d07f02"
+    "png": "cc49cf8f3686a3a09bb2c79a297418a916d3daf2104fdcedf39e189549df2583",
+    "pdf": "50d7092f2a0f7cb632e51711c6b1dca85138db5a73aa6d36c9b02ecbb2a06eff",
+    "svg": "d6e3157a93c38f299e7aef5ae2902df83b75b40a008b600e920ac319b5069125"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

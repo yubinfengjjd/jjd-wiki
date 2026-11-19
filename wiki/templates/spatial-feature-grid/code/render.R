@@ -76,12 +76,12 @@ panels <- lapply(feat_levels, function(ft) {
     theme(
       plot.title = element_text(hjust = 0.02, face = "bold", size = 9.5, margin = margin(b = 2)),
       legend.position = "top",
-      legend.key.width = unit(0.45, "in"),
-      legend.key.height = unit(0.08, "in"),
-      legend.text = element_text(size = 7.5),
-      legend.margin = margin(b = -4),
+      legend.key.width = unit(0.28, "in"),
+      legend.key.height = unit(0.07, "in"),
+      legend.text = element_text(size = 7.0),
+      legend.margin = margin(b = -2),
       panel.border = element_rect(color = "#222222", fill = NA, linewidth = 0.5),
-      plot.margin = margin(4, 4, 4, 4)
+      plot.margin = margin(4, 10, 4, 10)
     )
 })
 
