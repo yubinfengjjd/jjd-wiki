@@ -317,7 +317,7 @@
 
 ### draft
 
-- [[methods/breast-cancer-stromal-tme-workflow|乳腺癌基质单细胞与空转微环境复刻流程]] — 文献《Integration of single-cell and spatial t》纯生信方法拆解与复刻组合流程（已剔除湿实验，含正文-附加材料映射与双份代码存档）。
+- [[methods/breast-cancer-stromal-tme-workflow|乳腺癌基质单细胞与空转微环境复刻流程]] — 文献《Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer》（Cai et al., npj Precision Oncology 2026）纯生信方法拆解与复刻组合流程（已剔除湿实验 Fig. 3F–H，含正文-附加材料映射、面板覆盖清单与双份代码存档）。
 
 ### ready
 

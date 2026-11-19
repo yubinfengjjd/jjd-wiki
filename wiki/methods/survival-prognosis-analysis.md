@@ -84,11 +84,11 @@ figure_relations:
     evidence: []
 - figure: templates/roe-cox-heatmap
   compatibility: adaptable
-  reason: 多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为 variant 热图；模板不做生存回归。
+  reason: 多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为主推默认（default）复合热图；模板不做生存回归。
   prerequisites:
   - 各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。
-  adaptation: 整理 roe_cox_heatmap.csv（cluster, tcga_HR, tcga_p_value, inhouse_HR, inhouse_p_value
-    及 Ro/e 列）。
+  adaptation: 整理 roe_cox_input.csv（canonical_subcluster、tcga_HR、tcga_p_value、inhouse_HR、inhouse_p_value
+    及 roe_subtype_*/roe_tissue_* 列）。
   evidence:
   - methods/survival-prognosis-analysis.md#输出
   - templates/roe-cox-heatmap/spec.json
@@ -162,7 +162,7 @@ next_steps:
     - 依据：方法输出 subgroup-effect-table 直接对齐临床亚组森林图模板契约（label, estimate, lower, upper, n, percent, p）；模板仅做可视化渲染，不拟合 Cox 模型。；前提：所有亚组效应量（HR 与 95% CI）须由同一预后模型/分组定义在各临床亚组内分别拟合得到。；交互作用 P 值（p 列）需明确为交互项检验或组内趋势检验，避免混淆。；适配：无格式适配声明
     - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/subgroup-hazard-forest/spec.json；templates/subgroup-hazard-forest/verify/verify.json；interfaces/subgroup-effect-table.md；运行证据：无
   - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
-    - 依据：多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为 variant 热图；模板不做生存回归。；前提：各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。；适配：整理 roe_cox_heatmap.csv（cluster, tcga_HR, tcga_p_value, inhouse_HR, inhouse_p_value 及 Ro/e 列）。
+    - 依据：多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为主推默认（default）复合热图；模板不做生存回归。；前提：各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。；适配：整理 roe_cox_input.csv（canonical_subcluster、tcga_HR、tcga_p_value、inhouse_HR、inhouse_p_value 及 roe_subtype_*/roe_tissue_* 列）。
     - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/roe-cox-heatmap/spec.json；运行证据：无
 <!-- facts:end -->
 

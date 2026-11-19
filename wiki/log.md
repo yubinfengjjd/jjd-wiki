@@ -1613,3 +1613,5 @@
 ## [2026-11-19 14:54 UTC] v5.1 batch-confirm 19 Cai 2026 templates to ready, add panel-manifest.yaml and v5.1 AGENTS governance rules
 
 ## [2026-11-19 15:08 UTC] v5.1 Codex review P1 fixes: split Fig 6F/6G evidence tiers and align manifest counts
+
+## [2026-11-19 15:46 UTC] acceptance check methods/cell-type-annotation
