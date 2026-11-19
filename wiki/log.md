@@ -1623,3 +1623,5 @@
 ## [2026-11-19 16:27 UTC] verify lr-bubble-matrix
 
 ## [2026-11-19 16:27 UTC] acceptance check templates/lr-bubble-matrix
+
+## [2026-11-19 16:27 UTC] acceptance check methods/cell-cell-communication
