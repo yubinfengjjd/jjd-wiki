@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T18:50:19.161300+00:00",
+  "checked_at": "2026-11-20T19:11:18.622554+00:00",
   "page": "templates/group-bar-jitter-sig.md",
-  "snapshot": "9d47c62e461e950f6fd6ae1ba2fad4c65b7a247e54bad21d4cbacff54a165b69",
+  "snapshot": "3375649b32005c3879aa936cd7b5ad76185d80a59bec9a7a5d52490d47247ed0",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
