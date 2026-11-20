@@ -1731,3 +1731,5 @@
 ## [2026-11-20 17:26 UTC] scaffold native template compartment-dual-track-bars
 
 ## [2026-11-20 17:28 UTC] scaffold native template stage-track-block-heatmap
+
+## [2026-11-20 17:28 UTC] scaffold native template spatial-expression-contour
