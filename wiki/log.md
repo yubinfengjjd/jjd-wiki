@@ -1779,3 +1779,5 @@
 ## [2026-11-20 19:10 UTC] verify spatial-cell-highlight-grid
 
 ## [2026-11-20 19:10 UTC] acceptance check templates/spatial-cell-highlight-grid
+
+## [2026-11-20 19:11 UTC] verify group-bar-jitter-sig
