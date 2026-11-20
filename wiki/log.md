@@ -1707,3 +1707,5 @@
 ## [2026-11-20 12:48 UTC] acceptance check methods/dimensionality-reduction
 
 ## [2026-11-20 12:49 UTC] acceptance check methods/spatial-transcriptomics-microenvironment
+
+## [2026-11-20 12:49 UTC] acceptance check methods/survival-prognosis-analysis
