@@ -56,7 +56,7 @@ favorite: false
 
 ## 数据要求
 
-### cells（stromal_umap_cells.csv）：细胞亚群降维坐标与高阶功能群表（cell_id、umap_1、umap_2、subcluster，可选 functional_group） （模板内联表结构）
+### cells（stromal_umap_cells.csv）：细胞亚群降维坐标与高阶功能群表（cell_id、umap_1、umap_2、subcluster，可选 functional_group、compartment） （模板内联表结构）
 
 | 列 | 类型 | 必需 | 含义 |
 |---|---|---|---|
@@ -65,18 +65,19 @@ favorite: false
 | umap_2 | float | 必需 | UMAP 纵坐标 |
 | subcluster | str | 必需 | 细胞精细亚群标签（自动按顺序编号） |
 | functional_group | str | 可选 | 可选高阶功能群标签（绘制红色虚线包络轮廓） |
+| compartment | str | 可选 | 可选大类分区（多分区时并排分面展示，如 Fib/EC/Mural cell） |
 
 ### 可覆盖的 style
 
 - `hull_color`：`"#D63A2F"`
-- `hull_linewidth`：`0.48`
+- `hull_linewidth`：`0.36`
 - `dot_size`：`0.85`
-- `legend_cols`：`3`
+- `legend_cols`：`4`
 - `show_hulls`：`true`
 - `show_centroids`：`true`
 - `dpi`：`300`
-- `width_in`：`6.6`
-- `height_in`：`7.6`
+- `width_in`：`9.6`
+- `height_in`：`6.2`
 
 ## 使用记录
 

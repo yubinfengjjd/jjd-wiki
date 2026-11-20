@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T12:31:54.900520+00:00",
+  "timestamp": "2026-11-20T10:47:21.186611+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/stromal-hull-umap/spec.json": "7e87e6a532ce69d416e29a9a9ff7de002ccdb86a989214ea3451b3731dfb12c9",
-    "templates/stromal-hull-umap/code/render.R": "a3ef4301dd73a7e45e0b296b9eb3c332551c45d3a62d0835348493533a5cb13d",
-    "inline/cells#columns": "e7d3be1055e138ea57e9d0b8eddd004cbf93f0b0a92b5b72489b03b6f46fc450",
-    "templates/stromal-hull-umap/example/stromal_umap_cells.csv": "a19e76cd11f518032f46b6604d509dd0c9aabdcf272d69f94fbb6753df505170"
+    "templates/stromal-hull-umap/spec.json": "e8a2e9c7e5d7b9ba416d4f976cb39d208195374f05a7e0961374f5ac24788cca",
+    "templates/stromal-hull-umap/code/render.R": "526ee2d48be516255ed369b8ffcfd3e9ed0aa982ca3260942c475dfa20344de5",
+    "inline/cells#columns": "c803ed841e3f1bb0003ec0c8b844859dfb352a5763d08a9a8476f558b4dfa031",
+    "templates/stromal-hull-umap/example/stromal_umap_cells.csv": "20c60b8b2f7b49498cfe456f283998cafe3117b81abb61dd24abd4f9bde1fa3c"
   },
   "outputs": {
-    "png": "7996908d3234cc15e097f11509f033f1e95b242d108a48b327edfd727822f02b",
-    "pdf": "7bb633b30cbb3b6603693ef8e33ecd7386c3cfc42b86265efdef00885b29c377",
-    "svg": "acfc44b940d1736f113717cbe6a4abd139fed518a55be6ff5aa22d035cea96e5"
+    "png": "20dfa6f26844ea56d80a4b1ce99f3cda56ac932d487088f1a22b2cc51bbc31d2",
+    "pdf": "122f7c13f9ebea6237c5af30d535531dd645b67664cc4487287d06be85aa6610",
+    "svg": "0aa47dca4c28ba5a50d02f1e713f1c9b157594ebf2c7015f92217f52916edc12"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

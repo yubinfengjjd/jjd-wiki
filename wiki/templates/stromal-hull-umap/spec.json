@@ -12,20 +12,21 @@
         "umap_1": { "type": "float", "description": "UMAP 横坐标", "required": true },
         "umap_2": { "type": "float", "description": "UMAP 纵坐标", "required": true },
         "subcluster": { "type": "str", "description": "细胞精细亚群标签（自动按顺序编号）", "required": true },
-        "functional_group": { "type": "str", "description": "可选高阶功能群标签（绘制红色虚线包络轮廓）", "required": false }
+        "functional_group": { "type": "str", "description": "可选高阶功能群标签（绘制红色虚线包络轮廓）", "required": false },
+        "compartment": { "type": "str", "description": "可选大类分区（多分区时并排分面展示，如 Fib/EC/Mural cell）", "required": false }
       }
     }
   },
   "style": {
     "hull_color": "#D63A2F",
-    "hull_linewidth": 0.48,
+    "hull_linewidth": 0.36,
     "dot_size": 0.85,
-    "legend_cols": 3,
+    "legend_cols": 4,
     "show_hulls": true,
     "show_centroids": true,
     "dpi": 300,
-    "width_in": 6.6,
-    "height_in": 7.6
+    "width_in": 9.6,
+    "height_in": 6.2
   },
   "parameters": {
     "show_hulls": {
@@ -41,7 +42,7 @@
     "legend_cols": {
       "type": "number",
       "label": "底部彩点图例列数",
-      "default": 3,
+      "default": 4,
       "min": 1,
       "max": 5,
       "step": 1

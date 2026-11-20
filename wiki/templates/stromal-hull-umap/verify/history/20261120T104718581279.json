@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:31:54.900520+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/stromal-hull-umap/spec.json": "7e87e6a532ce69d416e29a9a9ff7de002ccdb86a989214ea3451b3731dfb12c9",
+    "templates/stromal-hull-umap/code/render.R": "a3ef4301dd73a7e45e0b296b9eb3c332551c45d3a62d0835348493533a5cb13d",
+    "inline/cells#columns": "e7d3be1055e138ea57e9d0b8eddd004cbf93f0b0a92b5b72489b03b6f46fc450",
+    "templates/stromal-hull-umap/example/stromal_umap_cells.csv": "a19e76cd11f518032f46b6604d509dd0c9aabdcf272d69f94fbb6753df505170"
+  },
+  "outputs": {
+    "png": "7996908d3234cc15e097f11509f033f1e95b242d108a48b327edfd727822f02b",
+    "pdf": "7bb633b30cbb3b6603693ef8e33ecd7386c3cfc42b86265efdef00885b29c377",
+    "svg": "acfc44b940d1736f113717cbe6a4abd139fed518a55be6ff5aa22d035cea96e5"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
