@@ -36,7 +36,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：两组间物理距离或连续分布在不同细胞类群的迁移可导出为 default 镜像半小提琴 + 十分位数哑铃偏移图；模板不计算最近邻距离。；前提：仅用于严格两分组全正值（log 轴）分布比较；明确样本/FOV 边界。；适配：导出 distance_shift_groups.csv（panel, group, value）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/half-violin-decile-shift/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

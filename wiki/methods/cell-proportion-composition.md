@@ -337,6 +337,9 @@ next_steps:
   - [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：亚群跨组织构成堆叠比例与逐样本比例箱线图及 BH 校正 Wilcoxon 检验可切换至 variant 组合画风；检验以样本为重复单位。；前提：proportion 为各样本内亚群相对比例（0–1）；配对/独立检验以 sample_id 为独立单位。；适配：导出 tissue_ratio_prop.csv（cluster, tissue, sample_id, proportion, 可选 n_cells, pval）。
     - 关系证据：methods/cell-proportion-composition.md#输出；templates/tissue-ratio-prop-combo/spec.json；运行证据：无
+  - [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：两组间物理距离或连续分布在不同细胞类群的迁移可导出为 default 镜像半小提琴 + 十分位数哑铃偏移图；模板不计算最近邻距离。；前提：仅用于严格两分组全正值（log 轴）分布比较；明确样本/FOV 边界。；适配：导出 distance_shift_groups.csv（panel, group, value）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/half-violin-decile-shift/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

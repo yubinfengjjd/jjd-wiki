@@ -137,7 +137,8 @@ figure_relations:
   reason: 注释后的单细胞/空间蛋白组细胞类型标签可与进展分期、患者 ID 合并导出为 Cancer Discovery 风格三联 UMAP 变体；模板不执行注释。
   prerequisites:
   - umap_1/umap_2 与 cell_type、stage、patient_id 来自同一质控后对象；cell_id 唯一。
-  adaptation: 导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
+  adaptation: 导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage,
+    patient_id）。
   evidence:
   - methods/cell-type-annotation.md#输出
   - templates/tri-panel-stage-umap/spec.json
@@ -290,6 +291,9 @@ render_bridges:
   - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：注释后的精细细胞亚群与高阶功能群（如 mFib/lpFib/iFib）可切换为 variant 红色虚线包络 + 编号质心 UMAP 画风；模板不执行注释。；前提：umap_1/umap_2 与 subcluster 标签来自同一已注释对象；cell_id 唯一。；适配：导出 stromal_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, functional_group）。
     - 关系证据：methods/cell-type-annotation.md#输出；templates/stromal-hull-umap/spec.json；运行证据：无
+  - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：注释后的单细胞/空间蛋白组细胞类型标签可与进展分期、患者 ID 合并导出为 Cancer Discovery 风格三联 UMAP 变体；模板不执行注释。；前提：umap_1/umap_2 与 cell_type、stage、patient_id 来自同一质控后对象；cell_id 唯一。；适配：导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
+    - 关系证据：methods/cell-type-annotation.md#输出；templates/tri-panel-stage-umap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

@@ -177,6 +177,9 @@ next_steps:
   - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：多队列（TCGA 与自采队列）Cox 比例风险 HR/p 值可与亚群临床亚型 Ro/e 偏好合并呈现为主推默认（default）复合热图；模板不做生存回归。；前提：各队列 Cox 模型须明确协变量与比例风险假定；HR > 1 标为 Risk，HR < 1 标为 Protective。；适配：整理 roe_cox_input.csv（canonical_subcluster、tcga_HR、tcga_p_value、inhouse_HR、inhouse_p_value 及 roe_subtype_*/roe_tissue_* 列）。
     - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/roe-cox-heatmap/spec.json；运行证据：无
+  - [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：多基因或枢纽基因模块在外部队列按中位数高低分组后的预计算 KM 阶跃曲线与 Logrank/Cox 统计可整理为 default 多基因网格图；模板不拟合生存回归。；前提：各基因按同一分组规则（如中位数）与同一生存终点（OS/PFS）拟合；明确缺测基因与抽样边界。；适配：导出 km_survival_curves.csv 与 km_survival_stats.csv。
+    - 关系证据：methods/survival-prognosis-analysis.md#输出；templates/km-survival-risk-grid/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

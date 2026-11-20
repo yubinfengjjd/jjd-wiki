@@ -163,6 +163,12 @@ next_steps:
   - [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：配准 H&E 组织切片裁剪图像与 Visium 空间反卷积权重图并排对照可切换为 variant 组织配准面板。；前提：Spot (x, y) 像素坐标须与 H&E 图像分辨率严格对齐（误差 < 1 像素）。；适配：导出 spatial_deconv_spots.csv（spot_id, x, y, feature, score, 可选 region）并附对齐 he_image.png。
     - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-he-deconv-panel/spec.json；运行证据：无
+  - [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：20 um 空间邻域 LDA/K-means（RCN）或空间滞后肿瘤群落（TCC）的特征 Z-score 可与患者、分期比例轨道合并展示为主推默认（default）复合热图；模板不执行聚类。；前提：主矩阵与左右轨道表须按 cluster_id 一一对齐；患者与分期比例按独立样本或连续 FOV 汇总。；适配：导出 rcn_cluster_zscore.csv 与 rcn_cluster_tracks.csv。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/rcn-composition-stacked-heatmap/spec.json；运行证据：无
+  - [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：连续物理视野（FOV）单细胞坐标与 RCN/TCC 邻域标签可切换为 variant 高密 Voronoi 多边形空间镶嵌与局部放大图；模板不做空间聚类。；前提：输入必须为未下采样打碎连续拓扑的物理 FOV（x, y），否则 Voronoi 面积失真。；适配：导出 spatial_cells_voronoi.csv（cell_id, x, y, neighborhood, 可选 fov_id/stage）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/voronoi-neighborhood-mosaic/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

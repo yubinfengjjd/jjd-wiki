@@ -36,7 +36,12 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-type-annotation|细胞类型注释]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：注释后的单细胞/空间蛋白组细胞类型标签可与进展分期、患者 ID 合并导出为 Cancer Discovery 风格三联 UMAP 变体；模板不执行注释。；前提：umap_1/umap_2 与 cell_type、stage、patient_id 来自同一质控后对象；cell_id 唯一。；适配：导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
+    - 关系证据：methods/cell-type-annotation.md#输出；templates/tri-panel-stage-umap/spec.json；运行证据：无
+  - [[methods/dimensionality-reduction|单细胞降维分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：降维生成的 UMAP 坐标可联合细胞类型、进展分期与患者编号按 Cancer Discovery 风格三联并排展示；模板不重算 UMAP。；前提：坐标与三列离散注释来自同一降维对象；cell_id 唯一且坐标无 NA。；适配：导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
+    - 关系证据：methods/dimensionality-reduction.md#输出；templates/tri-panel-stage-umap/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用

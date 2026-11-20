@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-20T12:26:03.276769+00:00",
+  "page": "templates/tri-panel-stage-umap.md",
+  "snapshot": "41b26df0841b62ed30e25d1c36c66b30f4d4b76463ad3421eaa447af1c529b51",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}
