@@ -207,7 +207,7 @@ steps:
 | [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]] | L2 | ready · 可用 | 主推变体 · 细胞类型/进展分期/患者三联 UMAP 图谱（Cancer Discovery 风格） |
 | [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]] | L2 | ready · 可用 | 配套检查 · 多蛋白/标志物特征强度 UMAP 网格 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：20 μm 局部邻域 Spatial LDA（RCN）与 Voronoi 拓扑分析 |
-| [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]] | L2 | ready · 可用 | 主推默认 · 邻域聚簇 Z-score + 患者/分期堆叠注释复合热图 |
+| [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]] | L2 | ready | 主推默认 · 邻域聚簇 Z-score + 患者/分期堆叠注释复合热图 |
 | [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]] | L2 | ready · 可用 | 可切换画风 · 高密 Voronoi 细胞邻域镶嵌与矩形/圆形放大框图 |
 | [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | note | ready | Stage 2–3：跨进展分期邻域比例与免疫–肿瘤物理距离分布偏移 |
 | [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]] | L2 | ready · 可用 | 主推默认 · 镜像半小提琴 + 分位数偏移哑铃图 |
@@ -217,9 +217,9 @@ steps:
 | [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | Stage 5A：PickSeq/GeoMx 微区转录组差异表达、ssGSEA 与 GSEA 通路富集 |
 | [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]] | L2 | ready · 可用 | 主推默认 · 微区转录组差异表达火山图 |
 | [[methods/coexpression-ppi-network|共表达网络（WGCNA）与分子互作网络分析]] | note | ready | Stage 5B：相关性共表达网络枢纽模块提取与有序样本趋势 |
-| [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]] | L2 | ready · 可用 | 主推默认 · 中心枢纽基因共表达放射网络图 |
+| [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]] | L2 | ready | 主推默认 · 中心枢纽基因共表达放射网络图 |
 | [[methods/survival-prognosis-analysis|生存分析与临床预后建模]] | note | ready | Stage 5C：TCGA 临床队列多基因 Kaplan-Meier 生存网格验证 |
-| [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]] | L2 | ready · 可用 | 主推默认 · 多基因 TCGA KM 生存风险网格图（含 95% CI 与 HR/Logrank） |
+| [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]] | L2 | ready | 主推默认 · 多基因 TCGA KM 生存风险网格图（含 95% CI 与 HR/Logrank） |
 <!-- facts:end -->
 
 ## 步进决策树（空间蛋白组 × 微区转录组免疫编辑）

@@ -85,7 +85,8 @@ favorite: false
 - `high_color`：`"#284560"`
 - `ncols`：`2`
 - `xlabel`：`"Time (years)"`
-- `ylabel`：`"% Survival (TCGA-SKCM, n=120)"`
+- `ylabel`：`"Survival probability"`
+- `cohort_label`：`""`
 - `dpi`：`300`
 - `width_in`：`5.8`
 - `height_in`：`8.6`

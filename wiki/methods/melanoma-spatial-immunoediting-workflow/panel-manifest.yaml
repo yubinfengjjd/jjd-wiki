@@ -172,7 +172,7 @@ panels:
   input_tables:
   - runs/step02_umap_gradients/umap_coords_markers.csv
   description: Six-marker intensity Feature UMAP strip (SOX10, CD11C, FOXP3, CD8A, PDL1, PD1).
-  note: 基于 Panel 2 实测 GMM 0-1 重标度蛋白强度。
+  note: 基于 Panel 2 实测 GMM 0-1 重标度蛋白强度绘制；为匹配原文约 2 万点云视觉密度，对 1,987 个实测细胞的重采样副本施加了轻微高斯可视化扰动（UMAP 坐标 sigma=0.25/0.42，蛋白强度 sigma=0.03 并截断至 [0,1]）。
 - panel_key: fig02/C
   figure: Fig. 2
   figure_slug: fig02
@@ -203,7 +203,7 @@ panels:
   - runs/step03_rcn_lda/lda_cluster30_composition.csv
   description: RCN1-10 properties composite heatmap across 30 K-means clusters with Patient ID and Stage stacked tracks and
     dendrogram.
-  note: 基于 20 um 局部邻域 Spatial LDA（10 motifs）+ K-means 30 聚簇结果映射绘制。
+  note: 基于 20 um 局部邻域 Spatial LDA（10 motifs）+ K-means 30 聚簇实测表（lda_cluster30_composition.csv）计算列向 Z-score，并由连续 FOV 单细胞表（fov_cells_with_rcn.csv）按 cluster_30 实测统计各簇 Patient ID 与 Stage 构成比例（零随机生成）。
 - panel_key: fig02/E
   figure: Fig. 2
   figure_slug: fig02
@@ -308,7 +308,7 @@ panels:
   figure_slug: fig03
   panel: 3F
   panel_letter: F
-  evidence_tier: local_recompute
+  evidence_tier: proxy
   template_id: half-violin-decile-shift
   methods:
   - cell-proportion-composition
@@ -320,7 +320,7 @@ panels:
   - runs/step03_rcn_lda/fov_cells_with_rcn.csv
   description: Mirrored half-violin, IQR box, and red decile shift dumbbell plot comparing Normal vs Precursor distances from
     melanocytes.
-  note: 基于 MEL11 Normal 与 Precursor 真实物理坐标计算最近邻距离及 10%–90% 分位数偏移。
+  note: 混合证据面板（归为 proxy）：Tregs 子面板基于 MEL11 Normal 与 Precursor 实测物理坐标精确计算最近邻距离及 10%–90% 分位数偏移；因 N/P 抽样 FOV 内实测 CTL 与 PD-L1+ 髓系细胞数为 0，Cytotoxic T (T proxy) 与 PDL1+ myeloid (proxy) 两个子面板分别以 Panel 2 同区域总淋巴 T 细胞与总髓系细胞作为代理并显式标注。
 - panel_key: fig04/A
   figure: Fig. 4
   figure_slug: fig04
@@ -1000,7 +1000,7 @@ panels:
   - runs/step03_rcn_lda/direct_count_cluster30_composition.csv
   - runs/step03_rcn_lda/fov_cells_with_rcn.csv
   description: Direct spatial_count 30-cluster RCN validation composite heatmap with Patient ID and Stage stacked bars.
-  note: 直接空间计数 K-means 30 聚簇对比验证图。
+  note: 直接空间计数 K-means 30 聚簇对比验证图：热图 Z-score 直接由 direct_count_cluster30_composition.csv 实测表型构成计算，左侧 Patient ID 与右侧 Stage 堆叠条直接取自 fov_cells_with_rcn.csv 实测 RCN_direct_count 分组比例（零随机扰动）。
 - panel_key: sfig03/A
   figure: Supp. Fig. 3
   figure_slug: sfig03

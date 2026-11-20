@@ -58,10 +58,13 @@ def draw(fig, rect, tables, style):
         ax.spines["left"].set_linewidth(0.75)
         ax.spines["bottom"].set_linewidth(0.75)
 
-    # Shared Y & X labels
+    # Shared Y & X labels (0-1 probability axis; optional cohort_label subtitle)
     if axes:
+        base_ylabel = str(style.get("ylabel", "Survival probability")).strip() or "Survival probability"
+        cohort_lbl = str(style.get("cohort_label", "")).strip()
+        ylabel_txt = f"{base_ylabel} ({cohort_lbl})" if (cohort_lbl and cohort_lbl not in base_ylabel) else base_ylabel
         y_mid = 0.5 * (axes[0].get_position().y1 + axes[-1].get_position().y0)
-        fig.text(axes[0].get_position().x0 - 0.065, y_mid, style.get("ylabel", "% Survival (TCGA-SKCM, n=120)"),
+        fig.text(axes[0].get_position().x0 - 0.065, y_mid, ylabel_txt,
                  rotation=90, ha="center", va="center", fontsize=8.5, color="#111111")
         x_mid = 0.5 * (axes[0].get_position().x0 + axes[min(ncols - 1, len(axes) - 1)].get_position().x1)
         fig.text(x_mid, axes[-1].get_position().y0 - 0.032, style.get("xlabel", "Time (years)"),

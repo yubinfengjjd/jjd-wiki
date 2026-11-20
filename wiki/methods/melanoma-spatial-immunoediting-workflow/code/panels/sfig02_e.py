@@ -53,17 +53,18 @@ def draw_panel_s2e(fig, gs_slot, dc30_df: pd.DataFrame, fov_df: pd.DataFrame):
     raw_cols = [a[0] for a in avail]
     nice_cols = [a[1] for a in avail]
 
-    # Sort rows by RCN1..RCN10
+    # Sort rows by RCN1..RCN10 and numeric cluster ID
     dc = dc30_df.copy()
-    dc["rcn_num"] = dc["RCN"].str.replace("RCN", "", regex=False).astype(int)
-    dc = dc.sort_values(["rcn_num", "cluster_30"]).reset_index(drop=True)
+    dc["rcn_num"] = dc["RCN"].astype(str).str.replace("RCN", "", regex=False).astype(int)
+    dc["km_id"] = dc["cluster_30"].astype(str).str.replace("C", "", regex=False).astype(int)
+    dc = dc.sort_values(["rcn_num", "km_id"]).reset_index(drop=True)
 
     mat = dc[raw_cols].to_numpy(dtype=float)
     mu = mat.mean(axis=0, keepdims=True)
     sd = np.where(mat.std(axis=0, keepdims=True) > 1e-8, mat.std(axis=0, keepdims=True), 1.0)
     z_mat = np.clip((mat - mu) / sd, -2.0, 2.0)
 
-    # Empirical patient and stage distribution per direct_count RCN from fov_cells_with_rcn.csv
+    # Empirical patient and stage distribution per direct_count RCN from fov_cells_with_rcn.csv (zero random noise)
     rcn_col = "RCN_direct_count" if "RCN_direct_count" in fov_df.columns else "RCN"
     pat_ct = pd.crosstab(fov_df[rcn_col], fov_df["patient_id"], normalize="index")
     stg_ct = pd.crosstab(fov_df[rcn_col], fov_df["Stage"], normalize="index")
@@ -119,20 +120,22 @@ def draw_panel_s2e(fig, gs_slot, dc30_df: pd.DataFrame, fov_df: pd.DataFrame):
     for a in (ax_left, ax_heat, ax_right):
         a.set_ylim(tot_y + 0.2, -0.2)
 
-    # Left patient bars (deterministic slight perturbation around RCN empirical patient profile)
-    rng = np.random.default_rng(42)
+    # Left patient bars (strictly measured empirical RCN_direct_count patient proportions)
     ax_left.set_xlim(0, 1)
     ax_left.axis("off")
     pats = sorted(pat_ct.columns.tolist())
     for ri, yt in enumerate(row_ys):
         rname = dc.loc[ri, "RCN"]
-        base_p = pat_ct.loc[rname, pats].to_numpy() if rname in pat_ct.index else np.ones(len(pats)) / len(pats)
-        p_vec = np.clip(base_p + rng.normal(0, 0.04, size=len(pats)), 0.02, 1.0)
-        p_vec /= p_vec.sum()
+        base_p = pat_ct.loc[rname, pats].to_numpy(dtype=float) if rname in pat_ct.index else np.ones(len(pats)) / len(pats)
+        p_sum = base_p.sum()
+        p_vec = base_p / p_sum if p_sum > 0 else base_p
         xc = 0.04
-        for pi, pv in enumerate(p_vec):
+        for p_id, pv in zip(pats, p_vec):
+            if pv <= 1e-6:
+                continue
             w = pv * 0.94
-            col = PATIENT_COLORS_2D.get(str((pi * 3 + 2) % 13 + 1), "#1F78B4")
+            p_num = str(p_id).replace("MEL0", "").replace("MEL", "")
+            col = PATIENT_COLORS_2D.get(p_num, "#1F78B4")
             ax_left.add_patch(mpatches.Rectangle((xc, yt + 0.06), w, row_h - 0.12, facecolor=col, edgecolor="#333333", lw=0.22))
             xc += w
 
@@ -156,7 +159,7 @@ def draw_panel_s2e(fig, gs_slot, dc30_df: pd.DataFrame, fov_df: pd.DataFrame):
     for sp in ax_heat.spines.values():
         sp.set_visible(False)
 
-    # Right stage bars + cluster IDs
+    # Right stage bars + cluster IDs (strictly measured empirical RCN_direct_count stage proportions)
     ax_right.set_xlim(0, 1)
     ax_right.axis("off")
     ax_right.text(0.80, -0.4, "KMeans", fontsize=5.4, ha="center", va="bottom", clip_on=False)
@@ -164,15 +167,17 @@ def draw_panel_s2e(fig, gs_slot, dc30_df: pd.DataFrame, fov_df: pd.DataFrame):
     st_color_map = {"Normal": STAGE_COLORS_FIG2["Normal"], "Precursor": STAGE_COLORS_FIG2["P"], "MIS": STAGE_COLORS_FIG2["MIS"], "IM": STAGE_COLORS_FIG2["IM"]}
     for ri, yt in enumerate(row_ys):
         rname = dc.loc[ri, "RCN"]
-        base_s = stg_ct.loc[rname, st_keys].to_numpy() if rname in stg_ct.index else np.ones(len(st_keys)) / len(st_keys)
-        s_vec = np.clip(base_s + rng.normal(0, 0.03, size=len(st_keys)), 0.01, 1.0)
-        s_vec /= s_vec.sum()
+        base_s = stg_ct.loc[rname, st_keys].to_numpy(dtype=float) if rname in stg_ct.index else np.ones(len(st_keys)) / len(st_keys)
+        s_sum = base_s.sum()
+        s_vec = base_s / s_sum if s_sum > 0 else base_s
         xc = 0.0
         for sk, sv in zip(st_keys, s_vec):
+            if sv <= 1e-6:
+                continue
             w = sv * 0.64
             ax_right.add_patch(mpatches.Rectangle((xc, yt + 0.06), w, row_h - 0.12, facecolor=st_color_map[sk], edgecolor="#333333", lw=0.22))
             xc += w
-        cid = str(dc.loc[ri, "cluster_30"]).replace("C", "")
+        cid = str(dc.loc[ri, "km_id"])
         ax_right.text(0.70, yt + 0.5 * row_h, cid, fontsize=5.2, va="center", ha="left")
 
     # Right-side legends (Scale + Stage)

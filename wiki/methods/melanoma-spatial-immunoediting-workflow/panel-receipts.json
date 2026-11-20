@@ -53,12 +53,12 @@
     {
       "panel_key": "fig02/D",
       "script_path": "code/panels/fig02_d.py",
-      "script_sha256": "6a1db7916cad301c00981728399dbbe284ebd8583bc14236649cf20357f8dc94",
+      "script_sha256": "74fb62c3813cd66f0609e9ebf49dd493d3470e21f6e1568ac896392fe4921fd8",
       "input_tables": [
         "runs/step03_rcn_lda/fov_cells_with_rcn.csv",
         "runs/step03_rcn_lda/lda_cluster30_composition.csv"
       ],
-      "status": "generated"
+      "status": "smoke_tested"
     },
     {
       "panel_key": "fig02/E",
@@ -358,12 +358,12 @@
     {
       "panel_key": "sfig02/E",
       "script_path": "code/panels/sfig02_e.py",
-      "script_sha256": "ff0c6f6894ae4974b7f45e74ab2d786d5e63dd62ede28e311379d47421e701c4",
+      "script_sha256": "34b6aca40c94847b681f8f9372bb59c0241fa193bdd1dd8536d24e2e185384bb",
       "input_tables": [
         "runs/step03_rcn_lda/direct_count_cluster30_composition.csv",
         "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
       ],
-      "status": "generated"
+      "status": "smoke_tested"
     },
     {
       "panel_key": "sfig03/B",

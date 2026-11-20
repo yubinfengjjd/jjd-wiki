@@ -47,98 +47,106 @@ PATIENT_COLORS_2D = {
     "6": "#E31A1C",
     "7": "#FDBF6F",
     "8": "#FF7F00",
-    "9": "#CAB2D6",
+    "9": "#2B7BBA",
     "10": "#6A3D9A",
-    "11": "#FFFF99",
+    "11": "#F5A623",
     "12": "#B15928",
     "13": "#8C510A",
 }
 
 
 def build_rcn_30clusters_data(fov_df: pd.DataFrame, lda30_df: pd.DataFrame):
-    """Build 30 K-means cluster rows grouped into RCN1-RCN10 across 12 cell-type columns."""
-    cols_2d = [
-        "Melanocytic",
-        "Langerhans",
-        "Keratinocytes",
-        "Macrophage",
-        "Tregs",
-        "T helper",
-        "CTL",
-        "PD1+ CTL",
-        "PDL1+ Macs",
-        "PDL1+ DCs",
-        "Dendritic",
-        "CD11C+ Macs",
+    """
+    Build 30 K-means cluster rows grouped into RCN1-RCN10 across 12 cell-type columns
+    using strictly measured cluster composition (lda_cluster30_composition.csv)
+    and empirical FOV patient/stage proportions (fov_cells_with_rcn.csv).
+    """
+    col_map = [
+        ("Mel", "Melanocytic"),
+        ("LC", "Langerhans"),
+        ("Ker", "Keratinocytes"),
+        ("Mac", "Macrophage"),
+        ("Treg", "Tregs"),
+        ("Th", "T helper"),
+        ("CTL", "CTL"),
+        ("PD1+ CTL", "PD1+ CTL"),
+        ("PD-L1+ mac", "PDL1+ Macs"),
+        ("PD-L1+ DC", "PDL1+ DCs"),
+        ("DC", "Dendritic"),
+        ("CD11C+ mac", "CD11C+ Macs"),
     ]
-    rcn_clusters_spec = [
-        ("RCN1", [4, 21], {"Langerhans": 2.0, "Keratinocytes": 2.0}),
-        ("RCN2", [14, 29], {"Macrophage": 2.0, "CTL": 0.6}),
-        ("RCN3", [1, 5, 12, 16, 25, 26], {"Dendritic": 1.8, "CTL": 0.4, "T helper": 0.3}),
-        ("RCN4", [8, 11], {"CD11C+ Macs": 2.0, "Dendritic": 0.3}),
-        ("RCN5", [10, 20, 23], {"PDL1+ Macs": 2.0, "PDL1+ DCs": 1.8, "PD1+ CTL": 0.6}),
-        ("RCN6", [6, 24], {"T helper": 2.0, "CTL": 1.8, "Tregs": 1.1}),
-        ("RCN7", [15], {"T helper": 2.0, "CTL": 1.9}),
-        ("RCN8", [18], {"PD1+ CTL": 2.0, "Tregs": 0.6}),
-        ("RCN9", [13, 17, 22], {"Melanocytic": 0.9, "CD11C+ Macs": 0.8, "Dendritic": 0.5}),
-        ("RCN10", [0, 3, 7, 28], {"Melanocytic": 2.0}),
-    ]
+    raw_cols = [c[0] for c in col_map]
+    cols_2d = [c[1] for c in col_map]
 
-    rng = np.random.default_rng(42)
-    rows_z, rows_meta = [], []
-    rcn_stage_weights = {
-        "RCN1": [0.32, 0.25, 0.20, 0.13, 0.10],
-        "RCN2": [0.22, 0.22, 0.22, 0.20, 0.14],
-        "RCN3": [0.18, 0.18, 0.24, 0.25, 0.15],
-        "RCN4": [0.12, 0.15, 0.20, 0.33, 0.20],
-        "RCN5": [0.06, 0.12, 0.24, 0.36, 0.22],
-        "RCN6": [0.12, 0.18, 0.22, 0.30, 0.18],
-        "RCN7": [0.08, 0.22, 0.18, 0.35, 0.17],
-        "RCN8": [0.04, 0.08, 0.16, 0.48, 0.24],
-        "RCN9": [0.10, 0.14, 0.16, 0.38, 0.22],
-        "RCN10": [0.04, 0.08, 0.10, 0.42, 0.36],
-    }
+    lda = lda30_df.copy()
+    lda["rcn_num"] = lda["RCN"].astype(str).str.replace("RCN", "", regex=False).astype(int)
+    lda["km_id"] = lda["cluster_30"].astype(str).str.replace("C", "", regex=False).astype(int)
+    lda = lda.sort_values(["rcn_num", "km_id"]).reset_index(drop=True)
 
-    for rcn_name, km_ids, hi_dict in rcn_clusters_spec:
-        for idx_k, km_id in enumerate(km_ids):
-            z_vec = rng.uniform(-0.85, -0.35, size=len(cols_2d))
-            for col_i, cname in enumerate(cols_2d):
-                if cname in hi_dict:
-                    base_v = hi_dict[cname]
-                    if rcn_name == "RCN6" and cname == "Tregs":
-                        z_vec[col_i] = 1.85 if idx_k == 1 else -0.1
-                    elif rcn_name == "RCN3" and cname == "CTL":
-                        z_vec[col_i] = 1.25 if idx_k == 4 else -0.3
-                    elif rcn_name == "RCN5" and cname in ("PDL1+ Macs", "PDL1+ DCs"):
-                        z_vec[col_i] = 1.95 if idx_k >= 1 else 0.75
-                    else:
-                        z_vec[col_i] = np.clip(base_v + rng.normal(0, 0.12), -2.0, 2.0)
-                else:
-                    if rng.random() < 0.22:
-                        z_vec[col_i] = rng.uniform(-0.15, 0.35)
-            rows_z.append(z_vec)
+    mat = lda[raw_cols].to_numpy(dtype=float)
+    mu = mat.mean(axis=0, keepdims=True)
+    sd = mat.std(axis=0, keepdims=True)
+    sd = np.where(sd > 1e-8, sd, 1.0)
+    z_mat = np.clip((mat - mu) / sd, -2.0, 2.0)
 
-            alpha_p = np.ones(13) * 0.45
-            if rcn_name == "RCN8":
-                alpha_p[3] = 5.5
-            elif rcn_name == "RCN3":
-                alpha_p[5] = 3.2
-                alpha_p[1] = 2.0
-            elif rcn_name == "RCN10":
-                alpha_p[0] = 3.0
-                alpha_p[1] = 2.5
-                alpha_p[7] = 2.0
-            p_prop = rng.dirichlet(alpha_p)
-            s_prop = rng.dirichlet(np.array(rcn_stage_weights[rcn_name]) * 4.5)
+    fov = fov_df.copy()
+    fov["km_id"] = fov["cluster_30"].astype(str).str.replace("C", "", regex=False).astype(int)
+    fov["pat_num"] = (
+        fov["patient_id"]
+        .astype(str)
+        .str.replace("MEL0", "", regex=False)
+        .str.replace("MEL", "", regex=False)
+    )
+    fov["stage_key"] = fov["Stage"].astype(str).replace({"Precursor": "P"})
 
-            rows_meta.append({
-                "RCN": rcn_name,
-                "km_id": km_id,
-                "pat_props": p_prop,
-                "stage_props": s_prop,
-            })
+    pat_ct = pd.crosstab(fov["km_id"], fov["pat_num"], normalize="index")
+    stg_ct = pd.crosstab(fov["km_id"], fov["stage_key"], normalize="index")
+    pat_rcn_ct = pd.crosstab(fov["RCN"].astype(str), fov["pat_num"], normalize="index")
+    stg_rcn_ct = pd.crosstab(fov["RCN"].astype(str), fov["stage_key"], normalize="index")
 
-    return cols_2d, np.vstack(rows_z), rows_meta, rcn_clusters_spec
+    pat_keys = [str(i) for i in range(1, 14)]
+    stage_keys = ["Normal", "P", "MIS", "IM", "EM"]
+
+    rows_meta = []
+    for _, row in lda.iterrows():
+        rcn_name = str(row["RCN"])
+        km_id = int(row["km_id"])
+
+        if km_id in pat_ct.index:
+            p_series = pat_ct.loc[km_id]
+        elif rcn_name in pat_rcn_ct.index:
+            p_series = pat_rcn_ct.loc[rcn_name]
+        else:
+            p_series = pd.Series(dtype=float)
+        p_prop = np.array([float(p_series.get(pk, 0.0)) for pk in pat_keys], dtype=float)
+        if p_prop.sum() > 0:
+            p_prop = p_prop / p_prop.sum()
+
+        if km_id in stg_ct.index:
+            s_series = stg_ct.loc[km_id]
+        elif rcn_name in stg_rcn_ct.index:
+            s_series = stg_rcn_ct.loc[rcn_name]
+        else:
+            s_series = pd.Series(dtype=float)
+        s_prop = np.array([float(s_series.get(sk, 0.0)) for sk in stage_keys], dtype=float)
+        if s_prop.sum() > 0:
+            s_prop = s_prop / s_prop.sum()
+
+        rows_meta.append({
+            "RCN": rcn_name,
+            "km_id": km_id,
+            "pat_props": p_prop,
+            "stage_props": s_prop,
+        })
+
+    rcn_clusters_spec = []
+    for rcn_i in range(1, 11):
+        rname = f"RCN{rcn_i}"
+        km_ids = lda.loc[lda["RCN"] == rname, "km_id"].astype(int).tolist()
+        if km_ids:
+            rcn_clusters_spec.append((rname, km_ids, {}))
+
+    return cols_2d, z_mat, rows_meta, rcn_clusters_spec
 
 
 def draw_panel_2d(fig, gs_slot, fov_df: pd.DataFrame, lda30_df: pd.DataFrame):
@@ -212,13 +220,15 @@ def draw_panel_2d(fig, gs_slot, fov_df: pd.DataFrame, lda30_df: pd.DataFrame):
     for ax in (ax_left, ax_heat, ax_right):
         ax.set_ylim(total_y + 0.2, -0.2)
 
-    # Left Patient ID stacked bars
+    # Left Patient ID stacked bars (empirical per-cluster proportions from FOV cells)
     ax_left.set_xlim(0.0, 1.0)
     ax_left.axis("off")
     for r_i, y_top in enumerate(row_y_positions):
         p_props = rows_meta[r_i]["pat_props"]
         x_left = 0.04
         for p_idx, p_val in enumerate(p_props, start=1):
+            if p_val <= 1e-6:
+                continue
             w = p_val * 0.94
             ax_left.add_patch(mpatches.Rectangle(
                 (x_left, y_top + 0.06), w, row_height - 0.12,
@@ -260,7 +270,7 @@ def draw_panel_2d(fig, gs_slot, fov_df: pd.DataFrame, lda30_df: pd.DataFrame):
     for sp in ax_heat.spines.values():
         sp.set_visible(False)
 
-    # Right Stage stacked bars + K-means IDs
+    # Right Stage stacked bars + K-means IDs (empirical per-cluster stage proportions)
     ax_right.set_xlim(0.0, 1.0)
     ax_right.axis("off")
     ax_right.text(0.82, -0.5, "K-means", ha="center", va="bottom", fontsize=6.2, style="italic", clip_on=False)
@@ -270,6 +280,8 @@ def draw_panel_2d(fig, gs_slot, fov_df: pd.DataFrame, lda30_df: pd.DataFrame):
         meta = rows_meta[r_i]
         x_left = 0.0
         for s_k, s_val in zip(stage_keys, meta["stage_props"]):
+            if s_val <= 1e-6:
+                continue
             w = s_val * 0.64
             ax_right.add_patch(mpatches.Rectangle(
                 (x_left, y_top + 0.06), w, row_height - 0.12,

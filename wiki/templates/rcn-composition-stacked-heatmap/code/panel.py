@@ -4,6 +4,7 @@ import matplotlib.patches as mpatches
 from matplotlib.colors import LinearSegmentedColormap, Normalize
 from matplotlib.gridspec import GridSpecFromSubplotSpec
 import numpy as np
+import pandas as pd
 from scipy.cluster.hierarchy import dendrogram, linkage
 
 
@@ -23,11 +24,86 @@ PATIENT_PALETTE = [
 ]
 
 
-def draw(fig, rect, tables, style):
-    z_df = tables["zscore_matrix"].copy()
-    tr_df = tables["cluster_tracks"].copy()
+def _normalize_cluster_key(df: pd.DataFrame, table_name: str) -> pd.DataFrame:
+    if "cluster_id" not in df.columns:
+        raise ValueError(f"{table_name} is missing required 'cluster_id' column")
+    out = df.copy()
+    raw_keys = out["cluster_id"]
+    if raw_keys.isna().any():
+        raise ValueError(f"{table_name} contains missing (NaN) values in 'cluster_id'")
+    keys = raw_keys.astype(str).str.strip()
+    if (keys == "").any() or (keys.str.lower() == "nan").any():
+        raise ValueError(f"{table_name} contains blank 'cluster_id' keys")
+    if keys.duplicated().any():
+        dups = keys[keys.duplicated()].unique().tolist()
+        raise ValueError(f"{table_name} contains duplicate 'cluster_id' keys: {dups}")
+    out["cluster_id"] = keys
+    return out
+
+
+def _align_tables_by_cluster_id(tables: dict) -> tuple[pd.DataFrame, pd.DataFrame, list[str], list[str], list[str]]:
+    if "zscore_matrix" not in tables or "cluster_tracks" not in tables:
+        raise ValueError("Both 'zscore_matrix' and 'cluster_tracks' tables are required")
+
+    z_df = _normalize_cluster_key(tables["zscore_matrix"], "zscore_matrix").reset_index(drop=True)
+    tr_df = _normalize_cluster_key(tables["cluster_tracks"], "cluster_tracks")
+
+    if "rcn_group" not in z_df.columns:
+        raise ValueError("zscore_matrix is missing required 'rcn_group' column")
+    if z_df["rcn_group"].isna().any() or (z_df["rcn_group"].astype(str).str.strip() == "").any():
+        raise ValueError("zscore_matrix contains missing or blank 'rcn_group' values")
+
+    # Merge any optional third track table (e.g. stage_tracks / patient_tracks) by cluster_id
+    for extra_name in ("stage_tracks", "patient_tracks"):
+        if extra_name in tables and tables[extra_name] is not None:
+            ex_df = _normalize_cluster_key(tables[extra_name], extra_name)
+            ex_cols = [c for c in ex_df.columns if c not in tr_df.columns or c == "cluster_id"]
+            tr_df = tr_df.merge(ex_df[ex_cols], on="cluster_id", how="inner", validate="one_to_one")
+
+    z_keys = set(z_df["cluster_id"].tolist())
+    tr_keys = set(tr_df["cluster_id"].tolist())
+    if z_keys != tr_keys:
+        missing_in_tr = sorted(z_keys - tr_keys)
+        extra_in_tr = sorted(tr_keys - z_keys)
+        raise ValueError(
+            f"cluster_id mismatch between zscore_matrix and cluster_tracks "
+            f"(missing={missing_in_tr}, extra={extra_in_tr})"
+        )
+
+    # Strictly align cluster_tracks to zscore_matrix row order by cluster_id
+    tr_df = tr_df.set_index("cluster_id").reindex(z_df["cluster_id"]).reset_index()
+
+    if "rcn_group" in tr_df.columns:
+        z_grp = z_df["rcn_group"].astype(str).str.strip()
+        tr_grp = tr_df["rcn_group"].astype(str).str.strip()
+        if not (z_grp == tr_grp).all():
+            raise ValueError("rcn_group mismatch for aligned cluster_id rows between zscore_matrix and cluster_tracks")
 
     z_cols = [c for c in z_df.columns if c not in ("rcn_group", "cluster_id")]
+    if len(z_cols) < 2:
+        raise ValueError("zscore_matrix must contain at least 2 numeric phenotype columns")
+    for c in z_cols:
+        z_df[c] = pd.to_numeric(z_df[c], errors="raise")
+    if not np.isfinite(z_df[z_cols].to_numpy(float)).all():
+        raise ValueError("zscore_matrix contains non-finite numeric values")
+
+    pat_cols = [c for c in tr_df.columns if c.startswith("patient_")]
+    stg_cols = [c for c in tr_df.columns if c.startswith("stage_")]
+    if not pat_cols:
+        raise ValueError("cluster_tracks must contain at least one 'patient_*' column")
+    if not stg_cols:
+        raise ValueError("cluster_tracks must contain at least one 'stage_*' column")
+    for c in pat_cols + stg_cols:
+        tr_df[c] = pd.to_numeric(tr_df[c], errors="raise")
+    track_mat = tr_df[pat_cols + stg_cols].to_numpy(float)
+    if not np.isfinite(track_mat).all() or (track_mat < 0).any():
+        raise ValueError("cluster_tracks contains negative or non-finite composition values")
+
+    return z_df, tr_df, z_cols, pat_cols, stg_cols
+
+
+def draw(fig, rect, tables, style):
+    z_df, tr_df, z_cols, pat_cols, stg_cols = _align_tables_by_cluster_id(tables)
     z_mat = z_df[z_cols].to_numpy(float)
 
     # Hierarchical clustering of columns using Ward linkage on real Z-scores
@@ -40,8 +116,6 @@ def draw(fig, rect, tables, style):
     # Recompute dendrogram coordinates mapped onto 0..n_cols-1
     den_ord = dendrogram(linkage(z_mat_ord.T, method="ward", metric="euclidean"), no_plot=True)
 
-    pat_cols = [c for c in tr_df.columns if c.startswith("patient_")]
-    stg_cols = [c for c in tr_df.columns if c.startswith("stage_")]
     pat_names = [c.replace("patient_", "") for c in pat_cols]
     stg_names = [c.replace("stage_", "") for c in stg_cols]
 
@@ -92,7 +166,7 @@ def draw(fig, rect, tables, style):
         y_cur += gap_h
     tot_y = y_cur - gap_h
 
-    # Reindex row_ys in original dataframe row order
+    # Reindex row_ys in aligned dataframe row order
     row_y_by_idx = {}
     cursor = 0.0
     for grp in groups_in_order:

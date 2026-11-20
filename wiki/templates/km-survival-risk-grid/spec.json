@@ -90,7 +90,8 @@
     "high_color": "#284560",
     "ncols": 2,
     "xlabel": "Time (years)",
-    "ylabel": "% Survival (TCGA-SKCM, n=120)",
+    "ylabel": "Survival probability",
+    "cohort_label": "",
     "dpi": 300,
     "width_in": 5.8,
     "height_in": 8.6,
@@ -109,6 +110,11 @@
       "min": 1,
       "max": 4,
       "step": 1
+    },
+    "cohort_label": {
+      "type": "string",
+      "label": "队列名称副标题（可选）",
+      "default": ""
     }
   }
 }
