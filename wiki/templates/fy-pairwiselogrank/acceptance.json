@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:11:02.153702+00:00",
+  "checked_at": "2026-11-20T13:08:22.611218+00:00",
   "page": "templates/fy-pairwiselogrank.md",
-  "snapshot": "f707bfefeb610663e6ef441af58e5daedc33f22ad618bb830827d20bfbe76871",
+  "snapshot": "1b76943030fa9b35a2e45aef9acf6be50773a7bd2de4460b5aa65227658ebf33",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

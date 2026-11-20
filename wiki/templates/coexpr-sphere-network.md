@@ -23,6 +23,8 @@ keywords:
 - ggrepel
 - 共表达网络
 favorite: false
+style_tier: variant
+journal_style: hdWGCNA
 ---
 # hdWGCNA 共表达模块球体网络图
 

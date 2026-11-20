@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T10:35:43.007511+00:00",
+  "checked_at": "2026-11-20T13:08:22.531364+00:00",
   "page": "templates/km-survival-curve.md",
-  "snapshot": "f97dc8042d46a3c946ba23cff7961fed85242e1ccfc3a2a17c10e39cd9ceaac0",
+  "snapshot": "6f53795830abad77fc228a480c43ea2797a1e95c33bbd28493ddff529897bce8",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

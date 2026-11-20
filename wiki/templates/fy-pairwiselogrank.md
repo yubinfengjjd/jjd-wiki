@@ -23,6 +23,8 @@ keywords:
 - tibble
 favorite: false
 primary_method: survival-prognosis-analysis
+style_tier: variant
+journal_style: FigureYa
 ---
 # 三组以上 KM 曲线与两两比较表
 

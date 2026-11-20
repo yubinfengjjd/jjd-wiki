@@ -20,6 +20,8 @@ keywords:
 - best separation
 favorite: false
 primary_method: survival-prognosis-analysis
+style_tier: variant
+journal_style: FigureYa
 ---
 # 批量最佳切点生存曲线
 

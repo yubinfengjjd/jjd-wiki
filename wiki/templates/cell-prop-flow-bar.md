@@ -19,6 +19,8 @@ keywords:
 - GSE251716
 - proportion
 primary_method: cell-proportion-composition
+style_tier: default
+journal_style: Standard
 ---
 # 细胞比例堆叠流带图
 

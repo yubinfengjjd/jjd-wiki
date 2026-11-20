@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:11:16.561986+00:00",
+  "checked_at": "2026-11-20T13:08:22.583627+00:00",
   "page": "templates/fy-nsurvv3.md",
-  "snapshot": "059a4e21c82a31b22bc805f7301ad9c49d5ebb3f57c7890bc47ac5627bda0def",
+  "snapshot": "19bb800ad197389e971e2d638c89fbc816076480b9855cb4b58e46ed49c02bd9",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

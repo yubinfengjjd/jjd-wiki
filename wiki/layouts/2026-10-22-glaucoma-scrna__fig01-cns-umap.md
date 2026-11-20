@@ -37,7 +37,7 @@ keywords:
 - 标签：单细胞分析
 - 关键词：GSE251716
 - 图型：[[chart-types/umap]]
-- 面板：[[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（A）
+- 面板：[[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]]（A）
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

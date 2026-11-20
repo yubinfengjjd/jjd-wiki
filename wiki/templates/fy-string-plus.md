@@ -24,6 +24,8 @@ keywords:
 - scales
 favorite: false
 primary_method: coexpression-ppi-network
+style_tier: variant
+journal_style: FigureYa
 ---
 # STRING互作证据打分网络图
 

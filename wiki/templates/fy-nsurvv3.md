@@ -22,6 +22,8 @@ keywords:
 - KM
 favorite: false
 primary_method: survival-prognosis-analysis
+style_tier: variant
+journal_style: FigureYa
 ---
 # 双基因高低分组生存曲线
 

@@ -139,7 +139,7 @@ next_steps:
   - **方向 3：在降维流形上推断细胞拟时序分化轨迹**（触发条件：已锁定连续发育或激活谱系亚群，准备基于 PCA/UMAP 坐标构建 lineage 与 pseudotime 时；中间表：pseudotime-trajectory-table；分析模版：methods/trajectory-inference；可视化模版：templates/scrna-celltype-umap）
 
 - 方法配图关系（语义审查）：
-  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：Standard_SCP 产出 StandardUMAP2D，可作为 UMAP 分组着色；模板只画表，不降维。；前提：坐标与 group 来自同一嵌入；cell_id 唯一；坐标无 NA。；group 明确为 cluster 或 celltype；group_levels 由课题给出。；适配：导出 render-umap-groups.csv（cell_id, umap_1, umap_2, group）。
     - 关系证据：methods/dimensionality-reduction.md#输出；methods/scp-standard-workflow.md#知识关联检查；methods/scp-standard-workflow.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
   - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

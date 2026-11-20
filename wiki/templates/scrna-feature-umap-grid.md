@@ -19,6 +19,8 @@ keywords:
 - GSE251716
 - marker
 primary_method: cell-type-annotation
+style_tier: variant
+journal_style: Standard · Marker Grid
 ---
 # marker 特征 UMAP 小多图
 

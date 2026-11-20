@@ -128,7 +128,7 @@ next_steps:
   - **方向 2：映射亚群内疾病 vs 对照差异表达与通路打分**（触发条件：在对齐后的参考注释亚群内比较条件间差异基因与关键基因集活性时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-scoring；可视化模版：templates/marker-bubble-dotplot、templates/pathway-stat-violin）
 
 - 方法配图关系（语义审查）：
-  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：查询细胞可按预测标签着色自身 UMAP；这不是参考 UMAP 投影，模板也不执行映射。；前提：预测标签与 UMAP 坐标来自同一查询对象；cell_id 一致。；标签不是 cluster 编号；group_levels 按注释顺序给出。；适配：导出 render-umap-groups.csv（group=predicted label）；不得把查询 UMAP 说成参考投影。
     - 关系证据：methods/reference-mapping.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
   - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

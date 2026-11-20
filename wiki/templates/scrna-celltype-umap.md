@@ -3,7 +3,7 @@ type: template
 id: scrna-celltype-umap
 aliases:
 - 2026-10-22-glaucoma-scrna__fig01-cns-umap--umap
-title: CNS 细胞类型 UMAP
+title: 单细胞细胞类型 UMAP（标准版）
 status: ready
 layouts:
 - 2026-10-22-glaucoma-scrna__fig01-cns-umap
@@ -17,9 +17,11 @@ chart_types:
 favorite: false
 keywords:
 - GSE251716
-primary_method: dimensionality-reduction
+primary_method: cell-type-annotation
+style_tier: default
+journal_style: Standard
 ---
-# CNS 细胞类型 UMAP
+# 单细胞细胞类型 UMAP（标准版）
 
 ![[templates/scrna-celltype-umap/preview.png]]
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:20:44.845409+00:00",
+  "checked_at": "2026-11-20T13:08:22.559356+00:00",
   "page": "templates/fy-batch-bestseparationv3.md",
-  "snapshot": "bfdc6dcb1501462675cbe8ff0697160cbeaee6dbaca610b7b425e7e17fa196af",
+  "snapshot": "cdac21518f1232daf7c85c926d8974102671cf898b03e8868b3195d4ab83191d",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

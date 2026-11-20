@@ -276,7 +276,7 @@ render_bridges:
   - **方向 7：单细胞 × Visium 空间转录组基质微环境联合解析（Branch 7 子树）**（触发条件：同时具备已注释单细胞图谱与 Visium 空间切片，需要开展空间反卷积/签名映射、H&E 分区对齐与空间配受体共定位时（详见 scenarios/stromal-tme-scrna-st-playbook）；中间表：scrna-annotated-cells；分析模版：methods/spatial-transcriptomics-microenvironment；可视化模版：templates/spatial-feature-grid、templates/spatial-he-deconv-panel、templates/spatial-coexpr-multichannel）
 
 - 方法配图关系（语义审查）：
-  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：预测细胞类型可作为 UMAP 着色变量；模板不执行注释。；前提：预测标签与 UMAP 坐标来自同一查询对象；cell_id 一致。；标签不是 cluster 编号；group_levels 按注释顺序给出。；适配：导出 render-umap-groups.csv（group=predicted celltype）。
     - 关系证据：methods/cell-type-annotation.md#输出；methods/scp-annotation-projection.md#知识关联检查；methods/scp-annotation-projection.md#输出；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
   - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

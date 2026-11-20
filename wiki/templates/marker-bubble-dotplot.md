@@ -19,6 +19,8 @@ keywords:
 - GSE251716
 - dotplot
 primary_method: cell-type-annotation
+style_tier: default
+journal_style: Standard
 ---
 # 细胞类型 × 基因气泡点图
 

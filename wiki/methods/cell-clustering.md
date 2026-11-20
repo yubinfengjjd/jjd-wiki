@@ -124,7 +124,7 @@ next_steps:
   - **方向 3：聚类簇间差异表达与功能富集初探**（触发条件：计算各 cluster 相对于其他细胞的差异基因以辅助人工判读亚群功能时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/scp-de-volcano、templates/scp-group-heatmap）
 
 - 方法配图关系（语义审查）：
-  - [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
+  - [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：cluster 标签可作为 UMAP 着色变量；模板不聚类。；前提：celltype 标签与 UMAP 坐标来自同一 Seurat 对象；cell_id 一致。；group_levels 按注释顺序给出；不得把 cluster 编号直接当 celltype。；适配：导出 render-umap-groups.csv（group=cluster）；cluster 编号不是细胞类型。
     - 关系证据：methods/cell-clustering.md#输出；methods/scrna-marker-annotation.md#知识关联检查；methods/scrna-marker-annotation.md#输出；layouts/2026-10-22-glaucoma-scrna__fig01-cns-umap.md#适用；templates/scrna-celltype-umap/spec.json；templates/scrna-celltype-umap/verify/verify.json；运行证据：无
   - [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。

@@ -185,7 +185,6 @@
 ### ready
 
 - [[templates/fy-adonis|Adonis因子解释度条形图]]
-- [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]]
 - [[templates/fy-nomogram|Cox/Logistic 列线图与校准曲线]]
 - [[templates/km-survival-curve|KM 生存曲线与风险表]]
 - [[templates/fy-lasso|LASSO Cox 系数路径与交叉验证图]]
@@ -233,6 +232,7 @@
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
 - [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]]
 - [[templates/fy-boxviolin|半小提琴箱线散点组合图]]
+- [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]]
 - [[templates/fy-nsurvv3|双基因高低分组生存曲线]]
 - [[templates/fy-fancybar|含亚组的多组均值柱图与比较]]
 - [[templates/fy-correlationv2|圆形布局基因相关连线图]]

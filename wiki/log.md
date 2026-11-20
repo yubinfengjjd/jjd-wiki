@@ -1709,3 +1709,5 @@
 ## [2026-11-20 12:49 UTC] acceptance check methods/spatial-transcriptomics-microenvironment
 
 ## [2026-11-20 12:49 UTC] acceptance check methods/survival-prognosis-analysis
+
+## [2026-11-20 13:09 UTC] v5.5: align Output Slot metadata (scrna-celltype-umap and style_tier/journal_style)

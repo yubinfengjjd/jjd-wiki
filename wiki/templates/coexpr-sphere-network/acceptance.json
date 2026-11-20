@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T17:15:33.032581+00:00",
+  "checked_at": "2026-11-20T13:08:22.638810+00:00",
   "page": "templates/coexpr-sphere-network.md",
-  "snapshot": "3d0f03698dc2112e2f5e205694dd4481140a5194a7abf3c78b4de40a8063bab2",
+  "snapshot": "32264b02501fa921dd511ac94252bb06bbf121ed5e2bcae109146f4255fae7ac",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

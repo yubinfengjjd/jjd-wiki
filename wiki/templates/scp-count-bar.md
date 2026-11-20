@@ -16,6 +16,8 @@ chart_types:
 - bar
 favorite: false
 primary_method: cell-proportion-composition
+style_tier: default
+journal_style: Standard
 ---
 # 分组计数柱图
 

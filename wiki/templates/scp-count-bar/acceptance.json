@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T10:35:43.616862+00:00",
+  "checked_at": "2026-11-20T13:08:22.698319+00:00",
   "page": "templates/scp-count-bar.md",
-  "snapshot": "ec2e07a0f3242eeea675b074326c40d2189f2b26b9df784e0ba641a1b006ca48",
+  "snapshot": "0d7eb96b107706049340737df0e00e6fde44cb8640a8f9854a1752272427c052",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
