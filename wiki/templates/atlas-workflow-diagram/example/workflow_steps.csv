@@ -1,9 +1,0 @@
-branch,step_order,label,arrow_style,box_fill
-Spatial transcriptomics,1,"FFPE\nsamples",dashed,#D6B7CF
-Spatial transcriptomics,2,"Tissue\noptimization",solid,#BBBBBB
-Spatial transcriptomics,3,"Spatial\ncapture",solid,#C2CBD8
-Spatial transcriptomics,4,"Library &\nsequencing",solid,#A6BAD0
-Single-cell profiling,1,"Tumor / ANT\n/ LN tissue",dashed,#BBBBBB
-Single-cell profiling,2,"Tissue\ndissociation",solid,#D6B7CF
-Single-cell profiling,3,"Single-cell\nRNA-seq",solid,#C2CBD8
-Single-cell profiling,4,"Harmony\nintegration",solid,#A6BAD0

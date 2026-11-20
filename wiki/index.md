@@ -240,7 +240,6 @@
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
 - [[templates/fy-sankey|多层分类流向桑基图]]
 - [[templates/fy-timeroc|多模型时间依赖 ROC 曲线]]
-- [[templates/atlas-workflow-diagram|多源图谱构建流程示意图]]
 - [[templates/fy-multiclassedger|多组edgeR配对差异分析]]
 - [[templates/fy-mutlandscape|多组学突变景观组合热图]]
 - [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]]

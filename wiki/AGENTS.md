@@ -139,13 +139,14 @@
 ```
 
 - **Wiki 正式存档（入 Git，受 5 MB 门禁约束）**：`rwiki paper publish` 在 `wiki/methods/<workflow-id>.md`（`method_kind: workflow`）下固定保存两套可读源码：`methods/<workflow-id>/source/`（作者原版核心脚本快照 + `source-manifest.json` 记仓库 URL、commit、SPDX 许可与 sha256）与 `methods/<workflow-id>/code/`（同步自 `<paper_id>/src/` 的分步复刻源码 + `runtime.json`），`verification/` 存小规模验证收据。共用算法补分支到既有规范 `methods/<canonical-id>/`；可复用单面板图模板入 `templates/<short-slug>/`；整图拼图对比归入 `gallery/`。
-- **附加材料与全图覆盖**：`fetch --supp` 统一纳管 Supplementary PDF/DOCX/XLSX/CSV，`parse` 生成 `step_supp_map.json` 捋顺「正文步骤 ↔ 附加材料 ↔ 开源脚本 ↔ 图面板」对照；`plan` 默认包含全部可复刻 Main Figures 与生信 Supplementary Figures，仅剔除动物/细胞/WB/镜检类湿实验面板。
+- **附加材料与全图覆盖**：`fetch --supp` 统一纳管 Supplementary PDF/DOCX/XLSX/CSV，`parse` 生成 `step_supp_map.json` 捋顺「正文步骤 ↔ 附加材料 ↔ 开源脚本 ↔ 图面板」对照；`plan` 默认包含全部可复刻 Main Figures 与生信 Supplementary Figures，**明确排除三类非计算面板**：湿实验（`excluded_wet_lab`）、非计算研究设计/机制模式示意图（`excluded_schematic`，如 Fig 1A 队列流程示意）与纯显微/IHC/mIF 影像（`excluded_imaging`），禁止为示意图或纯影像硬画通用模板。
 - **1:1 视觉忠实度硬门禁**：禁止脱离原图与作者源码“各自画一张能出图的版本”。每张复刻图必须满足五项硬边界方可验收：① **精确采样原图/作者源码十六进制配色**（禁止随意替换调色板）；② **1:1 匹配原图整图高宽比与各 Panel 面积占比**；③ **图元类型、坐标形式（如带框相关性矩阵、双轴连线、无轴箭头 UMAP）与图例位置严格对齐原图**；④ **逐张人工看图比对 `side_by_side.png`**，凡出现比例失调、散点呈孤立针孔点、配色偏差或标签裁剪，**必须原地打回重修，禁止带瑕疵进入下一张或入库**；⑤ **单进程串行执行**（一步一跑、跑完即释放内存，严禁并发多进程挤爆本机内存）。
-- **统一模板归类、全图型覆盖与方法–可视化–课题思路闭环**：
-  1. **所有新建可复用绘图代码一律归类为 `wiki/templates/<slug>/`**：不再区分两套建表机制，也不再新建 `recipes/` 条目；
-  2. **100% 面板图型全覆盖**：必须逐张盘点全篇 Main + Supp Figure 的每一类独立图元——先 `check-dup` 复用或新增 `style_tier: variant` 变体，确保每一类面板均在 `wiki/templates/` 有明确归属；
-  3. **方法 ↔ 可视化语义关系显式入库**：必须按研究推进顺序，把每个分析方法与对应单图模板写入规范方法页的 `figure_relations`、`next_steps` 及 `method-map.json`（`rwiki map-method`），严禁停留在“暂无已记录关系”；
-  4. **课题研究思路沉淀入知识库**：每篇文献复刻收口前，必须同步沉淀：① 通用可复用领域决策树 `wiki/scenarios/<domain>-playbook.md`（若已有同域 Playbook 则嫁接新分支并声明 `requires` 多上游汇合）；② 本课题步进思路卡 `wiki/projects/<paper_id>.md`（逐阶段记录「科学问题/假设 → 方法 → 可切换模板 → 观察发现 → 下一步分叉」）。
+- **两层资产规范、真实数据 `example/` 硬铁律与方法–可视化–课题思路闭环**：
+  1. **论文复刻两层资产规范**：每篇复刻论文必须在 `methods/<workflow-id>/` 下产出原子级 `panel-manifest.yaml`（采用 `figXX/A`、`sfig03/B` 键，包含 `figure_slug`、`panel_letter`、`script_path`、`input_tables`、`description`、`template_id`）、`code/panels/` 逐计算 Panel 独立可运行 CLI 脚本与 `panel-receipts.json`；同时按独立构图精选提炼 `wiki/templates/<slug>/` 跨论文通用模板（不再新建 `recipes/` 条目）；
+  2. **真实数据 `example/` 硬铁律**：从复刻论文提炼的 `wiki/templates/<slug>/`，其 `example/*.csv` 与 `code/render.*` 必须直接来自该论文对应 Panel 的真实数据与精调绘图代码（严禁用随机高斯团块或假 H&E 方块应付 `verify-template`）；
+  3. **计算 Panel 覆盖与三类排除**：逐张盘点全篇 Main + Supp Figure 的全部计算面板并落盘逐 Panel 独立脚本与模板归属；`excluded_schematic`、`excluded_imaging` 与 `excluded_wet_lab` 面板在 `panel-manifest.yaml` 中不要求 `template_id` 与 `script_path`；
+  4. **方法 ↔ 可视化语义关系显式入库**：必须按研究推进顺序，把每个分析方法与对应单图模板写入规范方法页的 `figure_relations`、`next_steps` 及 `method-map.json`（`rwiki map-method`），严禁停留在“暂无已记录关系”；
+  5. **课题研究思路沉淀入知识库**：每篇文献复刻收口前，必须同步沉淀：① 通用可复用领域决策树 `wiki/scenarios/<domain>-playbook.md`（若已有同域 Playbook 则嫁接新分支并声明 `requires` 多上游汇合）；② 本课题步进思路卡 `wiki/projects/<paper_id>.md`（逐阶段记录「科学问题/假设 → 方法 → 可切换模板 → 观察发现 → 下一步分叉」）。
 
 ## 历史临时产物与过期脚本清理规定（2026-11-19）
 

@@ -1635,3 +1635,5 @@
 ## [2026-11-19 16:42 UTC] acceptance check methods/cell-cell-communication
 
 ## [2026-11-19 16:43 UTC] acceptance check methods/immune-infiltration-tme
+
+## [2026-11-20 10:43 UTC] verify spatial-he-deconv-panel

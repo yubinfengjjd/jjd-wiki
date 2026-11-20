@@ -1,0 +1,53 @@
+# Panel ID: fig04/J (Fig. 4 4J)
+# Title: CAA_ST 6-region TipEC/VenEC/emtEC spatial signature grid.
+# Evidence tier: proxy
+# Input tables: runs/step03_spatial/st_spots_fig4j.csv
+# Default dimensions: width = 6.0 in, height = 3.8 in
+# Usage: Rscript --vanilla code/panels/fig04_j.R --paper-root <PAPER_ROOT> --out fig04_j.png
+
+script_arg <- grep('^--file=', commandArgs(trailingOnly = FALSE), value = TRUE)
+panel_dir <- dirname(normalizePath(sub('^--file=', '', script_arg[1]), winslash = '/', mustWork = FALSE))
+source(file.path(panel_dir, '_panel_common.R'))
+cfg <- init_panel_env(default_out = 'fig04_j.png', default_width = 6.0, default_height = 3.8)
+spatial <- read_step("step03_spatial", "st_spots_fig4j")
+spatial$band_x <- cut(spatial$imagecol, quantile(spatial$imagecol, 0:3 / 3), include.lowest = TRUE, labels = FALSE)
+spatial$band_y <- ave(spatial$imagerow, spatial$band_x, FUN = function(y) as.numeric(y > median(y)))
+spatial$region <- 2L * (spatial$band_x - 1L) + spatial$band_y + 1L
+fields <- c("score_C4_TipEC_PGF", "score_C5_VenEC_HIF1A", "score_C9_emtEC_COL1A1")
+st_long <- do.call(rbind, lapply(split(spatial, spatial$region), function(d) {
+  xy <- cbind(x = d$imagecol, y = -d$imagerow)
+  grid <- expand.grid(x = seq(min(xy[, 1]), max(xy[, 1]), length.out = 50),
+                      y = seq(min(xy[, 2]), max(xy[, 2]), length.out = 50))
+  spacing <- stats::median(RANN::nn2(xy, k = 2)$nn.dists[, 2])
+  nn <- RANN::nn2(xy, as.matrix(grid), k = 1)
+  do.call(rbind, lapply(fields, function(field) {
+    bounds <- range(spatial[[field]], na.rm = TRUE)
+    value <- scales::rescale(d[[field]][nn$nn.idx[, 1]], from = bounds)
+    value[nn$nn.dists[, 1] > 1.05 * spacing] <- NA_real_
+    transform(grid, x = round(scale01(x), 8), y = round(scale01(y), 8), value = value,
+              region = d$region[1], signature = sub("^score_", "", field))
+  }))
+}))
+st_long$region <- factor(st_long$region, levels = 1:6)
+st_long$signature <- factor(st_long$signature, levels = sub("^score_", "", fields))
+j_map <- ggplot(st_long, aes(x, y, fill = value)) +
+  geom_raster(interpolate = TRUE) +
+  facet_grid(signature ~ region, switch = "y") +
+  scale_fill_gradientn(colours = wave_st_cols, limits = c(0, 1), na.value = "white") +
+  coord_cartesian(xlim = c(-.03, 1.03), ylim = c(-.03, 1.03), expand = FALSE) +
+  theme_void() +
+  theme(legend.position = "none", strip.text.x = element_blank(),
+        strip.text.y.left = element_text(size = 5.0, angle = 0, hjust = 1),
+        strip.placement = "outside", panel.spacing = grid::unit(2.2, "mm"),
+        plot.margin = margin(6, 1, 1, 8))
+J_plot <- wrap_elements(full = j_map)
+for (top in c(.991, .667, .343)) {
+  J_plot <- J_plot + inset_element(wave_key(wave_st_cols, min = "", max = ""), .19, top - .033, .273, top, align_to = "full")
+}
+p <- panel_tag(wrap_plots(
+  wrap_elements(full = grid::textGrob("CAA_ST  |  Six regions of one section", x = .065, just = "left", gp = grid::gpar(fontsize = 5.6))),
+  J_plot, ncol = 1, heights = c(.11, .89)
+), "J")
+
+save_panel(p, cfg$out, width = cfg$width, height = cfg$height, dpi = cfg$dpi)
+rm(list = ls()); invisible(gc())

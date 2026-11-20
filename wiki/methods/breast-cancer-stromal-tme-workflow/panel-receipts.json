@@ -1,0 +1,696 @@
+{
+  "schema_version": 1,
+  "workflow_id": "breast-cancer-stromal-tme-workflow",
+  "generated_at": "2026-11-20T10:39:16.333564+00:00",
+  "total_panels": 70,
+  "panels": [
+    {
+      "panel_key": "fig01/B",
+      "script_path": "code/panels/fig01_b.R",
+      "script_sha256": "9b06821f03b70847662e42f5be3b782fd181f78e24021c8123144d1b3197ab62",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_all.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig01/C",
+      "script_path": "code/panels/fig01_c.R",
+      "script_sha256": "e0816738d025d0f7bc5cf9b9d1cad8815a7814c7e584f4f4399bcaa701520c96",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_all.csv",
+        "data_small/scrna_stromal_small.qs",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "fig01/D",
+      "script_path": "code/panels/fig01_d.R",
+      "script_sha256": "daf89f13857f61f58d921543914142e7b89f857b2700f74522688c86ffa7c839",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "runs/step01_harmony_de/umap_ec.csv",
+        "runs/step01_harmony_de/umap_mural.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "fig02/A",
+      "script_path": "code/panels/fig02_a.R",
+      "script_sha256": "3a83cea9742d2659b7b9d659b9b624b24c52744026d1b8da69e7939e2d6cd5ee",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/B",
+      "script_path": "code/panels/fig02_b.R",
+      "script_sha256": "d7cc6e7d366a13d3c0e16bde4bb8d9ecfa8baa62bce3254768b0e7551aa94141",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/C",
+      "script_path": "code/panels/fig02_c.R",
+      "script_sha256": "0b08f06f83fdbf09da2ff643ac0112797cd57f9b2243b336d7d30466fe418c41",
+      "input_tables": [
+        "runs/step02_progeny_roe_cox/roe_cox_fib.csv",
+        "data_small/moesm/cox_tcga.csv",
+        "data_small/moesm/cox_inhouse.csv"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "fig02/D",
+      "script_path": "code/panels/fig02_d.R",
+      "script_sha256": "67e53e6469785f6cb79cca33cde23222b31dcfbbc58479db84257f8b1d6e60f8",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "runs/step02_progeny_roe_cox/chemokine_zscore_fib.csv",
+        "data_small/moesm/deg_fib.csv",
+        "data_small/scrna_stromal_small.qs"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/E",
+      "script_path": "code/panels/fig02_e.R",
+      "script_sha256": "df8892153621ab4f24ad8a76acc9e5ca97df65397d54df12d4a030e1aa905c57",
+      "input_tables": [
+        "runs/step02_progeny_roe_cox/progeny_fib.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/F",
+      "script_path": "code/panels/fig02_f.R",
+      "script_sha256": "3cea72e40e118fa988c76e1fa3807a1ed857d653d29f7c1e6ac1abc57f836162",
+      "input_tables": [
+        "runs/step04_trajectory/traj_fib.csv",
+        "extracted/pages/main_p04.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/G",
+      "script_path": "code/panels/fig02_g.R",
+      "script_sha256": "0a72e402d627b6177f8fd874740fdd3268016d2e94e184adc051de33dda6a0f8",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "runs/step04_trajectory/traj_fib.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/H",
+      "script_path": "code/panels/fig02_h.R",
+      "script_sha256": "81891ba6fa984bf95efc8d37df20bcf6c6c352397f22b429615a7ef749ff15d1",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "runs/step04_trajectory/traj_fib.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/I",
+      "script_path": "code/panels/fig02_i.R",
+      "script_sha256": "1121fd510605a6f27df744ad6306fffc3052d16d2c79ccbe566f210558c12a1f",
+      "input_tables": [
+        "runs/step04_trajectory/traj_fib.csv",
+        "extracted/pages/main_p04.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/J",
+      "script_path": "code/panels/fig02_j.R",
+      "script_sha256": "7900e73b1e790713afd2a357b135e607a2551bf9a17f07183fcff81251102e46",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig2j.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/K",
+      "script_path": "code/panels/fig02_k.R",
+      "script_sha256": "8c82ea856726ede70634bab07f89d2dc3bc1f5b833f55efdbec77fb664792e17",
+      "input_tables": [
+        "runs/step05_crosstalk/fig2k_fib_malignant_lr.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/A",
+      "script_path": "code/panels/fig03_a.R",
+      "script_sha256": "971655c329976ba16e5e529e9e33385d54f10707aebc4ca1abb1f8cb975b4e52",
+      "input_tables": [
+        "data_small/moesm/corr_bulk.csv",
+        "extracted/pages/main_p06.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/B",
+      "script_path": "code/panels/fig03_b.R",
+      "script_sha256": "9ad9a8bcad1a6291bab6b8d03bcfa901885734351f37acabe52dc523dd284699",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig3be.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/C",
+      "script_path": "code/panels/fig03_c.R",
+      "script_sha256": "c7038d3072c48655201fe357a8f65ac53c15c2cf80d78c54d870b6148d24988b",
+      "input_tables": [
+        "runs/step05_crosstalk/fig3c_checkpoint_box.csv"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "fig03/D",
+      "script_path": "code/panels/fig03_d.R",
+      "script_sha256": "4b4f14b66b72f0cae3a8fd0a68254c8d6b95ad72daaf56461193ec07a0367388",
+      "input_tables": [
+        "runs/step05_crosstalk/fig3d_lr_bipartite.csv",
+        "data_small/moesm/cellphone_pvalue.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/E",
+      "script_path": "code/panels/fig03_e.R",
+      "script_sha256": "438575be5c2cebb0660fdb017f6e02a67ce602fc6c48a87e11a4d9c0c38bf09b",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig3be.csv",
+        "data_small/CAA_ST-umap.qs",
+        "data_small/st/caa_st_scored.qs"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/A",
+      "script_path": "code/panels/fig04_a.R",
+      "script_sha256": "afc5e7020290b7276707450f24aa72bfbfaf31bcd63e2d05e3f69be3c549d8ea",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_ec.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/B",
+      "script_path": "code/panels/fig04_b.R",
+      "script_sha256": "654880c8f8d9c1f518b0799f296223cd3b0daeebda178ffebc54b775ca5e723d",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_ec.csv",
+        "data_small/scrna_stromal_small.qs",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/C",
+      "script_path": "code/panels/fig04_c.R",
+      "script_sha256": "a3224fee885df7a78d4de47da3b720e6cc27f0cf64cf6ef5162b65b88123422a",
+      "input_tables": [
+        "runs/step02_progeny_roe_cox/roe_cox_ec.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/D",
+      "script_path": "code/panels/fig04_d.R",
+      "script_sha256": "527884eb44c3cefdfdfddf7983a7914a0697b1768b8bd203891215763fffbb1f",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_ec.csv",
+        "runs/step02_progeny_roe_cox/chemokine_zscore_ec.csv",
+        "data_small/moesm/deg_ec.csv",
+        "data_small/scrna_stromal_small.qs"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/E",
+      "script_path": "code/panels/fig04_e.R",
+      "script_sha256": "f182e759f945bab4a26071d73833161609457cc4bbe527e629a027893ea1bac5",
+      "input_tables": [
+        "runs/step02_progeny_roe_cox/progeny_ec.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/F",
+      "script_path": "code/panels/fig04_f.R",
+      "script_sha256": "a14b1c15e8fc0b33e89d2b9d90e42a54f9e93222e0b3ca37f91fdd6312d36830",
+      "input_tables": [
+        "runs/step04_trajectory/traj_ec.csv",
+        "extracted/pages/main_p07.png"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "fig04/G",
+      "script_path": "code/panels/fig04_g.R",
+      "script_sha256": "5fa752de5a1922375708ddfe098fefe3c19cb694d5cba36d019d738d506596d3",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_ec.csv",
+        "runs/step04_trajectory/traj_ec.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/H",
+      "script_path": "code/panels/fig04_h.R",
+      "script_sha256": "0a7f5771b502759262394e7f078ba7fc23ef6c170fc8f5a84ef3164bb9fe5400",
+      "input_tables": [
+        "runs/step04_trajectory/traj_ec.csv",
+        "extracted/pages/main_p07.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/I",
+      "script_path": "code/panels/fig04_i.R",
+      "script_sha256": "5814d93198860f75f0999489002c0b6c92a93ab5bbec4ce658d459eb24c3d384",
+      "input_tables": [
+        "runs/step05_crosstalk/fig4i_ec_stromal_counts.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/J",
+      "script_path": "code/panels/fig04_j.R",
+      "script_sha256": "090149188834c92bf2a37bbced6b1bb3063f2aa7c274182eacb879ae4a62d345",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig4j.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/K",
+      "script_path": "code/panels/fig04_k.R",
+      "script_sha256": "67bae5b62cdc9eeb754df4e541eee1c0a202070904488bea9fc53bd3a22a81c2",
+      "input_tables": [
+        "runs/step05_crosstalk/metab_fig4k_ec.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/A",
+      "script_path": "code/panels/fig05_a.R",
+      "script_sha256": "face3bf009babcbfab51b29fa3c05fd7d06f364b3e2858c88083913ddce473d6",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_mural.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/B",
+      "script_path": "code/panels/fig05_b.R",
+      "script_sha256": "05526ce334007565d806065549b82c513807b1d2dbe86f149893f434a8fc730c",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_mural.csv",
+        "runs/step04_trajectory/traj_mural.csv",
+        "data_small/scrna_stromal_small.qs",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/C",
+      "script_path": "code/panels/fig05_c.R",
+      "script_sha256": "1713e7936308f6efd69fea915244de41864709b7f77d28d6bc8630e8b0bf4521",
+      "input_tables": [
+        "runs/step02_progeny_roe_cox/roe_cox_mural.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/D",
+      "script_path": "code/panels/fig05_d.R",
+      "script_sha256": "d6088a39a731d86e693d8608bb23855b7bad8633e6a6625119086009df700083",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_mural.csv",
+        "runs/step02_progeny_roe_cox/chemokine_zscore_mural.csv",
+        "data_small/moesm/deg_mural.csv",
+        "data_small/scrna_stromal_small.qs"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/E",
+      "script_path": "code/panels/fig05_e.R",
+      "script_sha256": "c0f05662a9feef5cb64e9910d557594151a3b7ec6eb889624ae48a275acdb9a8",
+      "input_tables": [
+        "runs/step02_progeny_roe_cox/progeny_mural.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/F",
+      "script_path": "code/panels/fig05_f.R",
+      "script_sha256": "c845101cc91671a7ba3fda85ec8324c100f66ee95a6d87b5d2763e9acef8522c",
+      "input_tables": [
+        "runs/step04_trajectory/traj_mural.csv",
+        "extracted/pages/main_p09.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/G",
+      "script_path": "code/panels/fig05_g.R",
+      "script_sha256": "c7a94c32414a163650f073d26bab21cbccc5db77cf5a2f5974361bc679e4eb38",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_mural.csv",
+        "runs/step04_trajectory/traj_mural.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/H",
+      "script_path": "code/panels/fig05_h.R",
+      "script_sha256": "2ae3dc4535845bced1009c664373932d8041cdc953819390ecc6bd38dc132b2e",
+      "input_tables": [
+        "runs/step04_trajectory/traj_mural.csv",
+        "extracted/pages/main_p09.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/I",
+      "script_path": "code/panels/fig05_i.R",
+      "script_sha256": "88c5ccdfd67e804dde8e0dd171e7538dceb4cd17601a45e1cb60ce82e2ae2e3a",
+      "input_tables": [
+        "runs/step04_trajectory/traj_mural_branch_genes.csv"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "fig05/J",
+      "script_path": "code/panels/fig05_j.R",
+      "script_sha256": "33b3a51cd81d63b35c341ffffdf83965f6cd5e043b0c749500728e4b630ffc66",
+      "input_tables": [
+        "runs/step05_crosstalk/fig5j_mural_ec_lr.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/K",
+      "script_path": "code/panels/fig05_k.R",
+      "script_sha256": "e7b8bdea2db83a1518f427aedcb5ae188019aae7be0cafcb2d2dc4009053c519",
+      "input_tables": [
+        "runs/step05_crosstalk/metab_fig5k_mural.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/A",
+      "script_path": "code/panels/fig06_a.R",
+      "script_sha256": "8b6245f321c06576ab91870bc2fc9efdf9f9faeea98e8ab68ff4331f5cc6e5df",
+      "input_tables": [
+        "extracted/pages/main_p10.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/B",
+      "script_path": "code/panels/fig06_b.R",
+      "script_sha256": "c6f182501b3019859b56aedd962b874c45923fb684c9c86214db77af45f60c57",
+      "input_tables": [
+        "runs/step05_crosstalk/fig6b_tme_stromal_counts.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/C",
+      "script_path": "code/panels/fig06_c.R",
+      "script_sha256": "c1afd25f12ce1fb96c3aed31efe08f4c3b6633722576fb5f6ec736d668599b1e",
+      "input_tables": [
+        "runs/step05_crosstalk/fig6c_ccl19_lr.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/D",
+      "script_path": "code/panels/fig06_d.R",
+      "script_sha256": "b3064f1a090a56fa63c4978ad1af28a3562aa1fcb3278c1eafeebd8597b7321d",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig6degh.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/E",
+      "script_path": "code/panels/fig06_e.R",
+      "script_sha256": "d5e84405c306b335c626998f95d494e8013d0edbaabfa073e6c7b80d0823040a",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig6degh.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/F",
+      "script_path": "code/panels/fig06_f.R",
+      "script_sha256": "d03edafa1976c0bfb56be6424a64fce89c5a3791406edcb7037b11dd901b992d",
+      "input_tables": [
+        "runs/step05_crosstalk/fig6f_pgf_tam_lr.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/G",
+      "script_path": "code/panels/fig06_g.R",
+      "script_sha256": "07cff8b08f470ae5f5664daf5c47dc76d53ecbef48f78bb577e994192d37ea93",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig6degh.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/H",
+      "script_path": "code/panels/fig06_h.R",
+      "script_sha256": "009f7f941aa0f0580cefe9975c103eab2a90290f387ca127b5855b18eb456f86",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_fig6degh.csv"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "sfig01/A",
+      "script_path": "code/panels/sfig01_a.R",
+      "script_sha256": "8c24a4e513e090801e22fd1f3fdde0ce24815af4d0c1c6420faf9d536e76d744",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_all.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig01/B",
+      "script_path": "code/panels/sfig01_b.R",
+      "script_sha256": "a7d723c302c4edf2750ee936aca7427ca4d114933d15674851bfd37c51da6f14",
+      "input_tables": [
+        "runs/step01_harmony_de/dotplot_major.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/A",
+      "script_path": "code/panels/sfig02_a.R",
+      "script_sha256": "95712bfe72c4d195f3b4e176a9d3e8353ccc1371c052437b0238103723e3a8f9",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "runs/step02_progeny_roe_cox/tissue_prop_fib.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/B",
+      "script_path": "code/panels/sfig02_b.R",
+      "script_sha256": "1081334cdca456e19c85f6f5e80a0a023f04fb605844d9cd06b749721d1fe836",
+      "input_tables": [
+        "runs/step01_harmony_de/dotplot_fib.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/C",
+      "script_path": "code/panels/sfig02_c.R",
+      "script_sha256": "0d1774b905bc8dd172fd8d23b5c657ca3786d249075bef7876f00e5061dc91bb",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_fib.csv",
+        "data_small/scrna_stromal_small.qs",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/D",
+      "script_path": "code/panels/sfig02_d.R",
+      "script_sha256": "a9c025943ca35de6ea0b134b3166eb736b06b23bcd014af7a582be622c60cc93",
+      "input_tables": [
+        "runs/step05_crosstalk/sfig2d_kegg_fib.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/E",
+      "script_path": "code/panels/sfig02_e.R",
+      "script_sha256": "210ef58d6e41f9c843fe7c3efbbcba5694b3ced46c4e383625848ab7f561ac93",
+      "input_tables": [
+        "runs/step05_crosstalk/metab_sfig2e_fib.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig03/A",
+      "script_path": "code/panels/sfig03_a.R",
+      "script_sha256": "1bbc01fd63729f5aa6b7e0ff31f3db62203bda90b1fea9f10208314a4abdb748",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_sfig3.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig03/B",
+      "script_path": "code/panels/sfig03_b.R",
+      "script_sha256": "85330d035275ad200d8cb1c38034948ad6109af8f8f71d7a1076cea2ff48adb6",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_sfig3.csv",
+        "data_small/CAA_ST-umap.qs"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "sfig04/A",
+      "script_path": "code/panels/sfig04_a.R",
+      "script_sha256": "d9e98bfd314bf377a9667c3ad096f94cd1538b4851f3c3d78aac10f20426a571",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_ec.csv",
+        "runs/step02_progeny_roe_cox/tissue_prop_ec.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig04/B",
+      "script_path": "code/panels/sfig04_b.R",
+      "script_sha256": "69ba730c1a8078cecba544d2b7b7979856649c09b3ca929f6a08ecca4d02ac96",
+      "input_tables": [
+        "runs/step01_harmony_de/dotplot_ec.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig04/C",
+      "script_path": "code/panels/sfig04_c.R",
+      "script_sha256": "2194522ef2a99fd579fc9a4cad63b9b61484ea377e9f4b1ad6c18f3d22c76277",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_ec.csv",
+        "runs/step04_trajectory/traj_ec.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig04/D",
+      "script_path": "code/panels/sfig04_d.R",
+      "script_sha256": "ded2a981cf595c19131b7fd422e9daca1281bbf0fb58b7b698fff8536a3f1111",
+      "input_tables": [
+        "runs/step05_crosstalk/sfig4d_kegg_ec.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/A",
+      "script_path": "code/panels/sfig05_a.R",
+      "script_sha256": "40c3ed38ec04d1012af0a4c82384c66184c90243b54fa07c30dded6373263016",
+      "input_tables": [
+        "runs/step01_harmony_de/umap_mural.csv",
+        "runs/step02_progeny_roe_cox/tissue_prop_mural.csv",
+        "extracted/pages/main_p03.png"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/B",
+      "script_path": "code/panels/sfig05_b.R",
+      "script_sha256": "6115dd1a4f299d26c031dc9aec7a1bcd70d97ddef7229e114f560ffb6154a3c4",
+      "input_tables": [
+        "runs/step01_harmony_de/dotplot_mural.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/C",
+      "script_path": "code/panels/sfig05_c.R",
+      "script_sha256": "7a246dc6a645aea3a87c7286b610ef4a613d1bb01acbdf24efdcf9a681af8856",
+      "input_tables": [
+        "runs/step05_crosstalk/sfig5c_kegg_mural.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/D",
+      "script_path": "code/panels/sfig05_d.R",
+      "script_sha256": "24b75590f770cf9c11a9094c55c9c6a4140c962828f16ad8e9414963b4aa8373",
+      "input_tables": [
+        "runs/step05_crosstalk/sfig5d_chord_edges.csv"
+      ],
+      "status": "smoke_tested"
+    },
+    {
+      "panel_key": "sfig06/A",
+      "script_path": "code/panels/sfig06_a.R",
+      "script_sha256": "6451789f35873fc6679c56bb4cbbb763794a222cdecd6c33838493d2fb20e6c2",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_sfig6abc.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/B",
+      "script_path": "code/panels/sfig06_b.R",
+      "script_sha256": "078ab6457d9eaad538b3e48996ca8c4dcf4e0979f8d58460085149a4f4010b36",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_sfig6abc.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/C",
+      "script_path": "code/panels/sfig06_c.R",
+      "script_sha256": "f4d6d02c93f611e06886cdc26c9a54cc998ab687df8fae7a44d88ad40cb7d365",
+      "input_tables": [
+        "runs/step03_spatial/st_spots_sfig6abc.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/D",
+      "script_path": "code/panels/sfig06_d.R",
+      "script_sha256": "955650997a1b011ecbe13bc931598487bcd3f3c208ddab7e4ba141550142a0da",
+      "input_tables": [
+        "runs/step05_crosstalk/sfig6d_pgf_tme_lr.csv",
+        "data_small/moesm/cellchat_edges.csv"
+      ],
+      "status": "generated"
+    }
+  ],
+  "smoke_tested_count": 9
+}

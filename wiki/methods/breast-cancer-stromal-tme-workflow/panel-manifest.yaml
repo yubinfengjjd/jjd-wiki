@@ -1,290 +1,1111 @@
-schema_version: 1
+schema_version: 2
 paper_id: 2026-cai-stromal-tme
-doi: "10.1038/s41698-026-01718-1"
-journal: "npj Precision Oncology"
+workflow_id: breast-cancer-stromal-tme-workflow
+doi: 10.1038/s41698-026-01718-1
+journal: npj Precision Oncology
 year: 2026
-license: "CC-BY-NC-ND-4.0 (article); upstream GitHub code unspecified (personal academic reference only)"
-gallery_entry: "2026-11-19-cai-stromal-tme"
+license: CC-BY-NC-ND-4.0 (article); upstream GitHub code unspecified (personal academic reference only)
+gallery_entry: 2026-11-19-cai-stromal-tme
 panels:
-  - figure: "Fig. 1"
-    panel: "1A"
-    evidence_tier: "original_table"
-    template_id: "atlas-workflow-diagram"
-    methods: ["batch-integration"]
-    note: "Study design schematic and scRNA/ST cohort counts from paper & MOESM1."
-  - figure: "Fig. 1"
-    panel: "1B"
-    evidence_tier: "local_recompute"
-    template_id: "scrna-celltype-umap"
-    methods: ["cell-type-annotation"]
-    note: "Major stromal lineage UMAP on downsampled scRNA object (1,800 cells x 289 genes)."
-  - figure: "Fig. 1"
-    panel: "1C"
-    evidence_tier: "local_recompute"
-    template_id: "scrna-feature-umap-grid"
-    methods: ["cell-type-annotation"]
-    note: "9 canonical lineage marker feature UMAPs."
-  - figure: "Fig. 1"
-    panel: "1D"
-    evidence_tier: "local_recompute"
-    template_id: "stromal-hull-umap"
-    methods: ["cell-type-annotation"]
-    note: "36 stromal subclusters across Fib/EC/Mural with dashed lineage hulls."
-  - figure: "Fig. 2"
-    panel: "2A"
-    evidence_tier: "local_recompute"
-    template_id: "scrna-celltype-umap"
-    methods: ["cell-type-annotation"]
-    note: "Fibroblast Normal vs Tumor split UMAP."
-  - figure: "Fig. 2"
-    panel: "2B"
-    evidence_tier: "local_recompute"
-    template_id: "scrna-feature-umap-grid"
-    methods: ["gene-set-scoring"]
-    note: "4 CAF functional module scores projected on UMAP."
-  - figure: "Fig. 2"
-    panel: "2C"
-    evidence_tier: "original_table"
-    template_id: "roe-cox-heatmap"
-    methods: ["cell-proportion-composition", "survival-prognosis-analysis"]
-    note: "Published MOESM5 TCGA/in-house Cox HR combined with tissue/subtype Ro/e."
-  - figure: "Fig. 2"
-    panel: "2D"
-    evidence_tier: "local_recompute"
-    template_id: "pathway-zscore-heatmap"
-    methods: ["differential-expression", "gene-set-scoring"]
-    note: "Fib chemokine/MHC Z-score heatmap with published DEG markers."
-  - figure: "Fig. 2"
-    panel: "2E"
-    evidence_tier: "local_recompute"
-    template_id: "pathway-zscore-heatmap"
-    methods: ["gene-set-scoring"]
-    note: "PROGENy 14-pathway activity Z-score across 14 Fib subclusters."
-  - figure: "Fig. 2"
-    panel: "2F-I"
-    evidence_tier: "local_recompute"
-    template_id: "diffusion-trajectory-overlay"
-    methods: ["trajectory-inference"]
-    note: "Fibroblast DiffusionMap, DPT/Slingshot trajectory and 4-module overlay."
-  - figure: "Fig. 2"
-    panel: "2J"
-    evidence_tier: "proxy"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (fallback for RCTD)."
-  - figure: "Fig. 2"
-    panel: "2K"
-    evidence_tier: "original_table"
-    template_id: "lr-bubble-matrix"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 Fib-to-malignant CellChat L-R probability bubble matrix."
-  - figure: "Fig. 3"
-    panel: "3A"
-    evidence_tier: "original_table"
-    template_id: "clustered-corr-boxes"
-    methods: ["immune-infiltration-tme"]
-    note: "MOESM7 35x35 clustered correlation matrix with diagonal module boxes."
-  - figure: "Fig. 3"
-    panel: "3B"
-    evidence_tier: "proxy"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST 4-region Tumor/ABCA8+ lpFib/CD8 T/exhausted T spatial signature proxy."
-  - figure: "Fig. 3"
-    panel: "3C"
-    evidence_tier: "local_recompute"
-    template_id: "checkpoint-group-boxplot"
-    methods: ["immune-infiltration-tme"]
-    note: "8 immune checkpoints across ABCA8 high vs low quartiles."
-  - figure: "Fig. 3"
-    panel: "3D"
-    evidence_tier: "original_table"
-    template_id: "lr-bipartite-bubble"
-    methods: ["cell-cell-communication", "immune-infiltration-tme"]
-    note: "MOESM8 Fib-T immunosuppressive L-R bipartite bubble plot."
-  - figure: "Fig. 3"
-    panel: "3E"
-    evidence_tier: "proxy"
-    template_id: "spatial-coexpr-multichannel"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST co-localization with LGALS3 substituting missing LGALS9 in slide matrix."
-  - figure: "Fig. 3"
-    panel: "3F-H"
-    evidence_tier: "excluded_wet_lab"
-    template_id: null
-    methods: []
-    note: "Mouse 4T1 CAF-T co-culture, flow cytometry, and human breast cancer mIF strictly excluded."
-  - figure: "Fig. 4"
-    panel: "4A-E"
-    evidence_tier: "local_recompute"
-    template_id: "roe-cox-heatmap"
-    methods: ["cell-type-annotation", "cell-proportion-composition", "gene-set-scoring"]
-    note: "EC 12 subclusters UMAP, markers, MOESM5 Cox+Ro/e, and functional/PROGENy heatmaps."
-  - figure: "Fig. 4"
-    panel: "4F-H"
-    evidence_tier: "local_recompute"
-    template_id: "diffusion-trajectory-overlay"
-    methods: ["trajectory-inference"]
-    note: "EC V-shaped DiffusionMap and Stalk/Tip-like pseudotime overlay."
-  - figure: "Fig. 4"
-    panel: "4I"
-    evidence_tier: "original_table"
-    template_id: "cellchat-count-heatmap"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with marginal bars."
-  - figure: "Fig. 4"
-    panel: "4J"
-    evidence_tier: "proxy"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST 6-region TipEC/VenEC/emtEC spatial signature grid."
-  - figure: "Fig. 4"
-    panel: "4K"
-    evidence_tier: "original_table"
-    template_id: "metabolism-lollipop-dotplot"
-    methods: ["gene-set-enrichment"]
-    note: "EC Top 20 KEGG metabolic pathway enrichment lollipop dotplot."
-  - figure: "Fig. 5"
-    panel: "5A-H"
-    evidence_tier: "local_recompute"
-    template_id: "diffusion-trajectory-overlay"
-    methods: ["cell-type-annotation", "cell-proportion-composition", "trajectory-inference"]
-    note: "Mural 10 subclusters UMAP, Cox+Ro/e, functional/PROGENy heatmaps, and triangular DiffusionMap."
-  - figure: "Fig. 5"
-    panel: "5I"
-    evidence_tier: "local_recompute"
-    template_id: "pseudotime-branch-curves"
-    methods: ["trajectory-inference"]
-    note: "Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene panel and marked missing)."
-  - figure: "Fig. 5"
-    panel: "5J"
-    evidence_tier: "original_table"
-    template_id: "lr-bubble-matrix"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 Mural-to-EC L-R probability bubble matrix."
-  - figure: "Fig. 5"
-    panel: "5K"
-    evidence_tier: "original_table"
-    template_id: "metabolism-lollipop-dotplot"
-    methods: ["gene-set-enrichment"]
-    note: "Mural KEGG metabolic pathway lollipop dotplot."
-  - figure: "Fig. 6"
-    panel: "6A"
-    evidence_tier: "local_recompute"
-    template_id: "scrna-celltype-umap"
-    methods: ["cell-type-annotation"]
-    note: "52-subcluster TME + stromal integrated UMAP."
-  - figure: "Fig. 6"
-    panel: "6B"
-    evidence_tier: "original_table"
-    template_id: "cellchat-count-heatmap"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 16x36 immune/epithelial vs stromal CellPhoneDB count heatmap."
-  - figure: "Fig. 6"
-    panel: "6C"
-    evidence_tier: "original_table"
-    template_id: "lr-bubble-matrix"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 C8_iFib_CCL19 to 20 TME cell types TLS L-R matrix."
-  - figure: "Fig. 6"
-    panel: "6D-E"
-    evidence_tier: "proxy"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST whole-slide and right-hemisphere TLS 8-signature spatial grid."
-  - figure: "Fig. 6"
-    panel: "6F"
-    evidence_tier: "original_table"
-    template_id: "lr-bubble-matrix"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 C4_TipEC_PGF to M1/M2 CellChat L-R probability bubble matrix."
-  - figure: "Fig. 6"
-    panel: "6G"
-    evidence_tier: "proxy"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF / M1 / M2."
-  - figure: "Fig. 6"
-    panel: "6H"
-    evidence_tier: "local_recompute"
-    template_id: "spatial-coexpr-multichannel"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST CCL14-CCR1 dual-channel spatial co-expression."
-  - figure: "Supp. Fig. 1"
-    panel: "S1A-B"
-    evidence_tier: "local_recompute"
-    template_id: "marker-bubble-dotplot"
-    methods: ["batch-integration", "cell-type-annotation"]
-    note: "Cohort batch UMAP and 9-lineage marker DotPlot."
-  - figure: "Supp. Fig. 2"
-    panel: "S2A"
-    evidence_tier: "proxy"
-    template_id: "tissue-ratio-prop-combo"
-    methods: ["batch-integration", "cell-proportion-composition"]
-    note: "Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample boxplot."
-  - figure: "Supp. Fig. 2"
-    panel: "S2B-C"
-    evidence_tier: "local_recompute"
-    template_id: "marker-bubble-dotplot"
-    methods: ["cell-type-annotation", "gene-set-scoring"]
-    note: "Fib 36-marker DotPlot and Angiogenic_signature UMAP."
-  - figure: "Supp. Fig. 2"
-    panel: "S2D-E"
-    evidence_tier: "original_table"
-    template_id: "kegg-cluster-bubble"
-    methods: ["gene-set-enrichment"]
-    note: "Fib 42 KEGG pathways bubble matrix and 16 metabolic pathways lollipop."
-  - figure: "Supp. Fig. 3"
-    panel: "S3A"
-    evidence_tier: "local_recompute"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST 8-region COL1A1/COL1A2/DCN expression grid."
-  - figure: "Supp. Fig. 3"
-    panel: "S3B"
-    evidence_tier: "proxy"
-    template_id: "spatial-he-deconv-panel"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8 T spatial signature weights."
-  - figure: "Supp. Fig. 4"
-    panel: "S4A-C"
-    evidence_tier: "proxy"
-    template_id: "tissue-ratio-prop-combo"
-    methods: ["cell-proportion-composition", "cell-type-annotation"]
-    note: "EC cohort UMAP, tissue proportion combo, 32-marker DotPlot, and Tip-cell feature UMAP."
-  - figure: "Supp. Fig. 4"
-    panel: "S4D"
-    evidence_tier: "original_table"
-    template_id: "cluster-kegg-bars"
-    methods: ["gene-set-enrichment"]
-    note: "EC 12 subclusters faceted Top-5 KEGG horizontal bars."
-  - figure: "Supp. Fig. 5"
-    panel: "S5A-C"
-    evidence_tier: "proxy"
-    template_id: "tissue-ratio-prop-combo"
-    methods: ["cell-proportion-composition", "gene-set-enrichment"]
-    note: "Mural cohort UMAP, tissue proportion combo, 32-marker DotPlot, and Top-7 KEGG bars."
-  - figure: "Supp. Fig. 5"
-    panel: "S5D"
-    evidence_tier: "original_table"
-    template_id: "cellchat-signaling-ring"
-    methods: ["cell-cell-communication"]
-    note: "52-node stromal + TME VEGF directional signaling ring."
-  - figure: "Supp. Fig. 6"
-    panel: "S6A"
-    evidence_tier: "proxy"
-    template_id: "spatial-feature-grid"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST 3-region 9-cell-type spatial signature grid."
-  - figure: "Supp. Fig. 6"
-    panel: "S6B-C"
-    evidence_tier: "local_recompute"
-    template_id: "spatial-coexpr-multichannel"
-    methods: ["spatial-transcriptomics-microenvironment"]
-    note: "CAA_ST 8-region CCL19/CCR7 2-channel and CD8A/CD79A/CD19/CD3E 4-channel TLS co-expression."
-  - figure: "Supp. Fig. 6"
-    panel: "S6D"
-    evidence_tier: "original_table"
-    template_id: "lr-bubble-matrix"
-    methods: ["cell-cell-communication"]
-    note: "MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability bubble matrix."
+- panel_key: fig01/A
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1A
+  panel_letter: A
+  evidence_tier: excluded_schematic
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Study design schematic for multi-cohort scRNA-seq and Visium spatial transcriptomics integration (excluded
+    non-computational schematic).
+  note: 按 v5.4 规则排除非计算流程示意图（保留历史已验收整图 fig01_replica.png 不重绘）。
+- panel_key: fig01/B
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig01_b.R
+  input_tables:
+  - runs/step01_harmony_de/umap_all.csv
+  - extracted/pages/main_p03.png
+  description: Major stromal lineage UMAP (Fib, EC, Mural cell) with numbered centroids on downsampled scRNA object.
+  note: Major stromal lineage UMAP on downsampled scRNA object (1,800 cells x 289 genes).
+- panel_key: fig01/C
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig01_c.R
+  input_tables:
+  - runs/step01_harmony_de/umap_all.csv
+  - data_small/scrna_stromal_small.qs
+  - extracted/pages/main_p03.png
+  description: 9 canonical stromal lineage marker expression feature UMAPs (COL1A1, COL1A2, DCN, PECAM1, VWF, CD34, ACTA2,
+    PDGFRB, MCAM).
+  note: 9 canonical lineage marker feature UMAPs.
+- panel_key: fig01/D
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: stromal-hull-umap
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig01_d.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - runs/step01_harmony_de/umap_ec.csv
+  - runs/step01_harmony_de/umap_mural.csv
+  - extracted/pages/main_p03.png
+  description: 36 stromal subclusters across Fib, EC, and Mural compartments with dashed lineage hulls and 4-column legend.
+  note: 36 stromal subclusters across Fib/EC/Mural with dashed lineage hulls.
+- panel_key: fig02/A
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig02_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - extracted/pages/main_p03.png
+  description: Fibroblast 14-subcluster UMAP split by Adjacent normal tissue vs Tumor.
+  note: Fibroblast Normal vs Tumor split UMAP.
+- panel_key: fig02/B
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/fig02_b.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - extracted/pages/main_p03.png
+  description: 4 CAF functional module scores (lpCAF, mCAF, tCAF, ifnCAF) projected on fibroblast UMAP.
+  note: 4 CAF functional module scores projected on UMAP.
+- panel_key: fig02/C
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2C
+  panel_letter: C
+  evidence_tier: original_table
+  template_id: roe-cox-heatmap
+  methods:
+  - cell-proportion-composition
+  - survival-prognosis-analysis
+  script_path: code/panels/fig02_c.R
+  input_tables:
+  - runs/step02_progeny_roe_cox/roe_cox_fib.csv
+  - data_small/moesm/cox_tcga.csv
+  - data_small/moesm/cox_inhouse.csv
+  description: Fibroblast subcluster tissue/subtype Ro/e combined with TCGA/in-house Cox HR.
+  note: Published MOESM5 TCGA/in-house Cox HR combined with tissue/subtype Ro/e.
+- panel_key: fig02/D
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - differential-expression
+  - gene-set-scoring
+  script_path: code/panels/fig02_d.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - runs/step02_progeny_roe_cox/chemokine_zscore_fib.csv
+  - data_small/moesm/deg_fib.csv
+  - data_small/scrna_stromal_small.qs
+  description: Fibroblast chemokine, MHC-I, and MHC-II Z-score heatmap overlaid with published DEG open circles.
+  note: Fib chemokine/MHC Z-score heatmap with published DEG markers.
+- panel_key: fig02/E
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/fig02_e.R
+  input_tables:
+  - runs/step02_progeny_roe_cox/progeny_fib.csv
+  description: PROGENy 14-pathway activity Z-score heatmap across 14 fibroblast subclusters.
+  note: PROGENy 14-pathway activity Z-score across 14 Fib subclusters.
+- panel_key: fig02/F
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig02_f.R
+  input_tables:
+  - runs/step04_trajectory/traj_fib.csv
+  - extracted/pages/main_p04.png
+  description: Fibroblast Diffusion Map (DC_1 vs DC_2) colored by 14 subclusters with numbered centroids and trajectory guide.
+  note: Fibroblast DiffusionMap manifold with cluster trajectory guide.
+- panel_key: fig02/G
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2G
+  panel_letter: G
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig02_g.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - runs/step04_trajectory/traj_fib.csv
+  - extracted/pages/main_p03.png
+  description: Fibroblast DPT pseudotime differentiation state projected on UMAP with directed cluster median guides.
+  note: Fibroblast DPT pseudotime on UMAP with cluster median arrow guides.
+- panel_key: fig02/H
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2H
+  panel_letter: H
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig02_h.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - runs/step04_trajectory/traj_fib.csv
+  - extracted/pages/main_p03.png
+  description: Fibroblast Slingshot pseudotime differentiation state projected on UMAP with MST cluster-center guide.
+  note: Fibroblast Slingshot pseudotime on UMAP with cluster-center MST guide.
+- panel_key: fig02/I
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2I
+  panel_letter: I
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  - gene-set-scoring
+  script_path: code/panels/fig02_i.R
+  input_tables:
+  - runs/step04_trajectory/traj_fib.csv
+  - extracted/pages/main_p04.png
+  description: Fibroblast Diffusion Map overlaid with dominant 4 CAF module scores (mCAF, ifnCAF, iCAF, lpCAF).
+  note: Fibroblast DiffusionMap dominant 4 CAF module overlay.
+- panel_key: fig02/J
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2J
+  panel_letter: J
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig02_j.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig2j.csv
+  description: Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (raw scores and relative weights).
+  note: Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (fallback for RCTD).
+- panel_key: fig02/K
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2K
+  panel_letter: K
+  evidence_tier: original_table
+  template_id: lr-bubble-matrix
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/fig02_k.R
+  input_tables:
+  - runs/step05_crosstalk/fig2k_fib_malignant_lr.csv
+  description: MOESM8 Fib-to-malignant CellChat L-R probability bubble matrix.
+  note: MOESM8 Fib-to-malignant CellChat L-R probability bubble matrix.
+- panel_key: fig03/A
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: clustered-corr-boxes
+  methods:
+  - immune-infiltration-tme
+  script_path: code/panels/fig03_a.R
+  input_tables:
+  - data_small/moesm/corr_bulk.csv
+  - extracted/pages/main_p06.png
+  description: 35x35 clustered bulk TME correlation matrix with diagonal module boxes and staggered labels.
+  note: 'Proxy: 原图 main_p06.png 色标估读 + 发表 MOESM7 C10_lpFib_ABCA8 列精确相关系数（corr_bulk.csv）。'
+- panel_key: fig03/B
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3B
+  panel_letter: B
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig03_b.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig3be.csv
+  description: CAA_ST 4-region Tumor/ABCA8+ lpFib/CD8 T/exhausted T spatial signature proxy.
+  note: CAA_ST 4-region Tumor/ABCA8+ lpFib/CD8 T/exhausted T spatial signature proxy.
+- panel_key: fig03/C
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: checkpoint-group-boxplot
+  methods:
+  - immune-infiltration-tme
+  script_path: code/panels/fig03_c.R
+  input_tables:
+  - runs/step05_crosstalk/fig3c_checkpoint_box.csv
+  description: 8 immune checkpoint genes across ABCA8 high vs low quartiles in CAA_ST (sqrt y-axis, P97 cap).
+  note: 8 immune checkpoints across ABCA8 high vs low quartiles.
+- panel_key: fig03/D
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3D
+  panel_letter: D
+  evidence_tier: original_table
+  template_id: lr-bipartite-bubble
+  methods:
+  - cell-cell-communication
+  - immune-infiltration-tme
+  script_path: code/panels/fig03_d.R
+  input_tables:
+  - runs/step05_crosstalk/fig3d_lr_bipartite.csv
+  - data_small/moesm/cellphone_pvalue.csv
+  description: MOESM8 Fib-T immunosuppressive L-R bipartite CellPhoneDB bubble plot.
+  note: MOESM8 Fib-T immunosuppressive L-R bipartite bubble plot.
+- panel_key: fig03/E
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3E
+  panel_letter: E
+  evidence_tier: proxy
+  template_id: spatial-coexpr-multichannel
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig03_e.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig3be.csv
+  - data_small/CAA_ST-umap.qs
+  - data_small/st/caa_st_scored.qs
+  description: CAA_ST C10_lpFib_ABCA8 / T-cell joint-high zone and LGALS3/HAVCR2/CD86/CTLA4 spatial co-localization.
+  note: CAA_ST co-localization with LGALS3 substituting missing LGALS9 in slide matrix.
+- panel_key: fig03/F
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3F
+  panel_letter: F
+  evidence_tier: excluded_wet_lab
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Mouse 4T1 CAF-T cell co-culture schematic (excluded wet-lab experiment).
+  note: 湿实验排除：小鼠 4T1 CAF-T 细胞共培养实验。
+- panel_key: fig03/G
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3G
+  panel_letter: G
+  evidence_tier: excluded_wet_lab
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Flow cytometry quantification of T-cell cytotoxicity/exhaustion (excluded wet-lab experiment).
+  note: 湿实验排除：流式细胞术（Flow cytometry）实验。
+- panel_key: fig03/H
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3H
+  panel_letter: H
+  evidence_tier: excluded_wet_lab
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Human breast cancer multiplex immunofluorescence (mIF) staining (excluded wet-lab experiment).
+  note: 湿实验排除：人乳腺癌组织多重免疫荧光（mIF）实验。
+- panel_key: fig04/A
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig04_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_ec.csv
+  - extracted/pages/main_p03.png
+  description: EC 12 subclusters UMAP split by Adjacent normal tissue vs Tumor.
+  note: EC Normal vs Tumor split UMAP.
+- panel_key: fig04/B
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig04_b.R
+  input_tables:
+  - runs/step01_harmony_de/umap_ec.csv
+  - data_small/scrna_stromal_small.qs
+  - extracted/pages/main_p03.png
+  description: 4 canonical endothelial markers (SEMA3G, ACKR1, RGCC, LYVE1) projected on EC UMAP.
+  note: 4 EC marker feature UMAPs.
+- panel_key: fig04/C
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4C
+  panel_letter: C
+  evidence_tier: original_table
+  template_id: roe-cox-heatmap
+  methods:
+  - cell-proportion-composition
+  - survival-prognosis-analysis
+  script_path: code/panels/fig04_c.R
+  input_tables:
+  - runs/step02_progeny_roe_cox/roe_cox_ec.csv
+  description: EC 12 subclusters tissue/subtype Ro/e combined with MOESM5 TCGA/in-house Cox HR.
+  note: EC MOESM5 Cox HR + tissue/subtype Ro/e heatmap.
+- panel_key: fig04/D
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - differential-expression
+  - gene-set-scoring
+  script_path: code/panels/fig04_d.R
+  input_tables:
+  - runs/step01_harmony_de/umap_ec.csv
+  - runs/step02_progeny_roe_cox/chemokine_zscore_ec.csv
+  - data_small/moesm/deg_ec.csv
+  - data_small/scrna_stromal_small.qs
+  description: EC Angiogenesis/Notch, Chemokines, MHC-I/II, and ROBO/UNC5 Z-score heatmap with DEG circles.
+  note: EC functional module Z-score heatmap with published DEG markers.
+- panel_key: fig04/E
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/fig04_e.R
+  input_tables:
+  - runs/step02_progeny_roe_cox/progeny_ec.csv
+  description: PROGENy 14-pathway activity Z-score heatmap across 12 EC subclusters.
+  note: EC PROGENy 14-pathway Z-score heatmap.
+- panel_key: fig04/F
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig04_f.R
+  input_tables:
+  - runs/step04_trajectory/traj_ec.csv
+  - extracted/pages/main_p07.png
+  description: EC V-shaped Diffusion Map colored by 12 subclusters (with branch arrows) and DPT pseudotime.
+  note: EC V-shaped DiffusionMap and DPT pseudotime.
+- panel_key: fig04/G
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4G
+  panel_letter: G
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig04_g.R
+  input_tables:
+  - runs/step01_harmony_de/umap_ec.csv
+  - runs/step04_trajectory/traj_ec.csv
+  - extracted/pages/main_p03.png
+  description: EC Slingshot differentiation state projected on EC UMAP.
+  note: EC Slingshot pseudotime projected on UMAP.
+- panel_key: fig04/H
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4H
+  panel_letter: H
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  - gene-set-scoring
+  script_path: code/panels/fig04_h.R
+  input_tables:
+  - runs/step04_trajectory/traj_ec.csv
+  - extracted/pages/main_p07.png
+  description: EC Diffusion Map overlaid with Stalk-like vs Tip-like signature scores.
+  note: EC DiffusionMap Stalk-like vs Tip-like dominant score overlay.
+- panel_key: fig04/I
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4I
+  panel_letter: I
+  evidence_tier: original_table
+  template_id: cellchat-count-heatmap
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/fig04_i.R
+  input_tables:
+  - runs/step05_crosstalk/fig4i_ec_stromal_counts.csv
+  description: MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with marginal bars.
+  note: MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with marginal bars.
+- panel_key: fig04/J
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4J
+  panel_letter: J
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig04_j.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig4j.csv
+  description: CAA_ST 6-region TipEC/VenEC/emtEC spatial signature grid.
+  note: CAA_ST 6-region TipEC/VenEC/emtEC spatial signature grid.
+- panel_key: fig04/K
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4K
+  panel_letter: K
+  evidence_tier: proxy
+  template_id: metabolism-lollipop-dotplot
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/fig04_k.R
+  input_tables:
+  - runs/step05_crosstalk/metab_fig4k_ec.csv
+  description: EC Top 20 KEGG metabolic pathway enrichment lollipop dotplot (MOESM6 KEGG + scRNA proxy).
+  note: 'Proxy: 基于 MOESM6 KEGG 富集与小规模 scRNA 代谢代理生成（不含作者 scMetabolism logFC 原始打分）。'
+- panel_key: fig05/A
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig05_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_mural.csv
+  - extracted/pages/main_p03.png
+  description: Mural 10 subclusters UMAP split by Adjacent normal tissue vs Tumor.
+  note: Mural Normal vs Tumor split UMAP.
+- panel_key: fig05/B
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - cell-type-annotation
+  - gene-set-scoring
+  script_path: code/panels/fig05_b.R
+  input_tables:
+  - runs/step01_harmony_de/umap_mural.csv
+  - runs/step04_trajectory/traj_mural.csv
+  - data_small/scrna_stromal_small.qs
+  - extracted/pages/main_p03.png
+  description: Mural Angiogenic/Quiescent signatures and ACTA2/RGS5 marker feature UMAPs.
+  note: Mural 4 feature UMAPs (signatures + markers).
+- panel_key: fig05/C
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5C
+  panel_letter: C
+  evidence_tier: original_table
+  template_id: roe-cox-heatmap
+  methods:
+  - cell-proportion-composition
+  - survival-prognosis-analysis
+  script_path: code/panels/fig05_c.R
+  input_tables:
+  - runs/step02_progeny_roe_cox/roe_cox_mural.csv
+  description: Mural 10 subclusters tissue/subtype Ro/e combined with MOESM5 TCGA/in-house Cox HR.
+  note: Mural MOESM5 Cox HR + tissue/subtype Ro/e heatmap.
+- panel_key: fig05/D
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - differential-expression
+  - gene-set-scoring
+  script_path: code/panels/fig05_d.R
+  input_tables:
+  - runs/step01_harmony_de/umap_mural.csv
+  - runs/step02_progeny_roe_cox/chemokine_zscore_mural.csv
+  - data_small/moesm/deg_mural.csv
+  - data_small/scrna_stromal_small.qs
+  description: Mural chemokine, MHC-I, and MHC-II Z-score heatmap overlaid with published DEG markers.
+  note: Mural functional module Z-score heatmap with DEGs.
+- panel_key: fig05/E
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/fig05_e.R
+  input_tables:
+  - runs/step02_progeny_roe_cox/progeny_mural.csv
+  description: PROGENy 14-pathway activity Z-score heatmap across 10 mural subclusters.
+  note: Mural PROGENy 14-pathway Z-score heatmap.
+- panel_key: fig05/F
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig05_f.R
+  input_tables:
+  - runs/step04_trajectory/traj_mural.csv
+  - extracted/pages/main_p09.png
+  description: Mural triangular Diffusion Map colored by 10 subclusters and DPT pseudotime.
+  note: Mural triangular DiffusionMap and DPT pseudotime.
+- panel_key: fig05/G
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5G
+  panel_letter: G
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig05_g.R
+  input_tables:
+  - runs/step01_harmony_de/umap_mural.csv
+  - runs/step04_trajectory/traj_mural.csv
+  - extracted/pages/main_p03.png
+  description: Mural Slingshot differentiation state projected on Mural UMAP.
+  note: Mural Slingshot pseudotime projected on UMAP.
+- panel_key: fig05/H
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5H
+  panel_letter: H
+  evidence_tier: local_recompute
+  template_id: diffusion-trajectory-overlay
+  methods:
+  - trajectory-inference
+  - gene-set-scoring
+  script_path: code/panels/fig05_h.R
+  input_tables:
+  - runs/step04_trajectory/traj_mural.csv
+  - extracted/pages/main_p09.png
+  description: Mural Diffusion Map overlaid with Angiogenic vs Quiescent signature scores.
+  note: Mural DiffusionMap Angiogenic vs Quiescent dominant score overlay.
+- panel_key: fig05/I
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5I
+  panel_letter: I
+  evidence_tier: local_recompute
+  template_id: pseudotime-branch-curves
+  methods:
+  - trajectory-inference
+  script_path: code/panels/fig05_i.R
+  input_tables:
+  - runs/step04_trajectory/traj_mural_branch_genes.csv
+  description: Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene panel and marked missing).
+  note: Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene panel and marked missing).
+- panel_key: fig05/J
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5J
+  panel_letter: J
+  evidence_tier: original_table
+  template_id: lr-bubble-matrix
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/fig05_j.R
+  input_tables:
+  - runs/step05_crosstalk/fig5j_mural_ec_lr.csv
+  description: MOESM8 Mural-to-EC L-R probability bubble matrix.
+  note: MOESM8 Mural-to-EC L-R probability bubble matrix.
+- panel_key: fig05/K
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5K
+  panel_letter: K
+  evidence_tier: proxy
+  template_id: metabolism-lollipop-dotplot
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/fig05_k.R
+  input_tables:
+  - runs/step05_crosstalk/metab_fig5k_mural.csv
+  description: Mural KEGG metabolic pathway enrichment lollipop dotplot (MOESM6 KEGG + scRNA proxy).
+  note: 'Proxy: 基于 MOESM6 KEGG 富集与小规模 scRNA 代谢代理生成（不含作者 scMetabolism logFC 原始打分）。'
+- panel_key: fig06/A
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig06_a.R
+  input_tables:
+  - extracted/pages/main_p10.png
+  description: 52-subcluster TME + stromal integrated topology projection UMAP with 3-column legend.
+  note: 52-subcluster TME + stromal integrated UMAP.
+- panel_key: fig06/B
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6B
+  panel_letter: B
+  evidence_tier: original_table
+  template_id: cellchat-count-heatmap
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/fig06_b.R
+  input_tables:
+  - runs/step05_crosstalk/fig6b_tme_stromal_counts.csv
+  description: MOESM8 16x36 immune/epithelial vs stromal CellPhoneDB count heatmap with compartment groups.
+  note: MOESM8 16x36 immune/epithelial vs stromal CellPhoneDB count heatmap.
+- panel_key: fig06/C
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6C
+  panel_letter: C
+  evidence_tier: original_table
+  template_id: lr-bubble-matrix
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/fig06_c.R
+  input_tables:
+  - runs/step05_crosstalk/fig6c_ccl19_lr.csv
+  description: MOESM8 C8_iFib_CCL19 to 20 TME cell types TLS L-R probability bubble matrix.
+  note: MOESM8 C8_iFib_CCL19 to 20 TME cell types TLS L-R matrix.
+- panel_key: fig06/D
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6D
+  panel_letter: D
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig06_d.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig6degh.csv
+  description: CAA_ST whole-slide TLS 8-signature/marker spatial expression grid.
+  note: CAA_ST whole-slide TLS 8-signature spatial grid.
+- panel_key: fig06/E
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6E
+  panel_letter: E
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig06_e.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig6degh.csv
+  description: CAA_ST right-hemisphere rescaled TLS 8-signature/marker spatial expression grid.
+  note: CAA_ST right-hemisphere TLS 8-signature spatial grid.
+- panel_key: fig06/F
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6F
+  panel_letter: F
+  evidence_tier: original_table
+  template_id: lr-bubble-matrix
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/fig06_f.R
+  input_tables:
+  - runs/step05_crosstalk/fig6f_pgf_tam_lr.csv
+  description: MOESM8 C4_TipEC_PGF to M1/M2 CellChat L-R probability bubble matrix.
+  note: MOESM8 C4_TipEC_PGF to M1/M2 CellChat L-R probability bubble matrix.
+- panel_key: fig06/G
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6G
+  panel_letter: G
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig06_g.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig6degh.csv
+  description: CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF, M1, and M2.
+  note: CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF / M1 / M2.
+- panel_key: fig06/H
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6H
+  panel_letter: H
+  evidence_tier: local_recompute
+  template_id: spatial-coexpr-multichannel
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig06_h.R
+  input_tables:
+  - runs/step03_spatial/st_spots_fig6degh.csv
+  description: CAA_ST CCL14-CCR1 dual-channel concentric spatial co-expression map.
+  note: CAA_ST CCL14-CCR1 dual-channel spatial co-expression.
+- panel_key: sfig01/A
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - batch-integration
+  - cell-type-annotation
+  script_path: code/panels/sfig01_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_all.csv
+  - extracted/pages/main_p03.png
+  description: Stromal major atlas UMAP colored by Harmony-integrated GSE cohorts.
+  note: Cohort batch UMAP on major stromal atlas.
+- panel_key: sfig01/B
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: marker-bubble-dotplot
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/sfig01_b.R
+  input_tables:
+  - runs/step01_harmony_de/dotplot_major.csv
+  description: 9 canonical stromal lineage marker DotPlot across Fib, EC, and Mural cell.
+  note: 9-lineage marker DotPlot.
+- panel_key: sfig02/A
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: tissue-ratio-prop-combo
+  methods:
+  - batch-integration
+  - cell-proportion-composition
+  script_path: code/panels/sfig02_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - runs/step02_progeny_roe_cox/tissue_prop_fib.csv
+  - extracted/pages/main_p03.png
+  description: Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample boxplot.
+  note: Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample boxplot.
+- panel_key: sfig02/B
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: marker-bubble-dotplot
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/sfig02_b.R
+  input_tables:
+  - runs/step01_harmony_de/dotplot_fib.csv
+  description: Fibroblast 36-marker expression DotPlot across 14 subclusters.
+  note: Fib 36-marker DotPlot.
+- panel_key: sfig02/C
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/sfig02_c.R
+  input_tables:
+  - runs/step01_harmony_de/umap_fib.csv
+  - data_small/scrna_stromal_small.qs
+  - extracted/pages/main_p03.png
+  description: Fibroblast Angiogenic_signature local gene-set proxy projected on UMAP.
+  note: Fib Angiogenic_signature UMAP (local gene-set proxy).
+- panel_key: sfig02/D
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2D
+  panel_letter: D
+  evidence_tier: original_table
+  template_id: kegg-cluster-bubble
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/sfig02_d.R
+  input_tables:
+  - runs/step05_crosstalk/sfig2d_kegg_fib.csv
+  description: Fibroblast 42 KEGG pathways enrichment bubble matrix across 14 subclusters.
+  note: Fib 42 KEGG pathways bubble matrix.
+- panel_key: sfig02/E
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2E
+  panel_letter: E
+  evidence_tier: proxy
+  template_id: metabolism-lollipop-dotplot
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/sfig02_e.R
+  input_tables:
+  - runs/step05_crosstalk/metab_sfig2e_fib.csv
+  description: Fibroblast 16 metabolic pathways enrichment lollipop dotplot (MOESM6 KEGG + scRNA proxy).
+  note: 'Proxy: 基于 MOESM6 KEGG 富集与小规模 scRNA 代谢代理生成（不含作者 scMetabolism logFC 原始打分）。'
+- panel_key: sfig03/A
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig03_a.R
+  input_tables:
+  - runs/step03_spatial/st_spots_sfig3.csv
+  description: CAA_ST 8-region COL1A1, COL1A2, and DCN spatial expression grid.
+  note: CAA_ST 8-region COL1A1/COL1A2/DCN expression grid.
+- panel_key: sfig03/B
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3B
+  panel_letter: B
+  evidence_tier: proxy
+  template_id: spatial-he-deconv-panel
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig03_b.R
+  input_tables:
+  - runs/step03_spatial/st_spots_sfig3.csv
+  - data_small/CAA_ST-umap.qs
+  description: 4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8_Cytotoxic_T spatial deconvolution weights.
+  note: 4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8 T spatial signature weights.
+- panel_key: sfig04/A
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: tissue-ratio-prop-combo
+  methods:
+  - batch-integration
+  - cell-proportion-composition
+  script_path: code/panels/sfig04_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_ec.csv
+  - runs/step02_progeny_roe_cox/tissue_prop_ec.csv
+  - extracted/pages/main_p03.png
+  description: EC cohort UMAP combined with ANT/T/LM tissue proportion and batch x tissue boxplot.
+  note: EC cohort UMAP and tissue proportion combo.
+- panel_key: sfig04/B
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: marker-bubble-dotplot
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/sfig04_b.R
+  input_tables:
+  - runs/step01_harmony_de/dotplot_ec.csv
+  description: EC 32-marker expression DotPlot across 12 subclusters.
+  note: EC 32-marker DotPlot.
+- panel_key: sfig04/C
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/sfig04_c.R
+  input_tables:
+  - runs/step01_harmony_de/umap_ec.csv
+  - runs/step04_trajectory/traj_ec.csv
+  - extracted/pages/main_p03.png
+  description: EC Angiogenic_signature (Tip-cell score proxy) projected on EC UMAP.
+  note: EC Tip-cell angiogenic signature feature UMAP.
+- panel_key: sfig04/D
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4D
+  panel_letter: D
+  evidence_tier: original_table
+  template_id: cluster-kegg-bars
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/sfig04_d.R
+  input_tables:
+  - runs/step05_crosstalk/sfig4d_kegg_ec.csv
+  description: EC 12 subclusters faceted Top-5 KEGG horizontal bars.
+  note: EC 12 subclusters faceted Top-5 KEGG horizontal bars.
+- panel_key: sfig05/A
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: tissue-ratio-prop-combo
+  methods:
+  - batch-integration
+  - cell-proportion-composition
+  script_path: code/panels/sfig05_a.R
+  input_tables:
+  - runs/step01_harmony_de/umap_mural.csv
+  - runs/step02_progeny_roe_cox/tissue_prop_mural.csv
+  - extracted/pages/main_p03.png
+  description: Mural cohort UMAP combined with ANT/T/LM tissue proportion and batch x tissue boxplot.
+  note: Mural cohort UMAP and tissue proportion combo.
+- panel_key: sfig05/B
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: marker-bubble-dotplot
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/sfig05_b.R
+  input_tables:
+  - runs/step01_harmony_de/dotplot_mural.csv
+  description: Mural 32-marker expression DotPlot across 10 subclusters.
+  note: Mural 32-marker DotPlot.
+- panel_key: sfig05/C
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5C
+  panel_letter: C
+  evidence_tier: original_table
+  template_id: cluster-kegg-bars
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/sfig05_c.R
+  input_tables:
+  - runs/step05_crosstalk/sfig5c_kegg_mural.csv
+  description: Mural 10 subclusters faceted Top-7 KEGG horizontal bars.
+  note: Mural 10 subclusters Top-7 KEGG bars.
+- panel_key: sfig05/D
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5D
+  panel_letter: D
+  evidence_tier: original_table
+  template_id: cellchat-signaling-ring
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/sfig05_d.R
+  input_tables:
+  - runs/step05_crosstalk/sfig5d_chord_edges.csv
+  description: 52-node stromal + TME VEGF directional signaling ring.
+  note: 52-node stromal + TME VEGF directional signaling ring.
+- panel_key: sfig06/A
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig06_a.R
+  input_tables:
+  - runs/step03_spatial/st_spots_sfig6abc.csv
+  description: CAA_ST 3-region 9-cell-type spatial signature grid.
+  note: CAA_ST 3-region 9-cell-type spatial signature grid.
+- panel_key: sfig06/B
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: spatial-coexpr-multichannel
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig06_b.R
+  input_tables:
+  - runs/step03_spatial/st_spots_sfig6abc.csv
+  description: CAA_ST 8-region CCL19 and CCR7 dual-channel spatial co-expression grid.
+  note: CAA_ST 8-region CCL19/CCR7 2-channel co-expression.
+- panel_key: sfig06/C
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: spatial-coexpr-multichannel
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig06_c.R
+  input_tables:
+  - runs/step03_spatial/st_spots_sfig6abc.csv
+  description: CAA_ST 8-region CD8A, CD79A, CD19, and CD3E 4-channel TLS lymphocyte spatial co-expression grid.
+  note: CAA_ST 8-region CD8A/CD79A/CD19/CD3E 4-channel TLS co-expression.
+- panel_key: sfig06/D
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6D
+  panel_letter: D
+  evidence_tier: original_table
+  template_id: lr-bubble-matrix
+  methods:
+  - cell-cell-communication
+  script_path: code/panels/sfig06_d.R
+  input_tables:
+  - runs/step05_crosstalk/sfig6d_pgf_tme_lr.csv
+  - data_small/moesm/cellchat_edges.csv
+  description: MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability bubble matrix.
+  note: MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability bubble matrix.

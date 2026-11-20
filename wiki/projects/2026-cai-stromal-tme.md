@@ -5,7 +5,6 @@ title: 乳腺癌基质微环境单细胞与空转联合解析（Cai et al., 2026
 playbook: stromal-tme-scrna-st-playbook
 status: active
 templates:
-- atlas-workflow-diagram
 - scrna-celltype-umap
 - stromal-hull-umap
 - scrna-feature-umap-grid
@@ -57,7 +56,7 @@ summary: Cai et al. (npj Precision Oncology, 2026) 乳腺癌基质单细胞 + Vi
 ### Stage 1（Main Fig. 1 & Supp. Fig. 1）：多中心乳腺癌基质图谱构建与精细亚群注释
 
 - **【科学问题与假设】**：多队列整合后能否把肿瘤微环境基质区室（Fibroblast、Endothelial cell、Mural cell）稳定解析为具有明确功能边界的 36 个精细亚群，且不受测序批次主导？
-- **【所用分析方法与可切换模板】**：[[methods/batch-integration]] + [[methods/cell-type-annotation]] + [[templates/atlas-workflow-diagram]]（研究路线图） + [[templates/scrna-celltype-umap]] / [[templates/stromal-hull-umap]]（包络边界变体） + [[templates/scrna-feature-umap-grid]] + [[templates/marker-bubble-dotplot]]
+- **【所用分析方法与可切换模板】**：[[methods/batch-integration]] + [[methods/cell-type-annotation]] + [[templates/scrna-celltype-umap]] / [[templates/stromal-hull-umap]]（包络边界变体） + [[templates/scrna-feature-umap-grid]] + [[templates/marker-bubble-dotplot]]
 - **【原文结论与本地小规模边界】**：原文基于多中心 Harmony 整合与经典谱系标志物（`COL1A1/DCN`、`PECAM1/VWF`、`ACTA2/PDGFRB/MCAM`）划分出 14 个 Fib、12 个 EC 与 10 个 Mural 亚群；**本地降维边界**：受单机内存约束，本地子集为 1,800 细胞 × 289 基因且仅含 4 个模拟批次，成图时在图例保留原队列完整色卡并采用连续密度底图保证视觉保真度。
 - **【触发下一步分叉】**：完成 `scrna-annotated-cells` 注释后，分两条线推进：① 按组织来源（Normal / Tumor / Lymphnode）与分子分型检验亚群偏好及生存预后（Stage 3）；② 汇合 Visium 切片进行空间生态位映射（Stage 2）。
 
@@ -94,4 +93,4 @@ summary: Cai et al. (npj Precision Oncology, 2026) 乳腺癌基质单细胞 + Vi
 - **【科学问题与假设】**：非免疫基质亚群分别通过哪些预测配受体网络与三级淋巴结构（TLS）或巨噬细胞（M1/M2）呈现空间共定位？
 - **【所用分析方法与可切换模板】**：[[methods/cell-cell-communication]] + [[methods/spatial-transcriptomics-microenvironment]] + [[templates/lr-bubble-matrix]] + [[templates/cellchat-count-heatmap]] + [[templates/cellchat-signaling-ring]] + [[templates/spatial-coexpr-multichannel]]
 - **【发表补表实测与本地回放边界】**：依据发表补表 MOESM8 与单张 `CAA_ST` 切片空间共表达复现：① `C8_iFib_CCL19` 通过 `CCL19-CCR7`、`CXCL9/10/11-CXCR3` 预测轴与 CD8⁺ T、Tfh、GC B、Memory B 细胞存在高互作概率，并在切片右侧 TLS 区域呈现空间共定位；② `C4_TipEC_PGF` 通过 `CCL14-CCR1`、`MIF-CD74-CXCR4/CD44`、`VEGF` 预测信号（SFig. 5D 52 节点环形图）与 M1/M2 巨噬细胞互作并在双通道空间切片共表达；SFig. 6D 按原始子表补齐 MOESM8 全量 CellChat 概率并留空未检出格子。
-- **【课题收口状态说明】**：全部 19 套新建/升级绘图模板与 11 个规范分析方法的 `figure_relations` 均已入库并关联至本走线卡；全部 **19 套 Cai 2026 模板均已通过本地示例 `verify-template` 回放并经作者批量确认升级为 `status: ready`**，结构化覆盖与证据分层清单已同步落盘至 `methods/breast-cancer-stromal-tme-workflow/panel-manifest.yaml`。
+- **【课题收口状态说明】**：全部 18 套新建/升级绘图模板与 11 个规范分析方法的 `figure_relations` 均已入库并关联至本走线卡；全部 **18 套 Cai 2026 模板均已通过本地示例 `verify-template` 回放并经作者批量确认升级为 `status: ready`**，结构化覆盖与证据分层清单已同步落盘至 `methods/breast-cancer-stromal-tme-workflow/panel-manifest.yaml`。

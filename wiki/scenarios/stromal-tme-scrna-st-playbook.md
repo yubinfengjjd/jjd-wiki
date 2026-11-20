@@ -91,7 +91,6 @@ steps:
   - methods/cell-type-annotation
   - templates/scrna-celltype-umap
   - templates/stromal-hull-umap
-  - templates/atlas-workflow-diagram
   - templates/scrna-feature-umap-grid
   - templates/marker-bubble-dotplot
   next_steps:
@@ -237,13 +236,13 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Stage 1：多队列单细胞去批次整合（Harmony / Seurat Anchor） |
+| [[methods/batch-integration|单细胞批次整合]] | note | ready | Stage 1：多队列单细胞去批次整合（Harmony / Seurat Anchor） |
 | [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Stage 1：基质亚群精细注释与功能包络定位 |
 | [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 主推默认 · 标准细胞类型 UMAP 散点图 |
 | [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready · 可用 | 可切换画风 · 带分组虚线包络与编号质心的 UMAP 图 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：单细胞注释 + Visium 切片空间反卷积与共定位 |
 | [[templates/spatial-feature-grid|空间转录组特征分布网格]] | L2 | ready · 可用 | 主推默认 · 多区域空间转录组特征分布网格 |
-| [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]] | L2 | ready · 可用 | 可切换画风 · H&E 组织切片配准与空间细胞权重对照 |
+| [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]] | L2 | ready | 可切换画风 · H&E 组织切片配准与空间细胞权重对照 |
 | [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]] | L2 | ready · 可用 | 可切换画风 · 多通道空间共表达与重点区域叠图 |
 | [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | note | ready | Stage 3：Ro/e 组织偏好、亚型富集与跨队列比例统计 |
 | [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]] | L2 | ready · 可用 | 主推默认 · 多因素 Cox 与 Ro/e 组织/亚型偏好热图 |
@@ -270,7 +269,7 @@ steps:
 
 | 阶段 | 核心科学问题 | 汇合前提（`requires`） | 分析方法 | 可切换绘图模板（主推默认 / 顶刊变体） |
 |---|---|---|---|---|
-| **Stage 1** | 基质细胞可分出哪些稳定功能亚群？ | — | [[methods/batch-integration]] · [[methods/cell-type-annotation]] | [[templates/scrna-celltype-umap]]（默认） / [[templates/stromal-hull-umap]]（包络变体） · [[templates/atlas-workflow-diagram]] · [[templates/marker-bubble-dotplot]] |
+| **Stage 1** | 基质细胞可分出哪些稳定功能亚群？ | — | [[methods/batch-integration]] · [[methods/cell-type-annotation]] | [[templates/scrna-celltype-umap]]（默认） / [[templates/stromal-hull-umap]]（包络变体） · [[templates/marker-bubble-dotplot]] |
 | **Stage 2** | 亚群在组织切片 H&E 上处于哪类病理生态位？ | `scrna-annotated-cells` + `visium-spatial-object` | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-feature-grid]]（默认） / [[templates/spatial-he-deconv-panel]] · [[templates/spatial-coexpr-multichannel]] |
 | **Stage 3** | 哪些亚群富集于肿瘤并显著影响患者生存？ | `stromal-subcluster-markers` + `bulk-clinical-survival` | [[methods/cell-proportion-composition]] · [[methods/survival-prognosis-analysis]] | [[templates/roe-cox-heatmap]]（默认） / [[templates/tissue-ratio-prop-combo]] · [[templates/cell-prop-flow-bar]] |
 | **Stage 4A** | 关键亚群驱动了哪些趋化/信号/代谢程序？ | — | [[methods/gene-set-scoring]] · [[methods/differential-expression]] · [[methods/gene-set-enrichment]] | [[templates/pathway-zscore-heatmap]] · [[templates/kegg-cluster-bubble]] / [[templates/cluster-kegg-bars]] · [[templates/metabolism-lollipop-dotplot]] |
