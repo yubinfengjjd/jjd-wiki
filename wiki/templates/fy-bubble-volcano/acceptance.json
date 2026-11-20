@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:08:08.973985+00:00",
+  "checked_at": "2026-11-20T18:39:36.175202+00:00",
   "page": "templates/fy-bubble-volcano.md",
-  "snapshot": "d5232d3edabe560a147e67544788ed3bdf2a3ce364ef21dfcfcf6ed02a962178",
+  "snapshot": "bf5b66b99544e624458fea45cdfb30c5a32986a97ef74ba57f09825aafdfd42f",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
