@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T12:29:18.766538+00:00",
+  "timestamp": "2026-11-20T10:53:14.350912+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/clustered-corr-boxes/spec.json": "b3610f46ce6cf1b5e1d1b10de7c054e73508564210eca9abc6335c747fd076bb",
-    "templates/clustered-corr-boxes/code/render.R": "73107c7b22e24cb455deccd8cd0224145c48c31437b83fb3f038ca0c3b0ab92e",
+    "templates/clustered-corr-boxes/spec.json": "40eace2de514388c7cb30f210a7c6e80492cb247a5231f21d02c1869f3b8eb90",
+    "templates/clustered-corr-boxes/code/render.R": "a71ff64aaf999c6eaaca439c6f427c38fa57a0b49917a0259fcf9646fa2c6626",
     "inline/corr#columns": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
-    "templates/clustered-corr-boxes/example/corr_matrix.csv": "f5db38623ad6bacbb9e536b739e52b42015cafa5943e1835740d802a1678ec62"
+    "templates/clustered-corr-boxes/example/corr_matrix.csv": "725d120dd6cd1efb46e2e481d6443fe5d5971e281f2b3be03ddcb94ff552390b"
   },
   "outputs": {
-    "png": "169af48698762b1f247c53fb943bcaa92fc07b5a465f9524d0fe69abec71d20e",
-    "pdf": "961e0cf87e160dd5df008a2b6d62ac629ecd36371ae4e758ff02fc7e4ca6efec",
-    "svg": "13554d7b990473b99b1abd22e50595304e9053924354d30858d299b524373c9d"
+    "png": "ca0eadafb52fa28ddb523785e488a5b5280c5bb71879b0922f3c7cbade4f1037",
+    "pdf": "2f134bf91b049ea606b9427c013d78f1f1ba0ed8282c7aa33f25f7ba5f2a172f",
+    "svg": "b80f447aae1222781b6a24a98b9745bfaefd92fd919823d53ef1cdd78426affc"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }

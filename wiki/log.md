@@ -1645,3 +1645,5 @@
 ## [2026-11-20 10:50 UTC] verify diffusion-trajectory-overlay
 
 ## [2026-11-20 10:53 UTC] verify diffusion-trajectory-overlay
+
+## [2026-11-20 10:54 UTC] verify clustered-corr-boxes
