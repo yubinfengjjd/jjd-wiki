@@ -1699,3 +1699,5 @@
 ## [2026-11-20 12:40 UTC] ready 6: templates/tri-panel-stage-umap, templates/rcn-composition-stacked-heatmap, templates/voronoi-neighborhood-mosaic, templates/half-violin-decile-shift, templates/coexpr-hub-radial-network, templates/km-survival-risk-grid
 
 ## [2026-11-20 12:45 UTC] acceptance check methods/cell-proportion-composition
+
+## [2026-11-20 12:46 UTC] acceptance check methods/cell-type-annotation

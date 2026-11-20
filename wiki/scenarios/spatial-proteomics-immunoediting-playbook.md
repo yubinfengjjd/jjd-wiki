@@ -203,7 +203,7 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Stage 1：CyCIF/CODEX 轮间 DNA 质控、GMM 重标度与层级门控表型注释 |
+| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Stage 1：CyCIF/CODEX 轮间 DNA 质控、GMM 重标度与层级门控表型注释 |
 | [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]] | L2 | ready · 可用 | 主推变体 · 细胞类型/进展分期/患者三联 UMAP 图谱（Cancer Discovery 风格） |
 | [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]] | L2 | ready · 可用 | 配套检查 · 多蛋白/标志物特征强度 UMAP 网格 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：20 μm 局部邻域 Spatial LDA（RCN）与 Voronoi 拓扑分析 |
