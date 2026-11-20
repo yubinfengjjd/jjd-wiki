@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T10:35:43.666912+00:00",
+  "checked_at": "2026-11-20T18:40:06.903787+00:00",
   "page": "templates/scp-de-volcano.md",
-  "snapshot": "f7fbae17b494c25490ed46c08569caf0d3480fefc78792be3ff52507c3f3a561",
+  "snapshot": "ec665f7217b4d6e28fc8bc542ee33806e97976616c4efa597c2995a4ed8ca80d",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

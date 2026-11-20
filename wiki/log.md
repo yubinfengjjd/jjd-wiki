@@ -1769,3 +1769,5 @@
 ## [2026-11-20 18:39 UTC] acceptance check bulk-de-volcano
 
 ## [2026-11-20 18:40 UTC] acceptance check fy-bubble-volcano
+
+## [2026-11-20 18:40 UTC] acceptance check scp-de-volcano
