@@ -200,7 +200,6 @@
 - [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
 - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]
 - [[templates/fy-pairwiselogrank|三组以上 KM 曲线与两两比较表]]
-- [[templates/fy-pca3d|三维PCA分组散点图]]
 - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]
 - [[templates/subgroup-hazard-forest|亚组分析森林图]]
 - [[templates/fy-subgroup|亚组生存风险森林图]]

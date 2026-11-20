@@ -1,0 +1,26 @@
+{
+  "title": "三维PCA分组散点图",
+  "path": "templates/fy-pca3d.md",
+  "revision": "249d168cc03ff14039ca24e1b4eb04dfb794660e5c7dacd10293db2bb485ac7f",
+  "asset_files": 18,
+  "affected": [
+    {
+      "path": "recipes/figureya-164pca3d.md",
+      "title": "三维PCA分组散点图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261120T174853581482Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-164pca3d.md",
+      "before_sha256": "fde8679eab3a06c77c0467509f688daa5811e65eaed6f91718662b342f644068",
+      "after_sha256": "fde8679eab3a06c77c0467509f688daa5811e65eaed6f91718662b342f644068"
+    }
+  ],
+  "changed_layout_files": []
+}

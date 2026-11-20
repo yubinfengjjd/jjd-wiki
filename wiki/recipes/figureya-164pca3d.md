@@ -66,7 +66,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa164PCA3D.Rmd`）
 - 依赖：CRAN rgl
 - 最近运行：pass（as-is，2026-11-04 11:01 UTC，90.4 秒）
-- 派生模板（L2）：[[templates/fy-pca3d|三维PCA分组散点图]]（ready）
+- 派生模板（L2）：暂无
 <!-- facts:end -->
 
 ## 用途
