@@ -20,6 +20,8 @@ keywords:
 - Bonferroni
 favorite: false
 primary_method: differential-expression
+style_tier: variant
+journal_style: FigureYa
 ---
 # 分组气泡火山图
 

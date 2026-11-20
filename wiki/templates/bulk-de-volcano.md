@@ -24,6 +24,8 @@ keywords:
 - gridExtra
 favorite: false
 primary_method: differential-expression
+style_tier: default
+journal_style: Standard
 ---
 # bulk 差异火山图（分级着色）
 

@@ -155,7 +155,7 @@ steps:
 | [[recipes/figureya-203combat|跨平台表达谱批次校正]] | L1 | draft · 运行 fail | Step 1：多队列去批次（ComBat）与 PCA 检查 |
 | [[recipes/figureya-59plus-geo2deg|GEO芯片差异表达与火山图]] | L1 | ready · 运行 pass | Step 2A：Bulk 差异表达分析（limma/DESeq2） |
 | [[recipes/figureya-17wgcna-heatmap|WGCNA模块基因表达热图]] | L1 | ready · 运行 pass | Step 2B：WGCNA 共表达模块筛选 |
-| [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]] | L2 | ready · 可用 | Bulk 分级着色火山图（L2） |
+| [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]] | L2 | ready | Bulk 分级着色火山图（L2） |
 | [[templates/set-venn|多集合交集维恩图]] | L2 | ready · 可用 | Step 3：DEG × WGCNA × 主题基因集 Venn 交集（L2） |
 | [[recipes/figureya-293plus-binaryclassificationml|多算法二分类模型评估筛选]] | L1 | draft · 运行 fail | Step 4：101 种机器学习算法组合筛选与多队列评估 |
 | [[methods/shap-explanation|基于 SHAP 的模型解释]] | L2 | ready · 可用 | Step 5：SHAP 全局与个体可解释性分析 |

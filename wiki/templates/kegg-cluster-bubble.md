@@ -10,8 +10,8 @@ panels: []
 language: r
 primary_method: gene-set-enrichment
 tags:
-- single-cell
 - transcriptomics
+- single-cell
 chart_types:
 - bubble
 - dotplot
@@ -27,7 +27,7 @@ journal_style: Cai2026-npjPO
 <!-- facts:start -->
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
 - 语言：r
-- 标签：single-cell、transcriptomics
+- 标签：transcriptomics、single-cell
 - 图型：[[chart-types/bubble]] · [[chart-types/dotplot]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

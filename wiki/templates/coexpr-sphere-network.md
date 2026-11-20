@@ -13,6 +13,7 @@ data_domains:
 - single-cell
 - bulk-transcriptomics
 tags:
+- transcriptomics
 - single-cell
 chart_types:
 - network
@@ -33,7 +34,7 @@ journal_style: hdWGCNA
 <!-- facts:start -->
 - 来源：[[layouts/2026-11-19-hdwgcna-network__fig01|hdWGCNA 共表达模块球体网络图]]
 - 语言：r
-- 标签：single-cell
+- 标签：transcriptomics、single-cell
 - 图型：[[chart-types/network]]
 - 输入接口：未声明 · 未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

@@ -11,7 +11,8 @@ panels:
 - A
 language: r
 tags:
-- 单细胞分析
+- transcriptomics
+- single-cell
 keywords:
 - SCP
 - pancreas_sub
@@ -21,6 +22,8 @@ chart_types:
 - volcano
 favorite: false
 primary_method: differential-expression
+style_tier: variant
+journal_style: SCP
 ---
 # 差异表达火山图
 
@@ -30,7 +33,7 @@ primary_method: differential-expression
 - 来源：[[layouts/2026-10-22-scp-example__fig01-volcano|火山图：Endocrine vs 其余细胞（SCP 示例）]]
 - 面板（来源版式）：A
 - 语言：r
-- 标签：单细胞分析
+- 标签：transcriptomics、single-cell
 - 图型：[[chart-types/volcano]]
 - 输入接口：[[interfaces/render-de-results|差异表达结果表]]
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

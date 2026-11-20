@@ -10,6 +10,7 @@ panels: []
 language: r
 license: CC-BY-NC-SA-4.0
 tags:
+- transcriptomics
 - proteomics
 - multi-omics
 chart_types:
@@ -37,7 +38,7 @@ journal_style: FigureYa
 - 来源：[[recipes/figureya-147plus-string|STRING互作证据打分网络图]]
 - 语言：r
 - 许可证：CC-BY-NC-SA-4.0
-- 标签：proteomics、multi-omics
+- 标签：transcriptomics、proteomics、multi-omics
 - 图型：[[chart-types/network]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
