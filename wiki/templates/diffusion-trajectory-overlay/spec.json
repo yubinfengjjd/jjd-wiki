@@ -41,7 +41,7 @@
     "color_mode": "module_overlay",
     "x_label": "DC_1",
     "y_label": "DC_2",
-    "dot_size": 0.95,
+    "dot_size": 1.05,
     "show_centroids": true,
     "show_trajectory": true,
     "module_colors": ["#BF3347", "#328D40", "#397BB9", "#825097", "#E68A00", "#1B9E77"],

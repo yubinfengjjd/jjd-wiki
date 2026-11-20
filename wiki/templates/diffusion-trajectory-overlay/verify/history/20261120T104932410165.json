@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-19T12:29:49.821295+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/diffusion-trajectory-overlay/spec.json": "634939fdd41d736896d68606d4125ddf32e1aa7a74059186fd54c897a1a5b526",
+    "templates/diffusion-trajectory-overlay/code/render.R": "235bb47486a8447646440dd901f9838c80875e1cbcb5ccc0c60267bea4a5ff28",
+    "inline/cells#columns": "cbc5eb68926746d23a1f4056c9592aeb04c0e32f3be24eb787f396381ad52c81",
+    "inline/scores#columns": "1f45adb584cb1339dfee1108e2ab4e3c80056e91f58f050bfd6f62cef1a98a58",
+    "inline/edges#columns": "f79eda4f465aeef6d6b02000022ba0da31847e75a28ea2e5f08099a7f9adaada",
+    "templates/diffusion-trajectory-overlay/example/diffusion_module_scores.csv": "b93f55bdadf19befa9e5c3f854d2bbd194a6e597c884a5d48820da509b98c33a",
+    "templates/diffusion-trajectory-overlay/example/diffusion_trajectory_cells.csv": "b269d06ee8c0d627c3baa1580d9a36df05ebd681379fbf2e8bb27d5f7c901dd8",
+    "templates/diffusion-trajectory-overlay/example/trajectory_edges.csv": "e34cfc8dffb1d81b00fc8a0d397c56ef73f1de230b73f499e3643f24945801e4"
+  },
+  "outputs": {
+    "png": "930a906cf4c17c62c46aac104b712a7ec630d33d00d8464fa2e99d3dc5e8462e",
+    "pdf": "5145a29f56044d83f96df287f626f1a9e28d9ac95be14c9f232e496f00a00c01",
+    "svg": "776ff542f9f62b685b66b7a2f430b2a6acc8df5e6d0778d5492e3367d10b2ffe"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

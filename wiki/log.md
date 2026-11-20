@@ -1641,3 +1641,5 @@
 ## [2026-11-20 10:46 UTC] verify spatial-coexpr-multichannel
 
 ## [2026-11-20 10:48 UTC] verify stromal-hull-umap
+
+## [2026-11-20 10:50 UTC] verify diffusion-trajectory-overlay
