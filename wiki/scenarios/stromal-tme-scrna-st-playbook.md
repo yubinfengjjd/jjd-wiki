@@ -256,7 +256,7 @@ steps:
 | [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]] | L2 | ready · 可用 | 主推默认 · 降维轨迹与双功能模块激活叠图 |
 | [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]] | L2 | ready · 可用 | 可切换画风 · 拟时序多分支动态基因曲线网格 |
 | [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] | note | ready | Stage 5：基质–免疫排斥相关矩阵与检查点差异验证 |
-| [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]] | L2 | ready | 主推默认 · 带层次聚类框与引线的对称相关矩阵 |
+| [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]] | L2 | ready · 可用 | 主推默认 · 带层次聚类框与引线的对称相关矩阵 |
 | [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]] | L2 | ready | 可切换画风 · 高/低分组免疫检查点表达箱线图 |
 | [[methods/cell-cell-communication|细胞通讯与配受体网络分析]] | note | ready | Stage 6：TLS 与 TAM 空间配受体通讯枢纽解析 |
 | [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]] | L2 | ready · 可用 | 主推默认 · 配受体互作概率气泡矩阵 |

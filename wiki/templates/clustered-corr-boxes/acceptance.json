@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T14:52:40.371613+00:00",
+  "checked_at": "2026-11-20T11:03:42.406105+00:00",
   "page": "templates/clustered-corr-boxes.md",
-  "snapshot": "98d066611fbdb756e6d5d2b982afc1f9cc2dbee51b2650d676a91b33698af030",
+  "snapshot": "86e9b0d52078ec7368c55fc411cbffe8c8ea9e148242c05b98853a032cccb4ec",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
