@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "paper_id": "pmc9167783",
+  "slug": "2022-nirmal-melanoma-spatial",
+  "workflow_id": "melanoma-spatial-immunoediting-workflow",
+  "seed": 42,
+  "env": {
+    "PYTHONNOUSERSITE": "1",
+    "PAPER_ROOT": "<sources_root>/papers/pmc9167783"
+  },
+  "python": {
+    "version": "3.12.14",
+    "flags": ["-X", "utf8"],
+    "packages": {
+      "numpy": "2.5.4",
+      "pandas": "2.3.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "matplotlib": "3.11.2",
+      "seaborn": "0.13.2",
+      "networkx": "3.7",
+      "openpyxl": "3.1.5",
+      "h5py": "3.16.0",
+      "anndata": "0.13.4",
+      "umap-learn": "0.6.0",
+      "shapely": "2.2.0",
+      "lifelines": "0.30.3"
+    },
+    "upstream_algorithms": {
+      "repo": "https://github.com/labsyspharm/scimap",
+      "license": "MIT",
+      "commit": "0b7aaabcce80815a295aec1c1238f974f117fb33",
+      "extracted_functions": [
+        "rescale",
+        "phenotype_cells",
+        "umap",
+        "spatial_count",
+        "spatial_lda",
+        "spatial_cluster",
+        "spatial_distance",
+        "spatial_interaction",
+        "spatial_pscore",
+        "spatial_expression",
+        "voronoi_finite_polygons_2d"
+      ]
+    }
+  },
+  "r": {
+    "version": "4.5.0",
+    "packages": {
+      "DESeq2": "1.48.2",
+      "limma": "3.64.0",
+      "edgeR": "4.6.3",
+      "clusterProfiler": "4.16.0",
+      "GSVA": "2.2.0",
+      "msigdbr": "26.1.1",
+      "ComplexHeatmap": "2.24.1",
+      "survival": "3.8.3",
+      "survminer": "0.5.2",
+      "ggplot2": "4.0.3",
+      "patchwork": "1.3.2",
+      "deldir": "2.0.4"
+    }
+  },
+  "excluded_policies": {
+    "excluded_imaging": [
+      "Fig. S4 (100% fluorescence microscopy)",
+      "1B, 1C, 1F, 1G, 1H, 1I-left, 1J",
+      "3B, 3C-bottom",
+      "4A, 4C (3D Imaris), 4D, 4E, 4G",
+      "5A, 5E-bottom-left",
+      "6H",
+      "7A, 7C, 7D, 7G-middle",
+      "S1A, S1B, S1D, S1E, S1F, S1G, S1I",
+      "S2C-mid/bottom, S3A, S5E, S6B, S6D-images, S7D-left, S7I-images"
+    ],
+    "excluded_schematic": ["1A", "7I", "7J", "S2A", "S2B"],
+    "unavailable_pixel_linescan": ["1I-right", "S1H"]
+  },
+  "scale_down_boundary": {
+    "cycif_stratified_cells": 2500,
+    "cycif_qc_passed_cells": 1987,
+    "cycif_contiguous_fov_cells": 1642,
+    "cycif_contiguous_qc_passed_cells": 1418,
+    "cycif_s3_panel": "Panel 2 (21-plex) on MEL02/05/09/11/12; Panel 1/3/4/5-exclusive markers documented as proxy",
+    "mrseq_pickseq_sampled_mrois": 120,
+    "mrseq_geomx_proxy": "GeoMx 70 mROIs not publicly deposited; PickSeq 120 mROIs used as proxy",
+    "tcga_skcm_sampled_patients": 120
+  }
+}

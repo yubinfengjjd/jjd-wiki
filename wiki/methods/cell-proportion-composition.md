@@ -239,6 +239,19 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/half-violin-decile-shift
+  compatibility: adaptable
+  reason: 两组间物理距离或连续分布在不同细胞类群的迁移可导出为 default 镜像半小提琴 + 十分位数哑铃偏移图；模板不计算最近邻距离。
+  prerequisites:
+  - 仅用于严格两分组全正值（log 轴）分布比较；明确样本/FOV 边界。
+  adaptation: 导出 distance_shift_groups.csv（panel, group, value）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/half-violin-decile-shift/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：异常富集亚群的差异表达与功能打分深挖
   when: 通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时

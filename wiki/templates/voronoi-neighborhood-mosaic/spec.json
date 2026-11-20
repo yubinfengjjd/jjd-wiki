@@ -1,0 +1,70 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "spatial_cells_voronoi.csv",
+      "description": "单细胞连续物理坐标与空间邻域（RCN/TCC）类别表",
+      "required": true,
+      "columns": {
+        "cell_id": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "x": {
+          "type": "float",
+          "description": "物理横坐标 (um)",
+          "required": true
+        },
+        "y": {
+          "type": "float",
+          "description": "物理纵坐标 (um)",
+          "required": true
+        },
+        "neighborhood": {
+          "type": "str",
+          "description": "空间邻域或群落类别标签",
+          "required": true
+        },
+        "fov_id": {
+          "type": "str",
+          "description": "连续视野切片标识",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "fov_id": "MEL09_FOV_IM",
+    "flip_y": true,
+    "overview_lw": 0.14,
+    "zoom_lw": 0.35,
+    "dpi": 300,
+    "width_in": 5.4,
+    "height_in": 6.2,
+    "rect": [
+      0.04,
+      0.04,
+      0.92,
+      0.92
+    ]
+  },
+  "parameters": {
+    "fov_id": {
+      "type": "string",
+      "label": "视野 FOV 名称",
+      "default": "MEL09_FOV_IM"
+    },
+    "overview_lw": {
+      "type": "number",
+      "label": "全景多边形边线宽",
+      "default": 0.14,
+      "min": 0.05,
+      "max": 0.8,
+      "step": 0.05
+    }
+  }
+}

@@ -96,6 +96,19 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/km-survival-risk-grid
+  compatibility: adaptable
+  reason: 多基因或枢纽基因模块在外部队列按中位数高低分组后的预计算 KM 阶跃曲线与 Logrank/Cox 统计可整理为 default 多基因网格图；模板不拟合生存回归。
+  prerequisites:
+  - 各基因按同一分组规则（如中位数）与同一生存终点（OS/PFS）拟合；明确缺测基因与抽样边界。
+  adaptation: 导出 km_survival_curves.csv 与 km_survival_stats.csv。
+  evidence:
+  - methods/survival-prognosis-analysis.md#输出
+  - templates/km-survival-risk-grid/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：预后模型重采样评估与 SHAP 可解释性归因
   when: 已构建连续风险评分或机器学习预后模型，需评估交叉验证稳定性及核心特征 SHAP 贡献时

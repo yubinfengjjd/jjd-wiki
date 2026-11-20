@@ -40,7 +40,20 @@ keywords:
 - hub gene
 - 共表达网络
 - 蛋白互作网络
-figure_relations: []
+figure_relations:
+- figure: templates/coexpr-hub-radial-network
+  compatibility: adaptable
+  reason: 标准化表达谱构建的 Pearson/WGCNA 共表达网络节点坐标、边表与枢纽基因一步邻域标记可直接渲染为 default 焦橙核心放射网络图；模板不拟合相关矩阵。
+  prerequisites:
+  - 节点与边来自同一相关阈值过滤后的连通分量；明确相关性阈值（如 r >= 0.6）。
+  adaptation: 导出 network_nodes.csv（gene_symbol, x, y, in_s100b_1step, is_key_label）与 network_edges.csv（from, to, weight）。
+  evidence:
+  - methods/coexpression-ppi-network.md#输出
+  - templates/coexpr-hub-radial-network/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：对核心模块基因做通路富集与功能注释
   when: 识别出与关键临床性状显著相关的 WGCNA 模块或高连通度 PPI 子模块时

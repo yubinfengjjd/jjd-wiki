@@ -1,0 +1,578 @@
+{
+  "schema_version": 1,
+  "workflow_id": "melanoma-spatial-immunoediting-workflow",
+  "generated_at": "2026-11-20T12:20:42.743622+00:00",
+  "total_panels": 60,
+  "panels": [
+    {
+      "panel_key": "fig01/D",
+      "script_path": "code/panels/fig01_d.py",
+      "script_sha256": "67f4437a347232910dd2c39c9adec4886d3042aac721457c5821e74e02c0dbde",
+      "input_tables": [
+        "runs/step02_umap_gradients/umap_coords_markers.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig01/E",
+      "script_path": "code/panels/fig01_e.py",
+      "script_sha256": "b413375723053e58f6fc5e6e50dd490804fcdaf7cfc940cfba948d38e9200dd0",
+      "input_tables": [
+        "runs/step04_spatial_interaction/fig1e_cell_centroids_im.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/A",
+      "script_path": "code/panels/fig02_a.py",
+      "script_sha256": "2528283648ff94d653df2ea90165059f61c1b61d9d5eced88adc854412214186",
+      "input_tables": [
+        "runs/step02_umap_gradients/umap_coords_markers.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/B",
+      "script_path": "code/panels/fig02_b.py",
+      "script_sha256": "a2f2f9a5874a5c9c7e8b8cfb1fa86bd7870ee3bb9da887cc41e5f56a57f8517a",
+      "input_tables": [
+        "runs/step02_umap_gradients/umap_coords_markers.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/C",
+      "script_path": "code/panels/fig02_c.py",
+      "script_sha256": "8496a8f122ba6e8ac787f564c1a9b58dfe173e2237765ebf9b9b46a5554fca87",
+      "input_tables": [
+        "runs/step02_umap_gradients/fig2c_s100a_by_roi_stage.csv",
+        "runs/step02_umap_gradients/fig2c_s100a_stage_ttests.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/D",
+      "script_path": "code/panels/fig02_d.py",
+      "script_sha256": "6a1db7916cad301c00981728399dbbe284ebd8583bc14236649cf20357f8dc94",
+      "input_tables": [
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv",
+        "runs/step03_rcn_lda/lda_cluster30_composition.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig02/E",
+      "script_path": "code/panels/fig02_e.py",
+      "script_sha256": "9592a80fdc16eabdd85559778c1748de145a835ab676c19c99e0890125517ec4",
+      "input_tables": [
+        "runs/step03_rcn_lda/fig2d_rcn_phenotype_composition.csv",
+        "runs/step03_rcn_lda/fig2e_rcn_simplified_pie.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/A",
+      "script_path": "code/panels/fig03_a.py",
+      "script_sha256": "37f9e89070c561f86d91386ad81535cff10a69399d1a21c6bf24da77b7df2299",
+      "input_tables": [
+        "runs/step03_rcn_lda/voronoi_polygons_fov.json",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/C-top",
+      "script_path": "code/panels/fig03_c.py",
+      "script_sha256": "c32b35049a5f17295295f764cef5144f4311fd3bf185c80fa56b6675fa7e23b3",
+      "input_tables": [
+        "runs/step03_rcn_lda/voronoi_polygons_fov.json"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/D",
+      "script_path": "code/panels/fig03_d.py",
+      "script_sha256": "6a37087d3cf31f36dc3bbcfc1b26f5f4571603a7535185c84cbaf640c6b7e3da",
+      "input_tables": [
+        "runs/step03_rcn_lda/fig3d_rcn_proportions_by_stage.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/E",
+      "script_path": "code/panels/fig03_e.py",
+      "script_sha256": "05baca43d41a0608b4fb361d055d58b8e7be6900ab041313d6ca7acc51e78cea",
+      "input_tables": [
+        "runs/step03_rcn_lda/fig3e_rcn_to_rcn10_distances.csv",
+        "runs/step03_rcn_lda/fig3e_rcn_to_rcn10_ttests.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig03/F",
+      "script_path": "code/panels/fig03_f.py",
+      "script_sha256": "da7b1f9124294a0f1e6714bf41a0aca2a67e74e11181927418e03d72452f6422",
+      "input_tables": [
+        "runs/step03_rcn_lda/fig3f_mel_immune_raw_distances.csv",
+        "runs/step03_rcn_lda/fig3f_mel_immune_quantile_shift.csv",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/B",
+      "script_path": "code/panels/fig04_b.py",
+      "script_sha256": "c9ed2a34d508080f400bab62568a40d030c046022398d77b660adf1ef70e7ad8",
+      "input_tables": [
+        "runs/step04_spatial_interaction/spatial_interaction_by_subroi.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig04/F",
+      "script_path": "code/panels/fig04_f.py",
+      "script_sha256": "3ee2f3f4b696ec7be796b1d0fe2092464950e1fb31a4db9d76402468fc0b03f7",
+      "input_tables": [
+        "runs/step04_spatial_interaction/fig4f_cohort1_pdl1_bins.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/B",
+      "script_path": "code/panels/fig05_b.py",
+      "script_sha256": "37362c1b2cc25f0e40100f0fa11bc02c109417c32f4f01ba82004391cba8dd03",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/fig5b_s5b_spatial_contours_proxy.csv",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/C",
+      "script_path": "code/panels/fig05_c.py",
+      "script_sha256": "e9d8d2e662bb046fcbeed45ce811e460814724a38f4f03fc4e37f0aa475e2d0b",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/fig5c_tcc_protein_morph_heatmap.csv",
+        "runs/step05_tcc_spatial_lag/fig5c_tcc_stage_proportions.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/D",
+      "script_path": "code/panels/fig05_d.py",
+      "script_sha256": "9dbc7b007b6d29ec0cc4d4bcf67b45ee5cc6cf91db1c7bca254a04727d305189",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/fig5d_tcc_spatial_map.csv",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/E-top",
+      "script_path": "code/panels/fig05_e.py",
+      "script_sha256": "421215f0e4921df073115ae74813060f634d1a081703ffbb06db7b9acc72ccb6",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/fig5e_tcc_voronoi_im.json",
+        "runs/step03_rcn_lda/voronoi_polygons_fov.json"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig05/F",
+      "script_path": "code/panels/fig05_f.py",
+      "script_sha256": "ae421cda4c48f439f1066da26b6261d146f1e21c283be482f424be1064f1c68e",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/fig5f_tcc_marker_positivity.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/A",
+      "script_path": "code/panels/fig06_a.py",
+      "script_sha256": "3f38a2d76be5733daa67eb2a95fd52a1308794e6cfa669aca16478f479d454da",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig6a_pca_coords_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/B",
+      "script_path": "code/panels/fig06_b.py",
+      "script_sha256": "e441b93ff3ecf9cd4c5fd9c98097a6f18c3a4f636a4ecf04321f879665dc62bc",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig6b_melanoma_markers_long.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/C",
+      "script_path": "code/panels/fig06_c.py",
+      "script_sha256": "a03908989bf722cda2550388d7f8ac94ef87c02d67b0d9ea8ae153a18c158b24",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig6c_ssgsea_scores.csv",
+        "data_small/mrseq_meta_small.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/D",
+      "script_path": "code/panels/fig06_d.py",
+      "script_sha256": "e9d8ec279c154f32175a70db9ee3efdacd45e4ce945807db543c849d9d5964f9",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/deseq2_mis_vs_emim_symbol.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/E",
+      "script_path": "code/panels/fig06_e.py",
+      "script_sha256": "7c4509752ee762068760933670bce0a19d31ba5b01a8f3d0c8edcbb070fe8c8c",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/gsea_running_es_curves.csv",
+        "runs/step06_mrseq_deseq2/gsea_summary.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/F",
+      "script_path": "code/panels/fig06_f.py",
+      "script_sha256": "c63e9e84202ce6198ab892111f1fcfdbbdee0bdde9bae9b42debd850222e5bb0",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig6f_im_vs_em_genes_long.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/G",
+      "script_path": "code/panels/fig06_g.py",
+      "script_sha256": "bb6592a4a3a82353dad63316fbc2c7bc5fb71f9f8ce396913ec6b88bdeac4eb3",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig6g_emt_zscore_im_em.csv",
+        "data_small/mrseq_meta_small.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/I",
+      "script_path": "code/panels/fig06_i.py",
+      "script_sha256": "07de855d58b12f6abf74b6bbb10f1bd385b298259a276e7a6a0ce4f4a08f20bf",
+      "input_tables": [
+        "runs/step07_network_survival/fig6i_network_nodes.csv",
+        "runs/step07_network_survival/fig6i_network_edges.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/J",
+      "script_path": "code/panels/fig06_j.py",
+      "script_sha256": "f1455d845713ceb06bd0e9e87fb86d5fb8cbca82cfcdc19a6b22fddd07615e88",
+      "input_tables": [
+        "runs/step07_network_survival/fig6j_s100b_module_curve.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig06/K",
+      "script_path": "code/panels/fig06_k.py",
+      "script_sha256": "eb80a33f30cdccce3ad18c77625ab7d3886d0b4c6ef1aad3744d33312b87870f",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig6k_pmel_cd63_density_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig07/B",
+      "script_path": "code/panels/fig07_b.py",
+      "script_sha256": "349105e722737fa71e072dc362fd1cc923b5aff849e4f170bab35edc188266a0",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig7b_immune_chemokines_long.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig07/E",
+      "script_path": "code/panels/fig07_e.py",
+      "script_sha256": "7127339290f10b6423c200926833c1aa411d60aa767e3dcf464cbc59ed0f9947",
+      "input_tables": [
+        "runs/step04_spatial_interaction/figs7d_boundary_intensity_gradient.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig07/F",
+      "script_path": "code/panels/fig07_f.py",
+      "script_sha256": "e67b77c28ddbb84193410131cca641e04ee316e72c7354dd6f5c74b916ffd5c7",
+      "input_tables": [
+        "runs/step04_spatial_interaction/fig7fg_compartment_cell_composition.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig07/G-bars",
+      "script_path": "code/panels/fig07_g.py",
+      "script_sha256": "d7cd325ff23127142fefe92e46a16d4095ff1aba2c437d720b71923b2ad2bec1",
+      "input_tables": [
+        "runs/step04_spatial_interaction/fig7fg_compartment_cell_composition.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "fig07/H",
+      "script_path": "code/panels/fig07_h.py",
+      "script_sha256": "a8c1f73cae90afd4170678570538cf6b32537f47661f69e716245f0d1de62c6c",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/fig7h_checkpoints_zscore_proxy.csv",
+        "runs/step06_mrseq_deseq2/fig7h_up_vs_em_sig_proxy.csv",
+        "data_small/mrseq_meta_small.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig01/C",
+      "script_path": "code/panels/sfig01_c.py",
+      "script_sha256": "a4066768349caeff7ae2d5c03e4d2a4004aaab5aaccd2d7b563554f9e70c0c36",
+      "input_tables": [
+        "runs/step01_phenotype/table_s5_panel2_rules.csv",
+        "runs/step01_phenotype/stratified_phenotyped.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/C-top",
+      "script_path": "code/panels/sfig02_c.py",
+      "script_sha256": "cdac6d414239d1649861df59505be2749d3d15ecc30d0a44dde2bc17085e2c56",
+      "input_tables": [
+        "runs/step03_rcn_lda/voronoi_polygons_fov.json"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/D",
+      "script_path": "code/panels/sfig02_d.py",
+      "script_sha256": "75b97e6ef2ac85cf1a41ceced9dca883fc20e1d4c0bfc498f2ac686d2ad9a562",
+      "input_tables": [
+        "runs/step03_rcn_lda/figs2d_kmeans_elbow.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig02/E",
+      "script_path": "code/panels/sfig02_e.py",
+      "script_sha256": "ff0c6f6894ae4974b7f45e74ab2d786d5e63dd62ede28e311379d47421e701c4",
+      "input_tables": [
+        "runs/step03_rcn_lda/direct_count_cluster30_composition.csv",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig03/B",
+      "script_path": "code/panels/sfig03_b.py",
+      "script_sha256": "06dbd1babc538631420a687046a837e20dc759bdd0bfae7dc7ff04aad3c83467",
+      "input_tables": [
+        "runs/step03_rcn_lda/figs3b_rcn_freq_by_roi.csv",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv",
+        "runs/step03_rcn_lda/figs3e_rcn_stage_pvalues.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig03/C",
+      "script_path": "code/panels/sfig03_c.py",
+      "script_sha256": "8e1ea6c4922e873ef2f8726984cc7cfbaffa6c697eba4577dacfa7717c2713ba",
+      "input_tables": [
+        "runs/step04_spatial_interaction/figs3c_proximity_volume_by_stage.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig03/D",
+      "script_path": "code/panels/sfig03_d.py",
+      "script_sha256": "173de8631966a4a4ee4876de11772caea7cfbd48afec1feab3341d579f2108ac",
+      "input_tables": [
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig03/E",
+      "script_path": "code/panels/sfig03_e.py",
+      "script_sha256": "295c4c3c4dab85c614129ce564ad639455acdf8e8871168e0c195149ffaef9c9",
+      "input_tables": [
+        "runs/step03_rcn_lda/figs3e_rcn_stage_pvalues.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/A",
+      "script_path": "code/panels/sfig05_a.py",
+      "script_sha256": "05b26d0ae431e05863ae1de14eee11764d9237849ba7011d850fc04d9b78e45e",
+      "input_tables": [
+        "runs/step02_umap_gradients/figs5a_tumor_pca_scree.csv",
+        "runs/step02_umap_gradients/figs5a_tumor_pca_loadings.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/B",
+      "script_path": "code/panels/sfig05_b.py",
+      "script_sha256": "020d1f4ec183b3837bf61cb500b987be408a3ea5bf65f527608f7cbff3d14109",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/fig5b_s5b_spatial_contours_proxy.csv",
+        "runs/step03_rcn_lda/fov_cells_with_rcn.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/C",
+      "script_path": "code/panels/sfig05_c.py",
+      "script_sha256": "279ad2e578a139953b369a4f3a1054b1b8e81ad7a1961118726224e6697d1e16",
+      "input_tables": [
+        "runs/step05_tcc_spatial_lag/figs5c_tcc_cooccurrence.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig05/D",
+      "script_path": "code/panels/sfig05_d.py",
+      "script_sha256": "5a216c27b3a211fa59a997d9217f7d94fa164da3885383f83805395fd2bf136f",
+      "input_tables": [
+        "runs/step02_umap_gradients/figs5d_2d_density_cells_proxy.csv",
+        "runs/step02_umap_gradients/figs5d_quadrant_proportions_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/A",
+      "script_path": "code/panels/sfig06_a.py",
+      "script_sha256": "af8c1783434f749177e93b607cb74daf6c19f332f100bc7dc802f65e68d6a4cc",
+      "input_tables": [
+        "runs/step02_umap_gradients/figs6a_proliferation_markers_by_stage_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/C",
+      "script_path": "code/panels/sfig06_c.py",
+      "script_sha256": "d90747df84740da92fee5d43559cd6225ef656e1d3edaa4344f9e799b6cd500a",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/gsea_running_es_curves.csv",
+        "runs/step06_mrseq_deseq2/gsea_summary.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/D-table",
+      "script_path": "code/panels/sfig06_d.py",
+      "script_sha256": "c4e6269607c954c64e3bc9760a978492d069435a72b9f966a2914cc15955b83a",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs6d_mroi_counts_table.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/E",
+      "script_path": "code/panels/sfig06_e.py",
+      "script_sha256": "7113415556e8410e547859cf1ae5b89377acc756b2bd10735cc31b560ecadfff",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/deseq2_log2_norm_counts_symbol.csv",
+        "data_small/mrseq_meta_small.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig06/F",
+      "script_path": "code/panels/sfig06_f.py",
+      "script_sha256": "ddc8f9f193eef680aa5245c12847dd9a20588f9a2312fa09235c9172c2dc47bc",
+      "input_tables": [
+        "runs/step07_network_survival/figs6f_tcga_km_curves.csv",
+        "runs/step07_network_survival/figs6f_tcga_survival_stats.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/A",
+      "script_path": "code/panels/sfig07_a.py",
+      "script_sha256": "558e2b323319974f712715e2887a881849e091d4dc9581ce2cd3c777214bd28b",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs7a_ifng_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/B",
+      "script_path": "code/panels/sfig07_b.py",
+      "script_sha256": "60e7f449b1c03997722bfe2208d0f66b145c1a9f21b7eb5f75058fef89e54363",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/gsea_running_es_curves.csv",
+        "runs/step06_mrseq_deseq2/gsea_summary.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/C",
+      "script_path": "code/panels/sfig07_c.py",
+      "script_sha256": "7756879695a9137fcec0bfb28949283357fc8268d8ddbbae20a72a32ae971b2d",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs7c_jakstat_ssgsea_scores_proxy.csv",
+        "data_small/mrseq_meta_small.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/D-right",
+      "script_path": "code/panels/sfig07_d.py",
+      "script_sha256": "8bc62d2bcadb74f6b9212885e248b47cbddb9ff9e86ac949b5994d9ea6b9c782",
+      "input_tables": [
+        "runs/step04_spatial_interaction/figs7d_boundary_intensity_gradient.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/E",
+      "script_path": "code/panels/sfig07_e.py",
+      "script_sha256": "100817535c706e7856e9da82d1772ac26c61f3a23bcfb612306fa9f9a206fefc",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs7e_irf1_bTIL_IB_IM.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/F",
+      "script_path": "code/panels/sfig07_f.py",
+      "script_sha256": "4c9eec9fa054bc777b917e04560dbb347010a63326e197fdad63d15fb5ae3799",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs7fg_mif_cd74_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/G",
+      "script_path": "code/panels/sfig07_g.py",
+      "script_sha256": "a6f46fc24a40ec0603806b0f8a501695b1e5a374dd45124c420882a009024a3e",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs7fg_mif_cd74_proxy.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/H",
+      "script_path": "code/panels/sfig07_h.py",
+      "script_sha256": "cdc0aa6d2431d1e60336c94658b990bef6226e8478f0772dd130555ce12afa0f",
+      "input_tables": [
+        "runs/step06_mrseq_deseq2/figs7h_cxcl12_cxcr4_zscore_proxy.csv",
+        "data_small/mrseq_meta_small.csv"
+      ],
+      "status": "generated"
+    },
+    {
+      "panel_key": "sfig07/I-bars",
+      "script_path": "code/panels/sfig07_i.py",
+      "script_sha256": "ae65f64189edd6f76277efc4f364478680bd9ab1956bee4bb7631136b0f4509d",
+      "input_tables": [
+        "runs/step04_spatial_interaction/fig7fg_compartment_cell_composition.csv"
+      ],
+      "status": "generated"
+    }
+  ]
+}

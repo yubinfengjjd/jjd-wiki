@@ -1,0 +1,74 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "zscore_matrix": {
+      "interface": "",
+      "filename": "rcn_cluster_zscore.csv",
+      "description": "30 个 RCN 聚簇 × 细胞表型 Z-score 矩阵（含 rcn_group 与 cluster_id 列）",
+      "required": true,
+      "columns": {
+        "rcn_group": {
+          "type": "str",
+          "description": "归并后 RCN 大类标签（如 RCN1..RCN10）",
+          "required": true
+        },
+        "cluster_id": {
+          "type": "str",
+          "description": "K-means 子聚簇编号",
+          "required": true
+        }
+      }
+    },
+    "cluster_tracks": {
+      "interface": "",
+      "filename": "rcn_cluster_tracks.csv",
+      "description": "各子聚簇的患者比例（patient_*）与疾病分期比例（stage_*）注释轨道表",
+      "required": true,
+      "columns": {
+        "cluster_id": {
+          "type": "str",
+          "description": "与主矩阵对齐的聚簇编号",
+          "required": true
+        },
+        "rcn_group": {
+          "type": "str",
+          "description": "RCN 分组名称",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "z_min": -2.0,
+    "z_max": 2.0,
+    "dpi": 300,
+    "width_in": 6.4,
+    "height_in": 6.8,
+    "rect": [
+      0.1,
+      0.04,
+      0.85,
+      0.9
+    ]
+  },
+  "parameters": {
+    "z_min": {
+      "type": "number",
+      "label": "Z-score 下限",
+      "default": -2.0,
+      "min": -4.0,
+      "max": -0.5,
+      "step": 0.5
+    },
+    "z_max": {
+      "type": "number",
+      "label": "Z-score 上限",
+      "default": 2.0,
+      "min": 0.5,
+      "max": 4.0,
+      "step": 0.5
+    }
+  }
+}

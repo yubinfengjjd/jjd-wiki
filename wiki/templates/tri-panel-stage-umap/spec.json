@@ -1,0 +1,84 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "umap_tripanel_cells.csv",
+      "description": "单细胞 UMAP 坐标与三列离散注释表（细胞类型、进展分期、患者编号）",
+      "required": true,
+      "columns": {
+        "cell_id": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "umap_1": {
+          "type": "float",
+          "description": "UMAP 横坐标",
+          "required": true
+        },
+        "umap_2": {
+          "type": "float",
+          "description": "UMAP 纵坐标",
+          "required": true
+        },
+        "cell_type": {
+          "type": "str",
+          "description": "第一面板细胞类型注释",
+          "required": true
+        },
+        "stage": {
+          "type": "str",
+          "description": "第二面板进展分期/分组",
+          "required": true
+        },
+        "patient_id": {
+          "type": "str",
+          "description": "第三面板患者/样本编号",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "panel1_col": "cell_type",
+    "panel2_col": "stage",
+    "panel3_col": "patient_id",
+    "panel_titles": [
+      "UMAP by cell type",
+      "UMAP by stage",
+      "UMAP by patient"
+    ],
+    "point_size": 4.5,
+    "alpha": 0.78,
+    "dpi": 300,
+    "width_in": 8.8,
+    "height_in": 2.75,
+    "rect": [
+      0.04,
+      0.1,
+      0.8,
+      0.78
+    ]
+  },
+  "parameters": {
+    "point_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 4.5,
+      "min": 0.5,
+      "max": 12.0,
+      "step": 0.5
+    },
+    "alpha": {
+      "type": "number",
+      "label": "散点透明度",
+      "default": 0.78,
+      "min": 0.2,
+      "max": 1.0,
+      "step": 0.05
+    }
+  }
+}

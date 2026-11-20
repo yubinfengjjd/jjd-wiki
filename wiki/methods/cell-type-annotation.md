@@ -132,6 +132,19 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/tri-panel-stage-umap
+  compatibility: adaptable
+  reason: 注释后的单细胞/空间蛋白组细胞类型标签可与进展分期、患者 ID 合并导出为 Cancer Discovery 风格三联 UMAP 变体；模板不执行注释。
+  prerequisites:
+  - umap_1/umap_2 与 cell_type、stage、patient_id 来自同一质控后对象；cell_id 唯一。
+  adaptation: 导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
+  evidence:
+  - methods/cell-type-annotation.md#输出
+  - templates/tri-panel-stage-umap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：细胞组成比例与 Ro/e 组织偏好分析
   when: 比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时

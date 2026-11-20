@@ -11,6 +11,7 @@
 - [[scenarios/sc-bulk-integration-playbook|单细胞 × Bulk 多组学联合决策树（Playbook）]] — 连接单细胞机制发现与大样本 Bulk 临床队列验证的联合决策树：从单细胞关键亚群 Marker/轨迹基因出发，经交集收敛、Bulk 投射/反卷积与机器学习建模完成临床转化验证。
 - [[scenarios/stromal-tme-scrna-st-playbook|单细胞与空转肿瘤基质微环境思路分支树（Playbook）]] — 面向「单细胞转录组 + Visium 空间转录组 + 临床 Bulk 队列」的肿瘤基质微环境专题思路分支树（7 阶段 DAG 子树），支持双上游汇合节点（requires）与多套顶刊风格模板按需切换。
 - [[scenarios/scrna-stepwise-playbook|单细胞转录组步进决策树（Playbook）]] — 单细胞转录组“走一步看一步”步进决策树：从 QC、去批次整合到细胞注释后，展开 7 大下游科研探索分支（含 Branch 7 单细胞 × 空转基质微环境子树），并用标准中间表衔接可视化模板。
+- [[scenarios/spatial-proteomics-immunoediting-playbook|多通道空间蛋白组 × mROI 空间转录组肿瘤免疫编辑分支树（Playbook）]] — 面向「多通道单细胞空间蛋白组（CyCIF / CODEX / IMC）+ 定向微区空间转录组（PickSeq / GeoMx mROI）+ TCGA 临床队列」的肿瘤免疫编辑与空间进展分析分支树（6 阶段 DAG 子树），支持空间邻域主题建模、肿瘤边界梯度、空间滞后与多基因共表达/预后验证。
 - [[scenarios/differential-enrichment|差异表达与富集分析]] — 两组或多组的差异基因展示（火山图）与通路层面的结果（GSEA、GSVA、富集气泡/柱图）。
 - [[scenarios/model-explanation|模型解释与特征重要性]] — 机器学习模型的特征重要性与 SHAP 解释图，以及特征筛选。
 - [[scenarios/geneset-theme-playbook|特定修饰与主题基因集挖掘决策树（Playbook）]] — 面向乳酸化、泛素化/乙酰化等 PTM 修饰、铁死亡及代谢主题基因集的专病挖掘决策树：从基因集定义、多算法打分到单细胞高活亚群深挖与 Bulk 分子分型闭环。
@@ -180,6 +181,12 @@
 
 ### draft
 
+- [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]]
+- [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]]
+- [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]
+- [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]]
+- [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]]
+- [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]]
 
 ### ready
 
@@ -317,6 +324,7 @@
 ### draft
 
 - [[methods/breast-cancer-stromal-tme-workflow|乳腺癌基质单细胞与空转微环境复刻流程]] — 文献《Integration of single-cell and spatial transcriptomics reveals stromal cell features in breast cancer》（Cai et al., npj Precision Oncology 2026）纯生信方法拆解与复刻组合流程（已剔除湿实验 Fig. 3F–H，含正文-附加材料映射、面板覆盖清单与双份代码存档）。
+- [[methods/melanoma-spatial-immunoediting-workflow|原发性黑色素瘤空间蛋白组与微区转录组免疫编辑复刻流程]] — 文献《The Spatial Landscape of Progression and Immunoediting in Primary Melanoma at Single-Cell Resolution》（Nirmal et al., Cancer Discovery 2022, PMC9167783）纯生信分析与 1:1 复刻组合流程（覆盖 Fig. 1–7 + Supp. Fig. S1–S7 共 14 张图 105 条原子面板记录；已剔除全部纯显微/H&E 图与 Fig. S4 及概念图 1A/7I/7J/S2A/S2B）。
 
 ### ready
 
@@ -462,6 +470,7 @@
 ## 课题
 
 - [[projects/2026-cai-stromal-tme|乳腺癌基质微环境单细胞与空转联合解析（Cai et al., 2026）]] — Cai et al. (npj Precision Oncology, 2026) 乳腺癌基质单细胞 + Visium 空转 + Bulk 队列 6 阶段走线实录：从多队列基质图谱注释、Ro/e 与 Cox 预后筛选到 ABCA8+ lpFib 免疫排斥与 CCL19+ iFib / PGF+ TipEC 空间通讯验证（已剔除 Fig. 3F–H 湿实验）。
+- [[projects/2022-nirmal-melanoma-spatial|原发性黑色素瘤空间进展与免疫编辑多组学解析（Nirmal et al., 2022）]] — Nirmal et al. (Cancer Discovery, 2022, PMC9167783) 原发性黑色素瘤 CyCIF 空间蛋白组 + PickSeq/GeoMx mROI 转录组 + TCGA-SKCM 5 阶段步进走线实录：从 CyCIF 单细胞门控演进图谱、20 μm RCN 空间邻域、边界 PDL1–PD1 免疫互作、空间滞后 TCC 异质性到 S100B 枢纽网络与预后验证（已剔除全部显微图像与 Fig. S4）。
 - [[projects/2026-asthma-lactylation-scrna|哮喘气道上皮与巨噬细胞乳酸化单细胞挖掘]] — 哮喘气道单细胞数据集的乳酸化基因集多算法打分、巨噬细胞高活亚群筛选、拟时序轨迹与细胞通讯验证记录。
 - [[projects/2026-uc-ptm-multiomics|溃疡性结肠炎 20 种翻译后修饰（PTM）多组学挖掘]] — 溃疡性结肠炎（UC）单细胞与 Bulk 队列联合的 20 种 PTM 修饰基因集筛选、101 种机器学习诊断建模与 SHAP 可解释性记录。
 - [[projects/_template|课题步进记录卡模板]] — 新建科研课题的极简 3 行式步进追踪卡模板，记录每一步所用模版、观察现象与触发的下一步决策方向。

@@ -79,6 +79,19 @@ figure_relations:
     state: not_run
     scope: 2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     evidence: []
+- figure: templates/tri-panel-stage-umap
+  compatibility: adaptable
+  reason: 降维生成的 UMAP 坐标可联合细胞类型、进展分期与患者编号按 Cancer Discovery 风格三联并排展示；模板不重算 UMAP。
+  prerequisites:
+  - 坐标与三列离散注释来自同一降维对象；cell_id 唯一且坐标无 NA。
+  adaptation: 导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
+  evidence:
+  - methods/dimensionality-reduction.md#输出
+  - templates/tri-panel-stage-umap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 data_domains:
 - single-cell
 next_steps:

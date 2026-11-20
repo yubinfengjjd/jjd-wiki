@@ -1,0 +1,93 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "nodes": {
+      "interface": "",
+      "filename": "network_nodes.csv",
+      "description": "共表达网络节点坐标与枢纽模块标注表",
+      "required": true,
+      "columns": {
+        "gene_symbol": {
+          "type": "str",
+          "description": "基因名称",
+          "required": true
+        },
+        "x": {
+          "type": "float",
+          "description": "节点横坐标",
+          "required": true
+        },
+        "y": {
+          "type": "float",
+          "description": "节点纵坐标",
+          "required": true
+        },
+        "in_s100b_1step": {
+          "type": "bool",
+          "description": "是否属于枢纽基因一步邻域模块",
+          "required": true
+        },
+        "is_key_label": {
+          "type": "bool",
+          "description": "是否放射状显示胶囊基因标签",
+          "required": false
+        }
+      }
+    },
+    "edges": {
+      "interface": "",
+      "filename": "network_edges.csv",
+      "description": "共表达网络边表（from, to, weight）",
+      "required": true,
+      "columns": {
+        "from": {
+          "type": "str",
+          "description": "起点基因",
+          "required": true
+        },
+        "to": {
+          "type": "str",
+          "description": "终点基因",
+          "required": true
+        },
+        "weight": {
+          "type": "float",
+          "description": "相关系数权重",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "hub_gene": "S100B",
+    "r_threshold": 0.6,
+    "half_w": 11.5,
+    "half_h": 10.5,
+    "dpi": 300,
+    "width_in": 5.2,
+    "height_in": 4.0,
+    "rect": [
+      0.05,
+      0.05,
+      0.9,
+      0.9
+    ]
+  },
+  "parameters": {
+    "hub_gene": {
+      "type": "string",
+      "label": "中心枢纽基因名",
+      "default": "S100B"
+    },
+    "r_threshold": {
+      "type": "number",
+      "label": "显示相关系数阈值",
+      "default": 0.6,
+      "min": 0.3,
+      "max": 0.95,
+      "step": 0.05
+    }
+  }
+}

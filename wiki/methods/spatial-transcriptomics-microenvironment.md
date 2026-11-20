@@ -84,6 +84,32 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/rcn-composition-stacked-heatmap
+  compatibility: adaptable
+  reason: 20 um 空间邻域 LDA/K-means（RCN）或空间滞后肿瘤群落（TCC）的特征 Z-score 可与患者、分期比例轨道合并展示为主推默认（default）复合热图；模板不执行聚类。
+  prerequisites:
+  - 主矩阵与左右轨道表须按 cluster_id 一一对齐；患者与分期比例按独立样本或连续 FOV 汇总。
+  adaptation: 导出 rcn_cluster_zscore.csv 与 rcn_cluster_tracks.csv。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/rcn-composition-stacked-heatmap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/voronoi-neighborhood-mosaic
+  compatibility: adaptable
+  reason: 连续物理视野（FOV）单细胞坐标与 RCN/TCC 邻域标签可切换为 variant 高密 Voronoi 多边形空间镶嵌与局部放大图；模板不做空间聚类。
+  prerequisites:
+  - 输入必须为未下采样打碎连续拓扑的物理 FOV（x, y），否则 Voronoi 面积失真。
+  adaptation: 导出 spatial_cells_voronoi.csv（cell_id, x, y, neighborhood, 可选 fov_id/stage）。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/voronoi-neighborhood-mosaic/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：空间邻域细胞通讯与信号互作轴解析
   when: 在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时

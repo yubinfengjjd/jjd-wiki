@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "kind": "template",
+  "id": "voronoi-neighborhood-mosaic",
+  "entry": "code/render.py",
+  "language": "python",
+  "runtime_mode": "standalone",
+  "files": [
+    "code/__init__.py",
+    "code/panel.py",
+    "code/render.py",
+    "spec.json"
+  ],
+  "required_packages": {
+    "Python": [
+      "matplotlib",
+      "numpy",
+      "pandas",
+      "scipy",
+      "shapely"
+    ]
+  }
+}

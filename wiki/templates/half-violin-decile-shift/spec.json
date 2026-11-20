@@ -1,0 +1,51 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "distances": {
+      "interface": "",
+      "filename": "distance_shift_groups.csv",
+      "description": "两组对比的物理距离或分布观测长表（panel, group, value）",
+      "required": true,
+      "columns": {
+        "panel": {
+          "type": "str",
+          "description": "分面类别（如免疫细胞亚群）",
+          "required": true
+        },
+        "group": {
+          "type": "str",
+          "description": "对比组别（如 Normal vs Precursor）",
+          "required": true
+        },
+        "value": {
+          "type": "float",
+          "description": "正值观测数值（如空间距离 um）",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "top_group": "Normal",
+    "bottom_group": "Precursor",
+    "xlabel": "Distance from melanocytes (um)",
+    "dpi": 300,
+    "width_in": 7.4,
+    "height_in": 2.75,
+    "rect": [
+      0.05,
+      0.22,
+      0.91,
+      0.66
+    ]
+  },
+  "parameters": {
+    "xlabel": {
+      "type": "string",
+      "label": "横轴标题",
+      "default": "Distance from melanocytes (um)"
+    }
+  }
+}

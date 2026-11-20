@@ -252,7 +252,7 @@ steps:
 |---|---|---|---|
 | [[methods/cell-quality-control|单细胞质量控制]] | L2 | ready · 可用 | Step 1：按 UMI/基因数/线粒体比例过滤低质量细胞 |
 | [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Step 2：多样本/多批次对齐整合与聚类 |
-| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
+| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
 | [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 细胞类型注释 UMAP 主图（主推默认） |
 | [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready · 可用 | 细胞类型注释：带亚群功能包络与编号质心的 UMAP（可切换画风） |
 | [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 分支 1：细胞组成比例堆叠流带图（主推默认） |
@@ -286,7 +286,8 @@ steps:
 ## 实操案例与专题子树
 
 - **肿瘤基质 × 空转专题子树**：[[scenarios/stromal-tme-scrna-st-playbook|单细胞与空转肿瘤基质微环境思路分支树（Playbook）]]
-- **课题走线实录卡**：[[projects/2026-cai-stromal-tme|乳腺癌基质微环境单细胞与空转联合解析（Cai et al., 2026）]] · [[projects/2026-asthma-lactylation-scrna|哮喘气道上皮与巨噬细胞乳酸化单细胞挖掘]]
+- **空间蛋白组 × mROI 免疫编辑专题子树**：[[scenarios/spatial-proteomics-immunoediting-playbook|多通道空间蛋白组 × mROI 空间转录组肿瘤免疫编辑分支树（Playbook）]]
+- **课题走线实录卡**：[[projects/2026-cai-stromal-tme|乳腺癌基质微环境单细胞与空转联合解析（Cai et al., 2026）]] · [[projects/2022-nirmal-melanoma-spatial|原发性黑色素瘤空间进展与免疫编辑多组学解析（Nirmal et al., 2022）]] · [[projects/2026-asthma-lactylation-scrna|哮喘气道上皮与巨噬细胞乳酸化单细胞挖掘]]
 
 ## 注意
 

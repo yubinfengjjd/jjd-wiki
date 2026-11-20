@@ -237,7 +237,7 @@ steps:
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Stage 1：多队列单细胞去批次整合（Harmony / Seurat Anchor） |
-| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Stage 1：基质亚群精细注释与功能包络定位 |
+| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Stage 1：基质亚群精细注释与功能包络定位 |
 | [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 主推默认 · 标准细胞类型 UMAP 散点图 |
 | [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready · 可用 | 可切换画风 · 带分组虚线包络与编号质心的 UMAP 图 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：单细胞注释 + Visium 切片空间反卷积与共定位 |

@@ -1,0 +1,114 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "km_curves": {
+      "interface": "",
+      "filename": "km_survival_curves.csv",
+      "description": "多基因 Kaplan-Meier 阶跃生存率与 95% CI 曲线表",
+      "required": true,
+      "columns": {
+        "gene": {
+          "type": "str",
+          "description": "基因符号",
+          "required": true
+        },
+        "group": {
+          "type": "str",
+          "description": "分组（High / Low）",
+          "required": true
+        },
+        "time_years": {
+          "type": "float",
+          "description": "随访时间（年）",
+          "required": true
+        },
+        "surv": {
+          "type": "float",
+          "description": "生存概率",
+          "required": true
+        },
+        "lower": {
+          "type": "float",
+          "description": "95% CI 下界",
+          "required": false
+        },
+        "upper": {
+          "type": "float",
+          "description": "95% CI 上界",
+          "required": false
+        },
+        "n_censor": {
+          "type": "int",
+          "description": "删失数",
+          "required": false
+        }
+      }
+    },
+    "km_stats": {
+      "interface": "",
+      "filename": "km_survival_stats.csv",
+      "description": "各基因 Logrank P 与单因素 Cox HR 汇总统计表",
+      "required": true,
+      "columns": {
+        "gene": {
+          "type": "str",
+          "description": "基因符号",
+          "required": true
+        },
+        "logrank_p": {
+          "type": "float",
+          "description": "Log-rank P 值",
+          "required": true
+        },
+        "cox_hr_high_vs_low": {
+          "type": "float",
+          "description": "High vs Low 风险比 HR",
+          "required": true
+        },
+        "cox_p": {
+          "type": "float",
+          "description": "Cox 回归 P 值",
+          "required": true
+        },
+        "n_high": {
+          "type": "int",
+          "description": "高表达组样本数",
+          "required": true
+        },
+        "n_low": {
+          "type": "int",
+          "description": "低表达组样本数",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "low_color": "#E29D7A",
+    "high_color": "#284560",
+    "ncols": 2,
+    "xlabel": "Time (years)",
+    "ylabel": "% Survival (TCGA-SKCM, n=120)",
+    "dpi": 300,
+    "width_in": 5.8,
+    "height_in": 8.6,
+    "rect": [
+      0.13,
+      0.04,
+      0.83,
+      0.92
+    ]
+  },
+  "parameters": {
+    "ncols": {
+      "type": "number",
+      "label": "网格列数",
+      "default": 2,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    }
+  }
+}

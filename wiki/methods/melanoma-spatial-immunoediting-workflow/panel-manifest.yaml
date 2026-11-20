@@ -1,0 +1,1431 @@
+schema_version: 2
+paper_id: 2022-nirmal-melanoma-spatial
+workflow_id: melanoma-spatial-immunoediting-workflow
+doi: 10.1158/2159-8290.CD-21-1357
+journal: Cancer Discovery
+year: 2022
+license: CC-BY-NC-ND (article); MIT (upstream scimap algorithms)
+gallery_entry: 2026-11-20-nirmal-melanoma-spatial
+panels:
+- panel_key: fig01/A
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1A
+  panel_letter: A
+  evidence_tier: excluded_schematic
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Experimental workflow & cohort design conceptual framework (13 patients, 70 histologies, CyCIF + 3D + PickSeq/GeoMx).
+  note: 非计算概念流程图，按 excluded_schematic 规则排除。
+- panel_key: fig01/B
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1B
+  panel_letter: B
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Whole-slide 30-plex CyCIF fluorescence image of specimen MEL1-1 with mrSEQ ROI overlays.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig01/C
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1C
+  panel_letter: C
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Whole-tissue progression strip CyCIF fluorescence image (MIS -> Transition -> TR/IR).
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig01/D
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: scrna-celltype-umap
+  methods:
+  - cell-type-annotation
+  - dimensionality-reduction
+  script_path: code/panels/fig01_d.py
+  input_tables:
+  - runs/step02_umap_gradients/umap_coords_markers.csv
+  description: CyCIF single-cell UMAP with Tumor dashed hull plus 3x3 marker intensity Feature UMAP grid.
+  note: 基于 HTA-MELATLAS-1 S3 5 样本分层抽样 QC 后 1,987 个单细胞（Panel 2）重算 UMAP；辅用 scrna-feature-umap-grid。
+- panel_key: fig01/E
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig01_e.py
+  input_tables:
+  - runs/step04_spatial_interaction/fig1e_cell_centroids_im.csv
+  description: IM region cell centroids spatial scatter plot on dark background (Tumor, T cells, Myeloid, Other).
+  note: 基于 MEL09_FOV_IM 真实物理坐标重算绘制。
+- panel_key: fig01/F
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1F
+  panel_letter: F
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: H&E histopathology micrograph of tumor and tumor-infiltrating lymphocytes.
+  note: 纯 H&E 病理图像，按 excluded_imaging 规则排除。
+- panel_key: fig01/G
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1G
+  panel_letter: G
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 2D CyCIF fluorescence microscopy of DNA, SOX10, CD4, CD8.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig01/H
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1H
+  panel_letter: H
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 60x 3D high-resolution CyCIF fluorescence microscopy of Treg/CTL-tumor interaction.
+  note: 3D 荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig01/I-left
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1I-left
+  panel_letter: I
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 60x 3D immune synapse CyCIF fluorescence image.
+  note: 3D 荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig01/I-right
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1I-right
+  panel_letter: I
+  evidence_tier: unavailable_pixel_linescan
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 0-16 um pixel line-scan fluorescence intensity trace across 3D immune synapse.
+  note: S3 单细胞量化 CSV 不包含 60x 3D 光学切片逐像素线扫描强度，诚实标记为 unavailable_pixel_linescan。
+- panel_key: fig01/J
+  figure: Fig. 1
+  figure_slug: fig01
+  panel: 1J
+  panel_letter: J
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 3D Z-stack orthogonal CyCIF microscopy of Treg-tumor cell contact.
+  note: 3D 荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig02/A
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: tri-panel-stage-umap
+  methods:
+  - cell-type-annotation
+  - dimensionality-reduction
+  script_path: code/panels/fig02_a.py
+  input_tables:
+  - runs/step02_umap_gradients/umap_coords_markers.csv
+  description: Tri-panel UMAP colored by 12 cell types, progression stage, and patient ID.
+  note: 基于 1,987 个 QC 后真实单细胞 UMAP 嵌入并按局部核重采样加密显示。
+- panel_key: fig02/B
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: scrna-feature-umap-grid
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/fig02_b.py
+  input_tables:
+  - runs/step02_umap_gradients/umap_coords_markers.csv
+  description: Six-marker intensity Feature UMAP strip (SOX10, CD11C, FOXP3, CD8A, PDL1, PD1).
+  note: 基于 Panel 2 实测 GMM 0-1 重标度蛋白强度。
+- panel_key: fig02/C
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: checkpoint-group-boxplot
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/fig02_c.py
+  input_tables:
+  - runs/step02_umap_gradients/fig2c_s100a_by_roi_stage.csv
+  - runs/step02_umap_gradients/fig2c_s100a_stage_ttests.csv
+  description: Fraction of SOX10+ melanoma cells co-expressing S100A across Normal, Precursor, MIS, and IM.
+  note: 本地 S3 实测重算并执行分期 t-test（EM 期仅在 MEL01 存在而缺 ROI 掩膜，图中如实说明）。
+- panel_key: fig02/D
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: rcn-composition-stacked-heatmap
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig02_d.py
+  input_tables:
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  - runs/step03_rcn_lda/lda_cluster30_composition.csv
+  description: RCN1-10 properties composite heatmap across 30 K-means clusters with Patient ID and Stage stacked tracks and
+    dendrogram.
+  note: 基于 20 um 局部邻域 Spatial LDA（10 motifs）+ K-means 30 聚簇结果映射绘制。
+- panel_key: fig02/E
+  figure: Fig. 2
+  figure_slug: fig02
+  panel: 2E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig02_e.py
+  input_tables:
+  - runs/step03_rcn_lda/fig2d_rcn_phenotype_composition.csv
+  - runs/step03_rcn_lda/fig2e_rcn_simplified_pie.csv
+  description: RCN1-10 cell-type horizontal stacked bars (highlighting PD1+ CTLs) paired with 5 functional pie groups.
+  note: 由真实连续 FOV 细胞表型×RCN 组成表计算生成。
+- panel_key: fig03/A
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: voronoi-neighborhood-mosaic
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig03_a.py
+  input_tables:
+  - runs/step03_rcn_lda/voronoi_polygons_fov.json
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: Invasive margin (MEL09_FOV_IM) RCN Voronoi spatial mosaic with red/blue high-density zoom boxes.
+  note: 基于 Shapely 有限 Voronoi 多边形真实物理坐标绘制。
+- panel_key: fig03/B
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3B
+  panel_letter: B
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched CyCIF and H&E microscopy zooms for RCN10, RCN9, RCN3/4, and RCN5/8.
+  note: 纯显微与 H&E 图像，按 excluded_imaging 规则排除。
+- panel_key: fig03/C-top
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3C-top
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: voronoi-neighborhood-mosaic
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig03_c.py
+  input_tables:
+  - runs/step03_rcn_lda/voronoi_polygons_fov.json
+  description: Progression axis gradient banner and 6 circular-clipped Voronoi neighborhoods across Normal, Precursor, and
+    MIS.
+  note: 从 MEL11_FOV_Normal、MEL11_FOV_Precursor、MEL09_FOV_MIS 截取 6 个互不重叠高密度圆窗。
+- panel_key: fig03/C-bottom
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3C-bottom
+  panel_letter: C
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched CyCIF fluorescence overlays corresponding to the 6 circular Voronoi windows.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig03/D
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/fig03_d.py
+  input_tables:
+  - runs/step03_rcn_lda/fig3d_rcn_proportions_by_stage.csv
+  description: Cross-stage RCN1-10 composition stacked bar chart (N, P, MIS, IM).
+  note: 基于真实连续 FOV RCN 计数统计。
+- panel_key: fig03/E
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: resampling-metric-box
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig03_e.py
+  input_tables:
+  - runs/step03_rcn_lda/fig3e_rcn_to_rcn10_distances.csv
+  - runs/step03_rcn_lda/fig3e_rcn_to_rcn10_ttests.csv
+  description: Multi-stage horizontal boxenplot of physical distance from each RCN to RCN10 (log scale um).
+  note: N/P FOV 中无 RCN10 细胞时诚实标注 0 RCN10 in sample FOV。
+- panel_key: fig03/F
+  figure: Fig. 3
+  figure_slug: fig03
+  panel: 3F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: half-violin-decile-shift
+  methods:
+  - cell-proportion-composition
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig03_f.py
+  input_tables:
+  - runs/step03_rcn_lda/fig3f_mel_immune_raw_distances.csv
+  - runs/step03_rcn_lda/fig3f_mel_immune_quantile_shift.csv
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: Mirrored half-violin, IQR box, and red decile shift dumbbell plot comparing Normal vs Precursor distances from
+    melanocytes.
+  note: 基于 MEL11 Normal 与 Precursor 真实物理坐标计算最近邻距离及 10%–90% 分位数偏移。
+- panel_key: fig04/A
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4A
+  panel_letter: A
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: MIS CyCIF microscopy highlighting PDL1+ tumor cell and PD1+ CTL synapse.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig04/B
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4B
+  panel_letter: B
+  evidence_tier: proxy
+  template_id: scp-comp-trend
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig04_b.py
+  input_tables:
+  - runs/step04_spatial_interaction/spatial_interaction_by_subroi.csv
+  description: Stage progression line plot of significant PDL1+ myeloid and PD1+ CTL spatial co-occurrence (% ROIs).
+  note: 基于 4 个连续 FOV 的 16 个子 ROI 1,000 次置换检验作为全队列 70 ROI 代理。
+- panel_key: fig04/C
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4C
+  panel_letter: C
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Macrophage-T cell synapse CyCIF and Imaris 3D surface rendering.
+  note: 3D 荧光显微与表面渲染图，按 excluded_imaging 规则排除。
+- panel_key: fig04/D
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4D
+  panel_letter: D
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: CyCIF microscopy of TIM3, CD8A, CD11C, CD163.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig04/E
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4E
+  panel_letter: E
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: High-plex CyCIF microscopy of co-inhibitory ligands and receptors.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig04/F
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4F
+  panel_letter: F
+  evidence_tier: proxy
+  template_id: scp-count-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/fig04_f.py
+  input_tables:
+  - runs/step04_spatial_interaction/fig4f_cohort1_pdl1_bins.csv
+  description: PDL1 positivity bins comparison between Cohort 1 (local recompute, n=5) and Cohort 2 (paper visual bins, n=25).
+  note: Cohort 1 为 S3 实测重算；Cohort 2 原文为低通道 CyCIF 人工目视分箱计数（未沉积单细胞 CSV）。
+- panel_key: fig04/G
+  figure: Fig. 4
+  figure_slug: fig04
+  panel: 4G
+  panel_letter: G
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Primary vs metastatic melanoma PDL1 CyCIF microscopy across IB and metastasis.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig05/A
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5A
+  panel_letter: A
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Whole-slide CyCIF microscopy of MEL1-1 stained for S100A, MITF, and S100B.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig05/B
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5B
+  panel_letter: B
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig05_b.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/fig5b_s5b_spatial_contours_proxy.csv
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: 2D spatial single-cell expression contour plots in IM FOV.
+  note: S3 Panel 2 缺测 MITF/S100B，以同谱系实测 MART1 与 S100a 作为 proxy 并于图注显式标明。
+- panel_key: fig05/C
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: rcn-composition-stacked-heatmap
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig05_c.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/fig5c_tcc_protein_morph_heatmap.csv
+  - runs/step05_tcc_spatial_lag/fig5c_tcc_stage_proportions.csv
+  description: TCC1-10 clustered 20 um spatial-lag protein expression & morphology heatmap with left Stage stacked bars.
+  note: 基于 MEL09/MEL11 Panel 2 肿瘤细胞 20 um 空间滞后特征重算。
+- panel_key: fig05/D
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig05_d.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/fig5d_tcc_spatial_map.csv
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: Mapping of TCC1-10 onto physical IM tissue coordinates (5x2 binary highlight grid + immune interaction bar).
+  note: 基于真实 IM 肿瘤细胞物理坐标映射。
+- panel_key: fig05/E-top
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5E-top
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: voronoi-neighborhood-mosaic
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig05_e.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/fig5e_tcc_voronoi_im.json
+  - runs/step03_rcn_lda/voronoi_polygons_fov.json
+  description: TCC spatial Voronoi tissue overview with yellow circular zoomed neighborhood.
+  note: 基于 IM 肿瘤空间滞后簇 TCC Voronoi 多边形绘制。
+- panel_key: fig05/E-bottom-left
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5E-bottom-left
+  panel_letter: E
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched CyCIF fluorescence inset in Fig. 5E.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig05/F
+  figure: Fig. 5
+  figure_slug: fig05
+  panel: 5F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: scp-count-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/fig05_f.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/fig5f_tcc_marker_positivity.csv
+  description: TCC1-10 marker positivity fraction horizontal bar chart (S100a, MART1, CCND1, HLADPB1, MYC proxy).
+  note: 基于 Panel 2 肿瘤细胞 GMM 阳性率统计。
+- panel_key: fig06/A
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: fy-pca
+  methods:
+  - dimensionality-reduction
+  script_path: code/panels/fig06_a.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig6a_pca_coords_proxy.csv
+  description: Microregional transcriptomics PCA plot with group envelopes across 6 histologic sites.
+  note: GeoMx 70 mROIs 未公开沉积；以同解剖位点 GSE171888 PickSeq 120 mROIs 代理运行并显式标注 proxy。
+- panel_key: fig06/B
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: fy-fancybar
+  methods:
+  - differential-expression
+  script_path: code/panels/fig06_b.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig6b_melanoma_markers_long.csv
+  description: Melanoma lineage markers (PMEL, MITF, MLANA, CSPG4, TYR) expression across MIS, Immune, and Tumor mROIs.
+  note: 基于 GSE171888 PickSeq DESeq2 标准化计数重算。
+- panel_key: fig06/C
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/fig06_c.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig6c_ssgsea_scores.csv
+  - data_small/mrseq_meta_small.csv
+  description: 4-block ssGSEA pathway score heatmap (IFN, Tumor, Immune, Skin) across 6 histologic sites.
+  note: 基于 PickSeq 120 mROIs GSVA ssGSEA 得分重算。
+- panel_key: fig06/D
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: bulk-de-volcano
+  methods:
+  - differential-expression
+  script_path: code/panels/fig06_d.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/deseq2_mis_vs_emim_symbol.csv
+  description: DESeq2 differential expression volcano plot comparing MIS vs EM/IM mROIs.
+  note: 基于 PickSeq 120 mROIs DESeq2 重算并与 Table S6 对齐。
+- panel_key: fig06/E
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/fig06_e.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/gsea_running_es_curves.csv
+  - runs/step06_mrseq_deseq2/gsea_summary.csv
+  description: HALLMARK_KRAS_SIGNALING_UP GSEA running enrichment score curve (IM vs EM).
+  note: 基于 PickSeq DESeq2 排序基因表与 clusterProfiler::GSEA 重算。
+- panel_key: fig06/F
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: fy-fancybar
+  methods:
+  - differential-expression
+  script_path: code/panels/fig06_f.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig6f_im_vs_em_genes_long.csv
+  description: IM vs EM expression barplots with jitter for MYC, NFKB1, IGFBP2, IGF1R, and BCL2A1.
+  note: 基于 PickSeq DESeq2 标准化表达重算。
+- panel_key: fig06/G
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6G
+  panel_letter: G
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - differential-expression
+  script_path: code/panels/fig06_g.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig6g_emt_zscore_im_em.csv
+  - data_small/mrseq_meta_small.csv
+  description: IM vs EM EMT-related 8-gene Z-score heatmap (S100A4 to CSTB).
+  note: 基于 PickSeq 标准化表达 Z-score 重算。
+- panel_key: fig06/H
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6H
+  panel_letter: H
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: MIS vs EM CyCIF fluorescence microscopy validation.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig06/I
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6I
+  panel_letter: I
+  evidence_tier: local_recompute
+  template_id: coexpr-hub-radial-network
+  methods:
+  - coexpression-ppi-network
+  script_path: code/panels/fig06_i.py
+  input_tables:
+  - runs/step07_network_survival/fig6i_network_nodes.csv
+  - runs/step07_network_survival/fig6i_network_edges.csv
+  description: S100B Pearson co-expression network (r >= 0.6) with burnt-orange 1-step module hubs and pill labels.
+  note: 基于 PickSeq 20,847 基因 Pearson 相关网络提取 S100B 一步邻域模块（与 Table S6 交集 22 个基因）。
+- panel_key: fig06/J
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6J
+  panel_letter: J
+  evidence_tier: local_recompute
+  template_id: scp-comp-trend
+  methods:
+  - coexpression-ppi-network
+  script_path: code/panels/fig06_j.py
+  input_tables:
+  - runs/step07_network_survival/fig6j_s100b_module_curve.csv
+  description: S100B module mean expression step-up curve across 120 ordered mROIs with bottom 6-stage track.
+  note: 基于 step07 提取的 64 基因 S100B 模块均值绘制。
+- panel_key: fig06/K
+  figure: Fig. 6
+  figure_slug: fig06
+  panel: 6K
+  panel_letter: K
+  evidence_tier: proxy
+  template_id: scp-expr-ridge
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/fig06_k.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig6k_pmel_cd63_density_proxy.csv
+  description: PMEL and CD63 log-expression overlapping filled density plots across MIS, EM, and IM.
+  note: S3 Panel 2 缺测蛋白，故以 PickSeq 转录组 PMEL/CD63 密度分布作为 proxy。
+- panel_key: fig07/A
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7A
+  panel_letter: A
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Invasive tumor boundary CyCIF microscopy (DNA, SOX10, S100B, CD3D, PD1, CD11C).
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig07/B
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: fy-fancybar
+  methods:
+  - differential-expression
+  - immune-infiltration-tme
+  script_path: code/panels/fig07_b.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig7b_immune_chemokines_long.csv
+  description: Immune chemokine and checkpoint gene expression (CXCL10, CXCL11, IDO1, MIF, CD74) across mROI sites.
+  note: 基于 PickSeq DESeq2 标准化表达重算。
+- panel_key: fig07/C
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7C
+  panel_letter: C
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: CyCIF microscopy of MHC-II-expressing melanoma cells.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig07/D
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7D
+  panel_letter: D
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: CyCIF microscopy of SOX10, CD11C, IRF1, and MART1.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig07/E
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7E
+  panel_letter: E
+  evidence_tier: proxy
+  template_id: null
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/fig07_e.py
+  input_tables:
+  - runs/step04_spatial_interaction/figs7d_boundary_intensity_gradient.csv
+  description: Tumor-stroma boundary spatial intensity gradient profile.
+  note: Panel 2 缺测 IRF1，使用 MEL09_FOV_IM 实测 HLADPB1（MHC-II）与 SOX10 跨边界强度曲线作为 proxy。
+- panel_key: fig07/F
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7F
+  panel_letter: F
+  evidence_tier: proxy
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  - immune-infiltration-tme
+  script_path: code/panels/fig07_f.py
+  input_tables:
+  - runs/step04_spatial_interaction/fig7fg_compartment_cell_composition.csv
+  description: Immune myeloid and lymphoid cell fractions across progression compartments.
+  note: 以 Normal, MIS, IM Dermis 分区代理原文 IR/MIS/bTIL 免疫构成统计。
+- panel_key: fig07/G-bars
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7G-bars
+  panel_letter: G
+  evidence_tier: local_recompute
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/fig07_g.py
+  input_tables:
+  - runs/step04_spatial_interaction/fig7fg_compartment_cell_composition.csv
+  description: Epidermis vs Dermis compartment cell composition horizontal stacked bars.
+  note: 基于 S3 Panel 2 连续 FOV 分区实测计数。
+- panel_key: fig07/G-middle
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7G-middle
+  panel_letter: G
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched CyCIF microscopy inset in Fig. 7G.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: fig07/H
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7H
+  panel_letter: H
+  evidence_tier: proxy
+  template_id: pathway-zscore-heatmap
+  methods:
+  - immune-infiltration-tme
+  script_path: code/panels/fig07_h.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/fig7h_checkpoints_zscore_proxy.csv
+  - runs/step06_mrseq_deseq2/fig7h_up_vs_em_sig_proxy.csv
+  - data_small/mrseq_meta_small.csv
+  description: 9-gene immune checkpoint & cytotoxicity Z-score heatmap with right Up P < 0.05 vs EM matrix.
+  note: GeoMx 未公开，以 PickSeq 120 mROIs 数据代理并标明 proxy。
+- panel_key: fig07/I
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7I
+  panel_letter: I
+  evidence_tier: excluded_schematic
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Conceptual diagram of TME remodeling during melanoma progression.
+  note: 手绘机制模式示意图，按 excluded_schematic 规则排除。
+- panel_key: fig07/J
+  figure: Fig. 7
+  figure_slug: fig07
+  panel: 7J
+  panel_letter: J
+  evidence_tier: excluded_schematic
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Conceptual model of paracrine IFN-gamma, MIF/CD74, and CXCL12/CXCR4 signaling at the tumor-stroma interface.
+  note: 手绘机制模式示意图，按 excluded_schematic 规则排除。
+- panel_key: sfig01/A
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1A
+  panel_letter: A
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Whole-slide H&E and 5-plex CyCIF across Normal, Precursor, MIS-IR, EM, IB.
+  note: 纯 H&E 与荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig01/B
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1B
+  panel_letter: B
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: CyCIF microscopy of S100A, NGFR, and MITF.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig01/C
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - cell-type-annotation
+  script_path: code/panels/sfig01_c.py
+  input_tables:
+  - runs/step01_phenotype/table_s5_panel2_rules.csv
+  - runs/step01_phenotype/stratified_phenotyped.csv
+  description: Quantitative hierarchical phenotyping decision tree built from Table S5 Panel 2 gating rules and local cell
+    counts.
+  note: 基于 Table S5 规则与 step01 实测细胞数自动绘制定量决策树。
+- panel_key: sfig01/D
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1D
+  panel_letter: D
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: High-resolution CyCIF region overview.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig01/E
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1E
+  panel_letter: E
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: High-resolution CyCIF microscopy of immune synapse.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig01/F
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1F
+  panel_letter: F
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: High-resolution CyCIF microscopy of FOXP3+ Treg interaction.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig01/G
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1G
+  panel_letter: G
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: High-resolution CyCIF microscopy of TIM3 expression.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig01/H
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1H
+  panel_letter: H
+  evidence_tier: unavailable_pixel_linescan
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 60x 3D synapse 0-16 um pixel line-scan intensity profile.
+  note: S3 单细胞 CSV 无逐像素线扫描强度，诚实标记为 unavailable_pixel_linescan。
+- panel_key: sfig01/I
+  figure: Supp. Fig. 1
+  figure_slug: sfig01
+  panel: S1I
+  panel_letter: I
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 3D Z-stack Treg-tumor CyCIF microscopy.
+  note: 3D 荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig02/A
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2A
+  panel_letter: A
+  evidence_tier: excluded_schematic
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Spatial LDA neighborhood modeling workflow schematic.
+  note: 非计算流程示意图，按 excluded_schematic 规则排除。
+- panel_key: sfig02/B
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2B
+  panel_letter: B
+  evidence_tier: excluded_schematic
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Panel-2 single-cell phenotyping gating tree schematic (quantitative version in S1C).
+  note: 概念决策树示意图，按 excluded_schematic 规则排除。
+- panel_key: sfig02/C-top
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2C-top
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: voronoi-neighborhood-mosaic
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig02_c.py
+  input_tables:
+  - runs/step03_rcn_lda/voronoi_polygons_fov.json
+  description: RCN1 spatial highlight on Voronoi polygons.
+  note: 基于 Shapely Voronoi 多边形绘制。
+- panel_key: sfig02/C-mid-bot
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2C-mid/bot
+  panel_letter: C
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched CyCIF fluorescence and H&E microscopy for RCN1.
+  note: 纯显微与 H&E 图像，按 excluded_imaging 规则排除。
+- panel_key: sfig02/D
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - cell-clustering
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig02_d.py
+  input_tables:
+  - runs/step03_rcn_lda/figs2d_kmeans_elbow.csv
+  description: K-means clustering elbow curve (inertia across k=2..50).
+  note: 基于 step03 Spatial LDA 主题矩阵 K-means 肘部法重算。
+- panel_key: sfig02/E
+  figure: Supp. Fig. 2
+  figure_slug: sfig02
+  panel: S2E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: rcn-composition-stacked-heatmap
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig02_e.py
+  input_tables:
+  - runs/step03_rcn_lda/direct_count_cluster30_composition.csv
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: Direct spatial_count 30-cluster RCN validation composite heatmap with Patient ID and Stage stacked bars.
+  note: 直接空间计数 K-means 30 聚簇对比验证图。
+- panel_key: sfig03/A
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3A
+  panel_letter: A
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched H&E and high-plex CyCIF microscopy (MEL11, MEL1, MEL8).
+  note: 纯显微与 H&E 图像，按 excluded_imaging 规则排除。
+- panel_key: sfig03/B
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: resampling-metric-box
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/sfig03_b.py
+  input_tables:
+  - runs/step03_rcn_lda/figs3b_rcn_freq_by_roi.csv
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  - runs/step03_rcn_lda/figs3e_rcn_stage_pvalues.csv
+  description: Frequency of RCN9 across progression stages (N, P, MIS, IM) with sub-ROI dots and mean bars.
+  note: 基于连续 FOV 子 ROI 频率重算。
+- panel_key: sfig03/C
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: scp-count-bar
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig03_c.py
+  input_tables:
+  - runs/step04_spatial_interaction/figs3c_proximity_volume_by_stage.csv
+  description: 10 um proximity volume score between CD11C+ myeloid cells and melanocytes across stages.
+  note: 基于 scimap spatial_pscore 10 um 邻近体积重算。
+- panel_key: sfig03/D
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3D
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig03_d.py
+  input_tables:
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: Spatial highlight maps for RCN2 and RCN3/4 in IM FOV (MEL09).
+  note: 基于 MEL09_FOV_IM 真实坐标绘制。
+- panel_key: sfig03/E
+  figure: Supp. Fig. 3
+  figure_slug: sfig03
+  panel: S3E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: roe-cox-heatmap
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig03_e.py
+  input_tables:
+  - runs/step03_rcn_lda/figs3e_rcn_stage_pvalues.csv
+  description: RCN1-10 pairwise stage comparison P-value numeric heatmap.
+  note: 基于连续 FOV 分期成对检验 P 值矩阵绘制。
+- panel_key: sfig04/A
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4A
+  panel_letter: A
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: 10x/60x CyCIF fluorescence microscopy of myeloid-T cell co-occurrence across melanoma progression.
+  note: Supp. Fig. 4 全图为 100% 荧光显微图像，整张按 excluded_imaging 排除。
+- panel_key: sfig04/B
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4B
+  panel_letter: B
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: CyCIF fluorescence microscopy of PDL1/PD1 immune checkpoint interactions.
+  note: Supp. Fig. 4 全图为 100% 荧光显微图像，整张按 excluded_imaging 排除。
+- panel_key: sfig04/C
+  figure: Supp. Fig. 4
+  figure_slug: sfig04
+  panel: S4C
+  panel_letter: C
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: High-resolution CyCIF fluorescence microscopy of tumor-immune spatial contacts.
+  note: Supp. Fig. 4 全图为 100% 荧光显微图像，整张按 excluded_imaging 排除。
+- panel_key: sfig05/A
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5A
+  panel_letter: A
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - dimensionality-reduction
+  script_path: code/panels/sfig05_a.py
+  input_tables:
+  - runs/step02_umap_gradients/figs5a_tumor_pca_scree.csv
+  - runs/step02_umap_gradients/figs5a_tumor_pca_loadings.csv
+  description: Tumor cell PCA variance ratio scree plot and PC1/PC2 ranked feature loadings.
+  note: 基于 Panel 2 肿瘤细胞蛋白特征矩阵 PCA 重算。
+- panel_key: sfig05/B
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5B
+  panel_letter: B
+  evidence_tier: proxy
+  template_id: spatial-feature-grid
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig05_b.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/fig5b_s5b_spatial_contours_proxy.csv
+  - runs/step03_rcn_lda/fov_cells_with_rcn.csv
+  description: 3-panel spatial expression contour plots in tumor tissue.
+  note: Panel 2 以 S100a/MART1/SOX10 代理 S100B/MITF/S100A。
+- panel_key: sfig05/C
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: pathway-zscore-heatmap
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig05_c.py
+  input_tables:
+  - runs/step05_tcc_spatial_lag/figs5c_tcc_cooccurrence.csv
+  description: Co-occurrence and avoidance matrix of TCC1-10 x Immune/Stromal cells (1,000 permutations).
+  note: 基于 scimap spatial_interaction 1,000 次置换重算。
+- panel_key: sfig05/D
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5D
+  panel_letter: D
+  evidence_tier: proxy
+  template_id: pred-density-scatter
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/sfig05_d.py
+  input_tables:
+  - runs/step02_umap_gradients/figs5d_2d_density_cells_proxy.csv
+  - runs/step02_umap_gradients/figs5d_quadrant_proportions_proxy.csv
+  description: 2D marker intensity density contour quadrants with stacked proportion bar in invasive melanoma.
+  note: Panel 2 缺测 KI67/MITF，以 CCND1 vs MART1 作为增殖/谱系状态 proxy。
+- panel_key: sfig05/E
+  figure: Supp. Fig. 5
+  figure_slug: sfig05
+  panel: S5E
+  panel_letter: E
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Invasive melanoma CyCIF fluorescence microscopy (SOX10, S100B, CD11C, KI67, MITF).
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig06/A
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: scp-comp-pie
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/sfig06_a.py
+  input_tables:
+  - runs/step02_umap_gradients/figs6a_proliferation_markers_by_stage_proxy.csv
+  description: Proliferation and signaling marker positivity across progression stages.
+  note: Panel 2 缺测细胞周期蛋白 A2/B1/E2/pHH3/pRB，使用 CCND1/pS6/pERK 等 Panel 2 标志物作为 proxy。
+- panel_key: sfig06/B
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6B
+  panel_letter: B
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: IM vs EM CyCIF proliferation microscopy (DNA, SOX10, KI67, Cyclin D1/B1, pRB).
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig06/C
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6C
+  panel_letter: C
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/sfig06_c.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/gsea_running_es_curves.csv
+  - runs/step06_mrseq_deseq2/gsea_summary.csv
+  description: JECHLINGER_EPITHELIAL_TO_MESENCHYMAL_TRANSITION_UP GSEA running ES curve (IM vs EM).
+  note: 基于 PickSeq DESeq2 排序基因与 clusterProfiler::GSEA 重算。
+- panel_key: sfig06/D-table
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6D-table
+  panel_letter: D
+  evidence_tier: original_table
+  template_id: null
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig06_d.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs6d_mroi_counts_table.csv
+  description: mROI sampling counts summary table across histologic regions.
+  note: 汇总 PickSeq 实际采样计数并对照原文统计。
+- panel_key: sfig06/D-images
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6D-images
+  panel_letter: D
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: mROI spatial tissue microscopy thumbnails.
+  note: 纯显微缩略图，按 excluded_imaging 规则排除。
+- panel_key: sfig06/E
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6E
+  panel_letter: E
+  evidence_tier: proxy
+  template_id: resampling-metric-box
+  methods:
+  - differential-expression
+  script_path: code/panels/sfig06_e.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/deseq2_log2_norm_counts_symbol.csv
+  - data_small/mrseq_meta_small.csv
+  description: DDX58 (RIGI) expression comparison between IM and EM mROIs.
+  note: GeoMx 未公开，以 PickSeq mROI 数据代理。
+- panel_key: sfig06/F
+  figure: Supp. Fig. 6
+  figure_slug: sfig06
+  panel: S6F
+  panel_letter: F
+  evidence_tier: local_recompute
+  template_id: km-survival-risk-grid
+  methods:
+  - survival-prognosis-analysis
+  script_path: code/panels/sfig06_f.py
+  input_tables:
+  - runs/step07_network_survival/figs6f_tcga_km_curves.csv
+  - runs/step07_network_survival/figs6f_tcga_survival_stats.csv
+  description: 8-gene TCGA-SKCM (n=120) Kaplan-Meier survival curve grid with 95% CI, HR, and Logrank P-values.
+  note: 基于 UCSC Xena TCGA-SKCM 抽样 120 例重算（PMEL 映射自 SILV；MT-ND2 在 Legacy HiSeqV2 矩阵缺失）。
+- panel_key: sfig07/A
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7A
+  panel_letter: A
+  evidence_tier: proxy
+  template_id: fy-fancybar
+  methods:
+  - differential-expression
+  - immune-infiltration-tme
+  script_path: code/panels/sfig07_a.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs7a_ifng_proxy.csv
+  description: IFNG expression across MIS, bTIL, IB, and IM mROIs.
+  note: GeoMx 未公开，以 PickSeq 120 mROIs 数据代理。
+- panel_key: sfig07/B
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7B
+  panel_letter: B
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - gene-set-enrichment
+  script_path: code/panels/sfig07_b.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/gsea_running_es_curves.csv
+  - runs/step06_mrseq_deseq2/gsea_summary.csv
+  description: HALLMARK_IL6_JAK_STAT3_SIGNALING GSEA running ES curve (bTIL vs EM/IM).
+  note: 基于 PickSeq DESeq2 排序基因重算。
+- panel_key: sfig07/C
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7C
+  panel_letter: C
+  evidence_tier: proxy
+  template_id: pathway-zscore-heatmap
+  methods:
+  - gene-set-scoring
+  script_path: code/panels/sfig07_c.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs7c_jakstat_ssgsea_scores_proxy.csv
+  - data_small/mrseq_meta_small.csv
+  description: 4-pathway JAK-STAT ssGSEA score heatmap across bTIL, IB, and IM mROIs.
+  note: 以 PickSeq mROI ssGSEA 得分代理 GeoMx。
+- panel_key: sfig07/D-left
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7D-left
+  panel_letter: D
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: CyCIF fluorescence strip across tumor-stroma boundary.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
+- panel_key: sfig07/D-right
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7D-right
+  panel_letter: D
+  evidence_tier: local_recompute
+  template_id: null
+  methods:
+  - spatial-transcriptomics-microenvironment
+  script_path: code/panels/sfig07_d.py
+  input_tables:
+  - runs/step04_spatial_interaction/figs7d_boundary_intensity_gradient.csv
+  description: Tumor-stroma boundary spatial fluorescence intensity gradient (HLADPB1 [MHC-II], SOX10, CD11C).
+  note: 基于 MEL09_FOV_IM Panel 2 实测坐标与蛋白强度重算。
+- panel_key: sfig07/E
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7E
+  panel_letter: E
+  evidence_tier: local_recompute
+  template_id: fy-fancybar
+  methods:
+  - differential-expression
+  script_path: code/panels/sfig07_e.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs7e_irf1_bTIL_IB_IM.csv
+  description: IRF1 horizontal barplot across bTIL, IB, and IM mROIs.
+  note: 基于 PickSeq DESeq2 标准化表达重算。
+- panel_key: sfig07/F
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7F
+  panel_letter: F
+  evidence_tier: proxy
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/sfig07_f.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs7fg_mif_cd74_proxy.csv
+  description: MIF positivity fraction across mROI histologic sites.
+  note: Panel 2 缺测蛋白 MIF，以 PickSeq 转录组 MIF 表达阳性分箱作为 proxy。
+- panel_key: sfig07/G
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7G
+  panel_letter: G
+  evidence_tier: proxy
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/sfig07_g.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs7fg_mif_cd74_proxy.csv
+  description: CD74 positivity fraction across mROI histologic sites.
+  note: Panel 2 缺测蛋白 CD74，以 PickSeq 转录组 CD74 表达阳性分箱作为 proxy。
+- panel_key: sfig07/H
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7H
+  panel_letter: H
+  evidence_tier: proxy
+  template_id: pathway-zscore-heatmap
+  methods:
+  - immune-infiltration-tme
+  script_path: code/panels/sfig07_h.py
+  input_tables:
+  - runs/step06_mrseq_deseq2/figs7h_cxcl12_cxcr4_zscore_proxy.csv
+  - data_small/mrseq_meta_small.csv
+  description: CXCL12 and CXCR4 Z-score heatmap across all 120 mROIs.
+  note: GeoMx 未公开，以 PickSeq 120 mROIs 数据代理。
+- panel_key: sfig07/I-bars
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7I-bars
+  panel_letter: I
+  evidence_tier: local_recompute
+  template_id: cell-prop-flow-bar
+  methods:
+  - cell-proportion-composition
+  script_path: code/panels/sfig07_i.py
+  input_tables:
+  - runs/step04_spatial_interaction/fig7fg_compartment_cell_composition.csv
+  description: Epidermis and Dermis compartment cell composition horizontal stacked bars.
+  note: 基于 S3 Panel 2 连续 FOV 实测计数。
+- panel_key: sfig07/I-images
+  figure: Supp. Fig. 7
+  figure_slug: sfig07
+  panel: S7I-images
+  panel_letter: I
+  evidence_tier: excluded_imaging
+  template_id: null
+  methods: []
+  script_path: null
+  input_tables: []
+  description: Matched CyCIF fluorescence strip in Supp. Fig. 7I.
+  note: 纯荧光显微图像，按 excluded_imaging 规则排除。
