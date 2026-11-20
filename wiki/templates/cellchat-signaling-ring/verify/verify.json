@@ -1,23 +1,23 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-19T12:24:03.957426+00:00",
+  "timestamp": "2026-11-20T10:56:48.808728+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/cellchat-signaling-ring/spec.json": "b02b6f70bfa130880511ca9b539312880ebb9823f29169a5821b7da7234f2031",
-    "templates/cellchat-signaling-ring/code/render.R": "ece592e4cf1851a079c35aaeaf2cf073dfe1f4c6694e8d3656f395c30173ca53",
+    "templates/cellchat-signaling-ring/spec.json": "e6aae825531e3509a00e308c7341dc596a2efb9583489784d52f626ebabfbcf3",
+    "templates/cellchat-signaling-ring/code/render.R": "e3c1f414a9620022308a9bf2ce60fa8753c00c461b206fb5207cab3b8fddeba8",
     "inline/nodes#columns": "8133010fa3d728b3f3ac489aaccd257762a55a5c935b99795c6a67e5cb52712e",
     "inline/edges#columns": "8a0b98cc713c964dc1692c2ce3eca2be33d1ac90e67c27aa97b9fc1a6fd4306e",
-    "templates/cellchat-signaling-ring/example/ring_edges.csv": "62b89cfc30909cd918fbe0026d305e4462d007d4d02fdb9c51c3af674e91ef94",
-    "templates/cellchat-signaling-ring/example/ring_nodes.csv": "9a0435f3b295d7c740944770134772d3fdf4a11161693b9fe9c731edf46e4df3"
+    "templates/cellchat-signaling-ring/example/ring_edges.csv": "a200dc631f2610b0c67981b8261dd427142244f58c87c32d6ad59c3ed7a7b2a8",
+    "templates/cellchat-signaling-ring/example/ring_nodes.csv": "e48da2abc8657313db60de29235b4cc3e0d3f1c550d8919088780a5ad6a638ff"
   },
   "outputs": {
-    "png": "aeded972eb469491938031747f371a9241a0e0a753fac613313a66b8528a3f88",
-    "pdf": "57e25a060f1789e5d60fc9304c26f02191ae94223311a9f623bb65822f5781bb",
-    "svg": "ababf738d93872a7adbfdb3fc3c972e564ef12a29d7938f0302b86b9069d0deb"
+    "png": "67bde00ec679bde31792d9ec65f9a7792f9e60706128cf0ad328325d9d0eeae6",
+    "pdf": "60e295868af6cd6532539ea5db790807c69b30769484dffe2f9ce1936a85d514",
+    "svg": "6c32ab5a2c4bfe05c9369e6f8b2f646224747c28067b9af9b9c114602109774e"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
-    "controller_python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
     "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
   }
 }
