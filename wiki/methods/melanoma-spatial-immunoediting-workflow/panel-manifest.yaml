@@ -125,13 +125,13 @@ panels:
   figure_slug: fig01
   panel: 1I-right
   panel_letter: I
-  evidence_tier: unavailable_pixel_linescan
+  evidence_tier: excluded_imaging
   template_id: null
   methods: []
   script_path: null
   input_tables: []
-  description: 0-16 um pixel line-scan fluorescence intensity trace across 3D immune synapse.
-  note: S3 单细胞量化 CSV 不包含 60x 3D 光学切片逐像素线扫描强度，诚实标记为 unavailable_pixel_linescan。
+  description: 0-16 um pixel line-scan fluorescence intensity trace across 3D immune synapse (unavailable_pixel_linescan).
+  note: '[unavailable_pixel_linescan] S3 单细胞量化 CSV 不包含 60x 3D 光学切片逐像素线扫描强度，按 excluded_imaging 归类不重绘。'
 - panel_key: fig01/J
   figure: Fig. 1
   figure_slug: fig01
@@ -902,13 +902,13 @@ panels:
   figure_slug: sfig01
   panel: S1H
   panel_letter: H
-  evidence_tier: unavailable_pixel_linescan
+  evidence_tier: excluded_imaging
   template_id: null
   methods: []
   script_path: null
   input_tables: []
-  description: 60x 3D synapse 0-16 um pixel line-scan intensity profile.
-  note: S3 单细胞 CSV 无逐像素线扫描强度，诚实标记为 unavailable_pixel_linescan。
+  description: 60x 3D synapse 0-16 um pixel line-scan intensity profile (unavailable_pixel_linescan).
+  note: '[unavailable_pixel_linescan] S3 单细胞 CSV 无逐像素线扫描强度，按 excluded_imaging 归类不重绘。'
 - panel_key: sfig01/I
   figure: Supp. Fig. 1
   figure_slug: sfig01
