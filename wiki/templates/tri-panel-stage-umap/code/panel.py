@@ -56,7 +56,7 @@ def draw(fig, rect, tables, style):
     alpha = float(style.get("alpha", 0.78))
 
     gs_outer = fig.add_gridspec(1, 1, left=rect[0], bottom=rect[1], right=rect[0] + rect[2], top=rect[1] + rect[3])
-    sub_gs = GridSpecFromSubplotSpec(1, 3, subplot_spec=gs_outer[0, 0], width_ratios=[1.0, 0.92, 0.92], wspace=0.58)
+    sub_gs = GridSpecFromSubplotSpec(1, 3, subplot_spec=gs_outer[0, 0], width_ratios=[1.0, 0.92, 0.92], wspace=0.74)
 
     x = df["umap_1"].to_numpy(float)
     y = df["umap_2"].to_numpy(float)

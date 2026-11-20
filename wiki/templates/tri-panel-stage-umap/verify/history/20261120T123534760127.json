@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T12:25:00.563859+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/tri-panel-stage-umap/spec.json": "98362b9ae4d427d088f08bfb1479cc99f7fd0b5792ccc2b6f9f688df144606b1",
+    "templates/tri-panel-stage-umap/code/render.py": "dcac5fbf0e8ce587e5c76ad66185fa26e2af83cd013fe39fa44996abb9461284",
+    "templates/tri-panel-stage-umap/code/panel.py": "7cf61fac546cb149b2d5fd149f844a37a27dd9206c388cc8d152c2532e35132e",
+    "templates/tri-panel-stage-umap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/cells#columns": "3a7e3dfc7beb6cbbb520764ded7581fc45d379bb15c82e1d4a64c0065ee03334",
+    "templates/tri-panel-stage-umap/example/umap_tripanel_cells.csv": "af3b91fff41525d608925c845df825110a54b2202894d70c54e79d7c3ca6cfd8"
+  },
+  "outputs": {
+    "png": "e5cf2412e2cb9d9c0cf1b2f33d0f641ab2c3b5f9a4bbe4b004af8d3b32c56f69",
+    "pdf": "0bd21485d4ab391f109e75f6fbe0ab172400cd4248df2f72dff927be0da1577b",
+    "svg": "2cfdf9e37e3fecbac6a6e92fdceef62c8584c46fc7685cceca50eb986d4dcf42"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

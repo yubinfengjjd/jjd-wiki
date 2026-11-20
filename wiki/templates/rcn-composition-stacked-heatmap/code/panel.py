@@ -1,4 +1,5 @@
 """RCN cluster Z-score composite heatmap with column dendrogram and left/right stacked composition bars."""
+from matplotlib.cm import ScalarMappable
 import matplotlib.patches as mpatches
 from matplotlib.colors import LinearSegmentedColormap, Normalize
 from matplotlib.gridspec import GridSpecFromSubplotSpec
@@ -183,7 +184,7 @@ def draw(fig, rect, tables, style):
 
     sc_pos = ax_lsc.get_position()
     cb_ax = fig.add_axes([sc_pos.x0 + sc_pos.width * 0.22, sc_pos.y0 + 0.032, sc_pos.width * 0.56, 0.016])
-    sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
+    sm = ScalarMappable(cmap=cmap, norm=norm)
     cb = fig.colorbar(sm, cax=cb_ax, orientation="horizontal")
     cb.set_ticks([zmin, 0.0, zmax])
     cb.ax.xaxis.set_ticks_position("top")
