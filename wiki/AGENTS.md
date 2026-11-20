@@ -43,6 +43,7 @@
    - 常规单次检验（t 检验、Wilcoxon、卡方等）写进所属方法或图注，不单独成页。
 3. **二查模板库与画风归属**：
    - 已有相同图元与风格直接复用；若引入新的顶刊风格或功能变体，通过 `scaffold-template <slug> --native --primary-method <method>` 新建在 `wiki/templates/<slug>/`，标明 `style_tier`（`default` 或 `variant`）与 `journal_style`，并在 `## 知识关联检查` 写明与同方法下已有模板的差异与切换关系。
+   - **同论文同质化去重 + 输出槽位衍生风格归类铁律（v5.5+）**：同一篇论文内部视觉同质的多个 Panel（相同图元结构、配色体系与数据映射逻辑，仅基因/分组/样本子集不同）**必须归并提炼为 1 套该论文代表性画风模板**，既避免模板库同质化膨胀，也不丢失该顶刊独有视觉样式；每套衍生风格模板必须挂入其对应的输出槽位 `(primary_method, chart_types[0])`（若槽位已有 `Standard` 默认模板则标 `style_tier: variant`，仅空槽位标 `default`，同时显式填写 `journal_style`），并对齐同槽位 `default` 模板的规范受控英文 `tags`（`config.taxonomy` 规范键如 `single-cell`、`transcriptomics`，避免中英文别名分裂导致筛选与画风切换器割裂），在论文 `panel-manifest.yaml` 中将所有同质 Panel 统一指向该 `template_id`。
    - 参数化写好 `spec.json`、`runtime.json`、`code/render.R`（或 `.py`）与 `example/` 后，严格逐个串行执行 `verify-template <slug>`，人工目视核对成图无误后方可交付；同时通过 `rwiki map-method` 与方法页 `figure_relations` 建立双向语义关系。
 4. **三查思路分支树（Playbook）与四记案例走线卡**：
    - 优先复用并挂载到已有领域分支树（`wiki/scenarios/*.md`）；仅当文献引入新组学或新多上游汇合路线时，长出新的专题子树并在节点声明 `requires: [...]`。
@@ -142,7 +143,7 @@
 - **附加材料与全图覆盖**：`fetch --supp` 统一纳管 Supplementary PDF/DOCX/XLSX/CSV，`parse` 生成 `step_supp_map.json` 捋顺「正文步骤 ↔ 附加材料 ↔ 开源脚本 ↔ 图面板」对照；`plan` 默认包含全部可复刻 Main Figures 与生信 Supplementary Figures，**明确排除三类非计算面板**：湿实验（`excluded_wet_lab`）、非计算研究设计/机制模式示意图（`excluded_schematic`，如 Fig 1A 队列流程示意）与纯显微/IHC/mIF 影像（`excluded_imaging`），禁止为示意图或纯影像硬画通用模板。
 - **1:1 视觉忠实度硬门禁**：禁止脱离原图与作者源码“各自画一张能出图的版本”。每张复刻图必须满足五项硬边界方可验收：① **精确采样原图/作者源码十六进制配色**（禁止随意替换调色板）；② **1:1 匹配原图整图高宽比与各 Panel 面积占比**；③ **图元类型、坐标形式（如带框相关性矩阵、双轴连线、无轴箭头 UMAP）与图例位置严格对齐原图**；④ **逐张人工看图比对 `side_by_side.png`**，凡出现比例失调、散点呈孤立针孔点、配色偏差或标签裁剪，**必须原地打回重修，禁止带瑕疵进入下一张或入库**；⑤ **单进程串行执行**（一步一跑、跑完即释放内存，严禁并发多进程挤爆本机内存）。
 - **两层资产规范、真实数据 `example/` 硬铁律与方法–可视化–课题思路闭环**：
-  1. **论文复刻两层资产规范**：每篇复刻论文必须在 `methods/<workflow-id>/` 下产出原子级 `panel-manifest.yaml`（采用 `figXX/A`、`sfig03/B` 键，包含 `figure_slug`、`panel_letter`、`script_path`、`input_tables`、`description`、`template_id`）、`code/panels/` 逐计算 Panel 独立可运行 CLI 脚本与 `panel-receipts.json`；同时按独立构图精选提炼 `wiki/templates/<slug>/` 跨论文通用模板（不再新建 `recipes/` 条目）；
+  1. **论文复刻两层资产规范 + 同质化归并铁律**：每篇复刻论文必须在 `methods/<workflow-id>/` 下产出原子级 `panel-manifest.yaml`（采用 `figXX/A`、`sfig03/B` 键，包含 `figure_slug`、`panel_letter`、`script_path`、`input_tables`、`description`、`template_id`）、`code/panels/` 逐计算 Panel 独立可运行 CLI 脚本与 `panel-receipts.json`；同时按**同论文同质化去重**原则，将同论文内视觉同质的多个 Panel 归并提炼为 **1 套**代表性 `wiki/templates/<slug>/` 跨论文模板（不再新建 `recipes/` 条目），挂入对应 `(primary_method, chart_types[0])` 输出槽位（已有 `Standard`/默认模板则标 `style_tier: variant`，仅空槽位标 `default`），显式声明 `journal_style`、对齐同槽位受控英文 `tags`，并将 `panel-manifest.yaml` 中的同质 Panel 统一指向该 `template_id`；
   2. **真实数据 `example/` 硬铁律**：从复刻论文提炼的 `wiki/templates/<slug>/`，其 `example/*.csv` 与 `code/render.*` 必须直接来自该论文对应 Panel 的真实数据与精调绘图代码（严禁用随机高斯团块或假 H&E 方块应付 `verify-template`）；
   3. **计算 Panel 覆盖与三类排除**：逐张盘点全篇 Main + Supp Figure 的全部计算面板并落盘逐 Panel 独立脚本与模板归属；`excluded_schematic`、`excluded_imaging` 与 `excluded_wet_lab` 面板在 `panel-manifest.yaml` 中不要求 `template_id` 与 `script_path`；
   4. **方法 ↔ 可视化语义关系显式入库**：必须按研究推进顺序，把每个分析方法与对应单图模板写入规范方法页的 `figure_relations`、`next_steps` 及 `method-map.json`（`rwiki map-method`），严禁停留在“暂无已记录关系”；

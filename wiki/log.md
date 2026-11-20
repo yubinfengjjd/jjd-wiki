@@ -1725,3 +1725,5 @@
 ## [2026-11-20 15:48 UTC] acceptance check templates/coexpr-hub-radial-network
 
 ## [2026-11-20 15:49 UTC] acceptance check templates/km-survival-risk-grid
+
+## [2026-11-20 17:25 UTC] scaffold native template rcn-horizontal-bar-pie
