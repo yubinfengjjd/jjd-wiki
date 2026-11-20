@@ -1637,3 +1637,5 @@
 ## [2026-11-19 16:43 UTC] acceptance check methods/immune-infiltration-tme
 
 ## [2026-11-20 10:43 UTC] verify spatial-he-deconv-panel
+
+## [2026-11-20 10:46 UTC] verify spatial-coexpr-multichannel

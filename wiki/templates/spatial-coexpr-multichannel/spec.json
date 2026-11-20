@@ -22,12 +22,12 @@
     "channel_mode": "auto",
     "channel_colors": ["#D73027", "#31A354", "#3B7EB6", "#8856A7"],
     "invert_y": true,
-    "ncol": 2,
-    "point_size": 0.95,
+    "ncol": 4,
+    "point_size": 0.65,
     "quantile_cap": 0.99,
     "dpi": 300,
-    "width_in": 7.6,
-    "height_in": 6.2
+    "width_in": 8.4,
+    "height_in": 4.4
   },
   "parameters": {
     "channel_mode": {
@@ -39,7 +39,7 @@
     "ncol": {
       "type": "number",
       "label": "区域分面列数",
-      "default": 2,
+      "default": 4,
       "min": 1,
       "max": 4,
       "step": 1
@@ -47,7 +47,7 @@
     "point_size": {
       "type": "number",
       "label": "通道微点大小",
-      "default": 0.95,
+      "default": 0.65,
       "min": 0.4,
       "max": 2.5,
       "step": 0.05
