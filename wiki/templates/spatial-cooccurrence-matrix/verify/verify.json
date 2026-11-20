@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:42.864161+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/spatial-cooccurrence-matrix/spec.json": "0392311481b87eeb0db9ea1eafdb0fc519ce3a9250752249e564dc4909ba5c1d",
+    "templates/spatial-cooccurrence-matrix/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/spatial-cooccurrence-matrix/code/panel.py": "8278d30d7240e92ea05bc8a3203edda1252c590257ecc41b29211f699584a8f4",
+    "templates/spatial-cooccurrence-matrix/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/cooccurrence#columns": "c17442ea5a0ff3f819c73de0fc7644673d40cfb2294c17388730d53510d741d2",
+    "templates/spatial-cooccurrence-matrix/example/spatial_cooccurrence_states.csv": "d8700ca2192835ff8e05556368f5bf4d7bcf13755532b3592b7e6399400f4fb8"
+  },
+  "outputs": {
+    "png": "847bd333627a3d705969b7d14069bc1b8c97974f66e4f815c09260c57b522c26",
+    "pdf": "9f52e0a1325f29f6dc329855a6b763f9053bdc066dff65135970bfa0dec056e6",
+    "svg": "74fb5c72654e832c711d7603058df92d897b928afb4651f90044191692058ee9"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

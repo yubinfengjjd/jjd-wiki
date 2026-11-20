@@ -2,7 +2,7 @@
 type: template
 id: group-hull-pca
 title: 微区域样本半透明凸包包络 PCA 图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/dimensionality-reduction

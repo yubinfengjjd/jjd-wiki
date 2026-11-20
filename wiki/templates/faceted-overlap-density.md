@@ -2,7 +2,7 @@
 type: template
 id: faceted-overlap-density
 title: 多基因分面双组半透明重叠核密度图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-scoring
@@ -57,12 +57,12 @@ favorite: false
 
 ### expr（gene_group_density_long.csv）：多基因两组比较对数表达长表（gene, sample_id, group, log2_expr） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| gene | str | 必需 | 基因或签名名称（分面标题） |
-| sample_id | str | 必需 | 样本唯一标识 |
-| group | str | 必需 | 比较分组（如 MIS vs EM_and_IM） |
-| log2_expr | float | 必需 | 对数归一化表达值 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| gene | str | 基因或签名名称（分面标题） |
+| sample_id | str | 样本唯一标识 |
+| group | str | 比较分组（如 MIS vs EM_and_IM） |
+| log2_expr | float | 对数归一化表达值 |
 
 ### 可覆盖的 style
 

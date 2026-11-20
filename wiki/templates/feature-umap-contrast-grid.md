@@ -2,7 +2,7 @@
 type: template
 id: feature-umap-contrast-grid
 title: 高对比度连续特征 UMAP 网格
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-type-annotation

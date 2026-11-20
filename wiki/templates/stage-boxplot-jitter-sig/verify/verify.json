@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:48:53.271391+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/stage-boxplot-jitter-sig/spec.json": "2a60b306845ea85ba0a8492a12d7b0ab81338615268c68a7a5953026c6e7197e",
+    "templates/stage-boxplot-jitter-sig/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/stage-boxplot-jitter-sig/code/panel.py": "3588586be85725e4662991ca3701ad3d23ea1af61e069cf02665465222294480",
+    "templates/stage-boxplot-jitter-sig/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/data#columns": "b58a5c335e986e047cfad654386dd7da8c5842a339fa0f67b74a0bd6c96675f3",
+    "templates/stage-boxplot-jitter-sig/example/stage_proportion_points.csv": "e2a87e62282183a716c1b76c1f7ab53a9c76f04563fedddaab291dfbacdd3f48"
+  },
+  "outputs": {
+    "png": "cea38706c210a04f1b0195a545f9a3c68cf856cc7003f4fda96e98b77d89e913",
+    "pdf": "0445a7dc8df9168ba3a1dafae9e840735a76d3653d78c69de2e4eea4fd4ef7ae",
+    "svg": "49f9483aebd56986f88b8c2c2bc771285b3a3194b01c40d4da4c7d1b79bc4383"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

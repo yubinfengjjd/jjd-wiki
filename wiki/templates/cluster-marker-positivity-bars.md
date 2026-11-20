@@ -2,7 +2,7 @@
 type: template
 id: cluster-marker-positivity-bars
 title: 多亚群多标志物水平阳性率条形矩阵
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition

@@ -4,7 +4,8 @@ workflow_id: breast-cancer-stromal-tme-workflow
 doi: 10.1038/s41698-026-01718-1
 journal: npj Precision Oncology
 year: 2026
-license: CC-BY-NC-ND-4.0 (article); upstream GitHub code unspecified (personal academic reference only)
+license: CC-BY-NC-ND-4.0 (article); upstream GitHub code unspecified (personal academic
+  reference only)
 gallery_entry: 2026-11-19-cai-stromal-tme
 panels:
 - panel_key: fig01/A
@@ -17,8 +18,8 @@ panels:
   methods: []
   script_path: null
   input_tables: []
-  description: Study design schematic for multi-cohort scRNA-seq and Visium spatial transcriptomics integration (excluded
-    non-computational schematic).
+  description: Study design schematic for multi-cohort scRNA-seq and Visium spatial
+    transcriptomics integration (excluded non-computational schematic).
   note: 按 v5.4 规则排除非计算流程示意图（保留历史已验收整图 fig01_replica.png 不重绘）。
 - panel_key: fig01/B
   figure: Fig. 1
@@ -33,15 +34,20 @@ panels:
   input_tables:
   - runs/step01_harmony_de/umap_all.csv
   - extracted/pages/main_p03.png
-  description: Major stromal lineage UMAP (Fib, EC, Mural cell) with numbered centroids on downsampled scRNA object.
-  note: Major stromal lineage UMAP on downsampled scRNA object (1,800 cells x 289 genes).
+  description: Major stromal lineage UMAP (Fib, EC, Mural cell) with numbered centroids
+    on downsampled scRNA object.
+  note: Major stromal lineage UMAP on downsampled scRNA object (1,800 cells x 289
+    genes).
+  template_disposition: reuse_identical
+  disposition_note: 原面板为标准离散类别着色单细胞 UMAP（含质心编号/队列图例与左下 L 形坐标箭头），与既有 Standard 默认模板
+    scrna-celltype-umap 视觉编码及版式高度一致，直接复用无需新建变体。
 - panel_key: fig01/C
   figure: Fig. 1
   figure_slug: fig01
   panel: 1C
   panel_letter: C
   evidence_tier: local_recompute
-  template_id: scrna-feature-umap-grid
+  template_id: feature-umap-contrast-grid
   methods:
   - cell-type-annotation
   script_path: code/panels/fig01_c.R
@@ -49,9 +55,12 @@ panels:
   - runs/step01_harmony_de/umap_all.csv
   - data_small/scrna_stromal_small.qs
   - extracted/pages/main_p03.png
-  description: 9 canonical stromal lineage marker expression feature UMAPs (COL1A1, COL1A2, DCN, PECAM1, VWF, CD34, ACTA2,
-    PDGFRB, MCAM).
+  description: 9 canonical stromal lineage marker expression feature UMAPs (COL1A1,
+    COL1A2, DCN, PECAM1, VWF, CD34, ACTA2, PDGFRB, MCAM).
   note: 9 canonical lineage marker feature UMAPs.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 feature-umap-contrast-grid（高对比度置顶连续特征/功能模块评分
+    UMAP 多面板网格 + 右侧独立 Min/Max 色标）。
 - panel_key: fig01/D
   figure: Fig. 1
   figure_slug: fig01
@@ -67,15 +76,18 @@ panels:
   - runs/step01_harmony_de/umap_ec.csv
   - runs/step01_harmony_de/umap_mural.csv
   - extracted/pages/main_p03.png
-  description: 36 stromal subclusters across Fib, EC, and Mural compartments with dashed lineage hulls and 4-column legend.
+  description: 36 stromal subclusters across Fib, EC, and Mural compartments with
+    dashed lineage hulls and 4-column legend.
   note: 36 stromal subclusters across Fib/EC/Mural with dashed lineage hulls.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 stromal-hull-umap。
 - panel_key: fig02/A
   figure: Fig. 2
   figure_slug: fig02
   panel: 2A
   panel_letter: A
   evidence_tier: local_recompute
-  template_id: scrna-celltype-umap
+  template_id: split-condition-umap
   methods:
   - cell-type-annotation
   script_path: code/panels/fig02_a.R
@@ -84,21 +96,28 @@ panels:
   - extracted/pages/main_p03.png
   description: Fibroblast 14-subcluster UMAP split by Adjacent normal tissue vs Tumor.
   note: Fibroblast Normal vs Tumor split UMAP.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 split-condition-umap（Normal vs Tumor
+    双条件并排分面 UMAP，灰色全集流形衬底 + 当前条件高亮 + 底部多列彩点图例）。
 - panel_key: fig02/B
   figure: Fig. 2
   figure_slug: fig02
   panel: 2B
   panel_letter: B
   evidence_tier: local_recompute
-  template_id: scrna-feature-umap-grid
+  template_id: feature-umap-contrast-grid
   methods:
   - gene-set-scoring
   script_path: code/panels/fig02_b.R
   input_tables:
   - runs/step01_harmony_de/umap_fib.csv
   - extracted/pages/main_p03.png
-  description: 4 CAF functional module scores (lpCAF, mCAF, tCAF, ifnCAF) projected on fibroblast UMAP.
+  description: 4 CAF functional module scores (lpCAF, mCAF, tCAF, ifnCAF) projected
+    on fibroblast UMAP.
   note: 4 CAF functional module scores projected on UMAP.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 feature-umap-contrast-grid（高对比度置顶连续特征/功能模块评分
+    UMAP 多面板网格 + 右侧独立 Min/Max 色标）。
 - panel_key: fig02/C
   figure: Fig. 2
   figure_slug: fig02
@@ -114,8 +133,11 @@ panels:
   - runs/step02_progeny_roe_cox/roe_cox_fib.csv
   - data_small/moesm/cox_tcga.csv
   - data_small/moesm/cox_inhouse.csv
-  description: Fibroblast subcluster tissue/subtype Ro/e combined with TCGA/in-house Cox HR.
+  description: Fibroblast subcluster tissue/subtype Ro/e combined with TCGA/in-house
+    Cox HR.
   note: Published MOESM5 TCGA/in-house Cox HR combined with tissue/subtype Ro/e.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 roe-cox-heatmap。
 - panel_key: fig02/D
   figure: Fig. 2
   figure_slug: fig02
@@ -132,8 +154,11 @@ panels:
   - runs/step02_progeny_roe_cox/chemokine_zscore_fib.csv
   - data_small/moesm/deg_fib.csv
   - data_small/scrna_stromal_small.qs
-  description: Fibroblast chemokine, MHC-I, and MHC-II Z-score heatmap overlaid with published DEG open circles.
+  description: Fibroblast chemokine, MHC-I, and MHC-II Z-score heatmap overlaid with
+    published DEG open circles.
   note: Fib chemokine/MHC Z-score heatmap with published DEG markers.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pathway-zscore-heatmap。
 - panel_key: fig02/E
   figure: Fig. 2
   figure_slug: fig02
@@ -148,6 +173,8 @@ panels:
   - runs/step02_progeny_roe_cox/progeny_fib.csv
   description: PROGENy 14-pathway activity Z-score heatmap across 14 fibroblast subclusters.
   note: PROGENy 14-pathway activity Z-score across 14 Fib subclusters.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pathway-zscore-heatmap。
 - panel_key: fig02/F
   figure: Fig. 2
   figure_slug: fig02
@@ -161,8 +188,11 @@ panels:
   input_tables:
   - runs/step04_trajectory/traj_fib.csv
   - extracted/pages/main_p04.png
-  description: Fibroblast Diffusion Map (DC_1 vs DC_2) colored by 14 subclusters with numbered centroids and trajectory guide.
+  description: Fibroblast Diffusion Map (DC_1 vs DC_2) colored by 14 subclusters with
+    numbered centroids and trajectory guide.
   note: Fibroblast DiffusionMap manifold with cluster trajectory guide.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig02/G
   figure: Fig. 2
   figure_slug: fig02
@@ -177,8 +207,11 @@ panels:
   - runs/step01_harmony_de/umap_fib.csv
   - runs/step04_trajectory/traj_fib.csv
   - extracted/pages/main_p03.png
-  description: Fibroblast DPT pseudotime differentiation state projected on UMAP with directed cluster median guides.
+  description: Fibroblast DPT pseudotime differentiation state projected on UMAP with
+    directed cluster median guides.
   note: Fibroblast DPT pseudotime on UMAP with cluster median arrow guides.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig02/H
   figure: Fig. 2
   figure_slug: fig02
@@ -193,8 +226,11 @@ panels:
   - runs/step01_harmony_de/umap_fib.csv
   - runs/step04_trajectory/traj_fib.csv
   - extracted/pages/main_p03.png
-  description: Fibroblast Slingshot pseudotime differentiation state projected on UMAP with MST cluster-center guide.
+  description: Fibroblast Slingshot pseudotime differentiation state projected on
+    UMAP with MST cluster-center guide.
   note: Fibroblast Slingshot pseudotime on UMAP with cluster-center MST guide.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig02/I
   figure: Fig. 2
   figure_slug: fig02
@@ -209,8 +245,11 @@ panels:
   input_tables:
   - runs/step04_trajectory/traj_fib.csv
   - extracted/pages/main_p04.png
-  description: Fibroblast Diffusion Map overlaid with dominant 4 CAF module scores (mCAF, ifnCAF, iCAF, lpCAF).
+  description: Fibroblast Diffusion Map overlaid with dominant 4 CAF module scores
+    (mCAF, ifnCAF, iCAF, lpCAF).
   note: Fibroblast DiffusionMap dominant 4 CAF module overlay.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig02/J
   figure: Fig. 2
   figure_slug: fig02
@@ -223,8 +262,12 @@ panels:
   script_path: code/panels/fig02_j.R
   input_tables:
   - runs/step03_spatial/st_spots_fig2j.csv
-  description: Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (raw scores and relative weights).
-  note: Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (fallback for RCTD).
+  description: Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (raw scores
+    and relative weights).
+  note: Zenodo CAA_ST single-slide 14-Fib signature weighting proxy (fallback for
+    RCTD).
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: fig02/K
   figure: Fig. 2
   figure_slug: fig02
@@ -239,6 +282,8 @@ panels:
   - runs/step05_crosstalk/fig2k_fib_malignant_lr.csv
   description: MOESM8 Fib-to-malignant CellChat L-R probability bubble matrix.
   note: MOESM8 Fib-to-malignant CellChat L-R probability bubble matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 lr-bubble-matrix。
 - panel_key: fig03/A
   figure: Fig. 3
   figure_slug: fig03
@@ -252,8 +297,11 @@ panels:
   input_tables:
   - data_small/moesm/corr_bulk.csv
   - extracted/pages/main_p06.png
-  description: 35x35 clustered bulk TME correlation matrix with diagonal module boxes and staggered labels.
+  description: 35x35 clustered bulk TME correlation matrix with diagonal module boxes
+    and staggered labels.
   note: 'Proxy: 原图 main_p06.png 色标估读 + 发表 MOESM7 C10_lpFib_ABCA8 列精确相关系数（corr_bulk.csv）。'
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 clustered-corr-boxes。
 - panel_key: fig03/B
   figure: Fig. 3
   figure_slug: fig03
@@ -266,8 +314,11 @@ panels:
   script_path: code/panels/fig03_b.R
   input_tables:
   - runs/step03_spatial/st_spots_fig3be.csv
-  description: CAA_ST 4-region Tumor/ABCA8+ lpFib/CD8 T/exhausted T spatial signature proxy.
+  description: CAA_ST 4-region Tumor/ABCA8+ lpFib/CD8 T/exhausted T spatial signature
+    proxy.
   note: CAA_ST 4-region Tumor/ABCA8+ lpFib/CD8 T/exhausted T spatial signature proxy.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: fig03/C
   figure: Fig. 3
   figure_slug: fig03
@@ -280,8 +331,11 @@ panels:
   script_path: code/panels/fig03_c.R
   input_tables:
   - runs/step05_crosstalk/fig3c_checkpoint_box.csv
-  description: 8 immune checkpoint genes across ABCA8 high vs low quartiles in CAA_ST (sqrt y-axis, P97 cap).
+  description: 8 immune checkpoint genes across ABCA8 high vs low quartiles in CAA_ST
+    (sqrt y-axis, P97 cap).
   note: 8 immune checkpoints across ABCA8 high vs low quartiles.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 checkpoint-group-boxplot。
 - panel_key: fig03/D
   figure: Fig. 3
   figure_slug: fig03
@@ -298,6 +352,8 @@ panels:
   - data_small/moesm/cellphone_pvalue.csv
   description: MOESM8 Fib-T immunosuppressive L-R bipartite CellPhoneDB bubble plot.
   note: MOESM8 Fib-T immunosuppressive L-R bipartite bubble plot.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 lr-bipartite-bubble。
 - panel_key: fig03/E
   figure: Fig. 3
   figure_slug: fig03
@@ -312,8 +368,11 @@ panels:
   - runs/step03_spatial/st_spots_fig3be.csv
   - data_small/CAA_ST-umap.qs
   - data_small/st/caa_st_scored.qs
-  description: CAA_ST C10_lpFib_ABCA8 / T-cell joint-high zone and LGALS3/HAVCR2/CD86/CTLA4 spatial co-localization.
+  description: CAA_ST C10_lpFib_ABCA8 / T-cell joint-high zone and LGALS3/HAVCR2/CD86/CTLA4
+    spatial co-localization.
   note: CAA_ST co-localization with LGALS3 substituting missing LGALS9 in slide matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-coexpr-multichannel。
 - panel_key: fig03/F
   figure: Fig. 3
   figure_slug: fig03
@@ -336,7 +395,8 @@ panels:
   methods: []
   script_path: null
   input_tables: []
-  description: Flow cytometry quantification of T-cell cytotoxicity/exhaustion (excluded wet-lab experiment).
+  description: Flow cytometry quantification of T-cell cytotoxicity/exhaustion (excluded
+    wet-lab experiment).
   note: 湿实验排除：流式细胞术（Flow cytometry）实验。
 - panel_key: fig03/H
   figure: Fig. 3
@@ -348,7 +408,8 @@ panels:
   methods: []
   script_path: null
   input_tables: []
-  description: Human breast cancer multiplex immunofluorescence (mIF) staining (excluded wet-lab experiment).
+  description: Human breast cancer multiplex immunofluorescence (mIF) staining (excluded
+    wet-lab experiment).
   note: 湿实验排除：人乳腺癌组织多重免疫荧光（mIF）实验。
 - panel_key: fig04/A
   figure: Fig. 4
@@ -356,7 +417,7 @@ panels:
   panel: 4A
   panel_letter: A
   evidence_tier: local_recompute
-  template_id: scrna-celltype-umap
+  template_id: split-condition-umap
   methods:
   - cell-type-annotation
   script_path: code/panels/fig04_a.R
@@ -365,13 +426,16 @@ panels:
   - extracted/pages/main_p03.png
   description: EC 12 subclusters UMAP split by Adjacent normal tissue vs Tumor.
   note: EC Normal vs Tumor split UMAP.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 split-condition-umap（Normal vs Tumor
+    双条件并排分面 UMAP，灰色全集流形衬底 + 当前条件高亮 + 底部多列彩点图例）。
 - panel_key: fig04/B
   figure: Fig. 4
   figure_slug: fig04
   panel: 4B
   panel_letter: B
   evidence_tier: local_recompute
-  template_id: scrna-feature-umap-grid
+  template_id: feature-umap-contrast-grid
   methods:
   - cell-type-annotation
   script_path: code/panels/fig04_b.R
@@ -379,8 +443,12 @@ panels:
   - runs/step01_harmony_de/umap_ec.csv
   - data_small/scrna_stromal_small.qs
   - extracted/pages/main_p03.png
-  description: 4 canonical endothelial markers (SEMA3G, ACKR1, RGCC, LYVE1) projected on EC UMAP.
+  description: 4 canonical endothelial markers (SEMA3G, ACKR1, RGCC, LYVE1) projected
+    on EC UMAP.
   note: 4 EC marker feature UMAPs.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 feature-umap-contrast-grid（高对比度置顶连续特征/功能模块评分
+    UMAP 多面板网格 + 右侧独立 Min/Max 色标）。
 - panel_key: fig04/C
   figure: Fig. 4
   figure_slug: fig04
@@ -394,8 +462,11 @@ panels:
   script_path: code/panels/fig04_c.R
   input_tables:
   - runs/step02_progeny_roe_cox/roe_cox_ec.csv
-  description: EC 12 subclusters tissue/subtype Ro/e combined with MOESM5 TCGA/in-house Cox HR.
+  description: EC 12 subclusters tissue/subtype Ro/e combined with MOESM5 TCGA/in-house
+    Cox HR.
   note: EC MOESM5 Cox HR + tissue/subtype Ro/e heatmap.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 roe-cox-heatmap。
 - panel_key: fig04/D
   figure: Fig. 4
   figure_slug: fig04
@@ -412,8 +483,11 @@ panels:
   - runs/step02_progeny_roe_cox/chemokine_zscore_ec.csv
   - data_small/moesm/deg_ec.csv
   - data_small/scrna_stromal_small.qs
-  description: EC Angiogenesis/Notch, Chemokines, MHC-I/II, and ROBO/UNC5 Z-score heatmap with DEG circles.
+  description: EC Angiogenesis/Notch, Chemokines, MHC-I/II, and ROBO/UNC5 Z-score
+    heatmap with DEG circles.
   note: EC functional module Z-score heatmap with published DEG markers.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pathway-zscore-heatmap。
 - panel_key: fig04/E
   figure: Fig. 4
   figure_slug: fig04
@@ -428,6 +502,8 @@ panels:
   - runs/step02_progeny_roe_cox/progeny_ec.csv
   description: PROGENy 14-pathway activity Z-score heatmap across 12 EC subclusters.
   note: EC PROGENy 14-pathway Z-score heatmap.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pathway-zscore-heatmap。
 - panel_key: fig04/F
   figure: Fig. 4
   figure_slug: fig04
@@ -441,8 +517,11 @@ panels:
   input_tables:
   - runs/step04_trajectory/traj_ec.csv
   - extracted/pages/main_p07.png
-  description: EC V-shaped Diffusion Map colored by 12 subclusters (with branch arrows) and DPT pseudotime.
+  description: EC V-shaped Diffusion Map colored by 12 subclusters (with branch arrows)
+    and DPT pseudotime.
   note: EC V-shaped DiffusionMap and DPT pseudotime.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig04/G
   figure: Fig. 4
   figure_slug: fig04
@@ -459,6 +538,8 @@ panels:
   - extracted/pages/main_p03.png
   description: EC Slingshot differentiation state projected on EC UMAP.
   note: EC Slingshot pseudotime projected on UMAP.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig04/H
   figure: Fig. 4
   figure_slug: fig04
@@ -475,6 +556,8 @@ panels:
   - extracted/pages/main_p07.png
   description: EC Diffusion Map overlaid with Stalk-like vs Tip-like signature scores.
   note: EC DiffusionMap Stalk-like vs Tip-like dominant score overlay.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig04/I
   figure: Fig. 4
   figure_slug: fig04
@@ -487,8 +570,12 @@ panels:
   script_path: code/panels/fig04_i.R
   input_tables:
   - runs/step05_crosstalk/fig4i_ec_stromal_counts.csv
-  description: MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with marginal bars.
-  note: MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with marginal bars.
+  description: MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with
+    marginal bars.
+  note: MOESM8 EC-stromal 12x36 CellPhoneDB interaction count heatmap with marginal
+    bars.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 cellchat-count-heatmap。
 - panel_key: fig04/J
   figure: Fig. 4
   figure_slug: fig04
@@ -503,6 +590,8 @@ panels:
   - runs/step03_spatial/st_spots_fig4j.csv
   description: CAA_ST 6-region TipEC/VenEC/emtEC spatial signature grid.
   note: CAA_ST 6-region TipEC/VenEC/emtEC spatial signature grid.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: fig04/K
   figure: Fig. 4
   figure_slug: fig04
@@ -515,15 +604,18 @@ panels:
   script_path: code/panels/fig04_k.R
   input_tables:
   - runs/step05_crosstalk/metab_fig4k_ec.csv
-  description: EC Top 20 KEGG metabolic pathway enrichment lollipop dotplot (MOESM6 KEGG + scRNA proxy).
+  description: EC Top 20 KEGG metabolic pathway enrichment lollipop dotplot (MOESM6
+    KEGG + scRNA proxy).
   note: 'Proxy: 基于 MOESM6 KEGG 富集与小规模 scRNA 代谢代理生成（不含作者 scMetabolism logFC 原始打分）。'
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 metabolism-lollipop-dotplot。
 - panel_key: fig05/A
   figure: Fig. 5
   figure_slug: fig05
   panel: 5A
   panel_letter: A
   evidence_tier: local_recompute
-  template_id: scrna-celltype-umap
+  template_id: split-condition-umap
   methods:
   - cell-type-annotation
   script_path: code/panels/fig05_a.R
@@ -532,13 +624,16 @@ panels:
   - extracted/pages/main_p03.png
   description: Mural 10 subclusters UMAP split by Adjacent normal tissue vs Tumor.
   note: Mural Normal vs Tumor split UMAP.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 split-condition-umap（Normal vs Tumor
+    双条件并排分面 UMAP，灰色全集流形衬底 + 当前条件高亮 + 底部多列彩点图例）。
 - panel_key: fig05/B
   figure: Fig. 5
   figure_slug: fig05
   panel: 5B
   panel_letter: B
   evidence_tier: local_recompute
-  template_id: scrna-feature-umap-grid
+  template_id: feature-umap-contrast-grid
   methods:
   - cell-type-annotation
   - gene-set-scoring
@@ -548,8 +643,12 @@ panels:
   - runs/step04_trajectory/traj_mural.csv
   - data_small/scrna_stromal_small.qs
   - extracted/pages/main_p03.png
-  description: Mural Angiogenic/Quiescent signatures and ACTA2/RGS5 marker feature UMAPs.
+  description: Mural Angiogenic/Quiescent signatures and ACTA2/RGS5 marker feature
+    UMAPs.
   note: Mural 4 feature UMAPs (signatures + markers).
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 feature-umap-contrast-grid（高对比度置顶连续特征/功能模块评分
+    UMAP 多面板网格 + 右侧独立 Min/Max 色标）。
 - panel_key: fig05/C
   figure: Fig. 5
   figure_slug: fig05
@@ -563,8 +662,11 @@ panels:
   script_path: code/panels/fig05_c.R
   input_tables:
   - runs/step02_progeny_roe_cox/roe_cox_mural.csv
-  description: Mural 10 subclusters tissue/subtype Ro/e combined with MOESM5 TCGA/in-house Cox HR.
+  description: Mural 10 subclusters tissue/subtype Ro/e combined with MOESM5 TCGA/in-house
+    Cox HR.
   note: Mural MOESM5 Cox HR + tissue/subtype Ro/e heatmap.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 roe-cox-heatmap。
 - panel_key: fig05/D
   figure: Fig. 5
   figure_slug: fig05
@@ -581,8 +683,11 @@ panels:
   - runs/step02_progeny_roe_cox/chemokine_zscore_mural.csv
   - data_small/moesm/deg_mural.csv
   - data_small/scrna_stromal_small.qs
-  description: Mural chemokine, MHC-I, and MHC-II Z-score heatmap overlaid with published DEG markers.
+  description: Mural chemokine, MHC-I, and MHC-II Z-score heatmap overlaid with published
+    DEG markers.
   note: Mural functional module Z-score heatmap with DEGs.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pathway-zscore-heatmap。
 - panel_key: fig05/E
   figure: Fig. 5
   figure_slug: fig05
@@ -597,6 +702,8 @@ panels:
   - runs/step02_progeny_roe_cox/progeny_mural.csv
   description: PROGENy 14-pathway activity Z-score heatmap across 10 mural subclusters.
   note: Mural PROGENy 14-pathway Z-score heatmap.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pathway-zscore-heatmap。
 - panel_key: fig05/F
   figure: Fig. 5
   figure_slug: fig05
@@ -612,6 +719,8 @@ panels:
   - extracted/pages/main_p09.png
   description: Mural triangular Diffusion Map colored by 10 subclusters and DPT pseudotime.
   note: Mural triangular DiffusionMap and DPT pseudotime.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig05/G
   figure: Fig. 5
   figure_slug: fig05
@@ -628,6 +737,8 @@ panels:
   - extracted/pages/main_p03.png
   description: Mural Slingshot differentiation state projected on Mural UMAP.
   note: Mural Slingshot pseudotime projected on UMAP.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig05/H
   figure: Fig. 5
   figure_slug: fig05
@@ -642,8 +753,11 @@ panels:
   input_tables:
   - runs/step04_trajectory/traj_mural.csv
   - extracted/pages/main_p09.png
-  description: Mural Diffusion Map overlaid with Angiogenic vs Quiescent signature scores.
+  description: Mural Diffusion Map overlaid with Angiogenic vs Quiescent signature
+    scores.
   note: Mural DiffusionMap Angiogenic vs Quiescent dominant score overlay.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 diffusion-trajectory-overlay。
 - panel_key: fig05/I
   figure: Fig. 5
   figure_slug: fig05
@@ -656,8 +770,12 @@ panels:
   script_path: code/panels/fig05_i.R
   input_tables:
   - runs/step04_trajectory/traj_mural_branch_genes.csv
-  description: Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene panel and marked missing).
-  note: Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene panel and marked missing).
+  description: Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene
+    panel and marked missing).
+  note: Mural Lineage 2 8-gene pseudotime curves (COL6A3 absent in small gene panel
+    and marked missing).
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 pseudotime-branch-curves。
 - panel_key: fig05/J
   figure: Fig. 5
   figure_slug: fig05
@@ -672,6 +790,8 @@ panels:
   - runs/step05_crosstalk/fig5j_mural_ec_lr.csv
   description: MOESM8 Mural-to-EC L-R probability bubble matrix.
   note: MOESM8 Mural-to-EC L-R probability bubble matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 lr-bubble-matrix。
 - panel_key: fig05/K
   figure: Fig. 5
   figure_slug: fig05
@@ -684,8 +804,11 @@ panels:
   script_path: code/panels/fig05_k.R
   input_tables:
   - runs/step05_crosstalk/metab_fig5k_mural.csv
-  description: Mural KEGG metabolic pathway enrichment lollipop dotplot (MOESM6 KEGG + scRNA proxy).
+  description: Mural KEGG metabolic pathway enrichment lollipop dotplot (MOESM6 KEGG
+    + scRNA proxy).
   note: 'Proxy: 基于 MOESM6 KEGG 富集与小规模 scRNA 代谢代理生成（不含作者 scMetabolism logFC 原始打分）。'
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 metabolism-lollipop-dotplot。
 - panel_key: fig06/A
   figure: Fig. 6
   figure_slug: fig06
@@ -698,8 +821,12 @@ panels:
   script_path: code/panels/fig06_a.R
   input_tables:
   - extracted/pages/main_p10.png
-  description: 52-subcluster TME + stromal integrated topology projection UMAP with 3-column legend.
+  description: 52-subcluster TME + stromal integrated topology projection UMAP with
+    3-column legend.
   note: 52-subcluster TME + stromal integrated UMAP.
+  template_disposition: reuse_identical
+  disposition_note: 原面板为标准离散类别着色单细胞 UMAP（含质心编号/队列图例与左下 L 形坐标箭头），与既有 Standard 默认模板
+    scrna-celltype-umap 视觉编码及版式高度一致，直接复用无需新建变体。
 - panel_key: fig06/B
   figure: Fig. 6
   figure_slug: fig06
@@ -712,8 +839,11 @@ panels:
   script_path: code/panels/fig06_b.R
   input_tables:
   - runs/step05_crosstalk/fig6b_tme_stromal_counts.csv
-  description: MOESM8 16x36 immune/epithelial vs stromal CellPhoneDB count heatmap with compartment groups.
+  description: MOESM8 16x36 immune/epithelial vs stromal CellPhoneDB count heatmap
+    with compartment groups.
   note: MOESM8 16x36 immune/epithelial vs stromal CellPhoneDB count heatmap.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 cellchat-count-heatmap。
 - panel_key: fig06/C
   figure: Fig. 6
   figure_slug: fig06
@@ -726,8 +856,11 @@ panels:
   script_path: code/panels/fig06_c.R
   input_tables:
   - runs/step05_crosstalk/fig6c_ccl19_lr.csv
-  description: MOESM8 C8_iFib_CCL19 to 20 TME cell types TLS L-R probability bubble matrix.
+  description: MOESM8 C8_iFib_CCL19 to 20 TME cell types TLS L-R probability bubble
+    matrix.
   note: MOESM8 C8_iFib_CCL19 to 20 TME cell types TLS L-R matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 lr-bubble-matrix。
 - panel_key: fig06/D
   figure: Fig. 6
   figure_slug: fig06
@@ -742,6 +875,8 @@ panels:
   - runs/step03_spatial/st_spots_fig6degh.csv
   description: CAA_ST whole-slide TLS 8-signature/marker spatial expression grid.
   note: CAA_ST whole-slide TLS 8-signature spatial grid.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: fig06/E
   figure: Fig. 6
   figure_slug: fig06
@@ -754,8 +889,11 @@ panels:
   script_path: code/panels/fig06_e.R
   input_tables:
   - runs/step03_spatial/st_spots_fig6degh.csv
-  description: CAA_ST right-hemisphere rescaled TLS 8-signature/marker spatial expression grid.
+  description: CAA_ST right-hemisphere rescaled TLS 8-signature/marker spatial expression
+    grid.
   note: CAA_ST right-hemisphere TLS 8-signature spatial grid.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: fig06/F
   figure: Fig. 6
   figure_slug: fig06
@@ -770,6 +908,8 @@ panels:
   - runs/step05_crosstalk/fig6f_pgf_tam_lr.csv
   description: MOESM8 C4_TipEC_PGF to M1/M2 CellChat L-R probability bubble matrix.
   note: MOESM8 C4_TipEC_PGF to M1/M2 CellChat L-R probability bubble matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 lr-bubble-matrix。
 - panel_key: fig06/G
   figure: Fig. 6
   figure_slug: fig06
@@ -782,8 +922,12 @@ panels:
   script_path: code/panels/fig06_g.R
   input_tables:
   - runs/step03_spatial/st_spots_fig6degh.csv
-  description: CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF, M1, and M2.
-  note: CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF / M1 / M2.
+  description: CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF,
+    M1, and M2.
+  note: CAA_ST 3-signal spatial signature weighting proxy for C4_TipEC_PGF / M1 /
+    M2.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: fig06/H
   figure: Fig. 6
   figure_slug: fig06
@@ -798,6 +942,8 @@ panels:
   - runs/step03_spatial/st_spots_fig6degh.csv
   description: CAA_ST CCL14-CCR1 dual-channel concentric spatial co-expression map.
   note: CAA_ST CCL14-CCR1 dual-channel spatial co-expression.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-coexpr-multichannel。
 - panel_key: sfig01/A
   figure: Supp. Fig. 1
   figure_slug: sfig01
@@ -814,6 +960,9 @@ panels:
   - extracted/pages/main_p03.png
   description: Stromal major atlas UMAP colored by Harmony-integrated GSE cohorts.
   note: Cohort batch UMAP on major stromal atlas.
+  template_disposition: reuse_identical
+  disposition_note: 原面板为标准离散类别着色单细胞 UMAP（含质心编号/队列图例与左下 L 形坐标箭头），与既有 Standard 默认模板
+    scrna-celltype-umap 视觉编码及版式高度一致，直接复用无需新建变体。
 - panel_key: sfig01/B
   figure: Supp. Fig. 1
   figure_slug: sfig01
@@ -826,8 +975,12 @@ panels:
   script_path: code/panels/sfig01_b.R
   input_tables:
   - runs/step01_harmony_de/dotplot_major.csv
-  description: 9 canonical stromal lineage marker DotPlot across Fib, EC, and Mural cell.
+  description: 9 canonical stromal lineage marker DotPlot across Fib, EC, and Mural
+    cell.
   note: 9-lineage marker DotPlot.
+  template_disposition: reuse_identical
+  disposition_note: 原面板为经典 Seurat DotPlot（圆点大小编码阳性比例 Percent Expressed，蓝-白-红渐变编码平均表达量
+    Average Expression），与既有 Standard 默认模板 marker-bubble-dotplot 视觉结构一致，直接复用。
 - panel_key: sfig02/A
   figure: Supp. Fig. 2
   figure_slug: sfig02
@@ -843,8 +996,12 @@ panels:
   - runs/step01_harmony_de/umap_fib.csv
   - runs/step02_progeny_roe_cox/tissue_prop_fib.csv
   - extracted/pages/main_p03.png
-  description: Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample boxplot.
-  note: Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample boxplot.
+  description: Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample
+    boxplot.
+  note: Fib cohort UMAP + ANT/T/LM stacked ratio and batch x tissue pseudo-sample
+    boxplot.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 tissue-ratio-prop-combo。
 - panel_key: sfig02/B
   figure: Supp. Fig. 2
   figure_slug: sfig02
@@ -859,13 +1016,16 @@ panels:
   - runs/step01_harmony_de/dotplot_fib.csv
   description: Fibroblast 36-marker expression DotPlot across 14 subclusters.
   note: Fib 36-marker DotPlot.
+  template_disposition: reuse_identical
+  disposition_note: 原面板为经典 Seurat DotPlot（圆点大小编码阳性比例 Percent Expressed，蓝-白-红渐变编码平均表达量
+    Average Expression），与既有 Standard 默认模板 marker-bubble-dotplot 视觉结构一致，直接复用。
 - panel_key: sfig02/C
   figure: Supp. Fig. 2
   figure_slug: sfig02
   panel: S2C
   panel_letter: C
   evidence_tier: local_recompute
-  template_id: scrna-feature-umap-grid
+  template_id: feature-umap-contrast-grid
   methods:
   - gene-set-scoring
   script_path: code/panels/sfig02_c.R
@@ -875,6 +1035,9 @@ panels:
   - extracted/pages/main_p03.png
   description: Fibroblast Angiogenic_signature local gene-set proxy projected on UMAP.
   note: Fib Angiogenic_signature UMAP (local gene-set proxy).
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 feature-umap-contrast-grid（高对比度置顶连续特征/功能模块评分
+    UMAP 多面板网格 + 右侧独立 Min/Max 色标）。
 - panel_key: sfig02/D
   figure: Supp. Fig. 2
   figure_slug: sfig02
@@ -889,6 +1052,8 @@ panels:
   - runs/step05_crosstalk/sfig2d_kegg_fib.csv
   description: Fibroblast 42 KEGG pathways enrichment bubble matrix across 14 subclusters.
   note: Fib 42 KEGG pathways bubble matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 kegg-cluster-bubble。
 - panel_key: sfig02/E
   figure: Supp. Fig. 2
   figure_slug: sfig02
@@ -901,8 +1066,11 @@ panels:
   script_path: code/panels/sfig02_e.R
   input_tables:
   - runs/step05_crosstalk/metab_sfig2e_fib.csv
-  description: Fibroblast 16 metabolic pathways enrichment lollipop dotplot (MOESM6 KEGG + scRNA proxy).
+  description: Fibroblast 16 metabolic pathways enrichment lollipop dotplot (MOESM6
+    KEGG + scRNA proxy).
   note: 'Proxy: 基于 MOESM6 KEGG 富集与小规模 scRNA 代谢代理生成（不含作者 scMetabolism logFC 原始打分）。'
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 metabolism-lollipop-dotplot。
 - panel_key: sfig03/A
   figure: Supp. Fig. 3
   figure_slug: sfig03
@@ -917,6 +1085,8 @@ panels:
   - runs/step03_spatial/st_spots_sfig3.csv
   description: CAA_ST 8-region COL1A1, COL1A2, and DCN spatial expression grid.
   note: CAA_ST 8-region COL1A1/COL1A2/DCN expression grid.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: sfig03/B
   figure: Supp. Fig. 3
   figure_slug: sfig03
@@ -930,8 +1100,12 @@ panels:
   input_tables:
   - runs/step03_spatial/st_spots_sfig3.csv
   - data_small/CAA_ST-umap.qs
-  description: 4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8_Cytotoxic_T spatial deconvolution weights.
-  note: 4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8 T spatial signature weights.
+  description: 4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8_Cytotoxic_T
+    spatial deconvolution weights.
+  note: 4-quadrant low-res H&E paired with C10_lpFib_ABCA8 / CD8 T spatial signature
+    weights.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-he-deconv-panel。
 - panel_key: sfig04/A
   figure: Supp. Fig. 4
   figure_slug: sfig04
@@ -947,8 +1121,11 @@ panels:
   - runs/step01_harmony_de/umap_ec.csv
   - runs/step02_progeny_roe_cox/tissue_prop_ec.csv
   - extracted/pages/main_p03.png
-  description: EC cohort UMAP combined with ANT/T/LM tissue proportion and batch x tissue boxplot.
+  description: EC cohort UMAP combined with ANT/T/LM tissue proportion and batch x
+    tissue boxplot.
   note: EC cohort UMAP and tissue proportion combo.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 tissue-ratio-prop-combo。
 - panel_key: sfig04/B
   figure: Supp. Fig. 4
   figure_slug: sfig04
@@ -963,13 +1140,16 @@ panels:
   - runs/step01_harmony_de/dotplot_ec.csv
   description: EC 32-marker expression DotPlot across 12 subclusters.
   note: EC 32-marker DotPlot.
+  template_disposition: reuse_identical
+  disposition_note: 原面板为经典 Seurat DotPlot（圆点大小编码阳性比例 Percent Expressed，蓝-白-红渐变编码平均表达量
+    Average Expression），与既有 Standard 默认模板 marker-bubble-dotplot 视觉结构一致，直接复用。
 - panel_key: sfig04/C
   figure: Supp. Fig. 4
   figure_slug: sfig04
   panel: S4C
   panel_letter: C
   evidence_tier: local_recompute
-  template_id: scrna-feature-umap-grid
+  template_id: feature-umap-contrast-grid
   methods:
   - gene-set-scoring
   script_path: code/panels/sfig04_c.R
@@ -979,6 +1159,9 @@ panels:
   - extracted/pages/main_p03.png
   description: EC Angiogenic_signature (Tip-cell score proxy) projected on EC UMAP.
   note: EC Tip-cell angiogenic signature feature UMAP.
+  template_disposition: paper_variant
+  disposition_note: 提炼为 Cai2026-npjPO 画风变体模板 feature-umap-contrast-grid（高对比度置顶连续特征/功能模块评分
+    UMAP 多面板网格 + 右侧独立 Min/Max 色标）。
 - panel_key: sfig04/D
   figure: Supp. Fig. 4
   figure_slug: sfig04
@@ -993,6 +1176,8 @@ panels:
   - runs/step05_crosstalk/sfig4d_kegg_ec.csv
   description: EC 12 subclusters faceted Top-5 KEGG horizontal bars.
   note: EC 12 subclusters faceted Top-5 KEGG horizontal bars.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 cluster-kegg-bars。
 - panel_key: sfig05/A
   figure: Supp. Fig. 5
   figure_slug: sfig05
@@ -1008,8 +1193,11 @@ panels:
   - runs/step01_harmony_de/umap_mural.csv
   - runs/step02_progeny_roe_cox/tissue_prop_mural.csv
   - extracted/pages/main_p03.png
-  description: Mural cohort UMAP combined with ANT/T/LM tissue proportion and batch x tissue boxplot.
+  description: Mural cohort UMAP combined with ANT/T/LM tissue proportion and batch
+    x tissue boxplot.
   note: Mural cohort UMAP and tissue proportion combo.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 tissue-ratio-prop-combo。
 - panel_key: sfig05/B
   figure: Supp. Fig. 5
   figure_slug: sfig05
@@ -1024,6 +1212,9 @@ panels:
   - runs/step01_harmony_de/dotplot_mural.csv
   description: Mural 32-marker expression DotPlot across 10 subclusters.
   note: Mural 32-marker DotPlot.
+  template_disposition: reuse_identical
+  disposition_note: 原面板为经典 Seurat DotPlot（圆点大小编码阳性比例 Percent Expressed，蓝-白-红渐变编码平均表达量
+    Average Expression），与既有 Standard 默认模板 marker-bubble-dotplot 视觉结构一致，直接复用。
 - panel_key: sfig05/C
   figure: Supp. Fig. 5
   figure_slug: sfig05
@@ -1038,6 +1229,8 @@ panels:
   - runs/step05_crosstalk/sfig5c_kegg_mural.csv
   description: Mural 10 subclusters faceted Top-7 KEGG horizontal bars.
   note: Mural 10 subclusters Top-7 KEGG bars.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 cluster-kegg-bars。
 - panel_key: sfig05/D
   figure: Supp. Fig. 5
   figure_slug: sfig05
@@ -1052,6 +1245,8 @@ panels:
   - runs/step05_crosstalk/sfig5d_chord_edges.csv
   description: 52-node stromal + TME VEGF directional signaling ring.
   note: 52-node stromal + TME VEGF directional signaling ring.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 cellchat-signaling-ring。
 - panel_key: sfig06/A
   figure: Supp. Fig. 6
   figure_slug: sfig06
@@ -1066,6 +1261,8 @@ panels:
   - runs/step03_spatial/st_spots_sfig6abc.csv
   description: CAA_ST 3-region 9-cell-type spatial signature grid.
   note: CAA_ST 3-region 9-cell-type spatial signature grid.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-feature-grid。
 - panel_key: sfig06/B
   figure: Supp. Fig. 6
   figure_slug: sfig06
@@ -1080,6 +1277,8 @@ panels:
   - runs/step03_spatial/st_spots_sfig6abc.csv
   description: CAA_ST 8-region CCL19 and CCR7 dual-channel spatial co-expression grid.
   note: CAA_ST 8-region CCL19/CCR7 2-channel co-expression.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-coexpr-multichannel。
 - panel_key: sfig06/C
   figure: Supp. Fig. 6
   figure_slug: sfig06
@@ -1092,8 +1291,11 @@ panels:
   script_path: code/panels/sfig06_c.R
   input_tables:
   - runs/step03_spatial/st_spots_sfig6abc.csv
-  description: CAA_ST 8-region CD8A, CD79A, CD19, and CD3E 4-channel TLS lymphocyte spatial co-expression grid.
+  description: CAA_ST 8-region CD8A, CD79A, CD19, and CD3E 4-channel TLS lymphocyte
+    spatial co-expression grid.
   note: CAA_ST 8-region CD8A/CD79A/CD19/CD3E 4-channel TLS co-expression.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 spatial-coexpr-multichannel。
 - panel_key: sfig06/D
   figure: Supp. Fig. 6
   figure_slug: sfig06
@@ -1107,5 +1309,9 @@ panels:
   input_tables:
   - runs/step05_crosstalk/sfig6d_pgf_tme_lr.csv
   - data_small/moesm/cellchat_edges.csv
-  description: MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability bubble matrix.
-  note: MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability bubble matrix.
+  description: MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability
+    bubble matrix.
+  note: MOESM8 C4_TipEC_PGF to 21 TME cell types 14-pair CellChat L-R probability
+    bubble matrix.
+  template_disposition: paper_variant
+  disposition_note: 对应 Cai2026-npjPO 期刊画风专属模板 lr-bubble-matrix。

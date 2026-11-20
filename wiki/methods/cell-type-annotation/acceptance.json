@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T12:45:20.488699+00:00",
+  "checked_at": "2026-11-20T18:50:18.194225+00:00",
   "page": "methods/cell-type-annotation.md",
-  "snapshot": "fa448a1fef1f8916cfc16849d0857c4d208969b59b32cb7594b68065d9007a49",
+  "snapshot": "6a8a9256377d674ba78a874c1d1793b53d4e721fb6cf94c8ccd46067e8543909",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

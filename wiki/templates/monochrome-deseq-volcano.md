@@ -2,7 +2,7 @@
 type: template
 id: monochrome-deseq-volcano
 title: 极简棕褐单色差异表达火山图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/differential-expression

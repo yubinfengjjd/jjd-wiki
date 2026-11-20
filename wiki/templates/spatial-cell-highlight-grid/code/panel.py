@@ -67,8 +67,7 @@ def draw(fig, rect, tables, style):
     ax_int = fig.add_subplot(sub_gs[4, 2])
     ax_int.axis("off")
     ax_int.add_patch(mpatches.Rectangle((0.12, 0.02), 0.76, 0.96, facecolor="#EAE342", edgecolor="none"))
-    ax_int.text(0.50, 0.50, "Immune
-interacting", rotation=270, ha="center", va="center", fontsize=6.6, color="#222222")
+    ax_int.text(0.50, 0.50, "Immune\ninteracting", rotation=270, ha="center", va="center", fontsize=6.6, color="#222222")
 
     if len(axes) >= 9:
         p3 = axes[6].get_position()

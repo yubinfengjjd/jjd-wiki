@@ -2,7 +2,7 @@
 type: template
 id: spatial-cooccurrence-matrix
 title: 空间邻域置换检验离散三态共现矩阵
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment

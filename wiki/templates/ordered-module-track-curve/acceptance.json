@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-20T18:50:19.208106+00:00",
+  "page": "templates/ordered-module-track-curve.md",
+  "snapshot": "1ea5d72c5d2c36e578cd74d20da48dc4845cff9e8fed8133e0a2f1de6a7aef7a",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

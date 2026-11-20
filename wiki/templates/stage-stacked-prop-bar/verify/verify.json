@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:48:55.001277+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/stage-stacked-prop-bar/spec.json": "c0ddf57e15c9dfc1df0501025721f39c27f6a361df608a1c443d52117bf075cc",
+    "templates/stage-stacked-prop-bar/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/stage-stacked-prop-bar/code/panel.py": "ee46650b2e902bdcf2c668091805398df5c637c3a774f2a8b34c774c97280334",
+    "templates/stage-stacked-prop-bar/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/proportions#columns": "d78c4e2a41e1cf1c92bb15acaba7c168f918ab9588614fffd5552b5a6573ce6d",
+    "templates/stage-stacked-prop-bar/example/stage_rcn_proportions.csv": "15cc8c9543a00767cda0bcf73ff0ba190bf31129b4f67dcb9f47adfa240362a0"
+  },
+  "outputs": {
+    "png": "515e29c0d4b4e49aeb56491f658a9625e6c74eafa2a2697ee43f35c419c61333",
+    "pdf": "d37b157bd8e71fe4043782fe4e1245007db4f3a4a90929617c534800afea6532",
+    "svg": "63ab96bb455c29863db21cd5de97f056706c970e5a0f55f7c273bef2c8239318"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

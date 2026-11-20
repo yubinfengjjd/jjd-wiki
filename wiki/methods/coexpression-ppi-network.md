@@ -114,7 +114,7 @@ next_steps:
   - [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：标准化表达谱构建的 Pearson/WGCNA 共表达网络节点坐标、边表与枢纽基因一步邻域标记可直接渲染为 default 焦橙核心放射网络图；模板不拟合相关矩阵。；前提：节点与边来自同一相关阈值过滤后的连通分量；明确相关性阈值（如 r >= 0.6）。；适配：导出 network_nodes.csv（gene_symbol, x, y, in_s100b_1step, is_key_label）与 network_edges.csv（from, to, weight）。
     - 关系证据：methods/coexpression-ppi-network.md#输出；templates/coexpr-hub-radial-network/spec.json；运行证据：无
-  - [[templates/ordered-module-track-curve|排序样本共表达模块曲线与分期色带图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/ordered-module-track-curve|排序样本共表达模块曲线与分期色带图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：共表达模块（如 S100B 模块）在按分期与活性排序的微区域/样本上的平均表达轨迹可与底部组织学分期色带组合展示。；前提：mean_log2_norm 为模块内基因在各样本上的平均对数归一化表达量。；适配：导出 ordered_module_expression.csv（sample_id, site, mean_log2_norm）。
     - 关系证据：methods/coexpression-ppi-network.md#输出；templates/ordered-module-track-curve/spec.json；运行证据：无
 <!-- facts:end -->

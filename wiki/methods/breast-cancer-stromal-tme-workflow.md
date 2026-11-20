@@ -46,6 +46,29 @@ data_contract:
     cell-proportion-composition, survival-prognosis-analysis, trajectory-inference,
     spatial-transcriptomics-microenvironment, cell-cell-communication, immune-infiltration-tme）、本地
     `src/` 与 Wiki `methods/breast-cancer-stromal-tme-workflow/code/` 源码及复刻可视化模板。
+derived_templates:
+- cellchat-count-heatmap
+- cellchat-signaling-ring
+- checkpoint-group-boxplot
+- cluster-kegg-bars
+- clustered-corr-boxes
+- diffusion-trajectory-overlay
+- feature-umap-contrast-grid
+- kegg-cluster-bubble
+- lr-bipartite-bubble
+- lr-bubble-matrix
+- marker-bubble-dotplot
+- metabolism-lollipop-dotplot
+- pathway-zscore-heatmap
+- pseudotime-branch-curves
+- roe-cox-heatmap
+- scrna-celltype-umap
+- spatial-coexpr-multichannel
+- spatial-feature-grid
+- spatial-he-deconv-panel
+- split-condition-umap
+- stromal-hull-umap
+- tissue-ratio-prop-combo
 ---
 # 乳腺癌基质单细胞与空转微环境复刻流程
 
@@ -59,7 +82,7 @@ data_contract:
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
 - 代码模板：[methods/breast-cancer-stromal-tme-workflow/code/00_prepare_spatial_and_scrna.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/00_prepare_spatial_and_scrna.R) · [methods/breast-cancer-stromal-tme-workflow/code/00_sample_and_extract_moesm.py](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/00_sample_and_extract_moesm.py) · [methods/breast-cancer-stromal-tme-workflow/code/00c_style_and_manifold.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/00c_style_and_manifold.R) · [methods/breast-cancer-stromal-tme-workflow/code/01_scrna_harmony_de.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/01_scrna_harmony_de.R) · [methods/breast-cancer-stromal-tme-workflow/code/02_progeny_roe_cox.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/02_progeny_roe_cox.R) · [methods/breast-cancer-stromal-tme-workflow/code/03_spatial_scores_deconv.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/03_spatial_scores_deconv.R) · [methods/breast-cancer-stromal-tme-workflow/code/04_trajectory_pseudotime.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/04_trajectory_pseudotime.R) · [methods/breast-cancer-stromal-tme-workflow/code/05_crosstalk_metabolism.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/05_crosstalk_metabolism.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/fig01_stromal_atlas.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/fig01_stromal_atlas.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/fig02_fib_characterization.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/fig02_fib_characterization.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/fig03_abca8_lpfib_tcell.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/fig03_abca8_lpfib_tcell.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/fig04_ec_characterization.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/fig04_ec_characterization.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/fig05_mural_characterization.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/fig05_mural_characterization.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/fig06_tme_crosstalk.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/fig06_tme_crosstalk.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/sfig01_stromal_batch_markers.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/sfig01_stromal_batch_markers.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/sfig02_fib_supp.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/sfig02_fib_supp.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/sfig03_spatial_markers_deconv.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/sfig03_spatial_markers_deconv.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/sfig04_ec_supp.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/sfig04_ec_supp.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/sfig05_mural_supp_chord.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/sfig05_mural_supp_chord.R) · [methods/breast-cancer-stromal-tme-workflow/code/figures/sfig06_spatial_tls_pgf_lr.R](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/figures/sfig06_spatial_tls_pgf_lr.R) · [methods/breast-cancer-stromal-tme-workflow/code/make_side_by_side.py](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/make_side_by_side.py) · [methods/breast-cancer-stromal-tme-workflow/code/README.md](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/README.md) · [methods/breast-cancer-stromal-tme-workflow/code/runtime.json](/files/wiki/methods/breast-cancer-stromal-tme-workflow/code/runtime.json) · 独立 Panel 脚本：共 71 个（见前端「论文复刻」面板）
-- 面板覆盖清单：12 张图 / 74 条面板条目（实测/补表 15、本地重算 39、代理 16、剔除湿实验 3、剔除示意图 1），引用 21 套去重模板
+- 面板覆盖清单：12 张图 / 74 条面板条目（实测/补表 15、本地重算 39、代理 16、剔除湿实验 3、剔除示意图 1），引用 22 套去重模板
 
 - 方法配图关系（语义审查）：
   - 暂无已记录关系；接口或标签相同不代表语义已核实。

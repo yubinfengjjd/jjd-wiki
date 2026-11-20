@@ -2,7 +2,7 @@
 type: template
 id: stage-distance-boxen-grid
 title: 多分期对数坐标水平 Boxen 空间距离图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment

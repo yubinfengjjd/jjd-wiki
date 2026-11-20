@@ -2,7 +2,7 @@
 type: template
 id: ordered-module-track-curve
 title: 排序样本共表达模块曲线与分期色带图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/coexpression-ppi-network
@@ -56,11 +56,11 @@ favorite: false
 
 ### curve（ordered_module_expression.csv）：各样本/mROI 的共表达模块平均表达量与所属分期表（sample_id, site, mean_log2_norm） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| sample_id | str | 必需 | 样本或微区域唯一标识 |
-| site | str | 必需 | 所属组织学分期或区域类型（如 MIS, IR, bTIL, IB, IM, EM） |
-| mean_log2_norm | float | 必需 | 模块基因平均 log2 归一化表达量 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| sample_id | str | 样本或微区域唯一标识 |
+| site | str | 所属组织学分期或区域类型（如 MIS, IR, bTIL, IB, IM, EM） |
+| mean_log2_norm | float | 模块基因平均 log2 归一化表达量 |
 
 ### 可覆盖的 style
 

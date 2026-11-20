@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:45.870117+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/quadrant-contour-prop-combo/spec.json": "7bc5871c159e98d30e77f4efc95df36226f899d43be50a5a9eab594507a17548",
+    "templates/quadrant-contour-prop-combo/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/quadrant-contour-prop-combo/code/panel.py": "0677f03ce18dd3da8bad6ad7ca40f37c12d00258c10c8129a63e2e8c324eab35",
+    "templates/quadrant-contour-prop-combo/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/cells#columns": "d5d752ccee2012332300bcdeec8d5e888831881d1225a022262ff37fd06c8573",
+    "inline/quadrants#columns": "f2d989e36b5f91d16988d6b7cbdb55db7b77bd22b441729bf88acf2e877fbbb4",
+    "templates/quadrant-contour-prop-combo/example/bivariate_density_cells.csv": "54dadf5bc3ad2374798c1b839fcb02d03aad06a5b492031a2f72520317a9dcaf",
+    "templates/quadrant-contour-prop-combo/example/quadrant_proportions.csv": "7ac112f0b66c3865eee5b01cdefc83df6a9bfb8992524601f49720cc7d8d8015"
+  },
+  "outputs": {
+    "png": "74f20180fdcea9edfa1ec11abb0c1e9fd4befe32ae339817e39a94ab61100116",
+    "pdf": "5b5fcbdafb7183fef89d2a725627391966ab9ad57fa886463d2888b8aa4cdb47",
+    "svg": "15ae13b540e70e1508ea7d51ac3ec572ba1b94806fae68bdb93187918074ad69"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -2,7 +2,7 @@
 type: template
 id: boundary-intensity-gradient
 title: 肿瘤基质边界空间荧光强度梯度曲线
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment

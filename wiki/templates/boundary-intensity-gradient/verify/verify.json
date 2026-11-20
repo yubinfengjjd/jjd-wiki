@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:39.898378+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/boundary-intensity-gradient/spec.json": "99799a1c9d3a2661f085c0b03f36539cd51c244803d09bd826b4dfbd0c491432",
+    "templates/boundary-intensity-gradient/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/boundary-intensity-gradient/code/panel.py": "063156d48e874cc859b3fb29f1c0a9cc84e5f4e26f624e2630e8e2d41521a9d8",
+    "templates/boundary-intensity-gradient/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/gradient#columns": "8bfe6cc4b4287224ca3c0410eaf43d054f5ee1dc8658e09b3035850e7e8031fa",
+    "templates/boundary-intensity-gradient/example/boundary_intensity_gradient.csv": "5d0b2c27002a1554ede299f24c731f1263f0c54a0542d56feb0b91ed871229cf"
+  },
+  "outputs": {
+    "png": "dc1893e0515c6453b50ab8300f658553abe3c13849c19b65d9ff4763dd90b389",
+    "pdf": "eda7ae4fab2e7948d6c55a7c149780ab9775e3ffdba54318a70779feedbed842",
+    "svg": "33924c6a8c767b8fe8df1e526900e26a12ac9fe801324ba666672dd0f378406c"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

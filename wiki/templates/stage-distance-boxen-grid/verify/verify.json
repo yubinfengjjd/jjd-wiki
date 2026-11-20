@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:48:57.926814+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/stage-distance-boxen-grid/spec.json": "9b6138e20259c686351ceb1dc7ba93c8de80addcd38945c0c246639e3caecb23",
+    "templates/stage-distance-boxen-grid/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/stage-distance-boxen-grid/code/panel.py": "ad7dae808584a596cdaf0d77f818a37f771d0b0b9a9a3fb6d82971c581ff84c2",
+    "templates/stage-distance-boxen-grid/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/distances#columns": "af387cb982e0f15e58027186cbd426b599c738a03e6c819b68e9f3463c6e7ea7",
+    "inline/ttests#columns": "eb693eb053739fae0e4b9db9b54240a3eb354969959e7e0e501c6942af8ad552",
+    "templates/stage-distance-boxen-grid/example/rcn_distance_ttests.csv": "6eed2f2b62bb3108ce33173f64ddfb7ad292649e286e2a48c89ae8178dde850f",
+    "templates/stage-distance-boxen-grid/example/rcn_to_anchor_distances.csv": "84a4af67d4ac43be9f7e4e21ae754c01b6eb41fe7d856a0254da5905a153ac0c"
+  },
+  "outputs": {
+    "png": "c3549957d369d91e6fbaaeacc95edf9dd1030eb3868fa8f20ac119778f33d924",
+    "pdf": "6e8e7eb056e379cddfdaaa53c07e3fc18802257dc77197ab13ffb7f50c3c26da",
+    "svg": "8afe0521ddf11dc3634bcf71997366b2730cd75ffba833ac57dbe327edb39945"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -39,8 +39,7 @@ def draw(fig, rect, tables, style):
 
     ax_line.set_xlim(-1, len(df))
     ax_line.set_ylim(0, max(y.max() * 1.14, 8.2))
-    ax_line.set_ylabel(style.get("ylabel", "Mean expression (log$_2$)
-S100B module"), fontsize=8.5, labelpad=4)
+    ax_line.set_ylabel(style.get("ylabel", "Mean expression (log$_2$)\nS100B module"), fontsize=8.5, labelpad=4)
     ax_line.set_xticks([])
     ax_line.tick_params(axis="y", labelsize=7.8, length=3, pad=2)
     for sp in ax_line.spines.values():

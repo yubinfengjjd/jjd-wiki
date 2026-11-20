@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:29.288769+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/group-hull-pca/spec.json": "6457cd7a05ca2bf4be270af4323ceadd9fa67215f57e8ff8eba239284b69f6fa",
+    "templates/group-hull-pca/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/group-hull-pca/code/panel.py": "e1d5cf02c069753dc0268d05b99d61ec825e03a8d4d7e722ec8744eaf0a9590c",
+    "templates/group-hull-pca/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/pca#columns": "af6efec3fe1addb2e281d98cf863d1e7d9bc2866c21dc4b8085cde7311b12c6f",
+    "templates/group-hull-pca/example/pca_sample_coords.csv": "76787fc104692c95422b129f63fabdbed30629476d9aea8767181437c7f49e2b"
+  },
+  "outputs": {
+    "png": "3db78c312ad618c9975a64554113456b4e2b4e253756dd54f13cbbe2f526be38",
+    "pdf": "a0714ab76f5d6d0012a8f53e0901948b316a6f7c01dbb0168fe5fac327de8e08",
+    "svg": "9780fe0e68b5fb90f39c6b8a16a81ce1b271d40038b9a586b08733a4d1eb645d"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

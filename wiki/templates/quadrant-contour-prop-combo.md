@@ -2,7 +2,7 @@
 type: template
 id: quadrant-contour-prop-combo
 title: 二维核密度等高线四象限与比例组合图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition
@@ -67,12 +67,12 @@ favorite: false
 
 ### quadrants（quadrant_proportions.csv）：各分期四象限细胞计数与百分比汇总表（Stage, quadrant, n_cells, pct_in_stage） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| Stage | str | 必需 | 所属演进分期 |
-| quadrant | str | 必需 | 象限分类键 |
-| n_cells | int | 必需 | 象限内细胞数 |
-| pct_in_stage | float | 必需 | 象限占比百分比（0-100） |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| Stage | str | 所属演进分期 |
+| quadrant | str | 象限分类键 |
+| n_cells | int | 象限内细胞数 |
+| pct_in_stage | float | 象限占比百分比（0-100） |
 
 ### 可覆盖的 style
 

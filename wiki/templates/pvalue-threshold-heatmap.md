@@ -2,7 +2,7 @@
 type: template
 id: pvalue-threshold-heatmap
 title: 分期两两比较显著性阈值数值热图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment

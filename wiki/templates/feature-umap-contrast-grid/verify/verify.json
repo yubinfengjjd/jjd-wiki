@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:48:37.695915+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/feature-umap-contrast-grid/spec.json": "773d44b613197a7654215a6b1d1a99b7821721eea9c643b6497676238f1fa9d0",
+    "templates/feature-umap-contrast-grid/code/render.R": "1ccb24c8e37c880bf149c1b141b77beef092ff3ce616c8a28b4c7e4bcad81064",
+    "inline/cells#columns": "a49801230d29e65453d7945d66ad2fdfc7a76aa5883d89668a2992178809a701",
+    "templates/feature-umap-contrast-grid/example/feature_umap_scores.csv": "253f1a4887cb9dd4d1c47355a87ece5404e809873a11dc5e168fb4e64ebf2e2f"
+  },
+  "outputs": {
+    "png": "78818bd60f191f2de77e178b478270bc664fd3a40c2674e5aa1a6ef852c0b71b",
+    "pdf": "d2701af10f9413b3988173fc6fe811574f5d94bb45e366615bbb80605b209ad0",
+    "svg": "265b2b13bdb912442ea182965c0286cb3d1b695f52bd27aa991e56afe9f23a6d"
+  },
+  "environment": {
+    "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

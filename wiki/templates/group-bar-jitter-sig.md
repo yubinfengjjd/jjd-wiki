@@ -2,7 +2,7 @@
 type: template
 id: group-bar-jitter-sig
 title: 多基因分面均值柱状抖动散点显著性图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/differential-expression
@@ -57,12 +57,12 @@ favorite: false
 
 ### expr（gene_group_expression_long.csv）：多基因按样本分组的对数表达长表（gene, sample_id, group, log2_expr） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| gene | str | 必需 | 基因符号（分面标题） |
-| sample_id | str | 必需 | 样本唯一编号 |
-| group | str | 必需 | 比较分组名称（如 MIS, Immune, Tumor） |
-| log2_expr | float | 必需 | log2 归一化表达量 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| gene | str | 基因符号（分面标题） |
+| sample_id | str | 样本唯一编号 |
+| group | str | 比较分组名称（如 MIS, Immune, Tumor） |
+| log2_expr | float | log2 归一化表达量 |
 
 ### 可覆盖的 style
 

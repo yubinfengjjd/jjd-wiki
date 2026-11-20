@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:38.510082+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/faceted-overlap-density/spec.json": "ef10e46ab1bc688ebaac24608fefa73989166d31564fce7960cbf8e12b91fee4",
+    "templates/faceted-overlap-density/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/faceted-overlap-density/code/panel.py": "c2dffb69821556085c50a481ddcb859c97b3d1fe0ce736fa46dc055e3fb290f3",
+    "templates/faceted-overlap-density/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/expr#columns": "22b4eadfef2a1dbbc54a6a72a1b6c647752b51c85b596ef2ea17b68ce39ec46f",
+    "templates/faceted-overlap-density/example/gene_group_density_long.csv": "db0b947095416cf66464c37224117c0be06eb76644ddc6cce70db21e46d8ba74"
+  },
+  "outputs": {
+    "png": "94bd4e7878fd252de87f6bb318ffd4fac7ec768a866fb6922ed1b4b90c1b88ce",
+    "pdf": "cda1aeb6ed1cc9baf6e1f6c74b2feaf048dc52c47b17fe70bc212ba954d97780",
+    "svg": "c78b5ad541d2b1bbc4e7e4c12b2978887a37480e3d2a6557412cd23efeb259f4"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

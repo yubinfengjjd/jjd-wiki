@@ -2,7 +2,7 @@
 type: template
 id: spatial-cell-highlight-grid
 title: 空间单细胞坐标表型高亮散点分面网格
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T17:39:36.216795+00:00",
+  "checked_at": "2026-11-20T18:50:18.226599+00:00",
   "page": "methods/cell-proportion-composition.md",
-  "snapshot": "dedb1111587f5bfa75b2b2f27757e522caf61043d8b73102d68f8258e3f3e5df",
+  "snapshot": "19a024ec9b4e6b9f4b1c1f7baf16e283ab6a7a07eef0bbbcfd3be400e3f9a76e",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",

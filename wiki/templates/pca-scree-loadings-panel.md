@@ -2,7 +2,7 @@
 type: template
 id: pca-scree-loadings-panel
 title: 主成分方差碎石图与特征载荷排序面板
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/dimensionality-reduction
@@ -57,19 +57,19 @@ favorite: false
 
 ### scree（pca_variance_scree.csv）：各主成分解释方差比表（PC, pc_num, explained_variance_ratio） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| PC | str | 必需 | 主成分名称（如 PC1..PC15） |
-| pc_num | int | 必需 | 主成分序号（1, 2, ...） |
-| explained_variance_ratio | float | 必需 | 解释方差比例（0-1） |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| PC | str | 主成分名称（如 PC1..PC15） |
+| pc_num | int | 主成分序号（1, 2, ...） |
+| explained_variance_ratio | float | 解释方差比例（0-1） |
 
 ### loadings（pca_feature_loadings.csv）：各特征在 PC1 与 PC2 上的载荷绝对值表（marker, abs_PC1, abs_PC2） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| marker | str | 必需 | 蛋白标志物或基因名称 |
-| abs_PC1 | float | 必需 | PC1 载荷绝对值 |
-| abs_PC2 | float | 必需 | PC2 载荷绝对值 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| marker | str | 蛋白标志物或基因名称 |
+| abs_PC1 | float | PC1 载荷绝对值 |
+| abs_PC2 | float | PC2 载荷绝对值 |
 
 ### 可覆盖的 style
 

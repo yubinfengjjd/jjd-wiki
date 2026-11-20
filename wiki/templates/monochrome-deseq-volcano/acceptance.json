@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-20T18:50:19.185448+00:00",
+  "page": "templates/monochrome-deseq-volcano.md",
+  "snapshot": "ef4dce8e72a1c1b235ca0e942c52c1b52e404d3cdf6c66666b3301481d074b0a",
+  "checks": {
+    "适用": "present_nonplaceholder",
+    "不适用": "present_nonplaceholder",
+    "知识关联检查": "present_nonplaceholder"
+  },
+  "replay": "current_inputs_outputs",
+  "scope": "结构、笔记完整性和已声明关联检查；不替代科学语义审查、作者确认或真实课题验证"
+}

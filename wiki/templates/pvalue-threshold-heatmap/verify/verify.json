@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:41.381235+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/pvalue-threshold-heatmap/spec.json": "dabe4fa35abe82570887ac5091cf8e6d86b93d64a811e4a5643bea5f44681af3",
+    "templates/pvalue-threshold-heatmap/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/pvalue-threshold-heatmap/code/panel.py": "8d3ce9d21f9d770d58241fb56da0de38579fcb9e817f7dde2df1b24404c5d15d",
+    "templates/pvalue-threshold-heatmap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/pvalues#columns": "99f327331153f59e785709ef64e2b11cdfcd0a56fad15d4eacba11b3cc8f49ac",
+    "templates/pvalue-threshold-heatmap/example/stage_pairwise_pvalues.csv": "d411bacdf6f0418f65ef324733ce81aba128d681bd9ea44b57ccbd66d3a707af"
+  },
+  "outputs": {
+    "png": "51b5121ce0dedda8751468240f60746e4a526e4edaaef17f9a47985ab45df76d",
+    "pdf": "b19ef5b433b46ebd8e49c379b524b01b033606ff38542501191225b32987f8eb",
+    "svg": "51202d484aa4a490e8858f1abd2e2e26894a8485692e7c039aaafed897d38938"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

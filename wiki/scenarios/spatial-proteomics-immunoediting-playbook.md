@@ -203,7 +203,7 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Stage 1：CyCIF/CODEX 轮间 DNA 质控、GMM 重标度与层级门控表型注释 |
+| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Stage 1：CyCIF/CODEX 轮间 DNA 质控、GMM 重标度与层级门控表型注释 |
 | [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]] | L2 | ready · 可用 | 主推变体 · 细胞类型/进展分期/患者三联 UMAP 图谱（Cancer Discovery 风格） |
 | [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]] | L2 | ready · 可用 | 配套检查 · 多蛋白/标志物特征强度 UMAP 网格 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：20 μm 局部邻域 Spatial LDA（RCN）与 Voronoi 拓扑分析 |
@@ -214,7 +214,7 @@ steps:
 | [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 配套 · 跨分期/腔室细胞构成堆叠流带图 |
 | [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] | note | ready | Stage 3：1,000 次置换细胞共现检验、边界梯度与免疫检查点热图 |
 | [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]] | L2 | ready · 可用 | 主推默认 · 检查点/通路 Z-score + 显著性矩阵热图 |
-| [[methods/differential-expression|差异表达分析]] | note | ready | Stage 5A：PickSeq/GeoMx 微区转录组差异表达、ssGSEA 与 GSEA 通路富集 |
+| [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | Stage 5A：PickSeq/GeoMx 微区转录组差异表达、ssGSEA 与 GSEA 通路富集 |
 | [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]] | L2 | ready · 可用 | 主推默认 · 微区转录组差异表达火山图 |
 | [[methods/coexpression-ppi-network|共表达网络（WGCNA）与分子互作网络分析]] | note | ready | Stage 5B：相关性共表达网络枢纽模块提取与有序样本趋势 |
 | [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]] | L2 | ready · 可用 | 主推默认 · 中心枢纽基因共表达放射网络图 |

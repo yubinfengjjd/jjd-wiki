@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:35.566545+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/ordered-module-track-curve/spec.json": "2334908ece05d0e4ca1f4ca23776e258f818a0610ffd71e0d939eae4973283e9",
+    "templates/ordered-module-track-curve/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/ordered-module-track-curve/code/panel.py": "5563f89573322332ff9b15c465113add3fcf0993c663c9ee0a39b06b9559daf9",
+    "templates/ordered-module-track-curve/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/curve#columns": "1fb062ebf46e421ad767557508475c990c0cf81a1d3e70d4779085339a9f909e",
+    "templates/ordered-module-track-curve/example/ordered_module_expression.csv": "af88d67a0360cfe6b2da9033b13a59c802126e4d691710ea59dd7c5412ffd1b8"
+  },
+  "outputs": {
+    "png": "bc7b24e2db2705ed355d6b65fcc177d4702d44248484c78efe37d4716100fc03",
+    "pdf": "a6fbbc3238020b28c44ec16cf4ef6e3c4735996212a49d797b7a8fc46dcdf204",
+    "svg": "51d046d87a9d706d53881020d18173baa6eda8b7158851f8091c5d5047681efd"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

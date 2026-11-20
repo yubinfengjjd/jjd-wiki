@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:48:40.113469+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/cycif-feature-umap-strip/spec.json": "761b63f03952c12a44cc38674adafc08c5b02017d3d79889c1c4cdee56743f8c",
+    "templates/cycif-feature-umap-strip/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/cycif-feature-umap-strip/code/panel.py": "94e5ed91c25c60a417ad176b9985fc282ba9b5bf48ae1716c19f5b6bda049396",
+    "templates/cycif-feature-umap-strip/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/cells#columns": "716303f3eae7b305b543f7d2126cbcb0fa3c71fcde7df3507a09a9d1fa8d3d49",
+    "templates/cycif-feature-umap-strip/example/cycif_umap_markers.csv": "cb6893ad34bf535d677058a52c13fa93ab123d3fa65160ca545cb193c6bc9ac9"
+  },
+  "outputs": {
+    "png": "69348f774b3d6580032b03a9bd4f9ea132c51354ef70c8bbf43a59aeda724f4f",
+    "pdf": "941307dc60479407abfc43799eaf0566a4e66dfb67b8d5ccfd12c461125bcc61",
+    "svg": "b7f963453c65bb3f669bd31aee839e2d524bca49cfad8540ab08c4b86fdcb652"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

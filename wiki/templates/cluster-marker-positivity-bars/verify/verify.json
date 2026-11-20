@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:27.642701+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/cluster-marker-positivity-bars/spec.json": "11796e338c9224d882acdb9945b2e392180130a480e4aed4fe6a1abac80c3383",
+    "templates/cluster-marker-positivity-bars/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/cluster-marker-positivity-bars/code/panel.py": "352ddcdbb7cfa4751662d4c319404f28213e7da62ff55d47783dac30d8f61ebe",
+    "templates/cluster-marker-positivity-bars/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/positivity#columns": "1fd3473bc0a6a172ec2da6142a1189aea464f658e7a0c7ed0b3dae65152a2d8b",
+    "templates/cluster-marker-positivity-bars/example/cluster_marker_positivity.csv": "9f0d14984e29979a2be430932b95e4f94d5acf0aa9451e6e9981470a8e4f9e47"
+  },
+  "outputs": {
+    "png": "546ab590f2c54589cc12794997e8ce4da94d45df8d89508052d731680eae2306",
+    "pdf": "b924a2114a40a85d1a81cc04aec8d00b1b5a958e5b271bc782ffc301f7f9e541",
+    "svg": "4913a639d654ea8cb1741ca7e4f0f669c26947d27f5deb4c172d0157a5894acd"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

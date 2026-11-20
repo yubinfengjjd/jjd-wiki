@@ -2,7 +2,7 @@
 type: template
 id: stage-boxplot-jitter-sig
 title: 演进分期箱线抖动散点与显著性图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition
@@ -57,11 +57,11 @@ favorite: false
 
 ### data（stage_proportion_points.csv）：各演进分期 ROI/样本比例观测表（sample_id, stage, value） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| sample_id | str | 必需 | 样本或 ROI 唯一编号 |
-| stage | str | 必需 | 演进分期或分组标签（如 N, P, MIS, IM） |
-| value | float | 必需 | 细胞亚群或标志物阳性比例（0-1 或百分比） |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| sample_id | str | 样本或 ROI 唯一编号 |
+| stage | str | 演进分期或分组标签（如 N, P, MIS, IM） |
+| value | float | 细胞亚群或标志物阳性比例（0-1 或百分比） |
 
 ### 可覆盖的 style
 

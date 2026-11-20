@@ -2,7 +2,7 @@
 type: template
 id: split-condition-umap
 title: 双条件并排分面亚群 UMAP
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-type-annotation
@@ -56,13 +56,13 @@ favorite: false
 
 ### cells（split_condition_umap_cells.csv）：单细胞 UMAP 坐标、精细亚群与条件分组表（cell_id, umap_1, umap_2, subcluster, condition） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| cell_id | str | 必需 | 细胞唯一标识 |
-| umap_1 | float | 必需 | UMAP 横坐标 |
-| umap_2 | float | 必需 | UMAP 纵坐标 |
-| subcluster | str | 必需 | 细胞亚群名称 |
-| condition | str | 必需 | 并排分面条件标签（如 Adjacent normal tissue / Tumor） |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| cell_id | str | 细胞唯一标识 |
+| umap_1 | float | UMAP 横坐标 |
+| umap_2 | float | UMAP 纵坐标 |
+| subcluster | str | 细胞亚群名称 |
+| condition | str | 并排分面条件标签（如 Adjacent normal tissue / Tumor） |
 
 ### 可覆盖的 style
 

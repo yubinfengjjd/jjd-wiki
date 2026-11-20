@@ -237,7 +237,7 @@ steps:
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
 | [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Stage 1：多队列单细胞去批次整合（Harmony / Seurat Anchor） |
-| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Stage 1：基质亚群精细注释与功能包络定位 |
+| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Stage 1：基质亚群精细注释与功能包络定位 |
 | [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]] | L2 | ready · 可用 | 主推默认 · 标准细胞类型 UMAP 散点图 |
 | [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready · 可用 | 可切换画风 · 带分组虚线包络与编号质心的 UMAP 图 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：单细胞注释 + Visium 切片空间反卷积与共定位 |
@@ -247,7 +247,7 @@ steps:
 | [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | note | ready | Stage 3：Ro/e 组织偏好、亚型富集与跨队列比例统计 |
 | [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]] | L2 | ready · 可用 | 主推默认 · 多因素 Cox 与 Ro/e 组织/亚型偏好热图 |
 | [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]] | L2 | ready · 可用 | 可切换画风 · 组织比例堆叠 + 样本箱线检验组合图 |
-| [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | Stage 4A：功能基因程序、PROGENy 通路与 KEGG 代谢刻画 |
+| [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | Stage 4A：功能基因程序、PROGENy 通路与 KEGG 代谢刻画 |
 | [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]] | L2 | ready · 可用 | 主推默认 · 分组功能基因与通路 Z-score 热图 |
 | [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]] | L2 | ready · 可用 | 主推默认 · 多亚群 KEGG 通路富集气泡矩阵 |
 | [[templates/cluster-kegg-bars|亚群富集条形图与命中数]] | L2 | ready · 可用 | 可切换画风 · 亚群分面富集条形图与命中计数 |

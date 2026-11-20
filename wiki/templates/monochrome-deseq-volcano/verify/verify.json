@@ -1,0 +1,23 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:33.989091+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/monochrome-deseq-volcano/spec.json": "bd546361f4f3c9d756327ea66ecee5f46264a0ca216bf8ab6bf148ab4c8af72d",
+    "templates/monochrome-deseq-volcano/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/monochrome-deseq-volcano/code/panel.py": "984bf5add67994198341f1a7a1b67dfad97ee2cf767fd657b926e0ebd4bb5e12",
+    "templates/monochrome-deseq-volcano/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/deg#columns": "8d844423aa12bd078534c8db006a612e630402a91387f2a435b73985354c1b17",
+    "templates/monochrome-deseq-volcano/example/deseq2_volcano_results.csv": "b4ee83ee8d1678a102c1a7a19545cb3befc3f0b38a0232518b7af1656c5c2055"
+  },
+  "outputs": {
+    "png": "a7660b73777c788b9ab45c00a2b79a753b4801ce3830f3cede836230c1578440",
+    "pdf": "d7d0a82a8903b8b700066eb8b666de9b1a42ee8228ae7f27821ef45b20b36a8d",
+    "svg": "24d9b2c91aa9c5b8682bbfbdab815586e197f506c6dd0a4602378e54116156d1"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

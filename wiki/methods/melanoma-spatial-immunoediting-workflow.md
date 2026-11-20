@@ -55,6 +55,34 @@ data_contract:
     gene-set-scoring, gene-set-enrichment, coexpression-ppi-network, immune-infiltration-tme,
     survival-prognosis-analysis）、Wiki `methods/melanoma-spatial-immunoediting-workflow/code/`
     归档代码（83 份脚本）及 11 套新建真实数据绘图模板（含同论文同质化归并的 5 套衍生风格模板）。
+derived_templates:
+- boundary-intensity-gradient
+- cluster-marker-positivity-bars
+- coexpr-hub-radial-network
+- compartment-dual-track-bars
+- cycif-feature-umap-strip
+- faceted-overlap-density
+- group-bar-jitter-sig
+- group-hull-pca
+- gsea-running-enrichment
+- half-violin-decile-shift
+- km-survival-risk-grid
+- monochrome-deseq-volcano
+- ordered-module-track-curve
+- pca-scree-loadings-panel
+- pvalue-threshold-heatmap
+- quadrant-contour-prop-combo
+- rcn-composition-stacked-heatmap
+- rcn-horizontal-bar-pie
+- spatial-cell-highlight-grid
+- spatial-cooccurrence-matrix
+- spatial-expression-contour
+- stage-boxplot-jitter-sig
+- stage-distance-boxen-grid
+- stage-stacked-prop-bar
+- stage-track-block-heatmap
+- tri-panel-stage-umap
+- voronoi-neighborhood-mosaic
 ---
 # 原发性黑色素瘤空间蛋白组与微区转录组免疫编辑复刻流程
 

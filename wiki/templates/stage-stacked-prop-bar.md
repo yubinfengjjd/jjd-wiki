@@ -2,7 +2,7 @@
 type: template
 id: stage-stacked-prop-bar
 title: 演进分期百比堆叠构成条形图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition

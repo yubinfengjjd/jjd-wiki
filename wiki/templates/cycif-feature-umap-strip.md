@@ -2,7 +2,7 @@
 type: template
 id: cycif-feature-umap-strip
 title: 多标志物连续蛋白强度 UMAP 条带
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-type-annotation
