@@ -219,7 +219,7 @@ steps:
 | [[methods/coexpression-ppi-network|共表达网络（WGCNA）与分子互作网络分析]] | note | ready | Stage 5B：相关性共表达网络枢纽模块提取与有序样本趋势 |
 | [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]] | L2 | ready · 可用 | 主推默认 · 中心枢纽基因共表达放射网络图 |
 | [[methods/survival-prognosis-analysis|生存分析与临床预后建模]] | note | ready | Stage 5C：TCGA 临床队列多基因 Kaplan-Meier 生存网格验证 |
-| [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]] | L2 | ready | 主推默认 · 多基因 TCGA KM 生存风险网格图（含 95% CI 与 HR/Logrank） |
+| [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]] | L2 | ready · 可用 | 主推默认 · 多基因 TCGA KM 生存风险网格图（含 95% CI 与 HR/Logrank） |
 <!-- facts:end -->
 
 ## 步进决策树（空间蛋白组 × 微区转录组免疫编辑）
