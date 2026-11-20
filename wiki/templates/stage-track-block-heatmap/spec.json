@@ -1,0 +1,123 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "scores": {
+      "interface": "",
+      "filename": "stage_heatmap_scores.csv",
+      "description": "通路活性得分或基因表达 Z-score 矩阵（首列为特征名，其余列为样本 ID）",
+      "required": true,
+      "columns": {
+        "feature": {
+          "type": "str",
+          "description": "通路或基因名称",
+          "required": true
+        }
+      }
+    },
+    "sample_meta": {
+      "interface": "",
+      "filename": "stage_sample_meta.csv",
+      "description": "样本分期/解剖部位注释表（按 sample_id 与 scores 矩阵列对齐）",
+      "required": true,
+      "columns": {
+        "sample_id": {
+          "type": "str",
+          "description": "与得分矩阵列名匹配的样本标识",
+          "required": true
+        },
+        "site": {
+          "type": "str",
+          "description": "样本病理分期或微区部位分组（如 MIS/IR/bTIL/IB/IM/EM）",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "sample_col": "sample_id",
+    "stage_col": "site",
+    "stage_order": [
+      "MIS",
+      "IR",
+      "bTIL",
+      "IB",
+      "IM",
+      "EM"
+    ],
+    "row_blocks": [
+      {
+        "label": "IFN",
+        "rows": ["SHIH_IFN", "IMSIG_IFN"],
+        "pretty": ["SHIH_IFN", "IMSIG_IFN"]
+      },
+      {
+        "label": "Tumor",
+        "rows": ["Melanocytes", "Melanoma"],
+        "pretty": ["Melanocytes", "Melanoma"]
+      },
+      {
+        "label": "Immune",
+        "rows": ["T_cells", "Macrophages", "B_cells"],
+        "pretty": ["T cells", "Macrophages", "B cells"]
+      },
+      {
+        "label": "Skin",
+        "rows": ["Keratinocyte"],
+        "pretty": ["Keratinocyte"]
+      }
+    ],
+    "normalize_mode": "zscore_2sd",
+    "vmin": -1.0,
+    "vmax": 1.0,
+    "cmap_preset": "cancer_discovery_score",
+    "colorbar_title": "Score",
+    "dpi": 300,
+    "width_in": 4.6,
+    "height_in": 3.0,
+    "rect": [
+      0.08,
+      0.05,
+      0.72,
+      0.86
+    ]
+  },
+  "parameters": {
+    "normalize_mode": {
+      "type": "select",
+      "label": "行标准化模式",
+      "default": "zscore_2sd",
+      "options": [
+        "zscore_2sd",
+        "zscore",
+        "none"
+      ]
+    },
+    "cmap_preset": {
+      "type": "select",
+      "label": "配色方案",
+      "default": "cancer_discovery_score",
+      "options": [
+        "cancer_discovery_score",
+        "cancer_discovery_zscore"
+      ]
+    },
+    "vmin": {
+      "type": "number",
+      "label": "色标下限",
+      "default": -1.0,
+      "min": -4.0,
+      "max": 0.0,
+      "step": 0.25
+    },
+    "vmax": {
+      "type": "number",
+      "label": "色标上限",
+      "default": 1.0,
+      "min": 0.0,
+      "max": 4.0,
+      "step": 0.25
+    }
+  }
+}
