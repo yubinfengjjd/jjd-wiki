@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T12:32:03.935857+00:00",
+  "checked_at": "2026-11-20T12:39:58.343629+00:00",
   "page": "templates/coexpr-hub-radial-network.md",
-  "snapshot": "712f51bb620ca18051e03808420f67f8f507032a34f59e54442dc0e512727cb8",
+  "snapshot": "edec2ec53d17ec450382068f05f7e7f98c4c05e2193ec6922d2bf97c04acdc59",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

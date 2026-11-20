@@ -2,7 +2,7 @@
 type: template
 id: tri-panel-stage-umap
 title: 三联分群分期患者 UMAP
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-type-annotation
@@ -58,27 +58,29 @@ favorite: false
 
 ## 数据要求
 
-### cells（umap_tripanel_cells.csv）：单细胞 UMAP 坐标与三列离散注释表 （模板内联表结构）
+### cells（umap_tripanel_cells.csv）：单细胞 UMAP 坐标与三列离散注释表（细胞类型、进展分期、患者编号） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| cell_id | str | 必需 | 细胞唯一标识 |
-| umap_1 | float | 必需 | UMAP 横坐标 |
-| umap_2 | float | 必需 | UMAP 纵坐标 |
-| cell_type | str | 必需 | 第一面板细胞类型注释 |
-| stage | str | 必需 | 第二面板进展分期/分组 |
-| patient_id | str | 必需 | 第三面板患者/样本编号 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| cell_id | str | 细胞唯一标识 |
+| umap_1 | float | UMAP 横坐标 |
+| umap_2 | float | UMAP 纵坐标 |
+| cell_type | str | 第一面板细胞类型注释 |
+| stage | str | 第二面板进展分期/分组 |
+| patient_id | str | 第三面板患者/样本编号 |
 
 ### 可覆盖的 style
 
 - `panel1_col`：`"cell_type"`
 - `panel2_col`：`"stage"`
 - `panel3_col`：`"patient_id"`
+- `panel_titles`：`["UMAP by cell type", "UMAP by stage", "UMAP by patient"]`
 - `point_size`：`4.5`
 - `alpha`：`0.78`
 - `dpi`：`300`
 - `width_in`：`8.8`
 - `height_in`：`2.75`
+- `rect`：`[0.04, 0.1, 0.8, 0.78]`
 
 ## 使用记录
 

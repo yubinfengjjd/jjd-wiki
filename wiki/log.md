@@ -1695,3 +1695,5 @@
 ## [2026-11-20 12:38 UTC] verify rcn-composition-stacked-heatmap
 
 ## [2026-11-20 12:39 UTC] acceptance check templates/rcn-composition-stacked-heatmap
+
+## [2026-11-20 12:40 UTC] ready 6: templates/tri-panel-stage-umap, templates/rcn-composition-stacked-heatmap, templates/voronoi-neighborhood-mosaic, templates/half-violin-decile-shift, templates/coexpr-hub-radial-network, templates/km-survival-risk-grid

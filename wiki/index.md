@@ -181,12 +181,6 @@
 
 ### draft
 
-- [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]]
-- [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]]
-- [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]
-- [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]]
-- [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]]
-- [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]]
 
 ### ready
 
@@ -197,16 +191,19 @@
 - [[templates/fy-lasso|LASSO Cox 系数路径与交叉验证图]]
 - [[templates/fy-nicecalibration|Logistic 模型校准曲线与 HL 检验]]
 - [[templates/fy-pca|PCA降维置信椭圆图]]
+- [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]]
 - [[templates/shap-importance-bar|SHAP 条形图（含环形 inset）]]
 - [[templates/shap-radial-bar|SHAP 环形贡献图]]
 - [[templates/shap-beeswarm|SHAP 蜂群图]]
 - [[templates/fy-string-plus|STRING互作证据打分网络图]]
+- [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]]
 - [[templates/fy-wgcna-heatmap|WGCNA模块基因表达热图]]
 - [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]
 - [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
 - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]
 - [[templates/fy-pairwiselogrank|三组以上 KM 曲线与两两比较表]]
 - [[templates/fy-pca3d|三维PCA分组散点图]]
+- [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]
 - [[templates/subgroup-hazard-forest|亚组分析森林图]]
 - [[templates/fy-subgroup|亚组生存风险森林图]]
 - [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]
@@ -234,6 +231,7 @@
 - [[templates/scp-group-dot-heatmap|分组表达点阵热图]]
 - [[templates/scp-count-bar|分组计数柱图]]
 - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]
+- [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]]
 - [[templates/fy-boxviolin|半小提琴箱线散点组合图]]
 - [[templates/fy-nsurvv3|双基因高低分组生存曲线]]
 - [[templates/fy-fancybar|含亚组的多组均值柱图与比较]]
@@ -245,6 +243,7 @@
 - [[templates/fy-multipanelroc|多变量 Logistic 模型训练/测试 ROC]]
 - [[templates/fy-corrgram|多变量相关矩阵散点热图]]
 - [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]]
+- [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]]
 - [[templates/fy-sankey|多层分类流向桑基图]]
 - [[templates/fy-timeroc|多模型时间依赖 ROC 曲线]]
 - [[templates/fy-multiclassedger|多组edgeR配对差异分析]]
@@ -262,6 +261,7 @@
 - [[templates/fy-batch-bestseparationv3|批量最佳切点生存曲线]]
 - [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]]
 - [[templates/fy-oncoprintv2|按通路分组的突变瀑布图]]
+- [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]]
 - [[templates/fy-heatmap|样本相关聚类热图]]
 - [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]]
 - [[templates/fy-pancancer-boxplot-plus|泛癌肿瘤对照分组箱线图]]

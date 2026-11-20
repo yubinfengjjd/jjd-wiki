@@ -2,7 +2,7 @@
 type: template
 id: half-violin-decile-shift
 title: 半小提琴与分位数偏移哑铃图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition
@@ -55,13 +55,13 @@ favorite: false
 
 ## 数据要求
 
-### distances（distance_shift_groups.csv）：两组对比分布长表 （模板内联表结构）
+### distances（distance_shift_groups.csv）：两组对比的物理距离或分布观测长表（panel, group, value） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| panel | str | 必需 | 分面类别（如免疫细胞亚群） |
-| group | str | 必需 | 对比组别（如 Normal vs Precursor） |
-| value | float | 必需 | 正值观测数值（如空间距离 um） |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| panel | str | 分面类别（如免疫细胞亚群） |
+| group | str | 对比组别（如 Normal vs Precursor） |
+| value | float | 正值观测数值（如空间距离 um） |
 
 ### 可覆盖的 style
 
@@ -71,6 +71,7 @@ favorite: false
 - `dpi`：`300`
 - `width_in`：`7.4`
 - `height_in`：`2.75`
+- `rect`：`[0.05, 0.22, 0.91, 0.66]`
 
 ## 使用记录
 

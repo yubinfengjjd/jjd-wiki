@@ -145,7 +145,7 @@ next_steps:
   - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-10-23 只核对方法输出与模板接口；未运行真实课题分析→出图。
     - 依据：降维嵌入可与 marker 表达长表拼成特征 UMAP 网格；模板不重做降维或表达。；前提：UMAP 坐标与表达来自同一 Seurat 对象；cell_id 一致。；目标细胞类型映射由注释步骤给出；每个 feature 至少有一个正表达细胞。；适配：导出 render-umap-feature-long.csv（cell_id, umap_1, umap_2, group, feature, value）。
     - 关系证据：methods/dimensionality-reduction.md#输出；methods/scp-standard-workflow.md#知识关联检查；methods/scp-standard-workflow.md#输出；templates/scrna-feature-umap-grid/spec.json；templates/scrna-feature-umap-grid/verify/verify.json；运行证据：无
-  - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+  - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：降维生成的 UMAP 坐标可联合细胞类型、进展分期与患者编号按 Cancer Discovery 风格三联并排展示；模板不重算 UMAP。；前提：坐标与三列离散注释来自同一降维对象；cell_id 唯一且坐标无 NA。；适配：导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
     - 关系证据：methods/dimensionality-reduction.md#输出；templates/tri-panel-stage-umap/spec.json；运行证据：无
 <!-- facts:end -->

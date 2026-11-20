@@ -2,7 +2,7 @@
 type: template
 id: km-survival-risk-grid
 title: 多基因 TCGA 生存风险网格图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/survival-prognosis-analysis
@@ -56,7 +56,7 @@ favorite: false
 
 ## 数据要求
 
-### km_curves（km_survival_curves.csv）：多基因 KM 阶跃曲线表 （模板内联表结构）
+### km_curves（km_survival_curves.csv）：多基因 Kaplan-Meier 阶跃生存率与 95% CI 曲线表 （模板内联表结构）
 
 | 列 | 类型 | 必需 | 含义 |
 |---|---|---|---|
@@ -68,25 +68,28 @@ favorite: false
 | upper | float | 可选 | 95% CI 上界 |
 | n_censor | int | 可选 | 删失数 |
 
-### km_stats（km_survival_stats.csv）：多基因 Logrank 与 Cox 统计汇总表 （模板内联表结构）
+### km_stats（km_survival_stats.csv）：各基因 Logrank P 与单因素 Cox HR 汇总统计表 （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| gene | str | 必需 | 基因符号 |
-| logrank_p | float | 必需 | Log-rank P 值 |
-| cox_hr_high_vs_low | float | 必需 | High vs Low 风险比 HR |
-| cox_p | float | 必需 | Cox 回归 P 值 |
-| n_high | int | 必需 | 高表达组样本数 |
-| n_low | int | 必需 | 低表达组样本数 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| gene | str | 基因符号 |
+| logrank_p | float | Log-rank P 值 |
+| cox_hr_high_vs_low | float | High vs Low 风险比 HR |
+| cox_p | float | Cox 回归 P 值 |
+| n_high | int | 高表达组样本数 |
+| n_low | int | 低表达组样本数 |
 
 ### 可覆盖的 style
 
 - `low_color`：`"#E29D7A"`
 - `high_color`：`"#284560"`
 - `ncols`：`2`
+- `xlabel`：`"Time (years)"`
+- `ylabel`：`"% Survival (TCGA-SKCM, n=120)"`
 - `dpi`：`300`
 - `width_in`：`5.8`
 - `height_in`：`8.6`
+- `rect`：`[0.13, 0.04, 0.83, 0.92]`
 
 ## 使用记录
 

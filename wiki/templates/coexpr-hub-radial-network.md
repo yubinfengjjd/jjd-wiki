@@ -2,7 +2,7 @@
 type: template
 id: coexpr-hub-radial-network
 title: 枢纽基因共表达放射网络图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/coexpression-ppi-network
@@ -56,7 +56,7 @@ favorite: false
 
 ## 数据要求
 
-### nodes（network_nodes.csv）：共表达网络节点表 （模板内联表结构）
+### nodes（network_nodes.csv）：共表达网络节点坐标与枢纽模块标注表 （模板内联表结构）
 
 | 列 | 类型 | 必需 | 含义 |
 |---|---|---|---|
@@ -66,7 +66,7 @@ favorite: false
 | in_s100b_1step | bool | 必需 | 是否属于枢纽基因一步邻域模块 |
 | is_key_label | bool | 可选 | 是否放射状显示胶囊基因标签 |
 
-### edges（network_edges.csv）：共表达网络边表 （模板内联表结构）
+### edges（network_edges.csv）：共表达网络边表（from, to, weight） （模板内联表结构）
 
 | 列 | 类型 | 必需 | 含义 |
 |---|---|---|---|
@@ -83,6 +83,7 @@ favorite: false
 - `dpi`：`300`
 - `width_in`：`5.2`
 - `height_in`：`4.0`
+- `rect`：`[0.05, 0.05, 0.9, 0.9]`
 
 ## 使用记录
 

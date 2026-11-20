@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T12:36:38.789547+00:00",
+  "checked_at": "2026-11-20T12:39:58.211668+00:00",
   "page": "templates/tri-panel-stage-umap.md",
-  "snapshot": "32ec8014347767d8597e2b1517be343a4f252adc003022f8b068a174761e0e4d",
+  "snapshot": "6dfd0d2022f58dbbd2fb9e0a719e381641628e0ccb254dcb2638d8d9ec438e7d",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

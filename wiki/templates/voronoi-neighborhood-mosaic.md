@@ -2,7 +2,7 @@
 type: template
 id: voronoi-neighborhood-mosaic
 title: Voronoi 细胞空间邻域镶嵌图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment
@@ -55,7 +55,7 @@ favorite: false
 
 ## 数据要求
 
-### cells（spatial_cells_voronoi.csv）：单细胞连续物理坐标与空间邻域类别表 （模板内联表结构）
+### cells（spatial_cells_voronoi.csv）：单细胞连续物理坐标与空间邻域（RCN/TCC）类别表 （模板内联表结构）
 
 | 列 | 类型 | 必需 | 含义 |
 |---|---|---|---|
@@ -74,6 +74,7 @@ favorite: false
 - `dpi`：`300`
 - `width_in`：`5.4`
 - `height_in`：`6.2`
+- `rect`：`[0.04, 0.04, 0.92, 0.92]`
 
 ## 使用记录
 

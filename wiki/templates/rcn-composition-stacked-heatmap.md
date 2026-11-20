@@ -2,7 +2,7 @@
 type: template
 id: rcn-composition-stacked-heatmap
 title: RCN 聚簇与分期堆叠复合热图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment
@@ -55,19 +55,19 @@ favorite: false
 
 ## 数据要求
 
-### zscore_matrix（rcn_cluster_zscore.csv）：聚簇 × 特征 Z-score 宽表 （模板内联表结构）
+### zscore_matrix（rcn_cluster_zscore.csv）：30 个 RCN 聚簇 × 细胞表型 Z-score 矩阵（含 rcn_group 与 cluster_id 列） （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| rcn_group | str | 必需 | 归并后 RCN/TCC 大类标签 |
-| cluster_id | str | 必需 | 子聚簇编号 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| rcn_group | str | 归并后 RCN 大类标签（如 RCN1..RCN10） |
+| cluster_id | str | K-means 子聚簇编号 |
 
-### cluster_tracks（rcn_cluster_tracks.csv）：患者与分期堆叠占比轨道表 （模板内联表结构）
+### cluster_tracks（rcn_cluster_tracks.csv）：各子聚簇的患者比例（patient_*）与疾病分期比例（stage_*）注释轨道表 （模板内联表结构）
 
-| 列 | 类型 | 必需 | 含义 |
-|---|---|---|---|
-| cluster_id | str | 必需 | 与主矩阵对齐的聚簇编号 |
-| rcn_group | str | 必需 | 大类标签 |
+| 列 | 类型 | 含义 |
+|---|---|---|
+| cluster_id | str | 与主矩阵对齐的聚簇编号 |
+| rcn_group | str | RCN 分组名称 |
 
 ### 可覆盖的 style
 
@@ -76,6 +76,7 @@ favorite: false
 - `dpi`：`300`
 - `width_in`：`6.4`
 - `height_in`：`6.8`
+- `rect`：`[0.1, 0.04, 0.85, 0.9]`
 
 ## 使用记录
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T12:30:07.370027+00:00",
+  "checked_at": "2026-11-20T12:39:58.311472+00:00",
   "page": "templates/half-violin-decile-shift.md",
-  "snapshot": "dca0b30fbb0a3f90530bf1f2e64844f548f4979e78d7501729a496c94742a60b",
+  "snapshot": "289fa42ec9309dcd1722c838d94b3842b16bc22a472281f5e111176873e45661",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
