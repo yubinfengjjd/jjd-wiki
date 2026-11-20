@@ -97,6 +97,22 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/gsea-running-enrichment
+  compatibility: adaptable
+  reason: 全基因排序 GSEA 富集分析的逐位置 Running Enrichment Score 曲线、峰值位置、命中条码与 NES/FDR 统计可整理为
+    default 跑分曲线图；模板不重算 GSEA 置换检验。
+  prerequisites:
+  - 须明确基因排序依据（如 DESeq2 Wald stat / log2FC）及 GSEA 统计摘要中的基因集名称、NES 与校正口径。
+  adaptation: 导出 gsea_running_es_curves.csv（x, runningScore, position, 可选 panel）与
+    gsea_summary.csv（Description, NES, p.adjust）。
+  evidence:
+  - methods/gene-set-enrichment.md#输出
+  - templates/gsea-running-enrichment/spec.json
+  - templates/gsea-running-enrichment/verify/verify.json
+  verification:
+    state: not_run
+    scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：锁定关键基因集做逐细胞/逐样本活性打分
   when: 从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时
@@ -154,6 +170,9 @@ data_domains:
   - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：代谢通路富集结果（Fold enrichment + -log10(P) + 亚群彩点）可切换为 variant 棒棒糖点图展示；模板不执行富集检验。；前提：GeneRatio 与 BgRatio 比值计算透明一致，不混用原始 P 与校正 P。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
     - 关系证据：methods/gene-set-enrichment.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
+  - [[templates/gsea-running-enrichment|富集跑分曲线与条码图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：全基因排序 GSEA 富集分析的逐位置 Running Enrichment Score 曲线、峰值位置、命中条码与 NES/FDR 统计可整理为 default 跑分曲线图；模板不重算 GSEA 置换检验。；前提：须明确基因排序依据（如 DESeq2 Wald stat / log2FC）及 GSEA 统计摘要中的基因集名称、NES 与校正口径。；适配：导出 gsea_running_es_curves.csv（x, runningScore, position, 可选 panel）与 gsea_summary.csv（Description, NES, p.adjust）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/gsea-running-enrichment/spec.json；templates/gsea-running-enrichment/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

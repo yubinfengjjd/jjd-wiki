@@ -2,7 +2,7 @@
 type: template
 id: gsea-running-enrichment
 title: 富集跑分曲线与条码图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-enrichment
@@ -36,7 +36,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/gene-set-enrichment|基因集富集分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：全基因排序 GSEA 富集分析的逐位置 Running Enrichment Score 曲线、峰值位置、命中条码与 NES/FDR 统计可整理为 default 跑分曲线图；模板不重算 GSEA 置换检验。；前提：须明确基因排序依据（如 DESeq2 Wald stat / log2FC）及 GSEA 统计摘要中的基因集名称、NES 与校正口径。；适配：导出 gsea_running_es_curves.csv（x, runningScore, position, 可选 panel）与 gsea_summary.csv（Description, NES, p.adjust）。
+    - 关系证据：methods/gene-set-enrichment.md#输出；templates/gsea-running-enrichment/spec.json；templates/gsea-running-enrichment/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用
@@ -53,22 +55,34 @@ favorite: false
 
 ## 数据要求
 
-### curves（gsea_running_es_curves.csv）：GSEA 排秩基因跑分曲线与命中条码表 （模板内联表结构）
+### curves（gsea_running_es_curves.csv）：GSEA 逐排秩基因 running enrichment score 曲线与命中位置表（x, runningScore, position, 可选 panel/pathway） （模板内联表结构）
 
-| 列 | 类型 | 含义 |
-|---|---|---|
-| x | int | 排序基因列表位置 |
-| runningScore | float | 累计富集得分 |
-| position | int | 基因集命中标记（1=命中，0=未命中） |
-| panel | str | 可选面板或通路筛选键 |
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| x | int | 必需 | 排序基因列表中的位置索引 |
+| runningScore | float | 必需 | 累计富集得分（Running Enrichment Score） |
+| position | int | 必需 | 是否命中目标基因集（1=命中，0=未命中） |
+| panel | str | 可选 | 面板或通路筛选标识（多曲线表时用于按 panel 选择） |
 
-### summary（gsea_summary.csv）：GSEA 统计摘要表 （模板内联表结构）
+### summary（gsea_summary.csv）：GSEA 通路富集统计摘要表（含 Description, NES, p.adjust / pvalue, 可选 panel） （模板内联表结构）
 
-| 列 | 类型 | 含义 |
-|---|---|---|
-| Description | str | 基因集描述名称 |
-| NES | float | 标准化富集得分 |
-| p.adjust | float | 多重检验校正 FDR |
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| Description | str | 必需 | 基因集名称 |
+| NES | float | 必需 | 标准化富集得分（Normalized Enrichment Score） |
+| p.adjust | float | 可选 | 多重检验校正后 FDR/padj 值 |
+
+### 可覆盖的 style
+
+- `panel_id`：`"Fig6E"`
+- `title`：`""`
+- `line_color`：`"#E35B3A"`
+- `rug_color`：`"#3A3A3A"`
+- `p_label_mode`：`"fdr"`
+- `dpi`：`300`
+- `width_in`：`3.0`
+- `height_in`：`2.9`
+- `rect`：`[0.22, 0.2, 0.72, 0.68]`
 
 ## 使用记录
 

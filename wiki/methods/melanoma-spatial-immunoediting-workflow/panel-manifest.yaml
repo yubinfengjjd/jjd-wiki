@@ -210,7 +210,7 @@ panels:
   panel: 2E
   panel_letter: E
   evidence_tier: local_recompute
-  template_id: cell-prop-flow-bar
+  template_id: rcn-horizontal-bar-pie
   methods:
   - cell-proportion-composition
   - spatial-transcriptomics-microenvironment
@@ -427,7 +427,7 @@ panels:
   panel: 5B
   panel_letter: B
   evidence_tier: proxy
-  template_id: spatial-feature-grid
+  template_id: spatial-expression-contour
   methods:
   - spatial-transcriptomics-microenvironment
   script_path: code/panels/fig05_b.py
@@ -541,7 +541,7 @@ panels:
   panel: 6C
   panel_letter: C
   evidence_tier: local_recompute
-  template_id: pathway-zscore-heatmap
+  template_id: stage-track-block-heatmap
   methods:
   - gene-set-scoring
   script_path: code/panels/fig06_c.py
@@ -570,7 +570,7 @@ panels:
   panel: 6E
   panel_letter: E
   evidence_tier: local_recompute
-  template_id: null
+  template_id: gsea-running-enrichment
   methods:
   - gene-set-enrichment
   script_path: code/panels/fig06_e.py
@@ -599,7 +599,7 @@ panels:
   panel: 6G
   panel_letter: G
   evidence_tier: local_recompute
-  template_id: pathway-zscore-heatmap
+  template_id: stage-track-block-heatmap
   methods:
   - differential-expression
   script_path: code/panels/fig06_g.py
@@ -749,7 +749,7 @@ panels:
   panel: 7G-bars
   panel_letter: G
   evidence_tier: local_recompute
-  template_id: cell-prop-flow-bar
+  template_id: compartment-dual-track-bars
   methods:
   - cell-proportion-composition
   script_path: code/panels/fig07_g.py
@@ -775,7 +775,7 @@ panels:
   panel: 7H
   panel_letter: H
   evidence_tier: proxy
-  template_id: pathway-zscore-heatmap
+  template_id: stage-track-block-heatmap
   methods:
   - immune-infiltration-tme
   script_path: code/panels/fig07_h.py
@@ -1128,7 +1128,7 @@ panels:
   panel: S5B
   panel_letter: B
   evidence_tier: proxy
-  template_id: spatial-feature-grid
+  template_id: spatial-expression-contour
   methods:
   - spatial-transcriptomics-microenvironment
   script_path: code/panels/sfig05_b.py
@@ -1210,7 +1210,7 @@ panels:
   panel: S6C
   panel_letter: C
   evidence_tier: local_recompute
-  template_id: null
+  template_id: gsea-running-enrichment
   methods:
   - gene-set-enrichment
   script_path: code/panels/sfig06_c.py
@@ -1296,7 +1296,7 @@ panels:
   panel: S7B
   panel_letter: B
   evidence_tier: local_recompute
-  template_id: null
+  template_id: gsea-running-enrichment
   methods:
   - gene-set-enrichment
   script_path: code/panels/sfig07_b.py
@@ -1311,7 +1311,7 @@ panels:
   panel: S7C
   panel_letter: C
   evidence_tier: proxy
-  template_id: pathway-zscore-heatmap
+  template_id: stage-track-block-heatmap
   methods:
   - gene-set-scoring
   script_path: code/panels/sfig07_c.py
@@ -1394,7 +1394,7 @@ panels:
   panel: S7H
   panel_letter: H
   evidence_tier: proxy
-  template_id: pathway-zscore-heatmap
+  template_id: stage-track-block-heatmap
   methods:
   - immune-infiltration-tme
   script_path: code/panels/sfig07_h.py
@@ -1409,7 +1409,7 @@ panels:
   panel: S7I-bars
   panel_letter: I
   evidence_tier: local_recompute
-  template_id: cell-prop-flow-bar
+  template_id: compartment-dual-track-bars
   methods:
   - cell-proportion-composition
   script_path: code/panels/sfig07_i.py

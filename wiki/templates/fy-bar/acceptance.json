@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:07:40.908879+00:00",
+  "checked_at": "2026-11-20T17:39:42.017881+00:00",
   "page": "templates/fy-bar.md",
-  "snapshot": "c0b99384cbbcda4f4685fac63c142ca1226735562fbd93a8a53a30503fc15b79",
+  "snapshot": "e44c2111016fe100f33df34e1aa2f3c12b043617a226e8d5be09473ff64b63bd",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

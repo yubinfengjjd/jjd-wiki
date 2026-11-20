@@ -13,6 +13,7 @@ style_tier: variant
 journal_style: Cancer Discovery
 tags:
 - single-cell
+- transcriptomics
 chart_types:
 - spatial-map
 keywords:
@@ -30,7 +31,7 @@ favorite: false
 <!-- facts:start -->
 - 来源：[[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]
 - 语言：python
-- 标签：single-cell
+- 标签：single-cell、transcriptomics
 - 图型：[[chart-types/spatial-map]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

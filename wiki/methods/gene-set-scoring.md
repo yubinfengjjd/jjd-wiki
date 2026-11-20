@@ -105,6 +105,21 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/stage-track-block-heatmap
+  compatibility: adaptable
+  reason: 跨临床分期/微区样本的 ssGSEA 通路活性或特征基因 Z-score 可切换为 variant 顶部分期色带+分块热图（Cancer Discovery
+    画风）；模板不重算打分。
+  prerequisites:
+  - 得分矩阵列名与 sample_meta.sample_id 按键严格对齐；同块特征采用一致的标准化与截断尺度。
+  adaptation: 导出 stage_heatmap_scores.csv 与 stage_sample_meta.csv（sample_id, site）。
+  evidence:
+  - methods/gene-set-scoring.md#输出
+  - templates/stage-track-block-heatmap/spec.json
+  - templates/stage-track-block-heatmap/verify/verify.json
+  verification:
+    state: not_run
+    scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：按高/低活性得分分组深挖差异与轨迹
   when: 识别出高活性细胞亚群（如 High-Lactylation 亚群）后，比较高低分组差异或拟时序动态时
@@ -191,6 +206,9 @@ render_bridges:
   - [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：各亚群 Top 代谢通路富集/打分强度与倍数变化可切换为 variant 棒棒糖点图；模板不重算打分。；前提：统一背景与归一化口径；相同通路跨亚群横向比较须保持同一评分标准。；适配：导出 metabolism_lollipop.csv（cluster, pathway, neg_log10_pval, fold_enrichment）。
     - 关系证据：methods/gene-set-scoring.md#输出；templates/metabolism-lollipop-dotplot/spec.json；运行证据：无
+  - [[templates/stage-track-block-heatmap|分期色带分块通路热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：跨临床分期/微区样本的 ssGSEA 通路活性或特征基因 Z-score 可切换为 variant 顶部分期色带+分块热图（Cancer Discovery 画风）；模板不重算打分。；前提：得分矩阵列名与 sample_meta.sample_id 按键严格对齐；同块特征采用一致的标准化与截断尺度。；适配：导出 stage_heatmap_scores.csv 与 stage_sample_meta.csv（sample_id, site）。
+    - 关系证据：methods/gene-set-scoring.md#输出；templates/stage-track-block-heatmap/spec.json；templates/stage-track-block-heatmap/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

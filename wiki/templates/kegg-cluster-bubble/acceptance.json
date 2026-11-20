@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T14:52:40.803677+00:00",
+  "checked_at": "2026-11-20T17:39:42.880983+00:00",
   "page": "templates/kegg-cluster-bubble.md",
-  "snapshot": "96794e8ac3450babe6a62a90c6345e8ab0b0c7785a02e559bf00dc10c8a75e4b",
+  "snapshot": "8385fa65b95f0f39a370aab8d42004c0afe3c9f2167462cb7cbcdad2dadc657b",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

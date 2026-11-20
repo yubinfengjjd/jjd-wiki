@@ -21,6 +21,8 @@ keywords:
 - cowplot
 favorite: false
 primary_method: gene-set-enrichment
+style_tier: variant
+journal_style: FigureYa
 ---
 # 富集分析对角排列气泡图
 

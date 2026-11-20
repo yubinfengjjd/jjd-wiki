@@ -11,7 +11,7 @@ panels:
 - A
 language: r
 tags:
-- 单细胞分析
+- single-cell
 chart_types:
 - ridge
 favorite: false
@@ -25,7 +25,7 @@ primary_method: gene-set-scoring
 - 来源：[[layouts/2026-10-22-scp-example__fig16-cell-density|分组表达密度图]]
 - 面板（来源版式）：A
 - 语言：r
-- 标签：单细胞分析
+- 标签：single-cell
 - 图型：[[chart-types/ridge]]
 - 输入接口：[[interfaces/render-cell-feature-values|细胞级特征值长表]]
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

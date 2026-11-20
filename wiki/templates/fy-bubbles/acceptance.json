@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-18T14:20:59.608525+00:00",
+  "checked_at": "2026-11-20T17:39:42.296766+00:00",
   "page": "templates/fy-bubbles.md",
-  "snapshot": "a8a4ff25f2ad27d685896c6125f7c5e9160f11e61ca1ff8e615c612cf0d29984",
+  "snapshot": "c2b09a278a8e5977666a4e22fd58c039d30dc70e4bcd249d564b93fd323475db",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

@@ -15,7 +15,7 @@ chart_types:
 - trend
 keywords: []
 favorite: false
-style_tier: variant
+style_tier: default
 journal_style: Cai2026-npjPO
 ---
 # 拟时序多分支基因曲线网格

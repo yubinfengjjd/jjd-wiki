@@ -110,6 +110,20 @@ figure_relations:
     state: not_run
     scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/spatial-expression-contour
+  compatibility: adaptable
+  reason: 基于物理组织切片坐标（X_um, Y_um）插值的连续蛋白/基因表达密度可切换为 variant 二维等高线地形分面图；模板不执行空间插值或核密度估计。
+  prerequisites:
+  - 等高线网格坐标与可选单细胞散点坐标来自同一未旋转裁剪的物理视野（fov_id）。
+  adaptation: 导出 spatial_contours.csv（fov_id, X_um, Y_um 及特征列）与可选 spatial_cells.csv。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/spatial-expression-contour/spec.json
+  - templates/spatial-expression-contour/verify/verify.json
+  verification:
+    state: not_run
+    scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：空间邻域细胞通讯与信号互作轴解析
   when: 在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时
@@ -169,6 +183,9 @@ next_steps:
   - [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：连续物理视野（FOV）单细胞坐标与 RCN/TCC 邻域标签可切换为 variant 高密 Voronoi 多边形空间镶嵌与局部放大图；模板不做空间聚类。；前提：输入必须为未下采样打碎连续拓扑的物理 FOV（x, y），否则 Voronoi 面积失真。；适配：导出 spatial_cells_voronoi.csv（cell_id, x, y, neighborhood, 可选 fov_id/stage）。
     - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/voronoi-neighborhood-mosaic/spec.json；运行证据：无
+  - [[templates/spatial-expression-contour|空间蛋白表达等高线地形图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：基于物理组织切片坐标（X_um, Y_um）插值的连续蛋白/基因表达密度可切换为 variant 二维等高线地形分面图；模板不执行空间插值或核密度估计。；前提：等高线网格坐标与可选单细胞散点坐标来自同一未旋转裁剪的物理视野（fov_id）。；适配：导出 spatial_contours.csv（fov_id, X_um, Y_um 及特征列）与可选 spatial_cells.csv。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-expression-contour/spec.json；templates/spatial-expression-contour/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

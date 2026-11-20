@@ -9,7 +9,7 @@ sources:
 panels: []
 language: r
 primary_method: immune-infiltration-tme
-style_tier: variant
+style_tier: default
 journal_style: Cai2026-npjPO
 tags:
 - transcriptomics

@@ -23,7 +23,7 @@ keywords:
 - survival
 favorite: false
 primary_method: survival-prognosis-analysis
-style_tier: variant
+style_tier: default
 journal_style: Standard
 ---
 # KM 生存曲线与风险表

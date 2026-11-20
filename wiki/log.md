@@ -1745,3 +1745,5 @@
 ## [2026-11-20 17:34 UTC] verify spatial-expression-contour
 
 ## [2026-11-20 17:34 UTC] verify gsea-running-enrichment
+
+## [2026-11-20 17:40 UTC] ready 5: rcn-horizontal-bar-pie, compartment-dual-track-bars, stage-track-block-heatmap, spatial-expression-contour, gsea-running-enrichment

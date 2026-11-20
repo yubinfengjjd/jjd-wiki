@@ -252,6 +252,34 @@ figure_relations:
     state: not_run
     scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/rcn-horizontal-bar-pie
+  compatibility: adaptable
+  reason: 邻域或聚类簇的细粒度细胞表型比例可导出为 variant 水平堆叠条形图（高亮靶细胞边框）+ 底部虚线框分组功能饼图；模板不重算邻域聚类或统计检验。
+  prerequisites:
+  - 每个邻域/分组的细胞表型比例与汇总功能大类比例按相同细胞集汇总归一化，且不混同描述性构成与样本级显著性推断。
+  adaptation: 导出 rcn_phenotype_composition.csv 与 rcn_functional_pies.csv（按 RCN 键对齐）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/rcn-horizontal-bar-pie/spec.json
+  - templates/rcn-horizontal-bar-pie/verify/verify.json
+  verification:
+    state: not_run
+    scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/compartment-dual-track-bars
+  compatibility: adaptable
+  reason: 双组织空间区室（如表皮 vs 真皮）在多疾病分期下的分层细胞构成比例可切换为 variant 双区室多轨水平堆叠图；模板不做统计检验。
+  prerequisites:
+  - 两个区室须来自同一切片或同一套表型门控规则；各分期×区室组成按细胞总数归一化。
+  adaptation: 导出 compartment_cell_composition.csv（Stage, compartment_proxy 及各细胞类型比例列）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/compartment-dual-track-bars/spec.json
+  - templates/compartment-dual-track-bars/verify/verify.json
+  verification:
+    state: not_run
+    scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：异常富集亚群的差异表达与功能打分深挖
   when: 通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时
@@ -340,6 +368,12 @@ next_steps:
   - [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：两组间物理距离或连续分布在不同细胞类群的迁移可导出为 default 镜像半小提琴 + 十分位数哑铃偏移图；模板不计算最近邻距离。；前提：仅用于严格两分组全正值（log 轴）分布比较；明确样本/FOV 边界。；适配：导出 distance_shift_groups.csv（panel, group, value）。
     - 关系证据：methods/cell-proportion-composition.md#输出；templates/half-violin-decile-shift/spec.json；运行证据：无
+  - [[templates/rcn-horizontal-bar-pie|邻域水平堆叠与功能饼图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：邻域或聚类簇的细粒度细胞表型比例可导出为 variant 水平堆叠条形图（高亮靶细胞边框）+ 底部虚线框分组功能饼图；模板不重算邻域聚类或统计检验。；前提：每个邻域/分组的细胞表型比例与汇总功能大类比例按相同细胞集汇总归一化，且不混同描述性构成与样本级显著性推断。；适配：导出 rcn_phenotype_composition.csv 与 rcn_functional_pies.csv（按 RCN 键对齐）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/rcn-horizontal-bar-pie/spec.json；templates/rcn-horizontal-bar-pie/verify/verify.json；运行证据：无
+  - [[templates/compartment-dual-track-bars|表皮真皮双区室堆叠条图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：双组织空间区室（如表皮 vs 真皮）在多疾病分期下的分层细胞构成比例可切换为 variant 双区室多轨水平堆叠图；模板不做统计检验。；前提：两个区室须来自同一切片或同一套表型门控规则；各分期×区室组成按细胞总数归一化。；适配：导出 compartment_cell_composition.csv（Stage, compartment_proxy 及各细胞类型比例列）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/compartment-dual-track-bars/spec.json；templates/compartment-dual-track-bars/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

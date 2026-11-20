@@ -12,8 +12,9 @@ panels: []
 language: r
 license: MIT
 tags:
-- 单细胞分析
+- single-cell
 chart_types:
+- chord
 - circos
 keywords:
 - CellChat
@@ -25,6 +26,8 @@ keywords:
 - 环形热图
 favorite: false
 primary_method: cell-cell-communication
+style_tier: default
+journal_style: Standard
 ---
 # 细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）
 
@@ -34,8 +37,8 @@ primary_method: cell-cell-communication
 - 来源：[[sources/ks-wechat|单细胞与顶刊多轨可视化代码库 (KS-account-codes)]]
 - 语言：r
 - 许可证：MIT
-- 标签：单细胞分析
-- 图型：[[chart-types/circos]]
+- 标签：single-cell
+- 图型：[[chart-types/chord]] · [[chart-types/circos]]
 - 输入接口：[[interfaces/cellchat-lr-table|细胞通讯配受体互作表]] · [[interfaces/celltype-gene-expression|细胞类型×基因平均表达表]]
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready）
 

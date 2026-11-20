@@ -124,21 +124,21 @@ MOESM1 含 Supplementary Data 1–7 索引和附图 1–6 图注。MOESM2–8 �
 | **Fig. 2** | **2K** | Fib → Malignant（COL1A1/COL6A–CD44/SDC4）CellChat 配受体气泡矩阵 | [[methods/cell-cell-communication]] | [[templates/lr-bubble-matrix]] (`default`) |
 | **Fig. 3** | **3A** | Bulk 微环境 35×35 层次聚类黑框对称相关矩阵 + 侧边引线标签 | [[methods/immune-infiltration-tme]] | [[templates/clustered-corr-boxes]] (`default`) |
 | **Fig. 3** | **3B** | `CAA_ST` 四分区 Tumor / `C10_lpFib_ABCA8` / CD8⁺ T / 耗竭 T 空间热斑 | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-feature-grid]] (`default`) |
-| **Fig. 3** | **3C** | `ABCA8` 高/低四分位组 8 个免疫检查点表达 Wilcoxon 箱线图 | [[methods/immune-infiltration-tme]] | [[templates/checkpoint-group-boxplot]] (`variant`) |
+| **Fig. 3** | **3C** | `ABCA8` 高/低四分位组 8 个免疫检查点表达 Wilcoxon 箱线图 | [[methods/immune-infiltration-tme]] | [[templates/checkpoint-group-boxplot]] (`default`) |
 | **Fig. 3** | **3D** | Fib–T 细胞免疫抑制性配体–受体 CellPhoneDB 双轴连线气泡图 | [[methods/cell-cell-communication]] · [[methods/immune-infiltration-tme]] | [[templates/lr-bipartite-bubble]] (`variant`) |
 | **Fig. 3** | **3E** | `C10_lpFib_ABCA8` / T 细胞共高区与 `LGALS3/HAVCR2/CD86/CTLA4` 空间共定位 | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-coexpr-multichannel]] (`variant`) |
 | **Fig. 3** | **3F–H** | *小鼠 4T1 共培养、流式与多重免疫荧光（湿实验已剔除，不建模板）* | — | *Excluded Wet-Lab* |
 | **Fig. 4** | **4A–E** | EC 亚群 Normal/Tumor UMAP、Marker 特征、Cox+Ro/e、功能与 PROGENy 热图 | [[methods/cell-type-annotation]] · [[methods/cell-proportion-composition]] · [[methods/gene-set-scoring]] | [[templates/scrna-celltype-umap]] · [[templates/scrna-feature-umap-grid]] · [[templates/roe-cox-heatmap]] · [[templates/pathway-zscore-heatmap]] |
 | **Fig. 4** | **4F–H** | EC DiffusionMap、DPT/Slingshot 伪时序与 Stalk/Tip-like 模块叠色 | [[methods/trajectory-inference]] | [[templates/diffusion-trajectory-overlay]] (`default`) |
-| **Fig. 4** | **4I** | EC → 基质 12×36 细胞通讯计数矩阵与边际合计柱状热图 | [[methods/cell-cell-communication]] | [[templates/cellchat-count-heatmap]] (`variant`) |
+| **Fig. 4** | **4I** | EC → 基质 12×36 细胞通讯计数矩阵与边际合计柱状热图 | [[methods/cell-cell-communication]] | [[templates/cellchat-count-heatmap]] (`default`) |
 | **Fig. 4** | **4J** | `CAA_ST` 6 空间区域 `TipEC/VenEC/emtEC` 签名局部栅格分布 | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-feature-grid]] (`default`) |
-| **Fig. 4** | **4K** | EC 亚群 Top 20 KEGG 代谢通路富集 `-log10(P)` 棒棒糖散点图 | [[methods/gene-set-enrichment]] · [[methods/gene-set-scoring]] | [[templates/metabolism-lollipop-dotplot]] (`variant`) |
+| **Fig. 4** | **4K** | EC 亚群 Top 20 KEGG 代谢通路富集 `-log10(P)` 棒棒糖散点图 | [[methods/gene-set-enrichment]] · [[methods/gene-set-scoring]] | [[templates/metabolism-lollipop-dotplot]] (`default`) |
 | **Fig. 5** | **5A–H** | Mural 亚群拆分 UMAP、签名 UMAP、Cox+Ro/e、功能/PROGENy 与分化轨迹 | [[methods/cell-type-annotation]] · [[methods/cell-proportion-composition]] · [[methods/trajectory-inference]] | [[templates/scrna-celltype-umap]] · [[templates/scrna-feature-umap-grid]] · [[templates/roe-cox-heatmap]] · [[templates/pathway-zscore-heatmap]] · [[templates/diffusion-trajectory-overlay]] |
-| **Fig. 5** | **5I** | Mural Lineage 2 8 个关键基因沿伪时序平滑表达曲线网格 | [[methods/trajectory-inference]] | [[templates/pseudotime-branch-curves]] (`variant`) |
+| **Fig. 5** | **5I** | Mural Lineage 2 8 个关键基因沿伪时序平滑表达曲线网格 | [[methods/trajectory-inference]] | [[templates/pseudotime-branch-curves]] (`default`) |
 | **Fig. 5** | **5J** | Mural → EC（JAG1-NOTCH / COL4-ITGA9 等）配受体概率气泡矩阵 | [[methods/cell-cell-communication]] | [[templates/lr-bubble-matrix]] (`default`) |
-| **Fig. 5** | **5K** | Mural 亚群 KEGG 代谢通路富集棒棒糖图 | [[methods/gene-set-enrichment]] | [[templates/metabolism-lollipop-dotplot]] (`variant`) |
+| **Fig. 5** | **5K** | Mural 亚群 KEGG 代谢通路富集棒棒糖图 | [[methods/gene-set-enrichment]] | [[templates/metabolism-lollipop-dotplot]] (`default`) |
 | **Fig. 6** | **6A** | 52 群基质+免疫微环境细胞联合投影 UMAP 与三列色卡 | [[methods/cell-type-annotation]] | [[templates/scrna-celltype-umap]] (`default`) |
-| **Fig. 6** | **6B** | 16 类免疫/上皮细胞 ↔ 36 基质亚群 CellPhoneDB 通讯计数矩阵与边际柱图 | [[methods/cell-cell-communication]] | [[templates/cellchat-count-heatmap]] (`variant`) |
+| **Fig. 6** | **6B** | 16 类免疫/上皮细胞 ↔ 36 基质亚群 CellPhoneDB 通讯计数矩阵与边际柱图 | [[methods/cell-cell-communication]] | [[templates/cellchat-count-heatmap]] (`default`) |
 | **Fig. 6** | **6C** | `C8_iFib_CCL19` → 20 类 TME 细胞 TLS 相关配受体概率气泡矩阵 | [[methods/cell-cell-communication]] | [[templates/lr-bubble-matrix]] (`default`) |
 | **Fig. 6** | **6D–E** | 全切片及右半区 TLS 8 项签名/基因空间分布网格 | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-feature-grid]] (`default`) |
 | **Fig. 6** | **6F–G** | `C4_TipEC_PGF` → M1/M2 配受体气泡图 + 三信号空间分布网格 | [[methods/cell-cell-communication]] · [[methods/spatial-transcriptomics-microenvironment]] | [[templates/lr-bubble-matrix]] · [[templates/spatial-feature-grid]] |
@@ -146,7 +146,7 @@ MOESM1 含 Supplementary Data 1–7 索引和附图 1–6 图注。MOESM2–8 �
 | **Supp. Fig. 1** | **S1A–B** | 基质主群按 GSE 队列着色的批次 UMAP + 9 个主谱系 Marker 气泡点图 | [[methods/batch-integration]] · [[methods/cell-type-annotation]] | [[templates/scrna-celltype-umap]] · [[templates/marker-bubble-dotplot]] (`default`) |
 | **Supp. Fig. 2** | **S2A** | Fib 按队列批次 UMAP + ANT/T/LM 组织堆叠比例与样本箱线 Wilcoxon 检验 | [[methods/batch-integration]] · [[methods/cell-proportion-composition]] | [[templates/scrna-celltype-umap]] · [[templates/tissue-ratio-prop-combo]] (`variant`) |
 | **Supp. Fig. 2** | **S2B–C** | Fib 36 个标志基因 DotPlot + `Angiogenic_signature` UMAP | [[methods/cell-type-annotation]] · [[methods/gene-set-scoring]] | [[templates/marker-bubble-dotplot]] · [[templates/scrna-feature-umap-grid]] |
-| **Supp. Fig. 2** | **S2D–E** | Fib 42 条 KEGG 通路气泡矩阵 + 16 条代谢通路棒棒糖图 | [[methods/gene-set-enrichment]] | [[templates/kegg-cluster-bubble]] (`default`) · [[templates/metabolism-lollipop-dotplot]] (`variant`) |
+| **Supp. Fig. 2** | **S2D–E** | Fib 42 条 KEGG 通路气泡矩阵 + 16 条代谢通路棒棒糖图 | [[methods/gene-set-enrichment]] | [[templates/kegg-cluster-bubble]] (`default`) · [[templates/metabolism-lollipop-dotplot]] (`default`) |
 | **Supp. Fig. 3** | **S3A** | `CAA_ST` 8 区域 `COL1A1/COL1A2/DCN` 空间表达网格 | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-feature-grid]] (`default`) |
 | **Supp. Fig. 3** | **S3B** | 四象限低分辨率 H&E 组织图与 `C10_lpFib_ABCA8` / `CD8_Cytotoxic_T` 空间反卷积对照 | [[methods/spatial-transcriptomics-microenvironment]] | [[templates/spatial-he-deconv-panel]] (`variant`) |
 | **Supp. Fig. 4** | **S4A–C** | EC 批次 UMAP + 组织构成比例箱线组合图 + 32 基因 DotPlot + Tip-cell 特征图 | [[methods/cell-proportion-composition]] · [[methods/cell-type-annotation]] | [[templates/tissue-ratio-prop-combo]] · [[templates/marker-bubble-dotplot]] · [[templates/scrna-feature-umap-grid]] |

@@ -21,6 +21,8 @@ keywords:
 - diverging bar
 favorite: false
 primary_method: gene-set-enrichment
+style_tier: default
+journal_style: FigureYa
 ---
 # 分组着色柱图与正负富集柱图
 

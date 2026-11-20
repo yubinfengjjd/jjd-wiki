@@ -181,11 +181,6 @@
 
 ### draft
 
-- [[templates/stage-track-block-heatmap|分期色带分块通路热图]]
-- [[templates/gsea-running-enrichment|富集跑分曲线与条码图]]
-- [[templates/spatial-expression-contour|空间蛋白表达等高线地形图]]
-- [[templates/compartment-dual-track-bars|表皮真皮双区室堆叠条图]]
-- [[templates/rcn-horizontal-bar-pie|邻域水平堆叠与功能饼图]]
 
 ### ready
 
@@ -215,6 +210,7 @@
 - [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]
 - [[templates/fy-dca|决策曲线与净获益分析]]
 - [[templates/fy-circgroup|分型对应关系圈状热图]]
+- [[templates/stage-track-block-heatmap|分期色带分块通路热图]]
 - [[templates/fy-panpie|分组临床分期扇形矩阵图]]
 - [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]]
 - [[templates/scp-comp-ring|分组构成同心环图]]
@@ -259,6 +255,7 @@
 - [[templates/pred-density-scatter|密度散点与边缘分布]]
 - [[templates/fy-bubbles|富集与表达气泡图]]
 - [[templates/fy-bubble|富集分析对角排列气泡图]]
+- [[templates/gsea-running-enrichment|富集跑分曲线与条码图]]
 - [[templates/fy-basezoom|局部放大气泡散点图]]
 - [[templates/fy-rankheatmap|差异倍数分档注释热图]]
 - [[templates/scp-de-volcano|差异表达火山图]]
@@ -273,6 +270,7 @@
 - [[templates/scp-feature-heatmap|特征表达热图]]
 - [[templates/fy-batchcorrelation|目标基因批量相关散点图]]
 - [[templates/fy-linkcor|相关热图与连线蝴蝶图]]
+- [[templates/spatial-expression-contour|空间蛋白表达等高线地形图]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]
 - [[templates/resampling-metric-box|箱线、散点与均值]]
 - [[templates/fy-boxdensity|箱线图叠加密度分布图]]
@@ -282,8 +280,10 @@
 - [[templates/marker-bubble-dotplot|细胞类型 × 基因气泡点图]]
 - [[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]
 - [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]]
+- [[templates/compartment-dual-track-bars|表皮真皮双区室堆叠条图]]
 - [[templates/fy-risktable|训练与验证集风险评分多因素森林表]]
 - [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]]
+- [[templates/rcn-horizontal-bar-pie|邻域水平堆叠与功能饼图]]
 - [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]]
 - [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]]
 - [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]]

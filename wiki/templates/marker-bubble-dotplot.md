@@ -11,7 +11,7 @@ panels:
 - A
 language: r
 tags:
-- 单细胞分析
+- single-cell
 chart_types:
 - dotplot
 favorite: false
@@ -30,7 +30,7 @@ journal_style: Standard
 - 来源：[[layouts/2026-10-22-glaucoma-scrna__fig03-topjournal-bubble|顶刊样式气泡点图（GSE251716）]]
 - 面板（来源版式）：A
 - 语言：r
-- 标签：单细胞分析
+- 标签：single-cell
 - 图型：[[chart-types/dotplot]]
 - 输入接口：[[interfaces/render-dotplot-long|细胞类型 × 基因点图表]]
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

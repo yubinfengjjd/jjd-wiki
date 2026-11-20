@@ -2,7 +2,7 @@
 type: template
 id: stage-track-block-heatmap
 title: 分期色带分块通路热图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/gene-set-scoring
@@ -37,7 +37,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/gene-set-scoring|基因集与通路签名打分]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：跨临床分期/微区样本的 ssGSEA 通路活性或特征基因 Z-score 可切换为 variant 顶部分期色带+分块热图（Cancer Discovery 画风）；模板不重算打分。；前提：得分矩阵列名与 sample_meta.sample_id 按键严格对齐；同块特征采用一致的标准化与截断尺度。；适配：导出 stage_heatmap_scores.csv 与 stage_sample_meta.csv（sample_id, site）。
+    - 关系证据：methods/gene-set-scoring.md#输出；templates/stage-track-block-heatmap/spec.json；templates/stage-track-block-heatmap/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用
@@ -54,18 +56,34 @@ favorite: false
 
 ## 数据要求
 
-### scores（stage_heatmap_scores.csv）：特征 × 样本得分或 Z-score 矩阵 （模板内联表结构）
+### scores（stage_heatmap_scores.csv）：通路活性得分或基因表达 Z-score 矩阵（首列为特征名，其余列为样本 ID） （模板内联表结构）
 
 | 列 | 类型 | 含义 |
 |---|---|---|
-| feature | str | 通路签名或基因名 |
+| feature | str | 通路或基因名称 |
 
-### sample_meta（stage_sample_meta.csv）：样本分期/微区部位注释表 （模板内联表结构）
+### sample_meta（stage_sample_meta.csv）：样本分期/解剖部位注释表（按 sample_id 与 scores 矩阵列对齐） （模板内联表结构）
 
 | 列 | 类型 | 含义 |
 |---|---|---|
-| sample_id | str | 与得分矩阵列名按 key 对齐的样本标识 |
-| site | str | 病理分期或解剖分区标签 |
+| sample_id | str | 与得分矩阵列名匹配的样本标识 |
+| site | str | 样本病理分期或微区部位分组（如 MIS/IR/bTIL/IB/IM/EM） |
+
+### 可覆盖的 style
+
+- `sample_col`：`"sample_id"`
+- `stage_col`：`"site"`
+- `stage_order`：`["MIS", "IR", "bTIL", "IB", "IM", "EM"]`
+- `row_blocks`：`[{"label": "IFN", "rows": ["SHIH_IFN", "IMSIG_IFN"], "pretty": ["SHIH_IFN", "IMSIG_IFN"]}, {"label": "Tumor", "rows": ["Melanocytes", "Melanoma"], "pretty": ["Melanocytes", "Melanoma"]}, {"label": "Immune", "rows": ["T_cells", "Macrophages", "B_cells"], "pretty": ["T cells", "Macrophages", "B cells"]}, {"label": "Skin", "rows": ["Keratinocyte"], "pretty": ["Keratinocyte"]}]`
+- `normalize_mode`：`"zscore_2sd"`
+- `vmin`：`-1.0`
+- `vmax`：`1.0`
+- `cmap_preset`：`"cancer_discovery_score"`
+- `colorbar_title`：`"Score"`
+- `dpi`：`300`
+- `width_in`：`4.6`
+- `height_in`：`3.0`
+- `rect`：`[0.08, 0.05, 0.72, 0.86]`
 
 ## 使用记录
 

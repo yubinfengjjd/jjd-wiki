@@ -11,7 +11,7 @@ panels:
 - A
 language: r
 tags:
-- 单细胞分析
+- single-cell
 chart_types:
 - umap
 favorite: false
@@ -30,7 +30,7 @@ journal_style: Standard · Marker Grid
 - 来源：[[layouts/2026-10-22-glaucoma-scrna__fig02-marker-feature-umap|marker 特征 UMAP 小多图（GSE251716）]]
 - 面板（来源版式）：A
 - 语言：r
-- 标签：单细胞分析
+- 标签：single-cell
 - 图型：[[chart-types/umap]]
 - 输入接口：[[interfaces/render-umap-feature-long|UMAP 坐标与特征长表]]
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无

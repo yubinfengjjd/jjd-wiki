@@ -2,7 +2,7 @@
 type: template
 id: spatial-expression-contour
 title: 空间蛋白表达等高线地形图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/spatial-transcriptomics-microenvironment
@@ -37,7 +37,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：基于物理组织切片坐标（X_um, Y_um）插值的连续蛋白/基因表达密度可切换为 variant 二维等高线地形分面图；模板不执行空间插值或核密度估计。；前提：等高线网格坐标与可选单细胞散点坐标来自同一未旋转裁剪的物理视野（fov_id）。；适配：导出 spatial_contours.csv（fov_id, X_um, Y_um 及特征列）与可选 spatial_cells.csv。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-expression-contour/spec.json；templates/spatial-expression-contour/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用
@@ -54,20 +56,39 @@ favorite: false
 
 ## 数据要求
 
-### contours（spatial_contours.csv）：空间二维物理网格表达密度表 （模板内联表结构）
+### contours（spatial_contours.csv）：空间二维坐标插值网格蛋白/基因表达密度表（含 fov_id, X_um, Y_um 及若干特征表达列） （模板内联表结构）
 
-| 列 | 类型 | 含义 |
-|---|---|---|
-| fov_id | str | 视场标识 |
-| X_um | float | 物理横坐标 (um) |
-| Y_um | float | 物理纵坐标 (um) |
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| fov_id | str | 可选 | 视场或组织切片标识 |
+| X_um | float | 必需 | 空间物理横坐标 (um) |
+| Y_um | float | 必需 | 空间物理纵坐标 (um) |
 
-### cells（spatial_cells.csv）：可选单细胞物理坐标叠层表 （模板内联表结构）
+### cells（spatial_cells.csv）（可选表）：可选单细胞物理坐标叠层散点表（fov_id, X_um, Y_um） （模板内联表结构）
 
-| 列 | 类型 | 含义 |
-|---|---|---|
-| X_um | float | 细胞物理横坐标 (um) |
-| Y_um | float | 细胞物理纵坐标 (um) |
+| 列 | 类型 | 必需 | 含义 |
+|---|---|---|---|
+| X_um | float | 必需 | 细胞质心物理横坐标 (um) |
+| Y_um | float | 必需 | 细胞质心物理纵坐标 (um) |
+
+### 可覆盖的 style
+
+- `fov_col`：`"fov_id"`
+- `fov_id`：`"MEL09_FOV_IM"`
+- `x_col`：`"X_um"`
+- `y_col`：`"Y_um"`
+- `features`：`["MART1", "S100a"]`
+- `feature_labels`：`{"MART1": "MART1 (MITF proxy)", "S100a": "S100A (S100B proxy)", "SOX10": "SOX10 (S100A proxy)"}`
+- `border_colors`：`{"MART1": "#EE852E", "S100a": "#E6D33B"}`
+- `flip_y`：`true`
+- `ncols`：`1`
+- `levels_fill`：`16`
+- `levels_line`：`12`
+- `point_size`：`3.5`
+- `dpi`：`300`
+- `width_in`：`2.9`
+- `height_in`：`3.8`
+- `rect`：`[0.06, 0.05, 0.84, 0.89]`
 
 ## 使用记录
 

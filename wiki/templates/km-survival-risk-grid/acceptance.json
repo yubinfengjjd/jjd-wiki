@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T15:48:12.403552+00:00",
+  "checked_at": "2026-11-20T17:39:43.025297+00:00",
   "page": "templates/km-survival-risk-grid.md",
-  "snapshot": "8f3bb89e0cd9db6cbcf7e5a75b9d62b7fe2810668c8e7c01cc099ffbded93d5a",
+  "snapshot": "8cec825209d4335d889f0fe3532537c99816d72510ae4675a6643c5fc94bb977",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

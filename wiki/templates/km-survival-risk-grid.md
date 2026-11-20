@@ -9,7 +9,7 @@ sources:
 panels: []
 language: python
 primary_method: survival-prognosis-analysis
-style_tier: default
+style_tier: variant
 journal_style: Cancer Discovery
 tags:
 - survival-analysis
@@ -52,7 +52,7 @@ favorite: false
 
 ## 知识关联检查
 
-2026-11-20：新建模板主归属方法 [[methods/survival-prognosis-analysis]]，槽位 `(survival-prognosis-analysis, km-curve)` 此前尚无 `default` 模板，设为 `style_tier: default` 并挂载至方法页 `figure_relations`。
+2026-11-20：新建模板主归属方法 [[methods/survival-prognosis-analysis]]；2026-11-21 槽位审查对齐“标准版为默认、期刊版为变体”原则，由 [[templates/km-survival-curve]]（Standard）担任 `default`，本模板置为 `style_tier: variant`（`journal_style: Cancer Discovery`）。
 
 ## 数据要求
 

@@ -2,7 +2,7 @@
 type: template
 id: compartment-dual-track-bars
 title: 表皮真皮双区室堆叠条图
-status: draft
+status: ready
 layouts: []
 sources:
 - methods/cell-proportion-composition
@@ -36,7 +36,9 @@ favorite: false
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 
 - 方法配图关系（语义审查）：
-  - 暂无已记录关系；接口或标签相同不代表语义已核实。
+  - [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：双组织空间区室（如表皮 vs 真皮）在多疾病分期下的分层细胞构成比例可切换为 variant 双区室多轨水平堆叠图；模板不做统计检验。；前提：两个区室须来自同一切片或同一套表型门控规则；各分期×区室组成按细胞总数归一化。；适配：导出 compartment_cell_composition.csv（Stage, compartment_proxy 及各细胞类型比例列）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/compartment-dual-track-bars/spec.json；templates/compartment-dual-track-bars/verify/verify.json；运行证据：无
 <!-- facts:end -->
 
 ## 适用
@@ -53,12 +55,27 @@ favorite: false
 
 ## 数据要求
 
-### composition（compartment_cell_composition.csv）：双组织区室在各分期下的细胞类型构成表 （模板内联表结构）
+### composition（compartment_cell_composition.csv）：双组织区室（如 Epidermis / Dermis）在不同进展分期下的细胞类型比例矩阵 （模板内联表结构）
 
 | 列 | 类型 | 含义 |
 |---|---|---|
-| Stage | str | 进展分期或条件标签 |
-| compartment_proxy | str | 组织区室标识（如 Epidermis / Dermis） |
+| Stage | str | 疾病进展分期或分组标签 |
+| compartment_proxy | str | 组织区室标签（如 Epidermis 与 Dermis） |
+
+### 可覆盖的 style
+
+- `stage_col`：`"Stage"`
+- `compartment_col`：`"compartment_proxy"`
+- `stage_order`：`["MIS", "Normal", "IM"]`
+- `stage_labels`：`{"MIS": "Melanoma in situ", "Normal": "Normal", "IM": "Invasive Melanoma"}`
+- `top_compartment`：`"Epidermis"`
+- `bottom_compartment`：`"Dermis"`
+- `top_color`：`"#3E7A56"`
+- `bottom_color`：`"#D98B38"`
+- `dpi`：`300`
+- `width_in`：`6.8`
+- `height_in`：`2.9`
+- `rect`：`[0.06, 0.05, 0.86, 0.86]`
 
 ## 使用记录
 

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T14:52:40.774223+00:00",
+  "checked_at": "2026-11-20T17:39:43.227812+00:00",
   "page": "templates/pseudotime-branch-curves.md",
-  "snapshot": "75bf1d84c3888db44c3398bbd4fe54487925f5cc2465a79dcd8d190475275276",
+  "snapshot": "a4aa3f24d51571ef3877f1d5431eca43321d6408e7a86b47346fbbfdc77d1c1d",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

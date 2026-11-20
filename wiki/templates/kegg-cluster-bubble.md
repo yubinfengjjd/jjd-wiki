@@ -13,6 +13,7 @@ tags:
 - single-cell
 - transcriptomics
 chart_types:
+- bubble
 - dotplot
 keywords: []
 favorite: false
@@ -27,7 +28,7 @@ journal_style: Cai2026-npjPO
 - 来源：[[methods/gene-set-enrichment|基因集富集分析]]
 - 语言：r
 - 标签：single-cell、transcriptomics
-- 图型：[[chart-types/dotplot]]
+- 图型：[[chart-types/bubble]] · [[chart-types/dotplot]]
 - 输入接口：未声明
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
 

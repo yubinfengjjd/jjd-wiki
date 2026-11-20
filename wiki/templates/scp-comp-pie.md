@@ -11,7 +11,7 @@ panels:
 - A
 language: r
 tags:
-- 单细胞分析
+- single-cell
 keywords:
 - SCP
 - pancreas_sub
@@ -30,7 +30,7 @@ primary_method: cell-proportion-composition
 - 来源：[[layouts/2026-10-22-scp-example__fig03-pie|饼图组成（SCP 示例）]]
 - 面板（来源版式）：A
 - 语言：r
-- 标签：单细胞分析
+- 标签：single-cell
 - 图型：[[chart-types/pie]]
 - 输入接口：[[interfaces/render-cell-metadata|细胞级分组元数据表]]
 - 接口结构匹配的分析方法（仅结构候选，未核实语义）：暂无
