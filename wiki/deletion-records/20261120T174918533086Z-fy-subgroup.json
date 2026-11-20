@@ -1,0 +1,26 @@
+{
+  "title": "亚组生存风险森林图",
+  "path": "templates/fy-subgroup.md",
+  "revision": "13715e73070eabef18bfefcf7178c1e17d6194063067264b01e5dfd42e57fff8",
+  "asset_files": 13,
+  "affected": [
+    {
+      "path": "recipes/figureya-90subgroup.md",
+      "title": "亚组生存风险森林图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261120T174918533086Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-90subgroup.md",
+      "before_sha256": "aae09a59322afdaeb945f9f22ba266332e963e2b74b300b3530ceda2e9c87cb4",
+      "after_sha256": "aae09a59322afdaeb945f9f22ba266332e963e2b74b300b3530ceda2e9c87cb4"
+    }
+  ],
+  "changed_layout_files": []
+}

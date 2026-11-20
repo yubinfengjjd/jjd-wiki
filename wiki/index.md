@@ -202,7 +202,6 @@
 - [[templates/fy-pairwiselogrank|三组以上 KM 曲线与两两比较表]]
 - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]
 - [[templates/subgroup-hazard-forest|亚组分析森林图]]
-- [[templates/fy-subgroup|亚组生存风险森林图]]
 - [[templates/cluster-kegg-bars|亚群富集条形图与命中数]]
 - [[templates/fy-immune-network|免疫细胞相关预后网络图]]
 - [[templates/coexpr-module-enrich-bars|共表达模块功能富集分面条图]]
