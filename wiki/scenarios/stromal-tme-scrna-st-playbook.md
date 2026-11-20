@@ -253,7 +253,7 @@ steps:
 | [[templates/cluster-kegg-bars|亚群富集条形图与命中数]] | L2 | ready · 可用 | 可切换画风 · 亚群分面富集条形图与命中计数 |
 | [[templates/metabolism-lollipop-dotplot|多亚群代谢通路棒棒糖图]] | L2 | ready · 可用 | 可切换画风 · 多亚群代谢通路棒棒糖图 |
 | [[methods/trajectory-inference|拟时序与轨迹推断]] | L2 | ready · 可用 | Stage 4B：DiffusionMap / Slingshot 拟时序分化与动态基因 |
-| [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]] | L2 | ready | 主推默认 · 降维轨迹与双功能模块激活叠图 |
+| [[templates/diffusion-trajectory-overlay|降维轨迹与功能模块叠图]] | L2 | ready · 可用 | 主推默认 · 降维轨迹与双功能模块激活叠图 |
 | [[templates/pseudotime-branch-curves|拟时序多分支基因曲线网格]] | L2 | ready · 可用 | 可切换画风 · 拟时序多分支动态基因曲线网格 |
 | [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] | note | ready | Stage 5：基质–免疫排斥相关矩阵与检查点差异验证 |
 | [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]] | L2 | ready | 主推默认 · 带层次聚类框与引线的对称相关矩阵 |
