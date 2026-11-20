@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T17:33:53.205405+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/spatial-expression-contour/spec.json": "2847abf4a14b7be274899c4ad76e9ea7318a62c9fce4c73c9a6141f6e7452266",
+    "templates/spatial-expression-contour/code/render.py": "b295aaf96cff8abd14500e209a4e23949ed2ef2e0d922639fc86f7b643b29b41",
+    "templates/spatial-expression-contour/code/panel.py": "68a3fc3284b2901105405d6b0d16e860faae52b1c21ae074bcc8c1eb8c035a75",
+    "templates/spatial-expression-contour/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/contours#columns": "db3b68af27c600aee0d3f5c70ceabe967af1624eb6d3cb2404f798a9296754ce",
+    "inline/cells#columns": "6c7dd390dafb16cc18fdf77d98638f2024b0f6dadc89564ff7f24f42e60572f9",
+    "templates/spatial-expression-contour/example/spatial_cells.csv": "5dd20e8726a8f1adf5860906f1acb7367478f48fac036afd00e803073f6407af",
+    "templates/spatial-expression-contour/example/spatial_contours.csv": "c0e5617841ef944cc0f55cfe0cd067bc8c372a7ef75ecd23cd85f04e4db1c330"
+  },
+  "outputs": {
+    "png": "1450aada2339ec79cf682014bc6ef8db541016eb20606cc6e0efef7948626c9f",
+    "pdf": "cd270563ca62b8d53c7363e7209ea3689dc33cf5c6bd3858581460852e24064a",
+    "svg": "1c57b945fb16cdcf85adeb46bba4dbfd6932d15c855cbab30e40b502d7fafa27"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
