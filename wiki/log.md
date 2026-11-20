@@ -1663,3 +1663,5 @@
 ## [2026-11-20 11:03 UTC] acceptance check diffusion-trajectory-overlay
 
 ## [2026-11-20 11:04 UTC] acceptance check clustered-corr-boxes
+
+## [2026-11-20 11:05 UTC] acceptance check checkpoint-group-boxplot

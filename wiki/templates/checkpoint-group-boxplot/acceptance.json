@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T14:52:40.307470+00:00",
+  "checked_at": "2026-11-20T11:04:35.370733+00:00",
   "page": "templates/checkpoint-group-boxplot.md",
-  "snapshot": "fb3457b52cb32c1112fe9f7f5112423b1508e99630454eef0e8e40b4a8e023c6",
+  "snapshot": "ddbaa40b86888514da45b813486ea37bfdb973ef63746ddfad6c39e7ca706cb7",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
