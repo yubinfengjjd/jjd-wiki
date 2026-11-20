@@ -1673,3 +1673,5 @@
 ## [2026-11-20 12:26 UTC] acceptance check templates/tri-panel-stage-umap
 
 ## [2026-11-20 12:28 UTC] verify voronoi-neighborhood-mosaic
+
+## [2026-11-20 12:28 UTC] acceptance check templates/voronoi-neighborhood-mosaic
