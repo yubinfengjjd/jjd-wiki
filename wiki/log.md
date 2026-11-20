@@ -1727,3 +1727,5 @@
 ## [2026-11-20 15:49 UTC] acceptance check templates/km-survival-risk-grid
 
 ## [2026-11-20 17:25 UTC] scaffold native template rcn-horizontal-bar-pie
+
+## [2026-11-20 17:26 UTC] scaffold native template compartment-dual-track-bars

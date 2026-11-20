@@ -1,0 +1,64 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "composition": {
+      "interface": "",
+      "filename": "compartment_cell_composition.csv",
+      "description": "双组织区室（如 Epidermis / Dermis）在不同进展分期下的细胞类型比例矩阵",
+      "required": true,
+      "columns": {
+        "Stage": {
+          "type": "str",
+          "description": "疾病进展分期或分组标签",
+          "required": true
+        },
+        "compartment_proxy": {
+          "type": "str",
+          "description": "组织区室标签（如 Epidermis 与 Dermis）",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "stage_col": "Stage",
+    "compartment_col": "compartment_proxy",
+    "stage_order": [
+      "MIS",
+      "Normal",
+      "IM"
+    ],
+    "stage_labels": {
+      "MIS": "Melanoma in situ",
+      "Normal": "Normal",
+      "IM": "Invasive Melanoma"
+    },
+    "top_compartment": "Epidermis",
+    "bottom_compartment": "Dermis",
+    "top_color": "#3E7A56",
+    "bottom_color": "#D98B38",
+    "dpi": 300,
+    "width_in": 6.8,
+    "height_in": 2.9,
+    "rect": [
+      0.06,
+      0.05,
+      0.86,
+      0.86
+    ]
+  },
+  "parameters": {
+    "top_compartment": {
+      "type": "string",
+      "label": "上方区室名称",
+      "default": "Epidermis"
+    },
+    "bottom_compartment": {
+      "type": "string",
+      "label": "下方区室名称",
+      "default": "Dermis"
+    }
+  }
+}

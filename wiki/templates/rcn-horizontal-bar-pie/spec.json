@@ -1,34 +1,95 @@
 {
   "entry": "code/render.py",
   "language": "python",
-  "tables": {},
-  "style": {
-    "sizing": {
-      "mode": "adaptive",
-      "profile": "unbound",
-      "table": null,
-      "x": null,
-      "y": null,
-      "item_width_in": 0.8,
-      "item_height_in": 0.32,
-      "plot_width_in": 5.4,
-      "plot_height_in": 4.4,
-      "margins_in": [
-        0.9,
-        0.25,
-        0.85,
-        0.55
-      ],
-      "min_width_in": 3.2,
-      "min_height_in": 2.8,
-      "max_width_in": null,
-      "max_height_in": null,
-      "width_in": null,
-      "height_in": null,
-      "label_fontsize": 11,
-      "label_rotation": 45,
-      "label_gap_in": 0.12
+  "panel": "code/panel.py",
+  "tables": {
+    "bars": {
+      "interface": "",
+      "filename": "rcn_phenotype_composition.csv",
+      "description": "各空间邻域/分组的细胞类型构成比例矩阵（首列为邻域ID，其余列为各细胞表型比例）",
+      "required": true,
+      "columns": {
+        "RCN": {
+          "type": "str",
+          "description": "空间邻域或聚类分组编号",
+          "required": true
+        }
+      }
+    },
+    "pies": {
+      "interface": "",
+      "filename": "rcn_functional_pies.csv",
+      "description": "各空间邻域的汇总功能大类构成表（用于底部虚线框分组饼图）",
+      "required": true,
+      "columns": {
+        "RCN": {
+          "type": "str",
+          "description": "与 bars 表对齐的空间邻域编号",
+          "required": true
+        }
+      }
     }
   },
-  "panel": "code/panel.py"
+  "style": {
+    "id_col": "RCN",
+    "highlight_col": "PD1+ CTL",
+    "highlight_fill": "#E2E2E2",
+    "highlight_edge": "#C82829",
+    "bar_title": "RCN cell types",
+    "rcn_order": [
+      "RCN1",
+      "RCN2",
+      "RCN3",
+      "RCN4",
+      "RCN5",
+      "RCN6",
+      "RCN7",
+      "RCN8",
+      "RCN9",
+      "RCN10"
+    ],
+    "pie_box_groups": [
+      {
+        "title": "Epidermis",
+        "items": ["RCN1"]
+      },
+      {
+        "title": "Myeloid enriched",
+        "items": ["RCN2", "RCN3", "RCN4"]
+      },
+      {
+        "title": "Immune suppressive",
+        "items": ["RCN5", "RCN8"]
+      },
+      {
+        "title": "T enriched",
+        "items": ["RCN6", "RCN7"]
+      },
+      {
+        "title": "Melanocytic",
+        "items": ["RCN9", "RCN10"]
+      }
+    ],
+    "dpi": 300,
+    "width_in": 4.4,
+    "height_in": 6.4,
+    "rect": [
+      0.13,
+      0.04,
+      0.83,
+      0.91
+    ]
+  },
+  "parameters": {
+    "highlight_col": {
+      "type": "string",
+      "label": "红框高亮细胞列",
+      "default": "PD1+ CTL"
+    },
+    "bar_title": {
+      "type": "string",
+      "label": "顶部条图标题",
+      "default": "RCN cell types"
+    }
+  }
 }
