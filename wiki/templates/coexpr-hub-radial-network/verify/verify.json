@@ -1,1 +1,25 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-20T12:24:11.776117+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T12:31:03.445867+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/coexpr-hub-radial-network/spec.json": "bd3848d6259f70e9ca866ea19ff098ac00fbfa8a37753c3217684869d199249d",
+    "templates/coexpr-hub-radial-network/code/render.py": "dcac5fbf0e8ce587e5c76ad66185fa26e2af83cd013fe39fa44996abb9461284",
+    "templates/coexpr-hub-radial-network/code/panel.py": "53785cafa1be05dbe7865eade1b954ef59476c771ed818e9445699d335cfb82f",
+    "templates/coexpr-hub-radial-network/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/nodes#columns": "8cf6da0506a1b4fec87ea00fe9e6c9707973ca1bfd2e7e3829b031dce1e139b1",
+    "inline/edges#columns": "d98d36ae32a0614418801b0a36938e1aa0359205c6f6a6a45841be3ad0d884c4",
+    "templates/coexpr-hub-radial-network/example/network_edges.csv": "d77f4e6553c844575dc770b920a719cd909ca68f53e9bd91a62632c1d835c1af",
+    "templates/coexpr-hub-radial-network/example/network_nodes.csv": "49e9f9b5a452cf365b2b9d3dddaf5766141c4eb9df07c6910a59b7759fecdb9f"
+  },
+  "outputs": {
+    "png": "a541a2e25e76cab857278e086abc5e9872108b38af1ddc360bc565712bee073a",
+    "pdf": "7943f387a679674f06fb475f73b7c09b777f7a0f4e3cc12a9576254ea6a3030c",
+    "svg": "8a6188a651782b7e60f5f3b93908d23482560f08b6f80b0e85e036156fa85f74"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
