@@ -262,7 +262,7 @@ steps:
 | [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]] | L2 | ready · 可用 | 主推默认 · 配受体互作概率气泡矩阵 |
 | [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]] | L2 | ready · 可用 | 可切换画风 · 细胞通讯计数柱状热图 |
 | [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]] | L2 | ready · 可用 | 可切换画风 · 配受体双轴连线气泡图 |
-| [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]] | L2 | ready | 可切换画风 · 通路定向多节点细胞通讯环形弦图 |
+| [[templates/cellchat-signaling-ring|通路定向细胞通讯弦图]] | L2 | ready · 可用 | 可切换画风 · 通路定向多节点细胞通讯环形弦图 |
 <!-- facts:end -->
 
 ## 步进决策树（双上游汇合 × 可切换顶刊模板）

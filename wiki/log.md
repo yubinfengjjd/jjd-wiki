@@ -1665,3 +1665,5 @@
 ## [2026-11-20 11:04 UTC] acceptance check clustered-corr-boxes
 
 ## [2026-11-20 11:05 UTC] acceptance check checkpoint-group-boxplot
+
+## [2026-11-20 11:06 UTC] acceptance check cellchat-signaling-ring
