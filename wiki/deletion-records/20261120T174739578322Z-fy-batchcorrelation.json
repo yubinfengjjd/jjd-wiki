@@ -1,0 +1,26 @@
+{
+  "title": "目标基因批量相关散点图",
+  "path": "templates/fy-batchcorrelation.md",
+  "revision": "b0f6d9d7b6af4f064da685a255c149f0d3631d0731c2d28b3c5a129cd2b17c3d",
+  "asset_files": 11,
+  "affected": [
+    {
+      "path": "recipes/figureya-73batchcorrelation.md",
+      "title": "目标基因批量相关散点图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261120T174739578322Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-73batchcorrelation.md",
+      "before_sha256": "36fd69997a99e7d196312aa6e10e604be449339d9dc7b1331e766d24ac0a2d79",
+      "after_sha256": "36fd69997a99e7d196312aa6e10e604be449339d9dc7b1331e766d24ac0a2d79"
+    }
+  ],
+  "changed_layout_files": []
+}

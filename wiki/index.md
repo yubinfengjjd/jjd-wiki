@@ -267,7 +267,6 @@
 - [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]]
 - [[templates/fy-pancancer-boxplot-plus|泛癌肿瘤对照分组箱线图]]
 - [[templates/scp-feature-heatmap|特征表达热图]]
-- [[templates/fy-batchcorrelation|目标基因批量相关散点图]]
 - [[templates/fy-linkcor|相关热图与连线蝴蝶图]]
 - [[templates/spatial-expression-contour|空间蛋白表达等高线地形图]]
 - [[templates/spatial-feature-grid|空间转录组特征分布网格]]

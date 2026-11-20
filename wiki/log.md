@@ -1749,3 +1749,5 @@
 ## [2026-11-20 17:40 UTC] ready 5: rcn-horizontal-bar-pie, compartment-dual-track-bars, stage-track-block-heatmap, spatial-expression-contour, gsea-running-enrichment
 
 ## [2026-11-20 17:47 UTC] delete template fy-adonis; cleaned 1 references
+
+## [2026-11-20 17:47 UTC] delete template fy-batchcorrelation; cleaned 1 references
