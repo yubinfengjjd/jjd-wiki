@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-20T10:49:34.924146+00:00",
+  "timestamp": "2026-11-20T10:52:10.796040+00:00",
   "exit_code": 0,
   "inputs": {
     "templates/diffusion-trajectory-overlay/spec.json": "d304596adafae269611fb205d48f2758b02f55de8bf76d5b960d2ab4a97e5a8c",
-    "templates/diffusion-trajectory-overlay/code/render.R": "526b4d997fb293c43d946b60f6edc5fa7a0a141ffa1a81ded9df7978af13c0e6",
+    "templates/diffusion-trajectory-overlay/code/render.R": "f2c8a421348a9167d1cb6532c441223806ea091d5c0c64720a2c05ecce946031",
     "inline/cells#columns": "cbc5eb68926746d23a1f4056c9592aeb04c0e32f3be24eb787f396381ad52c81",
     "inline/scores#columns": "1f45adb584cb1339dfee1108e2ab4e3c80056e91f58f050bfd6f62cef1a98a58",
     "inline/edges#columns": "f79eda4f465aeef6d6b02000022ba0da31847e75a28ea2e5f08099a7f9adaada",
@@ -13,9 +13,9 @@
     "templates/diffusion-trajectory-overlay/example/trajectory_edges.csv": "8cabed566407e08590ac909078e1a6ede8989b7886a9d1aa9b4b2d14b3093b46"
   },
   "outputs": {
-    "png": "22651a159c55b6f5995ba2912e02cffa22c806d86bcf65e70f8f131e3d78ca6b",
-    "pdf": "71c6f28ef47bdbe274f9d8f7a867fdf3b936f38c18e7a1f9d9a91797ca0006c9",
-    "svg": "308209acaa587f80cf74b82a67fbf775cddb29300654f6cb0d2e34cf687299bd"
+    "png": "befddcbff82f0dc5cf65fb78fe65206ec28b82efe07a1928718918857f616b2d",
+    "pdf": "62ae92a8882c142b22de598b4a2086bf76684328dee6596b7e33e80178b1e72a",
+    "svg": "8981611c87c24f1355be63a64d62dd4443e80da3f994afc7328a432988c8e8a4"
   },
   "environment": {
     "executable": "D:\\R-4.5.0\\bin\\Rscript.exe",

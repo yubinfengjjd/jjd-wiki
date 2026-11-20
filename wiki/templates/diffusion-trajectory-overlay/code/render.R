@@ -41,6 +41,7 @@ cells$cluster <- as.character(cells$cluster)
 if ("pseudotime" %in% names(cells)) cells$pseudotime <- as.numeric(cells$pseudotime)
 keep <- !is.na(cells$cell_id) & is.finite(cells$x) & is.finite(cells$y) & !is.na(cells$cluster)
 cells <- cells[keep, , drop = FALSE]
+cl_levels <- unique(cells$cluster)
 
 scores_file <- if (!is.null(spec$tables$scores$filename)) spec$tables$scores$filename else "diffusion_module_scores.csv"
 scores_path <- file.path(data_dir, scores_file)
@@ -162,7 +163,6 @@ if (color_mode == "module_overlay") {
     scale_colour_manual(values = pal_cl, name = NULL)
 }
 
-cl_levels <- unique(cells$cluster)
 centers <- do.call(rbind, lapply(seq_along(cl_levels), function(i) {
   s <- cells[cells$cluster == cl_levels[i], , drop = FALSE]
   data.frame(cluster = cl_levels[i], x = stats::median(s$x), y = stats::median(s$y),

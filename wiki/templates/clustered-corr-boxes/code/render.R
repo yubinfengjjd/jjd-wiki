@@ -3,17 +3,16 @@
 
 suppressPackageStartupMessages({
   library(ggplot2)
-  library(readr)
   library(jsonlite)
 })
 
 args <- commandArgs(trailingOnly = TRUE)
 get_arg <- function(name, default = NULL) {
   i <- match(name, args)
-  if (is.na(i) || i >= length(args)) default else args[i + 1]
+  if (is.na(i) || i >= length(args)) default else args[i + 1L]
 }
 script_arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)
-tpl_root <- dirname(dirname(normalizePath(sub("^--file=", "", script_arg[1]))))
+tpl_root <- dirname(dirname(normalizePath(sub("^--file=", "", script_arg[1L]))))
 
 data_dir <- get_arg("--data")
 out_dir <- get_arg("--out")
@@ -31,7 +30,7 @@ if (!is.null(style_file) && file.exists(style_file)) {
 }
 
 fname <- if (!is.null(spec$tables$corr$filename)) spec$tables$corr$filename else "corr_matrix.csv"
-raw <- readr::read_csv(file.path(data_dir, fname), show_col_types = FALSE)
+raw <- utils::read.csv(file.path(data_dir, fname), check.names = FALSE, stringsAsFactors = FALSE)
 
 # Support both tidy (row, col, r) and wide square matrix (first column = feature)
 if (all(c("row", "col", "r") %in% names(raw))) {
@@ -43,8 +42,8 @@ if (all(c("row", "col", "r") %in% names(raw))) {
   mat <- (mat + t(mat)) / 2
   diag(mat) <- 1
 } else {
-  feats <- as.character(raw[[1]])
-  mat <- as.matrix(raw[, -1, drop = FALSE])
+  feats <- as.character(raw[[1L]])
+  mat <- as.matrix(raw[, -1L, drop = FALSE])
   mode(mat) <- "numeric"
   rownames(mat) <- feats
   if (ncol(mat) == nrow(mat)) {
@@ -73,7 +72,11 @@ if (!preserve_order && n >= 3L) {
   feats <- rownames(mat)
   grp <- stats::cutree(hc, k = n_clusters)[ord]
 } else {
-  grp <- rep(seq_len(n_clusters), each = ceiling(n / n_clusters))[seq_len(n)]
+  # Detect contiguous diagonal blocks by adjacent row correlation similarity when preserving order
+  d_raw <- 1 - mat
+  d_raw[d_raw < 0] <- 0
+  hc <- stats::hclust(stats::as.dist(d_raw), method = clust_method)
+  grp <- stats::cutree(hc, k = n_clusters)
 }
 
 # Compute contiguous cluster run blocks along diagonal
@@ -90,16 +93,16 @@ heat <- expand.grid(y = seq_len(n), x = seq_len(n))
 heat$value <- as.vector(mat)
 
 pal <- unlist(style$palette)
-if (length(pal) < 3L) pal <- c("#67001F", "#B2182B", "#F7F7F7", "#2166AC", "#053061")
+if (length(pal) < 3L) pal <- c("#B2182B", "#F7F7F7", "#2166AC")
 box_col <- if (!is.null(style$box_color)) as.character(style$box_color) else "#202020"
-box_lw <- if (!is.null(style$box_linewidth)) as.numeric(style$box_linewidth) else 0.55
-lbl_sz <- if (!is.null(style$label_size)) as.numeric(style$label_size) else max(1.6, min(2.8, 72 / max(n, 15)))
+box_lw <- if (!is.null(style$box_linewidth)) as.numeric(style$box_linewidth) else 0.52
+lbl_sz <- if (!is.null(style$label_size)) as.numeric(style$label_size) else max(1.6, min(2.6, 72 / max(n, 15)))
 
 odd_idx <- seq(1L, n, by = 2L)
 even_idx <- seq(2L, n, by = 2L)
 col1_x <- n + 1.4
 col2_x <- n + max(7.5, n * 0.30)
-max_x <- col2_x + max(6.5, max(nchar(feats)) * 0.48)
+max_x <- col2_x + max(7.5, max(nchar(feats)) * 0.48)
 
 p <- ggplot(heat, aes(x = x, y = y)) +
   geom_tile(aes(fill = value)) +
@@ -114,7 +117,7 @@ p <- ggplot(heat, aes(x = x, y = y)) +
   guides(
     fill = guide_colourbar(
       barwidth = grid::unit(2.6, "mm"),
-      barheight = grid::unit(58, "mm"),
+      barheight = grid::unit(64, "mm"),
       theme = theme(legend.text.position = "left")
     )
   ) +
@@ -148,8 +151,8 @@ if (length(even_idx) > 0L) {
 }
 
 w_in <- if (!is.null(style$width_in)) as.numeric(style$width_in) else 8.2
-h_in <- if (!is.null(style$height_in)) as.numeric(style$height_in) else 6.4
-dpi_val <- if (is.null(style$dpi)) 300 else as.integer(style$dpi)
+h_in <- if (!is.null(style$height_in)) as.numeric(style$height_in) else 6.0
+dpi_val <- if (is.null(style$dpi)) 300L else as.integer(style$dpi)
 
 ggsave(file.path(out_dir, "figure.png"), p, width = w_in, height = h_in, dpi = dpi_val, bg = "white")
 ggsave(file.path(out_dir, "figure.pdf"), p, width = w_in, height = h_in, device = grDevices::cairo_pdf, bg = "white")
