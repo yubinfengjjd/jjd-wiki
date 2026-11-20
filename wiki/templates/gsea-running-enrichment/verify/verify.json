@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T17:34:27.541266+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/gsea-running-enrichment/spec.json": "5cd62f59ef3124cea0cabc8cbb67a0b8d8a3c57de3ecf7926e8b3f229447e118",
+    "templates/gsea-running-enrichment/code/render.py": "19a7160f1c07f3421e27ef7f78a6b1cd94f6cf6e845be04d21f7120336e2c7ff",
+    "templates/gsea-running-enrichment/code/panel.py": "65224abe6d7513af04823805658e65795d5f38098e6e82a8877a244dfb60443b",
+    "templates/gsea-running-enrichment/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/curves#columns": "65075b7206a29ad59f843505bc2d75e88d23d1a0c365a4502af012ebc6da4717",
+    "inline/summary#columns": "4725be51cb86dcdf9a8d93808320232316d6ff8e285dd5d3e8a427baef6e90b1",
+    "templates/gsea-running-enrichment/example/gsea_running_es_curves.csv": "87c43f8d593f611ba0a851081f5c118f695af28561003e4578105502e50cec64",
+    "templates/gsea-running-enrichment/example/gsea_summary.csv": "303203b575cc186b9d6a6435054826469515df9a3a87da12b550a04e35c342c3"
+  },
+  "outputs": {
+    "png": "9f1e917a4bdd2306335b447577ee040b815d0dda1d802977213ff52f00ef7e35",
+    "pdf": "a37325b59eedfaaea054dfd0ed27341073f5bb74326b0e18e444dfb946e0c5d3",
+    "svg": "c183939df158c1c3f2636c1a3fc86325d1608a145e2895840a4f8f25a3455e86"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

@@ -1743,3 +1743,5 @@
 ## [2026-11-20 17:33 UTC] verify stage-track-block-heatmap
 
 ## [2026-11-20 17:34 UTC] verify spatial-expression-contour
+
+## [2026-11-20 17:34 UTC] verify gsea-running-enrichment
