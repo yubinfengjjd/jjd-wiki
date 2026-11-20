@@ -61,7 +61,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa48Adonis.Rmd`）
 - 依赖：CRAN ggplot2, vegan
 - 最近运行：pass（as-is，2026-11-04 11:14 UTC，9.1 秒）
-- 派生模板（L2）：[[templates/fy-adonis|Adonis因子解释度条形图]]（ready）
+- 派生模板（L2）：暂无
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-48adonis/preview.png]]

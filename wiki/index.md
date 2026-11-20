@@ -184,7 +184,6 @@
 
 ### ready
 
-- [[templates/fy-adonis|Adonis因子解释度条形图]]
 - [[templates/fy-nomogram|Cox/Logistic 列线图与校准曲线]]
 - [[templates/km-survival-curve|KM 生存曲线与风险表]]
 - [[templates/fy-lasso|LASSO Cox 系数路径与交叉验证图]]

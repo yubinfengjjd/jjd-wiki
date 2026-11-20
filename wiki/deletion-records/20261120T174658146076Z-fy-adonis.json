@@ -1,0 +1,26 @@
+{
+  "title": "Adonis因子解释度条形图",
+  "path": "templates/fy-adonis.md",
+  "revision": "a16b6ab0092c2c9b2f9e7e9470af8a020c00342dc1552eb2d24be327a97f23ed",
+  "asset_files": 14,
+  "affected": [
+    {
+      "path": "recipes/figureya-48adonis.md",
+      "title": "Adonis因子解释度条形图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261120T174658146076Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-48adonis.md",
+      "before_sha256": "d57da9b745f59c3e8b0238af65a88bd3480c101e9e15ae80119d03415ac36a59",
+      "after_sha256": "d57da9b745f59c3e8b0238af65a88bd3480c101e9e15ae80119d03415ac36a59"
+    }
+  ],
+  "changed_layout_files": []
+}
