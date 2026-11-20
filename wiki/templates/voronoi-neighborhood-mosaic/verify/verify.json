@@ -1,1 +1,23 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-20T12:24:08.175940+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T12:27:03.049585+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/voronoi-neighborhood-mosaic/spec.json": "99e56d7a086f926bba217199d6b3667c879565ef50e2b0ba8a48cc795d225ba7",
+    "templates/voronoi-neighborhood-mosaic/code/render.py": "dcac5fbf0e8ce587e5c76ad66185fa26e2af83cd013fe39fa44996abb9461284",
+    "templates/voronoi-neighborhood-mosaic/code/panel.py": "016b1446806fcba202168cac4b9dddbcc0f803dae198d7ee3a5113321012466c",
+    "templates/voronoi-neighborhood-mosaic/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/cells#columns": "9484e89022bad6cc64944b046a5349cb9a756b1d294e936d4a80c23ad27f82b9",
+    "templates/voronoi-neighborhood-mosaic/example/spatial_cells_voronoi.csv": "36566542cac7e42255d452d6f9a5db2061a8d70bc5404fbc0d08c1c3caf0520d"
+  },
+  "outputs": {
+    "png": "960a59fbe04f37c0bf940b9fa51810a11820f3caf1a69cdf9c923e8a0ab32367",
+    "pdf": "45182a633416291aaf7e9ecc867f0b8a1426ca08eb28a75c3425289665e3b458",
+    "svg": "8ac41fc0c5bad7218be6caebab94b3c2017be270823501f850f206c27d873e0d"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
