@@ -1,34 +1,101 @@
 {
   "entry": "code/render.py",
   "language": "python",
-  "tables": {},
-  "style": {
-    "sizing": {
-      "mode": "adaptive",
-      "profile": "unbound",
-      "table": null,
-      "x": null,
-      "y": null,
-      "item_width_in": 0.8,
-      "item_height_in": 0.32,
-      "plot_width_in": 5.4,
-      "plot_height_in": 4.4,
-      "margins_in": [
-        0.9,
-        0.25,
-        0.85,
-        0.55
-      ],
-      "min_width_in": 3.2,
-      "min_height_in": 2.8,
-      "max_width_in": null,
-      "max_height_in": null,
-      "width_in": null,
-      "height_in": null,
-      "label_fontsize": 11,
-      "label_rotation": 45,
-      "label_gap_in": 0.12
+  "panel": "code/panel.py",
+  "tables": {
+    "contours": {
+      "interface": "",
+      "filename": "spatial_contours.csv",
+      "description": "空间二维坐标插值网格蛋白/基因表达密度表（含 fov_id, X_um, Y_um 及若干特征表达列）",
+      "required": true,
+      "columns": {
+        "fov_id": {
+          "type": "str",
+          "description": "视场或组织切片标识",
+          "required": false
+        },
+        "X_um": {
+          "type": "float",
+          "description": "空间物理横坐标 (um)",
+          "required": true
+        },
+        "Y_um": {
+          "type": "float",
+          "description": "空间物理纵坐标 (um)",
+          "required": true
+        }
+      }
+    },
+    "cells": {
+      "interface": "",
+      "filename": "spatial_cells.csv",
+      "description": "可选单细胞物理坐标叠层散点表（fov_id, X_um, Y_um）",
+      "required": false,
+      "columns": {
+        "X_um": {
+          "type": "float",
+          "description": "细胞质心物理横坐标 (um)",
+          "required": true
+        },
+        "Y_um": {
+          "type": "float",
+          "description": "细胞质心物理纵坐标 (um)",
+          "required": true
+        }
+      }
     }
   },
-  "panel": "code/panel.py"
+  "style": {
+    "fov_col": "fov_id",
+    "fov_id": "MEL09_FOV_IM",
+    "x_col": "X_um",
+    "y_col": "Y_um",
+    "features": [
+      "MART1",
+      "S100a"
+    ],
+    "feature_labels": {
+      "MART1": "MART1 (MITF proxy)",
+      "S100a": "S100A (S100B proxy)",
+      "SOX10": "SOX10 (S100A proxy)"
+    },
+    "border_colors": {
+      "MART1": "#EE852E",
+      "S100a": "#E6D33B"
+    },
+    "flip_y": true,
+    "ncols": 1,
+    "levels_fill": 16,
+    "levels_line": 12,
+    "point_size": 3.5,
+    "dpi": 300,
+    "width_in": 2.9,
+    "height_in": 3.8,
+    "rect": [
+      0.06,
+      0.05,
+      0.84,
+      0.89
+    ]
+  },
+  "parameters": {
+    "fov_id": {
+      "type": "string",
+      "label": "目标视野 FOV",
+      "default": "MEL09_FOV_IM"
+    },
+    "levels_fill": {
+      "type": "integer",
+      "label": "等高线填充级数",
+      "default": 16,
+      "min": 6,
+      "max": 30,
+      "step": 2
+    },
+    "flip_y": {
+      "type": "boolean",
+      "label": "翻转纵坐标",
+      "default": true
+    }
+  }
 }

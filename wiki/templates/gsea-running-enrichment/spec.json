@@ -1,34 +1,95 @@
 {
   "entry": "code/render.py",
   "language": "python",
-  "tables": {},
-  "style": {
-    "sizing": {
-      "mode": "adaptive",
-      "profile": "unbound",
-      "table": null,
-      "x": null,
-      "y": null,
-      "item_width_in": 0.8,
-      "item_height_in": 0.32,
-      "plot_width_in": 5.4,
-      "plot_height_in": 4.4,
-      "margins_in": [
-        0.9,
-        0.25,
-        0.85,
-        0.55
-      ],
-      "min_width_in": 3.2,
-      "min_height_in": 2.8,
-      "max_width_in": null,
-      "max_height_in": null,
-      "width_in": null,
-      "height_in": null,
-      "label_fontsize": 11,
-      "label_rotation": 45,
-      "label_gap_in": 0.12
+  "panel": "code/panel.py",
+  "tables": {
+    "curves": {
+      "interface": "",
+      "filename": "gsea_running_es_curves.csv",
+      "description": "GSEA 逐排秩基因 running enrichment score 曲线与命中位置表（x, runningScore, position, 可选 panel/pathway）",
+      "required": true,
+      "columns": {
+        "x": {
+          "type": "int",
+          "description": "排序基因列表中的位置索引",
+          "required": true
+        },
+        "runningScore": {
+          "type": "float",
+          "description": "累计富集得分（Running Enrichment Score）",
+          "required": true
+        },
+        "position": {
+          "type": "int",
+          "description": "是否命中目标基因集（1=命中，0=未命中）",
+          "required": true
+        },
+        "panel": {
+          "type": "str",
+          "description": "面板或通路筛选标识（多曲线表时用于按 panel 选择）",
+          "required": false
+        }
+      }
+    },
+    "summary": {
+      "interface": "",
+      "filename": "gsea_summary.csv",
+      "description": "GSEA 通路富集统计摘要表（含 Description, NES, p.adjust / pvalue, 可选 panel）",
+      "required": true,
+      "columns": {
+        "Description": {
+          "type": "str",
+          "description": "基因集名称",
+          "required": true
+        },
+        "NES": {
+          "type": "float",
+          "description": "标准化富集得分（Normalized Enrichment Score）",
+          "required": true
+        },
+        "p.adjust": {
+          "type": "float",
+          "description": "多重检验校正后 FDR/padj 值",
+          "required": false
+        }
+      }
     }
   },
-  "panel": "code/panel.py"
+  "style": {
+    "panel_id": "Fig6E",
+    "title": "",
+    "line_color": "#E35B3A",
+    "rug_color": "#3A3A3A",
+    "p_label_mode": "fdr",
+    "dpi": 300,
+    "width_in": 3.0,
+    "height_in": 2.9,
+    "rect": [
+      0.22,
+      0.20,
+      0.72,
+      0.68
+    ]
+  },
+  "parameters": {
+    "panel_id": {
+      "type": "string",
+      "label": "目标曲线面板/通路ID",
+      "default": "Fig6E"
+    },
+    "line_color": {
+      "type": "color",
+      "label": "跑分曲线与峰值线颜色",
+      "default": "#E35B3A"
+    },
+    "p_label_mode": {
+      "type": "select",
+      "label": "显著性标注口径",
+      "default": "fdr",
+      "options": [
+        "fdr",
+        "pvalue"
+      ]
+    }
+  }
 }

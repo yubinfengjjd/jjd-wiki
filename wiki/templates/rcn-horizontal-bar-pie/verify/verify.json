@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T17:32:06.680969+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/rcn-horizontal-bar-pie/spec.json": "ab4eadcaf7c892080afe9ba08ce88bbc24bcc703042afdb6500008524dbc9d15",
+    "templates/rcn-horizontal-bar-pie/code/render.py": "19a7160f1c07f3421e27ef7f78a6b1cd94f6cf6e845be04d21f7120336e2c7ff",
+    "templates/rcn-horizontal-bar-pie/code/panel.py": "383fd8f558d42f8d5e6b539216ddbdabd23dab6a59e7f2cc2581d1a7303bc440",
+    "templates/rcn-horizontal-bar-pie/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/bars#columns": "9bf36a945b953e74a8cee8163596b6acd3c68644ce427ba6da2a40ffddf8b428",
+    "inline/pies#columns": "ccee3d1b12bf1ca6b87dd871f87a85fb4d879697bdeb827feee6ab853ed15c46",
+    "templates/rcn-horizontal-bar-pie/example/rcn_functional_pies.csv": "f9572bbf6f977df8f1486757860ac0354b8e693a2bff685891329669563fba34",
+    "templates/rcn-horizontal-bar-pie/example/rcn_phenotype_composition.csv": "6277d6de51bd53150784d4fdbc14bf000872dfcadedfa3ece923f58e6813638d"
+  },
+  "outputs": {
+    "png": "579c8e578abda526f27778d37dd4c329d07b995ad5404ffa4cd6081b6f8664e6",
+    "pdf": "9479b7761ce21218c7ea3950b325e5b3470c51c6acf2fd49f6afb51e976cc792",
+    "svg": "81f85bc372b627e6bff4541cfbf4db2f82e294da99fade682d495c3a1b86288a"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

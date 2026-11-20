@@ -1,7 +1,9 @@
 """RCN horizontal stacked composition bars + highlighted target cell type + grouped functional pie charts (Cancer Discovery style)."""
 import math
 import re
+import matplotlib.lines as mlines
 import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpecFromSubplotSpec
 import numpy as np
 import pandas as pd

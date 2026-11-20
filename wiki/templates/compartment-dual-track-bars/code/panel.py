@@ -43,8 +43,8 @@ def _build_tracks(numeric_cols):
         present = [(c, lbl, col) for c, lbl, col in items if c in numeric_cols]
         if present:
             tracks.append((trk_name, present))
-            for c, _, _ in present:
-                known[c] = col
+            for c, _, col_hex in present:
+                known[c] = col_hex
     extra = [c for c in numeric_cols if c not in known]
     if extra:
         extra_items = [

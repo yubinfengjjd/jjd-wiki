@@ -1,0 +1,121 @@
+gsm_id,sample_id,title,histology_full,tissue,slide_id,batch,site
+GSM5236391,S100,Melanoma in situ mROI 37 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236393,S102,Melanoma in situ mROI 39 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236396,S105,Melanoma in situ mROI 42 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236435,S144,Melanoma in situ mROI 46 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236438,S147,Melanoma in situ mROI 49 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236439,S148,Melanoma in situ mROI 50 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236442,S151,Melanoma in situ mROI 53 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236445,S154,Melanoma in situ mROI 56 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236451,S160,Melanoma in situ mROI 62 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236452,S161,Melanoma in situ mROI 63 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236454,S163,Melanoma in situ mROI 65 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236460,S169,Melanoma in situ mROI 71 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236464,S173,Melanoma in situ mROI 75 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236465,S174,Melanoma in situ mROI 76 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236470,S179,Melanoma in situ mROI 81 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236484,S193,Melanoma in situ mROI 95 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236485,S194,Melanoma in situ mROI 96 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F12,3,MIS
+GSM5236293,S2,Melanoma in situ mROI 2 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F8,1,MIS
+GSM5236368,S77,Melanoma in situ mROI 14 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236369,S78,Melanoma in situ mROI 15 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236299,S8,Melanoma in situ mROI 8 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F8,1,MIS
+GSM5236372,S81,Melanoma in situ mROI 18 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236374,S83,Melanoma in situ mROI 20 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236376,S85,Melanoma in situ mROI 22 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236378,S87,Melanoma in situ mROI 24 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236379,S88,Melanoma in situ mROI 25 (HTA-MELATLAS-1),Melanoma in situ,Melanoma in situ,F9,2,MIS
+GSM5236399,S108,Inflammatory regression mROI 17 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236401,S110,Inflammatory regression mROI 19 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236404,S113,Inflammatory regression mROI 22 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236405,S114,Inflammatory regression mROI 23 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236408,S117,Inflammatory regression mROI 26 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236410,S119,Inflammatory regression mROI 28 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236412,S121,Inflammatory regression mROI 30 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236413,S122,Inflammatory regression mROI 31 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236419,S128,Inflammatory regression mROI 37 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236304,S13,Inflammatory regression mROI 1 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236306,S15,Inflammatory regression mROI 3 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236309,S18,Inflammatory regression mROI 6 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236310,S19,Inflammatory regression mROI 7 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236489,S198,Inflammatory regression mROI 40 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F12,3,IR
+GSM5236490,S199,Inflammatory regression mROI 41 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F9,2,IR
+GSM5236491,S200,Inflammatory regression mROI 42 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F12,3,IR
+GSM5236495,S204,Inflammatory regression mROI 46 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F12,3,IR
+GSM5236496,S205,Inflammatory regression mROI 47 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F12,3,IR
+GSM5236312,S21,Inflammatory regression mROI 9 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236313,S22,Inflammatory regression mROI 10 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236315,S24,Inflammatory regression mROI 12 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236316,S25,Inflammatory regression mROI 13 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236317,S26,Inflammatory regression mROI 14 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236318,S27,Inflammatory regression mROI 15 (HTA-MELATLAS-1),Inflammatory regression,Inflammatory regression,F8,1,IR
+GSM5236320,S29,Brisk TIL mROI 1 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236321,S30,Brisk TIL mROI 2 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236322,S31,Brisk TIL mROI 3 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236323,S32,Brisk TIL mROI 4 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236324,S33,Brisk TIL mROI 5 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236325,S34,Brisk TIL mROI 6 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236326,S35,Brisk TIL mROI 7 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236327,S36,Brisk TIL mROI 8 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236328,S37,Brisk TIL mROI 9 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236329,S38,Brisk TIL mROI 10 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236330,S39,Brisk TIL mROI 11 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236331,S40,Brisk TIL mROI 12 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236332,S41,Brisk TIL mROI 13 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236333,S42,Brisk TIL mROI 14 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236334,S43,Brisk TIL mROI 15 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236335,S44,Brisk TIL mROI 16 (HTA-MELATLAS-1),Brisk TIL,Brisk TIL,F8,1,bTIL
+GSM5236336,S45,Invasive melanoma boundary mROI 1 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236337,S46,Invasive melanoma boundary mROI 2 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236338,S47,Invasive melanoma boundary mROI 3 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236339,S48,Invasive melanoma boundary mROI 4 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236340,S49,Invasive melanoma boundary mROI 5 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236341,S50,Invasive melanoma boundary mROI 6 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236342,S51,Invasive melanoma boundary mROI 7 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236343,S52,Invasive melanoma boundary mROI 8 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236344,S53,Invasive melanoma boundary mROI 9 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236345,S54,Invasive melanoma boundary mROI 10 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236346,S55,Invasive melanoma boundary mROI 11 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236347,S56,Invasive melanoma boundary mROI 12 (HTA-MELATLAS-1),Invasive melanoma boundary,Invasive melanoma boundary,F8,1,IB
+GSM5236348,S57,Invasive melanoma mROI 1 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236349,S58,Invasive melanoma mROI 2 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236350,S59,Invasive melanoma mROI 3 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236351,S60,Invasive melanoma mROI 4 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236352,S61,Invasive melanoma mROI 5 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236353,S62,Invasive melanoma mROI 6 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236354,S63,Invasive melanoma mROI 7 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236355,S64,Invasive melanoma mROI 8 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236356,S65,Invasive melanoma mROI 9 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236357,S66,Invasive melanoma mROI 10 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236358,S67,Invasive melanoma mROI 11 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236359,S68,Invasive melanoma mROI 12 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236360,S69,Invasive melanoma mROI 13 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236361,S70,Invasive melanoma mROI 14 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236362,S71,Invasive melanoma mROI 15 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236363,S72,Invasive melanoma mROI 16 (HTA-MELATLAS-1),Invasive melanoma,Invasive melanoma,F8,1,IM
+GSM5236420,S129,Exophytic melanoma mROI 4 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236422,S131,Exophytic melanoma mROI 6 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236423,S132,Exophytic melanoma mROI 7 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236424,S133,Exophytic melanoma mROI 8 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236425,S134,Exophytic melanoma mROI 9 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236426,S135,Exophytic melanoma mROI 10 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236427,S136,Exophytic melanoma mROI 11 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236428,S137,Exophytic melanoma mROI 12 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236429,S138,Exophytic melanoma mROI 13 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236430,S139,Exophytic melanoma mROI 14 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236431,S140,Exophytic melanoma mROI 15 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236432,S141,Exophytic melanoma mROI 16 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236497,S206,Exophytic melanoma mROI 18 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236498,S207,Exophytic melanoma mROI 19 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236499,S208,Exophytic melanoma mROI 20 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236500,S209,Exophytic melanoma mROI 21 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236501,S210,Exophytic melanoma mROI 22 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236503,S212,Exophytic melanoma mROI 24 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236504,S213,Exophytic melanoma mROI 25 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236506,S215,Exophytic melanoma mROI 27 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236508,S217,Exophytic melanoma mROI 29 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236509,S218,Exophytic melanoma mROI 30 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F12,3,EM
+GSM5236510,S219,Exophytic melanoma mROI 31 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236513,S222,Exophytic melanoma mROI 34 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,2,EM
+GSM5236365,S74,Exophytic melanoma mROI 2 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,1,EM
+GSM5236366,S75,Exophytic melanoma mROI 3 (HTA-MELATLAS-1),Exophytic melanoma,Exophytic melanoma,F8,1,EM
