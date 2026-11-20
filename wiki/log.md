@@ -1675,3 +1675,5 @@
 ## [2026-11-20 12:28 UTC] verify voronoi-neighborhood-mosaic
 
 ## [2026-11-20 12:28 UTC] acceptance check templates/voronoi-neighborhood-mosaic
+
+## [2026-11-20 12:30 UTC] verify half-violin-decile-shift

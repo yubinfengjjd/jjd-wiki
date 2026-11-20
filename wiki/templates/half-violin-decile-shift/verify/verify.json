@@ -1,1 +1,23 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-20T12:24:10.005418+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T12:29:02.881057+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/half-violin-decile-shift/spec.json": "b45d5535547e0fc5f92fda91794329b2d0b60b8fc777e18d945d7971c360bda1",
+    "templates/half-violin-decile-shift/code/render.py": "dcac5fbf0e8ce587e5c76ad66185fa26e2af83cd013fe39fa44996abb9461284",
+    "templates/half-violin-decile-shift/code/panel.py": "4c86beb29210d898d1a59c3961579cab8201df7eb7c4b311e48f52368043852d",
+    "templates/half-violin-decile-shift/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/distances#columns": "94135bbdeea41ced87f0909f19714772eb9f013149fcb5290f2cf8d4fdc65eae",
+    "templates/half-violin-decile-shift/example/distance_shift_groups.csv": "dd6d360bbb1a908d8236bfc6a21950d2988a45953c3faa888cead7f27ba3cc63"
+  },
+  "outputs": {
+    "png": "b500522361ef948000176207f14af244f3027416275aa0088a109f2e654177f1",
+    "pdf": "b1028ad703732c9dc6ff0553a3b581146bc50c075ad8763e3c5888789fbb714c",
+    "svg": "883763e4c787212ba98fb6d5b078a6f7946c7d114ffbfa8e68b0055c313f17d5"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
