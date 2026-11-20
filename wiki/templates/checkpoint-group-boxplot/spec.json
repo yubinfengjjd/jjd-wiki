@@ -22,10 +22,10 @@
     "y_transform": "sqrt",
     "cap_quantile": 0.97,
     "show_outliers": true,
-    "show_bracket": true,
+    "show_bracket": false,
     "dpi": 300,
-    "width_in": 7.6,
-    "height_in": 4.2
+    "width_in": 6.8,
+    "height_in": 4.0
   },
   "parameters": {
     "ncol": {
