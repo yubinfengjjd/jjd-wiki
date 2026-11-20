@@ -1703,3 +1703,5 @@
 ## [2026-11-20 12:46 UTC] acceptance check methods/cell-type-annotation
 
 ## [2026-11-20 12:47 UTC] acceptance check methods/coexpression-ppi-network
+
+## [2026-11-20 12:48 UTC] acceptance check methods/dimensionality-reduction
