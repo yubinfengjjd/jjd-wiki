@@ -1,1 +1,25 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-20T15:39:25.135062+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T15:45:10.933647+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/km-survival-risk-grid/spec.json": "e49c0e7a6b6a79b0f79d2509965b78c0ea8a05160da5cc466f71a8d52aef1451",
+    "templates/km-survival-risk-grid/code/render.py": "dcac5fbf0e8ce587e5c76ad66185fa26e2af83cd013fe39fa44996abb9461284",
+    "templates/km-survival-risk-grid/code/panel.py": "a5530c698d5e1a069b933a7a65341c85bb801763b3980a6afadeb510201ee9f5",
+    "templates/km-survival-risk-grid/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/km_curves#columns": "563654d933f5d11e0d3e3662f6672865b099e056650acf81e5df49d39e7060d9",
+    "inline/km_stats#columns": "9f6ece27d0b4813031ba33ea886dd1a4c5ab73e6300ba95e0d436bdf4a9712d9",
+    "templates/km-survival-risk-grid/example/km_survival_curves.csv": "67af01087a6eb2ce34620cedf809403535b193e02b008c4fc3d2801fc8c163ed",
+    "templates/km-survival-risk-grid/example/km_survival_stats.csv": "25c57337f020e4d788a7fad4cf93173c473c07baa9a98c5f57ff2ef0609c6c4e"
+  },
+  "outputs": {
+    "png": "76d64654f5fb107e120a9146045299b91e1d0fdc2f5b04ff02b0972698428d24",
+    "pdf": "fd159600a05e19534ebd9e2b39e0d32328dde2483937b51110fa5ffcd6c37bb9",
+    "svg": "9a9de146f686a624a338254a30ca9f0e124da7a2fe53eb5a672fafce9216680e"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
