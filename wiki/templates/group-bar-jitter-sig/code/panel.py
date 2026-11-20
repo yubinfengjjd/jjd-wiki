@@ -42,7 +42,8 @@ def draw(fig, rect, tables, style):
     n_slots = len(genes) + 1
     nrow = max(1, math.ceil(n_slots / ncol))
 
-    gs_outer = fig.add_gridspec(1, 1, left=rect[0], bottom=rect[1], right=rect[0] + rect[2], top=rect[1] + rect[3])
+    left_margin = max(rect[0], 0.11)
+    gs_outer = fig.add_gridspec(1, 1, left=left_margin, bottom=rect[1], right=rect[0] + rect[2], top=rect[1] + rect[3])
     sub_gs = GridSpecFromSubplotSpec(nrow, ncol, subplot_spec=gs_outer[0, 0], hspace=0.45, wspace=0.32)
     rng = np.random.default_rng(42)
     pt_size = float(style.get("point_size", 6.0))
@@ -105,7 +106,7 @@ def draw(fig, rect, tables, style):
         ax.spines["bottom"].set_linewidth(0.75)
 
     fig.text(
-        axes[0].get_position().x0 - 0.06,
+        axes[0].get_position().x0 - 0.082,
         0.5 * (axes[-1].get_position().y0 + axes[0].get_position().y1),
         style.get("ylabel", "Expression (log$_2$)"), rotation=90, va="center", ha="center", fontsize=8.8,
     )

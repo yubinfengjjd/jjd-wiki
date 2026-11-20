@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:26.125819+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/spatial-cell-highlight-grid/spec.json": "8ce81c1e17e6a31df9743d0db61855fbec3b0f73ccd5cbf049b9b9fcb7442f67",
+    "templates/spatial-cell-highlight-grid/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/spatial-cell-highlight-grid/code/panel.py": "468ff881fce2243325ada387e945ee26dc70bb3a8c574f3b1cdc4bb814e8ed6f",
+    "templates/spatial-cell-highlight-grid/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/highlights#columns": "37e87607040fdd7fe8c80af47adc5b97ae753b3015279b69d849dc69ae8ad362",
+    "inline/background#columns": "9764f29284e288c8af2d579ed70926968014a03f35a9c2fa2c41e21ea95c071d",
+    "templates/spatial-cell-highlight-grid/example/spatial_cluster_highlights.csv": "e2231dbb9a6c4c3b2ba78c3745eb991009c461d8e0380d724d39f3be939ad6a8",
+    "templates/spatial-cell-highlight-grid/example/spatial_fov_background.csv": "1e4a2dd11494f4cf9b523da0c9e675c3671363c45c2c30a3579fe64a10575c12"
+  },
+  "outputs": {
+    "png": "9541f7eba1b01cac422d845d11936345889be03de518ccc498dce9c534cb723f",
+    "pdf": "55033a4ee24807cf3dfe256c965ee13f26ad69c0f2a32d367155a5c7511a1ddd",
+    "svg": "ba6fd2297a3906f486155288c998434f426209b03cc46e5a7af8cb3d4ea5f6c4"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}

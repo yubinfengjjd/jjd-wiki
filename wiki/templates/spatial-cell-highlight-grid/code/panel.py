@@ -20,7 +20,7 @@ def draw(fig, rect, tables, style):
         6, 3, subplot_spec=gs_outer[0, 0],
         height_ratios=[1.0, 1.0, 1.0, 1.0, 1.0, 0.28],
         width_ratios=[1.0, 1.0, 0.16],
-        hspace=0.24, wspace=0.10,
+        hspace=0.36, wspace=0.10,
     )
 
     bg_col = style.get("bg_color", "#D8D8D8")
@@ -72,7 +72,7 @@ def draw(fig, rect, tables, style):
     if len(axes) >= 9:
         p3 = axes[6].get_position()
         p4 = axes[8].get_position()
-        y_sep = 0.5 * (p3.y0 + p4.y1)
+        y_sep = p3.y0 - 0.22 * (p3.y0 - p4.y1)
         fig.add_artist(plt.Line2D([p3.x0, axes[1].get_position().x1], [y_sep, y_sep], color="#666666", linestyle="--", lw=0.85))
 
     ax_leg = fig.add_subplot(sub_gs[5, :2])

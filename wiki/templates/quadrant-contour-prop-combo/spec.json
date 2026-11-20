@@ -67,8 +67,8 @@
   },
   "style": {
     "title": "Cell states (CCND1 vs MART1)",
-    "xlabel": "Scaled MART1 (MITF proxy)",
-    "ylabel": "Scaled CCND1 (KI67 proxy)",
+    "xlabel": "Scaled MART1",
+    "ylabel": "Scaled CCND1",
     "gate_x": 0.5,
     "gate_y": 0.5,
     "dpi": 300,

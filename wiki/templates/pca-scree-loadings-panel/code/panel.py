@@ -20,7 +20,8 @@ def draw(fig, rect, tables, style):
         markeredgecolor="#333333", color="#333333", linewidth=0.9,
     )
     for xi, yi, pc in zip(x[:10], y[:10], scree_df["PC"].iloc[:10]):
-        ax_sc.text(xi, yi + 0.014, str(pc), rotation=90, fontsize=6.5, ha="center", va="bottom", color="#222222")
+        x_off = xi + 0.24 if int(round(xi)) == 2 else xi
+        ax_sc.text(x_off, yi + 0.015, str(pc), rotation=90, fontsize=6.4, ha="center", va="bottom", color="#222222")
     ax_sc.text(0.95, 0.94, "Variance ratio", transform=ax_sc.transAxes, ha="right", va="top", fontsize=8.5)
     ax_sc.set_xlabel("ranking by PC", fontsize=8.2, labelpad=4)
     ax_sc.set_ylim(0, max(y.max() * 1.24, 0.25))
@@ -35,13 +36,13 @@ def draw(fig, rect, tables, style):
         n_m = len(sub)
         xs = np.arange(n_m)
         ys = sub[col_name].to_numpy(float)
-        ax_p.scatter(xs, ys, s=9.0, color="#666666", zorder=2)
+        ax_p.scatter(xs, ys, s=8.0, color="#666666", zorder=2)
         for i in range(min(max_lbl, n_m)):
             col_t = "#C62828" if i < top_hi else "#333333"
             fw = "bold" if i < top_hi else "normal"
-            ax_p.text(i, ys[i] + 0.016, str(sub.loc[i, "marker"]), rotation=90, fontsize=5.8, fontweight=fw, ha="center", va="bottom", color=col_t)
+            ax_p.text(i, ys[i] + 0.016, str(sub.loc[i, "marker"]), rotation=90, fontsize=5.3, fontweight=fw, ha="center", va="bottom", color=col_t)
         ax_p.text(0.96, 0.92, lbl, transform=ax_p.transAxes, ha="right", va="top", fontsize=8.5)
-        ax_p.set_ylim(-0.02, ys.max() * 1.52)
+        ax_p.set_ylim(-0.02, ys.max() * 1.68)
         ax_p.set_xticks([])
         ax_p.tick_params(axis="y", labelsize=7.2, length=2.5, pad=2)
         for sp in ax_p.spines.values():
