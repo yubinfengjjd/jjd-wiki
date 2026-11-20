@@ -1,0 +1,26 @@
+{
+  "title": "多组edgeR配对差异分析",
+  "path": "templates/fy-multiclassedger.md",
+  "revision": "ab21d5c5037a0f1a4f6ca0427ceb0aa4f8a03ec979370ce486ced203da9383b9",
+  "asset_files": 15,
+  "affected": [
+    {
+      "path": "recipes/figureya-120multiclassedger.md",
+      "title": "多组edgeR配对差异分析",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261120T174824621615Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-120multiclassedger.md",
+      "before_sha256": "7599fe357eea5b54d3ba964d60c7ec3583802915d45aa58281ed06a8bab62f75",
+      "after_sha256": "7599fe357eea5b54d3ba964d60c7ec3583802915d45aa58281ed06a8bab62f75"
+    }
+  ],
+  "changed_layout_files": []
+}

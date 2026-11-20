@@ -245,7 +245,6 @@
 - [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]]
 - [[templates/fy-sankey|多层分类流向桑基图]]
 - [[templates/fy-timeroc|多模型时间依赖 ROC 曲线]]
-- [[templates/fy-multiclassedger|多组edgeR配对差异分析]]
 - [[templates/fy-mutlandscape|多组学突变景观组合热图]]
 - [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]]
 - [[templates/set-upset|多集合交集 UpSet 图]]
