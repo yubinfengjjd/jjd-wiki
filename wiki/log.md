@@ -1653,3 +1653,5 @@
 ## [2026-11-20 10:57 UTC] verify cellchat-signaling-ring
 
 ## [2026-11-20 10:58 UTC] acceptance check batch-integration
+
+## [2026-11-20 11:00 UTC] acceptance check spatial-he-deconv-panel

@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T14:52:40.461472+00:00",
+  "checked_at": "2026-11-20T10:59:56.636227+00:00",
   "page": "templates/spatial-he-deconv-panel.md",
-  "snapshot": "db4ae625b0a9e869ab230f750d64c78546667fa70c3beb9684bcf4e7459b2ced",
+  "snapshot": "5e6389da1829bd05612fbecb61cc9c070a2d2a940270e033d4c6d50e84f3dcaa",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",
