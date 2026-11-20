@@ -1777,3 +1777,5 @@
 ## [2026-11-20 18:50 UTC] ready 18: split-condition-umap, feature-umap-contrast-grid, cycif-feature-umap-strip, stage-boxplot-jitter-sig, stage-stacked-prop-bar, stage-distance-boxen-grid, spatial-cell-highlight-grid, cluster-marker-positivity-bars, group-hull-pca, group-bar-jitter-sig, monochrome-deseq-volcano, ordered-modu
 
 ## [2026-11-20 19:10 UTC] verify spatial-cell-highlight-grid
+
+## [2026-11-20 19:10 UTC] acceptance check templates/spatial-cell-highlight-grid
