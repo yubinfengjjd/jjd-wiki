@@ -182,6 +182,7 @@
 ### draft
 
 - [[templates/stage-track-block-heatmap|分期色带分块通路热图]]
+- [[templates/gsea-running-enrichment|富集跑分曲线与条码图]]
 - [[templates/spatial-expression-contour|空间蛋白表达等高线地形图]]
 - [[templates/compartment-dual-track-bars|表皮真皮双区室堆叠条图]]
 - [[templates/rcn-horizontal-bar-pie|邻域水平堆叠与功能饼图]]

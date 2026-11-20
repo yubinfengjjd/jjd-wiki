@@ -1733,3 +1733,5 @@
 ## [2026-11-20 17:28 UTC] scaffold native template stage-track-block-heatmap
 
 ## [2026-11-20 17:28 UTC] scaffold native template spatial-expression-contour
+
+## [2026-11-20 17:29 UTC] scaffold native template gsea-running-enrichment
