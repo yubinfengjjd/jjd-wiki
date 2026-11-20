@@ -1,1 +1,25 @@
-{"schema_version": 2, "exit_code": 1, "timestamp": "2026-11-20T15:39:23.540020+00:00", "state": "not_completed"}
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T15:42:54.665840+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/rcn-composition-stacked-heatmap/spec.json": "ade926f508dda65346c625e93d3554d8e3a5f327ae107c0b002fffdd4bc8b9ff",
+    "templates/rcn-composition-stacked-heatmap/code/render.py": "dcac5fbf0e8ce587e5c76ad66185fa26e2af83cd013fe39fa44996abb9461284",
+    "templates/rcn-composition-stacked-heatmap/code/panel.py": "29fbcc8cf2837ce79dfa6385327367f7328d4075708f1ad07fb4d90086020dd8",
+    "templates/rcn-composition-stacked-heatmap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/zscore_matrix#columns": "e46e2f767bce855848f60b88250310e71ffd205ec8e9256448c0f3b779b551a1",
+    "inline/cluster_tracks#columns": "2279223761118fe3f475dd58c89a9d9e2a5d6ed811f292e6ff1be5c80a0d660a",
+    "templates/rcn-composition-stacked-heatmap/example/rcn_cluster_tracks.csv": "1315216883c985508431c6fa8ac767e2f7f21ec57c856d29ffffcda969913f1f",
+    "templates/rcn-composition-stacked-heatmap/example/rcn_cluster_zscore.csv": "60a1d5d742c58d81d0ee6427d3edd05558e1a748f587fcf3ea5f27a16518f9e6"
+  },
+  "outputs": {
+    "png": "538ff7224343b844a999fcdcca6283b6ae251073a6c6389e67c89c5342cbe4e9",
+    "pdf": "56ea84a654e5e0bba216769e9db56f3329075453a63160e6cd297660fa78964a",
+    "svg": "ccc7dfbcee3184db0fd2d24b37707513cce02dec6176b2f005d5945052c4b75f"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
