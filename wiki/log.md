@@ -1655,3 +1655,5 @@
 ## [2026-11-20 10:58 UTC] acceptance check batch-integration
 
 ## [2026-11-20 11:00 UTC] acceptance check spatial-he-deconv-panel
+
+## [2026-11-20 11:01 UTC] acceptance check spatial-coexpr-multichannel
