@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T18:49:47.402046+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/pca-scree-loadings-panel/spec.json": "de83287156fba8517b97398d6b5ecbd8dc6d8cf8a1d5ebcbf1de57d12f97e587",
+    "templates/pca-scree-loadings-panel/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
+    "templates/pca-scree-loadings-panel/code/panel.py": "87e9a909f58625a38c6b05fe6b16d0230153619d7e079d52d29cc170a65ff556",
+    "templates/pca-scree-loadings-panel/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/scree#columns": "bd8af8a12c2ca7692c229a5ccb1e80eaf58855558c6e1c4821d1887c84010b4a",
+    "inline/loadings#columns": "77a58b6ac80afd01809a5a694a02b72e3f499b50881c3eace1f47dd4a244bd2a",
+    "templates/pca-scree-loadings-panel/example/pca_feature_loadings.csv": "f2ad3a1474f05a03a472d51cbae4d72196c271380360edc0432cb54c5400e97d",
+    "templates/pca-scree-loadings-panel/example/pca_variance_scree.csv": "2102487f41f40df9faad61d3f3e4e8ba5f1638a81b30d538c493e55754f491f3"
+  },
+  "outputs": {
+    "png": "41bd72b6af4cad1e07a7cc700df6da45663f2540c5dee6975d7f3f12d6eaa178",
+    "pdf": "4be161c74dd52d30a3ad616e102fd15821cffb7a50c117e3d0c3f98261041b9b",
+    "svg": "82074ccadcb37a06cde0765a72c48faa1ca254c36fec2e7caf952ae6b0d5c2fb"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
