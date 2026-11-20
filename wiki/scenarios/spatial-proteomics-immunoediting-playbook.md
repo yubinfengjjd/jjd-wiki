@@ -207,7 +207,7 @@ steps:
 | [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]] | L2 | ready · 可用 | 主推变体 · 细胞类型/进展分期/患者三联 UMAP 图谱（Cancer Discovery 风格） |
 | [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]] | L2 | ready · 可用 | 配套检查 · 多蛋白/标志物特征强度 UMAP 网格 |
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | note | ready | Stage 2（双上游汇合）：20 μm 局部邻域 Spatial LDA（RCN）与 Voronoi 拓扑分析 |
-| [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]] | L2 | ready | 主推默认 · 邻域聚簇 Z-score + 患者/分期堆叠注释复合热图 |
+| [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]] | L2 | ready · 可用 | 主推默认 · 邻域聚簇 Z-score + 患者/分期堆叠注释复合热图 |
 | [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]] | L2 | ready · 可用 | 可切换画风 · 高密 Voronoi 细胞邻域镶嵌与矩形/圆形放大框图 |
 | [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | note | ready | Stage 2–3：跨进展分期邻域比例与免疫–肿瘤物理距离分布偏移 |
 | [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]] | L2 | ready · 可用 | 主推默认 · 镜像半小提琴 + 分位数偏移哑铃图 |

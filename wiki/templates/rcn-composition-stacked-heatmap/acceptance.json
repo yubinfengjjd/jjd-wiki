@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T12:39:58.255985+00:00",
+  "checked_at": "2026-11-20T15:46:17.050154+00:00",
   "page": "templates/rcn-composition-stacked-heatmap.md",
-  "snapshot": "124656fc73ea130b377558b5a5cce41387dfa2823aaa8484a3f6a2da5bb48a42",
+  "snapshot": "e134a816e553f58b36d3bbea72996ad1c29830fc4e99b719aad489ff04d7af5f",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

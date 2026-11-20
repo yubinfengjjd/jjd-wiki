@@ -1719,3 +1719,5 @@
 ## [2026-11-20 15:45 UTC] verify coexpr-hub-radial-network
 
 ## [2026-11-20 15:46 UTC] verify km-survival-risk-grid
+
+## [2026-11-20 15:47 UTC] acceptance check templates/rcn-composition-stacked-heatmap
