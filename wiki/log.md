@@ -1771,3 +1771,5 @@
 ## [2026-11-20 18:40 UTC] acceptance check fy-bubble-volcano
 
 ## [2026-11-20 18:40 UTC] acceptance check scp-de-volcano
+
+## [2026-11-20 18:47 UTC] verify split-condition-umap

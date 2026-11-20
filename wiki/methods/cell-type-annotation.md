@@ -146,6 +146,46 @@ figure_relations:
     state: not_run
     scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/split-condition-umap
+  compatibility: adaptable
+  reason: 注释后的精细细胞亚群可按组织/实验条件（如 Normal vs Tumor）并排分面展示（灰色全集背景 + 当前条件高亮彩点）；模板不执行注释。
+  prerequisites:
+  - umap_1/umap_2、subcluster 与 condition 来自同一整合注释对象；cell_id 唯一。
+  adaptation: 导出 split_condition_umap_cells.csv（cell_id, umap_1, umap_2, subcluster,
+    condition）。
+  evidence:
+  - methods/cell-type-annotation.md#输出
+  - templates/split-condition-umap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/feature-umap-contrast-grid
+  compatibility: adaptable
+  reason: 谱系标志基因表达量或功能模块评分可在单细胞 UMAP 上按高对比度置顶色阶与 Min/Max 色标渲染为多面板网格；模板不执行打分。
+  prerequisites:
+  - 坐标与连续特征列来自同一单细胞对象；特征列已完成对数标准化或模块打分。
+  adaptation: 导出 feature_umap_scores.csv（cell_id, umap_1, umap_2 及多列连续特征/模块得分）。
+  evidence:
+  - methods/cell-type-annotation.md#输出
+  - templates/feature-umap-contrast-grid/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/cycif-feature-umap-strip
+  compatibility: adaptable
+  reason: 空间蛋白组（CyCIF）或单细胞的多标志物 [0, 1] 归一化强度可按 Cancer Discovery 蓝-灰-红连续色阶条带并排展示。
+  prerequisites:
+  - 各标志物列已完成对数转换与 [0, 1] 范围缩放；坐标与强度同源。
+  adaptation: 导出 cycif_umap_markers.csv（cell_id, umap_1, umap_2 及多标志物归一化强度列）。
+  evidence:
+  - methods/cell-type-annotation.md#输出
+  - templates/cycif-feature-umap-strip/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：细胞组成比例与 Ro/e 组织偏好分析
   when: 比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时
@@ -294,6 +334,15 @@ render_bridges:
   - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：注释后的单细胞/空间蛋白组细胞类型标签可与进展分期、患者 ID 合并导出为 Cancer Discovery 风格三联 UMAP 变体；模板不执行注释。；前提：umap_1/umap_2 与 cell_type、stage、patient_id 来自同一质控后对象；cell_id 唯一。；适配：导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
     - 关系证据：methods/cell-type-annotation.md#输出；templates/tri-panel-stage-umap/spec.json；运行证据：无
+  - [[templates/split-condition-umap|双条件并排分面亚群 UMAP]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：注释后的精细细胞亚群可按组织/实验条件（如 Normal vs Tumor）并排分面展示（灰色全集背景 + 当前条件高亮彩点）；模板不执行注释。；前提：umap_1/umap_2、subcluster 与 condition 来自同一整合注释对象；cell_id 唯一。；适配：导出 split_condition_umap_cells.csv（cell_id, umap_1, umap_2, subcluster, condition）。
+    - 关系证据：methods/cell-type-annotation.md#输出；templates/split-condition-umap/spec.json；运行证据：无
+  - [[templates/feature-umap-contrast-grid|高对比度连续特征 UMAP 网格]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：谱系标志基因表达量或功能模块评分可在单细胞 UMAP 上按高对比度置顶色阶与 Min/Max 色标渲染为多面板网格；模板不执行打分。；前提：坐标与连续特征列来自同一单细胞对象；特征列已完成对数标准化或模块打分。；适配：导出 feature_umap_scores.csv（cell_id, umap_1, umap_2 及多列连续特征/模块得分）。
+    - 关系证据：methods/cell-type-annotation.md#输出；templates/feature-umap-contrast-grid/spec.json；运行证据：无
+  - [[templates/cycif-feature-umap-strip|多标志物连续蛋白强度 UMAP 条带]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：空间蛋白组（CyCIF）或单细胞的多标志物 [0, 1] 归一化强度可按 Cancer Discovery 蓝-灰-红连续色阶条带并排展示。；前提：各标志物列已完成对数转换与 [0, 1] 范围缩放；坐标与强度同源。；适配：导出 cycif_umap_markers.csv（cell_id, umap_1, umap_2 及多标志物归一化强度列）。
+    - 关系证据：methods/cell-type-annotation.md#输出；templates/cycif-feature-umap-strip/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

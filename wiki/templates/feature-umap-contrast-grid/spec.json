@@ -1,0 +1,85 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "feature_umap_scores.csv",
+      "description": "单细胞 UMAP 坐标与多列连续特征/模块评分宽表（cell_id, umap_1, umap_2 及 2-9 个连续特征列）",
+      "required": true,
+      "columns": {
+        "cell_id": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "umap_1": {
+          "type": "float",
+          "description": "UMAP 横坐标",
+          "required": true
+        },
+        "umap_2": {
+          "type": "float",
+          "description": "UMAP 纵坐标",
+          "required": true
+        },
+        "lpCAF": {
+          "type": "float",
+          "description": "示例特征 1（可替换为任意基因或模块名）",
+          "required": false
+        },
+        "mCAF": {
+          "type": "float",
+          "description": "示例特征 2",
+          "required": false
+        },
+        "tCAF": {
+          "type": "float",
+          "description": "示例特征 3",
+          "required": false
+        },
+        "ifnCAF": {
+          "type": "float",
+          "description": "示例特征 4",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "palette_mode": "module_spectral",
+    "ncol": 2,
+    "dot_size": 0.62,
+    "gamma": 1.6,
+    "dpi": 300,
+    "width_in": 5.6,
+    "height_in": 4.8
+  },
+  "parameters": {
+    "palette_mode": {
+      "type": "select",
+      "label": "配色方案",
+      "options": [
+        "module_spectral",
+        "marker_crimson"
+      ],
+      "default": "module_spectral"
+    },
+    "ncol": {
+      "type": "number",
+      "label": "网格列数",
+      "default": 2,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    },
+    "dot_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 0.62,
+      "min": 0.2,
+      "max": 1.8,
+      "step": 0.05
+    }
+  }
+}

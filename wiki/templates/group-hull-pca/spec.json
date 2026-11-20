@@ -1,0 +1,76 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "pca": {
+      "interface": "",
+      "filename": "pca_sample_coords.csv",
+      "description": "样本/微区域主成分坐标与分组表（sample_id, site, PC1, PC2, pc1_var_pct, pc2_var_pct）",
+      "required": true,
+      "columns": {
+        "sample_id": {
+          "type": "str",
+          "description": "样本或微区域唯一标识",
+          "required": true
+        },
+        "site": {
+          "type": "str",
+          "description": "组织学分期或微区域分组标签（如 MIS, IR, bTIL, IB, IM, EM）",
+          "required": true
+        },
+        "PC1": {
+          "type": "float",
+          "description": "第一主成分得分",
+          "required": true
+        },
+        "PC2": {
+          "type": "float",
+          "description": "第二主成分得分",
+          "required": true
+        },
+        "pc1_var_pct": {
+          "type": "float",
+          "description": "PC1 解释方差百分比",
+          "required": false
+        },
+        "pc2_var_pct": {
+          "type": "float",
+          "description": "PC2 解释方差百分比",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "point_size": 24.0,
+    "hull_alpha": 0.42,
+    "dpi": 300,
+    "width_in": 3.6,
+    "height_in": 3.4,
+    "rect": [
+      0.16,
+      0.14,
+      0.78,
+      0.74
+    ]
+  },
+  "parameters": {
+    "point_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 24.0,
+      "min": 8.0,
+      "max": 50.0,
+      "step": 2.0
+    },
+    "hull_alpha": {
+      "type": "number",
+      "label": "包络透明度",
+      "default": 0.42,
+      "min": 0.1,
+      "max": 0.8,
+      "step": 0.05
+    }
+  }
+}

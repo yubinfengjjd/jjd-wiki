@@ -1,0 +1,76 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "scree": {
+      "interface": "",
+      "filename": "pca_variance_scree.csv",
+      "description": "各主成分解释方差比表（PC, pc_num, explained_variance_ratio）",
+      "required": true,
+      "columns": {
+        "PC": {
+          "type": "str",
+          "description": "主成分名称（如 PC1..PC15）",
+          "required": true
+        },
+        "pc_num": {
+          "type": "int",
+          "description": "主成分序号（1, 2, ...）",
+          "required": true
+        },
+        "explained_variance_ratio": {
+          "type": "float",
+          "description": "解释方差比例（0-1）",
+          "required": true
+        }
+      }
+    },
+    "loadings": {
+      "interface": "",
+      "filename": "pca_feature_loadings.csv",
+      "description": "各特征在 PC1 与 PC2 上的载荷绝对值表（marker, abs_PC1, abs_PC2）",
+      "required": true,
+      "columns": {
+        "marker": {
+          "type": "str",
+          "description": "蛋白标志物或基因名称",
+          "required": true
+        },
+        "abs_PC1": {
+          "type": "float",
+          "description": "PC1 载荷绝对值",
+          "required": true
+        },
+        "abs_PC2": {
+          "type": "float",
+          "description": "PC2 载荷绝对值",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "top_highlight_n": 2,
+    "max_labeled_features": 18,
+    "dpi": 300,
+    "width_in": 5.4,
+    "height_in": 3.1,
+    "rect": [
+      0.1,
+      0.16,
+      0.86,
+      0.76
+    ]
+  },
+  "parameters": {
+    "top_highlight_n": {
+      "type": "number",
+      "label": "每主成分红色高亮 Top 特征数",
+      "default": 2,
+      "min": 1,
+      "max": 6,
+      "step": 1
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "gradient": {
+      "interface": "",
+      "filename": "boundary_intensity_gradient.csv",
+      "description": "沿肿瘤-基质边界距离分箱的多标志物平均荧光强度表（dist_bin_um, compartment, SOX10, HLADPB1, CD11c 等）",
+      "required": true,
+      "columns": {
+        "dist_bin_um": {
+          "type": "float",
+          "description": "距肿瘤-基质边界的有符号微米距离（负值为 Tumor，正值为 Stroma）",
+          "required": true
+        },
+        "compartment": {
+          "type": "str",
+          "description": "所在组织区室（Tumor / Boundary / Stroma）",
+          "required": false
+        },
+        "SOX10": {
+          "type": "float",
+          "description": "SOX10 平均归一化荧光强度",
+          "required": false
+        },
+        "HLADPB1": {
+          "type": "float",
+          "description": "HLADPB1 (MHC-II / IRF1 proxy) 平均归一化荧光强度",
+          "required": false
+        },
+        "CD11c": {
+          "type": "float",
+          "description": "CD11c 平均归一化荧光强度",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "markers": [
+      "SOX10",
+      "HLADPB1",
+      "CD11c"
+    ],
+    "line_width": 2.0,
+    "xlabel": "Distance from boundary (μm)",
+    "ylabel": "Fluorescence intensity",
+    "dpi": 300,
+    "width_in": 3.8,
+    "height_in": 3.5,
+    "rect": [
+      0.2,
+      0.16,
+      0.74,
+      0.74
+    ]
+  },
+  "parameters": {
+    "line_width": {
+      "type": "number",
+      "label": "曲线线宽",
+      "default": 2.0,
+      "min": 0.8,
+      "max": 4.0,
+      "step": 0.2
+    }
+  }
+}

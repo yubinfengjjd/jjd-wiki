@@ -1,0 +1,102 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "bivariate_density_cells.csv",
+      "description": "单细胞双标志物归一化坐标与所属象限表（cell_uid, Stage, x_scaled, y_scaled, quadrant）",
+      "required": true,
+      "columns": {
+        "cell_uid": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "Stage": {
+          "type": "str",
+          "description": "所属演进分期",
+          "required": false
+        },
+        "x_scaled": {
+          "type": "float",
+          "description": "纵轴标志物（如 CCND1/KI67）0-1 归一化强度",
+          "required": true
+        },
+        "y_scaled": {
+          "type": "float",
+          "description": "横轴标志物（如 MART1/MITF）0-1 归一化强度",
+          "required": true
+        },
+        "quadrant": {
+          "type": "str",
+          "description": "象限分类键",
+          "required": true
+        }
+      }
+    },
+    "quadrants": {
+      "interface": "",
+      "filename": "quadrant_proportions.csv",
+      "description": "各分期四象限细胞计数与百分比汇总表（Stage, quadrant, n_cells, pct_in_stage）",
+      "required": true,
+      "columns": {
+        "Stage": {
+          "type": "str",
+          "description": "所属演进分期",
+          "required": true
+        },
+        "quadrant": {
+          "type": "str",
+          "description": "象限分类键",
+          "required": true
+        },
+        "n_cells": {
+          "type": "int",
+          "description": "象限内细胞数",
+          "required": true
+        },
+        "pct_in_stage": {
+          "type": "float",
+          "description": "象限占比百分比（0-100）",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "title": "Cell states (CCND1 vs MART1)",
+    "xlabel": "Scaled MART1 (MITF proxy)",
+    "ylabel": "Scaled CCND1 (KI67 proxy)",
+    "gate_x": 0.5,
+    "gate_y": 0.5,
+    "dpi": 300,
+    "width_in": 4.4,
+    "height_in": 3.6,
+    "rect": [
+      0.15,
+      0.06,
+      0.8,
+      0.8
+    ]
+  },
+  "parameters": {
+    "gate_x": {
+      "type": "number",
+      "label": "横轴门控阈值",
+      "default": 0.5,
+      "min": 0.1,
+      "max": 0.9,
+      "step": 0.05
+    },
+    "gate_y": {
+      "type": "number",
+      "label": "纵轴门控阈值",
+      "default": 0.5,
+      "min": 0.1,
+      "max": 0.9,
+      "step": 0.05
+    }
+  }
+}

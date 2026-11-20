@@ -1,0 +1,74 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "deg": {
+      "interface": "",
+      "filename": "deseq2_volcano_results.csv",
+      "description": "DESeq2 差异表达结果表（gene_symbol, log2FoldChange, padj，可选 baseMean, pvalue）",
+      "required": true,
+      "columns": {
+        "gene_symbol": {
+          "type": "str",
+          "description": "基因符号",
+          "required": true
+        },
+        "log2FoldChange": {
+          "type": "float",
+          "description": "log2 倍数变化",
+          "required": true
+        },
+        "padj": {
+          "type": "float",
+          "description": "多重检验校正后 P 值（FDR）",
+          "required": true
+        },
+        "baseMean": {
+          "type": "float",
+          "description": "平均归一化计数",
+          "required": false
+        },
+        "pvalue": {
+          "type": "float",
+          "description": "原始 P 值",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "lfc_cutoff": 2.0,
+    "padj_cutoff": 0.05,
+    "sig_color": "#9E623E",
+    "nonsig_color": "#BDBDBD",
+    "top_n_each_side": 6,
+    "dpi": 300,
+    "width_in": 4.2,
+    "height_in": 3.4,
+    "rect": [
+      0.18,
+      0.16,
+      0.76,
+      0.76
+    ]
+  },
+  "parameters": {
+    "lfc_cutoff": {
+      "type": "number",
+      "label": "|log2FC| 阈值",
+      "default": 2.0,
+      "min": 0.5,
+      "max": 5.0,
+      "step": 0.25
+    },
+    "top_n_each_side": {
+      "type": "number",
+      "label": "每侧标注基因数",
+      "default": 6,
+      "min": 0,
+      "max": 12,
+      "step": 1
+    }
+  }
+}

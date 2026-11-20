@@ -181,6 +181,24 @@
 
 ### draft
 
+- [[templates/pca-scree-loadings-panel|主成分方差碎石图与特征载荷排序面板]]
+- [[templates/quadrant-contour-prop-combo|二维核密度等高线四象限与比例组合图]]
+- [[templates/pvalue-threshold-heatmap|分期两两比较显著性阈值数值热图]]
+- [[templates/split-condition-umap|双条件并排分面亚群 UMAP]]
+- [[templates/cluster-marker-positivity-bars|多亚群多标志物水平阳性率条形矩阵]]
+- [[templates/stage-distance-boxen-grid|多分期对数坐标水平 Boxen 空间距离图]]
+- [[templates/faceted-overlap-density|多基因分面双组半透明重叠核密度图]]
+- [[templates/group-bar-jitter-sig|多基因分面均值柱状抖动散点显著性图]]
+- [[templates/cycif-feature-umap-strip|多标志物连续蛋白强度 UMAP 条带]]
+- [[templates/group-hull-pca|微区域样本半透明凸包包络 PCA 图]]
+- [[templates/ordered-module-track-curve|排序样本共表达模块曲线与分期色带图]]
+- [[templates/monochrome-deseq-volcano|极简棕褐单色差异表达火山图]]
+- [[templates/stage-stacked-prop-bar|演进分期百比堆叠构成条形图]]
+- [[templates/stage-boxplot-jitter-sig|演进分期箱线抖动散点与显著性图]]
+- [[templates/spatial-cell-highlight-grid|空间单细胞坐标表型高亮散点分面网格]]
+- [[templates/spatial-cooccurrence-matrix|空间邻域置换检验离散三态共现矩阵]]
+- [[templates/boundary-intensity-gradient|肿瘤基质边界空间荧光强度梯度曲线]]
+- [[templates/feature-umap-contrast-grid|高对比度连续特征 UMAP 网格]]
 
 ### ready
 

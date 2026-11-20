@@ -1,0 +1,67 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "expr": {
+      "interface": "",
+      "filename": "gene_group_expression_long.csv",
+      "description": "多基因按样本分组的对数表达长表（gene, sample_id, group, log2_expr）",
+      "required": true,
+      "columns": {
+        "gene": {
+          "type": "str",
+          "description": "基因符号（分面标题）",
+          "required": true
+        },
+        "sample_id": {
+          "type": "str",
+          "description": "样本唯一编号",
+          "required": true
+        },
+        "group": {
+          "type": "str",
+          "description": "比较分组名称（如 MIS, Immune, Tumor）",
+          "required": true
+        },
+        "log2_expr": {
+          "type": "float",
+          "description": "log2 归一化表达量",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "ncol": 3,
+    "ylabel": "Expression (log$_2$)",
+    "point_size": 6.0,
+    "dpi": 300,
+    "width_in": 5.0,
+    "height_in": 3.5,
+    "rect": [
+      0.12,
+      0.06,
+      0.84,
+      0.82
+    ]
+  },
+  "parameters": {
+    "ncol": {
+      "type": "number",
+      "label": "分面列数",
+      "default": 3,
+      "min": 1,
+      "max": 5,
+      "step": 1
+    },
+    "point_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 6.0,
+      "min": 2.0,
+      "max": 18.0,
+      "step": 1.0
+    }
+  }
+}

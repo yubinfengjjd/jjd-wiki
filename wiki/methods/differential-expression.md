@@ -96,6 +96,32 @@ figure_relations:
     state: not_run
     scope: 2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/group-bar-jitter-sig
+  compatibility: adaptable
+  reason: 候选差异标志基因在多组样本间的对数表达分布可绘制为多基因分面均值±SEM 柱状图 + 个体抖动散点 + 红色显著性星号横线。
+  prerequisites:
+  - 输入为样本级归一化对数表达长表（gene, sample_id, group, log2_expr）。
+  adaptation: 导出 gene_group_expression_long.csv。
+  evidence:
+  - methods/differential-expression.md#输出
+  - templates/group-bar-jitter-sig/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/monochrome-deseq-volcano
+  compatibility: adaptable
+  reason: DESeq2 差异表达结果表可切换为 Cancer Discovery 极简棕褐单色显著点（#9E623E）+ 浅灰背景 + 斜体 Top 基因标注火山图。
+  prerequisites:
+  - log2FoldChange 与 padj 由上游 DESeq2/limma 给定，模板不重跑差异检验。
+  adaptation: 导出 deseq2_volcano_results.csv（gene_symbol, log2FoldChange, padj）。
+  evidence:
+  - methods/differential-expression.md#输出
+  - templates/monochrome-deseq-volcano/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：功能富集分析（ORA / GSEA 通路定位）
   when: 已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时
@@ -186,6 +212,12 @@ render_bridges:
   - [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-19 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：差异基因（如趋化因子、MHC-I/II）在各亚群的 Z-score 标准化表达可与 DE 显著圆圈标记联合绘制为 variant 分组热图；模板不重算 DE。；前提：Z-score 为跨亚群行标准化均值；DE 圆圈标记须显式注明筛选阈值与对比口径。；适配：导出 pathway_zscore_heatmap.csv（cluster, feature, block, zscore, is_deg）。
     - 关系证据：methods/differential-expression.md#输出；templates/pathway-zscore-heatmap/spec.json；运行证据：无
+  - [[templates/group-bar-jitter-sig|多基因分面均值柱状抖动散点显著性图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：候选差异标志基因在多组样本间的对数表达分布可绘制为多基因分面均值±SEM 柱状图 + 个体抖动散点 + 红色显著性星号横线。；前提：输入为样本级归一化对数表达长表（gene, sample_id, group, log2_expr）。；适配：导出 gene_group_expression_long.csv。
+    - 关系证据：methods/differential-expression.md#输出；templates/group-bar-jitter-sig/spec.json；运行证据：无
+  - [[templates/monochrome-deseq-volcano|极简棕褐单色差异表达火山图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：DESeq2 差异表达结果表可切换为 Cancer Discovery 极简棕褐单色显著点（#9E623E）+ 浅灰背景 + 斜体 Top 基因标注火山图。；前提：log2FoldChange 与 padj 由上游 DESeq2/limma 给定，模板不重跑差异检验。；适配：导出 deseq2_volcano_results.csv（gene_symbol, log2FoldChange, padj）。
+    - 关系证据：methods/differential-expression.md#输出；templates/monochrome-deseq-volcano/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

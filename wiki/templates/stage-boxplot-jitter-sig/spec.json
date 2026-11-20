@@ -1,0 +1,54 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "data": {
+      "interface": "",
+      "filename": "stage_proportion_points.csv",
+      "description": "各演进分期 ROI/样本比例观测表（sample_id, stage, value）",
+      "required": true,
+      "columns": {
+        "sample_id": {
+          "type": "str",
+          "description": "样本或 ROI 唯一编号",
+          "required": true
+        },
+        "stage": {
+          "type": "str",
+          "description": "演进分期或分组标签（如 N, P, MIS, IM）",
+          "required": true
+        },
+        "value": {
+          "type": "float",
+          "description": "细胞亚群或标志物阳性比例（0-1 或百分比）",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "title": "S100A expression",
+    "ylabel": "Fraction SOX10$^+$ cells\nalso S100A$^+$",
+    "point_size": 14.0,
+    "dpi": 300,
+    "width_in": 3.4,
+    "height_in": 2.9,
+    "rect": [
+      0.24,
+      0.14,
+      0.68,
+      0.72
+    ]
+  },
+  "parameters": {
+    "point_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 14.0,
+      "min": 4.0,
+      "max": 30.0,
+      "step": 1.0
+    }
+  }
+}

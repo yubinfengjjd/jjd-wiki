@@ -1,0 +1,67 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "expr": {
+      "interface": "",
+      "filename": "gene_group_density_long.csv",
+      "description": "多基因两组比较对数表达长表（gene, sample_id, group, log2_expr）",
+      "required": true,
+      "columns": {
+        "gene": {
+          "type": "str",
+          "description": "基因或签名名称（分面标题）",
+          "required": true
+        },
+        "sample_id": {
+          "type": "str",
+          "description": "样本唯一标识",
+          "required": true
+        },
+        "group": {
+          "type": "str",
+          "description": "比较分组（如 MIS vs EM_and_IM）",
+          "required": true
+        },
+        "log2_expr": {
+          "type": "float",
+          "description": "对数归一化表达值",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "bw_method": 0.45,
+    "fill_alpha": 0.76,
+    "xlabel": "Log$_2$ expression",
+    "dpi": 300,
+    "width_in": 4.6,
+    "height_in": 3.0,
+    "rect": [
+      0.14,
+      0.18,
+      0.82,
+      0.68
+    ]
+  },
+  "parameters": {
+    "bw_method": {
+      "type": "number",
+      "label": "KDE 带宽系数",
+      "default": 0.45,
+      "min": 0.15,
+      "max": 1.0,
+      "step": 0.05
+    },
+    "fill_alpha": {
+      "type": "number",
+      "label": "填充透明度",
+      "default": 0.76,
+      "min": 0.3,
+      "max": 0.95,
+      "step": 0.05
+    }
+  }
+}

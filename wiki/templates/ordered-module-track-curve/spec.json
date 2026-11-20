@@ -1,0 +1,54 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "curve": {
+      "interface": "",
+      "filename": "ordered_module_expression.csv",
+      "description": "各样本/mROI 的共表达模块平均表达量与所属分期表（sample_id, site, mean_log2_norm）",
+      "required": true,
+      "columns": {
+        "sample_id": {
+          "type": "str",
+          "description": "样本或微区域唯一标识",
+          "required": true
+        },
+        "site": {
+          "type": "str",
+          "description": "所属组织学分期或区域类型（如 MIS, IR, bTIL, IB, IM, EM）",
+          "required": true
+        },
+        "mean_log2_norm": {
+          "type": "float",
+          "description": "模块基因平均 log2 归一化表达量",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "ylabel": "Mean expression (log$_2$)\nS100B module",
+    "xlabel": "mROI",
+    "point_size": 9.0,
+    "dpi": 300,
+    "width_in": 4.8,
+    "height_in": 3.2,
+    "rect": [
+      0.18,
+      0.12,
+      0.78,
+      0.8
+    ]
+  },
+  "parameters": {
+    "point_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 9.0,
+      "min": 2.0,
+      "max": 25.0,
+      "step": 1.0
+    }
+  }
+}

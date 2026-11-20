@@ -1,0 +1,102 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "proportions": {
+      "interface": "",
+      "filename": "stage_rcn_proportions.csv",
+      "description": "各分期细胞邻域/亚群组成比例宽表（Stage 及各亚群比例列，每行和为 1）",
+      "required": true,
+      "columns": {
+        "Stage": {
+          "type": "str",
+          "description": "疾病分期或样本分组（如 Normal, Precursor, MIS, IM）",
+          "required": true
+        },
+        "RCN1": {
+          "type": "float",
+          "description": "RCN1 比例",
+          "required": false
+        },
+        "RCN2": {
+          "type": "float",
+          "description": "RCN2 比例",
+          "required": false
+        },
+        "RCN3": {
+          "type": "float",
+          "description": "RCN3 比例",
+          "required": false
+        },
+        "RCN4": {
+          "type": "float",
+          "description": "RCN4 比例",
+          "required": false
+        },
+        "RCN5": {
+          "type": "float",
+          "description": "RCN5 比例",
+          "required": false
+        },
+        "RCN6": {
+          "type": "float",
+          "description": "RCN6 比例",
+          "required": false
+        },
+        "RCN7": {
+          "type": "float",
+          "description": "RCN7 比例",
+          "required": false
+        },
+        "RCN8": {
+          "type": "float",
+          "description": "RCN8 比例",
+          "required": false
+        },
+        "RCN9": {
+          "type": "float",
+          "description": "RCN9 比例",
+          "required": false
+        },
+        "RCN10": {
+          "type": "float",
+          "description": "RCN10 比例",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "bar_width": 0.72,
+    "legend_cols": 4,
+    "ylabel": "Proportion",
+    "dpi": 300,
+    "width_in": 3.2,
+    "height_in": 3.8,
+    "rect": [
+      0.2,
+      0.1,
+      0.74,
+      0.66
+    ]
+  },
+  "parameters": {
+    "bar_width": {
+      "type": "number",
+      "label": "柱宽",
+      "default": 0.72,
+      "min": 0.3,
+      "max": 0.95,
+      "step": 0.05
+    },
+    "legend_cols": {
+      "type": "number",
+      "label": "顶部图例列数",
+      "default": 4,
+      "min": 2,
+      "max": 6,
+      "step": 1
+    }
+  }
+}

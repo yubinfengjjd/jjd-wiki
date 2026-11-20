@@ -280,6 +280,58 @@ figure_relations:
     state: not_run
     scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/stage-boxplot-jitter-sig
+  compatibility: adaptable
+  reason: 各视野/样本在演进分期下的特定细胞亚群或双阳性比例可绘制为分期箱线+抖动散点+红色显著性星号横线。
+  prerequisites:
+  - 每个散点必须对应独立样本或独立 ROI（sample_id），严禁以单细胞为重复单位做 t 检验。
+  adaptation: 导出 stage_proportion_points.csv（sample_id, stage, value）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/stage-boxplot-jitter-sig/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/stage-stacked-prop-bar
+  compatibility: adaptable
+  reason: 各演进分期下多类细胞邻域（RCN1-10）或细胞表型的归一化构成比例可切换为无流带纯净 100% 堆叠柱状图。
+  prerequisites:
+  - 每一分期（行）的各亚群比例之和须归一化为 1。
+  adaptation: 导出 stage_rcn_proportions.csv（Stage 及各亚群比例列）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/stage-stacked-prop-bar/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/cluster-marker-positivity-bars
+  compatibility: adaptable
+  reason: 各细胞亚群/空间簇在多个功能标志物上的阳性细胞比例可绘制为多列水平条形分面矩阵。
+  prerequisites:
+  - 阳性比例按各亚群内超过门控阈值的细胞占比汇总（0-100 或 0-1）。
+  adaptation: 导出 cluster_marker_positivity.csv（TCC 及各标志物阳性率列）。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/cluster-marker-positivity-bars/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/quadrant-contour-prop-combo
+  compatibility: adaptable
+  reason: 双标志物二维核密度等高线四象限门控散点可与象限细胞构成百分比堆叠柱并排联动展示。
+  prerequisites:
+  - 双标志物强度须统一缩放至 [0, 1] 并按预设阈值（如 0.5）划分四象限。
+  adaptation: 导出 bivariate_density_cells.csv 与 quadrant_proportions.csv。
+  evidence:
+  - methods/cell-proportion-composition.md#输出
+  - templates/quadrant-contour-prop-combo/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：异常富集亚群的差异表达与功能打分深挖
   when: 通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时
@@ -374,6 +426,18 @@ next_steps:
   - [[templates/compartment-dual-track-bars|表皮真皮双区室堆叠条图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：双组织空间区室（如表皮 vs 真皮）在多疾病分期下的分层细胞构成比例可切换为 variant 双区室多轨水平堆叠图；模板不做统计检验。；前提：两个区室须来自同一切片或同一套表型门控规则；各分期×区室组成按细胞总数归一化。；适配：导出 compartment_cell_composition.csv（Stage, compartment_proxy 及各细胞类型比例列）。
     - 关系证据：methods/cell-proportion-composition.md#输出；templates/compartment-dual-track-bars/spec.json；templates/compartment-dual-track-bars/verify/verify.json；运行证据：无
+  - [[templates/stage-boxplot-jitter-sig|演进分期箱线抖动散点与显著性图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各视野/样本在演进分期下的特定细胞亚群或双阳性比例可绘制为分期箱线+抖动散点+红色显著性星号横线。；前提：每个散点必须对应独立样本或独立 ROI（sample_id），严禁以单细胞为重复单位做 t 检验。；适配：导出 stage_proportion_points.csv（sample_id, stage, value）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/stage-boxplot-jitter-sig/spec.json；运行证据：无
+  - [[templates/stage-stacked-prop-bar|演进分期百比堆叠构成条形图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各演进分期下多类细胞邻域（RCN1-10）或细胞表型的归一化构成比例可切换为无流带纯净 100% 堆叠柱状图。；前提：每一分期（行）的各亚群比例之和须归一化为 1。；适配：导出 stage_rcn_proportions.csv（Stage 及各亚群比例列）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/stage-stacked-prop-bar/spec.json；运行证据：无
+  - [[templates/cluster-marker-positivity-bars|多亚群多标志物水平阳性率条形矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各细胞亚群/空间簇在多个功能标志物上的阳性细胞比例可绘制为多列水平条形分面矩阵。；前提：阳性比例按各亚群内超过门控阈值的细胞占比汇总（0-100 或 0-1）。；适配：导出 cluster_marker_positivity.csv（TCC 及各标志物阳性率列）。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/cluster-marker-positivity-bars/spec.json；运行证据：无
+  - [[templates/quadrant-contour-prop-combo|二维核密度等高线四象限与比例组合图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：双标志物二维核密度等高线四象限门控散点可与象限细胞构成百分比堆叠柱并排联动展示。；前提：双标志物强度须统一缩放至 [0, 1] 并按预设阈值（如 0.5）划分四象限。；适配：导出 bivariate_density_cells.csv 与 quadrant_proportions.csv。
+    - 关系证据：methods/cell-proportion-composition.md#输出；templates/quadrant-contour-prop-combo/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

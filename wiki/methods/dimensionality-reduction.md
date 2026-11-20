@@ -93,6 +93,33 @@ figure_relations:
     state: not_run
     scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/group-hull-pca
+  compatibility: adaptable
+  reason: 空间微区域（PickSeq/GeoMx）或样本级主成分坐标（PC1, PC2）可绘制为带 Chaikin 光滑半透明虚线凸包包络与内嵌组名的 PCA
+    散点图。
+  prerequisites:
+  - PC1/PC2 坐标及解释方差比由上游 PCA 给定；每组至少 3 个样本以拟合凸包。
+  adaptation: 导出 pca_sample_coords.csv（sample_id, site, PC1, PC2, pc1_var_pct, pc2_var_pct）。
+  evidence:
+  - methods/dimensionality-reduction.md#输出
+  - templates/group-hull-pca/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/pca-scree-loadings-panel
+  compatibility: adaptable
+  reason: PCA 各主成分解释方差比衰减碎石图与 PC1/PC2 特征绝对载荷排序谱可组合为双联诊断面板。
+  prerequisites:
+  - 方差贡献率表与特征载荷表来自同一 PCA 拟合结果。
+  adaptation: 导出 pca_variance_scree.csv 与 pca_feature_loadings.csv。
+  evidence:
+  - methods/dimensionality-reduction.md#输出
+  - templates/pca-scree-loadings-panel/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 data_domains:
 - single-cell
 next_steps:
@@ -148,6 +175,12 @@ next_steps:
   - [[templates/tri-panel-stage-umap|三联分群分期患者 UMAP]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：降维生成的 UMAP 坐标可联合细胞类型、进展分期与患者编号按 Cancer Discovery 风格三联并排展示；模板不重算 UMAP。；前提：坐标与三列离散注释来自同一降维对象；cell_id 唯一且坐标无 NA。；适配：导出 umap_tripanel_cells.csv（cell_id, umap_1, umap_2, cell_type, stage, patient_id）。
     - 关系证据：methods/dimensionality-reduction.md#输出；templates/tri-panel-stage-umap/spec.json；运行证据：无
+  - [[templates/group-hull-pca|微区域样本半透明凸包包络 PCA 图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：空间微区域（PickSeq/GeoMx）或样本级主成分坐标（PC1, PC2）可绘制为带 Chaikin 光滑半透明虚线凸包包络与内嵌组名的 PCA 散点图。；前提：PC1/PC2 坐标及解释方差比由上游 PCA 给定；每组至少 3 个样本以拟合凸包。；适配：导出 pca_sample_coords.csv（sample_id, site, PC1, PC2, pc1_var_pct, pc2_var_pct）。
+    - 关系证据：methods/dimensionality-reduction.md#输出；templates/group-hull-pca/spec.json；运行证据：无
+  - [[templates/pca-scree-loadings-panel|主成分方差碎石图与特征载荷排序面板]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：PCA 各主成分解释方差比衰减碎石图与 PC1/PC2 特征绝对载荷排序谱可组合为双联诊断面板。；前提：方差贡献率表与特征载荷表来自同一 PCA 拟合结果。；适配：导出 pca_variance_scree.csv 与 pca_feature_loadings.csv。
+    - 关系证据：methods/dimensionality-reduction.md#输出；templates/pca-scree-loadings-panel/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

@@ -1,0 +1,65 @@
+{
+  "entry": "code/render.R",
+  "language": "r",
+  "tables": {
+    "cells": {
+      "interface": "",
+      "filename": "split_condition_umap_cells.csv",
+      "description": "单细胞 UMAP 坐标、精细亚群与条件分组表（cell_id, umap_1, umap_2, subcluster, condition）",
+      "required": true,
+      "columns": {
+        "cell_id": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "umap_1": {
+          "type": "float",
+          "description": "UMAP 横坐标",
+          "required": true
+        },
+        "umap_2": {
+          "type": "float",
+          "description": "UMAP 纵坐标",
+          "required": true
+        },
+        "subcluster": {
+          "type": "str",
+          "description": "细胞亚群名称",
+          "required": true
+        },
+        "condition": {
+          "type": "str",
+          "description": "并排分面条件标签（如 Adjacent normal tissue / Tumor）",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "bg_color": "#DCDCDC",
+    "dot_size": 0.65,
+    "legend_cols": 2,
+    "dpi": 300,
+    "width_in": 6.2,
+    "height_in": 4.8
+  },
+  "parameters": {
+    "dot_size": {
+      "type": "number",
+      "label": "散点大小",
+      "default": 0.65,
+      "min": 0.2,
+      "max": 2.0,
+      "step": 0.05
+    },
+    "legend_cols": {
+      "type": "number",
+      "label": "底部图例列数",
+      "default": 2,
+      "min": 1,
+      "max": 4,
+      "step": 1
+    }
+  }
+}

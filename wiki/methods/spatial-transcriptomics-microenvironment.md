@@ -124,6 +124,71 @@ figure_relations:
     state: not_run
     scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/stage-distance-boxen-grid
+  compatibility: adaptable
+  reason: 各空间细胞邻域（RCN）到目标锚点邻域（如 RCN10）的跨分期微米距离分布可绘制为对数横轴水平 Boxen 分面图。
+  prerequisites:
+  - 物理距离须基于真实微米坐标计算（> 0 μm），跨分期显著性检验须与右侧星号列对应。
+  adaptation: 导出 rcn_to_anchor_distances.csv 与 rcn_distance_ttests.csv。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/stage-distance-boxen-grid/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/spatial-cell-highlight-grid
+  compatibility: adaptable
+  reason: 单细胞空间物理坐标（X_um, Y_um）上各空间滞后簇（TCC1-10）或邻域的二值高亮空间落点可绘制为多面板网格。
+  prerequisites:
+  - 高亮表与背景视野表须共享同一物理微米坐标系与 fov_id。
+  adaptation: 导出 spatial_cluster_highlights.csv 与 spatial_fov_background.csv。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/spatial-cell-highlight-grid/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/boundary-intensity-gradient
+  compatibility: adaptable
+  reason: 沿肿瘤-基质侵袭边界有符号距离分箱的多标志物平均荧光强度梯度可绘制为带双向区室箭头的连续剖面曲线。
+  prerequisites:
+  - 距离分箱以肿瘤-基质边界为 0 μm（负值代表肿瘤侧，正值代表基质侧）。
+  adaptation: 导出 boundary_intensity_gradient.csv（dist_bin_um, compartment 及各标志物平均强度列）。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/boundary-intensity-gradient/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/pvalue-threshold-heatmap
+  compatibility: adaptable
+  reason: 各空间细胞邻域（RCN1-10）在演进分期两两比较下的统计检验 P 值可绘制为 P < 0.05 暖色渐变与 ns 灰块阈值数值热图。
+  prerequisites:
+  - P 值由上游分期两两统计检验给出（0-1），模板按 alpha_threshold 分割着色。
+  adaptation: 导出 stage_pairwise_pvalues.csv（RCN, comparison, p_value）。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/pvalue-threshold-heatmap/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
+- figure: templates/spatial-cooccurrence-matrix
+  compatibility: adaptable
+  reason: 空间滞后簇（TCC1-10）与邻近免疫/基质细胞的 1,000 次空间置换检验结果可绘制为共现/排斥/非显著离散三态矩阵。
+  prerequisites:
+  - 置换检验双侧显著性（P < 0.05）及 Z 分数方向须在上游汇总为 Co-occurrence / Avoidance / Non-Sig。
+  adaptation: 导出 spatial_cooccurrence_states.csv（TCC, neighbour, sig_state）。
+  evidence:
+  - methods/spatial-transcriptomics-microenvironment.md#输出
+  - templates/spatial-cooccurrence-matrix/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：空间邻域细胞通讯与信号互作轴解析
   when: 在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时
@@ -186,6 +251,21 @@ next_steps:
   - [[templates/spatial-expression-contour|空间蛋白表达等高线地形图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：基于物理组织切片坐标（X_um, Y_um）插值的连续蛋白/基因表达密度可切换为 variant 二维等高线地形分面图；模板不执行空间插值或核密度估计。；前提：等高线网格坐标与可选单细胞散点坐标来自同一未旋转裁剪的物理视野（fov_id）。；适配：导出 spatial_contours.csv（fov_id, X_um, Y_um 及特征列）与可选 spatial_cells.csv。
     - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-expression-contour/spec.json；templates/spatial-expression-contour/verify/verify.json；运行证据：无
+  - [[templates/stage-distance-boxen-grid|多分期对数坐标水平 Boxen 空间距离图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各空间细胞邻域（RCN）到目标锚点邻域（如 RCN10）的跨分期微米距离分布可绘制为对数横轴水平 Boxen 分面图。；前提：物理距离须基于真实微米坐标计算（> 0 μm），跨分期显著性检验须与右侧星号列对应。；适配：导出 rcn_to_anchor_distances.csv 与 rcn_distance_ttests.csv。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/stage-distance-boxen-grid/spec.json；运行证据：无
+  - [[templates/spatial-cell-highlight-grid|空间单细胞坐标表型高亮散点分面网格]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：单细胞空间物理坐标（X_um, Y_um）上各空间滞后簇（TCC1-10）或邻域的二值高亮空间落点可绘制为多面板网格。；前提：高亮表与背景视野表须共享同一物理微米坐标系与 fov_id。；适配：导出 spatial_cluster_highlights.csv 与 spatial_fov_background.csv。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-cell-highlight-grid/spec.json；运行证据：无
+  - [[templates/boundary-intensity-gradient|肿瘤基质边界空间荧光强度梯度曲线]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：沿肿瘤-基质侵袭边界有符号距离分箱的多标志物平均荧光强度梯度可绘制为带双向区室箭头的连续剖面曲线。；前提：距离分箱以肿瘤-基质边界为 0 μm（负值代表肿瘤侧，正值代表基质侧）。；适配：导出 boundary_intensity_gradient.csv（dist_bin_um, compartment 及各标志物平均强度列）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/boundary-intensity-gradient/spec.json；运行证据：无
+  - [[templates/pvalue-threshold-heatmap|分期两两比较显著性阈值数值热图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：各空间细胞邻域（RCN1-10）在演进分期两两比较下的统计检验 P 值可绘制为 P < 0.05 暖色渐变与 ns 灰块阈值数值热图。；前提：P 值由上游分期两两统计检验给出（0-1），模板按 alpha_threshold 分割着色。；适配：导出 stage_pairwise_pvalues.csv（RCN, comparison, p_value）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/pvalue-threshold-heatmap/spec.json；运行证据：无
+  - [[templates/spatial-cooccurrence-matrix|空间邻域置换检验离散三态共现矩阵]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：空间滞后簇（TCC1-10）与邻近免疫/基质细胞的 1,000 次空间置换检验结果可绘制为共现/排斥/非显著离散三态矩阵。；前提：置换检验双侧显著性（P < 0.05）及 Z 分数方向须在上游汇总为 Co-occurrence / Avoidance / Non-Sig。；适配：导出 spatial_cooccurrence_states.csv（TCC, neighbour, sig_state）。
+    - 关系证据：methods/spatial-transcriptomics-microenvironment.md#输出；templates/spatial-cooccurrence-matrix/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途

@@ -1,0 +1,104 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "highlights": {
+      "interface": "",
+      "filename": "spatial_cluster_highlights.csv",
+      "description": "目标空间聚簇/表型细胞物理坐标表（cell_uid, X_um, Y_um, fov_id, Stage, TCC）",
+      "required": true,
+      "columns": {
+        "cell_uid": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "X_um": {
+          "type": "float",
+          "description": "空间横坐标（μm）",
+          "required": true
+        },
+        "Y_um": {
+          "type": "float",
+          "description": "空间纵坐标（μm）",
+          "required": true
+        },
+        "fov_id": {
+          "type": "str",
+          "description": "所属视野编号",
+          "required": true
+        },
+        "Stage": {
+          "type": "str",
+          "description": "所属演进分期",
+          "required": false
+        },
+        "TCC": {
+          "type": "str",
+          "description": "高亮聚簇标签（如 TCC1..TCC10）",
+          "required": true
+        }
+      }
+    },
+    "background": {
+      "interface": "",
+      "filename": "spatial_fov_background.csv",
+      "description": "各视野全部背景细胞物理坐标表（cell_uid, X_um, Y_um, fov_id, Stage）",
+      "required": true,
+      "columns": {
+        "cell_uid": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "X_um": {
+          "type": "float",
+          "description": "空间横坐标（μm）",
+          "required": true
+        },
+        "Y_um": {
+          "type": "float",
+          "description": "空间纵坐标（μm）",
+          "required": true
+        },
+        "fov_id": {
+          "type": "str",
+          "description": "所属视野编号",
+          "required": true
+        },
+        "Stage": {
+          "type": "str",
+          "description": "所属演进分期",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "title": "Mapping of TCCs to physical location",
+    "bg_color": "#D8D8D8",
+    "fg_color": "#194B5F",
+    "bg_size": 3.0,
+    "fg_size": 11.0,
+    "dpi": 300,
+    "width_in": 4.2,
+    "height_in": 6.4,
+    "rect": [
+      0.06,
+      0.05,
+      0.88,
+      0.86
+    ]
+  },
+  "parameters": {
+    "fg_size": {
+      "type": "number",
+      "label": "高亮散点大小",
+      "default": 11.0,
+      "min": 3.0,
+      "max": 25.0,
+      "step": 1.0
+    }
+  }
+}

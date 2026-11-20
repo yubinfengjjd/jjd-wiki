@@ -1,0 +1,56 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "cooccurrence": {
+      "interface": "",
+      "filename": "spatial_cooccurrence_states.csv",
+      "description": "空间邻域置换检验共现/排斥离散状态表（TCC, neighbour, sig_state，可选 z_score, p_value）",
+      "required": true,
+      "columns": {
+        "TCC": {
+          "type": "str",
+          "description": "列方向主空间簇名称（如 TCC1..TCC10）",
+          "required": true
+        },
+        "neighbour": {
+          "type": "str",
+          "description": "行方向邻域细胞类型或空间簇名称",
+          "required": true
+        },
+        "sig_state": {
+          "type": "str",
+          "description": "显著性三态分类（Co-occurrence / Avoidance / Non-Sig）",
+          "required": true
+        },
+        "z_score": {
+          "type": "float",
+          "description": "置换检验 Z 分数（可选）",
+          "required": false
+        },
+        "p_value": {
+          "type": "float",
+          "description": "置换检验双侧 P 值（可选）",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "title": "Co-occurrence of spatial lag clusters",
+    "cooccur_color": "#EAE33C",
+    "avoid_color": "#3D164A",
+    "nonsig_color": "#8E8E8E",
+    "dpi": 300,
+    "width_in": 5.2,
+    "height_in": 3.8,
+    "rect": [
+      0.22,
+      0.14,
+      0.74,
+      0.76
+    ]
+  },
+  "parameters": {}
+}

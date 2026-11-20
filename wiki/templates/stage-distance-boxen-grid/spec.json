@@ -1,0 +1,86 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "distances": {
+      "interface": "",
+      "filename": "rcn_to_anchor_distances.csv",
+      "description": "单细胞到锚点邻域的空间物理距离表（cell_uid, fov_id, Stage, RCN, dist_to_RCN10_um）",
+      "required": true,
+      "columns": {
+        "cell_uid": {
+          "type": "str",
+          "description": "细胞唯一标识",
+          "required": true
+        },
+        "fov_id": {
+          "type": "str",
+          "description": "视野编号",
+          "required": false
+        },
+        "Stage": {
+          "type": "str",
+          "description": "疾病演进分期（Normal, Precursor, MIS, IM）",
+          "required": true
+        },
+        "RCN": {
+          "type": "str",
+          "description": "细胞所属空间邻域编号",
+          "required": true
+        },
+        "dist_to_RCN10_um": {
+          "type": "float",
+          "description": "到目标锚点邻域的最近距离（μm）",
+          "required": true
+        }
+      }
+    },
+    "ttests": {
+      "interface": "",
+      "filename": "rcn_distance_ttests.csv",
+      "description": "跨分期距离比较显著性检验表（RCN, stage_1, stage_2, p_value）",
+      "required": false,
+      "columns": {
+        "RCN": {
+          "type": "str",
+          "description": "空间邻域编号",
+          "required": true
+        },
+        "stage_1": {
+          "type": "str",
+          "description": "比较分期 1",
+          "required": true
+        },
+        "stage_2": {
+          "type": "str",
+          "description": "比较分期 2",
+          "required": true
+        },
+        "p_value": {
+          "type": "float",
+          "description": "双样本检验 P 值",
+          "required": true
+        }
+      }
+    }
+  },
+  "style": {
+    "xlabel": "Distance from RCN10 (μm)",
+    "ref_lines": [
+      6,
+      90,
+      1000
+    ],
+    "dpi": 300,
+    "width_in": 6.8,
+    "height_in": 2.6,
+    "rect": [
+      0.08,
+      0.2,
+      0.88,
+      0.64
+    ]
+  },
+  "parameters": {}
+}

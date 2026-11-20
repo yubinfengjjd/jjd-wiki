@@ -1,0 +1,59 @@
+{
+  "entry": "code/render.py",
+  "language": "python",
+  "panel": "code/panel.py",
+  "tables": {
+    "pvalues": {
+      "interface": "",
+      "filename": "stage_pairwise_pvalues.csv",
+      "description": "各空间邻域在分期两两比较下的 P 值表（RCN, comparison, p_value，可选 diff_mean）",
+      "required": true,
+      "columns": {
+        "RCN": {
+          "type": "str",
+          "description": "空间细胞邻域或亚群名称（如 RCN1..RCN10）",
+          "required": true
+        },
+        "comparison": {
+          "type": "str",
+          "description": "分期两两比较键（如 Normal_vs_Precursor）",
+          "required": true
+        },
+        "p_value": {
+          "type": "float",
+          "description": "统计检验 P 值",
+          "required": true
+        },
+        "diff_mean": {
+          "type": "float",
+          "description": "组间均值差（可选）",
+          "required": false
+        }
+      }
+    }
+  },
+  "style": {
+    "title": "Differences between stages",
+    "alpha_threshold": 0.05,
+    "ns_color": "#A6A6A6",
+    "dpi": 300,
+    "width_in": 3.4,
+    "height_in": 4.6,
+    "rect": [
+      0.1,
+      0.06,
+      0.74,
+      0.8
+    ]
+  },
+  "parameters": {
+    "alpha_threshold": {
+      "type": "number",
+      "label": "显著性 P 值阈值",
+      "default": 0.05,
+      "min": 0.001,
+      "max": 0.1,
+      "step": 0.005
+    }
+  }
+}

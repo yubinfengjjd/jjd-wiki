@@ -120,6 +120,19 @@ figure_relations:
     state: not_run
     scope: 2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     evidence: []
+- figure: templates/faceted-overlap-density
+  compatibility: adaptable
+  reason: 特征基因或基因集签名在两组样本（如 MIS vs EM/IM）间的分布差异可绘制为分面半透明重叠高斯核密度图与顶部红色显著性星号横线。
+  prerequisites:
+  - 每组样本量 >= 3 且方差非零以支持高斯 KDE 拟合。
+  adaptation: 导出 gene_group_density_long.csv（gene, sample_id, group, log2_expr）。
+  evidence:
+  - methods/gene-set-scoring.md#输出
+  - templates/faceted-overlap-density/spec.json
+  verification:
+    state: not_run
+    scope: 2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    evidence: []
 next_steps:
 - direction: 方向 1：按高/低活性得分分组深挖差异与轨迹
   when: 识别出高活性细胞亚群（如 High-Lactylation 亚群）后，比较高低分组差异或拟时序动态时
@@ -209,6 +222,9 @@ render_bridges:
   - [[templates/stage-track-block-heatmap|分期色带分块通路热图]]（ready）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-21 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
     - 依据：跨临床分期/微区样本的 ssGSEA 通路活性或特征基因 Z-score 可切换为 variant 顶部分期色带+分块热图（Cancer Discovery 画风）；模板不重算打分。；前提：得分矩阵列名与 sample_meta.sample_id 按键严格对齐；同块特征采用一致的标准化与截断尺度。；适配：导出 stage_heatmap_scores.csv 与 stage_sample_meta.csv（sample_id, site）。
     - 关系证据：methods/gene-set-scoring.md#输出；templates/stage-track-block-heatmap/spec.json；templates/stage-track-block-heatmap/verify/verify.json；运行证据：无
+  - [[templates/faceted-overlap-density|多基因分面双组半透明重叠核密度图]]（draft）：需要适配（adaptable）；调用验证：not_run；范围：2026-11-20 仅核对方法输出语义与模板 spec.json 契约；未运行真实课题分析→出图端到端联调。
+    - 依据：特征基因或基因集签名在两组样本（如 MIS vs EM/IM）间的分布差异可绘制为分面半透明重叠高斯核密度图与顶部红色显著性星号横线。；前提：每组样本量 >= 3 且方差非零以支持高斯 KDE 拟合。；适配：导出 gene_group_density_long.csv（gene, sample_id, group, log2_expr）。
+    - 关系证据：methods/gene-set-scoring.md#输出；templates/faceted-overlap-density/spec.json；运行证据：无
 <!-- facts:end -->
 
 ## 用途
