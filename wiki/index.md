@@ -222,7 +222,6 @@
 - [[templates/scp-flow-chord|分组流向和弦图]]
 - [[templates/scp-flow-sankey|分组流向桑基图]]
 - [[templates/scp-group-heatmap|分组热图（多分组注释）]]
-- [[templates/fy-circos-r|分组环形连线关系图]]
 - [[templates/fy-twovarcor|分组相关性散点与系数差异检验]]
 - [[templates/fy-bar|分组着色柱图与正负富集柱图]]
 - [[templates/fy-crosslink|分组节点跨列连线图]]

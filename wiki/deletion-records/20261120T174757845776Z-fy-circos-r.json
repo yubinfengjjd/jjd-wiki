@@ -1,0 +1,26 @@
+{
+  "title": "分组环形连线关系图",
+  "path": "templates/fy-circos-r.md",
+  "revision": "237def10da53cdc710e6138a53a895254a5c4ec97cb4e414f4cee91a9f5ed2c6",
+  "asset_files": 13,
+  "affected": [
+    {
+      "path": "recipes/figureya-26circos-r.md",
+      "title": "分组环形连线关系图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261120T174757845776Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-26circos-r.md",
+      "before_sha256": "a73fbe05fdf9ef4eb81e3983ab8523579edf3606898b12714532b2f45593147c",
+      "after_sha256": "a73fbe05fdf9ef4eb81e3983ab8523579edf3606898b12714532b2f45593147c"
+    }
+  ],
+  "changed_layout_files": []
+}
