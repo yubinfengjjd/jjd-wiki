@@ -236,7 +236,7 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/batch-integration|单细胞批次整合]] | note | ready | Stage 1：多队列单细胞去批次整合（Harmony / Seurat Anchor） |
+| [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Stage 1：多队列单细胞去批次整合（Harmony / Seurat Anchor） |
 | [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Stage 1：基质亚群精细注释与功能包络定位 |
 | [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 主推默认 · 标准细胞类型 UMAP 散点图 |
 | [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready | 可切换画风 · 带分组虚线包络与编号质心的 UMAP 图 |
