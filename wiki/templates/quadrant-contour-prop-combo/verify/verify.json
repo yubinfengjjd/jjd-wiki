@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "timestamp": "2026-11-20T18:49:45.870117+00:00",
+  "timestamp": "2026-11-20T19:11:53.251687+00:00",
   "exit_code": 0,
   "inputs": {
-    "templates/quadrant-contour-prop-combo/spec.json": "7bc5871c159e98d30e77f4efc95df36226f899d43be50a5a9eab594507a17548",
+    "templates/quadrant-contour-prop-combo/spec.json": "9990271bc5e54493b40164abe19273e9d5dcd6dde05dbbc7df3cc3634b32256a",
     "templates/quadrant-contour-prop-combo/code/render.py": "a6601bccd87f1d9542c008c85dbc3552f6659cd5da045f7cffb58ef2a445a7f4",
     "templates/quadrant-contour-prop-combo/code/panel.py": "0677f03ce18dd3da8bad6ad7ca40f37c12d00258c10c8129a63e2e8c324eab35",
     "templates/quadrant-contour-prop-combo/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -13,9 +13,9 @@
     "templates/quadrant-contour-prop-combo/example/quadrant_proportions.csv": "7ac112f0b66c3865eee5b01cdefc83df6a9bfb8992524601f49720cc7d8d8015"
   },
   "outputs": {
-    "png": "74f20180fdcea9edfa1ec11abb0c1e9fd4befe32ae339817e39a94ab61100116",
-    "pdf": "5b5fcbdafb7183fef89d2a725627391966ab9ad57fa886463d2888b8aa4cdb47",
-    "svg": "15ae13b540e70e1508ea7d51ac3ec572ba1b94806fae68bdb93187918074ad69"
+    "png": "ce31afce8781fca7ff9149d2b494bb59c3f5ec50679bf3c2d136dc737da81cd7",
+    "pdf": "981a34b83571d4d202ad7a85d1f495c9e18d29edc49cf91ebf3442f0a093299f",
+    "svg": "75e689b422db891c7a729c44a04cd3b7e2fb6061a564b71a4044587fdf9a7cd4"
   },
   "environment": {
     "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
