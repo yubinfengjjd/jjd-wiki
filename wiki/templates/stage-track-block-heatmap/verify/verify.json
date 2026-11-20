@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "timestamp": "2026-11-20T17:33:18.078836+00:00",
+  "exit_code": 0,
+  "inputs": {
+    "templates/stage-track-block-heatmap/spec.json": "c778e528005ce82b468c8915d21af0f9d3d8729799174a42fa2f4c22a0ed23c0",
+    "templates/stage-track-block-heatmap/code/render.py": "19a7160f1c07f3421e27ef7f78a6b1cd94f6cf6e845be04d21f7120336e2c7ff",
+    "templates/stage-track-block-heatmap/code/panel.py": "085fceabc1aba90c52d4c6cbbf28275e1ec23434e2c6d45acf7f6997f2ff9886",
+    "templates/stage-track-block-heatmap/code/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inline/scores#columns": "849cd4151d0104ae1c282aff5bf4e10d10ed4b4579182485aa55035930567da8",
+    "inline/sample_meta#columns": "549d8e6523294afda09f7fbbd870b735a1832115df91da0465b4133a07302113",
+    "templates/stage-track-block-heatmap/example/stage_heatmap_scores.csv": "eb11dc700e4140c943568820e172564a9a084fe9c7fdce7449f4bb0d15780a12",
+    "templates/stage-track-block-heatmap/example/stage_sample_meta.csv": "1690de20f744ce0b49c904b0dada0a20674f64de949a590487cc56702260ca0e"
+  },
+  "outputs": {
+    "png": "8d8a156f4017423677e2eb9adc31e4f2a8234e35680402f5fd9844ecdbf9d313",
+    "pdf": "2588c5b508b1a210641ead7024877e8e3b350d477505fe6306d728819e9f9d7b",
+    "svg": "0b8e937fb33f4309023f11a88ce6a8c4213392212c84ad477084d90e157bcba7"
+  },
+  "environment": {
+    "executable": "E:\\research-wiki-env\\bio-python\\Scripts\\python.exe",
+    "controller_python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scope": "\u5f53\u524d\u4ee3\u7801\u4e0e\u793a\u4f8b\u7684\u6267\u884c\u8bc1\u636e\uff1b\u4e0d\u8bc1\u660e\u79d1\u5b66\u6709\u6548\u6216\u4efb\u610f\u6570\u636e\u9002\u7528"
+  }
+}
