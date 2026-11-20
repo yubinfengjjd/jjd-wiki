@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T14:52:40.530842+00:00",
+  "checked_at": "2026-11-20T11:01:55.423147+00:00",
   "page": "templates/stromal-hull-umap.md",
-  "snapshot": "41035b3f0300b11ff79cfb00b10cf67de0e6e78f16ba5b4066605dec0334f84e",
+  "snapshot": "e998c1e62c65c90fb4c5ad89c42def93659efb9c276521dd42ad928e09fe3b07",
   "checks": {
     "适用": "present_nonplaceholder",
     "不适用": "present_nonplaceholder",

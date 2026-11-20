@@ -254,7 +254,7 @@ steps:
 | [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Step 2：多样本/多批次对齐整合与聚类 |
 | [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
 | [[templates/scrna-celltype-umap|CNS 细胞类型 UMAP]] | L2 | ready · 可用 | 细胞类型注释 UMAP 主图（主推默认） |
-| [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready | 细胞类型注释：带亚群功能包络与编号质心的 UMAP（可切换画风） |
+| [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready · 可用 | 细胞类型注释：带亚群功能包络与编号质心的 UMAP（可切换画风） |
 | [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 分支 1：细胞组成比例堆叠流带图（主推默认） |
 | [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]] | L2 | ready · 可用 | 分支 1：多因素 Cox 与 Ro/e 组织/亚型偏好热图 |
 | [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]] | L2 | ready · 可用 | 分支 1：组织构成比例与样本箱线检验组合图 |

@@ -1657,3 +1657,5 @@
 ## [2026-11-20 11:00 UTC] acceptance check spatial-he-deconv-panel
 
 ## [2026-11-20 11:01 UTC] acceptance check spatial-coexpr-multichannel
+
+## [2026-11-20 11:02 UTC] acceptance check stromal-hull-umap
