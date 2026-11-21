@@ -259,7 +259,7 @@ steps:
 | [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]] | L2 | ready · 可用 | 分支 1：多因素 Cox 与 Ro/e 组织/亚型偏好热图 |
 | [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]] | L2 | ready · 可用 | 分支 1：组织构成比例与样本箱线检验组合图 |
 | [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | 分支 2：亚群间/组间差异表达与 Marker 分析 |
-| [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | 分支 3：主题基因集多算法活性打分（AUCell/UCell/ssGSEA） |
+| [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | 分支 3：主题基因集多算法活性打分（AUCell/UCell/ssGSEA） |
 | [[methods/trajectory-inference|拟时序与轨迹推断]] | L2 | ready · 可用 | 分支 4：关键亚群拟时序轨迹与动态基因 |
 | [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]] | L1 | draft · 运行 fail | 分支 5：CellChat 细胞通讯配受体互作弦图（历史归档参考） |
 | [[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]] | L2 | ready · 可用 | 分支 5：细胞通讯多轨环形图（配受体+表达热图+柱状轨） |

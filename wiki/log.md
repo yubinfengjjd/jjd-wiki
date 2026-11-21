@@ -1807,3 +1807,5 @@
 ## [2026-11-21 07:20 UTC] acceptance check methods/dimensionality-reduction
 
 ## [2026-11-21 07:21 UTC] acceptance check methods/differential-expression
+
+## [2026-11-21 07:21 UTC] acceptance check methods/gene-set-scoring
