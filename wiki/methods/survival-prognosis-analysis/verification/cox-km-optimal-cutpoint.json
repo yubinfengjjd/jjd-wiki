@@ -3,26 +3,29 @@
   "implementation": "cox-km-optimal-cutpoint",
   "method_id": "survival-prognosis-analysis",
   "state": "passed",
-  "verified_at": "2026-11-21T07:12:48+00:00",
-  "scope": "Real TCGA-SKCM 120-patient clinical cohort (Nirmal 2022, 5 markers); verified Cox PH HR/95%CI, KM survival curves, and Log-rank tests across median, quartile, and maxstat cutpoints.",
+  "verified_at": "2026-11-21T08:42:45+00:00",
+  "scope": "Real TCGA-SKCM 120-patient clinical cohort (Nirmal 2022, 5 markers); verified fixed predefined cutpoint inference (median/quartile Cox HR, 95% CI, and exact survdiff/coxph agreement) separately from exploratory maxstat cutpoint search (with candidate count, Bonferroni adjustment, and selection-bias warning).",
   "command": "<RSCRIPT> --vanilla example/verify_cox-km-optimal-cutpoint.R --code code --example example --out <TMP_OUT>",
+  "driver_sha256": "90911e050689af9895ef179454e329515bd98800effa5745053d63ea378a0f50",
   "checks": [
     "cohort_n=120, markers_tested=5",
-    "all_cutpoint_modes_verified=median,quartile,maxstat",
-    "cox_hr_positive_finite=true",
-    "maxstat_chisq_ge_median_chisq=true"
+    "fixed_cutpoint_modes_verified=median,quartile",
+    "fixed_ci95_low_lt_hr_lt_ci95_high_and_survdiff_coxph_exact=true",
+    "exploratory_maxstat_bonferroni_adjusted_p_ge_nominal_p=true",
+    "exploratory_maxstat_inference_note_present=true"
   ],
   "environment": {
     "runtime": "R",
     "runner": "<RSCRIPT>",
-    "platform": "Windows"
+    "platform": "Windows",
+    "r_version": "R version 4.5.0 (2025-04-11 ucrt)"
   },
   "files": {
-    "code/cox_km_optimal_cutpoint.R": "d1ec4b88a31f687168ca40a04c6977d4657795e6e5c0821ab8fd952cd3f09cd7"
+    "code/cox_km_optimal_cutpoint.R": "515bcd42a4c490b5e115ff8df580cbfb56075cab99ba7605ea37c724d21c1679"
   },
   "output_sha256": {
-    "checks.json": "0ed2ea60ff3211dff7e619316f0fc17ef406b781a0ba866e25a6999689121398",
+    "checks.json": "7381d62e53da3a2222dacee29e22540718e2139a678be5b8c2ded45c68881ffb",
     "km_curves_median.csv": "bc368307203a5531e273c5d0a8f31855e585bc52d6d4d410ce3f5b75dfebe2ce",
-    "survival_stats_all_modes.csv": "8aff6e4c480643f2fadd7e36415c9b701bbab1a5b7d47938b86c2158b01925bd"
+    "survival_stats_all_modes.csv": "a45aa0b96106fc4de298d7bbd5a0980ba4ddc0453583e48dfa446cdb375335e1"
   }
 }
