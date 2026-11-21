@@ -209,7 +209,7 @@ steps:
 | [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]] | L2 | ready · 可用 | Stage 2（双上游汇合）：20 μm 局部邻域 Spatial LDA（RCN）与 Voronoi 拓扑分析 |
 | [[templates/rcn-composition-stacked-heatmap|RCN 聚簇与分期堆叠复合热图]] | L2 | ready · 可用 | 主推默认 · 邻域聚簇 Z-score + 患者/分期堆叠注释复合热图 |
 | [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]] | L2 | ready · 可用 | 可切换画风 · 高密 Voronoi 细胞邻域镶嵌与矩形/圆形放大框图 |
-| [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | note | ready | Stage 2–3：跨进展分期邻域比例与免疫–肿瘤物理距离分布偏移 |
+| [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | L2 | ready · 可用 | Stage 2–3：跨进展分期邻域比例与免疫–肿瘤物理距离分布偏移 |
 | [[templates/half-violin-decile-shift|半小提琴与分位数偏移哑铃图]] | L2 | ready · 可用 | 主推默认 · 镜像半小提琴 + 分位数偏移哑铃图 |
 | [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 配套 · 跨分期/腔室细胞构成堆叠流带图 |
 | [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] | note | ready | Stage 3：1,000 次置换细胞共现检验、边界梯度与免疫检查点热图 |

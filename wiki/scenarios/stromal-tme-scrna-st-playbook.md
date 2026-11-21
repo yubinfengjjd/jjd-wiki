@@ -244,7 +244,7 @@ steps:
 | [[templates/spatial-feature-grid|空间转录组特征分布网格]] | L2 | ready · 可用 | 主推默认 · 多区域空间转录组特征分布网格 |
 | [[templates/spatial-he-deconv-panel|配准组织图与反卷积对照]] | L2 | ready · 可用 | 可切换画风 · H&E 组织切片配准与空间细胞权重对照 |
 | [[templates/spatial-coexpr-multichannel|多通道空间表达与重点区域]] | L2 | ready · 可用 | 可切换画风 · 多通道空间共表达与重点区域叠图 |
-| [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | note | ready | Stage 3：Ro/e 组织偏好、亚型富集与跨队列比例统计 |
+| [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]] | L2 | ready · 可用 | Stage 3：Ro/e 组织偏好、亚型富集与跨队列比例统计 |
 | [[templates/roe-cox-heatmap|多因素Cox与Ro/e热图]] | L2 | ready · 可用 | 主推默认 · 多因素 Cox 与 Ro/e 组织/亚型偏好热图 |
 | [[templates/tissue-ratio-prop-combo|组织构成与样本比例组合图]] | L2 | ready · 可用 | 可切换画风 · 组织比例堆叠 + 样本箱线检验组合图 |
 | [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | Stage 4A：功能基因程序、PROGENy 通路与 KEGG 代谢刻画 |
