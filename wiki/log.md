@@ -1813,3 +1813,5 @@
 ## [2026-11-21 07:22 UTC] acceptance check methods/gene-set-enrichment
 
 ## [2026-11-21 08:42 UTC] acceptance check methods/cell-proportion-composition
+
+## [2026-11-21 08:42 UTC] acceptance check methods/spatial-transcriptomics-microenvironment

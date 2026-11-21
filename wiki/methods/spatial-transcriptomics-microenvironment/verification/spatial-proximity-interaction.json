@@ -3,27 +3,30 @@
   "implementation": "spatial-proximity-interaction",
   "method_id": "spatial-transcriptomics-microenvironment",
   "state": "passed",
-  "verified_at": "2026-11-21T07:12:38+00:00",
-  "scope": "Real CyCIF FOV slice (Nirmal 2022, 420 cells across 2 FOVs); verified 20 um 200-permutation spatial co-occurrence/avoidance test and nearest-neighbor physical distances.",
+  "verified_at": "2026-11-21T08:42:09+00:00",
+  "scope": "Real CyCIF FOV slice (Nirmal 2022, 420 cells across 2 FOVs); verified 20 um 200-permutation node-label permutation spatial co-occurrence/avoidance test with +1 smoothed empirical two-sided p_emp, per-FOV BH FDR correction (padj_bh), and nearest-neighbor physical distances.",
   "command": "<PYTHON> -X utf8 example/verify_spatial-proximity-interaction.py --code code --example example --out <TMP_OUT>",
+  "driver_sha256": "8cd6db28ca857e5b84193c0b0fd1210d267f1252c5df0b5fb450e055cde83a5b",
   "checks": [
-    "interaction_pairs=164 (co_occurrence=26, avoidance=20)",
+    "interaction_pairs=164 (co_occurrence=15, avoidance=9)",
     "distance_pairs=161",
-    "p_values_in_0_1=true",
+    "node_label_counts_and_edge_totals_conserved=true",
+    "p_emp_in_0_1_open_closed_and_padj_bh_ge_p_emp=true",
+    "seed_reproducibility_exact=true",
     "nearest_neighbor_distances_non_negative_finite=true"
   ],
   "environment": {
     "runtime": "Python",
     "runner": "<PYTHON>",
     "platform": "Windows",
-    "python_version": "3.12.10"
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
   },
   "files": {
-    "code/spatial_proximity_interaction.py": "af792ed976a16d17f3ba61a1b143c071d90bf05f7b6da03cdf28cccacc569f1a"
+    "code/spatial_proximity_interaction.py": "bdd2de6d8bea788152e0bfe3efe95e9d6e8240491eaa899a6f81b4117d985e5d"
   },
   "output_sha256": {
-    "checks.json": "b1f178ef7fa7317fc51ef59a9529c73ef6f9fbbe668bc81b61b75e7ecd80f053",
+    "checks.json": "0a163db5aa97325d55cf4378b004dc1157f78107688ffe28b69fdf5b60ddab43",
     "nearest_neighbor_distances.csv": "bda53facb57945eae98ea6d0c123261284d8fb6b4924b8105e7aa4bb8001248c",
-    "spatial_interaction_pairs.csv": "a10238f7b8f762887a1a18ddeca064a462b34eb48964b46f53f2c0ba8203c243"
+    "spatial_interaction_pairs.csv": "73ea837460a642526c439fa2b22ab4915da9fc662c6a4b214a579bd39edf4ca6"
   }
 }
