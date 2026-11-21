@@ -1,0 +1,359 @@
+{
+  "slug": "2026-11-20-nirmal-melanoma-spatial",
+  "paper_id": "2022-nirmal-melanoma-spatial",
+  "pmcid": "PMC9167783",
+  "pmid": "35404441",
+  "doi": "10.1158/2159-8290.CD-21-1357",
+  "journal": "Cancer Discovery",
+  "year": 2022,
+  "license": "CC BY-NC-ND",
+  "upstream_repo": "https://github.com/labsyspharm/scimap",
+  "upstream_commit": "0b7aaabcce80815a295aec1c1238f974f117fb33",
+  "local_workspace": "<sources_root>/papers/pmc9167783/",
+  "workflow_id": "melanoma-spatial-immunoediting-workflow",
+  "excluded_schematic": [
+    "Fig. 1A",
+    "Fig. 7I",
+    "Fig. 7J",
+    "Supp. Fig. 2A",
+    "Supp. Fig. 2B"
+  ],
+  "excluded_imaging": [
+    "Fig. 1B",
+    "Fig. 1C",
+    "Fig. 1F",
+    "Fig. 1G",
+    "Fig. 1H",
+    "Fig. 1I-left",
+    "Fig. 1J",
+    "Fig. 3B",
+    "Fig. 3C-bottom",
+    "Fig. 4A",
+    "Fig. 4C",
+    "Fig. 4D",
+    "Fig. 4E",
+    "Fig. 4G",
+    "Fig. 5A",
+    "Fig. 5E-bottom-left",
+    "Fig. 6H",
+    "Fig. 7A",
+    "Fig. 7C",
+    "Fig. 7D",
+    "Fig. 7G-middle",
+    "Supp. Fig. 1A",
+    "Supp. Fig. 1B",
+    "Supp. Fig. 1D",
+    "Supp. Fig. 1E",
+    "Supp. Fig. 1F",
+    "Supp. Fig. 1G",
+    "Supp. Fig. 1I",
+    "Supp. Fig. 2C-mid/bottom",
+    "Supp. Fig. 3A",
+    "Supp. Fig. 4 (entire figure: S4A, S4B, S4C, 100% CyCIF fluorescence microscopy)",
+    "Supp. Fig. 5E",
+    "Supp. Fig. 6B",
+    "Supp. Fig. 6D-images",
+    "Supp. Fig. 7D-left",
+    "Supp. Fig. 7I-images"
+  ],
+  "unavailable_pixel_linescan": [
+    "Fig. 1I-right",
+    "Supp. Fig. 1H"
+  ],
+  "figures": [
+    {
+      "slug": "fig01",
+      "label": "Fig. 1 (D, E; 1A schematic & 1B/C/F/G/H/I-left/J imaging excluded; 1I-right linescan unavailable)",
+      "caption": "Multimodal profiling of cutaneous melanoma",
+      "panels": [
+        "D",
+        "E"
+      ],
+      "replica": "figures/fig01_replica.png",
+      "side_by_side": "figures/fig01_side_by_side.png",
+      "replica_px": [
+        2160,
+        2958
+      ],
+      "side_by_side_px": [
+        1426,
+        960
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig02",
+      "label": "Fig. 2",
+      "caption": "Recurrent cellular neighborhoods (RCN1-10) associated with melanoma progression",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "replica": "figures/fig02_replica.png",
+      "side_by_side": "figures/fig02_side_by_side.png",
+      "replica_px": [
+        2160,
+        2772
+      ],
+      "side_by_side_px": [
+        1520,
+        960
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig03",
+      "label": "Fig. 3 (A, C-top, D-F; 3B & 3C-bottom imaging excluded)",
+      "caption": "Spatial topology, progression axis Voronoi neighborhoods, and distance shifts to RCN10",
+      "panels": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "replica": "figures/fig03_replica.png",
+      "side_by_side": "figures/fig03_side_by_side.png",
+      "replica_px": [
+        2160,
+        2892
+      ],
+      "side_by_side_px": [
+        1610,
+        1062
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig04",
+      "label": "Fig. 4 (B, F; 4A/C/D/E/G imaging excluded)",
+      "caption": "PDL1+ myeloid and PD1+ CTL co-occurrence across progression and Cohort 1/2 PDL1 bins",
+      "panels": [
+        "B",
+        "F"
+      ],
+      "replica": "figures/fig04_replica.png",
+      "side_by_side": "figures/fig04_side_by_side.png",
+      "replica_px": [
+        2160,
+        2199
+      ],
+      "side_by_side_px": [
+        1910,
+        960
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig05",
+      "label": "Fig. 5 (B-F; 5A & 5E-bottom-left imaging excluded)",
+      "caption": "Single-cell spatial lag analysis defining tumor cellular communities (TCC1-10) in invasive melanoma",
+      "panels": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "replica": "figures/fig05_replica.png",
+      "side_by_side": "figures/fig05_side_by_side.png",
+      "replica_px": [
+        2160,
+        2694
+      ],
+      "side_by_side_px": [
+        1564,
+        960
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig06",
+      "label": "Fig. 6 (A-G, I-K; 6H imaging excluded)",
+      "caption": "Microregional transcriptomics (PickSeq proxy for GeoMx), KRAS/EMT signatures, and S100B co-expression module",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "I",
+        "J",
+        "K"
+      ],
+      "replica": "figures/fig06_replica.png",
+      "side_by_side": "figures/fig06_side_by_side.png",
+      "replica_px": [
+        2160,
+        2346
+      ],
+      "side_by_side_px": [
+        1791,
+        960
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "fig07",
+      "label": "Fig. 7 (B, E-H; 7A/C/D/G-middle imaging & 7I/J schematic excluded)",
+      "caption": "Localized IFN-gamma/chemokine gradients, tumor-stroma boundary immunoediting, and compartment composition",
+      "panels": [
+        "B",
+        "E",
+        "F",
+        "G",
+        "H"
+      ],
+      "replica": "figures/fig07_replica.png",
+      "side_by_side": "figures/fig07_side_by_side.png",
+      "replica_px": [
+        2160,
+        2754
+      ],
+      "side_by_side_px": [
+        1616,
+        1015
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig01",
+      "label": "Supp. Fig. 1 (S1C; S1A/B/D-G/I imaging excluded; S1H linescan unavailable)",
+      "caption": "Hierarchical CyCIF phenotyping decision tree (Table S5 rules) and synapse boundary",
+      "panels": [
+        "C"
+      ],
+      "replica": "figures/sfig01_replica.png",
+      "side_by_side": "figures/sfig01_side_by_side.png",
+      "replica_px": [
+        2160,
+        2796
+      ],
+      "side_by_side_px": [
+        1801,
+        1150
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig02",
+      "label": "Supp. Fig. 2 (S2C-top, S2D, S2E; S2A/B schematic & S2C-mid/bottom imaging excluded)",
+      "caption": "RCN1 Voronoi spatial validation, K-means elbow curve, and direct spatial_count 30-cluster comparison",
+      "panels": [
+        "C",
+        "D",
+        "E"
+      ],
+      "replica": "figures/sfig02_replica.png",
+      "side_by_side": "figures/sfig02_side_by_side.png",
+      "replica_px": [
+        2160,
+        2796
+      ],
+      "side_by_side_px": [
+        2033,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig03",
+      "label": "Supp. Fig. 3 (S3B-E; S3A imaging excluded)",
+      "caption": "RCN9 stage frequency, 10 um proximity volume score, RCN2/3/4 maps, and pairwise stage P-values",
+      "panels": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "replica": "figures/sfig03_replica.png",
+      "side_by_side": "figures/sfig03_side_by_side.png",
+      "replica_px": [
+        2160,
+        2796
+      ],
+      "side_by_side_px": [
+        2033,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig05",
+      "label": "Supp. Fig. 5 (S5A-D; S5E imaging excluded)",
+      "caption": "Tumor cell PCA scree/loadings, spatial contour maps, TCC-immune co-occurrence, and 2D state quadrants",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "replica": "figures/sfig05_replica.png",
+      "side_by_side": "figures/sfig05_side_by_side.png",
+      "replica_px": [
+        2160,
+        2796
+      ],
+      "side_by_side_px": [
+        2033,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig06",
+      "label": "Supp. Fig. 6 (S6A, S6C, S6D-table, S6E, S6F; S6B & S6D-images excluded)",
+      "caption": "Proliferation markers, EMT GSEA, mROI counts, DDX58 expression, and TCGA-SKCM 8-gene survival grid",
+      "panels": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "replica": "figures/sfig06_replica.png",
+      "side_by_side": "figures/sfig06_side_by_side.png",
+      "replica_px": [
+        2160,
+        2796
+      ],
+      "side_by_side_px": [
+        2033,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    },
+    {
+      "slug": "sfig07",
+      "label": "Supp. Fig. 7 (S7A-I computational; S7D-left & S7I-images excluded)",
+      "caption": "IFNG/JAK-STAT signaling, boundary gradient, IRF1, MIF/CD74, CXCL12/CXCR4, and compartment composition",
+      "panels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "replica": "figures/sfig07_replica.png",
+      "side_by_side": "figures/sfig07_side_by_side.png",
+      "replica_px": [
+        2160,
+        2796
+      ],
+      "side_by_side_px": [
+        2033,
+        1300
+      ],
+      "visual_review": "PASS (6/6 dimensions D1-D6, 1:1 style locked)"
+    }
+  ]
+}
