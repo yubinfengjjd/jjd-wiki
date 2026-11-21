@@ -1,5 +1,6 @@
 # Cox proportional hazards regression and Kaplan-Meier Log-rank stratification
-# supporting median, quartile, and maxstat (maximally selected rank statistic) cutpoints.
+# separating predefined fixed-cutpoint inference (median, quartile) from
+# exploratory optimal-cutpoint search (maxstat).
 # Adapted from Nirmal et al., Cancer Discovery 2022 (07_s100b_network_tcga_survival.R).
 
 run_cox_km_optimal_cutpoint <- function(
@@ -31,21 +32,36 @@ run_cox_km_optimal_cutpoint <- function(
     q_hi <- stats::quantile(x, probs = 1 - minp, na.rm = TRUE)
     cands <- ux[ux >= q_lo & ux <= q_hi]
     if (length(cands) == 0L) {
-      return(stats::median(x, na.rm = TRUE))
+      return(list(
+        cutpoint = as.numeric(stats::median(x, na.rm = TRUE)),
+        n_candidate_cutpoints = 1L
+      ))
     }
-    best_cut <- cands[1]
+    best_cut <- stats::median(x, na.rm = TRUE)
     best_stat <- -Inf
+    n_eval <- 0L
     for (ct in cands) {
       grp <- factor(ifelse(x >= ct, "High", "Low"), levels = c("Low", "High"))
       if (min(table(grp)) < max(3L, floor(n * minp))) next
+      n_eval <- n_eval + 1L
       sd_fit <- survival::survdiff(survival::Surv(time_v, event_v) ~ grp)
       if (is.finite(sd_fit$chisq) && sd_fit$chisq > best_stat) {
         best_stat <- sd_fit$chisq
         best_cut <- ct
       }
     }
-    as.numeric(best_cut)
+    list(
+      cutpoint = as.numeric(best_cut),
+      n_candidate_cutpoints = max(1L, as.integer(n_eval))
+    )
   }
+
+  exploratory_note <- paste0(
+    "Exploratory cutpoint selection on same cohort; ",
+    "nominal log-rank/Cox P is unadjusted for selection bias",
+    "\u2014validate cutpoint on independent cohort"
+  )
+  fixed_note <- "Predefined fixed cutpoint; standard log-rank and Cox PH inference without cutpoint selection bias"
 
   stat_rows <- list()
   km_rows <- list()
@@ -65,6 +81,8 @@ run_cox_km_optimal_cutpoint <- function(
       cut_val <- as.numeric(stats::median(x, na.rm = TRUE))
       grp <- factor(ifelse(x >= cut_val, "High", "Low"), levels = c("Low", "High"))
       sub_use <- data.frame(time = time_v, event = event_v, group = grp, marker = x)
+      cutpoint_mode <- "predefined_fixed"
+      n_cands <- 1L
     } else if (method == "quartile") {
       q25 <- as.numeric(stats::quantile(x, probs = 0.25, na.rm = TRUE))
       q75 <- as.numeric(stats::quantile(x, probs = 0.75, na.rm = TRUE))
@@ -72,15 +90,20 @@ run_cox_km_optimal_cutpoint <- function(
       keep_q <- (x <= q25) | (x >= q75)
       grp <- factor(ifelse(x[keep_q] >= q75, "High", "Low"), levels = c("Low", "High"))
       sub_use <- data.frame(time = time_v[keep_q], event = event_v[keep_q], group = grp, marker = x[keep_q])
+      cutpoint_mode <- "predefined_fixed"
+      n_cands <- 1L
     } else {
-      cut_val <- find_maxstat_cutpoint(x, time_v, event_v, minprop)
+      ms <- find_maxstat_cutpoint(x, time_v, event_v, minprop)
+      cut_val <- ms$cutpoint
+      n_cands <- ms$n_candidate_cutpoints
       grp <- factor(ifelse(x >= cut_val, "High", "Low"), levels = c("Low", "High"))
       sub_use <- data.frame(time = time_v, event = event_v, group = grp, marker = x)
+      cutpoint_mode <- "exploratory_maxstat"
     }
 
     sf <- survival::survfit(survival::Surv(time, event) ~ group, data = sub_use)
     sd_test <- survival::survdiff(survival::Surv(time, event) ~ group, data = sub_use)
-    lr_p <- 1 - stats::pchisq(sd_test$chisq, df = length(sd_test$n) - 1L)
+    lr_p <- as.numeric(1 - stats::pchisq(sd_test$chisq, df = length(sd_test$n) - 1L))
     cx <- survival::coxph(survival::Surv(time, event) ~ group, data = sub_use)
     cx_sum <- summary(cx)
     hr <- cx_sum$conf.int[1, "exp(coef)"]
@@ -88,20 +111,31 @@ run_cox_km_optimal_cutpoint <- function(
     hr_high <- cx_sum$conf.int[1, "upper .95"]
     cox_p <- cx_sum$coefficients[1, "Pr(>|z|)"]
 
+    bonf_p <- if (method == "maxstat") {
+      signif(min(1.0, lr_p * as.numeric(n_cands)), 6)
+    } else {
+      NA_real_
+    }
+    inf_note <- if (method == "maxstat") exploratory_note else fixed_note
+
     stat_rows[[mk]] <- data.frame(
       marker = mk,
       cutpoint_method = method,
+      cutpoint_mode = cutpoint_mode,
       cutpoint_value = round(cut_val, 4),
+      n_candidate_cutpoints = as.integer(n_cands),
       n_samples = nrow(sub_use),
       n_events = sum(sub_use$event == 1L),
       n_high = sum(sub_use$group == "High"),
       n_low = sum(sub_use$group == "Low"),
       logrank_chisq = round(as.numeric(sd_test$chisq), 4),
-      logrank_p = signif(as.numeric(lr_p), 4),
+      logrank_p = signif(lr_p, 6),
+      bonferroni_adjusted_p = bonf_p,
       cox_hr = round(as.numeric(hr), 4),
       cox_ci95_low = round(as.numeric(hr_low), 4),
       cox_ci95_high = round(as.numeric(hr_high), 4),
-      cox_p = signif(as.numeric(cox_p), 4),
+      cox_p = signif(as.numeric(cox_p), 6),
+      inference_note = inf_note,
       stringsAsFactors = FALSE
     )
 

@@ -1811,3 +1811,5 @@
 ## [2026-11-21 07:21 UTC] acceptance check methods/gene-set-scoring
 
 ## [2026-11-21 07:22 UTC] acceptance check methods/gene-set-enrichment
+
+## [2026-11-21 08:42 UTC] acceptance check methods/cell-proportion-composition

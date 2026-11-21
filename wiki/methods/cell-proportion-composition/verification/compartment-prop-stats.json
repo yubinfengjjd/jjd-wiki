@@ -3,27 +3,31 @@
   "implementation": "compartment-prop-stats",
   "method_id": "cell-proportion-composition",
   "state": "passed",
-  "verified_at": "2026-11-21T07:12:44+00:00",
-  "scope": "Real CyCIF FOV compartment slice (Nirmal 2022, 1,418 cells across Epidermis/Dermis and 4 progression stages); verified ROI-level proportion normalization and BH-adjusted Kruskal-Wallis tests.",
+  "verified_at": "2026-11-21T08:40:20+00:00",
+  "scope": "Two real Nirmal 2022 CyCIF slices: (1) descriptive compartment proportion normalization, integer cell_type label robustness, and single-ROI untestable gating on nirmal_compartment_cells.csv (1,418 cells across 4 single-ROI stages and Epidermis/Dermis); (2) replicate-gated pairwise Mann-Whitney U and BH FDR exact numerical verification on nirmal_stratified_cells.csv (1,987 cells across 17 ROIs: IM=6, MIS=8, Normal=2 testable; Precursor=1 untestable).",
   "command": "<PYTHON> -X utf8 example/verify_compartment-prop-stats.py --code code --example example --out <TMP_OUT>",
+  "driver_sha256": "71c923e6a1ce74a80c44dd95c7fd10c6f4d8cb8d34be07233297c8e2eade8be8",
   "checks": [
-    "input_cells=1418, units=7",
+    "compartment_slice_cells=1418, units=7, untestable_pairs=144",
     "unit_proportion_sums_equal_1=true",
-    "kruskal_wallis_tests=32",
-    "bh_padj_in_0_1=true"
+    "integer_celltype_label_counts_consistent=true",
+    "single_roi_comparisons_flagged_untestable_nan=true",
+    "stratified_slice_cells=1987, multi_roi_tested_pairs=48, untestable_pairs=48",
+    "mann_whitney_u_and_bh_padj_exact_match=true"
   ],
   "environment": {
     "runtime": "Python",
     "runner": "<PYTHON>",
     "platform": "Windows",
-    "python_version": "3.12.10"
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
   },
   "files": {
-    "code/compartment_prop_stats.py": "b4a336f78149f555cd0a2ef84004b33fd1b2d042d6fade0c9c62e4d65e80e589"
+    "code/compartment_prop_stats.py": "4d75bb2de4bf98ce2ec7c17e500d7c7485ce717986373c8c247ca91d01ce0a27"
   },
   "output_sha256": {
-    "checks.json": "4220dc103e3bcc0a70c14f3163224835d276c65e3043d2214e2cf814f837afbe",
+    "checks.json": "e56e49ce8fd1cd96e5efc8fedd0671cc71d7f8696ea3bc157ed1fa4b43db196a",
     "compartment_proportions.csv": "c9e60c3f6a9983c58ad9caca3ff4f5075f0321196a6febb00b5b0846866b2b6c",
-    "stage_group_tests.csv": "af58046b28f4f865374cb080db348abdc2e8207730119632f3f1f5e0da18ba42"
+    "compartment_single_roi_tests.csv": "74037b1384bf3b33847f8fd08b5e6ab81f84ba8fa07597464b628f9d6817d562",
+    "stratified_multi_roi_tests.csv": "51a40b6f6c6ffe86ba76b7f6268bfc3c050ce39528479aa792b681ccd3e10093"
   }
 }

@@ -1,8 +1,10 @@
-"""Sample/compartment-level cell composition normalization and group-difference testing.
+"""Sample/compartment-level cell composition normalization and pairwise group testing.
 
 Adapted from Nirmal et al., Cancer Discovery 2022 (PMC9167783).
 """
 from __future__ import annotations
+
+from itertools import combinations
 
 import numpy as np
 import pandas as pd
@@ -38,7 +40,7 @@ def run_compartment_prop_stats(
     celltype_col: str = "phenotype_abbrev",
     compartment_col: str | None = "compartment",
 ) -> dict[str, pd.DataFrame]:
-    """Compute per-sample/compartment normalized cell proportions and group-level Kruskal-Wallis tests."""
+    """Compute per-sample/compartment normalized cell proportions and replicate-gated Mann-Whitney U tests."""
     required = {sample_col, group_col, celltype_col}
     if compartment_col is not None:
         required.add(compartment_col)
@@ -47,8 +49,15 @@ def run_compartment_prop_stats(
         raise ValueError(f"Missing required columns: {sorted(missing)}")
 
     df = cells_df.copy()
+    # Standardize all grouping columns to str before groupby/unstack so integer labels never zero-out on reindex.
+    norm_cols = [sample_col, group_col, celltype_col]
+    if compartment_col is not None:
+        norm_cols.append(compartment_col)
+    for col in norm_cols:
+        df[col] = df[col].astype(str)
+
     group_keys = [sample_col, group_col] + ([compartment_col] if compartment_col is not None else [])
-    all_celltypes = sorted(df[celltype_col].astype(str).unique().tolist())
+    all_celltypes = sorted(df[celltype_col].unique().tolist())
 
     # Complete sample x compartment x celltype table so missing types get proportion 0
     counts = (
@@ -64,7 +73,7 @@ def run_compartment_prop_stats(
     long_props = props.stack().rename("proportion")
     prop_df = pd.concat([long_counts, long_props], axis=1).reset_index()
     prop_df.rename(columns={celltype_col: "cell_type"}, inplace=True)
-    prop_df["total_cells"] = prop_df.groupby(group_keys)["count"].transform("sum")
+    prop_df["total_cells"] = prop_df.groupby(group_keys, observed=True)["count"].transform("sum")
 
     # Compartment-level summary across groups
     sum_keys = [group_col] + ([compartment_col] if compartment_col is not None else []) + ["cell_type"]
@@ -74,30 +83,54 @@ def run_compartment_prop_stats(
         .reset_index()
     )
 
-    # Sample-level group difference tests (Kruskal-Wallis across groups per cell_type & compartment)
+    # Pairwise group tests across independent ROIs (only testable when both sides have >= 2 ROIs)
     test_rows = []
     split_cols = ([compartment_col] if compartment_col is not None else []) + ["cell_type"]
     for keys, sub in prop_df.groupby(split_cols, observed=True):
         if not isinstance(keys, tuple):
             keys = (keys,)
-        groups = [g["proportion"].to_numpy(dtype=float) for _, g in sub.groupby(group_col, observed=True) if len(g) > 0]
-        if len(groups) >= 2 and np.std(np.concatenate(groups)) > 0:
-            stat_v, p_v = stats.kruskal(*groups)
-        else:
-            stat_v, p_v = np.nan, 1.0
-        row = {col: val for col, val in zip(split_cols, keys)}
-        row.update({
-            "n_groups": int(len(groups)),
-            "n_units": int(len(sub)),
-            "kw_statistic": round(float(stat_v), 4) if np.isfinite(stat_v) else np.nan,
-            "p_value": float(p_v) if np.isfinite(p_v) else np.nan,
-        })
-        test_rows.append(row)
+        groups_present = sorted(sub[group_col].unique().tolist())
+        roi_by_group = {
+            g: g_df.groupby(sample_col, sort=False)["proportion"].mean().to_numpy(dtype=float)
+            for g, g_df in sub.groupby(group_col, observed=True)
+        }
+        for grp_a, grp_b in combinations(groups_present, 2):
+            vals_a = roi_by_group[grp_a]
+            vals_b = roi_by_group[grp_b]
+            n_roi_a = int(len(vals_a))
+            n_roi_b = int(len(vals_b))
+            if n_roi_a < 2 or n_roi_b < 2:
+                u_stat = np.nan
+                p_val = np.nan
+                status = "untestable_insufficient_replicates"
+            elif np.ptp(np.concatenate([vals_a, vals_b])) == 0.0:
+                u_stat = np.nan
+                p_val = np.nan
+                status = "untestable_zero_variance"
+            else:
+                mw = stats.mannwhitneyu(vals_a, vals_b, alternative="two-sided")
+                u_stat = float(mw.statistic)
+                p_val = float(mw.pvalue)
+                status = "tested_mann_whitney_u" if np.isfinite(p_val) else "untestable_zero_variance"
+
+            row = {col: val for col, val in zip(split_cols, keys)}
+            row.update({
+                "group_a": grp_a,
+                "group_b": grp_b,
+                "n_roi_a": n_roi_a,
+                "n_roi_b": n_roi_b,
+                "mean_prop_a": round(float(np.mean(vals_a)), 6),
+                "mean_prop_b": round(float(np.mean(vals_b)), 6),
+                "u_statistic": round(u_stat, 4) if np.isfinite(u_stat) else np.nan,
+                "p_value": p_val if np.isfinite(p_val) else np.nan,
+                "test_status": status,
+            })
+            test_rows.append(row)
 
     tests_df = pd.DataFrame(test_rows)
     if len(tests_df) > 0:
-        tests_df["p_adj"] = _bh_adjust(tests_df["p_value"].to_numpy(dtype=float))
-        tests_df = tests_df.sort_values(["p_adj", "p_value"], na_position="last").reset_index(drop=True)
+        tests_df["padj"] = _bh_adjust(tests_df["p_value"].to_numpy(dtype=float))
+        tests_df = tests_df.sort_values(["padj", "p_value"], na_position="last").reset_index(drop=True)
 
     return {
         "proportions": prop_df,
