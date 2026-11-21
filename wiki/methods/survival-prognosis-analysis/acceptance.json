@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T12:49:01.861711+00:00",
+  "checked_at": "2026-11-21T07:19:10.499440+00:00",
   "page": "methods/survival-prognosis-analysis.md",
-  "snapshot": "d5649b43530d6c49a8c87f525ee51f914a494f4d26298e8d3db347872be0c8d8",
+  "snapshot": "a7ec031d5b0d041699a6872caab87aa2d838f64ecee66fa838cc32ee23d0d2f8",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
