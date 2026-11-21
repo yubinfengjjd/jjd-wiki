@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T18:50:18.272916+00:00",
+  "checked_at": "2026-11-21T07:18:38.546082+00:00",
   "page": "methods/coexpression-ppi-network.md",
-  "snapshot": "19a15acc0d5d2a6e70a9635b7c00da95419f38ba76c110d8c216d401ab816217",
+  "snapshot": "86a81c95cf68f0d8bf62e3cd638b82eb0bfa4b5014aed7c510b638128cc2e8ea",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
