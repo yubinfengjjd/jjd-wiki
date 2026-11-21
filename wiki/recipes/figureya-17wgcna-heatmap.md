@@ -51,7 +51,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa17WGCNA_heatmap.Rmd`）
 - 依赖：CRAN pheatmap, plyr
 - 最近运行：pass（as-is，2026-11-04 11:01 UTC，11.1 秒）
-- 派生模板（L2）：[[templates/fy-wgcna-heatmap|WGCNA模块基因表达热图]]（ready）
+- 派生模板（L2）：暂无
 - 运行预览（最近一次通过的原样运行，取自 `heatmap.pdf` 第 1 页）：
 
 ![[recipes/figureya-17wgcna-heatmap/preview.png]]

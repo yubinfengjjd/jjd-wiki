@@ -1,0 +1,26 @@
+{
+  "title": "WGCNA模块基因表达热图",
+  "path": "templates/fy-wgcna-heatmap.md",
+  "revision": "0419c5a97a45edc57cabefefd7b374eb143ec3cf44281d467b563109d76f65be",
+  "asset_files": 23,
+  "affected": [
+    {
+      "path": "recipes/figureya-17wgcna-heatmap.md",
+      "title": "WGCNA模块基因表达热图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261121T092413710175Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-17wgcna-heatmap.md",
+      "before_sha256": "4258c4d5ff5629d48321d59dd2518db4ebccca6c262069e6f8580e11697f3e30",
+      "after_sha256": "4258c4d5ff5629d48321d59dd2518db4ebccca6c262069e6f8580e11697f3e30"
+    }
+  ],
+  "changed_layout_files": []
+}

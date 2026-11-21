@@ -195,7 +195,6 @@
 - [[templates/shap-beeswarm|SHAP 蜂群图]]
 - [[templates/fy-string-plus|STRING互作证据打分网络图]]
 - [[templates/voronoi-neighborhood-mosaic|Voronoi 细胞空间邻域镶嵌图]]
-- [[templates/fy-wgcna-heatmap|WGCNA模块基因表达热图]]
 - [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]]
 - [[templates/coexpr-sphere-network|hdWGCNA 共表达模块球体网络图]]
 - [[templates/scrna-feature-umap-grid|marker 特征 UMAP 小多图]]
