@@ -252,7 +252,7 @@ steps:
 |---|---|---|---|
 | [[methods/cell-quality-control|单细胞质量控制]] | L2 | ready · 可用 | Step 1：按 UMI/基因数/线粒体比例过滤低质量细胞 |
 | [[methods/batch-integration|单细胞批次整合]] | L2 | ready · 可用 | Step 2：多样本/多批次对齐整合与聚类 |
-| [[methods/cell-type-annotation|细胞类型注释]] | note | ready | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
+| [[methods/cell-type-annotation|细胞类型注释]] | L2 | ready · 可用 | Step 3：细胞类型注释与 Marker 复核（核心分叉点） |
 | [[templates/scrna-celltype-umap|单细胞细胞类型 UMAP（标准版）]] | L2 | ready · 可用 | 细胞类型注释 UMAP 主图（主推默认） |
 | [[templates/stromal-hull-umap|基质亚群功能包络UMAP]] | L2 | ready · 可用 | 细胞类型注释：带亚群功能包络与编号质心的 UMAP（可切换画风） |
 | [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 分支 1：细胞组成比例堆叠流带图（主推默认） |

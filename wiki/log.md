@@ -1801,3 +1801,5 @@
 ## [2026-11-21 07:19 UTC] acceptance check methods/coexpression-ppi-network
 
 ## [2026-11-21 07:19 UTC] acceptance check methods/survival-prognosis-analysis
+
+## [2026-11-21 07:20 UTC] acceptance check methods/cell-type-annotation
