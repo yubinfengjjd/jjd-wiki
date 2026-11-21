@@ -1,0 +1,26 @@
+{
+  "title": "多层分类流向桑基图",
+  "path": "templates/fy-sankey.md",
+  "revision": "2b141a42f98c33c07adc84f526a9041265cd293c5c90fc26045ba4a7e7173cc2",
+  "asset_files": 11,
+  "affected": [
+    {
+      "path": "recipes/figureya-25sankey-update.md",
+      "title": "多层分类流向桑基图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261121T092313581818Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-25sankey-update.md",
+      "before_sha256": "21b25a577152bc708939e9295d851d7b2c38c109964c62f31e597484730da149",
+      "after_sha256": "21b25a577152bc708939e9295d851d7b2c38c109964c62f31e597484730da149"
+    }
+  ],
+  "changed_layout_files": []
+}

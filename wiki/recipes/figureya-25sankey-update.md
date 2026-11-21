@@ -54,7 +54,7 @@ favorite: false
 - 语言 / 运行：r · knitr 原样运行（入口 `source/FigureYa25Sankey_update.Rmd`）
 - 依赖：CRAN dplyr, ggalluvial
 - 最近运行：pass（as-is，2026-10-27 12:37 UTC，3.8 秒）
-- 派生模板（L2）：[[templates/fy-sankey|多层分类流向桑基图]]（ready）
+- 派生模板（L2）：暂无
 - 运行预览（最近一次通过的原样运行，自动截取最后一张图）：
 
 ![[recipes/figureya-25sankey-update/preview.png]]

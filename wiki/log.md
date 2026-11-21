@@ -1817,3 +1817,5 @@
 ## [2026-11-21 08:42 UTC] acceptance check methods/spatial-transcriptomics-microenvironment
 
 ## [2026-11-21 08:43 UTC] acceptance check methods/survival-prognosis-analysis
+
+## [2026-11-21 09:23 UTC] delete template fy-sankey; cleaned 1 references

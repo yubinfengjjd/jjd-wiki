@@ -249,7 +249,6 @@
 - [[templates/km-survival-risk-grid|多基因 TCGA 生存风险网格图]]
 - [[templates/faceted-overlap-density|多基因分面双组半透明重叠核密度图]]
 - [[templates/group-bar-jitter-sig|多基因分面均值柱状抖动散点显著性图]]
-- [[templates/fy-sankey|多层分类流向桑基图]]
 - [[templates/cycif-feature-umap-strip|多标志物连续蛋白强度 UMAP 条带]]
 - [[templates/fy-timeroc|多模型时间依赖 ROC 曲线]]
 - [[templates/fy-mutlandscape|多组学突变景观组合热图]]
