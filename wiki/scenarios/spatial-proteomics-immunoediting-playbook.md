@@ -214,7 +214,7 @@ steps:
 | [[templates/cell-prop-flow-bar|细胞比例堆叠流带图]] | L2 | ready · 可用 | 配套 · 跨分期/腔室细胞构成堆叠流带图 |
 | [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] | note | ready | Stage 3：1,000 次置换细胞共现检验、边界梯度与免疫检查点热图 |
 | [[templates/pathway-zscore-heatmap|功能基因与通路Zscore热图]] | L2 | ready · 可用 | 主推默认 · 检查点/通路 Z-score + 显著性矩阵热图 |
-| [[methods/differential-expression|差异表达分析]] | note | ready | Stage 5A：PickSeq/GeoMx 微区转录组差异表达、ssGSEA 与 GSEA 通路富集 |
+| [[methods/differential-expression|差异表达分析]] | L2 | ready · 可用 | Stage 5A：PickSeq/GeoMx 微区转录组差异表达、ssGSEA 与 GSEA 通路富集 |
 | [[templates/bulk-de-volcano|bulk 差异火山图（分级着色）]] | L2 | ready · 可用 | 主推默认 · 微区转录组差异表达火山图 |
 | [[methods/coexpression-ppi-network|共表达网络（WGCNA）与分子互作网络分析]] | L2 | ready · 可用 | Stage 5B：相关性共表达网络枢纽模块提取与有序样本趋势 |
 | [[templates/coexpr-hub-radial-network|枢纽基因共表达放射网络图]] | L2 | ready · 可用 | 主推默认 · 中心枢纽基因共表达放射网络图 |
