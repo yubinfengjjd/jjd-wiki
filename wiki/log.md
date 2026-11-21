@@ -1795,3 +1795,5 @@
 ## [2026-11-21 07:17 UTC] acceptance check methods/spatial-transcriptomics-microenvironment
 
 ## [2026-11-21 07:18 UTC] acceptance check methods/cell-proportion-composition
+
+## [2026-11-21 07:18 UTC] acceptance check methods/cell-cell-communication

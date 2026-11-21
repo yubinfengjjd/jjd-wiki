@@ -258,7 +258,7 @@ steps:
 | [[methods/immune-infiltration-tme|肿瘤微环境与免疫浸润评估]] | note | ready | Stage 5：基质–免疫排斥相关矩阵与检查点差异验证 |
 | [[templates/clustered-corr-boxes|带聚类框与引线的相关矩阵]] | L2 | ready · 可用 | 主推默认 · 带层次聚类框与引线的对称相关矩阵 |
 | [[templates/checkpoint-group-boxplot|检查点分组表达箱线图]] | L2 | ready · 可用 | 可切换画风 · 高/低分组免疫检查点表达箱线图 |
-| [[methods/cell-cell-communication|细胞通讯与配受体网络分析]] | note | ready | Stage 6：TLS 与 TAM 空间配受体通讯枢纽解析 |
+| [[methods/cell-cell-communication|细胞通讯与配受体网络分析]] | L2 | ready · 可用 | Stage 6：TLS 与 TAM 空间配受体通讯枢纽解析 |
 | [[templates/lr-bubble-matrix|配受体互作概率气泡矩阵]] | L2 | ready · 可用 | 主推默认 · 配受体互作概率气泡矩阵 |
 | [[templates/cellchat-count-heatmap|细胞通讯计数柱状热图]] | L2 | ready · 可用 | 可切换画风 · 细胞通讯计数柱状热图 |
 | [[templates/lr-bipartite-bubble|配受体双轴连线气泡图]] | L2 | ready · 可用 | 可切换画风 · 配受体双轴连线气泡图 |

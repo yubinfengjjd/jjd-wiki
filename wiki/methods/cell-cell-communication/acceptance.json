@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-19T16:42:20.026051+00:00",
+  "checked_at": "2026-11-21T07:18:06.107185+00:00",
   "page": "methods/cell-cell-communication.md",
-  "snapshot": "af5a6d5f37cc30eb8b3cb1a46a30d5815823ff4713ddcb4bcf62641dae830880",
+  "snapshot": "c431be27f93c1d0e36ed14c435c4cb02ada2d8e425589fb60f69cdd1fc973988",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
