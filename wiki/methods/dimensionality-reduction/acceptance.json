@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-20T18:50:18.253978+00:00",
+  "checked_at": "2026-11-21T07:20:16.959782+00:00",
   "page": "methods/dimensionality-reduction.md",
-  "snapshot": "830bfd374400ceeb06e0ee3e4c43019935d5474907045626e0d2fda5010235f8",
+  "snapshot": "2af2f2191962aea489eb399c6458e7ffaeee9d39cd2094bf998a7152ae8b2a71",
   "checks": {
     "用途": "present_nonplaceholder",
     "适用": "present_nonplaceholder",
