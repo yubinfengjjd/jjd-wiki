@@ -1821,3 +1821,5 @@
 ## [2026-11-21 09:23 UTC] delete template fy-sankey; cleaned 1 references
 
 ## [2026-11-21 09:24 UTC] delete template fy-wgcna-heatmap; cleaned 1 references
+
+## [2026-11-21 09:24 UTC] delete template fy-correlationv2; cleaned 1 references

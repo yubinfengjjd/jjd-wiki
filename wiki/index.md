@@ -235,7 +235,6 @@
 - [[templates/fy-nsurvv3|双基因高低分组生存曲线]]
 - [[templates/split-condition-umap|双条件并排分面亚群 UMAP]]
 - [[templates/fy-fancybar|含亚组的多组均值柱图与比较]]
-- [[templates/fy-correlationv2|圆形布局基因相关连线图]]
 - [[templates/fy-immune-gene|基因与免疫浸润相关性图]]
 - [[templates/stromal-hull-umap|基质亚群功能包络UMAP]]
 - [[templates/kegg-cluster-bubble|多亚群KEGG通路气泡矩阵]]

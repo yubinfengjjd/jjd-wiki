@@ -1,0 +1,26 @@
+{
+  "title": "圆形布局基因相关连线图",
+  "path": "templates/fy-correlationv2.md",
+  "revision": "c6d6563f977a593aad9371d3184c789368a2d1f7c3775283551ee7f6934ae5f7",
+  "asset_files": 13,
+  "affected": [
+    {
+      "path": "recipes/figureya-37correlationv2-update.md",
+      "title": "圆形布局基因相关连线图",
+      "figure_relations_removed": 0
+    }
+  ],
+  "figure_relations_removed": 0,
+  "layout_files_updated": [],
+  "slot_default_warning": null,
+  "gallery_preserved": true,
+  "deleted_at": "20261121T092447896966Z",
+  "changed_pages": [
+    {
+      "path": "recipes/figureya-37correlationv2-update.md",
+      "before_sha256": "c5700cc504060215dad213f60458fe6bfa0c9d8ac9439d5e8881487ab93bcdfe",
+      "after_sha256": "c5700cc504060215dad213f60458fe6bfa0c9d8ac9439d5e8881487ab93bcdfe"
+    }
+  ],
+  "changed_layout_files": []
+}
