@@ -1,0 +1,74 @@
+schema_version: 1
+paper_id: 2026-cai-stromal-tme
+workflow_id: breast-cancer-stromal-tme-workflow
+steps:
+- step_id: step00_moesm_extract
+  title: MOESM1-8 补充表格解压、抽样与字段规范化
+  script_path: code/00_sample_and_extract_moesm.py
+  method_disposition: paper_specific_only
+  method_id: null
+  implementation_id: null
+  disposition_note: 论文专属补充材料（MOESM1-8 Excel/CSV）抽取与列名整理脚本，无独立通用生信算法。
+- step_id: step00_prepare_objects
+  title: 单张 Visium 切片与小型 scRNA 复刻对象构建
+  script_path: code/00_prepare_spatial_and_scrna.R
+  method_disposition: paper_specific_only
+  method_id: null
+  implementation_id: null
+  disposition_note: 基于 Zenodo 19562239 CAA_ST 切片与发表 Marker 构建本地轻量 .qs 回放对象的论文专属数据准备脚本。
+- step_id: step00c_style_manifold
+  title: 复刻图表公共配色、排版与流形绘图辅助库
+  script_path: code/00c_style_and_manifold.R
+  method_disposition: paper_specific_only
+  method_id: null
+  implementation_id: null
+  disposition_note: 复刻整图/面板共享视觉样式与坐标辅助函数，不涉及独立统计分析模型。
+- step_id: step01_scrna_integration
+  title: 基质单细胞多队列批次整合与降维嵌入
+  script_path: code/01_scrna_harmony_de.R
+  method_disposition: reuse_impl
+  method_id: batch-integration
+  implementation_id: scp-seurat
+  disposition_note: 复用主库已验证的 batch-integration/scp-seurat 标准批次整合实现（复刻脚本在本地采用 Harmony + Seurat 流程；scp-harmony 保留历史未运行状态，优先复用已 verified 标准实现）。
+- step_id: step02a_progeny_activity
+  title: 基质亚群 PROGENy 14 条信号通路活性打分与 Z-score 汇总
+  script_path: code/02_progeny_roe_cox.R
+  method_disposition: method_impl
+  method_id: gene-set-scoring
+  implementation_id: progeny-pathway-activity
+  disposition_note: 已提炼为独立 R 实现 gene-set-scoring/progeny-pathway-activity（variant, scRNA-seq），并在 Cai 2026 真实 Fib 切片上实跑验证。
+- step_id: step02b_roe_enrichment
+  title: 跨组织与分子亚型卡方 Ro/e 偏好富集分析
+  script_path: code/02_progeny_roe_cox.R
+  method_disposition: method_impl
+  method_id: cell-proportion-composition
+  implementation_id: roe-tissue-enrichment
+  disposition_note: 已提炼为独立 R 默认实现 cell-proportion-composition/roe-tissue-enrichment（default, scRNA-seq），并在 Cai 2026 真实 Fib 组织计数表上实跑验证。
+- step_id: step03_visium_spatial
+  title: Visium Spot 空间签名非负 L1 加权、共富集分区与多通道共定位
+  script_path: code/03_spatial_scores_deconv.R
+  method_disposition: method_impl
+  method_id: spatial-transcriptomics-microenvironment
+  implementation_id: visium-signature-spatial
+  disposition_note: 已提炼为独立 R 变体实现 spatial-transcriptomics-microenvironment/visium-signature-spatial（variant, Visium ST），并在真实 CAA_ST Spot 切片上实跑验证。
+- step_id: step04_trajectory_slingshot
+  title: 基质亚群 Diffusion Map 流形与 Slingshot 拟时序轨迹推断
+  script_path: code/04_trajectory_pseudotime.R
+  method_disposition: reuse_impl
+  method_id: trajectory-inference
+  implementation_id: scp-slingshot
+  disposition_note: 复用主库已验证的 trajectory-inference/scp-slingshot 拟时序与分支曲线标准实现（复刻脚本在 DiffusionMap 嵌入上调用 Slingshot）。
+- step_id: step05_cellchat_crosstalk
+  title: 基质-微环境 CellChat 配受体通讯概率聚合、通路排序与互作矩阵
+  script_path: code/05_crosstalk_metabolism.R
+  method_disposition: method_impl
+  method_id: cell-cell-communication
+  implementation_id: cellchat-lr-inference
+  disposition_note: 已提炼为独立 R 默认实现 cell-cell-communication/cellchat-lr-inference（default, scRNA-seq），并在 Cai 2026 真实 CellChat 配受体切片上实跑验证。
+- step_id: step99_side_by_side
+  title: 复刻整图与原论文页 1:1 并排对比拼图工具
+  script_path: code/make_side_by_side.py
+  method_disposition: paper_specific_only
+  method_id: null
+  implementation_id: null
+  disposition_note: 仅用于画廊视觉验收的图像并排拼接脚本，非统计或生信计算方法。

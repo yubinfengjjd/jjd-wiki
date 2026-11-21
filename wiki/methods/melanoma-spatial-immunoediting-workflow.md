@@ -55,6 +55,15 @@ data_contract:
     gene-set-scoring, gene-set-enrichment, coexpression-ppi-network, immune-infiltration-tme,
     survival-prognosis-analysis）、Wiki `methods/melanoma-spatial-immunoediting-workflow/code/`
     归档代码（83 份脚本）及 11 套新建真实数据绘图模板（含同论文同质化归并的 5 套衍生风格模板）。
+derived_methods:
+- cell-proportion-composition
+- cell-type-annotation
+- coexpression-ppi-network
+- differential-expression
+- dimensionality-reduction
+- gene-set-enrichment
+- spatial-transcriptomics-microenvironment
+- survival-prognosis-analysis
 derived_templates:
 - boundary-intensity-gradient
 - cluster-marker-positivity-bars

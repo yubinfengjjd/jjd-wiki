@@ -46,6 +46,13 @@ data_contract:
     cell-proportion-composition, survival-prognosis-analysis, trajectory-inference,
     spatial-transcriptomics-microenvironment, cell-cell-communication, immune-infiltration-tme）、本地
     `src/` 与 Wiki `methods/breast-cancer-stromal-tme-workflow/code/` 源码及复刻可视化模板。
+derived_methods:
+- batch-integration
+- cell-cell-communication
+- cell-proportion-composition
+- gene-set-scoring
+- spatial-transcriptomics-microenvironment
+- trajectory-inference
 derived_templates:
 - cellchat-count-heatmap
 - cellchat-signaling-ring

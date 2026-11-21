@@ -114,7 +114,7 @@ steps:
 <!-- facts:start -->
 | 条目 | 级别 | 状态 | 说明 |
 |---|---|---|---|
-| [[methods/gene-set-scoring|基因集与通路签名打分]] | L2 | ready · 可用 | Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分 |
+| [[methods/gene-set-scoring|基因集与通路签名打分]] | note | ready | Step 1-2：多算法（AUCell/UCell/ssGSEA/AddModuleScore）基因集活性打分 |
 | [[recipes/figureya-275scaucell|单细胞AUCell基因集评分]] | L1 | draft · 运行 fail | 单细胞 AUCell 活性打分与阈值划分 |
 | [[templates/pathway-stat-violin|分组小提琴图（含统计标注）]] | L2 | ready · 可用 | 分组/亚群主题打分小提琴箱线图（L2） |
 | [[templates/scp-expr-ridge|分组表达密度图]] | L2 | ready · 可用 | 基因集得分山脊密度分布图（L2） |

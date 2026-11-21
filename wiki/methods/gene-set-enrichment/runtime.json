@@ -54,6 +54,33 @@
       "evidence": {
         "portability": "verification/scp-enrichment-portability.json"
       }
+    },
+    {
+      "id": "preranked-gsea-scoring",
+      "entry": "code/preranked_gsea_scoring.py",
+      "entry_function": "run_preranked_gsea",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/preranked_gsea_scoring.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "nirmal-2022-adapted",
+        "license": "MIT",
+        "functions": [
+          "preranked_gsea_scoring.py:run_preranked_gsea"
+        ]
+      }
     }
   ]
 }

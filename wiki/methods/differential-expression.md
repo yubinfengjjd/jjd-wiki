@@ -28,7 +28,10 @@ data_contract:
 implementations:
 - id: scp-detest
   title: SCP RunDEtest 封装
+  impl_tier: default
   language: R
+  modality: scRNA-seq
+  source_paper: SCP
   entrypoint: code/analysis.R:run_differential_expression
   dependencies:
   - Seurat
@@ -37,6 +40,18 @@ implementations:
   - BiocParallel
   - rlang
   verification: verification/scp-detest-session-isolation-20261112.json
+- id: deseq2-mrseq-de
+  title: Bulk / PickSeq mrSEQ 原始计数 DESeq2 负二项差异表达检验
+  impl_tier: variant
+  language: R
+  modality: Bulk / mrSEQ
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/deseq2_mrseq_de.R:run_deseq2_mrseq_de
+  dependencies:
+  - DESeq2
+  - stats
+  - utils
+  verification: verification/deseq2-mrseq-de.json
 keywords:
 - DE
 - FindMarkers
@@ -195,7 +210,7 @@ render_bridges:
 - 输出接口：[[interfaces/deg-result-table|差异表达标准结果表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/gene-set-enrichment|基因集富集分析]]（ready）
-- 代码模板：[methods/differential-expression/code/analysis.R](/files/wiki/methods/differential-expression/code/analysis.R) · [methods/differential-expression/code/de_native.R](/files/wiki/methods/differential-expression/code/de_native.R)
+- 代码模板：[methods/differential-expression/code/analysis.R](/files/wiki/methods/differential-expression/code/analysis.R) · [methods/differential-expression/code/de_native.R](/files/wiki/methods/differential-expression/code/de_native.R) · [methods/differential-expression/code/deseq2_mrseq_de.R](/files/wiki/methods/differential-expression/code/deseq2_mrseq_de.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：功能富集分析（ORA / GSEA 通路定位）**（触发条件：已获得显著上/下调差异基因或完整 log2FC 排序列表，需要解析富集通路时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment、recipes/figureya-60gsea-clusterprofilerv2、recipes/figureya-52goplot；可视化模版：templates/marker-bubble-dotplot、templates/pathway-zscore-heatmap）
   - **方向 2：火山图、气泡图与分组表达热图渲染**（触发条件：需要直接展示差异检验显著性、效应量及目标基因在各亚群的表达分布时；中间表：deg-result-table；分析模版：recipes/figureya-59volcanov2；可视化模版：templates/scp-de-volcano、templates/bulk-de-volcano、templates/marker-bubble-dotplot）

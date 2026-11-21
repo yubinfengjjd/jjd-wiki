@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "implementation": "deseq2-mrseq-de",
+  "method_id": "differential-expression",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:15:28+00:00",
+  "scope": "Real PickSeq mrSEQ integer count slice (Nirmal 2022, 400 genes x 24 mROIs: IM vs EM); verified DESeq2 size-factor normalization, negative binomial Wald test, and BH padj.",
+  "command": "<RSCRIPT> --vanilla example/verify_deseq2-mrseq-de.R --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "genes_tested=400, samples=24",
+    "padj_lt_0.05_genes=14",
+    "size_factors_positive_finite=true",
+    "log2_norm_matrix_exported=true"
+  ],
+  "environment": {
+    "runtime": "R",
+    "runner": "<RSCRIPT>",
+    "platform": "Windows"
+  },
+  "files": {
+    "code/deseq2_mrseq_de.R": "5ccde2d5da1236adf7fab6fcf252206e65c054e80132d6cd6f6d6417baa8657f"
+  },
+  "output_sha256": {
+    "checks.json": "5d45940124b6386aa5c4b811b5cb88d67ce3a9a7e944c2ed3f7e2ada88ebac7e",
+    "deseq2_norm_log2.csv": "8c21530e2526454b4974195e591c0b528ebb88726c04d9a259330f1dbe92fe5a",
+    "deseq2_results.csv": "09f5f9de836d4706cda70d0144d577a23287e2e5cda2a7bbdbd695cb5d5563a2"
+  }
+}

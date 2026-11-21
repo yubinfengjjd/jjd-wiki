@@ -28,10 +28,62 @@ method_kind: analysis
 purposes:
 - 细胞通讯与微环境
 - 注释与参考映射
-summary: 面向 Visium 等空间转录组切片执行空间位置对齐、单细胞参考去卷积（RCTD/cell2location）、空间域聚类与组织内细胞/微生物共定位格局分析，输出空间生态位与组成统计；本库尚未封装独立可执行实现。
+summary: 面向 Visium 空间转录组与 CyCIF 空间蛋白组执行空间邻域组成（RCN/Spatial LDA）、最近邻置换共现/排斥检验、空间滞后肿瘤群落（TCC）及
+  Visium 多通道签名共定位分析，现已封装 4 套跨模态/多语言可执行实现。
 data_contract:
-  input: 空间转录组 Spot/Cell 表达矩阵及对应切片二维像素坐标、高分辨率组织图像，配合配对单细胞参考对象 scrna-annotated-cells。
-  output: cell-proportion-stats（各 Spot/空间生态位的细胞类型比例、微生物载量或空间富集统计）。
+  input: 空间转录组 Spot/Cell 表达矩阵或 CyCIF 单细胞空间蛋白表及二维物理坐标（X_um/Y_um 或 imagecol/imagerow），可选配对单细胞参考对象
+    scrna-annotated-cells。
+  output: cell-proportion-stats（各 Spot/空间生态位 RCN/TCC 的细胞类型比例、空间共现显著性、最近邻距离或 Visium
+    签名权重）。
+implementations:
+- id: scimap-rcn-spatial-lda
+  title: CyCIF 半径空间邻域统计与 Spatial LDA / K-means RCN 聚类
+  impl_tier: default
+  language: Python
+  modality: Spatial Proteomics (CyCIF)
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/scimap_rcn_lda.py:run_scimap_rcn_spatial_lda
+  dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  verification: verification/scimap-rcn-spatial-lda.json
+- id: spatial-proximity-interaction
+  title: 空间最近邻物理距离与置换共现/排斥检验
+  impl_tier: variant
+  language: Python
+  modality: Spatial Proteomics (CyCIF)
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/spatial_proximity_interaction.py:run_spatial_proximity_interaction
+  dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  - scipy
+  verification: verification/spatial-proximity-interaction.json
+- id: spatial-lag-tcc-clustering
+  title: 距离加权空间滞后特征矩阵与 TCC 群落聚类
+  impl_tier: variant
+  language: Python
+  modality: Spatial Proteomics (CyCIF)
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/spatial_lag_tcc.py:run_spatial_lag_tcc
+  dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  verification: verification/spatial-lag-tcc-clustering.json
+- id: visium-signature-spatial
+  title: Visium Spot 空间签名 L1 加权、共富集分区与多通道配受体共定位
+  impl_tier: variant
+  language: R
+  modality: Visium ST
+  source_paper: 2026-cai-stromal-tme
+  entrypoint: code/visium_signature_spatial.R:run_visium_signature_spatial
+  dependencies:
+  - stats
+  - utils
+  verification: verification/visium-signature-spatial.json
 keywords:
 - spatial transcriptomics
 - Visium
@@ -226,7 +278,7 @@ next_steps:
 - 输出接口：[[interfaces/cell-proportion-stats|细胞亚群比例与 Ro/e 偏好统计表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：无
+- 代码模板：[methods/spatial-transcriptomics-microenvironment/code/scimap_rcn_lda.py](/files/wiki/methods/spatial-transcriptomics-microenvironment/code/scimap_rcn_lda.py) · [methods/spatial-transcriptomics-microenvironment/code/spatial_lag_tcc.py](/files/wiki/methods/spatial-transcriptomics-microenvironment/code/spatial_lag_tcc.py) · [methods/spatial-transcriptomics-microenvironment/code/spatial_proximity_interaction.py](/files/wiki/methods/spatial-transcriptomics-microenvironment/code/spatial_proximity_interaction.py) · [methods/spatial-transcriptomics-microenvironment/code/visium_signature_spatial.R](/files/wiki/methods/spatial-transcriptomics-microenvironment/code/visium_signature_spatial.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：空间邻域细胞通讯与信号互作轴解析**（触发条件：在识别空间生态位与主要细胞/微环境共定位区域后，推断邻近细胞群体的配受体互作时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi、templates/spatial-feature-grid、templates/spatial-coexpr-multichannel、templates/spatial-he-deconv-panel）
   - **方向 2：对比不同空间域或组织区域的细胞亚群组成偏好**（触发条件：量化肿瘤核心区、浸润前沿与正常边界区的细胞比例差异时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition；可视化模版：templates/cell-prop-flow-bar）
@@ -295,7 +347,14 @@ next_steps:
 
 ## 代码
 
-本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块。请参考配套 历史归档模板 [[recipes/figureya-323stpathseq]]（空间转录组微生物分布与组织共定位分析）。
+本目录已封装 4 套独立可运行的跨模态空间微环境分析实现（均通过 `verify-method` 实跑真实论文切片并附 SHA256 收据，依赖声明见 `runtime.json`）：
+
+- `scimap-rcn-spatial-lda`（`default`, Python, CyCIF）：`code/scimap_rcn_lda.py:run_scimap_rcn_spatial_lda`，实现 20 μm BallTree 邻域计数、Spatial LDA 主题建模与 K-means RCN 聚类。
+- `spatial-proximity-interaction`（`variant`, Python, CyCIF）：`code/spatial_proximity_interaction.py:run_spatial_proximity_interaction`，实现表型对最近邻物理距离与度保持置换共现/排斥检验。
+- `spatial-lag-tcc-clustering`（`variant`, Python, CyCIF）：`code/spatial_lag_tcc.py:run_spatial_lag_tcc`，实现反距离加权空间滞后特征矩阵与 TCC 聚类。
+- `visium-signature-spatial`（`variant`, R, Visium ST）：`code/visium_signature_spatial.R:run_visium_signature_spatial`，实现 Visium Spot 5% 分位平移非负 L1 签名加权、共富集分区与多通道几何均值共定位。
+
+另可参考历史归档模板 [[recipes/figureya-323stpathseq]]（空间转录组微生物分布与组织共定位分析）。
 
 ## 输出
 

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "implementation": "spatial-proximity-interaction",
+  "method_id": "spatial-transcriptomics-microenvironment",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:38+00:00",
+  "scope": "Real CyCIF FOV slice (Nirmal 2022, 420 cells across 2 FOVs); verified 20 um 200-permutation spatial co-occurrence/avoidance test and nearest-neighbor physical distances.",
+  "command": "<PYTHON> -X utf8 example/verify_spatial-proximity-interaction.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "interaction_pairs=164 (co_occurrence=26, avoidance=20)",
+    "distance_pairs=161",
+    "p_values_in_0_1=true",
+    "nearest_neighbor_distances_non_negative_finite=true"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/spatial_proximity_interaction.py": "af792ed976a16d17f3ba61a1b143c071d90bf05f7b6da03cdf28cccacc569f1a"
+  },
+  "output_sha256": {
+    "checks.json": "b1f178ef7fa7317fc51ef59a9529c73ef6f9fbbe668bc81b61b75e7ecd80f053",
+    "nearest_neighbor_distances.csv": "bda53facb57945eae98ea6d0c123261284d8fb6b4924b8105e7aa4bb8001248c",
+    "spatial_interaction_pairs.csv": "a10238f7b8f762887a1a18ddeca064a462b34eb48964b46f53f2c0ba8203c243"
+  }
+}

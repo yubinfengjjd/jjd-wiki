@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "cell-proportion-composition",
+  "implementations": [
+    {
+      "id": "roe-tissue-enrichment",
+      "entry": "code/roe_tissue_enrichment.R",
+      "entry_function": "run_roe_tissue_enrichment",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/roe_tissue_enrichment.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "stats",
+          "utils"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "cai-2026-adapted",
+        "license": "LicenseRef-Literature-Workflow",
+        "functions": [
+          "roe_tissue_enrichment.R:run_roe_tissue_enrichment"
+        ]
+      }
+    },
+    {
+      "id": "compartment-prop-stats",
+      "entry": "code/compartment_prop_stats.py",
+      "entry_function": "run_compartment_prop_stats",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/compartment_prop_stats.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scipy"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "nirmal-2022-adapted",
+        "license": "MIT",
+        "functions": [
+          "compartment_prop_stats.py:run_compartment_prop_stats"
+        ]
+      }
+    }
+  ]
+}

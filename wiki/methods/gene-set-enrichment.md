@@ -28,13 +28,27 @@ data_contract:
 implementations:
 - id: scp-enrichment
   title: SCP RunEnrichment 的 ORA 分支
+  impl_tier: default
   language: R
+  modality: scRNA-seq
+  source_paper: SCP
   entrypoint: code/analysis.R:run_gene_set_enrichment
   dependencies:
   - clusterProfiler
   - BiocParallel
   - rlang
   verification: verification/scp-enrichment-standalone.json
+- id: preranked-gsea-scoring
+  title: Bulk / mrSEQ Preranked GSEA Running ES、NES 与置换检验
+  impl_tier: variant
+  language: Python
+  modality: Bulk / mrSEQ
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/preranked_gsea_scoring.py:run_preranked_gsea
+  dependencies:
+  - numpy
+  - pandas
+  verification: verification/preranked-gsea-scoring.json
 keywords:
 - ORA
 - GSEA
@@ -152,7 +166,7 @@ data_domains:
 - 输出接口：[[interfaces/pathway-score-table|通路富集与多算法基因集打分表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：[methods/gene-set-enrichment/code/analysis.R](/files/wiki/methods/gene-set-enrichment/code/analysis.R) · [methods/gene-set-enrichment/code/enrichment_native.R](/files/wiki/methods/gene-set-enrichment/code/enrichment_native.R)
+- 代码模板：[methods/gene-set-enrichment/code/analysis.R](/files/wiki/methods/gene-set-enrichment/code/analysis.R) · [methods/gene-set-enrichment/code/enrichment_native.R](/files/wiki/methods/gene-set-enrichment/code/enrichment_native.R) · [methods/gene-set-enrichment/code/preranked_gsea_scoring.py](/files/wiki/methods/gene-set-enrichment/code/preranked_gsea_scoring.py)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：锁定关键基因集做逐细胞/逐样本活性打分**（触发条件：从富集通路锁定核心功能基因集后，需定量每个细胞或样本的活性得分时；中间表：pathway-score-table；分析模版：methods/gene-set-scoring、recipes/figureya-61gsva、recipes/figureya-71ssgsea-update；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/kegg-cluster-bubble、templates/cluster-kegg-bars、templates/coexpr-module-enrich-bars、templates/metabolism-lollipop-dotplot）
   - **方向 2：PPI 互作网络与 Hub 候选基因挖掘**（触发条件：需要围绕富集通路核心基因构建蛋白互作模块并筛选关键枢纽基因时；中间表：candidate-biomarker-list；分析模版：recipes/figureya-53ppimodule、recipes/figureya-147plus-string；可视化模版：templates/scp-flow-chord）

@@ -29,12 +29,25 @@ favorite: false
 method_kind: analysis
 purposes:
 - 细胞通讯与微环境
-summary: 基于已注释单细胞或空间转录组数据推断细胞亚群间的配体-受体互作概率、信号通路层级强度及发送/接收角色，输出标准配受体互作表与平均表达表；本库尚未封装独立可执行实现。
+summary: 基于已注释单细胞或空间转录组数据推断细胞亚群间的配体-受体互作概率、信号通路层级强度及发送/接收角色，输出标准配受体互作表与平均表达表；已封装 CellChat
+  通讯聚合与互作矩阵 R 实现。
 data_contract:
   input: 已注释的单细胞 Seurat/AnnData 或空间转录组对象（scrna-annotated-cells），含标准化表达矩阵与明确的 cell_type
-    分组；多组比较需显式 condition 列。
+    分组；或标准配受体通讯表（source, target, ligand, receptor, pathway_name, prob, pval）。
   output: cellchat-lr-table（source, target, ligand, receptor, pathway_name, prob,
     pval, group）与 celltype-gene-expression（gene, cell_type, expression, role）。
+implementations:
+- id: cellchat-lr-inference
+  title: CellChat 配受体通讯概率聚合、通路排序与 Sender-Receiver 互作矩阵构建
+  impl_tier: default
+  language: R
+  modality: scRNA-seq
+  source_paper: 2026-cai-stromal-tme
+  entrypoint: code/cellchat_lr_inference.R:run_cellchat_lr_inference
+  dependencies:
+  - stats
+  - utils
+  verification: verification/cellchat-lr-inference.json
 keywords:
 - CellChat
 - CellPhoneDB
@@ -164,7 +177,7 @@ next_steps:
 - 输出接口：[[interfaces/cellchat-lr-table|细胞通讯配受体互作表]] · [[interfaces/celltype-gene-expression|细胞类型×基因平均表达表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/cellchat-circos-multi|细胞通讯多轨环形图（配受体互作+表达热图+柱状轨）]]（ready）
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：无
+- 代码模板：[methods/cell-cell-communication/code/cellchat_lr_inference.R](/files/wiki/methods/cell-cell-communication/code/cellchat_lr_inference.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：细胞通讯多轨环形图与配受体弦图可视化**（触发条件：已筛选显著配受体通路并整理各亚群配受体标准化表达，准备展示整体通讯网络与表达热图轨时；中间表：cellchat-lr-table；分析模版：recipes/figureya-310cpdbchordgramv2；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord、templates/lr-bubble-matrix、templates/cellchat-count-heatmap、templates/lr-bipartite-bubble、templates/cellchat-signaling-ring）
   - **方向 2：接收方亚群下游差异表达与通路响应验证**（触发条件：识别出关键配受体信号轴后，检验接收方细胞亚群内下游靶基因或通路是否发生同步差异改变时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/scp-de-volcano、templates/marker-bubble-dotplot）
@@ -217,7 +230,11 @@ next_steps:
 
 ## 代码
 
-本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块（状态为 `not_run`）。实际课题分析时，请参考配套源码配方 [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]]（CellPhoneDB + Seurat 差异通讯流向），或在课题 R 环境中调用 CellChat / CellPhoneDB 官方工作流后按输出契约导出 CSV 接入 [[templates/cellchat-circos-multi|细胞通讯多轨环形图]]。
+本目录已封装独立可运行的 R 实现（已通过 `verify-method` 实跑 Cai 2026 真实 CellChat 配受体切片并附 SHA256 收据，依赖声明见 `runtime.json`）：
+
+- `cellchat-lr-inference`（`default`, R, scRNA-seq）：`code/cellchat_lr_inference.R:run_cellchat_lr_inference`，对显著配受体通讯边按信号通路聚合排序，构建有向 Sender-Receiver 互作计数/概率矩阵与细胞亚群收发枢纽强度表。
+
+配套源码配方亦可参考 [[recipes/figureya-310cpdbchordgramv2|细胞通讯配体受体弦图]]，导出 CSV 后可接入 [[templates/cellchat-circos-multi|细胞通讯多轨环形图]]、[[templates/lr-bubble-matrix]] 与 [[templates/cellchat-count-heatmap]]。
 
 ## 输出
 

@@ -46,6 +46,34 @@
       "evidence": {
         "portability": "verification/scp-detest-session-isolation-20261112.json"
       }
+    },
+    {
+      "id": "deseq2-mrseq-de",
+      "entry": "code/deseq2_mrseq_de.R",
+      "entry_function": "run_deseq2_mrseq_de",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/deseq2_mrseq_de.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "DESeq2",
+          "stats",
+          "utils"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "nirmal-2022-adapted",
+        "license": "MIT",
+        "functions": [
+          "deseq2_mrseq_de.R:run_deseq2_mrseq_de"
+        ]
+      }
     }
   ]
 }

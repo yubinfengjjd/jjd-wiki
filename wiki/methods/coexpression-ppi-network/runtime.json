@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "coexpression-ppi-network",
+  "implementations": [
+    {
+      "id": "spearman-coexpr-hub",
+      "entry": "code/spearman_coexpr_hub.py",
+      "entry_function": "run_spearman_coexpr_hub",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/spearman_coexpr_hub.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scipy"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "nirmal-2022-adapted",
+        "license": "MIT",
+        "functions": [
+          "spearman_coexpr_hub.py:run_spearman_coexpr_hub"
+        ]
+      }
+    }
+  ]
+}

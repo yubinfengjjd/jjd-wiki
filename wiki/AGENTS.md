@@ -27,7 +27,8 @@
 ## 状态与验证口径
 
 - 所有 `template`、`method`（以及只读历史 `recipe`）的状态统一为 `draft` / `ready` / `archived`，`ready` 表示作者已确认。`layout` 只来自画廊（`ingest-figure`），其 `pending_signoff` / `pending_template` 是历史状态，只读保留；开源库与新模板不再新建 `layout`。
-- **能否执行看收据，不看 status**：绘图模板须经 `verify-template` 生成 `verify/` 回放收据；分析方法每个实现分支须有独立的 `verification/*.json`；没有当前版本的成功运行收据，就不能声称为已验证可运行。
+- **能否执行看收据，不看 status**：绘图模板须经 `verify-template` 生成 `verify/` 回放收据；分析方法每个实现分支须经 `rwiki verify-method <method_id> --impl <impl_id>` 生成独立的 `verification/<impl_id>.json`（`schema_version: 1`，`state: "passed"`，无机器绝对盘符路径，绑定该实现在 `runtime.json` 声明的闭包文件 SHA256 与输出哈希）；没有当前版本的成功运行收据，就不能声称为已验证可运行。
+- **分析方法多实现槽位 3 条硬门禁（v5.7+）**：同一规范 `analysis` 方法家族可并存多套不同数据模态/语言的可执行实现分支（`implementations[]`，支持可选元数据 `impl_tier: default | variant`、`modality`、`source_paper`）；当 `runtime.json` 声明了 `files` 闭包时，各实现的 SHA256 收据仅校验其自身声明闭包（新增第 2 套实现文件不破坏第 1 套既有收据）。对任意活跃 `method_kind: analysis` 方法页，若至少 1 个实现声明了 `impl_tier` 或 `modality`，`rwiki lint` 强制执行：① 仅有 1 个实现时**禁止孤立标为 `impl_tier: variant`**（必须为 `default`）；② 含 `>= 2` 个实现时必须**有且仅有 1 个 `impl_tier: default`**、其余全部为 `variant`；③ 全员必须声明非空 `modality` 与 `language`。
 - **一类图允许多套顶刊风格模板并存**：同一分析方法或图型下可并存多个可切换画风模板；新建模板应标注 `style_tier`（`default` \| `variant`）与 `journal_style`（历史旧模板可渐进补齐）。`rwiki lint` 对包含至少 1 个声明了 `style_tier` 或 `journal_style` 的 `(primary_method, chart_types[0])` 输出槽位执行 **3 条硬门禁**：① **禁止孤立 `variant`**（槽位只有 1 个活跃模板时不得标为 `variant`，必须为 `default`）；② **多模板槽位完整性**（槽位有 `>= 2` 个活跃模板时，必须有且仅有 1 个 `default`，且全员均须声明非空 `journal_style` 与合法 `style_tier`）；③ **同槽位主标签对齐**（多模板槽位若 `default` 声明了非空 `tags`，同槽位每个 `variant` 的 `tags` 必须包含 `default.tags[0]`，防止按标签筛选时变体隐身）。`check-dup` 支持期刊画风感知：同方法/同图型/同接口但 `journal_style` 不同且标题不完全相同的变体自动降级为 `medium` 建议提示而不硬拦截；检索排序与前端展示默认优先呈现 `ready` 且 `style_tier: default` 的模板，折叠其余变体防选择瘫痪（多画风槽位在图库卡片右上角显示 `N 种画风` 胶囊角标）。
 - **分支树拓扑与覆盖清单自动化校验**：`rwiki lint` 对所有 `scenario.steps` 执行悬空 `next_steps`、失效 `subtree` 与有向环检测；`studio.py` 自动标注不属于本树上游产出的 `external_requires` 外部数据前提供前端「我手里有哪些数据？」就绪过滤；复刻流程可选附带 `panel-manifest.yaml` 由 `rwiki lint` 校验并由 `rwiki save` 自动汇总覆盖与证据分层事实。
 - **单 panel 约束**：每个 `templates/<slug>/` 对应一个逻辑 panel（inset、色标、边际分布或配对对照小图随主 panel 一并封装），严禁把整篇论文多 Panel 拼图直接当单个通用模板。
@@ -149,10 +150,14 @@
        - `paper_variant`：关联论文衍生风格模板；`template_id` 必须非空且解析到已存在的模板页，且该模板页必须同时满足 `status: ready`、非空 `primary_method`、`style_tier in ("default", "variant")` 与非空 `journal_style`；
        - `reuse_identical`：直接复用既有模板；`template_id` 必须非空且解析到已存在的模板页，且必须声明非空字符串 `disposition_note`（说明为何视觉/画风高度一致无需新建变体）；
        - `paper_specific_only`：强论文特异/单用途不进通用模板库；`template_id` 必须为 `null`（`None`），且必须声明非空字符串 `disposition_note`（说明为何不进通用模板库）。
-  2. **真实数据 `example/` 硬铁律**：从复刻论文提炼的 `wiki/templates/<slug>/`，其 `example/*.csv` 与 `code/render.*` 必须直接来自该论文对应 Panel 的真实数据与精调绘图代码（严禁用随机高斯团块或假 H&E 方块应付 `verify-template`）；
-  3. **计算 Panel 覆盖与三类排除**：逐张盘点全篇 Main + Supp Figure 的全部计算面板并落盘逐 Panel 独立脚本与模板归属；`excluded_schematic`、`excluded_imaging` 与 `excluded_wet_lab` 面板在 `panel-manifest.yaml` 中不要求 `template_id`、`template_disposition` 与 `script_path`；
-  4. **方法 ↔ 可视化语义关系显式入库**：必须按研究推进顺序，把每个分析方法与对应单图模板写入规范方法页的 `figure_relations`、`next_steps` 及 `method-map.json`（`rwiki map-method`），严禁停留在“暂无已记录关系”；
-  5. **课题研究思路沉淀入知识库**：每篇文献复刻收口前，必须同步沉淀：① 通用可复用领域决策树 `wiki/scenarios/<domain>-playbook.md`（若已有同域 Playbook 则嫁接新分支并声明 `requires` 多上游汇合）；② 本课题步进思路卡 `wiki/projects/<paper_id>.md`（逐阶段记录「科学问题/假设 → 方法 → 可切换模板 → 观察发现 → 下一步分叉」）。
+  2. **论文算法入库硬门禁（`method-manifest.yaml` + `rwiki verify-method`，v5.7+）**：凡工作流声明了 `schema_version >= 2` 的 `panel-manifest.yaml`，`rwiki lint` 强制要求同目录下同时存在 `method-manifest.yaml`（缺则直接 `ERROR`），顶层必填 `schema_version`（`>= 1`）、`paper_id`、`workflow_id` 与 `steps[]`，每条计算步骤必须声明唯一安全 `step_id`、非空 `title`、资产目录内真实存在的 `script_path` 与 `method_disposition`（三选一）：
+     - `method_impl`：新提炼或补充进规范分析方法家族的可复用实现；必须声明存在的活跃 `method_kind: analysis` `method_id` 与该页已登记的 `implementation_id`，该实现须具备合法 `impl_tier`（`default`/`variant`）与非空 `modality`，且 `implementation_status()` 实测状态**必须为 `verified`**（须先实跑 `rwiki verify-method <method_id> --impl <impl_id>` 签发 SHA256 收据，严禁 `not_run`/`stale`/`invalid` 蒙混过关）；
+     - `reuse_impl`：直接复用既有已验证实现；必须声明存在的 `method_id`、`implementation_id`（实测状态须为 `verified`）及非空 `disposition_note`；
+     - `paper_specific_only`：仅论文特异数据清洗/队列映射步骤；`method_id` 与 `implementation_id` 必须为 `null`（`None`），且必须声明非空 `disposition_note`。
+  3. **真实数据 `example/` 硬铁律**：从复刻论文提炼的 `wiki/templates/<slug>/`，其 `example/*.csv` 与 `code/render.*` 必须直接来自该论文对应 Panel 的真实数据与精调绘图代码（严禁用随机高斯团块或假 H&E 方块应付 `verify-template`）；
+  4. **计算 Panel 覆盖与三类排除**：逐张盘点全篇 Main + Supp Figure 的全部计算面板并落盘逐 Panel 独立脚本与模板归属；`excluded_schematic`、`excluded_imaging` 与 `excluded_wet_lab` 面板在 `panel-manifest.yaml` 中不要求 `template_id`、`template_disposition` 与 `script_path`；
+  5. **方法 ↔ 可视化语义关系显式入库**：必须按研究推进顺序，把每个分析方法与对应单图模板写入规范方法页的 `figure_relations`、`next_steps` 及 `method-map.json`（`rwiki map-method`），严禁停留在“暂无已记录关系”；
+  6. **课题研究思路沉淀入知识库**：每篇文献复刻收口前，必须同步沉淀：① 通用可复用领域决策树 `wiki/scenarios/<domain>-playbook.md`（若已有同域 Playbook 则嫁接新分支并声明 `requires` 多上游汇合）；② 本课题步进思路卡 `wiki/projects/<paper_id>.md`（逐阶段记录「科学问题/假设 → 方法 → 可切换模板 → 观察发现 → 下一步分叉」）。
 
 ## 历史临时产物与过期脚本清理规定（2026-11-19）
 

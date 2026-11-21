@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "implementation": "preranked-gsea-scoring",
+  "method_id": "gene-set-enrichment",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:13:43+00:00",
+  "scope": "Real PickSeq IM-vs-EM DESeq2 ranked gene list (Nirmal 2022, 3284 genes) x 5 MSigDB Hallmark gene sets; verified weighted Running ES, NES, BH-adjusted empirical permutation p-values, and leading-edge genes.",
+  "command": "<PYTHON> -X utf8 example/verify_preranked-gsea-scoring.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "ranked_genes=3284, pathways_tested=5",
+    "running_es_bounded_in_minus1_1=true",
+    "nes_finite_and_pvalues_in_0_1=true",
+    "top_pathway=HALLMARK_INTERFERON_GAMMA_RESPONSE (NES=1.889, p=0.0156)"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/preranked_gsea_scoring.py": "0defb36f2a7b4a431fef600a8d084ccae7b62c1fa3772cd5aaf10622a5944d16"
+  },
+  "output_sha256": {
+    "checks.json": "9e39e5acc33fcdb4145854b6a5f6d6a7e52ea259c5a6b9f41e77dc60ddd33394",
+    "gsea_running_curves.csv": "6005fa635a4e8099aff8e6a826029083ccb70e240bd23f433c8567f131444fb3",
+    "gsea_summary.csv": "044bcc2678286fa14cd63aaf48f57c884b196db99de83fe6f65a3f8187081f2c"
+  }
+}

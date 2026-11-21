@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "implementation": "spatial-lag-tcc-clustering",
+  "method_id": "spatial-transcriptomics-microenvironment",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:41+00:00",
+  "scope": "Real CyCIF FOV slice (Nirmal 2022, 420 cells x 12 scaled markers); verified 20 um inverse-distance spatial lag matrix and KMeans TCC1-TCC6 clustering.",
+  "command": "<PYTHON> -X utf8 example/verify_spatial-lag-tcc-clustering.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_cells=420, features=12",
+    "tcc_clusters=6 (TCC1..TCC6)",
+    "spatial_lag_values_finite=true",
+    "profile_rows=6"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/spatial_lag_tcc.py": "d4e75bdb3755f0d46561cc590bd8c7dc538fedb102ca1f457d5ecc56fe397d10"
+  },
+  "output_sha256": {
+    "checks.json": "636f32c62503fff83251af07f3734027b3591d718b4818e73b6d3c2aa58e0a73",
+    "spatial_lag_matrix.csv": "a85632a13efe42800d52eba2d942137989ec88c1606a77983860e3a549fc6786",
+    "tcc_assignments.csv": "98d4774bef0a6a11404ad6667f5095f18f2a1df6dcb04898e6e7b9fe5538401c",
+    "tcc_profiles.csv": "eaa9efb8986d02b9426d8db0d3f6ae44e22b0ef63e4aa89e4686b2e73fb71956"
+  }
+}

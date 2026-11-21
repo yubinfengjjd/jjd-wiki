@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "implementation": "visium-signature-spatial",
+  "method_id": "spatial-transcriptomics-microenvironment",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:42+00:00",
+  "scope": "Real Visium CAA_ST spot slice (Cai 2026, 449 spots); verified 5th-percentile-shifted L1 signature weighting, top-quartile co-enrichment zoning, and LR multichannel geometric colocalization.",
+  "command": "<RSCRIPT> --vanilla example/verify_visium-signature-spatial.R --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_spots=449, score_channels=4",
+    "weights_non_negative_and_l1_normalized=true",
+    "spatial_zones_identified=4",
+    "lr_colocalization_columns_present=true"
+  ],
+  "environment": {
+    "runtime": "R",
+    "runner": "<RSCRIPT>",
+    "platform": "Windows"
+  },
+  "files": {
+    "code/visium_signature_spatial.R": "8e1b19c87ada6f88ef2c776339d399877d00f9984f8bb384e4d6d76b8073be6d"
+  },
+  "output_sha256": {
+    "checks.json": "df13d6f6c6e96d13750506f525786c0028781e9033f5c743d192fbd696fbc325",
+    "visium_weights_zones.csv": "286f421c8a32b5e69272678e52097f77098a6d93cb913f7f30f6b19750f21dbb",
+    "zone_summary.csv": "3d5167d99446f08add6f6d9df4cc51b4d164f79bd6c940682723ec82578d14b9"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "implementation": "scimap-rcn-spatial-lda",
+  "method_id": "spatial-transcriptomics-microenvironment",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:36+00:00",
+  "scope": "Real CyCIF FOV slice (Nirmal 2022, 420 cells across 2 FOVs); verified 20 um BallTree neighborhood counts, 6-motif Spatial LDA, and KMeans RCN1-RCN6 clustering.",
+  "command": "<PYTHON> -X utf8 example/verify_scimap-rcn-spatial-lda.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_cells=420, fovs=2",
+    "rcn_clusters=6 (deterministic RCN1..RCN6)",
+    "lda_motif_row_sums_equal_1=true",
+    "rcn_phenotype_composition_row_sums_equal_1=true"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/scimap_rcn_lda.py": "8429b1ac05b812be6182f4ef028eed28e7c1163812a080e4cea7d5acc7e5badc"
+  },
+  "output_sha256": {
+    "checks.json": "d8949501124990f2b5580d44c8a119d712924e9eec2a32731e38b8a1b562be74",
+    "motif_weights.csv": "8fb2b62d1d0282777cc29fcdf33196ec54e9e614541c998b69765907395d51b8",
+    "rcn_assignments.csv": "d3ceac1056a13b9f0c2c1cc70a9dc32c9429164ee913699b0e036a65ee911877",
+    "rcn_composition.csv": "40d0fce04054091b8bdfb11af6b9c5503ac348a75cd1b6a5fcb57c0d710fc989"
+  }
+}

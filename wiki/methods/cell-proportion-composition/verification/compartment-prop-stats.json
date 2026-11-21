@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "implementation": "compartment-prop-stats",
+  "method_id": "cell-proportion-composition",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:44+00:00",
+  "scope": "Real CyCIF FOV compartment slice (Nirmal 2022, 1,418 cells across Epidermis/Dermis and 4 progression stages); verified ROI-level proportion normalization and BH-adjusted Kruskal-Wallis tests.",
+  "command": "<PYTHON> -X utf8 example/verify_compartment-prop-stats.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_cells=1418, units=7",
+    "unit_proportion_sums_equal_1=true",
+    "kruskal_wallis_tests=32",
+    "bh_padj_in_0_1=true"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/compartment_prop_stats.py": "b4a336f78149f555cd0a2ef84004b33fd1b2d042d6fade0c9c62e4d65e80e589"
+  },
+  "output_sha256": {
+    "checks.json": "4220dc103e3bcc0a70c14f3163224835d276c65e3043d2214e2cf814f837afbe",
+    "compartment_proportions.csv": "c9e60c3f6a9983c58ad9caca3ff4f5075f0321196a6febb00b5b0846866b2b6c",
+    "stage_group_tests.csv": "af58046b28f4f865374cb080db348abdc2e8207730119632f3f1f5e0da18ba42"
+  }
+}

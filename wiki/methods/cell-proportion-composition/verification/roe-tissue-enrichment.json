@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "implementation": "roe-tissue-enrichment",
+  "method_id": "cell-proportion-composition",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:42+00:00",
+  "scope": "Real Cai 2026 fibroblast tissue counts slice (14 subclusters x 3 tissues); verified chi-squared expected counts, Ro/e enrichment ratio matrix, and global chi-squared test.",
+  "command": "<RSCRIPT> --vanilla example/verify_roe-tissue-enrichment.R --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "subclusters=14, long_pairs=42",
+    "chi2_statistic=33.8670, df=26, p_value=0.1384",
+    "roe_values_finite_non_negative=true"
+  ],
+  "environment": {
+    "runtime": "R",
+    "runner": "<RSCRIPT>",
+    "platform": "Windows"
+  },
+  "files": {
+    "code/roe_tissue_enrichment.R": "d27eb40c4cd03081ab417337d2a507635538afc988ea3dfdd3399aa0cd323cca"
+  },
+  "output_sha256": {
+    "checks.json": "b7a204f3ec41c6da48601353951f658301d2c2dd056d58ca16efbc7bda6784ae",
+    "roe_long.csv": "0bb77a4bc6507866dd4c29dde13df8eb09de8ada568e9721c134b68d98e4575a",
+    "roe_matrix.csv": "3c6d1d124cc18659f478c23728d228c0d3874274673d6da8ef49a136063806b1"
+  }
+}

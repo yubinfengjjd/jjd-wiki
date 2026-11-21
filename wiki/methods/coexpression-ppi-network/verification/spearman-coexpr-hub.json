@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "implementation": "spearman-coexpr-hub",
+  "method_id": "coexpression-ppi-network",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:47+00:00",
+  "scope": "Real PickSeq mrSEQ log2-normalized expression slice (Nirmal 2022, 100 genes x 120 mROIs); verified Spearman |r| >= 0.6 network edges, S100B 1-hop hub module extraction, and per-sample module scoring.",
+  "command": "<PYTHON> -X utf8 example/verify_spearman-coexpr-hub.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "genes=100, samples=120",
+    "coexpr_edges_ge_0.6=1100",
+    "s100b_1hop_module_size=57",
+    "module_scores_finite_and_ordered=true"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/spearman_coexpr_hub.py": "fc25e4f1ba369c9fde219b0aa8560a7607b0dd649d8970a76eca405bd3cda5ed"
+  },
+  "output_sha256": {
+    "checks.json": "5b7852a3dbc28a7d5ca777c321fa4fda43bac8d243034cd8a5b47919ae291c38",
+    "coexpr_edges.csv": "9afdfc03e06197573435dbee70c5adb74f9964882ecf188cf9f42598f5963a16",
+    "hub_neighbors.csv": "66136f3377584b67953fe9bb59b91a8a0b08b3679ded68e33fcb7e5a5752f665",
+    "module_scores.csv": "bcae8cda4b6203e0ccfa532889babf3511eb10e897af395a45aff7aee745491b"
+  }
+}

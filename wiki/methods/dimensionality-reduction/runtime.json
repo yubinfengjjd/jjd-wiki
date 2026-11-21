@@ -60,6 +60,35 @@
       "evidence": {
         "portability": "verification/scp-dimreduction-portability.json"
       }
+    },
+    {
+      "id": "cycif-pca-umap-embedding",
+      "entry": "code/cycif_pca_umap.py",
+      "entry_function": "run_cycif_pca_umap",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/cycif_pca_umap.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scikit-learn",
+          "umap-learn"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "scimap-adapted",
+        "license": "MIT",
+        "functions": [
+          "cycif_pca_umap.py:run_cycif_pca_umap"
+        ]
+      }
     }
   ]
 }

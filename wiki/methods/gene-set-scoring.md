@@ -28,7 +28,10 @@ data_contract:
 implementations:
 - id: scp-cellscoring
   title: SCP CellScoring 的 Seurat/AddModuleScore 分支
+  impl_tier: default
   language: R
+  modality: scRNA-seq
+  source_paper: SCP
   entrypoint: code/analysis.R:run_gene_set_scoring
   dependencies:
   - Seurat
@@ -38,6 +41,18 @@ implementations:
   - rlang
   - ggplot2
   verification: verification/scp-cellscoring-standalone.json
+- id: progeny-pathway-activity
+  title: PROGENy 14 经典信号通路活性推断与亚群 Z-score 汇总
+  impl_tier: variant
+  language: R
+  modality: scRNA-seq
+  source_paper: 2026-cai-stromal-tme
+  entrypoint: code/progeny_pathway_activity.R:run_progeny_pathway_activity
+  dependencies:
+  - progeny
+  - stats
+  - utils
+  verification: verification/progeny-pathway-activity.json
 keywords:
 - AddModuleScore
 - AUCell
@@ -200,7 +215,7 @@ render_bridges:
 - 输出接口：[[interfaces/pathway-score-table|通路富集与多算法基因集打分表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：[methods/gene-set-scoring/code/analysis.R](/files/wiki/methods/gene-set-scoring/code/analysis.R) · [methods/gene-set-scoring/code/scoring_native.R](/files/wiki/methods/gene-set-scoring/code/scoring_native.R)
+- 代码模板：[methods/gene-set-scoring/code/analysis.R](/files/wiki/methods/gene-set-scoring/code/analysis.R) · [methods/gene-set-scoring/code/progeny_pathway_activity.R](/files/wiki/methods/gene-set-scoring/code/progeny_pathway_activity.R) · [methods/gene-set-scoring/code/scoring_native.R](/files/wiki/methods/gene-set-scoring/code/scoring_native.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：按高/低活性得分分组深挖差异与轨迹**（触发条件：识别出高活性细胞亚群（如 High-Lactylation 亚群）后，比较高低分组差异或拟时序动态时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/trajectory-inference；可视化模版：templates/pathway-stat-violin、templates/scp-expr-ridge、templates/scp-feature-heatmap、templates/scrna-feature-umap-grid、templates/pathway-zscore-heatmap、templates/metabolism-lollipop-dotplot）
   - **方向 2：高/低活性亚群间 CellChat 细胞通讯比较**（触发条件：探究主题打分高活性亚群与微环境其他细胞的配受体信号差异时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication、recipes/figureya-310cpdbchordgramv2；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord、templates/scp-flow-sankey）

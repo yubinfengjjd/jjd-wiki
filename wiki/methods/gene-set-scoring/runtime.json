@@ -52,6 +52,34 @@
       "evidence": {
         "portability": "verification/scp-cellscoring-portability.json"
       }
+    },
+    {
+      "id": "progeny-pathway-activity",
+      "entry": "code/progeny_pathway_activity.R",
+      "entry_function": "run_progeny_pathway_activity",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/progeny_pathway_activity.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "progeny",
+          "stats",
+          "utils"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "cai-2026-adapted",
+        "license": "LicenseRef-Literature-Workflow",
+        "functions": [
+          "progeny_pathway_activity.R:run_progeny_pathway_activity"
+        ]
+      }
     }
   ]
 }

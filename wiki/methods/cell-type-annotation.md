@@ -27,7 +27,10 @@ data_contract:
 implementations:
 - id: scp-singler
   title: SCP RunSingleR 分支
+  impl_tier: default
   language: R
+  modality: scRNA-seq
+  source_paper: SCP
   entrypoint: code/analysis.R:run_cell_type_annotation
   dependencies:
   - Seurat
@@ -39,6 +42,18 @@ implementations:
   - SummarizedExperiment
   - scrapper
   verification: verification/scp-singler-standalone.json
+- id: scimap-gmm-phenotyping
+  title: CyCIF 2-component GMM 门控重标度与层级规则表型注释
+  impl_tier: variant
+  language: Python
+  modality: Spatial Proteomics (CyCIF)
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/scimap_gmm_phenotyping.py:run_scimap_gmm_phenotyping
+  dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  verification: verification/scimap-gmm-phenotyping.json
 keywords:
 - SingleR
 - marker
@@ -305,7 +320,7 @@ render_bridges:
 - 输出接口：[[interfaces/scrna-annotated-cells|已注释单细胞元数据与降维表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：[[methods/cell-cell-communication|细胞通讯与配受体网络分析]]（ready） · [[methods/cell-proportion-composition|细胞亚群组成比例与流向分析]]（ready） · [[methods/differential-expression|差异表达分析]]（ready） · [[methods/gene-set-scoring|基因集与通路签名打分]]（ready） · [[methods/rna-velocity|RNA 速度分析]]（ready） · [[methods/spatial-transcriptomics-microenvironment|空间转录组空间域识别、微生态定位与微环境解析]]（ready） · [[methods/trajectory-inference|拟时序与轨迹推断]]（ready）
-- 代码模板：[methods/cell-type-annotation/code/analysis.R](/files/wiki/methods/cell-type-annotation/code/analysis.R) · [methods/cell-type-annotation/code/annotation_native.R](/files/wiki/methods/cell-type-annotation/code/annotation_native.R)
+- 代码模板：[methods/cell-type-annotation/code/analysis.R](/files/wiki/methods/cell-type-annotation/code/analysis.R) · [methods/cell-type-annotation/code/annotation_native.R](/files/wiki/methods/cell-type-annotation/code/annotation_native.R) · [methods/cell-type-annotation/code/scimap_gmm_phenotyping.py](/files/wiki/methods/cell-type-annotation/code/scimap_gmm_phenotyping.py)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：细胞组成比例与 Ro/e 组织偏好分析**（触发条件：比较疾病组与对照组间各细胞亚群占比变化、样本级差异或组织富集偏好时；中间表：cell-proportion-stats；分析模版：methods/cell-proportion-composition、recipes/figureya-315singlerfraction；可视化模版：templates/roe-cox-heatmap、templates/tissue-ratio-prop-combo、templates/cell-prop-flow-bar、templates/scp-comp-ring、templates/scp-comp-pie、templates/stromal-hull-umap）
   - **方向 2：亚群差异表达分析与功能富集（DEG / ORA / GSEA）**（触发条件：筛选特定细胞亚群在疾病 vs 对照条件下的差异基因及功能通路变化时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment、recipes/figureya-318genesetdedotplot；可视化模版：templates/scp-de-volcano、templates/marker-bubble-dotplot、templates/scp-group-heatmap、templates/kegg-cluster-bubble、templates/cluster-kegg-bars、templates/metabolism-lollipop-dotplot）

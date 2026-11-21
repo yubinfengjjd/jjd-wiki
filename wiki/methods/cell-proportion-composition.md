@@ -45,9 +45,34 @@ purposes:
 summary: 统计各样本或临床分组的细胞亚群计数、相对占比、Ro/e 组织偏好与样本级比例差异检验；严格区分描述性细胞汇总与以样本为独立单位的成分统计推断，并通过显式渲染桥接对接
   10 类组成/流向模板。
 data_contract:
-  input: 已注释的单细胞元数据表（scrna-annotated-cells），必须含可追踪的 sample_id、条件 group 与 cell_type。
+  input: 已注释的单细胞或空间蛋白组元数据表（scrna-annotated-cells），必须含可追踪的 sample_id、条件 group 与 cell_type（可选
+    compartment）。
   output: 样本×细胞类型组成统计表 cell-proportion-stats（sample_id, group, cell_type, count, proportion,
     roe_value, p_adj）。
+implementations:
+- id: roe-tissue-enrichment
+  title: 卡方 Ro/e 组织与亚型富集偏好比计算
+  impl_tier: default
+  language: R
+  modality: scRNA-seq
+  source_paper: 2026-cai-stromal-tme
+  entrypoint: code/roe_tissue_enrichment.R:run_roe_tissue_enrichment
+  dependencies:
+  - stats
+  - utils
+  verification: verification/roe-tissue-enrichment.json
+- id: compartment-prop-stats
+  title: 分期/组织分区细胞构成归一化与样本级 Kruskal-Wallis 差异检验
+  impl_tier: variant
+  language: Python
+  modality: Spatial Proteomics (CyCIF)
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/compartment_prop_stats.py:run_compartment_prop_stats
+  dependencies:
+  - numpy
+  - pandas
+  - scipy
+  verification: verification/compartment-prop-stats.json
 keywords:
 - cell proportion
 - composition
@@ -374,7 +399,7 @@ next_steps:
 - 输出接口：[[interfaces/cell-proportion-stats|细胞亚群比例与 Ro/e 偏好统计表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：无
+- 代码模板：[methods/cell-proportion-composition/code/compartment_prop_stats.py](/files/wiki/methods/cell-proportion-composition/code/compartment_prop_stats.py) · [methods/cell-proportion-composition/code/roe_tissue_enrichment.R](/files/wiki/methods/cell-proportion-composition/code/roe_tissue_enrichment.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：异常富集亚群的差异表达与功能打分深挖**（触发条件：通过 Ro/e 或样本级比例检验锁定疾病组显著扩张/耗竭的细胞亚群后，解析其转录组程序改变时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-scoring；可视化模版：templates/scp-de-volcano、templates/pathway-stat-violin、templates/roe-cox-heatmap、templates/tissue-ratio-prop-combo）
   - **方向 2：组成变化亚群的微环境配受体通讯分析**（触发条件：探索比例升高或降低的关键细胞亚群与其他微环境细胞之间的信号交互重塑时；中间表：cellchat-lr-table；分析模版：methods/cell-cell-communication；可视化模版：templates/cellchat-circos-multi、templates/scp-flow-chord）
@@ -469,7 +494,12 @@ next_steps:
 
 ## 代码
 
-本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块（状态为 `not_run`）。参考做法可查阅 [[recipes/figureya-315singlerfraction|SingleR细胞来源占比箱图]]（按队列×患者统计占比并做 Kruskal-Wallis 检验）；若已有统计表，可通过下方 `render_bridges` 规范导出至 10 个组成与流向可视化模板。
+本目录已封装 2 套独立可运行的双语言细胞组成统计实现（均通过 `verify-method` 实跑真实论文切片并附 SHA256 收据，依赖声明见 `runtime.json`）：
+
+- `roe-tissue-enrichment`（`default`, R, scRNA-seq）：`code/roe_tissue_enrichment.R:run_roe_tissue_enrichment`，计算亚群×组织/亚型列联表的卡方期望频数、$R_{o/e} = \text{Observed} / \text{Expected}$ 与富集等级符号。
+- `compartment-prop-stats`（`variant`, Python, CyCIF）：`code/compartment_prop_stats.py:run_compartment_prop_stats`，按独立样本/ROI 与组织分区（如 Epidermis/Dermis）归一化细胞占比并执行 BH 校正 Kruskal-Wallis 组间检验。
+
+参考配方亦可查阅 [[recipes/figureya-315singlerfraction|SingleR细胞来源占比箱图]]；统计表可通过下方 `render_bridges` 规范导出至组成与流向可视化模板。
 
 ## 输出
 

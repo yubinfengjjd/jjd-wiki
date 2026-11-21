@@ -1,0 +1,88 @@
+schema_version: 1
+paper_id: 2022-nirmal-melanoma-spatial
+workflow_id: melanoma-spatial-immunoediting-workflow
+steps:
+- step_id: step00_sample_data
+  title: HTA-MELATLAS-1 CyCIF、GSE171888 PickSeq 与 TCGA-SKCM 分层抽样准备
+  script_path: code/00_sample_data.py
+  method_disposition: paper_specific_only
+  method_id: null
+  implementation_id: null
+  disposition_note: 多来源公开数据的下载、解压与固定种子分层抽样准备脚本，属于论文数据摄入前置步骤。
+- step_id: step01_gmm_phenotyping
+  title: CyCIF 逐切片 GMM 门控 0-1 重标度与层级规则表型注释
+  script_path: code/01_cycif_qc_rescale_phenotype.py
+  method_disposition: method_impl
+  method_id: cell-type-annotation
+  implementation_id: scimap-gmm-phenotyping
+  disposition_note: 已提炼为独立 Python 变体实现 cell-type-annotation/scimap-gmm-phenotyping（variant, Spatial Proteomics (CyCIF)），在真实原始 CyCIF 切片与 Table S5 规则表上实跑验证。
+- step_id: step02_pca_umap_embedding
+  title: CyCIF 蛋白强度 PCA 方差贡献/特征载荷排序与 2D UMAP 降维
+  script_path: code/02_umap_marker_gradients.py
+  method_disposition: method_impl
+  method_id: dimensionality-reduction
+  implementation_id: cycif-pca-umap-embedding
+  disposition_note: 已提炼为独立 Python 变体实现 dimensionality-reduction/cycif-pca-umap-embedding（variant, Spatial Proteomics (CyCIF)），在真实 CyCIF 缩放特征切片上实跑验证。
+- step_id: step03_spatial_rcn_lda
+  title: 20 um 半径空间邻域统计、Spatial LDA 主题建模与 K-means RCN 聚类
+  script_path: code/03_spatial_rcn_lda.py
+  method_disposition: method_impl
+  method_id: spatial-transcriptomics-microenvironment
+  implementation_id: scimap-rcn-spatial-lda
+  disposition_note: 已提炼为独立 Python 默认实现 spatial-transcriptomics-microenvironment/scimap-rcn-spatial-lda（default, Spatial Proteomics (CyCIF)），在真实连续 FOV 切片上实跑验证。
+- step_id: step04a_spatial_interaction
+  title: 空间最近邻物理距离与置换共现/排斥检验
+  script_path: code/04_spatial_interaction_pscore.py
+  method_disposition: method_impl
+  method_id: spatial-transcriptomics-microenvironment
+  implementation_id: spatial-proximity-interaction
+  disposition_note: 已提炼为独立 Python 变体实现 spatial-transcriptomics-microenvironment/spatial-proximity-interaction（variant, Spatial Proteomics (CyCIF)），在真实连续 FOV 切片上实跑验证。
+- step_id: step04b_compartment_prop
+  title: 分期与表皮/真皮组织分区细胞构成归一化及 Kruskal-Wallis 差异检验
+  script_path: code/04_spatial_interaction_pscore.py
+  method_disposition: method_impl
+  method_id: cell-proportion-composition
+  implementation_id: compartment-prop-stats
+  disposition_note: 已提炼为独立 Python 变体实现 cell-proportion-composition/compartment-prop-stats（variant, Spatial Proteomics (CyCIF)），在真实连续 FOV 分区表上实跑验证。
+- step_id: step05_spatial_lag_tcc
+  title: 20 um 反距离加权空间滞后特征矩阵与肿瘤细胞群落 TCC 聚类
+  script_path: code/05_spatial_lag_tcc.py
+  method_disposition: method_impl
+  method_id: spatial-transcriptomics-microenvironment
+  implementation_id: spatial-lag-tcc-clustering
+  disposition_note: 已提炼为独立 Python 变体实现 spatial-transcriptomics-microenvironment/spatial-lag-tcc-clustering（variant, Spatial Proteomics (CyCIF)），在真实连续 FOV 切片上实跑验证。
+- step_id: step06a_deseq2_mrseq
+  title: PickSeq mrSEQ 原始计数 DESeq2 负二项差异表达检验
+  script_path: code/06_mrseq_deseq2_pca_gsea.R
+  method_disposition: method_impl
+  method_id: differential-expression
+  implementation_id: deseq2-mrseq-de
+  disposition_note: 已提炼为独立 R 变体实现 differential-expression/deseq2-mrseq-de（variant, Bulk / mrSEQ），在真实 GSE171888 PickSeq IM vs EM 计数切片上实跑验证。
+- step_id: step06b_preranked_gsea
+  title: PickSeq mrSEQ Preranked GSEA Running ES、NES 与置换检验
+  script_path: code/06_mrseq_deseq2_pca_gsea.R
+  method_disposition: method_impl
+  method_id: gene-set-enrichment
+  implementation_id: preranked-gsea-scoring
+  disposition_note: 已提炼为独立 Python 变体实现 gene-set-enrichment/preranked-gsea-scoring（variant, Bulk / mrSEQ），在真实 PickSeq IM vs EM 排序统计量与 MSigDB Hallmark 基因集上实跑验证。
+- step_id: step07a_spearman_coexpr
+  title: Spearman 共表达网络构建、Hub 基因 1-hop 邻域提取与模块均值打分
+  script_path: code/07_s100b_network_tcga_survival.R
+  method_disposition: method_impl
+  method_id: coexpression-ppi-network
+  implementation_id: spearman-coexpr-hub
+  disposition_note: 已提炼为独立 Python 默认实现 coexpression-ppi-network/spearman-coexpr-hub（default, Bulk / mrSEQ），在真实 PickSeq 表达矩阵切片上提取 S100B 邻域并实跑验证。
+- step_id: step07b_cox_km_survival
+  title: TCGA-SKCM Cox 比例风险回归与 Kaplan-Meier 多模式切点分层检验
+  script_path: code/07_s100b_network_tcga_survival.R
+  method_disposition: method_impl
+  method_id: survival-prognosis-analysis
+  implementation_id: cox-km-optimal-cutpoint
+  disposition_note: 已提炼为独立 R 默认实现 survival-prognosis-analysis/cox-km-optimal-cutpoint（default, Bulk / TCGA Clinical），在真实 TCGA-SKCM 120 例临床队列上实跑验证 median/quartile/maxstat 三种分层模式。
+- step_id: step08_visual_spec
+  title: 出版原图版式尺寸与视觉色谱规范提取
+  script_path: code/08_extract_visual_spec.py
+  method_disposition: paper_specific_only
+  method_id: null
+  implementation_id: null
+  disposition_note: 仅用于从原文献 PDF/高分辨率图版提取画幅尺寸与颜色规范，服务于 1:1 视觉复刻渲染，非生信计算方法。

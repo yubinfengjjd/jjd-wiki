@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "cell-cell-communication",
+  "implementations": [
+    {
+      "id": "cellchat-lr-inference",
+      "entry": "code/cellchat_lr_inference.R",
+      "entry_function": "run_cellchat_lr_inference",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/cellchat_lr_inference.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "stats",
+          "utils"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "cai-2026-adapted",
+        "license": "LicenseRef-Literature-Workflow",
+        "functions": [
+          "cellchat_lr_inference.R:run_cellchat_lr_inference"
+        ]
+      }
+    }
+  ]
+}

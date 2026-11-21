@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "implementation": "scimap-gmm-phenotyping",
+  "method_id": "cell-type-annotation",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:51+00:00",
+  "scope": "Real raw CyCIF single-cell slice (Nirmal 2022, 395 cells across 2 images x 15 Panel-2 markers + Table S5 rules); verified 2-component GMM gating, [0,1] piecewise scaling, and hierarchical phenotyping.",
+  "command": "<PYTHON> -X utf8 example/verify_scimap-gmm-phenotyping.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_cells=395, markers_gated=15",
+    "phenotypes_assigned=15",
+    "scaled_marker_values_in_0_1=true",
+    "cell_count_conservation=true"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/scimap_gmm_phenotyping.py": "cf9c1e6432fdd0d94354f600640eae005e07090be89d25061118828804f3aef7"
+  },
+  "output_sha256": {
+    "checks.json": "27ed0318feadcf398712b289ba4921739e1aa189826c20e72383311a30cddce4",
+    "gmm_gates.csv": "65d3504d641aeabd2eb7094335f79167574fd29ecfbfe6ec109854b5ca30db2d",
+    "phenotype_counts.csv": "c5cdd13522653291d0b6239014fbb01b119e2968a3329e52e7df5e76a6f40a70",
+    "phenotyped_cells.csv": "18ebdc04d76bb32e15add00a08444a7baca0b1c16169e0ca3720800ee75994c0"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "spatial-transcriptomics-microenvironment",
+  "implementations": [
+    {
+      "id": "scimap-rcn-spatial-lda",
+      "entry": "code/scimap_rcn_lda.py",
+      "entry_function": "run_scimap_rcn_spatial_lda",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/scimap_rcn_lda.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scikit-learn"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "scimap-adapted",
+        "license": "MIT",
+        "functions": [
+          "scimap_rcn_lda.py:run_scimap_rcn_spatial_lda"
+        ]
+      }
+    },
+    {
+      "id": "spatial-proximity-interaction",
+      "entry": "code/spatial_proximity_interaction.py",
+      "entry_function": "run_spatial_proximity_interaction",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/spatial_proximity_interaction.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scikit-learn",
+          "scipy"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "scimap-adapted",
+        "license": "MIT",
+        "functions": [
+          "spatial_proximity_interaction.py:run_spatial_proximity_interaction"
+        ]
+      }
+    },
+    {
+      "id": "spatial-lag-tcc-clustering",
+      "entry": "code/spatial_lag_tcc.py",
+      "entry_function": "run_spatial_lag_tcc",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/spatial_lag_tcc.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scikit-learn"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "scimap-adapted",
+        "license": "MIT",
+        "functions": [
+          "spatial_lag_tcc.py:run_spatial_lag_tcc"
+        ]
+      }
+    },
+    {
+      "id": "visium-signature-spatial",
+      "entry": "code/visium_signature_spatial.R",
+      "entry_function": "run_visium_signature_spatial",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/visium_signature_spatial.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "stats",
+          "utils"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "cai-2026-adapted",
+        "license": "LicenseRef-Literature-Workflow",
+        "functions": [
+          "visium_signature_spatial.R:run_visium_signature_spatial"
+        ]
+      }
+    }
+  ]
+}

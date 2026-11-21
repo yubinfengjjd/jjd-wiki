@@ -27,10 +27,24 @@ method_kind: analysis
 purposes:
 - 降维与聚类
 - 细胞通讯与微环境
-summary: 基于标准化表达谱构建加权基因共表达网络（WGCNA）识别性状关联模块，并结合 STRING/PPI 蛋白互作证据挖掘核心模块与 Hub 候选基因集合，输出候选生物标志物列表与高亮基因集；本库尚未封装独立可执行实现。
+summary: 基于标准化表达谱构建基因共表达网络（Spearman/WGCNA）识别核心枢纽基因 1-hop 邻域与性状关联模块，并结合 STRING/PPI
+  证据挖掘候选生物标志物集合；已封装 Spearman 共表达网络与 Hub 模块打分 Python 实现。
 data_contract:
-  input: 经过归一化与批次核查的 Bulk/多组学表达矩阵（建议样本量 >= 15）与明确临床性状矩阵，或显著差异基因集。
-  output: candidate-biomarker-list（基因标志物、模块归属、MM/GS 相关性或网络度值）与 highlight-gene-sets（模块/枢纽基因集定义）。
+  input: 经过归一化与批次核查的 Bulk/mrSEQ 或多组学表达矩阵（建议样本量 >= 15）与目标 Hub 基因或临床性状矩阵。
+  output: candidate-biomarker-list（基因标志物、模块归属、相关性与网络度值）与 highlight-gene-sets（模块/枢纽基因集与逐样本模块打分）。
+implementations:
+- id: spearman-coexpr-hub
+  title: Spearman 共表达网络构建、Hub 基因 1-hop 邻域提取与模块打分
+  impl_tier: default
+  language: Python
+  modality: Bulk / mrSEQ
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/spearman_coexpr_hub.py:run_spearman_coexpr_hub
+  dependencies:
+  - numpy
+  - pandas
+  - scipy
+  verification: verification/spearman-coexpr-hub.json
 keywords:
 - WGCNA
 - co-expression
@@ -104,7 +118,7 @@ next_steps:
 - 输出接口：[[interfaces/candidate-biomarker-list|多算法筛选候选特征基因表]] · [[interfaces/highlight-gene-sets|待标注基因与所属基因集]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：无
+- 代码模板：[methods/coexpression-ppi-network/code/spearman_coexpr_hub.py](/files/wiki/methods/coexpression-ppi-network/code/spearman_coexpr_hub.py)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：对核心模块基因做通路富集与功能注释**（触发条件：识别出与关键临床性状显著相关的 WGCNA 模块或高连通度 PPI 子模块时；中间表：pathway-score-table；分析模版：methods/gene-set-enrichment；可视化模版：templates/pathway-stat-violin）
   - **方向 2：检验模块枢纽基因的预后价值与风险建模**（触发条件：将网络筛选出的核心候选基因纳入单/多因素 Cox 生存分析或预后列线图评估时；中间表：survival-time-event-group；分析模版：methods/survival-prognosis-analysis、methods/regression-resampling-evaluation；可视化模版：templates/km-survival-curve、templates/subgroup-hazard-forest）
@@ -146,7 +160,11 @@ next_steps:
 
 ## 代码
 
-本锚点页当前尚未封装独立可运行的本库 R/Python 分析模块。请参考下方的 FigureYa L1 参考源码配方（如 `figureya-17wgcna-heatmap`、`figureya-53ppimodule`、`figureya-147interaction`、`figureya-147plus-string`、`figureya-153ccgraph`）获取 WGCNA 与 STRING/PPI 网络挖掘实现。
+本目录已封装独立可运行的 Python 实现（已通过 `verify-method` 实跑 Nirmal 2022 真实 PickSeq mrSEQ 表达切片并附 SHA256 收据，依赖声明见 `runtime.json`）：
+
+- `spearman-coexpr-hub`（`default`, Python, Bulk / mrSEQ）：`code/spearman_coexpr_hub.py:run_spearman_coexpr_hub`，计算全基因 Spearman 秩相关矩阵，按 `|r| >= r_threshold` 构建无向共表达边集、提取指定 Hub 基因（如 `S100B`）1-hop 邻域并计算逐样本模块均值与 Z-score。
+
+WGCNA 与 STRING/PPI 网络扩展流程亦可参考 FigureYa L1 源码配方（`figureya-17wgcna-heatmap`、`figureya-53ppimodule`、`figureya-147interaction`、`figureya-147plus-string`、`figureya-153ccgraph`）。
 
 ## 输出
 

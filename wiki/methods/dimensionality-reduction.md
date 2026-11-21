@@ -25,7 +25,10 @@ data_contract:
 implementations:
 - id: scp-dimreduction
   title: SCP RunDimReduction 封装
+  impl_tier: default
   language: R
+  modality: scRNA-seq
+  source_paper: SCP
   entrypoint: code/analysis.R:run_dimensionality_reduction
   dependencies:
   - Seurat
@@ -36,6 +39,19 @@ implementations:
   - uwot
   - intrinsicDimension
   verification: verification/scp-dimreduction-standalone.json
+- id: cycif-pca-umap-embedding
+  title: CyCIF PCA 方差贡献/载荷排序与 UMAP 降维嵌入
+  impl_tier: variant
+  language: Python
+  modality: Spatial Proteomics (CyCIF)
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/cycif_pca_umap.py:run_cycif_pca_umap
+  dependencies:
+  - numpy
+  - pandas
+  - scikit-learn
+  - umap-learn
+  verification: verification/cycif-pca-umap-embedding.json
 keywords:
 - PCA
 - UMAP
@@ -159,7 +175,7 @@ next_steps:
 - 输出接口：未声明
 - 接口结构匹配的图（仅结构候选，未核实语义）：暂无
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：[methods/dimensionality-reduction/code/analysis.R](/files/wiki/methods/dimensionality-reduction/code/analysis.R) · [methods/dimensionality-reduction/code/dimreduction_native.R](/files/wiki/methods/dimensionality-reduction/code/dimreduction_native.R)
+- 代码模板：[methods/dimensionality-reduction/code/analysis.R](/files/wiki/methods/dimensionality-reduction/code/analysis.R) · [methods/dimensionality-reduction/code/cycif_pca_umap.py](/files/wiki/methods/dimensionality-reduction/code/cycif_pca_umap.py) · [methods/dimensionality-reduction/code/dimreduction_native.R](/files/wiki/methods/dimensionality-reduction/code/dimreduction_native.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：基于低维嵌入构建 SNN 图与无监督聚类**（触发条件：PCA/UMAP 嵌入稳定后，划分离散细胞 cluster 作为注释和比较单位时；中间表：scrna-annotated-cells；分析模版：methods/cell-clustering；可视化模版：templates/scrna-celltype-umap）
   - **方向 2：结合 Marker 表达与参考图谱开展细胞类型注释**（触发条件：在降维嵌入上叠加经典 marker 分布、SingleR 或 Seurat 锚点标签转移完成细胞注释时；中间表：scrna-annotated-cells；分析模版：methods/cell-type-annotation、methods/reference-mapping；可视化模版：templates/scrna-feature-umap-grid、templates/marker-bubble-dotplot）

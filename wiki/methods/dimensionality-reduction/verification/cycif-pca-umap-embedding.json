@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "implementation": "cycif-pca-umap-embedding",
+  "method_id": "dimensionality-reduction",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:13:25+00:00",
+  "scope": "Real CyCIF scaled single-cell slice (Nirmal 2022, 287 cells x 16 scaled markers); verified PCA variance scree, PC1/PC2 feature loadings ranking, and 2D UMAP embedding.",
+  "command": "<PYTHON> -X utf8 example/verify_cycif-pca-umap-embedding.py --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_cells=287, features=16",
+    "pc1_var_ratio=0.4806, pc2_var_ratio=0.1264",
+    "top_pc1_feature=scaled_pS6",
+    "pca_umap_coordinates_finite=true"
+  ],
+  "environment": {
+    "runtime": "Python",
+    "runner": "<PYTHON>",
+    "platform": "Windows",
+    "python_version": "3.12.10"
+  },
+  "files": {
+    "code/cycif_pca_umap.py": "d8fbf859ab78c5c2f195bf7adb33457cef7fd9834ac3b2f2ac4d72019ee7cbc1"
+  },
+  "output_sha256": {
+    "checks.json": "61473a5f8d6302547c7a4d8d6ef70e2f47a254828624742b98ab983f54b6517d",
+    "pca_loadings.csv": "5ef3d6552562522bf1d0f6afea25278ad2a355de3be93c5912d6f5c97ad0af9c",
+    "pca_scree.csv": "f7e4a45ed774aa569fb8dcf3e54bfeb8aa7d90d68e375df4da35c874e50d1329",
+    "umap_embedding.csv": "68eeec77a3ed39bfb67eb36a2be7ccfd23b10a2c68a66e2fef5464df6b45061c"
+  }
+}

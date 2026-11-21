@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "kind": "method",
+  "id": "survival-prognosis-analysis",
+  "implementations": [
+    {
+      "id": "cox-km-optimal-cutpoint",
+      "entry": "code/cox_km_optimal_cutpoint.R",
+      "entry_function": "run_cox_km_optimal_cutpoint",
+      "language": "R",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/cox_km_optimal_cutpoint.R"
+      ],
+      "resources": [],
+      "required_packages": {
+        "R": [
+          "survival",
+          "stats",
+          "utils"
+        ]
+      },
+      "optional_packages": {
+        "R": {}
+      },
+      "source": {
+        "package": "nirmal-2022-adapted",
+        "license": "MIT",
+        "functions": [
+          "cox_km_optimal_cutpoint.R:run_cox_km_optimal_cutpoint"
+        ]
+      }
+    }
+  ]
+}

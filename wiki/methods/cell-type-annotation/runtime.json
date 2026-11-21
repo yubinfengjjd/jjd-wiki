@@ -46,6 +46,34 @@
       "evidence": {
         "portability": "verification/scp-singler-public-pancreas-core-20261104-portability.json"
       }
+    },
+    {
+      "id": "scimap-gmm-phenotyping",
+      "entry": "code/scimap_gmm_phenotyping.py",
+      "entry_function": "run_scimap_gmm_phenotyping",
+      "language": "Python",
+      "runtime_mode": "standalone",
+      "files": [
+        "code/scimap_gmm_phenotyping.py"
+      ],
+      "resources": [],
+      "required_packages": {
+        "Python": [
+          "numpy",
+          "pandas",
+          "scikit-learn"
+        ]
+      },
+      "optional_packages": {
+        "Python": {}
+      },
+      "source": {
+        "package": "scimap-adapted",
+        "license": "MIT",
+        "functions": [
+          "scimap_gmm_phenotyping.py:run_scimap_gmm_phenotyping"
+        ]
+      }
     }
   ]
 }

@@ -30,13 +30,26 @@ favorite: false
 method_kind: analysis
 purposes:
 - 生存与预后建模
-summary: 面向临床随访队列开展 Kaplan-Meier 生存分层、单/多因素 Cox 比例风险回归、LASSO/机器学习预后特征筛选、亚组异质性评估以及
-  Time-ROC/列线图/DCA 验证；本库尚未封装统一可运行分析模块。
+summary: 面向临床随访队列开展 Kaplan-Meier 生存分层（支持 median / quartile / maxstat 切点）、单/多因素 Cox
+  比例风险回归、亚组异质性评估以及 Time-ROC/列线图/DCA 验证；已封装 Cox + KM 多切点生存分析 R 实现。
 data_contract:
   input: 个体随访生存表 survival-time-event-group（time, event, group）及可选临床协变量与候选基因表达/风险评分；event
     规范为 0=删失、1=结局事件。
   output: 亚组效应量汇总表 subgroup-effect-table（label, estimate, lower, upper, n, percent,
     p）与候选预后标志物表 candidate-biomarker-list。
+implementations:
+- id: cox-km-optimal-cutpoint
+  title: Cox 比例风险回归与 Kaplan-Meier 多模式切点（median/quartile/maxstat）分层检验
+  impl_tier: default
+  language: R
+  modality: Bulk / TCGA Clinical
+  source_paper: 2022-nirmal-melanoma-spatial
+  entrypoint: code/cox_km_optimal_cutpoint.R:run_cox_km_optimal_cutpoint
+  dependencies:
+  - survival
+  - stats
+  - utils
+  verification: verification/cox-km-optimal-cutpoint.json
 keywords:
 - Kaplan-Meier
 - Cox regression
@@ -160,7 +173,7 @@ next_steps:
 - 输出接口：[[interfaces/subgroup-effect-table|亚组效应量汇总表]] · [[interfaces/candidate-biomarker-list|多算法筛选候选特征基因表]]
 - 接口结构匹配的图（仅结构候选，未核实语义）：[[templates/subgroup-hazard-forest|亚组分析森林图]]（ready）
 - 接口结构匹配的下一步方法（仅结构候选，未核实语义）：暂无
-- 代码模板：无
+- 代码模板：[methods/survival-prognosis-analysis/code/cox_km_optimal_cutpoint.R](/files/wiki/methods/survival-prognosis-analysis/code/cox_km_optimal_cutpoint.R)
 - 下一步分析导航（Step N → Step N+1）：
   - **方向 1：预后模型重采样评估与 SHAP 可解释性归因**（触发条件：已构建连续风险评分或机器学习预后模型，需评估交叉验证稳定性及核心特征 SHAP 贡献时；中间表：model-prediction-shap；分析模版：methods/regression-resampling-evaluation、methods/shap-explanation；可视化模版：templates/shap-beeswarm、templates/shap-importance-bar、templates/resampling-metric-box、templates/roe-cox-heatmap）
   - **方向 2：高低风险组间差异表达与生物学通路机制解析**（触发条件：按预后风险评分划分高低风险组后，解析两组间的差异驱动基因与富集信号通路时；中间表：deg-result-table；分析模版：methods/differential-expression、methods/gene-set-enrichment；可视化模版：templates/bulk-de-volcano）
@@ -211,7 +224,11 @@ next_steps:
 
 ## 代码
 
-本锚点页当前尚未封装统一可执行的本库分析模块（状态为 `not_run`）。多类经典生存与临床模型流程可参考已收录源码配方：
+本目录已封装独立可运行的 R 实现（已通过 `verify-method` 实跑 Nirmal 2022 真实 TCGA-SKCM 120 例临床队列并附 SHA256 收据，依赖声明见 `runtime.json`）：
+
+- `cox-km-optimal-cutpoint`（`default`, R, Bulk / TCGA Clinical）：`code/cox_km_optimal_cutpoint.R:run_cox_km_optimal_cutpoint`，基于 `survival` 包计算单基因/标志物的 Cox 比例风险回归（HR、95% CI、Wald P）与 Kaplan-Meier Log-rank 分层检验，原生支持 `median`、`quartile` 与 `maxstat`（最大选择秩统计量最佳切点）三种分层模式。
+
+多类扩展生存与临床模型流程亦可参考已收录源码配方：
 - KM 生存与两两/最佳切点比较：[[recipes/figureya-1survivalcurve-update]]、[[recipes/figureya-284pairwiselogrank]]、[[recipes/figureya-35batch-bestseparationv3-update]]
 - 单/多因素 Cox 与亚组森林图：[[recipes/figureya-47hrtable]]、[[recipes/figureya-66univariatecox]]、[[recipes/figureya-90subgroup]]
 - LASSO-Cox、多算法组合、Time-ROC、列线图与 DCA：[[recipes/figureya-31lasso-update]]、[[recipes/figureya-293machinelearning]]、[[recipes/figureya-85timeroc]]、[[recipes/figureya-30nomogram-update]]、[[recipes/figureya-33dca-update]]

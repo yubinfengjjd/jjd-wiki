@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "implementation": "progeny-pathway-activity",
+  "method_id": "gene-set-scoring",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:13:42+00:00",
+  "scope": "Real Cai 2026 fibroblast scRNA slice (289 genes x 140 cells across 14 subclusters); verified 14-pathway PROGENy activity inference, cell-level Z-score standardization, and subcluster aggregation.",
+  "command": "<RSCRIPT> --vanilla example/verify_progeny-pathway-activity.R --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "input_genes=289, input_cells=140, subclusters=14",
+    "progeny_pathways=14",
+    "subcluster_zscores_finite=true"
+  ],
+  "environment": {
+    "runtime": "R",
+    "runner": "<RSCRIPT>",
+    "platform": "Windows"
+  },
+  "files": {
+    "code/progeny_pathway_activity.R": "2fc599a9793c9a2f882d3bef31197c8f89ad0ded8d30fc3e07229bdb41d900c0"
+  },
+  "output_sha256": {
+    "checks.json": "b1f37088dc5471d93722df6fc5af8c3a6c553ddfaa73976137ac97d8404dff0e",
+    "progeny_cell_scores.csv": "d6e99b371471c4d360be7c4cd45e05f02dd9a49756ace8689635cc864e7fa52f",
+    "progeny_subcluster_zscore.csv": "3995ac3617b99698ec7fd6001ad6470ce23f309e2da05b318f396b3b9fbc1265"
+  }
+}

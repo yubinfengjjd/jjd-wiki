@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "implementation": "cellchat-lr-inference",
+  "method_id": "cell-cell-communication",
+  "state": "passed",
+  "verified_at": "2026-11-21T07:12:45+00:00",
+  "scope": "Real Cai 2026 CellChat LR slice (600 significant edges across Fib->Epi and C8_Fib_CCL19->TME); verified pathway probability aggregation/ranking, sender-receiver interaction count matrix, and outgoing/incoming hub conservation.",
+  "command": "<RSCRIPT> --vanilla example/verify_cellchat-lr-inference.R --code code --example example --out <TMP_OUT>",
+  "checks": [
+    "significant_lr_edges=600, pathways_ranked=20",
+    "pathway_total_prob_monotone_nonincreasing=true",
+    "sender_receiver_pair_count=34, hub_in_out_balanced=true",
+    "top_pathway=COLLAGEN"
+  ],
+  "environment": {
+    "runtime": "R",
+    "runner": "<RSCRIPT>",
+    "platform": "Windows"
+  },
+  "files": {
+    "code/cellchat_lr_inference.R": "5738e6b607be1645b5b6c2f252462005a0e81c6971e62172ff5dd721b849304b"
+  },
+  "output_sha256": {
+    "checks.json": "cae5f8f51c35a2c51677a14326e55923343209c46c03dde19a62bb5843f0eba2",
+    "hub_strength.csv": "3c7df9049805458f39c7fab1693b1ed884428913a57ada46cab53ce3df0fffad",
+    "pathway_ranking.csv": "b000943a8ba038117012025f517ae98fa09ff4422fdf8df91444bbb3fc102349",
+    "sender_receiver_matrix.csv": "258e9ebba97fcc048462a2e1df47fb15f815d56bf6fb1b5e027af11060449c27"
+  }
+}
